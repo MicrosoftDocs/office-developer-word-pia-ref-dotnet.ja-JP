@@ -1,0 +1,604 @@
+<Type Name="OLEFormat" FullName="Microsoft.Office.Interop.Word.OLEFormat">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="67318725a843161eb77654b732cf7c9e63c73493" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20671672" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface OLEFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OLEFormat" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OLEFormat" />
+  <TypeSignature Language="VB.NET" Value="Public Interface OLEFormat" />
+  <TypeSignature Language="C++ CLI" Value="public interface class OLEFormat" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020933-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>OLE オブジェクト、ActiveX コントロール、またはフィールドの (リンク以外の) OLE 特性を表します。</summary>
+    <remarks>
+      <para>
+        <b>OLEFormat</b>プロパティを使用して、 <see cref="T:Microsoft.Office.Interop.Word.Shape" />、 <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />、または<see cref="T:Microsoft.Office.Interop.Word.Field" /><b>OLEFormat</b>オブジェクトを取得するオブジェクトです</para>。
+      <para>ないすべての種類の図形、インライン図形、およびフィールドは、OLE 機能を備えています。どのようなカテゴリの指定した図形またはインライン図形の分類を決定するのには、<b>図形</b>オブジェクトおよび<b>InlineShape</b>オブジェクトの<b>Type</b>プロパティを使用します。<b>Field</b>オブジェクトの<b>Type</b>プロパティは、フィールドの型を返します</para>。
+      <para>を使用することができます、 <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.Activate" />、 <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.Edit" />、 <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.Open" />、および<see cref="M:Microsoft.Office.Interop.Word.OLEFormat.DoVerb(System.Object@)" />OLE オブジェクトを自動化する方法です</para>。使用の
+      <para>、 <see cref="P:Microsoft.Office.Interop.Word.OLEFormat.Object" /> 、ActiveX コントロールまたは OLE オブジェクトを表すオブジェクトを返すプロパティです。プロパティとコンテナー アプリケーションまたは ActiveX コントロールのメソッドを使用するこのオブジェクトを使用します</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Activate">
+      <MemberSignature Language="C#" Value="public void Activate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Activate() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.OLEFormat.Activate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Activate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Activate();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>指定されたオブジェクトをアクティブにします。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivateAs">
+      <MemberSignature Language="C#" Value="public void ActivateAs (string ClassType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ActivateAs([in]string ClassType) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.OLEFormat.ActivateAs(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ActivateAs (ClassType As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ActivateAs(System::String ^ ClassType);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(111)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ClassType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ClassType">
+          <b>文字列</b> が必要です。 OLE オブジェクトが開かれているアプリケーションの名前。 として OLE オブジェクトをアクティブにできるオブジェクトの種類の一覧を表示するには、オブジェクトをクリックし、[変換] ダイアログ ボックス (編集] メニューの [オブジェクト] サブメニュー) を開きます。 検索することができます、<paramref name="ClassType" />では、インライン図形としてオブジェクトを挿入し、フィールド コードを表示する文字列。 オブジェクトのクラス型に依存して、単語"EMBED"または"link"にします。</param>
+        <summary>指定された OLE オブジェクトをアクティブにするときに使用する既定のアプリケーションを決定する Windows のレジストリ値を設定します。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClassType">
+      <MemberSignature Language="C#" Value="public string ClassType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClassType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.ClassType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClassType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClassType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得または指定された OLE オブジェクト、図、またはフィールドのクラスの種類を設定します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>このプロパティは、DDE リンク以外のリンク オブジェクトは読み取り専用</para>。
+          <para>は、[オブジェクト] ダイアログ ボックス ([挿入] メニュー) の [新規作成] タブで、オブジェクトの種類] ボックスで利用可能なアプリケーションの一覧が表示ことができます。検索することができます、<paramref name="ClassType" />では、インライン図形としてオブジェクトを挿入し、フィールド コードを表示する文字列。オブジェクトのクラス型に依存して、単語"EMBED"または単語「リンク」にします</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTo">
+      <MemberSignature Language="C#" Value="public void ConvertTo (ref object ClassType, ref object DisplayAsIcon, ref object IconFileName, ref object IconIndex, ref object IconLabel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ConvertTo([in]object&amp; ClassType, [in]object&amp; DisplayAsIcon, [in]object&amp; IconFileName, [in]object&amp; IconIndex, [in]object&amp; IconLabel) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.OLEFormat.ConvertTo(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ConvertTo (Optional ByRef ClassType As Object, Optional ByRef DisplayAsIcon As Object, Optional ByRef IconFileName As Object, Optional ByRef IconIndex As Object, Optional ByRef IconLabel As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ClassType" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DisplayAsIcon" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IconFileName" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IconIndex" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IconLabel" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ClassType">省略可能な<b>オブジェクト</b>です。 OLE オブジェクトをアクティブに使用するアプリケーションの名前です。 ([挿入] メニュー) の [オブジェクト] ダイアログ ボックスの [新規作成] タブで、オブジェクトの種類] ボックスで利用可能なアプリケーションの一覧を表示できます。 検索することができます、<paramref name="ClassType" />では、インライン図形としてオブジェクトを挿入し、フィールド コードを表示する文字列。 オブジェクトのクラス型に依存して、単語"EMBED"または"link"にします。</param>
+        <param name="DisplayAsIcon">省略可能な<b>オブジェクト</b>です。 <b>True</b> を設定すると、OLE オブジェクトをアイコンで表示します。 既定値は <b>False</b> です。</param>
+        <param name="IconFileName">省略可能な<b>オブジェクト</b>です。 表示するアイコンを含むファイル名を指定します。</param>
+        <param name="IconIndex">省略可能な<b>オブジェクト</b>です。 内のアイコンのインデックス番号を<paramref name="IconFileName" />。 指定したファイル内のアイコンの順序は、アイコンの変更] ダイアログ ボックス ([挿入] メニューの [オブジェクト] ダイアログ ボックス) に表示されるアイコンの順序に対応して表示] チェック ボックスをオンにした場合。 ファイルの最初のアイコンは、インデックス番号が 0 となります。 指定したインデックス番号のアイコンが存在しないかどうかは<paramref name="IconFileName" />、インデックス番号 1 (ファイルの 2 つ目のアイコン) のアイコンを使用します。 既定値は 0 です。</param>
+        <param name="IconLabel">省略可能な<b>オブジェクト</b>です。 アイコンの下に表示するラベル (標題) を指定します。</param>
+        <summary>指定された OLE オブジェクトを別のサーバーのアプリケーションでオブジェクトを編集するか、ドキュメント内のオブジェクトの表示方法を変更するための別の 1 つのクラスに変換します。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
+          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayAsIcon">
+      <MemberSignature Language="C#" Value="public bool DisplayAsIcon { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayAsIcon" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.DisplayAsIcon" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayAsIcon As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayAsIcon { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>の<b>場合は true</b>指定したオブジェクトがアイコンとして表示されている場合。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoVerb">
+      <MemberSignature Language="C#" Value="public void DoVerb (ref object VerbIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DoVerb([in]object&amp; VerbIndex) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.OLEFormat.DoVerb(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DoVerb (Optional ByRef VerbIndex As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(109)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="VerbIndex" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="VerbIndex">省略可能な<b>オブジェクト</b>です。 この動詞は、OLE オブジェクトを実行する必要があります。 この引数を省略すると、既定の動詞が送信されます。 OLE オブジェクトが要求された動詞をサポートしていない場合、エラーが発生します。 いずれかを指定することができます<see cref="T:Microsoft.Office.Interop.Word.WdOLEVerb" />定数。</param>
+        <summary>要求の動詞のいずれかの OLE オブジェクトを実行する、OLE オブジェクトに、その内容をアクティブにするアクション。 各 OLE オブジェクトでは、そのオブジェクトに固有の動詞のセットを使用できます。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Edit">
+      <MemberSignature Language="C#" Value="public void Edit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Edit() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.OLEFormat.Edit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Edit ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Edit();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(106)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>指定された OLE オブジェクトを開き、その OLE オブジェクトが作成されたアプリケーションで編集できるようにします。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IconIndex">
+      <MemberSignature Language="C#" Value="public int IconIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 IconIndex" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.IconIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property IconIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int IconIndex { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>値を取得または設定する場合に使用されますが、アイコン、<see cref="P:Microsoft.Office.Interop.Word.OLEFormat.DisplayAsIcon" />プロパティが<b>True</b>: 0 (ゼロ) は、最初のアイコンに対応して、1 は 2 番目のアイコンというように対応します。 この引数を省略すると、最初の (既定) のアイコンが使用されます。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IconLabel">
+      <MemberSignature Language="C#" Value="public string IconLabel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string IconLabel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.IconLabel" />
+      <MemberSignature Language="VB.NET" Value="Public Property IconLabel As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IconLabel { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>OLE オブジェクトのアイコンの下に表示されるテキストを設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IconName">
+      <MemberSignature Language="C#" Value="public string IconName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string IconName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.IconName" />
+      <MemberSignature Language="VB.NET" Value="Public Property IconName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IconName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>OLE オブジェクトのアイコンを格納するプログラム ファイルを設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IconPath">
+      <MemberSignature Language="C#" Value="public string IconPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string IconPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.IconPath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IconPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IconPath { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>OLE オブジェクトのアイコンを格納するファイルのパスを返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Label">
+      <MemberSignature Language="C#" Value="public string Label { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Label" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.Label" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Label As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>リンクされているソース ファイルの一部を識別するために使用される文字列を返します。 たとえば、ソース ファイルが Excel のブックの場合は、 <b>Label</b>プロパティ返すことがあります"Workbook1!R3C1:R4C2"OLE オブジェクトには、ワークシートからいくつかのセルのみが含まれている場合。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>このプロパティは、図形、インライン図形、またはリンクされた OLE オブジェクトのフィールドに対してのみ機能します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Object">
+      <MemberSignature Language="C#" Value="public object Object { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Object" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.Object" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Object As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Object { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定された OLE オブジェクトの最上位のインターフェイスを表す <b>オブジェクト</b> を返します。 このプロパティを使用すると、プロパティとメソッドは、ActiveX コントロールまたは OLE オブジェクトが作成されたアプリケーションにアクセスできます。 OLE オブジェクトは、OLE オートメーション プロパティの動作をサポートする必要があります。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public void Open ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.OLEFormat.Open" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Open ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Open();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(107)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>指定したオブジェクトを開きます。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたオブジェクトの親オブジェクトを表すオブジェクトを取得します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreserveFormattingOnUpdate">
+      <MemberSignature Language="C#" Value="public bool PreserveFormattingOnUpdate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PreserveFormattingOnUpdate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.PreserveFormattingOnUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreserveFormattingOnUpdate As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreserveFormattingOnUpdate { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(112)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(112)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(112)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>テーブルのように、リンク OLE オブジェクトを Word で元に戻すを書式設定 <b>は true</b> を維持は、Microsoft Excel スプレッドシートにリンクされます。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>PreserveFormattingOnUpdate</b>を<b>True</b>に設定すると、Word 内のオブジェクトに加えられた変更の書式保持されます、オブジェクトが更新されたとき。Word では、リンク オブジェクトのコンテンツだけを更新します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProgID">
+      <MemberSignature Language="C#" Value="public string ProgID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ProgID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.ProgID" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProgID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProgID { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定した OLE オブジェクトのプログラム識別子 (ProgID) を取得します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>ProgID</b>と<see cref="P:Microsoft.Office.Interop.Word.OLEFormat.ClassType" />のプロパティは既定で同じ文字列を返します。ただし、DDE リンクの<b>ClassType</b>プロパティを変更することができます</para>。
+          <para><b>セキュリティ</b>の動的データ交換 (DDE) は、セキュリティ保護されていない古いテクノロジです。、可能であれば、より安全な代わりに DDE を使用します。</para><para /></remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

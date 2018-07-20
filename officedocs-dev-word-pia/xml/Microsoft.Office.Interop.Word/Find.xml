@@ -1,0 +1,1748 @@
+<Type Name="Find" FullName="Microsoft.Office.Interop.Word.Find">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="f63dc36acb8e1cf56f86311f5fd23d30d0daa392" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20671527" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Find" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Find" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Find" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Find" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Find" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000209B0-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>検索操作の条件を表します。</summary>
+    <remarks>
+      <para>
+        <b>Find</b>オブジェクトのメソッドとプロパティが、[検索と置換] ダイアログ ボックスのオプションに対応します</para>。
+      <para>オブジェクトを取得する<b>検索</b>する<b>検索</b>プロパティを使用します</para>。
+      <para>から<b>Find</b>オブジェクトを取得したかどうか、<see cref="T:Microsoft.Office.Interop.Word.Selection" />オブジェクトの検索条件に一致する文字列が見つかると、選択範囲が変更されます</para>。
+      <para>から<b>Find</b>オブジェクトを取得したかどうか、<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトの検索条件に一致するテキストが見つかりましたが、 <b>Range</b>オブジェクトを再定義すると、選択範囲は変更されません</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearAllFuzzyOptions">
+      <MemberSignature Language="C#" Value="public void ClearAllFuzzyOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearAllFuzzyOptions() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Find.ClearAllFuzzyOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearAllFuzzyOptions ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearAllFuzzyOptions();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(33)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>日本語の文字列に関連付けられているあいまい検索のオプションをすべてクリアします。</summary>
+        <remarks>
+          <para>このメソッドは、 <b>false を指定</b>する次のプロパティの値を設定します。</para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyAY" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyBV" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyByte" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyCase" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyDash" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyDZ" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyHF" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyHiragana" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyIterationMark" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyKanji" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyKiKu" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyOldKana" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyProlongedSoundMark" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyPunctuation" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzySmallKana" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzySpace" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyTC" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyZJ" />
+          </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearFormatting">
+      <MemberSignature Language="C#" Value="public void ClearFormatting ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearFormatting() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Find.ClearFormatting" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearFormatting ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearFormatting();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(31)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>テキストと段落の選択範囲または検索または置換操作で指定された書式設定から削除します。</summary>
+        <remarks>
+          <para>書式を検索条件として含まれてないことを確認または置換操作は、操作を実行する前にこのメソッドを使用します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearHitHighlight">
+      <MemberSignature Language="C#" Value="public bool ClearHitHighlight ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ClearHitHighlight() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Find.ClearHitHighlight" />
+      <MemberSignature Language="VB.NET" Value="Public Function ClearHitHighlight () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ClearHitHighlight();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(446)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>検索処理で見つかり、強調表示内にあるすべてのテキストの強調表示を削除し、 <b>ブール値</b> 操作が成功したかどうかを表すを返します。</summary>
+        <returns>
+          <b>ブール型 (Boolean)</b>
+        </returns>
+        <remarks>
+          <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.Find.HitHighlight(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />見つかった文字列を強調表示する方法です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CorrectHangulEndings">
+      <MemberSignature Language="C#" Value="public bool CorrectHangulEndings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CorrectHangulEndings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.CorrectHangulEndings" />
+      <MemberSignature Language="VB.NET" Value="Public Property CorrectHangulEndings As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CorrectHangulEndings { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(61)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ハングル語の文字列を置換するとき、Microsoft Word がそのハングルを自動的に修正かどうかを決定します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>ハングル語の文字列、および場合は<b>False</b>を置換するときに Microsoft Word がハングルの文末に自動的に修正される場合、このプロパティは<b>True</b>を返します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
+          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public bool Execute (ref object FindText, ref object MatchCase, ref object MatchWholeWord, ref object MatchWildcards, ref object MatchSoundsLike, ref object MatchAllWordForms, ref object Forward, ref object Wrap, ref object Format, ref object ReplaceWith, ref object Replace, ref object MatchKashida, ref object MatchDiacritics, ref object MatchAlefHamza, ref object MatchControl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Execute([in]object&amp; FindText, [in]object&amp; MatchCase, [in]object&amp; MatchWholeWord, [in]object&amp; MatchWildcards, [in]object&amp; MatchSoundsLike, [in]object&amp; MatchAllWordForms, [in]object&amp; Forward, [in]object&amp; Wrap, [in]object&amp; Format, [in]object&amp; ReplaceWith, [in]object&amp; Replace, [in]object&amp; MatchKashida, [in]object&amp; MatchDiacritics, [in]object&amp; MatchAlefHamza, [in]object&amp; MatchControl) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Execute (Optional ByRef FindText As Object, Optional ByRef MatchCase As Object, Optional ByRef MatchWholeWord As Object, Optional ByRef MatchWildcards As Object, Optional ByRef MatchSoundsLike As Object, Optional ByRef MatchAllWordForms As Object, Optional ByRef Forward As Object, Optional ByRef Wrap As Object, Optional ByRef Format As Object, Optional ByRef ReplaceWith As Object, Optional ByRef Replace As Object, Optional ByRef MatchKashida As Object, Optional ByRef MatchDiacritics As Object, Optional ByRef MatchAlefHamza As Object, Optional ByRef MatchControl As Object) As Boolean" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(444)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FindText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchCase" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchWholeWord" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchWildcards" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchSoundsLike" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchAllWordForms" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Forward" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Wrap" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Format" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReplaceWith" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Replace" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchKashida" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchDiacritics" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchAlefHamza" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchControl" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FindText">省略可能な<b>オブジェクト</b>です。 検索する文字列を指定します。 書式だけを検索する場合は、空文字列 ("") を指定します。 適切な文字コードを指定すると、特殊文字を検索できます。 たとえば、"^p" は段落記号に対応し、"^t" はタブ記号に対応しています。</param>
+        <param name="MatchCase">省略可能な<b>オブジェクト</b>です。 <b>True</b> 検索文字列が大文字小文字を区別することを指定します。 大文字] チェック ボックスで、[検索と置換] ダイアログ ボックス ([編集] メニュー) に対応します。</param>
+        <param name="MatchWholeWord">省略可能な<b>オブジェクト</b>です。 の<b>場合は true。</b>長い単語の一部であるテキストではなく単語全体を検索、検索操作をします。 単語全体のみを検索する] チェック ボックスで、[ 検索し、置換] ダイアログ ボックスに対応します。</param>
+        <param name="MatchWildcards">省略可能な<b>オブジェクト</b>です。 <b>True の</b> テキストを検索するには特殊な検索演算子であります。 [検索し、置換] ダイアログ ボックスで ワイルドカードを使用する] チェック ボックスに対応しています。</param>
+        <param name="MatchSoundsLike">省略可能な<b>オブジェクト</b>です。 <b>True を指定</b> して、検索対象と類似した単語、検索文字列にします。 [検索し、置換] ダイアログ ボックスで [ あいまい検索] チェック ボックスに対応します。</param>
+        <param name="MatchAllWordForms">省略可能な<b>オブジェクト</b>です。 の <b>場合は true</b> 検索対象とし、検索文字列のすべてのフォーム (たとえば、「配置」を検索「座って」と"sat")。 [検索し、置換] ダイアログ ボックスで [ すべての単語の活用形を検索する] チェック ボックスに対応します。</param>
+        <param name="Forward">省略可能な<b>オブジェクト</b>です。 <b>True</b> (ドキュメントの末尾) に向かって上方向へ検索します。</param>
+        <param name="Wrap">省略可能な<b>オブジェクト</b>です。 文書の先頭以外の場所から検索を開始し、ドキュメントの末尾に到達した場合の処理 (またはその逆の場合は<paramref name="Forward" />が<b>False</b>に設定) します。 この引数は、選択範囲または選択範囲または範囲内の範囲と、検索文字列が見つからない場合の動作も制御します。次のいずれかの<see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" />定数: 選択範囲または指定範囲、Microsoft Word を検索した後、<b>wdFindAsk</b>には、ドキュメントの残りの部分を検索するかどうかを確認するメッセージが表示されます。<b>wdFindContinue</b>検索操作では、先頭または検索範囲の末尾に到達したかどうかを続行します。<b>wdFindStop</b>先頭または検索範囲の末尾に達した場合は、検索処理が終了します。</param>
+        <param name="Format">省略可能な<b>オブジェクト</b>です。 <b>真</b>の他に、または検索文字列を書式設定を検索対象とします。</param>
+        <param name="ReplaceWith">省略可能な<b>オブジェクト</b>です。 置換文字列を指定します。 指定されたテキストを削除するのには、<paramref name="Find" />引数を空の文字列を使用して ("")。 場合と、特殊文字や高度な検索の条件だけを指定する、<paramref name="Find" />の引数です。 交換用としては、グラフィック オブジェクトまたはその他のテキスト以外の項目を指定するに、アイテムをクリップボードに移動して、"^ c"の<paramref name="ReplaceWith" />。</param>
+        <param name="Replace">省略可能な<b>オブジェクト</b>です。 置換を実行する数 (1 つ、すべて、なし) を指定します。 いずれかを指定することができます<see cref="T:Microsoft.Office.Interop.Word.WdReplace" />定数:<b>wdReplaceAll </b><b>wdReplaceNone </b><b>wdReplaceOne</b></param>
+        <param name="MatchKashida">省略可能な<b>オブジェクト</b>です。 <b>True</b> の場合は検索操作では、kashida が、アラビア語の文書のテキストを区別します。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
+        <param name="MatchDiacritics">省略可能な<b>オブジェクト</b>です。 <b>True</b> の場合は検索操作では、右から左への言語の文書内には、発音区別符号が一致するテキストを区別します。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
+        <param name="MatchAlefHamza">省略可能な<b>オブジェクト</b>です。 <b>True</b> の場合は検索操作では、アラビア語ドキュメント内の alef hamza が一致するテキストを区別します。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
+        <param name="MatchControl">省略可能な<b>オブジェクト</b>です。 <b>True</b> の場合は検索操作では、右から左への言語の文書で双方向制御文字が一致するテキストを区別します。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
+        <summary>指定された実行は、操作を検索します。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>検索操作が成功した場合、このメソッドが<b>True</b>を返します</para>。
+          <para>場合<paramref name="MatchWildcards" />が<b>True</b>、ワイルドカード文字やその他の高度な検索条件を指定することができます、<paramref name="FindText" />の引数です。たとえば、"* (ing)"ing の単語がすべて検索の終了</para>記号を検索する場合、キャレット (^)、ゼロ (0) と入力し、記号の文字コードを
+          <para>。たとえば、"^0151"全角ダッシュ (—) に対応します</para>。
+          <para>文字列の書式は、そのドキュメントに置き換えられます、特に指定しない限り、置換後の文字列が継承されます。などの文字列"abc"を"xyz"に置き換えた場合文字列"abc"に太字の書式が文字列"xyz"に太字の書式設定に置き換えられます</para>。
+          <para>も場合は、<paramref name="MatchCase" />が<b>False</b>に出現する検索文字列が大文字であるが、検索と置換テキストの大文字と小文字に関係なく、置換後の文字列の大文字バージョンで置き換えられます。前の例を使用すると、文字列"ABC"は"XYZ"に置き換えられます</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute2007">
+      <MemberSignature Language="C#" Value="public bool Execute2007 (ref object FindText, ref object MatchCase, ref object MatchWholeWord, ref object MatchWildcards, ref object MatchSoundsLike, ref object MatchAllWordForms, ref object Forward, ref object Wrap, ref object Format, ref object ReplaceWith, ref object Replace, ref object MatchKashida, ref object MatchDiacritics, ref object MatchAlefHamza, ref object MatchControl, ref object MatchPrefix, ref object MatchSuffix, ref object MatchPhrase, ref object IgnoreSpace, ref object IgnorePunct);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Execute2007([in]object&amp; FindText, [in]object&amp; MatchCase, [in]object&amp; MatchWholeWord, [in]object&amp; MatchWildcards, [in]object&amp; MatchSoundsLike, [in]object&amp; MatchAllWordForms, [in]object&amp; Forward, [in]object&amp; Wrap, [in]object&amp; Format, [in]object&amp; ReplaceWith, [in]object&amp; Replace, [in]object&amp; MatchKashida, [in]object&amp; MatchDiacritics, [in]object&amp; MatchAlefHamza, [in]object&amp; MatchControl, [in]object&amp; MatchPrefix, [in]object&amp; MatchSuffix, [in]object&amp; MatchPhrase, [in]object&amp; IgnoreSpace, [in]object&amp; IgnorePunct) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Find.Execute2007(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Execute2007 (Optional ByRef FindText As Object, Optional ByRef MatchCase As Object, Optional ByRef MatchWholeWord As Object, Optional ByRef MatchWildcards As Object, Optional ByRef MatchSoundsLike As Object, Optional ByRef MatchAllWordForms As Object, Optional ByRef Forward As Object, Optional ByRef Wrap As Object, Optional ByRef Format As Object, Optional ByRef ReplaceWith As Object, Optional ByRef Replace As Object, Optional ByRef MatchKashida As Object, Optional ByRef MatchDiacritics As Object, Optional ByRef MatchAlefHamza As Object, Optional ByRef MatchControl As Object, Optional ByRef MatchPrefix As Object, Optional ByRef MatchSuffix As Object, Optional ByRef MatchPhrase As Object, Optional ByRef IgnoreSpace As Object, Optional ByRef IgnorePunct As Object) As Boolean" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(447)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FindText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchCase" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchWholeWord" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchWildcards" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchSoundsLike" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchAllWordForms" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Forward" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Wrap" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Format" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReplaceWith" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Replace" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchKashida" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchDiacritics" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchAlefHamza" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchControl" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchPrefix" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchSuffix" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchPhrase" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IgnoreSpace" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IgnorePunct" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FindText">検索する文字列を指定します。書式だけを検索する場合は、空文字列 ("") を指定します。適切な文字コードを指定すると、特殊文字を検索できます。たとえば、"^p" は段落記号に対応し、"^t" はタブ文字に対応しています。</param>
+        <param name="MatchCase">
+          <b>True</b>検索文字列が大文字小文字を区別することを指定します。 大文字] チェック ボックスで、[検索と置換] ダイアログ ボックス ([編集] メニュー) に対応します。</param>
+        <param name="MatchWholeWord">の <b>場合は true。</b> 長い単語の一部であるテキストではなく単語全体を検索、検索操作をします。 単語全体のみを検索する] チェック ボックスで、[ 検索し、置換] ダイアログ ボックスに対応します。 </param>
+        <param name="MatchWildcards">
+          <b>True の</b> テキストを検索するには特殊な検索演算子であります。 [検索し、置換] ダイアログ ボックスで ワイルドカードを使用する] チェック ボックスに対応しています。 </param>
+        <param name="MatchSoundsLike">
+          <b>True を指定</b> して、検索対象と類似した単語、検索文字列にします。 [検索し、置換] ダイアログ ボックスで [ あいまい検索] チェック ボックスに対応します。 </param>
+        <param name="MatchAllWordForms">の <b>場合は true</b> 検索対象とし、検索文字列のすべてのフォーム (たとえば、「配置」を検索「座って」と"sat")。 [検索し、置換] ダイアログ ボックスで [ すべての単語の活用形を検索する] チェック ボックスに対応します。 </param>
+        <param name="Forward">
+          <b>True</b> (ドキュメントの末尾) に向かって上方向へ検索します。</param>
+        <param name="Wrap">文書の先頭以外の場所から検索を開始し、ドキュメントの末尾に到達した場合の処理 (またはその逆の場合は<paramref name="Forward" />が<b>False</b>に設定) します。 この引数は、選択範囲または選択範囲または範囲内の範囲と検索テキストが見つかりません場合も制御します。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" />の列挙値。</param>
+        <param name="Format">
+          <b>True</b> を設定すると、検索文字列と書式または書式のみの検索が行われます。</param>
+        <param name="ReplaceWith">置換文字列を指定します。 指定されたテキストを削除するのには、<paramref name="Find" />引数を空の文字列を使用して ("")。 場合と、特殊文字や高度な検索の条件だけを指定する、<paramref name="Find" />の引数です。 交換用としては、グラフィック オブジェクトまたはその他の文字列以外の項目を指定するに、アイテムをクリップボードに移動して、"^ c"の<paramref name="ReplaceWith" />。</param>
+        <param name="Replace">置換を実行する数 (1 つ、すべて、なし) を指定します。 いずれかを指定することができます<see cref="T:Microsoft.Office.Interop.Word.WdReplace" />列挙値。</param>
+        <param name="MatchKashida">
+          <b>True</b> の場合は検索操作では、アラビア語のドキュメントでの kashida のテキストを区別します。この引数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。 </param>
+        <param name="MatchDiacritics">
+          <b>True</b> の場合は検索操作では、右から左への言語の文書内には、発音区別符号が一致するテキストを区別します。この引数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。 </param>
+        <param name="MatchAlefHamza">
+          <b>True</b> の場合は検索操作では、alef hamza をアラビア語の文書内の一致するテキストを区別します。この引数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。 </param>
+        <param name="MatchControl">
+          <b>True</b> の場合は検索操作では、右から左への言語の文書で双方向制御文字が一致するテキストを区別します。この引数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。 </param>
+        <param name="MatchPrefix">
+          <b>True</b> 検索文字列で始まる単語に一致します。 [検索し、置換] ダイアログ ボックスの [ 接頭辞に一致] チェック ボックスに対応します。 </param>
+        <param name="MatchSuffix">
+          <b>True</b> 検索文字列で終わる単語に一致します。  [検索し、置換] ダイアログ ボックスの [ 接尾辞に一致する] チェック ボックスに対応します。</param>
+        <param name="MatchPhrase">
+          <b>True</b> のすべての空白文字および単語の間の制御文字を無視します。</param>
+        <param name="IgnoreSpace">
+          <b>True</b> では、単語間の空白はすべて無視されます。 [検索し、置換] ダイアログ ボックスで [ 空白文字を無視] チェック ボックスに対応します。 </param>
+        <param name="IgnorePunct">
+          <b>True</b> は、単語間のすべての区切り記号を無視します。 [検索し、置換] ダイアログ ボックスの [ 句読点を無視] チェック ボックスに対応します。 </param>
+        <summary>指定された実行は、操作を検索します。検索操作が成功した場合は <b>True</b> を返します。</summary>
+        <returns>検索操作が正常に完了したかどうかを示す<b>ブール</b>値です。</returns>
+        <remarks>
+          <para>場合<paramref name="MatchWildcards" />が<b>True</b>、ワイルドカード文字やその他の高度な検索条件を指定することができます、<paramref name="FindText" />の引数です。などの"* (ing)""ing"で単語がすべて検索が終了します</para>。記号を検索する場合、キャレット (^)、ゼロ (0) と入力し、記号の文字コードを
+          <para>。たとえば、"^0151"全角ダッシュ (—) に対応します</para>。
+          <para>文字列の書式は、そのドキュメントに置き換えられます、特に指定しない限り、置換後の文字列が継承されます。などの文字列"abc"を"xyz"に置き換えた場合文字列"abc"に太字の書式が文字列"xyz"に太字の書式設定に置き換えられます</para>。
+          <para>も場合は、<paramref name="MatchCase" />が<b>False</b>に出現する検索文字列が大文字であるが、置換後の文字列の大文字と小文字に関係なく、置換後の文字列の大文字バージョンで置き換えられます。前の例を使用すると、文字列"ABC"は"XYZ"に置き換えられます</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteOld">
+      <MemberSignature Language="C#" Value="public bool ExecuteOld (ref object FindText, ref object MatchCase, ref object MatchWholeWord, ref object MatchWildcards, ref object MatchSoundsLike, ref object MatchAllWordForms, ref object Forward, ref object Wrap, ref object Format, ref object ReplaceWith, ref object Replace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ExecuteOld([in]object&amp; FindText, [in]object&amp; MatchCase, [in]object&amp; MatchWholeWord, [in]object&amp; MatchWildcards, [in]object&amp; MatchSoundsLike, [in]object&amp; MatchAllWordForms, [in]object&amp; Forward, [in]object&amp; Wrap, [in]object&amp; Format, [in]object&amp; ReplaceWith, [in]object&amp; Replace) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Find.ExecuteOld(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExecuteOld (Optional ByRef FindText As Object, Optional ByRef MatchCase As Object, Optional ByRef MatchWholeWord As Object, Optional ByRef MatchWildcards As Object, Optional ByRef MatchSoundsLike As Object, Optional ByRef MatchAllWordForms As Object, Optional ByRef Forward As Object, Optional ByRef Wrap As Object, Optional ByRef Format As Object, Optional ByRef ReplaceWith As Object, Optional ByRef Replace As Object) As Boolean" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(30)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FindText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchCase" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchWholeWord" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchWildcards" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchSoundsLike" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchAllWordForms" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Forward" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Wrap" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Format" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReplaceWith" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Replace" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FindText">To be added.</param>
+        <param name="MatchCase">To be added.</param>
+        <param name="MatchWholeWord">To be added.</param>
+        <param name="MatchWildcards">To be added.</param>
+        <param name="MatchSoundsLike">To be added.</param>
+        <param name="MatchAllWordForms">To be added.</param>
+        <param name="Forward">To be added.</param>
+        <param name="Wrap">To be added.</param>
+        <param name="Format">To be added.</param>
+        <param name="ReplaceWith">To be added.</param>
+        <param name="Replace">To be added.</param>
+        <summary>内部使用のため予約済みです。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Font">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Font Font { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Font Font" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.Font" />
+      <MemberSignature Language="VB.NET" Value="Public Property Font As Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Font ^ Font { Microsoft::Office::Interop::Word::Font ^ get(); void set(Microsoft::Office::Interop::Word::Font ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.Font" />を指定したオブジェクトの文字書式を表すオブジェクト。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Format">
+      <MemberSignature Language="C#" Value="public bool Format { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Format" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.Format" />
+      <MemberSignature Language="VB.NET" Value="Public Property Format As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Format { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(28)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(28)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(28)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>検索操作に書式設定が含まれているかどうかを決定します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>このプロパティは、書式設定が含まれる場合、検索操作、および<b>false の場合</b>にそうでない場合に<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするには、プロパティの値を設定します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Forward">
+      <MemberSignature Language="C#" Value="public bool Forward { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Forward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.Forward" />
+      <MemberSignature Language="VB.NET" Value="Public Property Forward As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Forward { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>かどうか、検索操作の検索方向はドキュメントを決定します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>検索操作の検索方向はドキュメント、および<b>False</b>場合は、文書を逆方向に検索する場合、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするには、プロパティの値を設定します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Found">
+      <MemberSignature Language="C#" Value="public bool Found { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Found" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.Found" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Found As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Found { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定したオブジェクトの検索が一致するものを生成したかどうかを決定します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>検索条件の一致、および場合は<b>false を指定</b>しない場合、このプロパティは<b>True</b>を返します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Frame">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Frame Frame { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Frame Frame" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.Frame" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Frame As Frame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Frame ^ Frame { Microsoft::Office::Interop::Word::Frame ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(26)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(26)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Frame</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Frame" /> 、フレームを指定したスタイルまたは検索と置換操作のための書式設定を表すオブジェクト。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HanjaPhoneticHangul">
+      <MemberSignature Language="C#" Value="public bool HanjaPhoneticHangul { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HanjaPhoneticHangul" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.HanjaPhoneticHangul" />
+      <MemberSignature Language="VB.NET" Value="Public Property HanjaPhoneticHangul As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HanjaPhoneticHangul { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(109)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(109)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(109)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得または設定する <b>ブール値</b> を韓国語の文字をハングルや漢字を検索するには、検索の操作をするかどうかを表します。読み取り/書き込み。</summary>
+        <value>
+          <b>ブール型 (Boolean)</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Highlight">
+      <MemberSignature Language="C#" Value="public int Highlight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Highlight" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.Highlight" />
+      <MemberSignature Language="VB.NET" Value="Public Property Highlight As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Highlight { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>蛍光ペン書式が検索条件に含まれているかどうかを決定します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>可能</b>値で使用できる、<see cref="T:Microsoft.Office.Interop.Word.Find" />を強調表示の選択範囲の書式設定の状態を無視するか、範囲をオブジェクトが検索されます</para>。<b><para>このプロパティは Trueを返します蛍光ペン書式が検索条件に含まれる場合。返すことができますか<b>場合は True</b>、 <b>False</b>、または<b>wdUndefined</b>に設定します</para></b>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HitHighlight">
+      <MemberSignature Language="C#" Value="public bool HitHighlight (ref object FindText, ref object HighlightColor, ref object TextColor, ref object MatchCase, ref object MatchWholeWord, ref object MatchPrefix, ref object MatchSuffix, ref object MatchPhrase, ref object MatchWildcards, ref object MatchSoundsLike, ref object MatchAllWordForms, ref object MatchByte, ref object MatchFuzzy, ref object MatchKashida, ref object MatchDiacritics, ref object MatchAlefHamza, ref object MatchControl, ref object IgnoreSpace, ref object IgnorePunct, ref object HanjaPhoneticHangul);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HitHighlight([in]object&amp; FindText, [in]object&amp; HighlightColor, [in]object&amp; TextColor, [in]object&amp; MatchCase, [in]object&amp; MatchWholeWord, [in]object&amp; MatchPrefix, [in]object&amp; MatchSuffix, [in]object&amp; MatchPhrase, [in]object&amp; MatchWildcards, [in]object&amp; MatchSoundsLike, [in]object&amp; MatchAllWordForms, [in]object&amp; MatchByte, [in]object&amp; MatchFuzzy, [in]object&amp; MatchKashida, [in]object&amp; MatchDiacritics, [in]object&amp; MatchAlefHamza, [in]object&amp; MatchControl, [in]object&amp; IgnoreSpace, [in]object&amp; IgnorePunct, [in]object&amp; HanjaPhoneticHangul) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Find.HitHighlight(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HitHighlight (ByRef FindText As Object, Optional ByRef HighlightColor As Object, Optional ByRef TextColor As Object, Optional ByRef MatchCase As Object, Optional ByRef MatchWholeWord As Object, Optional ByRef MatchPrefix As Object, Optional ByRef MatchSuffix As Object, Optional ByRef MatchPhrase As Object, Optional ByRef MatchWildcards As Object, Optional ByRef MatchSoundsLike As Object, Optional ByRef MatchAllWordForms As Object, Optional ByRef MatchByte As Object, Optional ByRef MatchFuzzy As Object, Optional ByRef MatchKashida As Object, Optional ByRef MatchDiacritics As Object, Optional ByRef MatchAlefHamza As Object, Optional ByRef MatchControl As Object, Optional ByRef IgnoreSpace As Object, Optional ByRef IgnorePunct As Object, Optional ByRef HanjaPhoneticHangul As Object) As Boolean" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(445)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FindText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="HighlightColor" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="TextColor" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchCase" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchWholeWord" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchPrefix" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchSuffix" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchPhrase" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchWildcards" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchSoundsLike" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchAllWordForms" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchByte" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchFuzzy" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchKashida" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchDiacritics" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchAlefHamza" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="MatchControl" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IgnoreSpace" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IgnorePunct" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="HanjaPhoneticHangul" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FindText">検索する文字列を指定します。書式だけを検索する場合は、空文字列 ("") を指定します。適切な文字コードを指定すると、特殊文字を検索できます。たとえば、"^p" は段落記号に対応し、"^t" はタブ記号に対応しています。</param>
+        <param name="HighlightColor">文字列用の蛍光ペンの色を指定します。 任意の RGB 色またはのいずれか、<see cref="T:Microsoft.Office.Interop.Word.WdColor" />の列挙値。</param>
+        <param name="TextColor">文字列の色を指定します。 任意の RGB 色またはのいずれか、<see cref="T:Microsoft.Office.Interop.Word.WdColor" />の列挙値。</param>
+        <param name="MatchCase">
+          <b>True</b> 検索文字列が大文字小文字を区別することを指定します。 [検索し、置換] ダイアログ ボックスで、[ 大文字小文字を区別] チェック ボックスに対応します。 </param>
+        <param name="MatchWholeWord">の <b>場合は true。</b> 長い単語の一部であるテキストではなく単語全体を検索、検索操作をします。 単語全体のみを検索する] チェック ボックスで、[ 検索し、置換] ダイアログ ボックスに対応します。 </param>
+        <param name="MatchPrefix">
+          <b>True</b> 検索文字列で始まる単語に一致します。 [検索し、置換] ダイアログ ボックスの [ 接頭辞に一致] チェック ボックスに対応します。 </param>
+        <param name="MatchSuffix">
+          <b>True</b> 検索文字列で終わる単語に一致します。  [検索し、置換] ダイアログ ボックスの [ 接尾辞に一致する] チェック ボックスに対応します。</param>
+        <param name="MatchPhrase">
+          <b>True</b> のすべての空白文字および単語の間の制御文字を無視します。</param>
+        <param name="MatchWildcards">
+          <b>True の</b> テキストを検索するには特殊な検索演算子であります。 [検索し、置換] ダイアログ ボックスで ワイルドカードを使用する] チェック ボックスに対応しています。 </param>
+        <param name="MatchSoundsLike">
+          <b>True を指定</b> して、検索対象と類似した単語、検索文字列にします。 [検索し、置換] ダイアログ ボックスで [ あいまい検索] チェック ボックスに対応します。 </param>
+        <param name="MatchAllWordForms">の <b>場合は true</b> 検索対象とし、検索文字列のすべてのフォーム (たとえば、「配置」を検索「座って」と"sat")。 [検索し、置換] ダイアログ ボックスで [ すべての単語の活用形を検索する] チェック ボックスに対応します。 </param>
+        <param name="MatchByte">
+          <b>True を指定</b> 検索時に全角と半角のアルファベットまたはカタカナを区別します。</param>
+        <param name="MatchFuzzy">
+          <b>True</b> 検索時に日本語の文字列のあいまい検索のオプションを使用します。読み取り/書き込み。 </param>
+        <param name="MatchKashida">
+          <b>True</b> の場合は検索操作では、アラビア語のドキュメントでの kashida のテキストを区別します。この引数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。 </param>
+        <param name="MatchDiacritics">
+          <b>True</b> の場合は検索操作では、右から左への言語の文書内には、発音区別符号が一致するテキストを区別します。この引数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。 </param>
+        <param name="MatchAlefHamza">
+          <b>True</b> の場合は検索操作では、alef hamza をアラビア語の文書内の一致するテキストを区別します。この引数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。 </param>
+        <param name="MatchControl">
+          <b>True</b> の場合は検索操作では、右から左への言語の文書で双方向制御文字が一致するテキストを区別します。この引数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。 </param>
+        <param name="IgnoreSpace">
+          <b>True</b> では、単語間の空白はすべて無視されます。 [検索し、置換] ダイアログ ボックスで [ 空白文字を無視] チェック ボックスに対応します。 </param>
+        <param name="IgnorePunct">
+          <b>True</b> は、単語間のすべての区切り記号を無視します。 [検索し、置換] ダイアログ ボックスの [ 句読点を無視] チェック ボックスに対応します。 </param>
+        <param name="HanjaPhoneticHangul">
+          <b>True</b> は、ハングルと漢字のふりがな文字を無視します。韓国語の言語のサポートがある場合にのみ利用できます。 </param>
+        <summary>検出されたすべての一致項目が強調表示され、 <b>ブール型</b> の一致が見つかったかどうかを表すを返します。</summary>
+        <returns>ブール型</returns>
+        <remarks>
+          <para>
+            <b>HitHighlight</b>メソッドは、Microsoft Office Word を電子メール エディターとして指定するときに、Microsoft Office Outlook 内で強調表示を検索するには、主に適用されます。 ただし、見つかった文字列を強調表示したい場合は、Word 内部の文書に対してこのメソッドを使用できます。 それ以外の場合を使用して、<see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />メソッドです。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnorePunct">
+      <MemberSignature Language="C#" Value="public bool IgnorePunct { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnorePunct" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.IgnorePunct" />
+      <MemberSignature Language="VB.NET" Value="Public Property IgnorePunct As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnorePunct { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>ブール</b> 検索操作で見つかった文字列の句読点を無視するかどうかを設定または返します。読み取り/書き込み。</summary>
+        <value>
+          <b>ブール型 (Boolean)</b>
+        </value>
+        <remarks>
+          <para>このプロパティは、[検索と置換] ダイアログ ボックスで [区切り記号文字の無視する] チェック ボックスに対応します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreSpace">
+      <MemberSignature Language="C#" Value="public bool IgnoreSpace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreSpace" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.IgnoreSpace" />
+      <MemberSignature Language="VB.NET" Value="Public Property IgnoreSpace As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreSpace { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(107)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(107)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(107)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>ブール</b> 検索操作で見つかった文字列の余分な空白文字を無視するかどうかを設定または返します。読み取り/書き込み。</summary>
+        <value>
+          <b>ブール型 (Boolean)</b>
+        </value>
+        <remarks>
+          <para>このプロパティは、[検索と置換] ダイアログ ボックスで無視する空白文字のチェック ボックスに対応します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LanguageID">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdLanguageID LanguageID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdLanguageID LanguageID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.LanguageID" />
+      <MemberSignature Language="VB.NET" Value="Public Property LanguageID As WdLanguageID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLanguageID LanguageID { Microsoft::Office::Interop::Word::WdLanguageID get(); void set(Microsoft::Office::Interop::Word::WdLanguageID value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(23)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(23)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(23)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定したオブジェクトの言語を設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>WdLanguageID</b>定数を上記のいくつかを選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できないがあります。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LanguageIDFarEast">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdLanguageID LanguageIDFarEast { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdLanguageID LanguageIDFarEast" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.LanguageIDFarEast" />
+      <MemberSignature Language="VB.NET" Value="Public Property LanguageIDFarEast As WdLanguageID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLanguageID LanguageIDFarEast { Microsoft::Office::Interop::Word::WdLanguageID get(); void set(Microsoft::Office::Interop::Word::WdLanguageID value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(29)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(29)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(29)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定したオブジェクトの東アジア言語を設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>これは、東アジア言語のバージョンの Microsoft Word で作成した文書に東アジア言語のテキストの言語を設定する推奨される方法です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LanguageIDOther">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdLanguageID LanguageIDOther { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdLanguageID LanguageIDOther" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.LanguageIDOther" />
+      <MemberSignature Language="VB.NET" Value="Public Property LanguageIDOther As WdLanguageID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLanguageID LanguageIDOther { Microsoft::Office::Interop::Word::WdLanguageID get(); void set(Microsoft::Office::Interop::Word::WdLanguageID value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(60)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(60)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(60)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定したオブジェクトの言語を設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchAlefHamza">
+      <MemberSignature Language="C#" Value="public bool MatchAlefHamza { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MatchAlefHamza" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.MatchAlefHamza" />
+      <MemberSignature Language="VB.NET" Value="Public Property MatchAlefHamza As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchAlefHamza { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>かどうかを検索操作では、アラビア語ドキュメント内の alef hamza が一致するテキストを区別します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>このプロパティは<b>True</b>を返す場合検索操作では、アラビア語の文書であると<b>false を指定</b>しない場合の alef hamza が一致するテキストを区別します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするには、プロパティの値を設定します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchAllWordForms">
+      <MemberSignature Language="C#" Value="public bool MatchAllWordForms { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MatchAllWordForms" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.MatchAllWordForms" />
+      <MemberSignature Language="VB.NET" Value="Public Property MatchAllWordForms As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchAllWordForms { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>(検索する文字列が"sit が場合たとえば、"sat"や「座って」が検索対象) の検索操作で検索するテキストのすべてのフォームがあるかどうかを判断します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>(検索する文字列が"sit が場合たとえば、"sat"や「座って」が検索対象) の検索の操作、および場合は<b>False</b>で検索するテキストのすべてのフォームがある場合、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
+          <para>使用、<see cref="P:Microsoft.Office.Interop.Word.Find.Text" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Word.Find" />オブジェクト、または<paramref name="FindText" />の引数を<see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />ドキュメント内を検索するテキストを指定します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchByte">
+      <MemberSignature Language="C#" Value="public bool MatchByte { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MatchByte" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.MatchByte" />
+      <MemberSignature Language="VB.NET" Value="Public Property MatchByte As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchByte { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(41)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(41)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(41)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>かどうかが区別の全角と半角のアルファベットまたはカタカナの検索時に決定します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>全角と半角のアルファベットまたはカタカナの時に区別、検索、および場合は<b>False</b>の場合、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするには、プロパティの値を設定します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchCase">
+      <MemberSignature Language="C#" Value="public bool MatchCase { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MatchCase" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.MatchCase" />
+      <MemberSignature Language="VB.NET" Value="Public Property MatchCase As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchCase { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>かどうか、検索が大文字小文字を区別を指定します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>このプロパティは、 <b>True の</b>場合、検索操作は、大文字小文字を区別し、場合は<b>False</b>を返します。既定値は、 <b>false を指定</b>します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
+          <para>を使用して、<see cref="P:Microsoft.Office.Interop.Word.Find.Text" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Word.Find" />オブジェクトまたはを使用して、<paramref name="FindText" />の引数を<see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />ドキュメント内に配置するテキストを指定します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchControl">
+      <MemberSignature Language="C#" Value="public bool MatchControl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MatchControl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.MatchControl" />
+      <MemberSignature Language="VB.NET" Value="Public Property MatchControl As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchControl { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>かどうかを検索操作では、右から左への言語の文書で双方向制御文字が一致するテキストを区別します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>このプロパティは<b>True</b>を返す場合検索操作では、右から左へ記述する言語のドキュメント、および<b>False</b>そうでない場合での双方向制御文字が一致するテキストを区別します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするには、プロパティの値を設定します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchDiacritics">
+      <MemberSignature Language="C#" Value="public bool MatchDiacritics { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MatchDiacritics" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.MatchDiacritics" />
+      <MemberSignature Language="VB.NET" Value="Public Property MatchDiacritics As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchDiacritics { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>かどうかを検索操作では、右から左への言語の文書内には、発音区別符号が一致するテキストを区別します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>このプロパティは<b>True</b>を返す場合検索操作では、右から左へ記述する言語のドキュメント、および<b>false を指定</b>しない場合に、発音区別符号が一致するテキストを区別します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするには、プロパティの値を設定します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchFuzzy">
+      <MemberSignature Language="C#" Value="public bool MatchFuzzy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MatchFuzzy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.MatchFuzzy" />
+      <MemberSignature Language="VB.NET" Value="Public Property MatchFuzzy As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchFuzzy { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(40)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(40)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(40)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Microsoft Word が、検索時に日本語テキストのあいまい検索のオプションを使用かどうか決定します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>このプロパティは、Word が、検索、および場合は<b>false の場合</b>の中に日本語テキストのあいまい検索のオプションを使用する場合に<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするには、プロパティの値を設定します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchKashida">
+      <MemberSignature Language="C#" Value="public bool MatchKashida { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MatchKashida" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.MatchKashida" />
+      <MemberSignature Language="VB.NET" Value="Public Property MatchKashida As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchKashida { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>かどうかを検索操作では、kashida が、アラビア語の文書のテキストを区別します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>このプロパティは<b>True</b>を返す場合検索操作では、アラビア語の文書であると<b>false を指定</b>しない場合の kashida のテキストを区別します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするには、プロパティの値を設定します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchPhrase">
+      <MemberSignature Language="C#" Value="public bool MatchPhrase { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MatchPhrase" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.MatchPhrase" />
+      <MemberSignature Language="VB.NET" Value="Public Property MatchPhrase As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchPhrase { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> のすべての空白文字および単語の間の制御文字を無視します。読み取り/書き込み。</summary>
+        <value>
+          <b>ブール型 (Boolean)</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchPrefix">
+      <MemberSignature Language="C#" Value="public bool MatchPrefix { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MatchPrefix" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.MatchPrefix" />
+      <MemberSignature Language="VB.NET" Value="Public Property MatchPrefix As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchPrefix { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> 検索文字列で始まる単語に一致します。読み取り/書き込み。</summary>
+        <value>
+          <b>ブール型 (Boolean)</b>
+        </value>
+        <remarks>
+          <para>このプロパティは、[検索と置換] ダイアログ ボックスで、一致するプレフィックス] チェック ボックスに対応します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchSoundsLike">
+      <MemberSignature Language="C#" Value="public bool MatchSoundsLike { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MatchSoundsLike" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.MatchSoundsLike" />
+      <MemberSignature Language="VB.NET" Value="Public Property MatchSoundsLike As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchSoundsLike { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>かどうか、検索対象を検索する文字列に類似した単語が返されますを決定します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>そうでない場合、検索操作、および<b>False</b>で検索する文字列に類似した単語が返された場合、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
+          <para>使用、<see cref="P:Microsoft.Office.Interop.Word.Find.Text" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Word.Find" />オブジェクト、または<paramref name="FindText" />の引数を<see cref="M:Microsoft.Office.Interop.Word.Find.ExecuteOld(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />ドキュメント内に配置するテキストを指定します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchSuffix">
+      <MemberSignature Language="C#" Value="public bool MatchSuffix { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MatchSuffix" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.MatchSuffix" />
+      <MemberSignature Language="VB.NET" Value="Public Property MatchSuffix As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchSuffix { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(106)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(106)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(106)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> に設定すると、検索文字列で終わる単語が検出されます。値の取得および設定が可能です。</summary>
+        <value>
+          <b>ブール型 (Boolean)</b>
+        </value>
+        <remarks>
+          <para>このプロパティは、[検索と置換] ダイアログ ボックスで、一致するサフィックス] チェック ボックスに対応します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchWholeWord">
+      <MemberSignature Language="C#" Value="public bool MatchWholeWord { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MatchWholeWord" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.MatchWholeWord" />
+      <MemberSignature Language="VB.NET" Value="Public Property MatchWholeWord As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchWholeWord { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>検索単語や長い単語の一部であるテキストではなくのみ対象を決定します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>単語全体と、大規模な単語の場合は<b>False</b>に含まれているテキストではなくのみを検索対象の場合、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
+          <para>使用、<see cref="P:Microsoft.Office.Interop.Word.Find.Text" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Word.Find" />オブジェクト、または<paramref name="FindText" />の引数を<see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />ドキュメント内に配置するテキストを指定します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchWildcards">
+      <MemberSignature Language="C#" Value="public bool MatchWildcards { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MatchWildcards" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.MatchWildcards" />
+      <MemberSignature Language="VB.NET" Value="Public Property MatchWildcards As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchWildcards { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>検索する文字列にワイルドカードが含まれているかどうかを決定します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>ワイルドカード、および<b>false を指定</b>しない場合、検索するテキストが含まれる場合、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
+          <para>、[検索と置換] ダイアログ ボックス ([編集] メニュー) でワイルドカードを使用する] チェック ボックスに対応します</para>。
+          <para>を使用して、<see cref="P:Microsoft.Office.Interop.Word.Find.Text" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Word.Find" />オブジェクトまたはを使用して、<paramref name="FindText" />の引数を<see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />ドキュメント内に配置するテキストを指定します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoProofing">
+      <MemberSignature Language="C#" Value="public int NoProofing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NoProofing" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.NoProofing" />
+      <MemberSignature Language="VB.NET" Value="Public Property NoProofing As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NoProofing { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(34)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(34)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(34)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Microsoft Word を検索またはスペル チェッカーおよび文法チェッカーが無視した文字列を置換するかどうかを決定します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>検索または置換、スペル チェッカーおよび文法チェッカーが無視した文字列と<b>false の場合</b>そうでない場合がある場合は<b>True</b>を返します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParagraphFormat">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ParagraphFormat ParagraphFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ParagraphFormat ParagraphFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.ParagraphFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParagraphFormat As ParagraphFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ParagraphFormat ^ ParagraphFormat { Microsoft::Office::Interop::Word::ParagraphFormat ^ get(); void set(Microsoft::Office::Interop::Word::ParagraphFormat ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ParagraphFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>値を取得または設定、 <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> 、指定範囲、選択範囲、検索操作または置換操作、またはスタイルの段落設定を表すオブジェクト。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたオブジェクトの親オブジェクトを表すオブジェクトを取得します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Replacement">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Replacement Replacement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Replacement Replacement" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.Replacement" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Replacement As Replacement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Replacement ^ Replacement { Microsoft::Office::Interop::Word::Replacement ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(25)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(25)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Replacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Replacement" /> 、置換操作の条件を格納しているオブジェクト。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAllFuzzyOptions">
+      <MemberSignature Language="C#" Value="public void SetAllFuzzyOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetAllFuzzyOptions() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Find.SetAllFuzzyOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAllFuzzyOptions ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAllFuzzyOptions();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(32)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>日本語の文字列に関連付けられているあいまい検索のオプションをすべて有効にします。</summary>
+        <remarks>
+          <para>このメソッドは、 <b>true を指定</b>する次のプロパティを設定します。</para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyAY" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyBV" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyByte" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyCase" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyDash" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyDZ" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyHF" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyHiragana" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyIterationMark" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyKanji" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyKiKu" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyOldKana" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyProlongedSoundMark" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyPunctuation" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzySmallKana" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzySpace" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyTC" />
+          </para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyZJ" />
+          </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Style">
+      <MemberSignature Language="C#" Value="public object Style { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Style" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.Style" />
+      <MemberSignature Language="VB.NET" Value="Public Property Style As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Style { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定したオブジェクトのスタイルを設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>このプロパティを設定し、整数値で、スタイルのローカル名を指定して、<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />の定数、またはスタイルを表すオブジェクト</para>。
+          <para>1 つ以上のスタイルを含む範囲のスタイルを取得すると、最初の文字または段落のスタイルのみが返されます</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>検索または指定範囲または選択範囲を指定して置換するテキストを設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>Text</b>プロパティは、選択範囲または指定範囲のプレーン テキストの書式なしのテキストを返します。このプロパティを設定するときは、指定範囲または選択範囲のテキストが置き換えられます。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Wrap">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdFindWrap Wrap { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdFindWrap Wrap" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Find.Wrap" />
+      <MemberSignature Language="VB.NET" Value="Public Property Wrap As WdFindWrap" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdFindWrap Wrap { Microsoft::Office::Interop::Word::WdFindWrap get(); void set(Microsoft::Office::Interop::Word::WdFindWrap value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(27)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(27)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(27)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdFindWrap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得または設定、文書の先頭以外の場所から検索を開始し、ドキュメントの末尾に到達した場合の動作を設定 (またはその逆の場合は<see cref="P:Microsoft.Office.Interop.Word.Find.Forward" />が<b>False</b>に設定)、または、選択範囲または指定範囲内の検索文字列が見つからない場合。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" />定数は、次のいずれか:</para>
+          <para>選択範囲または指定範囲、Microsoft Word を検索した後、 
+            <b>wdFindAsk</b>には、ドキュメントの残りの部分を検索するかどうかを確認するメッセージが表示されます</para>。
+          <para><b>wdFindContinue</b>検索範囲の前後に達すると、検索操作が続行されます</para>。
+          <para><b>wdFindStop</b>検索操作は、先頭または検索範囲の末尾に達した場合を終了します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
