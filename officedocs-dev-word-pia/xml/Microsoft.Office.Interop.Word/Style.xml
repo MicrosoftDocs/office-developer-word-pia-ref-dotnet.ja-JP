@@ -1,0 +1,1529 @@
+<Type Name="Style" FullName="Microsoft.Office.Interop.Word.Style">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="f00a0a687c5ad4964390a068d041ec8490b3eecf" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20671846" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Style" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Style" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Style" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Style" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Style" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002092C-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="ca8ec-101">1 つの組み込みスタイルまたはユーザー定義スタイルを表します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="ca8ec-101">Represents a single built-in or user-defined style.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="ca8ec-102">
+        <para>
+          <b>Style</b>オブジェクトには、<b>スタイル</b>オブジェクトのプロパティとしてスタイルの属性 (フォント、フォント スタイル、段落の間隔、およびなど) が含まれています。<b>Style</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.Styles" />コレクションです。<b>スタイル</b>コレクションには、指定した文書内のすべてのスタイルが含まれます</para>。
+      <para><b>スタイル</b>を使用 (<paramref name="index" />)、<paramref name="index" />スタイルの名前を<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />定数、またはインデックス番号を 1 つの<b>スタイル</b>オブジェクトを取得します。スペルとスタイル名は必ずしも、大文字と小文字の文字間隔を正確に一致する必要があります</para>。
+      <para>スタイルのインデックス番号は、スタイル名のアルファベット順に並べ替えられたリスト内のスタイルの位置を表します</para>。
+      <para>範囲、段落、または複数の段落にスタイルを適用するには、ユーザー定義または組み込みのスタイル名を [<b>スタイル</b>] プロパティを設定します</para>。使用の
+      <para>、<see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" />文書とテンプレート間でスタイルをコピーします。使用して、<see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" />に添付されているテンプレートのスタイル定義に一致するように作業中の文書内のスタイルを更新する方法です。使用して、<see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" />メソッドを文書としてテンプレートを開き、テンプレートのスタイルを変更することができます</para>。
+      <para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="ca8ec-102">
+          <para>The <b>Style</b> object includes style attributes (font, font style, paragraph spacing, and so on) as properties of the <b>Style</b> object. The <b>Style</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.Styles" /> collection. The <b>Styles</b> collection includes all the styles in the specified document.</para>
+          <para>Use <b>Styles</b>(<paramref name="index" />), where <paramref name="index" /> is the style name, a <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constant or index number, to return a single <b>Style</b> object. You must exactly match the spelling and spacing of the style name, but not necessarily its capitalization.</para>
+          <para>The style index number represents the position of the style in the alphabetically sorted list of style names.</para>
+          <para>To apply a style to a range, paragraph, or multiple paragraphs, set the <b>Style</b> property to a user-defined or built-in style name.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" /> method to copy styles between documents and templates. Use the <see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" /> method to update the styles in the active document to match the style definitions in the attached template. Use the <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> method to open a template as a document so that you can modify the template styles.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-103">返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-103">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutomaticallyUpdate">
+      <MemberSignature Language="C#" Value="public bool AutomaticallyUpdate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutomaticallyUpdate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.AutomaticallyUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutomaticallyUpdate As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutomaticallyUpdate { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-104">
+            <b>条件を満たす</b> 場合は、スタイルが自動的に再定義に基づいて、選択します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-104">
+              <b>True</b> if the style is automatically redefined based on the selection.</span>
+          </span>
+          <span data-ttu-id="ca8ec-105">
+            <b>False</b>場合は、Microsoft Word は、選択した項目に基づいてスタイルを再定義する前に確認メッセージが表示されます。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-105">
+              <b>False</b> if Microsoft Word prompts for confirmation before redefining the style based on the selection.</span>
+          </span>
+          <span data-ttu-id="ca8ec-106">ブール型 ( <b>Boolean</b>) の値を使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-106">Read/write <b>Boolean</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ca8ec-107">
+            <para>手動書式設定が異なるが、同じスタイルが選択範囲に適用された場合、スタイルを再定義できます。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-107">
+              <para>A style can be redefined when it is applied to a selection that has the same style but different manual formatting.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseStyle">
+      <MemberSignature Language="C#" Value="public object BaseStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object BaseStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.BaseStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BaseStyle As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ BaseStyle { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-108">既存のスタイルのベースになることができます別のスタイルの書式を設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-108">Returns or sets an existing style on which you can base the formatting of another style.</span>
+          </span>
+          <span data-ttu-id="ca8ec-109">読み取り/書き込みの<b>オブジェクト</b>です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-109">Read/write <b>Object</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ca8ec-110">
+            <para>このプロパティを設定、基本スタイルのローカル名を指定する正の整数または<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />の定数、または基本のスタイルを表すオブジェクト。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-110">
+              <para>To set this property, specify either the local name of the base style, an integer or a <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constant, or an object that represents the base style.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Borders">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Borders Borders { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Borders Borders" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Borders" />
+      <MemberSignature Language="VB.NET" Value="Public Property Borders As Borders" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Borders ^ Borders { Microsoft::Office::Interop::Word::Borders ^ get(); void set(Microsoft::Office::Interop::Word::Borders ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-111">返します、<see cref="T:Microsoft.Office.Interop.Word.Borders" />を指定したオブジェクトのすべての罫線を表すコレクション。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-111">Returns a <see cref="T:Microsoft.Office.Interop.Word.Borders" /> collection that represents all the borders for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuiltIn">
+      <MemberSignature Language="C#" Value="public bool BuiltIn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BuiltIn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.BuiltIn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuiltIn As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BuiltIn { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-112">
+            <b>True の</b>場合は、指定したオブジェクトは、組み込みスタイルまたは図表番号のラベルを Microsoft word のいずれか。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-112">
+              <b>True</b> if the specified object is one of the built-in styles or caption labels in Microsoft Word.</span>
+          </span>
+          <span data-ttu-id="ca8ec-113">読み取り専用の <b>ブール値</b> です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-113">Read-only <b>Boolean</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ca8ec-114">
+            <para>すべての言語に組み込みのスタイルを指定するにを使用して、<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />定数の言語バージョンの Word のスタイル名を使用して言語です。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-114">
+              <para>You can specify built-in styles across all languages by using the <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constants or within a language by using the style name for the language version of Microsoft Word.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-115">指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-115">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+          <span data-ttu-id="ca8ec-116">整数型 ( <b>Integer</b>) の値を使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-116">Read-only <b>Integer</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ca8ec-117">
+            <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
+          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-117">
+              <para>If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD." This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Style.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-118">指定したオブジェクトを削除します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-118">Deletes the specified object.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Description" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-p105">指定されたスタイルの説明を取得します。値の取得のみ可能で、文字列型 (<b>String</b>) の値を使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-p105">Returns the description of the specified style. Read-only <b>String</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ca8ec-121">
+            <para>たとえば、[見出し 2] スタイルの一般的な説明があります"標準 + フォント: Arial、太字、斜体、3 pt、KeepWithNext、12 Pt、12 pt レベル 2 です」。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-121">
+              <para>For example, a typical description for the Heading 2 style might be "Normal + Font: Arial, 12 pt, Bold, Italic, Space Before 12 pt After 3 pt, KeepWithNext, Level 2."</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Font">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Font Font { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Font Font" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Font" />
+      <MemberSignature Language="VB.NET" Value="Public Property Font As Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Font ^ Font { Microsoft::Office::Interop::Word::Font ^ get(); void set(Microsoft::Office::Interop::Word::Font ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-122">値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.Font" />を指定したオブジェクトの文字書式を表すオブジェクト。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-122">Returns or sets a <see cref="T:Microsoft.Office.Interop.Word.Font" /> object that represents the character formatting of the specified object.</span>
+          </span>
+          <span data-ttu-id="ca8ec-123">読み取り/書き込みの<b>フォント</b>です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-123">Read/write <b>Font</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ca8ec-124">
+            <para>このプロパティを設定するには、 <b>Font</b>オブジェクトを表すオブジェクト式を指定します。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-124">
+              <para>To set this property, specify an expression that returns a <b>Font</b> object.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Frame">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Frame Frame { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Frame Frame" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Frame" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Frame As Frame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Frame ^ Frame { Microsoft::Office::Interop::Word::Frame ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Frame</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-125">返します、 <see cref="T:Microsoft.Office.Interop.Word.Frame" /> 、フレームを指定したスタイルの書式設定を表すオブジェクト。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-125">Returns a <see cref="T:Microsoft.Office.Interop.Word.Frame" /> object that represents the frame formatting for the specified style.</span>
+          </span>
+          <span data-ttu-id="ca8ec-126">値の取得のみ可能です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-126">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hidden">
+      <MemberSignature Language="C#" Value="public bool Hidden { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Hidden" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Hidden" />
+      <MemberSignature Language="VB.NET" Value="Public Property Hidden As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Hidden { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-127">内部使用のため予約済みです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-127">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InUse">
+      <MemberSignature Language="C#" Value="public bool InUse { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InUse" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.InUse" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InUse As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InUse { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-p108">
+            <b>True</b> 指定したスタイルが変更されていたり、文書または文書内で作成された新しいスタイルの適用は、組み込みスタイルの場合です。読み取り専用の <b>ブール値</b> です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-p108">
+              <b>True</b> if the specified style is a built-in style that has been modified or applied in the document or a new style that has been created in the document. Read-only <b>Boolean</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ca8ec-130">
+            <para>このプロパティは、スタイルが文書内の任意のテキストに現在適用されているかどうかには示しません。たとえば、スタイルが設定されているテキストが削除された場合、スタイルの<b>InUse</b>プロパティは<b>True</b>のままです。ドキュメントで使用されていることがない組み込みスタイル、このプロパティは<b>False</b>を返します。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-130">
+              <para>This property doesn't necessarily indicate whether the style is currently applied to any text in the document. For instance, if text that's been formatted with a style is deleted, the <b>InUse</b> property of the style remains <b>True</b>. For built-in styles that have never been used in the document, this property returns <b>False</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LanguageID">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdLanguageID LanguageID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdLanguageID LanguageID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.LanguageID" />
+      <MemberSignature Language="VB.NET" Value="Public Property LanguageID As WdLanguageID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLanguageID LanguageID { Microsoft::Office::Interop::Word::WdLanguageID get(); void set(Microsoft::Office::Interop::Word::WdLanguageID value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-131">指定したオブジェクトの言語を設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-131">Returns or sets the language for the specified object.</span>
+          </span>
+          <span data-ttu-id="ca8ec-132">値の取得および設定が可能です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-132">Read/write.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ca8ec-133">
+            <para>いずれかを指定することができます<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数</para>。
+          <para>が選択またはインストールされている言語サポート (たとえば、日本語) によっては使用ができない<b>WdLanguageID</b>定数の中があります</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-133">
+              <para>Can be any <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constant.</para>
+              <para>Some of the <b>WdLanguageID</b> constants may not be available to you, depending on the language support (U.S. English, for example) that you’ve selected or installed.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LanguageIDFarEast">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdLanguageID LanguageIDFarEast { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdLanguageID LanguageIDFarEast" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.LanguageIDFarEast" />
+      <MemberSignature Language="VB.NET" Value="Public Property LanguageIDFarEast As WdLanguageID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLanguageID LanguageIDFarEast { Microsoft::Office::Interop::Word::WdLanguageID get(); void set(Microsoft::Office::Interop::Word::WdLanguageID value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-134">指定したオブジェクトの東アジア言語を設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-134">Returns or sets an East Asian language for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ca8ec-135">
+            <para>いずれかを指定することができます<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数</para>。
+          <para>これは、東アジア言語のバージョンの Microsoft Word で作成した文書に東アジア言語のテキストの言語を設定することをお勧めします</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-135">
+              <para>Can be any <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constant.</para>
+              <para>This is the recommended way to return or set the language of East Asian text in a document created in an East Asian version of Microsoft Word.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Linked">
+      <MemberSignature Language="C#" Value="public bool Linked { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Linked" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Linked" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Linked As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Linked { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(26)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(26)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-p110">スタイルが段落書式と文字書式の両方に使用できるリンク スタイルであるかどうかを表すブール型 (<b>Boolean</b>) の値を取得します。値の取得のみ可能です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-p110">Returns or sets a <b>Boolean</b> that represents whether a style is a linked style that can be used for both paragraph and character formatting. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="ca8ec-138">
+            <b>ブール型 (Boolean)</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-138">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="ca8ec-139">
+            <para>
+              <b>True</b>では、スタイルの変更] ダイアログ ボックスで、スタイルの種類] オプションが [リンク (段落と文字)] に設定されていることを示します。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-139">
+              <para>
+                <b>True</b> indicates that the Style Type option in the Modify Style dialog box is set to "Linked (paragraph and character)".</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LinkStyle">
+      <MemberSignature Language="C#" Value="public object LinkStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object LinkStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.LinkStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property LinkStyle As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ LinkStyle { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-140">段落と文字スタイル間のリンクを表す<b>オブジェクト</b>を取得または設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-140">Sets or returns an <b>Object</b> that represents a link between a paragraph and a character style.</span>
+          </span>
+          <span data-ttu-id="ca8ec-141">値の取得および設定が可能です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-141">Read/write.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ca8ec-142">
+            <para>文字スタイルと段落スタイルをリンクすると、2 つのスタイルは、同じ文字の書式設定にかかります。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-142">
+              <para>When a character style and a paragraph style are linked, the two styles take on the same character formatting.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LinkToListTemplate">
+      <MemberSignature Language="C#" Value="public void LinkToListTemplate (Microsoft.Office.Interop.Word.ListTemplate ListTemplate, ref object ListLevelNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LinkToListTemplate([in]class Microsoft.Office.Interop.Word.ListTemplate ListTemplate, [in]object&amp; ListLevelNumber) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Style.LinkToListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ListTemplate" Type="Microsoft.Office.Interop.Word.ListTemplate" />
+        <Parameter Name="ListLevelNumber" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ListTemplate">
+          <span data-ttu-id="ca8ec-143">必要な<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />オブジェクトです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-143">Required <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object.</span>
+          </span>
+          <span data-ttu-id="ca8ec-144">スタイルをリンクする箇条書きテンプレートを指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-144">The list template that the style is to be linked to.</span>
+          </span>
+        </param>
+        <param name="ListLevelNumber">
+          <span data-ttu-id="ca8ec-145">省略可能な<b>オブジェクト</b>です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-145">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="ca8ec-146">スタイルをリンクする箇条書きのレベルに対応する整数を指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-146">An integer corresponding to the list level that the style is to be linked to.</span>
+          </span>
+          <span data-ttu-id="ca8ec-147">この引数を省略すると、スタイルのレベルが使用されます。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-147">If this argument is omitted, then the level of the style is used.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="ca8ec-148">指定されたスタイルを箇条書きテンプレートにリンクし、そのスタイル書式を箇条書きに適用できるようにします。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-148">Links the specified style to a list template so that the style's formatting can be applied to lists.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListLevelNumber">
+      <MemberSignature Language="C#" Value="public int ListLevelNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ListLevelNumber" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.ListLevelNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListLevelNumber As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ListLevelNumber { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-149">指定したスタイルの箇条書きのレベルを返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-149">Returns the list level for the specified style.</span>
+          </span>
+          <span data-ttu-id="ca8ec-150">整数型 ( <b>Integer</b>) の値を使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-150">Read-only <b>Integer</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListTemplate">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ListTemplate ListTemplate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ListTemplate ListTemplate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.ListTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListTemplate As ListTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ListTemplate ^ ListTemplate { Microsoft::Office::Interop::Word::ListTemplate ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ListTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-151">返します、<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />を指定した書式設定の一覧を表すオブジェクト<see cref="T:Microsoft.Office.Interop.Word.Style" />オブジェクトです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-151">Returns a <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object that represents the list formatting for the specified <see cref="T:Microsoft.Office.Interop.Word.Style" /> object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ca8ec-152">
+            <para>A] ボックスの一覧のテンプレートには、特定のリストを定義するすべての書式が含まれています。7 つの書式 ([なし] を除く) の行頭文字のタブの各と各段落番号ダイアログ ボックス ([書式] メニュー) のリスト テンプレートに対応しています。ドキュメント テンプレートでは、リスト テンプレートのコレクションを含めることもできます</para>。
+          <para><b>ListFormat</b>オブジェクトの範囲内の最初の段落はリストとしてフォーマットされていない場合、 <b>ListTemplate</b><b>Nothing</b>を取得します</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-152">
+              <para>A list template includes all the formatting that defines a particular list. Each of the seven formats (excluding None) found on each of the tabs in the Bullets and Numbering dialog box (Format menu) corresponds to a list template. Documents and templates can also contain collections of list templates.</para>
+              <para>If the first paragraph in the range for the <b>ListFormat</b> object is not formatted as a list, the <b>ListTemplate</b> property returns <b>Nothing</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locked">
+      <MemberSignature Language="C#" Value="public bool Locked { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Locked" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Locked" />
+      <MemberSignature Language="VB.NET" Value="Public Property Locked As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Locked { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-153">
+            <b>True</b>指定されたスタイルがロックされている場合です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-153">
+              <b>True</b> if the specified style is locked.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameLocal">
+      <MemberSignature Language="C#" Value="public string this { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NameLocal" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.NameLocal" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property NameLocal As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-p115">ユーザーの言語で組み込みスタイルの名前を返します。読み取りまたは書き込み <b>文字列</b> です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-p115">Returns the name of a built-in style in the language of the user. Read/write <b>String</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ca8ec-156">
+            <para>このプロパティを設定またはユーザー定義のスタイルの名前を変更、組み込みスタイルにエイリアスを追加します。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-156">
+              <para>Setting this property renames a user-defined style or adds an alias to a built-in style.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextParagraphStyle">
+      <MemberSignature Language="C#" Value="public object NextParagraphStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object NextParagraphStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.NextParagraphStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property NextParagraphStyle As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ NextParagraphStyle { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-157">段落の書式スタイルを指定した後で挿入された新しい段落に自動的に適用するスタイルを設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-157">Returns or sets the style to be applied automatically to a new paragraph inserted after a paragraph formatted with the specified style.</span>
+          </span>
+          <span data-ttu-id="ca8ec-158">読み取り/書き込みの<b>オブジェクト</b>です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-158">Read/write <b>Object</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ca8ec-159">
+            <para>このプロパティを設定、次のスタイルのローカル名を指定する正の整数または<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />の定数、または次のスタイルを表すオブジェクト。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-159">
+              <para>To set this property, specify either the local name of the next style, an integer or a <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constant, or an object that represents the next style.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoProofing">
+      <MemberSignature Language="C#" Value="public int NoProofing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NoProofing" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.NoProofing" />
+      <MemberSignature Language="VB.NET" Value="Public Property NoProofing As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NoProofing { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-160">
+            <b>True の</b>場合、スペル チェッカーおよび文法チェッカーは、テキストを無視はこのスタイルで書式設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-160">
+              <b>True</b> if the spelling and grammar checker ignores text formatted with this style.</span>
+          </span>
+          <span data-ttu-id="ca8ec-161">値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-161">Read/write <b>Integer</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoSpaceBetweenParagraphsOfSameStyle">
+      <MemberSignature Language="C#" Value="public bool NoSpaceBetweenParagraphsOfSameStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool NoSpaceBetweenParagraphsOfSameStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.NoSpaceBetweenParagraphsOfSameStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property NoSpaceBetweenParagraphsOfSameStyle As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NoSpaceBetweenParagraphsOfSameStyle { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-p118">を <b>true</b> に同じスタイルが設定されている段落間の間隔を削除します。読み取り/書き込み <b>ブール値</b> です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-p118">
+              <b>True</b> for Microsoft Word to remove spacing between paragraphs that are formatted using the same style. Read/write <b>Boolean</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParagraphFormat">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ParagraphFormat ParagraphFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ParagraphFormat ParagraphFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.ParagraphFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParagraphFormat As ParagraphFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ParagraphFormat ^ ParagraphFormat { Microsoft::Office::Interop::Word::ParagraphFormat ^ get(); void set(Microsoft::Office::Interop::Word::ParagraphFormat ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ParagraphFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-164">値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />指定されたスタイルの段落設定を表すオブジェクト。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-164">Returns or sets a <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> object that represents the paragraph settings for the specified style.</span>
+          </span>
+          <span data-ttu-id="ca8ec-165">値の取得および設定が可能です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-165">Read/write.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-166">指定されたオブジェクトの親オブジェクトを表すオブジェクトを取得します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-166">Returns an object that represents the parent object of the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Priority">
+      <MemberSignature Language="C#" Value="public int Priority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Priority" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Priority" />
+      <MemberSignature Language="VB.NET" Value="Public Property Priority As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Priority { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(23)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(23)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(23)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-167">[スタイル] 作業ウィンドウのスタイルの並べ替えの優先順位を表す<b>整数値</b>を設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-167">Returns or sets a <b>Integer</b> that represents the priority for sorting styles in the Styles task pane.</span>
+          </span>
+          <span data-ttu-id="ca8ec-168">値の取得および設定が可能です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-168">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="ca8ec-169">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-169">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuickStyle">
+      <MemberSignature Language="C#" Value="public bool QuickStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool QuickStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.QuickStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property QuickStyle As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool QuickStyle { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(25)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(25)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(25)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-p121">取得または設定する <b>ブール値</b> スタイルが使用可能なクイック スタイルに対応しているかどうかを表す。読み取り/書き込み。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-p121">Returns or sets a <b>Boolean</b> that represents whether the style corresponds to an available quick style. Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="ca8ec-172">
+            <b>ブール型 (Boolean)</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-172">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Shading">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shading Shading { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Shading Shading" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Shading" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shading As Shading" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shading ^ Shading { Microsoft::Office::Interop::Word::Shading ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-173">返します、 <see cref="T:Microsoft.Office.Interop.Word.Shading" /> 、指定したオブジェクトの網かけ書式を参照するオブジェクト。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-173">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shading" /> object that refers to the shading formatting for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Table">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.TableStyle Table { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.TableStyle Table" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Table" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Table As TableStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TableStyle ^ Table { Microsoft::Office::Interop::Word::TableStyle ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(21)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(21)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.TableStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-174">返します、<see cref="T:Microsoft.Office.Interop.Word.TableStyle" />の表スタイルを使用してテーブルに適用できるプロパティを表すオブジェクト。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-174">Returns a <see cref="T:Microsoft.Office.Interop.Word.TableStyle" /> object representing properties that can be applied to a table using a table style.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdStyleType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdStyleType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdStyleType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdStyleType Type { Microsoft::Office::Interop::Word::WdStyleType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdStyleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-175">スタイルの種類を取得します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-175">Returns the style type.</span>
+          </span>
+          <span data-ttu-id="ca8ec-176">読み取り専用<see cref="T:Microsoft.Office.Interop.Word.Style" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-176">Read-only <see cref="T:Microsoft.Office.Interop.Word.Style" />.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ca8ec-177">
+            <para>
+              <b>WdStyleType</b>には、以下の定数のいずれかを指定できます:</para>
+            <para>
+              <b>wdStyleTypeCharacter</b>
+            </para>
+            <para>
+              <b>wdStyleTypeList</b>
+            </para>
+            <para>
+              <b>wdStyleTypeParagraph</b>
+            </para>
+            <para>
+              <b>wdStyleTypeTable</b>
+            </para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-177">
+              <para>
+                <b>WdStyleType</b> can be one of the following constants:</para>
+              <para>
+                <b>wdStyleTypeCharacter</b>
+              </para>
+              <para>
+                <b>wdStyleTypeList</b>
+              </para>
+              <para>
+                <b>wdStyleTypeParagraph</b>
+              </para>
+              <para>
+                <b>wdStyleTypeTable</b>
+              </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnhideWhenUsed">
+      <MemberSignature Language="C#" Value="public bool UnhideWhenUsed { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UnhideWhenUsed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.UnhideWhenUsed" />
+      <MemberSignature Language="VB.NET" Value="Public Property UnhideWhenUsed As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UnhideWhenUsed { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-178">
+            <b>True</b>をオフに設定、<see cref="P:Microsoft.Office.Interop.Word.Style.Hidden" />プロパティがこのスタイルを使用するとします。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-178">Set <b>True</b> to clear the <see cref="P:Microsoft.Office.Interop.Word.Style.Hidden" /> property when this style is used.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="ca8ec-179">ブール型</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-179">Boolean</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visibility">
+      <MemberSignature Language="C#" Value="public bool Visibility { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Visibility" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Visibility" />
+      <MemberSignature Language="VB.NET" Value="Public Property Visibility As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visibility { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca8ec-180">内部使用のために予約されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca8ec-180">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

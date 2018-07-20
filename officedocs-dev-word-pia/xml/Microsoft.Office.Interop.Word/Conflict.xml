@@ -1,0 +1,416 @@
+<Type Name="Conflict" FullName="Microsoft.Office.Interop.Word.Conflict">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="0b87b76ff93cbb3eea67868bd57964e4eb8e0287" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20671764" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Conflict" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Conflict" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Conflict" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Conflict" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Conflict" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("6215E4B1-545A-406E-9824-0A5B5AC8AD21")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="d4ba5-101">共同編集された文書内の競合する編集を表します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="d4ba5-101">Represents a conflicting edit in a co-authored document.</span>
+      </span>
+      <span data-ttu-id="d4ba5-102">種類、<see cref="T:Microsoft.Office.Interop.Word.Conflict" />で指定されたオブジェクト、<see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" />列挙体です。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="d4ba5-102">The type of a <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> object is specified by the <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> enumeration.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="d4ba5-103">
+        <para>通常と、ドキュメントを共同編集が有効になっていると同時に編集すると、だけで 1 つの共同作成者が特定の範囲を同時に編集することができます。Microsoft Word 2010 に自動的にロックを設定範囲を対象に共同作成者は、他の共同作成者は、同時に同じ範囲を編集することはできませんので、編集を開始する時点です</para>。
+      <para>A の競合は、すべて 1 つの共同執筆の範囲を排他的にロックを取得する前に、共同編集が有効である文書内の特定の範囲が同時に編集するときに発生します。競合の状況で表示されます各共同作成者に、範囲の排他的ロックを持つことですが、そのロックは、他の共同作成者には伝達されません。共同作成者、サーバーに保存する最初は表示されません、競合ドキュメントのバージョンが確立されているバージョンになりますので。最初の共同作成者が保存後に保存しようとする共同の作成者は、競合が発生します。同じ範囲の異なるバージョン間で競合している</para>。
+      <para>などの 1 つの共同執筆、文、「インターネット」読み取り"、高速な赤い fox"、および他の共同作成者の編集を同時に編集、「迅速なホワイト fox」と両方の編集が発生する前にいずれかの共同作成者に排他ロックを取得する文段落では、競合が発生します。この例では、「高速赤」と「迅速なホワイト」は、Word 2010 で調整できることはできません。最初の共同執筆、ドキュメントのバージョンをサーバーに保存するが、競合が発生しません。次の共同作成者がドキュメントのバージョンをサーバーに保存しようとすると、競合が発生しを受け入れるか、変更を拒否することによって競合を解決するのには、共同作成者を選択する必要があります</para>。
+      <para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="d4ba5-103">
+          <para>Normally, when a document with co-authoring enabled is simultaneously edited, only one co-author can edit a particular range at one time. Microsoft Word 2010 automatically places a lock on the range the moment the co-author begins editing so that other co-authors cannot edit the same range at the same time.</para>
+          <para>A conflict can occur when a particular range in a document with co-authoring enabled is simultaneously edited before any single co-author obtains an exclusive lock on the range. In a conflict situation, it appears to each co-author that they have an exclusive lock on the range, but their lock is not communicated to the other co-authors. The co-author that saves to the server first will not see the conflict because their version of the document becomes the established version. The co-authors that attempt to save after the first co-author has saved encounter a conflict. The conflict is between the differing versions of the same range.</para>
+          <para>For example, if one co-author edits the sentence, "The quick brown fox" to read "The fast red fox", and another co-author simultaneously edits the sentence to read, "The speedy white fox" and both edits occur before either co-author obtains an exclusive lock on the paragraph, a conflict occurs. In this case, "fast red" and "speedy white" cannot be reconciled by Word 2010. The first co-author to save their version of the document to the server does not encounter a conflict. When the next co-author attempts to save their version of the document to the server, a conflict occurs and the co-author must choose to resolve the conflict by either accepting or rejecting the changes.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Accept">
+      <MemberSignature Language="C#" Value="public void Accept ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Accept() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Conflict.Accept" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Accept ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Accept();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="d4ba5-104">ユーザーが指定した競合する変更を受け入れて、競合を解消し、変更を文書のサーバー コピーに反映します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d4ba5-104">Accepts the user specified conflict change, removes the conflict, and merges the change into the server copy of the document.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="d4ba5-105">
+            <para>このメソッドは、ユーザーのバージョンの競合の変更を受け入れるし、サーバー バージョンの競合の変更を元に戻します。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d4ba5-105">
+              <para>This method accepts the user version of a conflict change and rejects the server version of the conflict change.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d4ba5-106">取得、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d4ba5-106">Gets an <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d4ba5-107">
+            <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d4ba5-107">An <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="d4ba5-108">
+            <para>読み取り専用です。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d4ba5-108">
+              <para>Read-only.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d4ba5-109">指定したオブジェクトが作成されたアプリケーションを示す 32 ビット整数を取得します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d4ba5-109">Gets a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d4ba5-110">指定したオブジェクトが作成されたアプリケーションを示す 32 ビット整数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d4ba5-110">A 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="d4ba5-111">
+            <para>読み取り専用<b>long</b>です。オブジェクトは、Microsoft Word で作成されている場合、このプロパティは文字列"MSWD"を表す 16 進数、値である 4d535744 を返します。このプロパティは、各アプリケーションが 4 文字のクリエータ コードには、Apple Macintosh で使用するために設計されました。MSWD 元のコードが Word には、たとえば、します</para>。
+          <para><b>注意</b>: この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d4ba5-111">
+              <para>Read-only <b>long</b>. If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD". This property was primarily designed to be used on the Apple Macintosh, where each application has a four-character creator code. For example, Word has the creator code MSWD.</para>
+              <para>
+                <b>Caution</b>: This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d4ba5-112">コレクション内の項目の位置を表す値を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d4ba5-112">Returns a value that represents the position of an item in a collection.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d4ba5-113">返します。 <see cref="T:System.Int32" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d4ba5-113">Returns <see cref="T:System.Int32" />.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d4ba5-114">取得、<see cref="T:System.Object" />の指定した親オブジェクトを表す<see cref="T:Microsoft.Office.Interop.Word.Conflict" />オブジェクトです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d4ba5-114">Gets an <see cref="T:System.Object" /> that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> object.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d4ba5-115">
+            <see cref="T:System.Object" />の指定した親オブジェクトを表す<see cref="T:Microsoft.Office.Interop.Word.Conflict" />オブジェクトです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d4ba5-115">An <see cref="T:System.Object" /> that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> object.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Range">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Range Range { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Range Range" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Range" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d4ba5-116">取得、<see cref="T:Microsoft.Office.Interop.Word.Range" />を指定したオブジェクトに含まれる文書の部分を表すオブジェクト。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d4ba5-116">Gets a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the portion of a document that is contained in the specified object.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d4ba5-117">A<see cref="T:Microsoft.Office.Interop.Word.Range" />を指定したオブジェクトに含まれる文書の部分を表すオブジェクト。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d4ba5-117">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the portion of a document that is contained in the specified object.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="d4ba5-118">
+            <para>読み取り専用です。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d4ba5-118">
+              <para>Read-only.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reject">
+      <MemberSignature Language="C#" Value="public void Reject ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reject() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Conflict.Reject" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reject ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reject();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="d4ba5-119">ユーザーによる変更を元に戻して、競合を解消し、競合する変更のサーバー コピーを受け入れます。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d4ba5-119">Rejects the user change, removes the conflict, and accepts the server copy of the change for the conflict.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="d4ba5-120">
+            <para>このメソッドは、ユーザーのバージョンの競合を拒否し、現在サーバー上にあるバージョンを受け取ります。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d4ba5-120">
+              <para>This method rejects the user version of a conflict and accepts the version that is currently on the server.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdRevisionType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdRevisionType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdRevisionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRevisionType Type { Microsoft::Office::Interop::Word::WdRevisionType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdRevisionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d4ba5-121">取得、<see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" />の<see cref="T:Microsoft.Office.Interop.Word.Conflict" />オブジェクトです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d4ba5-121">Gets the <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> for the <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> object.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d4ba5-122">
+            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" />の<see cref="T:Microsoft.Office.Interop.Word.Conflict" />オブジェクトです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d4ba5-122">The <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> for the <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> object.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="d4ba5-123">
+            <para>読み取り専用です。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d4ba5-123">
+              <para>Read-only.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
