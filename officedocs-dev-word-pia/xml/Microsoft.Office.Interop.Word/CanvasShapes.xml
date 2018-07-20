@@ -1,0 +1,1124 @@
+<Type Name="CanvasShapes" FullName="Microsoft.Office.Interop.Word.CanvasShapes">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="743c993a98dd0cba83108101f93def9fd71b39da" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20671164" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface CanvasShapes : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CanvasShapes implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CanvasShapes" />
+  <TypeSignature Language="VB.NET" Value="Public Interface CanvasShapes&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class CanvasShapes : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("396F9073-F9FD-11D3-8EA0-0050049A1A01")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="62a35-101">描画キャンバス内の図形を表します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="62a35-101">Represents the shapes in a drawing canvas.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="62a35-102">
+        <para>いずれかの<b>CanvasItems</b>プロパティを使用して、<see cref="T:Microsoft.Office.Interop.Word.Shape" />または<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /><b>CanvasShapes</b>コレクションを取得するオブジェクトです。描画キャンバスに図形を追加するには、 <b>CanvasShapes</b>コレクションの次のメソッドを使用して: <see cref="M:Microsoft.Office.Interop.Word.CanvasShapes.AddCallout(Microsoft.Office.Core.MsoCalloutType,System.Single,System.Single,System.Single,System.Single)" />、 <see cref="M:Microsoft.Office.Interop.Word.CanvasShapes.AddConnector(Microsoft.Office.Core.MsoConnectorType,System.Single,System.Single,System.Single,System.Single)" />、 <see cref="M:Microsoft.Office.Interop.Word.CanvasShapes.AddCurve(System.Object@)" />、 <see cref="M:Microsoft.Office.Interop.Word.CanvasShapes.AddLabel(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single)" />、 <see cref="M:Microsoft.Office.Interop.Word.CanvasShapes.AddLine(System.Single,System.Single,System.Single,System.Single)" />、 <see cref="M:Microsoft.Office.Interop.Word.CanvasShapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />、 <see cref="M:Microsoft.Office.Interop.Word.CanvasShapes.AddPolyline(System.Object@)" />、 <see cref="M:Microsoft.Office.Interop.Word.CanvasShapes.AddShape(System.Int32,System.Single,System.Single,System.Single,System.Single)" />、 <see cref="M:Microsoft.Office.Interop.Word.CanvasShapes.AddTextbox(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single)" />、 <see cref="M:Microsoft.Office.Interop.Word.CanvasShapes.AddTextEffect(Microsoft.Office.Core.MsoPresetTextEffect,System.String,System.String,System.Single,Microsoft.Office.Core.MsoTriState,Microsoft.Office.Core.MsoTriState,System.Single,System.Single)" />、または<see cref="M:Microsoft.Office.Interop.Word.CanvasShapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" />です</para>。
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.CanvasItems" />(<paramref name="index" />)、<paramref name="index" />は、名前またはインデックス番号、 <b>CanvasShapes</b>コレクション内の 1 つの図形を取得する</para>。
+      <para>各図形が割り当てられている既定の名前が作成されたときに。などの文書に 3 つの異なる図形を追加すると、その名前が付けられます四角形の 2、3 のテキスト ボックス、および楕円形の 4。使用して、<see cref="P:Microsoft.Office.Interop.Word.Shape.Name" />または図形にわかりやすい名前を割り当てるには既定の名前を参照するプロパティです</para>。
+      <para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="62a35-102">
+          <para>Use the <b>CanvasItems</b> property of either a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> or <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> object to return a <b>CanvasShapes</b> collection. To add shapes to a drawing canvas, use the following methods of the <b>CanvasShapes</b> collection: <see cref="M:Microsoft.Office.Interop.Word.CanvasShapes.AddCallout(Microsoft.Office.Core.MsoCalloutType,System.Single,System.Single,System.Single,System.Single)" />, <see cref="M:Microsoft.Office.Interop.Word.CanvasShapes.AddConnector(Microsoft.Office.Core.MsoConnectorType,System.Single,System.Single,System.Single,System.Single)" />, <see cref="M:Microsoft.Office.Interop.Word.CanvasShapes.AddCurve(System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.CanvasShapes.AddLabel(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single)" />, <see cref="M:Microsoft.Office.Interop.Word.CanvasShapes.AddLine(System.Single,System.Single,System.Single,System.Single)" />, <see cref="M:Microsoft.Office.Interop.Word.CanvasShapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.CanvasShapes.AddPolyline(System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.CanvasShapes.AddShape(System.Int32,System.Single,System.Single,System.Single,System.Single)" />, <see cref="M:Microsoft.Office.Interop.Word.CanvasShapes.AddTextbox(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single)" />, <see cref="M:Microsoft.Office.Interop.Word.CanvasShapes.AddTextEffect(Microsoft.Office.Core.MsoPresetTextEffect,System.String,System.String,System.Single,Microsoft.Office.Core.MsoTriState,Microsoft.Office.Core.MsoTriState,System.Single,System.Single)" />, or <see cref="M:Microsoft.Office.Interop.Word.CanvasShapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" />.</para>
+          <para>Use <see cref="P:Microsoft.Office.Interop.Word.Shape.CanvasItems" /> (<paramref name="index" />), where <paramref name="index" /> is the name or the index number, to return a single shape in the <b>CanvasShapes</b> collection.</para>
+          <para>Each shape is assigned a default name when it is created. For example, if you add three different shapes to a document, they might be named Rectangle 2, TextBox 3, and Oval 4. Use the <see cref="P:Microsoft.Office.Interop.Word.Shape.Name" /> property to reference the default name or to assign a more meaningful name to a shape.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddCallout">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddCallout (Microsoft.Office.Core.MsoCalloutType Type, float Left, float Top, float Width, float Height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddCallout([in]valuetype Microsoft.Office.Core.MsoCalloutType Type, [in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CanvasShapes.AddCallout(Microsoft.Office.Core.MsoCalloutType,System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddCallout (Type As MsoCalloutType, Left As Single, Top As Single, Width As Single, Height As Single) As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Shape ^ AddCallout(Microsoft::Office::Core::MsoCalloutType Type, float Left, float Top, float Width, float Height);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Core.MsoCalloutType" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Type">
+          <span data-ttu-id="62a35-103">引き出し線の種類を指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-103">The type of callout.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="62a35-104">吹き出しの境界ボックスの左端の位置をポイント単位で指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-104">The position, in points, of the left edge of the callout's bounding box.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="62a35-105">吹き出しの境界ボックスの上端の位置をポイント単位で指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-105">The position, in points, of the top edge of the callout's bounding box.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="62a35-106">吹き出しの境界ボックスの幅をポイント単位で指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-106">The width, in points, of the callout's bounding box.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="62a35-107">吹き出しの境界ボックスの高さをポイント単位で指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-107">The height, in points, of the callout's bounding box.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="62a35-108">描画キャンバスに輪郭のない吹き出しを追加します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-108">Adds a borderless line callout to a drawing canvas.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="62a35-109">
+            <para>挿入することより、多様な引き出し、吹き出しなど、雲の中を使用して、<see cref="M:Microsoft.Office.Interop.Word.CanvasShapes.AddShape(System.Int32,System.Single,System.Single,System.Single,System.Single)" />メソッドです。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-109">
+              <para>You can insert a greater variety of callouts, such as balloons and clouds, using the <see cref="M:Microsoft.Office.Interop.Word.CanvasShapes.AddShape(System.Int32,System.Single,System.Single,System.Single,System.Single)" /> method.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddConnector">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddConnector (Microsoft.Office.Core.MsoConnectorType Type, float BeginX, float BeginY, float EndX, float EndY);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddConnector([in]valuetype Microsoft.Office.Core.MsoConnectorType Type, [in]float32 BeginX, [in]float32 BeginY, [in]float32 EndX, [in]float32 EndY) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CanvasShapes.AddConnector(Microsoft.Office.Core.MsoConnectorType,System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddConnector (Type As MsoConnectorType, BeginX As Single, BeginY As Single, EndX As Single, EndY As Single) As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Shape ^ AddConnector(Microsoft::Office::Core::MsoConnectorType Type, float BeginX, float BeginY, float EndX, float EndY);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Core.MsoConnectorType" />
+        <Parameter Name="BeginX" Type="System.Single" />
+        <Parameter Name="BeginY" Type="System.Single" />
+        <Parameter Name="EndX" Type="System.Single" />
+        <Parameter Name="EndY" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Type">
+          <span data-ttu-id="62a35-110">コネクタの種類を指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-110">The type of connector.</span>
+          </span>
+        </param>
+        <param name="BeginX">
+          <span data-ttu-id="62a35-111">コネクタの水平方向の開始位置を示します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-111">The horizontal position that marks the beginning of the connector.</span>
+          </span>
+        </param>
+        <param name="BeginY">
+          <span data-ttu-id="62a35-112">コネクタの垂直方向の開始位置を示します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-112">The vertical position that marks the beginning of the connector.</span>
+          </span>
+        </param>
+        <param name="EndX">
+          <span data-ttu-id="62a35-113">コネクタの水平方向の終了位置を示します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-113">The horizontal position that marks the end of the connector.</span>
+          </span>
+        </param>
+        <param name="EndY">
+          <span data-ttu-id="62a35-114">コネクタの垂直方向の終了位置を示します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-114">The vertical position that marks the end of the connector.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="62a35-115">描画キャンバス内の 2 つの図形間を結ぶ線を追加します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-115">Adds a connecting line between two shapes in a drawing canvas.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddCurve">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddCurve (ref object SafeArrayOfPoints);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddCurve([in]object&amp; SafeArrayOfPoints) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CanvasShapes.AddCurve(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddCurve (ByRef SafeArrayOfPoints As Object) As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Shape ^ AddCurve(System::Object ^ % SafeArrayOfPoints);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SafeArrayOfPoints" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="SafeArrayOfPoints">
+          <span data-ttu-id="62a35-p101">曲線の両端とコントロール ポイントを指定する 2 次元の座標の配列を指定します。ユーザーが指定した最初の点が始点になり、次の 2 つの点が最初のベジェ曲線のコントロール ポイントになります。曲線にセグメントを追加するごとに、1 つの中継点と 2 つのコントロール ポイントを指定します。最後に指定した点が、曲線の終点になります。曲線のセグメントの数を n とすると、常に 3n + 1 個の点を指定する必要があります。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-p101">An array of coordinate pairs that specifies the vertices and control points of the curve. The first point you specify is the starting vertex, and the next two points are control points for the first Bézier segment. Then, for each additional segment of the curve, you specify a vertex and two control points. The last point you specify is the ending vertex for the curve. Note that you must always specify 3n + 1 points, where n is the number of segments in the curve.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="62a35-121">描画キャンバス内のベジェ曲線を追加します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-121">Adds a Bézier curve in a drawing canvas.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddLabel">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddLabel (Microsoft.Office.Core.MsoTextOrientation Orientation, float Left, float Top, float Width, float Height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddLabel([in]valuetype Microsoft.Office.Core.MsoTextOrientation Orientation, [in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CanvasShapes.AddLabel(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddLabel (Orientation As MsoTextOrientation, Left As Single, Top As Single, Width As Single, Height As Single) As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Shape ^ AddLabel(Microsoft::Office::Core::MsoTextOrientation Orientation, float Left, float Top, float Width, float Height);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Orientation" Type="Microsoft.Office.Core.MsoTextOrientation" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Orientation">
+          <span data-ttu-id="62a35-122">テキストの方向です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-122">The orientation of the text.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="62a35-123">ラベルの左端の位置を、描画キャンバスの左端からポイント単位で指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-123">The position, measured in points, of the left edge of the label relative to the left edge of the drawing canvas.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="62a35-124">ラベルの上端の位置を、描画キャンバスの上端からポイント単位で指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-124">The position, measured in points, of the top edge of the label relative to the top edge of the drawing canvas.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="62a35-125">ラベルの幅をポイント単位で指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-125">The width of the label, in points.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="62a35-126">ラベルの高さをポイント単位で指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-126">The height of the label, in points.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="62a35-127">文字列ラベルを描画キャンバスに追加します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-127">Adds a text label to a drawing canvas.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddLine">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddLine (float BeginX, float BeginY, float EndX, float EndY);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddLine([in]float32 BeginX, [in]float32 BeginY, [in]float32 EndX, [in]float32 EndY) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CanvasShapes.AddLine(System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddLine (BeginX As Single, BeginY As Single, EndX As Single, EndY As Single) As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Shape ^ AddLine(float BeginX, float BeginY, float EndX, float EndY);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="BeginX" Type="System.Single" />
+        <Parameter Name="BeginY" Type="System.Single" />
+        <Parameter Name="EndX" Type="System.Single" />
+        <Parameter Name="EndY" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="BeginX">
+          <span data-ttu-id="62a35-128">描画キャンバスを基準にして、線の始点の水平方向の位置をポイント単位で指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-128">The horizontal position, measured in points, of the line's starting point, relative to the drawing canvas.</span>
+          </span>
+        </param>
+        <param name="BeginY">
+          <span data-ttu-id="62a35-129">描画キャンバスを基準にして、線の始点の垂直方向の位置をポイント単位で指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-129">The vertical position, measured in points, of the line's starting point, relative to the drawing canvas.</span>
+          </span>
+        </param>
+        <param name="EndX">
+          <span data-ttu-id="62a35-130">水平位置をポイント単位で、描画キャンバスを基準にして、線の終了点です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-130">The horizontal position, measured in points, of the line's end point, relative to the drawing canvas.</span>
+          </span>
+        </param>
+        <param name="EndY">
+          <span data-ttu-id="62a35-131">垂直位置をポイント単位で、描画キャンバスを基準にして、線の終了点です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-131">The vertical position, measured in points, of the line's end point, relative to the drawing canvas.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="62a35-132">描画キャンバスに線を追加します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-132">Adds a line to a drawing canvas.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPicture">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddPicture (string FileName, ref object LinkToFile, ref object SaveWithDocument, ref object Left, ref object Top, ref object Width, ref object Height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddPicture([in]string FileName, [in]object&amp; LinkToFile, [in]object&amp; SaveWithDocument, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CanvasShapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddPicture (FileName As String, Optional ByRef LinkToFile As Object, Optional ByRef SaveWithDocument As Object, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.String" />
+        <Parameter Name="LinkToFile" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="SaveWithDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <span data-ttu-id="62a35-133">図のパスとファイル名を指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-133">The path and file name of the picture.</span>
+          </span>
+        </param>
+        <param name="LinkToFile">
+          <span data-ttu-id="62a35-134">作成元ファイルに図をリンクするかどうかを示す値。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-134">A value that indicates whether to link the picture to the file from which it was created.</span>
+          </span>
+          <span data-ttu-id="62a35-135">
+            <b>False の場合、画像には、ファイルの独立したコピーを行う必要があります。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-135">
+              <b>False</b> indicates the picture should be made an independent copy of the file.</span>
+          </span>
+          <span data-ttu-id="62a35-136">既定値は <b>False</b> です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-136">The default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <param name="SaveWithDocument">
+          <span data-ttu-id="62a35-137">リンクされた図が文書と共に保存するかどうかを示す値。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-137">A value that indicates whether to save the linked picture with the document.</span>
+          </span>
+          <span data-ttu-id="62a35-138">既定値は <b>False</b> です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-138">The default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="62a35-139">新しい図の左端の位置を、描画キャンバスを基準にしてポイント単位で指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-139">The position, measured in points, of the left edge of the new picture relative to the drawing canvas.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="62a35-140">新しい図の上端の位置を、描画キャンバスを基準にしてポイント単位で指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-140">The position, measured in points, of the top edge of the new picture relative to the drawing canvas.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="62a35-141">図の幅をポイント単位で指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-141">The width of the picture, in points.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="62a35-142">図の高さをポイント単位で指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-142">The height of the picture, in points.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="62a35-143">描画キャンバスに図を追加します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-143">Adds a picture to a drawing canvas.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPolyline">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddPolyline (ref object SafeArrayOfPoints);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddPolyline([in]object&amp; SafeArrayOfPoints) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CanvasShapes.AddPolyline(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddPolyline (ByRef SafeArrayOfPoints As Object) As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Shape ^ AddPolyline(System::Object ^ % SafeArrayOfPoints);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SafeArrayOfPoints" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="SafeArrayOfPoints">
+          <span data-ttu-id="62a35-144">折れ線の描画オブジェクトの頂点を指定する 2 次元の座標の配列を指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-144">An array of coordinate pairs that specifies the polyline drawing's vertices.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="62a35-145">開いた、または閉じた多角形を描画キャンバスに追加します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-145">Adds an open or closed polygon to a drawing canvas.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="62a35-146">
+            <para>2 次元の座標では、x 座標と y 座標点の多くのポイントの座標を含むことができる、2 次元の配列に格納されているを表す値のペアです。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-146">
+              <para>A coordinate pair is a pair of values representing the x- and y-coordinates of a point that are stored in a two-dimensional array that can contain coordinates for many points.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddShape">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddShape (int Type, float Left, float Top, float Width, float Height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddShape([in]int32 Type, [in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CanvasShapes.AddShape(System.Int32,System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddShape (Type As Integer, Left As Single, Top As Single, Width As Single, Height As Single) As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Shape ^ AddShape(int Type, float Left, float Top, float Width, float Height);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="System.Int32" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Type">
+          <span data-ttu-id="62a35-147">返される図形の種類。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-147">The type of shape to be returned.</span>
+          </span>
+          <span data-ttu-id="62a35-148">いずれかを指定することができます<see cref="T:Microsoft.Office.Core.MsoAutoShapeType" />定数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-148">Can be any <see cref="T:Microsoft.Office.Core.MsoAutoShapeType" /> constant.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="62a35-149">オートシェイプの左端の位置をポイント数で指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-149">The position, measured in points, of the left edge of the AutoShape.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="62a35-150">オートシェイプの上端の位置をポイント数で指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-150">The position, measured in points, of the top edge of the AutoShape.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="62a35-151">オートシェイプの幅をポイント数で指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-151">The width, measured in points, of the AutoShape.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="62a35-152">オートシェイプの高さをポイント数で指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-152">The height, measured in points, of the AutoShape.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="62a35-153">オートシェイプを描画キャンバスに追加します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-153">Adds an AutoShape to a drawing canvas.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTextbox">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddTextbox (Microsoft.Office.Core.MsoTextOrientation Orientation, float Left, float Top, float Width, float Height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddTextbox([in]valuetype Microsoft.Office.Core.MsoTextOrientation Orientation, [in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CanvasShapes.AddTextbox(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddTextbox (Orientation As MsoTextOrientation, Left As Single, Top As Single, Width As Single, Height As Single) As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Shape ^ AddTextbox(Microsoft::Office::Core::MsoTextOrientation Orientation, float Left, float Top, float Width, float Height);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Orientation" Type="Microsoft.Office.Core.MsoTextOrientation" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Orientation">
+          <span data-ttu-id="62a35-p105">文字列の向きを指定します。これらの定数の中には、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できないものがあります。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-p105">The orientation of the text. Some of these constants may not be available to you, depending on the language support (U.S. English, for example) that you’ve selected or installed.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="62a35-156">テキスト ボックスの左端の位置をポイント数で指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-156">The position, measured in points, of the left edge of the text box.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="62a35-157">テキスト ボックスの上端の位置をポイント数で指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-157">The position, measured in points, of the top edge of the text box.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="62a35-158">テキスト ボックスの幅をポイント数で指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-158">The width, measured in points, of the text box.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="62a35-159">テキスト ボックスの高さをポイント数で指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-159">The height, measured in points, of the text box.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="62a35-160">描画キャンバスにテキスト ボックスを追加します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-160">Adds a text box to a drawing canvas.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTextEffect">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddTextEffect (Microsoft.Office.Core.MsoPresetTextEffect PresetTextEffect, string Text, string FontName, float FontSize, Microsoft.Office.Core.MsoTriState FontBold, Microsoft.Office.Core.MsoTriState FontItalic, float Left, float Top);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddTextEffect([in]valuetype Microsoft.Office.Core.MsoPresetTextEffect PresetTextEffect, [in]string Text, [in]string FontName, [in]float32 FontSize, [in]valuetype Microsoft.Office.Core.MsoTriState FontBold, [in]valuetype Microsoft.Office.Core.MsoTriState FontItalic, [in]float32 Left, [in]float32 Top) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CanvasShapes.AddTextEffect(Microsoft.Office.Core.MsoPresetTextEffect,System.String,System.String,System.Single,Microsoft.Office.Core.MsoTriState,Microsoft.Office.Core.MsoTriState,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddTextEffect (PresetTextEffect As MsoPresetTextEffect, Text As String, FontName As String, FontSize As Single, FontBold As MsoTriState, FontItalic As MsoTriState, Left As Single, Top As Single) As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Shape ^ AddTextEffect(Microsoft::Office::Core::MsoPresetTextEffect PresetTextEffect, System::String ^ Text, System::String ^ FontName, float FontSize, Microsoft::Office::Core::MsoTriState FontBold, Microsoft::Office::Core::MsoTriState FontItalic, float Left, float Top);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="PresetTextEffect" Type="Microsoft.Office.Core.MsoPresetTextEffect" />
+        <Parameter Name="Text" Type="System.String" />
+        <Parameter Name="FontName" Type="System.String" />
+        <Parameter Name="FontSize" Type="System.Single" />
+        <Parameter Name="FontBold" Type="Microsoft.Office.Core.MsoTriState" />
+        <Parameter Name="FontItalic" Type="Microsoft.Office.Core.MsoTriState" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="PresetTextEffect">
+          <span data-ttu-id="62a35-161">既定のテキストの効果です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-161">A preset text effect.</span>
+          </span>
+          <span data-ttu-id="62a35-162">値、<see cref="T:Microsoft.Office.Core.MsoPresetTextEffect" />の定数 (左右からおよび上から下に番号が付けられます)、[ワードアート ギャラリー] ダイアログ ボックスに表示される形式に対応します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-162">The values of the <see cref="T:Microsoft.Office.Core.MsoPresetTextEffect" /> constants correspond to the formats listed in the WordArt Gallery dialog box (numbered from left to right and from top to bottom).</span>
+          </span>
+        </param>
+        <param name="Text">
+          <span data-ttu-id="62a35-163">ワードアートのテキストを指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-163">The text in the WordArt.</span>
+          </span>
+        </param>
+        <param name="FontName">
+          <span data-ttu-id="62a35-164">ワードアートで使用するフォント名を指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-164">The name of the font used in the WordArt.</span>
+          </span>
+        </param>
+        <param name="FontSize">
+          <span data-ttu-id="62a35-165">ワードアートで使用するフォントの大きさをポイント単位で指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-165">The size (in points) of the font used in the WordArt.</span>
+          </span>
+        </param>
+        <param name="FontBold">
+          <span data-ttu-id="62a35-166">ワードアートのフォントを太字にするかどうかを示す値。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-166">A value that indicates whether to bold the WordArt font.</span>
+          </span>
+        </param>
+        <param name="FontItalic">
+          <span data-ttu-id="62a35-167">ワードアートのフォントを斜体にするかどうかを示す値。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-167">A value that indicates whether to italicize the WordArt font.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="62a35-168">ワードアートの図形の左端の位置を、描画キャンバスの左端からポイント単位で指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-168">The position, measured in points, of the left edge of the WordArt shape relative to the left edge of the drawing canvas.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="62a35-169">ワードアートの図形の上端の位置を、描画キャンバスの上端からポイント単位で指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-169">The position, measured in points, of the top edge of the WordArt shape relative to the top edge of the drawing canvas.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="62a35-170">ワードアートの図形を描画キャンバスに追加します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-170">Adds a WordArt shape to a drawing canvas.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CanvasShapes.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="62a35-171">返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-171">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildFreeform">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.FreeformBuilder BuildFreeform (Microsoft.Office.Core.MsoEditingType EditingType, float X1, float Y1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.FreeformBuilder BuildFreeform([in]valuetype Microsoft.Office.Core.MsoEditingType EditingType, [in]float32 X1, [in]float32 Y1) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CanvasShapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BuildFreeform (EditingType As MsoEditingType, X1 As Single, Y1 As Single) As FreeformBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::FreeformBuilder ^ BuildFreeform(Microsoft::Office::Core::MsoEditingType EditingType, float X1, float Y1);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.FreeformBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="EditingType" Type="Microsoft.Office.Core.MsoEditingType" />
+        <Parameter Name="X1" Type="System.Single" />
+        <Parameter Name="Y1" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="EditingType">
+          <span data-ttu-id="62a35-172">最初の節点の編集プロパティを指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-172">The editing property of the first node.</span>
+          </span>
+        </param>
+        <param name="X1">
+          <span data-ttu-id="62a35-173">ドキュメントの左上隅を基準にしてフリー フォームの最初のノードの X 位置。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-173">The X-position of the first node in the freeform drawing relative to the upper-left corner of the document.</span>
+          </span>
+        </param>
+        <param name="Y1">
+          <span data-ttu-id="62a35-174">ドキュメントの左上隅を基準にしてフリー フォームの最初のノードの Y 座標。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-174">The Y-position of the first node in the freeform drawing relative to the upper-left corner of the document.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="62a35-175">フリー フォーム オブジェクトを作成します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-175">Builds a freeform object.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="62a35-176">
+            <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> 、フリー フォームにセグメントを追加する方法です。使用することができます、フリー フォームに 1 つ以上のセグメントを追加した後、<see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" />に変換するメソッド、<see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" />オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.Shape" /><b>FreeformBuilder</b>オブジェクトで定義されている幾何学的特徴を持つオブジェクトです。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-176">
+              <para>Use the <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> method to add segments to the freeform. After you have added at least one segment to the freeform, you can use the <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" /> method to convert the <see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" /> object into a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that has the geometric description you've defined in the <b>FreeformBuilder</b> object.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CanvasShapes.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="62a35-177">指定したコレクション内の項目数を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-177">Returns the number of items in the specified collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CanvasShapes.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="62a35-178">指定したオブジェクトが作成されたアプリケーションを示す値を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-178">Returns a value that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="62a35-179">
+            <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
+          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-179">
+              <para>If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD." This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CanvasShapes.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape this[ref object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Shape Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CanvasShapes.Item(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shape ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::Shape ^ get(System::Object ^ % Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="62a35-180">位置を表す序数または各オブジェクトの名前を表す文字列。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-180">The ordinal position or a string representing the name of the individual object.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="62a35-181">コレクション内の各オブジェクトを返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-181">Returns an individual object in a collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CanvasShapes.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="62a35-182">指定したオブジェクトの親オブジェクトを返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-182">Returns the parent object of the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Range">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ShapeRange Range (ref object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.ShapeRange Range([in]object&amp; Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CanvasShapes.Range(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Range (ByRef Index As Object) As ShapeRange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::ShapeRange ^ Range(System::Object ^ % Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(21)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ShapeRange</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="62a35-183">指定した範囲に含まれる図形を指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-183">Specifies which shapes are to be included in the specified range.</span>
+          </span>
+          <span data-ttu-id="62a35-184">内の図形のインデックス番号を指定する整数を指定することができます、<see cref="T:Microsoft.Office.Interop.Word.Shapes" />コレクション、図形の名前を指定する文字列または整数または文字列を含む配列。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-184">Can be an integer that specifies the index number of a shape within the <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> collection, a string that specifies the name of a shape, or an array that contains integers or strings.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="62a35-185">特定の範囲に含まれる図形を指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-185">Specifies the shapes to be included in a specific range.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="62a35-186">
+            <para>文字位置の値は、ドキュメントの先頭に 0 (ゼロ) から始まります。印刷されない文字を含む、すべての文字がカウントされます。表示されていない場合でも、非表示の文字がカウントされます。として全体のドキュメントが返される開始位置と終了位置の<b>Range</b>メソッドを指定しない場合、<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです</para>。
+          <para><see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />オブジェクトが含まれていない<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />オブジェクトです。<b>InlineShape</b>オブジェクトの文字と同じテキストの範囲内の文字として配置されます。<see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクトは、(選択範囲、既定では) のテキストの範囲に固定されますが、ページのどこにでも配置できます。<b>Shape</b>オブジェクトは、アンカーがある範囲と同じページに常に表示されます</para>。
+          <para>ほとんどの操作を行うことができます、<b>図形</b>オブジェクトにするは、1 つの図形を含む<b>ShapeRange</b>オブジェクトで行うことも。いくつかの操作では、複数の図形を含む<b>ShapeRange</b>オブジェクトに対して実行するとエラーが発生します</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-186">
+              <para>Character position values begin with 0 (zero) at the beginning of the document. All characters are counted, including nonprinting characters. Hidden characters are counted even if they're not displayed. If you don't specify starting and ending character positions for the <b>Range</b> method, the entire document is returned as a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object.</para>
+              <para>
+                <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> objects don't include <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objects. An <b>InlineShape</b> object is equivalent to a character and is positioned as a character within a range of text. <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objects are anchored to a range of text (the selection, by default), but they can be positioned anywhere on the page. A <b>Shape</b> object will always appear on the same page as the range it's anchored to.</para>
+              <para>Most operations that you can do with a <b>Shape</b> object you can also do with a <b>ShapeRange</b> object that contains a single shape. Some operations, when performed on a <b>ShapeRange</b> object that contains multiple shapes, produce an error.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectAll">
+      <MemberSignature Language="C#" Value="public void SelectAll ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SelectAll() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CanvasShapes.SelectAll" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SelectAll ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SelectAll();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="62a35-187">本文、キャンバス、または文書のヘッダーおよびフッター内のすべての図形を選択します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-187">Selects all the shapes in the main story, in a canvas, or in headers and footers of a document.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="62a35-188">
+            <para>このメソッドを選択していない<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />オブジェクトです。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="62a35-188">
+              <para>This method doesn't select <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objects.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
