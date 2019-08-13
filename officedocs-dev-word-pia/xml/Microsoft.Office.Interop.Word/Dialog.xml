@@ -1,13 +1,5 @@
 <Type Name="Dialog" FullName="Microsoft.Office.Interop.Word.Dialog">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="48514fbfc024b02f9dcbf4a3b5c4070722ec2532" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671029" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Dialog" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="380f2c7cc87b01108dff60968ffecadad651a7bd" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147082" /></Metadata><TypeSignature Language="C#" Value="public interface Dialog" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Dialog" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Dialog" />
   <TypeSignature Language="VB.NET" Value="Public Interface Dialog" />
@@ -26,13 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>組み込みダイアログ ボックスを表します。</summary>
-    <remarks>
-      <para>
-        <b>ダイアログ</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.Dialogs" />コレクションです。<b>Dialogs</b>コレクションには、Microsoft Word でのすべての組み込みのダイアログ ボックスが含まれています。新しい組み込みのダイアログ ボックスを作成したり、 <b>Dialogs</b>コレクションに追加できません</para>。
-      <para><b>ダイアログ ボックス</b>の使用が (<paramref name="index" />)、<paramref name="index" />は、 <see cref="T:Microsoft.Office.Interop.Word.WdWordDialog" /> 、1 つの<b>ダイアログ</b>オブジェクトを取得する] ダイアログ ボックスを識別する定数です</para>。
-      <para><b>WdWordDialog</b>定数は、接頭辞"wdDialog"は、メニューとダイアログ ボックスの名前の後にから形成されます。たとえば、[ページ設定] ダイアログ ボックスの定数は<b>wdDialogFilePageSetup</b>、新しいダイアログ ボックスの定数<b>wdDialogFileNew</b>です</para>。
-      <para /></remarks>
+    <summary>組み込みのダイアログ ボックスを表します。</summary>
+    <remarks><para><b>Dialog</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Dialogs" />コレクションのメンバーです。 <b>Dialogs</b>コレクションには、Microsoft Word のすべての組み込みダイアログボックスが含まれています。 新しい組み込みのダイアログ ボックスを作成したり、 <b>Dialogs</b> コレクションに追加できません。</para>
+      <para>Dialog <b></b>(<paramref name="index" />) を使用し<paramref name="index" />ます。 <see cref="T:Microsoft.Office.Interop.Word.WdWordDialog" />ここで、はダイアログボックスを識別する定数で、1つの<b>dialog</b>オブジェクトを返します。</para>
+      <para><b>Wdworddialog</b>定数は、"wddialog" というプレフィックスから、メニューとダイアログボックスの名前の後に形成されます。 たとえば、[ページ設定] ダイアログボックスの定数は<b>Wd/Filepagesetup</b>で、[新規作成] ダイアログボックスの定数は<b>wdDialogFileNew</b>です。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,10 +76,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Office Word の組み込みダイアログ ボックスのツールバーのコントロール id を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Microsoft Office Word の組み込みのダイアログボックスのツールバーのコントロール id を取得します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,12 +132,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>などのオブジェクトは、Microsoft Word で作成されている場合このプロパティが返されます、16 進数の値である 4d535744 を文字列します。この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>たとえば、オブジェクトが Microsoft Word で作成されている場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultTab">
@@ -205,21 +192,31 @@
         <Parameter Name="TimeOut" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="TimeOut">省略可能な<b>オブジェクト</b>です。 ダイアログ ボックスを自動的に閉じるまでの時間を指定します。 基本となる単位は約 0.001 秒です。 システム アクティビティを同時に実行すると、有効時間の値が増えます。 この引数を省略した場合、ユーザーが閉じたときにダイアログ ボックスは閉じます。</param>
-        <summary>ユーザーが閉じるか、一定の時間が経過するまでは、指定された組み込みの Word ダイアログ ボックスを表示します。 ダイアログ ボックスを閉じますクリックしてされたボタンを示す<b>整数</b>を返します。</summary>
+        <param name="TimeOut">省略可能な<b>オブジェクト</b>です。 ダイアログ ボックスが自動的に閉じるまでの時間を指定します。 基本の単位は約 0.001 秒です。 システム アクティビティを同時に実行すると、有効時間の値が増えます。 この引数を省略した場合、ユーザーが閉じたときにダイアログ ボックスは閉じます。</param>
+        <summary>ユーザーが閉じるか、指定した時間が経過するまで、指定した Word の組み込みのダイアログボックスを表示します。 ダイアログボックスを閉じるためにクリックされたボタンを示す<b>整数型 (Integer</b> ) の値を返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <list type="table">
+        <remarks><list type="table">
             <item>
               <description>-2</description>
-              <description>[閉じる] ボタン</description>
-            </item>。
-            <item><description>-1</description><description>[OK] ボタン</description></item>。
-            <item><description>0 (ゼロ)</description><description>[キャンセル] をクリックします</description></item>。
-            <item><description> &gt; 0 (ゼロ)</description><description>コマンド ボタン: 最初のボタンは、1、2 は、2 番目のボタンというようにします</description></item></list>。
-          <para>使用、<see cref="M:Microsoft.Office.Interop.Word.Dialog.Show(System.Object@)" />メソッドは指定した組み込みの Word ダイアログを表示するのにはボックスに、(ユーザーは、[ok] ボタンをクリックする) 場合] ダイアログ ボックスでユーザーが指定した操作を実行します。<b>表示</b>方法、その一方で、指定した Word の組み込みダイアログ ボックスが表示されますですが、ユーザーがダイアログ ボックスを閉じた後処理を行いません。したがって、次のように使用する方法を選択する必要があります:</para><para>の<b>表示</b>を使用してメソッドのユーザー ダイアログ ボックスを閉じます - たとえば、メニューまたはツールバーをユーザーがカスタマイズする前に、ダイアログ ボックスにはユーザーの操作が完了した場合ユーザー設定ダイアログ ボックス (<b>wdDialogToolsCustomize</b>) を使用します。ダイアログ ボックスを閉じた後に通常これらの操作が完了した場合、ユーザーによって要求されたアクションを無視する場合に、 <b>Display</b>メソッドを使用することもできます</para>。
-          <para>] ダイアログ ボックスにはユーザーの操作はユーザー ダイアログ ボックスを閉じますが、ユーザーがファイルを開くダイアログ ボックス (<b>wdDialogFileOpen</b>) を使用して開くを選択すると後に正常終了した場合は、 <b>Show</b>メソッドを使用します</para>。
-          <para /></remarks>
+              <description>[ 閉じる] ボタン。</description>
+            </item>
+            <item>
+              <description>-1</description>
+              <description>[ OK] ボタン。</description>
+            </item>
+            <item>
+              <description>0 (ゼロ)</description>
+              <description>[ キャンセル] ボタン。</description>
+            </item>
+            <item>
+              <description>&gt; 0 (zero)</description>
+              <description>コマンド ボタン。1 は 1 番目のボタン、2 は 2 番目のボタンに対応します。</description>
+            </item>
+          </list>
+          <para>指定し<see cref="M:Microsoft.Office.Interop.Word.Dialog.Show(System.Object@)" />た Word の組み込みのダイアログボックスを表示するには、メソッドを使用します。ユーザーが [OK] をクリックすると、ダイアログボックスで指定された操作を実行できます。 一方、 <b>Display</b>メソッドは、指定された Word の組み込みのダイアログボックスを表示しますが、ユーザーがダイアログボックスを閉じた後は何も実行しません。 そのため、次の方法で使用する方法を選択する必要があります。</para>
+          <para>ユーザーがダイアログボックスを閉じる前に、ユーザーがダイアログボックスを閉じる前に、ユーザーが [ユーザー設定] ダイアログボックスを使用してメニューまたはツールバーをカスタマイズしたとき (Wdて、[<b>カスタマイズ</b>] を選択したときなど) に、 <b>Display</b>メソッドを使用します。 ユーザーによって要求されたアクションを無視する場合は、ユーザーがダイアログボックスを閉じた後にこれらのアクションが正常に完了した場合に、 <b>Display</b>メソッドを使用することもできます。</para>
+          <para><b>Show</b>メソッドは、ユーザーがダイアログボックスを閉じた後 (たとえば、[開く] ダイアログボックスでユーザーがファイルを選択したとき) に完了した後 (<b>wddialogfileopen</b>) に実行します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -297,22 +294,37 @@
         <Parameter Name="TimeOut" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="TimeOut">省略可能な<b>オブジェクト</b>です。 ダイアログ ボックスを自動的に閉じるまでの時間を指定します。 基本となる単位は約 0.001 秒です。 システム アクティビティを同時に実行すると、有効時間の値が増えます。 この引数を省略した場合、ユーザーがダイアログ ボックスを閉じたときにダイアログ ボックスは閉じます。</param>
-        <summary>表示され、指定した組み込みの Word ダイアログ ボックスで開始アクションを実行します。 ダイアログ ボックスを閉じますクリックしてされたボタンを示す<b>整数</b>を返します。</summary>
+        <param name="TimeOut">省略可能な<b>オブジェクト</b>です。 ダイアログ ボックスが自動的に閉じるまでの時間を指定します。 基本の単位は約 0.001 秒です。 システム アクティビティを同時に実行すると、有効時間の値が増えます。 この引数を省略した場合、ユーザーがダイアログ ボックスを閉じたときにダイアログ ボックスは閉じます。</param>
+        <summary>指定した Word の組み込みのダイアログボックスで開始されたアクションを表示して実行します。 ダイアログボックスを閉じるためにクリックされたボタンを示す<b>整数型 (Integer</b> ) の値を返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <list type="table">
+        <remarks><list type="table">
             <item>
               <description>-2</description>
-              <description>
-                <b>[閉じる</b>] ボタン</description>
-            </item>。
-            <item><description>-1</description><description><b>[OK</b> ] ボタン</description></item>。
-            <item><description>0 (ゼロ)</description><description>、[<b>キャンセル</b>] ボタンが表示されます</description></item>。
-            <item><description> &gt; 0 (ゼロ)</description><description>コマンド ボタン: 最初のボタンは、1、2 は、2 番目のボタンというようにします</description></item></list>。
-          <para><b>表示</b>を使用してメソッドは、指定された組み込みの Word ダイアログを表示 (ユーザーは、 <b>[ok]</b>ボタンをクリックした) 場合、[ボックス] ダイアログ ボックスでユーザーが指定した操作を実行します。<see cref="M:Microsoft.Office.Interop.Word.Dialog.Display(System.Object@)" />メソッド、その一方は、指定した Word の組み込みダイアログ ボックスが表示されますが、ユーザーがダイアログ ボックスを閉じた後処理を行いません。したがって、次のように使用する方法を選択する必要があります:</para><list type="bullet"><item><para>の<b>表示</b>を使用してメソッドのユーザー ダイアログ ボックスを閉じます - たとえば、ユーザーがメニューをカスタマイズする前に、ダイアログ ボックスにはユーザーの操作が完了した場合またはユーザー設定ダイアログ ボックス (<b>wdDialogToolsCustomize</b>) を使用してツールバー。ダイアログ ボックスを閉じた後に通常これらの操作が完了した場合、ユーザーによって要求されたアクションを無視する場合に、 <b>Display</b>メソッドを使用することもできます</para></item>。
-            <item><para>] ダイアログ ボックスにはユーザーの操作はユーザー ダイアログ ボックスを閉じますが、ユーザーがファイルを開くダイアログ ボックス (<b>wdDialogFileOpen</b>) を使用して開くを選択すると後に正常終了した場合は、 <b>Show</b>メソッドを使用します</para></item></list>。
-          <para /></remarks>
+              <description>[ <b>閉じる</b>] ボタン。</description>
+            </item>
+            <item>
+              <description>-1</description>
+              <description>[ <b>OK</b>] ボタン。</description>
+            </item>
+            <item>
+              <description>0 (ゼロ)</description>
+              <description>[ <b>キャンセル</b>] ボタン。</description>
+            </item>
+            <item>
+              <description>&gt; 0 (zero)</description>
+              <description>コマンド ボタン。1 は 1 番目のボタン、2 は 2 番目のボタンに対応します。</description>
+            </item>
+          </list>
+          <para><b>Show</b>メソッドを使用して、指定した Word の組み込みのダイアログボックスを表示し (ユーザーが<b>[OK</b> ] ボタンをクリックすると)、ダイアログボックスでユーザーが指定した処理を実行します。 一方<see cref="M:Microsoft.Office.Interop.Word.Dialog.Display(System.Object@)" /> 、このメソッドは、指定された Word の組み込みのダイアログボックスを表示しますが、ユーザーがダイアログボックスを閉じた後は何も実行しません。 そのため、次の方法で使用する方法を選択する必要があります。</para>
+          <list type="bullet">
+            <item>
+              <para>ユーザーがダイアログボックスを閉じる前に、ユーザーがダイアログボックスを閉じる前に、ユーザーが [ユーザー設定] ダイアログボックスを使用してメニューまたはツールバーをカスタマイズしたとき (Wdて、[<b>カスタマイズ</b>] を選択したときなど) に、 <b>Display</b>メソッドを使用します。 ユーザーによって要求されたアクションを無視する場合は、ユーザーがダイアログボックスを閉じた後にこれらのアクションが正常に完了した場合に、 <b>Display</b>メソッドを使用することもできます。</para>
+            </item>
+            <item>
+              <para><b>Show</b>メソッドは、ユーザーがダイアログボックスを閉じた後 (たとえば、[開く] ダイアログボックスでユーザーがファイルを選択したとき) に完了した後 (<b>wddialogfileopen</b>) に実行します。</para>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">

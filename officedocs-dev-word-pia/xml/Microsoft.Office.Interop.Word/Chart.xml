@@ -1,13 +1,5 @@
 <Type Name="Chart" FullName="Microsoft.Office.Interop.Word.Chart">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="616cb136ed9c6470acdef04821482823dc95523f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672338" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Chart" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b01d3cd03a0e6d162566e25b45eaa2b405ccb58a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147306" /></Metadata><TypeSignature Language="C#" Value="public interface Chart" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Chart" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Chart" />
   <TypeSignature Language="VB.NET" Value="Public Interface Chart" />
@@ -27,22 +19,22 @@
   </Attributes>
   <Docs>
     <summary>文書内のグラフを表します。</summary>
-    <remarks>
-      <para>例」のセクションでプロパティおよび<b>グラフ</b>オブジェクトを取得する方法を次のとおり:</para>
-      <para />
+    <remarks><para>このセクションでは、<b>Chart</b> オブジェクトを返すプロパティおよびメソッドについて取り上げます。</para>
+      <para> </para>
       <list type="bullet">
         <item>
           <para>
-            <b>グラフ</b>のプロパティ</para>
-        </item>の
-        <item><para><b>AddChart</b>メソッド</para></item></list>
-      <para />
-      <para />
-    </remarks>
-    <example>
-      <para>
-        <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />コレクションには、文書内のグラフを含む、各インライン図形のオブジェクトが含まれています。<b>InlineShapes</b>を使用 (<paramref name="Index" />)、<paramref name="Index" />は、1 つの<b>InlineShape</b>オブジェクトを取得するのには、インライン図形のインデックス番号。使用して、<see cref="P:Microsoft.Office.Interop.Word.InlineShape.HasChart" />プロパティのかどうかは<b>InlineShape</b>オブジェクトはグラフを表します。<b>HasChart</b>プロパティを<b>True</b>に設定すると場合を使用して、 <see cref="P:Microsoft.Office.Interop.Word.InlineShape.Chart" /><b>Chart</b>オブジェクトを返すプロパティです</para>。
-      <para>使用することも、<see cref="P:Microsoft.Office.Interop.Word.InlineShape.Type" />プロパティのかどうかは<b>InlineShape</b>オブジェクトはグラフを表します。<b>Type</b>プロパティは、 <b>WdInlineShapeChart</b>に設定されている場合、インライン図形がグラフを表します</para>。</example>
+            <b>Chart</b>プロパティ</para>
+        </item>
+        <item>
+          <para>
+            <b>Addchart</b>メソッド</para>
+        </item>
+      </list>
+      <para> </para>
+      <para> </para></remarks>
+    <example><para><see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />コレクションには、ドキュメント内の各インライン図形 (グラフを含む) のオブジェクトが含まれています。 単一の<b>InlineShape</b>オブジェクトを取得<paramref name="Index" />するには、 <b>InlineShapes</b>(<paramref name="Index" />) を使用します。ここで、は、位置を固定した図形のインデックス番号です。 InlineShape オブジェクト<see cref="P:Microsoft.Office.Interop.Word.InlineShape.HasChart" />がグラフを表すか<b></b>どうかを調べるには、プロパティを使用します。 <b>Haschart</b>プロパティが<b>True</b>に設定されている場合<see cref="P:Microsoft.Office.Interop.Word.InlineShape.Chart" />は、プロパティを使用して<b>Chart</b>オブジェクトを返します。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.InlineShape.Type" />プロパティを使用して、 <b>InlineShape</b>オブジェクトがグラフを表すかどうかを確認することもできます。 <b>Type</b> プロパティが <b>WdInlineShapeChart</b> に設定されている場合、そのインライン図形がグラフであることを表します。</para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -68,10 +60,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用<see cref="T:Microsoft.Office.Interop.Word._Application" />すると、Microsoft Word アプリケーションを表すオブジェクトが返されます。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,12 +88,10 @@
         <Parameter Name="FileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FileName">グラフ テンプレートのファイル名の<b>文字列</b>が必要です。</param>
+        <param name="FileName">必須の<b>文字列</b>グラフテンプレートのファイル名を指定します。</param>
         <summary>標準またはユーザー設定のグラフの種類をグラフに適用します。</summary>
-        <remarks>
-          <para>このメソッドはネイティブまたは組み合わされたグラフで定数をサポートしていません。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドはネイティブまたは組み合わされたグラフで定数の使用をサポートしません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyCustomType">
@@ -132,9 +120,8 @@
         <Parameter Name="TypeName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ChartType">必要な<see cref="T:Microsoft.Office.Core.XlChartType" />標準のグラフの種類</param>
-        <param name="TypeName">
-          <b>オブジェクト</b>A の標準的なグラフの種類が必要</param>
+        <param name="ChartType">標準<see cref="T:Microsoft.Office.Core.XlChartType" />のグラフの種類が必要です</param>
+        <param name="TypeName">必須<b>オブジェクト</b>標準のグラフの種類</param>
         <summary>標準またはユーザー設定のグラフの種類をグラフに適用します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -173,29 +160,45 @@
         <Parameter Name="Separator" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">必要な<see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" />を適用するデータ ラベルの種類です。</param>
-        <param name="LegendKey">
-          <b>True</b> を指定すると、要素の隣に凡例マーカーが表示されます。既定値は <b>False</b> です。</param>
+        <param name="Type">適用<see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" />するデータラベルの種類を指定する必要があります。</param>
+        <param name="LegendKey"><b>True</b> を指定すると、要素の隣に凡例マーカーが表示されます。 既定値は <b>False</b> です。</param>
         <param name="AutoText">オブジェクトにより、内容を基にした適切な文字列を自動作成させる場合は <b>True</b> を指定します。</param>
-        <param name="HasLeaderLines">
-          <see cref="T:Microsoft.Office.Interop.Word.Chart" />と<see cref="T:Microsoft.Office.Interop.Word.Series" />オブジェクトでは、 <b>True の</b>場合、データ系列に引き出し線を追加します。</param>
+        <param name="HasLeaderLines">オブジェクト<see cref="T:Microsoft.Office.Interop.Word.Chart" />および<see cref="T:Microsoft.Office.Interop.Word.Series" />オブジェクトの場合は、系列に引き出し線を使用する場合は<b>True</b>にします。</param>
         <param name="ShowSeriesName">データ ラベルに系列名を表示するかどうかをブール値で指定します。</param>
         <param name="ShowCategoryName">データ ラベルに分類名を表示するかどうかをブール値で指定します。</param>
         <param name="ShowValue">データ ラベルに値を表示するかどうかをブール値で指定します。</param>
-        <param name="ShowPercentage">有効にするまたはデータ ラベルにパーセンテージを無効にするブール値。</param>
+        <param name="ShowPercentage">データラベルのパーセンテージを有効または無効にするブール値です。</param>
         <param name="ShowBubbleSize">データ ラベルにバブル サイズを表示するかどうかをブール値で指定します。</param>
         <param name="Separator">データ ラベルの区切り文字を指定します。</param>
         <summary>グラフのすべてのデータ系列にデータ ラベルを付けます。</summary>
-        <remarks>
-          <para>次の表には、<see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" />引数を渡すことができる、<paramref name="Type" />のパラメーター、<see cref="M:Microsoft.Office.Interop.Word.Chart.ApplyDataLabels(Microsoft.Office.Interop.Word.XlDataLabelsType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />メソッドです</para>。
-          <list type="table"><item><description><b>xlDataLabelsShowBubbleSizes</b>。データ ラベルのバブル サイズ</description></item>。
-            <item><description><b>xlDataLabelsShowLabelAndPercent</b>。 合計、および要素の項目の割合です。円グラフとドーナツ グラフでのみ使用します</description></item>。
-            <item><description>・ 
-                <b>xlDataLabelsShowPercent</b>。合計の割合。円グラフとドーナツ グラフでのみ使用します</description></item>。
-            <item><description><b>xlDataLabelsShowLabel</b>。ポイントのカテゴリです</description></item>。
-            <item><description><b>xlDataLabelsShowNone</b>。データ ラベルはありません</description></item>。
-            <item><description><b>xlDataLabelsShowValue</b>。 既定値です。(この引数が指定されていない場合を前提として) 要素の値</description></item></list>。
-          <para /></remarks>
+        <remarks><para>次の表は、 <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" /> <paramref name="Type" /> <see cref="M:Microsoft.Office.Interop.Word.Chart.ApplyDataLabels(Microsoft.Office.Interop.Word.XlDataLabelsType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />メソッドのパラメーターに渡すことができる引数を示しています。</para>
+          <list type="table">
+            <item>
+              <description>
+                <b>xlDataLabelsShowBubbleSizes</b> データ ラベルのバブル サイズ。</description>
+            </item>
+            <item>
+              <description>
+                <b>xlDataLabelsShowLabelAndPercent</b>  全体のパーセンテージと要素の項目名。円グラフとドーナツ グラフだけに指定できます。</description>
+            </item>
+            <item>
+              <description>
+                <b>xlDataLabelsShowPercent</b>  全体のパーセンテージ。円グラフとドーナツ グラフだけに指定できます。</description>
+            </item>
+            <item>
+              <description>
+                <b>xlDataLabelsShowLabel</b> データ要素の属する項目名。</description>
+            </item>
+            <item>
+              <description>
+                <b>xlDataLabelsShowNone</b> データ ラベルなし。</description>
+            </item>
+            <item>
+              <description>
+                <b>xlDataLabelsShowValue</b>。 既定値。 Value for the point (assumed if this argument isn't specified).</description>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyLayout">
@@ -221,14 +224,11 @@
         <Parameter Name="ChartType" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Layout">
-          <b>整数</b>レイアウトの種類を指定します。  レイアウトの種類は、1 から 10 までの数字によって示されます。</param>
-        <param name="ChartType">グラフの種類を表す<b>が可能</b>定数を格納する<b>オブジェクト</b>。</param>
+        <param name="Layout"><b>整数型</b>レイアウトの種類を指定します。  レイアウトの種類は、1 から 10 までの数字によって示されます。</param>
+        <param name="ChartType">グラフの種類を表す<b>xlcharttype クラス</b>定数を含む<b>オブジェクト</b>。</param>
         <summary>リボンに表示されるレイアウトを適用します。</summary>
-        <remarks>
-          <para>現在のグラフの種類のレイアウトを使用するときは、グラフの種類を 1 から 10 までの数字が適用されます。 別のグラフの種類に 1 つのグラフの種類のレイアウトを適用することもできます。 たとえば、表示される線グラフの縦棒グラフのレイアウトを適用できます。 レイアウトは、その特定のグラフの種類で使用できるグラフ要素のみを追加します。</para>
-          <para />
-        </remarks>
+        <remarks><para>現在のグラフの種類でレイアウトを使用する場合、グラフの種類に 1 から 10 までの数字が適用されます。  あるグラフの種類のレイアウトを別のグラフの種類に適用することもできます。  たとえば、折れ線グラフで使用できるレイアウトを棒グラフに適用できます。  レイアウトでは、そのグラフの種類に適用できるグラフ要素のみが追加されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Area3DGroup">
@@ -260,10 +260,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>3-D グラフ、面グラフ グループを返します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <summary>3-d グラフの面グラフグループを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,11 +293,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">省略可能な<b>オブジェクト</b>グラフ グループの番号です。</param>
-        <summary>2-d グラフのオブジェクトを返しますいずれかを表す 1 つの領域のグラフ種類グループ (、<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />オブジェクト)、または領域のグラフ種類グループのコレクション (、<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />コレクション)。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <param name="Index">省略可能な<b>オブジェクト</b>グラフグループ番号。</param>
+        <summary>2-d グラフの場合は、1つの面グラフグループ ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />オブジェクト) または面グラフグループ ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />コレクション) のコレクションを表すオブジェクトを返します。</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -329,13 +325,9 @@
         <Parameter Name="Format" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Gallery">
-          <b>Integer</b>
-        </param>
-        <param name="Format">
-          <b>オブジェクト</b>
-        </param>
-        <summary>この API では、Office のインフラストラクチャの Visual Studio のツールをサポートしているし、コードから直接使用するものではありません。</summary>
+        <param name="Gallery"><b>Integer</b></param>
+        <param name="Format"><b>Object</b></param>
+        <summary>この API は、Visual Studio Tools for Office のインフラストラクチャをサポートしており、コードから直接使用されることを意図したものではありません。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -371,10 +363,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>相当する 2-d グラフのサイズに近づけることができるように、3-D グラフを拡張できます。 <see cref="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" />プロパティを<b>True</b>にする必要があります。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール値</b>
-          <b>True の</b>場合、Microsoft Word は、同等の 2-d グラフのサイズに近づけることができるように、3 d グラフを拡大または縮小それ以外の場合、 <b>false を指定</b>します。</value>
+        <summary>3-d グラフのサイズを、対応する2-d グラフのサイズに近づけるように拡大または縮小します。 この<see cref="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" />プロパティは<b>True</b>である必要があります。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b>
+          <b>True</b>の場合、Microsoft Word は3-d グラフを拡大または縮小し、同等の2-d グラフのサイズに近づけることができます。それ以外の場合は<b>False</b>。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -404,12 +395,10 @@
         <Parameter Name="AxisGroup" Type="Microsoft.Office.Interop.Word.XlAxisGroup" />
       </Parameters>
       <Docs>
-        <param name="Type">取得する<b>オブジェクト</b>を指定の軸が必要です。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Word.XlAxisType" />定数:<b>軸</b><b>xlCategory</b>、 <b>xlSeriesAxis</b> (<b>xlSeriesAxis</b>は、3-D グラフに対してのみ有効です)。</param>
-        <param name="AxisGroup">省略可能な<see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />軸のグループを指定します。 この引数を省略すると、プライマリ グループが使用されます。 3-D グラフでは、軸のグループを 1 つだけがあります。</param>
-        <summary>1 つの軸またはグラフの軸のコレクションを表すいずれかのオブジェクトを取得します。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <param name="Type">Required<b>オブジェクト</b>は、返される軸を指定します。 使用できる<see cref="T:Microsoft.Office.Interop.Word.XlAxisType" />定数は、 <b>xlvalue</b>、 <b>Xlvalue</b>、または xlvalue<b>系列</b>軸 (3-d<b></b>グラフの場合にのみ有効です) のいずれかです。</param>
+        <param name="AxisGroup">省略<see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />可能軸グループを指定します。 この引数を省略すると、主軸グループが使われます。 3-D グラフでは、軸のグループは 1 つしかありません。</param>
+        <summary>グラフ上の単一の軸または軸のコレクションのいずれかを表すオブジェクトを取得します。</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -436,10 +425,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Walls</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Walls" />ユーザーが 3-D グラフの背壁の書式を個別に設定できるようにするオブジェクトです。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Walls" />
-        </value>
+        <summary>ユーザーが<see cref="T:Microsoft.Office.Interop.Word.Walls" /> 3-d グラフの背壁の書式を個別に設定できるオブジェクトを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Walls" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -472,10 +459,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グラフの 3-D 横棒グラフ グループを返します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <summary>3-d グラフの棒グラフグループを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -507,11 +492,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">省略可能な<b>オブジェクト</b>は、グラフ種類グループを指定します。</param>
-        <summary>2-d グラフのオブジェクトを返しますいずれかを表す単一の横棒グラフ グループ (、<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />オブジェクト) または横棒グラフ グループのコレクション (、<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />コレクション)。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <param name="Index">省略可能な<b>オブジェクト</b>は、グラフグループを指定します。</param>
+        <summary>2-d グラフの場合は、1つの棒グラフグループ ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />オブジェクト) または横棒グラフグループ ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />コレクション) のコレクションを表すオブジェクトを返します。</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -541,10 +524,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlBarShape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>すべての系列を 3-d 横棒グラフまたは縦棒グラフで使用する図形を設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlBarShape" />
-        </value>
+        <summary>3-d 横棒または縦棒グラフのすべてのデータ系列に使用する図形を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlBarShape" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -574,7 +555,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlCategoryLabelLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.XlCategoryLabelLevel" />グラフの項目軸ラベルのソース レベルを指定する定数です。 読み取り/書き込み。</summary>
+        <summary>グラフの項目軸<see cref="T:Microsoft.Office.Interop.Word.XlCategoryLabelLevel" />ラベルのソースレベルを指定する定数を設定または返します。 読み取り/書き込み。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -605,10 +586,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.ChartArea" /> 、グラフ エリア全体のグラフを表すオブジェクト。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartArea" />
-        </value>
+        <summary>グラフの<see cref="T:Microsoft.Office.Interop.Word.ChartArea" />完全なグラフエリアを表すオブジェクトを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartArea" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -638,12 +617,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グラフの配色パターンを表す整数値を設定または返します。 読み取り/書き込み。</summary>
+        <summary>グラフの配色を表す整数型の値を設定または返します。 読み取り/書き込み。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>グラフの配色は 1 から数えます 17 です。このプロパティの設定は、グラフ ツールのデザイン] リボン タブの色の変更ギャラリーに表示されている配色パターンに対応します。</para>
-          <para />
-        </remarks>
+        <remarks><para>グラフの配色パターンの番号は1から17です。このプロパティの設定は、[Chart Tools Design] リボンタブの [色の変更] ギャラリーに表示される配色に対応しています。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartData">
@@ -669,10 +646,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartData</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グラフに関連付けられているリンクまたは埋め込まれたデータに関する情報を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartData" />
-        </value>
+        <summary>グラフに関連付けられたリンクデータまたは埋め込みデータに関する情報を返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartData" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -705,11 +680,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">グラフ グループの番号です。 指定する場合は、1 つの<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />オブジェクトが返されます。 省略した場合、<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />のコレクションを格納するオブジェクトが返される各<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />そのグラフのオブジェクトです。</param>
+        <param name="Index">グラフ種類グループのインデックス番号。 指定した場合は<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> 、1つのオブジェクトが返されます。 省略すると、 <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />そのグラフのすべて<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />のオブジェクトのコレクションを含むオブジェクトが返されます。</param>
         <summary>グラフ内の単一のグラフ種類グループまたはすべてのグラフ種類グループのコレクションを表すオブジェクトを返します。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -739,14 +712,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グラフのグラフのスタイルを設定または返します。 読み取り/書き込みの<b>オブジェクト</b>です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
-        <remarks>
-          <para>グラフのスタイルを設定するのには 1 から 48 の数字を使用できます。</para>
-          <para />
-        </remarks>
+        <summary>グラフのグラフ スタイルを返すか設定します。 <b>オブジェクト</b>を読み取り/書き込み。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>1 から 48 の数字を使用して、グラフ スタイルを設定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartTitle">
@@ -775,15 +744,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartTitle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.ChartTitle" />を指定したグラフのタイトルを表すオブジェクト。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" />
-        </value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" />オブジェクトが存在しないし、しない限り、使用できません、<see cref="P:Microsoft.Office.Interop.Word.Chart.HasTitle" />グラフのプロパティは<b>True</b>にします。</para>
-          <para />
-        </remarks>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.ChartTitle" />たグラフのタイトルを表すオブジェクトを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /></value>
+        <remarks><para><see cref="T:Microsoft.Office.Interop.Word.ChartTitle" />オブジェクトが存在しないため、グラフの<see cref="P:Microsoft.Office.Interop.Word.Chart.HasTitle" />プロパティが<b>True</b>でない場合は使用できません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartType">
@@ -812,14 +776,10 @@
         <ReturnType>Microsoft.Office.Core.XlChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グラフの種類を設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>XlChartType</b>
-        </value>
-        <remarks>
-          <para>グラフの種類によっては、ピボット グラフ レポートで使用できません。</para>
-          <para />
-        </remarks>
+        <summary>グラフの種類を返すか設定します。 値の取得と設定が可能です。</summary>
+        <value><b>XlChartType</b></value>
+        <remarks><para>いくつかの種類のグラフは、ピボットグラフ レポートに使用できません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartWizard">
@@ -857,22 +817,20 @@
         <Parameter Name="ExtraTitle" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">省略可能な<b>オブジェクト</b>を新しいグラフの元データを含む範囲です。 この引数を省略すると、作業中のグラフ シート、または作業中のワークシートで選択されているグラフが編集されます。</param>
-        <param name="Gallery">オプションの<b>オブジェクト</b>の定数のいずれかが含まれています<see cref="T:Microsoft.Office.Interop.Excel.XlChartType" />グラフの種類を指定します。</param>
-        <param name="Format">オプションの<b>オブジェクト</b>の組み込みのオート フォーマットのオプション番号。 ギャラリーの種類によって、1 ～ 10 の数値を指定できます。 この引数を省略すると、ギャラリーの種類とデータ ソースに基づいて既定値が自動的に選択されます。</param>
-        <param name="PlotBy">省略可能な<b>オブジェクト</b>では、各系列のデータが行または列かどうかを指定します。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Word.XlRowCol" />定数: <b>xlRows</b>または<b>xlColumns</b>です。</param>
-        <param name="CategoryLabels">省略可能な<b>オブジェクト</b>には、行または項目軸ラベルが含まれている元の範囲内の列の数を指定する<b>整数</b>が含まれています。 有効な値では、対応する項目または系列の最大数より 1 小さい値を 0 (ゼロ) です。</param>
-        <param name="SeriesLabels">省略可能な<b>オブジェクト</b>には、行または系列ラベルを含む元の範囲内の列の数を指定する<b>整数</b>が含まれています。 有効な値では、対応する項目または系列の最大数より 1 小さい値を 0 (ゼロ) です。</param>
-        <param name="HasLegend">省略可能な<b>オブジェクト</b>は、凡例を表示するのには<b>True</b>に設定します。</param>
-        <param name="Title">省略可能な<b>オブジェクト</b>グラフのタイトル テキスト。</param>
-        <param name="CategoryTitle">省略可能な<b>オブジェクト</b>カテゴリ軸のラベルの文字列です。</param>
-        <param name="ValueTitle">省略可能な<b>オブジェクト</b>の値の軸ラベルの文字列です。</param>
-        <param name="ExtraTitle">省略可能な<b>オブジェクト</b>の 3-D グラフの系列軸のタイトル、または 2-d グラフの第 2 数値軸ラベル。</param>
-        <summary>任意のグラフのプロパティを変更します。 このメソッドを使用すると、すべてのプロパティを個別に設定せずに、短時間でグラフを書式設定できます。 このメソッドは非対話型、および指定したプロパティのみを変更します。</summary>
-        <remarks>
-          <para>場合<paramref name="Source" />を省略すると作業中の文書にグラフを選択範囲がないと、このメソッドが失敗して、エラーが発生します。</para>
-          <para />
-        </remarks>
+        <param name="Source">省略可能な<b>オブジェクト</b>新しいグラフのソースデータを含むセル範囲を指定します。 この引数を省略すると、作業中のグラフ シート、または作業中のワークシートで選択されているグラフが編集されます。</param>
+        <param name="Gallery">Optional<b>オブジェクト</b>には、グラフの種類<see cref="T:Microsoft.Office.Interop.Excel.XlChartType" />を指定する定数の1つが含まれています。</param>
+        <param name="Format">省略可能な<b>オブジェクト</b>組み込みのオートフォーマットのオプション番号を指定します。 ギャラリーの種類によって、1 ～ 10 の数値を指定できます。 この引数を省略すると、ギャラリーの種類とデータソースに基づいて、既定値が自動的に選択されます。</param>
+        <param name="PlotBy">Optional<b>オブジェクト</b>は、各データ系列のデータが行と列のどちらにあるかを指定します。 使用できる<see cref="T:Microsoft.Office.Interop.Word.XlRowCol" />定数は、 <b>Xlrows</b>または<b>xlrows</b>のいずれかです。</param>
+        <param name="CategoryLabels">Optional<b>オブジェクト</b>には、項目ラベルを含むソース範囲内の行数または列数を指定する<b>整数</b>が含まれています。 有効な値は、0 (ゼロ) から対応する項目または系列の最大数 -1 までの範囲です。</param>
+        <param name="SeriesLabels">Optional<b>オブジェクト</b>には、系列ラベルを含むソース範囲内の行数または列数を指定する<b>整数</b>が含まれています。 有効な値は、0 (ゼロ) から対応する項目または系列の最大数 -1 までの範囲です。</param>
+        <param name="HasLegend">凡例を含めるには、オプションの<b>オブジェクト</b>を<b>True</b>に設定します。</param>
+        <param name="Title">省略可能な<b>オブジェクト</b>グラフタイトルのテキスト。</param>
+        <param name="CategoryTitle">オプションの<b>オブジェクト</b>項目軸のタイトルテキストを指定します。</param>
+        <param name="ValueTitle">オプションの<b>オブジェクト</b>数値軸のタイトルテキストを指定します。</param>
+        <param name="ExtraTitle">省略可能な<b>オブジェクト</b>3-d グラフの系列軸のタイトル、または2-d グラフの2番目の数値軸のタイトルを指定します。</param>
+        <summary>任意のグラフのプロパティを変更します。 このメソッドを使用すると、すべてのプロパティを個別に設定せずに、短時間でグラフを書式設定できます。 このメソッドは非対話的で、指定されたプロパティのみを変更します。</summary>
+        <remarks><para>が<paramref name="Source" />省略され、選択範囲が作業中の文書のグラフではない場合、このメソッドは失敗し、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearToMatchColorStyle">
@@ -897,10 +855,8 @@
       <Parameters />
       <Docs>
         <summary>指定されたグラフでグラフに適用されている色スタイルに従わないすべての色を消去します。</summary>
-        <remarks>
-          <para>すべてのグラフの色をグラフに適用される色のスタイルの書式設定をリセットするのにはこのメソッドを使用します。</para>
-          <para />
-        </remarks>
+        <remarks><para>グラフの色のすべての書式設定を、グラフに適用されている色スタイルにリセットするためにこのメソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearToMatchStyle">
@@ -925,10 +881,8 @@
       <Parameters />
       <Docs>
         <summary>グラフ要素の書式をクリアして自動に設定します。</summary>
-        <remarks>
-          <para>グラフ要素の書式設定を自動にリセットするのにには、このメソッドを使用します。   グラフでこのメソッドを使用するすべての書式設定 (オーバーライドを含む) がリセットされます。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドは、グラフ要素の書式を自動にリセットするために使用します。    グラフでこのメソッドを使用すると、上書きを含むすべての書式がリセットされます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Column3DGroup">
@@ -960,10 +914,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>3-D グラフの縦棒グラフ グループを返します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <summary>3-d グラフの縦棒グラフグループを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -996,10 +948,8 @@
       </Parameters>
       <Docs>
         <param name="Index">省略可能な<b>オブジェクト</b>です。 グラフ種類グループを指定します。</param>
-        <summary>2-d グラフのオブジェクトを返しますいずれかを表す、1 つの縦棒グラフ グループ (、<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />オブジェクト) または縦棒のグラフ グループのコレクション (、<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />コレクション)。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <summary>2-d グラフの場合は、1つの縦棒グラフグループ ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />オブジェクト) または縦棒グラフグループ ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />コレクション) のコレクションのいずれかを表すオブジェクトを返します。</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1062,9 +1012,9 @@
         <Parameter Name="Size" Type="Microsoft.Office.Interop.Word.XlPictureAppearance" />
       </Parameters>
       <Docs>
-        <param name="Appearance">省略可能な<see cref="T:Microsoft.Office.Interop.Word.XlPictureAppearance" />の画像をコピーする方法を指定します。 既定値は、 <see cref="F:Microsoft.Office.Interop.Word.XlPictureAppearance.xlScreen" />。</param>
-        <param name="Format">省略可能な<see cref="T:Microsoft.Office.Interop.Word.XlCopyPictureFormat" />、画像の形式です。 既定値は、 <see cref="F:Microsoft.Office.Interop.Word.XlCopyPictureFormat.xlPicture" />。</param>
-        <param name="Size">省略可能な<see cref="T:Microsoft.Office.Interop.Word.XlPictureAppearance" />オブジェクト上にあるグラフ、グラフ シート (ワークシートに埋め込まれていない) 場合は、コピーした画像のサイズです。 既定値は、 <see cref="F:Microsoft.Office.Interop.Word.XlPictureAppearance.xlPrinter" />。</param>
+        <param name="Appearance">省略<see cref="T:Microsoft.Office.Interop.Word.XlPictureAppearance" />可能画像をコピーする方法を指定します。 既定値は <see cref="F:Microsoft.Office.Interop.Word.XlPictureAppearance.xlScreen" /> です。</param>
+        <param name="Format">画像<see cref="T:Microsoft.Office.Interop.Word.XlCopyPictureFormat" />の形式 (省略可能)。 既定値は <see cref="F:Microsoft.Office.Interop.Word.XlCopyPictureFormat.xlPicture" /> です。</param>
+        <param name="Size">( <see cref="T:Microsoft.Office.Interop.Word.XlPictureAppearance" />オプション) オブジェクトがグラフシート (ワークシートに埋め込まれていない) のグラフである場合に、コピーした図のサイズを指定します。 既定値は <see cref="F:Microsoft.Office.Interop.Word.XlPictureAppearance.xlPrinter" /> です。</param>
         <summary>選択しているオブジェクトを図としてクリップボードにコピーします。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1098,9 +1048,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Corners</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>3-D グラフのコーナーを返します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Corners" />コーナー</value>
+        <summary>3-d グラフの角を返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Corners" />丸い</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1127,14 +1076,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトが作成されたアプリケーションを示す 32 ビット<b>の整数</b>を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトが Microsoft Word で作成された場合、<see cref="P:Microsoft.Office.Interop.Word.Chart.Creator" />プロパティは、16 進数の値である 4d535744 を表す文字列"MSWD"を返します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
-          <para />
-        </remarks>
+        <summary>指定したオブジェクトが作成されたアプリケーションを示す32ビット<b>整数</b>を返します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトが Microsoft Word で作成されている<see cref="P:Microsoft.Office.Interop.Word.Chart.Creator" />場合、このプロパティは、文字列 "MSWD" を表す、16進数値である4D535744 を返します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataTable">
@@ -1160,10 +1105,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.DataTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.DataTable" /> 、グラフのデータ テーブルを表すオブジェクト。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.DataTable" />
-        </value>
+        <summary>グラフの<see cref="T:Microsoft.Office.Interop.Word.DataTable" />データテーブルを表すオブジェクトを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.DataTable" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1192,9 +1135,7 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトを削除します。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1258,14 +1199,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>3-D グラフの奥行きをグラフの幅 (%) の割合として設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>このプロパティは、3-D グラフにのみ適用されます。</para>
-          <para />
-        </remarks>
+        <summary>グラフの幅に対する割合 (20 ~ 2000 パーセント) で、3-d グラフの奥行きを設定または返します。 値の取得と設定が可能です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>[!メモ] このプロパティは、3-D グラフにのみ使用できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayBlanksAs">
@@ -1300,10 +1237,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlDisplayBlanksAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グラフの空白セルをプロットする方法を設定または返します。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.XlDisplayBlanksAs" />定数。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlDisplayBlanksAs" />
-        </value>
+        <summary>空白のセルがグラフでプロットされる方法を返すか設定します。 <see cref="T:Microsoft.Office.Interop.Word.XlDisplayBlanksAs" />定数のいずれかをすることができます。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlDisplayBlanksAs" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1336,10 +1271,8 @@
       </Parameters>
       <Docs>
         <param name="Index">省略可能な<b>オブジェクト</b>です。 グラフ種類グループを指定します。</param>
-        <summary>2-d グラフのオブジェクトを返しますいずれかを表す単一のドーナツ グラフ グループ (、<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />オブジェクト) またはドーナツ グラフ グループのコレクション (、<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />コレクション)。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <summary>2-d グラフの場合は、1つのドーナツグラフグループ ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />オブジェクト) またはドーナツグラフグループ ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />コレクション) のコレクションを表すオブジェクトを返します。</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1375,13 +1308,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>度単位で 3-D グラフ ビューの仰角を設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>グラフの仰角は、度単位でグラフを表示する高さです。デフォルトは、ほとんどのグラフの種類は 15 です。このプロパティの値が-90 °、および 3-D 横棒グラフの場合は、90 の間でする必要があります 0 と 44 の間である必要があります</para>。
-          <para><b>注</b>: このプロパティは、3-D グラフにのみ適用されます。</para><para /></remarks>
+        <summary>3-d グラフビューの仰角を表す角度を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>ほとんどの種類のグラフでは、既定の角度は 15 度です。Elevation プロパティに設定できる値の範囲は、-90 ～ 90 です。ただし、3-D 横棒グラフの場合は、0 ～ 44 です。</para>
+          <para>
+            <b>注</b>: このプロパティは、3-d グラフにのみ適用されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Export">
@@ -1408,13 +1340,11 @@
         <Parameter Name="Interactive" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="FileName">エクスポートされたファイルの名前の<b>文字列</b>が必要です。</param>
-        <param name="FilterName">グラフィック フィルターの言語に依存しない<b>オブジェクト</b>の名前は、レジストリに表示されます。</param>
-        <param name="Interactive">オプション<b>オブジェクト</b>の<b>場合は True。</b>フィルター固有のオプションを含むダイアログ ボックスを表示します。 この引数が<b>False</b>の場合は、フィルターの既定値が使用されます。 既定値は <b>False</b> です。</param>
-        <summary>グラフをグラフィック形式でエクスポートします。 このメソッドは、エクスポートが正常に完了したかどうかを示す<b>ブール</b>値を返します。</summary>
-        <returns>
-          <b>ブール型 (Boolean)</b>
-        </returns>
+        <param name="FileName">必須の<b>文字列</b>エクスポートするファイルの名前を指定します。</param>
+        <param name="FilterName">省略可能な<b>オブジェクト</b>は、レジストリに表示されているように、言語に依存しないグラフィックフィルターの名前を指定します。</param>
+        <param name="Interactive">オプションの<b>Object</b><b>True</b>を指定すると、フィルター固有のオプションを含むダイアログボックスが表示されます。 この引数に<b>False</b>を指定すると、フィルターの既定値が使用されます。 既定値は <b>False</b> です。</param>
+        <summary>グラフをグラフィック形式でエクスポートします。 このメソッドは、エクスポートが正常に実行されたかどうかを示す<b>ブール</b>値を返します。</summary>
+        <returns><b>Boolean</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1444,10 +1374,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Floor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Floor" /> 、3-D グラフの床面を表すオブジェクト。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Floor" />
-        </value>
+        <summary>3-d グラフ<see cref="T:Microsoft.Office.Interop.Word.Floor" />の床面を表すオブジェクトを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Floor" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1476,8 +1404,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">取得するデータ系列のデータ系列のコレクションのインデックス番号です。</param>
-        <summary>指定されたグラフ内のすべての系列または指定されたデータ系列のコレクションを返します。</summary>
+        <param name="Index">返される系列の series コレクション内のインデックス番号を指定します。</param>
+        <summary>指定されたグラフまたは指定されたデータ系列のすべてのデータ系列のコレクションを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1514,15 +1442,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>マーカーの幅に対する割合として、3-D グラフのデータ系列間の距離を設定または返します。 このプロパティに使用できる範囲は 5 ～ 200 の値です。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>
-            <b>注</b>: このプロパティは、3-D グラフにのみ適用されます。</para>
-          <para />
-        </remarks>
+        <summary>3-d グラフのデータ系列の間隔を、マーカーの幅に対する割合で設定または返します。 このプロパティに使用できる範囲は 5 ～ 200 の値です。 値の取得と設定が可能です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>
+            <b>注</b>: このプロパティは、3-d グラフにのみ適用されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetChartElement">
@@ -1552,27 +1476,307 @@
         <Parameter Name="Arg2" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="x">グラフ要素の X 座標の<b>整数値</b>が必要です。</param>
-        <param name="y">グラフ要素の Y 座標の<b>整数</b>が必要です。</param>
-        <param name="ElementID">
-          <b>整数</b>この引数に含まれるメソッドから制御が戻るとき、 <see cref="T:Microsoft.Office.Interop.Word.XlChartItem" /> 、指定した座標のグラフ要素の値です。 詳細については、「解説」セクションを参照してください。</param>
-        <param name="Arg1">
-          <b>整数</b>メソッドから制御が戻るとき、この引数には、グラフ要素に関連する情報が含まれています。 詳細については、「解説」セクションを参照してください。</param>
-        <param name="Arg2">
-          <b>整数</b>メソッドから制御が戻るとき、この引数には、グラフ要素に関連する情報が含まれています。 詳細については、「解説」セクションを参照してください。</param>
-        <summary>X 座標と Y 座標を指定するグラフ要素に関する情報を返します。 このメソッドは、最初の 2 つの引数だけに値を指定するという点で、他のメソッドと異なります。 他の引数は自動的に設定され、メソッドから制御が戻るときにこれらの値がコードで調べられます。</summary>
-        <remarks>
-          <para>値<paramref name="ElementID" />メソッドを返しますを決定した後かどうか<paramref name="Arg1" />と<paramref name="Arg2" />、次の表に示すように、すべての情報が含まれている</para>。
-          <list type="table"><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlAxis" /></description><description>21</description><description>AxisIndex</description><description>AxisType</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlAxisTitle" /></description><description>17</description><description>AxisIndex</description><description>AxisType</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDisplayUnitLabel" /></description><description>30</description><description>AxisIndex</description><description>AxisType</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlMajorGridlines" /></description><description>15</description><description>AxisIndex</description><description>AxisType</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlMinorGridlines" /></description><description>16</description><description>AxisIndex</description><description>AxisType</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlPivotChartDropZone" /></description><description>32</description><description>DropZoneType</description><description>なし</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlPivotChartFieldButton" /></description><description>31</description><description>DropZoneType</description><description>なし</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDownBars" /></description><description>20</description><description>GroupIndex</description><description>なし</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDropLines" /></description><description>26</description><description>GroupIndex</description><description>なし</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlHiLoLines" /></description><description>25</description><description>GroupIndex</description><description>なし</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlRadarAxisLabels" /></description><description>27</description><description>GroupIndex</description><description>なし</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlSeriesLines" /></description><description>22</description><description>GroupIndex</description><description>なし</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlUpBars" /></description><description>18</description><description>GroupIndex</description><description>なし</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlChartArea" /></description><description>2</description><description>なし</description><description>なし</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlChartTitle" /></description><description>4</description><description>なし</description><description>なし</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlCorners" /></description><description>6</description><description>なし</description><description>なし</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDataTable" /></description><description>7</description><description>なし</description><description>なし</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlFloor" /></description><description>23</description><description>なし</description><description>なし</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlLeaderLines" /></description><description>29</description><description>なし</description><description>なし</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlLegend" /></description><description>24</description><description>なし</description><description>なし</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlNothing" /></description><description>28</description><description>なし</description><description>なし</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlPlotArea" /></description><description>19</description><description>なし</description><description>なし</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlWalls" /></description><description>5</description><description>なし</description><description>なし</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDataLabel" /></description><description>7</description><description>SeriesIndex</description><description>PointIndex</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlErrorBars" /></description><description>9</description><description>SeriesIndex</description><description>なし</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlLegendEntry" /></description><description>12</description><description>SeriesIndex</description><description>なし</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlLegendKey" /></description><description>13</description><description>SeriesIndex</description><description>なし</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlSeries" /></description><description>3</description><description>SeriesIndex</description><description>PointIndex</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlShape" /></description><description>14</description><description>ShapeIndex</description><description>なし</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlTrendline" /></description><description>8</description><description>SeriesIndex</description><description>TrendLineIndex</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlXErrorBars" /></description><description>10</description><description>SeriesIndex</description><description>なし</description></item><item><description><see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlYErrorBars" /></description><description>11</description><description>SeriesIndex</description><description>なし</description></item></list><para>、次の表の<paramref name="Arg1" />と<paramref name="Arg2" />、メソッドが返された後</para>。
-          <list type="table"><item><description>AxisIndex</description><description>は、軸がプライマリまたはセカンダリであるかどうかを指定します。次のいずれかの<see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />定数: <b>xlPrimary</b>または<b>xlSecondary</b>です</description></item>。
-            <item><description>AxisType</description><description>では、軸の種類を指定します。次のいずれかの<see cref="T:Microsoft.Office.Interop.Word.XlAxisType" />定数: <b>xlCategory</b>、 <b>xlSeriesAxis</b>、または<b>軸</b></description></item>。
-            <item><description>DropZoneType</description><description>は、ドロップ ゾーンの種類を指定します。 列、データ、ページ、または行フィールドです。次のいずれかの<see cref="T:Microsoft.Office.Interop.Word.XlPivotFieldOrientation" />定数: <b>xlColumnField</b>、 <b>xlDataField</b>、 <b>xlPageField</b>、 <b>xlRowField</b>。列と行フィールドの定数は、系列とカテゴリのフィールドをそれぞれ指定します</description></item>。
-            <item><description>GroupIndex</description><description>内のオフセットを指定します<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />特定のグラフ グループのコレクションです</description></item>。内のオフセットを指定する
-            <item><description>PointIndex</description><description>、 <see cref="T:Microsoft.Office.Interop.Word.Points" /> 、系列内の特定のポイントのコレクションです。すべてのデータ ポイントが選択されている値 – 1 を指定します</description></item>。
-            <item><description>SeriesIndex</description><description>内のオフセットを指定します<see cref="T:Microsoft.Office.Interop.Word.Series" />特定のデータ系列のコレクションです</description></item>。
-            <item><description>ShapeIndex</description><description>内のオフセットを指定します<see cref="T:Microsoft.Office.Interop.Word.Shapes" />の特定の図形のコレクションです</description></item>。
-            <item><description>TrendlineIndex</description><description>内のオフセットを指定します<see cref="T:Microsoft.Office.Interop.Word.Trendlines" />系列内の特定の近似曲線のコレクションです</description></item></list>。
-          <para /></remarks>
+        <param name="x">必要な<b>整数</b>グラフ要素の X 座標を指定します。</param>
+        <param name="y">必要な<b>整数</b>グラフ要素の Y 座標です。</param>
+        <param name="ElementID"><b>整数型</b>メソッドから制御が戻るときに、この<see cref="T:Microsoft.Office.Interop.Word.XlChartItem" />引数には、指定した座標のグラフ要素の値が格納されます。 詳細については、「解説」セクションを参照してください。</param>
+        <param name="Arg1"><b>整数型</b>メソッドから制御が戻るときに、この引数にはグラフ要素に関連する情報が含まれます。 詳細については、「解説」セクションを参照してください。</param>
+        <param name="Arg2"><b>整数型</b>メソッドから制御が戻るときに、この引数にはグラフ要素に関連する情報が含まれます。 詳細については、「解説」セクションを参照してください。</param>
+        <summary>指定された x 座標および y 座標のグラフ要素についての情報を返します。 このメソッドは、最初の 2 つの引数だけに値を指定するという点で、他のメソッドと異なります。 他の引数は自動的に設定され、メソッドから制御が戻るときにこれらの値がコードで調べられます。</summary>
+        <remarks><para>次の表<paramref name="ElementID" />に示すように、メソッド<paramref name="Arg1" />に<paramref name="Arg2" />よって返される値は、情報があるかどうかを判断します。</para>
+          <list type="table">
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlAxis" />
+              </description>
+              <description>21</description>
+              <description>AxisIndex</description>
+              <description>AxisType</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlAxisTitle" />
+              </description>
+              <description>インチ</description>
+              <description>AxisIndex</description>
+              <description>AxisType</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDisplayUnitLabel" />
+              </description>
+              <description>31</description>
+              <description>AxisIndex</description>
+              <description>AxisType</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlMajorGridlines" />
+              </description>
+              <description>約</description>
+              <description>AxisIndex</description>
+              <description>AxisType</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlMinorGridlines" />
+              </description>
+              <description>16</description>
+              <description>AxisIndex</description>
+              <description>AxisType</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlPivotChartDropZone" />
+              </description>
+              <description>32</description>
+              <description>DropZoneType</description>
+              <description>None</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlPivotChartFieldButton" />
+              </description>
+              <description>31</description>
+              <description>DropZoneType</description>
+              <description>None</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDownBars" />
+              </description>
+              <description>1280</description>
+              <description>GroupIndex</description>
+              <description>None</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDropLines" />
+              </description>
+              <description>日</description>
+              <description>GroupIndex</description>
+              <description>なし</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlHiLoLines" />
+              </description>
+              <description>まで</description>
+              <description>GroupIndex</description>
+              <description>None</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlRadarAxisLabels" />
+              </description>
+              <description>27</description>
+              <description>GroupIndex</description>
+              <description>None</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlSeriesLines" />
+              </description>
+              <description>×</description>
+              <description>GroupIndex</description>
+              <description>None</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlUpBars" />
+              </description>
+              <description>個</description>
+              <description>GroupIndex</description>
+              <description>None</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlChartArea" />
+              </description>
+              <description>pbm-2</description>
+              <description>None</description>
+              <description>なし</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlChartTitle" />
+              </description>
+              <description>2/4</description>
+              <description>None</description>
+              <description>なし</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlCorners" />
+              </description>
+              <description>シックス</description>
+              <description>None</description>
+              <description>なし</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDataTable" />
+              </description>
+              <description>7</description>
+              <description>None</description>
+              <description>なし</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlFloor" />
+              </description>
+              <description>最高</description>
+              <description>None</description>
+              <description>なし</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlLeaderLines" />
+              </description>
+              <description>29</description>
+              <description>None</description>
+              <description>なし</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlLegend" />
+              </description>
+              <description>ソケット</description>
+              <description>None</description>
+              <description>なし</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlNothing" />
+              </description>
+              <description>個</description>
+              <description>None</description>
+              <description>なし</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlPlotArea" />
+              </description>
+              <description>年</description>
+              <description>None</description>
+              <description>なし</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlWalls" />
+              </description>
+              <description>5</description>
+              <description>なし</description>
+              <description>なし</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDataLabel" />
+              </description>
+              <description>7</description>
+              <description>SeriesIndex</description>
+              <description>PointIndex</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlErrorBars" />
+              </description>
+              <description>9 </description>
+              <description>SeriesIndex</description>
+              <description>None</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlLegendEntry" />
+              </description>
+              <description>個</description>
+              <description>SeriesIndex</description>
+              <description>None</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlLegendKey" />
+              </description>
+              <description>スリー</description>
+              <description>SeriesIndex</description>
+              <description>なし</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlSeries" />
+              </description>
+              <description>1/3</description>
+              <description>SeriesIndex</description>
+              <description>PointIndex</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlShape" />
+              </description>
+              <description>第</description>
+              <description>ShapeIndex</description>
+              <description>None</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlTrendline" />
+              </description>
+              <description>8 </description>
+              <description>SeriesIndex</description>
+              <description>TrendLineIndex</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlXErrorBars" />
+              </description>
+              <description>10 </description>
+              <description>SeriesIndex</description>
+              <description>None</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlYErrorBars" />
+              </description>
+              <description>#</description>
+              <description>SeriesIndex</description>
+              <description>None</description>
+            </item>
+          </list>
+          <para>次の表では、メソッド<paramref name="Arg1" />の<paramref name="Arg2" />戻り値とその後の意味について説明します。</para>
+          <list type="table">
+            <item>
+              <description>AxisIndex</description>
+              <description>軸が主軸または第 2 軸かどうかの値です。 使用できる<see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />定数は、 <b>xlprimary</b>または<b>xlprimary</b>のいずれかです。</description>
+            </item>
+            <item>
+              <description>AxisType</description>
+              <description>軸の種類を指定します。 <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" />使用できる定数は、 <b>xlcategory</b>、 <b>Xlcategory 軸</b>、 <b>xlcategory</b>のいずれかです。</description>
+            </item>
+            <item>
+              <description>DropZoneType</description>
+              <description>列、データ、ページ、または行フィールドのドロップ ゾーンの種類です。 使用できる<see cref="T:Microsoft.Office.Interop.Word.XlPivotFieldOrientation" />定数は、 <b>xlcolumnfield</b>、 <b>xldatafield</b>、 <b>xlPageField</b>、または<b>xlcolumnfield</b>のいずれかです。 列フィールドおよび行フィールドは、それぞれ系列フィールドおよび項目のフィールドに対応します。</description>
+            </item>
+            <item>
+              <description>GroupIndex</description>
+              <description>特定のグラフグループの<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />コレクション内のオフセットを指定します。</description>
+            </item>
+            <item>
+              <description>PointIndex</description>
+              <description>系列内の特定の<see cref="T:Microsoft.Office.Interop.Word.Points" />ポイントに対するコレクション内のオフセットを指定します。 値–1は、すべてのデータポイントが選択されていることを示します。</description>
+            </item>
+            <item>
+              <description>SeriesIndex</description>
+              <description>特定のデータ系列に<see cref="T:Microsoft.Office.Interop.Word.Series" />対するコレクション内のオフセットを指定します。</description>
+            </item>
+            <item>
+              <description>ShapeIndex</description>
+              <description>特定の図形の<see cref="T:Microsoft.Office.Interop.Word.Shapes" />コレクション内のオフセットを指定します。</description>
+            </item>
+            <item>
+              <description>TrendlineIndex</description>
+              <description>系列内の特定の<see cref="T:Microsoft.Office.Interop.Word.Trendlines" />近似曲線に対するコレクション内のオフセットを指定します。</description>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasAxis">
@@ -1611,16 +1815,13 @@
         <Parameter Name="Index2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index1">軸の種類の<b>オブジェクト</b>が必要です。 系列軸は 3-D グラフでのみ使うことができます。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.XlAxisType" />定数。</param>
-        <param name="Index2">省略可能な<b>オブジェクト</b>の軸のグループです。 3-D グラフには、一組の軸しかありません。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />定数。</param>
-        <summary>グラフに存在する軸を設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
-        <remarks>
-          <para>このプロパティを設定する場合、パラメーターの少なくとも 1 つの値を入力する必要があります</para>。
-          <para>Microsoft Word 可能性がありますを作成または、グラフの種類を変更する場合は、軸を削除、または<see cref="P:Microsoft.Office.Interop.Word.Axis.AxisGroup" />プロパティ</para>。
-          <para /></remarks>
+        <param name="Index1">必要な<b>オブジェクト</b>axis の種類を指定します。 系列軸は 3-D グラフでのみ使うことができます。 <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" />定数のいずれかをすることができます。</param>
+        <param name="Index2">オプションの<b>オブジェクト</b>axis グループを指定します。 3-D グラフには、一組の軸しかありません。 <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />定数のいずれかをすることができます。</param>
+        <summary>グラフに存在する軸を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>このプロパティを設定する場合は、少なくとも 1 つのパラメーターに値を入力する必要があります。</para>
+          <para>グラフの種類または<see cref="P:Microsoft.Office.Interop.Word.Axis.AxisGroup" />プロパティを変更すると、軸が自動的に作成または削除されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasDataTable">
@@ -1649,10 +1850,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定を示す値かどうか、<see cref="T:Microsoft.Office.Interop.Word.Chart" />のデータ テーブルが存在します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール値</b>
-          <b>True</b>場合は、グラフにデータ テーブルです。 それ以外の場合は<b>False</b></value>
+        <summary>がデータテーブルを持って<see cref="T:Microsoft.Office.Interop.Word.Chart" />いるかどうかを示す値を取得または設定します。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b>グラフにデータテーブルがある場合は
+          <b>True</b> 。 それ以外の場合は<b>False</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1719,10 +1919,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グラフに凡例がある場合は<b>True</b>を返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>グラフに凡例がある場合は<b>True</b>を返します。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1758,13 +1956,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>決定のかどうかには、指定したピボット グラフ レポートにピボット グラフ コントロールが表示されます。</summary>
-        <value>
-          <b>ブール値</b>通常のグラフでは、このプロパティは常に<b>False</b>が返され、設定することはできません。</value>
-        <remarks>
-          <para>既定値は<b>True</b></para>
-          <para />
-        </remarks>
+        <summary>指定されたピボットグラフレポートにピボットグラフコントロールを表示するかどうかを決定します。</summary>
+        <value><b>Boolean</b>通常のグラフの場合、このプロパティは常に<b>False</b>を返し、設定することはできません。</value>
+        <remarks><para>既定値は <b>True</b> です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasTitle">
@@ -1799,15 +1994,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、軸やグラフのタイトルを表示します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>グラフのタイトルは、<see cref="T:Microsoft.Office.Interop.Word.ChartTitle" />オブジェクトです。</para>
-          <para />
-        </remarks>
+        <summary>軸やグラフのタイトルを表示する場合は <b>True</b> です。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>グラフのタイトルは、 <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" />オブジェクトによって表されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeightPercent">
@@ -1842,10 +2032,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>(5 と 500%) の間のグラフの幅に対する割合で、3-D グラフの高さを設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>グラフの幅に対する割合 (5 ~ 500 パーセント) で3-d グラフの高さを設定または返します。 値の取得と設定が可能です。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1875,10 +2063,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Legend</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Legend" /> 、グラフの凡例を表すオブジェクト。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Legend" />
-        </value>
+        <summary>グラフの<see cref="T:Microsoft.Office.Interop.Word.Legend" />凡例を表すオブジェクトを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Legend" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1911,10 +2097,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>3-D グラフの折れ線グラフ グループを返します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <summary>3-d グラフの折れ線グラフグループを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1946,11 +2130,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">省略可能な<b>オブジェクト</b>は、グラフ種類グループを指定します。</param>
-        <summary>2-d グラフのオブジェクトを返しますいずれかを表す、単一の折れ線グラフ グループ (、<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />オブジェクト) または折れ線グラフ グループのコレクション (、<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />コレクション)。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <param name="Index">省略可能な<b>オブジェクト</b>は、グラフグループを指定します。</param>
+        <summary>2-d グラフの場合は、1つの折れ線グラフグループ ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />オブジェクト) または折れ線グラフグループ ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />コレクション) のコレクションのいずれかを表すオブジェクトを返します。</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1977,10 +2159,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定したオブジェクトの親を返します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2009,7 +2189,7 @@
         <Parameter Name="Type" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">グラフがクリップボード上にある場合、貼り付けるグラフ情報を指定します。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlPasteType" /><b>xlPasteFormats</b>、 <b>xlPasteFormulas</b>、または<b>xlPasteAll</b>。 <b>XlPasteAll</b>を既定値には。 クリップボードにグラフ以外のデータがある場合は、この引数は使用できません。 貼り付け</param>
+        <param name="Type">グラフがクリップボード上にある場合、貼り付けるグラフ情報を指定します。 <see cref="T:Microsoft.Office.Interop.Excel.XlPasteType" /> <b>XlPasteFormats</b>、 <b>xlPasteFormulas</b>、または<b>xlPasteAll</b>のいずれかをすることができます。 既定値は <b>xlPasteAll</b> です。 クリップボードにグラフ以外のデータがある場合、この引数は使用できません。 貼り付け</param>
         <summary>クリップボードから、指定されたグラフにデータを貼り付けます。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2046,14 +2226,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、3-D グラフの奥行きを表す<b>整数</b>値を設定します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>このプロパティの値は、0 と 100 の間である必要があります。このプロパティは、<see cref="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" />プロパティが<b>True</b>に設定します。</para>
-          <para />
-        </remarks>
+        <summary>3-d グラフビューの視点を表す<b>整数型 (Integer</b> ) の値を取得、または設定します。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>このプロパティの値は、0 と 100 の間である必要があります。 プロパティが True に設定さ<see cref="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" />れている場合<b></b>、このプロパティは無視されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Pie3DGroup">
@@ -2085,10 +2261,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>3-D グラフの円グラフ グループを返します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <summary>3-d グラフの円グラフグループを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2120,11 +2294,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">省略可能な<b>オブジェクト</b>は、グラフ種類グループを指定します。</param>
-        <summary>2-d グラフのオブジェクトを返しますいずれかを表す 1 つの円グラフ グループ (、<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />オブジェクト) または円グラフ グループのコレクション (、<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />コレクション)。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <param name="Index">省略可能な<b>オブジェクト</b>は、グラフグループを指定します。</param>
+        <summary>2-d グラフの場合は、1つの円グラフグループ ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />オブジェクト)、または円グラフグループ ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />コレクション) のコレクションを表すオブジェクトを返します。</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2152,7 +2324,7 @@
       </ReturnValue>
       <Docs>
         <summary>このオブジェクトではサポートされていません。</summary>
-        <value>返します。 <see cref="T:System.Object" />。</value>
+        <value>を<see cref="T:System.Object" />返します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2182,10 +2354,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.PlotArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.PlotArea" /> 、グラフのプロット エリアを表すオブジェクト。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.PlotArea" />
-        </value>
+        <summary>グラフの<see cref="T:Microsoft.Office.Interop.Word.PlotArea" />プロットエリアを表すオブジェクトを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.PlotArea" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2215,14 +2385,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlRowCol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>行または列は、グラフのデータ系列として使用する方法を設定または返します。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Word.XlRowCol" />定数: <b>xlColumns</b>または<b>xlRows</b>です。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" />
-        </value>
-        <remarks>
-          <para>ピボット グラフ レポートの場合、このプロパティは読み取り専用で、常に<b>xlColumns</b>を返します。</para>
-          <para />
-        </remarks>
+        <summary>グラフ上で列または行がデータ系列として使用される方法を返すか設定します。 使用できる<see cref="T:Microsoft.Office.Interop.Word.XlRowCol" />定数は、 <b>Xlcolumns</b>または<b>xlcolumns</b>のいずれかです。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /></value>
+        <remarks><para>ピボットグラフ レポートの場合、このプロパティは常に <b>xlColumns</b> を返し、値の取得のみ可能です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PlotVisibleOnly">
@@ -2257,10 +2423,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>可視セルだけをプロットするかどうかを示す値を設定を取得または取得します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール値</b>
-          <b>True</b>の場合は表示されているセルのみがプロットします。 場合は<b>false</b>非表示のセルがプロットされます。</value>
+        <summary>表示されたセルのみをプロットするかどうかを示す値を取得または設定します。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b>
+          <b>True</b>の場合は、表示されているセルのみをプロットします。 <b>False</b>の場合は、表示されているセルと非表示のセルの両方をプロットします。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2292,11 +2457,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">省略可能な<b>オブジェクト</b>は、グラフ種類グループを指定します。</param>
-        <summary>2-d グラフのオブジェクトを返しますいずれかを表す単一のレーダー チャート グループ (、<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />オブジェクト) またはレーダー チャート グループのコレクション (、<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />コレクション)。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <param name="Index">省略可能な<b>オブジェクト</b>は、グラフグループを指定します。</param>
+        <summary>2-d グラフの場合は、1つのレーダーチャートグループ ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />オブジェクト)、またはレーダーチャートグループのコレクション ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />コレクション) のいずれかを表すオブジェクトを返します。</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2357,15 +2520,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、グラフの軸を直角、グラフの回転角または仰角とは無関係に。 だけを 3-D 折れ線グラフ、縦棒グラフ、およびバーに適用されます。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
-        <remarks>
-          <para>このプロパティが<b>True の</b>場合、<see cref="P:Microsoft.Office.Interop.Word.Chart.Perspective" />プロパティは無視されます。</para>
-          <para />
-        </remarks>
+        <summary><b>True の</b> 場合、グラフの軸を直角、グラフの回転角または仰角とは無関係に。 3-D 折れ線グラフ、3-D 縦棒グラフ、および 3-D 横棒グラフにのみ適用されます。 値の取得と設定が可能です。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>このプロパティを<b>True</b>に設定すると、 <see cref="P:Microsoft.Office.Interop.Word.Chart.Perspective" />プロパティは無視されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Rotation">
@@ -2400,14 +2558,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>3-D グラフ ビュー (度単位で、z 軸周りのプロット エリアの回転角度) の回転角度を設定または返します。 このプロパティの値をする必要があります 0 から 360、3-D 横棒グラフの場合は、44、0 から値がいるようにする必要がありますか。 既定値は 20 です。 3-D グラフにのみ適用されます。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
-        <remarks>
-          <para>回転は常に最も近い整数に丸められます。</para>
-          <para />
-        </remarks>
+        <summary>3-d グラフビューの回転 (z 軸を中心としたプロットエリアの回転角度) を設定または返します。 このプロパティの値は、0 ~ 360 の範囲に設定する必要があります。ただし、3-d 横棒グラフの場合は、0 ~ 44 にする必要があります。 既定値は 20 です。 3-d グラフにのみ適用されます。 値の取得と設定が可能です。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>回転角は常に最も近い整数に丸められます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveChartTemplate">
@@ -2433,12 +2587,10 @@
         <Parameter Name="FileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FileName">グラフ テンプレートの名前の<b>文字列</b>が必要です。</param>
+        <param name="FileName">必須の<b>文字列</b>グラフテンプレートの名前を指定します。</param>
         <summary>使用可能なグラフ テンプレートの一覧に、ユーザー設定テンプレートを保存します。</summary>
-        <remarks>
-          <para>既定では、このメソッドは、ユーザーのグラフ テンプレート ディレクトリに作業中のグラフを保存します。 UNC または URL を指定する場合、グラフが保存されます指定した場所に。</para>
-          <para />
-        </remarks>
+        <remarks><para>既定では、このメソッドによってアクティブなグラフがユーザーのグラフ テンプレート ディレクトリに保存されます。UNC または URL が指定されている場合は、グラフは代わりに指定された場所に保存されます。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -2466,11 +2618,9 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">(シートでのみ使用されます)。 省略可能な<b>オブジェクト</b><b>は True</b>を指定したオブジェクトで現在の選択範囲を置き換えます。 <b>False を指定</b> する現在の選択範囲を拡張する選択したオブジェクトと指定したオブジェクトです。</param>
+        <param name="Replace">(sheet でのみ使用)。 省略可能な<b>オブジェクト</b><b>True</b>を指定したオブジェクトで現在の選択範囲を置換します。 <b>False を指定</b> する現在の選択範囲を拡張する選択したオブジェクトと指定したオブジェクトです。</param>
         <summary>オブジェクトを選択します。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2499,11 +2649,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">名前または番号、一連の<b>オブジェクト</b>が必要です。</param>
-        <summary>グラフ内のすべての系列を表す<b>オブジェクト</b>を返します。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <param name="Index">必要な<b>オブジェクト</b>データ系列の名前またはインデックス番号を指定します。</param>
+        <summary>グラフのすべてのデータ系列を表す<b>オブジェクト</b>を返します。</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2533,7 +2681,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlSeriesNameLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.XlSeriesNameLevel" />シリーズの名前のソース レベルを指定する定数です。 読み取り/書き込み。</summary>
+        <summary>系列名のソース<see cref="T:Microsoft.Office.Interop.Word.XlSeriesNameLevel" />レベルを指定する定数を設定または返します。 読み取り/書き込み。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2561,7 +2709,7 @@
         <Parameter Name="FileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FileName">グラフィック ファイルの名前の<b>文字列</b>が必要です。</param>
+        <param name="FileName">必須の<b>文字列</b>グラフィックファイルの名前を指定します。</param>
         <summary>グラフの背景のグラフィックを設定します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2589,8 +2737,8 @@
         <Parameter Name="Name" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name">必須。 <b>オブジェクト</b>新しいグラフを作成するときに使用される既定のグラフ テンプレートの名前を指定します。  ギャラリーまたは特別なユーザー定義のグラフ テンプレートの名前をこの名前を設定することができます<see cref="T:Microsoft.Office.Interop.Word.XlChartGallery" />定数、 <see cref="F:Microsoft.Office.Interop.Word.XlChartGallery.xlBuiltIn" />、組み込みのグラフ テンプレートを指定します。</param>
-        <summary>新しいグラフを作成するときに使用するグラフ テンプレートの名前を指定します。</summary>
+        <param name="Name">必須です。 <b>オブジェクト</b>新しいグラフの作成時に使用される既定のグラフテンプレートの名前を指定します。  この名前は、ギャラリーのユーザー定義のグラフテンプレートの名前、または組み込みのグラフテンプレートを指定<see cref="T:Microsoft.Office.Interop.Word.XlChartGallery" />するため<see cref="F:Microsoft.Office.Interop.Word.XlChartGallery.xlBuiltIn" />の特別な定数のいずれかに設定できます。</param>
+        <summary>新しいグラフを作成するときに Microsoft Word で使用するグラフテンプレートの名前を指定します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2617,19 +2765,26 @@
         <Parameter Name="Element" Type="Microsoft.Office.Core.MsoChartElementType" />
       </Parameters>
       <Docs>
-        <param name="Element">必要な<see cref="T:Microsoft.Office.Core.MsoChartElementType" />グラフ要素の型を指定します。</param>
-        <summary>グラフのグラフの要素を設定します。 値の取得および設定が可能です。</summary>
-        <remarks>
-          <para>グラフでは、[レイアウト] タブで次のコマンドに対応、<see cref="M:Microsoft.Office.Interop.Word.Chart.SetElement(Microsoft.Office.Core.MsoChartElementType)" />メソッド:</para>
+        <param name="Element">Required <see cref="T:Microsoft.Office.Core.MsoChartElementType" />グラフ要素の種類を指定します。</param>
+        <summary>グラフのグラフ要素を設定します。 値の取得と設定が可能です。</summary>
+        <remarks><para>グラフの場合、[レイアウト] タブの次のコマンドが<see cref="M:Microsoft.Office.Interop.Word.Chart.SetElement(Microsoft.Office.Core.MsoChartElementType)" />メソッドに対応します。</para>
           <list type="bullet">
             <item>
-              <para>ラベル グループ内のすべてのものです</para>
-            </item>。
-            <item><para>[軸] のすべてのものです</para></item>。
-            <item><para>[分析] グループ内のすべてのものです</para></item>。
-            <item><para>返すプロパティ、グラフの壁面、およびグラフの床面のボタンです</para></item></list>。
-          <para><see cref="T:Microsoft.Office.Core.MsoChartElementType" />は、上記のコマンドのすべてを参照する定数の列挙体です</para>。
-          <para /></remarks>
+              <para>Labels グループのすべて</para>
+            </item>
+            <item>
+              <para>Axes グループのすべて</para>
+            </item>
+            <item>
+              <para>Analysis グループのすべて</para>
+            </item>
+            <item>
+              <para>[ PlotArea]、[ グラフの壁面]、および [ グラフの床面] ボタン</para>
+            </item>
+          </list>
+          <para>
+            <see cref="T:Microsoft.Office.Core.MsoChartElementType" />は、上記のすべてのコマンドを参照する定数の列挙です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSourceData">
@@ -2655,10 +2810,9 @@
         <Parameter Name="PlotBy" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">
-          <b>文字列</b>ソース データを含むグラフのデータ範囲のアドレスが必要です。</param>
-        <param name="PlotBy">省略可能な<b>オブジェクト</b>データをプロットする方法を指定します。 次のいずれかの方法は、<see cref="T:Microsoft.Office.Interop.Word.XlRowCol" />定数: <b>xlColumns</b>または<b>xlRows</b>です。</param>
-        <summary>ソース データ範囲を設定、 <see cref="T:Microsoft.Office.Interop.Word.Chart" />。</summary>
+        <param name="Source">必須の<b>文字列</b>ソースデータを含むグラフのデータ範囲のアドレスです。</param>
+        <param name="PlotBy">省略可能な<b>オブジェクト</b>は、データをプロットする方法を指定します。 使用できる<see cref="T:Microsoft.Office.Interop.Word.XlRowCol" />定数は、 <b>Xlcolumns</b>または<b>xlcolumns</b>のいずれかです。</param>
+        <summary>のソースデータ範囲を設定し<see cref="T:Microsoft.Office.Interop.Word.Chart" />ます。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2685,10 +2839,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> 、グラフ シート上のすべての図形を表すコレクション。 値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>グラフシート<see cref="T:Microsoft.Office.Interop.Word.Shapes" />のすべての図形を表すコレクションを返します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2719,8 +2871,7 @@
       </ReturnValue>
       <Docs>
         <summary>このオブジェクト、メンバー、または列挙体は非推奨です。ユーザーのコード内で使用されるものではありません。</summary>
-        <value>
-          <b>true の</b>場合、すべてのフィールドのピボット グラフのボタンを表示する必要があります。それ以外の場合、 <b>false を指定</b>します。</value>
+        <value><b>true</b>の場合は、ピボットグラフのすべてのフィールドボタンを表示する必要があります。それ以外の場合は<b>false</b>。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2781,14 +2932,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値が数値軸の最大値より大きい場合にデータ ラベルを表示するかどうかを設定または返します。  値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>データ ポイントのサイズよりも小さくなったように数値軸を変更する場合は、データ ラベルを表示するかどうかを設定するのにはこのプロパティを使用します。このプロパティは、2-d グラフにのみ適用されます。</para>
-          <para />
-        </remarks>
+        <summary>値が数値軸の最大値より大きい場合にデータラベルを表示するかどうかを設定または返します。  値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>数値軸をデータ要素のサイズより小さくなるように変更すると、このプロパティを使用してデータ ラベルを表示するかどうかを設定できます。このプロパティは、2-D グラフにのみ使用できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowLegendFieldButtons">
@@ -2818,8 +2965,7 @@
       </ReturnValue>
       <Docs>
         <summary>このオブジェクト、メンバー、または列挙体は非推奨です。ユーザーのコード内で使用されるものではありません。</summary>
-        <value>
-          <b>true の</b>場合、ピボット グラフで凡例フィールド ボタンが配置されて表示されます。それ以外の場合、 <b>false を指定</b>します。</value>
+        <value><b>true</b>の場合、ピボットグラフの凡例フィールドボタンを表示する必要があります。それ以外の場合は<b>false</b>。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2849,9 +2995,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このオブジェクト、メンバー、または列挙型は推奨されていませんし、コード内で使用するものではありません。</summary>
-        <value>
-          <b>true の</b>場合は、ピボット グラフ レポート フィルター フィールド ボタンを表示する必要があります。それ以外の場合、 <b>false を指定</b>します。</value>
+        <summary>このオブジェクト、メンバー、または列挙は推奨されておらず、コード内で使用するためのものではありません。</summary>
+        <value>ピボットグラフのレポートフィルターフィールドボタンを表示する必要がある場合は<b>true</b> 。それ以外の場合は<b>false</b>。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2881,9 +3026,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このオブジェクト、メンバー、または列挙型は推奨されていませんし、コード内で使用するものではありません。</summary>
-        <value>
-          <b>true の</b>場合、ピボット グラフで値フィールド ボタンが配置されて表示されます。それ以外の場合、 <b>false を指定</b>します。</value>
+        <summary>このオブジェクト、メンバー、または列挙は推奨されておらず、コード内で使用するためのものではありません。</summary>
+        <value><b>true</b>の場合、ピボットグラフの値フィールドボタンを表示する必要があります。それ以外の場合は<b>false</b>。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2910,10 +3054,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Walls</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Walls" />ユーザーが 3-D グラフの側壁の書式を個別に設定できるようにするオブジェクトです。  値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Walls" />
-        </value>
+        <summary>ユーザーが<see cref="T:Microsoft.Office.Interop.Word.Walls" /> 3-d グラフの側壁を個別に書式設定できるオブジェクトを返します。  読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Walls" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2955,10 +3097,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>この API では、Office のインフラストラクチャの Visual Studio のツールをサポートしているし、コードから直接使用するものではありません。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>この API は、Visual Studio Tools for Office のインフラストラクチャをサポートしており、コードから直接使用されることを意図したものではありません。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2991,10 +3131,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>3-D グラフの等高線グラフ グループを返します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <summary>3-d グラフの等高線グラフグループを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3037,9 +3175,7 @@
       </ReturnValue>
       <Docs>
         <summary>内部使用のため予約済みです。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3069,10 +3205,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Walls</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Walls" /> 、3-D グラフの壁面を表すオブジェクト。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Walls" />
-        </value>
+        <summary>3-d グラフ<see cref="T:Microsoft.Office.Interop.Word.Walls" />の壁面を表すオブジェクトを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Walls" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3104,11 +3238,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">省略可能な<b>オブジェクト</b>は、グラフ種類グループを指定します。</param>
-        <summary>2-d グラフのオブジェクトを返しますいずれかを表す 1 つの散布図グループ (、<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />オブジェクト) または散布図グループのコレクション (、<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />コレクション)。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <param name="Index">省略可能な<b>オブジェクト</b>は、グラフグループを指定します。</param>
+        <summary>2-d グラフの場合は、1つの散布図グループ ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />オブジェクト)、または散布図グループ ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />コレクション) のコレクションを表すオブジェクトを返します。</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

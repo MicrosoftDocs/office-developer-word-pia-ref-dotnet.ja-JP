@@ -1,13 +1,5 @@
 <Type Name="ChartCharacters" FullName="Microsoft.Office.Interop.Word.ChartCharacters">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0201661352937f8642817ba72ac6a71b16dfaba3" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670937" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartCharacters" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="91f49ab172734f23f2839e7fd38c0277a2ca51c0" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147278" /></Metadata><TypeSignature Language="C#" Value="public interface ChartCharacters" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartCharacters" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartCharacters" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartCharacters" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>オブジェクトに含まれる文字列の文字を表します。</summary>
-    <remarks>
-      <para>
-        <see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" />オブジェクトでは、完全なテキスト文字列に含まれる文字の並びを変更することができます</para>。
-      <para><b>文字</b>を使用 (<paramref name="Start" />、 <paramref name="Length" />)、どこで<paramref name="Start" />開始文字番号と<paramref name="Length" />が返される文字の数、<see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" />オブジェクトです</para>。
-      <para /></remarks>
+    <remarks><para>オブジェクト<see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" />を使用すると、完全なテキスト文字列に含まれる任意の文字のシーケンスを変更できます。</para>
+      <para>オブジェクトを<paramref name="Length" /> <paramref name="Start" /> <paramref name="Length" /> <paramref name="Start" /> <see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" />取得するには、<b>文字</b>(,) を使用します。ここで、は開始文字番号を文字数で指定します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,10 +47,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。 このプロパティが返すオブジェクト修飾子を使用する場合、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> (ことができますこのプロパティを使用する OLE オートメーション オブジェクトとそのオブジェクトのアプリケーションを取得)、指定したオブジェクトの作成者を表すオブジェクト。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用<see cref="T:Microsoft.Office.Interop.Word._Application" />すると、Microsoft Word アプリケーションを表すオブジェクトが返されます。 オブジェクト修飾子を使用する場合、このプロパティは、 <see cref="T:Microsoft.Office.Interop.Word._Application" />指定したオブジェクトの作成元を表すオブジェクトを返します (このプロパティを OLE オートメーションオブジェクトと共に使用して、そのオブジェクトのアプリケーションを返すことができます)。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,9 +79,7 @@
       </ReturnValue>
       <Docs>
         <summary>この範囲の文字のテキストを返します。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,9 +107,7 @@
       </ReturnValue>
       <Docs>
         <summary>コレクション内にあるオブジェクトの数を返します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,14 +134,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトが Microsoft Word で作成された場合、<see cref="P:Microsoft.Office.Interop.Word.ChartCharacters.Creator" />を返します文字列を表す 16 進数値である 4d535744 をします。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
-          <para />
-        </remarks>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトが Microsoft Word で作成されている<see cref="P:Microsoft.Office.Interop.Word.ChartCharacters.Creator" />場合、このプロパティは、文字列 "MSWD" を表す、16進数値の4D535744 を返します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -182,9 +162,7 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトを削除します。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,9 +190,7 @@
       </ReturnValue>
       <Docs>
         <summary>指定したオブジェクトのフォントを返します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFont" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFont" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,9 +218,7 @@
       <Docs>
         <param name="String">挿入する文字列を指定します。</param>
         <summary>選択されている文字列の前に文字列を挿入します。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,10 +245,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定したオブジェクトの親を返します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -304,10 +276,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトのふりがなテキストを設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
+        <summary>オブジェクトのふりがなテキストを設定または返します。 値の取得と設定が可能です。</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -337,10 +307,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトのテキストを設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <summary>指定されたオブジェクトのテキストを返すか設定します。 値の取得と設定が可能です。</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

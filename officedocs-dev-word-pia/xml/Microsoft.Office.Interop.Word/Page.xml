@@ -1,13 +1,5 @@
 <Type Name="Page" FullName="Microsoft.Office.Interop.Word.Page">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="89b8ef148f01e9d3f0c12f2806f50476efc1f370" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671715" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Page" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8d472e16e6aba91d640b12e000710035de65e0ab" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144240" /></Metadata><TypeSignature Language="C#" Value="public interface Page" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Page" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Page" />
   <TypeSignature Language="VB.NET" Value="Public Interface Page" />
@@ -27,11 +19,10 @@
   </Attributes>
   <Docs>
     <summary>ドキュメント内のページを表します。文書のページ レイアウトをプログラムで定義するのには、 <b>Page</b> オブジェクトとそれに関連するメソッドおよびプロパティを使用します。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.Pages.Item(System.Int32)" /> 、ドキュメントの特定のページにアクセスするためのメソッドです</para>。
-      <para>ページ番号にアクセスするには、使用、<see cref="P:Microsoft.Office.Interop.Word.Range.Information(Microsoft.Office.Interop.Word.WdInformation)" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Word.Range" />または<see cref="T:Microsoft.Office.Interop.Word.Selection" />オブジェクト、または<see cref="P:Microsoft.Office.Interop.Word.Break.PageIndex" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Word.Break" />に属しているオブジェクト、<see cref="T:Microsoft.Office.Interop.Word.Breaks" />指定された<b>Page</b>オブジェクトのコレクションです</para>。
-      <para>、<see cref="P:Microsoft.Office.Interop.Word.Page.Top" />と<see cref="P:Microsoft.Office.Interop.Word.Page.Left" /><b>Page</b>オブジェクトのプロパティは、ページの左上隅を示す 0 (ゼロ) を常に返します。<see cref="P:Microsoft.Office.Interop.Word.Page.Height" />と<see cref="P:Microsoft.Office.Interop.Word.Page.Width" />プロパティの値の高さと幅をポイント単位 (72 ポイント = 1 インチ) で [ページ設定] ダイアログ ボックスまたは、指定した用紙サイズの<see cref="T:Microsoft.Office.Interop.Word.PageSetup" />オブジェクトです。たとえば、縦画面モードで 8-1/2、11 インチのページ、 <b>Height</b>プロパティを返します 792、 <b>Width</b>プロパティは 612 を返します。すべての 4 つのプロパティは読み取り専用</para>。
-      <para /></remarks>
+    <remarks><para>文書内<see cref="P:Microsoft.Office.Interop.Word.Pages.Item(System.Int32)" />の特定のページにアクセスするには、メソッドを使用します。</para>
+      <para>ページ番号にアクセスするには、 <see cref="P:Microsoft.Office.Interop.Word.Range.Information(Microsoft.Office.Interop.Word.WdInformation)" /> <see cref="T:Microsoft.Office.Interop.Word.Range" />または<see cref="T:Microsoft.Office.Interop.Word.Selection" />オブジェクトのプロパティ、または<see cref="P:Microsoft.Office.Interop.Word.Break.PageIndex" />指定され<see cref="T:Microsoft.Office.Interop.Word.Break" />た<see cref="T:Microsoft.Office.Interop.Word.Breaks" /> <b>page</b>オブジェクトのコレクションに属するオブジェクトのプロパティを使用します。</para>
+      <para>Page <see cref="P:Microsoft.Office.Interop.Word.Page.Top" />オブジェクト<see cref="P:Microsoft.Office.Interop.Word.Page.Left" />のプロパティと<b></b>プロパティは、ページの左上隅を示す 0 (ゼロ) を常に返します。 プロパティ<see cref="P:Microsoft.Office.Interop.Word.Page.Height" />および<see cref="P:Microsoft.Office.Interop.Word.Page.Width" />プロパティは、[ページ設定] ダイアログボックスで指定した用紙サイズの高さと幅をポイント単位 (72 ポイント = 1 インチ<see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> )、またはオブジェクトを使用して取得します。 たとえば、縦画面モードで 8-1/2、11 インチのページ、 <b>Height</b> プロパティを返します 792、 <b>Width</b> プロパティは 612 を返します。 すべての 4 つのプロパティは、読み取り専用です。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,12 +76,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Breaks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Breaks" />ページの区切りを表すコレクション。 <b>Breaks</b> コレクションには、ページ、列、およびセクション区切りが含まれています。</summary>
+        <summary>ページ上<see cref="T:Microsoft.Office.Interop.Word.Breaks" />の区切りを表すコレクションを返します。 <b>Breaks</b> コレクションには、ページ、列、およびセクション区切りが含まれています。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>プログラムでドキュメントのページ レイアウトを定義するのには、<b>区切り</b>のコレクションと関連するオブジェクトおよびプロパティを使用します。</para>
-          <para />
-        </remarks>
+        <remarks><para>プログラムでドキュメントのページ レイアウトを定義するのには、 <b>区切り</b> のコレクションと関連するオブジェクトおよびプロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -116,12 +105,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnhMetaFileBits">
@@ -147,15 +135,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図として表示するのテキストのページの表示方法を表す<b>オブジェクト</b>を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Word.Page.EnhMetaFileBits" />プロパティは、Microsoft Windows 32 アプリケーション プログラミング インタ フェースから、Microsoft Visual Basic または Microsoft C の開発環境で使用できるバイトの配列を返します。</para>
-          <para />
-        </remarks>
+        <summary>テキストのページの表示形式を表す<b>オブジェクト</b>を返します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>この<see cref="P:Microsoft.Office.Interop.Word.Page.EnhMetaFileBits" />プロパティは、バイトの配列を返します。これは、Microsoft Visual Basic または microsoft C++ 開発環境から microsoft Windows 32 アプリケーションプログラミングインターフェイスで使用できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -181,13 +164,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>Height</b>プロパティは、[ページ設定] ダイアログ ボックスまたは指定した用紙サイズの高さをポイント単位 (72 ポイント = 1 インチ) を返し、<see cref="T:Microsoft.Office.Interop.Word.PageSetup" />オブジェクトです。</summary>
+        <summary><b>Height</b>プロパティは、[ページ設定] ダイアログボックスまたは<see cref="T:Microsoft.Office.Interop.Word.PageSetup" />オブジェクトを使用して指定した用紙サイズの高さをポイント単位 (72 ポイント = 1 インチ) で返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>たとえば、縦画面モードで 8-1/2、11 インチのページ、 <b>Height</b>プロパティを返します 792、 <b>Width</b>プロパティは 612 を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>たとえば、縦画面モードで 8-1/2、11 インチのページ、 <b>Height</b> プロパティを返します 792、 <b>Width</b> プロパティは 612 を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -213,7 +193,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します 0 (ゼロ) は、ページの左上隅を示します。</summary>
+        <summary>ページの左上隅を示す 0 (ゼロ) を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -269,12 +249,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Rectangles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Rectangles" /> 、ドキュメント内のページでテキストやグラフィックスの一部を表すコレクション。</summary>
+        <summary>文書内<see cref="T:Microsoft.Office.Interop.Word.Rectangles" />のページにあるテキストまたはグラフィックスの一部を表すコレクションを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>文書のページ レイアウトをプログラムで定義するのには、 <b>Rectangles</b>コレクションおよび関連するオブジェクトおよびプロパティを使用します。四角形は、テキストまたは文書内のページ上の画像の部分に対応します。</para>
-          <para />
-        </remarks>
+        <remarks><para>文書のページ レイアウトをプログラムで定義するのには、 <b>Rectangles</b> コレクションおよび関連するオブジェクトおよびプロパティを使用します。四角形は、テキストまたは文書内のページ上の画像の部分に対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveAsPNG">
@@ -331,7 +309,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します 0 (ゼロ) は、ページの左上隅を示します。</summary>
+        <summary>ページの左上隅を示す 0 (ゼロ) を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -359,12 +337,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>[ページ設定] ダイアログ ボックスまたは、指定した用紙サイズの幅をポイント単位 (72 ポイント = 1 インチ) での取得、<see cref="T:Microsoft.Office.Interop.Word.PageSetup" />オブジェクトです。</summary>
+        <summary>[ページ設定] ダイアログボックスまたは<see cref="T:Microsoft.Office.Interop.Word.PageSetup" />オブジェクトを使用して指定した用紙サイズの幅をポイント単位 (72 ポイント = 1 インチ) で返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>たとえば、縦画面モードで 8-1/2、11 インチのページ、 <b>Height</b>プロパティを返します 792、 <b>Width</b>プロパティは 612 を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>たとえば、縦画面モードで 8-1/2、11 インチのページ、 <b>Height</b> プロパティを返します 792、 <b>Width</b> プロパティは 612 を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

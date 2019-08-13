@@ -1,13 +1,5 @@
 <Type Name="PageNumber" FullName="Microsoft.Office.Interop.Word.PageNumber">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="84335aeefbe91fe9d5f4003bc39813a7196ba593" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671614" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PageNumber" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b811b0b2c2b1792d369b2150ed58810310943396" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144214" /></Metadata><TypeSignature Language="C#" Value="public interface PageNumber" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PageNumber" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.PageNumber" />
   <TypeSignature Language="VB.NET" Value="Public Interface PageNumber" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>ヘッダーまたはフッターのページ番号を表します。</summary>
-    <remarks>
-      <para>
-        <b>PageNumber</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.PageNumbers" />コレクションです。<b>PageNumbers</b>コレクションには、1 つのヘッダーまたはフッターにページ番号がすべてが含まれています</para>。
-      <para>使用して<b>PageNumbers</b>(<paramref name="index" />)、<paramref name="index" />は、単一の<b>PageNumber</b>オブジェクトを取得する、インデックス番号。ほとんどの場合、ヘッダーまたはフッターは 1 つのページ番号は、インデックス番号は 1 です</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" />のヘッダーまたはフッターにページ番号 (PAGE フィールド) を追加する方法です</para>。
-      <para /></remarks>
+    <remarks><para><b>PageNumber</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" />コレクションのメンバーです。 <b>PageNumbers</b> コレクションには、1 つのヘッダーまたはフッターのすべてのページ番号が含まれます。</para>
+      <para><b>PageNumbers</b>(<paramref name="index" />) を使用し<paramref name="index" />ます。ここで、はインデックス番号を使用して、単一の<b>PageNumber</b>オブジェクトを取得します。 ほとんどの場合、ヘッダーまたはフッターには、インデックス番号 1 のページ番号が 1 つだけ含まれます。</para>
+      <para>ページ番号<see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> (ページフィールド) をヘッダーまたはフッターに追加するには、メソッドを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPageNumberAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、 <see cref="T:Microsoft.Office.Interop.Word.WdPageNumberAlignment" /> 、ページ番号の配置を表す定数です。</summary>
+        <summary>ページ番号の配置<see cref="T:Microsoft.Office.Interop.Word.WdPageNumberAlignment" />を表す定数を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -142,12 +132,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -196,7 +185,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,7 +212,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内の項目の位置を表す<b>整数</b>を返します。</summary>
+        <summary>コレクション内の項目の位置を表す<b>整数型 (Integer</b> ) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -278,10 +267,8 @@
       <Parameters />
       <Docs>
         <summary>指定されたオブジェクトを選択します。</summary>
-        <remarks>
-          <para>このメソッドを使用すた後を使用して、<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" />選択した項目を操作するプロパティ。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドを使用した後<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> 、プロパティを使用して選択された項目を操作します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

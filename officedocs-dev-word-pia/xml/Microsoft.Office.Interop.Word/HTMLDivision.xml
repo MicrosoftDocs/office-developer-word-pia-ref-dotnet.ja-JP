@@ -1,13 +1,5 @@
 <Type Name="HTMLDivision" FullName="Microsoft.Office.Interop.Word.HTMLDivision">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3861a1c400fb9ef70e58f5cbffdfea69dd87900f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672268" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface HTMLDivision" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1cbb721e6a10380b8f09b2c8c1caf2d2e48ca5de" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146788" /></Metadata><TypeSignature Language="C#" Value="public interface HTMLDivision" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HTMLDivision" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HTMLDivision" />
   <TypeSignature Language="VB.NET" Value="Public Interface HTMLDivision" />
@@ -26,13 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Web ドキュメントに追加できる 1 つの HTML 部分を表します。</summary>
-    <remarks>
-      <para>
-        <b>HTMLDivision</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.HTMLDivisions" />コレクションです</para>。
-      <para>使用<see cref="T:Microsoft.Office.Interop.Word.HTMLDivisions" />(<paramref name="index" />)、 <paramref name="index" /> 、単一の<b>HTMLDivision</b>オブジェクトを取得するのには、ドキュメント内の HTML 部分を参照します。使用して、 <see cref="P:Microsoft.Office.Interop.Word.HTMLDivision.Borders" /> 、HTML 部分の罫線のプロパティを書式設定するプロパティ</para>。
-      <para>の HTML 部分は、複数の HTML 部分内で入れ子にできます。使用、 <see cref="M:Microsoft.Office.Interop.Word.HTMLDivision.HTMLDivisionParent(System.Object@)" /> 、親の現在の HTML 部分の HTML 部分にアクセスするためのメソッドです</para>。
-      <para /></remarks>
+    <summary>Web ドキュメントに追加できる1つの HTML 部を表します。</summary>
+    <remarks><para><b>Htmldivision</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.HTMLDivisions" />コレクションのメンバーです。</para>
+      <para>文書<see cref="T:Microsoft.Office.Interop.Word.HTMLDivisions" />内<paramref name="index" />の HTML 部<paramref name="index" />を参照する () を使用して、1つの<b>htmldivision</b>オブジェクトを返します。 HTML 部<see cref="P:Microsoft.Office.Interop.Word.HTMLDivision.Borders" />の枠線のプロパティを書式設定するには、プロパティを使用します。</para>
+      <para>HTML 部分は、複数の HTML 部分と入れ子状態にすることができます。 <see cref="M:Microsoft.Office.Interop.Word.HTMLDivision.HTMLDivisionParent(System.Object@)" />メソッドを使用して、現在の html 部の親 html 部にアクセスします。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,7 +76,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Borders" />を指定したオブジェクトのすべての罫線を表すコレクション。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Borders" />たオブジェクトのすべての罫線を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -114,12 +104,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -143,7 +132,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,8 +158,8 @@
         <Parameter Name="LevelsUp" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="LevelsUp">オプションの <b>Integer</b>。 親部分のカウントに戻るには、目的の部分の数です。 場合、<paramref name="LevelsUp" />の引数を省略すると、返された HTML 部分は、1 つのレベルを現在の HTML 部分からです。</param>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.HTMLDivision" /> 、現在の HTML 部分の親の部門を表すオブジェクト。</summary>
+        <param name="LevelsUp">オプションの <b>Integer</b>。 目的の部分に戻るための親部分のカウント数を指定します。 引数を<paramref name="LevelsUp" />省略すると、返される html 部は現在の html 部分から1つ上位のレベルになります。</param>
+        <summary>現在の<see cref="T:Microsoft.Office.Interop.Word.HTMLDivision" /> HTML 部の親区分を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -198,7 +187,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.HTMLDivisions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.HTMLDivisions" />の Web ドキュメント、HTML 部分を表すオブジェクト。</summary>
+        <summary>Web ドキュメント<see cref="T:Microsoft.Office.Interop.Word.HTMLDivisions" />内の HTML 部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -229,8 +218,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>1 つ</b>を表す指定した HTML 部分の左のインデント値 (ポイント単位で設定または返します。</summary>
+        <summary>指定した HTML 部分の左インデント幅の値 (ポイント単位) を表す単精度浮動小数点型 (<b>Single</b>) の値を取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -286,12 +274,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />を指定したオブジェクトに含まれる文書の部分を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />たオブジェクトに含まれる文書の一部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>範囲をドキュメントから取得するか、図形のコレクションから図形範囲を取得する方法については、メソッドを参照して、<b>範囲</b>の<see cref="T:Microsoft.Office.Interop.Word.Document" />または<see cref="T:Microsoft.Office.Interop.Word.Shapes" />オブジェクトです。</para>
-          <para />
-        </remarks>
+        <remarks><para>文書から指定範囲を取得する方法、 <see cref="T:Microsoft.Office.Interop.Word.Document" />または図形のコレクションから図形範囲を取得する方法については、また<see cref="T:Microsoft.Office.Interop.Word.Shapes" />はオブジェクトの<b>range</b>メソッドを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RightIndent">
@@ -320,7 +306,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ポイント単位で指定した段落の右インデント幅を設定または返します。</summary>
+        <summary>指定した段落の右インデント幅の値 (ポイント単位) を取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

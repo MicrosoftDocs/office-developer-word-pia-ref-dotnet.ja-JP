@@ -1,13 +1,5 @@
 <Type Name="OtherCorrectionsException" FullName="Microsoft.Office.Interop.Word.OtherCorrectionsException">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e186e6e8e85e147427b61c8a653479e1f59b6e02" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671247" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OtherCorrectionsException" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2fac51f3d9d305116cf8247fe9c821060c032481" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144247" /></Metadata><TypeSignature Language="C#" Value="public interface OtherCorrectionsException" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OtherCorrectionsException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OtherCorrectionsException" />
   <TypeSignature Language="VB.NET" Value="Public Interface OtherCorrectionsException" />
@@ -26,14 +18,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>単一のオート コレクトの例外を表します。</summary>
-    <remarks>
-      <para>
-        <b>OtherCorrectionsException</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.OtherCorrectionsExceptions" />コレクションです。<b>OtherCorrectionsExceptions</b>コレクションには、Microsoft Word は自動的に修正されませんすべての単語が含まれています。このリストは、[オート コレクトの例外] ダイアログ ボックス ([オート コレクト] コマンド、[ツール] メニュー) でその他の修正] タブでオート コレクトの例外の一覧に対応しています</para>。
-      <para>使用<b>OtherCorrectionsExceptions</b>(<paramref name="index" />)、どこで<paramref name="index" />は、オート コレクトの例外名またはインデックス番号で、単一の<b>OtherCorrectionsException</b>オブジェクトを返します</para>。
-      <para>インデックス番号は、 <b>OtherCorrectionsExceptions</b>コレクションでのオート コレクトの例外の位置を表します</para>。
-      <para>場合の値、<see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.OtherCorrectionsAutoAdd" />プロパティが<b>True</b>の場合の単語が自動的に追加オート コレクトの例外の一覧にします。使用して、 <see cref="M:Microsoft.Office.Interop.Word.OtherCorrectionsExceptions.Add(System.String)" /> 、 <b>OtherCorrectionsExceptions</b>コレクションに項目を追加します</para>。
-      <para /></remarks>
+    <summary>オートコレクトの単一の例外処理を表します。</summary>
+    <remarks><para><b>OtherCorrectionsException</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.OtherCorrectionsExceptions" />コレクションのメンバーです。 <b>OtherCorrectionsExceptions</b> コレクションには、オートコレクトされない単語がすべて含まれています。 このリストは、[オートコレクトの例外処理] ダイアログボックス ([オートコレクト] コマンドの [ツール] メニュー) の [その他の修正] タブにあるオートコレクトの例外の一覧に対応しています。</para>
+      <para>1つの<b>OtherCorrectionsException</b>オブジェクトを取得する<paramref name="index" />のには<paramref name="index" /> 、<b>他</b>の値を使用します ()。ここで、はオートコレクトの例外の名前またはインデックス番号を指定します。</para>
+      <para>インデックス番号は、<b>OtherCorrectionsExceptions</b> コレクションでのオートコレクトの例外処理の位置を表します。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.OtherCorrectionsAutoAdd" />プロパティの値が<b>True</b>の場合は、オートコレクトの例外項目のリストに単語が自動的に追加されます。 <see cref="M:Microsoft.Office.Interop.Word.OtherCorrectionsExceptions.Add(System.String)" />メソッドを使用して、アイテムを Other正しく<b>tionsexcepの</b>コレクションに追加します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,12 +77,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数の複素数値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成されている場合、このプロパティは、文字列 "MSWD" を表す16進数の複素数4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -116,7 +105,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,7 +132,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内の項目の位置を表す<b>整数</b>を返します。</summary>
+        <summary>コレクション内の項目の位置を表す<b>整数型 (Integer</b> ) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

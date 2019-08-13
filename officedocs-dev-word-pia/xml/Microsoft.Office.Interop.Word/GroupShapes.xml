@@ -1,13 +1,5 @@
 <Type Name="GroupShapes" FullName="Microsoft.Office.Interop.Word.GroupShapes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5afad17fa25d53e9102518b0c3d3e09a72fa53bd" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672007" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface GroupShapes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0be8e003f7a4f84b8581f6749296fd54551f5d79" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148020" /></Metadata><TypeSignature Language="C#" Value="public interface GroupShapes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract GroupShapes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.GroupShapes" />
   <TypeSignature Language="VB.NET" Value="Public Interface GroupShapes&#xA;Implements IEnumerable" />
@@ -31,10 +23,9 @@
   </Attributes>
   <Docs>
     <summary>グループ化した図形を表します。</summary>
-    <remarks>
-      <para>各図形は、<see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクトです。使用して、<see cref="P:Microsoft.Office.Interop.Word.GroupShapes.Item(System.Object@)" />メソッド グループ化を解除することがなくこのオブジェクトでは、グループ内の 1 つの図形を操作できます</para>。使用の
-      <para>、 <see cref="P:Microsoft.Office.Interop.Word.Shape.GroupItems" /><b>グループ形状</b>のコレクションを返すプロパティです。<b>GroupItems</b>を使用 (<paramref name="index" />)、 <paramref name="index" /><b>グループ形状</b>のコレクションから単一の図形を取得するのには、グループ化された図形内の個々 の図形の番号です</para>。
-      <para /></remarks>
+    <remarks><para>各図形は、 <see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクトによって表されます。 このオブジェクト<see cref="P:Microsoft.Office.Interop.Word.GroupShapes.Item(System.Object@)" />でメソッドを使用すると、グループを解除せずにグループ内の1つの図形を操作できます。</para>
+      <para>GroupShapes コレクション<see cref="P:Microsoft.Office.Interop.Word.Shape.GroupItems" />を取得するの<b></b>にには、プロパティを使用します。 <b>GroupShapes</b>コレクションから 1<paramref name="index" />つの図形<paramref name="index" />を取得するには、 <b>groupitems</b>() を使用します。ここで、は、グループ化された図形内の個々の図形の番号です。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -116,12 +107,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -182,7 +172,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">位置を表す序数または各オブジェクトの名前を表す文字列を示す<b>オブジェクト</b>。</param>
+        <param name="Index">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -239,15 +229,13 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 指定した範囲に含まれる図形を指定します。 内の図形のインデックス番号を指定する整数を指定することができます、<see cref="T:Microsoft.Office.Interop.Word.Shapes" />コレクション、図形の名前を指定する文字列または整数または文字列を含む<b>オブジェクト</b>配列。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />オブジェクトです。</summary>
+        <param name="Index">必要な<b>オブジェクト</b>。 指定した範囲に含まれる図形を指定します。 <see cref="T:Microsoft.Office.Interop.Word.Shapes" />コレクション内の図形のインデックス番号、図形の名前を指定する文字列、または整数または文字列を含む<b>オブジェクト</b>配列を指定する、整数型 (integer) の値を使用できます。</param>
+        <summary>オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>ShapeRange</b>オブジェクトを含まない<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />オブジェクトです。<b>InlineShape</b>オブジェクトの文字と同じテキストの範囲内の文字として配置されます。<see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクトは、(選択範囲、既定では) のテキストの範囲に固定されますが、ページのどこにでも配置できます。<b>Shape</b>オブジェクトは、アンカーがある範囲と同じページに常に表示されます</para>。
-          <para>ほとんどの操作を行うことができます、<b>図形</b>オブジェクトにするは、1 つの図形を含む<b>ShapeRange</b>オブジェクトで行うことも。いくつかの操作では、複数の図形を含む<b>ShapeRange</b>オブジェクトに対して実行するとエラーが発生します</para>。
-          <para /></remarks>
+        <remarks><para>
+            <b>ShapeRange</b>オブジェクトには<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />オブジェクトは含まれません。 <b>InlineShape</b> オブジェクトの文字と同じテキストの範囲内の文字として配置されます。 <see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクトは、テキストの範囲 (既定では選択されています) にアンカーされますが、ページ上の任意の場所に配置できます。 <b>Shape</b>オブジェクトは、アンカーがある範囲と同じページに常に表示されます。</para>
+          <para>[!メモ] <b>Shape</b> オブジェクトで実行できるほとんどの操作行うことも 1 つの図形を含む <b>ShapeRange</b> オブジェクトにします。いくつかの操作では、複数の図形を含む <b>ShapeRange</b> オブジェクトに対して実行するとエラーを生成します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

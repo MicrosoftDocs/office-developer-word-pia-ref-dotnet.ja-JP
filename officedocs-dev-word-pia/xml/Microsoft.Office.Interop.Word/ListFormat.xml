@@ -1,13 +1,5 @@
 <Type Name="ListFormat" FullName="Microsoft.Office.Interop.Word.ListFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="bedc659e05e0c224f2395785ec902aa8914376ed" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671495" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4ae3a6e1fbf76ffb21d88db92775f307cfb0ece9" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146578" /></Metadata><TypeSignature Language="C#" Value="public interface ListFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListFormat" />
@@ -27,14 +19,13 @@
   </Attributes>
   <Docs>
     <summary>指定範囲の段落に設定できる箇条書き書式の属性を表します。</summary>
-    <remarks>
-      <para>使用、<see cref="P:Microsoft.Office.Interop.Word.Range.ListFormat" />を返すプロパティ、<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />の範囲のオブジェクトです</para>。
-      <para>を使用する] ボックスの一覧の書式を適用する簡単な方法では、 <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyBulletDefault(System.Object@)" />、<see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyNumberDefault(System.Object@)" />と<see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyOutlineNumberDefault(System.Object@)" />に対応しており、それぞれ、([なし] を除く) 最初の箇条書きの書式を箇条書きの各タブのメソッドと段落番号] ダイアログ ボックス</para>。
-      <para>既定の形式以外の形式を適用するを使用して、<see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" />メソッドを適用する箇条書きの書式 (箇条書きテンプレート) を指定できます</para>。
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.ListFormat.List" />または<see cref="P:Microsoft.Office.Interop.Word.ListFormat.ListTemplate" />指定した範囲の最初の段落から、リストまたはリスト テンプレートを返すプロパティです</para>。
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.Range.ListFormat" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Word.Range" />箇条書き書式のプロパティと、指定範囲で使用可能なメソッドにアクセスするオブジェクトです</para>。
-      <para>ただし、既にある場合、リスト、ドキュメントで定義されている、ことができますオブジェクトにアクセスする] ボックスの一覧を使用して、<see cref="P:Microsoft.Office.Interop.Word._Document.Lists" />プロパティ</para>。
-      <para /></remarks>
+    <remarks><para>範囲の<see cref="P:Microsoft.Office.Interop.Word.Range.ListFormat" /> <see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトを取得するのにには、プロパティを使用します。</para>
+      <para>リストの書式設定を適用する簡単な方法は<see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyBulletDefault(System.Object@)" />、 <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyNumberDefault(System.Object@)" />[箇条書き<see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyOutlineNumberDefault(System.Object@)" />と段落番号] ダイアログボックスの各タブの最初の箇条書きの書式 ([なし] を除く) にそれぞれ対応する、、およびメソッドを使用することです。</para>
+      <para>既定の書式以外の書式を適用するには、 <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" />メソッドを使用します。これにより、適用するリストの書式 (リストテンプレート) を指定できます。</para>
+      <para>指定さ<see cref="P:Microsoft.Office.Interop.Word.ListFormat.List" />れ<see cref="P:Microsoft.Office.Interop.Word.ListFormat.ListTemplate" />た範囲の最初の段落からリストまたはリストテンプレートを取得するのにには、またはプロパティを使用します。</para>
+      <para>指定し<see cref="P:Microsoft.Office.Interop.Word.Range.ListFormat" />た範囲で<see cref="T:Microsoft.Office.Interop.Word.Range" />使用可能なリストの書式設定プロパティおよびメソッドにアクセスするには、オブジェクトのプロパティを使用します。</para>
+      <para>ただし、ドキュメントに既にリストが定義されている場合は、 <see cref="P:Microsoft.Office.Interop.Word._Document.Lists" />プロパティを使用して list オブジェクトにアクセスできます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,7 +79,7 @@
       </Parameters>
       <Docs>
         <param name="DefaultListBehavior">省略可能な<b>オブジェクト</b>です。 Microsoft Word を使用して新しい Web 指向の形式のリストを適切に表示するかを指定する値を設定します。 以下の定数のいずれかをすることができます: <b>wdWord8ListBehavior</b> (Microsoft Word 97/98年と互換性のある書式を使用します) または <b>wdWord9ListBehavior</b> (Web 指向形式を採用)。 互換性の理由から、既定の定数 <b>wdWord8ListBehavior</b> 、ですが、リストで新しいプロシージャが強化された Web 指向の書式設定のインデントを基準と複数レベルを活用する <b>wdWord9ListBehavior</b> を使用する必要があります。</param>
-        <summary>行頭文字と指定された範囲内の段落に書式を追加<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトです。 この段落に行頭文字が既に設定されている場合、行頭文字と書式が削除されます。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトの範囲内の段落に行頭文字と書式を追加します。 この段落に行頭文字が既に設定されている場合、行頭文字と書式が削除されます。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,11 +135,11 @@
         <Parameter Name="DefaultListBehavior" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ListTemplate">必要な<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />オブジェクトです。 使用する箇条書きテンプレートを指定します。</param>
+        <param name="ListTemplate">必要<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />なオブジェクト。 使用する箇条書きテンプレートを指定します。</param>
         <param name="ContinuePreviousList">省略可能な<b>オブジェクト</b>です。 の <b>場合は true</b> 以前のリストから番号を継続 <b>False</b> を新しいリストを開始します。</param>
-        <param name="ApplyTo">省略可能な<b>オブジェクト</b>です。 適用するリスト テンプレートの一覧の一部です。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Word.WdListApplyTo" />定数: <b>wdListApplyToSelection</b>、 <b>wdListApplyToWholeList</b>、または<b>wdListApplyToThisPointForward</b>。</param>
+        <param name="ApplyTo">省略可能な<b>オブジェクト</b>です。 適用するリスト テンプレートの一覧の一部です。 <b>WdListApplyToSelection</b>、 <b>wdListApplyToWholeList</b>、または<see cref="T:Microsoft.Office.Interop.Word.WdListApplyTo" /> <b>wdListApplyToThisPointForward</b>のいずれかの定数を使用できます。</param>
         <param name="DefaultListBehavior">省略可能な<b>オブジェクト</b>です。 Microsoft Word を使用して新しい Web 指向の形式のリストを適切に表示するかを指定する値を設定します。 以下の定数のいずれかをすることができます: <b>wdWord8ListBehavior</b> (Microsoft Word 97/98年と互換性のある書式を使用します) または <b>wdWord9ListBehavior</b> (Web 指向形式を採用)。 互換性の理由から、既定の定数 <b>wdWord8ListBehavior</b> 、ですが、リストで新しいプロシージャが強化された Web 指向の書式設定のインデントを基準と複数レベルを活用する <b>wdWord9ListBehavior</b> を使用する必要があります。</param>
-        <summary>指定した一連の特性のリストの書式が適用される<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトです。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトにリストの書式設定の一連の特性を適用します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,8 +203,8 @@
       <Docs>
         <param name="ListTemplate">使用する箇条書きテンプレートを指定します。</param>
         <param name="ContinuePreviousList">の <b>場合は true</b> 以前のリストから番号を継続 <b>False</b> を新しいリストを開始します。</param>
-        <param name="ApplyTo">適用するリスト テンプレートの一覧の一部です。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Word.WdListApplyTo" />定数: <see cref="F:Microsoft.Office.Interop.Word.WdListApplyTo.wdListApplyToSelection" />、 <see cref="F:Microsoft.Office.Interop.Word.WdListApplyTo.wdListApplyToThisPointForward" />、または<see cref="F:Microsoft.Office.Interop.Word.WdListApplyTo.wdListApplyToWholeList" />。</param>
-        <param name="DefaultListBehavior">Microsoft Word を使用して新しい Web 指向の形式のリストを適切に表示するかを指定する値を設定します。 次のいずれかの方法は、<see cref="T:Microsoft.Office.Interop.Word.WdDefaultListBehavior" />定数: <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" /> (Microsoft Word 97 と互換性のある書式を使用します) または<see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" />(Web 対応の書式設定を使用します)。 互換性の理由から、既定の定数は、<see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" />で新しいプロシージャを使用する必要がありますが、<see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" />向上 Web 指向の形式を活用する点からインデントして、複数レベルの一覧が表示されます。</param>
+        <param name="ApplyTo">適用するリスト テンプレートの一覧の一部です。 <see cref="T:Microsoft.Office.Interop.Word.WdListApplyTo" />次の定数のいずれかをする<see cref="F:Microsoft.Office.Interop.Word.WdListApplyTo.wdListApplyToSelection" />こと<see cref="F:Microsoft.Office.Interop.Word.WdListApplyTo.wdListApplyToThisPointForward" />ができ<see cref="F:Microsoft.Office.Interop.Word.WdListApplyTo.wdListApplyToWholeList" />ます。、、または。</param>
+        <param name="DefaultListBehavior">Microsoft Word を使用して新しい Web 指向の形式のリストを適切に表示するかを指定する値を設定します。 次<see cref="T:Microsoft.Office.Interop.Word.WdDefaultListBehavior" />の定数のいずれかを指定<see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" />できます (Microsoft Word 97 と互換性のある<see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" />書式を使用します)。または (Web 指向の書式設定を使用)。 互換性の理由から、既定の定数<see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" />はですが、インデントと複数レベル<see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" />のリストに関して、強化された Web 指向の書式設定を活用するために使用する必要があります。</param>
         <param name="ApplyLevel">箇条書きテンプレートを適用するレベル。</param>
         <summary>箇条書きの書式を設定します。オプションでレベルを指定することもできます。</summary>
         <remarks>To be added.</remarks>
@@ -242,7 +233,7 @@
       </Parameters>
       <Docs>
         <param name="DefaultListBehavior">省略可能な<b>オブジェクト</b>です。 Microsoft Word を使用して新しい Web 指向の形式のリストを適切に表示するかを指定する値を設定します。 以下の定数のいずれかをすることができます: <b>wdWord8ListBehavior</b> (Microsoft Word 97/98年と互換性のある書式を使用します) または <b>wdWord9ListBehavior</b> (Web 指向形式を採用)。 互換性の理由から、既定の定数 <b>wdWord8ListBehavior</b> 、ですが、リストで新しいプロシージャが強化された Web 指向の書式設定のインデントを基準と複数レベルを活用する <b>wdWord9ListBehavior</b> を使用する必要があります。</param>
-        <summary>既定の指定された範囲内の段落に段落番号を追加<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトです。 段落に段落番号を使った箇条書きが既に設定されている場合は、番号と書式を削除します。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトの範囲内の段落に既定の段落番号の書式設定を追加します。 段落に段落番号を使った箇条書きが既に設定されている場合は、番号と書式を削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -297,11 +288,9 @@
       </Parameters>
       <Docs>
         <param name="DefaultListBehavior">省略可能な<b>オブジェクト</b>です。 Microsoft Word を使用して新しい Web 指向の形式のリストを適切に表示するかを指定する値を設定します。 以下の定数のいずれかをすることができます: <b>wdWord8ListBehavior</b> (Microsoft Word 97/98年と互換性のある書式を使用します) または <b>wdWord9ListBehavior</b> (Web 指向形式を採用)。 互換性の理由から、既定の定数 <b>wdWord8ListBehavior</b> 、ですが、リストで新しいプロシージャが強化された Web 指向の書式設定のインデントを基準と複数レベルを活用する <b>wdWord9ListBehavior</b> を使用する必要があります。</param>
-        <summary>指定された範囲内の段落に既定のアウトライン番号のパターンを追加<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトです。 アウトライン番号の付いた箇条書きが既に段落に設定されている場合、段落番号と書式は削除されます。</summary>
-        <remarks>
-          <para>このメソッドは、組み込みの見出しスタイルの段落に適用されているを削除しません。</para>
-          <para />
-        </remarks>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトの範囲内の段落に既定のアウトライン番号のパターンを追加します。 アウトライン番号の付いた箇条書きが既に段落に設定されている場合、段落番号と書式は削除されます。</summary>
+        <remarks><para>このメソッドは、段落に設定されている組み込みの見出しスタイルは削除しません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyOutlineNumberDefaultOld">
@@ -354,13 +343,11 @@
         <Parameter Name="ListTemplate" Type="Microsoft.Office.Interop.Word.ListTemplate" />
       </Parameters>
       <Docs>
-        <param name="ListTemplate">必要な<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />オブジェクトです。 文書の前の段落に設定されている箇条書きテンプレートを指定します。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.WdContinue" />前のリストからの書式設定を継続することができるかどうかを示す定数 (<b>wdContinueDisabled</b>、 <b>wdResetList</b>、または<b>wdContinueList</b>)。</summary>
+        <param name="ListTemplate">必要<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />なオブジェクト。 文書の前の段落に設定されている箇条書きテンプレートを指定します。</param>
+        <summary>前の<see cref="T:Microsoft.Office.Interop.Word.WdContinue" />リストからの書式設定を継続できるかどうかを示す定数 (<b>wdContinueDisabled</b>、 <b>wdResetList</b>、または<b>wdContinueList</b>) を返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドは、前の箇条書きを続行し、再起動オプションを箇条書きの段落番号と段落番号ダイアログ ボックスを指定された箇条書き書式についての状態を返します。これらのオプションの設定を変更するには、設定、<paramref name="ContinuePreviousList" />の引数、<see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" />メソッドです。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドは、指定された箇条書き書式について [ 箇条書きと段落番号] ダイアログ ボックスで 続行前のリストと 番号を振り直す] の状態を返します。 これらのオプションの設定を変更するには<paramref name="ContinuePreviousList" /> 、 <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" />メソッドの引数を設定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertNumbersToText">
@@ -385,13 +372,12 @@
         <Parameter Name="NumberType" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NumberType">省略可能な<b>オブジェクト</b>です。 変換する番号の種類です。 いずれか、<see cref="T:Microsoft.Office.Interop.Word.WdNumberType" />定数。</param>
-        <summary>段落番号と LISTNUM フィールドの指定が変更された<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトのテキストにします。</summary>
-        <remarks>
-          <para>番号の 2 種類があります: 既定の番号 (<b>wdNumberParagraph</b>) の段落に箇条書きテンプレートを選択して、段落番号のダイアログ ボックスで追加できますおよび LISTNUM フィールド (<b>wdNumberListNum</b>) を使用すると、1 つの段落の 1 つ以上の番号を追加します</para>。
-          <para>、 <b>ConvertNumbersToText</b>メソッドは、別のアプリケーション内のドキュメントで作業して、そのアプリケーションは、リストの書式設定または LISTNUM フィールドを認識しない場合に便利です</para>。
-          <para>リストの数値をテキストに変換した後不要になった操作できます一覧にします</para>。
-          <para /></remarks>
+        <param name="NumberType">省略可能な<b>オブジェクト</b>です。 変換する数値の種類を指定します。 任意の<see cref="T:Microsoft.Office.Interop.Word.WdNumberType" />定数を使用できます。</param>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトの段落番号と LISTNUM フィールドをテキストに変更します。</summary>
+        <remarks><para>[箇条書きと段落番号] ダイアログボックスでテンプレートを選択することにより、段落に追加できる番号には、2つの種類があります。事前設定された番号 (<b>wdNumberParagraph</b>)。および LISTNUM フィールド (<b>wdNumberListNum</b>) を使用すると、1つの段落に複数の数を追加することができます。</para>
+          <para><b>Convertnumber Stotext</b>メソッドは、別のアプリケーションで文書を操作するときに、アプリケーションがリストの書式設定や LISTNUM フィールドを認識しない場合に便利です。</para>
+          <para>リスト番号をテキストに変換した後は、リスト内でそれらを操作することができなくなります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CountNumberedItems">
@@ -417,14 +403,13 @@
         <Parameter Name="Level" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NumberType">省略可能な<b>オブジェクト</b>です。 カウントする番号の種類。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Word.WdNumberType" />定数: <b>wdNumberParagraph</b>、 <b>wdNumberListNum</b>、または<b>wdNumberAllNumbers</b>です。 既定値は <b>wdNumberAllNumbers</b> です。</param>
+        <param name="NumberType">省略可能な<b>オブジェクト</b>です。 カウントする番号の種類。 <b>WdNumberParagraph</b>、 <b>wdNumberListNum</b>、または<see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> <b>wdNumberAllNumbers</b>のいずれかの定数を使用できます。 既定値は <b>wdNumberAllNumbers</b> です。</param>
         <param name="Level">省略可能な<b>オブジェクト</b>です。 カウントする番号のレベルに対応する数値を指定します。 この引数を省略すると、すべてのレベルの番号がカウントされます。</param>
         <summary>指定した <b>ListFormat</b> オブジェクトに箇条書きまたは番号付きの項目と LISTNUM フィールドの数を返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>箇条書き項目が計算の対象に<b>wdNumberParagraph</b>または<b>wdNumberAllNumbers</b> (既定値) のいずれかを指定すると<paramref name="NumberType" />です</para>。
-          <para>番号の 2 種類があります: 箇条書きテンプレートを選択して、段落番号のダイアログ ボックスで、段落に追加できるプリセット番号 (<b>wdNumberParagraph</b>) と 1 つ以上を追加するのには、LISTNUM フィールド (<b>wdNumberListNum</b>)1 つの段落番号です</para>。
-          <para /></remarks>
+        <remarks><para>箇条書きの項目は、 <b>wdNumberParagraph</b>または<b>wdNumberAllNumbers</b> (既定値) がに指定<paramref name="NumberType" />されている場合にカウントされます。</para>
+          <para>[箇条書きと段落番号] ダイアログボックスでテンプレートを選択することにより、段落に追加できる番号には、2つの種類があります。事前設定された番号 (<b>wdNumberParagraph</b>)。および LISTNUM フィールド (<b>wdNumberListNum</b>) を使用すると、1つの段落に複数の数を追加することができます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -450,12 +435,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="List">
@@ -481,13 +465,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.List</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.List" />内の指定された最初の書式設定されたリストを表す<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.List" />たオブジェクトに含まれる最初に書式設定さ<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />れたリストを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>ListFormat</b>オブジェクトの範囲内の最初の段落はリストとしてフォーマットされていない場合、 <b>List</b>プロパティは nothing を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>指定範囲の最初の段落の <b>ListFormat</b> オブジェクトに箇条書きが設定されていない場合、<b>List</b> プロパティでは何も取得されません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListIndent">
@@ -511,7 +492,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定された範囲内の段落の箇条書きのレベルを増加<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトの 1 つのレベルにします。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトの範囲内の段落の箇条書きのレベルを1レベルずつ上げます。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -541,7 +522,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または指定された最初の段落に関する箇条書きのレベルを設定する<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトです。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトの最初の段落の箇条書きのレベルを設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -567,7 +548,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定された範囲内の段落の箇条書きのレベルを減少<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトの 1 つのレベルにします。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトの範囲内の段落の箇条書きのレベルを1レベルずつ減少します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -594,7 +575,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />図の箇条書きの行頭文字として使用する図を表すオブジェクト。</summary>
+        <summary>行頭絵文字<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />リストの行頭文字として使用される画像を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -622,12 +603,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された範囲の最初の段落のリストの値の表示形式を表す<b>文字列</b>を返します<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトです。 たとえば、一覧をアルファベット順で 2 番目の段落は B. を返す</summary>
+        <summary>指定し<b></b>た<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトの範囲に含まれる最初の段落のリスト値の表示形式を表す文字列を返します。 たとえば、アルファベット順の2番目の段落は、B を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>、箇条書きの文字列を表示するのには、適切なフォントを適用する必要があります。ほとんど箇条書き記号または一覧の [Wingdings フォントを使用します</para>。
-          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.ListFormat.ListValue" /> 、段落の数値の値を返すプロパティです</para>。
-          <para /></remarks>
+        <remarks><para>箇条書きの場合は、文字列を表示するために正しいフォントを適用する必要があります。 通常は、Symbol または Wingdings フォントを使用します。</para>
+          <para><see cref="P:Microsoft.Office.Interop.Word.ListFormat.ListValue" />プロパティを使用して、段落の数値を取得します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListTemplate">
@@ -653,12 +633,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />を指定した書式設定の一覧を表すオブジェクト<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトです。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />た<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトの箇条書きの書式設定を表すオブジェクト型 (object) の値を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A] ボックスの一覧のテンプレートには、特定のリストを定義するすべての書式が含まれています。7 つの書式 ([なし] を除く) の行頭文字のタブの各と各段落番号ダイアログ ボックス ([書式] メニュー) のリスト テンプレートに対応しています。ドキュメント テンプレートでは、リスト テンプレートのコレクションを含めることもできます</para>。
-          <para><b>ListFormat</b>オブジェクトの範囲内の最初の段落はリストとしてフォーマットされていない場合、 <b>ListTemplate</b><b>Nothing</b>を取得します</para>。
-          <para /></remarks>
+        <remarks><para>箇条書きテンプレートには、特定の箇条書きを定義するすべての書式設定が含まれます。 [箇条書きと段落番号] ダイアログ ボックス ([書式] メニュー) の各タブに表示される 7 種類の書式 ([なし] を除く) は、各箇条書きテンプレートと対応します。 文書とテンプレートに箇条書きテンプレートのコレクションを含めることができます。</para>
+          <para><b>ListFormat</b> オブジェクトの範囲内の最初の段落はリストとしてフォーマットされていない場合、 <b>ListTemplate</b> プロパティは <b>Nothing</b> を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListType">
@@ -684,13 +663,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdListType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された範囲に含まれているリストの種類を返します<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトです。</summary>
+        <summary>指定<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />したオブジェクトの範囲に含まれるリストの種類を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>ListType</b>プロパティには、いずれかを指定できる、<see cref="T:Microsoft.Office.Interop.Word.WdListType" />定数。定数<b>wdListListNumOnly</b>は LISTNUM フィールドは、段落のテキストに追加できるフィールドです。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Listtype</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdListType" />定数のいずれかを指定できます。 定数 <b>wdListListNumOnly</b> は LISTNUM フィールドは、段落のテキストに追加できるフィールドです。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListValue">
@@ -716,14 +692,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された範囲内の最初の段落の数値を返します。<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトです。 などの一覧をアルファベット順で 2 番目の段落に適用される、 <b>ListValue</b>プロパティの値は 2。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトの範囲に含まれる最初の段落の数値を返します。 たとえば、リストの2番目の段落に適用される<b>Listvalue</b>プロパティは、2を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.ListFormat.ListString" />リストの値を表す文字列を返すプロパティです</para>。
-          <para><b>ListFormat</b>オブジェクトでは、箇条書きに適用する場合、 <b>ListValue</b>プロパティは 1 を返します</para>。<b>ListFormat</b>オブジェクトがアウトラインの箇条書きに適用する場合は、 
-          <para>、 <b>ListValue</b>プロパティは、同じレベルの段落の順序で発生するたびに最初の段落の数値を返します。などの場合は、指定した<b>ListFormat</b>オブジェクトの最初の段落には、"A.2"番号が付けられていた、 <b>ListValue</b>の値は 2 です</para>。
-          <para>このプロパティでは、LISTNUM フィールドの値は返されません</para>。
-          <para /></remarks>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.ListFormat.ListString" />プロパティを使用して、リスト値を表す文字列を返します。</para>
+          <para><b>ListFormat</b> オブジェクトでは、箇条書きに適用する場合、 <b>ListValue</b> プロパティは 1 を返します。</para>
+          <para><b>ListFormat</b> オブジェクトでは、アウトラインの箇条書きに適用する場合、 <b>ListValue</b> プロパティと同じように同じレベルの段落の最初の段落の数値を返します。 たとえば、指定した<b>ListFormat</b>オブジェクトの最初の段落に "a. 2" という番号が付けられている場合、 <b>listvalue</b>は2を返します。</para>
+          <para>このプロパティでは、LISTNUM フィールドの値は取得できません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -776,12 +751,10 @@
         <Parameter Name="NumberType" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NumberType">省略可能な<see cref="T:Microsoft.Office.Interop.Word.WdNumberType" />。 削除する番号の種類を指定します。</param>
-        <summary>指定した番号や行頭文字を削除する<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトです。</summary>
-        <remarks>
-          <para>このメソッドを適用する場合、<see cref="T:Microsoft.Office.Interop.Word.List" />オブジェクトの場合、他のリストから、インターリーブ形式の任意の数値をスキップ、指定されたリスト内の段落から番号を削除します。テキストの範囲の<b>ListFormat</b>オブジェクトにこのメソッドを適用すると、すべての数値の範囲内のすべてのリストからは削除されます。</para>
-          <para />
-        </remarks>
+        <param name="NumberType">省略<see cref="T:Microsoft.Office.Interop.Word.WdNumberType" />可能です。 削除する番号の種類を指定します。</param>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトから番号または行頭文字を削除します。</summary>
+        <remarks><para><see cref="T:Microsoft.Office.Interop.Word.List" />オブジェクトに対してこのメソッドを適用すると、指定された箇条書きの段落から番号のみが削除され、他のリストのインターリーブされた番号は無視されます。 このメソッドをテキスト範囲の<b>ListFormat</b>オブジェクトに適用すると、指定範囲内のすべてのリストのすべての番号が削除されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SingleList">
@@ -807,8 +780,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>の場合、指定された<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトには、1 つのみのリストが含まれています。</summary>
+        <summary><b>True</b>の場合は<see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> 、指定されたオブジェクトにリストが1つだけ含まれています。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -836,8 +808,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>の場合は全体<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトは、同じリスト テンプレートを使用します。</summary>
+        <summary><b>True</b>の場合は<see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> 、オブジェクト全体で同じ箇条書きテンプレートを使用します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

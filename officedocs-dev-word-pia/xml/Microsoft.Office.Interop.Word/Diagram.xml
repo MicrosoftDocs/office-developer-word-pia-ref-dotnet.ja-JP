@@ -1,13 +1,5 @@
 <Type Name="Diagram" FullName="Microsoft.Office.Interop.Word.Diagram">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="716f02ec4b6e7d1f64d0bb8f9f474e53ca6129f2" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671757" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Diagram" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bc06f6c988452cbcd9040e790955deac67b02537" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147104" /></Metadata><TypeSignature Language="C#" Value="public interface Diagram" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Diagram" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Diagram" />
   <TypeSignature Language="VB.NET" Value="Public Interface Diagram" />
@@ -26,13 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>文書内の単一の図表を表します。</summary>
-    <remarks>
-      <para>
-        <b>ダイアグラム</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.Shapes" />コレクションです</para>。使用の
-      <para>、<see cref="P:Microsoft.Office.Interop.Word.Shape.Diagram" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />、<see cref="T:Microsoft.Office.Interop.Word.Shape" />と<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />を 1 つの<b>ダイアグラム</b>オブジェクトを返すオブジェクト。使用して、 <see cref="M:Microsoft.Office.Interop.Word.Diagram.Convert(Microsoft.Office.Core.MsoDiagramType)" /> 1 つの型からダイアグラムを変更する方法です</para>。
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.Diagram.Reverse" />図のノードの順序を反転するのにはプロパティです</para>。
-      <para /></remarks>
+    <summary>文書内の1つの図表を表します。</summary>
+    <remarks><para><b>ダイアグラム</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Shapes" />コレクションのメンバーです。</para>
+      <para><see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />、 <see cref="T:Microsoft.Office.Interop.Word.Shape" /> <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> 、 <see cref="P:Microsoft.Office.Interop.Word.Shape.Diagram" />およびオブジェクトのプロパティを使用して、単一の<b>図表</b>オブジェクトを返します。 図表の<see cref="M:Microsoft.Office.Interop.Word.Diagram.Convert(Microsoft.Office.Core.MsoDiagramType)" />種類を別の種類に変更するには、メソッドを使用します。</para>
+      <para>この<see cref="P:Microsoft.Office.Interop.Word.Diagram.Reverse" />プロパティを使用して、ダイアグラム内のノードの順序を反転します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,7 +79,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定、<see cref="T:Microsoft.Office.Core.MsoTriState" />図表の自動書式設定の状態を指定する定数です。</summary>
+        <summary>図表の自動書式<see cref="T:Microsoft.Office.Core.MsoTriState" />設定の状態を指定する定数を設定または取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,7 +110,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Core.MsoTriState" />をノードと図のコネクタの自動配置を決定します。</summary>
+        <summary>ダイアグラム内のノード<see cref="T:Microsoft.Office.Core.MsoTriState" />およびコネクタの自動位置を決定する定数を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,8 +138,8 @@
         <Parameter Name="Type" Type="Microsoft.Office.Core.MsoDiagramType" />
       </Parameters>
       <Docs>
-        <param name="Type">必要な<see cref="T:Microsoft.Office.Core.MsoDiagramType" />。 図表を変換するための型。</param>
-        <summary>1 つの種類を次の図を別の種類を次の図に変換します。</summary>
+        <param name="Type">必須<see cref="T:Microsoft.Office.Core.MsoDiagramType" />。 変換する図表の種類を指定します。</param>
+        <summary>ある型のダイアグラムを別の種類の図表に変換します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,12 +166,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>などのオブジェクトは、Microsoft Word で作成されている場合このプロパティが返されます、16 進数の値である 4d535744 を文字列します。この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>たとえば、オブジェクトが Microsoft Word で作成されている場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FitText">
@@ -205,11 +194,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>ノードの境界内に収まるように、ダイアグラム内のノード内のテキストのサイズを調整します。</summary>
-        <remarks>
-          <para>Microsoft Office PowerPoint 2003 でのみ、このメソッドは機能します。</para>
-          <para />
-        </remarks>
+        <summary>図内のノードのテキストのサイズを、ノードの境界内に収まるように調整します。</summary>
+        <remarks><para>このメソッドは、Microsoft Office PowerPoint 2003 でのみ機能します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Nodes">
@@ -235,7 +222,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNodes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.DiagramNodes" /> 、ダイアグラム内のノードを表すオブジェクト。</summary>
+        <summary>ダイアグラム内<see cref="T:Microsoft.Office.Interop.Word.DiagramNodes" />のノードを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -294,8 +281,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>Msotrue を設定する</b>には、図表内のノードが反転します。</summary>
+        <summary><b>MsoTrue</b>ダイアグラム内のノードを反転します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

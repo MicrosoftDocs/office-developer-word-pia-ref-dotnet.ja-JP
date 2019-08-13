@@ -1,13 +1,5 @@
 <Type Name="ListTemplate" FullName="Microsoft.Office.Interop.Word.ListTemplate">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6ee663e8d8d86e765adeb286114c48281180a479" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671383" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListTemplate" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1139c365cea882b428ac0f0075b3c20e4756cad2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144506" /></Metadata><TypeSignature Language="C#" Value="public interface ListTemplate" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListTemplate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListTemplate" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListTemplate" />
@@ -26,17 +18,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>リストを定義するすべての書式が含まれる 1 つのリスト テンプレートを表します。</summary>
-    <remarks>
+    <summary>箇条書きを定義するすべての書式を含む箇条書きテンプレートを表します。</summary>
+    <remarks><para><b>ListTemplate</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" />コレクションのメンバーです。 [箇条書きと段落番号] ダイアログ ボックスの 3 つの各タブに表示される 7 つの書式 ([なし] を除く) は、ListTemplate オブジェクトと対応します。 これらの定義済みリストテンプレートには、 <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" />コレクション内の3つのオブジェクトからアクセスできます。 文書とテンプレートに箇条書きテンプレートのコレクションを含めることができます。</para>
+      <para>リストギャラリーから<paramref name="index" />1 つの<paramref name="index" />箇条書きテンプレートを取得するには、 <b>ListTemplates</b>() を使用します。ここで、は 1 ~ 7 の数値です。</para>
       <para>
-        <b>ListTemplate</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.ListTemplates" />コレクションです。7 つの書式 ([なし] を除く) の行頭文字の 3 つのタブの各と各段落番号] ダイアログ ボックスは、リスト テンプレート オブジェクトに対応しています。これらの定義済みのリスト テンプレートは、3 つからアクセスできる<see cref="T:Microsoft.Office.Interop.Word.ListGallery" />オブジェクトで、<see cref="T:Microsoft.Office.Interop.Word.ListGalleries" />コレクションです。ドキュメント テンプレートでは、リスト テンプレートのコレクションを含めることもできます</para>。
-      <para>使用して<b>ListTemplates</b>(<paramref name="index" />)、<paramref name="index" />集から単一の箇条書きテンプレートを取得する 1 から 7 までの番号です</para>。
-      <para><b>注</b>: 一部のプロパティとメソッド、<see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" />と<see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />、たとえば-集からアクセスされているリスト テンプレートでは使用できません。これらのリスト テンプレートを変更することができますが、リスト ギャラリーの種類 (<b>wdBulletGallery</b>、 <b>wdNumberGallery</b>、または<b>wdOutlineNumberGallery</b>) を変更することはできません</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />の文書またはテンプレートの箇条書きテンプレートのコレクションに箇条書きテンプレートを追加する方法です</para>。使用して Microsoft Word に組み込まれている書式を指定したリスト テンプレートがあるかどうかを確認するのには
-      <para>、 <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /><b>ListGallery</b>オブジェクトのプロパティです。リセットするには元のリスト形式に書式設定を使用して、 <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /><b>ListGallery</b>オブジェクトのメソッドです</para>。
-      <para><b>ListTemplate</b>オブジェクトが返された後は、<b>箇条書き</b>を使用して (<paramref name="index" />)、<paramref name="index" />は、1 から 9 までの番号を 1 つを取得する<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />オブジェクトです。<b>ListLevel</b>オブジェクトがある場合、指定されたリストのレベルのすべての書式設定プロパティへのアクセスなど、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" />、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />、<see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />と<see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />です</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" />複数レベルの箇条書きテンプレートを単一レベルのテンプレートに変換します</para>。
-      <para /></remarks>
+        <b>注</b>: 一部のプロパティとメソッド<see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> ( <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />たとえば、) は、リストギャラリーからアクセスされるリストテンプレートでは機能しません。 これらの箇条書きテンプレートは、変更を加えることはできますが、テンプレート集の種類 (<b>wdBulletGallery</b>、<b>wdNumberGallery</b>、または <b>wdOutlineNumberGallery</b>) を変更することはできません。</para>
+      <para>文書また<see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />はテンプレートの箇条書きテンプレートのコレクションに箇条書きテンプレートを追加するには、メソッドを使用します。</para>
+      <para>指定した箇条書きテンプレートに、Microsoft Word に組み込まれている書式設定が<see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" />含まれているかどうかを確認するには、 <b>ListGallery</b>オブジェクトでプロパティを使用します。 書式設定を元のリスト形式にリセットするに<see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" />は、 <b>ListGallery</b>オブジェクトのメソッドを使用します。</para>
+      <para><b>ListTemplate</b>オブジェクトを取得したら、1つ<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />のオブジェクトを<paramref name="index" />取得するの<paramref name="index" />には、 <b>listlevels</b>() を使用します。ここで、は 1 ~ 9 の数値です。 <b>ListLevel</b>オブジェクトを使用すると、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />、、、、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />、など、指定されたリストレベルのすべての書式設定プロパティに<see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />アクセスできます。</para>
+      <para>メソッドを<see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" />使用して、複数レベルの箇条書きテンプレートを単一レベルのテンプレートに変換します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,10 +83,8 @@
         <param name="Level">省略可能な<b>オブジェクト</b>です。 新しい箇条書きの書式設定に使用するレベル。 箇条書きのレベルを複数レベルから単一レベルに変換する場合は、この引数に 1 ～ 9 の範囲の数値を指定します。 単一レベルから複数レベルに変換する場合は、1 を指定します。 この引数を省略すると、1 が既定値として使用されます。</param>
         <summary>複数レベルの箇条書きを単一レベルの箇条書きに、または単一レベルの箇条書きを複数レベルの箇条書きに変換します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>派生したリスト テンプレートに<b>Convert</b>メソッドを使用することはできません、<see cref="T:Microsoft.Office.Interop.Word.ListGalleries" />コレクションです。</para>
-          <para />
-        </remarks>
+        <remarks><para>コレクションから派生したリストテンプレートに対して Convert メソッドを使用することはできません。 <b></b> <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -121,12 +110,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListLevels">
@@ -152,7 +140,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListLevels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.ListLevels" />を指定したすべてのレベルを表す<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />。</summary>
+        <summary>指定さ<see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />れたのすべてのレベルを表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -214,13 +202,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>の場合、指定された<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />オブジェクトには、アウトライン番号の付いた。</summary>
+        <summary><b>True</b>の場合は<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> 、指定したオブジェクトのアウトライン番号が付けられます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>最初のレベルの書式設定を使用する単一レベルの箇条書きテンプレートを変換するこのプロパティを<b>False</b>に設定します</para>。
-          <para>から返される、 <b>ListTemplate</b>オブジェクトに対してこのプロパティを設定することはできません、<see cref="T:Microsoft.Office.Interop.Word.ListGallery" />オブジェクトです</para>。
-          <para /></remarks>
+        <remarks><para>最初のレベルの書式設定を使用する単一レベルの箇条書きテンプレートを変換するこのプロパティを <b>False</b> に設定します。</para>
+          <para>オブジェクトから返される ListTemplate オブジェクトには、このプロパティを設定できません。 <b></b> <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

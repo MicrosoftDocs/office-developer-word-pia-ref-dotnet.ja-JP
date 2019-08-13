@@ -1,13 +1,5 @@
 <Type Name="StyleSheets" FullName="Microsoft.Office.Interop.Word.StyleSheets">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="415546f5018b33b6f674dcbe8715760966a62c30" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671050" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface StyleSheets : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f5e7d2970cc046f6ff039df36db9be51e896453e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146060" /></Metadata><TypeSignature Language="C#" Value="public interface StyleSheets : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract StyleSheets implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.StyleSheets" />
   <TypeSignature Language="VB.NET" Value="Public Interface StyleSheets&#xA;Implements IEnumerable" />
@@ -30,12 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.StyleSheet" />のカスケード接続を表すオブジェクトのスタイル シートの文書に添付します。</summary>
-    <remarks>
-      <para>
-        <b>スタイル シート</b>のコレクションには、すべてのカスケード スタイル シートが CSS スタイル シートのリンク] ダイアログ ボックスに表示される、テンプレートとアドイン] コマンド ([ツール] メニュー) を使用してアクセスが含まれています</para>。使用の
-      <para>、 <see cref="P:Microsoft.Office.Interop.Word._Document.StyleSheets" /><b>のスタイル シート</b>のコレクションを返すプロパティです。使用して、<see cref="M:Microsoft.Office.Interop.Word.StyleSheets.Add(System.String,Microsoft.Office.Interop.Word.WdStyleSheetLinkType,System.String,Microsoft.Office.Interop.Word.WdStyleSheetPrecedence)" />スタイル シートを<b>スタイル シート</b>のコレクションに追加します</para>。
-      <para /></remarks>
+    <summary>文書に添付<see cref="T:Microsoft.Office.Interop.Word.StyleSheet" />されたカスケードスタイルシートを表すオブジェクトのコレクションです。</summary>
+    <remarks><para><b>スタイル</b>シートのコレクションには、[テンプレートとアドイン] コマンド ([ツール] メニュー) を使用してアクセスする、[リンクされた CSS スタイルシート] ダイアログボックスに表示されるすべてのカスケードスタイルシートが含まれます。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word._Document.StyleSheets" /> <b>スタイルシート</b>のコレクションを取得するのにには、プロパティを使用します。 スタイルシート<see cref="M:Microsoft.Office.Interop.Word.StyleSheets.Add(System.String,Microsoft.Office.Interop.Word.WdStyleSheetLinkType,System.String,Microsoft.Office.Interop.Word.WdStyleSheetPrecedence)" />をスタイルシートのコレクションに追加する<b></b>のにには、メソッドを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -64,13 +54,11 @@
         <Parameter Name="Precedence" Type="Microsoft.Office.Interop.Word.WdStyleSheetPrecedence" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>文字列</b> が必要です。 カスケード スタイル シートのパスおよびファイル名を指定します。</param>
-        <param name="LinkType">必要な<see cref="T:Microsoft.Office.Interop.Word.WdStyleSheetLinkType" />。 スタイル シートをリンクとして追加するか、Web 文書にインポートするかどうかを示します。使用できる定数は、次のいずれか: <b>wdStyleSheetLinkTypeImported </b><b>wdStyleSheetLinkTypeLinked</b><paramref name="default" /></param>
-        <param name="Title">
-          <b>文字列</b> が必要です。 スタイル シートの名前を指定します。</param>
-        <param name="Precedence">必要な<see cref="T:Microsoft.Office.Interop.Word.WdStyleSheetPrecedence" />。 比較してその他のカスケード スタイル シートを Web 文書に添付された重要度のレベルを示します。使用できる定数は、次のいずれか:<b>wdStyleSheetPrecedenceHigher</b><b>wdStyleSheetPrecedenceHighest</b><paramref name="default" /><b>wdStyleSheetPrecedenceLower</b><b>wdStyleSheetPrecedenceLowest</b></param>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.StyleSheet" /> Web ドキュメントに追加する新しいスタイル シートを表すオブジェクト。</summary>
+        <param name="FileName"><b>文字列</b> が必要です。 カスケード スタイル シートのパスおよびファイル名を指定します。</param>
+        <param name="LinkType">必須<see cref="T:Microsoft.Office.Interop.Word.WdStyleSheetLinkType" />。 スタイルシートを Web ドキュメントにリンクとして追加するか、それともインポートするかを指定します。次の定数のいずれかを指定できます。 <b>wdStyleSheetLinkTypeImported </b> <b>wdStyleSheetLinkTypeLinked</b><paramref name="default" /></param>
+        <param name="Title"><b>文字列</b> が必要です。 スタイル シートの名前を指定します。</param>
+        <param name="Precedence">必須<see cref="T:Microsoft.Office.Interop.Word.WdStyleSheetPrecedence" />。 Web ドキュメントに添付されている他のカスケードスタイルシートと比較して、重要度のレベルを示します。次の定数のいずれかを指定できます:<b>wdStyleSheetPrecedenceHigher</b><b>wdStyleSheetPrecedenceHighest</b><paramref name="default" /><b>wdStyleSheetPrecedenceLower</b><b>wdStyleSheetPrecedenceLowest</b></param>
+        <summary>Web ドキュメント<see cref="T:Microsoft.Office.Interop.Word.StyleSheet" />に追加する新しいスタイルシートを表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -98,7 +86,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,12 +142,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -220,7 +207,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">位置を表す序数または各オブジェクトの名前を表す文字列を示す<b>オブジェクト</b>。</param>
+        <param name="Index">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

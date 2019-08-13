@@ -1,13 +1,5 @@
 <Type Name="ChartColorFormat" FullName="Microsoft.Office.Interop.Word.ChartColorFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2cbca0bca2527cc63516d8972ee2ec068238e367" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672263" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartColorFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="55a04dd1372bae2f5242c5656e5564517b5a2549" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142279" /></Metadata><TypeSignature Language="C#" Value="public interface ChartColorFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartColorFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartColorFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartColorFormat" />
@@ -27,11 +19,28 @@
   </Attributes>
   <Docs>
     <summary>1 色のオブジェクトの色や、グラデーションまたはパターンで塗りつぶされたオブジェクトの前景色と背景色を表します。</summary>
-    <remarks>
-      <para>返すには、次の表に示すプロパティのいずれか使用して、<see cref="T:Microsoft.Office.Interop.Word.ChartColorFormat" />オブジェクトです</para>。
-      <list type="table"><item><description><see cref="P:Microsoft.Office.Interop.Word.ChartFillFormat.BackColor" /></description><description><see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /></description>の背景の塗りつぶしの色 (グラデーションまたはパターンの塗りつぶしで使用)
-        </item><item><description><see cref="P:Microsoft.Office.Interop.Word.ChartFillFormat.ForeColor" /></description><description><see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /></description>前景塗りつぶし色 (または均一な塗りつぶしの色の塗りつぶし)
-        </item></list><para /></remarks>
+    <remarks><para>オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.ChartColorFormat" />取得するには、次の表に示すプロパティのいずれかを使用します。</para>
+      <list type="table">
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.ChartFillFormat.BackColor" />
+          </description>
+          <description>
+            <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />
+          </description>
+          <description>背景の塗りつぶし色 (網かけまたはパターンを使った塗りつぶしに使用)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.ChartFillFormat.ForeColor" />
+          </description>
+          <description>
+            <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />
+          </description>
+          <description>前景色、または均一な色の塗りつぶし</description>
+        </item>
+      </list>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -88,10 +97,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。 このプロパティが返すオブジェクト修飾子を使用する場合、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> (ことができますこのプロパティを使用する OLE オートメーション オブジェクトとそのオブジェクトのアプリケーションを取得)、指定したオブジェクトの作成者を表すオブジェクト。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用<see cref="T:Microsoft.Office.Interop.Word._Application" />すると、Microsoft Word アプリケーションを表すオブジェクトが返されます。 オブジェクト修飾子を使用する場合、このプロパティは、 <see cref="T:Microsoft.Office.Interop.Word._Application" />指定したオブジェクトの作成元を表すオブジェクトを返します (このプロパティを OLE オートメーションオブジェクトと共に使用して、そのオブジェクトのアプリケーションを返すことができます)。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,14 +125,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトが Microsoft Word で作成された場合、<see cref="P:Microsoft.Office.Interop.Word.ChartColorFormat.Creator" />を返します文字列を表す 16 進数値である 4d535744 をします。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
-          <para />
-        </remarks>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトが Microsoft Word で作成されている<see cref="P:Microsoft.Office.Interop.Word.ChartColorFormat.Creator" />場合、このプロパティは、文字列 "MSWD" を表す、16進数値の4D535744 を返します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -151,10 +154,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定したオブジェクトの親を返します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,10 +182,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した色の赤、緑、青の値を表す<b>整数</b>を返します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>指定された色の赤、緑、青の値を表す<b>整数</b>を返します。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,9 +214,7 @@
       </ReturnValue>
       <Docs>
         <summary>取得または、現在の配色パターンの色のインデックスを設定します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,12 +241,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>型、色を表す<b>整数</b>値の書式設定を返します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>このプロパティは、次のいずれかを返します<see cref="T:Microsoft.Office.Core.MsoColorType" />列挙値。</para>
+        <summary>色書式の種類を表す<b>整数</b>値を返します。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>このプロパティは、次<see cref="T:Microsoft.Office.Core.MsoColorType" />のいずれかの列挙値を返します。</para>
           <list type="bullet">
             <item>
               <para>
@@ -262,8 +256,7 @@
               </para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

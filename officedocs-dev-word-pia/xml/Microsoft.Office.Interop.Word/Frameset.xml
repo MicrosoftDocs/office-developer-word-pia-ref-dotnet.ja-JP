@@ -1,13 +1,5 @@
 <Type Name="Frameset" FullName="Microsoft.Office.Interop.Word.Frameset">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a153326e0a463fab1ea2191a5ff18e8f268d65d4" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671579" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Frameset : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a60060da0b1c4ff85a021ce286850c649ffa86e1" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146809" /></Metadata><TypeSignature Language="C#" Value="public interface Frameset : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Frameset implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Frameset" />
   <TypeSignature Language="VB.NET" Value="Public Interface Frameset&#xA;Implements IEnumerable" />
@@ -31,11 +23,9 @@
   </Attributes>
   <Docs>
     <summary>フレーム ページ全体またはフレーム ページ上の単一のフレームを表します。</summary>
-    <remarks>
-      <para>
-        <b>フレーム セット</b>コレクションはありません。各<see cref="T:Microsoft.Office.Interop.Word.Document" />オブジェクトまたは<see cref="T:Microsoft.Office.Interop.Word.Pane" />オブジェクトには、1 つだけの<b>Frameset</b>オブジェクトが含まれています</para>。<b>Frameset</b>オブジェクトを取得する<b>ドキュメント</b>または<b>ウィンドウ</b>のオブジェクトのプロパティを
-      <para>の<b>フレーム セット</b>を使用します。プロパティまたはフレーム ページ上のすべてのフレームに影響を与える方法は、 <b>Document</b>オブジェクトから<b>Frameset</b>オブジェクトを使用します。フレーム ページ上の個々 のフレームに影響するプロパティまたはメソッドは、 <b>Pane</b>オブジェクトから<b>Frameset</b>オブジェクトを使用しているのです</para>。
-      <para /></remarks>
+    <remarks><para><b>フレームセット</b>コレクションはありません。各<see cref="T:Microsoft.Office.Interop.Word.Document" />オブジェクトまた<see cref="T:Microsoft.Office.Interop.Word.Pane" />はオブジェクトには、 <b>Frameset</b>オブジェクトが1つだけ含まれています。</para>
+      <para><b>Frameset</b>オブジェクトを取得するのにには、<b>ドキュメント</b>または<b>Pane</b>オブジェクトの<b>frameset</b>プロパティを使用します。 フレームページ上のすべてのフレームに影響を与えるプロパティまたはメソッドの場合は、 <b>Document</b>オブジェクトの<b>Frameset</b>オブジェクトを使用します。 フレームページ上の個々のフレームに影響を与えるプロパティまたはメソッドの場合は、 <b>Pane</b>オブジェクトの<b>Frameset</b>オブジェクトを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNewFrame">
@@ -61,7 +51,7 @@
         <Parameter Name="Where" Type="Microsoft.Office.Interop.Word.WdFramesetNewFrameLocation" />
       </Parameters>
       <Docs>
-        <param name="Where">必要な<see cref="T:Microsoft.Office.Interop.Word.WdFramesetNewFrameLocation" />。 WdFramesetNewFrameLocation クラスの定数のいずれかを使用して、指定されたフレームに対して、新しいフレームの相対的な位置を指定します。</param>
+        <param name="Where">必須<see cref="T:Microsoft.Office.Interop.Word.WdFramesetNewFrameLocation" />。 WdFramesetNewFrameLocation クラスの定数のいずれかを使用して、指定されたフレームに対して、新しいフレームの相対的な位置を指定します。</param>
         <summary>フレーム ページに新しいフレームを追加します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -90,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,12 +108,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>子の数を返します<see cref="T:Microsoft.Office.Interop.Word.Frameset" />指定した<b>Frameset</b>オブジェクトに関連付けられているオブジェクト。</summary>
+        <summary>指定した<b>Frameset</b>オブジェクト<see cref="T:Microsoft.Office.Interop.Word.Frameset" />に関連付けられている子オブジェクトの数を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、 <b>wdFramesetTypeFrameset</b>の種類の<b>フレーム セット</b>のオブジェクトにのみ適用されます。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、 <b>wdFramesetTypeFrameset</b> の種類の <b>フレーム セット</b> のオブジェクトにのみ適用されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChildFramesetItem">
@@ -152,14 +140,11 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>整数</b>が必要です。 指定したフレームのインデックス番号です。</param>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> 、指定した子<b>Frameset</b>オブジェクトを表すオブジェクト。</summary>
+        <param name="Index">整数型 (<b>Integer</b>) の値を使用します。 指定したフレームのインデックス番号です。</param>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Frameset" />た子<b>Frameset</b>オブジェクトを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、 <b>wdFramesetTypeFrameset</b>の種類の<b>フレーム セット</b>のオブジェクトにのみ適用されます。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、 <b>wdFramesetTypeFrameset</b> の種類の <b>フレーム セット</b> のオブジェクトにのみ適用されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -185,12 +170,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -214,7 +198,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -275,8 +259,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、指定したフレーム ページに枠線が表示されます。</summary>
+        <summary><b>True の</b> 場合、指定したフレーム ページに枠線が表示されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -307,8 +290,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>で、Web ページまたはその他のドキュメントが指定された場合、<see cref="P:Microsoft.Office.Interop.Word.Frameset.FrameDefaultURL" />プロパティは、Microsoft Word が指定したフレームからのリンクのみを保持する外部ファイル。</summary>
+        <summary><b>True</b>の場合は、Web ページまたは<see cref="P:Microsoft.Office.Interop.Word.Frameset.FrameDefaultURL" />プロパティによって指定された他のドキュメントは、Microsoft Word が指定したフレームからのリンクのみを保持する外部ファイルです。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -339,7 +321,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはフレーム ページ上の指定したフレームの名前を設定します。</summary>
+        <summary>フレームページ上の指定したフレームの名前を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -370,8 +352,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は Web ブラウザーでフレーム ページを表示したとき、ユーザーが指定したフレームをサイズ変更できます。</summary>
+        <summary><b>True の</b> 場合は Web ブラウザーでフレーム ページを表示したとき、ユーザーが指定したフレームをサイズ変更できます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -402,7 +383,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdScrollbarType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スクロール バーは、Web ブラウザーでフレーム ページを表示するときに指定したフレームの使用可能な場合を設定または返します。</summary>
+        <summary>Web ブラウザーでフレームページを表示しているときに、指定したフレームのスクロールバーが使用可能な場合に取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -433,7 +414,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したフレーム ページの枠線の色を設定します。 いずれか、<see cref="T:Microsoft.Office.Interop.Word.WdColor" />定数。</summary>
+        <summary>指定したフレーム ページの枠線の色を設定します。 任意の<see cref="T:Microsoft.Office.Interop.Word.WdColor" />定数を使用できます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -527,13 +508,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された高さの設定値を取得または<see cref="T:Microsoft.Office.Interop.Word.Frameset" />オブジェクトです。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.Frameset" />オブジェクトの高さを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Word.Frameset.HeightType" />プロパティは、この値を表現する単位の種類を決定します。</para>
-          <para />
-        </remarks>
+        <remarks><para>この<see cref="P:Microsoft.Office.Interop.Word.Frameset.HeightType" />プロパティは、この値を表す単位の種類を決定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeightType">
@@ -618,7 +596,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Frameset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Frameset" />フレーム ページの指定した<b>Frameset</b>オブジェクトの親を表すオブジェクト。</summary>
+        <summary>フレームページ<see cref="T:Microsoft.Office.Interop.Word.Frameset" />上の指定した<b>Frameset</b>オブジェクトの親オブジェクトを表すオブジェクト型 (object) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -646,7 +624,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFramesetType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Frameset" />オブジェクトの種類です。</summary>
+        <summary>オブジェクトの<see cref="T:Microsoft.Office.Interop.Word.Frameset" />種類を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -677,13 +655,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または指定された幅を設定する<see cref="T:Microsoft.Office.Interop.Word.Frameset" />オブジェクトです。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.Frameset" />オブジェクトの幅を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Word.Frameset.WidthType" />プロパティは、この値を表現する単位の種類を決定します。</para>
-          <para />
-        </remarks>
+        <remarks><para>この<see cref="P:Microsoft.Office.Interop.Word.Frameset.WidthType" />プロパティは、この値を表す単位の種類を決定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WidthType">
@@ -712,7 +687,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFramesetSizeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した幅の種類を設定を取得または<see cref="T:Microsoft.Office.Interop.Word.Frameset" />オブジェクトです。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.Frameset" />オブジェクトの幅の種類を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

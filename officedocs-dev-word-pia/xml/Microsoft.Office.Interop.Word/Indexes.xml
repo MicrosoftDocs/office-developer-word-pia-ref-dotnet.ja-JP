@@ -1,13 +1,5 @@
 <Type Name="Indexes" FullName="Microsoft.Office.Interop.Word.Indexes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c47d895ce1ab76c08d23df7218a98cbdbcccf8ed" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672284" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Indexes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7b57b53793778d56fdc6da5059ee8398d3e740c4" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147962" /></Metadata><TypeSignature Language="C#" Value="public interface Indexes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Indexes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Indexes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Indexes&#xA;Implements IEnumerable" />
@@ -30,12 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.Index" />を指定した文書内のすべてのインデックスを表すオブジェクト。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word._Document.Indexes" /><b>のインデックス</b>のコレクションを返すプロパティです</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.Indexes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />メソッドにインデックスを作成し、 <b>Indexes</b>コレクションに追加します</para>。
-      <para><b>インデックス</b>を使用 (<paramref name="index" />)、<paramref name="index" />インデックス番号は、1 つの<b>インデックス</b>オブジェクトを返します。インデックス番号は、文書内の<b>インデックス</b>オブジェクトの位置を表します</para>。
-      <para /></remarks>
+    <summary>指定され<see cref="T:Microsoft.Office.Interop.Word.Index" />た文書のすべての索引を表すオブジェクトのコレクションです。</summary>
+    <remarks><para>Indexes コレクション<see cref="P:Microsoft.Office.Interop.Word._Document.Indexes" />を取得するの<b></b>にには、プロパティを使用します。</para>
+      <para>インデックスを<see cref="M:Microsoft.Office.Interop.Word.Indexes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />作成し、 <b>Indexes</b>コレクションに追加するには、メソッドを使用します。</para>
+      <para>単一<b></b>の<b>index</b>オブジェクトを取得<paramref name="index" />するのにには、インデックス (<paramref name="index" />) を使用します。ここではインデックス番号を指定します。 インデックス番号は、文書での <b>Index</b> オブジェクトの位置を表します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -66,20 +57,18 @@
         <Parameter Name="IndexLanguage" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必要な<b>Range</b>オブジェクトです。 索引を表示する範囲を指定します。 範囲が解除されていない場合、インデックスは、範囲を置き換えます。</param>
-        <param name="HeadingSeparator">省略可能な<b>オブジェクト</b>です。アルファベット順のグループ (同じ文字で始まるエントリ) の間のテキスト インデックスにします。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Word.WdHeadingSeparator" />定数: <b>wdHeadingSeparatorBlankLine</b>、 <b>wdHeadingSeparatorLetter</b>、 <b>wdHeadingSeparatorLetterFull</b>、 <b>wdHeadingSeparatorLetterLow</b>、または<b>wdHeadingSeparatorNone</b>。</param>
+        <param name="Range">必要な<b>Range</b>オブジェクト。 索引を表示する範囲を指定します。 指定範囲が解除されていない場合は、指定範囲が索引に置き換えられます。</param>
+        <param name="HeadingSeparator">省略可能な<b>オブジェクト</b>です。索引にあるアルファベット順のグループ (同じ文字で始まるエントリ) のテキスト。 <b>WdHeadingSeparatorBlankLine</b>、 <b>wdHeadingSeparatorLetter</b>、 <b>wdHeadingSeparatorLetterFull</b>、 <see cref="T:Microsoft.Office.Interop.Word.WdHeadingSeparator" /> <b>wdHeadingSeparatorLetterLow</b>、 <b>wdHeadingSeparatorNone</b>のいずれかの定数を使用できます。</param>
         <param name="RightAlignPageNumbers">省略可能な<b>オブジェクト</b>です。 <b>True の</b> 右余白にページ番号を配置します。</param>
-        <param name="Type">省略可能な<b>オブジェクト</b>です。 サブエントリがメイン項目と同じ行 (連続) または (インデント) するメイン エントリから別の行にあるかどうかを指定します。 次のいずれかの方法は、<see cref="T:Microsoft.Office.Interop.Word.WdIndexType" />定数: <b>wdIndexIndent</b>または<b>wdIndexRunin</b>です。</param>
+        <param name="Type">省略可能な<b>オブジェクト</b>です。 サブエントリがメイン項目と同じ行 (連続) または (インデント) するメイン エントリから別の行にあるかどうかを指定します。 次<see cref="T:Microsoft.Office.Interop.Word.WdIndexType" />の定数のいずれかを指定できます: <b>WdIndexIndent</b>または<b>wdIndexRunin</b>。</param>
         <param name="NumberOfColumns">省略可能な<b>オブジェクト</b>です。 索引の各ページの段数を指定します。 0 (ゼロ) を指定すると、索引の段数は文書の段数と同じになります。</param>
         <param name="AccentedLetters">省略可能な<b>オブジェクト</b>です。 <b>True</b> に設定すると、アクセント記号付きの文字用に、索引に別の見出しが作成されます。たとえば、"À" で始まる単語と "A" で始まる単語は、別の見出しになります。</param>
-        <param name="SortBy">省略可能な<b>オブジェクト</b>です。 指定したインデックスに使用する並べ替えの基準です。 次のいずれかの方法は、<see cref="T:Microsoft.Office.Interop.Word.WdIndexSortBy" />定数: <b>wdIndexSortByStroke</b>または<b>wdIndexSortBySyllable</b>です。</param>
-        <param name="IndexLanguage">省略可能な<b>オブジェクト</b>です。 並べ替えの指定したインデックスに使用する言語です。 いずれか、<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Index" />をドキュメントに追加する新しいインデックスを表すオブジェクト。</summary>
+        <param name="SortBy">省略可能な<b>オブジェクト</b>です。 指定したインデックスに使用する並べ替えの基準です。 次<see cref="T:Microsoft.Office.Interop.Word.WdIndexSortBy" />の定数のいずれかを指定できます: <b>WdIndexSortByStroke</b>または<b>wdIndexSortBySyllable</b>。</param>
+        <param name="IndexLanguage">省略可能な<b>オブジェクト</b>です。 並べ替えの指定したインデックスに使用する言語です。 任意の<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数を使用できます。</param>
+        <summary>文書に<see cref="T:Microsoft.Office.Interop.Word.Index" />追加する新しい索引を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>インデックスは、文書内のインデックス エントリ (XE) フィールドから作成されます。使用して、 <see cref="M:Microsoft.Office.Interop.Word.Indexes.MarkEntry(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> 、インデックスに含める索引項目を登録する方法です。</para>
-          <para />
-        </remarks>
+        <remarks><para>インデックスは、文書内のインデックス エントリ (XE) フィールドから作成されます。 インデックスに<see cref="M:Microsoft.Office.Interop.Word.Indexes.MarkEntry(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />含める索引項目を登録するには、メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddOld">
@@ -145,7 +134,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -173,13 +162,10 @@
         <Parameter Name="ConcordanceFileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ConcordanceFileName">
-          <b>文字列</b> が必要です。 索引登録ファイルの名前を指定します。</param>
+        <param name="ConcordanceFileName"><b>文字列</b> が必要です。 索引登録ファイルの名前を指定します。</param>
         <summary>索引登録ファイルの名前を使用して、作業中の文書の索引を自動的に作成します。</summary>
-        <remarks>
-          <para>索引登録ファイルは、2 番目の列の最初の列とインデックスのエントリのインデックスを作成する条件で、2 列の表を含む Word 文書です。</para>
-          <para />
-        </remarks>
+        <remarks><para>索引登録ファイルは、2列の表を含む Microsoft Word 文書で、最初の列にインデックスを作成するための用語と2番目の列の索引項目を含みます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -233,12 +219,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>などのオブジェクトは、Microsoft Word で作成されている場合このプロパティが返されます、16 進数の値である 4d535744 を文字列します。この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>たとえば、オブジェクトが Microsoft Word で作成されている場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -267,13 +252,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdIndexFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した文書内の索引の書式を設定または返します。</summary>
+        <summary>指定した文書の索引の書式を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Format</b>プロパティには、いずれかを指定できます、<see cref="T:Microsoft.Office.Interop.Word.WdIndexFormat" />定数。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Format</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdIndexFormat" />定数のいずれかを指定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -334,7 +316,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">各オブジェクトの序数位置を示す<b>整数</b>です。</param>
+        <param name="Index">個々のオブジェクトの位置を表す<b>整数型 (Integer</b> ) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -368,15 +350,15 @@
         <Parameter Name="Italic" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必要な<b>Range</b>オブジェクトです。 文書全体をとおして、XE フィールドを登録する文字列の範囲を指定します。</param>
-        <param name="Entry">省略可能な<b>オブジェクト</b>です。 フォームで、索引に表示するテキスト<paramref name="MainEntry[:Subentry]" />。</param>
-        <param name="EntryAutoText">省略可能な<b>オブジェクト</b>です。 索引に表示するテキストを含む定型句エントリ (この引数を指定する場合<paramref name="Entry" />は無視されます)。</param>
+        <param name="Range">必要な<b>Range</b>オブジェクト。 文書全体をとおして、XE フィールドを登録する文字列の範囲を指定します。</param>
+        <param name="Entry">省略可能な<b>オブジェクト</b>です。 インデックスに表示する文字列を指定し<paramref name="MainEntry[:Subentry]" />ます。</param>
+        <param name="EntryAutoText">省略可能な<b>オブジェクト</b>です。 索引に表示する文字列を含む定型句を指定します (この引数が指定され<paramref name="Entry" />ている場合は無視されます)。</param>
         <param name="CrossReference">省略可能な<b>オブジェクト</b>です。 索引に表示する相互参照を指定します。</param>
-        <param name="CrossReferenceAutoText">省略可能な<b>オブジェクト</b>です。 相互参照の文字列を含む定型句エントリの名前 (この引数を指定する場合<paramref name="CrossReference" />は無視されます)。</param>
+        <param name="CrossReferenceAutoText">省略可能な<b>オブジェクト</b>です。 相互参照の文字列を含む定型句の名前を指定します (この引数が指定され<paramref name="CrossReference" />ている場合は無視されます)。</param>
         <param name="BookmarkName">省略可能な<b>オブジェクト</b>です。 索引に表示するページ範囲を登録しているブックマークの名前を指定します。 この引数の指定を省略すると、XE フィールドが含まれるページの番号が索引に表示されます。</param>
         <param name="Bold">省略可能な<b>オブジェクト</b>です。 <b>True</b> インデックス エントリのページ番号に太字の書式を追加します。</param>
         <param name="Italic">省略可能な<b>オブジェクト</b>です。 <b>True の</b> 索引のページ番号に斜体の書式を追加します。</param>
-        <summary>内のテキストのすべてのインスタンスの後に、XE (索引登録) フィールドを挿入します。 <paramref name="Range" />。</summary>
+        <summary>のテキストのすべてのインスタンスの後に<paramref name="Range" />、XE (索引登録) フィールドを挿入します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -409,16 +391,16 @@
         <Parameter Name="Reading" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必要な<b>Range</b>オブジェクトです。 登録項目の位置を指定します。 後に XE フィールドを挿入<paramref name="Range" />。</param>
-        <param name="Entry">省略可能な<b>オブジェクト</b>です。 インデックスに表示されるテキストです。 下位の索引項目を指定するには、メイン エントリのテキストとコロン (:) で区切られた、下位の索引項目のテキストが含まれます(たとえば、"概要: 製品」)。</param>
-        <param name="EntryAutoText">省略可能な<b>オブジェクト</b>です。 インデックス、目次、または目次の文字列を含む定型句エントリ名 (<paramref name="Entry" />は無視されます)。</param>
+        <param name="Range">必要な<b>Range</b>オブジェクト。 登録項目の位置を指定します。 XE フィールドは後<paramref name="Range" />に挿入されます。</param>
+        <param name="Entry">省略可能な<b>オブジェクト</b>です。 索引に表示する文字列を指定します。 下位レベルの登録文字列を表示する場合は、上位レベルの登録文字列と下位レベルの登録文字列をコロン (:) で区切って指定します (たとえば、"ファイル: 作成")。</param>
+        <param name="EntryAutoText">省略可能な<b>オブジェクト</b>です。 索引、図表目次、または目次の文字列を含む定型句の登録名を指定し<paramref name="Entry" />ます (無視されます)。</param>
         <param name="CrossReference">省略可能な<b>オブジェクト</b>です。 索引に表示する相互参照 (たとえば、"「ファイル名」を参照") を指定します。</param>
-        <param name="CrossReferenceAutoText">省略可能な<b>オブジェクト</b>です。 相互参照の文字列を含む定型句エントリ名 (<paramref name="CrossReference" />は無視されます)。</param>
-        <param name="BookmarkName">省略可能な<b>オブジェクト</b>です。 索引に表示するページの範囲を示すブックマークの名前です。 この引数を省略すると、XE フィールドを含むページの数がインデックスに表示されます。</param>
+        <param name="CrossReferenceAutoText">省略可能な<b>オブジェクト</b>です。 相互参照のテキストを含む定型句の登録名を指定し<paramref name="CrossReference" />ます (無視されます)。</param>
+        <param name="BookmarkName">省略可能な<b>オブジェクト</b>です。 索引に表示するページ範囲を登録しているブックマークの名前を指定します。 この引数の指定を省略すると、XE フィールドが含まれるページの番号が索引に表示されます。</param>
         <param name="Bold">省略可能な<b>オブジェクト</b>です。 <b>True</b> を設定すると、索引に表示するページ番号が太字になります。</param>
         <param name="Italic">省略可能な<b>オブジェクト</b>です。 <b>True</b> を設定すると、索引に表示するページ番号が斜体になります。</param>
         <param name="Reading">省略可能な<b>オブジェクト</b>です。 <b>True</b> の場合は、索引を五十音順に並べ替えたときに正しい位置に索引項目が表示されます (東アジア言語のみ)。</param>
-        <summary>指定範囲の後に、XE (索引登録) フィールドを挿入します。 返します、 <see cref="T:Microsoft.Office.Interop.Word.Field" /> 、XE フィールドを表すオブジェクト。</summary>
+        <summary>指定範囲の後に XE (索引登録) フィールドを挿入します。 XE フィールド<see cref="T:Microsoft.Office.Interop.Word.Field" />を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

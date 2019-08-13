@@ -1,13 +1,5 @@
 <Type Name="Fields" FullName="Microsoft.Office.Interop.Word.Fields">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2fdd77cf26598c9ff9a9d497e81fbed99577fb24" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671578" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Fields : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="57c76419b1fbb163aa0a4e6e8b8649d94596aa1d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148076" /></Metadata><TypeSignature Language="C#" Value="public interface Fields : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Fields implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Fields" />
   <TypeSignature Language="VB.NET" Value="Public Interface Fields&#xA;Implements IEnumerable" />
@@ -30,15 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.Field" />の選択範囲、指定範囲、または文書内のすべてのフィールドを表すオブジェクト。</summary>
-    <remarks>
-      <para>
-        <b>Fields</b>コレクションを取得する<b>フィールド</b>のプロパティを使用します</para>。
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /><b>Fields</b>コレクションにフィールドを追加する方法です</para>。
-      <para><b>フィールド</b>の使用 (<paramref name="index" />)、インデックスの場所は、<paramref name="index" />番号は、1 つの<b>フィールド</b>オブジェクトを取得します。インデックス番号は、選択範囲、指定範囲、または文書内のフィールドの位置を表します</para>。
-      <para><b>MailMerge</b>オブジェクトを使用して<b>フィールド</b>プロパティを使用して、 <b>MailMergeFields</b>コレクションを取得します</para>。
-      <para>、<see cref="P:Microsoft.Office.Interop.Word.Fields.Count" />ドキュメントでこのコレクションのプロパティは、メイン テキスト ストーリーのみの項目の数を返します。カウントするための他のストーリーの項目を使用して、使用して、コレクションの<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです</para>。
-      <para /></remarks>
+    <summary>選択範囲、 <see cref="T:Microsoft.Office.Interop.Word.Field" />指定範囲、または文書内のすべてのフィールドを表すオブジェクトのコレクションです。</summary>
+    <remarks><para><b>Fields</b> コレクションを取得するのにには、 <b>フィールド</b> のプロパティを使用します。</para>
+      <para>Fields コレクション<see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />にフィールドを追加するには<b></b> 、メソッドを使用します。</para>
+      <para>1つの<paramref name="index" /> <b>Field</b>オブジェクトを取得するの<paramref name="index" />にには、<b>フィールド</b>() を使用します。引数 index には、数値を指定します。 インデックス番号は、選択範囲、指定範囲、または文書内のフィールドの位置を表します。</para>
+      <para><b>MailMergeFields</b>コレクションを取得するのにには、<b>差し込み印刷</b>オブジェクトの<b>Fields</b>プロパティを使用します。</para>
+      <para>文書<see cref="P:Microsoft.Office.Interop.Word.Fields.Count" />内のこのコレクションのプロパティは、メインストーリーのみの項目数を返します。 他のストーリー内のアイテムをカウントするには<see cref="T:Microsoft.Office.Interop.Word.Range" /> 、オブジェクトと共にコレクションを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -65,16 +55,15 @@
         <Parameter Name="PreserveFormatting" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必要な<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。 フィールドを追加する範囲です。 範囲が解除されていない場合、フィールドには、範囲が置き換えられます。</param>
-        <param name="Type">省略可能な<b>オブジェクト</b>です。 いずれかを指定することができます<see cref="T:Microsoft.Office.Interop.Word.WdFieldType" />定数。 有効な定数の一覧は、オブジェクト ブラウザーを参照してください。 既定値は、 <b>wdFieldEmpty</b>です。</param>
-        <param name="Text">省略可能な<b>オブジェクト</b>です。 フィールドに必要なテキストを追加します。 たとえば、フィールドのスイッチを指定する場合は、ここで追加します。</param>
+        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 フィールドを追加する範囲を指定します。 範囲が解除されていない場合、この範囲はフィールドに置き換えられます。</param>
+        <param name="Type">省略可能な<b>オブジェクト</b>です。 任意の<see cref="T:Microsoft.Office.Interop.Word.WdFieldType" />定数を使用できます。 有効な定数の一覧については、オブジェクト ブラウザーを参照してください。 既定値は定数 <b>wdFieldEmpty</b> です。</param>
+        <param name="Text">省略可能な<b>オブジェクト</b>です。 フィールドに必要な他の文字列を指定します。 たとえば、フィールドにスイッチを指定する場合は、ここに追加します。</param>
         <param name="PreserveFormatting">省略可能な<b>オブジェクト</b>です。 <b>True</b> を設定すると、フィールドに設定する書式が更新時に変更されません。</param>
-        <summary>追加の<see cref="T:Microsoft.Office.Interop.Word.Field" />オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.Fields" />コレクションです。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Fields" />コレクションにオブジェクトを<see cref="T:Microsoft.Office.Interop.Word.Field" />追加します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドは、指定された範囲における<b>Field</b>オブジェクトを返します</para>。
-          <para>は<b>Fields</b>コレクションの<b>Add</b>メソッドを使用していくつかのフィールド ( <b>wdFieldOCX</b> 、 <b>wdFieldFormCheckBox</b>など) を挿入することはできません。代わりに、特定のメソッドを次のように使用する必要があります、<see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEControl(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />メソッドおよび<b>Add</b>メソッドの<see cref="T:Microsoft.Office.Interop.Word.FormFields" />コレクションです</para>。
-          <para /></remarks>
+        <remarks><para>このメソッドは、指定された範囲の<b>Field</b>オブジェクトを返します。</para>
+          <para>一部のフィールド (<b>wdFieldOCX</b>、<b>wdFieldFormCheckBox</b> など) は、<b>Fields</b> コレクションの <b>Add</b> メソッドを使用して追加することはできません。 代わりに、 <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEControl(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />メソッドや、 <see cref="T:Microsoft.Office.Interop.Word.FormFields" />コレクションの<b>Add</b>メソッドなどの特定のメソッドを使用する必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -100,7 +89,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,12 +145,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -222,7 +210,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">各オブジェクトの序数位置を示す<b>整数</b>です。</param>
+        <param name="Index">個々のオブジェクトの位置を表す<b>整数型 (Integer</b> ) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -254,12 +242,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>決定のすべてのフィールドのかどうか、<see cref="T:Microsoft.Office.Interop.Word.Fields" />コレクションがロックされています。</summary>
+        <summary>コレクション内のすべてのフィールド<see cref="T:Microsoft.Office.Interop.Word.Fields" />がロックされているかどうかを判断します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>すべてのフィールドの場合は、このプロパティは<b>True</b>を返します、<see cref="T:Microsoft.Office.Interop.Word.Fields" />コレクションがロックされている場合は<b>false を指定</b>しないとします。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは<b></b> 、 <see cref="T:Microsoft.Office.Interop.Word.Fields" />コレクション内のすべてのフィールドがロックされている場合は True を返し、それ以外の場合は<b>False</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -311,11 +297,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>フィールドのフィールド コードとフィールドの実行結果の表示を切り替えます。</summary>
-        <remarks>
-          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.Field.ShowCodes" /> 、個々 のフィールドの表示を制御するプロパティです。</para>
-          <para />
-        </remarks>
+        <summary>フィールドコードとフィールドの結果との間のフィールドの表示を切り替えます。</summary>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.Field.ShowCodes" />プロパティを使用して、個々のフィールドの表示を制御します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Unlink">
@@ -339,11 +323,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>すべてのフィールドに置き換えられ、 <see cref="T:Microsoft.Office.Interop.Word.Fields" /> 、最新の結果を使用してコレクション。</summary>
-        <remarks>
-          <para>フィールドのリンクを解除して、現在の結果テキストまたはグラフィックスに変換されます自動的に更新することが不要になった。一部のフィールドに注意してください: XE (索引登録) フィールドや SEQ (連) のフィールドなど、リンクは解除できません。</para>
-          <para />
-        </remarks>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Fields" />コレクション内のすべてのフィールドを最新の結果に置き換えます。</summary>
+        <remarks><para>フィールドのリンクを解除すると、フィールドはテキストまたは画像に変換され、更新できなくなります。 XE (索引登録) フィールド、SEQ (Sequence) フィールドなど、一部のフィールドはリンクを解除できないことに注意してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -369,10 +351,8 @@
       <Docs>
         <summary>フィールド オブジェクトの結果を更新します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>適用すると、<see cref="T:Microsoft.Office.Interop.Word.Fields" />コレクション、0 が返されます)、フィールドを更新したときにエラーが発生しない場合またはエラーが発生した最初のフィールドのインデックスを表す<b>整数</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="T:Microsoft.Office.Interop.Word.Fields" />コレクションに適用すると、フィールドの更新時にエラーが発生しなかった場合は 0 (ゼロ) を返し、エラーが含まれている最初のフィールドのインデックスを表す<b>整数</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateSource">
@@ -397,10 +377,8 @@
       <Parameters />
       <Docs>
         <summary>INCLUDETEXT フィールドの結果に加えた変更を保存し、リンク元ファイルに戻ります。</summary>
-        <remarks>
-          <para>ソース ドキュメントは、Microsoft Word ドキュメントとしてフォーマットしなければなりません。</para>
-          <para />
-        </remarks>
+        <remarks><para>元の文書は、Microsoft Word 文書として書式設定する必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

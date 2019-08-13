@@ -1,13 +1,5 @@
 <Type Name="ContentControls" FullName="Microsoft.Office.Interop.Word.ContentControls">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2a6fe745ee4c6ef85a6a96c2f41f77a80cbd76ed" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672008" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ContentControls : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3cda051fb250a0a8e28df389d60e93ae84593df0" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147162" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControls : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ContentControls implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ContentControls" />
   <TypeSignature Language="VB.NET" Value="Public Interface ContentControls&#xA;Implements IEnumerable" />
@@ -30,10 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.ContentControl" />オブジェクトです。  コンテンツ コントロールは、境界があり、ラベルが付いている場合もある文書内の領域で、特定の種類のコンテンツのコンテナーとして機能します。 個々のコンテンツ コントロールには、日付、リスト、または書式設定された文字列の段落などのコンテンツを格納できます。</summary>
-    <remarks>
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" />新しいコンテンツ コントロールを作成し、ドキュメントに挿入します</para>。使用の
-      <para>、<see cref="P:Microsoft.Office.Interop.Word.ContentControls.Item(System.Object@)" />コレクション内の特定のコンテンツ コントロールにアクセスするメソッドです。使用して、<see cref="T:Microsoft.Office.Interop.Word.ContentControl" />個々 のコンテンツ コントロールを操作するオブジェクトです。詳細については、<a href="HV10107832">コンテンツ コントロールの操作</a>を参照してください</para><para /></remarks>
+    <summary>オブジェクトの<see cref="T:Microsoft.Office.Interop.Word.ContentControl" />コレクション。  コンテンツ コントロールは、境界があり、ラベルが付いている場合もある文書内の領域で、特定の種類のコンテンツのコンテナーとして機能します。 個々のコンテンツ コントロールには、日付、リスト、または書式設定された文字列の段落などのコンテンツを格納できます。</summary>
+    <remarks><para><see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" />メソッドを使用して、新しいコンテンツコントロールを作成し、文書に挿入します。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.ContentControls.Item(System.Object@)" />メソッドを使用して、コレクション内の特定のコンテンツコントロールにアクセスします。 オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.ContentControl" />使用して、個々のコンテンツコントロールを操作します。 詳細については、「<a href="HV10107832">コンテンツコントロールを操作</a>する」を参照してください。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -59,16 +51,12 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Type">作業中の文書に挿入するコンテンツ コントロールの種類を指定します。 省略すると、Microsoft Office Word は、リッチ テキスト コンテンツ コントロールを挿入します。</param>
+        <param name="Type">作業中の文書に挿入するコンテンツ コントロールの種類を指定します。 省略すると、リッチテキストコンテンツコントロールが挿入されます。</param>
         <param name="Range">作業中の文書内でコンテンツ コントロールを配置する場所を指定します。省略した場合は、カーソル位置にコンテンツ コントロールが配置されるか、または現在の選択範囲が置き換えられます。</param>
-        <summary>作業中の文書に、指定された型の新しいコンテンツ コントロールを追加し、返します、 <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> 、新しいコンテンツ コントロールを表すオブジェクト。</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControl" />
-        </returns>
-        <remarks>
-          <para>リッチ テキスト コンテンツ コントロール、文書パーツ ギャラリー コンテンツ コントロール、およびグループ コンテンツ コントロール内でのみコンテンツ コントロールを入れ子にすることができます。 カーソルまたは現在の選択範囲は、別の種類のコンテンツ コントロールの内部は、このメソッドはエラーを発生させます。 この例では、カーソルを移動するかを使用して、 <paramref name="Range" /> 、ドキュメント内の場所を指定するパラメーターです。</para>
-          <para />
-        </remarks>
+        <summary>指定された種類の新しいコンテンツコントロールを作業中の文書に追加し、 <see cref="T:Microsoft.Office.Interop.Word.ContentControl" />新しいコンテンツコントロールを表すオブジェクトを返します。</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.ContentControl" /></returns>
+        <remarks><para>コンテンツ コントロールをネストできるのは、リッチ テキスト コンテンツ コントロール、文書パーツ ギャラリー コンテンツ コントロール、およびグループ コンテンツ コントロールのみです。  カーソルまたは現在の選択範囲が異なる種類のコンテンツ コントロール内にある場合、このメソッドはエラーを発生させます。  この場合は、挿入ポイントを移動するか、 <paramref name="Range" />パラメーターを使用してドキュメント内の位置を指定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -94,10 +82,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word._Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,10 +110,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>内の項目数を取得、<see cref="T:Microsoft.Office.Interop.Word.ContentControls" />コレクションです。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.ContentControls" />コレクション内の項目数を返します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,14 +138,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>アドインが作成されたアプリケーションを示す 32 ビット整数を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Word で作成されている場合、<b>作成者</b>を返します、16 進数の値である 4d535744 を文字列します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para><b>注</b>: この値は、定数で表すこともできます<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />です</para>。
-          <para /></remarks>
+        <summary>アドインが作成されたアプリケーションを示す 32 ビット整数を返します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトは、Microsoft Word で作成されている場合、 <b>作成者</b> を返します、16 進数の値である 4d535744 を文字列します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para>
+            <b>注</b>: この値は定数<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />で表すこともできます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -223,10 +205,8 @@
       </Parameters>
       <Docs>
         <param name="Index">取得するコンテンツ コントロールの順序を指定します。</param>
-        <summary>文書にコンテンツ コントロールのコレクション内で指定したコンテンツ コントロールを返します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControl" />
-        </value>
+        <summary>文書内のコンテンツコントロールのコレクションに含まれる、指定されたコンテンツコントロールを取得します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ContentControl" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,10 +233,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>親オブジェクトを取得します<see cref="T:Microsoft.Office.Interop.Word.ContentControls" />オブジェクトです。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.ContentControls" />オブジェクトの親オブジェクトを返します。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

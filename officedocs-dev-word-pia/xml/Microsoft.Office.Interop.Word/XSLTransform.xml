@@ -1,13 +1,5 @@
 <Type Name="XSLTransform" FullName="Microsoft.Office.Interop.Word.XSLTransform">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5afe73d6a3b568590a9d71b5f56818207a8810b5" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672383" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XSLTransform" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="324dfb612385ddd52c1fa1790b0f5a2a602515b4" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145402" /></Metadata><TypeSignature Language="C#" Value="public interface XSLTransform" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XSLTransform" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XSLTransform" />
   <TypeSignature Language="VB.NET" Value="Public Interface XSLTransform" />
@@ -27,10 +19,9 @@
   </Attributes>
   <Docs>
     <summary>1 つの登録済み XSL Transformation (XSLT) を表します。</summary>
-    <remarks>
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.XSLTransforms.Add(System.String,System.Object@,System.Boolean)" />のメソッド、<see cref="T:Microsoft.Office.Interop.Word.XSLTransforms" />各 XSLT をスキーマの利用可能な Xslt の一覧に追加するコレクションです</para>。
-      <para>使用、<see cref="P:Microsoft.Office.Interop.Word.XSLTransforms.Item(System.Object@)" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Word.XSLTransforms" />コレクションを 1 つの<b>XSLTransform</b>オブジェクトを返します</para>。
-      <para /></remarks>
+    <remarks><para><see cref="T:Microsoft.Office.Interop.Word.XSLTransforms" />コレクションの<see cref="M:Microsoft.Office.Interop.Word.XSLTransforms.Add(System.String,System.Object@,System.Boolean)" />メソッドを使用して、スキーマで使用可能な xslt の一覧に個々の XSLT を追加します。</para>
+      <para>1つ<see cref="P:Microsoft.Office.Interop.Word.XSLTransforms.Item(System.Object@)" />の XSLTransform オブジェクト<see cref="T:Microsoft.Office.Interop.Word.XSLTransforms" />を取得するのにには、コレクションのプロパティを使用します。 <b></b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alias">
@@ -62,7 +53,7 @@
         <Parameter Name="AllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="AllUsers">の<b>場合は true</b> HKEY_LOCAL_MACHINE レジストリ キーへのエイリアスを保存するには<b>false</b>の HKEY_CURRENT_USER レジストリ キーのエイリアスを保存します。 だけこのパラメーターを使用して設定するのには、 <see cref="P:Microsoft.Office.Interop.Word.XSLTransform.Alias(System.Boolean)" /> プロパティの値を取得しないように、 <see cref="P:Microsoft.Office.Interop.Word.XSLTransform.Alias(System.Boolean)" /> プロパティの値です。</param>
+        <param name="AllUsers"><b>true の場合</b>、エイリアスは HKEY_LOCAL_MACHINE レジストリキーに保存されます。<b>false</b>を入力すると、そのエイリアスが HKEY_CURRENT_USER レジストリキーに格納されます。 このパラメーターのみを使用して<see cref="P:Microsoft.Office.Interop.Word.XSLTransform.Alias(System.Boolean)" />  、プロパティ値を取得<see cref="P:Microsoft.Office.Interop.Word.XSLTransform.Alias(System.Boolean)" />  するのではなく、プロパティの値を設定します。</param>
         <summary>指定したオブジェクトのフレンドリ名を表す<b>文字列</b>を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -91,7 +82,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,12 +110,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -148,7 +138,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,7 +165,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在の<b>XSLTransform</b>オブジェクトに割り当てられた GUID が含まれている値を返します。</summary>
+        <summary>現在の<b>XSLTransform</b>オブジェクトに割り当てられている GUID を含む値を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -209,8 +199,8 @@
         <Parameter Name="AllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="AllUsers">オプションの <b>Boolean</b>。 <b>True の</b>すべてのユーザーが指定したオブジェクトへのアクセスを持っています。</param>
-        <summary>指定された変換の場所を設定または返します。</summary>
+        <param name="AllUsers">オプションの <b>Boolean</b>。 <b>True</b>の場合は、すべてのユーザーが指定したオブジェクトにアクセスできます。</param>
+        <summary>指定した変換の場所を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

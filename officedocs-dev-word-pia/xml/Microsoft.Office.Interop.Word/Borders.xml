@@ -1,13 +1,5 @@
 <Type Name="Borders" FullName="Microsoft.Office.Interop.Word.Borders">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5d7f32a44fa68cba8d47c482f1ef6e072fecb59e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672285" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Borders : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ad36491c761b9b9237c3b6b768cb3c389e6e7842" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146242" /></Metadata><TypeSignature Language="C#" Value="public interface Borders : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Borders implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Borders" />
   <TypeSignature Language="VB.NET" Value="Public Interface Borders&#xA;Implements IEnumerable" />
@@ -30,13 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.Border" />オブジェクトの枠線を表すオブジェクト。</summary>
-    <remarks>
+    <summary>オブジェクトの罫線<see cref="T:Microsoft.Office.Interop.Word.Border" />を表すオブジェクトのコレクションです。</summary>
+    <remarks><para><b>Borders</b> プロパティを使用して <b>Borders</b> コレクションを取得します。</para>
       <para>
-        <b>Borders</b>コレクションを取得するのには、 <b>Borders</b>プロパティを使用します</para>。
-      <para><b>の境界線</b>のオブジェクトを<b>Borders</b>コレクションに追加できません。<b>Borders</b>コレクションのメンバーの数は有限で、オブジェクトの種類によって異なりますたとえば、テーブルは、6 つの要素<b>Borders</b>コレクションのメンバーで、段落の場合は 4 です</para>。
-      <para>使用<b>罫線</b>(<paramref name="index" />)、 <paramref name="index" /> 1 つの<b>Border</b>オブジェクトを取得するのには、枠線を識別します。<paramref name="Index" /> 、次のいずれかの<see cref="T:Microsoft.Office.Interop.Word.WdBorderType" />定数: <b>wdBorderBottom</b>、 <b>wdBorderDiagonalDown</b>、 <b>wdBorderDiagonalUp</b>、 <b>wdBorderHorizontal</b>、 <b>wdBorderLeft</b>、 <b>wdBorderRight</b>、<b>wdBorderTop</b>、または<b>wdBorderVertical</b>。これらの定数のいくつかを選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できないがあります。使用の<see cref="P:Microsoft.Office.Interop.Word.Border.LineStyle" /><b>オブジェクト</b>に境界線を適用するプロパティ</para>。
-      <para /></remarks>
+        <b>Border</b> オブジェクトを <b>Borders</b> コレクションに追加することはできません。 <b>Borders</b> コレクションのメンバー数には制限があり、オブジェクトの種類に応じて異なります。 たとえば、表の場合、 <b>Borders</b> コレクションのメンバー数は 6 ですが、段落の場合は 4 です。</para>
+      <para>罫線<paramref name="index" />を識別<paramref name="index" />する<b>罫線</b>() を使用して、1つの<b>border</b>オブジェクトを取得します。 <paramref name="Index" /><b>wdBorderBottom</b>、 <b>wdBorderDiagonalDown</b>、 <b>wdBorderDiagonalUp</b>、 <see cref="T:Microsoft.Office.Interop.Word.WdBorderType" /> <b>wdBorderHorizontal</b>、 <b>wdBorderLeft</b>、 <b>wdBorderRight</b>、 <b>wdBorderTop</b>、または<b>次のいずれかの定数を使用できます。wdBorderVertical</b>。 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。 Border オブジェクト<see cref="P:Microsoft.Office.Interop.Word.Border.LineStyle" />に境界線を適用するには<b></b> 、プロパティを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AlwaysInFront">
@@ -65,7 +56,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはドキュメントのテキストの前にページの境界線を表示するかどうかを示す値を設定します。</summary>
+        <summary>ページ罫線が文書の文字列の前に表示されるかどうかを示す値を取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,7 +84,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,10 +167,9 @@
       <Docs>
         <summary>指定したオブジェクトが作成されたアプリケーションを示す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistanceFrom">
@@ -241,10 +231,8 @@
       <Docs>
         <summary>本文と下罫線の間隔をポイント単位で設定を取得または取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ページ罫線でこのプロパティを使用して、いずれかの間隔をテキストと下部のページ罫線や、ページの下端と下ページ罫線の間隔を設定できます。値に依存するからの距離を測定する場所、<see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" />プロパティ。</para>
-          <para />
-        </remarks>
+        <remarks><para>ページ罫線でこのプロパティを使用して、いずれかの間隔をテキストと下部のページ罫線や、ページの下端と下ページ罫線の間隔を設定できます。 距離が測定される場所は、 <see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" />プロパティの値によって決まります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistanceFromLeft">
@@ -275,10 +263,8 @@
       <Docs>
         <summary>本文と左罫線の間隔をポイント単位で設定を取得または取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ページ罫線でこのプロパティを使用して、いずれかの間隔をテキストと左ページ罫線やページの左端と左ページ罫線の間隔を設定できます。値に依存するからの距離を測定する場所、<see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" />プロパティ。</para>
-          <para />
-        </remarks>
+        <remarks><para>ページ罫線でこのプロパティを使用して、いずれかの間隔をテキストと左ページ罫線やページの左端と左ページ罫線の間隔を設定できます。 距離が測定される場所は、 <see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" />プロパティの値によって決まります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistanceFromRight">
@@ -309,10 +295,8 @@
       <Docs>
         <summary>テキストの右端と右の枠線との間の間隔 (ポイント単位) を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティを使用してページ罫線と、本文と右罫線の間隔、またはページの右端と右罫線の間隔を設定できます。値に依存するからの距離を測定する場所、<see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" />プロパティ。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティを使用してページ罫線と、本文と右罫線の間隔、またはページの右端と右罫線の間隔を設定できます。 距離が測定される場所は、 <see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" />プロパティの値によって決まります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistanceFromTop">
@@ -343,10 +327,8 @@
       <Docs>
         <summary>本文と上罫線の間隔をポイント単位で設定を取得または取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ページ罫線でこのプロパティを使用して、いずれかの間隔をテキストと上ページ罫線や、ページの上端と上ページ罫線の間隔を設定できます。値に依存するからの距離を測定する場所、<see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" />プロパティ。</para>
-          <para />
-        </remarks>
+        <remarks><para>ページ罫線で DistanceFromTop プロパティを使用する場合、本文と上ページ罫線の間隔、またはページの上端と上ページ罫線の間隔を設定できます。 距離が測定される場所は、 <see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" />プロパティの値によって決まります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Enable">
@@ -375,14 +357,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの書式設定の罫線を設定または返します。</summary>
+        <summary>指定したオブジェクトの罫線の書式を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、指定したオブジェクトのすべてまたは一部に罫線の書式設定が適用されている場合、 <b>True</b>または<b>wdUndefined</b>を返します。の<b>場合は True</b>、 <b>False</b>に設定できます、または<see cref="T:Microsoft.Office.Interop.Word.WdLineStyle" />定数</para>。<b>有効にする</b>は、
-          <para>プロパティは、指定したオブジェクトのすべての罫線に適用されます。<b>True</b>では、線のスタイルを既定のスタイルに設定や既定の線幅に線幅を設定します。使用して既定のスタイルおよび線の太さを設定することができます、<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineWidth" />と<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineStyle" />のプロパティ</para>。
-          <para>オブジェクトからすべての罫線を削除するのには、[<b>有効化</b>] プロパティを<b>False</b>に設定します</para>。
-          <para>を削除または 1 つの境界線を適用、<b>枠線</b>を使用して、(<paramref name="index" />)、<paramref name="index" />は、<see cref="T:Microsoft.Office.Interop.Word.WdBorderType" />定数は、1 つの境界線を取得し、設定、<see cref="P:Microsoft.Office.Interop.Word.Border.LineStyle" />プロパティ</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトのすべてまたは一部に罫線の書式設定が適用されている場合、このプロパティは<b>True</b>または<b>wdUndefined</b>を返します。 <b>True</b>、 <b>False</b>、定数の<see cref="T:Microsoft.Office.Interop.Word.WdLineStyle" />いずれかを設定できます。</para>
+          <para><b>有効にする</b> プロパティは、指定したオブジェクトのすべての罫線に適用されます。 <b>True</b> では、線のスタイルを既定のスタイルに設定や既定の線幅に線幅を設定します。 既定の線のスタイルと線の幅は、プロパティ<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineWidth" />と<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineStyle" />プロパティを使用して設定できます。</para>
+          <para>オブジェクトからすべての罫線を削除するには、 <b>Enable</b>プロパティを<b>False</b>に設定します。</para>
+          <para>一重罫線を削除または適用するに<b></b>は、<paramref name="index" />罫線 () <paramref name="index" />を使用<see cref="T:Microsoft.Office.Interop.Word.WdBorderType" />します。定数は、1つの罫線を取得<see cref="P:Microsoft.Office.Interop.Word.Border.LineStyle" />し、そのプロパティを設定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableFirstPageInSection">
@@ -411,7 +392,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、セクションの最初のページのページ罫線が有効なかどうかを示す値を設定します。</summary>
+        <summary>セクション内の最初のページでページ罫線が有効になっているかどうかを示す値を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -442,7 +423,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたはの「最初のページ以外すべてページのページ罫線が有効なかどうかを示す値を設定します。</summary>
+        <summary>ページ罫線が、セクションの最初のページ以外のすべてのページで有効になっているかどうかを示す値を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -502,7 +483,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトに水平方向の罫線を適用することができるかどうかを示す値を返します。</summary>
+        <summary>オブジェクトに横罫線を適用できるかどうかを示す値を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -530,12 +511,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトに適用できます、垂直方向の境界線を示す値を返します。</summary>
+        <summary>垂直方向の罫線を、指定したオブジェクトに適用できるかどうかを示す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>垂直方向の罫線は、テーブルの 2 つ以上の列内のセルを含む範囲に適用できます。</para>
-          <para />
-        </remarks>
+        <remarks><para>垂直方向の罫線は、表の複数行のセルを含む範囲に適用できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsideColor">
@@ -564,12 +543,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>内側の 24 ビット色を示す値を設定を取得または設定の罫線です。</summary>
+        <summary>内部罫線の24ビットの色を示す値を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>任意の有効なことができます<see cref="T:Microsoft.Office.Interop.Word.WdColor" />定数、または Visual Basic の RGB 関数によって返される値です</para>。
-          <para>場合、<see cref="P:Microsoft.Office.Interop.Word.Borders.InsideLineStyle" />プロパティがいずれかの<b>wdLineStyleNone</b>または<b>False</b>、このプロパティの設定は、影響しません</para>。
-          <para /></remarks>
+        <remarks><para>任意の有効な<see cref="T:Microsoft.Office.Interop.Word.WdColor" />定数または Visual BASIC の RGB 関数によって返される値を指定できます。</para>
+          <para>プロパティが<see cref="P:Microsoft.Office.Interop.Word.Borders.InsideLineStyle" /> <b>WdLineStyleNone</b>または<b>False</b>のいずれかに設定されている場合は、このプロパティを設定しても効果はありません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsideColorIndex">
@@ -600,10 +578,8 @@
       <Docs>
         <summary>内側の色の設定を取得または設定の罫線です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>場合、<see cref="P:Microsoft.Office.Interop.Word.Borders.InsideLineStyle" />プロパティがいずれかの<b>wdLineStyleNone</b>または<b>False</b>、このプロパティの設定は、影響しません。</para>
-          <para />
-        </remarks>
+        <remarks><para>プロパティが<see cref="P:Microsoft.Office.Interop.Word.Borders.InsideLineStyle" /> <b>WdLineStyleNone</b>または<b>False</b>のいずれかに設定されている場合は、このプロパティを設定しても効果はありません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsideLineStyle">
@@ -632,12 +608,12 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します。 または指定したオブジェクトの内側の罫線を設定します。</summary>
+        <summary>指定したオブジェクトの内側の罫線を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティに<b>True</b>、 <b>False</b>、または<see cref="T:Microsoft.Office.Interop.Word.WdLineStyle" />定数。複数を指定すると、指定したオブジェクトの枠線の種類が適用される場合、 <b>wdUndefined</b>を返します。それ以外の場合、 <b>False</b>または<b>WdLineStyle</b>定数</para>。
-          <para><b>True</b>を設定、線のスタイル、線種と太さは既定の線の幅にします。使用して既定のスタイルおよび線の太さを設定することができます、<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineWidth" />と<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineStyle" />のプロパティ</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティは、 <b>True</b>、 <b>False</b>、定数の<see cref="T:Microsoft.Office.Interop.Word.WdLineStyle" />いずれかに設定できます。 複数の種類の罫線が指定されたオブジェクトに適用されている場合は、 <b>wdUndefined</b>を返します。それ以外の場合は、 <b>False</b> 、または<b>wdlinestyle</b>定数を指定します。</para>
+          <para>
+            <b>True</b> は、デフォルトの線種と太さは既定の線の幅に線のスタイルを設定します。 既定の線のスタイルと線の幅は、プロパティ<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineWidth" />と<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineStyle" />プロパティを使用して設定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsideLineWidth">
@@ -666,12 +642,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLineWidth</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>内側の線の幅の設定を取得または設定、オブジェクトの枠線。</summary>
+        <summary>オブジェクトの内側の罫線の線幅を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティ<b>は True</b>、 <b>False</b>、またはのいずれかに、<see cref="T:Microsoft.Office.Interop.Word.WdLineWidth" />定数。オブジェクトには 2 つ以上の線幅で枠線の内側がある場合は、 <b>wdUndefined</b>を返しますそれ以外の場合、 <b>False</b>または<b>WdLineWidth</b>定数です。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、 <b>True</b>、 <b>False</b>、またはいずれかの<see cref="T:Microsoft.Office.Interop.Word.WdLineWidth" />定数に設定できます。 オブジェクトが複数の線幅で囲まれている場合は、 <b>wdUndefined</b>を返します。それ以外の場合は<b>False</b> 、または<b>wdlinewidth</b>定数を指定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -700,8 +674,8 @@
         <Parameter Name="Index" Type="Microsoft.Office.Interop.Word.WdBorderType" />
       </Parameters>
       <Docs>
-        <param name="Index">式を指定する<see cref="T:Microsoft.Office.Interop.Word.Borders" />オブジェクトです。</param>
-        <summary>水平方向の罫線は、ページの枠線を接続できるように、段落や表の端の垂直方向の罫線が削除されたかどうかであることを示す値を返します。</summary>
+        <param name="Index"><see cref="T:Microsoft.Office.Interop.Word.Borders" />オブジェクトを返す式を指定します。</param>
+        <summary>水平方向の罫線がページ罫線に接続できるように、段落と表の端の垂直方向の罫線が削除されるかどうかを示す値を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -732,7 +706,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、水平方向の罫線は、ページの枠線を接続できるように、段落や表の端の垂直方向の罫線が削除されたかどうかであることを示す値を設定します。</summary>
+        <summary>水平方向の罫線がページ罫線に接続できるように、段落と表の端の垂直方向の罫線を削除するかどうかを示す値を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -763,12 +737,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>罫線の外枠の 24 ビットの色を設定または返します。</summary>
+        <summary>外側の罫線の24ビットの色を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>任意の有効な戻り値は、<see cref="T:Microsoft.Office.Interop.Word.WdColor" />定数、または Visual Basic の RGB 関数によって返される値です</para>。
-          <para>場合、<see cref="P:Microsoft.Office.Interop.Word.Borders.OutsideLineStyle" />プロパティがいずれかの<b>wdLineStyleNone</b>または<b>False</b>、このプロパティの設定は、影響しません</para>。
-          <para /></remarks>
+        <remarks><para>戻り値には、任意の<see cref="T:Microsoft.Office.Interop.Word.WdColor" />有効な定数、または Visual BASIC の RGB 関数によって返される値を指定できます。</para>
+          <para>プロパティが<see cref="P:Microsoft.Office.Interop.Word.Borders.OutsideLineStyle" /> <b>WdLineStyleNone</b>または<b>False</b>のいずれかに設定されている場合は、このプロパティを設定しても効果はありません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OutsideColorIndex">
@@ -797,12 +770,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>罫線の外枠の色を設定または返します。</summary>
+        <summary>外側の罫線の色を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>場合、<see cref="P:Microsoft.Office.Interop.Word.Borders.OutsideLineStyle" />プロパティがいずれかの<b>wdLineStyleNone</b>または<b>False</b>、このプロパティの設定は、影響しません。</para>
-          <para />
-        </remarks>
+        <remarks><para>プロパティが<see cref="P:Microsoft.Office.Interop.Word.Borders.OutsideLineStyle" /> <b>WdLineStyleNone</b>または<b>False</b>のいずれかに設定されている場合は、このプロパティを設定しても効果はありません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OutsideLineStyle">
@@ -831,12 +802,12 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトに外枠を設定または返します。</summary>
+        <summary>指定したオブジェクトの外枠を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティに<b>True</b>、 <b>False</b>、または<see cref="T:Microsoft.Office.Interop.Word.WdLineStyle" />定数。複数を指定すると、指定したオブジェクトの枠線の種類が適用される場合、 <b>wdUndefined</b>を返します。それ以外の場合、 <b>False</b>または<b>WdLineStyle</b>定数</para>。
-          <para><b>True</b>を設定、線のスタイル、線種と太さは既定の線の幅にします。使用して、既定のスタイルと幅を設定できます、<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineWidth" />と<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineStyle" />のプロパティ</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティは、 <b>True</b>、 <b>False</b>、定数の<see cref="T:Microsoft.Office.Interop.Word.WdLineStyle" />いずれかに設定できます。 複数の種類の罫線が指定されたオブジェクトに適用されている場合は、 <b>wdUndefined</b>を返します。それ以外の場合は、 <b>False</b> 、または<b>wdlinestyle</b>定数を指定します。</para>
+          <para>
+            <b>True</b> は、デフォルトの線種と太さは既定の線の幅に線のスタイルを設定します。 既定の線のスタイルと幅は、プロパティ<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineWidth" />と<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineStyle" />プロパティを使用して設定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OutsideLineWidth">
@@ -867,10 +838,8 @@
       <Docs>
         <summary>オブジェクトの外枠を設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティに<b>True</b>、 <b>False</b>、または<see cref="T:Microsoft.Office.Interop.Word.WdLineWidth" />定数。複数の線幅の境界線の外側にオブジェクトがある場合、 <b>wdUndefined</b>を返します。それ以外の場合、 <b>False</b>または<b>WdLineWidth</b>定数です。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、 <b>True</b>、 <b>False</b>、定数の<see cref="T:Microsoft.Office.Interop.Word.WdLineWidth" />いずれかに設定できます。 オブジェクトの境界線の外側に複数の線幅がある場合は、 <b>wdUndefined</b>を返します。それ以外の場合は<b>False</b> 、または<b>wdlinewidth</b>定数を指定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -896,7 +865,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親オブジェクトを返します。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -927,7 +896,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定値として指定した罫線が書式設定を示す影付きにします。</summary>
+        <summary>指定した罫線が影付きに書式設定されているかどうかを示す値を取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -958,7 +927,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、ページ罫線が文書のフッターを含むかどうかを示す値を設定します。</summary>
+        <summary>ページ罫線が文書のフッターを含むかどうかを示す値を取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -989,7 +958,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、ページ罫線が文書のヘッダーを含むかどうかを示す値を設定します。</summary>
+        <summary>ページ罫線が文書のヘッダーを含むかどうかを示す値を取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

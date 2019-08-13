@@ -1,13 +1,5 @@
 <Type Name="Endnotes" FullName="Microsoft.Office.Interop.Word.Endnotes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="106a420cd9bef3a857395aa622ff27a222b3fb61" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672431" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Endnotes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a74d0528b197f8c97921c1994c703d6aec5f9941" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146886" /></Metadata><TypeSignature Language="C#" Value="public interface Endnotes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Endnotes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Endnotes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Endnotes&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.Endnote" />の選択範囲、指定範囲、または文書内のすべての文末脚注を表すオブジェクト。</summary>
-    <remarks>
-      <para>
-        <b>文末脚注</b>のプロパティを使用して、 <see cref="T:Microsoft.Office.Interop.Word.Selection" />、 <see cref="T:Microsoft.Office.Interop.Word.Range" />、または<see cref="T:Microsoft.Office.Interop.Word.Document" /><b>Endnotes</b>コレクションを取得するオブジェクトです</para>。
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.Endnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" /> 、 <b>Endnotes</b>コレクションに文末脚注を追加します</para>。
-      <para><b>文末脚注</b>の使用 (<paramref name="index" />)、<paramref name="index" />インデックスの番号、<b>文末脚注</b>の 1 つのオブジェクトを取得します。インデックス番号は、選択範囲、指定範囲、または文書内の文末脚注の位置を表します</para>。
-      <para /></remarks>
+    <summary>選択範囲、 <see cref="T:Microsoft.Office.Interop.Word.Endnote" />指定範囲、または文書内のすべての文末脚注を表すオブジェクトのコレクションです。</summary>
+    <remarks><para><b>文末脚注</b>のコレクションを取得<see cref="T:Microsoft.Office.Interop.Word.Selection" />する<see cref="T:Microsoft.Office.Interop.Word.Range" />のに<see cref="T:Microsoft.Office.Interop.Word.Document" />には、、、またはオブジェクトの<b>文末脚注</b>プロパティを使用します。</para>
+      <para>文末脚注<see cref="M:Microsoft.Office.Interop.Word.Endnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" />を<b>文末</b>脚注のコレクションに追加するには、メソッドを使用します。</para>
+      <para><b>文末</b>脚注 (<paramref name="index" />) を使用<paramref name="index" />します。ここで、はインデックス番号を使用して、1つの<b>文末脚注</b>オブジェクトを返します。 インデックス番号は、選択範囲、指定範囲、または文書内の文末脚注の位置を表します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,15 +52,13 @@
         <Parameter Name="Text" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必要な<b>Range</b>オブジェクトです。 範囲には、文末脚注が設定されています。 範囲を解除した位置を指定することもできます。</param>
+        <param name="Range">必要な<b>Range</b>オブジェクト。 文末脚注に設定されている範囲を指定します。 範囲を解除した位置を指定することもできます。</param>
         <param name="Reference">省略可能な<b>オブジェクト</b>です。 脚注記号にする任意の文字を指定します。 この引数を省略すると、自動脚注番号が挿入されます。</param>
-        <param name="Text">省略可能な<b>オブジェクト</b>です。 文末脚注のテキストです。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Endnote" />の範囲に追加する、文末脚注を表すオブジェクト。</summary>
+        <param name="Text">省略可能な<b>オブジェクト</b>です。 文末脚注の文字列を入力します。</param>
+        <summary>範囲に<see cref="T:Microsoft.Office.Interop.Word.Endnote" />追加する文末脚注を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>シンボルを指定するのには、<paramref name="Reference" />の引数構文を使用して、{<paramref name="FontName CharNum" />} です。<paramref name="FontName" />は、記号を含むフォントの名前。シンボル] ダイアログ ボックス ([挿入] メニュー) の [フォント] ボックスで、装飾的なフォントの名前が表示されます。<paramref name="CharNum" />を挿入するには、目的の記号の位置に対応する数と 31 の合計は、左から右に数えた記号の表にします。たとえば、オメガ記号 (ω) 内の位置に 56 の表にシンボルのシンボル フォントを指定する引数になります"Symbol 87"です。</para>
-          <para />
-        </remarks>
+        <remarks><para><paramref name="Reference" />引数の記号を指定するには、{<paramref name="FontName CharNum" />} という構文を使用します。 <paramref name="FontName" />は、記号を含むフォントの名前です。 装飾付きフォントの名前は、[記号と特殊文字] ダイアログ ボックス ([挿入] メニュー) の [フォント] ボックスに表示されます。 <paramref name="CharNum" />は、挿入する記号の位置に対応する数値を31の合計とし、記号の表の左から右に数えます。 たとえば、Symbol フォントの記号の表で56位置にオメガ記号 (ω) を指定する場合、引数は "{Symbol 87}" になります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -96,7 +84,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="P:Microsoft.Office.Interop.Word.Endnotes.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="P:Microsoft.Office.Interop.Word.Endnotes.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -124,7 +112,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />脚注または文末脚注の継続時の注を表すオブジェクト。</summary>
+        <summary>脚注また<see cref="T:Microsoft.Office.Interop.Word.Range" />は文末脚注の継続時の注を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,7 +140,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />脚注または文末脚注の継続時の境界線を表すオブジェクト。</summary>
+        <summary>脚注また<see cref="T:Microsoft.Office.Interop.Word.Range" />は文末脚注の継続時の境界線を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -233,12 +221,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -299,7 +286,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">各オブジェクトの序数位置を示す<b>整数</b>です。</param>
+        <param name="Index">個々のオブジェクトの位置を表す<b>整数型 (Integer</b> ) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -362,7 +349,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdNumberingRule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>改ページ後の番号は脚注または文末脚注、またはセクション区切りの方法を設定または返します。</summary>
+        <summary>ページ区切りまたはセクション区切りの後に、脚注または文末脚注の番号を設定する方法を設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -393,7 +380,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdNoteNumberStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された文末脚注の番号のスタイルを設定または返します。</summary>
+        <summary>指定した文末脚注の番号のスタイルを設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -448,10 +435,8 @@
       <Parameters />
       <Docs>
         <summary>文末脚注の継続時の注に既定値を設定します。</summary>
-        <remarks>
-          <para>既定値は空白、テキストがないことを示す通知を表します。</para>
-          <para />
-        </remarks>
+        <remarks><para>既定の通知は空白で、テキストのない通知を表します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetContinuationSeparator">
@@ -476,10 +461,8 @@
       <Parameters />
       <Docs>
         <summary>文末脚注の継続時の境界線に既定値を設定します。</summary>
-        <remarks>
-          <para>既定の区切り記号は、前ページから続くメモとドキュメントのテキストを分ける長い水平の線です。</para>
-          <para />
-        </remarks>
+        <remarks><para>既定値は長い横線で、文書の本文と前ページから継続している注を区切ります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetSeparator">
@@ -504,10 +487,8 @@
       <Parameters />
       <Docs>
         <summary>文末脚注の境界線に既定値を設定します。</summary>
-        <remarks>
-          <para>既定の区切り文字は、メモから文書の文字列を区切る短い境界線です。</para>
-          <para />
-        </remarks>
+        <remarks><para>既定値は短い横線で、文書の本文と脚注を区切ります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Separator">
@@ -533,7 +514,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 、文末脚注または脚注の境界線を表すオブジェクト。</summary>
+        <summary>文末脚注<see cref="T:Microsoft.Office.Interop.Word.Range" />または脚注の境界線を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -564,7 +545,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>メモの開始番号を設定または返します。</summary>
+        <summary>開始メモ番号を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -591,10 +572,8 @@
       <Parameters />
       <Docs>
         <summary>文書内のすべての文末脚注を脚注に変換します。</summary>
-        <remarks>
-          <para>範囲の文末脚注を脚注に変換するには、<see cref="M:Microsoft.Office.Interop.Word.Endnotes.Convert" />メソッドです。</para>
-          <para />
-        </remarks>
+        <remarks><para>指定範囲の文末脚注を脚注に変換するに<see cref="M:Microsoft.Office.Interop.Word.Endnotes.Convert" />は、メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

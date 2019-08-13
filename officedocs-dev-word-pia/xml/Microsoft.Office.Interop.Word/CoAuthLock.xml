@@ -1,13 +1,5 @@
 <Type Name="CoAuthLock" FullName="Microsoft.Office.Interop.Word.CoAuthLock">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="60e38fdacba2a46adfe9f5062c855a6e94317926" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672453" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CoAuthLock" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6aaadd2e6d6106e1de5d69cd13baf0beed987346" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142237" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthLock" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CoAuthLock" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CoAuthLock" />
   <TypeSignature Language="VB.NET" Value="Public Interface CoAuthLock" />
@@ -26,11 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>文書内のロックを表します。 <b>CoAuthLock</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" />コレクションです。</summary>
-    <remarks>
-      <para>読み取り専用です。<b>ロック</b>を使用して、(<paramref name="index" />)、 <paramref name="index" /><b>CoAuthLock</b>オブジェクトを取得する、インデックス番号します。<b>CoAuthLock</b>オブジェクトを追加するときに使用して、<see cref="T:Microsoft.Office.Interop.Word.WdLockType" />ロックの種類を指定する列挙体です。</para>
-      <para />
-    </remarks>
+    <summary>文書内のロックを表します。 <b>Coauthlock</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" />コレクションのメンバーです。</summary>
+    <remarks><para>読み取り専用です。 <b>Coauthlock</b>オブジェクトを取得<paramref name="index" />するには、 <b>Locks</b>(<paramref name="index" />) を使用します。ここで、はインデックス番号です。 <b>Coauthlock</b>オブジェクトを追加するときは、 <see cref="T:Microsoft.Office.Interop.Word.WdLockType" />列挙体を使用してロックの種類を指定します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,12 +46,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.Application" />オブジェクトです。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを取得します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Application" /> オブジェクト。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -87,12 +75,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトが作成されたアプリケーションを示す 32 ビット整数を取得します。</summary>
-        <value>指定したオブジェクトの作成に使用したアプリケーションを示します。</value>
-        <remarks>
-          <para>読み取り専用<b>long</b>です。します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合このプロパティは、各アプリケーションが 4 文字のクリエータ コードには、Apple Macintosh で使用するために設計されました。たとえば、Word には、作成者コード MSWD です。</para>
-          <para />
-        </remarks>
+        <summary>指定したオブジェクトが作成されたアプリケーションを示す32ビット整数を取得します。</summary>
+        <value>指定したオブジェクトが作成されたアプリケーションを示します。</value>
+        <remarks><para>値の取得のみ可能な<b>long</b>値です。 オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 このプロパティは、各アプリケーションが 4 文字のクリエータ コードには、Apple Macintosh で使用するために設計されました。 たとえば、Word には、作成者コード MSWD です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderFooter">
@@ -118,13 +104,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ロックが文書のヘッダー、フッターのロックであるかどうかを取得します。</summary>
-        <value>
-          <b>true の</b>場合は、ロックでは、文書のヘッダー、フッターのロックそれ以外の場合、 <b>false を指定</b>します。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>ロックがドキュメントのヘッダーフッターロックであるかどうかを取得します。</summary>
+        <value>ロックがドキュメントのヘッダーフッターロックの場合は<b>true</b> 。それ以外の場合は<b>false</b>。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -150,8 +133,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定のロックを所有している<b>または共著者</b>を取得します。</summary>
-        <value>指定のロックを所有しているの<b>であります</b>。</value>
+        <summary>指定したロックを所有する<b>CoAuthor</b>を取得します。</summary>
+        <value>指定したロックを所有する<b>CoAuthor</b> 。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,9 +161,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、<see cref="T:System.Object" />の指定した親オブジェクトを表す<see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" />オブジェクトです。</summary>
-        <value>
-          <see cref="T:System.Object" />の指定した親オブジェクトを表す<see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" />オブジェクトです。</value>
+        <summary>は<see cref="T:System.Object" /> 、指定<see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" />したオブジェクトの親オブジェクトを表すを取得します。</summary>
+        <value><see cref="T:System.Object" />指定<see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" />したオブジェクトの親オブジェクトを表す。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,12 +189,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、<see cref="T:Microsoft.Office.Interop.Word.Range" />を指定したオブジェクトに含まれる文書の部分を表すオブジェクト。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.Range" />を指定したオブジェクトに含まれる文書の部分を表すオブジェクト。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />たオブジェクトに含まれる文書の一部を表すオブジェクトを取得します。</summary>
+        <value>指定<see cref="T:Microsoft.Office.Interop.Word.Range" />したオブジェクトに含まれる文書の一部を表すオブジェクト。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -238,8 +218,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLockType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、<see cref="T:Microsoft.Office.Interop.Word.WdLockType" />ロックの種類を表す定数を指定します。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.WdLockType" />ロックの種類を表す定数を指定します。</value>
+        <summary>ロックの<see cref="T:Microsoft.Office.Interop.Word.WdLockType" />種類を指定する定数を取得します。</summary>
+        <value>ロック<see cref="T:Microsoft.Office.Interop.Word.WdLockType" />の種類を指定する定数を指定します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,10 +245,8 @@
       <Parameters />
       <Docs>
         <summary>指定されたロックを解除します。</summary>
-        <remarks>
-          <para>このメソッドは、現在別のユーザーに属している場合でも、指定したロックを解除します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドは、指定したロックが現在のロック以外のユーザーに属している場合でもロックを解除します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

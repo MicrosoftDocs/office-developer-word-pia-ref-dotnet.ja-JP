@@ -1,13 +1,5 @@
 <Type Name="SeriesCollection" FullName="Microsoft.Office.Interop.Word.SeriesCollection">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fdd1aa630560e78742fe57a7803702308e5da8a7" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670924" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SeriesCollection : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f6dd45f5fe33b8e5a1ece1fafb9e3ad6bbeab62c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144009" /></Metadata><TypeSignature Language="C#" Value="public interface SeriesCollection : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SeriesCollection implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SeriesCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface SeriesCollection&#xA;Implements IEnumerable" />
@@ -30,11 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>すべてのコレクション、 <see cref="T:Microsoft.Office.Interop.Word.Series" /> 、指定したグラフまたはグラフ種類グループ内のオブジェクト。</summary>
-    <remarks>
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.Chart.SeriesCollection(System.Object)" />を返すメソッド、<see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" />コレクションです</para>。
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.SeriesCollection.Extend(System.Object,System.Object,System.Object)" /> 、既存のシリーズを拡張するためのメソッドです</para>。
-      <para /></remarks>
+    <summary>指定されたグラフ<see cref="T:Microsoft.Office.Interop.Word.Series" />またはグラフ種類グループにあるすべてのオブジェクトのコレクションです。</summary>
+    <remarks><para>コレクションを<see cref="M:Microsoft.Office.Interop.Word.Chart.SeriesCollection(System.Object)" />取得するのにには、メソッドを使用します。 <see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" /></para>
+      <para>既存の<see cref="M:Microsoft.Office.Interop.Word.SeriesCollection.Extend(System.Object,System.Object,System.Object)" />データ系列を拡張するには、メソッドを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -65,7 +56,7 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>内部使用のため予約済みです。</summary>
-        <returns>返します。 <see cref="T:Microsoft.Office.Interop.Word.Series" />。</returns>
+        <returns>を<see cref="T:Microsoft.Office.Interop.Word.Series" />返します。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,19 +86,15 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">グラフの ChartData オブジェクトの Workbook プロパティに含まれる範囲を文字列で表現した新しいデータを指定します。</param>
-        <param name="Rowcol">新しい値が行または列の指定した範囲内かどうかを指定します。</param>
-        <param name="SeriesLabels">
-          <b>True</b> 場合は、最初の行または列にデータ系列の名前が含まれています。 <b>False</b> 場合は、最初の行または列にデータ系列の最初のデータ ポイントが含まれています。この引数を省略すると、Microsoft Word は、最初の行または列の内容をデータ系列の名前の場所を特定しようとします。 </param>
-        <param name="CategoryLabels">
-          <b>True</b> 場合は、最初の行または列に項目ラベルの名前が含まれています。 <b>False</b> 場合は、最初の行または列にデータ系列の最初のデータ ポイントが含まれています。 この引数を省略すると、Microsoft Word は、最初の行または列の内容によって、項目ラベルの位置を確認しようとします。</param>
-        <param name="Replace">場合<paramref name="CategoryLabels" /><b>は</b>、<paramref name="Replace" />が<b>True の</b>系列のカテゴリが存在している指定したカテゴリの置換後の文字列。 場合<paramref name="Replace" />が<b>False</b>、既存のカテゴリは置き換えられません。 既定値は <b>False</b> です。</param>
+        <param name="Source">新しいデータを、グラフの ChartData オブジェクトの Workbook プロパティに含まれる範囲を表す文字列として指定します。</param>
+        <param name="Rowcol">新しい値が指定された範囲の行と列のどちらにあるかを指定します。</param>
+        <param name="SeriesLabels"><b>True</b> 場合は、最初の行または列にデータ系列の名前が含まれています。 <b>False</b> 場合は、最初の行または列にデータ系列の最初のデータ ポイントが含まれています。この引数を省略すると、Microsoft Word は、最初の行または列の内容をデータ系列の名前の場所を特定しようとします。 </param>
+        <param name="CategoryLabels"><b>True</b> 場合は、最初の行または列に項目ラベルの名前が含まれています。 <b>False</b> 場合は、最初の行または列にデータ系列の最初のデータ ポイントが含まれています。 この引数を省略すると、最初の行または列の内容によって項目ラベルの位置が自動的に決定されます。</param>
+        <param name="Replace">が<paramref name="CategoryLabels" /> <b>true</b>で、 <paramref name="Replace" />かつ<b>true</b>の場合は、指定されたカテゴリが、データ系列に現在存在しているカテゴリと置き換えられます。 が<paramref name="Replace" /> <b>False</b>の場合、既存のカテゴリは置き換えられません。 既定値は <b>False</b> です。</param>
         <summary>コレクションに 1 つまたは複数の新しいデータ系列を追加します。</summary>
-        <returns>A <see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" /> 、新しいデータ系列を表すオブジェクト。</returns>
-        <remarks>
-          <para>このメソッドは実際には返さない、<see cref="T:Microsoft.Office.Interop.Word.Series" />オブジェクトのオブジェクト ブラウザーであるようです。</para>
-          <para />
-        </remarks>
+        <returns>新しい<see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" />データ系列を表すオブジェクト。</returns>
+        <remarks><para>このメソッドは、オブジェクトブラウザーで<see cref="T:Microsoft.Office.Interop.Word.Series" />示されているように、実際にはオブジェクトを返しません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -133,9 +120,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 値の取得のみ可能です。</summary>
-        <value>
-          <b>アプリケーション</b>(上記参照)</value>
+        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用<see cref="T:Microsoft.Office.Interop.Word._Application" />すると、Microsoft Word アプリケーションを表すオブジェクトが返されます。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
+        <value><b>アプリケーション</b>(上記を参照)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,10 +148,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内のオブジェクトの数を表す<b>整数</b>値を返します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>コレクションに含まれるオブジェクトの数を表す<b>整数型 (Integer</b> ) の値を返します。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,14 +176,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Word で作成されている場合、<b>作成者</b>を返します、16 進数の値である 4d535744 を文字列します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
-          <para />
-        </remarks>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトは、Microsoft Word で作成されている場合、 <b>作成者</b> を返します、16 進数の値である 4d535744 を文字列します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Extend">
@@ -226,16 +206,13 @@
         <Parameter Name="CategoryLabels" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">追加する新しいデータの<see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" />オブジェクトは、A1 スタイルの範囲参照として表されます。</param>
-        <param name="Rowcol">行または特定の範囲の元の列に新しい値がかどうかを指定します。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Word.XlRowCol" />定数:<see cref="F:Microsoft.Office.Interop.Word.XlRowCol.xlRows" />または<see cref="F:Microsoft.Office.Interop.Word.XlRowCol.xlColumns" />。 この引数を省略すると、選択範囲のサイズと方向、または配列の次元により、値が自動的に判断されます。</param>
-        <param name="CategoryLabels">
-          <b>True を指定</b> して、最初の行または列には、項目軸ラベルの名前が含まれています。 <b>False を指定</b> して、最初の行または列には、シリーズの最初のデータ ポイントが含まれています。 この引数を省略すると、Microsoft Word は、最初の行または列の内容によって、項目ラベルの位置を確認しようとします。</param>
+        <param name="Source"><see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" />オブジェクトに追加される新しいデータ。 A1 スタイルの範囲参照として表されます。</param>
+        <param name="Rowcol">新しい値が、対象範囲の行にあるか、列にあるかを指定します。 次<see cref="T:Microsoft.Office.Interop.Word.XlRowCol" />の定数のいずれかをする<see cref="F:Microsoft.Office.Interop.Word.XlRowCol.xlRows" />こと<see cref="F:Microsoft.Office.Interop.Word.XlRowCol.xlColumns" />ができます。または。 この引数を省略すると、選択範囲のサイズと方向、または配列の次元により、新しい値が行と列のいずれにあるかが決まります。</param>
+        <param name="CategoryLabels"><b>True を指定</b> して、最初の行または列には、項目軸ラベルの名前が含まれています。 <b>False を指定</b> して、最初の行または列には、シリーズの最初のデータ ポイントが含まれています。 この引数を省略すると、最初の行または列の内容によって項目ラベルの位置が自動的に決定されます。</param>
         <summary>既存のデータ系列のコレクションに新しいデータ要素を追加します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドは、ピボット グラフ レポートに使用可能ではありません。</para>
-          <para />
-        </remarks>
+        <remarks><para>ピボットグラフ レポートでは、このプロパティを使用できません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -266,7 +243,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>返します。 <see cref="T:System.Collections.IEnumerator" />。</returns>
+        <returns>を<see cref="T:System.Collections.IEnumerator" />返します。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -298,7 +275,7 @@
       <Docs>
         <param name="Index">オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
-        <value>返します。 <see cref="T:Microsoft.Office.Interop.Word.Series" />。</value>
+        <value>を<see cref="T:Microsoft.Office.Interop.Word.Series" />返します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,11 +301,9 @@
       <Parameters />
       <Docs>
         <summary>新しいデータ系列を作成します。</summary>
-        <returns>A <see cref="T:Microsoft.Office.Interop.Word.Series" /> 、新しいデータ系列を表すオブジェクト。</returns>
-        <remarks>
-          <para>このメソッドは、ピボット グラフで使用可能ではありません。</para>
-          <para />
-        </remarks>
+        <returns>新しい<see cref="T:Microsoft.Office.Interop.Word.Series" />データ系列を表すオブジェクト。</returns>
+        <remarks><para>このメソッドは、ピボットグラフには利用できません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -354,10 +329,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親を返します。読み取り専用 <b>オブジェクト</b> 。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定したオブジェクトの親を返します。 読み取り専用 <b>オブジェクト</b> 。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

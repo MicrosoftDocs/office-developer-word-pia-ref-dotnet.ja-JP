@@ -1,13 +1,5 @@
 <Type Name="Style" FullName="Microsoft.Office.Interop.Word.Style">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f00a0a687c5ad4964390a068d041ec8490b3eecf" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671846" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Style" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="74f93bf5a3bfe99659200d0b7c65cb0b82d3670e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146116" /></Metadata><TypeSignature Language="C#" Value="public interface Style" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Style" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Style" />
   <TypeSignature Language="VB.NET" Value="Public Interface Style" />
@@ -27,14 +19,12 @@
   </Attributes>
   <Docs>
     <summary>1 つの組み込みスタイルまたはユーザー定義スタイルを表します。</summary>
-    <remarks>
-      <para>
-        <b>Style</b>オブジェクトには、<b>スタイル</b>オブジェクトのプロパティとしてスタイルの属性 (フォント、フォント スタイル、段落の間隔、およびなど) が含まれています。<b>Style</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.Styles" />コレクションです。<b>スタイル</b>コレクションには、指定した文書内のすべてのスタイルが含まれます</para>。
-      <para><b>スタイル</b>を使用 (<paramref name="index" />)、<paramref name="index" />スタイルの名前を<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />定数、またはインデックス番号を 1 つの<b>スタイル</b>オブジェクトを取得します。スペルとスタイル名は必ずしも、大文字と小文字の文字間隔を正確に一致する必要があります</para>。
-      <para>スタイルのインデックス番号は、スタイル名のアルファベット順に並べ替えられたリスト内のスタイルの位置を表します</para>。
-      <para>範囲、段落、または複数の段落にスタイルを適用するには、ユーザー定義または組み込みのスタイル名を [<b>スタイル</b>] プロパティを設定します</para>。使用の
-      <para>、<see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" />文書とテンプレート間でスタイルをコピーします。使用して、<see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" />に添付されているテンプレートのスタイル定義に一致するように作業中の文書内のスタイルを更新する方法です。使用して、<see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" />メソッドを文書としてテンプレートを開き、テンプレートのスタイルを変更することができます</para>。
-      <para /></remarks>
+    <remarks><para>Style <b></b>オブジェクトには、style オブジェクトのプロパティとしてスタイル属性 (フォント、フォントスタイル、段落間隔など<b></b> ) が含まれています。 <b>Style</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Styles" />コレクションのメンバーです。 <b>Styles</b> コレクションには、指定された文書のすべてのスタイルが含まれます。</para>
+      <para>スタイル<b></b>名 (<paramref name="index" /> <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />定数または<paramref name="index" />インデックス番号) を使用して、1つの<b>style</b>オブジェクトを取得します。 スタイル名は全角、半角やスペースが正確に一致している必要がありますが、大文字と小文字は区別されません。</para>
+      <para>スタイルのインデックス番号は、コード順に並べられたスタイル名の一覧でのスタイルの位置を表します。</para>
+      <para>指定範囲、段落、または複数の段落にスタイルを適用するには、 <b>Style</b> プロパティをユーザー定義スタイルまたは組み込みスタイルのスタイル名に設定します。</para>
+      <para>文書と<see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" />テンプレート間でスタイルをコピーするには、メソッドを使用します。 <see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" />メソッドを使用して、添付されたテンプレートのスタイル定義と一致するように作業中の文書のスタイルを更新します。 テンプレートを<see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" />文書として開き、テンプレートのスタイルを変更できるようにするには、メソッドを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,13 +81,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>条件を満たす</b> 場合は、スタイルが自動的に再定義に基づいて、選択します。 <b>False</b>場合は、Microsoft Word は、選択した項目に基づいてスタイルを再定義する前に確認メッセージが表示されます。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
+        <summary><b>条件を満たす</b> 場合は、スタイルが自動的に再定義に基づいて、選択します。 <b>False</b>の場合は、選択範囲に基づいてスタイルを再定義する前に確認のメッセージが表示されます。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>手動書式設定が異なるが、同じスタイルが選択範囲に適用された場合、スタイルを再定義できます。</para>
-          <para />
-        </remarks>
+        <remarks><para>同じスタイルが異なる書式を含む選択に適用されているスタイルを再定義することができます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseStyle">
@@ -126,12 +113,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>既存のスタイルのベースになることができます別のスタイルの書式を設定または返します。 読み取り/書き込みの<b>オブジェクト</b>です。</summary>
+        <summary>既存のスタイルのベースになることができます別のスタイルの書式を設定または返します。 <b>オブジェクト</b>を読み取り/書き込み。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティを設定、基本スタイルのローカル名を指定する正の整数または<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />の定数、または基本のスタイルを表すオブジェクト。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティを設定するには、基本スタイルのローカル名、整数または<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />定数、または基本スタイルを表すオブジェクトのいずれかを指定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Borders">
@@ -160,7 +145,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Borders" />を指定したオブジェクトのすべての罫線を表すコレクション。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Borders" />たオブジェクトのすべての罫線を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -188,13 +173,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は、指定したオブジェクトは、組み込みスタイルまたは図表番号のラベルを Microsoft word のいずれか。 読み取り専用の <b>ブール値</b> です。</summary>
+        <summary><b>True</b>の場合は、指定したオブジェクトは、Microsoft Word の組み込みのスタイルまたは図表番号のラベルのいずれかです。 読み取り専用の <b>Boolean</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>すべての言語に組み込みのスタイルを指定するにを使用して、<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />定数の言語バージョンの Word のスタイル名を使用して言語です。</para>
-          <para />
-        </remarks>
+        <remarks><para>Microsoft Word の言語バージョンのスタイル名を使用して、 <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />すべての言語に対して組み込みスタイルを指定できます。定数または言語内で使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -220,12 +202,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -249,7 +230,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,12 +257,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたスタイルの説明を取得します。値の取得のみ可能で、文字列型 (<b>String</b>) の値を使用します。</summary>
+        <summary>指定されたスタイルの説明を取得します。 読み取りのみ可能な <b>String</b> 値です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>たとえば、[見出し 2] スタイルの一般的な説明があります"標準 + フォント: Arial、太字、斜体、3 pt、KeepWithNext、12 Pt、12 pt レベル 2 です」。</para>
-          <para />
-        </remarks>
+        <remarks><para>たとえば、[見出し 2] スタイルについての一般的な説明は、"標準 + フォント: Arial、12 pt、KeepWithNext、および Level 2 の後の12ポイント前のスペースです。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -310,12 +289,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.Font" />を指定したオブジェクトの文字書式を表すオブジェクト。 読み取り/書き込みの<b>フォント</b>です。</summary>
+        <summary>取得または指定<see cref="T:Microsoft.Office.Interop.Word.Font" />したオブジェクトの文字書式を表すオブジェクトを設定します。 読み取り/書き込みの<b>フォント</b>です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティを設定するには、 <b>Font</b>オブジェクトを表すオブジェクト式を指定します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティを設定するには、 <b>Font</b> オブジェクトを返す式を指定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Frame">
@@ -341,7 +318,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Frame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Frame" /> 、フレームを指定したスタイルの書式設定を表すオブジェクト。 値の取得のみ可能です。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Frame" />たスタイルのレイアウト枠の書式設定を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -406,13 +383,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 指定したスタイルが変更されていたり、文書または文書内で作成された新しいスタイルの適用は、組み込みスタイルの場合です。読み取り専用の <b>ブール値</b> です。</summary>
+        <summary><b>True</b> 指定したスタイルが変更されていたり、文書または文書内で作成された新しいスタイルの適用は、組み込みスタイルの場合です。読み取り専用の <b>ブール値</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、スタイルが文書内の任意のテキストに現在適用されているかどうかには示しません。たとえば、スタイルが設定されているテキストが削除された場合、スタイルの<b>InUse</b>プロパティは<b>True</b>のままです。ドキュメントで使用されていることがない組み込みスタイル、このプロパティは<b>False</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、スタイルが文書内の任意のテキストに現在適用されているかどうかを示すわけではありません。 たとえば、スタイルが設定されているテキストが削除された場合、スタイルの <b>InUse</b> プロパティは <b>True</b> のままです。 ドキュメントで使用されていることがない組み込みスタイル、このプロパティは <b>False</b> を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageID">
@@ -441,12 +415,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの言語を設定または返します。 値の取得および設定が可能です。</summary>
+        <summary>オブジェクトの言語を示します。 値の取得と設定が可能です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>いずれかを指定することができます<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数</para>。
-          <para>が選択またはインストールされている言語サポート (たとえば、日本語) によっては使用ができない<b>WdLanguageID</b>定数の中があります</para>。
-          <para /></remarks>
+        <remarks><para>任意の<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数を使用できます。</para>
+          <para><b>WdLanguageID</b>定数の中には、選択またはインストールした言語のサポート (たとえば、英語 (米国)) によっては使用できないものがあります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageIDFarEast">
@@ -477,10 +450,9 @@
       <Docs>
         <summary>指定したオブジェクトの東アジア言語を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>いずれかを指定することができます<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数</para>。
-          <para>これは、東アジア言語のバージョンの Microsoft Word で作成した文書に東アジア言語のテキストの言語を設定することをお勧めします</para>。
-          <para /></remarks>
+        <remarks><para>任意の<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数を使用できます。</para>
+          <para>Word 東アジア版で作成された文書に東アジア言語の文字列を設定する場合、この方法をお勧めします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Linked">
@@ -506,15 +478,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スタイルが段落書式と文字書式の両方に使用できるリンク スタイルであるかどうかを表すブール型 (<b>Boolean</b>) の値を取得します。値の取得のみ可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>
-            <b>True</b>では、スタイルの変更] ダイアログ ボックスで、スタイルの種類] オプションが [リンク (段落と文字)] に設定されていることを示します。</para>
-          <para />
-        </remarks>
+        <summary>スタイルが段落書式と文字書式の両方に使用できるリンク スタイルであるかどうかを表すブール型 (<b>Boolean</b>) の値を取得します。 読み取り専用です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>
+            <b>True</b>は、[スタイルの変更] ダイアログボックスの [スタイルの種類] オプションが "リンク (段落と文字)" に設定されていることを示します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkStyle">
@@ -543,12 +511,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>段落と文字スタイル間のリンクを表す<b>オブジェクト</b>を取得または設定します。 値の取得および設定が可能です。</summary>
+        <summary>段落と文字スタイルとの間のリンクを表す<b>オブジェクト</b>を設定または取得します。 値の取得と設定が可能です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>文字スタイルと段落スタイルをリンクすると、2 つのスタイルは、同じ文字の書式設定にかかります。</para>
-          <para />
-        </remarks>
+        <remarks><para>文字スタイルと段落スタイルがリンクされている場合、2 つのスタイルで同じ文字書式が使用されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkToListTemplate">
@@ -573,7 +539,7 @@
         <Parameter Name="ListLevelNumber" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ListTemplate">必要な<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />オブジェクトです。 スタイルをリンクする箇条書きテンプレートを指定します。</param>
+        <param name="ListTemplate">必要<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />なオブジェクト。 スタイルをリンクする箇条書きテンプレートを指定します。</param>
         <param name="ListLevelNumber">省略可能な<b>オブジェクト</b>です。 スタイルをリンクする箇条書きのレベルに対応する整数を指定します。 この引数を省略すると、スタイルのレベルが使用されます。</param>
         <summary>指定されたスタイルを箇条書きテンプレートにリンクし、そのスタイル書式を箇条書きに適用できるようにします。</summary>
         <remarks>To be added.</remarks>
@@ -630,12 +596,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />を指定した書式設定の一覧を表すオブジェクト<see cref="T:Microsoft.Office.Interop.Word.Style" />オブジェクトです。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />た<see cref="T:Microsoft.Office.Interop.Word.Style" />オブジェクトの箇条書きの書式設定を表すオブジェクト型 (object) の値を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A] ボックスの一覧のテンプレートには、特定のリストを定義するすべての書式が含まれています。7 つの書式 ([なし] を除く) の行頭文字のタブの各と各段落番号ダイアログ ボックス ([書式] メニュー) のリスト テンプレートに対応しています。ドキュメント テンプレートでは、リスト テンプレートのコレクションを含めることもできます</para>。
-          <para><b>ListFormat</b>オブジェクトの範囲内の最初の段落はリストとしてフォーマットされていない場合、 <b>ListTemplate</b><b>Nothing</b>を取得します</para>。
-          <para /></remarks>
+        <remarks><para>箇条書きテンプレートには、特定の箇条書きを定義するすべての書式設定が含まれます。 [箇条書きと段落番号] ダイアログ ボックス ([書式] メニュー) の各タブに表示される 7 種類の書式 ([なし] を除く) は、各箇条書きテンプレートと対応します。 文書とテンプレートに箇条書きテンプレートのコレクションを含めることができます。</para>
+          <para><b>ListFormat</b> オブジェクトの範囲内の最初の段落はリストとしてフォーマットされていない場合、 <b>ListTemplate</b> プロパティは <b>Nothing</b> を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Locked">
@@ -664,8 +629,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>指定されたスタイルがロックされている場合です。</summary>
+        <summary><b>True</b>の場合は、指定したスタイルがロックされます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -696,12 +660,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ユーザーの言語で組み込みスタイルの名前を返します。読み取りまたは書き込み <b>文字列</b> です。</summary>
+        <summary>ユーザーの言語で組み込みスタイルの名前を返します。 読み取りまたは書き込み <b>文字列</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティを設定またはユーザー定義のスタイルの名前を変更、組み込みスタイルにエイリアスを追加します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティを設定して、ユーザー設定のスタイルの名前を変更したり、組み込みスタイルにエイリアスを追加したりします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NextParagraphStyle">
@@ -730,12 +692,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>段落の書式スタイルを指定した後で挿入された新しい段落に自動的に適用するスタイルを設定または返します。 読み取り/書き込みの<b>オブジェクト</b>です。</summary>
+        <summary>指定したスタイルが設定されている段落の後に、新しい段落に自動的に適用されるスタイルを設定または返します。 <b>オブジェクト</b>を読み取り/書き込み。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティを設定、次のスタイルのローカル名を指定する正の整数または<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />の定数、または次のスタイルを表すオブジェクト。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティを設定するには、次のスタイルのローカル名、整数または<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />定数、または次のスタイルを表すオブジェクトのいずれかを指定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NoProofing">
@@ -764,8 +724,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、スペル チェッカーおよび文法チェッカーは、テキストを無視はこのスタイルで書式設定します。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
+        <summary><b>True</b> に設定すると、スペル チェッカーおよび文法チェッカーはこのスタイルを設定した文字列を無視します。 読み取り/書き込みの <b>整数</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -796,7 +755,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>を <b>true</b> に同じスタイルが設定されている段落間の間隔を削除します。読み取り/書き込み <b>ブール値</b> です。</summary>
+        <summary>を <b>true</b> に同じスタイルが設定されている段落間の間隔を削除します。 読み取り/書き込み <b>ブール値</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -827,7 +786,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ParagraphFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />指定されたスタイルの段落設定を表すオブジェクト。 値の取得および設定が可能です。</summary>
+        <summary>指定したスタイル<see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />の段落設定を表すオブジェクトを設定または返します。 値の取得と設定が可能です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -886,10 +845,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>[スタイル] 作業ウィンドウのスタイルの並べ替えの優先順位を表す<b>整数値</b>を設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>[スタイル] 作業ウィンドウでスタイルを並べ替えるときの優先度を表す<b>整数型 (Integer</b> ) の値を設定します。 値の取得と設定が可能です。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -919,10 +876,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定する <b>ブール値</b> スタイルが使用可能なクイック スタイルに対応しているかどうかを表す。読み取り/書き込み。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>取得または設定する <b>ブール値</b> スタイルが使用可能なクイック スタイルに対応しているかどうかを表す。 読み取り/書き込み。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -949,7 +904,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Shading" /> 、指定したオブジェクトの網かけ書式を参照するオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Shading" />たオブジェクトの網かけ書式を参照するオブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -977,7 +932,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TableStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.TableStyle" />の表スタイルを使用してテーブルに適用できるプロパティを表すオブジェクト。</summary>
+        <summary>表の<see cref="T:Microsoft.Office.Interop.Word.TableStyle" />スタイルを使用して表に適用できるプロパティを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1005,25 +960,23 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdStyleType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スタイルの種類を取得します。 読み取り専用<see cref="T:Microsoft.Office.Interop.Word.Style" />。</summary>
+        <summary>スタイルの種類を取得します。 読み取り専用<see cref="T:Microsoft.Office.Interop.Word.Style" />です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>WdStyleType</b>には、以下の定数のいずれかを指定できます:</para>
+        <remarks><para>
+            <b>Wdスタイルの種類</b>には、次のいずれかの定数を使用できます。</para>
           <para>
             <b>wdStyleTypeCharacter</b>
           </para>
           <para>
-            <b>wdStyleTypeList</b>
+            <b>Wdスタイル Typelist</b>
           </para>
           <para>
-            <b>wdStyleTypeParagraph</b>
+            <b>Wdスタイル Typeparagraph</b>
           </para>
           <para>
             <b>wdStyleTypeTable</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UnhideWhenUsed">
@@ -1052,9 +1005,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>をオフに設定、<see cref="P:Microsoft.Office.Interop.Word.Style.Hidden" />プロパティがこのスタイルを使用するとします。</summary>
-        <value>ブール型</value>
+        <summary>この<b></b>スタイルが使用さ<see cref="P:Microsoft.Office.Interop.Word.Style.Hidden" />れている場合は、True を設定してプロパティをクリアします。</summary>
+        <value>Boolean</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

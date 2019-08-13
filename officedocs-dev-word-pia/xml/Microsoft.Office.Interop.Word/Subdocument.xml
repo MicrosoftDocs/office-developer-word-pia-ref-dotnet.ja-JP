@@ -1,13 +1,5 @@
 <Type Name="Subdocument" FullName="Microsoft.Office.Interop.Word.Subdocument">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="474871ab0e9bcec0803236bb55c332236b2e7d60" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671168" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Subdocument" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c62a47b9e81261c6e830b9e0cc33dec363fa4210" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146074" /></Metadata><TypeSignature Language="C#" Value="public interface Subdocument" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Subdocument" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Subdocument" />
   <TypeSignature Language="VB.NET" Value="Public Interface Subdocument" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>文書または指定範囲内のサブ文書を表します。</summary>
-    <remarks>
-      <para>
-        <b>サブ文書</b>のオブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.Subdocuments" />コレクションです。<b>サブ文書</b>のコレクションには、指定範囲または文書のすべてのサブ文書が含まれています</para>。
-      <para>使用<b>のサブ文書</b>(<paramref name="index" />)、どこで<paramref name="index" />インデックス番号は、1 つの<b>サブ文書</b>のオブジェクトを返します</para>。
-      <para>使用、<see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />または<see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" />文書にサブ文書を追加します</para>。
-      <para /></remarks>
+    <remarks><para><b>サブ文書</b>のオブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Subdocuments" />コレクションのメンバーです。 <b>サブ文書</b>のコレクションには、指定範囲または文書内のすべてのサブ文書が含まれます。</para>
+      <para>サブ<b>文書</b>(<paramref name="index" />) を使用<paramref name="index" />して、1つの<b>サブ文書</b>のオブジェクトを取得します。ここで、はインデックス番号を指定します。</para>
+      <para>文書に<see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />サブ<see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" />文書を追加するには、またはメソッドを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,12 +76,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -115,7 +104,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,8 +131,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>指定されたサブ文書がファイルに保存されている場合です。</summary>
+        <summary><b>True</b>の場合は、指定したサブ文書がファイルに保存されています。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -256,7 +244,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを開きます。 返します、 <see cref="T:Microsoft.Office.Interop.Word.Document" /> 、開かれているオブジェクトを表すオブジェクト。</summary>
+        <summary>指定したオブジェクトを開きます。 開いて<see cref="T:Microsoft.Office.Interop.Word.Document" />いるオブジェクトを表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -314,12 +302,10 @@
       <Docs>
         <summary>ディスクまたは Web パスを指定したオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>パスに末尾の区切り文字が含まれていない-たとえば、C:\MSOffice または"http://MyServer"です。使用して、<see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />フォルダーとドライブ文字を区切る文字を追加するプロパティです。使用して、 <see cref="P:Microsoft.Office.Interop.Word.Subdocument.Name" /> 、パスなしのファイル名を取得するのにはプロパティ</para>
+        <remarks><para>パスに末尾の区切り文字が含まれていない-"C:\MSOffice"や"http://MyServer"などです。 <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />プロパティを使用して、フォルダーとドライブ文字を区切る文字を追加します。 パスを<see cref="P:Microsoft.Office.Interop.Word.Subdocument.Name" />含まないファイル名を取得するには、プロパティを使用します。</para>
           <para>
-            <b>PathSeparator</b>プロパティを使用するにはスラッシュ (/) と、 <b>PathSeparator</b>プロパティが含まれている場合でも、Web アドレスを作成する
-            <b>メモ</b>の既定値は円記号 (\)です</para>。
-          <para /></remarks>
+            <b>メモ</b> <b>PathSeparator</b>プロパティを使用すると、スラッシュ (/) が含まれていても、 <b>PathSeparator</b>プロパティの既定値が円記号 (\)) の場合でも、Web アドレスを作成できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Range">
@@ -345,12 +331,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />を指定したオブジェクトに含まれる文書の部分を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />たオブジェクトに含まれる文書の一部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>範囲をドキュメントから取得するか、図形のコレクションから図形範囲を取得する方法については、メソッドを参照して、<b>範囲</b>の<see cref="T:Microsoft.Office.Interop.Word.Document" />または<see cref="T:Microsoft.Office.Interop.Word.Shapes" />オブジェクトです。</para>
-          <para />
-        </remarks>
+        <remarks><para>文書から指定範囲を取得する方法、 <see cref="T:Microsoft.Office.Interop.Word.Document" />または図形のコレクションから図形範囲を取得する方法については、また<see cref="T:Microsoft.Office.Interop.Word.Shapes" />はオブジェクトの<b>range</b>メソッドを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Split">
@@ -375,12 +359,10 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">必要な<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。 サブ文書を分割したときに別のサブ文書になる範囲を指定します。</param>
+        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 サブ文書を分割したときに別のサブ文書になる範囲を指定します。</param>
         <summary>グループ文書モードまたはアウトライン表示において同じレベルで、既存のサブ文書を 2 つのサブ文書に分割します。</summary>
-        <remarks>
-          <para>分割は、指定した範囲の先頭にします。作業中の文書がグループ文書モードまたはアウトライン モードでない場合、または範囲がサブ文書の段落の先頭にない場合は、エラーが発生します。</para>
-          <para />
-        </remarks>
+        <remarks><para>分割は、指定範囲の先頭で行われます。 作業中の文書がグループ文書またはアウトライン表示のどちらかに含まれていない場合、または指定範囲がサブ文書の段落の先頭にない場合は、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

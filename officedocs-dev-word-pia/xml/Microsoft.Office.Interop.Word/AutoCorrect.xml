@@ -1,13 +1,5 @@
 <Type Name="AutoCorrect" FullName="Microsoft.Office.Interop.Word.AutoCorrect">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ca43994f83473019aa3b0432bbcd6a293001a6ed" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671890" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoCorrect" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b6793eb4cb098abceff96e7f0050f949fc1ed8a7" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146298" /></Metadata><TypeSignature Language="C#" Value="public interface AutoCorrect" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoCorrect" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AutoCorrect" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoCorrect" />
@@ -26,11 +18,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Microsoft Word のオート コレクト機能を表します。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.AutoCorrect" /> 、オート コレクト オブジェクトを返すプロパティです</para>。
-      <para>、<see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.Entries" />を<see cref="T:Microsoft.Office.Interop.Word.AutoCorrectEntries" />、[オート コレクト] ダイアログ ボックス ([ツール] メニュー) で<b>オート コレクト</b>の項目を表すオブジェクト</para>。
-      <para /></remarks>
+    <summary>Microsoft Word のオートコレクト機能を表します。</summary>
+    <remarks><para>オートコレクト<see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.AutoCorrect" />のオブジェクトを取得するのにには、プロパティを使用します。</para>
+      <para>この<see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.Entries" />プロパティは、 <see cref="T:Microsoft.Office.Interop.Word.AutoCorrectEntries" /> [オートコレクト] ダイアログボックス ([ツール] メニュー) の<b>オートコレクト</b>項目を表すオブジェクトを返します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Application" />を指定したオブジェクトの作成者を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Application" />たオブジェクトの作成元を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,7 +78,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、Microsoft Word が使用する CAPS LOCK キー誤って入力すると、インスタンスを自動的に修正するかどうかを示す値を設定します。</summary>
+        <summary>CAPSLOCK キーを誤って入力した場合に、そのインスタンスが自動的に修正されるかどうかを示す値を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,7 +109,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または Microsoft Word が自動的に曜日の先頭文字を大文字にかどうかを示す値を設定します。</summary>
+        <summary>曜日の先頭文字を自動的に大文字にするかどうかを示す値を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,12 +140,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、ハングル語の文字列の途中で、またはその逆に入力した英数字に正しいフォントを Microsoft Word が自動的に適用されるかどうかを示す値を設定します。</summary>
+        <summary>返すまたは、ハングルテキストの途中に入力された英単語に正しいフォントが自動的に適用されるかどうかを示す値を設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>アジア言語で Word を使用の詳細については、Microsoft Word のヘルプを参照してください。</para>
-          <para />
-        </remarks>
+        <remarks><para>アジア言語で Word を使用する方法については、Microsoft Word のヘルプを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CorrectInitialCaps">
@@ -183,7 +172,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または Microsoft Word は自動的になり、2 番目の文字単語の最初の 2 つの文字が入力されている場合は、小文字であることを示す値を大文字に設定します。 単語を「単語」を修正するなど</summary>
+        <summary>単語の最初の2文字が大文字で入力されている場合に、2番目の文字を自動的に小文字にするかどうかを示す値を設定します。 たとえば、"word" は "Word" に訂正されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -214,12 +203,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>かどうか Microsoft 自動的に翻訳語の言語のアルファベットを現在のキーボードの言語以外の言語でテキストを入力する場合を示す値を設定を取得または取得します。</summary>
+        <summary>現在のキーボードの言語以外の言語でテキストを入力した場合に、Microsoft Word が自動的に単語をネイティブのアルファベットに翻訳するかどうかを示す値を設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>、 <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.CheckLanguage" /><b>CorrectKeyboardSetting</b>プロパティを使用するのには、プロパティを<b>True</b>に設定する必要があります</para>。
-          <para>複数の言語で Word を使用の詳細については、Microsoft Word のヘルプを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>CorrectKeyboardSetting <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.CheckLanguage" />プロパティを使用するためには、このプロパティを<b></b> <b>True</b>に設定する必要があります。</para>
+          <para>複数の言語で Word を使用する方法については、Microsoft Word のヘルプを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CorrectSentenceCaps">
@@ -248,7 +236,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、Microsoft Word が自動的に各文の先頭文字を大文字にかどうかを示す値を設定します。</summary>
+        <summary>Microsoft Word で各文の最初の文字が自動的に大文字になるかどうかを示す値を設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -279,7 +267,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、自動的に表のセルの先頭文字を大文字にするかどうかを示す値を設定します。</summary>
+        <summary>表のセルの先頭文字を自動的に大文字にするかどうかを示す値を取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -309,10 +297,9 @@
       <Docs>
         <summary>指定したオブジェクトが作成されたアプリケーションを示す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayAutoCorrectOptions">
@@ -341,7 +328,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、オート コレクトのオプション] ボタンを表示するかどうかを示す値を設定します。</summary>
+        <summary>返すまたは、[オートコレクトのオプション] ボタンを表示するかどうかを示す値を設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -369,12 +356,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.AutoCorrectEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>示す値を返します、<see cref="T:Microsoft.Office.Interop.Word.AutoCorrectEntries" />オート コレクトの項目の現在のリストを表すコレクション。</summary>
+        <summary>オートコレクト項目の現在の<see cref="T:Microsoft.Office.Interop.Word.AutoCorrectEntries" />リストを表す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このリストは、[オート コレクト] ダイアログ ボックス ([ツール] メニュー) の [オート コレクト] タブでオート コレクトの項目の一覧に対応しています。</para>
-          <para />
-        </remarks>
+        <remarks><para>このリストは、[オートコレクト] ダイアログボックス ([ツール] メニュー) の [オートコレクト] タブのオートコレクト項目の一覧に対応しています。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FirstLetterAutoAdd">
@@ -403,12 +388,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、Microsoft Word が、最初の大文字をオート コレクトの例外項目の一覧に、省略形を自動的に追加するかどうかを示す値を設定します。</summary>
+        <summary>省略形が先頭の大文字の例外の一覧に自動的に追加されるかどうかを示す値を設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>削除し、省略形に続いてピリオドの直後に文字が大文字の文字を再入力する場合、このリストに省略形が追加されます。</para>
-          <para />
-        </remarks>
+        <remarks><para>省略形が例外項目のリストに追加されるようにするには、省略形に続いてピリオドを入力し、省略形の先頭の文字が自動的に大文字に変換されたら、その文字を削除し、入力し直します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FirstLetterExceptions">
@@ -434,12 +417,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.FirstLetterExceptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.FirstLetterExceptions" />になる Word も自動的に大文字に次の省略名のリストを表すコレクション。</summary>
+        <summary>次の<see cref="T:Microsoft.Office.Interop.Word.FirstLetterExceptions" />文字が自動的に大文字にならないようにする省略形の一覧を表すコレクションを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このリストは、[オート コレクトの例外] ダイアログ ボックス ([オート コレクト] コマンド、[ツール] メニュー) の最初の文字] タブでオート コレクトの例外の一覧に対応しています。</para>
-          <para />
-        </remarks>
+        <remarks><para>このリストは、[オートコレクトの例外処理] ダイアログボックス ([ツール] メニュー) の [先頭の大文字] タブにあるオートコレクトの例外の一覧に対応しています。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HangulAndAlphabetAutoAdd">
@@ -468,13 +449,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはかどうか自動的にハングル語および英語のリストに単語を追加するのには、韓国語のオート コレクトの例外] タブの [オート コレクトの例外] ダイアログ ボックスを示す値を設定します。</summary>
+        <summary>[オートコレクトの例外処理] ダイアログボックスの [韓国語] タブにあるハングル語および英語のオートコレクトの例外項目の一覧に自動的に追加するかどうかを示す値を取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>[オート コレクトの例外] ダイアログ ボックスは、[ツール] メニューにあります。オート コレクトのオプション] をクリックし、[オート コレクト] タブをクリックし、[例外] をクリックします。</para>
-          <para>を削除し、単語を修正するのには必要がなかった単語を再入力する場合、Microsoft Word がこの一覧に単語を追加します</para>。
-          <para>アジア言語で Word を使用の詳細については、Microsoft Word のヘルプを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>[オートコレクトの例外処理] ダイアログボックスは、[ツール] メニューにあります。 [オートコレクトのオプション] をクリックし、[オートコレクト] タブをクリックして、[例外] ボタンをクリックします。 </para>
+          <para>単語を削除して、修正しない単語を再入力すると、このリストに単語が追加されます。</para>
+          <para>アジア言語で Word を使用する方法については、Microsoft Word のヘルプを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HangulAndAlphabetExceptions">
@@ -500,13 +480,12 @@
         <ReturnType>Microsoft.Office.Interop.Word.HangulAndAlphabetExceptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.HangulAndAlphabetExceptions" />ハングル語および英語のオート コレクトのリストを表す例外です。</summary>
+        <summary>ハングル語<see cref="T:Microsoft.Office.Interop.Word.HangulAndAlphabetExceptions" />および英語のオートコレクトの例外の一覧を表すコレクションを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ハングル語および英語の一覧に [韓国語] タブの [オート コレクトの例外] ダイアログ ボックスで、オート コレクトの例外に対応するリストが返されます</para>。
-          <para>[オート コレクトの例外] ダイアログ ボックスは、[ツール] メニューにあります。[オート コレクトのオプション] をクリックし、[オート コレクト] タブをクリックし、[例外] をクリックします</para>。
-          <para>アジア言語で Word を使用の詳細については、Microsoft Word のヘルプを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>返されるリストは、[オートコレクトの例外処理] ダイアログボックスの [韓国語] タブにあるハングル語および英語のオートコレクトの例外項目の一覧に対応しています。</para>
+          <para>[オートコレクトの例外処理] ダイアログボックスは、[ツール] メニューにあります。 [オートコレクトのオプション] をクリックし、[オートコレクト] タブをクリックして、[例外] ボタンをクリックします。</para>
+          <para>アジア言語で Word を使用する方法については、Microsoft Word のヘルプを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OtherCorrectionsAutoAdd">
@@ -535,12 +514,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、単語をオート コレクトの例外] ダイアログ ボックスで [その他の修正] タブでオート コレクトの例外の一覧に追加するかどうかを示す値を設定します。</summary>
+        <summary>返すまたは、[オートコレクトの例外] ダイアログボックスの [その他の修正] タブで、オートコレクトの例外項目のリストに単語を追加するかどうかを示す値を設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>[オート コレクトの例外] ダイアログ ボックスは、[ツール] メニューにあります。[オート コレクトのオプション] をクリックし、[オート コレクト] タブをクリックし、[例外] をクリックします</para>。
-          <para>を削除し、単語を修正するのには必要がなかった単語を再入力する場合、Microsoft Word がこの一覧に単語を追加します</para>。
-          <para /></remarks>
+        <remarks><para>[オートコレクトの例外処理] ダイアログボックスは、[ツール] メニューにあります。 [オートコレクトのオプション] をクリックし、[オートコレクト] タブをクリックして、[例外] ボタンをクリックします。</para>
+          <para>単語を削除して、修正しない単語を再入力すると、このリストに単語が追加されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OtherCorrectionsExceptions">
@@ -566,12 +544,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.OtherCorrectionsExceptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.OtherCorrectionsExceptions" /> Word で自動的に修正しない単語のリストを表すコレクション。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.OtherCorrectionsExceptions" />が自動的に修正しない単語のリストを表すコレクションを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このリストは、[オート コレクトの例外] ダイアログ ボックス ([オート コレクト] コマンド、[ツール] メニュー) でその他の修正] タブでオート コレクトの例外の一覧に対応しています。</para>
-          <para />
-        </remarks>
+        <remarks><para>このリストは、[オートコレクトの例外処理] ダイアログボックス ([オートコレクト] コマンドの [ツール] メニュー) の [その他の修正] タブにあるオートコレクトの例外の一覧に対応しています。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -628,7 +604,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、自動的にオート コレクトの一覧のエントリを指定したテキストを置換するかどうかを示す値を設定します。</summary>
+        <summary>返すまたは、指定したテキストをオートコレクトリストからのエントリに自動的に置換するかどうかを示す値を設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -659,12 +635,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、ユーザーの種類として、スペル チェッカーの修正候補で自動的にスペル ミスのある文字列を置き換えるかどうかを示す値を設定します。</summary>
+        <summary>ユーザーの入力時にスペルチェッカーからの修正候補でスペルミスのテキストを自動的に置換するかどうかを示す値を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Microsoft Word には、1 つのスペル ミスが含まれているとする、スペル チェック辞書のみリスト代わりに 1 つの単語のみ置き換えられます。</para>
-          <para />
-        </remarks>
+        <remarks><para>1つのスペルミスが含まれている単語のみが置換され、スペルチェック辞書には1つだけが表示されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TwoInitialCapsAutoAdd">
@@ -693,12 +667,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、大文字をオート コレクトの例外項目の一覧に自動的に追加するかどうかを示す値を設定します。</summary>
+        <summary>オートコレクトの先頭の文字の例外の一覧に自動的に単語を追加するかどうかを示す値を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>単語がこのリストに追加、削除して、文字 (大文字の頭文字) を再入力し、Microsoft Word が小文字に変更します。</para>
-          <para />
-        </remarks>
+        <remarks><para>単語を削除してから、小文字に変更された大文字 (先頭の大文字の後) を削除すると、この一覧に単語が追加されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TwoInitialCapsExceptions">
@@ -724,12 +696,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.TwoInitialCapsExceptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.TwoInitialCapsExceptions" />の混在は、Word で自動的に修正しない大文字と小文字が含まれている用語のリストを表すコレクション。</summary>
+        <summary>大文字<see cref="T:Microsoft.Office.Interop.Word.TwoInitialCapsExceptions" />と小文字の混在を自動修正しない用語の一覧を表すコレクションを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このリストは、[オート コレクトの例外] ダイアログ ボックス ([オート コレクトのオプション]、[ツール] メニュー) で大文字と小文字] タブのオート コレクトの例外の一覧に対応しています。</para>
-          <para />
-        </remarks>
+        <remarks><para>このリストは、[オートコレクトの例外処理] ダイアログ ボックス ([ツール] - [オートコレクトのオプション]) の [大文字と小文字] タブにあるオートコレクト例外項目のリストに対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

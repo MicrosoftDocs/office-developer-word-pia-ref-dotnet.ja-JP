@@ -1,13 +1,5 @@
 <Type Name="CoAuthUpdates" FullName="Microsoft.Office.Interop.Word.CoAuthUpdates">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7983db44fc17c631b58b37400b9b392ffaf1679e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670960" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CoAuthUpdates : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="221cb78f9c2c699018cfe37e064f54c683778e79" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147215" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthUpdates : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CoAuthUpdates implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />
   <TypeSignature Language="VB.NET" Value="Public Interface CoAuthUpdates&#xA;Implements IEnumerable" />
@@ -30,11 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" />のドキュメントで使用可能な更新を表すオブジェクト。</summary>
-    <remarks>
-      <para>ドキュメント共同編集が有効になっていると同時に編集すると、1 つの共同作成者によって行われた変更が利用する他の共同作成者の更新となります。それぞれの変更は、1 つの<b>CoAuthUpdate</b>オブジェクトによって表されます。共同作成者は、ドキュメントのバージョンを保存、すると、他の共同編集者によって行われた変更は、その co の著者のバージョンのドキュメントにマージされます。共同の作成者のバージョンのドキュメントを保存する前に他の共同編集者によって行われた変更は、更新プログラムとして利用可能です</para>。
-      <para>例: 2 人のユーザーが最初に 1 つの段落テキストを"茶色 fox"を含むドキュメントを編集中最初の共同作成者が読む文を編集する場合、クイック茶色 fox ジャンプして、ログとし、保存文書、"quick"と、"ログ"を 2 つ目の共同作成者に利用可能なドキュメントに 2 つの更新。これら 2 つの更新プログラムは、Microsoft Word 2010 オブジェクト モデルでは、2 つの<b>CoAuthUpdate</b>オブジェクトとして表されます。最初の共同作成者から更新プログラムが文書に差し込むと、2 つ目の共同作成者は、ドキュメントを保存、します</para>。
-      <para /></remarks>
+    <summary>ドキュメントで利用<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" />可能な更新を表すオブジェクトのコレクションです。</summary>
+    <remarks><para>共同編集が有効になっているドキュメントを同時に編集した場合、1人の共同編集者による変更は、更新プログラムとして他の共同編集者に対して利用可能になります。 各変更は、1つの<b>Coauthupdate</b>オブジェクトで表されます。 共同編集者が自分のバージョンのドキュメントを保存すると、他の共同編集者によって加えられた変更は、その共同編集者のバージョンのドキュメントにマージされます。 共同編集者が自分のバージョンのドキュメントを保存する前に、他の共同編集者が行った変更は更新プログラムとして利用できます。</para>
+      <para>たとえば、2人のユーザーが最初に1つの段落を含むドキュメントを編集しています。 最初の共同編集者が文章の読み取りを編集する場合は、「クイック brown がログの上にジャンプする」という単語が2回目の共同編集者に対して、ドキュメントの2つの更新として保存されます。 これらの2つの更新プログラムは、Microsoft Word 2010 オブジェクトモデルでは2つの<b>Coauthupdate</b>オブジェクトとして表されます。 2番目の共同編集者が文書を保存すると、最初の共同編集者からの更新が文書に反映されます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,13 +51,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを取得します。</summary>
+        <value>Microsoft <see cref="T:Microsoft.Office.Interop.Word.Application" /> Word アプリケーションを表すオブジェクト。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -92,12 +80,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>内の項目の数を取得、<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />コレクションです。</summary>
-        <value>内のアイテムの数、<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />コレクションです。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />コレクション内の項目数を取得します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />コレクション内の項目の数。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -123,12 +109,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトが作成されたアプリケーションを示す 32 ビット整数を取得します。</summary>
-        <value>指定したオブジェクトが作成されたアプリケーションを示す 32 ビット整数。</value>
-        <remarks>
-          <para>読み取り専用<b>long</b>です。オブジェクトは、Microsoft Word で作成されている場合、このプロパティは文字列"MSWD"を表す 16 進数、値である 4d535744 を返します。このプロパティは、各アプリケーションが 4 文字のクリエータ コードには、Apple Macintosh で使用するために設計されました。MSWD 元のコードが Word には、たとえば、します</para>。
-          <para><b>注意</b>: この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para /></remarks>
+        <summary>指定したオブジェクトが作成されたアプリケーションを示す32ビット整数を取得します。</summary>
+        <value>指定したオブジェクトが作成されたアプリケーションを示す32ビットの整数。</value>
+        <remarks><para>値の取得のみ可能な<b>long</b>値です。 オブジェクトが Microsoft Word で作成されている場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 このプロパティは、各アプリケーションが 4 文字のクリエータ コードには、Apple Macintosh で使用するために設計されました。 たとえば、Word には、作成者コード MSWD です。</para>
+          <para>
+            <b>注意</b>: この値は、定数<b>wdCreatorCode</b>で表すこともできます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -159,7 +145,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>返します。 <see cref="T:System.Collections.IEnumerator" />。</returns>
+        <returns>を<see cref="T:System.Collections.IEnumerator" />返します。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,7 +177,7 @@
       <Docs>
         <param name="Index">個々 のオブジェクトが返されます。</param>
         <summary>コレクション内の個々 の <b>CoAuthUpdates</b> オブジェクトを返します。</summary>
-        <value>返します。 <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" />。</value>
+        <value>を<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" />返します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,9 +204,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、<see cref="T:System.Object" />の指定した親オブジェクトを表す<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />オブジェクトです。</summary>
-        <value>
-          <see cref="T:System.Object" />の指定した親オブジェクトを表す<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />オブジェクトです。</value>
+        <summary>は<see cref="T:System.Object" /> 、指定<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />したオブジェクトの親オブジェクトを表すを取得します。</summary>
+        <value><see cref="T:System.Object" />指定<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />したオブジェクトの親オブジェクトを表す。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

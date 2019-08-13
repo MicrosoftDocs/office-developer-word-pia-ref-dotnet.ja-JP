@@ -1,13 +1,5 @@
 <Type Name="ProtectedViewWindow" FullName="Microsoft.Office.Interop.Word.ProtectedViewWindow">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a0b10fae72100482f87072b069313a91b2fb8237" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670817" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ProtectedViewWindow" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4e9a73a1e5de8d6f70be3b028707aba12dd7e7a1" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147726" /></Metadata><TypeSignature Language="C#" Value="public interface ProtectedViewWindow" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ProtectedViewWindow" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />
   <TypeSignature Language="VB.NET" Value="Public Interface ProtectedViewWindow" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>保護されたビュー ウィンドウを表します。</summary>
-    <remarks>
-      <para>保護されたビュー] ウィンドウに表示されるドキュメントは編集できなくなり、マクロは、データ接続などのアクティブ コンテンツの実行が制限されています。</para>
-      <para />
-    </remarks>
+    <remarks><para>保護されたビューウィンドウに表示されるドキュメントは編集できず、マクロやデータ接続などのアクティブなコンテンツの実行が制限されます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -81,13 +71,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>保護されたビューの指定したウィンドウがアクティブかどうかを取得します。</summary>
-        <value>
-          <b>true</b>指定したビューのウィンドウを保護されている場合はアクティブです。それ以外の場合、 <b>false を指定</b>します。</value>
-        <remarks>
-          <para>読み取り専用のブール値です。</para>
-          <para />
-        </remarks>
+        <summary>指定した保護されたビューウィンドウがアクティブであるかどうかを取得します。</summary>
+        <value>指定した [保護されたビュー] ウィンドウがアクティブな場合は<b>true</b> 。それ以外の場合は<b>false</b>。</value>
+        <remarks><para>読み取り専用の Boolean です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -113,13 +100,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Word アプリケーションを表すオブジェクト。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを取得します。</summary>
+        <value>Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクト。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Caption">
@@ -148,12 +132,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはドキュメントのタイトル バーに表示または表示ウィンドウを保護するキャプション テキストを設定します。</summary>
-        <value>ドキュメントまたは保護されたビューのウィンドウのタイトル バーに表示されるキャプション テキスト。</value>
-        <remarks>
-          <para>値の取得および設定します。既定のテキストに [保護されたビュー] ウィンドウのキャプションを変更するのにはこのプロパティを空の文字列 ("")。</para>
-          <para />
-        </remarks>
+        <summary>ドキュメントまたは保護されたビューのウィンドウのタイトルバーに表示されるキャプションテキストを取得または設定します。</summary>
+        <value>ドキュメントまたは保護されたビューウィンドウのタイトルバーに表示されるキャプションテキスト。</value>
+        <remarks><para>読み取り/書き込み文字列です。 保護されたビュー ウィンドウの名前を既定の名前に変更するには、このプロパティに長さ 0 の文字列 ("") を設定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -204,12 +186,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトが作成されたアプリケーションを示す 32 ビット整数を取得します。</summary>
-        <value>指定したオブジェクトが作成されたアプリケーションを示す 32 ビット整数。</value>
-        <remarks>
-          <para>読み取り専用<b>long</b>です。オブジェクトは、Microsoft Word で作成されている場合、このプロパティは文字列"MSWD"を表す 16 進数、値である 4d535744 を返します。このプロパティは、各アプリケーションが 4 文字のクリエータ コードには、Apple Macintosh で使用するために設計されました。たとえば、Word には、作成者コード MSWD です。</para>
-          <para />
-        </remarks>
+        <summary>指定したオブジェクトが作成されたアプリケーションを示す32ビット整数を取得します。</summary>
+        <value>指定したオブジェクトが作成されたアプリケーションを示す32ビットの整数。</value>
+        <remarks><para>値の取得のみ可能な<b>long</b>値です。 オブジェクトが Microsoft Word で作成されている場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 このプロパティは、各アプリケーションが 4 文字のクリエータ コードには、Apple Macintosh で使用するために設計されました。 たとえば、Word には、作成者コード MSWD です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -235,12 +215,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、 <see cref="T:Microsoft.Office.Interop.Word.Document" /> 、保護されたビュー] ウィンドウに関連付けられているオブジェクト。</summary>
-        <value>A <see cref="T:Microsoft.Office.Interop.Word.Document" /> [保護されたビュー] ウィンドウに関連付けられているオブジェクト。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>保護さ<see cref="T:Microsoft.Office.Interop.Word.Document" />れたビューウィンドウに関連付けられているオブジェクトを取得します。</summary>
+        <value>保護<see cref="T:Microsoft.Office.Interop.Word.Document" />されたビューウィンドウに関連付けられているオブジェクト。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Edit">
@@ -270,12 +248,10 @@
         <param name="PasswordTemplate">テンプレートを開くためのパスワードを指定します。</param>
         <param name="WritePasswordDocument">文書への変更を保存するためのパスワードを指定します。</param>
         <param name="WritePasswordTemplate">テンプレートへの変更を保存するためのパスワードを指定します。</param>
-        <summary>編集用の保護されたビューの指定されたウィンドウが開きます。</summary>
-        <returns>A<see cref="T:Microsoft.Office.Interop.Word.Document" />オブジェクトです。</returns>
-        <remarks>
-          <para>アプリケーションにハード コーディングされたパスワードを使用しないでください。プロシージャでは、パスワードが必要な場合は、ユーザーからパスワードを要求して、変数に格納コードで変数を使用します。</para>
-          <para />
-        </remarks>
+        <summary>指定した [保護されたビュー] ウィンドウを編集用に開きます。</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.Document" /> オブジェクト。</returns>
+        <remarks><para>アプリケーションにハードコードされたパスワードを使用しないでください。 プロシージャでパスワードが必要な場合は、ユーザーのパスワードを要求し、変数に格納してから、コードでその変数を使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -304,12 +280,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または [保護されたビュー] ウィンドウの高さを設定します。</summary>
-        <value>[保護されたビュー] ウィンドウの高さ。</value>
-        <remarks>
-          <para>読み取り/書き込み<b>時間</b>です。ウィンドウが最大化または最小化されている場合、このプロパティを設定することはできません。ウィンドウの最大サイズを決定するのにには、 <b>Application</b>オブジェクトの UsableHeight プロパティを使用します。ウィンドウの状態を確認するのにには、 <b>WindowState</b>プロパティを使用します。</para>
-          <para />
-        </remarks>
+        <summary>保護されたビューウィンドウの高さを取得または設定します。</summary>
+        <value>保護されたビューウィンドウの高さを示します。</value>
+        <remarks><para>取得/設定が可能な<b>long</b>値です。 ウィンドウを最大化または最小化されている場合は、このプロパティを設定することはできません。 ウィンドウの最大サイズを確認するのにには、 アプリケーション のオブジェクトの <b>UsableHeight</b> プロパティを使用します。 ウィンドウの状態を確認するのにには、 <b>状態</b> のプロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -336,7 +310,7 @@
       </ReturnValue>
       <Docs>
         <summary>コレクション内の項目の位置を表す値を返します。</summary>
-        <value>返します。 <see cref="T:System.Int32" />。</value>
+        <value>を<see cref="T:System.Int32" />返します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -366,12 +340,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または保護されたビューの指定されたウィンドウの水平方向の位置を表すポイント単位で値を設定します。</summary>
-        <value>保護されたビューの指定されたウィンドウの水平方向の位置をポイント単位でします。</value>
-        <remarks>
-          <para>読み取り/書き込み。</para>
-          <para />
-        </remarks>
+        <summary>指定した保護されたビューウィンドウの水平方向の位置を表す値をポイント単位で取得または設定します。</summary>
+        <value>指定した保護されたビューウィンドウの水平方向の位置をポイント単位で指定します。</value>
+        <remarks><para>値の取得と設定が可能です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -397,9 +369,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、<see cref="T:System.Object" />の指定した親オブジェクトを表す<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />オブジェクトです。</summary>
-        <value>
-          <see cref="T:System.Object" />の指定した親オブジェクトを表す<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />オブジェクトです。</value>
+        <summary>は<see cref="T:System.Object" /> 、指定<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />したオブジェクトの親オブジェクトを表すを取得します。</summary>
+        <value><see cref="T:System.Object" />指定<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />したオブジェクトの親オブジェクトを表す。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -426,12 +397,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>保護されたビューの指定されたウィンドウのソース ファイルの名前を取得します。</summary>
-        <value>指定されたソース ファイルの名前には、ビューのウィンドウが保護されています。</value>
-        <remarks>
-          <para>読み取り専用の文字列です。このプロパティでは、ソース ファイルのパスは返されません。</para>
-          <para />
-        </remarks>
+        <summary>指定した保護されたビューウィンドウのソースファイルの名前を取得します。</summary>
+        <value>指定した [保護されたビュー] ウィンドウのソースファイルの名前を指定します。</value>
+        <remarks><para>読み取り専用の文字列です。 このプロパティでは、ソース ファイルのパスは取得できません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourcePath">
@@ -457,12 +426,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>保護されたビューの指定されたウィンドウのソース ファイルのパスを取得します。</summary>
-        <value>指定されたソース ファイルのパスには、ビューのウィンドウが保護されています。</value>
-        <remarks>
-          <para>読み取り専用の文字列です。パスでは、末尾の区切り文字 (たとえば、C:\MSOffice) は含まれません。使用して、<see cref="P:Microsoft.Office.Interop.Word.ProtectedViewWindow.PathSeparator" />フォルダーとドライブ文字を区切る文字を追加するプロパティです。使用して、<see cref="P:Microsoft.Office.Interop.Word.ProtectedViewWindow.SourceName" />パスを含まないファイル名を取得するプロパティです。</para>
-          <para />
-        </remarks>
+        <summary>指定した保護されたビューウィンドウのソースファイルのパスを取得します。</summary>
+        <value>指定した [保護されたビュー] ウィンドウのソースファイルのパスを指定します。</value>
+        <remarks><para>読み取り専用の文字列です。 このパスの最後に円記号 (¥) は含まれないため、たとえば "C:¥MSOffice" のようになります。 <see cref="P:Microsoft.Office.Interop.Word.ProtectedViewWindow.PathSeparator" />プロパティを使用して、フォルダーとドライブ文字を区切る文字を追加します。 パスを<see cref="P:Microsoft.Office.Interop.Word.ProtectedViewWindow.SourceName" />含まないファイル名を取得するには、プロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ToggleRibbon">
@@ -487,10 +454,8 @@
       <Parameters />
       <Docs>
         <summary>リボンを表示または非表示にします。</summary>
-        <remarks>
-          <para>リボンが表示されている場合、このメソッド非表示になります。このメソッドは、リボンを非表示を表示します。</para>
-          <para />
-        </remarks>
+        <remarks><para>リボンが表示されている場合、このメソッドはそれを非表示にします。リボンが非表示の場合は、このメソッドによって表示されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -519,12 +484,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または保護されたビューの指定されたウィンドウのポイント単位での垂直位置を設定します。</summary>
-        <value>垂直位置をポイント単位で指定されたには、ビューのウィンドウが保護されています。</value>
-        <remarks>
-          <para>読み取り/書き込み<b>時間</b>です。</para>
-          <para />
-        </remarks>
+        <summary>指定した保護されたビューウィンドウの垂直位置をポイント単位で取得または設定します。</summary>
+        <value>指定した保護されたビューウィンドウの垂直位置をポイント単位で指定します。</value>
+        <remarks><para>取得/設定が可能な<b>long</b>値です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -553,13 +516,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定した保護されたビューのウィンドウが表示されているかどうかを設定します。</summary>
-        <value>
-          <b>true の</b>場合は、指定したビューのウィンドウを保護するが表示されます。それ以外の場合、 <b>false を指定</b>します。</value>
-        <remarks>
-          <para>読み取り/書き込みブール値です。</para>
-          <para />
-        </remarks>
+        <summary>指定した保護されたビューウィンドウが表示されるかどうかを取得または設定します。</summary>
+        <value><b>true</b>の場合は、指定した保護されたビューウィンドウが表示されます。それ以外の場合は<b>false</b>。</value>
+        <remarks><para>読み取り/書き込みブール値 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -588,12 +548,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または保護されたビューの指定されたウィンドウの幅を設定します。</summary>
-        <value>ポイント単位で指定した幅には、ビュー ウィンドウが保護されています。</value>
-        <remarks>
-          <para>読み取り/書き込み<b>時間</b>です。</para>
-          <para />
-        </remarks>
+        <summary>指定した保護されたビューウィンドウの幅をポイント単位で取得または設定します。</summary>
+        <value>指定した保護されたビューウィンドウの幅をポイント単位で指定します。</value>
+        <remarks><para>取得/設定が可能な<b>long</b>値です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowState">
@@ -622,12 +580,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdWindowState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定した保護されたビューのウィンドウの状態を設定します。</summary>
-        <value>保護されたビューの指定されたウィンドウの状態です。</value>
-        <remarks>
-          <para>読み取り/書き込み。定数<b>wdWindowStateNormal</b>は、ウィンドウ最大化または最小化されていないことを示します。アクティブでないウィンドウの状態を設定することはできません。使用して、 <see cref="M:Microsoft.Office.Interop.Word.ProtectedViewWindow.Activate" /> 、ウィンドウの状態を設定する前にウィンドウをアクティブにする方法です。</para>
-          <para />
-        </remarks>
+        <summary>指定した保護されたビューウィンドウの状態を取得または設定します。</summary>
+        <value>指定した保護されたビューウィンドウの状態です。</value>
+        <remarks><para>値の取得と設定が可能です。 定数 <b>wdWindowStateNormal</b> は、ウィンドウ最大化または最小化されていないことを示します。 アクティブでないウィンドウの状態を設定することはできません。 ウィンドウの<see cref="M:Microsoft.Office.Interop.Word.ProtectedViewWindow.Activate" />状態を設定する前にウィンドウをアクティブにするには、メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

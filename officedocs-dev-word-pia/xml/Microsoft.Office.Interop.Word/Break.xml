@@ -1,13 +1,5 @@
 <Type Name="Break" FullName="Microsoft.Office.Interop.Word.Break">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="43c919709a56898e8d80c63ae8f6a425e8d1c149" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671033" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Break" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bcb5ecd21d700e2e8404c39d276fdf33b613e35c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146557" /></Metadata><TypeSignature Language="C#" Value="public interface Break" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Break" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Break" />
   <TypeSignature Language="VB.NET" Value="Public Interface Break" />
@@ -27,10 +19,9 @@
   </Attributes>
   <Docs>
     <summary>個々 のページ、列、およびページのセクション区切りを表します。</summary>
-    <remarks>
-      <para>使用の<see cref="T:Microsoft.Office.Interop.Word.Break" />オブジェクトとそれに関連するメソッドおよびプロパティをプログラムで文書のページ レイアウトを定義します</para>。
-      <para>使用、<see cref="P:Microsoft.Office.Interop.Word.Breaks.Item(System.Int32)" />を返す特定のメソッド オブジェクトを<b>分割</b>します</para>。
-      <para /></remarks>
+    <remarks><para>ドキュメントの<see cref="T:Microsoft.Office.Interop.Word.Break" />ページレイアウトをプログラムで定義するには、オブジェクトとそれに関連するメソッドおよびプロパティを使用します。</para>
+      <para>メソッドを<see cref="P:Microsoft.Office.Interop.Word.Breaks.Item(System.Int32)" />使用して、特定の<b>Break</b>オブジェクトを返します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Application" />を指定したオブジェクトの作成者を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Application" />たオブジェクトの作成元を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,10 +77,9 @@
       <Docs>
         <summary>指定したオブジェクトが作成されたアプリケーションを示す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageIndex">
@@ -115,7 +105,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された改ページの数を表す値を返します。</summary>
+        <summary>指定した区切りが発生するページ番号を表す値を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -143,7 +133,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親オブジェクトを返します。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -171,7 +161,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />を指定したオブジェクトに含まれる文書の部分を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />たオブジェクトに含まれる文書の一部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="AutoCorrectEntries" FullName="Microsoft.Office.Interop.Word.AutoCorrectEntries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="15161d8d9b96cdc9be82de4a41c0a978915ac25a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672201" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoCorrectEntries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e9481d541f5385119d68bbf3d4192d324fab9282" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146263" /></Metadata><TypeSignature Language="C#" Value="public interface AutoCorrectEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoCorrectEntries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AutoCorrectEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoCorrectEntries&#xA;Implements IEnumerable" />
@@ -30,12 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.AutoCorrectEntry" />Microsoft Word を使用できるすべてのオート コレクト項目を表すオブジェクト。 AutoCorrectEntries コレクションには、([ツール] メニュー) の [オート コレクト] ダイアログ ボックス内のすべてのエントリが含まれています。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.Entries" /> AutoCorrectEntries コレクションを取得するプロパティ</para>。
-      <para>使用、<see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.Add(System.String,System.String)" />または<see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.AddRichText(System.String,Microsoft.Office.Interop.Word.Range)" />利用可能なエントリの一覧にオート コレクトの項目を追加します</para>。
-      <para>の使用<b>のエントリ</b>(<paramref name="index" />)、 <paramref name="index" /> 、オート コレクト項目名またはインデックス番号を単一の AutoCorrectEntry オブジェクトを取得するには。必要がありますと正確に一致、スペル チェック (必ずしも、大文字と小文字) の名前、[オート コレクト] ダイアログ ボックスの置換] の下に表示される</para>。
-      <para /></remarks>
+    <summary>Microsoft Word で<see cref="T:Microsoft.Office.Interop.Word.AutoCorrectEntry" />使用可能なすべてのオートコレクト項目を表すオブジェクトのコレクションです。 AutoCorrectEntries コレクションには、[オートコレクト] ダイアログ ボックス ([ツール] メニュー) の [オートコレクト] タブのすべての項目が含まれます。</summary>
+    <remarks><para>AutoCorrectEntries コレクション<see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.Entries" />を取得するのにには、プロパティを使用します。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.Add(System.String,System.String)" />または<see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.AddRichText(System.String,Microsoft.Office.Interop.Word.Range)" />メソッドを使用して、使用可能なエントリの一覧にオートコレクトの項目を追加します。</para>
+      <para>1つの<paramref name="index" />AutoCorrectEntry オブジェクトを<paramref name="index" />取得するのには、<b>エントリ</b>() を使用します。ここで、はオートコレクト項目名またはインデックス番号です。 [オートコレクト] ダイアログボックスの [置換] に表示される名前のスペル (大文字と小文字は区別されません) を正確に一致させる必要があります。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,9 +53,9 @@
         <Parameter Name="Value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">によってテキストが指定されたときに自動的に挿入するテキスト<paramref name="Name" />を入力します。</param>
-        <param name="Value">テキストを指定した文字列に置き換えが自動的に<paramref name="Value" />。</param>
-        <summary>使用可能なオート コレクトの項目の一覧をテキスト形式のオート コレクトの項目を追加します。</summary>
+        <param name="Name">指定したテキスト<paramref name="Name" />が入力されるたびに、自動的に挿入するテキストを入力します。</param>
+        <param name="Value">指定した文字列は、で<paramref name="Value" />指定した文字列に自動的に置き換えられます。</param>
+        <summary>使用可能なオートコレクト項目の一覧に、テキスト形式のオートコレクト項目を追加します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,15 +83,12 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Name">Microsoft Word するたびに自動的に挿入される書式付きの文字列<paramref name="Name" />を入力します。</param>
-        <param name="Range">自動的に置換するテキストを<paramref name="Range" />。</param>
-        <summary>指定された範囲のすべてのテキスト属性を保持し、書式付きのオート コレクト項目を作成します。</summary>
+        <param name="Name">入力したとき<paramref name="Name" />に自動的に挿入される書式設定されたテキスト。</param>
+        <param name="Range">自動的に置換する文字列を<paramref name="Range" />設定します。</param>
+        <summary>書式付きのオートコレクト項目を作成し、指定された範囲のすべてのテキスト属性を保持します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Word.AutoCorrectEntry.RichText" />このメソッドを使用して、追加されたエントリのプロパティは<b>True</b>を返します。このメソッドが使用されていない場合挿入されたオート コレクトの項目を現在のスタイルに準拠しています。</para>
-          <para />
-        </remarks>
+        <remarks><para>この<see cref="P:Microsoft.Office.Interop.Word.AutoCorrectEntry.RichText" />メソッドを使用して追加されたエントリのプロパティは<b>True</b>を返します。 このメソッドを使用しない場合、挿入したオートコレクト項目は現在のスタイルに準拠します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -126,7 +114,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Application" />を指定したオブジェクトの作成者を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Application" />たオブジェクトの作成元を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -184,10 +172,9 @@
       <Docs>
         <summary>指定したオブジェクトが作成されたアプリケーションを示す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返す場合は、特定のオブジェクトは、Microsoft Word で作成された、この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>特定のオブジェクトが Microsoft Word で作成されている場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -248,7 +235,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">返される各オブジェクトの名前です。</param>
+        <param name="Index">取得する個々のオブジェクトの名前を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -277,7 +264,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親オブジェクトを返します。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

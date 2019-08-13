@@ -1,13 +1,5 @@
 <Type Name="OMathNary" FullName="Microsoft.Office.Interop.Word.OMathNary">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5131483c9155c458e904980a5155768ea9b23242" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671388" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OMathNary" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="05967caf7afd8d7f04187c02216d56fe874729d5" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147769" /></Metadata><TypeSignature Language="C#" Value="public interface OMathNary" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMathNary" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMathNary" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMathNary" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>構成される、数学的 n 項オブジェクトを表す、 <paramref name="n" />-項オブジェクト、ベース (またはオペランド)、オプションの上限値と下限値です。</summary>
+    <summary><paramref name="n" />-項オブジェクト、基本 (またはオペランド)、およびオプションの上限と下限値で構成される、数学的な n 項オブジェクトを表します。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,10 +45,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word._Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,10 +76,8 @@
         <ReturnType>System.Int16</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<b>短い形式</b>として使用する文字を表す、 <paramref name="n" />-項演算子です。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>短い</b>
-        </value>
+        <summary>-項演算子として使用する文字を表す Short 型 (Short) の値を取得または設定します。 <b></b> <paramref name="n" /> 値の取得と設定が可能です。</summary>
+        <value><b>短い</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,14 +104,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>アドインが作成されたアプリケーションを示す 32 ビット<b>の整数</b>を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトが Microsoft Word で作成された場合、<see cref="P:Microsoft.Office.Interop.Word.OMathNary.Creator" />プロパティは、16 進数の値である 4d535744 を表す文字列"MSWD"を返します。 この値は、定数で表すこともできます<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />。このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
-          <para />
-        </remarks>
+        <summary>アドインが作成されたアプリケーションを示す32ビット<b>整数</b>を返します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトが Microsoft Word で作成されている<see cref="P:Microsoft.Office.Interop.Word.OMathNary.Creator" />場合、このプロパティは、文字列 "MSWD" を表す、16進数値である4D535744 を返します。  この値は定数<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />で表すこともできます。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="E">
@@ -149,10 +133,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.OMath</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.OMath" />オブジェクトを指定した数式オブジェクトの基本クラスを表します。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OMath" />
-        </value>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.OMath" />た数式オブジェクトの基本を表すオブジェクト型 (object) の値を取得します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OMath" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,10 +164,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定する<b>ブール値</b>を表すかどうか<paramref name="n" />-項演算子が含まれている引数の高さに成長します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>ブール値を表す引数が含まれる<paramref name="n" />引数の高さになるかどうかを表す、<b>ブール型 (Boolean)</b>の値を取得または設定します。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,10 +195,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定する<b>ブール値</b>の下限値を非表示にするかどうかを表す、 <paramref name="n" />-項演算子です。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary><b>ブール</b>値を表す<paramref name="n" />-項演算子の下限値を非表示にするかどうかを設定または返します。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,10 +226,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定する<b>ブール値</b>の上限値を非表示にするかどうかを表す、 <paramref name="n" />-項演算子です。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary><b>ブール</b>値を表す<paramref name="n" />-項演算子の上限を非表示にするかどうかを設定または返します。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,10 +254,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した親オブジェクトを返します。<see cref="T:Microsoft.Office.Interop.Word.OMathNary" />オブジェクトです。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.OMathNary" />オブジェクトの親オブジェクトを返します。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,10 +282,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.OMath</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.OMath" />の最小値を表すオブジェクト、 <paramref name="n" />-項演算子です。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OMath" />
-        </value>
+        <summary>-項<see cref="T:Microsoft.Office.Interop.Word.OMath" />演算子の下限を表すオブジェクト型 (object) の値を取得します。 <paramref name="n" /> 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OMath" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -341,10 +313,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定する<b>ブール値</b>の位置を表す<paramref name="n" />の項の極限上付き/下付き、または上限/下限の位置にします。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>取得または設定する<b>ブール値</b>上付き/下付き<paramref name="n" />または上限-下限の位置にある項制限の位置を表す。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -371,10 +341,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.OMath</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.OMath" />の最大値を表すオブジェクト、 <paramref name="n" />-項演算子です。 読み取り専用です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OMath" />
-        </value>
+        <summary>-項<see cref="T:Microsoft.Office.Interop.Word.OMath" />演算子の上限を表すオブジェクトを返します。 <paramref name="n" /> 値の取得のみ可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OMath" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

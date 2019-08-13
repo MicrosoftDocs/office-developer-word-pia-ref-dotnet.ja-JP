@@ -1,13 +1,5 @@
 <Type Name="TextInput" FullName="Microsoft.Office.Interop.Word.TextInput">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4c269a8af7d2406a141bb70d586f5cf03e141f7d" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672336" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TextInput" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="25278b86c7e130fb95e96e6347a7d97c8e594d89" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143806" /></Metadata><TypeSignature Language="C#" Value="public interface TextInput" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextInput" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TextInput" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextInput" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>1 つのテキスト ボックス フォーム フィールドを表します。</summary>
-    <remarks>
-      <para>
-        <b>FormFields</b>を使用 (<paramref name="index" />)、 <paramref name="index" /> 、テキスト ボックス フォーム フィールドまたはインデックス番号を取得するに関連付けられているブックマーク名では、<see cref="T:Microsoft.Office.Interop.Word.FormField" />オブジェクトです。使用、<see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" />プロパティを<b>FormField</b>オブジェクトは、 <b>TextInput</b>オブジェクトを取得します</para>。
-      <para>内のフォーム フィールドの位置を表すインデックス番号、<see cref="T:Microsoft.Office.Interop.Word.FormFields" />コレクションです</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" />メソッド、 <b>FormFields</b>オブジェクトのテキスト ボックス フォーム フィールドを追加する</para>。
-      <para /></remarks>
+    <remarks><para>オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.FormField" />取得<paramref name="index" />するには<paramref name="index" /> 、 <b>FormFields</b>() を使用します。ここで、は、テキストフォームフィールドまたはインデックス番号に関連付けられたブックマーク名のいずれかです。 TextInput オブジェクト<see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" />を取得するのにには、 <b></b> <b>FormField</b>オブジェクトのプロパティを使用します。</para>
+      <para>インデックス番号は、 <see cref="T:Microsoft.Office.Interop.Word.FormFields" />コレクション内のフォームフィールドの位置を表します。</para>
+      <para>テキストボックス<see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" />フォームフィールドを追加するには、 <b>FormFields</b>オブジェクトでメソッドを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -111,12 +101,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -175,10 +164,11 @@
         <Parameter Name="Enabled" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Type">必要な<see cref="T:Microsoft.Office.Interop.Word.WdTextFormFieldType" />。 テキスト ボックスの種類です。<b>可能</b>には、これらの定数のいずれかを指定できます: <b>wdCalculationText </b><b>wdCurrentDateText </b><b>wdCurrentTimeText </b><b>wdDateText </b><b>wdNumberText </b><b>wdRegularText</b></param>
+        <param name="Type">必須<see cref="T:Microsoft.Office.Interop.Word.WdTextFormFieldType" />。 テキストボックスの種類を示します。<b>WdTextFormFieldType</b>には、次の定数のいずれかを指定できます。 <b>wd電卓 ationtext </b> <b>wdcalculationtext </b> <b>wdcalculationtext </b> <b>wddatetext </b> <b>wdNumberText </b> <b>wdRegularText</b></param>
         <param name="Default">省略可能な<b>オブジェクト</b>です。 テキスト ボックスに表示される既定の文字列を指定します。</param>
-        <param name="Format">省略可能な<b>オブジェクト</b>です。 テキスト、数値、または日付の書式を設定するために使用する書式指定文字列 (たとえば、「0.00」、「タイトル文字」、または"m/d/yy")。 形式の例については、テキスト フォーム フィールド オプション] ダイアログ ボックスで入力、指定したテキスト ボックス フォーム フィールドの書式の一覧を参照してください。</param>
-        <param name="Enabled">省略可能な<b>オブジェクト</b>です。 						文字列を入力するフォーム フィールドを使用できるようにするには、<b>True</b> を設定します。</param>
+        <param name="Format">省略可能な<b>オブジェクト</b>です。 文字列、数字、または日付の書式 (たとえば、"0.00"、"タイトル文字"、または "M/d/yy" など) を設定するときに使用する文字列書式を指定します。 書式の詳細な使用例については、[テキスト ボックス フォーム フィールド] ダイアログ ボックスでテキスト ボックス フォーム フィールドの種類を指定し、書式の一覧を参照してください。</param>
+        <param name="Enabled">省略可能な<b>オブジェクト</b>です。 
+						文字列を入力するフォーム フィールドを使用できるようにするには、<b>True</b> を設定します。</param>
         <summary>指定されたテキスト ボックス フォーム フィールドのオプションを設定します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -262,32 +252,29 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdTextFormFieldType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>テキスト ボックス フォーム フィールドの種類を返します。</summary>
+        <summary>テキストボックスフォームフィールドの種類を返します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTextFormFieldType" />次の<b>WdTextFormFieldType</b>定数のいずれかをすることができます。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTextFormFieldType" />
-            <b>可能</b>定数のいずれか: </para>
-          <para>
-            <b>wdCalculationText </b>
+            <b>Wd電卓 Ationtext</b>
           </para>
           <para>
-            <b>wdCurrentDateText </b>
+            <b>wdCurrentDateText</b>
           </para>
           <para>
-            <b>wdCurrentTimeText </b>
+            <b>wdCurrentTimeText</b>
           </para>
           <para>
-            <b>wdDateText </b>
+            <b>wdDateText</b>
           </para>
           <para>
-            <b>wdNumberText </b>
+            <b>wdNumberText</b>
           </para>
           <para>
             <b>wdRegularText</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Valid">
@@ -313,13 +300,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、指定したフォーム フィールド オブジェクトが有効なチェック ボックス フォーム フィールドです。</summary>
+        <summary><b>True の</b> 場合は、指定したフォーム フィールド オブジェクトが有効なチェック ボックス フォーム フィールドです。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用、<see cref="P:Microsoft.Office.Interop.Word.FormField.Type" />のプロパティの<see cref="T:Microsoft.Office.Interop.Word.FormField" />オブジェクトを適用する前に (<b>wdFieldFormCheckBox</b>、 <b>wdFieldFormDropDown</b>、または<b>wdFieldFormTextInput</b>) のフォーム フィールドの種類を特定するのには、<see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" />プロパティ。この予防措置により、 <b>FormField</b>オブジェクトが有効な型であること。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" />プロパティを<see cref="P:Microsoft.Office.Interop.Word.FormField.Type" />適用する前<see cref="T:Microsoft.Office.Interop.Word.FormField" />に、オブジェクトのプロパティを使用して、フォームフィールドの種類 (<b>wdFieldFormCheckBox</b>、 <b>wdFieldFormDropDown</b>、または<b>wdFieldFormTextInput</b>) を決定します。 この予防措置は、 <b>FormField</b>オブジェクトが予期される型であることを保証します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">

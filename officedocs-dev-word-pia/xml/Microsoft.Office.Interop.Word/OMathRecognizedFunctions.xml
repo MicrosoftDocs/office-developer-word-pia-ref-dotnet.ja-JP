@@ -1,13 +1,5 @@
 <Type Name="OMathRecognizedFunctions" FullName="Microsoft.Office.Interop.Word.OMathRecognizedFunctions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2dd61c72117652e19beb2691742b4b0671001ec3" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671068" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OMathRecognizedFunctions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c8fd1be39d686c2e086ff3f03c01186d279dbe9a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147755" /></Metadata><TypeSignature Language="C#" Value="public interface OMathRecognizedFunctions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMathRecognizedFunctions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMathRecognizedFunctions" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMathRecognizedFunctions&#xA;Implements IEnumerable" />
@@ -30,12 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>認識済みの関数のコレクションを表します。 使用して、<see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" />コレクションの個々 のメンバーにアクセスするオブジェクト。</summary>
-    <remarks>
-      <para>
-        <see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunctions" />認識機能の選択] ダイアログ ボックスに含まれている名前のコレクションです。</para>
-      <para />
-    </remarks>
+    <summary>認識済みの関数のコレクションを表します。 コレクションの<see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" />個々のメンバーにアクセスするには、オブジェクトを使用します。</summary>
+    <remarks><para>
+        <see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunctions" />は、[認識される関数] ダイアログボックスに含まれる名前のコレクションです。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -61,11 +51,9 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">認識済みの関数の名前の<b>文字列</b>が必要です。</param>
-        <summary>新しい認識済みの関数を作成して返します、<see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" />オブジェクトです。</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" />
-        </returns>
+        <param name="Name">必須の<b>文字列</b>認識される関数の名前です。</param>
+        <summary>新しい認識済みの関数を作成し<see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" /> 、オブジェクトを返します。</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,10 +80,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word._Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,10 +108,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>内の項目数を取得、<see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunctions" />コレクションです。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunctions" />コレクション内の項目数を返します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,12 +136,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>アドインが作成されたアプリケーションを示す 32 ビット<b>の整数</b>を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>オブジェクトが Microsoft Word で作成された場合、 <para>、<see cref="P:Microsoft.Office.Interop.Word.OMathRecognizedFunctions.Creator" />プロパティは文字列"MSWD"を表す 16 進数、値である 4d535744 を返します。 この値は、定数で表すこともできます<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />。</para><para>このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <summary>アドインが作成されたアプリケーションを示す32ビット<b>整数</b>を返します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトが Microsoft Word で作成されている<see cref="P:Microsoft.Office.Interop.Word.OMathRecognizedFunctions.Creator" />場合、このプロパティは、文字列 "MSWD" を表す、16進数値である4D535744 を返します。  この値は定数<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />で表すこともできます。 </para>
+          <para>このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -218,12 +201,9 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>整数値</b>を指定、コレクション内のオブジェクトの位置を表す序数が必要です。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" />コレクション内の指定された項目を表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" />
-        </value>
+        <param name="Index">必要な<b>整数</b>コレクション内のオブジェクトの序数位置を指定します。</param>
+        <summary>コレクション内<see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" />の指定された項目を表すオブジェクト型 (object) の値を取得します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,10 +230,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した親を返します<see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunctions" />オブジェクトです。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunctions" />オブジェクトの親オブジェクトを返します。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

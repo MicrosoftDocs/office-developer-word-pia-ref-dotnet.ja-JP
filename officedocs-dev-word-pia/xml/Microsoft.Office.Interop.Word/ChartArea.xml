@@ -1,13 +1,5 @@
 <Type Name="ChartArea" FullName="Microsoft.Office.Interop.Word.ChartArea">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8e5d44c3a54c0c92e6359a881f578146ce4e4e38" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670939" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartArea" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b5d50c1c6f0528c3eb76e6313abe633c1d55e70f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142307" /></Metadata><TypeSignature Language="C#" Value="public interface ChartArea" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartArea" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartArea" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartArea" />
@@ -27,10 +19,9 @@
   </Attributes>
   <Docs>
     <summary>グラフのグラフ エリアを表します。</summary>
-    <remarks>
-      <para>グラフ エリアには、プロット エリアを含むすべてが含まれます。ただしの<see cref="T:Microsoft.Office.Interop.Word.PlotArea" />オブジェクトは、独自の書式設定、プロット エリアの書式設定は、グラフ エリアをフォーマットしないようにします</para>。
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.Chart.ChartArea" />を返すプロパティの<see cref="T:Microsoft.Office.Interop.Word.ChartArea" />オブジェクトです</para>。
-      <para /></remarks>
+    <remarks><para>グラフ エリアには、プロット エリアを含むすべてが含まれます。 ただし、オブジェクト<see cref="T:Microsoft.Office.Interop.Word.PlotArea" />には独自の書式が設定されているため、プロットエリアを書式設定してもグラフエリアは書式設定されません。</para>
+      <para>オブジェクトを<see cref="P:Microsoft.Office.Interop.Word.Chart.ChartArea" />取得するのにには、プロパティを使用します。 <see cref="T:Microsoft.Office.Interop.Word.ChartArea" /> </para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,10 +47,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。 このプロパティが返すオブジェクト修飾子を使用する場合、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> (ことができますこのプロパティを使用する OLE オートメーション オブジェクトとそのオブジェクトのアプリケーションを取得)、指定したオブジェクトの作成者を表すオブジェクト。 値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用<see cref="T:Microsoft.Office.Interop.Word._Application" />すると、Microsoft Word アプリケーションを表すオブジェクトが返されます。 オブジェクト修飾子を使用する場合、このプロパティは、 <see cref="T:Microsoft.Office.Interop.Word._Application" />指定したオブジェクトの作成元を表すオブジェクトを返します (このプロパティを OLE オートメーションオブジェクトと共に使用して、そのオブジェクトのアプリケーションを返すことができます)。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,13 +84,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトのサイズが変更されたときに、オブジェクト内のテキストにフォント サイズを変更かどうかを決定します。</summary>
-        <value>
-          <b>オブジェクト</b>は、オブジェクト内のテキストは、オブジェクトのサイズを変更したときにフォント サイズを変更する場合、 <b>True</b>に設定します。</value>
-        <remarks>
-          <para>既定値は<b>True</b></para>
-          <para />
-        </remarks>
+        <summary>オブジェクトのサイズが変更されたときに、オブジェクト内のテキストのフォントサイズを変更するかどうかを指定します。</summary>
+        <value>オブジェクトのサイズが変更されたときに、オブジェクト内のテキストのフォントサイズが変更される場合は、 <b>True</b>に設定されている<b>オブジェクト</b>。</value>
+        <remarks><para>既定値は <b>True</b> です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -130,10 +116,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの境界を返します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>オブジェクトの輪郭を返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,9 +143,7 @@
       <Parameters />
       <Docs>
         <summary>オブジェクト全体をクリアします。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,9 +169,7 @@
       <Parameters />
       <Docs>
         <summary>グラフからデータ (系列) をクリアします。書式設定はそのまま残ります。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,9 +195,7 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトの書式設定をクリアします。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,9 +221,7 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトをクリップボードにコピーします。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -272,14 +248,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトが作成されたアプリケーションを示す 32 ビット<b>の整数</b>を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトが Microsoft Word で作成された場合、<see cref="P:Microsoft.Office.Interop.Word.ChartArea.Creator" />プロパティは、16 進数の値である 4d535744 を表す文字列"MSWD"を返します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
-          <para />
-        </remarks>
+        <summary>指定したオブジェクトが作成されたアプリケーションを示す32ビット<b>整数</b>を返します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトが Microsoft Word で作成されている<see cref="P:Microsoft.Office.Interop.Word.ChartArea.Creator" />場合、このプロパティは、文字列 "MSWD" を表す、16進数値である4D535744 を返します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -308,9 +280,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />指定した図形のオブジェクト、または<see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />指定されたグラフの塗りつぶしの書式設定、図形やグラフのプロパティを含むオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />.</value>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />た図形または図形または<see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />グラフの塗りつぶしの書式プロパティを含む、指定したグラフのオブジェクトのオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -340,10 +311,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グラフのグラフ エリアのフォント属性 (フォント名、フォント サイズ、および色) を返します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFont" />
-        </value>
+        <summary>グラフのグラフエリアのフォント属性 (フォント名、フォントサイズ、および色) を返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFont" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -371,10 +340,8 @@
       </ReturnValue>
       <Docs>
         <summary>線、塗りつぶし、およびオブジェクトの書式設定の効果を取得します。
-値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -405,9 +372,7 @@
       </ReturnValue>
       <Docs>
         <summary>返すまたは、オブジェクトのポイント単位で、高さを表す <b>double 型</b> の値を設定します。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -437,10 +402,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>内部の指定されたオブジェクトを返します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Interior" />
-        </value>
+        <summary>指定したオブジェクトの内部を返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -470,10 +433,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、グラフ エリアの左端からのオブジェクトの左端からポイント単位で、距離を表す<b>double 型</b>の値を設定します。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>オブジェクトの左端からグラフエリアの左端までの距離をポイント単位で表す<b>倍精度浮動小数点</b>型 (Double) の値を取得、または設定します。</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -501,9 +462,7 @@
       </ReturnValue>
       <Docs>
         <summary>オブジェクトの名前を表す文字列型 ( <b>String</b> ) の値を返します。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -530,10 +489,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定したオブジェクトの親を返します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -559,9 +516,7 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトを選択します。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -591,10 +546,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、オブジェクトに影があるかどうかを決定する<b>ブール</b>値を設定します。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>オブジェクトが影付きかどうかを表すブール型 (<b>Boolean</b>) の値を取得または設定します。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -624,10 +577,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、(ワークシート) の行 1 の上端、または、グラフ エリア (グラフの場合) の一番上のオブジェクトの上端からポイント単位で、距離を表す<b>double 型</b>の値を設定します。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>オブジェクトの上端から、ワークシート上の行 1 の上までの距離、または、グラフ シート上のグラフ エリアの上までの距離をポイント単位で表す倍精度浮動小数点型 (<b>Double</b>) の値を取得、または設定します。</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -658,9 +609,7 @@
       </ReturnValue>
       <Docs>
         <summary>返すまたは、オブジェクトのポイント単位で、幅を表す <b>double 型</b> の値を設定します。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

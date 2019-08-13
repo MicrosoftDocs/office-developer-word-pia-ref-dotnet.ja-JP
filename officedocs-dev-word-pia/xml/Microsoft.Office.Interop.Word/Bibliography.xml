@@ -1,13 +1,5 @@
 <Type Name="Bibliography" FullName="Microsoft.Office.Interop.Word.Bibliography">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8cc6801a489e0b3acf0509f8400e33174873485c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671023" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Bibliography" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="036a097987b0b8447132cbca8a45c0b2489acd6f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146291" /></Metadata><TypeSignature Language="C#" Value="public interface Bibliography" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Bibliography" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Bibliography" />
   <TypeSignature Language="VB.NET" Value="Public Interface Bibliography" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>文書に添付された使用可能な文献 (現在の資料文献リストに含まれるもの) の一覧、またはアプリケーションで使用可能な文献 (マスター リストに含まれるもの) の一覧を表します。</summary>
-    <remarks>
-      <para>文献目録は、ソースで構成されます。 参照してください、<see cref="T:Microsoft.Office.Interop.Word.Source" />オブジェクトと<see cref="T:Microsoft.Office.Interop.Word.Sources" />コレクションです。詳細については、<a href="HV10118297">ビルディング ・ ブロックの操作</a>を参照してください。</para>
-      <para />
-    </remarks>
+    <remarks><para>文献目録は、ソースで構成されています。  また、 <see cref="T:Microsoft.Office.Interop.Word.Source" />オブジェクトと<see cref="T:Microsoft.Office.Interop.Word.Sources" />コレクションも参照してください。 詳細については、「<a href="HV10118297">文書パーツを</a>使用する」を参照してください。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,10 +46,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word._Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,14 +77,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>文献目録に使用する作業中のスタイルの名前を設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
-        <remarks>
-          <para>詳細については、<a href="HV10118297">ビルディング ・ ブロックの操作</a>を参照してください。</para>
-          <para />
-        </remarks>
+        <summary>文献目録で使用する作業中のスタイルの名前を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><b>String</b></value>
+        <remarks><para>詳細については、「<a href="HV10118297">文書パーツを</a>使用する」を参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -122,14 +106,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>アドインが作成されたアプリケーションを示す 32 ビット整数を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Word で作成されている場合、<b>作成者</b>を返します、16 進数の値である 4d535744 を文字列します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para><b>注</b>: この値は、定数で表すこともできます<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />です</para>。
-          <para /></remarks>
+        <summary>アドインが作成されたアプリケーションを示す 32 ビット整数を返します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトは、Microsoft Word で作成されている場合、 <b>作成者</b> を返します、16 進数の値である 4d535744 を文字列します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para>
+            <b>注</b>: この値は定数<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />で表すこともできます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateUniqueTag">
@@ -153,14 +135,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>資料文献の一意の識別タグを生成し、タグを返します。</summary>
-        <returns>
-          <b>文字列型 (String)</b>
-        </returns>
-        <remarks>
-          <para>詳細については、<a href="HV10118297">ビルディング ・ ブロックの操作</a>を参照してください。</para>
-          <para />
-        </remarks>
+        <summary>文献目録ソースの一意の識別タグを生成し、タグを返します。</summary>
+        <returns><b>String</b></returns>
+        <remarks><para>詳細については、「<a href="HV10118297">文書パーツを</a>使用する」を参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -186,10 +164,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した親オブジェクトを返します。<see cref="T:Microsoft.Office.Interop.Word.Bibliography" />オブジェクトです。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.Bibliography" />オブジェクトの親オブジェクトを返します。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,10 +192,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Sources</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Sources" />文献目録に含まれているすべてのソースを表すコレクション。 読み取り専用です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Sources" />
-        </value>
+        <summary>文献目録<see cref="T:Microsoft.Office.Interop.Word.Sources" />に含まれているすべてのソースを表すコレクションを返します。 値の取得のみ可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Sources" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

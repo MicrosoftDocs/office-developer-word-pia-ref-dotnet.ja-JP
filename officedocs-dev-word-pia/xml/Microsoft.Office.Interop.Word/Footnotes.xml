@@ -1,13 +1,5 @@
 <Type Name="Footnotes" FullName="Microsoft.Office.Interop.Word.Footnotes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a1270ec604789e3a9b5487a8698f15fad638a340" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671601" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Footnotes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ddceb8450faffca19e7338fa2807f77d0c4b3148" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148041" /></Metadata><TypeSignature Language="C#" Value="public interface Footnotes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Footnotes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Footnotes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Footnotes&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.Footnote" />の選択範囲、指定範囲、または文書内のすべての脚注を表すオブジェクト。</summary>
-    <remarks>
-      <para>
-        <b>脚注</b>のプロパティを使用して、 <see cref="T:Microsoft.Office.Interop.Word.Selection" />、 <see cref="T:Microsoft.Office.Interop.Word.Range" />、または<see cref="T:Microsoft.Office.Interop.Word.Document" /><b>Footnotes</b>コレクションを取得するオブジェクトです</para>。
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.Footnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" /><b>Footnotes</b>コレクションに脚注を追加する方法です</para>。
-      <para><b>脚注</b>の使用 (<paramref name="index" />)、<paramref name="index" />インデックス番号は、1 つの<b>Footnot</b>e オブジェクトを取得します。インデックス番号は、選択範囲、指定範囲、または文書内の脚注の位置を表します</para>。
-      <para>文書またはセクションの末尾に配置された脚注は文末脚注と見なされに含まれている、<see cref="T:Microsoft.Office.Interop.Word.Endnotes" />コレクションです</para>。
-      <para /></remarks>
+    <summary>選択範囲、 <see cref="T:Microsoft.Office.Interop.Word.Footnote" />指定範囲、または文書内のすべての脚注を表すオブジェクトのコレクションです。</summary>
+    <remarks><para><see cref="T:Microsoft.Office.Interop.Word.Selection" />、 <see cref="T:Microsoft.Office.Interop.Word.Range" />、または<see cref="T:Microsoft.Office.Interop.Word.Document" />オブジェクトの<b>脚注</b>プロパティを使用して、<b>脚注</b>のコレクションを取得します。</para>
+      <para>脚注を<see cref="M:Microsoft.Office.Interop.Word.Footnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" /> <b>脚注</b>のコレクションに追加するには、メソッドを使用します。</para>
+      <para>1つの<paramref name="index" /> <b>Footnot</b>e オブジェクト<paramref name="index" />を取得するのにには、<b>脚注</b>() を使用します。ここで、はインデックス番号を指定します。 インデックス番号は、選択範囲、指定範囲、または文書内の脚注の位置を表します。</para>
+      <para>文書またはセクションの最後に配置された脚注は文末脚注と見なされ<see cref="T:Microsoft.Office.Interop.Word.Endnotes" /> 、コレクションに含まれます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,15 +53,13 @@
         <Parameter Name="Text" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必要な<b>Range</b>オブジェクトです。 文末脚注記号または脚注記号を付ける範囲を指定します。 範囲を解除した位置を指定することもできます。</param>
-        <param name="Reference">省略可能な<b>オブジェクト</b>です。 脚注記号にする任意の文字を指定します。 この引数を省略すると、Word は自動的に段落番号の脚注記号を挿入します。</param>
+        <param name="Range">必要な<b>Range</b>オブジェクト。 文末脚注記号または脚注記号を付ける範囲を指定します。 範囲を解除した位置を指定することもできます。</param>
+        <param name="Reference">省略可能な<b>オブジェクト</b>です。 脚注記号にする任意の文字を指定します。 この引数を省略すると、自動的に番号が付けられた記号が挿入されます。</param>
         <param name="Text">省略可能な<b>オブジェクト</b>です。 文末脚注または脚注の文字列を指定します。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Footnote" />の範囲に追加する脚注を表すオブジェクト。</summary>
+        <summary>範囲に<see cref="T:Microsoft.Office.Interop.Word.Footnote" />追加する脚注を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>シンボルを指定するのには、<paramref name="Reference" />の引数構文を使用して、{<paramref name="FontName CharNum" />} です。<paramref name="FontName" />は、記号を含むフォントの名前。シンボル] ダイアログ ボックス ([挿入] メニュー) の [フォント] ボックスで、装飾的なフォントの名前が表示されます。<paramref name="CharNum" />を挿入するには、目的の記号の位置に対応する数と 31 の合計は、左から右に数えた記号の表にします。たとえば、オメガ記号 (ω) 内の位置に 56 の表にシンボルのシンボル フォントを指定する引数になります"Symbol 87"です。</para>
-          <para />
-        </remarks>
+        <remarks><para><paramref name="Reference" />引数の記号を指定するには、{<paramref name="FontName CharNum" />} という構文を使用します。 <paramref name="FontName" />は、記号を含むフォントの名前です。 装飾付きフォントの名前は、[記号と特殊文字] ダイアログ ボックス ([挿入] メニュー) の [フォント] ボックスに表示されます。 <paramref name="CharNum" />は、挿入する記号の位置に対応する数値を31の合計とし、記号の表の左から右に数えます。 たとえば、Symbol フォントの記号の表で56位置にオメガ記号 (ω) を指定する場合、引数は "{Symbol 87}" になります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -97,7 +85,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -125,7 +113,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 、脚注の継続時の注を表すオブジェクト。</summary>
+        <summary>脚注の<see cref="T:Microsoft.Office.Interop.Word.Range" />継続時の注を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -153,7 +141,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 、脚注の継続時の境界線を表すオブジェクト。</summary>
+        <summary>脚注の<see cref="T:Microsoft.Office.Interop.Word.Range" />継続時の境界線を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -234,12 +222,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -300,7 +287,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">各オブジェクトの序数位置を示す<b>整数</b>です。</param>
+        <param name="Index">個々のオブジェクトの位置を表す<b>整数型 (Integer</b> ) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -334,11 +321,8 @@
       <Docs>
         <summary>すべての脚注の位置を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Location</b>プロパティには、いずれかを指定できます、<see cref="T:Microsoft.Office.Interop.Word.WdFootnoteLocation" />定数。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Location</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdFootnoteLocation" />定数のいずれかを指定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberingRule">
@@ -367,13 +351,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdNumberingRule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>設定方法の脚注またはセクション区切りの改ページの後に番号が付けられます。</summary>
+        <summary>改ページまたはセクション区切りの後の脚注番号の付け方を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>NumberingRule</b>プロパティには、いずれかを指定できる、<see cref="T:Microsoft.Office.Interop.Word.WdNumberingRule" />定数。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>NumberingRule</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdNumberingRule" />定数のいずれかを指定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberStyle">
@@ -402,13 +383,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdNoteNumberStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または選択範囲、指定範囲、または文書内の脚注の番号のスタイルを設定します。 値の取得および設定が可能です。</summary>
+        <summary>選択範囲、指定範囲、または文書内の脚注の番号のスタイルを設定または返します。 値の取得と設定が可能です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>9 の数字</b>のプロパティには、いずれかを指定できます、<see cref="T:Microsoft.Office.Interop.Word.WdNoteNumberStyle" />定数。これらの定数のいくつかを選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できないがあります。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>NumberStyle</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdNoteNumberStyle" />定数のいずれかを指定できます。 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -460,7 +438,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>脚注の継続時の注を既定にリセットします。 既定値は空 (文字列なし) です。</summary>
+        <summary>脚注の継続時の注を既定の通知にリセットします。 既定値は空 (文字列なし) です。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -485,7 +463,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>既定値を設定するには、脚注の継続時の境界線をリセットします。 既定値は長い横線で、文書の本文と前ページから継続している注を区切ります。</summary>
+        <summary>脚注の継続時の境界線を既定の区切り文字に戻します。 既定値は長い横線で、文書の本文と前ページから継続している注を区切ります。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -537,7 +515,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 、脚注の境界線を表すオブジェクト。</summary>
+        <summary>脚注の<see cref="T:Microsoft.Office.Interop.Word.Range" />境界線を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -568,7 +546,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>メモの開始番号を設定または返します。</summary>
+        <summary>開始メモ番号を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -594,11 +572,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>脚注と文末脚注を文書内のすべての脚注に変換します。</summary>
-        <remarks>
-          <para>範囲の脚注を文末脚注に変換するには、<see cref="M:Microsoft.Office.Interop.Word.Footnotes.Convert" />メソッドです。</para>
-          <para />
-        </remarks>
+        <summary>文書内のすべての脚注を文末脚注に変換します。</summary>
+        <remarks><para>指定範囲の脚注を文末脚注に変換するに<see cref="M:Microsoft.Office.Interop.Word.Footnotes.Convert" />は、メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

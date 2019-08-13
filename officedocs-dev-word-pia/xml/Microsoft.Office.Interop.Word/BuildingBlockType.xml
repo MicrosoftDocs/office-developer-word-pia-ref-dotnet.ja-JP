@@ -1,13 +1,5 @@
 <Type Name="BuildingBlockType" FullName="Microsoft.Office.Interop.Word.BuildingBlockType">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f2365b8a7364baba0b764d8d527d7c87519b569d" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672304" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface BuildingBlockType" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e98fe9144c59325006f66bdcbaa3a460c1f43761" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146193" /></Metadata><TypeSignature Language="C#" Value="public interface BuildingBlockType" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract BuildingBlockType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.BuildingBlockType" />
   <TypeSignature Language="VB.NET" Value="Public Interface BuildingBlockType" />
@@ -26,11 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>文書パーツの種類を表します。 各<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" />オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" />コレクションです。</summary>
-    <remarks>
-      <para>Microsoft Office Word は、文書パーツを整理するのには、タイプ、およびカテゴリを使用します。各文書パーツの種類は、<see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" />定数。使用して、<see cref="P:Microsoft.Office.Interop.Word.BuildingBlockType.Categories" />を特定の文書パーツの種類のアクセス カテゴリのプロパティです。ビルディング ・ ブロックの詳細については、<a href="HV10120827">ビルディング ・ ブロックの操作</a>を参照してください。</para>
-      <para />
-    </remarks>
+    <summary>文書パーツの種類を表します。 各<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" />オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" />コレクションのメンバーです。</summary>
+    <remarks><para>Microsoft Office Word では、文書パーツを整理するために、種類とカテゴリを使用します。 文書パーツの種類は、 <see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" />それぞれ定数で表されます。 特定の<see cref="P:Microsoft.Office.Interop.Word.BuildingBlockType.Categories" />文書パーツの種類のカテゴリにアクセスするには、プロパティを使用します。 文書パーツの詳細については、「<a href="HV10120827">文書パーツを</a>使用する」を参照してください。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,10 +46,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word._Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,10 +74,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Categories</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>文書パーツの種類の分類項目を表すコレクションを返します。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Categories" />
-        </value>
+        <summary>文書パーツの種類のカテゴリを表すコレクションを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Categories" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,12 +102,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>アドインが作成されたアプリケーションを示す 32 ビット<b>の整数</b>を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>オブジェクトが Microsoft Word で作成された場合、 <para>、<see cref="P:Microsoft.Office.Interop.Word.BuildingBlockType.Creator" />します。 文字列を表す 16 進数、値である 4d535744 を返します。 この値は、定数で表すこともできます<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />。</para><para>このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <summary>アドインが作成されたアプリケーションを示す32ビット<b>整数</b>を返します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトが Microsoft Word で作成されている<see cref="P:Microsoft.Office.Interop.Word.BuildingBlockType.Creator" />場合、このプロパティは、文字列 "MSWD" を表す、16進数値の4D535744 を返します。  この値は定数<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />で表すこともできます。 </para>
+          <para>このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -147,10 +132,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内の項目の位置を表す<b>整数</b>を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>コレクション内の項目の位置を表す<b>整数型 (Integer</b> ) の値を取得します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,10 +160,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>文書パーツの種類のローカライズされた名前を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
+        <summary>文書パーツの種類のローカライズされた名前を返します。 読み取り専用です。</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,10 +188,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した親を返します<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" />オブジェクトです。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" />オブジェクトの親オブジェクトを返します。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,13 +1,5 @@
 <Type Name="OMathArgs" FullName="Microsoft.Office.Interop.Word.OMathArgs">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9cb9fb0ddbeaaed3135da719c1d25bf94d0cc716" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671235" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OMathArgs" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d53926b22241062e6717fb428f4fc2cb5b5959f6" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147852" /></Metadata><TypeSignature Language="C#" Value="public interface OMathArgs" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMathArgs" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMathArgs" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMathArgs" />
@@ -52,11 +44,9 @@
         <Parameter Name="BeforeArg" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="BeforeArg">(省略可能)<b>オブジェクト</b>です。 既存の引数で、新しい引数はこの引数の前に追加されます。</param>
-        <summary>可変個の引数を持つ数式に引数を挿入 (<see cref="T:Microsoft.Office.Interop.Word.OMathDelim" /> 、<see cref="T:Microsoft.Office.Interop.Word.OMathEqArray" />オブジェクト)</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.OMath" />
-        </returns>
+        <param name="BeforeArg">オプション<b>オブジェクト</b>。 既存の引数で、新しい引数はこの引数の前に追加されます。</param>
+        <summary>可変個の引数 (<see cref="T:Microsoft.Office.Interop.Word.OMathDelim" />およびオブジェクト) を持つ数式に引数<see cref="T:Microsoft.Office.Interop.Word.OMathEqArray" />を挿入します。</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.OMath" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,9 +74,7 @@
       </ReturnValue>
       <Docs>
         <summary>Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,10 +101,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>内の項目数を取得、<see cref="T:Microsoft.Office.Interop.Word.OMathArgs" />コレクションです。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.OMathArgs" />コレクション内の項目数を返します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,14 +129,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>アドインが作成されたアプリケーションを示す 32 ビット<b>の整数</b>を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Word で作成されている場合、<b>作成者</b>を返します、16 進数の値である 4d535744 を文字列します。 この値は、定数で表すこともできます<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />。</para>
-          <para>このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para><b>注</b>:</para><para /></remarks>
+        <summary>アドインが作成されたアプリケーションを示す32ビット<b>整数</b>を返します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトは、Microsoft Word で作成されている場合、 <b>作成者</b> を返します、16 進数の値である 4d535744 を文字列します。  この値は定数<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />で表すこともできます。 </para>
+          <para>このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para>
+            <b>注</b>: </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -176,11 +161,9 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">(必須)コレクション内のオブジェクトの序数位置を指定する<b>整数</b>です。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.OMath" />コレクション内の指定された項目を表すオブジェクト。</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.OMath" />
-        </returns>
+        <param name="Index">要するコレクション内でのオブジェクトの位置を表す<b>整数型 (Integer</b> ) の値を指定します。</param>
+        <summary>コレクション内<see cref="T:Microsoft.Office.Interop.Word.OMath" />の指定された項目を表すオブジェクト型 (object) の値を取得します。</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.OMath" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,10 +190,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した親オブジェクトを返します。<see cref="T:Microsoft.Office.Interop.Word.OMathArgs" />オブジェクトです。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.OMathArgs" />オブジェクトの親オブジェクトを返します。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,13 +1,5 @@
 <Type Name="Pane" FullName="Microsoft.Office.Interop.Word.Pane">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a6da467368e532f2064abfe444b232f810bf1434" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671521" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Pane" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2c6d2b532972458c15ddcaf3f76f72a0ddd27d36" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147740" /></Metadata><TypeSignature Language="C#" Value="public interface Pane" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Pane" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Pane" />
   <TypeSignature Language="VB.NET" Value="Public Interface Pane" />
@@ -26,10 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>ウィンドウ枠を表します。 <b>ウィンドウ</b> オブジェクトは、 <b>Panes</b> コレクションのメンバーです。 <see cref="Panes#SameCHM" />コレクションには、1 つのウィンドウのすべてのウィンドウ枠が含まれています。</summary>
-    <remarks>
-      <para>
-        <b>ペイン</b>を使用して (<paramref name="Index" />)、<paramref name="Index" />インデックス番号には、単一の<b>Pane</b>オブジェクトを返します。次の例は、アクティブなウィンドウを閉じます</para>。
+    <summary>ウィンドウ枠を表します。 <b>ウィンドウ</b> オブジェクトは、 <b>Panes</b> コレクションのメンバーです。 コレクション<see cref="Panes#SameCHM" />には、1つのウィンドウのすべてのウィンドウ枠が含まれています。</summary>
+    <remarks><para>単一の<b>Pane</b>オブジェクトを取得<paramref name="Index" />するのにには、 <b>Panes</b>(<paramref name="Index" />) を使用します。ここで、はインデックス番号を指定します。 次の例では、作業中のウィンドウを閉じます。</para>
       <code>&lt;span class="label"&gt;If ActiveDocument.ActiveWindow.Panes.Count &amp;gt;= 2 Then _ 
 
 
@@ -286,10 +276,13 @@
 
 
 
-    ActiveDocument.ActiveWindow.ActivePane.Close&lt;/span&gt;</code><para>の<b>追加</b>を使用してメソッドまたは<b>Split</b>プロパティ ウィンドウのペインを追加します。次の使用例は現在のウィンドウ サイズの 20% では、作業中のウィンドウを分割します</para>。
-      <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Panes.Add SplitVertical:=20&lt;/span&gt;</code><para>次の使用例は、半分では、作業中のウィンドウを分割します</para>。
-      <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Split = True&lt;/span&gt;</code><para><b>SplitSpecial</b>プロパティを使用して、別のウィンドウで、コメント、脚注、または文末脚注を表示します</para>。
-      <para>A のウィンドウでは、ウィンドウを分割またはビューは印刷レイアウト表示、および脚注などの情報ではありませんまたはコメントが表示される場合に複数のウィンドウ枠があります。次の例は、標準表示モードでコメント ウィンドウ枠を表示し、ウィンドウを閉じるように求められます</para>。
+    ActiveDocument.ActiveWindow.ActivePane.Close&lt;/span&gt;</code>
+      <para>ウィンドウ枠を追加するのには、 <b>Add</b> メソッドまたは <b>Split</b> プロパティを使用します。次の例では、現在のウィンドウ サイズの 20% では、作業中のウィンドウを分割します。</para>
+      <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Panes.Add SplitVertical:=20&lt;/span&gt;</code>
+      <para>次の使用例は、作業中のウィンドウを半分に分割します。</para>
+      <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Split = True&lt;/span&gt;</code>
+      <para><b>SplitSpecial</b> プロパティを使用すると、コメント、脚注、または文末脚注を別のウィンドウで表示します。</para>
+      <para>ウィンドウが分割されている場合、または印刷レイアウト モード以外の表示モードで脚注やコメントなどの情報が表示されている場合、ウィンドウは複数のウィンドウ枠に分割されています。次の使用例は、標準モードでコメント ウィンドウ枠を表示し、メッセージを表示します。</para>
       <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.View.Type = wdNormalView 
 
 
@@ -2082,7 +2075,8 @@ If ActiveDocument.Comments.Count &amp;gt;= 1 Then
 
 
 
-End If&lt;/span&gt;</code><para /></remarks>
+End If&lt;/span&gt;</code>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -2108,8 +2102,7 @@ End If&lt;/span&gt;</code><para /></remarks>
       <Docs>
         <summary>指定されたウィンドウ枠をアクティブにします。</summary>
         <remarks>To be added.</remarks>
-        <example>
-          <para>この例では、作業中のウィンドウを分割し、最初のペインをアクティブにし、します。</para>
+        <example><para>次の使用例は、作業中のウィンドウを分割し、最初のウィンドウ枠をアクティブにします。</para>
           <code>&lt;span class="label"&gt;Sub SplitWindow() 
 
 
@@ -2880,8 +2873,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
     .Panes(1).&lt;/span&gt;
 &lt;span class="label"&gt;Activate&lt;/span&gt;
-&lt;span class="label"&gt;End WithEnd Sub&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;End WithEnd Sub&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -2907,12 +2899,10 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Visual Basic の CreateObject および GetObject 機能、Visual Basic for Applications プロジェクトから OLE オートメーション オブジェクトへのアクセスを提供します。</para>
-          <para />
-        </remarks>
+        <remarks><para>Visual Basic の CreateObject および GetObject 関数を使用すると、Visual Basic for Applications プロジェクトから OLE オートメーション オブジェクトにアクセスできます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoScroll">
@@ -3003,12 +2993,10 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたペインに文字列を折り返す領域の幅 (ポイント単位で) を返します。読み取り専用 <b>Long</b> です。</summary>
+        <summary>指定されたペインに文字列を折り返す領域の幅 (ポイント単位で) を返します。 読み取り専用 <b>Long</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、Web レイアウト表示されている場合にのみ動作します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは Web レイアウト表示でのみ有効です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -3034,8 +3022,7 @@ End If&lt;/span&gt;</code><para /></remarks>
       <Docs>
         <summary>指定された差し込み印刷用のデータ ファイル、ウィンドウ枠、またはタスクを閉じます。</summary>
         <remarks>To be added.</remarks>
-        <example>
-          <para>作業中のウィンドウを分割する場合、次の使用例は、アクティブなウィンドウを閉じます。</para>
+        <example><para>次の使用例は、作業中の文書ウィンドウが分割されている場合、作業中のウィンドウ枠を閉じます。</para>
           <code>&lt;span class="label"&gt;If ActiveDocument.ActiveWindow.Panes.Count &amp;gt;= 2 Then _ 
 
 
@@ -3293,8 +3280,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
 
     ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
-&lt;span class="label"&gt;Close&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;Close&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -3320,12 +3306,10 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を取得します。値の取得のみ可能です。長整数型 ( <b>Long</b> ) の値を使用します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。 取得のみ可能な <b>Long</b> 値です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Word で作成されている場合、<b>作成者</b>を返します、16 進数の値である 4d535744 を文字列します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
-          <para />
-        </remarks>
+        <remarks><para>オブジェクトは、Microsoft Word で作成されている場合、 <b>作成者</b> を返します、16 進数の値である 4d535744 を文字列します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayRulers">
@@ -3354,16 +3338,11 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、指定したウィンドウのルーラーが表示されます。読み取り/書き込み <b>ブール値</b> です。</summary>
+        <summary><b>True の</b> 場合は、指定したウィンドウのルーラーが表示されます。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>DisplayRulers</b>プロパティは、[表示] メニューの [ルーラーのコマンドと同じです。<b>DisplayRulers</b>が<b>False</b>の場合は、水平方向および垂直方向のルーラーは表示されません、 <b>DisplayVerticalRuler</b>プロパティの状態を無視します。</para>
-          <para />
-        </remarks>
-        <example>
-          <para>この例では、アクティブなペインを印刷レイアウト表示を切り替えるし、水平方向および垂直方向のルーラーを表示します。</para>
+        <remarks><para><b>DisplayRulers</b> プロパティは、[ 表示] メニューの [ルーラーのコマンドと同じです。 <b>DisplayRulers</b> が <b>False</b> の場合は、水平方向および垂直方向のルーラーは表示されません、 <b>DisplayVerticalRuler</b> プロパティの状態を無視します。</para>
+          <para> </para></remarks>
+        <example><para>次の使用例は、作業中のウィンドウ枠を印刷レイアウト表示に切り替え、垂直および水平方向のルーラーを表示します。</para>
           <code>&lt;span class="label"&gt;With ActiveDocument.ActiveWindow.ActivePane 
 
 
@@ -3878,8 +3857,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
     .&lt;/span&gt;
 &lt;span class="label"&gt;DisplayRulers&lt;/span&gt;
-&lt;span class="label"&gt;= True    .DisplayVerticalRuler = TrueEnd With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= True    .DisplayVerticalRuler = TrueEnd With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="DisplayVerticalRuler">
@@ -3908,15 +3886,11 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 場合は、指定したウィンドウの垂直方向のルーラーが表示されます。読み取り/書き込み <b>ブール値</b> です。</summary>
+        <summary><b>True</b> 場合は、指定したウィンドウの垂直方向のルーラーが表示されます。 読み取り/書き込み <b>ブール値</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>垂直方向のルーラーは印刷レイアウト表示でのみ表示されます<b>DisplayRulers</b>プロパティが<b>True</b>に設定されている場合のみとします。</para>
-          <para />
-        </remarks>
-        <example>
-          <para>この例では、アクティブなペインを印刷レイアウト表示を切り替えるし、水平方向および垂直方向のルーラーを表示します。</para>
+        <remarks><para>垂直方向のルーラーは印刷レイアウト表示でのみ表示されます <b>DisplayRulers</b> プロパティが <b>True</b> に設定されている場合のみとします。</para>
+          <para> </para></remarks>
+        <example><para>次の使用例は、作業中のウィンドウ枠を印刷レイアウト表示に切り替え、垂直および水平方向のルーラーを表示します。</para>
           <code>&lt;span class="label"&gt;With ActiveDocument.ActiveWindow.ActivePane 
 
 
@@ -4687,8 +4661,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
     .&lt;/span&gt;
 &lt;span class="label"&gt;DisplayVerticalRuler&lt;/span&gt;
-&lt;span class="label"&gt;= TrueEnd With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= TrueEnd With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -4714,7 +4687,7 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Document" /> 、指定したウィンドウに関連付けられているオブジェクト。 値の取得のみ可能です。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Document" />たウィンドウ枠に関連付けられているオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4742,19 +4715,15 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>Microsoft.Office.Interop.Word.Frameset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Frameset" />フレーム ページ全体またはフレーム ページ上の 1 つのフレームを表すオブジェクト。 値の取得のみ可能です。</summary>
+        <summary>フレームページ<see cref="T:Microsoft.Office.Interop.Word.Frameset" />全体またはフレームページ上の単一のフレームを表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>フレーム ページの作成の詳細についてを参照してください<see cref="Creatingframespages#SameCHM" />。</para>
-          <para />
-          <para />
-        </remarks>
-        <example>
-          <para>この例では、指定したフレームのすぐ右側に新しいフレームを追加します。</para>
+        <remarks><para>フレームページの作成の詳細について<see cref="Creatingframespages#SameCHM" />は、「」を参照してください。</para>
+          <para> </para>
+          <para> </para></remarks>
+        <example><para>次の使用例は、指定したフレームの右側に新しいフレームを追加します。</para>
           <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;Frameset&lt;/span&gt;
-&lt;span class="label"&gt;_    .AddNewFrame wdFramesetNewRight&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;_    .AddNewFrame wdFramesetNewRight&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="HorizontalPercentScrolled">
@@ -4783,11 +4752,10 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>文書の幅に対する割合として水平方向のスクロール位置を設定または返します。読み取り/書き込み <b>時間</b> です。</summary>
+        <summary>文書の幅に対する割合として水平方向のスクロール位置を設定または返します。 読み取り/書き込み <b>時間</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>ウィンドウのアクティブなウィンドウは、文書 1 の左端に、次の使用例によって水平方向にスクロールします。</para>
+        <example><para>次の使用例は、Document1 の作業中のウィンドウ枠を左端までスクロールします。</para>
           <code>&lt;span class="label"&gt;With Windows("Document1") 
 
 
@@ -5302,8 +5270,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
     .ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;HorizontalPercentScrolled&lt;/span&gt;
-&lt;span class="label"&gt;= 0End With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= 0End With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -5329,8 +5296,7 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>長い</b> コレクション内の項目の位置を表す値を返します。読み取り専用です。</summary>
+        <summary><b>長い</b> コレクション内の項目の位置を表す値を返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5365,10 +5331,8 @@ End If&lt;/span&gt;</code><para /></remarks>
         <param name="ToRight">ウィンドウを右にスクロールする画面数を指定します。</param>
         <param name="ToLeft">ウィンドウを左にスクロールする画面数を指定します。</param>
         <summary>指定した画面数だけウィンドウまたはウィンドウ枠をスクロールします。</summary>
-        <remarks>
-          <para>このメソッドはだけ直前または直後後に、水平方向および垂直方向のスクロール バーのスクロール ボックスをクリックします。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドは、垂直および水平方向のスクロール バーのスクロール ボックスの前後でクリックする操作と同じです。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimumFontSize">
@@ -5397,14 +5361,11 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ポイント単位で指定されたペインに表示される最小のフォント サイズを設定または返します。読み取り/書き込み <b>時間</b> です。</summary>
+        <summary>ポイント単位で指定されたペインに表示される最小のフォント サイズを設定または返します。 値の取得と設定が可能な長整数型 (<b>Long</b>) の値です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティでは、Web レイアウト表示で示すように、テキストのみ影響します。[書式設定] ツールバーの表示、印刷に使用するポイント サイズは変更されません。</para>
-          <para />
-        </remarks>
-        <example>
-          <para>この例は、作業中のウィンドウをオンライン表示に設定し、作業中のウィンドウの最小フォント サイズを 12 ポイントに設定します</para>。
+        <remarks><para>This property only affects the text as shown in Web layout view. The point sizes that are displayed on the Formatting toolbar and used for printing aren't changed.</para>
+          <para> </para></remarks>
+        <example><para>次の使用例は、作業中のウィンドウをオンライン レイアウト モードに設定し、作業中のウィンドウ枠のフォント サイズの最小値を 12 ポイントに設定します。</para>
           <code>&lt;span class="label"&gt;With ActiveDocument.ActiveWindow 
 
 
@@ -5919,7 +5880,8 @@ End If&lt;/span&gt;</code><para /></remarks>
 
     .ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;MinimumFontSize&lt;/span&gt;
-&lt;span class="label"&gt;= 12End With&lt;/span&gt;</code><para>次の使用例は、作業中のウィンドウの最小フォント サイズを返します</para>。
+&lt;span class="label"&gt;= 12End With&lt;/span&gt;</code>
+          <para>次の使用例は、作業中のウィンドウ枠のフォント サイズの最小値を取得します。</para>
           <code>&lt;span class="label"&gt;Msgbox _ 
 
 
@@ -6202,12 +6164,9 @@ End If&lt;/span&gt;</code><para /></remarks>
       <Parameters />
       <Docs>
         <summary>指定されたウィンドウ枠に基づいて新しいフレーム ページを作成します。</summary>
-        <remarks>
-          <para>フレーム ページの作成の詳細についてを参照してください<see cref="Creatingframespages#SameCHM" />。</para>
-          <para />
-        </remarks>
-        <example>
-          <para>この例では、"Temp.doc"という名前のドキュメントを開くしが唯一のフレームには、"Temp.doc"が含まれている新しいフレーム ページを作成します。</para>
+        <remarks><para>フレームページの作成の詳細について<see cref="Creatingframespages#SameCHM" />は、「」を参照してください。</para>
+          <para> </para></remarks>
+        <example><para>次の使用例は、"Temp.doc" という名前の文書を開き、唯一のフレームに "Temp.doc" を含む状態のフレーム ページを作成します。</para>
           <code>&lt;span class="label"&gt;Documents.Open "C:\Documents\Temp.doc" 
 
 
@@ -6465,8 +6424,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
 
 ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
-&lt;span class="label"&gt;NewFrameset&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;NewFrameset&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -6492,7 +6450,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Pane</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内の次の文書ウィンドウ枠を表す <b>Pane</b> オブジェクトを返します。読み取り専用です。</summary>
+        <summary>コレクション内の次の文書ウィンドウ枠を表す <b>Pane</b> オブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6520,7 +6478,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Pages</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Pages" /> 、ドキュメント内のページを表すコレクション。</summary>
+        <summary>文書内<see cref="T:Microsoft.Office.Interop.Word.Pages" />のページを表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6548,7 +6506,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <Parameter Name="Up" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Down">下方向にスクロールするページの数です。</param>
+        <param name="Down">下方向にスクロールするページ数を指定します。</param>
         <param name="Up">上方向にスクロールするページ数を指定します。</param>
         <summary>指定されたウィンドウ枠またはウィンドウをページ単位でスクロールします。</summary>
         <remarks>To be added.</remarks>
@@ -6605,7 +6563,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Pane</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内の前の文書ウィンドウ枠を表す <b>Pane</b> オブジェクトを取得します。値の取得のみ可能です。</summary>
+        <summary>コレクション内の前の文書ウィンドウ枠を表す <b>Pane</b> オブジェクトを取得します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6633,7 +6591,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Selection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>選択範囲または文書ウィンドウ内に挿入ポイントを表す <b>Selection</b> オブジェクトを返します。読み取り専用です。</summary>
+        <summary>選択範囲または文書ウィンドウ内に挿入ポイントを表す <b>Selection</b> オブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6693,12 +6651,9 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <Parameters />
       <Docs>
         <summary>指定された文書に基づいて目次を作成し、フレーム ページの左側に作成した新しいフレームに挿入します。</summary>
-        <remarks>
-          <para>フレーム ページの作成の詳細についてを参照してください<see cref="Creatingframespages#SameCHM" />。</para>
-          <para />
-        </remarks>
-        <example>
-          <para>この例は、"Proposal.doc"という名前のファイルを開く、ファイルに基づいてフレーム ページを作成し、(ページの左側にある) にフレームを追加、ファイルの内容のテーブルを含みます。</para>
+        <remarks><para>フレームページの作成の詳細について<see cref="Creatingframespages#SameCHM" />は、「」を参照してください。</para>
+          <para> </para></remarks>
+        <example><para>次の使用例は、"Proposal.doc" という名前のファイルを開き、そのファイルに基づいてフレーム ページを作成し、そのファイルの目次を含むフレームをページの左側に追加します。</para>
           <code>&lt;span class="label"&gt;Documents.Open "C:\Documents\Proposal.doc" 
 
 
@@ -7212,8 +7167,7 @@ ActiveDocument.ActiveWindow.ActivePane.NewFrameset
 
 
 ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
-&lt;span class="label"&gt;TOCInFrameset&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;TOCInFrameset&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="VerticalPercentScrolled">
@@ -7242,11 +7196,10 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>文書全体の長さの割合として垂直方向のスクロール位置を設定または返します。読み取り/書き込み <b>時間</b> です。</summary>
+        <summary>文書全体の長さの割合として垂直方向のスクロール位置を設定または返します。 値の取得と設定が可能な長整数型 (<b>Long</b>) の値です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>次の使用例は垂直方向に、最後に、Document1 のウィンドウのアクティブなウィンドウをスクロールします。</para>
+        <example><para>次の使用例は、Document1 の作業中のウィンドウ枠を下端までスクロールします。</para>
           <code>&lt;span class="label"&gt;With Windows("Document1") 
 
 
@@ -7761,8 +7714,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
 
     .ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;VerticalPercentScrolled&lt;/span&gt;
-&lt;span class="label"&gt;= 100End With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= 100End With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="View">
@@ -7791,8 +7743,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <summary>指定されたペインのビューを表す <b>View</b> オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>この例では、 <b>Windows</b>コレクションの最初のウィンドウに関連付けられているウィンドウのすべての印刷されない文字を使用します。</para>
+        <example><para>この例では、 <b>Windows</b> コレクションの最初のウィンドウに関連付けられているウィンドウのすべての印刷されない文字を使用します。</para>
           <code>&lt;span class="label"&gt;For Each myPane In Windows(1).Panes 
 
 
@@ -8051,8 +8002,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
 
     myPane.&lt;/span&gt;
 &lt;span class="label"&gt;View&lt;/span&gt;
-&lt;span class="label"&gt;.ShowAll = TrueNext myPane&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;.ShowAll = TrueNext myPane&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Zooms">
@@ -8078,14 +8028,11 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Zooms</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="Zooms#SameCHM" /> (標準表示モード、アウトライン表示、印刷レイアウト表示) などの各ビューの倍率オプションを表すコレクション。</summary>
+        <summary>標準表示<see cref="Zooms#SameCHM" /> 、アウトライン表示、印刷レイアウト表示などの各ビューの倍率設定オプションを表すコレクションを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>コレクションの単一のメンバーを取得する方法についてを参照してください<see cref="ReturninganObjectfromaCollection#SameCHM" />。</para>
-          <para />
-        </remarks>
-        <example>
-          <para>次の使用例は、開いている各ウィンドウの 100% を標準表示モードで表示倍率を設定します</para>。
+        <remarks><para>コレクションの単一のメンバーを取得する方法について<see cref="ReturninganObjectfromaCollection#SameCHM" />は、「」を参照してください。</para>
+          <para> </para></remarks>
+        <example><para>次の使用例は、開いている各文書ウィンドウの下書き表示モードでの表示倍率を 100% に設定します。</para>
           <code>&lt;span class="label"&gt;Dim wndLoop as Window 
 
 
@@ -8856,7 +8803,8 @@ For Each wndLoop In Windows
 
     wndLoop.ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;Zooms&lt;/span&gt;
-&lt;span class="label"&gt;(wdNormalView).Percentage = 100Next wndLoop&lt;/span&gt;</code><para>次の使用例は、ページ全体が表示されるので、印刷レイアウト表示で表示倍率を設定します</para>。
+&lt;span class="label"&gt;(wdNormalView).Percentage = 100Next wndLoop&lt;/span&gt;</code>
+          <para>次の使用例は、印刷レイアウト表示でページ全体を表示できるように表示倍率を設定します。</para>
           <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Panes(1).&lt;/span&gt;
 &lt;span class="label"&gt;Zooms&lt;/span&gt;
 &lt;span class="label"&gt;(wdPrintView).PageFit = _    wdPageFitFullPage&lt;/span&gt;</code></example>

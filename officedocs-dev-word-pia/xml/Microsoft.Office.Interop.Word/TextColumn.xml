@@ -1,13 +1,5 @@
 <Type Name="TextColumn" FullName="Microsoft.Office.Interop.Word.TextColumn">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0f7fe58dd0c3656b702f57924033d3dda5aa80ae" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671451" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TextColumn" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="015769d0ee569bc60722ccfff3efdbf14527bd9a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143862" /></Metadata><TypeSignature Language="C#" Value="public interface TextColumn" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextColumn" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TextColumn" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextColumn" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>段組みの 1 つの段を表します。</summary>
-    <remarks>
-      <para>
-        <b>TextColumn</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.TextColumns" />コレクションです。<b>TextColumns</b>コレクションには、文書または文書のセクション内のすべての列が含まれています</para>。
-      <para>を使用して<b>TextColumns</b>(<paramref name="index" />)、<paramref name="index" />インデックス番号は、1 つの<b>TextColumn</b>オブジェクトを返します。インデックス番号は左から右に数えた<b>TextColumns</b>コレクション内の列の位置を表します</para>。使用の
-      <para>、<see cref="M:Microsoft.Office.Interop.Word.TextColumns.Add(System.Object@,System.Object@,System.Object@)" />の列コレクションに列を追加する方法です。既定では、1 つのテキスト列にある<b>TextColumns</b>コレクションです</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.TextColumns.SetCount(System.Int32)" />の列にテキストを配置します</para>。
-      <para /></remarks>
+    <remarks><para><b>TextColumn</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.TextColumns" />コレクションのメンバーです。 <b>TextColumns</b> コレクションには、文書または文書のセクションのすべての段組みが含まれます。</para>
+      <para>1つの<b>TextColumn</b>オブジェクトを取得<paramref name="index" />するのには、 <b>textcolumns</b>(<paramref name="index" />) を使用します。ここで、はインデックス番号を指定します。 インデックス番号は、 <b>TextColumns</b> コレクションでの段組みの段の (左から右に数えた) 位置を表します。</para>
+      <para>列の<see cref="M:Microsoft.Office.Interop.Word.TextColumns.Add(System.Object@,System.Object@,System.Object@)" />コレクションに列を追加するには、メソッドを使用します。 既定では、 <b>Textcolumns</b>コレクションには1つのテキスト列があります。</para>
+      <para>文字列を<see cref="M:Microsoft.Office.Interop.Word.TextColumns.SetCount(System.Int32)" />列に配置するには、メソッドを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,12 +77,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -149,7 +138,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したテキストの列の後の間隔 (ポイント単位) を設定または返します。</summary>
+        <summary>指定したテキスト列の後の間隔 (ポイント単位) の量を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

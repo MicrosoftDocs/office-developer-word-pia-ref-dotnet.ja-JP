@@ -1,13 +1,5 @@
 <Type Name="TablesOfAuthorities" FullName="Microsoft.Office.Interop.Word.TablesOfAuthorities">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b04829d6e20038907ae0e4d3dfef9a45a8da9159" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671433" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TablesOfAuthorities : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fef3d3e5c7ec2a8397d6977b226d1f8051218c96" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143932" /></Metadata><TypeSignature Language="C#" Value="public interface TablesOfAuthorities : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TablesOfAuthorities implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TablesOfAuthorities" />
   <TypeSignature Language="VB.NET" Value="Public Interface TablesOfAuthorities&#xA;Implements IEnumerable" />
@@ -30,12 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.TableOfAuthorities" />(TOA フィールド) の文書の引用文献一覧の表を表すオブジェクト。</summary>
-    <remarks>
-      <para>使用して、 <see cref="T:Microsoft.Office.Interop.Word.TablesOfAuthorities" /><b>TablesOfAuthorities</b>コレクションを返すプロパティです</para>。使用の
-      <para>、<see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />引用文献を文書に追加する方法です。引用文献一覧は、文書の TA (引用文献登録) フィールドから作成されます</para>。
-      <para>使用して<b>TablesOfAuthorities</b>(<paramref name="index" />)、<paramref name="index" />インデックス番号は、1 つの<b>TableOfAuthorities</b>オブジェクトを返します。インデックス番号は、文書内の引用文献一覧の位置を表します</para>。
-      <para /></remarks>
+    <summary>文書内の<see cref="T:Microsoft.Office.Interop.Word.TableOfAuthorities" />引用文献一覧を表すオブジェクト (TOA フィールド) のコレクションです。</summary>
+    <remarks><para><see cref="T:Microsoft.Office.Interop.Word.TablesOfAuthorities" />プロパティを使用して、テーブル<b>ofta</b>コレクションを取得します。</para>
+      <para>文書に<see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />引用文献一覧を追加するには、メソッドを使用します。 引用文献一覧は、文書の TA (引用文献登録) フィールドで構成されています。</para>
+      <para>表<b>ofta</b>(<paramref name="index" />) を使用し<paramref name="index" />ます。ここでインデックス番号は、1つの<b>tableofauthorities</b>オブジェクトを取得するために使用します。 インデックス番号は、文書内の引用文献一覧の位置を表します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -69,23 +60,21 @@
         <Parameter Name="PageNumberSeparator" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必要な<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。 引用文献一覧を表示する範囲を指定します。 引用文献一覧では、範囲が解除されていない場合、範囲が置き換えられます。</param>
-        <param name="Category">省略可能な<b>オブジェクト</b>です。 引用文献一覧に含める分類項目を指定します。 TOA (引用文献一覧) フィールドの \c スイッチに対応します。 0 から 16 までの値は、[索引と目次] ダイアログ ボックス ([参照] を [挿入] メニュー) の [引用文献一覧] タブの [分類] ボックスに表示される項目に対応します。 既定値は 1 です。</param>
-        <param name="Bookmark">省略可能な<b>オブジェクト</b>です。 引用文献一覧の登録を収集するブックマーク名を指定します。 場合<paramref name="Bookmark" />が指定されているエントリは、ブックマーク、ドキュメントの部分からのみ収集します。 TOA (引用文献一覧) フィールドの \b スイッチに対応します。</param>
-        <param name="Passim">省略可能な<b>オブジェクト</b>です。 <b>True の</b> 文献、引用文献一覧の同じ文献を参照しているページが 5 つ以上を交換します。 引用文献一覧 (TOA) フィールドの \p スイッチに対応します。 この引数を省略すると、 <paramref name="Passim" /><b>は False</b>と見なされます。</param>
-        <param name="KeepEntryFormatting">省略可能な<b>オブジェクト</b>です。 の<b>場合は true。</b>引用文献登録から引用文献一覧のエントリの書式を適用します。 TOA (引用文献一覧) フィールドの \f スイッチに対応します。 この引数を省略すると、<paramref name="KeepEntryFormatting" />が<b>真</b>であると見なされます。</param>
+        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 引用文献一覧を表示する範囲を指定します。 指定範囲が解除されていない場合は、指定範囲が引用文献一覧に置き換えられます。</param>
+        <param name="Category">省略可能な<b>オブジェクト</b>です。 引用文献一覧に含める分類項目を指定します。 TOA (引用文献一覧) フィールドの \c スイッチに対応します。 0 から 16 までの値は、[索引と目次] ダイアログ ボックス ([挿入] メニューの [参照]  をポイント) の [引用文献一覧] タブの [分類] ボックスに表示される項目に対応しています。 既定値は 1 です。</param>
+        <param name="Bookmark">省略可能な<b>オブジェクト</b>です。 引用文献一覧の登録を収集するブックマーク名を指定します。 が<paramref name="Bookmark" />指定されている場合、エントリはブックマークでマークされた文書の部分からのみ収集されます。 TOA (引用文献一覧) フィールドの \b スイッチに対応します。</param>
+        <param name="Passim">省略可能な<b>オブジェクト</b>です。 <b>True の</b> 文献、引用文献一覧の同じ文献を参照しているページが 5 つ以上を交換します。 引用文献一覧 (TOA) フィールドの \p スイッチに対応します。 この引数を省略すると<paramref name="Passim" /> 、 <b>False</b>を指定したと見なされます。</param>
+        <param name="KeepEntryFormatting">省略可能な<b>オブジェクト</b>です。 <b>True</b> を設定すると、引用文献登録から引用文献一覧の登録に書式を設定します。 TOA (引用文献一覧) フィールドの \f スイッチに対応します。 この引数を省略すると<paramref name="KeepEntryFormatting" /> 、 <b>True</b>を指定したと見なされます。</param>
         <param name="Separator">省略可能な<b>オブジェクト</b>です。 引用文献一覧の各目次番号とページ番号を区切る 5 文字までの区切り文字を指定します。 TOA (引用文献一覧) フィールドの \d スイッチに対応します。 この引数を省略すると、ハイフン (-) が使われます。</param>
         <param name="IncludeSequenceName">省略可能な<b>オブジェクト</b>です。 引用文献一覧の Sequence (SEQ) フィールド識別子を指定する文字列を指定します。 TOA (引用文献一覧) フィールドの \s スイッチに対応します。</param>
         <param name="EntrySeparator">省略可能な<b>オブジェクト</b>です。 引用文献一覧の各登録とページ番号を区切る 5 文字までの区切り文字を指定します。 TOA (引用文献一覧) フィールドの \e スイッチに対応します。 この引数を省略すると、区切り文字は使われません。</param>
         <param name="PageRangeSeparator">省略可能な<b>オブジェクト</b>です。 引用文献一覧のページ範囲の開始ページ番号と終了ページ番号を区切る 5 文字までの区切り文字を指定します。 TOA (引用文献一覧) フィールドの \g スイッチに対応します。 この引数を省略すると、ダッシュ記号が使われます。</param>
-        <param name="IncludeCategoryHeader">省略可能な<b>オブジェクト</b>です。 <b>真</b> のエントリの各グループの分類名に引用文献一覧 (たとえば、サポート案件) に表示されます。 引用文献一覧 (TOA) フィールドの \h スイッチに対応します。 この引数を省略すると、<paramref name="IncludeCategoryHeader" />が<b>真</b>であると見なされます。</param>
+        <param name="IncludeCategoryHeader">省略可能な<b>オブジェクト</b>です。 <b>真</b> のエントリの各グループの分類名に引用文献一覧 (たとえば、サポート案件) に表示されます。 引用文献一覧 (TOA) フィールドの \h スイッチに対応します。 この引数を省略すると<paramref name="IncludeCategoryHeader" /> 、 <b>True</b>を指定したと見なされます。</param>
         <param name="PageNumberSeparator">省略可能な<b>オブジェクト</b>です。 引用文献一覧のページを参照する場合に、個々のページ番号を区切る 5 文字までの区切り文字を指定します。 TOA (引用文献一覧) フィールドの \l スイッチに対応します。 この引数を省略すると、コンマおよびスペースが使われます。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.TableOfAuthorities" />引用文献一覧を文書に追加のテーブルを表すオブジェクト。</summary>
+        <summary>文書に<see cref="T:Microsoft.Office.Interop.Word.TableOfAuthorities" />追加する引用文献一覧を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>引用文献一覧は、文書の文献一覧のエントリ (TA) のフィールドから作成されます。使用して、 <see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.MarkCitation(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> 、引用文献一覧に含める引用文献をマークするためのメソッドです。</para>
-          <para />
-        </remarks>
+        <remarks><para>引用文献一覧は、文書の文献一覧のエントリ (TA) のフィールドから作成されます。 引用文献<see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.MarkCitation(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" />一覧に含める引用文献を登録するには、メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -111,7 +100,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -167,12 +156,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -201,12 +189,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdToaFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>引用文献一覧を指定した文書の書式を設定または返します。</summary>
+        <summary>指定した文書の引用文献一覧の書式を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdToaFormat" />
-            <b>WdToaFormat</b>定数は、次のいずれか:</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdToaFormat" /><b>WdToaFormat</b>定数は、次のいずれかにすることができます。</para>
           <para>
             <b>wdTOAClassic</b>
           </para>
@@ -222,8 +208,7 @@
           <para>
             <b>wdTOASimple</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -284,7 +269,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">各オブジェクトの序数位置を示す<b>整数</b>です。</param>
+        <param name="Index">個々のオブジェクトの位置を表す<b>整数型 (Integer</b> ) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -315,12 +300,11 @@
         <Parameter Name="Category" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ShortCitation">
-          <b>文字列</b> が必要です。 [引用文献の登録] ダイアログ ボックス ([挿入] メニュー - [参照] - [引用文献一覧] - [引用文献一覧] タブ - [引用文献の登録] ボタン) に表示される、登録する引用文献 (省略形) を指定します。</param>
+        <param name="ShortCitation"><b>文字列</b> が必要です。 [引用文献の登録] ダイアログ ボックス ([挿入] メニュー - [参照] - [引用文献一覧] - [引用文献一覧] タブ - [引用文献の登録] ボタン) に表示される、登録する引用文献 (省略形) を指定します。</param>
         <param name="LongCitation">省略可能な<b>オブジェクト</b>です。 引用文献一覧に表示される、登録する引用文献全体を指定します。</param>
         <param name="LongCitationAutoText">省略可能な<b>オブジェクト</b>です。 引用文献一覧に表示される、引用文献全体の文字列を含む定型句の登録名を指定します。</param>
-        <param name="Category">省略可能な<b>オブジェクト</b>です。 登録した引用文献に関連付ける分類番号を指定します。分類番号 1 は、[ 引用文献の登録] ダイアログ ボックスの [ 分類] ボックスで先頭に表示される分類項目、分類番号 2 は 2 番目の分類項目に対応します。 </param>
-        <summary>すべてのインスタンスの後の TA (引用文献登録) フィールドを挿入、<paramref name="ShortCitation" />のテキストです。</summary>
+        <param name="Category">省略可能な<b>オブジェクト</b>です。 登録した引用文献に関連付ける分類番号を指定します。分類番号 1 は、[ 引用文献の登録] ダイアログ ボックスの [ 分類] ボックスで先頭に表示される分類項目、分類番号 2 は 2 番目の分類項目に対応します。  </param>
+        <summary><paramref name="ShortCitation" />文字列のすべてのインスタンスの後に TA (引用文献登録) フィールドを挿入します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -349,13 +333,12 @@
         <Parameter Name="Category" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必要な<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。 引用文献を登録する位置を指定します。 TA フィールドが挿入した後<paramref name="Range" />。</param>
-        <param name="ShortCitation">
-          <b>文字列</b> が必要です。 [引用文献の登録] ダイアログ ボックス ([挿入] メニュー - [参照] - [引用文献一覧] - [引用文献一覧] タブ - [引用文献の登録] ボタン) に表示される、登録する引用文献 (省略形) を指定します。</param>
+        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 引用文献を登録する位置を指定します。 TA フィールドは、の後<paramref name="Range" />に挿入されます。</param>
+        <param name="ShortCitation"><b>文字列</b> が必要です。 [引用文献の登録] ダイアログ ボックス ([挿入] メニュー - [参照] - [引用文献一覧] - [引用文献一覧] タブ - [引用文献の登録] ボタン) に表示される、登録する引用文献 (省略形) を指定します。</param>
         <param name="LongCitation">省略可能な<b>オブジェクト</b>です。 引用文献一覧に表示される、登録する引用文献全体を指定します。</param>
         <param name="LongCitationAutoText">省略可能な<b>オブジェクト</b>です。 引用文献一覧に表示される、引用文献全体の文字列を含む定型句の登録名を指定します。</param>
-        <param name="Category">省略可能な<b>オブジェクト</b>です。 登録した引用文献に関連付ける分類番号を指定します。分類番号 1 は、[ 引用文献の登録] ダイアログ ボックスの [ 分類] ボックスで先頭に表示される分類項目、分類番号 2 は 2 番目の分類項目に対応します。 </param>
-        <summary>TA (引用文献登録) フィールドを挿入し、としてのフィールドを取得、<see cref="T:Microsoft.Office.Interop.Word.Field" />オブジェクトです。</summary>
+        <param name="Category">省略可能な<b>オブジェクト</b>です。 登録した引用文献に関連付ける分類番号を指定します。分類番号 1 は、[ 引用文献の登録] ダイアログ ボックスの [ 分類] ボックスで先頭に表示される分類項目、分類番号 2 は 2 番目の分類項目に対応します。  </param>
+        <summary>TA (引用文献登録) フィールドを挿入し、フィールドを<see cref="T:Microsoft.Office.Interop.Word.Field" />オブジェクトとして返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -383,9 +366,8 @@
         <Parameter Name="ShortCitation" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ShortCitation">
-          <b>文字列</b> が必要です。 引用文献 (省略形) を指定します。</param>
-        <summary>検索し、指定した引用文献の次のインスタンスを選択します。</summary>
+        <param name="ShortCitation"><b>文字列</b> が必要です。 引用文献 (省略形) を指定します。</param>
+        <summary>指定した引用文の次のインスタンスを検索して選択します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

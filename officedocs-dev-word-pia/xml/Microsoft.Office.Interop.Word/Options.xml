@@ -1,13 +1,5 @@
 <Type Name="Options" FullName="Microsoft.Office.Interop.Word.Options">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="040593c2db689433131a3feed6d744ce0fffb4e8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671535" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Options" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d55f9fffa28378b1a94f9d1548519c4f5b793101" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144282" /></Metadata><TypeSignature Language="C#" Value="public interface Options" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Options" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Options" />
   <TypeSignature Language="VB.NET" Value="Public Interface Options" />
@@ -26,11 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Microsoft Word のアプリケーションとドキュメントのオプションを表します。 プロパティの多くの<see cref="T:Microsoft.Office.Interop.Word.Options" />オブジェクトは、[ツール] メニューの [オプション] ダイアログ ボックス内の項目に対応します。</summary>
-    <remarks>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Word._Application.Options" />を返すプロパティの<see cref="T:Microsoft.Office.Interop.Word.Options" />オブジェクトです。</para>
-      <para />
-    </remarks>
+    <summary>Microsoft Word のアプリケーションおよびドキュメントのオプションを表します。 <see cref="T:Microsoft.Office.Interop.Word.Options" />オブジェクトのプロパティの多くは、[オプション] ダイアログボックス ([ツール] メニュー) 内の項目に対応しています。</summary>
+    <remarks><para>オブジェクトを<see cref="P:Microsoft.Office.Interop.Word._Application.Options" />取得するのにには、プロパティを使用します。 <see cref="T:Microsoft.Office.Interop.Word.Options" /></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddBiDirectionalMarksWhenSavingTextFile">
@@ -59,13 +49,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> テキスト ファイルとして文書を保存するときに Microsoft Word が双方向制御文字を追加する場合。</summary>
+        <summary><b>True の</b> テキスト ファイルとして文書を保存するときに Microsoft Word が双方向制御文字を追加する場合。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>双方向制御文字を含むテキスト ファイルを保存するには、右から左と左から右のプロパティとニュートラル文字の順序が保持されます。</para>
-          <para />
-        </remarks>
+        <remarks><para>文字列の方向を制御する文字と共にテキスト ファイルを保存すると、右から左へ記述する言語および左から右へ記述する言語のプロパティと、その間の文字の順序が維持されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddControlCharacters">
@@ -94,8 +81,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合切り取りやテキストをコピーするときに、双方向制御文字が追加されます。</summary>
+        <summary><b>True の</b> 場合切り取りやテキストをコピーするときに、双方向制御文字が追加されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -126,8 +112,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、Microsoft Word が番号を囲む二重引用符 (') で書式設定します。</summary>
+        <summary><b>True の</b> 場合、Microsoft Word が番号を囲む二重引用符 (') で書式設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -158,14 +143,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>ブール型</b>(C# では<b>bool</b> ) は、既定のプログラムを表示するドキュメントを編集する場合、ユーザーは通知がある場合は<b>True</b>を設定または返します。 読み取り/書き込み。</summary>
+        <summary>返すまたは、ドキュメントを表示および編集するための<b></b>既定のプログラムが Word ではない場合にユーザーに通知される場合は、<b>ブール値</b>(C# では<b>bool</b> ) を設定します。 読み取り/書き込み。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>AlertIfNotDefault</b>の設定は、Microsoft Word で表示し、[Word のオプション] ダイアログ ボックスの [全般] タブでドキュメントを編集するための既定のプログラムがない場合に確認する] の設定に対応しています。([ファイル] タブでオプションを選択します)。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>AlertIfNotDefault</b>の設定は、[Word のオプション] ダイアログボックスの [全般] タブで、[Microsoft Word が文書を表示および編集するための既定のプログラムではない場合に通知する] の設定に対応しています。 ([ファイル] タブのオプションを選択します。)</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowAccentedUppercase">
@@ -194,13 +175,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 場合は、フランス語で文字を大文字に変更するときにアクセント記号を保持します。</summary>
+        <summary><b>True</b> 場合は、フランス語で文字を大文字に変更するときにアクセント記号を保持します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティでは、標準的なフランス語としてマークされているテキストだけが影響します。他のすべての言語では、アクセントは常に保持される場合でも、 <b>AllowAccentedUppercase</b>プロパティが<b>False</b>に設定します</para>。
-          <para>にアクセント記号を削除した後、小文字に文字を変更した場合、アクセント記号は表示されません</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティでは、標準的なフランス語としてマークされているテキストのみに影響します。他のすべての言語では、アクセント記号は <b>AllowAccentedUppercase</b> プロパティが <b>False</b> に設定されている場合でも常に保持されます。</para>
+          <para>アクセント記号を削除した後、小文字に戻すと、アクセント記号は表示されません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowClickAndTypeMouse">
@@ -229,8 +208,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> かどうかは、クリック アンド タイプ機能が有効にします。</summary>
+        <summary><b>True</b> かどうかは、クリック アンド タイプ機能が有効にします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -261,8 +239,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、韓国語の文書でスペル チェック時に助動詞が無視されます。</summary>
+        <summary><b>True の</b> 場合は、韓国語の文書でスペル チェック時に助動詞が無視されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -293,8 +270,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、韓国語の文書でスペル チェック時に複合名詞が無視されます。</summary>
+        <summary><b>True の</b> 場合、韓国語の文書でスペル チェック時に複合名詞が無視されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -325,8 +301,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>ドラッグ アンド ドロップする場合は、選択範囲をコピーまたは移動する使用できます。</summary>
+        <summary><b>True</b>のドラッグアンドドロップ操作を使用して、選択範囲を移動またはコピーできます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -363,14 +338,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、Microsoft Word でのみ保存を文書に変更します。 文書を開く場合は、ドキュメントを再構築する保存された変更が使用されます。</summary>
+        <summary><b>True</b>の場合、Microsoft Word が文書に加えられた変更のみを保存します。 文書を再度開くと、保存された変更を使用して文書が再構築されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>AllowFastSave</b>および<see cref="P:Microsoft.Office.Interop.Word.Options.CreateBackup" />のプロパティを同時に<b>True</b>に設定できません。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>AllowFastSave</b>と<see cref="P:Microsoft.Office.Interop.Word.Options.CreateBackup" />プロパティを同時に<b>True</b>に設定することはできません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowOpenInDraftView">
@@ -399,15 +370,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>ブール値</b> を表す下書き表示で文書を開くユーザーを許可するかどうかを設定または返します。読み取り/書き込み。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>このプロパティは、下書きビュー] チェック ボックスで、[Word のオプション] ダイアログ ボックスで文書を開く許可] に対応します。</para>
-          <para />
-        </remarks>
+        <summary><b>ブール値</b> を表す下書き表示で文書を開くユーザーを許可するかどうかを設定または返します。 読み取り/書き込み。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>このプロパティは、[ Word のオプション] ダイアログ ボックスの [ 文書を下書き表示で開けるようにする] チェック ボックスに対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowPixelUnits">
@@ -436,8 +402,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>真</b> の測定値をサポートする HTML 機能の既定の計測単位としてピクセルが使用する場合。</summary>
+        <summary><b>真</b> の測定値をサポートする HTML 機能の既定の計測単位としてピクセルが使用する場合。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -468,8 +433,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> は、Microsoft Word が閲覧レイアウト表示で文書を開くことを示します。 [ 全般] タブ、[ オプション] ダイアログ ボックスの [ 閲覧レイアウトで起動する] チェック ボックスに対応します。</summary>
+        <summary><b>True</b> は、Microsoft Word が閲覧レイアウト表示で文書を開くことを示します。 [ 全般] タブ、[ オプション] ダイアログ ボックスの [ 閲覧レイアウトで起動する] チェック ボックスに対応します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -537,8 +501,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>場合は、Microsoft Word は、マウスの動きをアニメーション化アニメーション カーソルを使用してとグラウンドでの保存などのアクションをアニメーション化し検索および置換処理。</summary>
+        <summary><b>True</b>の場合、Microsoft Word はマウスの動きをアニメーション化し、アニメーション化されたカーソルを使用し、バックグラウンド保存、検索と置換の操作などのアクションをアニメーション化します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -566,7 +529,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -597,13 +560,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、英数字に東アジア言語のフォントが適用されます。</summary>
+        <summary><b>True の</b> 場合は、英数字に東アジア言語のフォントが適用されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、編集のための東アジア言語を選択した場合にのみ適用されます。このプロパティが<b>False</b>であり、指定した範囲に東アジアのフォントを適用する場合、Word は範囲内のどの英数字にフォントを適用されません。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、編集のための東アジア言語を選択した場合にのみ適用されます。このプロパティが <b>False</b> であり、指定した範囲に東アジアのフォントを適用する場合、Word は範囲内のどの英数字にフォントを適用されません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ArabicMode">
@@ -632,7 +592,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdAraSpeller</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>アラビア語のスペル チェックのモードを設定または返します。</summary>
+        <summary>アラビア語のスペルチェックのモードを設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -694,14 +654,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>描画キャンバス内の新しく作成した図形を描画します。</summary>
+        <summary><b>True</b>を描画キャンバスに新しく作成された図形を描画します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>AutoCreateNewDrawings</b>プロパティは、Word 内から追加された図形をのみ影響します。追加される場合は、プログラムを使用して図形を追加すると、このオプションを<b>True</b>または<b>False</b>に設定するかどうかに関係なく、コードで指定しました。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>AutoCreateNewDrawings</b> プロパティは、Word で追加した図形にのみ適用されます。 プログラムによって追加された図形は、このオプションが<b>True</b>または<b>False</b>に設定されているかどうかに関係なく、コードで指定したとおりに追加されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatApplyBulletedLists">
@@ -730,8 +686,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>場合文字 (アスタリスク、ハイフンなど以上の記号が付いて)] ダイアログ ボックス ([書式] メニュー) の番号付けをすると段落は、箇条書きの行頭文字に置き換えられます。 一覧の先頭に Word 文書または指定範囲が自動的にフォーマットします。</summary>
+        <summary><b>True</b>の場合、Microsoft Word が文書または指定範囲の書式を自動的に設定すると、箇条書き段落の先頭の文字 (アスタリスク、ハイフン、大なり記号など) は、[箇条書きと段落番号] ダイアログボックス ([書式] メニュー) の行頭文字に置き換えられます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -762,8 +717,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、Microsoft Word 文書または指定範囲の書式が自動的に設定すると、先頭行のインデントに段落の先頭に入力されたスペースに置き換えられます。</summary>
+        <summary><b>True の</b> 場合、Microsoft Word 文書または指定範囲の書式が自動的に設定すると、先頭行のインデントに段落の先頭に入力されたスペースに置き換えられます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -794,8 +748,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、Word 文書または指定範囲の書式を自動的に見出しスタイルが自動的に適用する場合です。</summary>
+        <summary><b>True の</b> 場合、Word 文書または指定範囲の書式を自動的に見出しスタイルが自動的に適用する場合です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -826,7 +779,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word 文書または指定範囲の書式を自動的にするとき、 <b>true</b>に自動的にスタイルを適用する場合のメッセージが一覧表示されます。</summary>
+        <summary><b>True</b>の場合は、文書または指定範囲が自動的に書式設定されるときに、スタイルが自動的に適用されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -857,7 +810,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>の<b>場合は true。</b>スタイルが自動的に Microsoft Word 文書または指定範囲の書式を自動的にするとき、見出しや箇条書きのない段落に適用される場合。</summary>
+        <summary><b>True</b>の場合は、Microsoft Word が文書または指定範囲の書式を自動的に設定すると、見出しまたはリスト項目ではない段落にスタイルが自動的に適用されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -888,8 +841,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の場合</b> 場合は、一連の 3 つ以上のハイフン (-)、等号 (=)、またはアンダー スコア (_) 文字が自動的に置き換えられます罫線 ENTER キーを押したとき。</summary>
+        <summary><b>True の場合</b> 場合は、一連の 3 つ以上のハイフン (-)、等号 (=)、またはアンダー スコア (_) 文字が自動的に置き換えられます罫線 ENTER キーを押したとき。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -920,8 +872,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>の場合行頭文字 (アスタリスク、ハイフンなど以上の記号が付いて) を入力すると、箇条書きと段落番号] ダイアログ ボックス ([書式] メニュー) の行頭文字に置き換えられます。</summary>
+        <summary><b>True</b>の場合は、行頭文字 (アスタリスク、ハイフン、大なり記号など) を入力すると、[箇条書きと段落番号] ダイアログボックス ([書式] メニュー) の行頭文字に置き換えられます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -952,8 +903,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 入力手紙の結語結語のスタイルを自動的に適用します。</summary>
+        <summary><b>True</b> 入力手紙の結語結語のスタイルを自動的に適用します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -984,8 +934,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True を指定</b> すると自動的に適用される日付の形式の日付を入力します。</summary>
+        <summary><b>True を指定</b> すると自動的に適用される日付の形式の日付を入力します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1016,8 +965,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 先頭行のインデント、段落の先頭に入力したスペースを自動的に置き換えることです。</summary>
+        <summary><b>True の</b> 先頭行のインデント、段落の先頭に入力したスペースを自動的に置き換えることです。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1048,8 +996,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、自動的に設定する見出しスタイルを入力するとします。</summary>
+        <summary><b>True の</b> 場合は、自動的に設定する見出しスタイルを入力するとします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1080,13 +1027,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、段落書式が自動的に番号のリストから [箇条書きと段落番号の番号付けスキームと入力した内容に応じて、ダイアログ ボックス ([書式] メニュー)。</summary>
+        <summary><b>True</b>の場合は、[箇条書きと段落番号] ダイアログボックス ([書式] メニュー) からの番号付きリストとして段落番号が自動的に書式設定されます。入力内容によって異なります。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>などの場合、段落が「1.1」で始まる、Microsoft Word が自動的に挿入「1.2」とタブ文字、ENTER キーを押した後。</para>
-          <para />
-        </remarks>
+        <remarks><para>たとえば、段落が "1.1" で始まり、tab 文字がある場合は、ENTER キーを押すと、"1.2" とタブ文字が自動的に挿入されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatAsYouTypeApplyTables">
@@ -1115,8 +1059,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合はプラス記号、ハイフン、別のプラス記号、およびを入力し、ENTER キーを押すと、テーブルが Microsoft Word によって自動的に作成します。 プラス記号は列の罫線をなり、ハイフンの列の幅になります。</summary>
+        <summary><b>True</b>の場合は、プラス記号、一連のハイフン、別のプラス記号などを入力し、enter キーを押すと、表が自動的に作成されます。 プラス記号は列の罫線をなり、ハイフンの列の幅になります。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1147,8 +1090,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> ユーザーが手紙の頭語を入力すると自動的にレター ウィザードが起動するかを閉じるします。</summary>
+        <summary><b>True</b> ユーザーが手紙の頭語を入力すると自動的にレター ウィザードが起動するかを閉じるします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1179,8 +1121,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合手動書式に基づいて新しいスタイルが自動的に作成します。</summary>
+        <summary><b>True</b>の場合は、手動による書式設定に基づいて新しいスタイルが自動的に作成されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1242,7 +1183,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>場合は<b>true を指定</b>文字に書式を適用] ボックスの一覧の次の項目のリスト項目の先頭に Word が繰り返されます。</summary>
+        <summary><b>True</b>の場合、Microsoft Word は、リストアイテムの先頭に適用される文字書式を次のリストアイテムに繰り返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1273,8 +1214,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> ユーザーがメモ型の見出しを入力したときに、対応する結語が自動的に挿入します。</summary>
+        <summary><b>True</b> ユーザーがメモ型の見出しを入力したときに、対応する結語が自動的に挿入します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1305,8 +1245,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 「とき」または""文字を入力するときに"ijou"の文字を自動的に挿入します。</summary>
+        <summary><b>True</b>の場合、ユーザーが "ki" または "a" の文字を入力すると、"ijou" の文字が自動的に挿入されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1337,8 +1276,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> を自動的に修正が正しく対応するかっこ。</summary>
+        <summary><b>True</b> を自動的に修正が正しく対応するかっこ。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1369,8 +1307,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> に長音とダッシュを自動的に修正されます。</summary>
+        <summary><b>True</b> に長音とダッシュを自動的に修正されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1401,8 +1338,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、入力した分数が分数が現在の文字を入力するように設定に置き換えられます。 たとえば、「1/2」が置き換えられます「½」にします。</summary>
+        <summary><b>True</b>の場合、入力した分数が現在の文字セットの分数に置き換えられます。 たとえば、"1/2" は "1/2" に置き換えられます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1433,13 +1369,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、電子メール アドレス、サーバーと共有名 (UNC パス)、およびインターネット アドレス (Url) が自動的にハイパーリンクに変更を入力するとします。</summary>
+        <summary><b>True の</b> 場合、電子メール アドレス、サーバーと共有名 (UNC パス)、およびインターネット アドレス (Url) が自動的にハイパーリンクに変更を入力するとします。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Microsoft Word では、ような電子メール アドレス、UNC、または URL をハイパーリンクにするテキストを変更します。Word は、ハイパーリンクの有効性をチェックしません。</para>
-          <para />
-        </remarks>
+        <remarks><para>電子メールアドレス、UNC、または URL のようなテキストがハイパーリンクに変更されます。 ハイパーリンクが有効であるかどうかは検査されません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatAsYouTypeReplaceOrdinals">
@@ -1468,8 +1401,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は入力時に序数の接尾語"st"、"nd"、"rd"、および"th"が文字に上付き文字に置き換えられます。 たとえば、"1 st"に置き換えられます「1」の"st"が上付き文字として書式設定された後します。</summary>
+        <summary><b>True</b>の場合は、序数サフィックス "st"、"nd"、"rd"、および "th" は、入力した文字と同じ文字に置き換えられます。 たとえば、"1 st"に置き換えられます「1」の"st"が上付き文字として書式設定された後します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1500,8 +1432,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合斜体の文字は文字を入力するように書式を自動的に置き換えられます。 たとえば、「*太字*」、 <b>「太字」</b>に変更し、"_下線_"は、「下線」に変更されます。</summary>
+        <summary><b>True</b>の場合は、手動の強調文字は、入力した文字書式に自動的に置き換えられます。 たとえば、"*bold*" が<b>"bold</b> " に変更され、"_下線_" が "下線" に変更されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1532,8 +1463,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は直線の引用符は自動的に変更 (左右の引用符を入力すると、します。</summary>
+        <summary><b>True の</b> 場合は直線の引用符は自動的に変更 (左右の引用符を入力すると、します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1564,13 +1494,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は、半角ダッシュ (-) または全角ダッシュ (-) を持つ 2 つの連続するハイフン (-) が置き換えられますを入力します。</summary>
+        <summary><b>True</b>の場合、2つの連続するハイフン (--) は、半角ダッシュ (-) または全角ダッシュ (—) に置き換えられます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ハイフンは先頭と末尾のスペースが入力されている場合置換ハイフン半角ダッシュです。末尾のスペースがない場合、ハイフンは全角ダッシュに置き換えられます。</para>
-          <para />
-        </remarks>
+        <remarks><para>ハイフンの先頭と末尾にスペースが入力されている場合は、ハイフンは半角ダッシュに置き換えられます。末尾にスペースが含まれていない場合は、ハイフンは全角ダッシュに置き換えられます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatDeleteAutoSpaces">
@@ -1599,8 +1526,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、Microsoft Word 文書または指定範囲の書式を自動的に日本語と英数字の間に挿入したスペースが削除される場合。</summary>
+        <summary><b>True の</b> 場合、Microsoft Word 文書または指定範囲の書式を自動的に日本語と英数字の間に挿入したスペースが削除される場合。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1631,8 +1557,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>Microsoft Word 文書または指定範囲の書式を自動的にするときにかっこの組み合わせが正しくが修正された場合です。</summary>
+        <summary><b>True</b>の場合、Microsoft Word で文書または指定範囲の書式が自動的に設定されると、誤って組のかっこが修正されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1663,8 +1588,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、Word で開いたときに Microsoft Word がテキスト形式の電子メール メッセージに自動的に書式設定です。</summary>
+        <summary><b>True</b>の場合は、テキスト形式の電子メールメッセージを word で開いたときに書式が自動的に設定されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1695,8 +1619,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>真</b>のスタイルを適用した場合ときに維持される Microsoft Word 文書または指定範囲の書式を自動的にします。</summary>
+        <summary><b>True</b>の場合、Microsoft Word が文書または指定範囲の書式を自動的に設定すると、既に適用されているスタイルが保持されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1727,8 +1650,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 長音とダッシュを使用して、修正すると、Microsoft Word 文書または指定範囲の書式を自動的に。</summary>
+        <summary><b>True</b> 長音とダッシュを使用して、修正すると、Microsoft Word 文書または指定範囲の書式を自動的に。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1759,8 +1681,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、入力した分数が分数文字に変換現在の文字セットの場合、Microsoft Word 文書または指定範囲の書式を自動的に置き換えられます。 たとえば、「1/2」が置き換えられます「½」にします。</summary>
+        <summary><b>True</b>の場合は、入力した分は、Microsoft Word で文書または指定範囲の書式が自動的に設定されるときに、現在の文字セットの分数に置き換えられます。 たとえば、"1/2" は "1/2" に置き換えられます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1791,13 +1712,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、電子メール アドレス、サーバー名と共有名 (UNC パス)、およびインターネット アドレス (Url とも呼ばれます) が自動的にするたびに書式設定された文書または指定範囲に Microsoft Word のオート フォーマット。</summary>
+        <summary><b>True</b>の場合、電子メールアドレス、サーバー名と共有名 (UNC パス)、およびインターネットアドレス (url とも呼ばれます) は、Microsoft Word の文書または指定範囲のオートフォーマット時に自動的に書式設定されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Word では、ような電子メール アドレス、UNC、または URL をハイパーリンクにするテキストを変更します。Word は、ハイパーリンクの有効性をチェックしません。</para>
-          <para />
-        </remarks>
+        <remarks><para>電子メール アドレス、UNC、または URL と類似した文字列はハイパーリンクに変更されます。ハイパーリンクが有効であるかどうかは検査されません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatReplaceOrdinals">
@@ -1826,8 +1744,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、序数の接尾語"st"、"nd"、"rd"、および"th"は、文書または指定範囲の書式が自動的に設定すると文字に上付き文字に置き換えられます。 たとえば、"1 st"に置き換えられます「1」の"st"が上付き文字として書式設定された後します。</summary>
+        <summary><b>True の</b> 場合は、序数の接尾語"st"、"nd"、"rd"、および"th"は、文書または指定範囲の書式が自動的に設定すると文字に上付き文字に置き換えられます。 たとえば、"1 st"に置き換えられます「1」の"st"が上付き文字として書式設定された後します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1858,8 +1775,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は、斜体の文字は、文字の場合、Microsoft Word 文書または指定範囲の書式を自動的に書式設定に置き換えられます。 たとえば、「*太字*」、 <b>「太字」</b>に変更し、"_下線_"は、「下線」に変更されます。</summary>
+        <summary><b>True</b>の場合、Microsoft Word で文書または指定範囲の書式が自動的に設定されると、手動強調文字が文字書式に置き換えられます。 たとえば、"*bold*" が<b>"bold</b> " に変更され、"_下線_" が "下線" に変更されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1890,8 +1806,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は、左右の引用符に二重引用符を自動的に変更すると Microsoft Word 文書または指定範囲が自動的にフォーマットをマークします。</summary>
+        <summary><b>True</b>の場合、Microsoft Word で文書または指定範囲の書式が自動的に設定されると、直線の引用符が自動的にスマート (波) の引用符に変更されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1922,8 +1837,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、Microsoft Word 文書または指定範囲の書式を自動的に半角ダッシュ (-) または全角ダッシュ (-) で 2 つの連続するハイフン (-) が置き換えられた場合。</summary>
+        <summary><b>True</b>の場合、Microsoft Word で文書または指定範囲が自動的に書式設定されると、2つの連続するハイフン (-) または全角ダッシュ (-) に置き換えられます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1954,13 +1868,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は Microsoft Word に自動的にすると、入力内容に一致するようにキーボードの言語を切り替えるには、時間が与えられています。</summary>
+        <summary><b>True</b>の場合は、入力した文字と一致するようにキーボードの言語が自動的に切り替えられます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>必要がありますこのプロパティを使用するのには、<see cref="P:Microsoft.Office.Interop.Word._Application.CheckLanguage" />プロパティが True に設定します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティを使用するには、 <see cref="P:Microsoft.Office.Interop.Word._Application.CheckLanguage" />プロパティを True に設定する必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoWordSelection">
@@ -1989,8 +1900,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は一度に 1 つの文字ではなく一度に 1 つの単語を選択するドラッグします。</summary>
+        <summary><b>True の</b> 場合は一度に 1 つの文字ではなく一度に 1 つの単語を選択するドラッグします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2027,13 +1937,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>をバック グラウンドで Web ドキュメントを開きます。</summary>
+        <summary><b>True</b>のバックグラウンドで Web ドキュメントを開きます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Microsoft Word は、バック グラウンドで大きな Web ドキュメントを開くときは、中には、ユーザーを入力し、別のドキュメントでコマンドを選択して続行できます。ただし、Web ドキュメントは完全に開いたとき、開かれるドキュメントの Word の Visual Basic for Applications の関数は無効です。</para>
-          <para />
-        </remarks>
+        <remarks><para>Word が大きな Web ドキュメントをバックグラウンドで開いている間に、ユーザーは別の文書で入力やコマンドの選択を続行することができます。ただし、Web ドキュメントが完全に開くまでは、その文書に対して Word の Visual Basic for Applications の機能は使用できません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundSave">
@@ -2062,8 +1969,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>場合は、Microsoft Word は、バック グラウンドで文書を保存します。 Word は、バック グラウンドで保存するときを入力し、コマンドを選択を続行できます。</summary>
+        <summary><b>True</b>の場合、Microsoft Word によってバックグラウンドで文書が保存されます。 Word は、バック グラウンドで保存するときを入力し、コマンドを選択を続行できます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2094,15 +2000,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>または、[ <b>資料文献の管理</b>] ダイアログ ボックスでソースを表示する順序を表す 文字列 を設定します。読み取り/書き込み。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
-        <remarks>
-          <para>
-            <b>BibliographySort</b>プロパティに指定できる値は、作成者、タイトル、タグ、または 1 年です。</para>
-          <para />
-        </remarks>
+        <summary>または、[ <b>資料文献の管理</b>] ダイアログ ボックスでソースを表示する順序を表す 文字列 を設定します。 値の取得と設定が可能です。</summary>
+        <value><b>String</b></value>
+        <remarks><para><b>BibliographySort</b>プロパティには、作成者、タイトル、タグ、または年の値を指定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BibliographyStyle">
@@ -2131,10 +2032,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>文献目録の書式設定に使用するスタイルの名前を表す文字列型 (<b>String</b>) の値を取得または設定します。値の取得および設定が可能です。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
+        <summary>文献目録の書式設定に使用するスタイルの名前を表す文字列型 (<b>String</b>) の値を取得または設定します。 値の取得と設定が可能です。</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2170,8 +2069,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、黒い背景に白い文字としてテキストが表示されます。</summary>
+        <summary><b>True</b>の場合、Microsoft Word は青の背景に白の文字を表示します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2202,12 +2100,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPortugueseReform</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはポルトガル語 (ブラジル) のスペル チェックのモードを設定します。</summary>
-        <value>ブラジルのポルトガル語のスペル チェックのモードです。</value>
-        <remarks>
-          <para>読み取り/書き込み。ポルトガル語 (ブラジル) のモードの横にあるドロップ ダウン ボックスで項目を選択すると同じ効果を持つこのプロパティを設定する: Word のオプション ダイアログ ボックス (文章校正、Microsoft Office プログラムでスペルを修正する場合)。</para>
-          <para />
-        </remarks>
+        <summary>ポルトガル語 (ブラジル) のスペルチェックのモードを取得または設定します。</summary>
+        <value>ポルトガル語 (ブラジル) スペルチェックのモードを示します。</value>
+        <remarks><para>値の取得と設定が可能です。 このプロパティを設定すると、[Word のオプション] ダイアログボックス ([文章校正] の [Microsoft Office プログラムのスペルチェック]) の横のドロップダウンボックスで項目を選択した場合と同じ結果になります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ButtonFieldClicks">
@@ -2267,8 +2163,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は、Microsoft Word が文章校正も行うし、エラーの入力時に自動的にマークを付けます。</summary>
+        <summary><b>True</b>の場合、Microsoft Word は、文章校正を行い、入力すると自動的にエラーをマークします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2299,13 +2194,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、Word は、スペル チェック中に文法をチェックします。</summary>
+        <summary><b>True</b>の場合、スペルチェック時に文章校正を行います。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティを制御するかどうか文章校正スペル チェック] コマンド ([ツール] メニュー) を使用してスペルをチェックするとします</para>。スペル チェックと文章校正プログラムによって、<b>スペル チェック</b>のメソッドを使用する
-          <para>、 <see cref="T:Microsoft.Office.Interop.Word.Application" />、 <see cref="T:Microsoft.Office.Interop.Word.Document" />、または<see cref="T:Microsoft.Office.Interop.Word.Range" />のみスペル チェックを行うし、<b>アプリケーション</b>、<b>ドキュメント</b>の<b>CheckGrammar</b>メソッドを使用するオブジェクトまたは文章校正とスペル チェックの両方を確認するのには<b>range</b>オブジェクトです</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティを使用して、[スペル チェック] コマンド ([ツール] メニュー) を使ってスペル チェックを行うときに文章校正も行うかどうかを制御します。</para>
+          <para>プログラムでスペルチェックまたは文章校正を行うには、、 <see cref="T:Microsoft.Office.Interop.Word.Application" />、 <see cref="T:Microsoft.Office.Interop.Word.Document" />または<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトの<b>checkspelling</b>メソッドを使用して、スペルチェックのみを行い、<b>アプリケーション</b>、<b>ドキュメント</b>、または<b></b> <b>の checkspelling を使用します。範囲</b>オブジェクトを指定して、文章校正とスペルチェックを行います。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckHangulEndings">
@@ -2334,13 +2227,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、Word は自動的にハングルの文末が検出され、ハングルから漢字への変換時に無視します。</summary>
+        <summary><b>True</b>の場合は自動的にハングルの文末が検出され、ハングルから漢字への変換中に無視されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ハングルを漢字に変換する、このプロパティは無視されます。</para>
-          <para />
-        </remarks>
+        <remarks><para>漢字からハングルへの変換の場合、このプロパティは無効になります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckSpellingAsYouType">
@@ -2369,13 +2259,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 場合は、Microsoft Word のスペル チェックし、入力されると自動的にエラーをマークします。</summary>
+        <summary><b>True</b> 場合は、Microsoft Word のスペル チェックし、入力されると自動的にエラーをマークします。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティがスペル ミスをマークが画面に表示するに設定する必要があります、<see cref="P:Microsoft.Office.Interop.Word._Document.ShowSpellingErrors" />プロパティを<b>True</b>にします。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティはスペルミスをマークしますが、それを画面に表示するに<see cref="P:Microsoft.Office.Interop.Word._Document.ShowSpellingErrors" />は、このプロパティを<b>True</b>に設定する必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CommentsColor">
@@ -2404,7 +2291,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、 <see cref="T:Microsoft.Office.Interop.Word.WdColorIndex" /> 、ドキュメント内のコメントの色を表す定数です。</summary>
+        <summary>文書内のコメント<see cref="T:Microsoft.Office.Interop.Word.WdColorIndex" />の色を表す定数を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2435,8 +2322,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、その前に [ファイルの変換] ダイアログ ボックスが表示されます開くか、Word 文書やテンプレート以外のファイルを挿入します。 ファイルの変換] ダイアログ ボックスでは、ユーザーは、形式には、変換元のファイルを選択します。</summary>
+        <summary><b>True</b>の場合は、word 文書やテンプレート以外のファイルを開くか、または挿入する前に、[ファイルの変換] ダイアログボックスが表示されます。 ファイルの変換] ダイアログ ボックスでは、ユーザーは、形式には、変換元のファイルを選択します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2467,14 +2353,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>単語の文脈や周囲の単語に基づいてスペルをチェックする文脈に応じたスペル チェックを使用するかどうかを表すブール型 (<b>Boolean</b>) の値を設定します。値の取得および設定が可能です。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
-        <remarks>
-          <para>コンテキストのスペル チェックは、単語とスペルが正しいかどうか判断する文章内での場所の構造を識別します。標準のスペル チェック機能を見つけることができませんのエラーを検索することができます。などのユーザーは、「スーパー ボウル」ではなく"優れた owl"を入力する可能性があります。"Superb"と"owl"は正しくスペルが正しい単語であるため標準のスペル チェックがエラーを検出できません。 文のコンテキスト内の単語と周囲の単語に基づいて、コンテキストのスペル チェック機能を判断正しい単語が"super"と"bowl"は、し、変更を自動的にします</para>。
-          <para>このプロパティは、[Word のオプション] ダイアログ ボックスの [文章校正] タブで使用の文脈に応じたスペル チェック ボックスに対応します</para>。
-          <para /></remarks>
+        <summary>単語の文脈や周囲の単語に基づいてスペルをチェックする文脈に応じたスペル チェックを使用するかどうかを表すブール型 (<b>Boolean</b>) の値を設定します。 値の取得と設定が可能です。</summary>
+        <value><b>String</b></value>
+        <remarks><para>文脈に応じたスペル チェックでは、単語の構造と文中での位置を識別して、スペルが正しいかどうかを判断します。標準的なスペル チェックでは見つけることができない誤りを見つけることができます。たとえば、ユーザーが "super bowl" を誤って "superb owl" と入力したとします。"superb" と "owl" はいずれもスペルが正しい単語であるため、標準的なスペル チェックでは誤りを見つけることができません。文脈に応じたスペル チェックでは、文脈で使用されている単語や周囲の単語に基づいて、正しい単語が "super" と "bowl" であると判断され、自動的に変更が行われます。</para>
+          <para>このプロパティは、[Word のオプション] ダイアログ ボックスの [文章校正] タブの [文脈に応じたスペル チェックを行う] チェック ボックスに対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertHighAnsiToFarEast">
@@ -2503,8 +2386,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>真</b>の Word 文書を開いたときに、適切なフォントに東アジア言語のフォントに関連付けられているテキストを変換する場合。</summary>
+        <summary><b>True</b>の場合、Microsoft Word は、文書を開いたときに、東アジアのフォントに関連付けられているテキストを適切なフォントに変換します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2535,7 +2417,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>場合は<b>true を指定</b>するたびにバックアップ コピーを作成する Word 文書を保存します。</summary>
+        <summary><b>True</b>の場合、Microsoft Word は、文書を保存するたびにバックアップコピーを作成します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2563,12 +2445,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CtrlClickHyperlinkToOpen">
@@ -2597,8 +2478,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 場合は CTRL キーを押したままを開くには、ハイパーリンクをクリックして Microsoft Word が必要です。</summary>
+        <summary><b>True</b> 場合は CTRL キーを押したままを開くには、ハイパーリンクをクリックして Microsoft Word が必要です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2629,7 +2509,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCursorMovement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>カーソルが双方向テキスト内で進行する方法を設定または返します。</summary>
+        <summary>双方向のテキスト内でのカーソルの位置を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2660,7 +2540,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>新規に使用する既定の 24 ビット色の設定を取得または<see cref="T:Microsoft.Office.Interop.Word.Border" />のオブジェクトです。 任意の有効なことができます<see cref="T:Microsoft.Office.Interop.Word.WdColor" />定数、または Visual Basic の<b>RGB</b>関数によって返される値です。</summary>
+        <summary>新しい<see cref="T:Microsoft.Office.Interop.Word.Border" />オブジェクトに使用する既定の24ビットの色を設定または返します。 任意の有効な<see cref="T:Microsoft.Office.Interop.Word.WdColor" />定数または Visual Basic の<b>RGB</b>関数によって返される値を指定できます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2693,10 +2573,8 @@
       <Docs>
         <summary>罫線の既定の色を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>場合、<see cref="P:Microsoft.Office.Interop.Word.Borders.Enable" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Word.Borders" />の罫線が使用される<b>場合は True</b>、既定の線幅、線のスタイル、および線の色をオブジェクトに設定します。</para>
-          <para />
-        </remarks>
+        <remarks><para>オブジェクトの<see cref="P:Microsoft.Office.Interop.Word.Borders.Enable" />プロパティが True に設定されている場合、罫線の既定の線の太さ、線のスタイル、線の色が使用されます。 <b></b> <see cref="T:Microsoft.Office.Interop.Word.Borders" /></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultBorderLineStyle">
@@ -2758,10 +2636,8 @@
       <Docs>
         <summary>罫線の既定の線幅を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>場合、<see cref="P:Microsoft.Office.Interop.Word.Borders.Enable" />のプロパティの<see cref="T:Microsoft.Office.Interop.Word.Borders" />オブジェクトが<b>True</b>に設定、罫線の既定の線幅と線スタイルを使用します。</para>
-          <para />
-        </remarks>
+        <remarks><para>オブジェクトの<see cref="P:Microsoft.Office.Interop.Word.Borders.Enable" />プロパティが True に設定されている場合は、既定の線の幅と線のスタイルが使用されます。 <b></b> <see cref="T:Microsoft.Office.Interop.Word.Borders" /></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultEPostageApp">
@@ -2824,13 +2700,12 @@
         <Parameter Name="Path" Type="Microsoft.Office.Interop.Word.WdDefaultFilePath" />
       </Parameters>
       <Docs>
-        <param name="Path">必要な<see cref="T:Microsoft.Office.Interop.Word.WdDefaultFilePath" />。 設定する既定のフォルダーを指定します。</param>
+        <param name="Path">必須<see cref="T:Microsoft.Office.Interop.Word.WdDefaultFilePath" />。 設定する既定のフォルダーを指定します。</param>
         <summary>ドキュメント、テンプレート、およびグラフィックスなどの項目の既定のフォルダーを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>新しい設定は直ちに有効です</para>。
-          <para>空の文字列を使用することができます ("") の設定を Windows レジストリから削除する</para>。
-          <para /></remarks>
+        <remarks><para>新しい設定は直ちに有効になります。</para>
+          <para>長さ 0 の文字列 ("") を使用して、Windows のレジストリの設定を削除します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultHighlightColorIndex">
@@ -2859,7 +2734,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>キーワード ナビ] ボタン ([書式設定] ツールバー) でフォーマットされているテキストを強調表示に使用する色を設定または返します。</summary>
+        <summary>[蛍光ペン] ボタン ([書式設定] ツールバー) で書式設定された文字列を強調表示するときに使用する色を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2890,12 +2765,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdOpenFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ドキュメントを開くために使用する既定のファイル コンバーターを設定または返します。 返すことができますいくつかの<see cref="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" />プロパティ、またはのいずれか、<see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" />定数。</summary>
+        <summary>ドキュメントを開くために使用する既定のファイル コンバーターを設定または返します。 <see cref="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" />プロパティによって返される数値、または<see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" />定数のいずれかを指定できます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用、<paramref name="Format" />の引数を<see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />を 1 つのドキュメントを開いているときに、ファイル コンバーターを指定します。</para>
-          <para />
-        </remarks>
+        <remarks><para>1つ<paramref name="Format" />の文書を<see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />開くときにファイルコンバータを指定するには、メソッドで引数を使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultTextEncoding">
@@ -2924,12 +2797,10 @@
         <ReturnType>Microsoft.Office.Core.MsoEncoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Core.MsoEncoding" />コード ページまたはエンコードされたテキスト ファイルとして保存されたすべてのドキュメントを Microsoft Word を使用する文字セットを表す定数です。</summary>
+        <summary>コードページまたは<see cref="T:Microsoft.Office.Core.MsoEncoding" />エンコードされたテキストファイルとして保存されたすべてのドキュメントを Microsoft Word で使用する文字セットを表す定数を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word._Document.TextEncoding" /> 、個々 のドキュメントのエンコーディングを設定するプロパティです。HTML ドキュメントのエンコーディングを設定するを使用して、<see cref="P:Microsoft.Office.Interop.Word.WebOptions.Encoding" />プロパティ。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word._Document.TextEncoding" />プロパティを使用して、個々のドキュメントのエンコード方法を設定します。 HTML ドキュメントのエンコードを設定するには<see cref="P:Microsoft.Office.Interop.Word.WebOptions.Encoding" /> 、プロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultTray">
@@ -2960,10 +2831,8 @@
       <Docs>
         <summary>ドキュメントを印刷するプリンターを使用して、既定のトレイを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティを設定するには、[オプション] ダイアログ ボックスで [印刷] タブの既定値] ボックス内にある文字列を指定する必要があります。使用することができます、<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultTrayID" />プロパティを指定し、<see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" />これと同じオプションを設定するのには定数です。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティを設定する場合、[オプション] ダイアログ ボックスの [印刷] タブの [既定値] ボックス内にある文字列を指定する必要があります。 このオプションを設定<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultTrayID" />する定数を<see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" />指定するには、プロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultTrayID">
@@ -2994,10 +2863,8 @@
       <Docs>
         <summary>ドキュメントを印刷するプリンターを使用して、既定のトレイを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用することができます、 <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultTray" /> 、これと同じオプションを設定するのには [オプション] ダイアログ ボックスの [印刷] タブの既定値] ボックスの文字列のプロパティです。</para>
-          <para />
-        </remarks>
+        <remarks><para>この<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultTray" />プロパティを使用して、[オプション] ダイアログボックスの [印刷] タブの [既定のトレイ] ボックスの文字列を使用して、このオプションを設定することができます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DeletedCellColor">
@@ -3026,10 +2893,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCellColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.WdCellColor" />削除されたセルの色を表す定数です。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdCellColor" />
-        </value>
+        <summary>削除された<see cref="T:Microsoft.Office.Interop.Word.WdCellColor" />セルの色を表す定数を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdCellColor" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3059,13 +2924,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>変更追跡が有効に、削除されたテキストの色を設定または返します。</summary>
+        <summary>変更履歴の記録がオンである場合に、削除されたテキストの色を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>DeletedTextColor</b>プロパティが<b>wdByAuthor</b>に設定されて、Microsoft Word は文書を改訂する最初の 8 つの著者のそれぞれに固有の色を自動的に割り当てます。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>DeletedTextColor</b>プロパティが<b>wdbyauthor</b>に設定されている場合、Microsoft Word では、文書を改訂する最初の8人の作成者にそれぞれ固有の色が自動的に割り当てられます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DeletedTextMark">
@@ -3125,12 +2987,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>右から左へ記述する言語の文書の Diacritic で使用される 24 ビットの色を設定します。 任意の有効なことができます<see cref="T:Microsoft.Office.Interop.Word.WdColor" />定数、または Visual Basic の<b>RGB</b>関数によって返される値です。</summary>
+        <summary>右から左へ記述する言語の文書の Diacritic で使用される 24 ビットの色を設定します。 任意の有効な<see cref="T:Microsoft.Office.Interop.Word.WdColor" />定数または Visual Basic の<b>RGB</b>関数によって返される値を指定できます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>値、<see cref="P:Microsoft.Office.Interop.Word.Options.UseDiffDiacColor" />プロパティは、このプロパティを使用するために<b>true を指定</b>する必要があります。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティを使用<see cref="P:Microsoft.Office.Interop.Word.Options.UseDiffDiacColor" />するには、プロパティの値が<b>True</b>である必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisableFeaturesbyDefault">
@@ -3159,13 +3019,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>を<b>true</b>にすべてを無効にするドキュメントで Word のバージョンが指定された後に追加された機能はすべて、<see cref="P:Microsoft.Office.Interop.Word.Options.DisableFeaturesIntroducedAfterbyDefault" />プロパティ。 既定値は <b>False</b> です。</summary>
+        <summary><b>True</b>をすべてのドキュメントで無効にします。 <see cref="P:Microsoft.Office.Interop.Word.Options.DisableFeaturesIntroducedAfterbyDefault" />プロパティで指定したバージョンの Word 以降に導入されたすべての機能を無効にします。 既定値は <b>False</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>DisableFeaturesByDefault</b>プロパティは、アプリケーションのグローバル オプションを設定します。Word 97 の文書に対してのみ、Windows を使用した後に導入された機能を無効にする場合、<see cref="P:Microsoft.Office.Interop.Word._Document.DisableFeatures" />プロパティ。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>DisableFeaturesByDefault</b> プロパティは、アプリケーションのグローバル オプションを設定します。 文書に対して Word 97 for Windows 以降に導入された機能を無効にする<see cref="P:Microsoft.Office.Interop.Word._Document.DisableFeatures" />場合は、プロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisableFeaturesIntroducedAfterbyDefault">
@@ -3194,13 +3051,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdDisableFeaturesIntroducedAfter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>すべてのドキュメントに対して指定したバージョン以降後に導入されたすべての機能を無効にします。</summary>
+        <summary>すべてのドキュメントの指定されたバージョンの後に導入されたすべての機能を無効にします。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Word.Options.DisableFeaturesbyDefault" /> 、 <b>DisableFeaturesIntroducedAfterbyDefault</b>プロパティを設定する前に、プロパティを<b>True</b>に設定する必要があります。それ以外の場合、設定は反映されませんと、Word 97 の Windows のデフォルトの設定のままです。</para> 。
-          <para><b>DisableFeaturesIntroducedAfterbyDefault</b>プロパティはアプリケーションに対するグローバル オプションを設定し、すべてのドキュメントに影響を与えます。のみ、ドキュメントの指定されたバージョンを使用して、後に導入された機能を無効にする場合、<see cref="P:Microsoft.Office.Interop.Word._Document.DisableFeaturesIntroducedAfter" />プロパティ</para>。
-          <para /></remarks>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.Options.DisableFeaturesbyDefault" /> <b>DisableFeaturesIntroducedAfterbyDefault</b>プロパティを設定する前に、プロパティを<b>True</b>に設定する必要があります。 それ以外の場合、設定は有効になりませんし、Windows の Word 97/98年のデフォルトの設定のまま。</para>
+          <para><b>DisableFeaturesIntroducedAfterbyDefault</b>プロパティは、アプリケーションのグローバルオプションを設定し、すべてのドキュメントに影響します。 指定したバージョン以降に導入された機能をドキュメントのみで無効にする<see cref="P:Microsoft.Office.Interop.Word._Document.DisableFeaturesIntroducedAfter" />場合は、プロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayAlignmentGuides">
@@ -3229,13 +3084,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定する<b>ブール型</b>(C# では<b>bool</b> ) ガイドはユーザー インターフェイスで有効になっているかどうかを指定します。 読み取り/書き込み。</summary>
+        <summary>ユーザーインターフェイスで配置ガイドを<b></b>有効にするかどうかを指定する<b>ブール値</b>(C# ではブール) を設定または返します。 読み取り/書き込み。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>DisplayAlignmentGuides</b>が<b>True</b>の場合は、ガイドが有効になります。<b>DisplayAlignmentGuides</b>を<b>True</b>に設定は、ユーザー インターフェイスで状況依存のリボンの [書式] タブの [配置] で [配置のドロップ ダウン メニューの配置ガイドを使用するを選択することに対応しています。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Displayalignment ガイド</b>が<b>True</b>の場合は、配置ガイドが有効になります。 <b>Displayarrange ガイド</b>を<b>True</b>に設定すると、ユーザーインターフェイスの [コンテキストリボンの書式設定] タブにある [配置] ボックスの一覧で [配置ガイドを使用する] を選択するのに対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayGridLines">
@@ -3264,13 +3116,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、文書のグリッド線が表示されます。 このプロパティは、 [表示] メニューの [グリッド線] コマンドに相当します。</summary>
+        <summary><b>True の</b> 場合、文書のグリッド線が表示されます。 このプロパティは、 [表示] メニューの [グリッド線] コマンドに相当します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、文書のグリッド線のみに影響します。表のグリッド線を使用して、<see cref="P:Microsoft.Office.Interop.Word.View.TableGridlines" />プロパティ。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、文書のグリッド線のみに影響します。 表のグリッド線の場合<see cref="P:Microsoft.Office.Interop.Word.View.TableGridlines" />は、プロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayPasteOptions">
@@ -3299,8 +3148,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の直下に新しく表示される [ 貼り付けオプション] ボタンを表示するには、テキストが貼り付けられます。</summary>
+        <summary><b>True</b> の直下に新しく表示される [ 貼り付けオプション] ボタンを表示するには、テキストが貼り付けられます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3337,13 +3185,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>マウス ポインターを置いたときにスマート タグのすぐ上にボタンを表示します。</summary>
+        <summary><b>True</b>の場合は、マウスポインターが上に置かれたときにスマートタグのすぐ上にボタンが表示されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>スマート タグ ボタンは、ドロップ ダウン メニューから、ユーザーにアクセスできますスマート タグ オプションおよびアクションを提供します。</para>
-          <para />
-        </remarks>
+        <remarks><para>スマート タグ ボタンにはドロップダウン メニューがあり、ユーザーはこのメニューからスマート タグ オプションおよびアクションにアクセスできます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DocumentViewDirection">
@@ -3404,9 +3249,7 @@
       </ReturnValue>
       <Docs>
         <summary>設定または取得する <b>ブール値</b> を互換モードでのドキュメントの変換] コマンドが呼び出されたときに警告ダイアログを表示するかどうかを表します。読み取り/書き込み。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3436,8 +3279,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、ほとんどが最近表示されます候補の一覧の上部にある時に使用したハングルと漢字の間で変換します。</summary>
+        <summary><b>True の</b> 場合、ほとんどが最近表示されます候補の一覧の上部にある時に使用したハングルと漢字の間で変換します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3468,10 +3310,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定する<b>ブール値</b>を以前のバージョンの IME モードを有効にするかどうかを表します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>取得または設定する<b>ブール型</b>従来の IME モードを有効にするかどうかを表す。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3501,13 +3341,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>ブール型</b>(C# では<b>bool</b> ) ライブ ドラッグを有効にする場合は<b>True</b>を設定または返します。 読み取り/書き込み。</summary>
+        <summary>ライブドラッグが有効になっている場合に<b>True</b>となる<b>ブール値</b>(C# では<b>bool</b> ) を設定または返します。 読み取り/書き込み。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ドキュメント コンテンツの更新] を選択して [全般] タブ、[ <b>Word のオプション</b>] ダイアログ ボックスの [<b>ユーザー インターフェイスのオプション</b>の [ドラッグ中には、 <b>EnableLiveDrag</b>を<b>True</b>に設定します。([ファイル] タブでオプションを選択します)。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>EnableLiveDrag</b>を True に設定することは、[ <b>Word のオプション</b>] ダイアログボックスの [全般] タブの [<b>ユーザーインターフェイスオプション</b>] の下にある [ドラッグ時にドキュメントのコンテンツを更新する] を選択した<b>場合</b>と同じです。 ([ファイル] タブのオプションを選択します。)</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableLivePreview">
@@ -3537,13 +3374,9 @@
       </ReturnValue>
       <Docs>
         <summary>プレビューをサポートしている、 <b>ブール値</b> を表示するか、ギャラリーを使用するときに表示されるギャラリーのプレビューを非表示にするかどうかを表すを取得または設定します。 <b>True</b> プレビューを表示、ドキュメントでコマンドを適用する前に。読み取り/書き込み。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>このプロパティは、Word のオプション] ダイアログ ボックスで、[ライブ プレビューを有効にする] チェック ボックスに対応します。</para>
-          <para />
-        </remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>このプロパティは、[ Word のオプション] ダイアログ ボックスの [ リアルタイムのプレビュー表示機能を有効にする] チェック ボックスに対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableMisusedWordsDictionary">
@@ -3572,13 +3405,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、Word のチェックが誤使用単語、スペル チェックと文書内の文法をチェックするとき。</summary>
+        <summary><b>True の</b> 場合、Word のチェックが誤使用単語、スペル チェックと文書内の文法をチェックするとき。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>用法が誤っている単語をチェックすると、次の検索: の形容詞と副詞、比較級と最上級、不適切な使用"like"、接続詞として""、nor"と「または、」"what"と"which"、"who"と"whom"、測定単位、接続詞、前置詞、代名詞.</para>
-          <para />
-        </remarks>
+        <remarks><para>用法が誤っている単語を調べるときに、形容詞と副詞、比較級と最上級、接続詞としての "like"、"nor" と "or"、"what" と "which"、"who" と "whom"、測定の単位、接続詞、前置詞、および名詞の誤った用法が検索されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableProofingToolsAdvertisement">
@@ -3607,14 +3437,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>ブール型</b>(C# では<b>bool</b> ) の値または設定の<b>場合は True</b>、追加の校正ツール、ダウンロードするときにユーザーが通知されることを指定するとします。 読み取り/書き込み。</summary>
+        <summary><b>True</b>の場合、追加の校正ツールをダウンロードできるときにユーザーに通知することを指定する<b>ブール</b>値 (C# では<b>bool</b> ) の値を設定または返します。 読み取り/書き込み。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>True を指定</b>する<b>EnableProofingToolsAdvertisement</b>を設定すると追加校正ツールのチェック ボックス、[Word のオプション] ダイアログ ボックスの [言語] タブをダウンロードする必要があります私理解をさせるを選択します。([ファイル] タブでオプションを選択します)。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>EnableProofingToolsAdvertisement</b>を<b>True</b>に設定することは、[Word のオプション] ダイアログボックスの [言語] タブにある [その他の校正ツールをダウンロードする必要があるときに通知を表示する] チェックボックスをオンにする操作と同じです。 ([ファイル] タブのオプションを選択します。)</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableSound">
@@ -3643,8 +3469,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>により音がするたびにエラーで応答するコンピューターは Microsoft Word の場合に発生します。</summary>
+        <summary><b>True</b>の場合は、エラーが発生するたびにサウンドでコンピューターが応答します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3672,8 +3497,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、現在のプリンターに封筒用フィーダー。</summary>
+        <summary><b>True の</b> 場合、現在のプリンターに封筒用フィーダー。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3704,8 +3528,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>文書を開いたときに文書内のすべての見出しを展開します。 読み取り/書き込み<b>ブール型</b>(C# では<b>bool</b> )。</summary>
+        <summary><b>True</b>文書を開いたときに文書のすべての見出しを展開します。 読み取り/書き込み<b>ブール値</b>(C# では<b>bool</b> )。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3736,14 +3559,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> ドキュメント内のすべての書式設定を追跡します。</summary>
+        <summary><b>True</b> ドキュメント内のすべての書式設定を追跡します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>FormatScanning</b>プロパティを有効にすると、すべて固有の書式を文書に簡単に同じ書式を新しいテキストに適用し迅速に交換したり、ドキュメント内で指定した書式設定のすべてのインスタンスを変更するように指定できます。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>FormatScanning</b> プロパティを有効にすると、すべて固有の書式を文書に簡単に同じ書式を新しいテキストに適用し迅速に交換したり、ドキュメント内で指定した書式設定のすべてのインスタンスを変更するように指定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FrenchReform">
@@ -3772,10 +3591,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFrenchSpeller</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.WdFrenchSpeller" />フランス語に言語書式が設定されたテキストの領域で使用するには、どのスペル チェック用辞書を表す定数を設定します。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdFrenchSpeller" />
-        </value>
+        <summary>言語書式がフランス<see cref="T:Microsoft.Office.Interop.Word.WdFrenchSpeller" />語に設定されているテキスト領域で使用するスペルチェック用の辞書を表す定数を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdFrenchSpeller" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3805,7 +3622,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>描画、移動、およびサイズでオートシェイプまたは東アジア言語文字の新しいドキュメントを変更するときに使用する非表示のグリッド線の水平方向のスペースの量を設定または返します。</summary>
+        <summary>新しい文書でオートシェイプまたは東アジア言語の文字を描画、移動、サイズ変更するときに使用する非表示のグリッド線の水平方向の間隔を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3836,7 +3653,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>描画、移動、およびサイズでオートシェイプまたは東アジア言語文字の新しいドキュメントを変更するときに使用する非表示のグリッド線の垂直方向のスペースの量を設定または返します。</summary>
+        <summary>新しい文書でオートシェイプまたは東アジア言語の文字を描画、移動、サイズ変更するときに使用する非表示のグリッド線の垂直方向の間隔を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3929,8 +3746,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、ハングルと漢字の変換時に候補を 1 つだけ持つ単語が自動的に変換します。</summary>
+        <summary><b>True の</b> 場合、ハングルと漢字の変換時に候補を 1 つだけ持つ単語が自動的に変換します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3992,8 +3808,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の場合</b> 場合は、ファイル名拡張子、MS-DOS のパス、電子メール アドレス、サーバー名と共有名 (UNC パス)、およびインターネット アドレス (Url) はスペル チェック中に無視されます。</summary>
+        <summary><b>True の場合</b> 場合は、ファイル名拡張子、MS-DOS のパス、電子メール アドレス、サーバー名と共有名 (UNC パス)、およびインターネット アドレス (Url) はスペル チェック中に無視されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4024,8 +3839,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は数字を含む単語はスペル チェック中に無視されます。</summary>
+        <summary><b>True の</b> 場合は数字を含む単語はスペル チェック中に無視されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4056,8 +3870,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、すべて大文字の単語はスペル チェック中に無視されます。</summary>
+        <summary><b>True の</b> 場合、すべて大文字の単語はスペル チェック中に無視されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4088,8 +3901,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合 Microsoft Word が自動的に設定開閉日本語入力方式エディター (IME)。</summary>
+        <summary><b>True</b> の場合 Microsoft Word が自動的に設定開閉日本語入力方式エディター (IME)。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4120,7 +3932,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>の<b>場合は true。</b> Microsoft Word が表示される場合、未確認の文字の文字列で、日本語入力方式エディター (IME) 既存の (確定された) 文字列の間に挿入します。</summary>
+        <summary><b>True</b>の場合は、日本語入力システム (IME) に確定されていない文字列が、既存の (確定された) 文字文字列の間に挿入されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4151,10 +3963,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCellColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.WdCellColor" />は挿入された表のセルの色を表す定数です。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdCellColor" />
-        </value>
+        <summary>挿入された<see cref="T:Microsoft.Office.Interop.Word.WdCellColor" />表のセルの色を表す定数を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdCellColor" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4186,11 +3996,8 @@
       <Docs>
         <summary>変更追跡が有効になっている間に挿入されているテキストの色を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>InsertedTextColor</b>プロパティが<b>wdByAuthor</b>に設定されて、Microsoft Word は文書を改訂する最初の 8 つの著者のそれぞれに固有の色を自動的に割り当てます。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>InsertedTextColor</b> プロパティが <b>wdByAuthor</b> に設定されて、Microsoft Word は文書を改訂する最初の 8 つの著者のそれぞれに固有の色を自動的に割り当てます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertedTextMark">
@@ -4219,12 +4026,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdInsertedTextMark</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定の変更の追跡が有効なときに Microsoft Word 形式がテキストを挿入する方法 (、<see cref="P:Microsoft.Office.Interop.Word._Document.TrackRevisions" />プロパティが True)。</summary>
+        <summary>変更の追跡が有効になっているときに、Microsoft Word で挿入<see cref="P:Microsoft.Office.Interop.Word._Document.TrackRevisions" />する文字列の書式を設定または返します (プロパティが True の場合)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>変更追跡が有効でない場合、このプロパティは無視されます。このプロパティを使用して、<see cref="P:Microsoft.Office.Interop.Word.Options.InsertedTextColor" />の外観を制御するプロパティは、文書にテキストを挿入します</para>。
-          <para>、<see cref="P:Microsoft.Office.Interop.Word._Document.ShowRevisions" />プロパティは、編集中に挿入したテキストの書式設定を確認するために<b>true を指定</b>する必要があります。<see cref="P:Microsoft.Office.Interop.Word._Document.PrintRevisions" />プロパティは、Word で文書を印刷するとき、挿入したテキストの書式を使用するために<b>true を指定</b>する必要があります</para>。
-          <para /></remarks>
+        <remarks><para>変更追跡が有効でない場合、このプロパティは無視されます。 文書に挿入され<see cref="P:Microsoft.Office.Interop.Word.Options.InsertedTextColor" />たテキストの外観を制御するには、このプロパティにプロパティを使用します。</para>
+          <para>編集<see cref="P:Microsoft.Office.Interop.Word._Document.ShowRevisions" />中に挿入したテキストの書式設定を表示するには、プロパティが<b>True</b>である必要があります。 文書<see cref="P:Microsoft.Office.Interop.Word._Document.PrintRevisions" />を印刷するときに挿入する文字列の書式を Word で使用する場合は、このプロパティを<b>True</b>に設定する必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="INSKeyForOvertype">
@@ -4253,11 +4059,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、上書き入力モードのオンとオフを切り替えに INS キーを使用することができます。読み取り/書き込み <b>ブール値</b> です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary><b>True の</b> 場合は、上書き入力モードのオンとオフを切り替えに INS キーを使用することができます。 読み取り/書き込み <b>ブール値</b> です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4287,8 +4090,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 場合、クリップボードの内容を貼り付けるため、INS キーを使用することができます。</summary>
+        <summary><b>True</b> 場合、クリップボードの内容を貼り付けるため、INS キーを使用することができます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4356,7 +4158,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>を<b>true</b>にスマート タグ情報の文書内のテキストをマークします。</summary>
+        <summary><b>True</b>を設定すると、文書内のテキストがスマートタグ情報でマークされます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4387,8 +4189,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>ネットワーク サーバーに格納されているファイルを編集するときに Microsoft Word がユーザーのコンピューター上のファイルのローカル コピーを作成する場合です。</summary>
+        <summary><b>True</b>の場合、Microsoft Word は、ネットワークサーバーに格納されているファイルを編集するときに、ユーザーのコンピューターにファイルのローカルコピーを作成します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4419,13 +4220,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 場合は、ドキュメントのフォーマットの別の国/地域の標準用紙サイズ (A4 など) が自動的に調整されるよう、ご自分の国で正しく印刷/地域の標準的な用紙のサイズを (たとえば、レター)。</summary>
+        <summary><b>True</b> 場合は、ドキュメントのフォーマットの別の国/地域の標準用紙サイズ (A4 など) が自動的に調整されるよう、ご自分の国で正しく印刷/地域の標準的な用紙のサイズを (たとえば、レター)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、ドキュメントの印刷イメージのみを適用します。左の書式は変更されません。</para>
-          <para />
-        </remarks>
+        <remarks><para>MapPaperSize プロパティは、文書の印刷出力にのみ使用できます。文書の書式は変更されません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MarginAlignmentGuides">
@@ -4454,13 +4252,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定する<b>ブール型</b>(C# では<b>bool</b> ) ユーザー インターフェイスで、余白ガイドが表示されるかどうかを指定します。 読み取り/書き込み。</summary>
+        <summary>ユーザーインターフェイスに余白の配置<b></b>ガイドを表示するかどうかを指定する<b>ブール値</b>(C# ではブール) を設定または返します。 読み取り/書き込み。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>MarginAlignmentGuides</b>を<b>True</b>に設定すると、余白ガイドが表示されます。<b>MarginAlignmentGuides</b>を<b>True</b>に設定は、グリッドとガイド] ダイアログの [ガイド] の下の余白ガイドを選択することに対応しています。(グリッドの設定をユーザー インターフェイスで状況依存のリボンの [書式] タブの [配置] で [配置のドロップ ダウン メニューをクリックする) します。<b>MarginAlignmentGuides</b>設定を有効、<see cref="P:Microsoft.Office.Interop.Word.Options.DisplayAlignmentGuides" />を<b>True</b>に設定する必要があります。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>MarginAlignmentGuides</b>が<b>True</b>に設定されている場合、余白の配置ガイドが表示されます。 <b>MarginAlignmentGuides</b>を<b>True</b>に設定すると、[グリッドとガイド] ダイアログボックスの [配置ガイド] にある余白ガイドの選択に対応します。 (ユーザーインターフェイスの [コンテキストリボンの書式設定] タブの [配置] で、[配置] ボックスの一覧の [グリッドの設定] をクリックします)。<b>MarginAlignmentGuides</b>の設定を有効にするには<see cref="P:Microsoft.Office.Interop.Word.Options.DisplayAlignmentGuides" /> 、 <b>True</b>に設定する必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchFuzzyAY">
@@ -4489,7 +4284,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>の<b>場合は true</b>区別する場合、検索時に次の行と"e"の"i"の行の文字"a"と「や」文字です。</summary>
+        <summary><b>True</b>の場合、Microsoft Word は、検索時に "i" 行と "e" 行の後に "a" と "ya" の文字が区別されません。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4520,8 +4315,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、Microsoft Word は、"ba"と"vua"の文字の間との間の区別をしない、検索時に"ha"と「fua」の文字。</summary>
+        <summary><b>True</b>の場合、Microsoft Word では、検索時に "ba" と "vua" の文字と "ha" と "futex a" の文字が区別されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4552,8 +4346,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、検索中の全角と半角文字 (英数または日本語) が区別します。</summary>
+        <summary><b>True の</b> 場合は、検索中の全角と半角文字 (英数または日本語) が区別します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4584,8 +4377,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、検索時に文字を大文字と小文字が区別します。</summary>
+        <summary><b>True の</b> 場合は、検索時に文字を大文字と小文字が区別します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4616,8 +4408,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合と、検索時に負符号、長音、およびダッシュが区別します。</summary>
+        <summary><b>True の</b> 場合と、検索時に負符号、長音、およびダッシュが区別します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4648,7 +4439,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word は、"di"と"zi"の文字や検索時に"du"と"zu"の文字との間の区別をしない場合は true。</summary>
+        <summary>True の場合は、検索時に "di" と "zi" の文字と "du" と "zu" の文字が区別されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4679,7 +4470,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>True、区別"heyu"と"fuyu"の文字が無視され、検索時に"beyu"と"vuyu"の文字の間です。</summary>
+        <summary>True の場合、Microsoft Word は、検索時に "heyu" と "beyu" と "vuyu" の間で区別される文字を無視します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4710,8 +4501,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合と、検索時にひらがなとカタカナが区別します。</summary>
+        <summary><b>True の</b> 場合と、検索時にひらがなとカタカナが区別します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4742,8 +4532,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は繰り返しの種類の区別、検索時にマークします。</summary>
+        <summary><b>True の</b> 場合は繰り返しの種類の区別、検索時にマークします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4774,8 +4563,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、検索時に標準漢字と異体が区別します。</summary>
+        <summary><b>True の</b> 場合は、検索時に標準漢字と異体が区別します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4806,7 +4594,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>True の場合、"sa"の前に「とき」と「ク」の文字が区別の検索時に行のです。</summary>
+        <summary>True の場合、Microsoft Word では、検索時に "ki" と "ku" の文字の前に "sa" という文字が区別されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4837,8 +4625,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合と、検索時にかなの新字体と旧字体が区別します。</summary>
+        <summary><b>True の</b> 場合と、検索時にかなの新字体と旧字体が区別します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4869,8 +4656,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>場合は、検索時に長音との違いが無視されます。</summary>
+        <summary><b>True</b>の場合、Microsoft Word では、検索時に短い母音と長音の違いが無視されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4901,8 +4687,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は、検索時に区切り記号の種類が区別します。</summary>
+        <summary><b>True</b>の場合は、検索時に区切り記号の種類が区別されません。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4933,8 +4718,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合と、検索時に拗音と促音が区別します。</summary>
+        <summary><b>True の</b> 場合と、検索時に拗音と促音が区別します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4965,8 +4749,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、検索時に使用する場合に、空白が区別します。</summary>
+        <summary><b>True の</b> 場合は、検索時に使用する場合に、空白が区別します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4997,7 +4780,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>場合は<b>true</b> "tsui"、"tei"、および"chi"の文字と、検索時に"dei"と「ジ」の文字の間の違いが無視されます。</summary>
+        <summary><b>True</b>の場合、Microsoft Word では、検索時に "tsui"、"tei"、および "カイ" の文字と "dei" および "ji" の文字が区別されません。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5028,7 +4811,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>True、区別"se"と"shie"の文字が無視され、検索時に「シスター」と「jie」文字の間です。</summary>
+        <summary>True の場合、Microsoft Word は、検索時に "se" と "佐々木 e" の文字、および "ze" と "jie" の文字を区別します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5090,14 +4873,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCellColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.WdCellColor" />を結合した表のセルの色を表す定数です。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdCellColor" />
-        </value>
-        <remarks>
-          <para>このプロパティは、実行する対象のドキュメントにのみ適用されます、 <see cref="M:Microsoft.Office.Interop.Word._Application.CompareDocuments(Microsoft.Office.Interop.Word.Document,Microsoft.Office.Interop.Word.Document,Microsoft.Office.Interop.Word.WdCompareDestination,Microsoft.Office.Interop.Word.WdGranularity,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.Boolean)" />、 <see cref="M:Microsoft.Office.Interop.Word._Document.Compare(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />、または<see cref="M:Microsoft.Office.Interop.Word._Document.Merge(System.String,System.Object@,System.Object@,System.Object@,System.Object@)" />メソッドです。</para>
-          <para />
-        </remarks>
+        <summary>結合された<see cref="T:Microsoft.Office.Interop.Word.WdCellColor" />表のセルの色を表す定数を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdCellColor" /></value>
+        <remarks><para>このプロパティは、、、または<see cref="M:Microsoft.Office.Interop.Word._Application.CompareDocuments(Microsoft.Office.Interop.Word.Document,Microsoft.Office.Interop.Word.Document,Microsoft.Office.Interop.Word.WdCompareDestination,Microsoft.Office.Interop.Word.WdGranularity,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.Boolean)" /> <see cref="M:Microsoft.Office.Interop.Word._Document.Compare(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word._Document.Merge(System.String,System.Object@,System.Object@,System.Object@,System.Object@)" />メソッドを実行したドキュメントにのみ適用されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MonthNames">
@@ -5157,10 +4936,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.WdColorIndex" />の色を表す定数は、テキストを移動します。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdColorIndex" />
-        </value>
+        <summary>移動したテキスト<see cref="T:Microsoft.Office.Interop.Word.WdColorIndex" />の色を表す定数を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdColorIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -5190,8 +4967,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdMoveFromTextMark</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.WdMoveFromTextMark" />テキストの移動に使用する変更履歴のマークの種類を表す定数です。 値の取得および設定が可能です。</summary>
-        <value>返します。 <see cref="T:Microsoft.Office.Interop.Word.WdMoveFromTextMark" />。</value>
+        <summary>移動する文字列に<see cref="T:Microsoft.Office.Interop.Word.WdMoveFromTextMark" />対して使用する変更履歴マークの種類を表す定数を設定または返します。 値の取得と設定が可能です。</summary>
+        <value>を<see cref="T:Microsoft.Office.Interop.Word.WdMoveFromTextMark" />返します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -5221,8 +4998,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.WdColorIndex" />の色を表す定数は、テキストを移動します。 値の取得および設定が可能です。</summary>
-        <value>返します。 <see cref="T:Microsoft.Office.Interop.Word.WdColorIndex" />。</value>
+        <summary>移動したテキスト<see cref="T:Microsoft.Office.Interop.Word.WdColorIndex" />の色を表す定数を設定または返します。 値の取得と設定が可能です。</summary>
+        <value>を<see cref="T:Microsoft.Office.Interop.Word.WdColorIndex" />返します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -5252,10 +5029,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdMoveToTextMark</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.WdMoveToTextMark" />テキストの移動に使用する変更履歴のマークの種類を表す定数です。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdMoveToTextMark" />
-        </value>
+        <summary>移動する文字列に<see cref="T:Microsoft.Office.Interop.Word.WdMoveToTextMark" />対して使用する変更履歴マークの種類を表す定数を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdMoveToTextMark" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -5316,10 +5091,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定する<b>ブール値</b>を Microsoft Office Word が 2 次元形式に自動的に数式を変換するかどうかを表します。 <b>True</b> は、Word は、本格的に数式を自動的に変換を示します。 読み取り/書き込み。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>取得または設定する<b>ブール値</b>を Microsoft Office Word が自動的に数式を2次元形式に変換するかどうかを表します。 <b>True</b> は、Word は、本格的に数式を自動的に変換を示します。 読み取り/書き込み。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -5349,10 +5122,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定する <b>ブール値</b> をテキスト形式で数式を表記する方法を表します。 <b>True</b> では、数式が行形式で表されることを示します。 <b>False の場合、数式が MathML で表されます。</b> 読み取り/書き込み。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>取得または設定する<b>ブール値</b>をテキスト形式で数式を表記する方法を表します。 <b>True</b>は、数式が行形式で表されることを示します。 <b>False</b>は、数式が MathML で表されることを示します。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -5382,13 +5153,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 場合は、互換性のない書式を無効にして新規文書を Word 97 での表示が最適化します。</summary>
+        <summary><b>True</b> 場合は、互換性のない書式を無効にして新規文書を Word 97 での表示が最適化します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>1 つの Word 97 の文書を最適化するを使用して、<see cref="P:Microsoft.Office.Interop.Word._Document.OptimizeForWord97" />プロパティ。</para>
-          <para />
-        </remarks>
+        <remarks><para>Word 97 の単一のドキュメントを最適化するには<see cref="P:Microsoft.Office.Interop.Word._Document.OptimizeForWord97" /> 、プロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Overtype">
@@ -5417,13 +5185,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>場合</b> 上書き入力モードがアクティブな場合です。</summary>
+        <summary><b>場合</b> 上書き入力モードがアクティブな場合です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>上書き入力モードで入力した文字は既存の文字を 1 つずつ交換してください。上書き入力モードがアクティブでないときに入力した文字は、既存のテキストを右に移動します。</para>
-          <para />
-        </remarks>
+        <remarks><para>上書きモードの場合、入力する文字は既存の文字を一対一で置き換えます。挿入モードの場合、文字を入力すると既存の文字は右に移動します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageAlignmentGuides">
@@ -5452,14 +5217,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>ブール型</b>(C# では<b>bool</b> ) のユーザー インターフェイスでページのレイアウト ガイドを表示するかを指定する設定または返します。 読み取り/書き込み。</summary>
+        <summary>ページ配置ガイドをユーザーインターフェイスに表示するかどうかを指定する<b>ブール値</b>(C# では<b>bool</b> ) を設定または返します。 読み取り/書き込み。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>PageAlignmentGuides</b>が<b>True</b>に設定されている場合は、ページの端のガイドのページが表示されます。<b>PageAlignmentGuides</b>を<b>True</b>に設定は、グリッドとガイド] ダイアログ ボックスで [<b>ガイド</b>] ページのガイドを選択することに対応しています。(グリッドの設定をユーザー インターフェイスで状況依存のリボンの [書式] タブの [配置] で [配置のドロップ ダウン メニューをクリックする) します。<b>PageAlignmentGuides</b>設定を有効、<see cref="P:Microsoft.Office.Interop.Word.Options.DisplayAlignmentGuides" />を<b>True</b>に設定する必要があります。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Pagealignment ガイド</b>が<b>True</b>に設定されている場合、ページ配置ガイドはページの端に表示されます。 <b>Pagealignment ガイド</b>を True に設定する<b>場合</b>は、[グリッドとガイド] ダイアログボックスの [<b>配置ガイド</b>] で、[ページガイド] を選択します。 (ユーザーインターフェイスの [コンテキストリボンの書式設定] タブの [配置] で、[配置] ボックスの一覧の [グリッドの設定] をクリックします)。ページ配置<b>ガイド</b>の設定を有効にするには<see cref="P:Microsoft.Office.Interop.Word.Options.DisplayAlignmentGuides" /> 、 <b>True</b>に設定する必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Pagination">
@@ -5488,8 +5249,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、バック グラウンドで文書の改します。</summary>
+        <summary><b>True の</b> 場合、バック グラウンドで文書の改します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5520,14 +5280,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>ブール型</b>(C# では<b>bool</b> ) のユーザー インターフェイスでの段落の配置ガイドを表示するかを指定する設定または返します。 読み取り/書き込み。</summary>
+        <summary>段落の配置ガイドをユーザーインターフェイスに表示するかどうかを指定する<b>ブール型</b>(C# の<b>bool</b> ) を設定または返します。 読み取り/書き込み。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>ParagraphAlignmentGuides</b>を<b>True</b>に設定すると、段落の配置ガイドが表示されます。グリッドとガイド] ダイアログの [<b>ガイド</b>] の下の段落のガイドを選択するのに対応する<b>ParagraphAlignmentGuides</b>を<b>True</b>に設定します。(グリッドの設定をユーザー インターフェイスで状況依存のリボンの [書式] タブの [配置] で [配置のドロップ ダウン メニューをクリックする) します。<b>ParagraphAlignmentGuides</b>設定を有効、<see cref="P:Microsoft.Office.Interop.Word.Options.DisplayAlignmentGuides" />を<b>True</b>に設定する必要があります。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>ParagraphAlignmentGuides</b>が<b>True</b>に設定されている場合、段落の配置ガイドが表示されます。 <b>ParagraphAlignmentGuides</b>を<b>True</b>に設定すると、[グリッドとガイド] ダイアログボックスの [<b>配置ガイド</b>] の [段落ガイド] の選択に対応します。 (ユーザーインターフェイスの [コンテキストリボンの書式設定] タブの [配置] で、[配置] ボックスの一覧の [グリッドの設定] をクリックします)。<b>ParagraphAlignmentGuides</b>の設定を有効にするには<see cref="P:Microsoft.Office.Interop.Word.Options.DisplayAlignmentGuides" /> 、 <b>True</b>に設定する必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -5584,8 +5340,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> Microsoft Word が自動的に切り取りと貼り付けの選択範囲、段落の間隔を調整する場合。</summary>
+        <summary><b>True の</b> Microsoft Word が自動的に切り取りと貼り付けの選択範囲、段落の間隔を調整する場合。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5616,8 +5371,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> Microsoft Word が自動的に切り取りと貼り付けのオプションは、表の書式を調整する場合。</summary>
+        <summary><b>True の</b> Microsoft Word が自動的に切り取りと貼り付けのオプションは、表の書式を調整する場合。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5648,8 +5402,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> Microsoft Word が自動的に切り取りと貼り付けの選択範囲の単語の間隔を調整する場合。</summary>
+        <summary><b>True の</b> Microsoft Word が自動的に切り取りと貼り付けの選択範囲の単語の間隔を調整する場合。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5680,14 +5433,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPasteOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.WdPasteOptions" />別の Microsoft Office Word 文書からテキストをコピーするときのテキストの貼り付け方法を表す定数です。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdPasteOptions" />
-        </value>
-        <remarks>
-          <para>Word のオプション] ダイアログ ボックスの [詳細設定] タブでオプションを (なしのスタイル) の 2 つのドキュメント間での貼り付けに対応します。</para>
-          <para />
-        </remarks>
+        <summary>別の Microsoft Office <see cref="T:Microsoft.Office.Interop.Word.WdPasteOptions" /> Word 文書からテキストをコピーするときに、テキストの貼り付け方法を表す定数を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdPasteOptions" /></value>
+        <remarks><para>[ Word のオプション] ダイアログ ボックスの [ 詳細設定] タブにある [ 文書間での貼り付け] に対応しています。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PasteFormatBetweenStyledDocuments">
@@ -5716,14 +5465,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPasteOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.WdPasteOptions" />のスタイルを使用するドキュメントからテキストをコピーするときのテキストの貼り付け方法を表す定数です。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdPasteOptions" />
-        </value>
-        <remarks>
-          <para>(スタイル) を使用して 2 つのドキュメント] の [詳細設定] タブ、[Word のオプション] ダイアログ ボックスの間での貼り付けに対応します。</para>
-          <para />
-        </remarks>
+        <summary>スタイルを使用する<see cref="T:Microsoft.Office.Interop.Word.WdPasteOptions" />文書からテキストをコピーするときに、テキストの貼り付け方法を表す定数を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdPasteOptions" /></value>
+        <remarks><para>[ Word のオプション] ダイアログ ボックスの [ 詳細設定] タブにある [ 文書間での貼り付け (スタイル定義が異なる場合)] に対応しています。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PasteFormatFromExternalSource">
@@ -5752,14 +5497,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPasteOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、 <see cref="T:Microsoft.Office.Interop.Word.WdPasteOptions" /> 、Web ページなどの外部ソースからテキストをコピーするときのテキストの貼り付け方法を表す定数です。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdPasteOptions" />
-        </value>
-        <remarks>
-          <para>他のプログラムから、[詳細設定] タブで、[Word のオプション] ダイアログ ボックスの貼り付け] に対応します。</para>
-          <para />
-        </remarks>
+        <summary>Web ページなどの<see cref="T:Microsoft.Office.Interop.Word.WdPasteOptions" />外部ソースからテキストをコピーするときに、テキストの貼り付け方法を表す定数を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdPasteOptions" /></value>
+        <remarks><para>[ Word のオプション] ダイアログ ボックスの [ 詳細設定] タブにある [ 他のプログラムからの貼り付け] に対応しています。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PasteFormatWithinDocument">
@@ -5788,14 +5529,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPasteOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.WdPasteOptions" />と、テキストをコピーまたはカットして、同じドキュメント内に貼り付け、テキストの貼り付け方法を表す定数です。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdPasteOptions" />
-        </value>
-        <remarks>
-          <para>Word のオプション] ダイアログ ボックスの詳細設定] タブ内の同じドキュメント オプション内で貼り付けに対応します。</para>
-          <para />
-        </remarks>
+        <summary>テキストをコピーまた<see cref="T:Microsoft.Office.Interop.Word.WdPasteOptions" />は切り取って同じ文書に貼り付けるときに、テキストの貼り付け方法を表す定数を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdPasteOptions" /></value>
+        <remarks><para>[ Word のオプション] ダイアログ ボックスの [ 詳細設定] タブにある [ 同じ文書内の貼り付け] に対応しています。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PasteMergeFromPPT">
@@ -5824,8 +5561,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> から PowerPoint を貼り付けると、テキストの書式設定をマージします。</summary>
+        <summary><b>True</b> から PowerPoint を貼り付けると、テキストの書式設定をマージします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5856,8 +5592,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> から Microsoft Excel に貼り付けると、表の書式を結合します。</summary>
+        <summary><b>True</b>を Microsoft Excel から貼り付けるときに、表の書式を結合します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5888,8 +5623,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True を指定</b> の書式を結合するのには、貼り付けられたリストと隣接するリスト。</summary>
+        <summary><b>True を指定</b> の書式を結合するのには、貼り付けられたリストと隣接するリスト。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5920,14 +5654,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定する <b>ブール値</b> を [箇条書きと段落番号の 貼り付けのオプションのコンテキスト メニューの [ テキストのみ保持を選択するときに保持するかどうかを表します。読み取り/書き込み。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>このプロパティは、Word のオプション] ダイアログ ボックスの [詳細設定] タブで [テキストのみ保持] チェック ボックスで文字列を貼り付けるときに箇条書きと段落番号に対応しています。</para>
-          <para />
-        </remarks>
+        <summary>取得または設定する <b>ブール値</b> を [箇条書きと段落番号の 貼り付けのオプションのコンテキスト メニューの [ テキストのみ保持を選択するときに保持するかどうかを表します。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>このプロパティは、[ Word のオプション] ダイアログ ボックスの [ 詳細設定] タブの [ [テキストのみ保持] オプションで文字列を貼り付けるときに箇条書きと段落番号を保持する] チェック ボックスに対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PasteSmartCutPaste">
@@ -5956,8 +5686,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、Microsoft Word 文書に選択内容が貼り付けします。</summary>
+        <summary><b>True の</b> 場合、Microsoft Word 文書に選択内容が貼り付けします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6021,10 +5750,9 @@
       <Docs>
         <summary>使用して画像を編集するアプリケーションの名前を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オプション] ダイアログ ボックス ([ツール] メニュー) の [編集] タブで、画像エディター ボックスに表示される正確な表現を使用する必要があります。それ以外の場合、既定の設定"Microsoft Word"を使用します</para>。
-          <para>グラフィック アプリケーションの名前が一覧に表示されない場合についてはグラフィック アプリケーションの製造元にお問い合わせください</para>。
-          <para /></remarks>
+        <remarks><para>[オプション] ダイアログ ボックス ([ツール] メニュー) の [編集と日本語入力] タブの [図の編集ツール] ボックスに表示される名前を使用します。 指定しない場合は、既定値の [Microsoft Word] が使用されます。</para>
+          <para>使用するアプリケーションの名前が一覧にない場合は、グラフィック アプリケーションのメーカーに問い合わせてください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureWrapType">
@@ -6053,12 +5781,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdWrapTypeMerged</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定、<see cref="T:Microsoft.Office.Interop.Word.WdWrapTypeMerged" />を Microsoft Word での画像の周りでテキストの折り返し方法を示す定数です。</summary>
+        <summary>Microsoft Word での<see cref="T:Microsoft.Office.Interop.Word.WdWrapTypeMerged" />画像の周りでのテキストの折り返し方法を示す定数を設定または取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>これはデフォルト オプションの設定であり、図の折り返しが、画像を個別に定義されている場合を除き、挿入されたすべての画像に影響を与えます。</para>
-          <para />
-        </remarks>
+        <remarks><para>これは、既定のオプションの設定なので、図に対して個別に折り返しが定義されている場合を除いて、挿入されるすべての図に適用されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PortugalReform">
@@ -6087,12 +5813,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPortugueseReform</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはヨーロッパのポルトガル語のスペル チェックのモードを設定します。</summary>
-        <value>ヨーロッパのポルトガル語のスペル チェックのモードです。</value>
-        <remarks>
-          <para>読み取り/書き込み。ヨーロッパのポルトガル語モードの横にあるドロップ ダウン ボックスで項目を選択すると同じ効果を持つこのプロパティを設定する: Word のオプション] ダイアログの [(校正、Microsoft Office プログラムでスペルを修正する場合)。</para>
-          <para />
-        </remarks>
+        <summary>ポルトガル語 (ポルトガル) のスペルチェックのモードを取得または設定します。</summary>
+        <value>ポルトガル語 (ポルトガル) のスペルチェックのモードを示します。</value>
+        <remarks><para>値の取得と設定が可能です。 このプロパティを設定すると、[Word のオプション] ダイアログボックス ([文章校正] の [Microsoft Office プログラムのスペルチェック]) の横のドロップダウンボックスで項目を選択した場合と同じ結果になります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrecisePositioning">
@@ -6122,9 +5846,7 @@
       </ReturnValue>
       <Docs>
         <summary>値を取得または設定する <b>ブール値</b> の印刷レイアウトではなく画面に表示される文字の配置を最適化するかどうかを表す読みやすさ。 <b>True</b> とは、既定の設定の文字の画面を容易にする間隔を小さくする読みやすさと有効に文字間隔を印刷メディアを無効にします。読み取り/書き込み。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -6154,13 +5876,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>既定の web の場所に新しい文書を保存します。 読み取り/書き込み<b>ブール型</b>(C# では<b>bool</b> )。</summary>
+        <summary><b>True</b>を設定すると、既定で web 上の場所に新しい文書が保存されます。 読み取り/書き込み<b>ブール値</b>(C# では<b>bool</b> )。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>逆の保存先のコンピューターに Word のオプション] ダイアログ ボックス (オプションの選択]、[ファイル] タブにします。) の [保存] タブで既定のオプションでは、 <b>PreferCloudSaveLocations</b>プロパティの設定</para>
-          <para />
-        </remarks>
+        <remarks><para><b>PreferCloudSaveLocations</b>プロパティの設定は、[Word のオプション] ダイアログボックス ([ファイル] タブの [オプション] をクリック) の [保存] タブにある [コンピューターに保存する] オプションの設定と逆になります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintBackground">
@@ -6189,8 +5908,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> と、バック グラウンドで印刷します。</summary>
+        <summary><b>True</b> と、バック グラウンドで印刷します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6221,8 +5939,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>ブール値</b> ドキュメントを印刷するときの背景色とイメージが印刷されるかどうかを表す値を返します。 <b>True</b> は、背景色とイメージが印刷されることを示します。 <b>False の場合、背景色とイメージは印刷されません。</b></summary>
+        <summary><b>ブール値</b> ドキュメントを印刷するときの背景色とイメージが印刷されるかどうかを表す値を返します。 <b>True</b> は、背景色とイメージが印刷されることを示します。 <b>False の場合、背景色とイメージは印刷されません。</b></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6253,14 +5970,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> と、印刷、コメント、ドキュメントの末尾に新しいページを開始します。</summary>
+        <summary><b>True</b> と、印刷、コメント、ドキュメントの末尾に新しいページを開始します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>PrintComments</b>プロパティを<b>True</b>に自動的に設定します<see cref="P:Microsoft.Office.Interop.Word.Options.PrintHiddenText" />プロパティを<b>True</b>にします。ただし、 <b>PrintComments</b>プロパティを<b>False</b>に設定するのには影響しません、 <b>PrintHiddenText</b>プロパティの設定します。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Printcomments</b>プロパティを<b>true</b>に設定すると、 <see cref="P:Microsoft.Office.Interop.Word.Options.PrintHiddenText" />プロパティが自動的に<b>true</b>に設定されます。 ただし、<b>PrintComments</b> プロパティを <b>False</b> に設定しても、<b>PrintHiddenText</b> プロパティの設定には影響しません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintDraft">
@@ -6289,13 +6002,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> と、最小限の書式を使用して印刷します。</summary>
+        <summary><b>True</b> と、最小限の書式を使用して印刷します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>下書き印刷をサポートしていないすべてのプリンターです。</para>
-          <para />
-        </remarks>
+        <remarks><para>すべてのプリンターが下書き印刷をサポートしているわけではありません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintDrawingObjects">
@@ -6324,8 +6034,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> Microsoft Word の描画オブジェクトを印刷する場合です。</summary>
+        <summary><b>True の</b> Microsoft Word の描画オブジェクトを印刷する場合です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6356,13 +6065,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は昇順で並べる手動両面印刷時に偶数ページが印刷されます。</summary>
+        <summary><b>True の</b> 場合は昇順で並べる手動両面印刷時に偶数ページが印刷されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>場合、<paramref name="ManualDuplexPrint" />の引数、<see cref="M:Microsoft.Office.Interop.Word._Document.PrintOut(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />メソッドが<b>False</b>で、このプロパティは無視されます。</para>
-          <para />
-        </remarks>
+        <remarks><para>メソッドの<paramref name="ManualDuplexPrint" />引数が False の場合、このプロパティは無視されます。 <b></b> <see cref="M:Microsoft.Office.Interop.Word._Document.PrintOut(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintFieldCodes">
@@ -6391,7 +6097,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>場合は<b>true</b>フィールドの実行結果ではなくフィールド コードが印刷されます。</summary>
+        <summary><b>True</b>の場合は、フィールドの実行結果ではなくフィールドコードが印刷されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6422,14 +6128,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は非表示のテキストが印刷されます。</summary>
+        <summary><b>True の</b> 場合は非表示のテキストが印刷されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>PrintHiddenText</b>プロパティを<b>False</b>に自動的に設定します<see cref="P:Microsoft.Office.Interop.Word.Options.PrintComments" />プロパティを<b>False</b>にします。ただし、 <b>PrintHiddenText</b>プロパティを<b>True</b>に設定には影響しません、 <b>PrintComments</b>プロパティの設定します。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Printhiddentext</b>プロパティを<b>false</b>に設定すると、 <see cref="P:Microsoft.Office.Interop.Word.Options.PrintComments" />プロパティが自動的に<b>false</b>に設定されます。 ただし、<b>PrintHiddenText</b> プロパティを <b>True</b> に設定しても、<b>PrintComments</b> プロパティの設定には影響しません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintOddPagesInAscendingOrder">
@@ -6458,13 +6160,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は昇順で並べる手動両面印刷時に奇数ページが印刷されます。</summary>
+        <summary><b>True の</b> 場合は昇順で並べる手動両面印刷時に奇数ページが印刷されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>場合、 <paramref name="ManualDuplexPrint" /> 、 <b>PrintOut</b>メソッドの引数が<b>False</b>で、このプロパティは無視されます。</para>
-          <para />
-        </remarks>
+        <remarks><para>PrintOut メソッド<paramref name="ManualDuplexPrint" />の引数が<b></b> <b>False</b>の場合、このプロパティは無視されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintProperties">
@@ -6493,8 +6192,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> Microsoft Word 文書の最後に別のページにドキュメントの概要情報を印刷する場合です。 <b>False</b> とドキュメントの概要情報は印刷されません。 [ファイル] メニューの [プロパティ] ダイアログ ボックスでサマリー情報があります。</summary>
+        <summary><b>True の</b> Microsoft Word 文書の最後に別のページにドキュメントの概要情報を印刷する場合です。 <b>False</b> とドキュメントの概要情報は印刷されません。 ファイルの概要は、[プロパティ] ダイアログ ボックス ([ファイル] メニュー) に表示されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6525,8 +6223,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>該当</b> ページが逆の順序で印刷される場合。</summary>
+        <summary><b>該当</b> ページが逆の順序で印刷される場合。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6557,8 +6254,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>ブール値</b>ドキュメントを印刷するときに XML タグを印刷するかどうかを表す値を返します。 [印刷] タブ、[オプション] ダイアログ ボックスで、XML タグ] チェック ボックスに対応します。 <b>True</b>は、タグが印刷されることを示します。 <b>False の場合、タグは印刷されません。</b></summary>
+        <summary><b>ブール値</b>を表すドキュメントを印刷するときに XML タグを印刷するかどうかを返します。 [オプション] ダイアログボックスの [印刷] タブの [XML タグ] チェックボックスに対応します。 <b>True</b> の場合は、タグが印刷されます。 <b>False</b> の場合、タグは印刷されません。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6589,8 +6285,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True を指定</b> すると、スタイルの書式を変更または元のスタイルのスタイルの書式を変更するときに書式を再適用するかどうかを確認するユーザーを確認するメッセージが表示されます。 <b>False</b> には、スタイルのスタイルを変更するかどうかを確認することがなく、選択範囲に書式が再適用されます。</summary>
+        <summary><b>True を指定</b> すると、スタイルの書式を変更または元のスタイルのスタイルの書式を変更するときに書式を再適用するかどうかを確認するユーザーを確認するメッセージが表示されます。 <b>False</b> には、スタイルのスタイルを変更するかどうかを確認することがなく、選択範囲に書式が再適用されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6621,14 +6316,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スペル チェックを行うときに繰り返し使用される単語をマークするかどうかを表すブール型 (<b>Boolean</b>) の値を設定します。<b>True</b> の場合は、繰り返し使用される単語にフラグを付けます。値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>このプロパティは、Word のオプション] ダイアログ ボックスの [文章校正] タブで、フラグ繰り返し使われる単語] チェック ボックスに対応します。</para>
-          <para />
-        </remarks>
+        <summary>スペル チェックを行うときに繰り返し使用される単語をマークするかどうかを表すブール型 (<b>Boolean</b>) の値を設定します。 <b>True</b> の場合は、繰り返し使用される単語にフラグを付けます。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>このプロパティは、[Word のオプション] ダイアログ ボックスの [文章校正] タブの [繰り返し使われる単語にフラグを付ける] チェック ボックスに対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReplaceSelection">
@@ -6657,8 +6348,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、入力または貼り付けたときの結果は、選択範囲を置き換えます。 <b>False</b> を入力または貼り付けたときの結果を選択範囲の前に追加した場合、選択範囲を維持したままです。</summary>
+        <summary><b>True の</b> 場合、入力または貼り付けたときの結果は、選択範囲を置き換えます。 <b>False</b> を入力または貼り付けたときの結果を選択範囲の前に追加した場合、選択範囲を維持したままです。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6720,7 +6410,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisedLinesMark</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>変更履歴を含むドキュメントで変更された行の位置を設定または返します。</summary>
+        <summary>変更履歴が付けられた文書で変更箇所を示す縦線をどの位置に表示するかを設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6753,10 +6443,8 @@
       <Docs>
         <summary>変更追跡が有効になっているときに、書式設定の変更をマークするために使用する色を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>削除または挿入された場合は、テキスト書式設定の変更には、 <b>RevisedPropertiesColor</b>プロパティはオーバーライドされた、<see cref="P:Microsoft.Office.Interop.Word.Options.DeletedTextColor" />または<see cref="P:Microsoft.Office.Interop.Word.Options.InsertedTextColor" />プロパティ。</para>
-          <para />
-        </remarks>
+        <remarks><para>削除または挿入した文字列の書式が<b></b>変更された場合、 <see cref="P:Microsoft.Office.Interop.Word.Options.DeletedTextColor" /> RevisedPropertiesColor <see cref="P:Microsoft.Office.Interop.Word.Options.InsertedTextColor" />プロパティは、またはプロパティによってオーバーライドされます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RevisedPropertiesMark">
@@ -6816,7 +6504,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionsBalloonPrintOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.WdRevisionsBalloonPrintOrientation" />変更履歴およびコメントの方向を表す定数のバルーンに印刷されます。</summary>
+        <summary>変更履歴およびコメント<see cref="T:Microsoft.Office.Interop.Word.WdRevisionsBalloonPrintOrientation" />の吹き出しを印刷するときの方向を表す定数を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6847,7 +6535,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Macintosh でのみ使用されているキーワードのヘルプを要求しました。 このキーワードの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</summary>
+        <summary>Macintosh でのみ使用されるキーワードに対してヘルプを要求しています。 このキーワードに関する詳細については、Office Macintosh Edition の言語リファレンスのヘルプを参照してください。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6880,11 +6568,8 @@
       <Docs>
         <summary>自動バックアップ情報を保存するための分単位で時間間隔を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>SaveInterval</b>プロパティを 0 (ゼロ) が自動回復用データの保存をオフに設定します。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>SaveInterval</b> プロパティを 0 (ゼロ) が自動回復用データの保存をオフに設定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveNormalPrompt">
@@ -6913,8 +6598,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、Word が終了する前に、標準テンプレートに変更を保存するユーザーに確認メッセージが表示されます。 <b>False</b>場合は、Word に自動的に変更、標準テンプレートに保存終了する前にします。</summary>
+        <summary><b>True</b>の場合は、終了する前に標準テンプレートへの変更を保存するかどうかを確認するメッセージが表示されます。 <b>False</b>の場合は、終了する前に標準テンプレートへの変更が自動的に保存されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6945,8 +6629,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、新しい文書を保存するときに文書のプロパティ情報を Microsoft Word が求められます。</summary>
+        <summary><b>True</b>の場合は、新しい文書を保存するときに文書のプロパティの情報を求めるメッセージが表示されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6977,8 +6660,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は [ファイル] メニューのコマンドを送信するメール メッセージに添付ファイルとして、作業中の文書を挿入します。 <b>False</b> を設定すると、[送信] をクリックしたときに、作業中の文書の内容がメール メッセージの文字列として挿入されます。</summary>
+        <summary><b>True</b>の場合は、[ファイル] メニューの [送信] コマンドを実行すると、作業中の文書がメールメッセージの添付ファイルとして挿入されます。 <b>False</b>の場合、[送信] コマンドを実行すると、作業中の文書の内容がテキストとしてメールメッセージに挿入されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7009,8 +6691,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>真</b> 系南アジア言語のテキストの文字のシーケンスを確認します。</summary>
+        <summary><b>True</b>を使用すると、南アジア言語のテキストの文字のシーケンスを確認できます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7045,12 +6726,12 @@
         <Parameter Name="HelpType" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="CommandKeyHelp">省略可能な<b>オブジェクト</b>です。 <b>True を指定</b>する指示を表示するか、Word と同じ場合、WordPerfect® キーの組み合わせを DOS を示すが押されています。 WordPerfect のヘルプは、ステータス バーに表示されます。</param>
-        <param name="DocNavigationKeys">省略可能な<b>オブジェクト</b>です。 <b>True</b> WordPerfect のように矢印キーと、前のページをページの下、ホーム、終了、および ESC キーの機能を確認します。</param>
-        <param name="MouseSimulation">省略可能な<b>オブジェクト</b>です。 <b>True</b>ポインターを各デモンストレーション中に WordPerfect のヘルプを選択するオプションに移動します。</param>
-        <param name="DemoGuidance">省略可能な<b>オブジェクト</b>です。 の<b>場合は true。</b> WordPerfect ヘルプ デモ中にユーザー入力が必要な場合は、ヘルプ テキストを表示します。</param>
-        <param name="DemoSpeed">省略可能な<b>オブジェクト</b>です。 WordPerfect ヘルプ デモの速度です。 次の値のいずれかできます。ValueSpeed0 (0) Fast1Medium2Slow</param>
-        <param name="HelpType">省略可能な<b>オブジェクト</b>です。 WordPerfect のヘルプ、ヘルプ テキストを表示または WordPerfect のコマンドの例を示すかどうかを指定します。 ヘルプ テキスト、またはデモンストレーション用の 1 か 0 (ゼロ) ができます。</param>
+        <param name="CommandKeyHelp">省略可能な<b>オブジェクト</b>です。 <b>True</b>を使用すると、手順が表示されます。または、WordPerfect®の DOS キーの組み合わせを押した場合に相当する単語を示します。 WordPerfect ヘルプがステータスバーに表示されます。</param>
+        <param name="DocNavigationKeys">省略可能な<b>オブジェクト</b>です。 <b>True</b>を設定すると、矢印キーと、page UP、page DOWN、HOME、END、ESC の各キーが、WordPerfect の場合と同じように機能します。</param>
+        <param name="MouseSimulation">省略可能な<b>オブジェクト</b>です。 <b>True</b>を指定すると、WordPerfect がデモンストレーション時に選択する各オプションにポインターを移動します。</param>
+        <param name="DemoGuidance">省略可能な<b>オブジェクト</b>です。 <b>True</b>を指定すると、WordPerfect のヘルプデモでユーザー入力が必要なときにヘルプテキストが表示されます。</param>
+        <param name="DemoSpeed">省略可能な<b>オブジェクト</b>です。 WordPerfect ヘルプのデモの速度。 次のいずれかの値を指定できます。ValueSpeed0 (ゼロ) Fast1Medium2Slow</param>
+        <param name="HelpType">省略可能な<b>オブジェクト</b>です。 WordPerfect ヘルプでヘルプテキストを表示するか、または WordPerfect コマンドをデモンストレーションするかを指定します。 ヘルプテキストの場合は 0 (ゼロ)、デモンストレーションの場合は1を指定できます。</param>
         <summary>WordPerfect のヘルプ機能のオプションを設定します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7081,7 +6762,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Macintosh でのみ使用されているキーワードのヘルプを要求しました。 このキーワードの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</summary>
+        <summary>Macintosh でのみ使用されるキーワードに対してヘルプを要求しています。 このキーワードに関する詳細については、Office Macintosh Edition の言語リファレンスのヘルプを参照してください。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7112,8 +6793,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 双方向制御文字は、現在のドキュメントに表示されている場合です。</summary>
+        <summary><b>True の</b> 双方向制御文字は、現在のドキュメントに表示されている場合です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7144,14 +6824,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定する<b>ブール値</b>をリボンに [開発] タブが表示されるかどうかを表す。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>このプロパティは、リボン チェック ボックスをオンにして、Word のオプション] ダイアログ ボックスで [開発] タブに対応します。</para>
-          <para />
-        </remarks>
+        <summary>取得または設定する<b>ブール値</b>をリボンに [開発] タブを表示するかどうかを表します。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>このプロパティは、[ Word のオプション] ダイアログ ボックスの [ [開発] タブをリボンに表示する] チェック ボックスに対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowDiacritics">
@@ -7180,8 +6856,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の発音区別符号は、右から左への言語の文書に表示されている場合です。</summary>
+        <summary><b>True</b> の発音区別符号は、右から左への言語の文書に表示されている場合です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7212,8 +6887,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> テキストの下に下線を表示を配置することで、書式設定の一貫性がフォーマット同様にその他のドキュメントで頻繁に使用されている書式にします。</summary>
+        <summary><b>True</b> テキストの下に下線を表示を配置することで、書式設定の一貫性がフォーマット同様にその他のドキュメントで頻繁に使用されている書式にします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7246,11 +6920,8 @@
       <Docs>
         <summary>取得または設定する <b>ブール値</b> を Word で開く、またはファイルを保存するときに非表示のマークアップが表示されるかどうかを表します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>ShowMarkupOpenSave</b>プロパティは、非表示のマークアップを開くか、[オプション] ダイアログ ボックスの [セキュリティ] タブでオプションを保存するときに対応しています。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>ShowMarkupOpenSave</b> プロパティは、[ オプション] ダイアログ ボックスの [ セキュリティ] タブで 非表示のマークアップを開くまたは保存するときに表示されているオプションに対応しています。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowMenuFloaties">
@@ -7279,11 +6950,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>ブール値</b>を表すユーザーがドキュメント ウィンドウで右クリックしたときにミニ ツールバーを表示するかどうかを設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>取得または設定する<b>ブール値</b>をユーザーがドキュメントウィンドウで右クリックしたときにミニツールバーを表示するかどうかを表します。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -7313,8 +6981,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、文章校正が終了したときに読みやすさのメジャーを含む、概要統計情報の一覧が表示されます。</summary>
+        <summary><b>True の</b> 場合、文章校正が終了したときに読みやすさのメジャーを含む、概要統計情報の一覧が表示されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7345,12 +7012,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定する<b>ブール値</b>をユーザーがテキストを選択したときにミニ ツールバーが表示するかどうかを表します。 値の取得および設定が可能です。</summary>
-        <value>返します。 <see cref="T:System.Boolean" />。</value>
-        <remarks>
-          <para>[表示時にミニ バー、[Word のオプション] ダイアログ ボックスで選択範囲のチェック ボックスに対応します。</para>
-          <para />
-        </remarks>
+        <summary>ユーザーがテキストを選択したときにミニツールバーを表示するかどうかを表す<b>ブール型 (Boolean)</b>の値を取得または設定します。 値の取得と設定が可能です。</summary>
+        <value>を<see cref="T:System.Boolean" />返します。</value>
+        <remarks><para>[ Word のオプション] ダイアログ ボックスの [ 選択時にミニ バーを表示する] チェック ボックスに対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SkyDriveSignInOption">
@@ -7412,11 +7077,9 @@
       <Docs>
         <summary>取得または設定する <b>ブール型</b> スマート カーソルが有効になっているかどうかを表す。 <b>True</b> は、スマート カーソルを有効にします。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>SmartCursoring</b>プロパティは、[編集] タブのオプション] ダイアログ ボックスは、デフォルトで選択されて、スマート カーソルを使用] オプションに相当します</para>。<b>SmartCursoring</b>プロパティが<b>True</b>の場合は、 
-          <para>、PAGE DOWN キーを使用して、文書のスクロールはカーソルを移動、現在のページです。<b>SmartCursoring</b>プロパティが<b>False</b>の場合は、カーソルの最後の編集位置にままです</para>。
-          <para /></remarks>
+        <remarks><para><b>SmartCursoring</b> プロパティは、[ 編集] タブの オプション] ダイアログ ボックスは、デフォルトで選択されて、 スマート カーソルを使用] オプションに対応しています。</para>
+          <para><b>SmartCursoring</b> プロパティが <b>True</b> の場合は、ページの下を使用して、文書のスクロール キーはカーソルを移動、現在のページ。 <b>SmartCursoring</b> プロパティが <b>False</b> の場合は、最後の編集位置にカーソルのままです。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SmartCutPaste">
@@ -7445,8 +7108,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> と、切り取りと貼り付けの間隔が自動的に調整する場合に発生します。</summary>
+        <summary><b>True</b> と、切り取りと貼り付けの間隔が自動的に調整する場合に発生します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7508,13 +7170,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>の場合、オートシェイプまたは東アジア言語の文字を自動的に配置を非表示のグリッド、描画時移動、または新しいドキュメントのサイズを変更します。</summary>
+        <summary><b>True</b>の場合は、オートシェイプまたは東アジア言語の文字を非表示のグリッドに自動的に配置します。描画、移動、または新規文書でサイズ変更</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>描画、移動、またはオートシェイプのサイズを変更するときに alt キーを押して、この設定を一時的にオーバーライドできます。</para>
-          <para />
-        </remarks>
+        <remarks><para>You can temporarily override this setting by pressing ALT while drawing, moving, or resizing an AutoShape.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SnapToShapes">
@@ -7543,12 +7202,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>垂直および水平方向の端をその他のオートシェイプまたは東アジアの文字を新しいドキュメントに移動をの<b>true の</b>場合、Microsoft Word は、オートシェイプまたは東アジア文字を非表示のグリッドに自動的に配置します。</summary>
+        <summary><b>True</b>の場合は、オートシェイプまたは東アジア言語の文字が、他のオートシェイプまたは東アジア言語の文字の垂直および水平方向の端を通過する非表示のグリッドに自動的に配置されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、各オートシェイプに対して追加の非表示のグリッドを作成します。<b>SnapToShapes</b>が独立して動作します<see cref="P:Microsoft.Office.Interop.Word.Options.SnapToGrid" />プロパティ。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、各オートシェイプに対して追加の非表示のグリッドを作成します。 <b>SnapToShapes</b>はプロパティとは<see cref="P:Microsoft.Office.Interop.Word.Options.SnapToGrid" />独立して機能します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SpanishMode">
@@ -7577,12 +7234,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdSpanishSpeller</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはスペイン語のスペル チェックのモードを設定します。</summary>
-        <value>スペイン語のスペル チェックのモードです。</value>
-        <remarks>
-          <para>読み取り/書き込み。スペイン語モード] のオプションを選択すると同じ効果を持つこのプロパティを設定する: Word のオプション] ダイアログの [(校正、Microsoft Office プログラムでスペルを修正する場合)。</para>
-          <para />
-        </remarks>
+        <summary>スペイン語のスペルチェックのモードを取得または設定します。</summary>
+        <value>スペイン語のスペルチェックのモードを示します。</value>
+        <remarks><para>値の取得と設定が可能です。 このプロパティを設定すると、[Word のオプション] ダイアログボックス ([文章校正] の [Microsoft Office プログラムのスペルチェック]) の [スペイン語モード] でオプションを選択した場合と同じ結果になります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SplitCellColor">
@@ -7611,14 +7266,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCellColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>分割された表のセルの色を表す <b>WdCellColor</b> を設定または返します。読み取り/書き込み。</summary>
-        <value>
-          <b>WdCellColor</b>
-        </value>
-        <remarks>
-          <para>このプロパティは、実行する対象のドキュメントにのみ適用されます、 <see cref="M:Microsoft.Office.Interop.Word._Application.CompareDocuments(Microsoft.Office.Interop.Word.Document,Microsoft.Office.Interop.Word.Document,Microsoft.Office.Interop.Word.WdCompareDestination,Microsoft.Office.Interop.Word.WdGranularity,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.Boolean)" />、 <see cref="M:Microsoft.Office.Interop.Word._Document.Compare(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />、または<see cref="M:Microsoft.Office.Interop.Word._Document.Merge(System.String,System.Object@,System.Object@,System.Object@,System.Object@)" />メソッドです。</para>
-          <para />
-        </remarks>
+        <summary>分割された表のセルの色を表す <b>WdCellColor</b> を設定または返します。 読み取り/書き込み。</summary>
+        <value><b>WdCellColor</b></value>
+        <remarks><para>このプロパティは、、、または<see cref="M:Microsoft.Office.Interop.Word._Application.CompareDocuments(Microsoft.Office.Interop.Word.Document,Microsoft.Office.Interop.Word.Document,Microsoft.Office.Interop.Word.WdCompareDestination,Microsoft.Office.Interop.Word.WdGranularity,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.Boolean)" /> <see cref="M:Microsoft.Office.Interop.Word._Document.Compare(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word._Document.Merge(System.String,System.Object@,System.Object@,System.Object@,System.Object@)" />メソッドを実行したドキュメントにのみ適用されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StoreRSIDOnSave">
@@ -7647,14 +7298,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> と比較して、ドキュメントをマージするため、ドキュメントを保存するたびに、ドキュメントの変更にランダムな番号を割り当てるには。 Word では、テーブル内のランダムな番号を格納し、保存するたびに、テーブルを更新します。</summary>
+        <summary><b>True</b> と比較して、ドキュメントをマージするため、ドキュメントを保存するたびに、ドキュメントの変更にランダムな番号を割り当てるには。 Word では、テーブル内のランダムな番号を格納し、保存するたびに、テーブルを更新します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>StoreRSIDOnSave</b>プロパティの既定値は、 <b>True</b>です。ただし、RSID 情報は HTML ドキュメントの保存されません</para>。
-          <para>使用して、<see cref="P:Microsoft.Office.Interop.Word._Document.RemovePersonalInformation" />プロパティの情報を削除する場合は作成者やドキュメントの校閲者に関連します</para>。
-          <para /></remarks>
+        <remarks><para><b>StoreRSIDOnSave</b> プロパティの既定値は、 <b>True</b> です。 ただし、HTML 文書の RSID 情報は保存されません。</para>
+          <para>ドキュメントの<see cref="P:Microsoft.Office.Interop.Word._Document.RemovePersonalInformation" />作成者と校閲者に関連する情報を削除する場合は、プロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StrictFinalYaa">
@@ -7683,8 +7331,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>スペル チェックは、文字で終わるアラビア語の単語に関するスペル規則を使用している場合<paramref name="yaa" />。</summary>
+        <summary><b>True</b>の場合、スペルチェッカーは、文字<paramref name="yaa" />で終わるアラビア語の単語に関するスペル規則を使用します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7715,8 +7362,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>スペル チェックは、アラビア語に関するスペル規則を使用している場合の単語で始まる、 <paramref name="alef hamza" />。</summary>
+        <summary><b>True</b>の場合、スペルチェッカーは、 <paramref name="alef hamza" />で始まるアラビア語の単語に関するスペル規則を使用します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7747,13 +7393,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはスペル チェックは、厳密な ë 文字を使用して、ロシア語の単語に関するスペル規則を使用するかどうかを設定します。</summary>
-        <value>
-          <b>true の</b>場合、スペル チェックは、厳密な ë の文字を使用して、ロシア語の単語に関するスペル規則を使用それ以外の場合、 <b>false を指定</b>します。</value>
-        <remarks>
-          <para>読み取り/書き込み。チェックや、ロシア語をオフにすると同じ効果を持つこのプロパティを設定する: 厳密な ë のチェック ボックスを Word のオプション] ダイアログ ボックス (文章校正、Microsoft Office プログラムでスペルを修正する場合) を適用します。</para>
-          <para />
-        </remarks>
+        <summary>Ëの厳密な文字を使用するロシア語に関するスペルの規則をスペルチェッカーが使用するかどうかを取得または設定します。</summary>
+        <value><b>true</b>の場合、スペルチェッカーは、厳密なë文字を使用するロシア語に関するスペル規則を使用します。それ以外の場合は<b>false</b>。</value>
+        <remarks><para>値の取得と設定が可能です。 このプロパティを設定すると、[Word のオプション] ダイアログボックス ([文章校正] の [Microsoft Office プログラムのスペルチェック]) の [ロシア語: 適用] チェックボックスをオンまたはオフにした場合と同じ結果になります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StrictTaaMarboota">
@@ -7782,13 +7425,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはスペル チェックでは、taa marboota ではなく haa で終わるアラビア語の単語にフラグを設定するのにはスペル チェック規則を使用するかどうかを設定します。</summary>
-        <value>
-          <b>true の</b>場合、スペル チェックでは、「taa marboota」のではなく"haa"で終わるアラビア語単語フラグを設定するにはスペル チェック規則を使用それ以外の場合、 <b>false を指定</b>します。</value>
-        <remarks>
-          <para>読み取り/書き込み。選択するか、Word のオプション] ダイアログ ボックス (文章校正、Microsoft Office プログラムでスペルを修正する場合) に適用する厳密な Taa Marboota チェック ボックスをオフと同じ効果を持つこのプロパティを設定します。</para>
-          <para />
-        </remarks>
+        <summary>Taa marboota ではなく、スペルチェッカーが haa でで終わるアラビア語の単語にフラグを設定するかどうかを示す値を取得または設定します。</summary>
+        <value>スペルチェックで "taa marboota" ではなく "haa" で終わるアラビア語の単語にフラグを設定する場合は、 <b>true</b>を設定します。それ以外の場合は<b>false</b>。</value>
+        <remarks><para>値の取得と設定が可能です。 このプロパティを設定すると、[Word のオプション] ダイアログボックス ([文章校正] の [Microsoft Office プログラムのスペルチェック]) の [適用する] チェックボックスをオンまたはオフにした場合と同じ結果になります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SuggestFromMainDictionaryOnly">
@@ -7817,7 +7457,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>の<b>場合は true。</b> Microsoft Word では、メイン辞書のみからスペルの修正候補が描画される場合。 <b>False</b>場合は、メイン辞書と追加されたユーザー辞書から修正候補を描画します。</summary>
+        <summary><b>True</b>の場合、Microsoft Word はメイン辞書のみからスペルの修正候補を描画します。 <b>False</b>の場合は、メイン辞書および追加されたユーザー辞書からスペルの修正候補を描画します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7848,8 +7488,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、それぞれの修正候補が間違っている単語のスペルをチェックするとき。</summary>
+        <summary><b>True の</b> 場合、それぞれの修正候補が間違っている単語のスペルをチェックするとき。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7880,8 +7519,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、それぞれ、中央揃えされた段落と段落の左揃え、中央揃えされた段落を右揃えの段落を変更するのには、BACKSPACE キーを使用することができるかどうかは段落の左インデントを増減させるのには、TAB キーまたは BACKSPACE キーを使用できます。</summary>
+        <summary><b>True の</b> 場合、それぞれ、中央揃えされた段落と段落の左揃え、中央揃えされた段落を右揃えの段落を変更するのには、BACKSPACE キーを使用することができるかどうかは段落の左インデントを増減させるのには、TAB キーまたは BACKSPACE キーを使用できます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7912,8 +7550,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 無効な南アジア言語の文字を置換します。</summary>
+        <summary><b>True の</b> 無効な南アジア言語の文字を置換します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7944,8 +7581,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>は true</b> ドキュメントを印刷する前に自動的にフィールドが更新される場合です。</summary>
+        <summary><b>は true</b> ドキュメントを印刷する前に自動的にフィールドが更新される場合です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7976,13 +7612,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または Word 2010 では、フィールドを印刷する前に更新する変更の履歴が含まれているかどうかを設定します。</summary>
-        <value>
-          <b>true の</b>場合、Word 2010 では、フィールドが含まれる印刷する前に更新するための変更の履歴それ以外の場合、 <b>false を指定</b>します。</value>
-        <remarks>
-          <para>読み取り/書き込み。選択するか、Word 2010 では [Word のオプション] ダイアログ ボックス ([詳細設定] タブで印刷) で印刷する前に更新する変更の履歴を格納できるようにするフィールドの横にチェック ボックスの選択を解除すると同じ効果を持つこのプロパティを設定します。</para>
-          <para />
-        </remarks>
+        <summary>Word 2010 で、印刷する前に変更履歴を含むフィールドが更新されるようにするかどうかを取得または設定します。</summary>
+        <value><b>true</b>の場合は、印刷する前に変更履歴を含むフィールドが更新されるように Word 2010 を使用します。それ以外の場合は<b>false</b>。</value>
+        <remarks><para>値の取得と設定が可能です。 このプロパティを設定すると、Word 2010 の [Word のオプション] ダイアログボックス ([詳細設定] タブの [印刷]) の [印刷前に変更履歴を含むフィールドを更新する] チェックボックスをオンまたはオフにした場合と同じ結果になります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateLinksAtOpen">
@@ -8011,7 +7644,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>の<b>true の</b>場合、すべては、Word が自動的に更新に埋め込まれている OLE リンク ドキュメントが開かれたとき。</summary>
+        <summary><b>True</b>の場合、word を開くと、文書内のすべての埋め込み OLE リンクが自動的に更新されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -8042,8 +7675,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、Microsoft Word が更新すると文書を印刷する前に他のファイルへのリンクが埋め込まれます。</summary>
+        <summary><b>True の</b> 場合、Microsoft Word が更新すると文書を印刷する前に他のファイルへのリンクが埋め込まれます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -8074,12 +7706,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdUpdateStyleListBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定、 <see cref="T:Microsoft.Office.Interop.Word.WdUpdateStyleListBehavior" /> Word 2010 の動作を指定する定数を箇条書きの段落番号を含む選択範囲に一致するようにスタイルを更新するときがかかる必要があります。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.WdUpdateStyleListBehavior" />オブジェクトです。</value>
-        <remarks>
-          <para>読み取り/書き込み。Word の 2010Options ダイアログ ボックスでドロップ ダウン リストで項目を選択すると同じ効果を持つこのプロパティの設定 ([詳細] タブでオプションを編集、選択内容と一致するスタイルを更新する: します。</para>
-          <para />
-        </remarks>
+        <summary>段落番号または<see cref="T:Microsoft.Office.Interop.Word.WdUpdateStyleListBehavior" />行頭文字を含む選択範囲に一致するようにスタイルを更新するときに、Word 2010 がとるべき動作を指定する定数を取得または設定します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdUpdateStyleListBehavior" /> オブジェクト。</value>
+        <remarks><para>値の取得と設定が可能です。 このプロパティを設定すると、[オプション] ダイアログボックスのドロップダウンリストで項目を選択した場合と同じ効果があります ([詳細設定] タブの [編集オプション] を選択すると、選択範囲に一致するスタイルが更新されます)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseCharacterUnit">
@@ -8108,8 +7738,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、現在のドキュメントの既定の計測単位として文字が使用します。</summary>
+        <summary><b>True の</b> 場合、現在のドキュメントの既定の計測単位として文字が使用します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -8140,8 +7769,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>場合は現在の文書の diacritic の色を設定できます。</summary>
+        <summary><b>True</b>の場合は、現在のドキュメントで発音区別符号の色を設定できます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -8172,13 +7800,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> Microsoft Word は、スペル チェック時ドイツ語新正書法の規則を使用している場合です。</summary>
+        <summary><b>True の</b> Microsoft Word は、スペル チェック時ドイツ語新正書法の規則を使用している場合です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseLocalUserInfo">
@@ -8207,12 +7832,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定する<b>ブール値</b>です。<b>True の</b>場合、Microsoft Word ドキュメントの作成者を識別するに基づいて、ユーザー名と頭文字の設定<b>オプション] ダイアログ ボックスの</b>[全般] タブで Word は、ユーザーがサインインするアカウント情報に基づく著者を識別する場合Office です。 値の取得および設定が可能です。</summary>
+        <summary><b>ブール型 (Boolean</b>) の値を取得または設定します。<b>True</b>の場合は、Microsoft word は [オプション] ダイアログボックスの [全般] タブの [ユーザー名] と [イニシャル] 設定に基づいて文書の作成者を識別し、 <b>False</b>の場合、ユーザーがサインインしたアカウント情報に基づいて作成者を識別します。Office に。 値の取得と設定が可能です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>常の設定に対応して [全般] タブ、[Word のオプション] ダイアログ ボックスのチェック ボックスを Office プログラムに関係なくこれらの値を使用します。</para>
-          <para />
-        </remarks>
+        <remarks><para>[Word のオプション] ダイアログボックスの [全般] タブの [Office へのサインインに関係なく、常にこれらの値を使用する] チェックボックスの設定に対応しています。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseNormalStyleForList">
@@ -8241,14 +7864,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定する<b>ブール値</b>を Microsoft Office Word は、箇条書きと段落番号の標準スタイルを使用するかどうかを表します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>標準スタイルを使用、[Word のオプション] ダイアログ ボックスの [詳細設定] タブでの箇条書きと段落番号] チェック ボックスに対応します。</para>
-          <para />
-        </remarks>
+        <summary>取得または設定する<b>ブール値</b>の箇条書きと段落番号に標準スタイルを使用するかどうかを設定または返します。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>[ Word のオプション] ダイアログ ボックスの [ 詳細設定] タブの [ 箇条書きや段落番号に標準スタイルを使用する] チェック ボックスに対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseSubPixelPositioning">
@@ -8277,13 +7896,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定する<b>ブール型</b>(C# では<b>bool</b> ) サブピクセル ポジショニングが有効かどうかを指定します。 読み取り/書き込み。</summary>
+        <summary>サブピクセルの位置を有効にするかどうかを指定する<b>ブール値</b>(C# の<b>bool</b> ) を設定または返します。 読み取り/書き込み。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>UseSubPixelPositioning</b>値は、サブピクセル ポジショニングが有効になっている場合<b>は True</b> 。このプロパティの設定は、Word のユーザー インターフェイスのオプション] ダイアログ ボックス ([ファイル] タブ) の [詳細設定] タブでオプションを画面上のフォントを滑らかにするサブピクセル ポジショニングの使用の設定に対応します。</para>
-          <para />
-        </remarks>
+        <remarks><para>サブピクセルポジショニングが有効になっている場合、 <b>UseSubPixelPositioning</b>値は<b>True</b>になります。 このプロパティの設定は、Word ユーザーインターフェイスの [オプション] ダイアログボックス ([ファイル] タブ) の [詳細設定] タブにある [サブピクセルのフォントを滑らかにする] オプションの設定に対応しています。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VirusProtection">
@@ -8351,11 +7967,8 @@
       <Docs>
         <summary>右から左への言語の文書で視覚的なカーソル移動に基づく選択の動作を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Word.Options.CursorMovement" />プロパティは、このプロパティを使用するために<b>wdCursorMovementVisual</b>に設定する必要があります。</para>
-          <para />
-        </remarks>
+        <remarks><para>この<see cref="P:Microsoft.Office.Interop.Word.Options.CursorMovement" />プロパティを使用するには、プロパティを<b>Wdカーソル movementvisual</b>に設定する必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WarnBeforeSavingPrintingSendingMarkup">
@@ -8384,8 +7997,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>真</b> の保存、印刷、またはコメントや変更履歴を含む文書を電子メールとして送信するときに警告を表示します。</summary>
+        <summary><b>真</b> の保存、印刷、またはコメントや変更履歴を含む文書を電子メールとして送信するときに警告を表示します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -8422,7 +8034,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>WordPerfect ユーザーのキーを<b>true</b>に Microsoft Word のナビゲーションを有効にします。</summary>
+        <summary><b>True</b>を設定すると、WordPerfect ユーザーの Microsoft Word ナビゲーションキーが有効になります。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -8459,8 +8071,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は、WordPerfect のアクションを生成する Microsoft Word のキーの組み合わせを押すとすると、Word の同等の操作を実行する方法について説明するダイアログ ボックスが表示されます。</summary>
+        <summary><b>True</b>を設定すると、WordPerfect でアクションを実行する Microsoft Word のショートカットキーを押すと、word で同等の操作を実行する方法を示すダイアログボックスが表示されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

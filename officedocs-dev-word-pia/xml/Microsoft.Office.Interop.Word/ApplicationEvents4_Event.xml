@@ -1,13 +1,5 @@
 <Type Name="ApplicationEvents4_Event" FullName="Microsoft.Office.Interop.Word.ApplicationEvents4_Event">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e8fc8679de3e808303fc2750b432e5243a2d864f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671812" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ApplicationEvents4_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5a8775d8e740f980588b7c678e2c9ffe63481ea2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144835" /></Metadata><TypeSignature Language="C#" Value="public interface ApplicationEvents4_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ApplicationEvents4_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ApplicationEvents4_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface ApplicationEvents4_Event" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Word のインターフェイスのイベント<see cref="T:Microsoft.Office.Interop.Excel.Application" />オブジェクトのイベント。これは、対応する COM オブジェクトと相互運用するためのマネージ コードで必要とされる COM コクラスの処理時に作成される .NET インターフェイスです。 このインターフェイスは、以前のインタ フェースのすべてのイベントと、その他の新しいイベントを実装します。 イベントを使用する COM オブジェクトのメソッドと同じ名前を共有する場合にのみ、このインターフェイスを使用します。イベントに接続するには、このインターフェイスにこの例では、キャストし、メソッドを呼び出すプライマリ インターフェイスにキャストします。 それ以外の場合、メソッド、プロパティ、および COM オブジェクトのイベントにアクセスする COM コクラスから派生した .NET インターフェイスを使用します。</summary>
+    <summary>Word<see cref="T:Microsoft.Office.Interop.Excel.Application" />オブジェクトイベントのイベントインターフェイス。これは、対応する COM オブジェクトとの相互運用のためにマネージコードが必要とする COM コクラスを処理するときに作成される .NET インターフェイスです。 このインターフェイスは以前のインターフェイスの全イベントと新しいイベントを実装します。 このインターフェイスは、使用するイベントが COM オブジェクトのメソッドと同じ名前を共有している場合にのみ使用します。この場合、このインターフェイスにキャストしてイベントに接続し、プライマリインターフェイスにキャストしてメソッドを呼び出します。 それ以外の場合は、COM コクラスから派生した .NET インターフェイスを使用して、COM オブジェクトのメソッド、プロパティ、およびイベントにアクセスします。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -201,10 +193,8 @@
       </ReturnValue>
       <Docs>
         <summary>ユーザーが [電子切手のプロパティ] ([宛名ラベル作成] ダイアログ ボックス)、またはツールバーの [Print Electronic Postage] をクリックしたときに発生します。</summary>
-        <remarks>
-          <para>このイベントにより、サード ・ パーティ製のソフトウェア ・ アプリケーションをインターセプトし、[プロパティ] ダイアログ ボックスを表示します。</para>
-          <para />
-        </remarks>
+        <remarks><para>サード パーティのソフトウェア アプリケーションは、このイベントを横取りし、そのプロパティのダイアログ ボックスを表示することができます。この機能は日本郵政公社の電子切手には対応していません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailMergeAfterMerge">
@@ -318,10 +308,8 @@
       </ReturnValue>
       <Docs>
         <summary>ユーザーが、[差し込み印刷の宛先] ダイアログ ボックスの [確認] をクリックしてアドレスの確認を実行したときに発生します。</summary>
-        <remarks>
-          <para>アドレス確認用ソフトウェアがコンピューターにインストールをお持ちでない場合は、 <b>MailMergeDataSourceValidate</b>イベントを使用する単純なフィルター処理ルーチンを作成は、郵便番号の番号を確認するのにはレコードをループ処理し、すべて削除するなど米国以外</para>
-          <para />
-        </remarks>
+        <remarks><para>アドレス確認ソフトウェアがコンピューターにインストールされていない場合、 <b>MailMergeDataSourceValidate</b>イベントを使用すると、レコードを使用して郵便番号をチェックしたり、削除したりするなどの簡単なフィルター処理ルーチンを作成できます。非 Us</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailMergeDataSourceValidate2">
@@ -339,13 +327,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.ApplicationEvents4_MailMergeDataSourceValidate2EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-		ユーザーが [差し込み印刷の宛先] ダイアログ ボックスの [住所の確認] リンク ボタンをクリックして差し込み印刷の宛先を確認するときに発生します。</summary>
-        <remarks>
-          <para>アドレス確認用ソフトウェアがコンピューターにインストールされていない場合、 <b>MailMergeDataSourceValidate2</b>イベントを使用する単純なフィルター処理ルーチンを作成は、郵便番号の番号を確認するのにはレコードをループ処理し、すべて削除するなど以外の国</para>
+        <summary>ユーザーが [差し込み印刷の宛先] ダイアログ ボックスの [住所の確認] リンク ボタンをクリックして差し込み印刷の宛先を確認するときに発生します。</summary>
+        <remarks><para>住所確認用ソフトウェアをコンピューターにインストールしていない場合、<b>MailMergeDataSourceValidate2</b> イベントを使用して単純なフィルター処理ルーチンを作成できます (たとえば、レコードに対してループ処理を行って郵便番号を調べ、米国以外の郵便番号をすべて削除するなど)。</para>
           <para>
-            <b>注</b>: このイベントから内で、Microsoft Visual Basic for Applications (VBA) プロジェクトを上げることができません。 このイベントは、マネージ アドインまたは外部アプリケーションでのみ正しく機能します。COM アドインを使用して、<see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.MailMergeDataSourceValidate" />イベントです</para>。
-          <para /></remarks>
+            <b>注</b>: Microsoft Visual Basic for APPLICATIONS (VBA) プロジェクト内からこのイベントを発生させることはできません。  このイベントは、マネージ アドインまたは外部アプリケーションでのみ正しく機能します。 COM アドインの場合は、 <see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.MailMergeDataSourceValidate" />イベントを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailMergeWizardSendToCustom">
@@ -363,11 +349,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.ApplicationEvents4_MailMergeWizardSendToCustomEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>差し込み印刷ウィザードの手順 6 で、[カスタム] ボタンがクリックされたときに発生します。</summary>
-        <remarks>
-          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.MailMerge.ShowSendToCustom" /> 、差し込み印刷ウィザードの手順 6 でカスタム ボタンを作成するプロパティです。</para>
-          <para />
-        </remarks>
+        <summary>差し込み印刷ウィザードの手順6でユーザー設定ボタンがクリックされると発生します。</summary>
+        <remarks><para>差し込み印刷<see cref="P:Microsoft.Office.Interop.Word.MailMerge.ShowSendToCustom" />ウィザードの6番目の手順でカスタムボタンを作成するには、プロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailMergeWizardStateChange">
@@ -518,7 +502,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ApplicationEvents4_ProtectedViewWindowSizeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>保護されたビューのウィンドウを移動またはサイズ変更するときに発生します。</summary>
+        <summary>保護されたビューウィンドウが移動またはサイズ変更されると発生します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

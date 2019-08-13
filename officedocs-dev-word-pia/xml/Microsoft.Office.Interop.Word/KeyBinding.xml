@@ -1,13 +1,5 @@
 <Type Name="KeyBinding" FullName="Microsoft.Office.Interop.Word.KeyBinding">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fc64b4fc8db5345fc3e67c15c1eeed23c8027af5" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672108" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface KeyBinding" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="df71ed001e9153c7b8aaaebf2ea2bd7c4f797a38" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147950" /></Metadata><TypeSignature Language="C#" Value="public interface KeyBinding" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract KeyBinding" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.KeyBinding" />
   <TypeSignature Language="VB.NET" Value="Public Interface KeyBinding" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>現在のコンテキストでカスタム キーの割り当てを表します。</summary>
-    <remarks>
-      <para>
-        <b>KeyBinding</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />コレクションです。キーボードのユーザー設定] ダイアログ ボックスでカスタムのキー割り当てが行われます</para>。
-      <para>使用して<b>KeyBindings</b>(<paramref name="index" />)、<paramref name="index" />は、単一の<b>KeyBinding</b>オブジェクトを取得する、インデックス番号</para>。
-      <para>使用することも、<see cref="P:Microsoft.Office.Interop.Word._Application.FindKey(System.Int32,System.Object@)" />プロパティと<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Key(System.Int32,System.Object@)" /><b>KeyBinding</b>オブジェクトを返します</para>。
-      <para /></remarks>
+    <remarks><para><b>KeyBinding</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />コレクションのメンバーです。 キーボードのユーザー設定] ダイアログ ボックスで、カスタム キーの割り当てが行われます。</para>
+      <para>1つの<paramref name="index" /> <b>KeyBinding</b>オブジェクトを<paramref name="index" />取得するには、 <b>KeyBindings</b>() を使用します。ここで、はインデックス番号を指定します。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word._Application.FindKey(System.Int32,System.Object@)" />プロパティと<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Key(System.Int32,System.Object@)" />メソッドを使用して、 <b>KeyBinding</b>オブジェクトを取得することもできます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,7 +74,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>キーの組み合わせを削除、<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />コレクションと、組み込みのコマンドを既定のキー定義にリセットします。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />コレクションからキーの組み合わせを削除し、組み込みのコマンドを既定のキーの割り当てにリセットします。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,10 +131,8 @@
       <Docs>
         <summary>指定したショートカット キーに割り当てられているコマンド パラメーターを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>パラメーターを使用するコマンドの詳細についてを参照してください、<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" />のメソッドの<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />オブジェクトです。使用して、<see cref="P:Microsoft.Office.Interop.Word.KeyBinding.Command" />プロパティに指定したショートカット キーに割り当てられているコマンド名を取得します。</para>
-          <para />
-        </remarks>
+        <remarks><para>パラメーターを受け取るコマンドの詳細については<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> 、 <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />オブジェクトのメソッドを参照してください。 <see cref="P:Microsoft.Office.Interop.Word.KeyBinding.Command" />プロパティを使用して、指定したショートカットキーに割り当てられているコマンド名を取得します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -170,12 +158,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したショートカット キーの格納場所を表すオブジェクトを返します。 このプロパティが返すことができます、 <see cref="T:Microsoft.Office.Interop.Word.Document" />、 <see cref="T:Microsoft.Office.Interop.Word.Template" />、または<see cref="T:Microsoft.Office.Interop.Word.Application" />オブジェクトです。</summary>
+        <summary>指定したキーの組み合わせの保存場所を表すオブジェクトを返します。 このプロパティは、、 <see cref="T:Microsoft.Office.Interop.Word.Document" />、 <see cref="T:Microsoft.Office.Interop.Word.Template" />または<see cref="T:Microsoft.Office.Interop.Word.Application" />オブジェクトを返すことができます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>組み込みのキーの割り当て (たとえば、ctrl キーと<b>テキストを斜体</b>にする) は、コンテキストとして、<b>アプリケーション</b>オブジェクトを返します。キー バインディングを追加するオブジェクトを返します<b>文書</b>または<b>テンプレート</b>、カスタマイズ コンテキストによって有効にすると、<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />オブジェクトが追加されました。</para>
-          <para />
-        </remarks>
+        <remarks><para>組み込みのキー割り当て (たとえば、CTRL + I を<b>斜体</b>にする) は、 <b>Application</b>オブジェクトをコンテキストとして返します。 追加したキーバインディングは、 <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />オブジェクトが追加されたときに有効になっているカスタマイズコンテキストに応じて、<b>ドキュメント</b>または<b>テンプレート</b>オブジェクトを返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -201,12 +187,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Disable">
@@ -230,11 +215,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>コマンドに現在割り当てられている場合は、指定したキーの組み合わせを削除します。</summary>
-        <remarks>
-          <para>このメソッドを使用した後は、キーの組み合わせに影響はありません。このメソッドを使用する ([ツール] メニュー) の [キーボードのユーザー設定] ダイアログ ボックスで [削除] ボタンをクリックしてに相当します</para>。使用の
-          <para>、<see cref="M:Microsoft.Office.Interop.Word.KeyBinding.Clear" />を持つメソッド、<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />オブジェクトの既定のキー割り当てを組み込みのコマンドをリセットするのには。削除するか、別の場所に追加する前に<b>KeyBinding</b>オブジェクトをバインドする必要はありません</para>。
-          <para /></remarks>
+        <summary>現在コマンドに割り当てられている場合は、指定したキーの組み合わせを削除します。</summary>
+        <remarks><para>このメソッドを使用すると、キーの組み合わせは無効になります。 このメソッドを使用することは、[キーボードのユーザー設定] ダイアログボックス ([ツール] メニュー) の [削除] ボタンをクリックする操作と同じです。</para>
+          <para><see cref="M:Microsoft.Office.Interop.Word.KeyBinding.Clear" />メソッドを<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />オブジェクトと共に使用して、組み込みのコマンドを既定のキーの割り当てにリセットします。 削除または別の場所に追加する前に <b>KeyBinding</b> オブジェクトをバインドし直す必要はありません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -315,10 +299,8 @@
       <Docs>
         <summary>キーの組み合わせで一意の番号の最初のキーを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>作成するこの番号を使用して、<see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" />メソッドを使用して、ショートカット キーを追加するとき、<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" />のメソッドの<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />オブジェクトです。</para>
-          <para />
-        </remarks>
+        <remarks><para>この番号は、 <see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />オブジェクトのメソッドを使用してキーバインドを追加するときにメソッドを使用して作成します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyCode2">
@@ -428,13 +410,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は、[キーボードのユーザー設定] ダイアログ ボックスで指定したキーの組み合わせを変更することはできません (、[ツール] メニューから [ユーザー設定] をクリックし、キーボード ボタンをクリック) します。</summary>
+        <summary><b>True</b>の場合は、[キーボードのユーザー設定] ダイアログボックス ([ツール] メニューの [ユーザー設定] をクリックし、[キーボード] ボタンをクリック) で、指定されたキーの組み合わせを変更できません。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" />のメソッド、<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />保護された状態とは無関係にキーの組み合わせを追加するオブジェクト。</para>
-          <para />
-        </remarks>
+        <remarks><para>保護さ<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" />れた状態<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />に関係なく、オブジェクトのメソッドを使用してキーバインドを追加します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Rebind">
@@ -461,10 +440,9 @@
         <Parameter Name="CommandParameter" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="KeyCategory">必要な<see cref="T:Microsoft.Office.Interop.Word.WdKeyCategory" />。 指定されたキーの組み合わせの分類を指定します。</param>
-        <param name="Command">
-          <b>文字列</b> が必要です。 指定されたコマンドの名前を指定します。</param>
-        <param name="CommandParameter">省略可能な<b>オブジェクト</b>です。 追加テキストは、必要な場合などで指定されたコマンドの<paramref name="Command" />。 この引数の値の詳細についてを参照してください、<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" />のメソッドの<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />オブジェクトです。</param>
+        <param name="KeyCategory">必須<see cref="T:Microsoft.Office.Interop.Word.WdKeyCategory" />。 指定されたキーの組み合わせの分類を指定します。</param>
+        <param name="Command"><b>文字列</b> が必要です。 指定されたコマンドの名前を指定します。</param>
+        <param name="CommandParameter">省略可能な<b>オブジェクト</b>です。 で<paramref name="Command" />指定されたコマンドに必要な追加テキスト (ある場合)。 この引数の値の詳細については<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> 、 <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />オブジェクトのメソッドを参照してください。</param>
         <summary>指定されたキーの組み合わせに割り当てられたコマンドを変更します。</summary>
         <remarks>To be added.</remarks>
       </Docs>

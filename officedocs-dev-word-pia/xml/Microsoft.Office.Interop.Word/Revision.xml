@@ -1,13 +1,5 @@
 <Type Name="Revision" FullName="Microsoft.Office.Interop.Word.Revision">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="19a4a8beaa52c27421cb617ffa9da73b2b75908e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670814" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Revision" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f8799ae269a5dff96f44f56fb3d688f17d795494" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144037" /></Metadata><TypeSignature Language="C#" Value="public interface Revision" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Revision" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Revision" />
   <TypeSignature Language="VB.NET" Value="Public Interface Revision" />
@@ -26,13 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>リビジョン マークでマークされた変更を表します。</summary>
-    <remarks>
-      <para>
-        <b>Revision</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.Revisions" />コレクションです。<b>リビジョン</b>コレクションには、指定範囲または文書のすべての変更履歴が含まれます</para>。使用<b>のリビジョン</b>の
-      <para>(<paramref name="index" />)、<paramref name="index" />インデックス番号は、1 つ<b>のリビジョン</b>のオブジェクトを取得します。インデックス番号は、指定範囲または文書内のリビジョンの位置を表します</para>。
-      <para><b>追加</b>のメソッドは、<b>リビジョン</b>コレクションを使用できません。<b>リビジョン</b>のオブジェクトは、変更の追跡が有効になっているときに追加されます。設定、<see cref="P:Microsoft.Office.Interop.Word._Document.TrackRevisions" />プロパティに<b>true を指定</b>のドキュメントのテキストに変更を追跡するためにします</para>。
-      <para /></remarks>
+    <summary>変更履歴を表します。</summary>
+    <remarks><para><b>Revision</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Revisions" />コレクションのメンバーです。 <b>Revisions</b> コレクションには、指定範囲または文書のすべての変更履歴が含まれます。</para>
+      <para><b>Revision</b>オブジェクトを<paramref name="index" />取得するの<paramref name="index" />にには、<b>リビジョン</b>() を使用します。ここで、はインデックス番号を指定します。 インデックス番号は、指定範囲または文書内のリビジョンの位置を表します。</para>
+      <para><b>Add</b> メソッドは <b>Revisions</b> コレクションには使用できません。 変更履歴がオンである場合、<b>Revision</b> オブジェクトが追加されます。 ドキュメントテキスト<see cref="P:Microsoft.Office.Interop.Word._Document.TrackRevisions" />に対して行った変更を追跡するには、プロパティを<b>True</b>に設定します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Accept">
@@ -56,7 +46,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定された変更の履歴を受け入れます。 変更履歴のマークは削除され、変更が文書に組み込まれます。</summary>
+        <summary>指定した変更履歴を反映します。 変更履歴マークが削除され、変更内容がドキュメントに組み込まれます。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,7 +73,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -139,14 +129,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Cells</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Cells" />リビジョン マークでマークされている表のセルを表すコレクション。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Cells" />
-        </value>
-        <remarks>
-          <para>コレクションの単一のメンバーを取得する方法については、<a href="HV10056838">コレクションからオブジェクトを取得する</a>を参照してください。</para>
-          <para />
-        </remarks>
+        <summary>変更履歴<see cref="T:Microsoft.Office.Interop.Word.Cells" />のマークが付いている表のセルを表すコレクションを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Cells" /></value>
+        <remarks><para>コレクションの1つのメンバーを取得する方法については、「<a href="HV10056838">コレクションからオブジェクトを取得</a>する」を参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -172,12 +158,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -203,7 +188,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>日付と変更履歴が作成された時刻。</summary>
+        <summary>変更履歴が作成された日付と時刻。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -259,7 +244,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内の項目の位置を表す<b>整数</b>を返します。</summary>
+        <summary>コレクション内の項目の位置を表す<b>整数型 (Integer</b> ) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -287,10 +272,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />に変更履歴を文書内の別の 1 つの場所から移動したテキストの範囲を表すオブジェクト。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Range" />
-        </value>
+        <summary>変更履歴<see cref="T:Microsoft.Office.Interop.Word.Range" />を使用して文書内のある場所から別の場所に移動されたテキストの範囲を表すオブジェクトを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Range" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -345,12 +328,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />を指定したオブジェクトに含まれる文書の部分を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />たオブジェクトに含まれる文書の一部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>範囲をドキュメントから取得するか、図形のコレクションから図形範囲を取得する方法については、メソッドを参照して、<b>範囲</b>の<see cref="T:Microsoft.Office.Interop.Word.Document" />または<see cref="T:Microsoft.Office.Interop.Word.Shapes" />オブジェクトです。</para>
-          <para />
-        </remarks>
+        <remarks><para>文書から指定範囲を取得する方法、 <see cref="T:Microsoft.Office.Interop.Word.Document" />または図形のコレクションから図形範囲を取得する方法については、また<see cref="T:Microsoft.Office.Interop.Word.Shapes" />はオブジェクトの<b>range</b>メソッドを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reject">
@@ -374,12 +355,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定された変更履歴を元に戻します。元の文書の内容は変更されません。</summary>
-        <remarks>
-          <para>
+        <summary>指定された変更履歴を元に戻します。 元の文書の内容は変更されません。</summary>
+        <remarks><para>
             <b>メモ</b> 書式設定の変更を拒否することはできません。</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -405,7 +384,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Style" />のリビジョンの現在の作成者に関連付けられているスタイルを表すオブジェクト。</summary>
+        <summary>変更履歴<see cref="T:Microsoft.Office.Interop.Word.Style" />の現在の作成者に関連付けられているスタイルを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -435,11 +414,51 @@
       <Docs>
         <summary>変更の種類を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" />これらの<b>WdRevisionType</b>定数のいずれかをすることができます。</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" />
-            <b>WdRevisionType</b>定数のいずれかをすることができます</para>。
-          <para><b>wdNoRevision</b></para><para><b>wdRevisionDelete</b></para><para><b>wdRevisionInsert</b></para><para><b>wdRevisionParagraphProperty</b></para><para><b>wdRevisionReconcile</b></para><para><b>wdRevisionSectionProperty</b></para><para><b>wdRevisionStyleDefinition</b></para><para><b>wdRevisionConflict</b></para><para><b>wdRevisionDisplayField</b></para><para><b>wdRevisionParagraphNumber</b></para><para><b>wdRevisionProperty</b></para><para><b>wdRevisionReplace</b></para><para><b>wdRevisionStyle</b></para><para><b>wdRevisionTableProperty</b></para><para /></remarks>
+            <b>wdNoRevision</b>
+          </para>
+          <para>
+            <b>wdRevisionDelete</b>
+          </para>
+          <para>
+            <b>wdRevisionInsert</b>
+          </para>
+          <para>
+            <b>wdRevisionParagraphProperty</b>
+          </para>
+          <para>
+            <b>wdRevisionReconcile</b>
+          </para>
+          <para>
+            <b>wdRevisionSectionProperty</b>
+          </para>
+          <para>
+            <b>wdRevisionStyleDefinition</b>
+          </para>
+          <para>
+            <b>wdRevisionConflict</b>
+          </para>
+          <para>
+            <b>wdRevisionDisplayField</b>
+          </para>
+          <para>
+            <b>wdRevisionParagraphNumber</b>
+          </para>
+          <para>
+            <b>wdRevisionProperty</b>
+          </para>
+          <para>
+            <b>wdRevisionReplace</b>
+          </para>
+          <para>
+            <b>wdRevisionStyle</b>
+          </para>
+          <para>
+            <b>wdRevisionTableProperty</b>
+          </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

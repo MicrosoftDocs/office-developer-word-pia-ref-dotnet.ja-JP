@@ -1,13 +1,5 @@
 <Type Name="RepeatingSectionItem" FullName="Microsoft.Office.Interop.Word.RepeatingSectionItem">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e951aef451ef7f40156f1704b3da559404614c0f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671619" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface RepeatingSectionItem" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a9f459112b2a15f59477147b596dc386a138bb6a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144101" /></Metadata><TypeSignature Language="C#" Value="public interface RepeatingSectionItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RepeatingSectionItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.RepeatingSectionItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface RepeatingSectionItem" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コンテンツ コントロール内の繰り返しセクション項目を表します。</summary>
+    <summary>コンテンツコントロールの繰り返しセクションアイテムを表します。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Word アプリケーション<see cref="T:Microsoft.Office.Interop.Word.Application" />を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -81,12 +73,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。 読み取り専用の<b>整数値</b>(C# では<b>int</b> )。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。 読み取り専用の<b>整数</b>(C# では<b>int</b> )。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Word で作成されている場合、<b>作成者</b>を返します、16 進数の値である 4d535744 を文字列します。このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には、作成者コード MSWD です。このプロパティに関する詳細については、Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para><b>注</b>: この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Word で作成されている場合、 <b>Creator</b>プロパティは、文字列 "MSWD" を表す、16進数値の4D535744 を返します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には、作成者コード MSWD です。 このプロパティの詳細については、「Office Macintosh Edition に含まれる言語リファレンスヘルプ」を参照してください。</para>
+          <para>
+            <b>注</b>: この値は、定数<b>wdCreatorCode</b>で表すこともできます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -110,7 +102,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定の繰り返しセクションアイテムを削除します。</summary>
+        <summary>指定の繰り返しセクション アイテムを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,12 +127,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定のアイテムの後に繰り返しセクション アイテムを追加し、新しいアイテムを返します。</summary>
+        <summary>指定のアイテムの後に繰り返しセクション アイテムを追加して、新しいアイテムを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>繰り返しセクションの項目のコンテンツ コントロールだけにこのメソッドを呼び出すことができます</para>。
-          <para>場合、<see cref="P:Microsoft.Office.Interop.Word.ContentControl.AllowInsertDeleteSection" />プロパティが<b>False</b>に設定されて、このメソッドはエラーを返します</para>。
-          <para /></remarks>
+        <remarks><para>このメソッドは、繰り返しセクションアイテムコンテンツコントロールでのみ呼び出すことができます。</para>
+          <para>このプロパティ<see cref="P:Microsoft.Office.Interop.Word.ContentControl.AllowInsertDeleteSection" />が<b>False</b>に設定されている場合、このメソッドはエラーを返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertItemBefore">
@@ -164,12 +155,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定のアイテムの前に繰り返しセクション アイテムを追加し、新しいアイテムを返します。</summary>
+        <summary>指定のアイテムの前に繰り返しセクション アイテムを追加して、新しいアイテムを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>繰り返しセクションの項目のコンテンツ コントロールだけにこのメソッドを呼び出すことができます</para>。
-          <para>場合、<see cref="P:Microsoft.Office.Interop.Word.ContentControl.AllowInsertDeleteSection" />プロパティが<b>False</b>に設定されて、このメソッドはエラーを返します</para>。
-          <para /></remarks>
+        <remarks><para>このメソッドは、繰り返しセクションアイテムコンテンツコントロールでのみ呼び出すことができます。</para>
+          <para>このプロパティ<see cref="P:Microsoft.Office.Interop.Word.ContentControl.AllowInsertDeleteSection" />が<b>False</b>に設定されている場合、このメソッドはエラーを返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -195,7 +185,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した<b>RepeatingSectionItem</b>オブジェクトの親オブジェクトを表す<b>オブジェクト</b>を返します。</summary>
+        <summary>指定した<b>RepeatingSectionItem</b>オブジェクトの親オブジェクトを表すオブジェクト型 ( <b>object</b> ) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -223,7 +213,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した繰り返しセクション項目を開始タグと終了タグを除外の範囲を返します。 読み取り専用です。</summary>
+        <summary>指定の繰り返しセクション アイテムの範囲を返します (開始タグと終了タグは含まれません)。 値の取得のみ可能です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

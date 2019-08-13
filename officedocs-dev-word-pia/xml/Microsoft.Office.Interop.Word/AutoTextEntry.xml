@@ -1,13 +1,5 @@
 <Type Name="AutoTextEntry" FullName="Microsoft.Office.Interop.Word.AutoTextEntry">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ec70f5beca361e5203612870f616a3ba39891001" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672437" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoTextEntry" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0b55f0ca8e547da196123bbcdcfdca77303d0dfb" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146284" /></Metadata><TypeSignature Language="C#" Value="public interface AutoTextEntry" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoTextEntry" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AutoTextEntry" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoTextEntry" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>定型句を表します。</summary>
-    <remarks>
-      <para>
-        <b>AutoTextEntry</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" />コレクションです。<b>AutoTextEntries</b>コレクションには、特定のテンプレートのすべての定型句エントリが含まれています。項目は [オート コレクト] ダイアログ ボックス ([ツール] メニュー) の [定型句] タブに表示されます</para>。
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" />(<paramref name="index" />)、 <paramref name="index" /> 、定型句の名前またはインデックス番号を 1 つの<b>AutoTextEntry</b>オブジェクトを取得するには。必要がありますと正確に一致スペル (必ずしも、大文字と小文字)、名前のように、[オート コレクト] ダイアログ ボックスの [定型句] タブに表示されています</para>。
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.AutoTextEntries.Add(System.String,Microsoft.Office.Interop.Word.Range)" /> 、 <b>AutoTextEntry</b>オブジェクトを<b>AutoTextEntries</b>コレクションに追加します</para>。
-      <para /></remarks>
+    <remarks><para><b>AutoTextEntry</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" />コレクションのメンバーです。 <b>AutoTextEntries</b> コレクションには、指定されたテンプレートのすべての定型句が含まれます。 エントリは、[オートコレクト] ダイアログボックス ([ツール] メニュー) の [定型句] タブに表示されます。</para>
+      <para>( <see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" /><paramref name="index" />) を使用し<paramref name="index" />ます。ここで、は定型句の登録名またはインデックス番号を使用して、1つの<b>AutoTextEntry</b>オブジェクトを返します。 [オートコレクト] ダイアログボックスの [定型句] タブに表示される名前のスペル (大文字と小文字は区別されません) を正確に一致させる必要があります。</para>
+      <para><b>AutoTextEntry</b>オブジェクト<see cref="M:Microsoft.Office.Interop.Word.AutoTextEntries.Add(System.String,Microsoft.Office.Interop.Word.Range)" />を<b>autotextentries</b>コレクションに追加するのにには、メソッドを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,10 +78,9 @@
       <Docs>
         <summary>指定したオブジェクトが作成されたアプリケーションを示す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -115,7 +104,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,13 +160,11 @@
       </Parameters>
       <Docs>
         <param name="Where">定型句を挿入する位置を指定します。</param>
-        <param name="RichText">元の書式と定型句エントリを挿入するかどうか。</param>
+        <param name="RichText">定型句の項目を元の書式で挿入するかどうかを指定します。</param>
         <summary>指定した範囲の代わりに定型句エントリを挿入します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>範囲を置換しない場合を使用して、<see cref="M:Microsoft.Office.Interop.Word.Range.Collapse(System.Object@)" />メソッドはこのメソッドを使用する前にします。</para>
-          <para />
-        </remarks>
+        <remarks><para>指定範囲を置換しない場合は、このメソッド<see cref="M:Microsoft.Office.Interop.Word.Range.Collapse(System.Object@)" />を使用する前にメソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -234,7 +221,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親オブジェクトを返します。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -295,11 +282,8 @@
       <Docs>
         <summary>定型句エントリの値を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" />オブジェクトの<b>Value</b>プロパティは、オブジェクトの値の最初の 255 文字のみを返します。255 文字より長い値に<b>Value</b>プロパティを設定すると、エラーが生成されます。</para>
-          <para />
-        </remarks>
+        <remarks><para>オブジェクト<see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" />の場合、 <b>value</b>プロパティはオブジェクトの値の最初の255文字のみを返します。 <b>Value</b>プロパティを255文字より長い値に設定すると、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="Interior" FullName="Microsoft.Office.Interop.Word.Interior">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2fdd19513e9bb7a65e73c523dc7e9cf5aac03313" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672279" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Interior" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9ea9eed597dfec4553e666373b193716a8eb9534" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146676" /></Metadata><TypeSignature Language="C#" Value="public interface Interior" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Interior" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Interior" />
   <TypeSignature Language="VB.NET" Value="Public Interface Interior" />
@@ -53,10 +45,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用<see cref="T:Microsoft.Office.Interop.Word._Application" />すると、Microsoft Word アプリケーションを表すオブジェクトが返されます。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,9 +77,7 @@
       </ReturnValue>
       <Docs>
         <summary>オブジェクトの色を設定または返します。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,20 +108,21 @@
       </ReturnValue>
       <Docs>
         <summary>内部の色を設定または返します。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
-        <remarks>
-          <para>色が、現在のカラー パレットのインデックス値に設定された<b>Object</b>または、次のいずれかとして指定された<see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />定数:</para>
+        <value><b>Object</b></value>
+        <remarks><para>色は、現在のカラーパレットのインデックス値に設定する<b>オブジェクト</b>、または次<see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />の定数のいずれかで指定します。</para>
           <list type="bullet">
             <item>
               <para>
-                <b>オブジェクト</b>
+                <b>xlColorIndexAutomatic</b>
               </para>
-            </item>の
-            <item><para><b>定数</b></para></item></list>
-          <para />
-        </remarks>
+            </item>
+            <item>
+              <para>
+                <b>xlColorIndexNone</b>
+              </para>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -159,14 +148,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトが作成されたアプリケーションを示す 32 ビット<b>の整数</b>を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Word で作成されている場合、 <b>Creator</b>プロパティは文字列"MSWD"を表す 16 進数、値である 4d535744 を返します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
-          <para />
-        </remarks>
+        <summary>指定したオブジェクトが作成されたアプリケーションを示す32ビット<b>整数</b>を返します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトは、Microsoft Word で作成されている場合、 <b>Creator</b> プロパティは文字列"MSWD"を表す 16 進数、値である 4d535744 を返します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InvertIfNegative">
@@ -195,8 +180,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>かどうか Microsoft Word で反転、オブジェクト、負の数を決定します。 値の取得および設定が可能です。</summary>
-        <value>負であれば、パターンが反転した場合に、<b>オブジェクト</b>が<b>True</b>に設定それ以外の場合は<b>False</b></value>
+        <summary>オブジェクトが負の値に対応する場合に、そのパターンを反転するかどうかを指定します。 値の取得と設定が可能です。</summary>
+        <value>パターン<b></b>が負の場合に反転する場合は<b>True</b>に、それ以外の場合は<b>False</b>に設定します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,10 +208,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親オブジェクトを返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定したオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,11 +239,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>オブジェクト</b>では、取得または設定を含む、<see cref="T:Microsoft.Office.Interop.Word.XlPattern" />内部のパターンを表す定数です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>塗りつぶしのパターン<b></b>を表す<see cref="T:Microsoft.Office.Interop.Word.XlPattern" />定数を含むオブジェクトを設定または返します。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,10 +270,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>RGB 値としての内部パターン色を設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>塗りつぶしのパターンの色を RGB 値として設定または返します。 値の取得と設定が可能です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -323,14 +301,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定塗りつぶし属性のパターンの色を現在のカラー パレットのインデックスとして、次のいずれかの<see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />定数:<b>番号</b>または<b>定数</b>です。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
-        <remarks>
-          <para>設定<see cref="P:Microsoft.Office.Interop.Word.Interior.PatternColorIndex" />オブジェクトを描画するための自動塗りつぶしのスタイルを指定する<b>番号</b>にします。パターンをしないことを指定する<b>定数</b>を設定する (これは、設定と同じ<see cref="P:Microsoft.Office.Interop.Word.Interior.Pattern" /><b>xlPatternNone</b>に)。</para>
-          <para />
-        </remarks>
+        <summary>Interior パターンの色を現在のカラーパレットのインデックスとして取得または設定します。または、 <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> <b>XlColorIndexAutomatic</b>または<b>xlColorIndexNone</b>のいずれかの定数を指定します。 値の取得と設定が可能です。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>描画<see cref="P:Microsoft.Office.Interop.Word.Interior.PatternColorIndex" />オブジェクトの自動塗りつぶしのスタイルを指定するには、 <b>xlColorIndexAutomatic</b>に設定します。 パターンを使用しないように指定するには、 <b>xlColorIndexNone</b>に設定します (こ<see cref="P:Microsoft.Office.Interop.Word.Interior.Pattern" />の設定は<b>xlpattern</b>の設定と同じです)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="_Font" FullName="Microsoft.Office.Interop.Word._Font">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="05b387917c3c8ecf74282e707cae073f60320ccb" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670830" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Font" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="05b387917c3c8ecf74282e707cae073f60320ccb" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145255" /></Metadata><TypeSignature Language="C#" Value="public interface _Font" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Font" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word._Font" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Font" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>これは、対応する COM オブジェクトと相互運用するためのマネージ コードで必要とされる COM コクラス内のプライマリ インターフェイスです。 メソッドを使用する COM オブジェクトのイベントと同じ名前を共有する場合にのみ、この主要なインタ フェースを使用します。メソッドを呼び出すには、このインターフェイスにこの例では、キャストし、イベントに接続するための最新のイベント インターフェイスにキャストします。 それ以外の場合、メソッド、プロパティ、および COM オブジェクトのイベントにアクセスする COM コクラスから派生した .NET インターフェイスを使用します。 COM オブジェクトについてを参照してください<see cref="T:Microsoft.Office.Interop.Word.Font" />。</summary>
+    <summary>これは、対応する COM コクラスとの相互運用のためにマネージコードが必要とする COM コクラスのプライマリインターフェイスです。 このプライマリインターフェイスは、使用するメソッドが COM オブジェクトのイベントと同じ名前を共有する場合にのみ使用します。この場合、このインターフェイスにキャストしてメソッドを呼び出し、最新の events インターフェイスにキャストしてイベントに接続します。 それ以外の場合は、COM コクラスから派生した .NET インターフェイスを使用して、COM オブジェクトのメソッド、プロパティ、およびイベントにアクセスします。 COM オブジェクトの詳細については<see cref="T:Microsoft.Office.Interop.Word.Font" />、「」を参照してください。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -56,14 +48,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は、フォントでは、すべて大文字に書式設定されます。 を返します<b>True</b>、 <b>False</b>、または<b>wdUndefined</b> ( <b>True</b>と<b>False</b>の両方)。 <b>True</b>、 <b>False</b>、または<b>wdToggle</b> (現在の設定を元に戻します) に設定できます。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
+        <summary><b>True</b>の場合は、フォントがすべて大文字として書式設定されます。 <b>True</b>、 <b>false</b>、または<b>wdUndefined</b> ( <b>true</b>と<b>false</b>の両方) を返します。 <b>True</b>、 <b>False</b>、または<b>wdtoggle</b> (現在の設定を元に戻す) を設定できます。 読み取り/書き込みの <b>整数</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>AllCaps</b>を<b>True</b>を設定する設定<see cref="P:Microsoft.Office.Interop.Word._Font.SmallCaps" /><b>False</b>、またはその逆。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Allcaps</b>を<b>True</b>に設定<see cref="P:Microsoft.Office.Interop.Word._Font.SmallCaps" />すると<b>False</b>に設定され、その逆も同様です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Animation">
@@ -126,7 +114,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -157,8 +145,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、フォントまたは指定範囲が太字として書式設定です。 の<b>場合は True</b>、 <b>False</b>または<b>wdUndefined</b> ( <b>True</b>と<b>False</b>の両方) を返します。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
+        <summary><b>True の</b> 場合は、フォントまたは指定範囲が太字として書式設定です。 取得される値は、<b>True</b>、<b>False</b>、または <b>wdUndefined</b> 定数 (<b>True</b> と <b>False</b> の両方) です。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 読み取り/書き込みの <b>整数</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -189,14 +176,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、フォントまたは指定範囲が太字として書式設定です。 <b>True</b>、 <b>False</b>または (太字、太字以外のテキストの両方) の<b>可能</b>を返します。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
+        <summary><b>True の</b> 場合は、フォントまたは指定範囲が太字として書式設定です。 <b>True</b>、 <b>False</b>または<b>wdUndefined</b> (太字と太字以外のテキストの組み合わせ) を返します。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 読み取り/書き込みの <b>整数</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>BoldBi</b>プロパティは、右から左への言語のテキストに適用されます。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>BoldBi</b> プロパティは、右から左への言語のテキストに適用されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Borders">
@@ -225,7 +208,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Borders" />を指定したオブジェクトのすべての罫線を表すコレクション。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Borders" />たオブジェクトのすべての罫線を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -262,7 +245,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>24 ビットの色を設定、指定した値を取得または<see cref="T:Microsoft.Office.Interop.Word.Font" />オブジェクトです。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.Font" />オブジェクトの24ビットの色を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -293,12 +276,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された色の設定を取得または<see cref="T:Microsoft.Office.Interop.Word.Border" />または<see cref="T:Microsoft.Office.Interop.Word.Font" />オブジェクトです。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.Border" />オブジェクトまたは<see cref="T:Microsoft.Office.Interop.Word.Font" />オブジェクトの色を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>罫線とフォント オブジェクトの<b>wdByAuthor</b>定数が正しくありません。</para>
-          <para />
-        </remarks>
+        <remarks><para>罫線とフォント オブジェクトの <b>wdByAuthor</b> 定数が正しくありません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ColorIndexBi">
@@ -327,7 +308,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または指定した色を設定する<see cref="T:Microsoft.Office.Interop.Word.Font" />、右から左への言語の文書内のオブジェクト。</summary>
+        <summary>右から左へ記述する言語の<see cref="T:Microsoft.Office.Interop.Word.Font" />文書内の指定したオブジェクトの色を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -359,11 +340,9 @@
       </ReturnValue>
       <Docs>
         <summary>コンテキスト代替は指定したフォントを有効になっているかどうかを指定します。</summary>
-        <value>A<see cref="T:System.Int32" />オブジェクトです。</value>
-        <remarks>
-          <para>コンテキスト代替は、個々 の文字の周りに (内容の) 文字に適用されている合字です。コンテキスト代替を特定のコンテキストで、たとえば、タイトルで頻繁に使用されている単語の単語の全体に適用することも (「の」などと「、」)。コンテキスト代替フォントの有効な場合、フォント デザイナーが定義されているこれらのコンテキストでの標準的な合字の代わりに使用されます。(OpenType 機能グループでは、Word 2010 では [フォント] ダイアログ ボックスで、[詳細] タブ) では、コンテキスト代替を使用するの横にあるチェック ボックスを選択すると同じ効果を持つこのプロパティを設定します。</para>
-          <para />
-        </remarks>
+        <value><see cref="T:System.Int32" /> オブジェクト。</value>
+        <remarks><para>コンテキスト代替は、周辺の文字 (コンテキスト) に基づいて個別の文字に適用する合字です。 タイトルに頻繁に使用される語など、特定のコンテキストでは単語全体に適用することもあります。 フォントに対してコンテキスト代替が有効になっている場合は、フォントデザイナーで定義されたコンテキストで、標準合字の代わりに使用されます。このプロパティを設定すると、[コンテキスト代替を使用する] の横にあるチェックボックスをオンにした場合と同じ結果になります。 (Word 2010 の [フォント] ダイアログボックスの [OpenType 機能] グループの [詳細設定] タブで)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -389,12 +368,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DiacriticColor">
@@ -423,12 +401,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された発音区別符号に使用する 24 ビット カラーの設定を取得または<see cref="T:Microsoft.Office.Interop.Word.Font" />オブジェクトです。 任意の有効なことができます<see cref="T:Microsoft.Office.Interop.Word.WdColor" />定数、または Visual Basic の<b>RGB</b>関数によって返される値です。 値の取得および設定が可能です。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.Font" />オブジェクトの diacritic で使用する24ビットの色を設定または返します。 任意の有効な<see cref="T:Microsoft.Office.Interop.Word.WdColor" />定数または Visual Basic の<b>RGB</b>関数によって返される値を指定できます。 値の取得と設定が可能です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>値、<see cref="P:Microsoft.Office.Interop.Word.Options.UseDiffDiacColor" />プロパティは、このプロパティを使用するために<b>true を指定</b>する必要があります。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティを使用<see cref="P:Microsoft.Office.Interop.Word.Options.UseDiffDiacColor" />するには、プロパティの値が<b>True</b>である必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisableCharacterSpaceGrid">
@@ -457,8 +433,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、対応する明細行ごとの文字数の設定が無視されます<see cref="T:Microsoft.Office.Interop.Word.Font" />オブジェクトです。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
+        <summary><b>True</b>の場合は、対応する<see cref="T:Microsoft.Office.Interop.Word.Font" />オブジェクトの1行あたりの文字数が無視されます。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -489,13 +464,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は、指定したフォントの書式設定に二重取り消し線付きのテキストです。 を返します<b>True</b>、 <b>False</b>、または<b>wdUndefined</b> ( <b>True</b>と<b>False</b>の両方)。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
+        <summary><b>True</b>の場合は、指定したフォントが二重取り消し線のテキストとして書式設定されます。 <b>True</b>、 <b>false</b>、または<b>wdUndefined</b> ( <b>true</b>と<b>false</b>の両方) を返します。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 読み取り/書き込みの <b>整数</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>設定したり一重取り消し線の書式設定を使用して、<see cref="P:Microsoft.Office.Interop.Word._Font.StrikeThrough" />プロパティ。<b>取り消し線</b>を設定する<b>DoubleStrikeThrough</b>を<b>True</b>に設定する<b>場合は False</b>、またはその逆。</para>
-          <para />
-        </remarks>
+        <remarks><para>一重線の取り消し線の書式を設定または取得<see cref="P:Microsoft.Office.Interop.Word._Font.StrikeThrough" />するには、プロパティを使用します。 <b>[Doublestrikethrough]</b>を<b>True</b>に設定すると、<b>取り消し線</b>が<b>False</b>に設定され、その逆も同様です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Duplicate">
@@ -521,13 +493,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返す、読み取り専用<see cref="T:Microsoft.Office.Interop.Word.Font" />指定したフォントの文字書式を表すオブジェクト。</summary>
+        <summary>指定したフォントの<see cref="T:Microsoft.Office.Interop.Word.Font" />文字書式を表すオブジェクトを取得します。値の取得のみ可能です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Duplicate</b>プロパティを使用するには重複している<b>フォント</b>のすべてのプロパティの設定を選択するのには<see cref="T:Microsoft.Office.Interop.Word.LetterContent" />オブジェクト、または<see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />オブジェクトです</para>。
-          <para>にこれらの設定を一度に適用するのには同じ種類の別のオブジェクトの<b>Duplicate</b>プロパティから返されるオブジェクトを割り当てることができます。別のオブジェクトに重複したオブジェクトを代入する前に変更できます、重複するオブジェクトのプロパティのいずれかの元の影響を与えずにします</para>。
-          <para /></remarks>
+        <remarks><para><b>Duplicate</b>プロパティを使用すると、重複した<b>フォント</b>、 <see cref="T:Microsoft.Office.Interop.Word.LetterContent" />オブジェクト、または<see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />オブジェクトのすべてのプロパティの設定を選択できます。</para>
+          <para>これらの設定を一度に適用するのには同じ種類の別のオブジェクトの <b>Duplicate</b> プロパティから返されるオブジェクトを割り当てることができます。 別のオブジェクトに重複したオブジェクトを代入する前に元の影響を与えずに、重複するオブジェクトのプロパティのいずれかを変更できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Emboss">
@@ -556,8 +526,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> として指定したフォントが書式設定された場合は、エンボス。 を返します <b>True</b> 、 <b>False</b> 、または <b>wdUndefined</b> です。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
+        <summary><b>True</b> として指定したフォントが書式設定された場合は、エンボス。 <b>True</b>、 <b>False</b>、または<b>wdUndefined</b>を返します。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 読み取り/書き込みの <b>整数</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -590,9 +559,8 @@
       <Docs>
         <summary>文字または指定された文字列に傍点を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdEmphasisMark" />定数は、次のいずれか:</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdEmphasisMark" />次の定数のいずれかをすることができます。</para>
           <para>
             <b>wdEmphasisMarkNone</b>
           </para>
@@ -608,8 +576,7 @@
           <para>
             <b>wdEmphasisMarkUnderSolidCircle</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Engrave">
@@ -638,14 +605,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> と書式が浮き彫り設定します。 の<b>場合は True</b>、 <b>False</b>または<b>wdUndefined</b> ( <b>True</b>と<b>False</b>の両方) を返します。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
+        <summary><b>True</b> と書式が浮き彫り設定します。 取得される値は、<b>True</b>、<b>False</b>、または <b>wdUndefined</b> 定数 (<b>True</b> と <b>False</b> の両方) です。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 読み取り/書き込みの <b>整数</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>[浮き彫り]</b>を設定する<b>場合は True</b>を設定する<see cref="P:Microsoft.Office.Interop.Word._Font.Emboss" />を<b>False</b>にし、その逆です。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>浮き彫り</b>を<b>True</b> <see cref="P:Microsoft.Office.Interop.Word._Font.Emboss" />に設定すると<b>False</b>に設定され、その逆も同様です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -674,12 +637,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.FillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、 <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> 、指定したテキスト範囲で使用するフォントのプロパティを格納しているオブジェクト。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />オブジェクトです。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />たテキスト範囲で使用するフォントの塗りつぶしの書式プロパティを含むオブジェクトを取得します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> オブジェクト。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Glow">
@@ -708,12 +669,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.GlowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、<see cref="T:Microsoft.Office.Interop.Word.GlowFormat" />光彩を指定したテキスト範囲で使用するフォントの書式設定を表すオブジェクト。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.GlowFormat" />オブジェクトです。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.GlowFormat" />たテキスト範囲で使用するフォントの光彩の書式設定を表すオブジェクトを取得します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.GlowFormat" /> オブジェクト。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Grow">
@@ -767,13 +726,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> フォントが非表示のテキストとしてフォーマットされている場合です。 の<b>場合は True</b>、 <b>False</b>または<b>wdUndefined</b> ( <b>True</b>と<b>False</b>の両方) を返します。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
+        <summary><b>True</b> フォントが非表示のテキストとしてフォーマットされている場合です。 取得される値は、<b>True</b>、<b>False</b>、または <b>wdUndefined</b> 定数 (<b>True</b> と <b>False</b> の両方) です。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 読み取り/書き込みの <b>整数</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>非表示のテキストの表示を制御する、<see cref="P:Microsoft.Office.Interop.Word.View.ShowHiddenText" />のプロパティの<see cref="T:Microsoft.Office.Interop.Word.View" />オブジェクトです</para>。
-          <para>を制御するかどうかのプロパティとメソッドを返す<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトは、非表示のテキストが表示されていないときに非表示のテキストを除外する、またはを使用して、<see cref="P:Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeHiddenText" />のプロパティの<see cref="T:Microsoft.Office.Interop.Word.TextRetrievalMode" />オブジェクトです</para>。
-          <para /></remarks>
+        <remarks><para>非表示のテキストの表示を制御するに<see cref="P:Microsoft.Office.Interop.Word.View.ShowHiddenText" />は、 <see cref="T:Microsoft.Office.Interop.Word.View" />オブジェクトのプロパティを使用します。</para>
+          <para>非表示のテキストが表示され<see cref="T:Microsoft.Office.Interop.Word.Range" />ていないときに、オブジェクトを返すプロパティとメソッドを含める<see cref="P:Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeHiddenText" />かどうか<see cref="T:Microsoft.Office.Interop.Word.TextRetrievalMode" />を制御するには、オブジェクトのプロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Italic">
@@ -802,8 +759,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> フォントまたは指定範囲が斜体として書式設定された場合です。 の<b>場合は True</b>、 <b>False</b>または<b>wdUndefined</b> ( <b>True</b>と<b>False</b>の両方) を返します。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
+        <summary><b>True</b> フォントまたは指定範囲が斜体として書式設定された場合です。 取得される値は、<b>True</b>、<b>False</b>、または <b>wdUndefined</b> 定数 (<b>True</b> と <b>False</b> の両方) です。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 読み取り/書き込みの <b>整数</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -834,14 +790,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> フォントまたは指定範囲が斜体として書式設定された場合です。 <b>True</b>、 <b>False</b>または (斜体と斜体でない文字列の組み合わせ) の<b>可能</b>を返します。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
+        <summary><b>True</b> フォントまたは指定範囲が斜体として書式設定された場合です。 <b>True</b>、 <b>False</b> 、または<b>wdUndefined</b> (斜体と斜体でない文字列の組み合わせ) を返します。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 読み取り/書き込みの <b>整数</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>ItalicBi</b>プロパティは、右から左への言語のテキストに適用されます。</para>
-          <para />
-        </remarks>
+        <remarks><para>[!メモ] <b>ItalicBi</b> プロパティは、右から左への言語のテキストに適用されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Kerning">
@@ -870,7 +822,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>カーニングを自動的に Microsoft Word を調整する最小のフォント サイズを設定または返します。読み取り/書き込み <b>1 つ</b> です。</summary>
+        <summary>カーニングを自動的に Microsoft Word を調整する最小のフォント サイズを設定または返します。 読み取り/書き込み <b>1 つ</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -901,20 +853,30 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLigatures</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または合字の指定した<b>Font</b>オブジェクトの設定を設定します。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.WdLigatures" />オブジェクトです。</value>
-        <remarks>
-          <para>読み取り/書き込みの<b>WdLigatures</b>です。Open Type フォントでは、合字の使用をサポートします。このプロパティは、オープン タイプ フォントに適用する Word 2010 の合字の設定を指定します</para>。
-          <para>次の表では、合字の 4 つの基本的な値です</para>。
-          <list type="table"><item>の
-              <description>標準的な</description><description>の読みやすさとビーチを強化するための仕様です。"Fi"、"fl"、および"ff"ラテン言語の標準の合字が含まれます</description></item>。
-            <item><description>コンテキスト</description><description>周囲の文字列を指定した合字に最適な選択肢を提供することにより、読みやすさとビーチを強化するための仕様</description></item>。
-              <description>履歴</description><description>古い、現代のリーダーに旧式に見えるかもしれませんが装飾の合字を
-            <item>。読みやすくするために設計具体的にはありません
-            </item></description>。
-            <item><description>Discretional</description><description>仕様に装飾と読めるようにデザインされていません</description></item></list>。これら 4 つの基本的な値の組み合わせを
-          <para>は、このプロパティに使用できる値のセットを形成します。この一連の値がで表される、<see cref="T:Microsoft.Office.Interop.Word.WdLigatures" />列挙します</para>。
-          <para /></remarks>
+        <summary>指定した<b>Font</b>オブジェクトの合字の設定を取得または設定します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdLigatures" /> オブジェクト。</value>
+        <remarks><para><b>WdLigatures</b> の取得および設定が可能です。 OpenType フォントでは合字を使用できます。 このプロパティは、2010 Word のフォントに適用される合字の合字の設定を指定します。</para>
+          <para>次の表は、合字の 4 つの基本的な値の一覧です。</para>
+          <list type="table">
+            <item>
+              <description>標準</description>
+              <description>読みやすさと見栄えを向上させるためにデザインされています。ラテン系言語の標準の合字には "fi"、"fl"、"ff" などがあります。</description>
+            </item>
+            <item>
+              <description>コンテキスト</description>
+              <description>周辺のテキストに基づいて最適な合字を選択することで、読みやすさと見栄えが向上するようにデザインされています。</description>
+            </item>
+            <item>
+              <description>階層的</description>
+              <description>古典的な装飾的合字で、現代の読者には古めかしく見えることがあります。特に読みやすさを意図したデザインではありません。</description>
+            </item>
+            <item>
+              <description>随意</description>
+              <description>鑑賞可能で、読みやすいように設計されていません。</description>
+            </item>
+          </list>
+          <para>この4つの基本値の組み合わせによって、このプロパティに使用できる値のセットが形成されます。 この値のセットは、 <see cref="T:Microsoft.Office.Interop.Word.WdLigatures" />列挙体で表されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Line">
@@ -943,12 +905,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.LineFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、<see cref="T:Microsoft.Office.Interop.Word.LineFormat" />の行の書式を指定するオブジェクト。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.LineFormat" />オブジェクトです。</value>
-        <remarks>
-          <para>読み取り/書き込み。</para>
-          <para />
-        </remarks>
+        <summary>行の<see cref="T:Microsoft.Office.Interop.Word.LineFormat" />書式を指定するオブジェクトを取得します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.LineFormat" /> オブジェクト。</value>
+        <remarks><para>値の取得と設定が可能です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -977,7 +937,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの名前を取得または設定します。値の取得および設定が可能です。文字列型 ( <b>String</b>) の値を使用します。</summary>
+        <summary>指定したオブジェクトの名前を設定または返します。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1008,12 +968,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>英数字 (文字コードが 0 (ゼロ) ~ 127) に使用するフォントを設定または返します。読み取りまたは書き込み <b>文字列</b> です。</summary>
+        <summary>英数字 (文字コードが 0 (ゼロ) ~ 127) に使用するフォントを設定または返します。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>英語版の Microsoft Word でこのプロパティの既定値は Times New Roman です。使用して、<see cref="P:Microsoft.Office.Interop.Word._Font.Name" />のすべてのテキストに適用されていると、[書式設定] ツールバーの [フォント] ボックスに表示されるフォントを変更するプロパティです。</para>
-          <para />
-        </remarks>
+        <remarks><para>Word 英語版では、このプロパティの既定値は Times New Roman です。 <see cref="P:Microsoft.Office.Interop.Word._Font.Name" />プロパティを使用して、すべてのテキストに適用されるフォントを変更し、[書式設定] ツールバーの [フォント] ボックスに表示されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NameBi">
@@ -1042,7 +1000,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または右から左への言語の文書内のフォントの名前を設定します。読み取りまたは書き込み <b>文字列</b> です。</summary>
+        <summary>取得または右から左への言語の文書内のフォントの名前を設定します。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1073,12 +1031,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>東アジアのフォント名を設定または返します。読み取りまたは書き込み <b>文字列</b> です。</summary>
+        <summary>東アジアのフォント名を設定または返します。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>英語版の Microsoft Word でこのプロパティの既定値は Times New Roman です。これは、アジア言語のバージョンの Word で作成された文書にアジア言語のテキストのフォントを設定する推奨される方法です。</para>
-          <para />
-        </remarks>
+        <remarks><para>Word 英語版では、このプロパティの既定値は Times New Roman です。Word アジア版で作成された文書のアジア言語の文字列にフォントを設定する場合、この方法をお勧めします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NameOther">
@@ -1107,12 +1063,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>文字コードが 128 255 までからの文字に使用するフォントを設定または返します。読み取りまたは書き込み <b>文字列</b> です。</summary>
+        <summary>文字コードが 128 255 までからの文字に使用するフォントを設定または返します。 読み取りまたは書き込み <b>文字列</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>英語版の Microsoft Word でこのプロパティの既定値は Times New Roman です。使用して、<see cref="P:Microsoft.Office.Interop.Word._Font.Name" />のすべてのテキストに適用されていると、[書式設定] ツールバーの [フォント] ボックスに表示されるフォントを変更するプロパティです。</para>
-          <para />
-        </remarks>
+        <remarks><para>Word 英語版では、このプロパティの既定値は Times New Roman です。 <see cref="P:Microsoft.Office.Interop.Word._Font.Name" />プロパティを使用して、すべてのテキストに適用されるフォントを変更し、[書式設定] ツールバーの [フォント] ボックスに表示されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberForm">
@@ -1142,11 +1096,10 @@
       </ReturnValue>
       <Docs>
         <summary>OpenType フォントの数値の表示形式を示します。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.WdNumberForm" />オブジェクトです。</value>
-        <remarks>
-          <para>
-            <b>WdNumberForm</b>の読み取り/書き込み。(「ライニング」と呼びます)、テキストのベースラインを一貫性のある高さまたは高さが異なる (と呼ばれる「ハングアップ」または「古いスタイル」)、テキストのベースラインより上または下に番号が表示されるのいずれか、OpenType フォントの番号を表示できます。ライニングまたは以前の形式を使用して数値を表示するかどうかを指定するのにはこのプロパティを使用します</para>。
-          <para>ローマ数字の横にあるドロップダウン リスト ボックスで項目を選択すると同じ効果を持つこのプロパティを設定: (OpenType 機能を Word 2010 では [フォント] ダイアログ ボックスでグループで、[詳細設定] タブ).</para><para /></remarks>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdNumberForm" /> オブジェクト。</value>
+        <remarks><para><b>WdNumberForm</b> の取得および設定が可能です。 (「ライニング」と呼びます)、テキストのベースラインを一貫性のある高さまたは高さが異なる (と呼ばれる「ハングアップ」または「古いスタイル」)、テキストのベースラインより上または下に番号が表示されるのいずれか、OpenType フォントの番号を表示できます。 このプロパティを使用して、数字を並び線を付けて表示するか、old スタイルで表示するかを指定します。</para>
+          <para>このプロパティを設定すると、[数値フォーム: (Word 2010 の [フォント] ダイアログボックスの [詳細設定] タブの [数字形式] ボックスで項目を選択した場合と同じ結果になります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberSpacing">
@@ -1175,12 +1128,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdNumberSpacing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはフォントの番号の間隔] の値を設定します。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.WdNumberSpacing" />オブジェクトです。</value>
-        <remarks>
-          <para>読み取り/書き込みの<b>WdNumberSpacing</b>です。OpenType フォントは、数字の間隔を制御するプロポーショナルおよび表形式数字機能をサポートします。プロポーショナル数字の間隔は、異なる幅を持つものとして各数字を処理します。たとえば、「1」は、「5」よりも狭くとして表示されます。表形式の数字の間隔を処理数値幅に等しいと垂直方向に位置が揃うように特に財務情報の読みやすさを向上します。</para>
-          <para />
-        </remarks>
+        <summary>取得またはフォントの数字の間隔の設定を設定します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdNumberSpacing" /> オブジェクト。</value>
+        <remarks><para><b>WdNumberSpacing</b> の取得および設定が可能です。 OpenType フォントは、数字の間隔を制御するために、プロポーショナルおよび表形式の図機能をサポートしています。 プロポーショナル数字は、それぞれの数値の幅が異なるように処理されます。 たとえば、"1" は "5" より狭い幅に表示されます。 表形式の数字の間隔は、垂直方向に配置されるように、幅が等しいものとして処理されます。これにより、特に財務情報に対して読みやすくなります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Outline">
@@ -1209,8 +1160,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は、フォントがアウトラインとして書式設定します。 を返します<b>True</b>、 <b>False</b>、または<b>wdUndefined</b> (True と False の両方)。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
+        <summary><b>True</b> に設定すると、中抜きの書式が設定されます。 <b>True</b>、 <b>false</b>、または<b>wdUndefined</b> (true と false の両方) を返します。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 読み取り/書き込みの <b>整数</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1269,7 +1219,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ベースラインを基準にしてポイント単位でのテキストの位置を設定または返します。 正の数は文字列を上方に、負の数は文字列を下方に配置します。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
+        <summary>ベースラインを基準にしてポイント単位でのテキストの位置を設定または返します。 正の数は文字列を上方に、負の数は文字列を下方に配置します。 読み取り/書き込みの <b>整数</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1300,12 +1250,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ReflectionFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、<see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" />図形の反射形式を表すオブジェクト。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" />オブジェクトです。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>図形の<see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" />反射の書式設定を表すオブジェクトを取得します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" /> オブジェクト。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -1330,10 +1278,8 @@
       <Parameters />
       <Docs>
         <summary>手動の文字の書式 (スタイルは適用されません) を削除します。</summary>
-        <remarks>
-          <para>手動で単語を太字の書式設定する基になるスタイルは、テキスト (太字にしない) 場合は、Reset メソッドは、太字の書式を削除します。</para>
-          <para />
-        </remarks>
+        <remarks><para>単語を手動で太字に設定し、基になるスタイルがテキスト (太字ではない) の場合、Reset メソッドは太字の書式を削除します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Scaling">
@@ -1362,7 +1308,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>フォントに適用する倍率を設定または返します。 水平方向に文字列を拡大または縮小します。1 ～ 600 の倍率を指定します。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
+        <summary>フォントに適用する倍率を設定または返します。 水平方向に文字列を拡大または縮小します。1 ～ 600 の倍率を指定します。 読み取り/書き込みの <b>整数</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1415,7 +1361,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Shading" /> 、指定したオブジェクトの網かけ書式を参照するオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Shading" />たオブジェクトの網かけ書式を参照するオブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1446,8 +1392,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>として指定したフォントが書式設定された影付きにします。 <b>True</b> 、 <b>False</b> 、または <b>wdUndefined</b> をすることができます。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
+        <summary><b>True</b>の場合は、指定したフォントが影付きとして書式設定されます。 <b>True</b> 、 <b>False</b> 、または <b>wdUndefined</b> をすることができます。 読み取り/書き込みの <b>整数</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1503,7 +1448,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはフォント サイズをポイント単位で設定します。読み取り/書き込み <b>1 つ</b> です。</summary>
+        <summary>取得またはフォント サイズをポイント単位で設定します。 読み取り/書き込み <b>1 つ</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1534,13 +1479,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはフォント サイズをポイント単位で設定します。読み取り/書き込み 1 つ です。</summary>
+        <summary>取得またはフォント サイズをポイント単位で設定します。 値の取得および設定が可能です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>SizeBi</b>プロパティは、右から左への言語のテキストに適用されます。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>SizeBi</b> プロパティは、右から左への言語のテキストに適用されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallCaps">
@@ -1569,14 +1511,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>を小型英大文字の書式が設定されている場合です。 の<b>場合は True</b>、 <b>False</b>または<b>wdUndefined</b> ( <b>True</b>と<b>False</b>の両方) を返します。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
+        <summary><b>True</b>の場合は、フォントが小型英大文字として書式設定されます。 取得される値は、<b>True</b>、<b>False</b>、または <b>wdUndefined</b> 定数 (<b>True</b> と <b>False</b> の両方) です。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 読み取り/書き込みの <b>整数</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>True</b>を設定する、<b>小型英大文字</b>のプロパティを設定します<see cref="P:Microsoft.Office.Interop.Word._Font.AllCaps" />プロパティに<b>false を指定</b>し、その逆。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>SmallCaps</b>プロパティを<b>True</b>に設定すると<see cref="P:Microsoft.Office.Interop.Word._Font.AllCaps" /> 、プロパティは<b>False</b>に設定され、その逆も同様です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Spacing">
@@ -1605,7 +1543,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>文字の間隔をポイント単位で) を設定または返します。読み取り/書き込み <b>1 つ</b> です。</summary>
+        <summary>文字の間隔をポイント単位で) を設定または返します。 読み取り/書き込み <b>1 つ</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1636,13 +1574,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、フォントが取り消し線付きのテキストとして書式設定。 の<b>場合は True</b>、 <b>False</b>または<b>wdUndefined</b> ( <b>True</b>と<b>False</b>の両方) を返します。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
+        <summary><b>True の</b> 場合は、フォントが取り消し線付きのテキストとして書式設定。 取得される値は、<b>True</b>、<b>False</b>、または <b>wdUndefined</b> 定数 (<b>True</b> と <b>False</b> の両方) です。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 読み取り/書き込みの <b>整数</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>設定したり二重取り消し線の書式を使用して、<see cref="P:Microsoft.Office.Interop.Word._Font.DoubleStrikeThrough" />プロパティ。</para>
-          <para />
-        </remarks>
+        <remarks><para>二重取り消し線の書式を設定または取得<see cref="P:Microsoft.Office.Interop.Word._Font.DoubleStrikeThrough" />するには、プロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StylisticSet">
@@ -1671,12 +1606,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdStylisticSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定したフォントのスタイルのセットを設定します。</summary>
-        <value>デザインのセットです。</value>
-        <remarks>
-          <para>読み取り/書き込みの<b>WdStylisticSet</b>です。OpenType フォントによっては、デザインのセットを提供します。デザインのセットでは、一緒に使用する、視覚ハーモニーをするために通常ように見出しには、フォント内の文字のセットを定義します。</para>
-          <para />
-        </remarks>
+        <summary>指定したフォントのスタイルセットを取得または設定します。</summary>
+        <value>スタイルセット。</value>
+        <remarks><para><b>WdStylisticSet</b> の取得および設定が可能です。 一部の OpenType フォントにはスタイル セットが用意されています。 スタイル セットは、フォント内の文字で併せて使用するために定義された文字のセットです (通常は見出しなどで視覚的な調和を得るために使用します)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Subscript">
@@ -1705,14 +1638,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、フォントが下付き文字として書式設定します。 の<b>場合は True</b>、 <b>False</b>または<b>wdUndefined</b> ( <b>True</b>と<b>False</b>の両方) を返します。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
+        <summary><b>True の</b> 場合は、フォントが下付き文字として書式設定します。 取得される値は、<b>True</b>、<b>False</b>、または <b>wdUndefined</b> 定数 (<b>True</b> と <b>False</b> の両方) です。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 読み取り/書き込みの <b>整数</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>True</b>を設定する<b>インデックス</b>プロパティを設定します<see cref="P:Microsoft.Office.Interop.Word._Font.Superscript" />プロパティに<b>false を指定</b>し、その逆。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>添え</b>プロパティを<b>True</b>に設定すると<see cref="P:Microsoft.Office.Interop.Word._Font.Superscript" /> 、プロパティは<b>False</b>に設定され、その逆も同様です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Superscript">
@@ -1741,14 +1670,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、フォントが上付き文字として書式設定します。 の<b>場合は True</b>、 <b>False</b>または<b>wdUndefined</b> ( <b>True</b>と<b>False</b>の両方) を返します。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 読み取り/書き込み <b>時間</b> です。</summary>
+        <summary><b>True の</b> 場合は、フォントが上付き文字として書式設定します。 取得される値は、<b>True</b>、<b>False</b>、または <b>wdUndefined</b> 定数 (<b>True</b> と <b>False</b> の両方) です。 <b>True</b> 、 <b>False</b> 、または <b>wdToggle</b> を設定できます。 読み取り/書き込み <b>時間</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>True</b>を設定する<b>上付き文字</b>のプロパティを設定する、<see cref="P:Microsoft.Office.Interop.Word._Font.Subscript" />プロパティに<b>false を指定</b>し、その逆です。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>上付き文字</b>のプロパティを<b>True</b>に設定<see cref="P:Microsoft.Office.Interop.Word._Font.Subscript" />すると、プロパティが<b>False</b>に設定され、その逆も同様です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextColor">
@@ -1774,12 +1699,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、 <see cref="T:Microsoft.Office.Interop.Word.ColorFormat" /> 、指定したフォントの色を表すオブジェクト。</summary>
-        <value>指定したフォントの色です。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.ColorFormat" />たフォントの色を表すオブジェクトを取得します。</summary>
+        <value>指定したフォントの色を指定します。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextShadow">
@@ -1808,8 +1731,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ShadowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、<see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" />を影付きの指定したフォントの書式を指定します。</summary>
-        <value>影付きの書式指定されたフォントです。</value>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" />たフォントの影付きの書式を指定するオブジェクトを取得します。</summary>
+        <value>指定したフォントの影付きの書式を指定します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1839,12 +1762,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ThreeDFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、<see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />オブジェクトを指定したフォントのプロパティを書式設定の 3-D 効果が含まれています。</summary>
-        <value>3-D 効果のプロパティを指定したフォントの書式を設定します。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />たフォントの3-d 効果の書式プロパティを含むオブジェクトを取得します。</summary>
+        <value>指定したフォントの3-d 効果の書式設定プロパティを指定します。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Underline">
@@ -1875,44 +1796,43 @@
       <Docs>
         <summary>取得またはフォントに適用する下線の種類を設定します。 読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Word.WdUnderline" />。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <b>Wdunderline</b>には、次のいずれかの定数を使用できます。</para>
           <para>
-            <b>可能</b>には、以下の定数のいずれかを指定できます:</para>
-          <para>
-            <b>wdUnderlineDashHeavy </b>
+            <b>Wdアンダー Linedashヘビー</b>
           </para>
           <para>
-            <b>wdUnderlineDashLongHeavy </b>
+            <b>Wdアンダー Linedashlongヘビー</b>
           </para>
           <para>
-            <b>wdUnderlineDotDashHeavy </b>
+            <b>wdUnderlineDotDashHeavy</b>
           </para>
           <para>
-            <b>wdUnderlineDotDotDashHeavy </b>
+            <b>wdUnderlineDotDotDashHeavy</b>
           </para>
           <para>
             <b>wdUnderlineDottedHeavy</b>
           </para>
           <para>
-            <b>wdUnderlineNone </b>
+            <b>Wd過小 Linenone</b>
           </para>
           <para>
-            <b>wdUnderlineThick </b>
+            <b>wdUnderlineThick</b>
           </para>
           <para>
-            <b>wdUnderlineWavyDouble </b>
+            <b>wdUnderlineWavyDouble</b>
           </para>
           <para>
-            <b>wdUnderlineWords </b>
+            <b>wdUnderlineWords</b>
           </para>
           <para>
-            <b>wdUnderlineDash </b>
+            <b>Wd過小 Linedash</b>
           </para>
           <para>
-            <b>wdUnderlineDashLong </b>
+            <b>Wdアンダー Linedashlong</b>
           </para>
           <para>
-            <b>wdUnderlineDotDash </b>
+            <b>wdUnderlineDotDash</b>
           </para>
           <para>
             <b>wdUnderlineDotDotDash</b>
@@ -1921,7 +1841,7 @@
             <b>wdUnderlineDotted</b>
           </para>
           <para>
-            <b>wdUnderlineDouble</b>
+            <b>wdアンダー linedou</b>
           </para>
           <para>
             <b>wdUnderlineSingle</b>
@@ -1932,8 +1852,7 @@
           <para>
             <b>wdUnderlineWavyHeavy</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UnderlineColor">
@@ -1962,11 +1881,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定の下線に 24 ビット カラーの設定を取得または<see cref="T:Microsoft.Office.Interop.Word.Font" />オブジェクトです。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.Font" />オブジェクトの下線の24ビットの色を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>任意の有効なことができます<see cref="T:Microsoft.Office.Interop.Word.WdColor" />定数、または Visual Basic の<b>RGB</b>関数によって返される値です</para>。
-          <para><b>UnderlineColor</b>プロパティに<b>wdColorAutomatic</b>を設定、それの前のテキストの色、下線の色をリセット</para><para /></remarks>
+        <remarks><para>任意の有効な<see cref="T:Microsoft.Office.Interop.Word.WdColor" />定数または Visual Basic の<b>RGB</b>関数によって返される値を指定できます。</para>
+          <para><b>UnderlineColor</b>プロパティを<b>wdcolorautomatic</b>に設定すると、下のテキストの色に下線の色がリセットされます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="ColorFormat" FullName="Microsoft.Office.Interop.Word.ColorFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="dcf4bb34b09a1742a595fe81e3cf40a11a84fc5b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671772" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ColorFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="009c7bf5816a06a2dbe1390b58db24c3e4dfd954" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147197" /></Metadata><TypeSignature Language="C#" Value="public interface ColorFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ColorFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ColorFormat" />
@@ -27,16 +19,65 @@
   </Attributes>
   <Docs>
     <summary>1 色のオブジェクトの色や、グラデーションまたはパターンで塗りつぶされたオブジェクトの前景色と背景色を表します。</summary>
-    <remarks>
-      <para>
-        <b>ColorFormat</b>オブジェクトを取得する次の表に示すプロパティのいずれか使用しています</para>。
-      <list type="table"><item><description><see cref="P:Microsoft.Office.Interop.Word.FillFormat.BackColor" /></description><description><see cref="T:Microsoft.Office.Interop.Word.FillFormat" /></description>の背景の塗りつぶしの色 (グラデーションまたはパターンの塗りつぶしで使用)
-        </item><item><description><see cref="P:Microsoft.Office.Interop.Word.FillFormat.ForeColor" /></description><description><b>FillFormat</b></description><description>前景の塗りつぶし色 (または均一な色の塗りつぶしの色だけで)</description></item><item><description><see cref="P:Microsoft.Office.Interop.Word.LineFormat.BackColor" /></description><description><see cref="T:Microsoft.Office.Interop.Word.LineFormat" /></description>バック グラウンド線の色 (線のパターンで使用)
-        </item><item><description><see cref="P:Microsoft.Office.Interop.Word.LineFormat.ForeColor" /></description><description><b>対象</b></description>の
-          <description>前景の線色 (または実線の色)</description></item><item><description><see cref="P:Microsoft.Office.Interop.Word.ShadowFormat.ForeColor" /></description><description><see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" /></description>シャドウ カラー
-        </item><item><description><see cref="P:Microsoft.Office.Interop.Word.ThreeDFormat.ExtrusionColor" /></description><description><see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /></description>の色、押し出しオブジェクトの側面
-        </item></list><para>使用して、<see cref="P:Microsoft.Office.Interop.Word.ColorFormat.RGB" />赤、緑、青の値で明示される色を設定するプロパティ</para>。
-      <para /></remarks>
+    <remarks><para>次に示すオブジェクトおよびプロパティによって取得する <b>ColorFormat</b> オブジェクトの表す内容が異なります。</para>
+      <list type="table">
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.FillFormat.BackColor" />
+          </description>
+          <description>
+            <see cref="T:Microsoft.Office.Interop.Word.FillFormat" />
+          </description>
+          <description>背景の塗りつぶし色 (網かけまたはパターンを使った塗りつぶしに使用)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.FillFormat.ForeColor" />
+          </description>
+          <description>
+            <b>使い方</b>
+          </description>
+          <description>前景の塗りつぶし色 (または均一な色の塗りつぶし色)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.LineFormat.BackColor" />
+          </description>
+          <description>
+            <see cref="T:Microsoft.Office.Interop.Word.LineFormat" />
+          </description>
+          <description>背景の線の色 (線のパターンに使用)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.LineFormat.ForeColor" />
+          </description>
+          <description>
+            <b>LineFormat</b>
+          </description>
+          <description>前景の線色 (または均一の色の線)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.ShadowFormat.ForeColor" />
+          </description>
+          <description>
+            <see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" />
+          </description>
+          <description>影の色</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.ThreeDFormat.ExtrusionColor" />
+          </description>
+          <description>
+            <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />
+          </description>
+          <description>3-D オブジェクトの側面の色</description>
+        </item>
+      </list>
+      <para>色を<see cref="P:Microsoft.Office.Interop.Word.ColorFormat.RGB" />赤、緑、青の値で明示的に設定するには、プロパティを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +103,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -99,7 +140,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または CMYK カラーの黒成分を表す値を設定します。</summary>
+        <summary>CMYK カラーの黒成分を表す値を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -131,11 +172,9 @@
       </ReturnValue>
       <Docs>
         <summary>指定した図形の色の明るさを取得します。</summary>
-        <value>指定した図形の色の明るさです。</value>
-        <remarks>
-          <para>読み取り/書き込み。ニュートラル中は 0、-1 (最も暗い) から 1 (最も明るい) このプロパティは数値を入力できます。</para>
-          <para />
-        </remarks>
+        <value>指定した図形の色の明るさを指定します。</value>
+        <remarks><para>値の取得と設定が可能です。 このプロパティには、-1 (最も暗い) から 1 (最も明るい) までの数値を入力できます。0はニュートラルです。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -163,10 +202,9 @@
       <Docs>
         <summary>指定したオブジェクトが作成されたアプリケーションを示す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cyan">
@@ -201,7 +239,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または CMYK カラーのシアン成分を表す値を設定します。</summary>
+        <summary>CMYK カラーのシアン成分を表す値を取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -241,8 +279,8 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">インクの数です。</param>
-        <summary>取得またはの特定のインクの濃さを表す値を設定します。</summary>
+        <param name="Index">インクの番号を指定します。</param>
+        <summary>指定したインクの鮮やかさの程度を表す値を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -279,7 +317,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または CMYK カラーのマゼンタ成分を表す値を設定します。</summary>
+        <summary>CMYK カラーのマゼンタ成分を表す値を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -347,10 +385,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdThemeColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>色の形式のテーマの色を設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdThemeColorIndex" />
-        </value>
+        <summary>色の書式のテーマの色を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdThemeColorIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -386,7 +422,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定した図形、インク図形のレベルを 0 (ゼロ) に設定されている分解版に印刷されない、印刷業者入稿用の分解版を作成するときを示す値を設定します。</summary>
+        <summary>指定した図形のインクレベルが 0 (ゼロ) に設定されている色分解プレートに印刷されないようにするために、印刷業者印刷用の色分解版を作成するときに指定した図形は印刷されません。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -482,7 +518,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定したオブジェクトに関連付けられている適用されている配色パターンの色を表す値を設定します。</summary>
+        <summary>取得または指定したオブジェクトに関連付けられている適用される配色の色を表す値を設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -516,10 +552,10 @@
         <Parameter Name="Black" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Cyan">色のシアン成分を表す値。 0 から 255 までの任意の値にすることができます。</param>
-        <param name="Magenta">色のマゼンタ成分を表す値。 0 から 255 までの任意の値にすることができます。</param>
-        <param name="Yellow">カラーの黄色成分を表す値。 0 から 255 までの任意の値にすることができます。</param>
-        <param name="Black">カラーの黒成分を表す値。 0 から 255 までの任意の値にすることができます。</param>
+        <param name="Cyan">色のシアン成分を表す値を指定します。 0 ~ 255 の任意の値を指定できます。</param>
+        <param name="Magenta">色のマゼンタ成分を表す値を指定します。 0 ~ 255 の任意の値を指定できます。</param>
+        <param name="Yellow">色の黄色成分を表す値を指定します。 0 ~ 255 の任意の値を指定できます。</param>
+        <param name="Black">色の黒成分を表す値を指定します。 0 ~ 255 の任意の値を指定できます。</param>
         <summary>CMYK カラー (シアン、マゼンダ、黄、黒) の値を設定します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -550,13 +586,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定した図形の色の暗さを表す値を設定します。</summary>
+        <summary>指定した図形の色の明るくまたは暗くを表す値を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>TintAndShade</b>プロパティは、0 (ゼロ) がニュートラル (最も明るい) 1、-1 (最も暗い) から数値を入力できます。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>TintAndShade</b> プロパティは、0 (ゼロ) がニュートラル (最も明るい) 1、-1 (最も暗い) から数値を入力できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -582,7 +615,7 @@
         <ReturnType>Microsoft.Office.Core.MsoColorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図形の色の種類を返します。</summary>
+        <summary>図形の色の種類を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -619,7 +652,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または CMYK カラーの黄色成分を表す値を設定します。</summary>
+        <summary>CMYK カラーの黄色成分を表す値を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

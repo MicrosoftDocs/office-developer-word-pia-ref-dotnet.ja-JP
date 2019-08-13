@@ -1,13 +1,5 @@
 <Type Name="ProtectedViewWindows" FullName="Microsoft.Office.Interop.Word.ProtectedViewWindows">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="506d1829c1c4c6385365d719f17a17c3f44c87a3" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672132" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ProtectedViewWindows : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2e9ac6ba9dba7949a597ac1a0f57c956ed0366db" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144156" /></Metadata><TypeSignature Language="C#" Value="public interface ProtectedViewWindows : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ProtectedViewWindows implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" />
   <TypeSignature Language="VB.NET" Value="Public Interface ProtectedViewWindows&#xA;Implements IEnumerable" />
@@ -30,11 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>すべてのコレクション、<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />は、現在のオブジェクトを Word 2010 で開きます。</summary>
-    <remarks>
-      <para>、保護されたビュー] ウィンドウに表示されるドキュメントが編集できなくなり、マクロ、データ接続などのアクティブ コンテンツの実行が制限されています</para>。
-      <para>使用<b>ProtectedViewWindows</b>(<paramref name="Index" />)、<paramref name="Index" />は、インデックス番号を返す 1 つの<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />オブジェクトです</para>。
-      <para /></remarks>
+    <summary>Word 2010 で現在開か<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />れているすべてのオブジェクトのコレクションです。</summary>
+    <remarks><para>保護されたビューウィンドウに表示されるドキュメントは編集できず、マクロやデータ接続などのアクティブなコンテンツの実行が制限されます。</para>
+      <para><b>ProtectedViewWindows</b>(<paramref name="Index" />) を使用し<paramref name="Index" />ます。ここで、は1つ<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />のオブジェクトを取得するインデックス番号です。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,13 +51,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを取得します。</summary>
+        <value>Microsoft <see cref="T:Microsoft.Office.Interop.Word.Application" /> Word アプリケーションを表すオブジェクト。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -92,12 +80,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内には、保護されたビューのウィンドウの数を取得します。</summary>
-        <value>コレクション内の保護されたビューのウィンドウの数。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>コレクション内の保護されたビューウィンドウの数を取得します。</summary>
+        <value>コレクション内の保護されたビューウィンドウの数。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -123,12 +109,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトが作成されたアプリケーションを示す 32 ビット整数を取得します。</summary>
-        <value>指定したオブジェクトが作成されたアプリケーションを示す 32 ビット整数。</value>
-        <remarks>
-          <para>読み取り専用<b>long</b>です。オブジェクトは、Microsoft Word で作成されている場合、このプロパティは文字列"MSWD"を表す 16 進数、値である 4d535744 を返します。このプロパティは、各アプリケーションが 4 文字のクリエータ コードには、Apple Macintosh で使用するために設計されました。MSWD 元のコードが Word には、たとえば、します</para>。
-          <para><b>注意</b>: この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para /></remarks>
+        <summary>指定したオブジェクトが作成されたアプリケーションを示す32ビット整数を取得します。</summary>
+        <value>指定したオブジェクトが作成されたアプリケーションを示す32ビットの整数。</value>
+        <remarks><para>値の取得のみ可能な<b>long</b>値です。 オブジェクトが Microsoft Word で作成されている場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 このプロパティは、各アプリケーションが 4 文字のクリエータ コードには、Apple Macintosh で使用するために設計されました。 たとえば、Word には、作成者コード MSWD です。</para>
+          <para>
+            <b>注意</b>: この値は、定数<b>wdCreatorCode</b>で表すこともできます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -159,7 +145,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>返します。 <see cref="T:System.Collections.IEnumerator" />。</returns>
+        <returns>を<see cref="T:System.Collections.IEnumerator" />返します。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,7 +177,7 @@
       <Docs>
         <param name="Index">個々 のオブジェクトが返されます。</param>
         <summary>コレクション内の個々 の <b>ProtectedViewWindows</b> オブジェクトを返します。</summary>
-        <value>返します。 <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />。</value>
+        <value>を<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />返します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -222,19 +208,14 @@
       </Parameters>
       <Docs>
         <param name="FileName">文書の名前を指定します。パスを指定することもできます。</param>
-        <param name="AddToRecentFiles">
-          <b>true</b>の一覧にファイル名を追加するのには最近使用したファイル、[ファイル] メニューの下部にあります。それ以外の場合、 <b>false を指定</b>します。</param>
+        <param name="AddToRecentFiles">[ファイル] メニューの一番下にある、最近使用したファイルの一覧にファイル名を追加するには、 <b>true</b>を指定します。それ以外の場合は<b>false</b>。</param>
         <param name="PasswordDocument">文書を開くためのパスワードを指定します。</param>
-        <param name="Visible">
-          <b>true</b>を表示されているウィンドウに文書が開かれている場合それ以外の場合、 <b>false を指定</b>します。 既定値は True です。</param>
-        <param name="OpenAndRepair">
-          <b>true</b>は文書の破損を防ぐために文書を修復するにはそれ以外の場合、 <b>false を指定</b>します。</param>
+        <param name="Visible"><b>true</b>の場合は、ドキュメントは表示可能なウィンドウで開かれます。それ以外の場合は<b>false</b>。 既定値は True です。</param>
+        <param name="OpenAndRepair">ドキュメントが破損しないようにドキュメントを修復するには、 <b>true</b>を設定します。それ以外の場合は<b>false</b>。</param>
         <summary>新しい保護されたビュー ウィンドウで指定した文書を開きます。</summary>
-        <returns>A<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />オブジェクトです。</returns>
-        <remarks>
-          <para>アプリケーションにハード コーディングされたパスワードを使用しないでください。プロシージャでは、パスワードが必要な場合は、ユーザーからパスワードを要求して、変数に格納コードで変数を使用します。</para>
-          <para />
-        </remarks>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" /> オブジェクト。</returns>
+        <remarks><para>アプリケーションではハードコードされたパスワードを使用しないでください。 プロシージャでパスワードが必要な場合は、ユーザーのパスワードを要求し、変数に格納してから、コードでその変数を使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -260,9 +241,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、<see cref="T:System.Object" />の指定した親オブジェクトを表す<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" />オブジェクトです。</summary>
-        <value>
-          <see cref="T:System.Object" />の指定した親オブジェクトを表す<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" />オブジェクトです。</value>
+        <summary>は<see cref="T:System.Object" /> 、指定<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" />したオブジェクトの親オブジェクトを表すを取得します。</summary>
+        <value><see cref="T:System.Object" />指定<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" />したオブジェクトの親オブジェクトを表す。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

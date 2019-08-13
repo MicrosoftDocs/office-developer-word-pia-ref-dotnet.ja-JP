@@ -1,13 +1,5 @@
 <Type Name="TextRetrievalMode" FullName="Microsoft.Office.Interop.Word.TextRetrievalMode">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3c05807c4b3080e4b3b90b36cba7f16d48329f62" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672186" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TextRetrievalMode" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0c1ee93d1968c1b9fe8eb8a0db78df0c1c441410" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143799" /></Metadata><TypeSignature Language="C#" Value="public interface TextRetrievalMode" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextRetrievalMode" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TextRetrievalMode" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextRetrievalMode" />
@@ -26,11 +18,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>テキストを取得する方法を制御するオプションを表す、<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.Range.TextRetrievalMode" /><b>TextRetrievalMode</b>オブジェクトを取得するプロパティ</para>。
-      <para>変更する、 <see cref="P:Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeHiddenText" /> 、 <see cref="P:Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeHiddenText" /> 、または<see cref="P:Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeFieldCodes" /><b>TextRetrievalMode</b>オブジェクトのプロパティは、画面の表示を変更しません。代わりに、これらのプロパティを変更することを決定どのようなテキストは、 <b>Range</b>オブジェクトから取得されますと、<see cref="P:Microsoft.Office.Interop.Word.Range.Text" />プロパティを使用します</para>。
-      <para /></remarks>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトからテキストを取得する方法を制御するオプションを表します。</summary>
+    <remarks><para>TextRetrievalMode オブジェクト<see cref="P:Microsoft.Office.Interop.Word.Range.TextRetrievalMode" />を取得するの<b></b>にには、プロパティを使用します。</para>
+      <para>TextRetrievalMode オブジェクトの<see cref="P:Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeHiddenText" /> 、、 <see cref="P:Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeFieldCodes" />またはプロパティを変更しても、画面表示は変更されません。 <b></b> <see cref="P:Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeHiddenText" /> 代わりに、これらのプロパティのいずれかを変更すると、 <see cref="P:Microsoft.Office.Interop.Word.Range.Text" />プロパティを使用するときに<b>Range</b>オブジェクトから取得するテキストを指定します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,12 +75,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Duplicate">
@@ -115,13 +105,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextRetrievalMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返す、読み取り専用<see cref="T:Microsoft.Office.Interop.Word.TextRetrievalMode" />から、指定したテキストを取得するオプションを表すオブジェクトが関連する<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトから<see cref="T:Microsoft.Office.Interop.Word.TextRetrievalMode" />テキストを取得するときに関連するオプションを表す読み取り専用のオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Duplicate</b>プロパティを使用するには、重複のすべてのプロパティの設定を選択するのには<see cref="T:Microsoft.Office.Interop.Word.Font" />、 <see cref="T:Microsoft.Office.Interop.Word.LetterContent" />、または<see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />オブジェクトです。これらの設定を一度に適用するのには同じ種類の別のオブジェクトの<b>Duplicate</b>プロパティから返されるオブジェクトを割り当てることができます。別のオブジェクトに重複したオブジェクトを代入する前に変更できます、重複するオブジェクトのプロパティのいずれかの元の影響を与えずにします</para>。
-          <para><b>Range</b>オブジェクトを複製するには、変更の開始または複製の指定範囲の文字の位置を元の範囲を変更することがなく終了します</para>。
-          <para /></remarks>
+        <remarks><para><b>Duplicate</b>プロパティを使用すると、重複<see cref="T:Microsoft.Office.Interop.Word.Font" />し<see cref="T:Microsoft.Office.Interop.Word.LetterContent" />た、、または<see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />オブジェクトのすべてのプロパティの設定を選択できます。 これらの設定を一度に適用するのには同じ種類の別のオブジェクトの <b>Duplicate</b> プロパティから返されるオブジェクトを割り当てることができます。 別のオブジェクトに重複したオブジェクトを代入する前に元の影響を与えずに、重複するオブジェクトのプロパティのいずれかを変更できます。</para>
+          <para><b>Range</b> オブジェクトを複製するには、元の範囲を変更することがなく複製の指定範囲の開始点または終了文字の位置を変更できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncludeFieldCodes">
@@ -150,14 +138,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、指定された範囲から文字列を検索すると、フィールド コードが含まれます。</summary>
+        <summary><b>True の</b> 場合は、指定された範囲から文字列を検索すると、フィールド コードが含まれます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>メモ</b> 既定値は、[表示] タブ ([ツール] メニュー) の [オプション] ダイアログ ボックスでフィールド コードのオプションの設定と同じまで、このプロパティが設定されています。使用、<see cref="P:Microsoft.Office.Interop.Word.Range.Text" />を持つプロパティ、<see cref="T:Microsoft.Office.Interop.Word.Range" />は指定した範囲からテキストを取得するオブジェクトです。</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>メモ</b> 既定値は、このプロパティが設定されるまで、[オプション] ダイアログボックス ([ツール] メニュー) の [表示] タブの [フィールドコード] の設定と同じです。 指定し<see cref="P:Microsoft.Office.Interop.Word.Range.Text" />た範囲から<see cref="T:Microsoft.Office.Interop.Word.Range" />テキストを取得するには、オブジェクトにプロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncludeHiddenText">
@@ -186,14 +171,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、指定された範囲から文字列を検索すると、非表示のテキストが含まれます。</summary>
+        <summary><b>True</b>の場合は、指定した範囲から取得した文字列に非表示のテキストが含まれます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>メモ</b> 既定値は、[表示] タブ ([ツール] メニュー) の [オプション] ダイアログ ボックスで非表示テキスト オプションの現在の設定と同じまで、このプロパティが設定されています。使用、<see cref="P:Microsoft.Office.Interop.Word.Range.Text" />を持つプロパティ、<see cref="T:Microsoft.Office.Interop.Word.Range" />は指定した範囲からテキストを取得するオブジェクトです。</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>メモ</b> 既定値は、このプロパティが設定されるまで、[オプション] ダイアログボックス ([ツール] メニュー) の [表示] タブの [隠し文字] オプションの現在の設定と同じです。 指定し<see cref="P:Microsoft.Office.Interop.Word.Range.Text" />た範囲から<see cref="T:Microsoft.Office.Interop.Word.Range" />テキストを取得するには、オブジェクトにプロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -250,33 +232,30 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdViewType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ビューの設定を取得または設定します<see cref="T:Microsoft.Office.Interop.Word.TextRetrievalMode" />オブジェクトです。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.TextRetrievalMode" />オブジェクトのビューを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdViewType" /><b>Wdviewtype</b>定数のいずれかをすることができます。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdViewType" />
-            <b>WdViewType</b>定数のいずれかをすることができます。</para>
-          <para>
-            <b>wdMasterView </b>
+            <b>wdMasterView</b>
           </para>
           <para>
-            <b>wdNormalView </b>
+            <b>wdNormalView</b>
           </para>
           <para>
-            <b>wdOutlineView </b>
+            <b>wdOutlineView</b>
           </para>
           <para>
-            <b>wdPrintPreview </b>
+            <b>wdPrintPreview</b>
           </para>
           <para>
-            <b>wdPrintView </b>
+            <b>wdPrintView</b>
           </para>
           <para>
             <b>wdWebView</b>
           </para>
-          <para>
-            <b>TextRetrievalMode</b>オブジェクトの表示を変更しないために、ビューを変更する、画面上のドキュメントです。代わりに、範囲を取得するとき、文書内のどの文字が含まれますを決定します</para>。
-          <para /></remarks>
+          <para><b>TextRetrievalMode</b> オブジェクトのビューを変更すると、画面上のドキュメントの表示が変更されません。代わりに、範囲を取得するとき、文書内のどの文字が含まれますを決定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

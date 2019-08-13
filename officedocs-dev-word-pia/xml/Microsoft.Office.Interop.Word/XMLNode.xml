@@ -1,13 +1,5 @@
 <Type Name="XMLNode" FullName="Microsoft.Office.Interop.Word.XMLNode">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a72a2d631a6f2ec507d0a855eff12afd3295dbe8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671559" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XMLNode" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9972982e927ab7d392fa88967c808138fa36eb51" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145423" /></Metadata><TypeSignature Language="C#" Value="public interface XMLNode" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLNode" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLNode" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLNode" />
@@ -27,10 +19,9 @@
   </Attributes>
   <Docs>
     <summary>文書に適用された 1 つの XML 要素を表します。</summary>
-    <remarks>
-      <para>ドキュメントに適用されている各 XML 要素は、[XML データ構造] 作業ウィンドウでツリー ビュー コントロール内のノードとして表示されます。ツリー ビュー内の各ノードのインスタンスでは、<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />オブジェクトです。階層ツリー ビューでは、ノードに子ノードが含まれているかどうかを示します</para>。使用の
-      <para>、<see cref="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Word.XMLNodes" />個人を取得するコレクション<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />オブジェクトです。使用して、 <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" /> XML 要素が適用されているスキーマに基づいて有効であると、子要素が存在し、必要な順序で、必要なことを確認する方法です。実行すると、<see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" />メソッドを使用して、<see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" />要素が有効であるかどうかを確認し、使用するプロパティ、<see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" />プロパティを XML スキーマの規則に準拠しているドキュメントを作成するために必要なユーザーに関する情報を表示します</para>。
-      <para /></remarks>
+    <remarks><para>文書に適用された各 XML 要素は、[XML データ構造] 作業ウィンドウのツリー ビュー コントロールにノードとして表示されます。 ツリービューの各ノードは、 <see cref="T:Microsoft.Office.Interop.Word.XMLNode" />オブジェクトのインスタンスです。 ツリー ビューの階層は、ノードに子ノードがあるかどうかを示します。</para>
+      <para>各<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />オブジェクト<see cref="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" />を取得する<see cref="T:Microsoft.Office.Interop.Word.XMLNodes" />のにには、コレクションのプロパティを使用します。 <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" />メソッドを使用して、適用されたスキーマに従って XML 要素が有効であること、および必要な子要素が存在し、必要な順序になっていることを確認します。 <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" />メソッドを実行したら、 <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" />プロパティを使用して要素が有効であるかどうかを確認し、 <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" />プロパティを使用してドキュメントを XML スキーマルールに準拠させるためにユーザーが必要とする操作についての情報を表示します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,12 +75,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNodes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.XMLNodes" />を指定した要素の属性を表すコレクション。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.XMLNodes" />た要素の属性を表すコレクションを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>すべて<see cref="T:Microsoft.Office.Interop.Word.XMLNode" /><b>属性</b>のプロパティを使用して返される<b>XMLNodes</b>コレクション内のオブジェクトがある、 <see cref="P:Microsoft.Office.Interop.Word.XMLNode.NodeType" /><b>wdXMLNodeAttribute</b>のプロパティの値です。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> <b>Attributes</b>プロパティを使用して取得した<b>XMLNodes</b>コレクション内のすべて<see cref="P:Microsoft.Office.Interop.Word.XMLNode.NodeType" />のオブジェクトのプロパティの値は、 <b>wdxmlnodeattribute</b>です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseName">
@@ -143,7 +132,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNodes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.XMLNodes" />を指定した要素の子要素を表すコレクション。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.XMLNodes" />た要素の子要素を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -174,12 +163,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLChildNodeSuggestions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.XMLChildNodeSuggestions" />のリストを表すコレクションの要素を許可する、<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />オブジェクトの指定された要素の要素の子を返します)。</summary>
+        <summary>オブジェクトに<see cref="T:Microsoft.Office.Interop.Word.XMLChildNodeSuggestions" />対して許可される要素のリストを表すコレクションを返します (指定された要素の子要素を返します)。 <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>各<see cref="T:Microsoft.Office.Interop.Word.XMLChildNodeSuggestion" />オブジェクトで、<see cref="T:Microsoft.Office.Interop.Word.XMLChildNodeSuggestions" />コレクションでは、項目の一覧で、[XML データ構造] 作業ウィンドウの下部にある XML 要素を使用します。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="T:Microsoft.Office.Interop.Word.XMLChildNodeSuggestions" />コレクション内の各<see cref="T:Microsoft.Office.Interop.Word.XMLChildNodeSuggestion" />オブジェクトは、[xml データ構造] 作業ウィンドウの下部にある、許可される xml 要素のリスト内の項目です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -230,13 +217,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>によっても表すことができます。</para>
-          <para>
-            <b>作成者</b>プロパティが主に、各アプリケーションが 4 文字のクリエータ コードを持つ Macintosh で使用するよう設計されています。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。 </para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -285,7 +270,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -312,12 +297,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> 、最初の子ノードの親ノードを表すオブジェクト。</summary>
+        <summary>親ノード<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />の最初の子ノードを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.XMLNode.LastChild" />の最後の子ノードにアクセスするプロパティ。使用して、<see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" />図表の親ノードにアクセスするプロパティ。</para>
-          <para />
-        </remarks>
+        <remarks><para>最後の<see cref="P:Microsoft.Office.Interop.Word.XMLNode.LastChild" />子ノードにアクセスするには、プロパティを使用します。 ダイアグラムの<see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" />親ノードにアクセスするには、プロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasChildNodes">
@@ -343,12 +326,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された XML 要素に子要素があるかどうかを判断します。</summary>
+        <summary>指定した XML 要素に子要素があるかどうかを判断します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、指定された XML 要素の子要素、および場合は<b>false を指定</b>しない場合に<b>True</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>指定した XML 要素に子要素がある場合、このプロパティは<b>True</b>を返します。存在しない場合は、 <b>False</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LastChild">
@@ -374,12 +355,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />の親ノードの最後の子ノードを表すオブジェクト。</summary>
+        <summary>親ノード<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />の最後の子ノードを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.XMLNode.FirstChild" /> 、図の最初の子ノードにアクセスするプロパティ。使用して、<see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" />図表の親ノードにアクセスするプロパティ。</para>
-          <para />
-        </remarks>
+        <remarks><para>図の<see cref="P:Microsoft.Office.Interop.Word.XMLNode.FirstChild" />最初の子ノードにアクセスするには、プロパティを使用します。 ダイアグラムの<see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" />親ノードにアクセスするには、プロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Level">
@@ -405,7 +384,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdXMLNodeLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ドキュメントに適用される要素の階層構造内で指定した XML 要素のレベルを返します。</summary>
+        <summary>文書に適用される要素の階層内の指定された XML 要素のレベルを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -435,10 +414,8 @@
       <Docs>
         <summary>指定したオブジェクトのスキーマの名前空間の統一リソース識別子 (URI) を表す <b>文字列</b> を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Microsoft Word で使用する XML スキーマを作成している場合は、スキーマの<b>targetNamespace</b>設定を指定することを強くお勧めします。</para>
-          <para />
-        </remarks>
+        <remarks><para>Microsoft Word で使用する XML スキーマを作成している場合は、スキーマで<b>targetNamespace</b>設定を指定することを強くお勧めします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NextSibling">
@@ -464,12 +441,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />を指定した要素と同じレベルにあるドキュメントの次の要素を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />た要素と同じレベルにあるドキュメント内の次の要素を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>指定された要素が最後の要素である場合、<see cref="T:Microsoft.Office.Interop.Word.XMLNodes" />コレクションでは、 <b>Nothing</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>指定した要素が<see cref="T:Microsoft.Office.Interop.Word.XMLNodes" />コレクション内の最後の要素の場合、このプロパティは<b>Nothing</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NodeType">
@@ -495,17 +470,16 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdXMLNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.WdXMLNodeType" />ノードの種類を表す定数です。</summary>
+        <summary>ノードの<see cref="T:Microsoft.Office.Interop.Word.WdXMLNodeType" />種類を表す定数を返します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdXMLNodeType" /><b>wdxmlnodetype クラス</b>定数は、次のいずれかにすることができます。</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdXMLNodeType" />
-            <b>wdXMLNodeType</b>定数は、次のいずれか:</para>
+            <b>Wdxmlnodeattribute</b> –属性ノードを示します。</para>
           <para>
-            <b>wdXMLNodeAttribute</b> – は、属性ノードを示します</para>。
-          <para><b>wdXMLNodeElement</b> – は、要素ノードを示します</para>。
-          <para>A <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> XML 要素または要素の属性のいずれかをオブジェクトとして使用することができます。ノードに対して不正な操作を実行しようとしていないようにを使用しているノードの種類を決定するのにには、 <b>NodeType</b>プロパティを使用します。などの<see cref="P:Microsoft.Office.Interop.Word.XMLNode.Attributes" />、 <b>XMLNode</b>オブジェクトで利用できるプロパティの一覧に表示されますが、要素ノードだけにプロパティが適用されます</para>。
-          <para /></remarks>
+            <b>Wdxmlnodeelement</b> –要素ノードを示します。</para>
+          <para>オブジェクト<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />には、XML 要素または要素の属性のいずれかを指定できます。 ノードで無効な操作を実行しようとしないように、使用しているノードの種類を判別するには、 <b>NodeType</b>プロパティを使用します。 たとえば、プロパティは<see cref="P:Microsoft.Office.Interop.Word.XMLNode.Attributes" />要素ノードにのみ適用されますが、 <b>XMLNode</b>オブジェクトで使用可能なプロパティの一覧に表示されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NodeValue">
@@ -534,12 +508,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または属性の値を表す<b>文字列</b>を設定します。</summary>
+        <summary>返すまたは、属性の値を表す<b>文字列</b>を設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> XML 要素または要素の属性のいずれかをオブジェクトとして使用することができます。使用して、<see cref="P:Microsoft.Office.Interop.Word.XMLNode.NodeType" />プロパティを使用してノードの種類を決定します</para>。
-          <para><b>NodeType</b>値が<b>wdXMLNodeElement</b>の<b>XMLNode</b>オブジェクトの<b>NodeValue</b>は nothing を返します</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクト<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />には、XML 要素または要素の属性のいずれかを指定できます。 <see cref="P:Microsoft.Office.Interop.Word.XMLNode.NodeType" />プロパティを使用して、作業しているノードの種類を確認します。</para>
+          <para><b>NodeType</b>の値が<b>Wdxmlnodeelement</b>の<b>XMLNode</b>オブジェクトでは、 <b>nodevalue</b>プロパティは nothing を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OwnerDocument">
@@ -565,13 +538,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Document" />を指定した XML 要素の親ドキュメントを表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Document" />た XML 要素の親ドキュメントを表すオブジェクト型 (object) の値を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>場合は</b>プロパティと同じ結果を返す、<see cref="P:Microsoft.Office.Interop.Word.XMLNode.Parent" />プロパティ。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Ownerdocument</b>プロパティは、 <see cref="P:Microsoft.Office.Interop.Word.XMLNode.Parent" />プロパティと同じ結果を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -625,7 +595,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />を指定した要素の親要素を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />た要素の親要素を表すオブジェクト型 (object) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -656,12 +626,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、テキストを含まない要素に対して表示するテキストを表す<b>文字列</b>を設定します。</summary>
+        <summary>テキストを含まない要素に対して表示されるテキストを表す文字列型 ( <b>string</b> ) の値を取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>XML タグで、[XML データ構造] 作業ウィンドウで [ドキュメント] チェック ボックスをオフにする場合にのみ、Microsoft Word でテキストのプレース ホルダーが表示されます。ドキュメントのチェック ボックスに XML タグが対応して、<see cref="P:Microsoft.Office.Interop.Word.View.ShowXMLMarkup" />プロパティ。</para>
-          <para />
-        </remarks>
+        <remarks><para>Microsoft Word では、[ XML データ構造] 作業ウィンドウの [ 文書内に XML タグを表示する] チェック ボックスがオフの場合、プレースホルダー テキストが表示されます。 [ドキュメント内の XML タグを表示する] チェックボックス<see cref="P:Microsoft.Office.Interop.Word.View.ShowXMLMarkup" />は、プロパティに対応しています。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviousSibling">
@@ -687,12 +655,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />を指定した要素と同じレベルにあるドキュメントの前の要素を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />た要素と同じレベルにあるドキュメント内の前の要素を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>指定した要素が最初の要素の場合、<see cref="T:Microsoft.Office.Interop.Word.XMLNodes" />コレクションでは、 <b>Nothing</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>指定した要素が<see cref="T:Microsoft.Office.Interop.Word.XMLNodes" />コレクション内の最初の要素の場合、このプロパティは<b>Nothing</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Range">
@@ -718,12 +684,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />を指定したオブジェクトに含まれる文書の部分を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />たオブジェクトに含まれる文書の一部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>範囲をドキュメントから取得する方法の詳細についてを参照してください、<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />メソッドです。</para>
-          <para />
-        </remarks>
+        <remarks><para>文書から指定範囲を取得する<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法については、メソッドを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveChild">
@@ -749,8 +713,8 @@
         <Parameter Name="ChildElement" Type="Microsoft.Office.Interop.Word.XMLNode" />
       </Parameters>
       <Docs>
-        <param name="ChildElement">必要な<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />。 削除する子要素を指定します。</param>
-        <summary>指定した要素から指定した子要素を削除します。</summary>
+        <param name="ChildElement">必須<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />。 削除する子要素を指定します。</param>
+        <summary>指定した子要素を指定した要素から削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -778,16 +742,13 @@
         <Parameter Name="FastSearchSkippingTextNodes" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="XPath">
-          <b>文字列</b> が必要です。 有効な XPath 文字列を指定します。 XPath の詳細については、Microsoft Developer Network (MSDN) の Web サイトで XPath のリファレンスを参照してください。</param>
-        <param name="PrefixMapping">省略可能な<b>オブジェクト</b>です。 検索対象となるスキーマのプレフィックスを指定します。 使用、<paramref name="PrefixMapping" />パラメーター場合、<paramref name="XPath" />パラメーターは、要素を検索する名前を使用します。</param>
+        <param name="XPath"><b>文字列</b> が必要です。 有効な XPath 文字列を指定します。 XPath の詳細については、Microsoft Developer Network (MSDN) の Web サイトで XPath のリファレンスを参照してください。</param>
+        <param name="PrefixMapping">省略可能な<b>オブジェクト</b>です。 検索対象となるスキーマのプレフィックスを指定します。 パラメーターで<paramref name="PrefixMapping" />要素の検索<paramref name="XPath" />に名前を使用している場合は、パラメーターを使用します。</param>
         <param name="FastSearchSkippingTextNodes">オプションの <b>Boolean</b>。 <b>True</b> は、指定したノードの検索中にすべてのテキスト ノードをスキップします。 <b>False</b> テキスト ノードも含めて検索します。 既定値は、 <b>false を指定</b> します。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.XMLNodes" />表示されている順序で指定された XPath 文字列に一致するすべてのノードを表すコレクション。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.XMLNodes" />た XPath 文字列に一致するすべてのノードを表すコレクションを、表示順に返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>設定、<paramref name="FastSearchSkippingTextNodes" />パラメーターを<b>True</b>には、Microsoft Word がノード内のテキストを文書内のすべてのノードを検索するためにパフォーマンスを減少します。</para>
-          <para />
-        </remarks>
+        <remarks><para><paramref name="FastSearchSkippingTextNodes" />パラメーターを<b>True</b>に設定すると、Microsoft Word は、ドキュメント内のすべてのノードがノードに含まれるテキストと共に検索されるため、パフォーマンスが低下します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectSingleNode">
@@ -814,16 +775,13 @@
         <Parameter Name="FastSearchSkippingTextNodes" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="XPath">
-          <b>文字列</b> が必要です。 有効な<paramref name="XPath" />の文字列です。 詳細については<paramref name="XPath" />を参照してください、 <paramref name="XPath" /> 、Microsoft Developer Network (MSDN) Web サイト上のドキュメントを参照します。</param>
-        <param name="PrefixMapping">省略可能な<b>オブジェクト</b>です。 検索対象となるスキーマのプレフィックスを指定します。 使用、<paramref name="PrefixMapping" />パラメーター場合、<paramref name="XPath" />パラメーターは、要素を検索する名前を使用します。</param>
+        <param name="XPath"><b>文字列</b> が必要です。 有効な<paramref name="XPath" />文字列。 の詳細につい<paramref name="XPath" />ては、 <paramref name="XPath" /> MICROSOFT Developer Network (MSDN) Web サイトのリファレンスドキュメントを参照してください。</param>
+        <param name="PrefixMapping">省略可能な<b>オブジェクト</b>です。 検索対象となるスキーマのプレフィックスを指定します。 パラメーターで<paramref name="PrefixMapping" />要素の検索<paramref name="XPath" />に名前を使用している場合は、パラメーターを使用します。</param>
         <param name="FastSearchSkippingTextNodes">オプションの <b>Boolean</b>。 <b>True</b> は、指定したノードの検索中にすべてのテキスト ノードをスキップします。 <b>False</b> テキスト ノードも含めて検索します。 既定値は <b>True</b> です。</param>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> 、指定した文書内の指定した XPath 文字列に一致する最初のノードを表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />た文書内の指定した XPath 文字列に一致する最初のノードを表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>設定、<paramref name="FastSearchSkippingTextNodes" />パラメーターを<b>False</b>に Microsoft Word がノード内のテキストを文書内のすべてのノードを検索するためパフォーマンスも低下します。</para>
-          <para />
-        </remarks>
+        <remarks><para><paramref name="FastSearchSkippingTextNodes" />パラメーターを<b>False</b>に設定すると、Microsoft Word では、ドキュメント内のすべてのノードがノードに含まれるテキストに対して検索されるため、パフォーマンスが低下します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetValidationError">
@@ -850,10 +808,10 @@
         <Parameter Name="ClearedAutomatically" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Status">必要な<see cref="T:Microsoft.Office.Interop.Word.WdXMLValidationStatus" />。 検証のステータス エラー テキストを設定する (<b>wdXMLValidationStatusCustom</b>) か、検証のステータス エラー テキストをクリアする (<b>wdXMLValidationStatusOK</b>) かを指定します。</param>
-        <param name="ErrorText">省略可能な<b>オブジェクト</b>です。 ユーザーに表示されるテキストです。 <b>ステータス</b>パラメーターを<b>wdXMLValidationStatusOK</b>に設定すると空白のままにします。</param>
-        <param name="ClearedAutomatically">オプションの <b>Boolean</b>。 <b>True</b> に自動的にクリア エラー メッセージ指定されたノードで、次の検証イベントが発生するとすぐにします。 <b>SetValidationError</b>メソッドを実行している<b>場合は false</b>が必要です、<paramref name="Status" />のカスタム エラー テキストをクリアする<b>wdXMLValidationStatusOK</b>パラメーターです。</param>
-        <summary>ノードの指定したユーザーに表示する検証エラー テキストを変更し、無効としてノードを報告するための Microsoft Word を強制します。</summary>
+        <param name="Status">必須<see cref="T:Microsoft.Office.Interop.Word.WdXMLValidationStatus" />。 検証のステータス エラー テキストを設定する (<b>wdXMLValidationStatusCustom</b>) か、検証のステータス エラー テキストをクリアする (<b>wdXMLValidationStatusOK</b>) かを指定します。</param>
+        <param name="ErrorText">省略可能な<b>オブジェクト</b>です。 ユーザーに表示されるテキストです。 <b>状態</b>パラメーターが<b>Wdxmlvalidationstatusok</b>に設定されている場合は、空白のままにします。</param>
+        <param name="ClearedAutomatically">オプションの <b>Boolean</b>。 <b>True</b> に自動的にクリア エラー メッセージ指定されたノードで、次の検証イベントが発生するとすぐにします。 <b>False</b>を使用するには、 <b>Wdxmlvalidationstatusok</b>の<paramref name="Status" />パラメーターを指定した<b>setvalidationerror</b>メソッドを実行して、カスタムエラーテキストをクリアする必要があります。</param>
+        <summary>指定されたノードのユーザーに表示される検証エラーテキストを変更し、ノードを無効として報告することを強制します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -883,12 +841,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.SmartTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.SmartTag" />を XML 要素に関連付けられているスマート タグを表すオブジェクト。</summary>
+        <summary>XML 要素<see cref="T:Microsoft.Office.Interop.Word.SmartTag" />に関連付けられているスマートタグを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>XML 要素には、 <b>ISmartTag</b>インターフェイスを実装する外部コンポーネントを使用して割り当てられたスマート タグ アクションを持つことができます。およびスマート タグの認識機能とアクション ハンドラーを作成する方法の詳細については、Microsoft Developer Network (MSDN) Web サイト上のスマート タグ ソフトウェア開発キットを参照してください。</para>
-          <para />
-        </remarks>
+        <remarks><para>XML 要素には、 <b>ISmartTag</b>インターフェイスを実装する外部コンポーネントを使用して、スマートタグアクションを割り当てることができます。 スマートタグの詳細と、レコグナイザーおよびアクションハンドラーを作成する方法については、Microsoft Developer Network (MSDN) Web サイトの「Smart Tag Software Development Kit」を参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -917,7 +873,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または XML 要素に表示されるテキストを表す<b>文字列</b>を設定します。</summary>
+        <summary>XML 要素に対して表示されるテキストを表す文字列型 ( <b>string</b> ) の値を取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -943,12 +899,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>個々 の XML 要素または接続されている XML スキーマまたはスキーマに対してドキュメント全体を検証します。</summary>
-        <remarks>
-          <para>
-            <b>Validate</b>メソッドを使用して、<see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" />と<see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" />のプロパティを XML 要素が適用されているスキーマに対して有効なかどうかを確認し、ユーザーに表示するには、どのようなエラー テキスト。使用して、<see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" />カスタムの検証エラーのあるスキーマ違反を無効にするメソッドです</para>。
-          <para><b>Validate</b>メソッドを実行するときに Microsoft Word を設定します<see cref="P:Microsoft.Office.Interop.Word._Document.XMLSchemaViolations" />妥当性確認エラーのある XML ノードのコレクションです</para>。
-          <para /></remarks>
+        <summary>添付された XML スキーマまたはスキーマに対して、個々の XML 要素またはドキュメント全体を検証します。</summary>
+        <remarks><para>およびプロパティで Validate メソッドを使用すると、適用されるスキーマに対して XML 要素が有効かどうか、およびユーザーに表示されるエラーテキストがわかります。 <b></b> <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> <see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" />メソッドを使用して、カスタム検証エラーが発生したスキーマ違反を上書きします。</para>
+          <para><b>Validate</b>メソッドを実行すると、検証エラーが発生<see cref="P:Microsoft.Office.Interop.Word._Document.XMLSchemaViolations" />した XML ノードのコレクションが作成されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidationErrorText">
@@ -978,7 +932,7 @@
       </Parameters>
       <Docs>
         <param name="Advanced">オプションの <b>Boolean</b>。 表示されるエラー テキストが高度なバージョンの検証エラーの説明であることを示します。これは、Microsoft Word に含まれる MSXML 5.0 コンポーネントによるものです。</param>
-        <summary>上の妥当性確認エラーの説明を表す<b>文字列</b>を返します、<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />オブジェクトです。</summary>
+        <summary>オブジェクトの検証エラーの説明を表す文字列を返します。 <b></b> <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1006,16 +960,16 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdXMLValidationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.WdXMLValidationStatus" />定数を表すかどうかの要素または属性が添付スキーマに基づいて有効な。</summary>
+        <summary>要素また<see cref="T:Microsoft.Office.Interop.Word.WdXMLValidationStatus" />は属性が添付スキーマに基づいて有効かどうかを表す定数を返します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <b>WdXMLValidationStatus</b>には、次の定数のいずれかを指定できます。</para>
           <para>
-            <b>WdXMLValidationStatus</b>には、以下の定数のいずれかを指定できます:</para>
+            <b>Wdxmlvalidationstatuscustom</b><see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" />メソッドがプロパティをカスタムテキスト文字列に<see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" />設定するために使用されたことを示します。 </para>
           <para>
-            <b>wdXMLValidationStatusCustom</b>であることを示します、<see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" />を設定する方法を使用した<see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" />プロパティをユーザー設定のテキスト文字列です</para>。
-          <para><b>wdXMLValidationStatusOK</b>に示す XML 要素または属性が添付スキーマに基づいて有効な</para>。<b>ValidationStatus</b>プロパティにより、Microsoft Word に含まれている MSXML 5.0 コンポーネントからの多くのより名前のない値は 2 つの名前付き定数は、これらを
-          <para>。可能な値と対応する意味の完全なリストでは複数、Microsoft Word XML コンテンツ開発キットを Microsoft Developer Network (MSDN) Web サイトを参照してください</para>。
-          <para /></remarks>
+            <b>Wdxmlvalidationstatusok</b>XML 要素または属性が添付スキーマに基づいて有効であることを示します。</para>
+          <para><b>ValidationStatus</b> プロパティにより、2 つの名前付き定数が、中には、Microsoft Word に含まれている MSXML 5.0 コンポーネントからの多くのより名前のない値があります。 使用可能な値とそれに対応する意味の完全な一覧については、Microsoft Developer Network (MSDN) Web サイトの Microsoft Word XML コンテンツ開発キットを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WordOpenXML">
@@ -1041,14 +995,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Office Word オープン XML 形式で、ノードの XML を表す<b>文字列</b>を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
-        <remarks>
-          <para>このプロパティは、指定された XML ノードを表すに必要なドキュメントの XML だけを返します。</para>
-          <para />
-        </remarks>
+        <summary>Microsoft Office Word Open XML 形式のノードの XML を表す<b>文字列</b>を返します。 読み取り専用です。</summary>
+        <value><b>String</b></value>
+        <remarks><para>このプロパティは、指定された XML ノードを表すために必要なドキュメント内の XML のみを返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="XML">

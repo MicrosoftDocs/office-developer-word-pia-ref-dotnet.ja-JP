@@ -1,13 +1,5 @@
 <Type Name="Paragraphs" FullName="Microsoft.Office.Interop.Word.Paragraphs">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f7a4ec3a3f9cef850ee4d2525ac862807859cba1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670826" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Paragraphs : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4a2d70536ec093f37369ebe6d8b316aed7b9976a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144170" /></Metadata><TypeSignature Language="C#" Value="public interface Paragraphs : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Paragraphs implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Paragraphs" />
   <TypeSignature Language="VB.NET" Value="Public Interface Paragraphs&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.Paragraph" />の選択範囲、指定範囲、または文書内のオブジェクト。</summary>
-    <remarks>
-      <para>
-        <b>Paragraphs</b>コレクションを取得するのには、<b>段落</b>のプロパティを使用します</para>。
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.Paragraphs.Add(System.Object@)" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraph" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphAfter" />、または<see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphBefore" />ドキュメントに新しい段落を追加します</para>。
-      <para>使用<b>段落</b>(<paramref name="index" />)、<paramref name="index" />インデックス番号には、オブジェクトを取得する 1 つ<b>の段落</b>にします</para>。
-      <para>、<see cref="P:Microsoft.Office.Interop.Word.Paragraphs.Count" />ドキュメントでこのコレクションのプロパティは、メイン テキスト ストーリーのみの項目の数を返します。カウントするための他のストーリーの項目を使用して、使用して、コレクションの<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです</para>。
-      <para /></remarks>
+    <summary>選択範囲、 <see cref="T:Microsoft.Office.Interop.Word.Paragraph" />指定範囲、または文書内のオブジェクトのコレクションです。</summary>
+    <remarks><para><b>Paragraphs</b> プロパティを使用して <b>Paragraphs</b> コレクションを取得します。</para>
+      <para>、 <see cref="M:Microsoft.Office.Interop.Word.Paragraphs.Add(System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraph" />、、または<see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphBefore" />メソッドを使用して、文書に新しい段落を追加します。 <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphAfter" /></para>
+      <para>段落<b></b>()<paramref name="index" />を使用し<paramref name="index" />て、1つの<b>Paragraph</b>オブジェクトを取得します (ここで、はインデックス番号)。</para>
+      <para>文書<see cref="P:Microsoft.Office.Interop.Word.Paragraphs.Count" />内のこのコレクションのプロパティは、メインストーリーのみの項目数を返します。 他のストーリー内のアイテムをカウントするには<see cref="T:Microsoft.Office.Interop.Word.Range" /> 、オブジェクトと共にコレクションを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,12 +53,10 @@
       </Parameters>
       <Docs>
         <param name="Range">省略可能な<b>オブジェクト</b>です。 新しい段落を追加する位置の前の範囲を指定します。 新しい段落は、指定範囲と置き換わりません。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Paragraph" />をドキュメントに追加された新しい空白の段落を表すオブジェクト。</summary>
+        <summary>文書に<see cref="T:Microsoft.Office.Interop.Word.Paragraph" />追加された新しい空白の段落を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>場合<paramref name="Range" />が指定されていない、選択範囲または指定範囲または文書の末尾に新しい段落を追加します。</para>
-          <para />
-        </remarks>
+        <remarks><para>が<paramref name="Range" />指定されていない場合、新しい段落は、選択範囲または指定範囲の後、または文書の末尾に追加されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddSpaceBetweenFarEastAndAlpha">
@@ -97,12 +85,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>自動的に指定した段落のテキストを日本語と英数字の間にスペースを追加するのには Word を設定するかどうかを決定します。</summary>
+        <summary>指定した段落の日本語と英数字の間にスペースを自動的に追加するように Microsoft Word が設定されているかどうかを調べます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>そうでない場合、指定した段落の日本語と英数字の文字列と<b>False</b>の間にスペースを自動的に追加する単語が設定されている場合、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
-          <para>の指定した段落の一部だけを<b>True</b>に設定されている場合、このプロパティは<b>wdUndefined</b>を返します</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティは、指定した段落の日本語と英数字の間にスペースを自動的に追加するように Word が設定されている場合は<b>True</b>を返し、表示しない場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para>指定した段落の一部だけが<b>True</b>に設定されている場合、このプロパティは<b>wdUndefined</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddSpaceBetweenFarEastAndDigit">
@@ -131,12 +118,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>日本語と数字を指定した各段落の間にスペースを自動的に追加するのには Word を設定するかどうかを決定します。</summary>
+        <summary>指定した段落の日本語と数字の間にスペースを自動的に追加するように Microsoft Word が設定されているかどうかを調べます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>そうでない場合に自動的に日本語と数字を<b>指定した各段落の</b>間にスペースを追加するのには Word が設定されている場合、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
-          <para>の指定した段落の一部だけを<b>True</b>に設定されている場合、このプロパティは<b>wdUndefined</b>を返します</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティは、Word で、指定した段落の日本語と数字の間にスペースを自動的に追加するように設定されている場合は<b>True</b>を返し、表示しない場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para>指定した段落の一部だけが<b>True</b>に設定されている場合、このプロパティは<b>wdUndefined</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Alignment">
@@ -165,12 +151,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdParagraphAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、 <see cref="T:Microsoft.Office.Interop.Word.WdParagraphAlignment" /> 、指定した段落の配置を表す定数です。</summary>
+        <summary>指定した段落<see cref="T:Microsoft.Office.Interop.Word.WdParagraphAlignment" />の配置を表す定数を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>上記の定数のいくつかを選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できないがあります。</para>
-          <para />
-        </remarks>
+        <remarks><para>一覧に示されている定数の中には、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できないものがあります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -196,7 +180,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -227,12 +211,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>1 行の文字セットの番号を指定した場合、指定した段落の右インデント幅を自動調整するのには Word を設定するかどうかを決定します。</summary>
+        <summary>1行あたりの文字数を指定した場合に、指定した段落の右インデントを自動的に調整するように Microsoft Word が設定されているかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Word が 1 行、および<b>False</b>そうでない場合の文字セットの番号を指定した場合、指定した段落の右インデント幅を自動調整するのには設定されている場合、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
-          <para><b>AutoAdjustRightIndent</b>プロパティが、指定した段落の一部だけを<b>True</b>に設定する場合、このプロパティは<b>wdUndefined</b>を返します</para>。
-          <para /></remarks>
+        <remarks><para>1行の文字数が指定されている場合は、指定した段落の右のインデント幅が自動的に調整されるように設定されている場合は<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para>このプロパティは、指定した段落の一部に対してのみ<b>AutoAdjustRightIndent</b>プロパティが<b>True</b>に設定されている場合は、 <b>wdUndefined</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseLineAlignment">
@@ -261,7 +244,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdBaselineAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.WdBaselineAlignment" />の行のフォントの垂直方向の位置を表す定数です。</summary>
+        <summary>行のフォントの<see cref="T:Microsoft.Office.Interop.Word.WdBaselineAlignment" />垂直方向の位置を表す定数を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -292,7 +275,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Borders" />を指定したオブジェクトのすべての罫線を表すコレクション。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Borders" />たオブジェクトのすべての罫線を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -325,10 +308,8 @@
       <Docs>
         <summary>取得または値 (文字) の最初の行またはぶら下げインデントを設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>最初の行のインデントを設定するのには正の値を使用し、ぶら下げインデントを設定するのには負の値を使用します。</para>
-          <para />
-        </remarks>
+        <remarks><para>最初の行のインデントを設定するのには正の値を使用し、ぶら下げインデントを設定するのには負の値を使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CharacterUnitLeftIndent">
@@ -388,7 +369,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または文字単位で指定した各段落の右のインデント値を設定します。</summary>
+        <summary>指定した段落の右のインデント値 (文字数) を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -469,12 +450,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DecreaseSpacing">
@@ -528,12 +508,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>行グリッドの 1 ページあたりの行セットの番号を指定した段落の文字列が指定されている場合は配置を決定します。</summary>
+        <summary>1ページあたりの行数が指定されている場合に、指定した段落の文字が行グリッドに配置されるかどうかを設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>文字列が行グリッドの 1 ページあたりの行数のセット数を指定した場合、および場合は<b>False</b>を指定した段落の配置の場合、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
-          <para><b>DisableLineHeightGrid</b>プロパティが、指定した段落の一部だけを<b>True</b>に設定する場合は、 <b>wdUndefined</b>を返します</para>。
-          <para /></remarks>
+        <remarks><para>ページあたりの行数が指定されている場合、このプロパティは、指定された段落の文字を行グリッドに配置する場合は<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para><b>DisableLineHeightGrid</b> プロパティが、指定した段落の一部だけを <b>True</b> に設定する場合は、 <b>wdUndefined</b> を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FarEastLineBreakControl">
@@ -562,12 +541,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word が、指定した段落に東アジアの改行規則を適用するかどうかを決定します。</summary>
+        <summary>指定した段落に東アジアの改行ルールを適用するかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、Word ではそうでない場合、指定した段落、および<b>false の場合</b>に東アジアの改行規則を適用する場合に<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
-          <para><b>FarEastLineBreakControl</b>プロパティが、指定した段落の一部だけを<b>True</b>に設定する場合、このプロパティは<b>wdUndefined</b>を返します</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティは、指定した段落に東アジアの改行ルールを適用する場合は<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para>このプロパティは、指定した段落の一部に対してのみ<b>FarEastLineBreakControl</b>プロパティが<b>True</b>に設定されている場合は、 <b>wdUndefined</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="First">
@@ -593,7 +571,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Paragraph</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Paragraph" />の最初の項目を表すオブジェクト、<see cref="T:Microsoft.Office.Interop.Word.Paragraphs" />コレクションです。</summary>
+        <summary>コレクション内<see cref="T:Microsoft.Office.Interop.Word.Paragraph" />の最初の項目を表すオブジェクトを返します。 <see cref="T:Microsoft.Office.Interop.Word.Paragraphs" /></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -626,10 +604,8 @@
       <Docs>
         <summary>取得または最初の行またはぶら下げインデントをポイント単位で値を設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>最初の行のインデントを設定するのには正の値を使用し、ぶら下げインデントを設定するのには負の値を使用します。</para>
-          <para />
-        </remarks>
+        <remarks><para>最初の行のインデントを設定するのには正の値を使用し、ぶら下げインデントを設定するのには負の値を使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -658,7 +634,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ParagraphFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、 <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> 、指定した段落または段落の書式設定を表すオブジェクト。</summary>
+        <summary>返すまたは、 <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />指定した段落の書式を表すオブジェクトを設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -721,12 +697,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word が、指定した段落の半角文字を行の先頭に記号を変更するかどうかを決定します。</summary>
+        <summary>指定した段落の半角文字を行の先頭に記号が変更するかどうかを設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>記号、行の先頭に半角文字を指定した段落との場合は<b>False</b>に変更する場合、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
-          <para>場合は、このプロパティは<b>wdUndefined</b>を返します指定した段落の一部だけを<b>True</b>に設定します</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティは、指定した段落の行の先頭にある句読点の記号を半角文字に変更する場合は<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para>指定した段落の一部のみを<b>True</b>に設定する場合は、このプロパティは<b>wdUndefined</b>を返します。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HangingPunctuation">
@@ -755,12 +730,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した段落の句読点のぶら下げが有効になっているかどうかを決定します。</summary>
+        <summary>指定した段落のぶら下がりを有効にするかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>句読点のぶら下げが有効な場合、指定した段落、および<b>False</b>の場合は、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
-          <para>場合は、このプロパティは<b>wdUndefined</b>を返します指定した段落の一部だけを<b>True</b>に設定します</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティは、指定した段落の句読点のぶら下げが有効になっている場合は<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para>指定した段落の一部のみを<b>True</b>に設定する場合は、このプロパティは<b>wdUndefined</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Hyphenation">
@@ -789,13 +763,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した段落が自動ハイフネーションの対象に含まれるかどうかを決定します。</summary>
+        <summary>指定した段落が自動ハイフネーションに含まれるかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、指定した段落が自動ハイフネーション、および<b>false を指定</b>しない場合に含まれている場合に<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
-          <para>場合は、指定した段落が自動ハイフネーションの対象から除外するのには、このプロパティが<b>False</b>を返します</para>。
-          <para>可能な値は、 <b>True</b>、 <b>False</b> 、 <b>wdUndefined</b>を返します</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティは、指定した段落が自動ハイフネーションの対象に含まれている場合は<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para>指定した段落が自動ハイフネーションから除外される場合、このプロパティは<b>False</b>を返します。</para>
+          <para>可能な戻り値は<b>True</b>、 <b>False</b> 、 <b>wdUndefined</b>です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncreaseSpacing">
@@ -845,10 +818,8 @@
       <Parameters />
       <Docs>
         <summary>1 つまたは複数の段落にインデントを 1 レベル設定します。</summary>
-        <remarks>
-          <para>このメソッドの機能は、[書式設定] ツールバーの [インデント] ボタンをクリックすると同じです。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドを使用すると、[ 書式設定] ツールバーの [ インデント] をクリックした場合と同じ結果が得られます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IndentCharWidth">
@@ -874,13 +845,10 @@
         <Parameter Name="Count" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Count">
-          <b>短い</b>必要があります。 この文字数に従って指定した段落がインデントされます。</param>
+        <param name="Count"><b>省略</b>する必要があります。 この文字数に従って指定した段落がインデントされます。</param>
         <summary>1 つ以上の段落を指定された文字数でインデントします。</summary>
-        <remarks>
-          <para>このメソッドの機能は、[書式設定] ツールバーの [インデント] ボタンをクリックすると同じです。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドを使用すると、[ 書式設定] ツールバーの [ インデント] をクリックした場合と同じ結果が得られます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IndentFirstLineCharWidth">
@@ -906,13 +874,10 @@
         <Parameter Name="Count" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Count">
-          <b>短い</b>必要があります。 この文字数に従って指定した段落がインデントされます。</param>
+        <param name="Count"><b>省略</b>する必要があります。 この文字数に従って指定した段落がインデントされます。</param>
         <summary>1 つ以上の段落を指定された文字数でインデントします。</summary>
-        <remarks>
-          <para>このメソッドの機能は、[書式設定] ツールバーの [インデント] ボタンをクリックすると同じです。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドを使用すると、[ 書式設定] ツールバーの [ インデント] をクリックした場合と同じ結果が得られます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -941,7 +906,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">各オブジェクトの序数位置を示す<b>整数</b>です。</param>
+        <param name="Index">個々のオブジェクトの位置を表す<b>整数型 (Integer</b> ) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -973,12 +938,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>文書の改と同じページに指定した段落のすべての行のままかどうかを決定します。</summary>
+        <summary>文書の改時に、指定した段落のすべての行を同じページに残すかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>改は、ドキュメント、および場合は<b>false の場合</b>と同じページに、指定した段落のすべての行が残っている場合、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
-          <para>使用可能な値は、 <b>True</b>、 <b>False</b>、 <b>wdUndefined</b>です</para>。
-          <para /></remarks>
+        <remarks><para>文書を改するときに、指定した段落のすべての行が同じページに残る場合、このプロパティは<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para>使用可能な値は、 <b>True</b>、 <b>False</b>、および<b>wdUndefined</b>です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeepWithNext">
@@ -1007,12 +971,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ドキュメントの改とは、それに続く段落と同じページに、指定した段落のままかどうかを決定します。</summary>
+        <summary>文書の改時に、指定した段落が段落と同じページ上に残るかどうかを決定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>改、ドキュメント、および場合は<b>false を指定</b>しない場合は、それに続く段落と同じページに、指定した段落のままの場合、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
-          <para>値は、 <b>True</b>、 <b>False</b>、または<b>wdUndefined</b>です</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティは、指定した段落が文書の改時に段落と同じページに残る場合は<b>True</b>を返し、そうでない場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para>可能な値は、 <b>True</b>、 <b>False</b>、または<b>wdUndefined</b>です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Last">
@@ -1038,7 +1001,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Paragraph</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>最後の項目が返されます、<see cref="T:Microsoft.Office.Interop.Word.Paragraphs" />のコレクションとして、<see cref="T:Microsoft.Office.Interop.Word.Paragraph" />オブジェクトです。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Paragraphs" />コレクション内の最後の項目を<see cref="T:Microsoft.Office.Interop.Word.Paragraph" />オブジェクトとして返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1069,8 +1032,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>1 つ</b> を表す、指定した段落の左のインデント値 (ポイント単位で) を設定または返します。</summary>
+        <summary><b>1 つ</b> を表す、指定した段落の左のインデント値 (ポイント単位で) を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1103,14 +1065,15 @@
       <Docs>
         <summary>ポイント単位で指定した各段落の行間隔を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>後に<b>この値</b>を設定できます、<see cref="P:Microsoft.Office.Interop.Word.Paragraphs.LineSpacingRule" />プロパティは、次に設定されています:</para>
+        <remarks><para><b>LineSpacing</b>プロパティは、 <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.LineSpacingRule" />プロパティを次のように設定した後に設定できます。</para>
           <para>
-            <b>wdLineSpaceAtLeast</b>の行間隔はより大きいまたは等しいですが、ことはありません、指定された<b>LineSpacing</b>値未満にすることができます</para>。
-          <para><b>wdLineSpaceExactly</b> - 行間変更されない、指定された<b>LineSpacing</b>値からより大きいフォントは、段落内で使用される場合でも</para>。
-          <para><b>wdLineSpaceMultiple</b> ・ ポイントで、 <b>LineSpacing</b>プロパティの値を指定する必要があります</para>。
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Word._Application.LinesToPoints(System.Single)" />行の数をポイント単位での対応する値に変換します</para>。
-          <para /></remarks>
+            <b>wdLineSpaceAtLeast</b> -行間は、指定した<b>LineSpacing</b>値以上である必要がありますが、それより小さくすることはできません。</para>
+          <para>
+            <b>wdLineSpaceExactly</b> -段落内で大きいフォントが使用されている場合でも、指定した<b>LineSpacing</b>値から行間を変更することはできません。</para>
+          <para>
+            <b>wdlinespacemultiplelinespacing</b> - <b>LineSpacing</b>プロパティの値をポイント単位で指定する必要があります。</para>
+          <para><see cref="M:Microsoft.Office.Interop.Word._Application.LinesToPoints(System.Single)" />メソッドを使用して、行数を対応するポイント単位の値に変換します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LineSpacingRule">
@@ -1141,9 +1104,8 @@
       <Docs>
         <summary>指定した段落の行間を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdLineSpacing" />定数は、次のいずれか:</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdLineSpacing" />次の定数のいずれかをすることができます。 </para>
           <para>
             <b>wdLineSpace1pt5</b>
           </para>
@@ -1157,13 +1119,13 @@
             <b>wdLineSpaceExactly</b>
           </para>
           <para>
-            <b>wdLineSpaceMultiple</b>
+            <b>Wdlinespacemultiplelinespacing</b>
           </para>
           <para>
             <b>wdLineSpaceSingle</b>
           </para>
-          <para>使用<b>wdLineSpaceSingle</b>、 <b>wdLineSpace1pt5</b>、または<b>wdLineSpaceDouble</b>をこれらの値のいずれかに行間隔を設定します。ポイントの正確な数、または複数の行に、行間隔を設定するに設定する必要も、<see cref="P:Microsoft.Office.Interop.Word.Paragraphs.LineSpacing" />プロパティ</para>。
-          <para /></remarks>
+          <para><b>WdLineSpaceSingle</b> 、 <b>wdLineSpace1pt5</b> 、または <b>wdLineSpaceDouble</b> を使用して、これらの値のいずれかに行間隔を設定します。 正確なポイント数または行数を設定するには、 <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.LineSpacing" />プロパティも設定する必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LineUnitAfter">
@@ -1254,13 +1216,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した段落の行番号が追加されなくなりますを決定します。</summary>
+        <summary>指定した段落の行番号が repressed かどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、指定した段落、および<b>false を指定</b>しない場合、行番号が追加されなくなりますがある場合に<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
-          <para>使用可能な値は、 <b>True</b>、 <b>False</b>、 <b>wdUndefined</b>です</para>。
-          <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.PageSetup.LineNumbering" />プロパティを設定する行番号です</para>。
-          <para /></remarks>
+        <remarks><para>指定した段落の行番号が repressed の場合、このプロパティは<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para>使用可能な値は、 <b>True</b>、 <b>False</b>、および<b>wdUndefined</b>です。 </para>
+          <para>行番号<see cref="P:Microsoft.Office.Interop.Word.PageSetup.LineNumbering" />を設定するには、プロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenOrCloseUp">
@@ -1335,10 +1296,8 @@
       <Parameters />
       <Docs>
         <summary>1 つまたは複数の段落のインデントを 1 レベル解除します。</summary>
-        <remarks>
-          <para>このメソッドの機能は、書式設定] ツールバーの [インデント解除] ボタンをクリックすると同じです。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドを使用すると、[書式設定] ツールバーの [インデント解除] ボタンをクリックした場合と同じ結果が得られます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OutlineDemote">
@@ -1363,10 +1322,8 @@
       <Parameters />
       <Docs>
         <summary>指定された段落に、1 つ下のレベルの見出しスタイル ([見出し 1] ～ [見出し 8]) を設定します。</summary>
-        <remarks>
-          <para>段落が [見出し 2] スタイルでフォーマットされている場合このメソッドは、[見出し 3 スタイルを変更して段落を降格します。</para>
-          <para />
-        </remarks>
+        <remarks><para>段落に [見出し 2] スタイルが設定されている場合は、スタイルを [見出し 3] に変更して、段落のレベルを 1 つ下げます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OutlineDemoteToBody">
@@ -1420,10 +1377,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdOutlineLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した段落のアウトライン レベルを設定または返します。</summary>
+        <summary>指定した各段落のアウトライン レベルを取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>戻り値の vale には、次のいずれかを指定できます<see cref="T:Microsoft.Office.Interop.Word.WdOutlineLevel" />定数:</para>
+        <remarks><para>戻り値は、次<see cref="T:Microsoft.Office.Interop.Word.WdOutlineLevel" />の定数のいずれかになります。</para>
           <para>
             <b>wdOutLineLevel1</b>
           </para>
@@ -1454,9 +1410,9 @@
           <para>
             <b>wdOutLineLevelBodyText</b>
           </para>
-          <para>の段落に見出しスタイルが適用されている (見出し 1 から見出し 9)、アウトライン レベルが設定されている場合は、見出しスタイルと同じと変更できません</para>。
-          <para>アウトライン レベルはアウトライン表示またはドキュメント マップのウィンドウでのみ表示されます</para>。
-          <para /></remarks>
+          <para>段落に [見出し 1] ～ [見出し 9] スタイルが設定されている場合、その見出しスタイルと同じアウトライン レベルが適用され、レベルを変更できません。</para>
+          <para>アウトライン レベルはアウトライン表示または見出しマップのウィンドウ枠でのみ表示できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OutlinePromote">
@@ -1481,10 +1437,8 @@
       <Parameters />
       <Docs>
         <summary>指定された段落に 1 つ上のレベルの見出しスタイル ([見出し 1] ～ [見出し 8]) を設定します。</summary>
-        <remarks>
-          <para>段落が [見出し 2] スタイルでフォーマットされている場合、このメソッドは見出し 1 スタイルを変更して段落を昇格します。</para>
-          <para />
-        </remarks>
+        <remarks><para>段落に [見出し 2] スタイルが設定されている場合は、スタイルを [見出し 1] に変更して、段落のレベルを 1 つ上げます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageBreakBefore">
@@ -1513,12 +1467,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した段落の前に改ページが必要かを決定します。</summary>
+        <summary>指定した段落の前に改ページを強制するかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>そうでない場合、指定した段落、および<b>False</b>の前に改ページを強制的に行う場合、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
-          <para>可能な値は、 <b>True</b>、 <b>False</b>、 <b>wdUndefined</b>を返します</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティは、指定した段落の前に強制的に改ページがある場合は<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para>可能な戻り値は<b>True</b>、 <b>False</b>、および<b>wdUndefined</b>です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1577,18 +1530,16 @@
       <Docs>
         <summary>配置を変更せず、指定した段落の読み取り順序を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdReadingOrder" /><b>WdReadingOrder</b>定数は、次のいずれかにすることができます。</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdReadingOrder" />
-            <b>WdReadingOrder</b>定数は、次のいずれか:</para>
-          <para>
-            <b>wdReadingOrderLtr </b>
+            <b>wdReadingOrderLtr</b>
           </para>
           <para>
             <b>wdReadingOrderRtl</b>
           </para>
-          <para>使用、 <see cref="M:Microsoft.Office.Interop.Word.Selection.LtrPara" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.LtrRun" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.RtlPara" />、および<see cref="M:Microsoft.Office.Interop.Word.Selection.RtlRun" />の読み取りと、段落の配置を変更する方法注文します</para>。
-          <para /></remarks>
+          <para>読み取り順序と共<see cref="M:Microsoft.Office.Interop.Word.Selection.RtlPara" />に段落<see cref="M:Microsoft.Office.Interop.Word.Selection.RtlRun" />の配置を変更するには、、、、およびメソッドを使用します。 <see cref="M:Microsoft.Office.Interop.Word.Selection.LtrPara" /> <see cref="M:Microsoft.Office.Interop.Word.Selection.LtrRun" /></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -1613,10 +1564,8 @@
       <Parameters />
       <Docs>
         <summary>手動で指定した段落書式 (スタイルを使わずに設定した書式) を削除します。</summary>
-        <remarks>
-          <para>手動で右揃えの段落と、基になるスタイルが別の配置には、 <b>Reset</b>メソッドは、基になるスタイルの書式設定と一致する配置を変更します。</para>
-          <para />
-        </remarks>
+        <remarks><para>手動で右揃えの段落と、基になるスタイルが別の配置には、 <b>Reset</b> メソッドは、基になるスタイルの書式設定と一致する配置を変更します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RightIndent">
@@ -1645,7 +1594,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ポイント単位で指定した段落の右インデント幅を設定または返します。</summary>
+        <summary>指定した段落の右インデント幅の値 (ポイント単位) を取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1673,7 +1622,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Shading" /> 、指定したオブジェクトの網かけ書式を参照するオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Shading" />たオブジェクトの網かけ書式を参照するオブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1700,10 +1649,8 @@
       <Parameters />
       <Docs>
         <summary>指定された段落の行間を 1 行に設定します。</summary>
-        <remarks>
-          <para>実際の間隔は、段落に含まれる最も大きな文字のフォント サイズによって決まります。</para>
-          <para />
-        </remarks>
+        <remarks><para>実際の間隔は、対象となる段落に含まれる最も大きな文字のフォント サイズによって異なります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Space15">
@@ -1728,10 +1675,8 @@
       <Parameters />
       <Docs>
         <summary>指定された段落の行間を 1.5 行に設定します。</summary>
-        <remarks>
-          <para>実際の間隔は段落に含まれる最も大きな文字のフォント サイズに 6 ポイントを追加することによって決まります。</para>
-          <para />
-        </remarks>
+        <remarks><para>実際の間隔は、対象となる段落に含まれる最も大きな文字のフォント サイズに 6 ポイントを加えた値です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Space2">
@@ -1755,11 +1700,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定した段落の行間を 2 行に設定します。</summary>
-        <remarks>
-          <para>実際の間隔は段落に含まれる最も大きな文字のフォント サイズを 12 ポイントを追加することによって決まります。</para>
-          <para />
-        </remarks>
+        <summary>指定された段落の行間を 2 行にします。</summary>
+        <remarks><para>実際の間隔は、対象となる段落に含まれる最も大きな文字のフォント サイズに 12 ポイントを加えた値です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SpaceAfter">
@@ -1819,14 +1762,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word が、指定した段落の後の間隔の量を自動的に設定するかどうかを決定します。</summary>
+        <summary>指定した段落の後の間隔の量を自動的に設定するかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>そうでない場合の<b>指定した各段落後</b>の間隔が自動的に設定する場合、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
-          <para>の一部のみを指定した段落の<b>SpaceAfterAuto</b>プロパティが<b>True</b>に設定する場合、このプロパティは<b>wdUndefined</b>を返します</para>。
-          <para>カスケード スタイル シートなしの HTML ドキュメントを開くと自動的に設定<b>SpaceAfterAuto</b>プロパティを<b>True</b>に Web ブラウザーでの表示とまったく同じように段落の間隔を表示します</para>。
-          <para><b>SpaceAfterAuto</b>が<b>True</b>に設定されている場合、<see cref="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceAfter" />プロパティは無視されます</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティは、指定した段落の後の間隔の量が自動的に設定される場合は<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para><b>SpaceAfterAuto</b> プロパティが、指定した段落の一部だけを <b>True</b> に設定する場合、このプロパティは <b>wdUndefined</b> を返します。</para>
+          <para>カスケードスタイルシートが含まれていない HTML 文書を開くと、Word は自動的に<b>Space Afterauto</b>プロパティを<b>True</b>に設定して、段落の間隔を Web ブラウザーで表示されるとおりに表示します。</para>
+          <para><b>Space Afterauto</b>が<b>True</b>に設定されて<see cref="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceAfter" />いる場合、このプロパティは無視されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SpaceBefore">
@@ -1886,14 +1828,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word が指定した段落の段落前に、の間隔の量を自動的に設定するかどうかを決定します。</summary>
+        <summary>指定した段落の前の間隔を自動的に設定するかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>そうでない場合の<b>指定した段落は前に、</b>の間隔が自動的に設定する場合、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
-          <para><b>SpaceBeforeAuto</b>プロパティは、指定した段落の一部だけを True に設定されている場合、このプロパティは<b>wdUndefined</b>を返します</para>。
-          <para>カスケード スタイル シートなしの HTML ドキュメントを開くと自動的に設定、 <b>SpaceBeforeAuto</b>プロパティに<b>True</b>を表示する Web ブラウザーでの表示とまったく同じように段落の間隔です</para>。
-          <para><b>SpaceBeforeAuto</b>が<b>True</b>に設定されている場合、<see cref="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceBefore" />プロパティは無視されます</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティは、指定した段落の段落前の間隔の量が自動的に設定される場合は<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para>一部のみを指定した段落の <b>SpaceBeforeAuto</b> プロパティが <b>True</b> に設定する場合、このプロパティは wdUndefined を返します。</para>
+          <para>カスケードスタイルシートが含まれていない HTML 文書を開くと、Word は自動的に<b>Space Beforeauto</b>プロパティを<b>True</b>に設定して、段落の間隔を Web ブラウザーで表示するのと同じように表示します。</para>
+          <para><b>Space Beforeauto</b>を<b>True</b>に設定すると、 <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceBefore" />プロパティは無視されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -1924,10 +1865,9 @@
       <Docs>
         <summary>指定したオブジェクトのスタイルを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティを設定し、整数値で、スタイルのローカル名を指定して、<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />の定数、またはスタイルを表すオブジェクト</para>。
-          <para>1 つ以上のスタイルを含む範囲のスタイルを取得すると、最初の文字または段落のスタイルのみが返されます</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティを設定するには、スタイルのローカル名、整数、 <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />定数、またはスタイルを表すオブジェクトを指定します。</para>
+          <para>複数のスタイルを含む範囲のスタイルを取得する場合は、最初の文字または段落のスタイルのみ取得できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TabHangingIndent">
@@ -1953,13 +1893,10 @@
         <Parameter Name="Count" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Count">
-          <b>短い</b>必要があります。 インデントを設定するタブ位置を指定する場合は正の値を、インデントを解除するタブ位置の数を指定する場合は負の値を指定します。</param>
+        <param name="Count"><b>省略</b>する必要があります。 インデントを設定するタブ位置を指定する場合は正の値を、インデントを解除するタブ位置の数を指定する場合は負の値を指定します。</param>
         <summary>指定されたタブ位置にぶら下げインデントを設定します。</summary>
-        <remarks>
-          <para>場合、ぶら下げインデントのタブ位置を削除するのには使用することができますの値<paramref name="Count" />は、負の数です。</para>
-          <para />
-        </remarks>
+        <remarks><para>の<paramref name="Count" />値が負の数である場合、ぶら下げインデントからタブ位置を削除するために使用できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TabIndent">
@@ -1985,13 +1922,10 @@
         <Parameter Name="Count" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Count">
-          <b>短い</b>必要があります。 インデントを設定するタブ位置を指定する場合は正の値を、インデントを解除するタブ位置の数を指定する場合は負の値を指定します。</param>
+        <param name="Count"><b>省略</b>する必要があります。 インデントを設定するタブ位置を指定する場合は正の値を、インデントを解除するタブ位置の数を指定する場合は負の値を指定します。</param>
         <summary>指定された段落の左インデントを指定されたタブ位置に設定します。</summary>
-        <remarks>
-          <para>インデントを削除する場合にも使用できますの値<paramref name="Count" />は、負の数です。</para>
-          <para />
-        </remarks>
+        <remarks><para>の<paramref name="Count" />値が負の数である場合は、インデントを削除するためにも使用できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TabStops">
@@ -2020,7 +1954,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TabStops</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、 <see cref="T:Microsoft.Office.Interop.Word.TabStops" /> 、指定した段落のすべてのユーザー設定のタブを表すコレクションを停止します。</summary>
+        <summary>指定した段落<see cref="T:Microsoft.Office.Interop.Word.TabStops" />のすべてのユーザー設定のタブ位置を表すコレクションを設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2051,12 +1985,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>とき、文書の改段落の残りの部分と同じページ上で指定した段落の最初と最後の行のままかどうかを決定します。</summary>
+        <summary>文書を改するときに、指定した段落の最初の行と最後の行が段落の残りの部分と同じページに残るかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>改は、ドキュメント、および場合は<b>False</b>の場合、段落の残りの部分と同じページ上で指定した段落の最初と最後の行が残っている場合、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
-          <para>可能な値は、 <b>True</b>、 <b>False</b> 、 <b>wdUndefined</b>を返します</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティは、指定した段落の最初と最後の行が文書の改時に段落の残りの部分と同じページに残る場合は<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para>可能な戻り値は<b>True</b>、 <b>False</b> 、 <b>wdUndefined</b>です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WordWrap">
@@ -2085,13 +2018,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word が指定した段落またはレイアウト枠内の単語の途中でラテン語のテキストをラップかどうかを決定します。</summary>
+        <summary>指定した段落またはレイアウト枠の単語の途中で、英文字を折り返すかどうかを設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>そうでない場合、Word が、指定した段落またはテキスト フレーム、および<b>false の場合</b>に単語の途中でラテン語のテキストをラップしている場合、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
-          <para>場合は、このプロパティは<b>wdUndefined</b>を返します指定した段落またはテキスト フレームの一部のみを<b>True</b>に設定します</para>。
-          <para>この使用方法を選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティは、指定された段落またはレイアウト枠で単語の途中で英数字が折り返される場合は<b>True</b>を返します。ない場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para>このプロパティは、指定した段落またはテキストフレームの一部のみを<b>True</b>に設定すると、 <b>wdUndefined</b>を返します。</para>
+          <para>この使用法は、選択またはインストールした言語のサポート (たとえば、英語 (米国)) によっては使用できない場合があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

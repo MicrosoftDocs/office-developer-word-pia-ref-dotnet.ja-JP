@@ -1,13 +1,5 @@
 <Type Name="DropDown" FullName="Microsoft.Office.Interop.Word.DropDown">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d1aa9b15f2b37ab9a12aa1f385ead515fc2994b0" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671065" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DropDown" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="657342fc0405fbd6f204e36ef3b45bfddf99d76e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144576" /></Metadata><TypeSignature Language="C#" Value="public interface DropDown" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DropDown" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DropDown" />
   <TypeSignature Language="VB.NET" Value="Public Interface DropDown" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>フォームの項目の一覧を含むドロップダウン フォーム フィールドを表します。</summary>
-    <remarks>
-      <para>
-        <b>FormFields</b>を使用 (<paramref name="index" />) インデックスはインデックス番号またはドロップダウン フォーム フィールドには、1 つを取得するに関連付けられているブックマークの名前、場所、<see cref="T:Microsoft.Office.Interop.Word.FormField" />オブジェクトです。使用して、 <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" /><b>DropDown</b>オブジェクトを取得する<b>FormField</b>オブジェクトのプロパティです</para>。
-      <para>内のフォーム フィールドの位置を表すインデックス番号、<see cref="T:Microsoft.Office.Interop.Word.FormFields" />コレクションです</para>。
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> 、ドロップダウン フォーム フィールドを追加するのには、 <b>FormFields</b>コレクションを持つメソッドです</para>。
-      <para /></remarks>
+    <remarks><para>1つ<see cref="T:Microsoft.Office.Interop.Word.FormField" />の<paramref name="index" />オブジェクトを取得するには、 <b>FormFields</b>() を使用します。引数 index には、ドロップダウンフォームフィールドに関連付けられているインデックス番号またはブックマーク名を指定します。 DropDown オブジェクト<see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" />を取得するのにには、 <b></b> <b>FormField</b>オブジェクトのプロパティを使用します。</para>
+      <para>インデックス番号は、 <see cref="T:Microsoft.Office.Interop.Word.FormFields" />コレクション内のフォームフィールドの位置を表します。</para>
+      <para>ドロップダウン<see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" />フォームフィールドを追加するには、 <b>FormFields</b>コレクションでメソッドを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,12 +76,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -122,10 +111,8 @@
       <Docs>
         <summary>既定のドロップダウン項目を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ドロップダウン フォーム フィールドの最初の項目は 1、2 番目の項目は、2 というようにします。</para>
-          <para />
-        </remarks>
+        <remarks><para>ドロップダウン フォーム フィールドの最初の項目は 1、2 番目の項目は 2 になります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListEntries">
@@ -151,7 +138,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.ListEntries" />内のすべての項目を表すコレクションの<see cref="T:Microsoft.Office.Interop.Word.DropDown" />オブジェクト。</summary>
+        <summary>オブジェクト内<see cref="T:Microsoft.Office.Interop.Word.ListEntries" />のすべてのアイテムを表すコレクションを返します。 <see cref="T:Microsoft.Office.Interop.Word.DropDown" /></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -207,12 +194,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>かどうか、指定したフォーム フィールド オブジェクトが有効なチェック ボックス フォーム フィールドを決定します。</summary>
+        <summary>指定したフォームフィールドオブジェクトが有効なチェックボックスフォームフィールドであるかどうかを判断します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>指定したフォーム フィールド オブジェクトが、有効なチェック ボックス フォーム フィールド、および場合は<b>False</b>の場合、このプロパティが<b>True</b>を返します</para>。
-          <para>の<see cref="T:Microsoft.Office.Interop.Word.CheckBox" />、 <see cref="T:Microsoft.Office.Interop.Word.DropDown" />、および<see cref="T:Microsoft.Office.Interop.Word.TextInput" />、オブジェクトを使用して、<see cref="P:Microsoft.Office.Interop.Word.FormField.Type" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Word.FormField" /> (<b>wdFieldFormCheckBox</b>、 <b>wdFieldFormDropDown</b>、または<b>wdFieldFormTextInput</b>) のフォーム フィールドの種類を決定する前にオブジェクト適用する、 <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" />、 <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" />、または<see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" />プロパティ。この予防措置は、 <b>FormField</b>オブジェクトが有効な型であることを保証します</para>。
-          <para /></remarks>
+        <remarks><para>指定したフォームフィールドオブジェクトが有効なチェックボックスフォームフィールドである場合、このプロパティは<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。</para>
+          <para><see cref="T:Microsoft.Office.Interop.Word.CheckBox" /> <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> <see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> <see cref="T:Microsoft.Office.Interop.Word.FormField" /> <b></b> <b></b> <b></b>、、およびオブジェクトの場合は、オブジェクトのプロパティを使用して、適用するフォームフィールドの種類 (wdFieldFormCheckBox、wdFieldFormDropDown、または wdFieldFormTextInput) を指定します。 <see cref="T:Microsoft.Office.Interop.Word.DropDown" />、、または<see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" /> <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" /> この予防措置は、 <b>FormField</b>オブジェクトが予期される型であることを保証します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">

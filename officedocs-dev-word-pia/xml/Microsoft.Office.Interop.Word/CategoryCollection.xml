@@ -1,13 +1,5 @@
 <Type Name="CategoryCollection" FullName="Microsoft.Office.Interop.Word.CategoryCollection">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ee25f7d6bcafb86ab6bc607146240b4471d6182b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671205" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CategoryCollection : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="052e1ecd3f49b8cef31b9fe053bbf1756f558de4" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147320" /></Metadata><TypeSignature Language="C#" Value="public interface CategoryCollection : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CategoryCollection implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CategoryCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface CategoryCollection&#xA;Implements IEnumerable" />
@@ -30,11 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>ドキュメントに含まれる表示可能なグラフ分類のコレクションを表します。</summary>
-    <remarks>
-      <para>カテゴリは、グラフからフィルターされてがない場合に表示されます。</para>
-      <para />
-    </remarks>
+    <summary>文書内の表示されているグラフの分類項目のコレクションを表します。</summary>
+    <remarks><para>カテゴリは、グラフから除外されていない場合に表示されます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -92,7 +82,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Word アプリケーション<see cref="T:Microsoft.Office.Interop.Word.Application" />を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,8 +110,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>整数値</b>(C# では<b>int</b> ) を表すコレクション内の項目数を返します。 値の取得のみ可能です。</summary>
+        <summary>コレクション内のカテゴリの数を表す<b>整数</b>(C# の<b>int</b> ) を返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,13 +138,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。 読み取り専用の<b>整数値</b>(C# では<b>int</b> )。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。 読み取り専用の<b>整数</b>(C# では<b>int</b> )。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Word で作成されている場合、<b>作成者</b>を返します、16 進数の値である 4d535744 を文字列します。このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には、作成者コード MSWD です。このプロパティに関する詳細については、office for mac のヘルプの言語リファレンスを参照してください</para>
+        <remarks><para>オブジェクトが Word で作成されている場合、 <b>Creator</b>プロパティは、文字列 "MSWD" を表す、16進数値の4D535744 を返します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には、作成者コード MSWD です。 このプロパティの詳細については、Office for Mac に含まれている言語リファレンスのヘルプを参照してください。</para>
           <para>
-            <b>注</b>: この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para /></remarks>
+            <b>注</b>: この値は、定数<b>wdCreatorCode</b>で表すこともできます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -217,7 +205,7 @@
       </Parameters>
       <Docs>
         <param name="Index">オブジェクトの名前またはインデックス番号を指定します。</param>
-        <summary>個々 のグラフのカテゴリを返します。</summary>
+        <summary>各グラフのカテゴリを返します。</summary>
         <value>CHARTCATEGORY</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -245,7 +233,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した<b>CategoryCollection</b>オブジェクトの親オブジェクトを表す<b>オブジェクト</b>を返します。</summary>
+        <summary>指定した <b>CategoryCollection</b> オブジェクトの親オブジェクトを表す <b>Object</b> を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="Points" FullName="Microsoft.Office.Interop.Word.Points">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e6ec73c293d015a6238b804a975848286853fb8c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672124" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Points : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5975220702129151c3928a376d05fe3cd4618651" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147719" /></Metadata><TypeSignature Language="C#" Value="public interface Points : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Points implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Points" />
   <TypeSignature Language="VB.NET" Value="Public Interface Points&#xA;Implements IEnumerable" />
@@ -30,11 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>すべてのコレクション、 <see cref="T:Microsoft.Office.Interop.Word.Point" /> 、グラフ内の指定した系列内のオブジェクト。</summary>
-    <remarks>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Series.Points(System.Object)" />(<paramref name="Index" />)、<paramref name="Index" />ポイントのインデックス番号で、1 つを返すには、<see cref="T:Microsoft.Office.Interop.Word.Point" />オブジェクトです。ポイントは、シリーズの右に左から番号が付けられます。Points(1)、左端のポイントから最も右側のポイント。</para>
-      <para />
-    </remarks>
+    <summary>グラフの指定され<see cref="T:Microsoft.Office.Interop.Word.Point" />たデータ系列にあるすべてのオブジェクトのコレクションです。</summary>
+    <remarks><para>1 <see cref="M:Microsoft.Office.Interop.Word.Series.Points(System.Object)" />つ<paramref name="Index" /> <see cref="T:Microsoft.Office.Interop.Word.Point" />のオブジェクトを<paramref name="Index" />取得するには、() を使用します。ここで、はポイントのインデックス番号です。 Points are numbered from left to right on the series. Points(1) は左端のデータ要素に対応し、Points(Points.Count) は右端のデータ要素に対応します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -65,7 +55,7 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>内部使用のため予約済みです。</summary>
-        <returns>返します。 <see cref="T:Microsoft.Office.Interop.Word.Point" />。</returns>
+        <returns>を<see cref="T:Microsoft.Office.Interop.Word.Point" />返します。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,9 +82,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 値の取得のみ可能です。</summary>
-        <value>
-          <b>アプリケーション</b>(上記参照)</value>
+        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用<see cref="T:Microsoft.Office.Interop.Word._Application" />すると、Microsoft Word アプリケーションを表すオブジェクトが返されます。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
+        <value><b>アプリケーション</b>(上記を参照)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,10 +110,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内のオブジェクトの数を表す<b>整数</b>値を返します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>コレクションに含まれるオブジェクトの数を表す整数型 (<b>Integer</b>) の値を返します。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,14 +138,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Word で作成されている場合、<b>作成者</b>を返します、16 進数の値である 4d535744 を文字列します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
-          <para />
-        </remarks>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトは、Microsoft Word で作成されている場合、 <b>作成者</b> を返します、16 進数の値である 4d535744 を文字列します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -189,7 +172,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>返します。 <see cref="T:System.Collections.IEnumerator" />。</returns>
+        <returns>を<see cref="T:System.Collections.IEnumerator" />返します。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,12 +202,9 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>整数</b>が必要です。 オブジェクトのインデックス番号を指定します。</param>
-        <summary>コレクションから単一のオブジェクトを返します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Point" />
-        </value>
+        <param name="Index">整数型 (<b>Integer</b>) の値を使用します。 オブジェクトのインデックス番号を指定します。</param>
+        <summary>コレクションから1つのオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Point" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,10 +231,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親を返します。読み取り専用 <b>オブジェクト</b> 。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定したオブジェクトの親を返します。 読み取り専用 <b>オブジェクト</b> 。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

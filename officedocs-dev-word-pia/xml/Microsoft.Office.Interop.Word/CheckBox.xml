@@ -1,13 +1,5 @@
 <Type Name="CheckBox" FullName="Microsoft.Office.Interop.Word.CheckBox">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="49c5e968d7ca83ab33c2d641b57ba5240bef239d" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671062" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CheckBox" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="44f3ebc6503c36473eb317875150d1134c7933aa" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147180" /></Metadata><TypeSignature Language="C#" Value="public interface CheckBox" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CheckBox" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CheckBox" />
   <TypeSignature Language="VB.NET" Value="Public Interface CheckBox" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>チェック ボックス フォーム フィールドを表します。</summary>
-    <remarks>
-      <para>
-        <b>FormFields</b>を使用 (<paramref name="index" />)、<paramref name="index" />はインデックス番号またはブックマークの名前に関連付けられているチェック ボックスの 1 つを取得するのには、<see cref="T:Microsoft.Office.Interop.Word.FormField" />オブジェクトです。使用の<see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" />オブジェクトを取得する<b>] チェック ボックス</b>を<b>FormField</b>オブジェクトのプロパティです</para>。
-      <para>内のフォーム フィールドの位置を表すインデックス番号、<see cref="T:Microsoft.Office.Interop.Word.FormFields" />コレクションです</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" />メソッド、 <b>FormFields</b>オブジェクトのチェック ボックス フォーム フィールドを追加する</para>。
-      <para /></remarks>
+    <remarks><para>1つ<see cref="T:Microsoft.Office.Interop.Word.FormField" />の<paramref name="index" />オブジェクトを取得<paramref name="index" />するのにには、 <b>FormFields</b>() を使用します。ここで、はインデックス番号、またはチェックボックスに関連付けられたブックマーク名を使用します。 CheckBox オブジェクト<see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" />を取得するのにには、 <b></b> <b>FormField</b>オブジェクトのプロパティを使用します。</para>
+      <para>インデックス番号は、 <see cref="T:Microsoft.Office.Interop.Word.FormFields" />コレクション内のフォームフィールドの位置を表します。</para>
+      <para>この<see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" />メソッドを<b>FormFields</b>オブジェクトと共に使用して、チェックボックスフォームフィールドを追加します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,8 +79,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> チェック ボックスをオンまたは周囲の文字列のフォント サイズに合わせてテキスト フレームのサイズです。 <b>False</b>またはサイズを変更する] チェック ボックスに合わせてテキスト フレーム、<see cref="P:Microsoft.Office.Interop.Word.CheckBox.Size" />プロパティ。</summary>
+        <summary><b>True</b> チェック ボックスをオンまたは周囲の文字列のフォント サイズに合わせてテキスト フレームのサイズです。 <b>False</b> <see cref="P:Microsoft.Office.Interop.Word.CheckBox.Size" />プロパティに従ってチェックボックスまたはテキストボックスのサイズを調整します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,10 +109,9 @@
       <Docs>
         <summary>指定したオブジェクトが作成されたアプリケーションを示す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -180,7 +168,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親オブジェクトを返します。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -211,7 +199,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定したチェック ボックスのサイズをポイント単位で設定します。</summary>
+        <summary>指定したチェックボックスのサイズをポイント単位で設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -239,12 +227,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>かどうか、指定したフォーム フィールド オブジェクトが有効なチェック ボックス フォーム フィールドを示す値を返します。</summary>
+        <summary>指定したフォームフィールドオブジェクトが有効なチェックボックスフォームフィールドであるかどうかを示す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.FormField.Type" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Word.FormField" />フォーム フィールドの種類を決定するオブジェクト (<see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormCheckBox" />、 <see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormDropDown" />、または<see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormTextInput" />) を適用する前に、<see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" />プロパティ。この予防措置により、 <b>FormField</b>オブジェクトが有効な型であること。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> <see cref="T:Microsoft.Office.Interop.Word.FormField" /> <see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormCheckBox" /> <see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormDropDown" /> <see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormTextInput" />プロパティを適用する前に、オブジェクトのプロパティを使用して、フォームフィールドの種類 (、、または) を決定します。 <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" /> この予防措置は、 <b>FormField</b>オブジェクトが予期される型であることを保証します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -273,7 +259,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはチェック ボックスがオンのかどうかを示す値を設定します。</summary>
+        <summary>チェックボックスがオンになっているかどうかを示す値を取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

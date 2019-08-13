@@ -1,13 +1,5 @@
 <Type Name="ListGallery" FullName="Microsoft.Office.Interop.Word.ListGallery">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="966516dad1e0dd08ab38c58e333200e586d28db7" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672293" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListGallery" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5bd7ff965569856360b744ab132d1fadf6ac4b2d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147887" /></Metadata><TypeSignature Language="C#" Value="public interface ListGallery" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListGallery" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListGallery" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListGallery" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>リスト形式の 1 つのギャラリーを表します。</summary>
-    <remarks>
-      <para>
-        <b>ListGallery</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.ListGalleries" />コレクションです。各<b>ListGallery</b>オブジェクトを表す、箇条書きの 3 つのタブのいずれかと段落番号] ダイアログ ボックス</para>。
-      <para>使用して<b>ListGalleries</b>(<paramref name="index" />)、 <paramref name="index" /><b>wdBulletGallery</b>、 <b>wdNumberGallery</b>、または<b>wdOutlineNumberGallery</b>は、単一の<b>ListGallery</b>オブジェクトを返すことです</para>。使用して Microsoft Word に組み込まれている書式を指定したリスト テンプレートがあるかどうかを確認するのには
-      <para>、 <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /><b>ListGallery</b>オブジェクトのプロパティです。リセットするには元のリスト形式に書式設定を使用して、 <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /><b>ListGallery</b>オブジェクトのメソッドです</para>。
-      <para /></remarks>
+    <remarks><para><b>ListGallery</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" />コレクションのメンバーです。 各 <b>ListGallery</b> オブジェクトは、[ 箇条書きと段落番号] ダイアログ ボックスの 3 つのタブのいずれかを表します。</para>
+      <para><b>ListGalleries</b><paramref name="index" />() を使用し<paramref name="index" />ます。ここで、 <b>wdBulletGallery</b>、 <b>wdNumberGallery</b>、または<b>wdOutlineNumberGallery</b>を使用して、1つの<b>ListGallery</b>オブジェクトを返します。</para>
+      <para>指定した箇条書きテンプレートに Microsoft Word に組み込まれている書式設定が含ま<see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" />れているかどうかを確認するには、 <b>ListGallery</b>オブジェクトのプロパティを使用します。 書式設定を元のリスト形式にリセットするに<see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" />は、 <b>ListGallery</b>オブジェクトのメソッドを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,12 +76,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListTemplates">
@@ -117,7 +106,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.ListTemplates" />すべてのリストを表すコレクションのリストを指定したギャラリーの書式を設定します。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.ListTemplates" />た箇条書きギャラリーのすべての箇条書き書式を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,15 +137,11 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>整数</b>が必要です。 箇条書きテンプレートの位置に対応する 1 から 7 の番号と段落番号] ダイアログ ボックス ([書式] メニュー)。 オプションを [なし] を除く、テンプレートが左から右、上の行を開始する番号です。</param>
-        <summary>
-          <b>True の</b> 場合、指定したリスト テンプレートは、組み込みの箇条書きテンプレート ギャラリー] ボックスの一覧内の位置に対してではありません。</summary>
+        <param name="Index">整数型 (<b>Integer</b>) の値を使用します。 [箇条書きと段落番号] ダイアログボックス ([書式] メニュー) のテンプレートの位置に対応する1から7までの数値を指定します。 [なし] オプションを除外すると、先頭行から順に、左から右にテンプレートの番号が付けられます。</param>
+        <summary><b>True の</b> 場合、指定したリスト テンプレートは、組み込みの箇条書きテンプレート ギャラリー] ボックスの一覧内の位置に対してではありません。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" />に組み込みの箇条書きテンプレートの箇条書きテンプレートのリスト テンプレートを設定します。</para>
-          <para />
-        </remarks>
+        <remarks><para>リストギャラリー <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" />内のリストテンプレートを組み込みの箇条書きテンプレートに戻すには、メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -210,9 +195,8 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>整数</b>が必要です。</param>
-        <summary>リスト ギャラリーを指定したリスト テンプレートを組み込みの箇条書きテンプレートの書式設定にリセットします。</summary>
+        <param name="Index">整数型 (<b>Integer</b>) の値を使用します。</param>
+        <summary>リストギャラリーの指定した箇条書きテンプレートを、組み込みの箇条書きテンプレート形式にリセットします。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

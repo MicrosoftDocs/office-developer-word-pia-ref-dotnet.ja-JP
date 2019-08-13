@@ -1,13 +1,5 @@
 <Type Name="Legend" FullName="Microsoft.Office.Interop.Word.Legend">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a9e9e5a1d2b39e9479a75403dfc61a2ef2c8fbaf" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672291" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Legend" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2dd8d5ba7022d056e55567fbb8487b158d46636d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146634" /></Metadata><TypeSignature Language="C#" Value="public interface Legend" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Legend" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Legend" />
   <TypeSignature Language="VB.NET" Value="Public Interface Legend" />
@@ -27,14 +19,10 @@
   </Attributes>
   <Docs>
     <summary>グラフの凡例を表します。各グラフに凡例は 1 つだけです。</summary>
-    <remarks>
-      <para>
-        <see cref="T:Microsoft.Office.Interop.Word.Legend" />オブジェクトには、1 つまたは複数が含まれています<see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />オブジェクトです。各<see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />オブジェクトが含まれています、<see cref="T:Microsoft.Office.Interop.Word.LegendKey" />オブジェクトです</para>。
-      <para>グラフの凡例が表示されていない限り、<see cref="P:Microsoft.Office.Interop.Word.Chart.HasLegend" />プロパティが<b>True</b>です。このプロパティは、 <b>false を指定</b>、プロパティおよびメソッドのかどうか、<see cref="T:Microsoft.Office.Interop.Word.Legend" />オブジェクトが失敗します</para>。
-      <para /></remarks>
-    <example>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.Chart.Legend" />を返すプロパティの<see cref="T:Microsoft.Office.Interop.Word.Legend" />オブジェクトです。太字にする、作業中の文書の最初のグラフの凡例のフォント スタイルを設定する例を次にします。</para>
-    </example>
+    <remarks><para>オブジェクト<see cref="T:Microsoft.Office.Interop.Word.Legend" />には1つ以上<see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />のオブジェクトが含まれています。各<see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />オブジェクトには<see cref="T:Microsoft.Office.Interop.Word.LegendKey" />オブジェクトが含まれています。</para>
+      <para>グラフの凡例は、 <see cref="P:Microsoft.Office.Interop.Word.Chart.HasLegend" />プロパティが<b>True</b>でない場合は表示されません。 このプロパティが<b>False</b>の場合、 <see cref="T:Microsoft.Office.Interop.Word.Legend" />オブジェクトのプロパティとメソッドは失敗します。</para>
+      <para> </para></remarks>
+    <example><para>オブジェクトを<see cref="P:Microsoft.Office.Interop.Word.Chart.Legend" />取得するのにには、プロパティを使用します。 <see cref="T:Microsoft.Office.Interop.Word.Legend" /> 次の使用例は、作業中の文書に含まれる最初のグラフについて凡例のフォントのスタイルを太字に設定します。</para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,10 +48,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用<see cref="T:Microsoft.Office.Interop.Word._Application" />すると、Microsoft Word アプリケーションを表すオブジェクトが返されます。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,11 +85,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>場合は、オブジェクト内のテキストは、オブジェクトのサイズを変更したときにフォント サイズを変更します。 既定値は <b>True</b> です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary><b>True</b>の場合は、オブジェクトのサイズが変更されたときに、オブジェクト内のテキストのフォントサイズが変更されます。 既定値は <b>True</b> です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,10 +116,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Border" /> 、オブジェクトの枠線を表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>オブジェクトの<see cref="T:Microsoft.Office.Interop.Word.Border" />枠線を表すオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,9 +143,7 @@
       <Parameters />
       <Docs>
         <summary>オブジェクト全体をクリアします。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,14 +170,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Word で作成されている場合、<b>作成者</b>を返します、16 進数の値である 4d535744 を文字列します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
-          <para />
-        </remarks>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトは、Microsoft Word で作成されている場合、 <b>作成者</b> を返します、16 進数の値である 4d535744 を文字列します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -223,9 +198,7 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトを削除します。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,9 +228,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />指定した図形のオブジェクト、または<see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />指定されたグラフの塗りつぶしの書式設定、図形やグラフのプロパティを含むオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />.</value>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />た図形または図形または<see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />グラフの塗りつぶしの書式プロパティを含む、指定したグラフのオブジェクトのオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -287,10 +259,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Font" />を指定したオブジェクトのフォントを表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFont" />
-        </value>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Font" />たオブジェクトのフォントを表すオブジェクト型 (object) の値を取得します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFont" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -318,10 +288,8 @@
       </ReturnValue>
       <Docs>
         <summary>線、塗りつぶし、およびオブジェクトの書式設定の効果を取得します。
-読み取り専用<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+読み取り専用<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -352,9 +320,7 @@
       </ReturnValue>
       <Docs>
         <summary>返すまたは、オブジェクトのポイント単位で、高さを表す <b>double 型</b> の値を設定します。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -384,14 +350,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グラフのレイアウトが決定する際に凡例がグラフ レイアウト領域を占有する場合は<b>True</b>に設定します。 既定値は <b>True</b> です。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>かどうか、グラフ自動レイアウト モードで、このプロパティは影響しません。 ユーザーは、グラフの上コマンドを使用してタイトルを追加する場合は、グラフはサイズを変更するより小さい、Microsoft Office の以前のバージョンのように。 タイトルを削除し、またはいずれかのタイトル オーバーレイ オプションを選択、グラフはグラフのタイトルが設定されていない場合と同様、大きいのサイズを変更します。</para>
-          <para />
-        </remarks>
+        <summary>グラフのレイアウトが決定されるときに凡例がグラフレイアウト領域を占有する場合は<b>True</b>に設定します。 既定値は <b>True</b> です。 取得/設定が可能な <b>Boolean</b> 値です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>このプロパティは、グラフが自動レイアウト モードであるかどうかに影響しません。  ユーザーが [Chart] コマンドを使用してタイトルを追加すると、以前のバージョンの Microsoft Office と同じように、グラフのサイズが小さくなります。  その後、ユーザーがタイトルを削除するか、いずれかのタイトル オーバーレイ オプションを選択した場合、グラフにタイトルが設定されていなかったときの状態まで、グラフのサイズは大きくなります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -420,10 +382,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Interior" />を指定したオブジェクトの内部を表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Interior" />
-        </value>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Interior" />たオブジェクトの内部を表すオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -453,10 +413,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グラフ エリアの左端からのオブジェクトの左端からポイント単位で、距離を表す<b>double 型</b>の値を返します。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>オブジェクトの左端から、グラフ エリアの左端までの距離をポイント単位で表す倍精度浮動小数点型 (<b>Double</b>) の値を返します。</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -483,10 +441,8 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> 、凡例の凡例項目を表すオブジェクト。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <summary>凡例の<see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />凡例項目を表すオブジェクトを返します。</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -514,9 +470,7 @@
       </ReturnValue>
       <Docs>
         <summary>オブジェクトの名前を表す文字列型 ( <b>String</b> ) の値を返します。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -543,10 +497,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親を返します。読み取り専用 <b>オブジェクト</b> 。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定したオブジェクトの親を返します。 読み取り専用 <b>オブジェクト</b> 。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -576,10 +528,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlLegendPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、 <see cref="T:Microsoft.Office.Interop.Word.XlLegendPosition" /> 、グラフの凡例の位置を表す値。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlLegendPosition" />
-        </value>
+        <summary>グラフの凡例の<see cref="T:Microsoft.Office.Interop.Word.XlLegendPosition" />位置を表す値を設定または返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlLegendPosition" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -605,9 +555,7 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトを選択します。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -637,10 +585,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、オブジェクトに影があるかどうかを決定する<b>ブール</b>値を設定します。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>オブジェクトが影付きかどうかを表すブール型 (<b>Boolean</b>) の値を取得または設定します。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -670,10 +616,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、(ワークシート) の行 1 の上端、または、グラフ エリア (グラフの場合) の一番上のオブジェクトの上端からポイント単位で、距離を表す<b>double 型</b>の値を設定します。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>オブジェクトの上端から、ワークシート上の行 1 の上までの距離、または、グラフ シート上のグラフ エリアの上までの距離をポイント単位で表す倍精度浮動小数点型 (<b>Double</b>) の値を取得、または設定します。</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -704,9 +648,7 @@
       </ReturnValue>
       <Docs>
         <summary>返すまたは、オブジェクトのポイント単位で、幅を表す <b>double 型</b> の値を設定します。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

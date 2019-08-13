@@ -1,13 +1,5 @@
 <Type Name="Row" FullName="Microsoft.Office.Interop.Word.Row">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f3f888ce7666e70b4f715eac11cdc9ad62446510" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671725" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Row" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2a9aa0e9a5a9ac735956a630fd3d9e5e8530abf2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144030" /></Metadata><TypeSignature Language="C#" Value="public interface Row" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Row" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Row" />
   <TypeSignature Language="VB.NET" Value="Public Interface Row" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>テーブル内の行を表します。</summary>
-    <remarks>
-      <para>
-        <b>Row</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.Rows" />コレクションです。<b>Rows</b>コレクションには、指定された選択範囲、指定範囲、またはテーブル内のすべての行が含まれています</para>。
-      <para><b>行</b>の使用 (<paramref name="index" />)、<paramref name="index" />インデックス番号は、1 つの<b>行</b>オブジェクトを取得します。インデックス番号は、選択範囲、指定範囲、またはテーブル内の行の位置を表します</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.Rows.Add(System.Object@)" />テーブルに行を追加します</para>。
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.Row.Cells" /> 、<b>行</b>オブジェクトの個々 のセルを変更するプロパティ</para>。
-      <para /></remarks>
+    <remarks><para><b>Row</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Rows" />コレクションのメンバーです。 <b>Rows</b> コレクションには、指定された選択範囲、指定範囲、またはテーブル内のすべての行が含まれています。</para>
+      <para>1つの<paramref name="index" /> <b>Row</b>オブジェクトを<paramref name="index" />取得するには、 <b>Rows</b>() を使用します。ここでインデックス番号を指定します。 インデックス番号は、選択範囲、指定範囲、またはテーブル内の行の位置を表します。</para>
+      <para>テーブルに<see cref="M:Microsoft.Office.Interop.Word.Rows.Add(System.Object@)" />行を追加するには、メソッドを使用します。</para>
+      <para>Row オブジェクト<see cref="P:Microsoft.Office.Interop.Word.Row.Cells" />の個々のセルを変更するに<b></b>は、プロパティを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -62,11 +52,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRowAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.WdRowAlignment" />を指定した行の配置を表す定数です。</summary>
+        <summary>指定した行<see cref="T:Microsoft.Office.Interop.Word.WdRowAlignment" />の配置を表す定数を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>WdRowAlignment</b>には、以下の定数のいずれかを指定できます:</para>
+        <remarks><para>
+            <b>Wdrowalignment クラス</b>には、次の定数のいずれかを指定できます。</para>
           <para>
             <b>wdAlignRowLeft</b>
           </para>
@@ -76,8 +65,7 @@
           <para>
             <b>wdAlignRowRight</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowBreakAcrossPages">
@@ -106,12 +94,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>改ページを分割するテーブルの行または行のテキストを許可するかどうかを決定します。</summary>
+        <summary>テーブルの行または行のテキストを改ページで分割できるかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>プロパティは、値は、 <b>True</b>、 <b>False</b>または<b>wdUndefined</b> (指定したテキストの一部のみが許可された分割) を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>プロパティの戻り値は、 <b>True</b>、 <b>False</b>または<b>wdUndefined</b>のいずれかになります (指定したテキストの一部のみを分割することができます)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -137,7 +123,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -168,7 +154,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Borders" />を指定したオブジェクトのすべての罫線を表すコレクション。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Borders" />たオブジェクトのすべての罫線を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -196,7 +182,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Cells</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Cells" /> 、列、行、選択範囲、または指定範囲に含まれるセルを表すコレクション。</summary>
+        <summary>列、 <see cref="T:Microsoft.Office.Interop.Word.Cells" />行、選択範囲、または指定範囲に含まれる表のセルを表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -224,15 +210,12 @@
         <Parameter Name="NestedTables" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Separator">省略可能な<b>オブジェクト</b>です。 (段落記号は、変換後の行を区切る) 変換後の列を区切る文字です。 次は、<see cref="T:Microsoft.Office.Interop.Word.WdTableFieldSeparator" />定数:<b>wdSeparateByCommas</b><b>wdSeparateByDefaultListSeparator</b><b>wdSeparateByParagraphs</b>の<b>既定の設定プロパティ</b></param>
-        <param name="NestedTables">省略可能な<b>オブジェクト</b>です。 <b>True の</b> 場合、入れ子になったテーブルは、テキストに変換されます。 場合、この引数は無視されます<paramref name="Separator" /><b>wdSeparateByParagraphs</b>ではありません。 既定値は <b>True</b> です。</param>
-        <summary>テーブルをテキストに変換し、返します、 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 、区切られた文字列を表すオブジェクト。</summary>
+        <param name="Separator">省略可能な<b>オブジェクト</b>です。 (段落記号は、変換後の行を区切る) 変換後の列を区切る文字です。 次<see cref="T:Microsoft.Office.Interop.Word.WdTableFieldSeparator" />のいずれかの定数を使用できます:<b>wdSeparateByCommas</b><b>wdSeparateByDefaultListSeparator</b><b>wdSeparateByParagraphs</b><b>wdSeparateByTabs Default</b></param>
+        <param name="NestedTables">省略可能な<b>オブジェクト</b>です。 <b>True の</b> 場合、入れ子になったテーブルは、テキストに変換されます。 が WdSeparateByParagraphs ではない<paramref name="Separator" />場合、 <b></b>この引数は無視されます。 既定値は <b>True</b> です。</param>
+        <summary>表を文字列に変換し、区切ら<see cref="T:Microsoft.Office.Interop.Word.Range" />れた文字列を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>ConvertToText</b>メソッドを適用すると、<see cref="T:Microsoft.Office.Interop.Word.Table" />オブジェクト、オブジェクトを削除します。テーブルの変換後の内容への参照を維持するためには、新しいオブジェクト変数に<b>ConvertToText</b>メソッドによって返される<b>Range</b>オブジェクトを割り当てる必要があります。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="T:Microsoft.Office.Interop.Word.Table" />オブジェクトに<b>converttotext</b>メソッドを適用すると、オブジェクトが削除されます。 テーブルの変換後の内容への参照を維持するためには、新しいオブジェクト変数に <b>ConvertToText</b> メソッドによって返される <b>Range</b> オブジェクトを割り当てる必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertToTextOld">
@@ -289,12 +272,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -318,7 +300,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -348,12 +330,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>かどうか、指定した行または列がテーブルの見出しとして書式設定を決定します。</summary>
+        <summary>指定した行または行がテーブルの見出しとして書式設定されているかどうかを調べます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>設定された行がテーブルの見出しが表が複数ページにまたがる場合に繰り返されます</para>。
-          <para>可能性のあるプロパティの値は、 <b>True</b>、 <b>False</b>または<b>wdUndefined</b>です</para>。
-          <para /></remarks>
+        <remarks><para>設定された行がテーブルの見出しが表が複数ページにまたがる場合に繰り返されます。</para>
+          <para>使用可能なプロパティの値は、 <b>True</b>、 <b>False</b>または<b>wdUndefined</b>のいずれかです。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -382,12 +363,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはテーブル内の指定された行の高さを設定します。</summary>
+        <summary>表の指定した行の高さを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>場合、<see cref="P:Microsoft.Office.Interop.Word.Row.HeightRule" />指定された行のプロパティが<b>wdRowHeightAuto</b>で、<b>高さ</b>は<b>wdUndefined</b>を返します。<b>Height</b>プロパティを設定すると、 <b>HeightRule</b>が<b>wdRowHeightAtLeast</b>に設定します。</para>
-          <para />
-        </remarks>
+        <remarks><para>指定し<see cref="P:Microsoft.Office.Interop.Word.Row.HeightRule" />た行のプロパティが<b>wdRowHeightAuto</b>の場合、 <b>Height</b>は<b>wdUndefined</b>を返します。 <b>Height</b>プロパティを設定すると、 <b>HeightRule</b>が<b>れ</b>に設定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeightRule">
@@ -416,13 +395,12 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRowHeightRule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された行の高さを決定するルールを設定または返します。</summary>
+        <summary>指定した行の高さを決定するルールを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdRowHeightRule" />次の定数のいずれかをすることができます。</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRowHeightRule" />定数は、次のいずれか:</para>
-          <para>
-            <b>wdRowHeightAtLeast</b>
+            <b>れ</b>
           </para>
           <para>
             <b>wdRowHeightExactly</b>
@@ -430,8 +408,7 @@
           <para>
             <b>wdRowHeightAuto</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -462,11 +439,8 @@
       <Docs>
         <summary>現在の文書を Web ページとして保存するときに指定したオブジェクトを識別するラベルを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.Editor" />オブジェクトのラベルを使用するには他の Web ページまたはハイパーリンクの参照として現在のドキュメント。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="T:Microsoft.Office.Interop.Word.Editor" />オブジェクトを除き、ラベルを他の Web ページまたは現在の文書内のハイパーリンクの参照として使用できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -492,7 +466,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内の項目の位置を表す<b>整数</b>を返します。</summary>
+        <summary>コレクション内の項目の位置を表す<b>整数型 (Integer</b> ) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -520,7 +494,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>かどうか、指定された列または行がテーブルの最初の 1 つを決定します。</summary>
+        <summary>指定した列または行がテーブルの最初の行であるかどうかを判断します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -548,7 +522,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>かどうか、指定された列または行がテーブルの最後の 1 つを決定します。</summary>
+        <summary>指定された列または行がテーブルの最後の1つであるかどうかを判断します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -607,12 +581,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した行のネスト レベルを返します。</summary>
+        <summary>指定した行のネストレベルを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>最も外側のテーブルには、1 の入れ子レベルがあります。各連続的にネストした表のネスト レベルは、1 つ前のテーブルよりも大きくします。</para>
-          <para />
-        </remarks>
+        <remarks><para>一番外側の表のネスト レベルは 1 です。 連続的にネストしている表のそれぞれのネスト レベルは、外側の表のネスト レベルよりも 1 つ大きくなります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -638,7 +610,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Row</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクションの次のオブジェクトを返します。</summary>
+        <summary>コレクション内の次のオブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -694,7 +666,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Row</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクションの 1 つ前のオブジェクトを返します。</summary>
+        <summary>コレクション内の 1 つ前のオブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -722,12 +694,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />を指定したオブジェクトに含まれる文書の部分を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />たオブジェクトに含まれる文書の一部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>範囲をドキュメントから取得するか、図形のコレクションから図形範囲を取得する方法についてを参照してください、<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />メソッドです。</para>
-          <para />
-        </remarks>
+        <remarks><para>文書から指定範囲を取得する<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法、または図形のコレクションから図形範囲を取得する方法については、メソッドを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -752,10 +722,8 @@
       <Parameters />
       <Docs>
         <summary>指定されたオブジェクトを選択します。</summary>
-        <remarks>
-          <para>このメソッドを使用すた後を使用して、<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" />選択した項目を操作するプロパティ。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドを使用した後<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> 、プロパティを使用して選択された項目を操作します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetHeight">
@@ -782,9 +750,8 @@
         <Parameter Name="HeightRule" Type="Microsoft.Office.Interop.Word.WdRowHeightRule" />
       </Parameters>
       <Docs>
-        <param name="RowHeight">
-          <b>1 つ</b>が必要です。 行の高さをポイント単位で指定します。</param>
-        <param name="HeightRule">必要な<see cref="T:Microsoft.Office.Interop.Word.WdRowHeightRule" />。 指定した行の高さを決定する規則です。<b>WdRowHeightRule</b>には、以下の定数のいずれかを指定できます:<b>wdRowHeightAtLeast</b><b>wdRowHeightExactly</b><b>wdRowHeightAuto</b></param>
+        <param name="RowHeight">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 行の高さをポイント単位で指定します。</param>
+        <param name="HeightRule">必須<see cref="T:Microsoft.Office.Interop.Word.WdRowHeightRule" />。 指定した行の高さを決めるときの規則を指定します。<b>WdRowHeightRule</b>には、次の定数のいずれかを指定できます。<b>れ</b><b>wdRowHeightExactly</b><b>wdRowHeightAuto</b></param>
         <summary>表の行の高さを設定します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -813,15 +780,11 @@
         <Parameter Name="RulerStyle" Type="Microsoft.Office.Interop.Word.WdRulerStyle" />
       </Parameters>
       <Docs>
-        <param name="LeftIndent">
-          <b>1 つ</b>が必要です。 指定された行の現在の左端と設定したい左端との間隔をポイント単位で指定します。</param>
-        <param name="RulerStyle">必要な<see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" />。 左インデントが変更されたときに Microsoft Word の表の調整方法を制御します。<b>WdRulerStyle</b>には、以下の定数のいずれかを指定できます: <b>wdAdjustNone</b> – は、左または右にシフトすることによってすべての列の幅を保持し、行または列の左端を調整します。 既定値です。 <b>wdAdjustSameWidth</b> : で指定した行または列に同じ値のすべてのセルの幅を設定することにより、テーブルの右端の位置を保持し、最初の列の左端の位置を調節します。 <b>wdAdjustFirstColumn</b> – は、他の列とテーブルの右端の位置を保持するだけ、最初の列の左端を調整します。 <b>wdAdjustProportional</b> – それに比例して指定した行または列内のすべてのセルの幅を調整することによって、表の右端の位置を保持し、最初の列の左端の位置を調節します。</param>
+        <param name="LeftIndent">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 指定された行の現在の左端と設定したい左端との間隔をポイント単位で指定します。</param>
+        <param name="RulerStyle">必須<see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" />。 左インデントが変更されたときに表を調整する方法を制御します。<b>WdRulerStyle</b>は、次の定数のいずれかとすることができます。 <b>wdAdjustNone</b> –行または行の左端を調整します。すべての列の幅は保持されます。 所有者、作成者、サイト所有者は引き続き対象アイテムにアクセスできます。 <b>wdAdjustSameWidth</b> -指定した行または行のすべてのセルの幅を同じ値に設定することによって、最初の列の左端を調整します。 <b>wdAdjustFirstColumn</b> -最初の列の左端を調整します。他の列とテーブルの右端の位置は保持されます。 <b>wdAdjustProportional</b> -指定した行のすべてのセルの幅を調整することによって、表の右端の位置を保持しながら、先頭列の左端を調整します。</param>
         <summary>表の中の 1 行または複数行に対してインデントを設定します。</summary>
-        <remarks>
-          <para>
-            <b>WdRulerStyle</b>上記の現象は、左揃えの表に適用されます。中央揃えおよび右のテーブルの<b>WdRulerStyle</b>の動作が予期しないあります。これらの場合、注意が必要、 <b>SetLeftIndent</b>メソッドを使用してください。</para>
-          <para />
-        </remarks>
+        <remarks><para>上記で説明した<b>WdRulerStyle</b>の動作は、左揃えのテーブルに適用されます。 中央および右揃えのテーブルに対する<b>WdRulerStyle</b>の動作は予測できません。このような場合は、 <b>Setl indent</b>メソッドを慎重に使用する必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shading">
@@ -847,7 +810,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Shading" /> 、指定したオブジェクトの網かけ書式を参照するオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Shading" />たオブジェクトの網かけ書式を参照するオブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -878,7 +841,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された行の隣接する列内のテキストの間の距離 (ポイント単位) を設定または返します。</summary>
+        <summary>指定した行の隣接する列の文字列間の距離 (ポイント単位) を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

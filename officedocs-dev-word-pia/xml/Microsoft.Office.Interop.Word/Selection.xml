@@ -1,13 +1,5 @@
 <Type Name="Selection" FullName="Microsoft.Office.Interop.Word.Selection">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ae34a49cf650ea9cc7dda266dabbcc92fadbd127" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671194" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Selection" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="784347727dfd6770fa5e0ce7cd56667517c2d0d3" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147712" /></Metadata><TypeSignature Language="C#" Value="public interface Selection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Selection" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Selection" />
   <TypeSignature Language="VB.NET" Value="Public Interface Selection" />
@@ -27,19 +19,27 @@
   </Attributes>
   <Docs>
     <summary>ウィンドウまたはウィンドウ枠の現在の選択範囲を表します。</summary>
-    <remarks>
-      <para>選択範囲は、ドキュメント内の選択 (強調表示されている) 領域を表す、または文書を選択した場合、カーソル位置を表すことです。1 つになります<see cref="T:Microsoft.Office.Interop.Word.Selection" />オブジェクトをドキュメント ウィンドウでは、1 つだけあたり<see cref="T:Microsoft.Office.Interop.Word.Selection" />全体のアプリケーションでオブジェクトをアクティブにすることができます</para>。使用の
-      <para>、<see cref="P:Microsoft.Office.Interop.Word.Pane.Selection" />を返すプロパティの<see cref="T:Microsoft.Office.Interop.Word.Selection" />オブジェクト。オブジェクト修飾子が使用されていない場合、<see cref="P:Microsoft.Office.Interop.Word.Window.Selection" />作業中の文書ウィンドウのアクティブなウィンドウからプロパティを Microsoft Word を取得選択します</para>。
-      <para>の現在の選択範囲にアクセスするのにはアクティブにするドキュメントはありません</para>。
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.Selection.Text" />プロパティを設定または現在の選択範囲にテキストを取得します</para>。
-      <para>、<see cref="T:Microsoft.Office.Interop.Word.Selection" />オブジェクトにはさまざまなメソッドおよびプロパティを使用することができます:</para><list type="bullet"><item><para>折りたたみ、展開、またはそれ以外の場合、現在の選択を変更します</para></item>。
-        <item><para>ドキュメントで選択したテキストを編集します</para></item>。
-        <item><para>現在の選択範囲の書式を変更します</para></item></list>。
-      <para>のようにプロパティを使用して、 <see cref="P:Microsoft.Office.Interop.Word.Selection.Flags" />、 <see cref="P:Microsoft.Office.Interop.Word.Selection.Information(Microsoft.Office.Interop.Word.WdInformation)" />、および<see cref="P:Microsoft.Office.Interop.Word.Selection.Type" />現在の選択範囲に関する情報を返します</para>。
-      <para>にカーソルを移動、選択範囲が折りたたまれているときにでも、必ずしも空でないです。などの<see cref="P:Microsoft.Office.Interop.Word.Selection.Text" />プロパティは、カーソル位置の右側に文字を返しますがこの文字が表示されます、<see cref="T:Microsoft.Office.Interop.Word.Characters" />のコレクションの<see cref="T:Microsoft.Office.Interop.Word.Selection" />オブジェクトです。ただしのようなメソッドを呼び出す<see cref="M:Microsoft.Office.Interop.Word.Selection.Cut" />または<see cref="M:Microsoft.Office.Interop.Word.Selection.Copy" />から選択範囲を解除エラーが発生します</para>。
-      <para>されません (たとえば、マウスを使用して ALT キーを使用する場合) の連続したテキストを表す文書内の領域を選択するユーザー可能性があります。このような選択範囲の動作は予測できませんがため、チェックするコード内でステップを含むようにすることも、<see cref="P:Microsoft.Office.Interop.Word.Selection.Type" />に対する操作を実行する前に選択範囲のプロパティです。同様に、表のセルを含む選択範囲は、予期しない動作にできる可能性もあります。<see cref="P:Microsoft.Office.Interop.Word.Selection.Information(Microsoft.Office.Interop.Word.WdInformation)" />プロパティは、選択範囲がテーブル内かをしています</para>。
-      <para>ため<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトは、同じメソッドとプロパティの多くを共有<see cref="T:Microsoft.Office.Interop.Word.Selection" />オブジェクトを使用して<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトは、現在の選択範囲を物理的に変更するのには理由がないときにドキュメントを操作することをお勧めします</para>。
-      <para /></remarks>
+    <remarks><para>選択範囲はドキュメントで選択 (強調表示) されている領域を表すか、ドキュメントで何も選択されていない場合は挿入ポイントを表します。 ドキュメントウィンドウ枠ごとに<see cref="T:Microsoft.Office.Interop.Word.Selection" /> 1 つのオブジェクトしか存在できません<see cref="T:Microsoft.Office.Interop.Word.Selection" /> 。また、アプリケーション全体でアクティブにできるオブジェクトは1つだけです。</para>
+      <para>オブジェクトを<see cref="P:Microsoft.Office.Interop.Word.Pane.Selection" />取得するのにには、プロパティを使用します。 <see cref="T:Microsoft.Office.Interop.Word.Selection" /> <see cref="P:Microsoft.Office.Interop.Word.Window.Selection" />プロパティでオブジェクト修飾子が使用されていない場合は、作業中のプレゼンテーションウィンドウの作業中のウィンドウ枠から選択範囲が返されます。</para>
+      <para>現在の選択範囲にアクセスするには、ドキュメントをアクティブにする必要はありません。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.Selection.Text" />プロパティを使用して、現在の選択範囲内の文字列を設定または取得します。</para>
+      <para><see cref="T:Microsoft.Office.Interop.Word.Selection" />オブジェクトには、次のことができるさまざまなメソッドとプロパティがあります。</para>
+      <list type="bullet">
+        <item>
+          <para>現在の選択範囲を折りたたんだり、展開したり、その他の変更を行います。</para>
+        </item>
+        <item>
+          <para>文書内の選択したテキストを編集します。</para>
+        </item>
+        <item>
+          <para>現在の選択範囲の書式を変更します。</para>
+        </item>
+      </list>
+      <para>、、および<see cref="P:Microsoft.Office.Interop.Word.Selection.Flags" /> <see cref="P:Microsoft.Office.Interop.Word.Selection.Type" />など<see cref="P:Microsoft.Office.Interop.Word.Selection.Information(Microsoft.Office.Interop.Word.WdInformation)" />のプロパティを使用して、現在の選択範囲に関する情報を戻します。 </para>
+      <para>選択範囲が解除されている場合でも、カーソル位置には含まれませんが、空ではありません。 たとえば、 <see cref="P:Microsoft.Office.Interop.Word.Selection.Text" />プロパティは、カーソル位置の右側にある文字を返します。この文字は、 <see cref="T:Microsoft.Office.Interop.Word.Characters" /> <see cref="T:Microsoft.Office.Interop.Word.Selection" />オブジェクトのコレクションにも表示されます。 ただし、選択範囲を<see cref="M:Microsoft.Office.Interop.Word.Selection.Cut" />解除<see cref="M:Microsoft.Office.Interop.Word.Selection.Copy" />した場合や、折りたたまれている場合は、エラーが発生します。</para>
+      <para>ユーザーは、ドキュメント内で連続したテキストを表さない領域を選択することができます (たとえば、ALT キーをマウスで使用する場合)。 このような選択の動作は予測できない場合があるため、コードに操作を実行する前に、 <see cref="P:Microsoft.Office.Interop.Word.Selection.Type" />選択のプロパティをチェックする手順をコードに含めることをお勧めします。 同様に、表のセルを含む選択範囲により、予測できない動作が発生する可能性もあります。 選択<see cref="P:Microsoft.Office.Interop.Word.Selection.Information(Microsoft.Office.Interop.Word.WdInformation)" />範囲が表の中にあるかどうかは、プロパティで通知されます。</para>
+      <para>オブジェクト<see cref="T:Microsoft.Office.Interop.Word.Range" />は、オブジェクトと<see cref="T:Microsoft.Office.Interop.Word.Selection" />同じメソッドとプロパティを共有している<see cref="T:Microsoft.Office.Interop.Word.Range" />ため、現在の選択範囲を物理的に変更する理由がない場合にドキュメントを操作するには、オブジェクトを使用することをお勧めします。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Active">
@@ -65,12 +65,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したウィンドウまたはウィンドウ枠で選択範囲がアクティブなかどうかを決定します。</summary>
+        <summary>指定したウィンドウまたはウィンドウ枠の選択範囲がアクティブであるかどうかを判断します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>指定したウィンドウまたはウィンドウ枠で選択範囲がアクティブな場合、 <b>false を指定</b>しない場合、このプロパティは<b>True</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、指定したウィンドウまたはウィンドウ枠で選択範囲がアクティブな場合は<b>True</b>を返し、表示しない場合は<b>False</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -96,7 +94,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word._Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,10 +121,8 @@
       <Parameters />
       <Docs>
         <summary>現在の run に対して、太字の文字書式を追加または削除します。</summary>
-        <remarks>
-          <para>実行では、太字と太字でないテキストの両方が含まれている場合、このメソッドは run 全体に太字の文字書式を追加します。</para>
-          <para />
-        </remarks>
+        <remarks><para>その run に太字の文字列と太字でない文字列が混在している場合、このメソッドは run 全体に太字の文字書式を追加します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BookmarkID">
@@ -152,12 +148,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>対応するブックマークがない場合は、指定された選択範囲または 0 (ゼロ) の先頭を囲むブックマークの番号を返します。</summary>
+        <summary>指定した選択範囲の開始位置を示すブックマークの番号を取得します。対応するブックマークがない場合は、0 (ゼロ) を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>数、ドキュメント内のブックマークの位置に対応-最初のブックマークの場合は 1、2、2 つ目というようにします。</para>
-          <para />
-        </remarks>
+        <remarks><para>この数値は、文書内のブックマークの位置に対応します。1番目のブックマークの場合は1、2番目のブックマークの場合は2というようになります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Bookmarks">
@@ -183,7 +177,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Bookmarks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> 、選択範囲内のすべてのブックマークを表すコレクション。</summary>
+        <summary>選択範囲<see cref="T:Microsoft.Office.Interop.Word.Bookmarks" />内のすべてのブックマークを表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -214,7 +208,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Borders" />を指定したオブジェクトのすべての罫線を表すコレクション。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Borders" />たオブジェクトのすべての罫線を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -268,7 +262,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Cells</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Cells" /> 、選択範囲に含まれるセルを表すコレクション。</summary>
+        <summary>選択範囲<see cref="T:Microsoft.Office.Interop.Word.Cells" />内の表のセルを表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -296,7 +290,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Characters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Characters" /> 、選択範囲内の文字を表すコレクション。</summary>
+        <summary>選択範囲<see cref="T:Microsoft.Office.Interop.Word.Characters" />内の文字を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -324,7 +318,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ShapeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> 、選択範囲の子図形を表すオブジェクト。</summary>
+        <summary>選択範囲<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />の子図形を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -351,10 +345,11 @@
       <Parameters />
       <Docs>
         <summary>選択した文字列からすべての文字書式 (文字スタイルを使用して適用した書式または手動で適用した書式) を削除します。</summary>
-        <remarks>
-          <para>このメソッドは、すべての文字書式を削除します。削除された書式を文字スタイルを使用して適用する場合を使用して、<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterStyle" />メソッドです。 削除するには、ユーザーが Microsoft Office Word の文字書式設定の機能を使用して手動で適用した文字書式を使用して、<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterDirectFormatting" />メソッドです</para>。
-          <para><b>注</b>: 段落の書式を削除するを参照してください、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphAllFormatting" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphDirectFormatting" />、または<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphStyle" />メソッドです</para>。
-          <para /></remarks>
+        <remarks><para>このメソッドは、すべての文字書式を削除します。
+文字スタイルを使用して適用した書式設定を削除<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterStyle" />する必要がある場合は、メソッドを使用します。  Microsoft Office Word の文字書式設定機能を使用して、ユーザーが手動で適用した<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterDirectFormatting" />文字書式を削除するには、メソッドを使用します。</para>
+          <para>
+            <b>注</b>: 段落書式を削除するには<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphAllFormatting" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphDirectFormatting" />、、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphStyle" />またはのいずれかのメソッドを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearCharacterDirectFormatting">
@@ -378,11 +373,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>選択した文字列から文字の書式設定 (リボンの [または] ダイアログ ボックスにボタンを使用して手動で適用した書式) を削除します。</summary>
-        <remarks>
-          <para>このメソッドでは、文字スタイルを使用して適用した文字書式は削除されません。削除するには文字の文字スタイルを使用して、ユーザーが適用されている書式設定を使用して、<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterStyle" />メソッドです。 すべての文字かどうか、ユーザーが適用する文字スタイルを使用して、または手動で Microsoft Office Word で書式設定機能を使用するのに関係なく、書式を削除するのにを使用して、<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterAllFormatting" />メソッドです</para>。
-          <para><b>注</b>: 段落の書式を削除するを参照してください、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphAllFormatting" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphDirectFormatting" />、または<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphStyle" />メソッドです</para>。
-          <para /></remarks>
+        <summary>選択した文字列から文字書式 (リボンのボタンやダイアログボックスを使用して手動で適用した書式) を削除します。</summary>
+        <remarks><para>このメソッドでは、文字スタイルを使用して適用した文字書式は削除されません。
+文字スタイルを使用して、ユーザーが適用した文字書式を削除<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterStyle" />するには、メソッドを使用します。  ユーザーが文字スタイルを使用して、または Microsoft Office Word の書式設定機能を使用して手動で書式設定を適用したか<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterAllFormatting" />どうかにかかわらず、すべての文字書式を削除するには、メソッドを使用します。</para>
+          <para>
+            <b>注</b>: 段落書式を削除するには<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphAllFormatting" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphDirectFormatting" />、、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphStyle" />またはのいずれかのメソッドを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearCharacterStyle">
@@ -406,12 +402,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-		選択した文字列から、文字スタイルを使用して適用した文字書式を削除します。</summary>
-        <remarks>
-          <para>このメソッドでは、ユーザーが手動で適用した文字書式は削除されません。削除するには手動で適用した文字書式を使用して、<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterDirectFormatting" />メソッドです。 すべての文字書式、スタイルと、手動で書式設定の両方を削除するのにを使用して、<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterAllFormatting" />メソッドです</para>。
-          <para><b>注</b>: 段落の書式を削除するを参照してください、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphAllFormatting" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphDirectFormatting" />、または<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphStyle" />メソッドです</para>。
-          <para /></remarks>
+        <summary>選択した文字列から、文字スタイルを使用して適用した文字書式を削除します。</summary>
+        <remarks><para>このメソッドでは、手動で適用した文字書式は削除されません。
+手動で適用した<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterDirectFormatting" />文字書式を削除するには、メソッドを使用します。  スタイルと手動書式の両方の文字書式設定を削除するに<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterAllFormatting" />は、このメソッドを使用します。</para>
+          <para>
+            <b>注</b>: 段落書式を削除するには<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphAllFormatting" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphDirectFormatting" />、、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphStyle" />またはのいずれかのメソッドを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearFormatting">
@@ -461,10 +457,11 @@
       <Parameters />
       <Docs>
         <summary>選択した文字列からすべての段落書式 (段落スタイルを使用して適用した書式または手動で適用した書式) を削除します。</summary>
-        <remarks>
-          <para>このメソッドは、すべての段落書式を削除します。段落スタイルを使用して適用の段落の書式を削除する必要がある場合を使用して、<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphStyle" />メソッドです。 削除するには、ユーザーが Microsoft Office Word の段落の書式設定の機能を使用して手動で適用した段落書式を使用して、<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphDirectFormatting" />メソッドです</para>。
-          <para><b>注</b>: 文字の書式を削除するを参照してください、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterAllFormatting" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterDirectFormatting" />、または<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterStyle" />メソッドです</para>。
-          <para /></remarks>
+        <remarks><para>このメソッドは、すべての段落書式を削除します。
+段落スタイルを使用して適用した段落書式を削除する<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphStyle" />必要がある場合は、メソッドを使用します。  Microsoft Office Word 段落の書式設定機能を使用して、ユーザーが手動で適用した<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphDirectFormatting" />段落書式を削除するには、メソッドを使用します。</para>
+          <para>
+            <b>注</b>: 文字書式を削除するには<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterAllFormatting" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterDirectFormatting" />、、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterStyle" />またはのいずれかのメソッドを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearParagraphDirectFormatting">
@@ -488,11 +485,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>手動で適用されている段落書式を削除 (リボンの [または] ダイアログ ボックスは、ボタンを使用して) 選択したテキストからです。</summary>
-        <remarks>
-          <para>このメソッドでは、段落スタイルを使用して適用されている段落の書式設定は削除されません。削除するには段落スタイルを使用して、ユーザーが適用されている段落の書式設定を使用して、<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphStyle" />メソッドです。 すべての段落の書式設定、スタイルと、手動で書式設定の両方を削除するのにを使用して、<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphAllFormatting" />メソッドです</para>。
-          <para><b>注</b>: 文字の書式を削除するを参照してください、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterAllFormatting" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterDirectFormatting" />、または<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterStyle" />メソッドです</para>。
-          <para /></remarks>
+        <summary>選択した文字列から、リボンのボタンやダイアログボックスを使用して手動で適用した段落書式を削除します。</summary>
+        <remarks><para>このメソッドでは、段落スタイルを使用して適用されている段落の書式設定は削除されません。
+段落スタイルを使用して、ユーザーが適用した段落書式を削除<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphStyle" />するには、メソッドを使用します。  スタイルと手動書式の両方の段落書式設定を削除するに<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphAllFormatting" />は、このメソッドを使用します。</para>
+          <para>
+            <b>注</b>: 文字書式を削除するには<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterAllFormatting" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterDirectFormatting" />、、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterStyle" />またはのいずれかのメソッドを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearParagraphStyle">
@@ -517,10 +515,11 @@
       <Parameters />
       <Docs>
         <summary>選択した文字列から、段落スタイルを使用して適用した段落書式を削除します。</summary>
-        <remarks>
-          <para>このメソッドでは、ユーザーが手動で適用した段落書式は削除されません。削除するには手動で適用した段落書式を使用して、<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphDirectFormatting" />メソッドです。 すべての段落の書式設定、スタイルと、手動で書式設定の両方を削除するのにを使用して、<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphAllFormatting" />メソッドです</para>。
-          <para><b>注</b>: 文字の書式を削除するを参照してください、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterAllFormatting" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterDirectFormatting" />、または<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterStyle" />メソッドです</para>。
-          <para /></remarks>
+        <remarks><para>このメソッドでは、ユーザーが手動で適用した段落書式は削除されません。
+手動で適用した<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphDirectFormatting" />段落書式を削除するには、メソッドを使用します。  スタイルと手動書式の両方の段落書式設定を削除するに<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearParagraphAllFormatting" />は、このメソッドを使用します。</para>
+          <para>
+            <b>注</b>: 文字書式を削除するには<see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterAllFormatting" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterDirectFormatting" />、、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ClearCharacterStyle" />またはのいずれかのメソッドを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Collapse">
@@ -545,13 +544,10 @@
         <Parameter Name="Direction" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Direction">省略可能な<b>オブジェクト</b>です。 選択範囲を解除する方向です。次のいずれかの方法は、<see cref="T:Microsoft.Office.Interop.Word.WdCollapseDirection" />定数: <b>wdCollapseEnd</b>または<b>wdCollapseStart</b>です。 既定値は <b>wdCollapseStart</b> です。</param>
+        <param name="Direction">省略可能な<b>オブジェクト</b>です。 選択範囲を折りたたむ方向を指定します。次<see cref="T:Microsoft.Office.Interop.Word.WdCollapseDirection" />の定数のいずれかを指定できます: <b>WdCollapseEnd</b>または<b>wdcollapsestart です</b>。 既定値は <b>wdCollapseStart</b> です。</param>
         <summary>選択を解除します。</summary>
-        <remarks>
-          <para>
-            <b>WdCollapseEnd</b>を使用して、段落全体を参照する選択範囲を折りたたむには、選択範囲がある最後の段落は、(次の段落の先頭) をマークした後です。選択範囲が 1 つの文字を使用してバックアップを移動するただし、<see cref="M:Microsoft.Office.Interop.Word.Selection.MoveEnd(System.Object@,System.Object@)" />メソッドの選択を解除後します。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>WdCollapseEnd</b>を使用して段落全体を参照する選択範囲を折りたたむ場合、選択範囲は最後の段落記号 (次の段落の先頭) の後に配置されます。 ただし、選択範囲を解除した後は、 <see cref="M:Microsoft.Office.Interop.Word.Selection.MoveEnd(System.Object@,System.Object@)" />メソッドを使用して、選択範囲を1文字前に移動できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Columns">
@@ -577,7 +573,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Columns</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Columns" /> 、選択範囲内のすべてのテーブル列を表すコレクション。</summary>
+        <summary>選択範囲<see cref="T:Microsoft.Office.Interop.Word.Columns" />内のすべての表の列を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -608,11 +604,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>列選択モードがアクティブなかどうかを決定します。</summary>
+        <summary>列の選択モードがアクティブかどうかを決定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>列選択モードがアクティブな場合、 <b>false を指定</b>しない場合このプロパティは<b>True</b>を返します</para>。
-          <para>このモードがアクティブな場合、ステータス バーで"COL"が表示される文字</para><para /></remarks>
+        <remarks><para>このプロパティは、列選択モードがアクティブな場合は<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。</para>
+          <para>このモードになるとステータス バーに "COL" と表示されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Comments">
@@ -638,7 +634,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Comments</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Comments" />指定された選択範囲のすべてのコメントを表すコレクション。</summary>
+        <summary>指定さ<see cref="T:Microsoft.Office.Interop.Word.Comments" />れた選択範囲内のすべてのコメントを表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -669,10 +665,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ContentControls</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.ContentControls" />の範囲内に含まれるコンテンツ コントロールを表すコレクション。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControls" />
-        </value>
+        <summary>指定範囲<see cref="T:Microsoft.Office.Interop.Word.ContentControls" />内に含まれるコンテンツコントロールを表すコレクションを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ContentControls" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -713,11 +707,11 @@
         <Parameter Name="DefaultTableBehavior" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Separator">省略可能な<b>オブジェクト</b>です。 テキストをセルに分割するために使用する文字を指定します。 文字またはのいずれかにすることができます、<see cref="T:Microsoft.Office.Interop.Word.WdTableFieldSeparator" />定数。 この引数を省略すると、 <b>DefaultTableSeparator</b> プロパティの値が使用されます。</param>
-        <param name="NumRows">省略可能な<b>オブジェクト</b>です。 表の行数を指定します。 この引数を省略すると、Word は、選択範囲の内容に基づいて、行の数を設定します。</param>
-        <param name="NumColumns">省略可能な<b>オブジェクト</b>です。 表の列数を指定します。 この引数を省略すると、Word は、選択範囲の内容に基づいて、列の数を設定します。</param>
+        <param name="Separator">省略可能な<b>オブジェクト</b>です。 テキストをセルに分割するために使用する文字を指定します。 文字または<see cref="T:Microsoft.Office.Interop.Word.WdTableFieldSeparator" />定数のいずれかをすることができます。 この引数を省略すると、 <b>DefaultTableSeparator</b> プロパティの値が使用されます。</param>
+        <param name="NumRows">省略可能な<b>オブジェクト</b>です。 表の行数を指定します。 この引数を省略すると、選択範囲の内容に基づいて行の数が設定されます。</param>
+        <param name="NumColumns">省略可能な<b>オブジェクト</b>です。 表の列数を指定します。 この引数を省略すると、選択範囲の内容に基づいて列数が設定されます。</param>
         <param name="InitialColumnWidth">省略可能な<b>オブジェクト</b>です。 各列の最初の幅をポイント単位で指定します。 この引数を省略すると、印字範囲の幅全体を使うように表の列幅が計算されます。</param>
-        <param name="Format">省略可能な<b>オブジェクト</b>です。 表のオート フォーマット] ダイアログ ボックス ([罫線] メニュー) に記載されている定義済み書式のいずれかを指定します。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdTableFormat" />定数。</param>
+        <param name="Format">省略可能な<b>オブジェクト</b>です。 [表のオートフォーマット] ダイアログボックス ([テーブル] メニュー) に一覧表示されている定義済みの書式のうちの1つを指定します。 <see cref="T:Microsoft.Office.Interop.Word.WdTableFormat" />定数のいずれかをすることができます。</param>
         <param name="ApplyBorders">省略可能な<b>オブジェクト</b>です。 <b>True</b> を指定した形式の枠線のプロパティを適用します。</param>
         <param name="ApplyShading">省略可能な<b>オブジェクト</b>です。 <b>True</b> を指定した書式の網かけのプロパティを適用します。</param>
         <param name="ApplyFont">省略可能な<b>オブジェクト</b>です。 <b>True</b> を指定した書式のフォントのプロパティを適用します。</param>
@@ -727,9 +721,9 @@
         <param name="ApplyFirstColumn">省略可能な<b>オブジェクト</b>です。 <b>True</b> を指定した書式の先頭列のプロパティを適用します。</param>
         <param name="ApplyLastColumn">省略可能な<b>オブジェクト</b>です。 <b>True</b> を指定した書式の最終列に関するプロパティが適用されます。</param>
         <param name="AutoFit">省略可能な<b>オブジェクト</b>です。 <b>True の</b> テキストを変更することがなく、可能な限り多くのテーブルの列の幅を狭くには、セルにラップします。</param>
-        <param name="AutoFitBehavior">省略可能な<b>オブジェクト</b>です。 テーブルのサイズを変更するための自動調整の規則を設定します。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdAutoFitBehavior" />定数。 場合<paramref name="DefaultTableBehavior" /><b>wdWord8TableBehavior</b>は、この引数は無視されます。</param>
-        <param name="DefaultTableBehavior">省略可能な<b>オブジェクト</b>です。 Microsoft Word が自動的に (自動調整) の内容に合わせて表のセルをサイズ変更するかどうかを指定する値を設定します。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdDefaultTableBehavior" />定数。</param>
-        <summary>選択範囲内のテキストをテーブルに変換します。</summary>
+        <param name="AutoFitBehavior">省略可能な<b>オブジェクト</b>です。 テーブルのサイズを変更するための自動調整の規則を設定します。 <see cref="T:Microsoft.Office.Interop.Word.WdAutoFitBehavior" />定数のいずれかをすることができます。 が<paramref name="DefaultTableBehavior" /> <b>wdWord8TableBehavior</b>の場合、この引数は無視されます。</param>
+        <param name="DefaultTableBehavior">省略可能な<b>オブジェクト</b>です。 Microsoft Word が自動的に (自動調整) の内容に合わせて表のセルをサイズ変更するかどうかを指定する値を設定します。 <see cref="T:Microsoft.Office.Interop.Word.WdDefaultTableBehavior" />定数のいずれかをすることができます。</param>
+        <summary>選択範囲内の文字列を表に変換します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -863,10 +857,9 @@
       <Parameters />
       <Docs>
         <summary>選択した文字列の最初の文字の書式をコピーします。</summary>
-        <remarks>
-          <para>段落記号を選択すると、Microsoft Word は段落の書式の文字書式を設定するのにはさらにコピーします</para>。
-          <para>を使用して、別の選択範囲にコピーした書式を適用することができます、<see cref="M:Microsoft.Office.Interop.Word.Selection.PasteFormat" />メソッドです</para>。
-          <para /></remarks>
+        <remarks><para>段落記号が選択されている場合は、文字書式だけでなく段落書式もコピーされます。</para>
+          <para><see cref="M:Microsoft.Office.Interop.Word.Selection.PasteFormat" />メソッドを使用して、コピーした書式を別の選択範囲に適用することができます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateAutoTextEntry">
@@ -893,11 +886,9 @@
         <Parameter Name="StyleName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>文字列</b> が必要です。 新しい定型句の項目を呼び出すためにユーザーが入力する文字列を指定します。</param>
-        <param name="StyleName">
-          <b>文字列</b> が必要です。 [定型句] メニューのこの分類の一覧に新しい定型句の項目が表示されます。</param>
-        <summary>新しい<see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" />オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" />、現在の選択に基づいて、コレクションです。</summary>
+        <param name="Name"><b>文字列</b> が必要です。 新しい定型句の項目を呼び出すためにユーザーが入力する文字列を指定します。</param>
+        <param name="StyleName"><b>文字列</b> が必要です。 [定型句] メニューのこの分類の一覧に新しい定型句の項目が表示されます。</param>
+        <summary>現在の選択<see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" />範囲に基づい<see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" />て、新しいオブジェクトをコレクションに追加します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -924,10 +915,9 @@
       <Parameters />
       <Docs>
         <summary>選択範囲の周りに、既定の大きさのテキスト ボックスを追加します。</summary>
-        <remarks>
-          <para>選択範囲がカーソルの場合は、このメソッドは、変更ポインター十字型ポインターに、ユーザーがテキスト ボックスを描画できるようにします</para>。
-          <para>このメソッドは、[図形描画] ツールバーの [テキスト ボックス] ボタンをクリックするのと同じです。テキスト ボックスには、関連付けられているテキスト フレームの四角形</para>。
-          <para /></remarks>
+        <remarks><para>選択範囲が解除されている場合、カーソルが十字型カーソルに変更され、ユーザーがテキスト ボックスを描画できるようになります。</para>
+          <para>CreateTextbox メソッドを使用すると、[図形描画] ツールバーの [テキスト ボックス] をクリックした場合と同じ結果が得られます。 テキスト ボックスは、レイアウト枠が関連付けられている四角形です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -953,12 +943,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -983,10 +972,8 @@
       <Parameters />
       <Docs>
         <summary>文書から指定されたオブジェクトを切り取り、クリップボードに貼り付けます。</summary>
-        <remarks>
-          <para>オブジェクトの内容を切り取ってクリップボードには、縮小されたオブジェクトが文書に残ります。</para>
-          <para />
-        </remarks>
+        <remarks><para>オブジェクトの内容はクリップボードに切り取られますが、折りたたまれたオブジェクトは文書に残ります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -1012,14 +999,12 @@
         <Parameter Name="Count" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Unit">省略可能な<b>オブジェクト</b>です。 単位を指定解除された指定範囲または選択範囲を削除します。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />定数: <b>wdCharacter</b> (既定) または<b>wdWord</b>です。</param>
+        <param name="Unit">省略可能な<b>オブジェクト</b>です。 折りたたまれた範囲または選択範囲を削除する単位を指定します。 次<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />の定数のいずれかを指定できます: <b>wdcharacter</b> (既定値) または<b>wdword</b>。</param>
         <param name="Count">省略可能な<b>オブジェクト</b>です。 削除する単位数を指定します。 選択範囲の後の単位を削除するには、その選択範囲の選択を解除し、正の値を指定します。 選択範囲の前の単位を削除するには、その選択範囲の選択を解除し、負の値を指定します。</param>
         <summary>指定された数だけ文字または単語を削除します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドを削除すると、項目の数を示す<b>整数</b>値を返します。 または、削除が失敗した場合は、0 (ゼロ) を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドは、削除されたアイテムの数を示す<b>整数型 (Integer</b> ) の値を返します。削除が失敗した場合は、0 (ゼロ) を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DetectLanguage">
@@ -1044,11 +1029,9 @@
       <Parameters />
       <Docs>
         <summary>指定された文字列を分析して、どの言語で記述されているかを判別します。</summary>
-        <remarks>
-          <para>
-            <b>DetectLanguage</b>メソッドの結果に格納されている、<see cref="P:Microsoft.Office.Interop.Word.Selection.LanguageID" />文字では文字単位でのプロパティです。<b>LanguageID</b>プロパティの読み取り、テキストの選択範囲を指定する必要があります最初</para>。<b>DetectLanguage</b>メソッドは、指定した文字列に既に適用されている場合、 
-          <para>、<see cref="P:Microsoft.Office.Interop.Word.Selection.LanguageDetected" />プロパティが<b>True</b>に設定します。指定したテキストの言語を再評価する必要があります最初を設定する<b>LanguageDetected</b>プロパティを<b>False</b>にします</para>。
-          <para /></remarks>
+        <remarks><para>検出<b>言語</b>メソッドの結果は、文字単位で<see cref="P:Microsoft.Office.Interop.Word.Selection.LanguageID" />プロパティに格納されます。 <b>LanguageID</b>プロパティを読み取るには、まずテキストの選択を指定する必要があります。</para>
+          <para>検出<b>言語</b>メソッドが指定したテキストに既に適用されて<see cref="P:Microsoft.Office.Interop.Word.Selection.LanguageDetected" />いる場合、このプロパティは<b>True</b>に設定されます。 指定したテキストの言語を再評価するには、最初に language の<b>検出</b>プロパティを<b>False</b>に設定する必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -1074,7 +1057,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Document" />指定された選択範囲に関連付けられているオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Document" />た選択範囲に関連付けられているオブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1102,7 +1085,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Editors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Editors" />ドキュメント内の選択範囲の編集権限を持つすべてのユーザーを表すオブジェクト。</summary>
+        <summary>文書内<see cref="T:Microsoft.Office.Interop.Word.Editors" />の選択範囲を変更する権限を持つすべてのユーザーを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1135,11 +1118,10 @@
       <Docs>
         <summary>選択範囲の末尾の文字位置を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>かどうかはこのプロパティの値よりも小さい、 <see cref="P:Microsoft.Office.Interop.Word.Selection.Start" /> 、 <b>Start</b>プロパティ プロパティ (つまり、<b>開始</b>日と<b>終了</b>プロパティも同じ値にします</para>。
-          <para><b>の選択</b>では、 <see cref="T:Microsoft.Office.Interop.Word.Range" />、および<see cref="T:Microsoft.Office.Interop.Word.Bookmark" />の開始位置と終了位置にあるすべてのオブジェクトします。終了位置は、ストーリーの先頭から最も離れたポイントです</para>。
-          <para>このプロパティは、ストーリーの先頭を基準に終了位置を返します。メイン文書ストーリー (<b>wdMainTextStory</b>) は、文字位置 0 (ゼロ) から始まります。このプロパティを設定することにより、選択範囲、指定範囲、またはブックマークのサイズを変更することができます</para>。
-          <para /></remarks>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.Selection.Start" />このプロパティがプロパティより小さい値に設定されている場合、 <b>start</b>プロパティは同じ値に設定されます (つまり、 <b>start</b>プロパティと<b>End</b>プロパティは同じです)。</para>
+          <para><b>Selection</b>、 <see cref="T:Microsoft.Office.Interop.Word.Range" />、および<see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objects のすべてには、開始位置と終了位置があります。 終了位置は、ストーリーの先頭から最も離れたポイントです。</para>
+          <para>このプロパティでは、ストーリーの先頭を基準に終了位置を返します。 メイン テキスト ストーリー (<b>wdMainTextStory</b>) は文字位置 0 から始まります。 このプロパティを使用して、選択範囲、指定範囲またはブックマークの大きさを変更します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndKey">
@@ -1169,10 +1151,9 @@
         <param name="Extend">省略可能な<b>オブジェクト</b>です。 選択範囲が移動または拡張する単位です。 <see cref="T:Microsoft.Office.Interop.Word.WdUnits" />.</param>
         <summary>選択範囲を指定された単位の末尾まで移動または拡張します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドは、選択範囲またはアクティブな終点は移動した実際には、文字の数を示す整数を返しますまたは、移動が失敗した場合は、0 (ゼロ) を返します。</para> 。
-          <para>このメソッドは END キーの機能に対応します</para>。
-          <para /></remarks>
+        <remarks><para>This method returns an integer that indicates the number of characters the selection or active end was actually moved, or it returns 0 (zero) if the move was unsuccessful.</para>
+          <para>This method corresponds to functionality of the END key.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndnoteOptions">
@@ -1198,7 +1179,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.EndnoteOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.EndnoteOptions" /> 、選択範囲内の文末脚注を表すオブジェクト。</summary>
+        <summary>選択範囲<see cref="T:Microsoft.Office.Interop.Word.EndnoteOptions" />内の文末脚注を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1226,7 +1207,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Endnotes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Endnotes" /> 、選択範囲内のすべての文末脚注を表すコレクション。</summary>
+        <summary>選択範囲<see cref="T:Microsoft.Office.Interop.Word.Endnotes" />内のすべての文末脚注を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1254,14 +1235,13 @@
         <Parameter Name="Extend" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Unit">省略可能な<b>オブジェクト</b>です。 末尾の文字位置を移動する単位です。 <see cref="T:Microsoft.Office.Interop.Word.WdUnits" />.</param>
+        <param name="Unit">省略可能な<b>オブジェクト</b>です。 末尾の文字位置を移動する単位を指定します。 <see cref="T:Microsoft.Office.Interop.Word.WdUnits" />.</param>
         <param name="Extend">省略可能な<b>オブジェクト</b>です。 <see cref="T:Microsoft.Office.Interop.Word.WdMovementType" />.</param>
-        <summary>移動または選択範囲の終了文字の位置を最も近い指定されたテキスト単位の末尾まで拡張します。</summary>
+        <summary>選択範囲の末尾の文字位置を、指定された最も近い文字列の単位の末尾まで移動または拡張します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドは、選択範囲が移動または拡張された文字の位置の数を示す値を返します (移動は、転送用の文書の) です</para>。
-          <para>、両方の開始位置と終了の選択範囲が指定された構成単位の末尾に既に場合は、このメソッドは移動または、選択範囲を拡張します</para>。
-          <para /></remarks>
+        <remarks><para>このメソッドは、選択範囲が移動または拡張された文字位置の数を示す値を返します (移動は文書の末尾方向に行われます)。</para>
+          <para>選択範囲の開始位置と終了位置が、既に指定された単位の末尾にある場合、このメソッドは選択範囲を移動または拡張しません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnhMetaFileBits">
@@ -1287,12 +1267,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図として表示するのテキストの選択範囲の表示方法を表す<b>オブジェクト</b>を返します。</summary>
+        <summary>選択したテキストの表示形式を表す<b>オブジェクト</b>を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、Microsoft Windows 32 アプリケーション プログラミング インタ フェースから、開発環境で使用できるバイトの配列を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、バイトの配列を返します。これは、開発環境内から Microsoft Windows 32 アプリケーションプログラミングインターフェイスで使用できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EscapeKey">
@@ -1316,7 +1294,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>拡張選択モードやブロック選択モードなどの選択モードを取り消します (Esc キーを押す操作と同等です)。</summary>
+        <summary>Cancels a mode such as extend or column select (equivalent to pressing the ESC key).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1342,13 +1320,11 @@
         <Parameter Name="Unit" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Unit">省略可能な<b>オブジェクト</b>です。 選択範囲を拡張する単位です。 <see cref="T:Microsoft.Office.Interop.Word.WdUnits" />.</param>
-        <summary>指定された選択範囲を拡張します。</summary>
+        <param name="Unit">省略可能な<b>オブジェクト</b>です。 選択範囲を拡張する単位を指定します。 <see cref="T:Microsoft.Office.Interop.Word.WdUnits" />.</param>
+        <summary>指定した選択範囲を展開します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドは、選択範囲に追加する文字数を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドは、選択範囲に追加された文字数を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportAsFixedFormat">
@@ -1392,18 +1368,16 @@
         <param name="ExportCurrentPage">現在のページをエクスポートするかどうかを指定します。  <b>True</b> は、ページ全体をエクスポートします。 <b>False</b> は、現在の選択範囲のみをエクスポートします。</param>
         <param name="Item">エクスポート プロセスにテキストのみを含めるか、テキストとマークアップ コードを含めるかを指定します。</param>
         <param name="IncludeDocProps">新たにエクスポートするファイルに文書のプロパティを含めるかどうかを指定します。</param>
-        <param name="KeepIRM">ソース ドキュメントに IRM による保護が設定されている場合、IRM 権限を XPS ドキュメントにコピーするかどうかを指定します。既定値は <b>True</b> です。 </param>
+        <param name="KeepIRM">ソース ドキュメントに IRM による保護が設定されている場合、IRM 権限を XPS ドキュメントにコピーするかどうかを指定します。 既定値は <b>True</b> です。</param>
         <param name="CreateBookmarks">ブックマークをエクスポートするかどうか、およびエクスポートするブックマークの種類を指定します。</param>
-        <param name="DocStructureTags">コンテンツのフローや論理的構成に関する情報など、スクリーン リーダーに役立つデータを追加するかどうかを指定します。既定値は  <b>True</b> です。</param>
-        <param name="BitmapMissingFonts">テキストのビットマップを含めるかどうかを指定します。 フォントのライセンスは、フォントを PDF ファイルに埋め込むことを許可しない場合は、このパラメーターを <b>True</b> に設定します。 <b>False</b> にするとフォントを参照すると、および閲覧者のコンピューターに作成されたものが使用できない場合、適切なフォントが置き換えられます。 既定値は<b>True</b>です。</param>
-        <param name="UseISO19005_1">ISO 19005-1 として標準化された PDF サブセットに PDF の使用を制限するかどうかを指定します。 かどうか <b>は True</b> 、生成されるファイルはより信頼性の高い自己完結型がサイズが大きくなる、形式の制限のための複数のビジュアル アイテムを表示します。 既定値は  <b>False</b> です。</param>
-        <param name="FixedFormatExtClassPtr">コードの代替実装を呼び出せるアドインへのポインターを指定します。 コードの代替実装は、独自の PDF または XPS を作成するアプリケーションが生成する、EMF および EMF+ ページの説明を解釈します。 詳細については、「<a href="bd5ab634-71c4-4d29-a264-05969eded844">Office (2007) 固定形式エクスポート機能を拡張する</a>のを参照してください。</param>
-        <summary>PDF または XPS ファイル形式としては、現在の選択範囲を保存します。
+        <param name="DocStructureTags">コンテンツのフローや論理的構成に関する情報など、スクリーン リーダーに役立つデータを追加するかどうかを指定します。既定値は <b>True</b> です。</param>
+        <param name="BitmapMissingFonts">テキストのビットマップを追加するかどうかを指定します。フォントのライセンスで、フォントを PDF ファイルに埋め込むことが許可されていない場合、このパラメーターを <b>True</b> に設定します。<b>False</b> に設定した場合、フォントは参照されます。表示側のコンピューターで作成したフォントを表示できない場合、適切なフォントで代用されます。既定値は <b>True</b> です。</param>
+        <param name="UseISO19005_1">PDF の使用法を ISO 19005-1 として標準化された PDF サブセットに制限するかどうかを指定します。<b>True</b> の場合、保存されるファイルはより確実に自己完結型ですが、形式の制約が原因でサイズが大きくなるか、視覚的現象がより多く発生する可能性があります。既定値は <b>False</b> です。</param>
+        <param name="FixedFormatExtClassPtr">コードの代替実装を呼び出せるアドインへのポインターを指定します。 コードの代替実装は、独自の PDF または XPS を作成するアプリケーションが生成する、EMF および EMF+ ページの説明を解釈します。 詳細については、「<a href="bd5ab634-71c4-4d29-a264-05969eded844">Office (2007) の固定形式のエクスポート機能を拡張</a>する」を参照してください。</param>
+        <summary>現在の選択範囲を PDF または XPS 形式で保存します。
 .</summary>
-        <remarks>
-          <para>アドインをインストールした後のみに、2007 Microsoft Office システム プログラムから PDF または XPS ファイルとして保存できます。 アドインは、 <a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=4D951911-3E7E-4AE6-B059-A2E79ED87041&amp;displaylang=enOnline">Microsoft ダウンロード センター</a>からダウンロードできます。</para>
-          <para />
-        </remarks>
+        <remarks><para>アドインをインストールした後にのみ、2007 Microsoft Office システム プログラムから PDF または XPS ファイル形式で保存することができます。  アドインは、 <a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=4D951911-3E7E-4AE6-B059-A2E79ED87041&amp;displaylang=enOnline">Microsoft ダウンロードセンター</a>からダウンロードできます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Extend">
@@ -1428,13 +1402,11 @@
         <Parameter Name="Character" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Character">省略可能な<b>オブジェクト</b>です。 選択範囲を拡張するために使用する文字です。 この引数は大文字小文字を区別して<b>文字列</b>を評価する必要がありますか、エラーが発生します。 また、この引数の値が 1 つの文字よりも長い場合は、Microsoft Word コマンド全体が無視されます。</param>
-        <summary>旋回では、拡張選択モードをまたは上拡張モードにある場合は、テキストの次の大きい単位に選択範囲を拡張します。</summary>
-        <remarks>
-          <para>
-            <b>拡張</b>メソッドのセット、<see cref="P:Microsoft.Office.Interop.Word.Selection.ExtendMode" />プロパティに<b>true を指定</b>、</para>
-          <para>のテキストの選択したユニットの進行状況は次のように: 単語、文、段落、セクション、文書全体。場合<paramref name="Character" />指定した場合、指定した文字の次のインスタンスを選択範囲を拡張します。選択範囲のアクティブな終点を移動して選択範囲を拡張します</para>。
-          <para /></remarks>
+        <param name="Character">省略可能な<b>オブジェクト</b>です。 選択範囲を拡張するために使用する文字です。 この引数は大文字と小文字が区別され、<b>文字列</b>に評価する必要があります。またはエラーが発生します。 また、この引数の値が 1 つの文字よりも長い場合は、Microsoft Word コマンド全体が無視されます。</param>
+        <summary>拡張モードが有効になっている場合、拡張モードをオンにします。または、拡張モードが有効になっている場合は、選択範囲を次の大きなテキストに拡張します。</summary>
+        <remarks><para><b>拡張</b>メソッドは、この<see cref="P:Microsoft.Office.Interop.Word.Selection.ExtendMode" />プロパティを<b>True</b>に設定します。</para>
+          <para>文字列の選択単位は、語、文、段落、セクション、文書全体の順に大きくなります。 が<paramref name="Character" />指定されている場合、指定された文字の次のインスタンスを使用して選択範囲を拡張します。 選択範囲は、その範囲のアクティブな終端を移動することにより拡張されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExtendMode">
@@ -1463,12 +1435,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>拡張モードがアクティブなかどうかを決定します。</summary>
+        <summary>拡張モードがアクティブかどうかを決定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>拡張モードがアクティブな場合、 <b>false を指定</b>しない場合このプロパティは<b>True</b>を返します</para>。
-          <para>をすると、拡張モードがアクティブで、<paramref name="Extend" />次のメソッドの引数は既定で<b>True</b> : <see cref="M:Microsoft.Office.Interop.Word.Selection.EndKey(System.Object@,System.Object@)" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.HomeKey(System.Object@,System.Object@)" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.MoveDown(System.Object@,System.Object@,System.Object@)" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.MoveLeft(System.Object@,System.Object@,System.Object@)" />、<see cref="M:Microsoft.Office.Interop.Word.Selection.MoveRight(System.Object@,System.Object@,System.Object@)" />と<see cref="M:Microsoft.Office.Interop.Word.Selection.MoveUp(System.Object@,System.Object@,System.Object@)" />。また、ステータス バーに「拡張」が表示されます</para><para>このプロパティは、実行時にのみ設定できます。<paramref name="Extend" />の引数、<see cref="M:Microsoft.Office.Interop.Word.Selection.EndOf(System.Object@,System.Object@)" />と<see cref="M:Microsoft.Office.Interop.Word.Selection.StartOf(System.Object@,System.Object@)" />のメソッドがこのプロパティによって影響を受けません</para>。
-          <para /></remarks>
+        <remarks><para>拡張モードがアクティブな場合、このプロパティは<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。</para>
+          <para>拡張モードがアクティブな場合、 <paramref name="Extend" />次のメソッドの引数は既定で<b>True</b>に<see cref="M:Microsoft.Office.Interop.Word.Selection.EndKey(System.Object@,System.Object@)" />なり<see cref="M:Microsoft.Office.Interop.Word.Selection.HomeKey(System.Object@,System.Object@)" />ます<see cref="M:Microsoft.Office.Interop.Word.Selection.MoveDown(System.Object@,System.Object@,System.Object@)" />。 <see cref="M:Microsoft.Office.Interop.Word.Selection.MoveLeft(System.Object@,System.Object@,System.Object@)" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.MoveRight(System.Object@,System.Object@,System.Object@)" />、、 <see cref="M:Microsoft.Office.Interop.Word.Selection.MoveUp(System.Object@,System.Object@,System.Object@)" />、、、。 また、ステータス バーに「拡張」の文字が表示されます。</para>
+          <para>このプロパティは、実行時にのみ設定できます。 メソッド<paramref name="Extend" /> <see cref="M:Microsoft.Office.Interop.Word.Selection.EndOf(System.Object@,System.Object@)" />と<see cref="M:Microsoft.Office.Interop.Word.Selection.StartOf(System.Object@,System.Object@)" />メソッドの引数は、このプロパティの影響を受けません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Fields">
@@ -1494,7 +1466,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Fields</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返す、読み取り専用<see cref="T:Microsoft.Office.Interop.Word.Fields" />選択範囲内のすべてのフィールドを表すコレクション。</summary>
+        <summary>選択範囲内のすべて<see cref="T:Microsoft.Office.Interop.Word.Fields" />のフィールドを表す、読み取り専用のコレクションを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1522,12 +1494,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Find</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Find" />の検索条件を格納しているオブジェクト。</summary>
+        <summary>検索操作<see cref="T:Microsoft.Office.Interop.Word.Find" />の条件を含むオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>検索操作が成功した場合は、選択範囲が変更されます。</para>
-          <para />
-        </remarks>
+        <remarks><para>検索操作が成功した場合、選択範囲が変更されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FitTextWidth">
@@ -1589,11 +1559,9 @@
       <Docs>
         <summary>選択範囲のプロパティを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Flags</b>プロパティの戻り値は、選択範囲に適用される<b>WdSelectionFlags</b>定数の合計です</para>。
-          <para><b>WdSelAtEOL</b>を Flags プロパティを設定は、選択範囲の末尾をアクティブにします</para>。
-          <para /></remarks>
+        <remarks><para><b>Flags</b>プロパティの戻り値は、選択範囲に適用される<b>wdselectionflags</b>定数の合計です。</para>
+          <para>Flags プロパティを<b>Wdselateol</b>に設定すると、選択範囲の終了がアクティブになります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -1622,12 +1590,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.Font" />を指定したオブジェクトの文字書式を表すオブジェクト。</summary>
+        <summary>取得または指定<see cref="T:Microsoft.Office.Interop.Word.Font" />したオブジェクトの文字書式を表すオブジェクトを設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティを設定するには、 <b>Font</b>オブジェクトを表すオブジェクト式を指定します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティを設定するには、 <b>Font</b> オブジェクトを返す式を指定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FootnoteOptions">
@@ -1653,7 +1619,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FootnoteOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.FootnoteOptions" /> 、選択範囲の脚注のプロパティを表すオブジェクト。</summary>
+        <summary>選択範囲<see cref="T:Microsoft.Office.Interop.Word.FootnoteOptions" />内の脚注のプロパティを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1681,7 +1647,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Footnotes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Footnotes" /> 、選択範囲内のすべての脚注を表すコレクション。</summary>
+        <summary>選択範囲<see cref="T:Microsoft.Office.Interop.Word.Footnotes" />内のすべての脚注を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1712,12 +1678,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.Range" />指定された選択範囲に書式設定されたテキストを含むオブジェクトです。</summary>
+        <summary>指定した選択<see cref="T:Microsoft.Office.Interop.Word.Range" />範囲の書式付きの文字列を含むオブジェクトを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、指定範囲または選択範囲から文字列および文字書式を持つ<b>Range</b>オブジェクトを返します。指定範囲または選択範囲に段落記号がある場合、 <b>Range</b>オブジェクトに含まれるが段落の書式設定します</para>。
-          <para>の範囲内のテキストは、このプロパティを設定するときは、書式設定されたテキストに置き換えられます。既存のテキストを置換しない場合を使用して、<see cref="M:Microsoft.Office.Interop.Word.Selection.Collapse(System.Object@)" />メソッドはこのプロパティを使用する前にします</para>。
-          <para /></remarks>
+        <remarks><para>指定範囲または選択範囲から、文字列および文字書式を含む <b>Range</b> オブジェクトを返します。 指定範囲または選択範囲に段落記号がある場合、段落書式も<b>range</b>オブジェクトに含まれます。</para>
+          <para>このプロパティを設定すると、範囲内のテキストは書式設定されたテキストで置き換えられます。 既存のテキストを置換しない場合は、このプロパティ<see cref="M:Microsoft.Office.Interop.Word.Selection.Collapse(System.Object@)" />を使用する前にメソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormFields">
@@ -1743,7 +1708,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FormFields</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> 、選択範囲内のすべてのフォーム フィールドを表すコレクション。</summary>
+        <summary>選択範囲<see cref="T:Microsoft.Office.Interop.Word.FormFields" />内のすべてのフォームフィールドを表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1771,7 +1736,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Frames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Frames" /> 、選択範囲内のすべてのフレームを表すコレクション。</summary>
+        <summary>選択範囲<see cref="T:Microsoft.Office.Interop.Word.Frames" />内のすべてのレイアウト枠を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1801,17 +1766,14 @@
         <Parameter Name="Name" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="What">省略可能な<b>オブジェクト</b>です。 選択範囲の移動先となる項目の種類。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdGoToItem" />定数。</param>
-        <param name="Which">省略可能な<b>オブジェクト</b>です。 選択範囲の移動先となる項目。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdGoToDirection" />定数。</param>
-        <param name="Count">省略可能な<b>オブジェクト</b>です。 文書内の項目の数。 既定値は、1 の値は有効な正の値のみです。 として<b>wdGoToPrevious</b>を使用して指定範囲または選択範囲の前にある項目を指定するのには、<paramref name="Which" />引数を指定し、<paramref name="Count" />の値です。</param>
-        <param name="Name">省略可能な<b>オブジェクト</b>です。 場合、<paramref name="What" />の引数が<b>wdGoToBookmark</b>、 <b>wdGoToComment</b>、 <b>wdGoToField</b>、または<b>wdGoToObject</b>には、この引数は、名前を指定します。</param>
-        <summary>指定した項目の直前の文字位置にカーソルを移動します。</summary>
+        <param name="What">省略可能な<b>オブジェクト</b>です。 選択範囲を移動する項目の種類を指定します。 <see cref="T:Microsoft.Office.Interop.Word.WdGoToItem" />定数のいずれかをすることができます。</param>
+        <param name="Which">省略可能な<b>オブジェクト</b>です。 選択範囲の移動先となる項目を指定します。 <see cref="T:Microsoft.Office.Interop.Word.WdGoToDirection" />定数のいずれかをすることができます。</param>
+        <param name="Count">省略可能な<b>オブジェクト</b>です。 文書内の項目の数。 既定値は1です。正の値のみが有効です。 指定範囲または選択範囲の前にある項目を<b></b>指定するに<paramref name="Which" />は、引数と<paramref name="Count" />して wdGoToPrevious を使用し、値を指定します。</param>
+        <param name="Name">省略可能な<b>オブジェクト</b>です。 <paramref name="What" />引数が<b>wdGoToBookmark</b>、 <b>wdGoToComment</b>、 <b>wdGoToField</b>、または<b>wdGoToObject</b>の場合、この引数は名前を指定します。</param>
+        <summary>指定した項目の直前の文字位置にカーソル位置を移動します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>WdGoToGrammaticalError</b>、<b>使用する</b>、または<b>wdGoToSpellingError</b>定数の場合は、 <b>GoTo</b>メソッドを使用すると、 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 、エラー テキストの文章校正またはスペル エラーのテキストが含まれていますが返されます。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>GoTo</b>メソッドを<b>wdGoToGrammaticalError</b>、 <b>wdGoToProofreadingError</b>、または<b>wdGoToSpellingError</b>定数と共に使用すると<see cref="T:Microsoft.Office.Interop.Word.Range" /> 、返される文字列には、文法上の誤りまたはスペルミスのテキストが含まれます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GoToEditableRange">
@@ -1836,13 +1798,11 @@
         <Parameter Name="EditorID" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="EditorID">省略可能な<b>オブジェクト</b>です。 ユーザーの電子メール エイリアス (同一ドメイン内の場合) を表す<b>文字列</b>は、電子メール アドレス、または<see cref="T:Microsoft.Office.Interop.Word.WdEditorType" />ユーザーのグループを表す定数です。 省略した場合は、すべてのユーザーは、編集する権限があるすべての範囲を選択します。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />指定したユーザーまたはユーザー グループが変更できる文書の領域を表すオブジェクト。</summary>
+        <param name="EditorID">省略可能な<b>オブジェクト</b>です。 ユーザーの電子<b></b>メールエイリアス (同じドメイン内の場合)、電子メールアドレス、またはユーザーのグループを表す<see cref="T:Microsoft.Office.Interop.Word.WdEditorType" />定数を表す文字列を指定できます。 省略した場合は、すべてのユーザーは、編集する権限があるすべての範囲を選択します。</param>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />たユーザーまたはユーザーグループが変更できる文書の領域を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>使用することも、<see cref="P:Microsoft.Office.Interop.Word.Editor.NextRange" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Word.Editor" />のユーザーがアクセス許可を変更するのには次の範囲を取得するオブジェクトです。</para>
-          <para />
-        </remarks>
+        <remarks><para>また、 <see cref="P:Microsoft.Office.Interop.Word.Editor.NextRange" /> <see cref="T:Microsoft.Office.Interop.Word.Editor" />オブジェクトのプロパティを使用して、ユーザーが変更権限を持っている次の範囲を取得することもできます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GoToNext">
@@ -1868,14 +1828,12 @@
         <Parameter Name="What" Type="Microsoft.Office.Interop.Word.WdGoToItem" />
       </Parameters>
       <Docs>
-        <param name="What">必要な<see cref="T:Microsoft.Office.Interop.Word.WdGoToItem" />。</param>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 、次の項目またはで指定された場所の開始位置を参照するオブジェクト、<paramref name="What" />の引数。</summary>
+        <param name="What">必須<see cref="T:Microsoft.Office.Interop.Word.WdGoToItem" />。</param>
+        <summary>引数で<see cref="T:Microsoft.Office.Interop.Word.Range" />指定された次の項目または場所の開始位置を参照するオブジェクトを返します。 <paramref name="What" /></summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>GoToNext</b>メソッドは、選択範囲を指定した項目、 <b>wdGoToGrammaticalError</b>、<b>使用する</b>、および<b>wdGoToSpellingError</b> ) に移動します</para>。
-          <para><b>WdGoToGrammaticalError</b>、<b>使用する</b>、または<b>wdGoToSpellingError</b>定数とメソッドを使用すると、エラー テキストの文章校正またはスペル エラーのテキストが返される<b>Range</b>オブジェクトにはで含まれています</para>。
-          <para /></remarks>
+        <remarks><para><b>GoToNext</b>メソッドは、指定された項目に選択範囲を移動します。ただし、 <b>wdGoToGrammaticalError</b>、 <b>wdGoToProofreadingError</b>、および<b>wdGoToSpellingError</b>の各定数は使用できません。</para>
+          <para>[!メモ] <b>WdGoToGrammaticalError</b> 、 <b>使用する</b> 、または <b>wdGoToSpellingError</b> 定数とメソッドを使用すると、エラー テキストの文章校正またはスペル エラーのテキストが返される <b>Range</b> オブジェクトに含まれます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GoToPrevious">
@@ -1901,14 +1859,11 @@
         <Parameter Name="What" Type="Microsoft.Office.Interop.Word.WdGoToItem" />
       </Parameters>
       <Docs>
-        <param name="What">移動するのには、指定範囲または選択範囲の項目。 <see cref="T:Microsoft.Office.Interop.Word.WdGoToItem" />.</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />前のアイテムまたは指定された場所の開始位置を参照するオブジェクト。</summary>
+        <param name="What">指定範囲または選択範囲の移動先となる項目を指定します。 <see cref="T:Microsoft.Office.Interop.Word.WdGoToItem" />.</param>
+        <summary>前の<see cref="T:Microsoft.Office.Interop.Word.Range" />項目または指定した場所の開始位置を参照するオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>GoToPrevious</b>メソッドは、選択範囲を指定した項目に移動します。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>GoToPrevious</b>メソッドは、指定された項目に選択範囲を移動します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasChildShapeRange">
@@ -1934,12 +1889,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>選択範囲に子図形が含まれているかどうかを決定します。</summary>
+        <summary>選択範囲に子図形が含まれているかどうかを判断します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>子図形、および<b>false を指定</b>しない場合、選択範囲が含まれている場合、このプロパティは<b>True</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>選択範囲に子図形が含まれている場合、このプロパティは<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderFooter">
@@ -1965,12 +1918,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.HeaderFooter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" />指定された選択範囲のオブジェクトです。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" />た選択範囲のオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>エラーは、選択範囲がヘッダーまたはフッター内に配置されていない場合に発生します。</para>
-          <para />
-        </remarks>
+        <remarks><para>ヘッダーまたはフッター内に選択範囲がない場合は、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HomeKey">
@@ -1997,13 +1948,12 @@
       </Parameters>
       <Docs>
         <param name="Unit">省略可能な<b>オブジェクト</b>です。 選択範囲が移動または拡張する単位です。 <see cref="T:Microsoft.Office.Interop.Word.WdUnits" />.</param>
-        <param name="Extend">省略可能な<b>オブジェクト</b>です。 方法の選択範囲の移動を指定します。 <see cref="T:Microsoft.Office.Interop.Word.WdMovementType" />.</param>
-        <summary>指定された構成単位の先頭まで選択範囲を拡張または移動します。</summary>
+        <param name="Extend">省略可能な<b>オブジェクト</b>です。 選択範囲の移動方法を指定します。 <see cref="T:Microsoft.Office.Interop.Word.WdMovementType" />.</param>
+        <summary>Moves or extends the selection to the beginning of the specified unit.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドは HOME キーの機能に対応します</para>。
-          <para>このメソッドは、選択範囲が実際に移動すると、文字の数を示す整数を返しますまたは、移動が失敗した場合は、0 (ゼロ) を返します。</para> 。
-          <para /></remarks>
+        <remarks><para>このメソッドは、HOME キーの機能に対応します。</para>
+          <para>このメソッドは、選択範囲が実際に移動した文字数を示す整数を返し、移動が失敗した場合は 0 (ゼロ) を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HTMLDivisions">
@@ -2029,7 +1979,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.HTMLDivisions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.HTMLDivisions" />の Web ドキュメント、HTML 部分を表すオブジェクト。</summary>
+        <summary>Web ドキュメント<see cref="T:Microsoft.Office.Interop.Word.HTMLDivisions" />内の HTML 部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2057,7 +2007,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Hyperlinks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Hyperlinks" />指定された選択範囲のすべてのハイパーリンクを表すコレクション。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Hyperlinks" />た選択範囲内のすべてのハイパーリンクを表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2088,7 +2038,7 @@
         <Parameter Name="Type" Type="Microsoft.Office.Interop.Word.WdInformation" />
       </Parameters>
       <Docs>
-        <param name="Type">必要な<see cref="T:Microsoft.Office.Interop.Word.WdInformation" />。 情報の種類を指定します。</param>
+        <param name="Type">必須<see cref="T:Microsoft.Office.Interop.Word.WdInformation" />。 情報の種類を指定します。</param>
         <summary>指定された選択範囲または指定範囲に関する情報を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -2117,7 +2067,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.InlineShapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />を表すすべての<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />選択範囲内のオブジェクト。</summary>
+        <summary>選択範囲<see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />内のすべての<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />オブジェクトを表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2144,13 +2094,12 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">必要な<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。 選択範囲を比較する範囲です。</param>
-        <summary>メソッドが適用されている選択範囲が指定した範囲に含まれているかどうかを決定します。</summary>
+        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 選択範囲と比較する範囲を指定します。</param>
+        <summary>メソッドが適用されている選択範囲が指定された範囲に含まれるかどうかを判断します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>で指定された範囲内でメソッドが適用されている選択範囲が含まれている場合、このメソッドが<b>True</b>を返します、<paramref name="Range" />と引数の場合は<b>false を指定</b>できません</para>。
-          <para>このメソッドを比較して、開始、終了のストーリーの種類と同様に文字の位置、指定した範囲の選択が含まれているかどうかを判断します</para>。
-          <para /></remarks>
+        <remarks><para>メソッドが適用<b></b>されている選択範囲が<paramref name="Range" />引数で指定された範囲に含まれている場合、このメソッドは True を返し、それ以外の場合は<b>False</b>を返します。</para>
+          <para>このメソッドは、開始位置と終了位置およびストーリーの種類を比較することによって、選択範囲が指定された範囲に含まれているかどうかを判断します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertAfter">
@@ -2176,15 +2125,13 @@
         <Parameter Name="Text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Text">
-          <b>文字列</b> が必要です。 挿入する文字列を指定します。</param>
-        <summary>選択範囲の末尾に指定したテキストを挿入します。</summary>
-        <remarks>
-          <para>新しいテキストを含むように選択範囲が拡張した後、このメソッドを適用すると、します</para>。
-          <para>テキスト、段落全体を参照する選択範囲でこのメソッドを使用する場合は、(次の段落の先頭にテキストが表示されます)、最後の段落記号の後に挿入されます。段落の末尾にテキストを挿入するに終了点を決定し、この場所の (段落記号は、1 つの文字) から 1 を減算します</para>。
-          <para>ただし、選択範囲の末尾に、段落記号も含めて、ドキュメントの最後に、Microsoft Word は [ドキュメントの末尾に新しい段落を作成するのではなく、最後の段落記号の前にテキストを挿入します</para>。
-          <para>も、選択範囲がブックマークの場合は、Word、指定したテキストを挿入しますが拡張されません、選択範囲またはブックマークの新しいテキストが含まれます。</para> 。
-          <para /></remarks>
+        <param name="Text"><b>文字列</b> が必要です。 挿入する文字列を指定します。</param>
+        <summary>選択範囲の末尾に、指定した文字列を挿入します。</summary>
+        <remarks><para>このメソッドを適用すると、新しいテキストが含まれるように選択範囲が拡張されます。</para>
+          <para>段落全体を参照する選択範囲でこのメソッドを使用する場合、文字列は最後の段落記号の後に挿入されます (テキストは次の段落の先頭に表示されます)。 段落の末尾にテキストを挿入するには、終了点を指定し、この位置から1を引きます (段落記号は1文字です)。</para>
+          <para>ただし、選択範囲の末尾が段落記号であり、それが文書の最後でもある場合は、文書の最後に新しい段落が追加されるのではなく、最後の段落記号の前に文字列が挿入されます。</para>
+          <para>また、選択範囲がブックマークの場合は、指定された文字列は挿入されますが、新しく挿入した文字列まで選択範囲は拡張されません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertBefore">
@@ -2210,13 +2157,10 @@
         <Parameter Name="Text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Text">
-          <b>文字列</b> が必要です。 挿入する文字列を指定します。</param>
-        <summary>指定された選択範囲の前に指定したテキストを挿入します。</summary>
-        <remarks>
-          <para>テキストが挿入されると、新しいテキストを含むように選択範囲が拡張されます。選択範囲がブックマークの場合は、ブックマークも次のテキストを含むように拡張されます。</para>
-          <para />
-        </remarks>
+        <param name="Text"><b>文字列</b> が必要です。 挿入する文字列を指定します。</param>
+        <summary>指定された選択範囲の前に、指定された文字列を挿入します。</summary>
+        <remarks><para>テキストが挿入されると、選択範囲が拡張され、新しいテキストが含まれるようになります。 選択範囲がブックマークの場合も、新しい文字列分、ブックマークの範囲が拡張されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertBreak">
@@ -2241,12 +2185,11 @@
         <Parameter Name="Type" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Type">省略可能な<b>オブジェクト</b>です。 挿入する区切りの種類。 <see cref="T:Microsoft.Office.Interop.Word.WdBreakType" /></param>
+        <param name="Type">省略可能な<b>オブジェクト</b>です。 挿入する区切りの種類を指定します。 <see cref="T:Microsoft.Office.Interop.Word.WdBreakType" /></param>
         <summary>改ページ、段区切り、またはセクション区切りを挿入します。</summary>
-        <remarks>
-          <para>ページ区切りまたは段区切りを挿入すると、選択範囲が文書区切りに置き換えられます。選択範囲を置換しない場合を使用して、 <see cref="M:Microsoft.Office.Interop.Word.Selection.Collapse(System.Object@)" /> 、 <b>InsertBreak</b>メソッドを使用する前にメソッドです。直前に破断を挿入するセクション区切りを挿入すると、<see cref="T:Microsoft.Office.Interop.Word.Selection" />オブジェクトです</para>。
-          <para>が選択またはインストールされている言語サポート (たとえば、日本語) によっては使用ができない<b>WdBreakType</b>の定数の一部があります</para>。
-          <para /></remarks>
+        <remarks><para>ページまたは段区切りを挿入すると、選択範囲はブレークポイントに置き換えられます。 選択範囲を置換しない場合は、 <see cref="M:Microsoft.Office.Interop.Word.Selection.Collapse(System.Object@)" /> <b>insertbreak</b>メソッドを使用する前にメソッドを使用します。 セクション区切りを挿入すると、オブジェクトの<see cref="T:Microsoft.Office.Interop.Word.Selection" />直前に改行が挿入されます。</para>
+          <para><b>Wdbreaktype クラス</b>の定数の中には、選択またはインストールされている言語の設定 (たとえば、英語 (米国)) によっては使用できないものがあります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertCaption">
@@ -2275,12 +2218,11 @@
         <Parameter Name="ExcludeLabel" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Label">
-          <b>オブジェクト</b>が必要です。 挿入する図表番号のラベルです。 <see cref="T:Microsoft.Office.Interop.Word.WdCaptionLabelID" />.</param>
-        <param name="Title">省略可能な<b>オブジェクト</b>です。 キャプションのラベルの直後に挿入する文字列 (無視されます<paramref name="TitleAutoText" />が指定されている)。</param>
-        <param name="TitleAutoText">省略可能な<b>オブジェクト</b>です。 入力支援項目の内容を図表番号のラベルの直後に挿入するのには (で指定されたテキストを上書きします<paramref name="Title" />)。</param>
-        <param name="Position">省略可能な<b>オブジェクト</b>です。 上または下にキャプションを挿入するかどうかを指定します<see cref="T:Microsoft.Office.Interop.Word.Selection" />オブジェクトです。 <see cref="T:Microsoft.Office.Interop.Word.WdCaptionPosition" />.</param>
-        <param name="ExcludeLabel">省略可能な<b>オブジェクト</b>です。 <b>True</b>ではないテキスト ラベルで定義されている、<paramref name="Label" />のパラメーターです。<b>False を指定</b>すると、指定されたラベルが含まれます。</param>
+        <param name="Label">必要な<b>オブジェクト</b>。 挿入する図表番号のラベルです。 <see cref="T:Microsoft.Office.Interop.Word.WdCaptionLabelID" />.</param>
+        <param name="Title">省略可能な<b>オブジェクト</b>です。 図表番号のラベルの直後に挿入する文字列を指定します ( <paramref name="TitleAutoText" />指定しない場合は無視されます)。</param>
+        <param name="TitleAutoText">省略可能な<b>オブジェクト</b>です。 図表番号のラベルの直後に内容を挿入する定型句の項目を指定します (指定し<paramref name="Title" />た文字列を上書きします)。</param>
+        <param name="Position">省略可能な<b>オブジェクト</b>です。 図表番号をオブジェクトの<see cref="T:Microsoft.Office.Interop.Word.Selection" />上または下に挿入するかどうかを指定します。 <see cref="T:Microsoft.Office.Interop.Word.WdCaptionPosition" />.</param>
+        <param name="ExcludeLabel">省略可能な<b>オブジェクト</b>です。 <b>True</b>は、 <paramref name="Label" />パラメーターで定義されているように、テキストラベルを含みません。<b>False</b>指定されたラベルを含みます。</param>
         <summary>指定された選択範囲の直前または直後に図表番号を挿入します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2343,12 +2285,11 @@
         <Parameter Name="ShiftCells" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ShiftCells">省略可能な<see cref="T:Microsoft.Office.Interop.Word.WdInsertCells" />。</param>
+        <param name="ShiftCells">省略<see cref="T:Microsoft.Office.Interop.Word.WdInsertCells" />可能です。</param>
         <summary>既存の表にセルを追加します。</summary>
-        <remarks>
-          <para>挿入するセルの数は、選択範囲内のセルの数と同じです</para>。
-          <para>を使用してセルを挿入することも、<see cref="M:Microsoft.Office.Interop.Word.Cells.Add(System.Object@)" />のメソッドの<see cref="T:Microsoft.Office.Interop.Word.Cells" />オブジェクトです</para>。
-          <para /></remarks>
+        <remarks><para>挿入するセルの数は選択範囲内のセルの数と同じです。</para>
+          <para><see cref="T:Microsoft.Office.Interop.Word.Cells" />オブジェクトの<see cref="M:Microsoft.Office.Interop.Word.Cells.Add(System.Object@)" />メソッドを使用してセルを挿入することもできます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertColumns">
@@ -2373,10 +2314,9 @@
       <Parameters />
       <Docs>
         <summary>選択部分を含む列の左側に列を挿入します。</summary>
-        <remarks>
-          <para>テーブルでは、選択範囲がない、エラーが発生します</para>。
-          <para>挿入される列の数は選択した列の数です。使用して列を挿入することも、<see cref="M:Microsoft.Office.Interop.Word.Columns.Add(System.Object@)" />のメソッドの<see cref="T:Microsoft.Office.Interop.Word.Columns" />オブジェクトです</para>。
-          <para /></remarks>
+        <remarks><para>選択範囲が表の中にない場合は、エラーが発生します。</para>
+          <para>挿入する列の数は選択された列の数と同じです。 また、 <see cref="M:Microsoft.Office.Interop.Word.Columns.Add(System.Object@)" /> <see cref="T:Microsoft.Office.Interop.Word.Columns" />オブジェクトのメソッドを使用して、列を挿入することもできます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertColumnsRight">
@@ -2401,10 +2341,9 @@
       <Parameters />
       <Docs>
         <summary>現在の選択範囲の右側に列を挿入します。</summary>
-        <remarks>
-          <para>現在の選択範囲内にある列が挿入されます</para>。
-          <para>このメソッドを使用するには、現在の選択範囲がテーブルである必要があります</para>。
-          <para /></remarks>
+        <remarks><para>現在の選択範囲内にある列と同じ数の列が挿入されます。</para>
+          <para>このメソッドを使用するには、現在の選択範囲が表内にある必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertCrossReference">
@@ -2435,20 +2374,16 @@
         <Parameter Name="SeparatorString" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ReferenceType">
-          <b>オブジェクト</b>が必要です。 相互参照を挿入する項目の型。 いずれかを指定することができます<see cref="T:Microsoft.Office.Interop.Word.WdReferenceType" />または<see cref="T:Microsoft.Office.Interop.Word.WdCaptionLabelID" />定数またはユーザー定義の図表番号のラベルです。</param>
-        <param name="ReferenceKind">必要な<see cref="T:Microsoft.Office.Interop.Word.WdReferenceKind" />。 相互参照に含める情報を指定します。</param>
-        <param name="ReferenceItem">
-          <b>オブジェクト</b>が必要です。 場合<paramref name="ReferenceType" /><b>wdRefTypeBookmark</b>は、この引数は、ブックマーク名を指定します。 その他のすべての<paramref name="ReferenceType" />の項目番号または参照型の名前は、[相互参照] ダイアログ ボックスでボックスの値をこの引数を指定します。 使用して、<see cref="M:Microsoft.Office.Interop.Word._Document.GetCrossReferenceItems(System.Object@)" />名の項目のリストを取得するメソッドは、この引数に使用できます。</param>
+        <param name="ReferenceType">必要な<b>オブジェクト</b>。 相互参照を挿入する項目の型。 任意<see cref="T:Microsoft.Office.Interop.Word.WdReferenceType" />の<see cref="T:Microsoft.Office.Interop.Word.WdCaptionLabelID" />定数または定数、またはユーザー定義の図表番号のラベルを指定できます。</param>
+        <param name="ReferenceKind">必須<see cref="T:Microsoft.Office.Interop.Word.WdReferenceKind" />。 相互参照に含める情報を指定します。</param>
+        <param name="ReferenceItem">必要な<b>オブジェクト</b>。 が<paramref name="ReferenceType" /> <b>wdreftypebookmark</b>の場合、この引数はブックマーク名を指定します。 他の<paramref name="ReferenceType" />すべての値の場合、この引数は [相互参照] ダイアログボックスの [参照の種類] ボックスで、項目番号または名前を指定します。 この引数<see cref="M:Microsoft.Office.Interop.Word._Document.GetCrossReferenceItems(System.Object@)" />と共に使用できるアイテム名のリストを返すには、メソッドを使用します。</param>
         <param name="InsertAsHyperlink">省略可能な<b>オブジェクト</b>です。 <b>True</b> 参照されるアイテムへのハイパーリンクとして相互参照を挿入します。</param>
         <param name="IncludePosition">省略可能な<b>オブジェクト</b>です。 <b>True</b> 相互参照と参照項目の位置に応じて"above"または「下の」を挿入します。</param>
-        <param name="SeparateNumbers">省略可能な<b>オブジェクト</b>です。 <b>True</b> に関連付けられているテキストから番号を区切る区切り記号を使用します。 (場合にのみ使用、 <paramref name="ReferenceType" /><b>wdRefTypeNumberedItem</b>にパラメーターを設定し、<paramref name="ReferenceKind" />パラメーターが<b>wdNumberFullContext</b>に設定します)。</param>
-        <param name="SeparatorString">省略可能な<b>オブジェクト</b>です。 <b>SeparateNumbers</b>パラメーターが<b>True</b>に設定されている場合、区切り記号として使用する文字列を指定します。</param>
+        <param name="SeparateNumbers">省略可能な<b>オブジェクト</b>です。 <b>True</b> に関連付けられているテキストから番号を区切る区切り記号を使用します。 ( <paramref name="ReferenceType" />パラメーターが<b>wdRefTypeNumberedItem</b>に設定され、 <paramref name="ReferenceKind" />パラメーターが<b>wdNumberFullContext</b>に設定されている場合にのみ使用します)。</param>
+        <param name="SeparatorString">省略可能な<b>オブジェクト</b>です。 <b>SeparateNumbers</b>パラメーターが<b>True</b>に設定されている場合に、区切り記号として使用する文字列を指定します。</param>
         <summary>見出し、ブックマーク、脚注、または文末脚注、あるいは図表番号が定義されている項目 (たとえば、数式、図、表など) への相互参照を挿入します。</summary>
-        <remarks>
-          <para>値の<b>wdPageNumber</b>を指定するかどうかは<paramref name="ReferenceKind" />、適切な相互参照情報を表示するのには、文書を改ページする必要があります。</para>
-          <para />
-        </remarks>
+        <remarks><para>の<paramref name="ReferenceKind" />値に<b>wdpagenumber</b>を指定する場合は、正しい相互参照情報を表示するために、ドキュメントの改改する必要がある場合があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertCrossReference_2002">
@@ -2515,11 +2450,11 @@
         <Parameter Name="CalendarType" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="DateTimeFormat">省略可能な<b>オブジェクト</b>です。 日付または時刻、あるいはその両方を表示するときに使用する書式を指定します。 この引数を省略すると、Microsoft Word は Windows のコントロール パネル ([地域の設定] アイコン) の日付の短い形式を使用します。</param>
+        <param name="DateTimeFormat">省略可能な<b>オブジェクト</b>です。 日付または時刻、あるいはその両方を表示するときに使用する書式を指定します。 この引数を省略した場合、コントロール パネル ([地域の設定] アイコン) の日付の短い形式が使用されます。</param>
         <param name="InsertAsField">省略可能な<b>オブジェクト</b>です。 <b>True の</b> TIME フィールドとして指定した情報を挿入します。 既定値は、 <b>true を指定</b> します。</param>
         <param name="InsertAsFullWidth">省略可能な<b>オブジェクト</b>です。 <b>True の</b> 2 バイトの数字として指定した情報を挿入します。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
-        <param name="DateLanguage">省略可能な<b>オブジェクト</b>です。 日付または時刻を表示する言語を設定します。次のいずれかの方法は、<see cref="T:Microsoft.Office.Interop.Word.WdDateLanguage" />定数: <b>wdDateLanguageBidi</b>または<b>wdDateLanguageLatin</b>です。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
-        <param name="CalendarType">省略可能な<b>オブジェクト</b>です。 日付または時刻を表示するときに使用するカレンダーの種類を設定します。次のいずれかの方法は、<see cref="T:Microsoft.Office.Interop.Word.WdCalendarTypeBi" />定数: <b>wdCalendarTypeBidi</b>または<b>wdCalendarTypeGregorian</b>です。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
+        <param name="DateLanguage">省略可能な<b>オブジェクト</b>です。 日付または時刻を表示する言語を設定します。次<see cref="T:Microsoft.Office.Interop.Word.WdDateLanguage" />の定数のいずれかを指定できます: <b>WdDateLanguageBidi</b>または<b>wdDateLanguageLatin</b>。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
+        <param name="CalendarType">省略可能な<b>オブジェクト</b>です。 日付または時刻を表示するときに使用するカレンダーの種類を設定します。次<see cref="T:Microsoft.Office.Interop.Word.WdCalendarTypeBi" />の定数のいずれかを指定できます: <b>Wdcalendartypebidi</b>または<b>wdcalendartypebidi 暦</b>。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
         <summary>現在の日付または時刻、あるいはその両方を、文字列または TIME フィールドとして挿入します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2584,11 +2519,10 @@
         <Parameter Name="Attachment" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>文字列</b> が必要です。 挿入するファイルのパスとファイル名を指定します。 パスを指定しない場合は、Microsoft Word は、現在のフォルダーにファイルと仮定します。</param>
+        <param name="FileName"><b>文字列</b> が必要です。 挿入するファイルのパスとファイル名を指定します。 パスを指定しない場合、ファイルは現在のフォルダーにあると見なされます。</param>
         <param name="Range">省略可能な<b>オブジェクト</b>です。 引数 Name に Word 文書を指定した場合は、ブックマーク名を指定します。 Excel など、他のアプリケーションのファイルを指定した場合は、範囲名やセル範囲 (R1C1:R3C4 など) を指定します。</param>
         <param name="ConfirmConversions">省略可能な<b>オブジェクト</b>です。 <b>True</b> を Word 文書形式以外の形式のファイルを挿入するときに、変換を確認するダイアログ ボックスが表示されます。</param>
-        <param name="Link">省略可能な<b>オブジェクト</b>です。 の <b>場合は true。</b> INCLUDETEXT フィールドを使用してファイルを挿入します。 </param>
+        <param name="Link">省略可能な<b>オブジェクト</b>です。 の <b>場合は true。</b> INCLUDETEXT フィールドを使用してファイルを挿入します。  </param>
         <param name="Attachment">省略可能な<b>オブジェクト</b>です。 <b>True を指定</b> 電子メール メッセージの添付ファイルとしてファイルを挿入します。</param>
         <summary>指定したファイルのすべてまたは一部を挿入します。</summary>
         <remarks>To be added.</remarks>
@@ -2620,14 +2554,24 @@
         <param name="Formula">省略可能な<b>オブジェクト</b>です。 = (式) フィールドに指定する数式を指定します。 表のセルをワークシートのような形式で参照することもできます。 たとえば、"=SUM(A4:C4)" では、4 行目の最初の 3 つの値が参照されます。</param>
         <param name="NumberFormat">省略可能な<b>オブジェクト</b>です。 = (式) フィールドの結果の書式を指定します。</param>
         <summary>選択範囲に、計算式を含む = (式) フィールドを挿入します。</summary>
-        <remarks>
-          <para>式では、選択範囲が解除されていない場合、選択範囲が置き換えられます</para>。
-          <para>すべての埋め込み Microsoft Excel などのスプレッドシート アプリケーションを使用しているかどうか、またはドキュメント内のワークシートの一部は、表で = (式) フィールドを使用するよりも簡単には多くの場合です</para>。
-          <para>、<paramref name="Formula" />引数は、セルが、選択されているため、上記の値を含む 1 つ以上のセルが含まれてまたはカーソルが置かれているセルの左側にしている場合にのみ省略可能です。カーソルの上のセルに値が含まれている場合、挿入するフィールドは、{= sum (above)} です。場合は、カーソルの左側にセルがポイント値が含まれて、挿入したフィールドが {= sum (left)} です。セルがカーソルの上と左のセルの両方に値が含まれている場合は、Word で使用する次の規則を挿入する SUM 関数を決定するのには:</para><list type="bullet"><item><para>カーソル位置のすぐ上のセルに値が含まれている場合、Word に挿入します。{= Sum (above)} です</para></item>。
-            <item><para>カーソル位置のすぐ上のセルに値が含まれていない場合はカーソルの左のセルは、挿入 {= sum (left)} です</para></item>。
-            <item><para>かどうかどちらもセルのすぐにセルも、カーソルの上、Word の挿入 {= sum (above) の} 値が含まれている以下の直後にします</para></item>。
-            <item><para>を指定しない場合は、<paramref name="Formula" />の上と、カーソルの左側にあるすべてのセルは空白とは、= (式) フィールドを使用して、エラーが発生します</para></item></list>。
-          <para /></remarks>
+        <remarks><para>選択範囲が解除されていない場合は、選択範囲が数式に置き換えられます。</para>
+          <para>Microsoft Excel などのスプレッドシートアプリケーションを使用している場合は、ワークシートの全部または一部を文書に埋め込む方が、テーブルで = (式) フィールドを使用するよりも簡単な場合があります。</para>
+          <para>選択<paramref name="Formula" />範囲がセル内にあり、カーソルがあるセルの上または左に値を含むセルが1つ以上ある場合にのみ、引数は省略できます。 挿入ポイントの上のセルに値が含まれている場合、挿入されるフィールドは {= SUM (ABOVE)} です。挿入ポイントの左側にあるセルに値が含まれている場合、挿入されるフィールドは {= SUM (LEFT)} になります。 カーソルの上のセルとその左側のセルの両方に値が含まれている場合は、次の規則を使用して、挿入する SUM 関数を決定します。</para>
+          <list type="bullet">
+            <item>
+              <para>カーソルのすぐ上のセルが値を含む場合は、{ =SUM(ABOVE) } が挿入されます。</para>
+            </item>
+            <item>
+              <para>カーソルのすぐ上のセルに値が含まれていない場合、カーソルのすぐ左のセルには、{= SUM (LEFT)} が挿入されます。</para>
+            </item>
+            <item>
+              <para>カーソルのすぐ上のセルが値を含まず、カーソルのすぐ下のセルも値を含まない場合は、{ =SUM(ABOVE) } が挿入されます。</para>
+            </item>
+            <item>
+              <para>を指定<paramref name="Formula" />せず、カーソルの上および左のすべてのセルが空の場合、= (式) フィールドを使用するとエラーが発生します。</para>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertNewPage">
@@ -2677,10 +2621,9 @@
       <Parameters />
       <Docs>
         <summary>指定部分を新しい段落に置き換えます。</summary>
-        <remarks>
-          <para>このメソッドを使用すると、選択範囲は新しい段落</para>。置換の指定範囲または選択範囲を使用したくない場合、 
-          <para>、<see cref="M:Microsoft.Office.Interop.Word.Selection.Collapse(System.Object@)" />メソッドはこのメソッドを使用する前にします。<see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphAfter" />メソッドは<b>Selection</b>オブジェクトを新しい段落を挿入します</para>。
-          <para /></remarks>
+        <remarks><para>このメソッドを使用すると、選択範囲が新しい段落になります。</para>
+          <para>指定範囲または選択範囲を置換しない場合は、 <see cref="M:Microsoft.Office.Interop.Word.Selection.Collapse(System.Object@)" />このメソッドを使用する前にメソッドを使用します。 この<see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphAfter" />メソッドは、 <b>Selection</b>オブジェクトの後に新しい段落を挿入します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertParagraphAfter">
@@ -2705,10 +2648,8 @@
       <Parameters />
       <Docs>
         <summary>選択範囲の終了位置に段落記号を挿入します。</summary>
-        <remarks>
-          <para>このメソッドが適用されると、選択範囲が新しい段落を含むように拡張します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドを適用すると、新しい段落が含まれるように選択範囲が拡張されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertParagraphBefore">
@@ -2733,10 +2674,8 @@
       <Parameters />
       <Docs>
         <summary>指定された選択範囲の前に新しい段落を挿入します。</summary>
-        <remarks>
-          <para>このメソッドが適用されると、選択範囲が新しい段落を含むように拡張します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドを適用すると、新しい段落が含まれるように選択範囲が拡張されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertRows">
@@ -2763,10 +2702,9 @@
       <Docs>
         <param name="NumRows">省略可能な<b>オブジェクト</b>です。 追加する行数を指定します。</param>
         <summary>選択部分を含む行の上に、指定された数の新しい行を挿入します。</summary>
-        <remarks>
-          <para>テーブルでは、選択範囲がない、エラーが発生します</para>。
-          <para>を使用して行を挿入することも、<see cref="M:Microsoft.Office.Interop.Word.Rows.Add(System.Object@)" />のメソッドの<see cref="P:Microsoft.Office.Interop.Word.Selection.Rows" />オブジェクトです</para>。
-          <para /></remarks>
+        <remarks><para>選択部分が表の中にない場合は、エラーが発生します。</para>
+          <para><see cref="P:Microsoft.Office.Interop.Word.Selection.Rows" />オブジェクトの<see cref="M:Microsoft.Office.Interop.Word.Rows.Add(System.Object@)" />メソッドを使用して、行を挿入することもできます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertRowsAbove">
@@ -2793,10 +2731,9 @@
       <Docs>
         <param name="NumRows">省略可能な<b>オブジェクト</b>です。 追加する行数を指定します。</param>
         <summary>現在の選択範囲の上側に行を挿入します。</summary>
-        <remarks>
-          <para>現在の選択範囲内にある行が挿入されます</para>。
-          <para>このメソッドを使用するには、現在の選択範囲がテーブルである必要があります</para>。
-          <para /></remarks>
+        <remarks><para>現在の選択範囲内にある行と同じ数の行が挿入されます。</para>
+          <para>このメソッドを使用するには、現在の選択範囲が表内にある必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertRowsBelow">
@@ -2823,10 +2760,9 @@
       <Docs>
         <param name="NumRows">省略可能な<b>オブジェクト</b>です。 追加する行数を指定します。</param>
         <summary>現在の選択範囲の下側に行を挿入します。</summary>
-        <remarks>
-          <para>現在の選択範囲内にある行が挿入されます</para>。
-          <para>このメソッドを使用するには、現在の選択範囲がテーブルである必要があります</para>。
-          <para /></remarks>
+        <remarks><para>現在の選択範囲内にある行と同じ数の行が挿入されます。</para>
+          <para>このメソッドを使用するには、現在の選択範囲が表内にある必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertStyleSeparator">
@@ -2850,11 +2786,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Microsoft Word を別の段落スタイルを使用して書式設定された段落への参加を可能にする特殊な隠し段落記号を挿入します。</summary>
-        <remarks>
-          <para>このメソッドを使用すると、文頭の見出しの内容のテーブルに挿入します。</para>
-          <para />
-        </remarks>
+        <summary>別の段落スタイルを使用して書式設定された段落を結合するための特殊な隠し段落記号を挿入します。</summary>
+        <remarks><para>このメソッドを使用すると、タイトルの見出しを目次に挿入することができます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertSymbol">
@@ -2882,16 +2816,13 @@
         <Parameter Name="Bias" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="CharacterNumber">
-          <b>整数</b>が必要です。 指定する記号の文字番号を指定します。 この値は、記号の表で Symbol フォントを表示したとき、左から右に数えた記号の位置に対応する番号に 31 を加えた値です。 たとえば、Symbol フォントの記号の表では、37 の位置にあるデルタ文字を指定するに次のように設定します。 <paramref name="CharacterNumber" /> 68 です。</param>
+        <param name="CharacterNumber">整数型 (<b>Integer</b>) の値を使用します。 指定する記号の文字番号を指定します。 この値は、記号の表で Symbol フォントを表示したとき、左から右に数えた記号の位置に対応する番号に 31 を加えた値です。 たとえば、Symbol フォントの記号の表で37の位置にデルタ文字を指定するには、68 <paramref name="CharacterNumber" />に設定します。</param>
         <param name="Font">省略可能な<b>オブジェクト</b>です。 該当する記号を含むフォントの名前を指定します。</param>
-        <param name="Unicode">省略可能な<b>オブジェクト</b>です。 <b>True</b>で指定された Unicode 文字を挿入するのには<paramref name="CharacterNumber" />です。<b>False</b>が指定されている ANSI 文字を挿入するのには<paramref name="CharacterNumber" />です。 既定値は <b>False</b> です。</param>
-        <param name="Bias">省略可能な<b>オブジェクト</b>です。 記号のフォントのバイアスを設定します。 この引数は、東アジア言語の文字の正しいフォントのバイアスを設定するために役立ちます。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Word.WdFontBias" />定数: <b>wdFontBiasDefault</b>、 <b>wdFontBiasDontCare</b>、または<b>wdFontBiasFareast</b>。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
+        <param name="Unicode">省略可能な<b>オブジェクト</b>です。 <b></b>指定した Unicode 文字を挿入する<paramref name="CharacterNumber" />には、True を指定します。<b>False</b>を指定すると、によっ<paramref name="CharacterNumber" />て指定された ANSI 文字が挿入されます。 既定値は <b>False</b> です。</param>
+        <param name="Bias">省略可能な<b>オブジェクト</b>です。 記号のフォントのバイアスを設定します。 この引数は、東アジア言語の文字の正しいフォントのバイアスを設定するために役立ちます。 次<see cref="T:Microsoft.Office.Interop.Word.WdFontBias" />の定数のいずれかを指定できます。 <b>Wdfontbiasdefault</b>、 <b>wdfontbiasdont気付</b>、または<b>wdFontBiasFareast</b>。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
         <summary>選択範囲を記号に置き換えます。</summary>
-        <remarks>
-          <para>選択範囲を置換しない場合を使用して、<see cref="M:Microsoft.Office.Interop.Word.Selection.Collapse(System.Object@)" />このメソッドを使用する前にします。</para>
-          <para />
-        </remarks>
+        <remarks><para>選択範囲を置換しない場合は、このメソッド<see cref="M:Microsoft.Office.Interop.Word.Selection.Collapse(System.Object@)" />を使用する前にメソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertXML">
@@ -2917,16 +2848,13 @@
         <Parameter Name="Transform" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="XML">
-          <b>文字列</b> が必要です。 挿入する XML テキスト。</param>
-        <param name="Transform">省略可能な<b>オブジェクト</b>です。 挿入した XML テキストに適用するトランス フォームします。</param>
-        <summary>指定された選択範囲に指定された XML テキストを挿入します。</summary>
-        <remarks>
-          <para>
-            <b>InsertXML</b>メソッドが既存のテキストを置換する場合は、指定範囲または選択範囲にテキストが含まれています</para>。テキストを挿入するのには
-          <para>使用<b>InsertXML</b>メソッドは、任意の XML、または Word の XML マークしました。XML は正しい形式でする必要があります。Word XML を使用している場合も必要があります Word XML スキーマに対して無効です。Word XML スキーマの詳細についてを参照してください Word XML コンテンツ開発キット、Microsoft Developer Network (MSDN) Web サイト上にあります</para>。
-          <para>指定された XML テキストを指定範囲または選択範囲に挿入できない場合、エラー メッセージが表示されます</para>。
-          <para /></remarks>
+        <param name="XML"><b>文字列</b> が必要です。 挿入する XML テキストを入力します。</param>
+        <param name="Transform">省略可能な<b>オブジェクト</b>です。 挿入された XML テキストに適用する変換。</param>
+        <summary>指定した選択範囲に指定した XML テキストを挿入します。</summary>
+        <remarks><para>指定範囲または選択範囲にテキストが含まれている場合、 <b>Insertxml</b>メソッドは既存のテキストを置換します。</para>
+          <para><b>Insertxml</b>メソッドを使用して、任意の xml または Word xml のいずれかでマークされたテキストを挿入します。 XML は適切な形式である必要があります。 Word XML を使用している場合は、Word XML スキーマに従っても有効である必要があります。 Word XML スキーマの詳細については、「Microsoft Developer Network (MSDN) Web サイトで入手できる Word XML コンテンツ開発キット」を参照してください。</para>
+          <para>指定した範囲または選択範囲に指定した XML テキストを挿入できない場合は、エラーメッセージが表示されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InStory">
@@ -2951,13 +2879,11 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">必要な<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。 <b>Range</b>オブジェクトは、そのストーリーは、指定された選択範囲を含むストーリーと比較されます。</param>
-        <summary>かどうかをこのメソッドを適用する選択範囲で指定した範囲と同じストーリーです。</summary>
+        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 指定された選択範囲を含むストーリーと比較される<b>Range</b>オブジェクトを指定します。</param>
+        <summary>このメソッドを適用する選択範囲が、指定された範囲と同じストーリーにあるかどうかを判断します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>指定された範囲と同じストーリーでは、このメソッドを適用する選択範囲の場合、このメソッドが<b>True</b>を返します、<paramref name="Range" />の引数、および<b>false を指定</b>しない場合。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドを<b></b>適用する選択範囲が<paramref name="Range" />引数で指定した範囲と同じストーリーにある場合、このメソッドは True を返します。それ以外の場合は、 <b>False</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IPAtEndOfLine">
@@ -2983,12 +2909,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>次の行に折り返される行の末尾に挿入ポイントがあるかどうかを判断します。</summary>
+        <summary>カーソル位置が次の行に折り返される行の末尾にあるかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>選択範囲が解除されていない場合は、行の末尾にカーソルがない場合は、カーソルが段落記号の前に配置されている、次の行と<b>False</b>に折り返される行の末尾に挿入ポイントがある場合、このプロパティが<b>True</b>を返します.</para>
-          <para />
-        </remarks>
+        <remarks><para>挿入ポイントが次の行に折り返される行の末尾にある場合は True を返します。選択<b></b>範囲が解除されていない場合は、カーソルが行の末尾にない場合、またはカーソルが段落の前に配置される場合は<b>True</b>を返します.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEndOfRowMark">
@@ -3014,12 +2938,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された選択範囲が解除され、テーブル内の行の末尾にマークであるかどうかを決定します。</summary>
+        <summary>指定された選択範囲が折りたたまれているかどうか、および表の行の終わりの記号にあるかどうかを調べます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、指定された選択範囲が解除され、そうでない場合は、テーブル、または<b>false の場合</b>の最後の行のマークである場合に<b>True</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、指定された選択範囲が折りたたまれていて、表の行の末尾にある場合は<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEqual">
@@ -3044,13 +2966,12 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">必要な<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。 <b>Range</b>オブジェクトは、指定された選択範囲と比較されます。</param>
-        <summary>このメソッドが適用されている選択範囲が指定した範囲と等しいかどうかを<paramref name="Range" />の引数です。</summary>
+        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 指定された選択範囲と比較する<b>Range</b>オブジェクトを指定します。</param>
+        <summary>このメソッドが適用されている選択範囲が、 <paramref name="Range" />引数で指定した範囲と等しいかどうかを判断します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドを適用する選択範囲が指定した範囲と等しい場合、このメソッドが<b>True</b>を返します、<paramref name="Range" />と引数の場合は<b>false を指定</b>できません</para>。
-          <para>ストーリーと、このメソッドの比較の開始位置と終了文字を入力します。オブジェクトが等しい場合、これらの項目の 3 つのすべては、両方のオブジェクトに対して同じです</para>。
-          <para /></remarks>
+        <remarks><para>このメソッドを<b></b>適用する選択範囲が<paramref name="Range" />引数に指定した範囲と等しい場合は True を返し、それ以外の場合は<b>False</b>を返します。</para>
+          <para>このメソッドは、開始と終了の文字位置、およびストーリーの種類を比較します。 これらの 3 つの項目がすべて、両方のオブジェクトで同じ場合は、オブジェクトは等しいことを示します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ItalicRun">
@@ -3075,10 +2996,8 @@
       <Parameters />
       <Docs>
         <summary>現在の run に対して、斜体の文字書式を追加または削除します。</summary>
-        <remarks>
-          <para>実行では、斜体と斜体でない文字列の両方が含まれている場合、このメソッドは run 全体に斜体の文字書式を追加します。</para>
-          <para />
-        </remarks>
+        <remarks><para>その run に斜体の文字列と斜体でない文字列が混在している場合、このメソッドは run 全体に斜体の文字書式を追加します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageDetected">
@@ -3109,10 +3028,9 @@
       <Docs>
         <summary>取得または Microsoft Word が指定したテキストの言語を検出するかどうかを指定する値を設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>チェック、 <see cref="P:Microsoft.Office.Interop.Word.Selection.LanguageID" /> 、前の言語の検出の結果を得るのためのプロパティ</para>。
-          <para><b>LanguageDetected</b>プロパティが<b>True</b>に設定すると、<see cref="M:Microsoft.Office.Interop.Word.Selection.DetectLanguage" />メソッドが呼び出されます。指定したテキストの言語を再評価するには、まず設定、 <b>LanguageDetected</b>プロパティを<b>False</b>にします</para>。
-          <para /></remarks>
+        <remarks><para>以前の<see cref="P:Microsoft.Office.Interop.Word.Selection.LanguageID" />言語の判別の結果についてプロパティを確認します。</para>
+          <para><b>言語で検出</b>されたプロパティ<b></b>は、 <see cref="M:Microsoft.Office.Interop.Word.Selection.DetectLanguage" />メソッドが呼び出されたときに True に設定されます。 指定したテキストの言語を再評価するには、するには、最初に <b>false を指定</b> する <b>LanguageDetected</b> プロパティを設定する必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageID">
@@ -3141,13 +3059,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの言語を設定または返します。</summary>
+        <summary>オブジェクトの言語を示します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>WdLanguageID</b>定数のいくつかを選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できないがあります。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>WdLanguageID</b>定数の中には、選択またはインストールした言語のサポート (たとえば、英語 (米国)) によっては使用できないものがあります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageIDFarEast">
@@ -3178,10 +3093,8 @@
       <Docs>
         <summary>指定したオブジェクトの東アジア言語を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>これは、東アジア言語のバージョンの Microsoft Word で作成した文書に東アジア言語のテキストの言語を設定する推奨される方法です。</para>
-          <para />
-        </remarks>
+        <remarks><para>Word 東アジア版で作成された文書に東アジア言語の文字列を設定する場合、この方法をお勧めします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageIDOther">
@@ -3210,12 +3123,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの言語を設定または返します。</summary>
+        <summary>オブジェクトの言語を示します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>これは、右から左へ記述する言語のバージョンの Microsoft Word で作成した文書にラテン語のテキストの言語を設定する推奨される方法です。</para>
-          <para />
-        </remarks>
+        <remarks><para>Word の右から左へ記述する言語版で作成された文書にラテン言語の文字列を設定する場合、この方法をお勧めします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LtrPara">
@@ -3240,10 +3151,9 @@
       <Parameters />
       <Docs>
         <summary>指定された段落の読み取り順序および配置を、左から右へに設定します。</summary>
-        <remarks>
-          <para>選択したすべての段落に対してこのメソッドは左から右に読み取り順序を設定します。段落を右から左への読み取り順序が右揃えも場合、このメソッドはその読み取り順序を反転し左揃え、段落の配置を設定します</para>。
-          <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.Paragraph.ReadingOrder" />プロパティに、段落の配置に影響を与えずに読み取り順序を変更します</para>。
-          <para /></remarks>
+        <remarks><para>選択された段落すべてに対して、読み取り順序を左から右へに設定します。読み取り順序が右から左へである段落が右揃えに設定されている場合も、このメソッドはその読み取り順序を左から右へに変更し、その段落の配置を左揃えに設定します。</para>
+          <para><see cref="P:Microsoft.Office.Interop.Word.Paragraph.ReadingOrder" />プロパティを使用して、段落の配置に影響を与えずに読み取り順序を変更します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LtrRun">
@@ -3268,10 +3178,9 @@
       <Parameters />
       <Docs>
         <summary>指定された run の読み取り順序および配置を、左から右へに設定します。</summary>
-        <remarks>
-          <para>の指定の実行では、このメソッドは左から右に読み取り順序を設定します。右から左への読み取り順序で実行時に段落がある場合も右揃え、このメソッドはその読み取り順序を反転し、左揃え、段落の配置を設定します</para>。
-          <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.Paragraph.ReadingOrder" />プロパティに、段落の配置に影響を与えずに読み取り順序を変更します</para>。
-          <para /></remarks>
+        <remarks><para>指定された run の読み取り順序を左から右へに設定します。この run 内の段落の読み取り順序が右から左へであり、右揃えに設定されている場合も、このメソッドはその読み取り順序を左から右へに変更し、段落の配置を左揃えに設定します。</para>
+          <para><see cref="P:Microsoft.Office.Interop.Word.Paragraph.ReadingOrder" />プロパティを使用して、段落の配置に影響を与えずに読み取り順序を変更します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Move">
@@ -3297,15 +3206,14 @@
         <Parameter Name="Count" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Unit">省略可能な<b>オブジェクト</b>です。 選択範囲を解除を移動する単位を指定します。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />定数: <b>wdCharacter</b>、 <b>wdWord</b>、 <b>wdLine</b>、 <b>wdSentence</b>、 <b>wdParagraph</b>、 <b>wdSection</b>、 <b>wdStory</b>、 <b>wdCell</b>、 <b>wdColumn</b>、 <b>wdRow</b>、または<b>wdTable</b>。 既定値は <b>wdCharacter</b> です。</param>
-        <param name="Count">省略可能な<b>オブジェクト</b>です。 指定された選択範囲が移動するのには、ユニットの数です。 場合<paramref name="Count" />は、正の数値では、オブジェクトの終了位置で折りたたまれ、指定された単位数だけ文書の先頭方向に移動します。 場合<paramref name="Count" />、負の値は、オブジェクトの開始位置で折りたたまれ、指定された単位数だけ前方に移動します。 既定値は 1 です。 使用して、縮小の方向を制御することも、<see cref="M:Microsoft.Office.Interop.Word.Selection.Collapse(System.Object@)" />メソッド、 <b>Move</b>メソッドを使用する前にします。 単位の途中にある指定範囲または選択範囲または解除されていない場合は、ユニットの前後に移動することとして、1 つのフル ・ ユニットを移動することをカウントします。</param>
+        <param name="Unit">省略可能な<b>オブジェクト</b>です。 折りたたまれた選択範囲を移動する単位を指定します。 <see cref="T:Microsoft.Office.Interop.Word.WdUnits" />使用できる定数は、 <b>wdcharacter</b>、 <b>wdword</b>、 <b>wdcharacter</b>、 <b>wdsent、</b> <b>wdcharacter</b>、 <b>wdcharacter</b>、 <b>wdcharacter</b>、 <b>wdcharacter</b>、 <b>wdcharacter</b>、 <b>wdcharacter</b>、またはのいずれかです。<b>Wdtable</b>。 既定値は <b>wdCharacter</b> です。</param>
+        <param name="Count">省略可能な<b>オブジェクト</b>です。 指定された選択範囲を移動する単位数を指定します。 が<paramref name="Count" />正の数値の場合は、オブジェクトが終了位置で折りたたまれ、指定された単位数だけ文書の先頭方向に移動します。 が<paramref name="Count" />負の数である場合、オブジェクトはその開始位置で折りたたまれ、指定された単位数だけ末尾に移動します。 既定値は 1 です。 <see cref="M:Microsoft.Office.Interop.Word.Selection.Collapse(System.Object@)" /> <b>Move</b>メソッドを使用する前に、メソッドを使用して折りたたみの方向を制御することもできます。 単位の途中にある指定範囲または選択範囲または解除されていない場合は、ユニットの前後に移動することとして、1 つのフル ・ ユニットを移動することをカウントします。</param>
         <summary>その開始位置または終了位置に指定された選択範囲を解除し、指定された単位数で縮小されたオブジェクトを移動します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドは、オブジェクトが実際に移動、単位数を示す<b>整数</b>値を返しますまたは、移動が失敗した場合は、0 (ゼロ) を返します。</para> 。
-          <para>折りたたまれている選択範囲の開始と終了位置は等しくします</para>。
-          <para>を移動、<see cref="T:Microsoft.Office.Interop.Word.Selection" />オブジェクトは選択範囲を解除し、または文書の末尾方向にカーソルを移動します</para>。
-          <para /></remarks>
+        <remarks><para>このメソッドは、オブジェクトが実際に移動した単位数を示す<b>整数</b>値を返し、移動が失敗した場合は 0 (ゼロ) を返します。</para>
+          <para>選択範囲が解除されている場合、開始位置と終了位置は同じです。</para>
+          <para>オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.Selection" />移動すると、選択範囲は解除され、カーソル位置は文書の先頭方向または末尾方向に移動します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveDown">
@@ -3332,15 +3240,13 @@
         <Parameter Name="Extend" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Unit">省略可能な<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />。 選択範囲を移動する単位を指定します。</param>
+        <param name="Unit">省略<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />可能です。 選択範囲を移動する単位を指定します。</param>
         <param name="Count">省略可能な<b>オブジェクト</b>です。 選択範囲を移動する単位を指定します。 既定値は 1 です。</param>
-        <param name="Extend">省略可能な<b>オブジェクト</b>です。 <b>WdMove</b> または <b>wdExtend</b> のいずれかを指定できます。 <b>WdMove</b>を使用する場合、選択範囲は終了点に折りたたまれているし、下へ移動します。 <b>WdExtend</b>を使用すると、選択範囲が拡張されます。 <b>Wdmove を設定</b> を既定値には。</param>
+        <param name="Extend">省略可能な<b>オブジェクト</b>です。 <b>WdMove</b> または <b>wdExtend</b> のいずれかを指定できます。 <b>WdMove</b>を使用する場合、選択範囲は終了位置で折りたたまれ、下に移動します。 <b>wdExtend</b> を使用すると、選択範囲は下に拡張されます。 <b>Wdmove を設定</b> を既定値には。</param>
         <summary>選択範囲を下に移動し、移動した単位数を返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>上または作業中のウィンドウの下部に移動するのには、定数<b>wdWindow</b>を使用できます。値に関係なく<paramref name="Count" /><b>wdWindow</b>定数が 1 つだけのユニットを移動する (1 より大きいまたは 1 より小さい)、します。<b>WdScreen</b>定数を使用すると、複数の画面を移動します。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Wdwindow</b>定数を使用すると、アクティブウィンドウの上端または下端に移動できます。 値<paramref name="Count" /> (1 より大きいまたは-1 より小さい) に関係なく、 <b>wdwindow</b>定数は1つの単位のみを移動します。 <b>WdScreen</b> 定数を使用すると、複数の画面を移動します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveEnd">
@@ -3366,14 +3272,12 @@
         <Parameter Name="Count" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Unit">省略可能な<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />。 末尾の文字位置を移動する単位です。</param>
+        <param name="Unit">省略<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />可能です。 末尾の文字位置を移動する単位を指定します。</param>
         <param name="Count">省略可能な<b>オブジェクト</b>です。 移動する単位の数を指定します。 単位の数が正の値の場合は、末尾の文字位置は文書の末尾方向に移動します。 単位の数が負の値の場合は、末尾は文書の先頭方向に移動します。 終了位置を開始位置より前に移動しようとすると、範囲の選択が解除され、両方の文字位置が一緒に移動します。 既定値は 1 です。</param>
         <summary>選択範囲の末尾の文字位置を移動します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドは、選択範囲が実際に移動した単位数を示す整数を返します。 または、移動が失敗した場合は、0 (ゼロ) を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドは、選択範囲が実際に移動した単位数を示す整数を返し、移動が失敗した場合は 0 (ゼロ) を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveEndUntil">
@@ -3399,15 +3303,13 @@
         <Parameter Name="Count" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Cset">
-          <b>オブジェクト</b>が必要です。 1 文字または複数の文字を指定します。 この引数に指定した文字列は大文字と小文字が区別されます。</param>
-        <param name="Count">省略可能な<b>オブジェクト</b>です。 指定範囲または選択範囲で移動するのには、文字の最大数です。 いくつかまたは、 <b>wdForward</b> または <b>wdBackward</b> は、定数です。 場合<paramref name="Count" />は、正の数、範囲または文書の末尾方向に移動、選択します。 負の数値の場合は、指定範囲または選択範囲は先頭方向に移動します。 既定値は <b>wdForward</b> です。</param>
+        <param name="Cset">必要な<b>オブジェクト</b>。 1 文字または複数の文字を指定します。 この引数に指定した文字列は大文字と小文字が区別されます。</param>
+        <param name="Count">省略可能な<b>オブジェクト</b>です。 指定範囲または選択範囲を移動する最大文字数を指定します。 いくつかまたは、 <b>wdForward</b> または <b>wdBackward</b> は、定数です。 が<paramref name="Count" />正の数値の場合は、指定範囲または選択範囲は文書の末尾方向に移動します。 負の数値を指定すると、指定範囲または選択範囲は先頭方向に移動します。 既定値は <b>wdForward</b> です。</param>
         <summary>文書内で指定された文字のいずれかが見つかるまで、指定された選択範囲の終了位置を移動します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>移動ですが、ドキュメントで場合、選択範囲が拡張されます</para>。
-          <para>このメソッドは、指定された選択範囲の終了位置を移動した文字の<b>整数</b>値としての数を返します。場合<paramref name="Count" />0 (ゼロ) より大きい値は、このメソッドは 1 を足した数移動した文字数を返します。場合<paramref name="Count" />が 0 (ゼロ) よりは、このメソッドは 1 を引いた移動した文字数を返します。ない場合は<paramref name="Cset" />文字が見つかった、選択範囲は変更されず、メソッドは 0 (ゼロ) を返します。終了位置が逆方向に移動する場合は、元の前にあるポイントには、開始位置、開始位置が新しい終了位置を設定します</para>。
-          <para /></remarks>
+        <remarks><para>検索方向が下方向である場合、選択範囲は拡張します。</para>
+          <para>このメソッドは、指定された選択範囲の終了位置を移動した文字数を<b>表す整数型 (Integer</b> ) の値を返します。 が<paramref name="Count" /> 0 (ゼロ) より大きい場合、このメソッドは、移動した文字数に1を加えた数を返します。 が<paramref name="Count" /> 0 (ゼロ) 未満の場合、このメソッドは、移動した文字数から1を引いた数を返します。 文字が<paramref name="Cset" />見つからない場合、選択範囲は変更されず、メソッドは 0 (ゼロ) を返します。 終了位置は元の開始位置より前にあるポイントを後方に移動する場合は、開始位置が新しい終了位置に設定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveEndWhile">
@@ -3433,15 +3335,12 @@
         <Parameter Name="Count" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Cset">
-          <b>オブジェクト</b>が必要です。 1 文字または複数の文字を指定します。 この引数は、大文字小文字を区別します。</param>
-        <param name="Count">省略可能な<b>オブジェクト</b>です。 指定範囲または選択範囲で移動するのには、文字の最大数です。 いくつかまたは、 <b>wdForward</b> または <b>wdBackward</b> は、定数です。 場合<paramref name="Count" />は、正の数、選択範囲は文書の末尾方向に移動ができます。 負の数値の場合は、選択範囲は先頭方向に移動します。 既定値は <b>wdForward</b> です。</param>
+        <param name="Cset">必要な<b>オブジェクト</b>。 1 文字または複数の文字を指定します。 この引数は大文字と小文字を区別します。</param>
+        <param name="Count">省略可能な<b>オブジェクト</b>です。 指定範囲または選択範囲を移動する最大文字数を指定します。 いくつかまたは、 <b>wdForward</b> または <b>wdBackward</b> は、定数です。 <paramref name="Count" />に正の数値を指定すると、選択範囲は文書の末尾方向に移動します。 負の数値を指定すると、選択範囲は先頭方向に移動します。 既定値は <b>wdForward</b> です。</param>
         <summary>指定された文字のいずれかが文書内で検索されると、選択範囲の末尾の文字位置を移動します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>任意の文字の中に<paramref name="Cset" />が終了しています、指定された選択範囲の位置が移動します。このメソッドは、<b>整数</b>値として、選択範囲の終了位置を移動した文字数を返します。ない場合は<paramref name="Cset" />文字が見つかった、選択範囲は変更されず、メソッドは 0 (ゼロ) を返します。終了位置は元の開始位置より前にあるポイントを後方に移動する場合は、開始位置が新しい終了位置に設定されます。</para>
-          <para />
-        </remarks>
+        <remarks><para>の<paramref name="Cset" />任意の文字が見つかると、指定された選択範囲の終了位置が移動します。 このメソッドは、選択範囲の終了位置を移動した文字数を<b>整数型 (Integer</b> ) の値で返します。 文字が<paramref name="Cset" />見つからない場合、選択範囲は変更されず、メソッドは 0 (ゼロ) を返します。 終了位置は元の開始位置より前にあるポイントを後方に移動する場合は、開始位置が新しい終了位置に設定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveLeft">
@@ -3468,16 +3367,13 @@
         <Parameter Name="Extend" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Unit">省略可能な<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />。 選択範囲を移動する単位を指定します。</param>
+        <param name="Unit">省略<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />可能です。 選択範囲を移動する単位を指定します。</param>
         <param name="Count">省略可能な<b>オブジェクト</b>です。 選択範囲を移動する単位を指定します。 既定値は 1 です。</param>
-        <param name="Extend">省略可能な<b>オブジェクト</b>です。 <b>WdMove</b> または <b>wdExtend</b> のいずれかを指定できます。 <b>WdMove</b>を使用する場合は、選択範囲が終了点に折りたたまれているし、左に移動します。 <b>WdExtend</b> を使用すると、選択範囲を左に拡張されます。 <b>Wdmove を設定</b> を既定値には。</param>
+        <param name="Extend">省略可能な<b>オブジェクト</b>です。 <b>WdMove</b> または <b>wdExtend</b> のいずれかを指定できます。 <b>WdMove</b>を使用する場合、選択範囲は終了位置で折りたたまれ、左に移動します。 <b>WdExtend</b> を使用すると、選択範囲を左に拡張されます。 <b>Wdmove を設定</b> を既定値には。</param>
         <summary>選択範囲を左に移動し、移動した単位数を返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <paramref name="Unit" />は、 <b>wdCell</b>を<paramref name="Extend" />引数に<b>wdmove を設定</b>のみなります。</para>
-          <para />
-        </remarks>
+        <remarks><para><paramref name="Unit" /> <b>Wdcell</b>を指定すると、 <paramref name="Extend" />引数は<b>wdMove</b>になります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveRight">
@@ -3504,16 +3400,13 @@
         <Parameter Name="Extend" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Unit">省略可能な<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />。 選択範囲を移動する単位を指定します。</param>
+        <param name="Unit">省略<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />可能です。 選択範囲を移動する単位を指定します。</param>
         <param name="Count">省略可能な<b>オブジェクト</b>です。 選択範囲を移動する単位を指定します。 既定値は 1 です。</param>
-        <param name="Extend">省略可能な<b>オブジェクト</b>です。 <b>WdMove</b> または <b>wdExtend</b> のいずれかを指定できます。 <b>WdMove</b>を使用する場合は、選択範囲が終了点に折りたたまれているし、右側に移動します。 <b>WdExtend</b>を使用すると、右側に選択範囲が拡張されます。 <b>Wdmove を設定</b> を既定値には。</param>
+        <param name="Extend">省略可能な<b>オブジェクト</b>です。 <b>WdMove</b> または <b>wdExtend</b> のいずれかを指定できます。 <b>WdMove</b>を使用する場合、選択範囲は終了位置で折りたたまれ、右に移動します。 <b>wdExtend</b> を使用すると、選択範囲は右に拡張されます。 既定値は <b>wdMove</b> です。</param>
         <summary>選択範囲を右に移動し、移動した単位数を返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <paramref name="Unit" />は、 <b>wdCell</b>を<paramref name="Extend" />引数に<b>wdmove を設定</b>のみなります。</para>
-          <para />
-        </remarks>
+        <remarks><para><paramref name="Unit" /> <b>Wdcell</b>を指定すると、 <paramref name="Extend" />引数は<b>wdMove</b>になります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveStart">
@@ -3539,14 +3432,12 @@
         <Parameter Name="Count" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Unit">省略可能な<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />。 指定された選択範囲の位置を起動するためのユニットでは、移動します。</param>
-        <param name="Count">省略可能な<b>オブジェクト</b>です。 指定された選択範囲を移動する構成単位の最大値を指定します。 場合<paramref name="Count" />は、正の数、選択範囲の開始位置は文書の末尾方向に移動がします。 負の数値の場合は、開始位置は先頭方向に移動します。 移動の結果、開始位置が終了位置より後ろになる場合、範囲の選択が解除され、開始位置と終了位置が一緒に移動します。 既定値は 1 です。</param>
+        <param name="Unit">省略<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />可能です。 指定された選択範囲の位置を起動するためのユニットでは、移動します。</param>
+        <param name="Count">省略可能な<b>オブジェクト</b>です。 指定された選択範囲を移動する構成単位の最大値を指定します。 が<paramref name="Count" />正の数値の場合は、選択範囲の開始位置が文書の末尾方向に移動します。 負の数値の場合は、開始位置が先頭方向に移動します。 移動の結果、開始位置が終了位置より後ろになる場合、範囲の選択が解除され、開始位置と終了位置が一緒に移動します。 既定値は 1 です。</param>
         <summary>指定された選択範囲の開始位置を移動します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドは、構成単位を開始位置または選択範囲が実際に移動、移動が失敗した場合は、0 (ゼロ) を返しますの数を示す整数を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドは、選択範囲の開始位置が実際に移動した単位数を示す整数を返し、移動が失敗した場合は、0 (ゼロ) を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveStartUntil">
@@ -3572,15 +3463,13 @@
         <Parameter Name="Count" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Cset">
-          <b>オブジェクト</b>が必要です。 1 文字または複数の文字を指定します。 この引数に指定した文字列は大文字と小文字が区別されます。</param>
-        <param name="Count">省略可能な<b>オブジェクト</b>です。 指定された選択範囲が移動するのには、文字の最大数です。 いくつかまたは、 <b>wdForward</b> または <b>wdBackward</b> は、定数です。 場合<paramref name="Count" />は、正の数、選択範囲は文書の末尾方向に移動ができます。 負の数値の場合は、選択範囲は先頭方向に移動します。 既定値は <b>wdForward</b> です。</param>
+        <param name="Cset">必要な<b>オブジェクト</b>。 1 文字または複数の文字を指定します。 この引数に指定した文字列は大文字と小文字が区別されます。</param>
+        <param name="Count">省略可能な<b>オブジェクト</b>です。 指定された選択範囲が移動するのには、文字の最大数です。 いくつかまたは、 <b>wdForward</b> または <b>wdBackward</b> は、定数です。 <paramref name="Count" />に正の数値を指定すると、選択範囲は文書の末尾方向に移動します。 負の数値を指定すると、選択範囲は先頭方向に移動します。 既定値は <b>wdForward</b> です。</param>
         <summary>文書内で指定された文字が見つかるまで、指定された選択範囲の開始位置を移動します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>文書の先頭方向に移動された場合は、選択範囲を展開します</para>。
-          <para>このメソッドは、指定された選択範囲の開始位置を移動する<b>整数</b>値として文字数を返します。場合<paramref name="Count" />0 (ゼロ) より大きい値は、このメソッドは 1 を足した数移動した文字数を返します。場合<paramref name="Count" />が 0 (ゼロ) よりは、このメソッドは 1 を引いた移動した文字数を返します。ない場合は<paramref name="Cset" />文字が見つかった、指定された選択範囲は変更されず、メソッドは 0 (ゼロ) を返します。選択範囲が折りたたまれている場合は移動の結果、開始位置が終了位置より後ろには、両方の開始位置と終了位置が一緒に移動します</para>。
-          <para /></remarks>
+        <remarks><para>検索方向が文書の先頭方向である場合、選択範囲は拡張されます。</para>
+          <para>このメソッドは、指定された選択範囲の開始位置を移動した文字数を<b>整数型 (Integer</b> ) の値で返します。 が<paramref name="Count" /> 0 (ゼロ) より大きい場合、このメソッドは、移動した文字数に1を加えた数を返します。 が<paramref name="Count" /> 0 (ゼロ) 未満の場合、このメソッドは、移動した文字数から1を引いた数を返します。 文字が<paramref name="Cset" />見つからない場合、指定された選択範囲は変更されず、メソッドは 0 (ゼロ) を返します。 移動の結果、開始位置が終了位置より後ろにし、選択範囲が折りたたまれている、両方の開始位置と終了位置が一緒に移動します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveStartWhile">
@@ -3606,15 +3495,12 @@
         <Parameter Name="Count" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Cset">
-          <b>オブジェクト</b>が必要です。 1 文字または複数の文字を指定します。 この引数は、大文字小文字を区別します。</param>
-        <param name="Count">省略可能な<b>オブジェクト</b>です。 指定された選択範囲が移動するのには、文字の最大数です。 いくつかまたは、 <b>wdForward</b> または <b>wdBackward</b> は、定数です。 場合<paramref name="Count" />は、正の数、選択範囲は文書の末尾方向に移動ができます。 負の数値の場合は、選択範囲は先頭方向に移動します。 既定値は <b>wdForward</b> です。</param>
+        <param name="Cset">必要な<b>オブジェクト</b>。 1 文字または複数の文字を指定します。 この引数は大文字と小文字を区別します。</param>
+        <param name="Count">省略可能な<b>オブジェクト</b>です。 指定された選択範囲が移動するのには、文字の最大数です。 いくつかまたは、 <b>wdForward</b> または <b>wdBackward</b> は、定数です。 <paramref name="Count" />に正の数値を指定すると、選択範囲は文書の末尾方向に移動します。 負の数値を指定すると、選択範囲は先頭方向に移動します。 既定値は <b>wdForward</b> です。</param>
         <summary>指定された文字のいずれかが文書内で検索されると、指定された選択範囲の開始位置を移動します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>任意の文字の中に<paramref name="Cset" />が見つかると、最初の選択範囲の位置に移動します。このメソッドは、<b>整数</b>値として、選択範囲の開始位置を移動した文字数を返します。ない場合<paramref name="Cset" />文字が見つかった、選択範囲は変更されず、メソッドは 0 (ゼロ) を返します。移動の結果、開始位置が元の終了位置より後ろに終了位置が新しい開始位置に設定されます。</para>
-          <para />
-        </remarks>
+        <remarks><para>の<paramref name="Cset" />任意の文字が見つかると、選択範囲の開始位置が移動します。 このメソッドは、選択範囲の開始位置を移動する文字数を<b>整数</b>値で返します。 文字が<paramref name="Cset" />見つからない場合、選択範囲は変更されず、メソッドは 0 (ゼロ) を返します。 移動の結果、開始位置が元の終了位置より後ろに終了位置が新しい開始位置に設定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveUntil">
@@ -3640,15 +3526,12 @@
         <Parameter Name="Count" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Cset">
-          <b>オブジェクト</b>が必要です。 1 文字または複数の文字を指定します。 任意の文字の場合は、<paramref name="Cset" />の前にある、<paramref name="Count" />の値になる、指定された選択範囲はその文字の直前にカーソル位置として配置されます。 この引数は、大文字小文字を区別します。</param>
-        <param name="Count">省略可能な<b>オブジェクト</b>です。 指定された選択範囲が移動するのには、文字の最大数です。 いくつかまたは、 <b>wdForward</b> または <b>wdBackward</b> は、定数です。 場合<paramref name="Count" />は、正の数、選択範囲は終了位置から開始し、文書の末尾方向に移動がします。 負の数値の場合は、選択範囲は先頭方向に移動、開始位置から開始します。 既定値は <b>wdForward</b> です。</param>
+        <param name="Cset">必要な<b>オブジェクト</b>。 1 文字または複数の文字を指定します。 値の<paramref name="Count" />有効期限<paramref name="Cset" />が切れる前に、のいずれかの文字が見つかった場合、指定された選択範囲は、その文字の直前にカーソル位置として配置されます。 この引数は大文字と小文字を区別します。</param>
+        <param name="Count">省略可能な<b>オブジェクト</b>です。 指定された選択範囲が移動するのには、文字の最大数です。 いくつかまたは、 <b>wdForward</b> または <b>wdBackward</b> は、定数です。 が<paramref name="Count" />正の数値の場合、選択範囲は終了位置から開始し、文書の末尾方向に移動します。 負の数値の場合は、選択範囲は先頭方向に移動し、開始位置から開始します。 既定値は <b>wdForward</b> です。</param>
         <summary>文書内で指定された文字のいずれかが見つかるまで、指定された選択範囲を移動します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドは、指定された選択範囲を移動した<b>整数</b>値の文字数を返します。場合<paramref name="Count" />0 (ゼロ) より大きい値は、このメソッドは、移動した文字と 1 つの数を返します。場合<paramref name="Count" />以下は、このメソッドは 0 (ゼロ) よりから 1 を引いた移動した文字数を返します。ない場合は<paramref name="Cset" />文字を検索、選択範囲は変更されず、メソッドは 0 (ゼロ) を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドは、指定された選択範囲を移動した文字数を<b>表す整数型 (Integer</b> ) の値を返します。 が<paramref name="Count" /> 0 (ゼロ) より大きい場合、このメソッドは、移動した文字数に1を加えた数を返します。 が<paramref name="Count" /> 0 (ゼロ) 未満の場合、このメソッドは、移動した文字数から1を引いた数を返します。 <paramref name="Cset" />文字が見つからない場合、選択範囲は変更されず、メソッドは 0 (ゼロ) を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveUp">
@@ -3675,15 +3558,13 @@
         <Parameter Name="Extend" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Unit">省略可能な<b>オブジェクト</b>です。 選択範囲を移動する単位です。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />定数。 <b>wdLine</b>、 <b>wdParagraph</b>、 <b>wdWindow</b>または<b>wdScreen</b>。 <b>WdLine</b> を既定値には。</param>
+        <param name="Unit">省略可能な<b>オブジェクト</b>です。 選択範囲を移動する単位です。 使用できる定数は、次<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />のいずれかです。 <b>wdline</b>、 <b>wdline</b>、 <b>wdline</b>または<b>wdline</b>。 <b>WdLine</b> を既定値には。</param>
         <param name="Count">省略可能な<b>オブジェクト</b>です。 選択範囲を移動する単位を指定します。 既定値は 1 です。</param>
-        <param name="Extend">省略可能な<b>オブジェクト</b>です。 <b>WdMove</b> または <b>wdExtend</b> のいずれかを指定できます。 <b>WdMove</b>を使用する場合は、選択範囲が終了点に折りたたまれているし、上に移動します。 <b>WdExtend</b> を使用すると、選択範囲が拡張されます。 <b>Wdmove を設定</b> を既定値には。</param>
-        <summary>選択範囲を移動し、移動した単位数を返します。</summary>
+        <param name="Extend">省略可能な<b>オブジェクト</b>です。 <b>WdMove</b> または <b>wdExtend</b> のいずれかを指定できます。 <b>WdMove</b>を使用すると、選択範囲が終了位置に折りたたまれ、上に移動します。 <b>WdExtend</b> を使用すると、選択範囲が拡張されます。 <b>Wdmove を設定</b> を既定値には。</param>
+        <summary>選択範囲を上に移動し、移動した単位数を返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>上または作業中のウィンドウの下部に移動するのには、定数<b>wdWindow</b>を使用できます。値に関係なく<paramref name="Count" /><b>wdWindow</b>定数が 1 つだけのユニットを移動する (1 より大きいまたは 1 より小さい)、します。<b>WdScreen</b>定数を使用すると、複数の画面を移動します。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Wdwindow</b>定数を使用すると、アクティブウィンドウの上端または下端に移動できます。 値<paramref name="Count" /> (1 より大きいまたは-1 より小さい) に関係なく、 <b>wdwindow</b>定数は1つの単位のみを移動します。 <b>WdScreen</b> 定数を使用すると、複数の画面を移動します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveWhile">
@@ -3709,15 +3590,12 @@
         <Parameter Name="Count" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Cset">
-          <b>オブジェクト</b>が必要です。 1 文字または複数の文字を指定します。 この引数は、大文字小文字を区別します。</param>
-        <param name="Count">省略可能な<b>オブジェクト</b>です。 指定された選択範囲が移動するのには、文字の最大数です。 いくつかまたは、 <b>wdForward</b> または <b>wdBackward</b> は、定数です。 場合<paramref name="Count" />正の数は、指定された選択範囲は終了位置から開始し、文書の末尾方向に移動ができます。 負の数値の場合は、選択範囲は先頭方向に移動、開始位置から開始します。 既定値は <b>wdForward</b> です。</param>
+        <param name="Cset">必要な<b>オブジェクト</b>。 1 文字または複数の文字を指定します。 この引数は大文字と小文字を区別します。</param>
+        <param name="Count">省略可能な<b>オブジェクト</b>です。 指定された選択範囲が移動するのには、文字の最大数です。 いくつかまたは、 <b>wdForward</b> または <b>wdBackward</b> は、定数です。 が<paramref name="Count" />正の数値の場合は、指定された選択範囲は終了位置から開始し、文書の末尾方向に移動します。 負の数値の場合は、選択範囲は先頭方向に移動し、開始位置から開始します。 既定値は <b>wdForward</b> です。</param>
         <summary>文書内で指定された文字のいずれかを見つけると、指定された選択範囲を移動します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>任意の文字の中に<paramref name="Cset" />が見つかると、指定された選択範囲を移動します。結果<see cref="T:Microsoft.Office.Interop.Word.Selection" />後どのようなオブジェクトがカーソル位置として配置されている<paramref name="Cset" />の文字が見つかりました。このメソッドは、指定された選択範囲を移動した<b>整数</b>値の文字数を返します。ない場合は<paramref name="Cset" />文字が見つかった、選択範囲は変更されず、メソッドは 0 (ゼロ) を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>の<paramref name="Cset" />任意の文字が見つかると、指定された選択範囲が移動します。 結果<see cref="T:Microsoft.Office.Interop.Word.Selection" />のオブジェクトは、任意<paramref name="Cset" />の文字が検出された後、挿入ポイントとして配置されます。 このメソッドは、指定された選択範囲を移動した文字数を<b>表す整数型 (Integer</b> ) の値を返します。 文字が<paramref name="Cset" />見つからない場合、選択範囲は変更されず、メソッドは 0 (ゼロ) を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -3743,14 +3621,12 @@
         <Parameter Name="Count" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Unit">省略可能な<b>オブジェクト</b>です。 カウントする単位の種類を指定します。 いずれかを指定することができます<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />定数。</param>
+        <param name="Unit">省略可能な<b>オブジェクト</b>です。 カウントする単位の種類を指定します。 任意の<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />定数を使用できます。</param>
         <param name="Count">省略可能な<b>オブジェクト</b>です。 末尾方向に移動する量を単位数で指定します。 既定値は 1 です。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />指定された選択範囲に基づいて指定された単位を表すオブジェクト。</summary>
+        <summary>指定さ<see cref="T:Microsoft.Office.Interop.Word.Range" />れた選択範囲に基づいて指定された単位を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>選択範囲が、直前に指定した場合は、 <paramref name="Unit" />、次の単位に移動します。</para>
-          <para />
-        </remarks>
+        <remarks><para>選択範囲が指定さ<paramref name="Unit" />れた直前の位置にある場合、選択範囲は次の単位に移動します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NextField">
@@ -3776,10 +3652,8 @@
       <Docs>
         <summary>次のフィールドを選択します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>フィールドが見つかったかどうかはこのメソッドが返されます、<see cref="T:Microsoft.Office.Interop.Word.Field" />オブジェクトです。それ以外の場合は、 <b>Nothing</b>が返されます。</para>
-          <para />
-        </remarks>
+        <remarks><para>フィールドが見つかった場合、このメソッドは<see cref="T:Microsoft.Office.Interop.Word.Field" />オブジェクトを返します。指定しない場合は、 <b>Nothing</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NextRevision">
@@ -3805,12 +3679,11 @@
       </Parameters>
       <Docs>
         <param name="Wrap">省略可能な<b>オブジェクト</b>です。 <b>真</b> 文書の末尾に達すると、ドキュメントの先頭に変更履歴の検索を続行します。 既定値は、 <b>false を指定</b> します。</param>
-        <summary>検索し、次の変更履歴としてを返します、<see cref="T:Microsoft.Office.Interop.Word.Revision" />オブジェクトです。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Revision" />オブジェクトとして次の変更履歴を検索して返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>変更されたテキストは、現在の選択範囲になります。返された<b>Revision</b>オブジェクトのプロパティを使用して、変更を行ったユーザーの種類など。<b>Revision</b>オブジェクトのメソッドを使用して、変更を承認または拒否します</para>。
-          <para>を検索する変更の履歴は、現在の選択範囲はそのまま残ります</para>。
-          <para /></remarks>
+        <remarks><para>変更されたテキストは、現在の選択範囲になります。返された <b>Revision</b> オブジェクトのプロパティを使用して、変更を行ったユーザーの種類など。 <b>Revision</b> オブジェクトのメソッドを使用して、変更を承認または拒否します。</para>
+          <para>変更履歴が見つからなかった場合は、現在の選択範囲は変わりません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NextSubdocument">
@@ -3835,10 +3708,8 @@
       <Parameters />
       <Docs>
         <summary>選択範囲を次のサブ文書に移動します。</summary>
-        <remarks>
-          <para>サブ文書がない場合、エラーが発生します。</para>
-          <para />
-        </remarks>
+        <remarks><para>サブ文書がない場合、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NoProofing">
@@ -3867,12 +3738,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スペル チェックと文章校正プログラムが指定されたテキストを無視するかどうかを決定します。</summary>
+        <summary>指定したテキストをスペルチェックと文章校正ツールで無視するかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、スペル チェックと文章校正プログラムは、指定されたテキストを無視する場合は true を返します</para>。
-          <para><b>NoProofing</b>プロパティは指定したテキストの一部のみを対象を<b>True</b>に設定されている場合、このプロパティは<b>wdUndefined</b>を返します</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティは、スペルチェッカーおよび文法チェッカーが指定したテキストを無視する場合に true を返します。</para>
+          <para><b>NoProofing</b> プロパティは指定したテキストの一部のみを対象を <b>True</b> に設定されている場合、このプロパティは <b>wdUndefined</b> を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OMaths">
@@ -3898,10 +3768,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.OMaths</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.OMaths" />を表す、<see cref="T:Microsoft.Office.Interop.Word.OMath" />現在の選択範囲内のオブジェクト。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OMaths" />
-        </value>
+        <summary>現在の<see cref="T:Microsoft.Office.Interop.Word.OMaths" />選択範囲内の<see cref="T:Microsoft.Office.Interop.Word.OMath" />オブジェクトを表すコレクションを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OMaths" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3933,10 +3801,9 @@
       <Docs>
         <summary>取得またはテキストの方向の機能を有効にすると、選択範囲内のテキストの方向を設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>いくつかの<see cref="T:Microsoft.Office.Interop.Word.WdTextOrientation" />の定数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります</para>。
-          <para>は、テキスト フレーム、またはテキスト フレーム内にある選択範囲の方向を設定できます。テキスト枠とテキスト ボックスの違いについてを参照してください、<see cref="T:Microsoft.Office.Interop.Word.TextFrame" />オブジェクトです</para>。
-          <para /></remarks>
+        <remarks><para>選択または<see cref="T:Microsoft.Office.Interop.Word.WdTextOrientation" />インストールした言語のサポート (たとえば、英語 (米国)) によっては、一部の定数を使用できない場合があります。</para>
+          <para>テキスト フレーム、またはテキスト フレーム内にある選択範囲の方向を設定できます。 テキスト枠とテキストボックスの違いについては、 <see cref="T:Microsoft.Office.Interop.Word.TextFrame" />オブジェクトを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageSetup">
@@ -3965,7 +3832,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.PageSetup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.PageSetup" />指定された選択範囲に関連付けられているオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.PageSetup" />た選択範囲に関連付けられているオブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3996,7 +3863,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ParagraphFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />指定された選択範囲の段落設定を表すオブジェクト。</summary>
+        <summary>指定した選択<see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />範囲の段落設定を表すオブジェクトを設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4024,7 +3891,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Paragraphs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Paragraphs" />指定された選択範囲のすべての段落を表すコレクション。</summary>
+        <summary>指定さ<see cref="T:Microsoft.Office.Interop.Word.Paragraphs" />れた選択範囲内のすべての段落を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4083,14 +3950,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ContentControl</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.ContentControl" />を指定した範囲に親コンテンツ コントロールを表すオブジェクト。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControl" />
-        </value>
-        <remarks>
-          <para>このプロパティは、指定された範囲に親コンテンツ コントロールがない場合に<b>Null</b>を返します。</para>
-          <para />
-        </remarks>
+        <summary>指定さ<see cref="T:Microsoft.Office.Interop.Word.ContentControl" />れた範囲の親コンテンツコントロールを表すオブジェクト型 (object) の値を取得します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ContentControl" /></value>
+        <remarks><para>指定された範囲に親コンテンツコントロールがない場合、このプロパティは<b>Null</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Paste">
@@ -4115,10 +3978,9 @@
       <Parameters />
       <Docs>
         <summary>クリップボードの内容を、指定された選択範囲に挿入します。</summary>
-        <remarks>
-          <para>選択範囲の内容を置換しない場合を使用して、<see cref="M:Microsoft.Office.Interop.Word.Selection.Collapse(System.Object@)" />メソッドはこのメソッドを使用する前にします</para>。このメソッドを使用すると、 
-          <para>、<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクト、クリップボードの内容を含めるように範囲が拡張します。このメソッドを使用すると、<see cref="T:Microsoft.Office.Interop.Word.Selection" />オブジェクト、選択範囲は拡張されず、クリップボードの内容を含めるクリップボードの内容を貼り付けた後、選択範囲を配置する代わりに、します</para>。
-          <para /></remarks>
+        <remarks><para>選択範囲の内容を置換しない場合は、このメソッドを<see cref="M:Microsoft.Office.Interop.Word.Selection.Collapse(System.Object@)" />使用する前にメソッドを使用します。</para>
+          <para><see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトに対してこのメソッドを使用すると、クリップボードの内容が含まれるように範囲が拡張されます。 <see cref="T:Microsoft.Office.Interop.Word.Selection" />オブジェクトに対してこのメソッドを使用すると、選択範囲はクリップボードの内容を含むように拡張されません。代わりに、選択範囲は、クリップボードの内容を貼り付けた後に配置されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PasteAndFormat">
@@ -4144,7 +4006,7 @@
         <Parameter Name="Type" Type="Microsoft.Office.Interop.Word.WdRecoveryType" />
       </Parameters>
       <Docs>
-        <param name="Type">必要な<see cref="T:Microsoft.Office.Interop.Word.WdRecoveryType" />。 選択されたオブジェクトを貼り付けるときに使用する書式の種類を指定します。</param>
+        <param name="Type">必須<see cref="T:Microsoft.Office.Interop.Word.WdRecoveryType" />。 選択されたオブジェクトを貼り付けるときに使用する書式の種類を指定します。</param>
         <summary>選択されたオブジェクトを貼り付け、指定された書式を設定します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4171,10 +4033,8 @@
       <Parameters />
       <Docs>
         <summary>貼り付けるセルを既存の表に結合します。このとき、貼り付ける行を選択した行の間に挿入します。</summary>
-        <remarks>
-          <para>このメソッドによってセルが上書きされることはありません。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドでは、セルは上書きされません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PasteAsNestedTable">
@@ -4199,11 +4059,8 @@
       <Parameters />
       <Docs>
         <summary>選択範囲または指定範囲に、1 つまたは複数のセルを複合表として貼り付けます。</summary>
-        <remarks>
-          <para>
-            <b>PasteAsNestedTable</b>をクリップボードには、セルが含まれています。 または、選択範囲のセルのグループには、セルまたは現在のドキュメント内のセルのグループである場合にのみ使用できます。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>PasteAsNestedTable</b> をクリップボードには、セルが含まれています。 または、選択範囲のセルのグループには、セルまたは現在のドキュメント内のセルのグループである場合にのみ使用できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PasteExcelTable">
@@ -4231,12 +4088,9 @@
         <Parameter Name="RTF" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="LinkedToExcel">
-          <b>ブール値</b>が必要です。 <b>真</b> のリンク元の Excel ファイルに貼り付けられた表は Excel ファイルに変更が行われるように、Microsoft Word に反映されます。</param>
-        <param name="WordFormatting">
-          <b>ブール値</b>が必要です。 Word 文書内の書式設定を使用して表の書式が<b>場合は true。</b><b>False</b>に、元の Excel ファイルに従って、テーブルの書式を設定します。</param>
-        <param name="RTF">
-          <b>ブール値</b>が必要です。 <b>True</b>にリッチ テキスト形式 (RTF); を使用して Excel の表を貼り付けます。<b>False</b>は、html 形式で Excel の表を貼り付けます。</param>
+        <param name="LinkedToExcel">必須の<b>ブール値</b>です。 <b>真</b> のリンク元の Excel ファイルに貼り付けられた表は Excel ファイルに変更が行われるように、Microsoft Word に反映されます。</param>
+        <param name="WordFormatting">必須の<b>ブール値</b>です。 <b>True</b>は、Word 文書の書式設定を使用して表の書式を設定します。<b>False</b>は、元の Excel ファイルに従って表の書式を設定します。</param>
+        <param name="RTF">必須の<b>ブール値</b>です。 <b>True</b>は、リッチテキスト形式 (RTF) を使用して Excel の表を貼り付けます。<b>False</b> Excel テーブルを HTML として貼り付けます。</param>
         <summary>Excel の表を貼り付け、書式を設定します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4262,11 +4116,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>コピーした書式を適用、<see cref="M:Microsoft.Office.Interop.Word.Selection.CopyFormat" />メソッドを選択します。</summary>
-        <remarks>
-          <para>場合は、段落記号を選択した場合、<see cref="M:Microsoft.Office.Interop.Word.Selection.CopyFormat" />メソッドが使用された、Microsoft Word の文字書式を設定するのにはさらに段落の書式設定が適用されます。</para>
-          <para />
-        </remarks>
+        <summary><see cref="M:Microsoft.Office.Interop.Word.Selection.CopyFormat" />メソッドを使用して、選択範囲にコピーした書式を適用します。</summary>
+        <remarks><para>メソッドを使用したときに段落<see cref="M:Microsoft.Office.Interop.Word.Selection.CopyFormat" />記号が選択されていた場合は、文字書式に加えて段落書式も適用されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PasteSpecial">
@@ -4297,18 +4149,17 @@
         <Parameter Name="IconLabel" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="IconIndex">省略可能な<b>オブジェクト</b>です。 場合<paramref name="DisplayAsIcon" />が<b>True</b>、この引数で指定したプログラム ファイルで使用するアイコンに対応する番号では<paramref name="IconFilename" />です。 アイコン アイコンの変更] ダイアログ ボックス ([挿入] メニューの [オブジェクト] コマンド、[新規作成] タブ) に表示されます: 0 (ゼロ) は、最初のアイコンに対応して、1 は 2 番目のアイコンというように対応します。 この引数を省略すると、最初の (既定) のアイコンが使用されます。</param>
-        <param name="Link">省略可能な<b>オブジェクト</b>です。 <b>True</b> クリップボード内容のソース ファイルへのリンクを作成します。 既定値は、 <b>false を指定</b> します。</param>
-        <param name="Placement">省略可能な<b>オブジェクト</b>です。 次のいずれかの方法は、<see cref="T:Microsoft.Office.Interop.Word.WdOLEPlacement" />定数: <b>wdFloatOverText</b>または<b>wdInLine</b>です。 既定値は <b>wdInLine</b> です。</param>
+        <param name="IconIndex">省略可能な<b>オブジェクト</b>です。 が<paramref name="DisplayAsIcon" /> <b>True</b>の場合、この引数は、で<paramref name="IconFilename" />指定したプログラムファイルで使用するアイコンに対応する番号です。 [アイコンの変更] ダイアログボックス ([挿入] メニューの [オブジェクト] コマンド、[新しいタブの作成]) にアイコンが表示されます。 0 (ゼロ) は最初のアイコンに対応し、1は2番目のアイコンに対応します。 この引数を省略すると、最初の (既定) のアイコンが使用されます。</param>
+        <param name="Link">省略可能な<b>オブジェクト</b>です。 <b>True</b> クリップボード内容のソース ファイルへのリンクを作成します。 既定値は <b>False</b> です。</param>
+        <param name="Placement">省略可能な<b>オブジェクト</b>です。 次<see cref="T:Microsoft.Office.Interop.Word.WdOLEPlacement" />の定数のいずれかを指定できます: <b>WdFloatOverText</b>または<b>wdinline</b>。 既定値は <b>wdInLine</b> です。</param>
         <param name="DisplayAsIcon">省略可能な<b>オブジェクト</b>です。 省略可能な<b>オブジェクト</b>です。 <b>真</b> のリンクをアイコンとして表示します。 既定値は、 <b>false を指定</b> します。</param>
         <param name="DataType">省略可能な<b>オブジェクト</b>です。 クリップボードの内容を文書に挿入するときの形式です。 <see cref="T:Microsoft.Office.Interop.Word.WdPasteDataType" />.</param>
-        <param name="IconFileName">省略可能な<b>オブジェクト</b>です。 場合<paramref name="DisplayAsIcon" />が<b>True</b>、この引数は、表示するアイコンが格納されるファイルのパスとファイル名です。</param>
-        <param name="IconLabel">省略可能な<b>オブジェクト</b>です。 場合<paramref name="DisplayAsIcon" />が<b>True</b>、この引数にはアイコンの下に表示されるテキストです。</param>
+        <param name="IconFileName">省略可能な<b>オブジェクト</b>です。 が<paramref name="DisplayAsIcon" /> <b>True</b>の場合、この引数は、表示するアイコンが格納されるファイルのパスとファイル名です。</param>
+        <param name="IconLabel">省略可能な<b>オブジェクト</b>です。 が<paramref name="DisplayAsIcon" /> <b>True</b>の場合、この引数はアイコンの下に表示されるテキストです。</param>
         <summary>クリップボードの内容を挿入します。</summary>
-        <remarks>
-          <para>指定された選択範囲の内容を置換しない場合を使用して、<see cref="M:Microsoft.Office.Interop.Word.Selection.Collapse(System.Object@)" />このメソッドを使用する前にします。選択範囲はクリップボードの内容を含むように拡張されず、このメソッドを使用するとします</para>。
-          <para>とは異なりで、<see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" />メソッド、 <b>PasteSpecial</b>に貼り付けた情報の書式を制御し、(必要に応じて)、ソース ファイル (たとえば、Microsoft Excel ワークシートなど) へのリンクを確立します</para>。
-          <para /></remarks>
+        <remarks><para>指定した選択範囲の内容を置換しない場合は、この<see cref="M:Microsoft.Office.Interop.Word.Selection.Collapse(System.Object@)" />メソッドを使用する前にメソッドを使用します。 このメソッドを使用すると、クリップボードの内容が含まれるように選択範囲が拡張されません。</para>
+          <para><see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" />メソッドとは異なり、 <b>PasteSpecial</b>を使用すると、貼り付けられた情報の形式を制御し、(必要に応じて) ソースファイルへのリンク (たとえば、Microsoft Excel ワークシート) を設定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Previous">
@@ -4335,13 +4186,11 @@
       </Parameters>
       <Docs>
         <param name="Unit">省略可能な<b>オブジェクト</b>です。 <see cref="T:Microsoft.Office.Interop.Word.WdUnits" />.</param>
-        <param name="Count">省略可能な<b>オブジェクト</b>です。 移動する単位の数。 既定値は 1 です。</param>
-        <summary>返します、<see cref="P:Microsoft.Office.Interop.Word.Selection.Range" />指定された選択範囲を基準にオブジェクト。</summary>
+        <param name="Count">省略可能な<b>オブジェクト</b>です。 前方向に移動する単位数を指定します。 既定値は 1 です。</param>
+        <summary>指定さ<see cref="P:Microsoft.Office.Interop.Word.Selection.Range" />れた選択範囲に関連するオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>選択範囲の直後に指定した場合<paramref name="Unit" />、前の単位に移動します。</para>
-          <para />
-        </remarks>
+        <remarks><para>選択範囲が指定さ<paramref name="Unit" />れた直後の場合、選択範囲は前の単位に移動します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviousBookmarkID">
@@ -4367,7 +4216,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>前に、または指定された選択範囲と同じ場所にあるを開始または、対応するブックマークがない場合に 0 (ゼロ) を取得する最後のブックマークの番号を返します。</summary>
+        <summary>指定された選択範囲の前または同じ場所にある最後のブックマークの番号を返します。対応するブックマークがない場合は、0 (ゼロ) を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4395,10 +4244,8 @@
       <Docs>
         <summary>前のフィールドを選択します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>フィールドが見つかったかどうかはこのメソッドが返されます、<see cref="T:Microsoft.Office.Interop.Word.Field" />オブジェクトです。それ以外の場合は、 <b>Nothing</b>が返されます。</para>
-          <para />
-        </remarks>
+        <remarks><para>フィールドが見つかった場合、このメソッドは<see cref="T:Microsoft.Office.Interop.Word.Field" />オブジェクトを返します。指定しない場合は、 <b>Nothing</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviousRevision">
@@ -4423,8 +4270,8 @@
         <Parameter Name="Wrap" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Wrap">省略可能な<b>オブジェクト</b>です。 <b>True を指定</b>文書の先頭に達したときに、ドキュメントの最後に変更履歴の検索を続行します。 既定値は <b>False</b> です。</param>
-        <summary>検索し、以前の変更履歴としてを返します、<see cref="T:Microsoft.Office.Interop.Word.Revision" />オブジェクトです。</summary>
+        <param name="Wrap">省略可能な<b>オブジェクト</b>です。 <b>True</b> を指定すると、文書の先頭まで変更履歴の検索を行った後で末尾から検索が再開されます。 既定値は <b>False</b> です。</param>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Revision" />オブジェクトとして以前の追跡された変更を検索して返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4451,10 +4298,8 @@
       <Parameters />
       <Docs>
         <summary>選択範囲を前のサブ文書に移動します。</summary>
-        <remarks>
-          <para>サブ文書がない場合、エラーが発生します。</para>
-          <para />
-        </remarks>
+        <remarks><para>サブ文書がない場合、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Range">
@@ -4480,12 +4325,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />を指定したオブジェクトに含まれる文書の部分を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />たオブジェクトに含まれる文書の一部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>範囲をドキュメントから取得するか、図形のコレクションから図形範囲を取得する方法についてを参照してください、<see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" />メソッドです。</para>
-          <para />
-        </remarks>
+        <remarks><para>文書から指定範囲を取得する<see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" />方法、または図形のコレクションから図形範囲を取得する方法については、メソッドを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadingModeGrowFont">
@@ -4510,10 +4353,10 @@
       <Parameters />
       <Docs>
         <summary>文書を閲覧モードで表示するときに、表示する文字列のサイズを 1 ポイント大きくします。</summary>
-        <remarks>
-          <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ReadingModeShrinkFont" /> 、テキストのサイズを小さく方法です。これは、ドキュメント、ドキュメントを閲覧モードで表示しているときにテキストのサイズだけでフォントのサイズには影響しません</para>。
-          <para><b>注</b>: テキストを閲覧モードで表示されるテキストに影響を与えるには、このメソッドを選択する必要はありません。閲覧モードで表示されるすべてのテキストのテキストのサイズに影響します</para>。
-          <para /></remarks>
+        <remarks><para>テキストの<see cref="M:Microsoft.Office.Interop.Word.Selection.ReadingModeShrinkFont" />サイズを小さくするには、メソッドを使用します。 このメソッドでは、閲覧モードで文書を表示しているときの文字列のサイズのみが変わり、文書内のフォントのサイズは変わりません。</para>
+          <para>
+            <b>注</b>: このメソッドでは、閲覧モードで表示されるテキストを変更するために、テキストを選択する必要はありません。 閲覧モードで表示するすべての文字列のサイズが変わります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadingModeShrinkFont">
@@ -4538,10 +4381,10 @@
       <Parameters />
       <Docs>
         <summary>文書を閲覧モードで表示するときに、表示する文字列のサイズを 1 ポイント小さくします。</summary>
-        <remarks>
-          <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.Selection.ReadingModeGrowFont" /> 、テキストのサイズを増加させます。これは、ドキュメント、ドキュメントを閲覧モードで表示しているときにテキストのサイズだけでフォントのサイズには影響しません</para>。
-          <para><b>注</b>: テキストを閲覧モードで表示されるテキストに影響を与えるには、このメソッドを選択する必要はありません。閲覧モードで表示されるすべてのテキストのテキストのサイズに影響します</para>。
-          <para /></remarks>
+        <remarks><para>テキストの<see cref="M:Microsoft.Office.Interop.Word.Selection.ReadingModeGrowFont" />サイズを大きくするには、メソッドを使用します。 このメソッドでは、閲覧モードで文書を表示しているときの文字列のサイズのみが変わり、文書内のフォントのサイズは変わりません。</para>
+          <para>
+            <b>注</b>: このメソッドでは、閲覧モードで表示されるテキストを変更するために、テキストを選択する必要はありません。 閲覧モードで表示するすべての文字列のサイズが変わります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Rows">
@@ -4567,7 +4410,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Rows</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Rows" /> 、選択範囲内のすべての行を表すコレクション。</summary>
+        <summary>選択範囲<see cref="T:Microsoft.Office.Interop.Word.Rows" />内のすべての表の行を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4594,10 +4437,9 @@
       <Parameters />
       <Docs>
         <summary>指定された段落の読み取り順序および配置を、右から左へに設定します。</summary>
-        <remarks>
-          <para>選択したすべての段落に対してこのメソッドは右から左に読み取り順序を設定します。段落を左から右の読み取り順序がある場合も左揃え、このメソッドはその読み取り順序を反転し、右揃えその段落の配置を設定します</para>。
-          <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.Paragraph.ReadingOrder" />プロパティに、段落の配置に影響を与えずに読み取り順序を変更します</para>。
-          <para /></remarks>
+        <remarks><para>このメソッドは、選択されたすべての段落に対して、読み取り順序を右から左へに設定します。読み取り順序が左から右へである段落が左揃えに設定されている場合も、このメソッドはその読み取り順序を右から左へに変更し、その段落の配置を右揃えに設定します。</para>
+          <para><see cref="P:Microsoft.Office.Interop.Word.Paragraph.ReadingOrder" />プロパティを使用して、段落の配置に影響を与えずに読み取り順序を変更します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RtlRun">
@@ -4622,10 +4464,9 @@
       <Parameters />
       <Docs>
         <summary>指定された run の読み取り順序および配置を、右から左へに設定します。</summary>
-        <remarks>
-          <para>の指定の実行では、このメソッドは右から左に読み取り順序を設定します。左から右の読み取り順序で実行時に段落がある場合も左揃え、このメソッドはその読み取り順序を反転し、右揃えその段落の配置を設定します</para>。
-          <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.Paragraph.ReadingOrder" />プロパティに、段落の配置に影響を与えずに読み取り順序を変更します</para>。
-          <para /></remarks>
+        <remarks><para>指定した run に対して、このメソッドは読み取り順序を右から左へに設定します。この run 内の段落の読み取り順序が左から右へであり、左揃えに設定されている場合も、このメソッドはその読み取り順序を右から左へに変更し、段落の配置を右揃えに設定します。</para>
+          <para><see cref="P:Microsoft.Office.Interop.Word.Paragraph.ReadingOrder" />プロパティを使用して、段落の配置に影響を与えずに読み取り順序を変更します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Sections">
@@ -4651,7 +4492,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Sections</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Sections" />指定された選択範囲内のセクションを表すコレクション。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Sections" />た選択範囲内のセクションを表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4678,10 +4519,8 @@
       <Parameters />
       <Docs>
         <summary>指定されたオブジェクトを選択します。</summary>
-        <remarks>
-          <para>このメソッドを使用すた後を使用して、<see cref="P:Microsoft.Office.Interop.Word.Pane.Selection" />選択した項目を操作するプロパティ。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドを使用した後<see cref="P:Microsoft.Office.Interop.Word.Pane.Selection" /> 、プロパティを使用して選択された項目を操作します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectCell">
@@ -4706,10 +4545,8 @@
       <Parameters />
       <Docs>
         <summary>現在の選択範囲を含むセル全体を選択します。</summary>
-        <remarks>
-          <para>このメソッドを使用して、現在の選択範囲を単一のセルに含める必要があります。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドを使用するには、現在の選択範囲が単一のセル内に存在する必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectColumn">
@@ -4734,10 +4571,8 @@
       <Parameters />
       <Docs>
         <summary>カーソルのある列を選択するか、または選択部分を含むすべての列を選択します。</summary>
-        <remarks>
-          <para>テーブルの選択範囲がない、エラーが発生します。</para>
-          <para />
-        </remarks>
+        <remarks><para>選択範囲が表の中にない場合は、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectCurrentAlignment">
@@ -4762,10 +4597,8 @@
       <Parameters />
       <Docs>
         <summary>配置の異なる段落まで、選択範囲を文書の末尾方向に拡張します。</summary>
-        <remarks>
-          <para>段落の配置の 4 つの種類があります: 左、中央、右、および両端揃えします。</para>
-          <para />
-        </remarks>
+        <remarks><para>段落の配置には、左揃え、中央揃え、右揃え、および両端揃えの 4 種類あります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectCurrentColor">
@@ -4915,10 +4748,8 @@
       <Parameters />
       <Docs>
         <summary>カーソルのある行を選択するか、または選択部分を含むすべての行を選択します。</summary>
-        <remarks>
-          <para>テーブルの選択範囲がない、エラーが発生します。</para>
-          <para />
-        </remarks>
+        <remarks><para>選択範囲が表の中にない場合は、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Sentences">
@@ -4944,7 +4775,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Sentences</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Sentences" /> 、選択範囲内のすべての文を表すコレクション。</summary>
+        <summary>選択範囲<see cref="T:Microsoft.Office.Interop.Word.Sentences" />内のすべての文を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4973,15 +4804,12 @@
         <Parameter Name="End" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Start">
-          <b>整数</b>が必要です。 選択範囲の開始の文字位置を指定します。</param>
-        <param name="End">
-          <b>整数</b>が必要です。 選択範囲の末尾の文字位置を指定します。</param>
+        <param name="Start">整数型 (<b>Integer</b>) の値を使用します。 選択範囲の開始の文字位置を指定します。</param>
+        <param name="End">整数型 (<b>Integer</b>) の値を使用します。 選択範囲の末尾の文字位置を指定します。</param>
         <summary>選択範囲の開始位置と終了位置を設定します。</summary>
-        <remarks>
-          <para>文字の位置の値は、ストーリーの先頭に最初の値は 0 (ゼロ) を起動します。印刷されない文字を含む、すべての文字がカウントされます。表示されていない場合でも非表示の文字がカウントされます</para>。
-          <para><b>SetRange</b>メソッドを再定義の開始位置と終了位置が既存の<see cref="T:Microsoft.Office.Interop.Word.Selection" />または<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。このメソッドとは異なります、<see cref="P:Microsoft.Office.Interop.Word.Selection.Range" />メソッドは、開始位置と終了位置を指定して範囲を作成するために使用します</para>。
-          <para /></remarks>
+        <remarks><para>文字の位置を示す値は、ストーリーの先頭から始まり、最初の値は 0 です。印刷されない文字を含め、すべての文字が数えられます。隠し文字は、表示されていない場合もカウントされます。</para>
+          <para><b>SetRange</b>メソッドは、既存<see cref="T:Microsoft.Office.Interop.Word.Selection" />または<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトの開始位置と終了位置を再定義します。 このメソッドは、開始<see cref="P:Microsoft.Office.Interop.Word.Selection.Range" />位置と終了位置を指定して範囲を作成するために使用されるメソッドとは異なります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shading">
@@ -5007,7 +4835,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Shading" /> 、指定したオブジェクトの網かけ書式を参照するオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Shading" />たオブジェクトの網かけ書式を参照するオブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5035,12 +4863,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ShapeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />コレクションのすべてを表す、 <see cref="T:Microsoft.Office.Interop.Word.Shape" /> 、指定範囲または選択範囲内のオブジェクト。</summary>
+        <summary>指定範囲<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />または選択範囲内<see cref="T:Microsoft.Office.Interop.Word.Shape" />のすべてのオブジェクトを表すコレクションを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>図形範囲には、描画、図形、図、OLE オブジェクト、ActiveX コントロール、テキスト オブジェクト、および吹き出しを含めることができます。</para>
-          <para />
-        </remarks>
+        <remarks><para>図形範囲には、描画、図形、図、OLE オブジェクト、ActiveX コントロール、テキスト オブジェクト、および吹き出しを含めることができます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shrink">
@@ -5065,10 +4891,8 @@
       <Parameters />
       <Docs>
         <summary>次に小さな文字列要素まで選択範囲を縮小します。</summary>
-        <remarks>
-          <para>テキスト単位の進行状況は、次のように: 文書全体、セクション、段落、文、単語、カーソル位置です。</para>
-          <para />
-        </remarks>
+        <remarks><para>文字単位の経過は、次のようになります。ドキュメント、セクション、段落、文、word、挿入ポイントの全体。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShrinkDiscontiguousSelection">
@@ -5092,7 +4916,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>選択範囲に複数が含まれている場合を除くすべての最後に選択したテキストの選択を解除不連続な範囲です。</summary>
+        <summary>選択範囲に複数の未接続の選択範囲が含まれている場合、最近選択された文字列を除くすべての選択を解除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -5122,7 +4946,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.SmartTags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.SmartTags" /> 、文書内のスマート タグを表すオブジェクト。</summary>
+        <summary>文書内<see cref="T:Microsoft.Office.Interop.Word.SmartTags" />のスマートタグを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5170,28 +4994,28 @@
         <Parameter Name="SubFieldNumber3" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ExcludeHeader">省略可能な<b>オブジェクト</b>です。 <b>True</b> を最初の行または段落ヘッダーを並べ替え操作から除外されます。 既定値は、 <b>false を指定</b> します。</param>
-        <param name="FieldNumber">省略可能な<b>オブジェクト</b>です。 並べ替えを行うフィールドです。 によって並べ替え<paramref name="FieldNumber" />、によって、<paramref name="FieldNumber2" />として、 <paramref name="FieldNumber3" />。</param>
-        <param name="SortFieldType">省略可能な<b>オブジェクト</b>です。 それぞれの並べ替えの種類の<paramref name="FieldNumber" />、<paramref name="FieldNumber2" />と<paramref name="FieldNumber3" />。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" />定数。</param>
-        <param name="SortOrder">省略可能な<b>オブジェクト</b>です。 並べ替えの順序を並べ替えるときに使用する<paramref name="FieldNumber" />、<paramref name="FieldNumber2" />と<paramref name="FieldNumber3" />。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" />定数。</param>
-        <param name="FieldNumber2">省略可能な<b>オブジェクト</b>です。 並べ替えを行うフィールドです。 によって並べ替え<paramref name="FieldNumber" />、によって、<paramref name="FieldNumber2" />として、 <paramref name="FieldNumber3" />。</param>
-        <param name="SortFieldType2">省略可能な<b>オブジェクト</b>です。 それぞれの並べ替えの種類の<paramref name="FieldNumber" />、<paramref name="FieldNumber2" />と<paramref name="FieldNumber3" />。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" />定数。</param>
-        <param name="SortOrder2">省略可能な<b>オブジェクト</b>です。 並べ替えの順序を並べ替えるときに使用する<paramref name="FieldNumber" />、<paramref name="FieldNumber2" />と<paramref name="FieldNumber3" />。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" />定数。</param>
-        <param name="FieldNumber3">省略可能な<b>オブジェクト</b>です。 並べ替えを行うフィールドです。 によって並べ替え<paramref name="FieldNumber" />、によって、<paramref name="FieldNumber2" />として、 <paramref name="FieldNumber3" />。</param>
-        <param name="SortFieldType3">省略可能な<b>オブジェクト</b>です。 それぞれの並べ替えの種類の<paramref name="FieldNumber" />、<paramref name="FieldNumber2" />と<paramref name="FieldNumber3" />。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" />定数。</param>
-        <param name="SortOrder3">省略可能な<b>オブジェクト</b>です。 並べ替えの順序を並べ替えるときに使用する<paramref name="FieldNumber" />、<paramref name="FieldNumber2" />と<paramref name="FieldNumber3" />。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" />定数。</param>
-        <param name="SortColumn">省略可能な<b>オブジェクト</b>です。 <b>True</b>が指定された列だけを並べ替えるには、<see cref="T:Microsoft.Office.Interop.Word.Selection" />オブジェクトです。</param>
-        <param name="Separator">省略可能な<b>オブジェクト</b>です。 フィールドの区切り文字の種類。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdSortSeparator" />定数。</param>
+        <param name="ExcludeHeader">省略可能な<b>オブジェクト</b>です。 <b>True</b> を最初の行または段落ヘッダーを並べ替え操作から除外されます。 既定値は <b>False</b> です。</param>
+        <param name="FieldNumber">省略可能な<b>オブジェクト</b>です。 並べ替えの基準となるフィールドを示します。 Microsoft Word <paramref name="FieldNumber" />は、順に並べ替え<paramref name="FieldNumber2" />、次に順<paramref name="FieldNumber3" />、順に並べ替えを行います。</param>
+        <param name="SortFieldType">省略可能な<b>オブジェクト</b>です。 、 <paramref name="FieldNumber2" />、および<paramref name="FieldNumber3" />のそれぞれ<paramref name="FieldNumber" />の並べ替えの種類。 <see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" />定数のいずれかをすることができます。</param>
+        <param name="SortOrder">省略可能な<b>オブジェクト</b>です。 並べ替える<paramref name="FieldNumber" />ときに使用する並べ替え順序を<paramref name="FieldNumber2" />、、 <paramref name="FieldNumber3" />、およびにします。 <see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" />定数のいずれかをすることができます。</param>
+        <param name="FieldNumber2">省略可能な<b>オブジェクト</b>です。 並べ替えの基準となるフィールドを示します。 [並べ替え<paramref name="FieldNumber" />]、[by <paramref name="FieldNumber2" />]、[by <paramref name="FieldNumber3" />] の順に選択します。</param>
+        <param name="SortFieldType2">省略可能な<b>オブジェクト</b>です。 、 <paramref name="FieldNumber2" />、および<paramref name="FieldNumber3" />のそれぞれ<paramref name="FieldNumber" />の並べ替えの種類。 <see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" />定数のいずれかをすることができます。</param>
+        <param name="SortOrder2">省略可能な<b>オブジェクト</b>です。 並べ替える<paramref name="FieldNumber" />ときに使用する並べ替え順序を<paramref name="FieldNumber2" />、、 <paramref name="FieldNumber3" />、およびにします。 <see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" />定数のいずれかをすることができます。</param>
+        <param name="FieldNumber3">省略可能な<b>オブジェクト</b>です。 並べ替えの基準となるフィールドを示します。 [並べ替え<paramref name="FieldNumber" />]、[by <paramref name="FieldNumber2" />]、[by <paramref name="FieldNumber3" />] の順に選択します。</param>
+        <param name="SortFieldType3">省略可能な<b>オブジェクト</b>です。 、 <paramref name="FieldNumber2" />、および<paramref name="FieldNumber3" />のそれぞれ<paramref name="FieldNumber" />の並べ替えの種類。 <see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" />定数のいずれかをすることができます。</param>
+        <param name="SortOrder3">省略可能な<b>オブジェクト</b>です。 並べ替える<paramref name="FieldNumber" />ときに使用する並べ替え順序を<paramref name="FieldNumber2" />、、 <paramref name="FieldNumber3" />、およびにします。 <see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" />定数のいずれかをすることができます。</param>
+        <param name="SortColumn">省略可能な<b>オブジェクト</b>です。 <b>True</b>を指定すると、 <see cref="T:Microsoft.Office.Interop.Word.Selection" />オブジェクトで指定した列だけが並べ替えられます。</param>
+        <param name="Separator">省略可能な<b>オブジェクト</b>です。 フィールド区切りの種類を指定します。 <see cref="T:Microsoft.Office.Interop.Word.WdSortSeparator" />定数のいずれかをすることができます。</param>
         <param name="CaseSensitive">省略可能な<b>オブジェクト</b>です。 <b>True</b> 大文字小文字を区別して並べ替える。 既定値は、 <b>false を指定</b> します。</param>
         <param name="BidiSort">省略可能な<b>オブジェクト</b>です。 <b>True</b> 並べ替えを右から左言語の規則に基づいています。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
-        <param name="IgnoreThe">省略可能な<b>オブジェクト</b>です。 <b>True</b>をアラビア語の文字を無視する<paramref name="alef lam" />右から左へ記述する言語のテキストを並べ替えるとき。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
+        <param name="IgnoreThe">省略可能な<b>オブジェクト</b>です。 <b>True</b>を右から左に<paramref name="alef lam" />記述する言語のテキストを並べ替えるとき、アラビア語の文字を無視します。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
         <param name="IgnoreKashida">省略可能な<b>オブジェクト</b>です。 <b>True</b> を右から左へ記述する言語のテキストを並べ替えるときに kashida を無視します。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
         <param name="IgnoreDiacritics">省略可能な<b>オブジェクト</b>です。 <b>True</b> を右から左へ記述する言語のテキストを並べ替えるとき、双方向制御文字を無視します。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
-        <param name="IgnoreHe">省略可能な<b>オブジェクト</b>です。 <b>True の</b>ヘブライ語の文字を無視するように<paramref name="he" />右から左へ記述する言語のテキストを並べ替えるとき。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
-        <param name="LanguageID">省略可能な<b>オブジェクト</b>です。 <paramref name="LanguageIDOptional" /><b>オブジェクト</b>です。 並べ替える言語を指定します。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数。 オブジェクト ブラウザーの一覧についてを参照してください、<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数。</param>
-        <param name="SubFieldNumber">省略可能な<b>オブジェクト</b>です。 (Selection オブジェクトのみに適用されます)。</param>
-        <param name="SubFieldNumber2">省略可能な<b>オブジェクト</b>です。 (Selection オブジェクトのみに適用されます)。</param>
-        <param name="SubFieldNumber3">省略可能な<b>オブジェクト</b>です。 (Selection オブジェクトのみに適用されます)。</param>
+        <param name="IgnoreHe">省略可能な<b>オブジェクト</b>です。 <b>True</b>を右から左に<paramref name="he" />記述する言語のテキストを並べ替えるときにヘブライ文字を無視します。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
+        <param name="LanguageID">省略可能な<b>オブジェクト</b>です。 <paramref name="LanguageIDOptional" /><b>オブジェクト</b>。 並べ替える言語を指定します。 <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数のいずれかをすることができます。 <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数の一覧については、オブジェクトブラウザーを参照してください。</param>
+        <param name="SubFieldNumber">省略可能な<b>オブジェクト</b>です。 (Selection オブジェクトにのみ適用されます)。</param>
+        <param name="SubFieldNumber2">省略可能な<b>オブジェクト</b>です。 (Selection オブジェクトにのみ適用されます)。</param>
+        <param name="SubFieldNumber3">省略可能な<b>オブジェクト</b>です。 (Selection オブジェクトにのみ適用されます)。</param>
         <summary>指定された選択範囲内の段落を並べ替えます。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5284,10 +5108,9 @@
       <Parameters />
       <Docs>
         <summary>段落や表の行を、英数字の昇順に並べ替えます。</summary>
-        <remarks>
-          <para>最初の段落や表の行はヘッダー レコードと見なされ、並べ替えに含まれていません。使用して、<see cref="M:Microsoft.Office.Interop.Word.Selection.Sort(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />ヘッダー レコードを含めて並べ替えるにします</para>。
-          <para>このメソッドは、簡略化されたフォームのソースを差し込み印刷のデータの並べ替え列データにはが含まれています。ほとんどの並べ替え操作を使用して、<see cref="M:Microsoft.Office.Interop.Word.Selection.Sort(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />メソッドです</para>。
-          <para /></remarks>
+        <remarks><para>最初の段落または表の行はヘッダーレコードと見なされ、並べ替えには含まれません。 <see cref="M:Microsoft.Office.Interop.Word.Selection.Sort(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />メソッドを使用して、ヘッダーレコードを並べ替えに含めます。</para>
+          <para>このメソッドでは、簡略化されたフォームのデータの列を含む差し込み印刷データ ソースの並べ替えを提供します。 ほとんどの並べ替えタスクでは、 <see cref="M:Microsoft.Office.Interop.Word.Selection.Sort(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SortByHeadings">
@@ -5320,27 +5143,21 @@
         <Parameter Name="LanguageID" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="SortFieldType">使用する並べ替えフィールドのタイプです。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" />定数。 既定値は <b>wdSortFieldAlphanumeric</b> です。 言語サポート (たとえば、日本語) を選択またはインストールされている、これらの定数のいくつかできない場合がありますにします。</param>
-        <param name="SortOrder">使用する並べ替え順序です。 WdSortOrder のいずれかの<see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" />定数。</param>
-        <param name="CaseSensitive">
-          <b>True</b> 大文字小文字を区別して並べ替える。既定値は、 <b>false を指定</b> します。 </param>
-        <param name="BidiSort">
-          <b>True</b> 並べ替えを右から左言語の規則に基づいています。 言語サポート (たとえば、日本語) を選択またはインストールされている、このパラメーターの使用しない場合があります。</param>
-        <param name="IgnoreThe">右から左へ記述する言語のテキストを並べ替えるときは <b>true</b> を無視する、アラビア語の alef の lam します。 言語サポート (たとえば、日本語) を選択またはインストールされている、このパラメーターの使用しない場合があります。</param>
-        <param name="IgnoreKashida">
-          <b>True</b> を右から左へ記述する言語のテキストを並べ替えるときに kashida を無視します。 言語サポート (たとえば、日本語) を選択またはインストールされている、このパラメーターの使用しない場合があります。</param>
-        <param name="IgnoreDiacritics">
-          <b>True</b> を右から左へ記述する言語のテキストを並べ替えるとき、双方向制御文字を無視します。 言語サポート (たとえば、日本語) を選択またはインストールされている、このパラメーターの使用しない場合があります。</param>
-        <param name="IgnoreHe">
-          <b>True</b> をヘブライ語を無視する文字が右から左へ記述する言語のテキストを並べ替えるとき。 言語サポート (たとえば、日本語) を選択またはインストールされている、このパラメーターの使用しない場合があります。</param>
-        <param name="LanguageID">並べ替える言語を指定します。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数。</param>
-        <summary>指定された選択範囲の見出しが並べ替えられます。</summary>
-        <remarks>
-          <para>
-            <b>Selection</b>オブジェクトを取得するのにには、 <b>Selection</b>プロパティを使用します。<b>Selection</b>プロパティにオブジェクト修飾子を使用しない場合 Word がアクティブなドキュメント ウィンドウのアクティブなウィンドウから選択項目を返します</para>。
-          <para>にカーソルを移動、選択範囲が折りたたまれているときにでも、必ずしも空ではありません。たとえば、 <b>Text</b>プロパティはまだ文字を返します、カーソル位置の右側にこの文字は、 <b>Selection</b>オブジェクトの<b>Characters</b>コレクションにも表示されます。<b>切り取り</b>または<b>コピー</b>の選択範囲を解除すると、エラーと同様に、メソッドを呼び出すことです</para>。
-          <para>ユーザー (たとえば、マウスを使用して ALT キーを使用する場合) の連続したテキストを表していない文書の領域を選択する可能性があります。に対する操作を実行する前に選択範囲の<b>Type</b>プロパティをチェックするコード内でステップを追加するとして可能性があるため、このような選択範囲の動作は予測できませんが、(Selection.Type = wdSelectionBlock)。同様に、表のセルを含む選択範囲は、予期しない動作にできる可能性もあります。<b>情報</b>プロパティは、選択範囲がテーブル内かをする (Selection.Information(wdWithinTable) = True).</para><para>は、 <b>Range</b>オブジェクトの<b>Range</b>オブジェクトを使用して、 <b>Selection</b>オブジェクトと同じメソッドとプロパティの多くが共有しているためには、現在の選択範囲を物理的に変更するのには理由がない場合は、ドキュメントを操作することの方が望ましい.オブジェクトを<b>選択</b>し、<b>範囲</b>の詳細についてを参照してください、Selection オブジェクトでの作業と、Visual Basic for Applications (VBA) のドキュメントで範囲のオブジェクトを使用します</para>。
-          <para /></remarks>
+        <param name="SortFieldType">使用する並べ替えフィールドの種類を示します。 <see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" />定数のいずれかをすることができます。 既定値は <b>wdSortFieldAlphanumeric</b> です。 選択またはインストールした言語のサポート (たとえば、英語 (米国)) によっては、これらの定数の一部を使用できない場合があります。</param>
+        <param name="SortOrder">使用する並べ替え順序を示します。 WdSortOrder <see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" />定数のいずれかをすることができます。</param>
+        <param name="CaseSensitive"><b>True</b> 大文字小文字を区別して並べ替える。 既定値は、 <b>false を指定</b> します。</param>
+        <param name="BidiSort"><b>True</b> 並べ替えを右から左言語の規則に基づいています。 選択またはインストールした言語のサポート (たとえば、英語 (米国)) によっては、このパラメーターを使用できない場合があります。</param>
+        <param name="IgnoreThe">右から左へ記述する言語のテキストを並べ替えるときは <b>true</b> を無視する、アラビア語の alef の lam します。 選択またはインストールした言語のサポート (たとえば、英語 (米国)) によっては、このパラメーターを使用できない場合があります。</param>
+        <param name="IgnoreKashida"><b>True</b> を右から左へ記述する言語のテキストを並べ替えるときに kashida を無視します。 選択またはインストールした言語のサポート (たとえば、英語 (米国)) によっては、このパラメーターを使用できない場合があります。</param>
+        <param name="IgnoreDiacritics"><b>True</b> を右から左へ記述する言語のテキストを並べ替えるとき、双方向制御文字を無視します。 選択またはインストールした言語のサポート (たとえば、英語 (米国)) によっては、このパラメーターを使用できない場合があります。</param>
+        <param name="IgnoreHe"><b>True</b> をヘブライ語を無視する文字が右から左へ記述する言語のテキストを並べ替えるとき。 選択またはインストールした言語のサポート (たとえば、英語 (米国)) によっては、このパラメーターを使用できない場合があります。</param>
+        <param name="LanguageID">並べ替える言語を指定します。 <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数のいずれかをすることができます。</param>
+        <summary>指定された選択範囲の見出しを並べ替えます。</summary>
+        <remarks><para><b>Selection</b> オブジェクトを返すには、 <b>Selection</b> プロパティを使用します。 <b>Selection</b>プロパティでオブジェクト修飾子を使用しない場合、Word は作業中のプレゼンテーションウィンドウの作業中のウィンドウ枠から選択範囲を取得します。</para>
+          <para>挿入ポイントの選択範囲が折りたたまれている場合でも、必ずしも空ではありません。たとえば、 <b>Text</b> プロパティは、挿入ポイントの右側の文字を返します。この文字は、 <b>Selection</b> オブジェクトの <b>Characters</b> コレクションにも表示されます。ただし、折りたたまれた選択範囲から <b>Cut</b> や <b>Copy</b> などのメソッドを呼び出すと、エラーが発生します。</para>
+          <para>ユーザーは連続したテキストを表していない文書の領域を選択することができます (たとえば、Alt キーとマウスを使用する場合)。 このような選択の動作は予測できない場合があるので、コードに操作を実行する前に、選択範囲の<b>Type</b>プロパティをチェックするステップを含めることをお勧めします。 同様に、表のセルを含む選択範囲により、予測できない動作が発生する可能性もあります。 <b>情報</b>プロパティは、選択範囲が表の中にあるかどうかを通知します (選択範囲は、情報 (Wdwithin table) = True)。</para>
+          <para><b>Range</b> オブジェクトは、 <b>Selection</b> オブジェクトと多くの同じメソッドとプロパティを共有するため、現在の選択範囲を物理的に変更する理由がない場合、ドキュメントを操作するには <b>Range</b> オブジェクトを使用します。 <b>Selection</b>オブジェクトおよび<b>range</b>オブジェクトの詳細については、Visual BASIC for Applications (VBA) のドキュメントの「selection オブジェクトを使用する」および「range オブジェクトを使用する」を参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SortDescending">
@@ -5364,11 +5181,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>段落や表の行を降順で並べ替えます。</summary>
-        <remarks>
-          <para>最初の段落や表の行はヘッダー レコードと見なされ、並べ替えに含まれていません。使用して、<see cref="M:Microsoft.Office.Interop.Word.Selection.Sort(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />ヘッダー レコードを含めて並べ替えるにします</para>。
-          <para>このメソッドは、簡略化されたフォームのソースを差し込み印刷のデータの並べ替え列データにはが含まれています。ほとんどの並べ替え操作を使用して、<see cref="M:Microsoft.Office.Interop.Word.Selection.Sort(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />メソッドです</para>。
-          <para /></remarks>
+        <summary>段落または表の行を、英数字の降順に並べ替えます。</summary>
+        <remarks><para>最初の段落または表の行はヘッダーレコードと見なされ、並べ替えには含まれません。 <see cref="M:Microsoft.Office.Interop.Word.Selection.Sort(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />メソッドを使用して、ヘッダーレコードを並べ替えに含めます。</para>
+          <para>このメソッドでは、簡略化されたフォームのデータの列を含む差し込み印刷データ ソースの並べ替えを提供します。 ほとんどの並べ替えタスクでは、 <see cref="M:Microsoft.Office.Interop.Word.Selection.Sort(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SortOld">
@@ -5449,10 +5265,9 @@
       <Parameters />
       <Docs>
         <summary>選択範囲の最初の行の上に空の段落を挿入します。</summary>
-        <remarks>
-          <para>テーブルが 2 つに分割して、選択範囲にない場合、テーブルの最初の行、.</para>
-          <para>テーブルでは、選択範囲がない、エラーが発生します</para>。
-          <para /></remarks>
+        <remarks><para>選択範囲が表の先頭行以外の行にある場合、表は 2 つに分割されます。</para>
+          <para>選択範囲が表の中にない場合は、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -5483,11 +5298,11 @@
       <Docs>
         <summary>選択範囲の開始文字位置を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>かどうかはこのプロパティの値よりも大きい、 <see cref="P:Microsoft.Office.Interop.Word.Selection.End" /> 、 <b>End</b>プロパティは、プロパティは<b>Start</b>プロパティと同じ値にします</para>。
-          <para><see cref="T:Microsoft.Office.Interop.Word.Selection" />、 <see cref="T:Microsoft.Office.Interop.Word.Range" />、および<see cref="T:Microsoft.Office.Interop.Word.Bookmark" />オブジェクトが開始位置と終了文字位置にあります。開始位置は、ストーリーの先頭に最も近い文字の位置を参照します</para>。
-          <para>このプロパティは、ストーリーの先頭を基準に開始位置を返します。メイン テキスト ストーリー (<b>wdMainTextStory</b>) は、文字位置 0 (ゼロ) から始まります。このプロパティを設定することにより、選択範囲のサイズを変更することができます</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティが<see cref="P:Microsoft.Office.Interop.Word.Selection.End" />プロパティよりも大きい値に設定されている場合、 <b>End</b>プロパティは<b>Start</b>プロパティと同じ値に設定されます。</para>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Word.Selection" />、 <see cref="T:Microsoft.Office.Interop.Word.Range" />、および<see cref="T:Microsoft.Office.Interop.Word.Bookmark" />オブジェクトには、開始と終了の文字位置があります。 開始位置とは、ストーリーの先頭に最も近い文字の位置を指します。</para>
+          <para>このプロパティは、ストーリーの先頭を基準に開始位置を取得します。 文字の位置を示す値は、メイン テキスト ストーリー (<b>wdMainTextStory</b>) の先頭から始まり、最初の値は 0 です。 選択範囲のサイズを変更するには、このプロパティを設定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StartIsActive">
@@ -5516,13 +5331,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>選択範囲の先頭がアクティブなかどうかを判断します。</summary>
+        <summary>選択範囲の開始位置がアクティブであるかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、 <b>True</b>選択範囲の開始位置が有効である場合と場合は<b>False</b>を返します</para>。
-          <para>にカーソルを移動、先頭または選択範囲の末尾のいずれか選択範囲が折りたたまれていない場合は、アクティブです。選択範囲のアクティブな終点が次のメソッドを呼び出すときに移動: <see cref="M:Microsoft.Office.Interop.Word.Selection.EndKey(System.Object@,System.Object@)" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.Extend(System.Object@)" /> (と、<paramref name="Characters" />の引数)、 <see cref="M:Microsoft.Office.Interop.Word.Selection.HomeKey(System.Object@,System.Object@)" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.MoveDown(System.Object@,System.Object@,System.Object@)" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.MoveLeft(System.Object@,System.Object@,System.Object@)" />、<see cref="M:Microsoft.Office.Interop.Word.Selection.MoveRight(System.Object@,System.Object@,System.Object@)" />と<see cref="M:Microsoft.Office.Interop.Word.Selection.MoveUp(System.Object@,System.Object@,System.Object@)" />です</para>。
-          <para>このプロパティを使用して、 <see cref="P:Microsoft.Office.Interop.Word.Selection.Flags" /><b>wdSelStartActive</b>定数を持つプロパティです。ただし、 <b>Flags</b>プロパティを使用する必要があります二項演算は、 <b>StartIsActive</b>プロパティを使用するよりも複雑です</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティは、選択範囲の開始位置がアクティブである場合は<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。</para>
+          <para>選択範囲がカーソル位置で解除されない場合は、選択範囲の開始位置または終了位置のいずれかが有効になります。 次のメソッドを呼び出すと、選択範囲のアクティブな終了<see cref="M:Microsoft.Office.Interop.Word.Selection.EndKey(System.Object@,System.Object@)" />位置<see cref="M:Microsoft.Office.Interop.Word.Selection.Extend(System.Object@)" />が移動し<paramref name="Characters" />ます。、 <see cref="M:Microsoft.Office.Interop.Word.Selection.HomeKey(System.Object@,System.Object@)" />( <see cref="M:Microsoft.Office.Interop.Word.Selection.MoveDown(System.Object@,System.Object@,System.Object@)" />引数<see cref="M:Microsoft.Office.Interop.Word.Selection.MoveLeft(System.Object@,System.Object@,System.Object@)" />あり<see cref="M:Microsoft.Office.Interop.Word.Selection.MoveRight(System.Object@,System.Object@,System.Object@)" />)、 <see cref="M:Microsoft.Office.Interop.Word.Selection.MoveUp(System.Object@,System.Object@,System.Object@)" />、、、、および。</para>
+          <para>このプロパティは、 <see cref="P:Microsoft.Office.Interop.Word.Selection.Flags" />プロパティを<b>Wdselstartactive</b>定数と同じように使用します。 ただし、<b>Flags</b> プロパティを使用する場合はバイナリ処理が必要なため、<b>StartIsActive</b> プロパティを使用する場合より複雑になります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StartOf">
@@ -5548,14 +5362,13 @@
         <Parameter Name="Extend" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Unit">省略可能な<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />。 指定範囲または選択範囲の開始位置を移動する単位を指定します。</param>
-        <param name="Extend">省略可能な<see cref="T:Microsoft.Office.Interop.Word.WdMovementType" />。</param>
-        <summary>最も近い指定されたテキスト単位の先頭に指定された選択範囲の開始位置を拡張または移動します。</summary>
+        <param name="Unit">省略<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />可能です。 指定範囲または選択範囲の開始位置を移動する単位を指定します。</param>
+        <param name="Extend">省略<see cref="T:Microsoft.Office.Interop.Word.WdMovementType" />可能です。</param>
+        <summary>指定された選択範囲の開始位置を、最も近い指定された文字列の単位の先頭に移動または拡張します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドは、選択範囲を移動または拡張するための文字数を示す<b>整数</b>を返します。検索方向が文書の先頭方向である場合に負の値が返されます</para>。
-          <para>指定された選択範囲の先頭に指定された構成単位の先頭になって、このメソッドは位置や選択範囲を拡張します</para>。
-          <para /></remarks>
+        <remarks><para>このメソッドは、選択範囲を移動または拡張した文字数を示す<b>整数型 (Integer</b> ) の値を返します。 検索方向が文書の先頭方向の場合は、負の数を返します。</para>
+          <para>指定された選択範囲の開始位置が既に指定された単位の先頭にある場合、このメソッドは選択範囲を移動または拡張しません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StoryLength">
@@ -5642,10 +5455,8 @@
       <Docs>
         <summary>指定したオブジェクトのスタイルを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティを設定し、整数値で、スタイルのローカル名を指定して、<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />の定数、またはスタイルを表すオブジェクト。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティを設定するには、スタイルのローカル名、整数、 <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />定数、またはスタイルを表すオブジェクトを指定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Tables">
@@ -5671,7 +5482,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Tables</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Tables" />指定された選択範囲のすべてのテーブルを表すコレクション。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Tables" />た選択範囲内のすべてのテーブルを表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5704,11 +5515,8 @@
       <Docs>
         <summary>取得または指定された選択範囲のテキストを設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Text</b>プロパティは、選択範囲または指定範囲のプレーン テキストの書式なしのテキストを返します。このプロパティを設定するときは、指定範囲または選択範囲のテキストが置き換えられます。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Text</b> プロパティは、選択範囲または指定範囲のプレーン テキストの書式なしのテキストを返します。このプロパティを設定するときは、指定範囲または選択範囲のテキストが置き換えられます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ToggleCharacterCode">
@@ -5759,13 +5567,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Tables</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Tables" />を現在の選択範囲の最も外側の入れ子レベルにある表を表すコレクション。</summary>
+        <summary>現在の<see cref="T:Microsoft.Office.Interop.Word.Tables" />選択範囲内で一番外側のネストレベルにある表を表すコレクションを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>TopLevelTables</b>プロパティは、現在の指定範囲または選択範囲のコンテキスト内で最も外側の入れ子レベルにある表のみを含むコレクションを返します。これらのテーブル全体で一番外側のネストのレベルに設定できませんの入れ子になったテーブルです。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>TopLevelTables</b>プロパティは、現在の範囲または選択範囲のコンテキスト内で一番外側のネストレベルにある表のみを含むコレクションを返します。 これらの表は、複合表全体で一番外側のネスト レベルにある表ではない場合もあります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -5818,10 +5623,9 @@
       <Parameters />
       <Docs>
         <summary>選択範囲が解除されている場合は、カーソル位置の直前の文字を削除します。</summary>
-        <remarks>
-          <para>にカーソルを移動、選択範囲が解除されていない場合、選択範囲が削除されます</para>。
-          <para>このメソッドは BACKSPACE キーの機能に対応します</para>。
-          <para /></remarks>
+        <remarks><para>If the selection isn't collapsed to an insertion point, the selection is deleted.</para>
+          <para>This method corresponds to functionality of the BACKSPACE key.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TypeParagraph">
@@ -5846,10 +5650,9 @@
       <Parameters />
       <Docs>
         <summary>新しい空白の段落を挿入します。</summary>
-        <remarks>
-          <para>にカーソルを移動、選択範囲が解除されていない場合する場合、は、新しい段落に置き換えられます。使用して、<see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphAfter" />または<see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphBefore" />の選択範囲の内容を削除することがなく新しい段落を挿入する方法です</para>。
-          <para>このメソッドは ENTER キーの機能に対応します</para>。
-          <para /></remarks>
+        <remarks><para>選択範囲が解除されていない場合は、カーソル位置を新しい段落に置き換えます。 選択範囲<see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphAfter" />の<see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphBefore" />内容を削除せずに新しい段落を挿入するには、またはメソッドを使用します。</para>
+          <para>このメソッドは Enter キーの機能と対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TypeText">
@@ -5875,13 +5678,10 @@
         <Parameter Name="Text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Text">
-          <b>文字列</b> が必要です。 挿入する文字列を指定します。</param>
+        <param name="Text"><b>文字列</b> が必要です。 挿入する文字列を指定します。</param>
         <summary>指定された文字列を挿入します。</summary>
-        <remarks>
-          <para>場合、<see cref="P:Microsoft.Office.Interop.Word.Options.ReplaceSelection" />プロパティが<b>true の場合</b>、選択範囲は、指定したテキストに置き換えられます。<b>ReplaceSelection</b>が<b>False</b>の場合は、選択範囲の前に指定したテキストが挿入されます。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.Options.ReplaceSelection" />プロパティに<b>True</b>が設定されている場合、選択範囲は指定した文字列に置き換えられます。 <b>ReplaceSelection</b> プロパティの値が <b>False</b> である場合、指定された文字列は選択範囲の前に挿入されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WholeStory">
@@ -5932,14 +5732,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Office Word オープン XML 形式での選択範囲に含まれている XML を表す<b>文字列</b>を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
-        <remarks>
-          <para>このプロパティは、指定された選択範囲を表すに必要なドキュメントの XML だけを返します。</para>
-          <para />
-        </remarks>
+        <summary>Microsoft Office Word Open XML 形式の選択範囲内に含まれる XML を表す<b>文字列</b>を返します。 読み取り専用です。</summary>
+        <value><b>String</b></value>
+        <remarks><para>このプロパティは、文書内にある指定した選択部分を表すために必要な XML のみを取得します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Words">
@@ -5965,12 +5761,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Words</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Words" /> 、選択範囲内のすべての単語を表すコレクション。</summary>
+        <summary>選択範囲<see cref="T:Microsoft.Office.Interop.Word.Words" />内のすべての単語を表すコレクションを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>文書内の句読点および段落記号が含まれる、<see cref="T:Microsoft.Office.Interop.Word.Words" />コレクションです。</para>
-          <para />
-        </remarks>
+        <remarks><para>文書の区切り記号と段落記号は、 <see cref="T:Microsoft.Office.Interop.Word.Words" />コレクションに含まれています。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="XML">

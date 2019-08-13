@@ -1,13 +1,5 @@
 <Type Name="HTMLDivisions" FullName="Microsoft.Office.Interop.Word.HTMLDivisions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="28896873e2658bb7fdc695f17420fa74ec5aca73" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671030" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface HTMLDivisions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c52a948104a42d913fb69b854f16407eab688443" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148006" /></Metadata><TypeSignature Language="C#" Value="public interface HTMLDivisions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HTMLDivisions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HTMLDivisions" />
   <TypeSignature Language="VB.NET" Value="Public Interface HTMLDivisions&#xA;Implements IEnumerable" />
@@ -30,11 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.HTMLDivision" />を Web 文書内に存在するための HTML 部分を表すオブジェクト。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.HTMLDivision.HTMLDivisions" /><b>HTMLDivisions</b>コレクションを返すプロパティです。使用して、 <see cref="M:Microsoft.Office.Interop.Word.HTMLDivisions.Add(System.Object@)" /> 、HTML 部分を Web ドキュメントに追加する方法です。</para>
-      <para />
-    </remarks>
+    <summary>Web ドキュメント内<see cref="T:Microsoft.Office.Interop.Word.HTMLDivision" />に存在する HTML の区分を表すオブジェクトのコレクションです。</summary>
+    <remarks><para><see cref="P:Microsoft.Office.Interop.Word.HTMLDivision.HTMLDivisions" /> <b>Htmldivisions</b>コレクションを取得するのにには、プロパティを使用します。 Web ドキュメント<see cref="M:Microsoft.Office.Interop.Word.HTMLDivisions.Add(System.Object@)" />に HTML 部分を追加するには、メソッドを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -60,7 +50,7 @@
       </Parameters>
       <Docs>
         <param name="Range">省略可能な<b>オブジェクト</b>です。 新しい HTML 部分を周囲に配置する既存の HTML 部分を指定します。</param>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.HTMLDivision" /> Web ドキュメントに追加された新しい HTML 部分を表すオブジェクト。</summary>
+        <summary>Web ドキュメント<see cref="T:Microsoft.Office.Interop.Word.HTMLDivision" />に追加される新しい HTML 区分を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -144,12 +134,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -210,7 +199,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">各オブジェクトの序数位置を示す<b>整数</b>です。</param>
+        <param name="Index">個々のオブジェクトの位置を表す<b>整数型 (Integer</b> ) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -239,12 +228,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定の HTML 部分のネスト レベルを返します。</summary>
+        <summary>指定した HTML 部のネストレベルを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>最も外側のテーブルには、1 の入れ子レベルがあります。各連続的にネストした表のネスト レベルは、1 つ前のテーブルよりも大きくします。</para>
-          <para />
-        </remarks>
+        <remarks><para>一番外側の表のネスト レベルは 1 です。 連続的にネストしている表のそれぞれのネスト レベルは、外側の表のネスト レベルよりも 1 つ大きくなります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

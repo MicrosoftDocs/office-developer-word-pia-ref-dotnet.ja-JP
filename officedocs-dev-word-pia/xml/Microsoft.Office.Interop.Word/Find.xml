@@ -1,13 +1,5 @@
 <Type Name="Find" FullName="Microsoft.Office.Interop.Word.Find">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f63dc36acb8e1cf56f86311f5fd23d30d0daa392" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671527" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Find" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="771250bff76eecefd95fd6cad7906709cfc8f69c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146844" /></Metadata><TypeSignature Language="C#" Value="public interface Find" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Find" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Find" />
   <TypeSignature Language="VB.NET" Value="Public Interface Find" />
@@ -26,14 +18,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>検索操作の条件を表します。</summary>
-    <remarks>
-      <para>
-        <b>Find</b>オブジェクトのメソッドとプロパティが、[検索と置換] ダイアログ ボックスのオプションに対応します</para>。
-      <para>オブジェクトを取得する<b>検索</b>する<b>検索</b>プロパティを使用します</para>。
-      <para>から<b>Find</b>オブジェクトを取得したかどうか、<see cref="T:Microsoft.Office.Interop.Word.Selection" />オブジェクトの検索条件に一致する文字列が見つかると、選択範囲が変更されます</para>。
-      <para>から<b>Find</b>オブジェクトを取得したかどうか、<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトの検索条件に一致するテキストが見つかりましたが、 <b>Range</b>オブジェクトを再定義すると、選択範囲は変更されません</para>。
-      <para /></remarks>
+    <summary>検索に使用する条件を表します。</summary>
+    <remarks><para><b>Find</b> オブジェクトのプロパティとメソッドは [検索と置換] ダイアログ ボックスのオプションと対応します。</para>
+      <para><b>Find</b> プロパティを使用して <b>Find</b> オブジェクトを取得します。</para>
+      <para>オブジェクトから Find オブジェクトを取得した場合、検索条件に一致する文字列が見つかった場合、選択範囲は変更されます。 <b></b> <see cref="T:Microsoft.Office.Interop.Word.Selection" /></para>
+      <para>オブジェクトから Find オブジェクトを取得した場合、検索条件と一致するテキストが見つかっても選択範囲は変更されませんが、 <b>Range</b>オブジェクトが再定義されます。 <b></b> <see cref="T:Microsoft.Office.Interop.Word.Range" /></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,8 +76,7 @@
       <Parameters />
       <Docs>
         <summary>日本語の文字列に関連付けられているあいまい検索のオプションをすべてクリアします。</summary>
-        <remarks>
-          <para>このメソッドは、 <b>false を指定</b>する次のプロパティの値を設定します。</para>
+        <remarks><para>このメソッドは、次のプロパティの値を<b>False</b>に設定します。</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyAY" />
           </para>
@@ -142,8 +131,7 @@
           <para>
             <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyZJ" />
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearFormatting">
@@ -167,11 +155,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>テキストと段落の選択範囲または検索または置換操作で指定された書式設定から削除します。</summary>
-        <remarks>
-          <para>書式を検索条件として含まれてないことを確認または置換操作は、操作を実行する前にこのメソッドを使用します。</para>
-          <para />
-        </remarks>
+        <summary>選択範囲または検索または置換操作で指定された書式から、文字列および段落の書式を削除します。</summary>
+        <remarks><para>検索または置換操作の条件に書式設定が含まれないようにするには、操作を実行する前に、このメソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearHitHighlight">
@@ -196,13 +182,9 @@
       <Parameters />
       <Docs>
         <summary>検索処理で見つかり、強調表示内にあるすべてのテキストの強調表示を削除し、 <b>ブール値</b> 操作が成功したかどうかを表すを返します。</summary>
-        <returns>
-          <b>ブール型 (Boolean)</b>
-        </returns>
-        <remarks>
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.Find.HitHighlight(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />見つかった文字列を強調表示する方法です。</para>
-          <para />
-        </remarks>
+        <returns><b>Boolean</b></returns>
+        <remarks><para>見つかった<see cref="M:Microsoft.Office.Interop.Word.Find.HitHighlight(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />テキストを強調表示するには、メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CorrectHangulEndings">
@@ -231,12 +213,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ハングル語の文字列を置換するとき、Microsoft Word がそのハングルを自動的に修正かどうかを決定します。</summary>
+        <summary>ハングルテキストを置換するときにハングルの文末を自動的に修正するかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ハングル語の文字列、および場合は<b>False</b>を置換するときに Microsoft Word がハングルの文末に自動的に修正される場合、このプロパティは<b>True</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>ハングルの文字列を置換するときにハングルの文末が自動的に修正される場合は<b>True</b>を返します。ない場合は<b>False</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -262,12 +242,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -307,28 +286,28 @@
       </Parameters>
       <Docs>
         <param name="FindText">省略可能な<b>オブジェクト</b>です。 検索する文字列を指定します。 書式だけを検索する場合は、空文字列 ("") を指定します。 適切な文字コードを指定すると、特殊文字を検索できます。 たとえば、"^p" は段落記号に対応し、"^t" はタブ記号に対応しています。</param>
-        <param name="MatchCase">省略可能な<b>オブジェクト</b>です。 <b>True</b> 検索文字列が大文字小文字を区別することを指定します。 大文字] チェック ボックスで、[検索と置換] ダイアログ ボックス ([編集] メニュー) に対応します。</param>
-        <param name="MatchWholeWord">省略可能な<b>オブジェクト</b>です。 の<b>場合は true。</b>長い単語の一部であるテキストではなく単語全体を検索、検索操作をします。 単語全体のみを検索する] チェック ボックスで、[ 検索し、置換] ダイアログ ボックスに対応します。</param>
-        <param name="MatchWildcards">省略可能な<b>オブジェクト</b>です。 <b>True の</b> テキストを検索するには特殊な検索演算子であります。 [検索し、置換] ダイアログ ボックスで ワイルドカードを使用する] チェック ボックスに対応しています。</param>
+        <param name="MatchCase">省略可能な<b>オブジェクト</b>です。 <b>True</b> 検索文字列が大文字小文字を区別することを指定します。 [検索と置換] ダイアログ ボックス ([編集] メニュー) の [大文字と小文字を区別する] チェック ボックスに相当します。</param>
+        <param name="MatchWholeWord">省略可能な<b>オブジェクト</b>です。 検索操作で単語全体のみを検索するには、 <b>True</b>を指定します。これは、長い単語の一部であるテキストではありません。 [検索と置換] ダイアログ ボックスの [完全に一致する単語だけを検索する] チェック ボックスに相当します。</param>
+        <param name="MatchWildcards">省略可能な<b>オブジェクト</b>です。 <b>True の</b> テキストを検索するには特殊な検索演算子であります。 [検索と置換] ダイアログ ボックスの [ワイルドカードを使用する] チェック ボックスに相当します。</param>
         <param name="MatchSoundsLike">省略可能な<b>オブジェクト</b>です。 <b>True を指定</b> して、検索対象と類似した単語、検索文字列にします。 [検索し、置換] ダイアログ ボックスで [ あいまい検索] チェック ボックスに対応します。</param>
         <param name="MatchAllWordForms">省略可能な<b>オブジェクト</b>です。 の <b>場合は true</b> 検索対象とし、検索文字列のすべてのフォーム (たとえば、「配置」を検索「座って」と"sat")。 [検索し、置換] ダイアログ ボックスで [ すべての単語の活用形を検索する] チェック ボックスに対応します。</param>
         <param name="Forward">省略可能な<b>オブジェクト</b>です。 <b>True</b> (ドキュメントの末尾) に向かって上方向へ検索します。</param>
-        <param name="Wrap">省略可能な<b>オブジェクト</b>です。 文書の先頭以外の場所から検索を開始し、ドキュメントの末尾に到達した場合の処理 (またはその逆の場合は<paramref name="Forward" />が<b>False</b>に設定) します。 この引数は、選択範囲または選択範囲または範囲内の範囲と、検索文字列が見つからない場合の動作も制御します。次のいずれかの<see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" />定数: 選択範囲または指定範囲、Microsoft Word を検索した後、<b>wdFindAsk</b>には、ドキュメントの残りの部分を検索するかどうかを確認するメッセージが表示されます。<b>wdFindContinue</b>検索操作では、先頭または検索範囲の末尾に到達したかどうかを続行します。<b>wdFindStop</b>先頭または検索範囲の末尾に達した場合は、検索処理が終了します。</param>
-        <param name="Format">省略可能な<b>オブジェクト</b>です。 <b>真</b>の他に、または検索文字列を書式設定を検索対象とします。</param>
-        <param name="ReplaceWith">省略可能な<b>オブジェクト</b>です。 置換文字列を指定します。 指定されたテキストを削除するのには、<paramref name="Find" />引数を空の文字列を使用して ("")。 場合と、特殊文字や高度な検索の条件だけを指定する、<paramref name="Find" />の引数です。 交換用としては、グラフィック オブジェクトまたはその他のテキスト以外の項目を指定するに、アイテムをクリップボードに移動して、"^ c"の<paramref name="ReplaceWith" />。</param>
-        <param name="Replace">省略可能な<b>オブジェクト</b>です。 置換を実行する数 (1 つ、すべて、なし) を指定します。 いずれかを指定することができます<see cref="T:Microsoft.Office.Interop.Word.WdReplace" />定数:<b>wdReplaceAll </b><b>wdReplaceNone </b><b>wdReplaceOne</b></param>
+        <param name="Wrap">省略可能な<b>オブジェクト</b>です。 文書の先頭以外の位置で検索が開始され、文書の末尾に到達した場合にどうなるかを制御します ( <paramref name="Forward" />または、 <b>False</b>に設定されている場合はその逆になります)。 また、選択範囲または指定範囲があり、選択範囲または指定範囲内に検索文字列が見つからない場合は、この引数を指定すると、何が起こるかを制御できます。次<see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" />の定数のいずれかを指定できます。<b>wdFindAsk</b>選択範囲または指定範囲を検索すると、文書の残りの部分を検索するかどうかを確認するメッセージが表示されます。<b>wdFindContinue</b>検索範囲の先頭または末尾に達した場合は、検索操作が続行されます。<b>wdFindStop</b>検索範囲の先頭または末尾まで検索すると、検索処理は終了します。</param>
+        <param name="Format">省略可能な<b>オブジェクト</b>です。 <b>True</b>を指定すると、検索する文字列の代わりに、または検索操作で書式を検索します。</param>
+        <param name="ReplaceWith">省略可能な<b>オブジェクト</b>です。 置換文字列を指定します。 <paramref name="Find" />引数で指定されたテキストを削除するには、空の文字列 ("") を使用します。 <paramref name="Find" />引数の場合と同じように、特殊文字と高度な検索条件を指定できます。 グラフィックオブジェクトまたはその他のテキスト以外の項目を置換として指定するには、その項目をクリップボードに移動<paramref name="ReplaceWith" />し、"^ c" を指定します。</param>
+        <param name="Replace">省略可能な<b>オブジェクト</b>です。 置換を実行する数 (1 つ、すべて、なし) を指定します。 任意<see cref="T:Microsoft.Office.Interop.Word.WdReplace" />の定数にすることができます。<b>wdReplaceAll </b> <b>wd置換 enone </b> <b>wdreplaceone</b></param>
         <param name="MatchKashida">省略可能な<b>オブジェクト</b>です。 <b>True</b> の場合は検索操作では、kashida が、アラビア語の文書のテキストを区別します。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
         <param name="MatchDiacritics">省略可能な<b>オブジェクト</b>です。 <b>True</b> の場合は検索操作では、右から左への言語の文書内には、発音区別符号が一致するテキストを区別します。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
         <param name="MatchAlefHamza">省略可能な<b>オブジェクト</b>です。 <b>True</b> の場合は検索操作では、アラビア語ドキュメント内の alef hamza が一致するテキストを区別します。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
         <param name="MatchControl">省略可能な<b>オブジェクト</b>です。 <b>True</b> の場合は検索操作では、右から左への言語の文書で双方向制御文字が一致するテキストを区別します。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
         <summary>指定された実行は、操作を検索します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>検索操作が成功した場合、このメソッドが<b>True</b>を返します</para>。
-          <para>場合<paramref name="MatchWildcards" />が<b>True</b>、ワイルドカード文字やその他の高度な検索条件を指定することができます、<paramref name="FindText" />の引数です。たとえば、"* (ing)"ing の単語がすべて検索の終了</para>記号を検索する場合、キャレット (^)、ゼロ (0) と入力し、記号の文字コードを
-          <para>。たとえば、"^0151"全角ダッシュ (—) に対応します</para>。
-          <para>文字列の書式は、そのドキュメントに置き換えられます、特に指定しない限り、置換後の文字列が継承されます。などの文字列"abc"を"xyz"に置き換えた場合文字列"abc"に太字の書式が文字列"xyz"に太字の書式設定に置き換えられます</para>。
-          <para>も場合は、<paramref name="MatchCase" />が<b>False</b>に出現する検索文字列が大文字であるが、検索と置換テキストの大文字と小文字に関係なく、置換後の文字列の大文字バージョンで置き換えられます。前の例を使用すると、文字列"ABC"は"XYZ"に置き換えられます</para><para /></remarks>
+        <remarks><para>検索操作が成功した場合、このメソッドは<b>True</b>を返します。</para>
+          <para>が<paramref name="MatchWildcards" /> <b>True</b>の場合は、ワイルドカード文字と、 <paramref name="FindText" />その他の高度な検索条件を引数として指定できます。 たとえば、"* (ing)" は、末尾が "ing" で終わる単語を検索します。</para>
+          <para>記号を検索するには、キャレット (^)、ゼロ (0)、および記号の文字コードを入力します。 たとえば、"^ 0151" は全角ダッシュ (—) に対応しています。</para>
+          <para>他の方法で指定しない限り、置換文字列は置換前の文字列の書式を文書内で継承します。 たとえば、文字列 "abc" を "xyz" に置き換えた場合、"abc" が太字で書式設定されている場合は、文字列 "xyz" が太字の書式に置き換えられます。</para>
+          <para>また、 <paramref name="MatchCase" /> <b>False</b>に設定されている場合は、検索テキストの大文字と小文字は、検索と置換のテキストの大文字と小文字の違いにかかわらず、大文字で置き換えられます。 前の例を使用すると、"ABC" のオカレンスが "XYZ" に置き換えられます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute2007">
@@ -373,47 +352,32 @@
       </Parameters>
       <Docs>
         <param name="FindText">検索する文字列を指定します。書式だけを検索する場合は、空文字列 ("") を指定します。適切な文字コードを指定すると、特殊文字を検索できます。たとえば、"^p" は段落記号に対応し、"^t" はタブ文字に対応しています。</param>
-        <param name="MatchCase">
-          <b>True</b>検索文字列が大文字小文字を区別することを指定します。 大文字] チェック ボックスで、[検索と置換] ダイアログ ボックス ([編集] メニュー) に対応します。</param>
-        <param name="MatchWholeWord">の <b>場合は true。</b> 長い単語の一部であるテキストではなく単語全体を検索、検索操作をします。 単語全体のみを検索する] チェック ボックスで、[ 検索し、置換] ダイアログ ボックスに対応します。 </param>
-        <param name="MatchWildcards">
-          <b>True の</b> テキストを検索するには特殊な検索演算子であります。 [検索し、置換] ダイアログ ボックスで ワイルドカードを使用する] チェック ボックスに対応しています。 </param>
-        <param name="MatchSoundsLike">
-          <b>True を指定</b> して、検索対象と類似した単語、検索文字列にします。 [検索し、置換] ダイアログ ボックスで [ あいまい検索] チェック ボックスに対応します。 </param>
-        <param name="MatchAllWordForms">の <b>場合は true</b> 検索対象とし、検索文字列のすべてのフォーム (たとえば、「配置」を検索「座って」と"sat")。 [検索し、置換] ダイアログ ボックスで [ すべての単語の活用形を検索する] チェック ボックスに対応します。 </param>
-        <param name="Forward">
-          <b>True</b> (ドキュメントの末尾) に向かって上方向へ検索します。</param>
-        <param name="Wrap">文書の先頭以外の場所から検索を開始し、ドキュメントの末尾に到達した場合の処理 (またはその逆の場合は<paramref name="Forward" />が<b>False</b>に設定) します。 この引数は、選択範囲または選択範囲または範囲内の範囲と検索テキストが見つかりません場合も制御します。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" />の列挙値。</param>
-        <param name="Format">
-          <b>True</b> を設定すると、検索文字列と書式または書式のみの検索が行われます。</param>
-        <param name="ReplaceWith">置換文字列を指定します。 指定されたテキストを削除するのには、<paramref name="Find" />引数を空の文字列を使用して ("")。 場合と、特殊文字や高度な検索の条件だけを指定する、<paramref name="Find" />の引数です。 交換用としては、グラフィック オブジェクトまたはその他の文字列以外の項目を指定するに、アイテムをクリップボードに移動して、"^ c"の<paramref name="ReplaceWith" />。</param>
-        <param name="Replace">置換を実行する数 (1 つ、すべて、なし) を指定します。 いずれかを指定することができます<see cref="T:Microsoft.Office.Interop.Word.WdReplace" />列挙値。</param>
-        <param name="MatchKashida">
-          <b>True</b> の場合は検索操作では、アラビア語のドキュメントでの kashida のテキストを区別します。この引数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。 </param>
-        <param name="MatchDiacritics">
-          <b>True</b> の場合は検索操作では、右から左への言語の文書内には、発音区別符号が一致するテキストを区別します。この引数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。 </param>
-        <param name="MatchAlefHamza">
-          <b>True</b> の場合は検索操作では、alef hamza をアラビア語の文書内の一致するテキストを区別します。この引数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。 </param>
-        <param name="MatchControl">
-          <b>True</b> の場合は検索操作では、右から左への言語の文書で双方向制御文字が一致するテキストを区別します。この引数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。 </param>
-        <param name="MatchPrefix">
-          <b>True</b> 検索文字列で始まる単語に一致します。 [検索し、置換] ダイアログ ボックスの [ 接頭辞に一致] チェック ボックスに対応します。 </param>
-        <param name="MatchSuffix">
-          <b>True</b> 検索文字列で終わる単語に一致します。  [検索し、置換] ダイアログ ボックスの [ 接尾辞に一致する] チェック ボックスに対応します。</param>
-        <param name="MatchPhrase">
-          <b>True</b> のすべての空白文字および単語の間の制御文字を無視します。</param>
-        <param name="IgnoreSpace">
-          <b>True</b> では、単語間の空白はすべて無視されます。 [検索し、置換] ダイアログ ボックスで [ 空白文字を無視] チェック ボックスに対応します。 </param>
-        <param name="IgnorePunct">
-          <b>True</b> は、単語間のすべての区切り記号を無視します。 [検索し、置換] ダイアログ ボックスの [ 句読点を無視] チェック ボックスに対応します。 </param>
-        <summary>指定された実行は、操作を検索します。検索操作が成功した場合は <b>True</b> を返します。</summary>
-        <returns>検索操作が正常に完了したかどうかを示す<b>ブール</b>値です。</returns>
-        <remarks>
-          <para>場合<paramref name="MatchWildcards" />が<b>True</b>、ワイルドカード文字やその他の高度な検索条件を指定することができます、<paramref name="FindText" />の引数です。などの"* (ing)""ing"で単語がすべて検索が終了します</para>。記号を検索する場合、キャレット (^)、ゼロ (0) と入力し、記号の文字コードを
-          <para>。たとえば、"^0151"全角ダッシュ (—) に対応します</para>。
-          <para>文字列の書式は、そのドキュメントに置き換えられます、特に指定しない限り、置換後の文字列が継承されます。などの文字列"abc"を"xyz"に置き換えた場合文字列"abc"に太字の書式が文字列"xyz"に太字の書式設定に置き換えられます</para>。
-          <para>も場合は、<paramref name="MatchCase" />が<b>False</b>に出現する検索文字列が大文字であるが、置換後の文字列の大文字と小文字に関係なく、置換後の文字列の大文字バージョンで置き換えられます。前の例を使用すると、文字列"ABC"は"XYZ"に置き換えられます</para>。
-          <para /></remarks>
+        <param name="MatchCase"><b>True</b> を設定すると、検索文字列の大文字と小文字が区別されます。 [検索と置換] ダイアログ ボックス ([編集] メニュー) の [大文字と小文字を区別する] チェック ボックスに相当します。</param>
+        <param name="MatchWholeWord">単語全体を検索対象とし、長い単語の一部は対象としないようにする場合は、<b>True</b> を設定します。 [検索と置換] ダイアログ ボックスの [完全に一致する単語だけを検索する] チェック ボックスに相当します。</param>
+        <param name="MatchWildcards"><b>True の</b> テキストを検索するには特殊な検索演算子であります。 [検索と置換] ダイアログ ボックスの [ワイルドカードを使用する] チェック ボックスに相当します。</param>
+        <param name="MatchSoundsLike"><b>True を指定</b> して、検索対象と類似した単語、検索文字列にします。 [検索し、置換] ダイアログ ボックスで [ あいまい検索] チェック ボックスに対応します。</param>
+        <param name="MatchAllWordForms">の <b>場合は true</b> 検索対象とし、検索文字列のすべてのフォーム (たとえば、「配置」を検索「座って」と"sat")。 [検索し、置換] ダイアログ ボックスで [ すべての単語の活用形を検索する] チェック ボックスに対応します。</param>
+        <param name="Forward"><b>True</b> (ドキュメントの末尾) に向かって上方向へ検索します。</param>
+        <param name="Wrap">文書の先頭以外の位置で検索が開始され、文書の末尾に到達した場合にどうなるかを制御します ( <paramref name="Forward" />または、 <b>False</b>に設定されている場合はその逆になります)。 この引数は、選択範囲または選択範囲または範囲内の範囲と検索テキストが見つかりません場合も制御します。 <see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" />列挙値のいずれかをすることができます。</param>
+        <param name="Format"><b>True</b> を設定すると、検索文字列と書式または書式のみの検索が行われます。</param>
+        <param name="ReplaceWith">置換文字列を指定します。 <paramref name="Find" />引数で指定されたテキストを削除するには、空の文字列 ("") を使用します。 <paramref name="Find" />引数の場合と同じように、特殊文字と高度な検索条件を指定できます。 グラフィックオブジェクトまたはその他の変更されて<paramref name="ReplaceWith" />いないアイテムを置換として指定するには、クリップボードにアイテムを移動し、"^ c" を指定します。</param>
+        <param name="Replace">置換を実行する数 (1 つ、すべて、なし) を指定します。 任意の<see cref="T:Microsoft.Office.Interop.Word.WdReplace" />列挙値を指定できます。</param>
+        <param name="MatchKashida"><b>True</b> の場合は検索操作では、アラビア語のドキュメントでの kashida のテキストを区別します。この引数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。 </param>
+        <param name="MatchDiacritics"><b>True</b> の場合は検索操作では、右から左への言語の文書内には、発音区別符号が一致するテキストを区別します。この引数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。 </param>
+        <param name="MatchAlefHamza"><b>True</b> の場合は検索操作では、alef hamza をアラビア語の文書内の一致するテキストを区別します。この引数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。 </param>
+        <param name="MatchControl"><b>True</b> の場合は検索操作では、右から左への言語の文書で双方向制御文字が一致するテキストを区別します。この引数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。 </param>
+        <param name="MatchPrefix"><b>True</b> 検索文字列で始まる単語に一致します。 [検索と置換] ダイアログ ボックスの [接頭辞に一致する] チェック ボックスに相当します。</param>
+        <param name="MatchSuffix"><b>True</b> 検索文字列で終わる単語に一致します。  [検索と置換] ダイアログ ボックスの [接尾辞に一致する] に相当します。</param>
+        <param name="MatchPhrase"><b>True</b> のすべての空白文字および単語の間の制御文字を無視します。</param>
+        <param name="IgnoreSpace"><b>True</b> では、単語間の空白はすべて無視されます。 [検索と置換] ダイアログ ボックスの [空白文字を無視する] チェック ボックスに相当します。</param>
+        <param name="IgnorePunct"><b>True</b> は、単語間のすべての区切り記号を無視します。 [検索と置換] ダイアログ ボックスの [句読点を無視する] チェック ボックスに相当します。</param>
+        <summary>指定された実行は、操作を検索します。 検索操作が成功した場合は <b>True</b> を返します。</summary>
+        <returns>検索操作が成功したかどうかを示す<b>ブール</b>値。</returns>
+        <remarks><para>が<paramref name="MatchWildcards" /> <b>True</b>の場合は、ワイルドカード文字と、 <paramref name="FindText" />その他の高度な検索条件を引数として指定できます。 たとえば、"*(ing)" を指定すると、最後が "ing" で終わる単語がすべて検索されます。</para>
+          <para>記号を検索する場合、キャレット (^) とゼロ (0) を入力し、記号の文字コードを入力します。たとえば、"^0151" は全角ダッシュ (?) に対応します。</para>
+          <para>他の方法で指定しない限り、置換文字列は置換前の文字列の書式を文書内で継承します。たとえば、文字列 "abc" を "xyz" に置換する場合、文字列 "abc" に太字の書式が設定されていると、文字列 "xyz" にも太字の書式が設定されて置換されます。</para>
+          <para>また、 <paramref name="MatchCase" /> <b>False</b>の場合は、置換後の文字列の大文字小文字に関係なく、大文字と小文字が区別されている検索文字列が置換後の文字列に置き換えられます。 前の例を使用すると、文字列"ABC"を"XYZ"に置き換えられます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteOld">
@@ -493,7 +457,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.Font" />を指定したオブジェクトの文字書式を表すオブジェクト。</summary>
+        <summary>取得または指定<see cref="T:Microsoft.Office.Interop.Word.Font" />したオブジェクトの文字書式を表すオブジェクトを設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -524,12 +488,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>検索操作に書式設定が含まれているかどうかを決定します。</summary>
+        <summary>書式が検索操作に含まれているかどうかを判断します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、書式設定が含まれる場合、検索操作、および<b>false の場合</b>にそうでない場合に<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするには、プロパティの値を設定します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、書式設定が検索操作に含まれている場合は<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Forward">
@@ -558,12 +520,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>かどうか、検索操作の検索方向はドキュメントを決定します。</summary>
+        <summary>検索操作でドキュメントを順方向に検索するかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>検索操作の検索方向はドキュメント、および<b>False</b>場合は、文書を逆方向に検索する場合、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするには、プロパティの値を設定します。</para>
-          <para />
-        </remarks>
+        <remarks><para>検索操作で文書を順方向に検索する場合、このプロパティは<b>True</b>を返します。 <b>False</b>を指定すると、文書を逆方向に検索します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Found">
@@ -589,12 +549,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの検索が一致するものを生成したかどうかを決定します。</summary>
+        <summary>指定したオブジェクトの検索で一致が生成されたかどうかを判断します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>検索条件の一致、および場合は<b>false を指定</b>しない場合、このプロパティは<b>True</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>検索で一致が生成される場合は<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Frame">
@@ -620,7 +578,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Frame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Frame" /> 、フレームを指定したスタイルまたは検索と置換操作のための書式設定を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Frame" />たスタイルまたは置換操作のレイアウト枠の書式設定を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -651,10 +609,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定する <b>ブール値</b> を韓国語の文字をハングルや漢字を検索するには、検索の操作をするかどうかを表します。読み取り/書き込み。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>取得または設定する <b>ブール値</b> を韓国語の文字をハングルや漢字を検索するには、検索の操作をするかどうかを表します。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -684,12 +640,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>蛍光ペン書式が検索条件に含まれているかどうかを決定します。</summary>
+        <summary>蛍光ペン書式が検索条件に含まれるかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>可能</b>値で使用できる、<see cref="T:Microsoft.Office.Interop.Word.Find" />を強調表示の選択範囲の書式設定の状態を無視するか、範囲をオブジェクトが検索されます</para>。<b><para>このプロパティは Trueを返します蛍光ペン書式が検索条件に含まれる場合。返すことができますか<b>場合は True</b>、 <b>False</b>、または<b>wdUndefined</b>に設定します</para></b>。
-          <para /></remarks>
+        <remarks><para><b>WdUndefined</b>の値を<see cref="T:Microsoft.Office.Interop.Word.Find" />オブジェクトと共に使用すると、検索する選択範囲または指定範囲内の強調表示の書式設定の状態を無視できます。</para>
+          <para>検索条件に蛍光ペン書式が含まれている場合、このプロパティは<b>True</b>を返します。 か <b>場合は True</b> 、 <b>False</b> 、または <b>wdUndefined</b> に設定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HitHighlight">
@@ -734,47 +689,29 @@
       </Parameters>
       <Docs>
         <param name="FindText">検索する文字列を指定します。書式だけを検索する場合は、空文字列 ("") を指定します。適切な文字コードを指定すると、特殊文字を検索できます。たとえば、"^p" は段落記号に対応し、"^t" はタブ記号に対応しています。</param>
-        <param name="HighlightColor">文字列用の蛍光ペンの色を指定します。 任意の RGB 色またはのいずれか、<see cref="T:Microsoft.Office.Interop.Word.WdColor" />の列挙値。</param>
-        <param name="TextColor">文字列の色を指定します。 任意の RGB 色またはのいずれか、<see cref="T:Microsoft.Office.Interop.Word.WdColor" />の列挙値。</param>
-        <param name="MatchCase">
-          <b>True</b> 検索文字列が大文字小文字を区別することを指定します。 [検索し、置換] ダイアログ ボックスで、[ 大文字小文字を区別] チェック ボックスに対応します。 </param>
-        <param name="MatchWholeWord">の <b>場合は true。</b> 長い単語の一部であるテキストではなく単語全体を検索、検索操作をします。 単語全体のみを検索する] チェック ボックスで、[ 検索し、置換] ダイアログ ボックスに対応します。 </param>
-        <param name="MatchPrefix">
-          <b>True</b> 検索文字列で始まる単語に一致します。 [検索し、置換] ダイアログ ボックスの [ 接頭辞に一致] チェック ボックスに対応します。 </param>
-        <param name="MatchSuffix">
-          <b>True</b> 検索文字列で終わる単語に一致します。  [検索し、置換] ダイアログ ボックスの [ 接尾辞に一致する] チェック ボックスに対応します。</param>
-        <param name="MatchPhrase">
-          <b>True</b> のすべての空白文字および単語の間の制御文字を無視します。</param>
-        <param name="MatchWildcards">
-          <b>True の</b> テキストを検索するには特殊な検索演算子であります。 [検索し、置換] ダイアログ ボックスで ワイルドカードを使用する] チェック ボックスに対応しています。 </param>
-        <param name="MatchSoundsLike">
-          <b>True を指定</b> して、検索対象と類似した単語、検索文字列にします。 [検索し、置換] ダイアログ ボックスで [ あいまい検索] チェック ボックスに対応します。 </param>
-        <param name="MatchAllWordForms">の <b>場合は true</b> 検索対象とし、検索文字列のすべてのフォーム (たとえば、「配置」を検索「座って」と"sat")。 [検索し、置換] ダイアログ ボックスで [ すべての単語の活用形を検索する] チェック ボックスに対応します。 </param>
-        <param name="MatchByte">
-          <b>True を指定</b> 検索時に全角と半角のアルファベットまたはカタカナを区別します。</param>
-        <param name="MatchFuzzy">
-          <b>True</b> 検索時に日本語の文字列のあいまい検索のオプションを使用します。読み取り/書き込み。 </param>
-        <param name="MatchKashida">
-          <b>True</b> の場合は検索操作では、アラビア語のドキュメントでの kashida のテキストを区別します。この引数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。 </param>
-        <param name="MatchDiacritics">
-          <b>True</b> の場合は検索操作では、右から左への言語の文書内には、発音区別符号が一致するテキストを区別します。この引数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。 </param>
-        <param name="MatchAlefHamza">
-          <b>True</b> の場合は検索操作では、alef hamza をアラビア語の文書内の一致するテキストを区別します。この引数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。 </param>
-        <param name="MatchControl">
-          <b>True</b> の場合は検索操作では、右から左への言語の文書で双方向制御文字が一致するテキストを区別します。この引数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。 </param>
-        <param name="IgnoreSpace">
-          <b>True</b> では、単語間の空白はすべて無視されます。 [検索し、置換] ダイアログ ボックスで [ 空白文字を無視] チェック ボックスに対応します。 </param>
-        <param name="IgnorePunct">
-          <b>True</b> は、単語間のすべての区切り記号を無視します。 [検索し、置換] ダイアログ ボックスの [ 句読点を無視] チェック ボックスに対応します。 </param>
-        <param name="HanjaPhoneticHangul">
-          <b>True</b> は、ハングルと漢字のふりがな文字を無視します。韓国語の言語のサポートがある場合にのみ利用できます。 </param>
+        <param name="HighlightColor">文字列用の蛍光ペンの色を指定します。 任意の RGB カラーまたは<see cref="T:Microsoft.Office.Interop.Word.WdColor" />列挙値のいずれかをすることができます。</param>
+        <param name="TextColor">文字列の色を指定します。 任意の RGB カラーまたは<see cref="T:Microsoft.Office.Interop.Word.WdColor" />列挙値のいずれかをすることができます。</param>
+        <param name="MatchCase"><b>True</b> 検索文字列が大文字小文字を区別することを指定します。 [検索と置換] ダイアログボックスの [大文字と小文字を区別する] チェックボックスに対応します。</param>
+        <param name="MatchWholeWord">単語全体を検索対象とし、長い単語の一部は対象としないようにする場合は、<b>True</b> を設定します。 [検索と置換] ダイアログ ボックスの [完全に一致する単語だけを検索する] チェック ボックスに相当します。</param>
+        <param name="MatchPrefix"><b>True</b> 検索文字列で始まる単語に一致します。 [検索と置換] ダイアログ ボックスの [接頭辞に一致する] チェック ボックスに相当します。</param>
+        <param name="MatchSuffix"><b>True</b> 検索文字列で終わる単語に一致します。  [検索と置換] ダイアログ ボックスの [接尾辞に一致する] に相当します。</param>
+        <param name="MatchPhrase"><b>True</b> のすべての空白文字および単語の間の制御文字を無視します。</param>
+        <param name="MatchWildcards"><b>True の</b> テキストを検索するには特殊な検索演算子であります。 [検索と置換] ダイアログ ボックスの [ワイルドカードを使用する] チェック ボックスに相当します。</param>
+        <param name="MatchSoundsLike"><b>True を指定</b> して、検索対象と類似した単語、検索文字列にします。 [検索し、置換] ダイアログ ボックスで [ あいまい検索] チェック ボックスに対応します。</param>
+        <param name="MatchAllWordForms">の <b>場合は true</b> 検索対象とし、検索文字列のすべてのフォーム (たとえば、「配置」を検索「座って」と"sat")。 [検索し、置換] ダイアログ ボックスで [ すべての単語の活用形を検索する] チェック ボックスに対応します。</param>
+        <param name="MatchByte"><b>True を指定</b> 検索時に全角と半角のアルファベットまたはカタカナを区別します。</param>
+        <param name="MatchFuzzy"><b>True</b> 検索時に日本語の文字列のあいまい検索のオプションを使用します。 値の取得と設定が可能です。</param>
+        <param name="MatchKashida"><b>True</b> の場合は検索操作では、アラビア語のドキュメントでの kashida のテキストを区別します。この引数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。 </param>
+        <param name="MatchDiacritics"><b>True</b> の場合は検索操作では、右から左への言語の文書内には、発音区別符号が一致するテキストを区別します。この引数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。 </param>
+        <param name="MatchAlefHamza"><b>True</b> の場合は検索操作では、alef hamza をアラビア語の文書内の一致するテキストを区別します。この引数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。 </param>
+        <param name="MatchControl"><b>True</b> の場合は検索操作では、右から左への言語の文書で双方向制御文字が一致するテキストを区別します。この引数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。 </param>
+        <param name="IgnoreSpace"><b>True</b> では、単語間の空白はすべて無視されます。 [検索と置換] ダイアログ ボックスの [空白文字を無視する] チェック ボックスに相当します。</param>
+        <param name="IgnorePunct"><b>True</b> は、単語間のすべての区切り記号を無視します。 [検索と置換] ダイアログ ボックスの [句読点を無視する] チェック ボックスに相当します。</param>
+        <param name="HanjaPhoneticHangul"><b>True</b> は、ハングルと漢字のふりがな文字を無視します。 韓国語の言語のサポートがある場合にのみ利用できます。</param>
         <summary>検出されたすべての一致項目が強調表示され、 <b>ブール型</b> の一致が見つかったかどうかを表すを返します。</summary>
-        <returns>ブール型</returns>
-        <remarks>
-          <para>
-            <b>HitHighlight</b>メソッドは、Microsoft Office Word を電子メール エディターとして指定するときに、Microsoft Office Outlook 内で強調表示を検索するには、主に適用されます。 ただし、見つかった文字列を強調表示したい場合は、Word 内部の文書に対してこのメソッドを使用できます。 それ以外の場合を使用して、<see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />メソッドです。</para>
-          <para />
-        </remarks>
+        <returns>Boolean</returns>
+        <remarks><para><b>HitHighlight</b>メソッドは、Microsoft office Word が電子メールエディターとして指定されている場合に、Microsoft office Outlook の検索強調表示に主に適用されます。  ただし、検出された文字列を強調表示する場合に、Word 内部の文書に対してこのメソッドを使用することもできます。  それ以外の場合<see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />は、メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IgnorePunct">
@@ -803,15 +740,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>ブール</b> 検索操作で見つかった文字列の句読点を無視するかどうかを設定または返します。読み取り/書き込み。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>このプロパティは、[検索と置換] ダイアログ ボックスで [区切り記号文字の無視する] チェック ボックスに対応します。</para>
-          <para />
-        </remarks>
+        <summary><b>ブール</b> 検索操作で見つかった文字列の句読点を無視するかどうかを設定または返します。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>このプロパティは、[ 検索と置換] ダイアログ ボックスの [ 句読点を無視する] チェック ボックスに対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IgnoreSpace">
@@ -840,15 +772,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>ブール</b> 検索操作で見つかった文字列の余分な空白文字を無視するかどうかを設定または返します。読み取り/書き込み。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>このプロパティは、[検索と置換] ダイアログ ボックスで無視する空白文字のチェック ボックスに対応します。</para>
-          <para />
-        </remarks>
+        <summary><b>ブール</b> 検索操作で見つかった文字列の余分な空白文字を無視するかどうかを設定または返します。 読み取り/書き込み。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>このプロパティは、[ 検索と置換] ダイアログ ボックスの [ 空白文字を無視する] チェック ボックスに対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageID">
@@ -877,13 +804,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの言語を設定または返します。</summary>
+        <summary>オブジェクトの言語を示します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>WdLanguageID</b>定数を上記のいくつかを選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できないがあります。</para>
-          <para />
-        </remarks>
+        <remarks><para>上記の<b>WdLanguageID</b>定数の中には、選択またはインストールされている言語のサポート (たとえば、英語 (米国)) によっては使用できないものがあります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageIDFarEast">
@@ -914,10 +838,8 @@
       <Docs>
         <summary>指定したオブジェクトの東アジア言語を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>これは、東アジア言語のバージョンの Microsoft Word で作成した文書に東アジア言語のテキストの言語を設定する推奨される方法です。</para>
-          <para />
-        </remarks>
+        <remarks><para>Word 東アジア版で作成された文書に東アジア言語の文字列を設定する場合、この方法をお勧めします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageIDOther">
@@ -946,7 +868,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの言語を設定または返します。</summary>
+        <summary>オブジェクトの言語を示します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -977,12 +899,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>かどうかを検索操作では、アラビア語ドキュメント内の alef hamza が一致するテキストを区別します。</summary>
+        <summary>検索操作で、アラビア語の文書の alef hamza が一致するテキストと一致するかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは<b>True</b>を返す場合検索操作では、アラビア語の文書であると<b>false を指定</b>しない場合の alef hamza が一致するテキストを区別します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするには、プロパティの値を設定します。</para>
-          <para />
-        </remarks>
+        <remarks><para>検索操作では、アラビア語の文書で alef hamza が一致するテキストと一致する場合は<b>True</b>を返します。ない場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchAllWordForms">
@@ -1011,12 +931,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>(検索する文字列が"sit が場合たとえば、"sat"や「座って」が検索対象) の検索操作で検索するテキストのすべてのフォームがあるかどうかを判断します。</summary>
+        <summary>検索するテキストのすべてのフォームが検索操作で見つかったかどうかを指定します (たとえば、検索するテキストが「配置」である場合は「配置」、「sat」、「配置」も参照してください)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>(検索する文字列が"sit が場合たとえば、"sat"や「座って」が検索対象) の検索の操作、および場合は<b>False</b>で検索するテキストのすべてのフォームがある場合、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
-          <para>使用、<see cref="P:Microsoft.Office.Interop.Word.Find.Text" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Word.Find" />オブジェクト、または<paramref name="FindText" />の引数を<see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />ドキュメント内を検索するテキストを指定します</para>。
-          <para /></remarks>
+        <remarks><para>検索するテキストのすべてのフォームが検索操作で見つかった場合 (たとえば、検索するテキストが「配置」、「sat」、「配置」などの場合) は、 <b>True</b>を返します。そうでない場合は、 <b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para>ドキュメントで<see cref="P:Microsoft.Office.Interop.Word.Find.Text" />検索するテキスト<see cref="T:Microsoft.Office.Interop.Word.Find" />を指定する<paramref name="FindText" />には、 <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />オブジェクトのプロパティまたはメソッドの引数を使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchByte">
@@ -1045,12 +964,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>かどうかが区別の全角と半角のアルファベットまたはカタカナの検索時に決定します。</summary>
+        <summary>検索時に全角文字と半角文字を区別するかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>全角と半角のアルファベットまたはカタカナの時に区別、検索、および場合は<b>False</b>の場合、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするには、プロパティの値を設定します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、検索時に全角と半角の英字または文字を区別する場合は<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchCase">
@@ -1079,12 +996,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>かどうか、検索が大文字小文字を区別を指定します。</summary>
+        <summary>検索操作で大文字と小文字を区別するかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、 <b>True の</b>場合、検索操作は、大文字小文字を区別し、場合は<b>False</b>を返します。既定値は、 <b>false を指定</b>します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
-          <para>を使用して、<see cref="P:Microsoft.Office.Interop.Word.Find.Text" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Word.Find" />オブジェクトまたはを使用して、<paramref name="FindText" />の引数を<see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />ドキュメント内に配置するテキストを指定します</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティは、検索操作で大文字と小文字が区別される場合は<b>True</b>を返し、そうでない場合は<b>False</b>を返します。 既定値は <b>False</b> です。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para>ドキュメント内<see cref="P:Microsoft.Office.Interop.Word.Find.Text" />に配置する<see cref="T:Microsoft.Office.Interop.Word.Find" />テキストを指定する<paramref name="FindText" />には、 <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />オブジェクトのプロパティを使用するか、またはメソッドで引数を使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchControl">
@@ -1113,12 +1029,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>かどうかを検索操作では、右から左への言語の文書で双方向制御文字が一致するテキストを区別します。</summary>
+        <summary>検索操作で、右から左へ記述する言語の文書で双方向制御文字が一致するテキストと一致するかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは<b>True</b>を返す場合検索操作では、右から左へ記述する言語のドキュメント、および<b>False</b>そうでない場合での双方向制御文字が一致するテキストを区別します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするには、プロパティの値を設定します。</para>
-          <para />
-        </remarks>
+        <remarks><para>検索操作では、右から左への言語の文書で双方向制御文字が一致するテキストと一致する場合は<b>True</b> 、それ以外の場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchDiacritics">
@@ -1147,12 +1061,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>かどうかを検索操作では、右から左への言語の文書内には、発音区別符号が一致するテキストを区別します。</summary>
+        <summary>右から左への言語の文書で、発音区別符号が一致するテキストを検索操作に一致させるかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは<b>True</b>を返す場合検索操作では、右から左へ記述する言語のドキュメント、および<b>false を指定</b>しない場合に、発音区別符号が一致するテキストを区別します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするには、プロパティの値を設定します。</para>
-          <para />
-        </remarks>
+        <remarks><para>右から左への言語の文書で、発音区別符号が一致するテキストが検索操作で一致する場合は<b>True</b>を返し、表示されない場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchFuzzy">
@@ -1181,12 +1093,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word が、検索時に日本語テキストのあいまい検索のオプションを使用かどうか決定します。</summary>
+        <summary>検索時に日本語の文字列のあいまい検索オプションを使用するかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、Word が、検索、および場合は<b>false の場合</b>の中に日本語テキストのあいまい検索のオプションを使用する場合に<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするには、プロパティの値を設定します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、検索時に日本語の文字列のあいまい検索オプションを使用する場合は<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchKashida">
@@ -1215,12 +1125,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>かどうかを検索操作では、kashida が、アラビア語の文書のテキストを区別します。</summary>
+        <summary>検索操作で、アラビア語の文書の kashida が一致するテキストと一致するかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは<b>True</b>を返す場合検索操作では、アラビア語の文書であると<b>false を指定</b>しない場合の kashida のテキストを区別します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするには、プロパティの値を設定します。</para>
-          <para />
-        </remarks>
+        <remarks><para>アラビア語の文書で kashida が一致するテキストと一致する場合、このプロパティは<b>True</b>を返します。ない場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchPhrase">
@@ -1249,11 +1157,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> のすべての空白文字および単語の間の制御文字を無視します。読み取り/書き込み。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary><b>True</b> のすべての空白文字および単語の間の制御文字を無視します。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1283,15 +1188,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 検索文字列で始まる単語に一致します。読み取り/書き込み。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>このプロパティは、[検索と置換] ダイアログ ボックスで、一致するプレフィックス] チェック ボックスに対応します。</para>
-          <para />
-        </remarks>
+        <summary><b>True</b> 検索文字列で始まる単語に一致します。 読み取り/書き込み。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>このプロパティは、[ 検索と置換] ダイアログ ボックスの [ 接頭辞に一致する] チェック ボックスに対応しています。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchSoundsLike">
@@ -1320,12 +1220,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>かどうか、検索対象を検索する文字列に類似した単語が返されますを決定します。</summary>
+        <summary>検索する文字列に類似した単語が検索操作によって返されるかどうかを決定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>そうでない場合、検索操作、および<b>False</b>で検索する文字列に類似した単語が返された場合、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
-          <para>使用、<see cref="P:Microsoft.Office.Interop.Word.Find.Text" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Word.Find" />オブジェクト、または<paramref name="FindText" />の引数を<see cref="M:Microsoft.Office.Interop.Word.Find.ExecuteOld(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />ドキュメント内に配置するテキストを指定します</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティは、検索する文字列に類似した単語が検索操作で返された場合は<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para>ドキュメント内<see cref="P:Microsoft.Office.Interop.Word.Find.Text" />に配置する<see cref="T:Microsoft.Office.Interop.Word.Find" />テキストを指定<paramref name="FindText" />するには<see cref="M:Microsoft.Office.Interop.Word.Find.ExecuteOld(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> 、オブジェクトのプロパティまたはメソッドを使用して引数を指定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchSuffix">
@@ -1354,15 +1253,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> に設定すると、検索文字列で終わる単語が検出されます。値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>このプロパティは、[検索と置換] ダイアログ ボックスで、一致するサフィックス] チェック ボックスに対応します。</para>
-          <para />
-        </remarks>
+        <summary><b>True</b> 検索文字列で終わる単語に一致します。  値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>このプロパティは、[検索と置換] ダイアログ ボックスの [接尾辞に一致する] チェック ボックスに対応しています。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchWholeWord">
@@ -1391,12 +1285,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>検索単語や長い単語の一部であるテキストではなくのみ対象を決定します。</summary>
+        <summary>検索操作で、長い単語の一部であるテキストではなく、単語全体を検索するかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>単語全体と、大規模な単語の場合は<b>False</b>に含まれているテキストではなくのみを検索対象の場合、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
-          <para>使用、<see cref="P:Microsoft.Office.Interop.Word.Find.Text" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Word.Find" />オブジェクト、または<paramref name="FindText" />の引数を<see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />ドキュメント内に配置するテキストを指定します</para>。
-          <para /></remarks>
+        <remarks><para>検索操作で、長い単語の一部であるテキストではなく、単語全体を検索する場合は<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para>ドキュメント内<see cref="P:Microsoft.Office.Interop.Word.Find.Text" />に配置する<see cref="T:Microsoft.Office.Interop.Word.Find" />テキストを指定<paramref name="FindText" />するには<see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> 、オブジェクトのプロパティまたはメソッドを使用して引数を指定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchWildcards">
@@ -1425,13 +1318,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>検索する文字列にワイルドカードが含まれているかどうかを決定します。</summary>
+        <summary>検索する文字列にワイルドカードが含まれるかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ワイルドカード、および<b>false を指定</b>しない場合、検索するテキストが含まれる場合、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするプロパティの値を設定します</para>。
-          <para>、[検索と置換] ダイアログ ボックス ([編集] メニュー) でワイルドカードを使用する] チェック ボックスに対応します</para>。
-          <para>を使用して、<see cref="P:Microsoft.Office.Interop.Word.Find.Text" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Word.Find" />オブジェクトまたはを使用して、<paramref name="FindText" />の引数を<see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />ドキュメント内に配置するテキストを指定します</para>。
-          <para /></remarks>
+        <remarks><para>検索する文字列にワイルドカードが含まれている場合、このプロパティは<b>True</b>を返し、表示されない場合は<b>False</b>を返します。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+          <para>[検索と置換] ダイアログボックス ([編集] メニュー) の [ワイルドカードを使用する] チェックボックスに対応します。</para>
+          <para>ドキュメント内<see cref="P:Microsoft.Office.Interop.Word.Find.Text" />に配置する<see cref="T:Microsoft.Office.Interop.Word.Find" />テキストを指定する<paramref name="FindText" />には、 <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />オブジェクトのプロパティを使用するか、またはメソッドで引数を使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NoProofing">
@@ -1460,12 +1352,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word を検索またはスペル チェッカーおよび文法チェッカーが無視した文字列を置換するかどうかを決定します。</summary>
+        <summary>スペルチェッカーおよび文法チェッカーが無視した文字列を検索または置換するかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>検索または置換、スペル チェッカーおよび文法チェッカーが無視した文字列と<b>false の場合</b>そうでない場合がある場合は<b>True</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>スペルチェッカーおよび文法チェッカーが無視した文字列を検索または置換する場合は<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ParagraphFormat">
@@ -1494,7 +1384,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ParagraphFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、 <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> 、指定範囲、選択範囲、検索操作または置換操作、またはスタイルの段落設定を表すオブジェクト。</summary>
+        <summary>指定範囲、選択<see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />範囲、検索または置換操作、またはスタイルの段落設定を表すオブジェクトを設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1550,7 +1440,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Replacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Replacement" /> 、置換操作の条件を格納しているオブジェクト。</summary>
+        <summary>置換操作<see cref="T:Microsoft.Office.Interop.Word.Replacement" />の条件を含むオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1577,8 +1467,7 @@
       <Parameters />
       <Docs>
         <summary>日本語の文字列に関連付けられているあいまい検索のオプションをすべて有効にします。</summary>
-        <remarks>
-          <para>このメソッドは、 <b>true を指定</b>する次のプロパティを設定します。</para>
+        <remarks><para>このメソッドは、 <b>true を指定</b> する次のプロパティを設定します。</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyAY" />
           </para>
@@ -1633,8 +1522,7 @@
           <para>
             <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyZJ" />
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -1665,10 +1553,9 @@
       <Docs>
         <summary>指定したオブジェクトのスタイルを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティを設定し、整数値で、スタイルのローカル名を指定して、<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />の定数、またはスタイルを表すオブジェクト</para>。
-          <para>1 つ以上のスタイルを含む範囲のスタイルを取得すると、最初の文字または段落のスタイルのみが返されます</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティを設定するには、スタイルのローカル名、整数、 <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />定数、またはスタイルを表すオブジェクトを指定します。</para>
+          <para>複数のスタイルを含む範囲のスタイルを取得する場合は、最初の文字または段落のスタイルのみ取得できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -1697,13 +1584,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>検索または指定範囲または選択範囲を指定して置換するテキストを設定または返します。</summary>
+        <summary>指定範囲または選択範囲内で検索または置換する文字列を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Text</b>プロパティは、選択範囲または指定範囲のプレーン テキストの書式なしのテキストを返します。このプロパティを設定するときは、指定範囲または選択範囲のテキストが置き換えられます。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Text</b> プロパティは、選択範囲または指定範囲のプレーン テキストの書式なしのテキストを返します。このプロパティを設定するときは、指定範囲または選択範囲のテキストが置き換えられます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Wrap">
@@ -1732,16 +1616,17 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFindWrap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定、文書の先頭以外の場所から検索を開始し、ドキュメントの末尾に到達した場合の動作を設定 (またはその逆の場合は<see cref="P:Microsoft.Office.Interop.Word.Find.Forward" />が<b>False</b>に設定)、または、選択範囲または指定範囲内の検索文字列が見つからない場合。</summary>
+        <summary>検索が文書の先頭以外の位置で開始され、文書の末尾に到達した場合 (または<b>False</b>に設定されている場合<see cref="P:Microsoft.Office.Interop.Word.Find.Forward" />はその逆)、または指定された選択範囲または指定範囲内の検索文字列が見つからない場合に発生する動作を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" />次の定数のいずれかをすることができます。</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" />定数は、次のいずれか:</para>
-          <para>選択範囲または指定範囲、Microsoft Word を検索した後、 
-            <b>wdFindAsk</b>には、ドキュメントの残りの部分を検索するかどうかを確認するメッセージが表示されます</para>。
-          <para><b>wdFindContinue</b>検索範囲の前後に達すると、検索操作が続行されます</para>。
-          <para><b>wdFindStop</b>検索操作は、先頭または検索範囲の末尾に達した場合を終了します</para>。
-          <para /></remarks>
+            <b>wdFindAsk</b>選択範囲または指定範囲を検索すると、文書の残りの部分を検索するかどうかを確認するメッセージが表示されます。</para>
+          <para>
+            <b>wdFindContinue</b>検索範囲の先頭または末尾に到達すると、検索操作が続行されます。</para>
+          <para>
+            <b>wdFindStop</b>検索範囲の先頭または末尾に到達すると、find 操作は終了します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

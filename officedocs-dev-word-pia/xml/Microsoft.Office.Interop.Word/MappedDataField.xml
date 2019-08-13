@@ -1,13 +1,5 @@
 <Type Name="MappedDataField" FullName="Microsoft.Office.Interop.Word.MappedDataField">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ad9be617499eec01e5a31a469501445354966e87" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671957" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MappedDataField" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dc041533103e222b636ea93cb4c8248a9eb022ba" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147920" /></Metadata><TypeSignature Language="C#" Value="public interface MappedDataField" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MappedDataField" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MappedDataField" />
   <TypeSignature Language="VB.NET" Value="Public Interface MappedDataField" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>単一のマップしたデータ フィールドを表します。</summary>
-    <remarks>
-      <para>
-        <b>MappedDataField</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.MappedDataFields" />コレクションです。<b>MappedDataFields</b>コレクションには、Microsoft Word で使用可能なすべてのマップ データ フィールドが含まれています</para>。
-      <para>A のマップされたデータ フィールドは、一般を表す単語に含まれるフィールドの名前またはアドレスについては、「氏名」などを使用します。「氏名」フィールドまたはそのバリエーションがデータ ソースに含まれているかどうか (「姓」、「"姓名"、」など「最初」や「氏名」)、データ ソース内のフィールドは、Word での対応するマップ データ フィールドに自動的にマップします。文書またはテンプレートは、複数のデータ ソースにマージするのには場合、マップ データ フィールドを使用すること、データベース内のフィールド名と一致するドキュメントにフィールドを再入力してください</para>。
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.MappedDataFields" /> 、 <b>MappedDataField</b>オブジェクトを返すプロパティです</para>。
-      <para /></remarks>
+    <remarks><para><b>MappedDataField</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.MappedDataFields" />コレクションのメンバーです。 <b>MappedDataFields</b>コレクションには、Microsoft Word で使用可能なすべてのマップデータフィールドが含まれています。</para>
+      <para>マップされたデータフィールドは、"名" など、よく使用される名前またはアドレス情報を表す Word 内に含まれるフィールドです。 データ ファイルに "First Name (名前)" フィールドまたはその他の名称 ("First_Name"、"FirstName"、"First"、"FName" など) でフィールドが含まれる場合、データ ファイル内のフィールドは Word で対応するマップ データ フィールドに自動的にマップされます。 文書またはテンプレートを複数のデータ ファイルに差し込む場合、マップ データ フィールドを使用することにより、フィールドを文書に再入力してデータベース内のフィールド名と一致させる必要はありません。</para>
+      <para>MappedDataField オブジェクト<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.MappedDataFields" />を取得するの<b></b>にには、プロパティを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,12 +76,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataFieldIndex">
@@ -120,13 +109,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>マップ データ フィールドをマップする差し込み印刷データ ソース内の対応するフィールド番号を表す<b>整数値</b>を設定または返します。</summary>
+        <summary>マップされたデータフィールドをマップする差し込み印刷データソース内の対応するフィールド番号を表す<b>整数型 (Integer</b> ) の値を設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>MappedDataField</b>プロパティは、指定されたデータ フィールドがマップしたデータ フィールドにマップされていない場合に 0 を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>MappedDataField</b>プロパティは、指定したデータフィールドがマップデータフィールドにマップされていない場合は、0を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataFieldName">
@@ -154,10 +140,8 @@
       <Docs>
         <summary>設定またはマップされたデータ フィールドをマップする差し込み印刷データ ソース内のフィールドの名前を表す <b>文字列</b> を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>DataFieldName プロパティは、指定されたデータ フィールドがマップしたデータ フィールドにマップされていない場合、空白文字列を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>指定したデータフィールドが、マップされたデータフィールドにマップされていない場合、DataFieldName プロパティは空の文字列を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -183,7 +167,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内の項目の位置を表す<b>整数</b>を返します。</summary>
+        <summary>コレクション内の項目の位置を表す<b>整数型 (Integer</b> ) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -269,10 +253,8 @@
       <Docs>
         <summary>差し込み印刷データ フィールドまたはカレント レコードの対応付けられたデータ フィールドの内容を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.ActiveRecord" /> 、差し込み印刷データ ソースで作業中のレコードを設定するプロパティです。</para>
-          <para />
-        </remarks>
+        <remarks><para>差し込み印刷<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.ActiveRecord" />のデータファイルでアクティブなレコードを設定するのにには、プロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

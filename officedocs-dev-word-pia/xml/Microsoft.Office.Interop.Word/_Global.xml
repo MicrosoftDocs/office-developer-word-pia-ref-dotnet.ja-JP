@@ -1,13 +1,5 @@
 <Type Name="_Global" FullName="Microsoft.Office.Interop.Word._Global">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="97dfc9ba551e678188886c5d83bb455dc809f189" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670832" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Global" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="97dfc9ba551e678188886c5d83bb455dc809f189" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34141978" /></Metadata><TypeSignature Language="C#" Value="public interface _Global" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Global" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word._Global" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Global" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>これは、対応する COM オブジェクトと相互運用するためのマネージ コードで必要とされる COM コクラス内のプライマリ インターフェイスです。 メソッドを使用する COM オブジェクトのイベントと同じ名前を共有する場合にのみ、この主要なインタ フェースを使用します。メソッドを呼び出すには、このインターフェイスにこの例では、キャストし、イベントに接続するための最新のイベント インターフェイスにキャストします。 それ以外の場合、メソッド、プロパティ、および COM オブジェクトのイベントにアクセスする COM コクラスから派生した .NET インターフェイスを使用します。 COM オブジェクトの詳細についてを参照してください<see cref="T:Microsoft.Office.Interop.Word.Global" />。</summary>
+    <summary>これは、対応する COM コクラスとの相互運用のためにマネージコードが必要とする COM コクラスのプライマリインターフェイスです。 このプライマリインターフェイスは、使用するメソッドが COM オブジェクトのイベントと同じ名前を共有する場合にのみ使用します。この場合、このインターフェイスにキャストしてメソッドを呼び出し、最新の events インターフェイスにキャストしてイベントに接続します。 それ以外の場合は、COM コクラスから派生した .NET インターフェイスを使用して、COM オブジェクトのメソッド、プロパティ、およびイベントにアクセスします。 COM オブジェクトの詳細については、 <see cref="T:Microsoft.Office.Interop.Word.Global" />「」を参照してください。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Document" />作業中の文書 (フォーカスのあるドキュメント) を表すオブジェクト。 開いているドキュメントが存在しない場合は、エラーが発生します。</summary>
+        <summary>アクティブドキュメント<see cref="T:Microsoft.Office.Interop.Word.Document" /> (フォーカスがあるドキュメント) を表すオブジェクトを返します。 開いているドキュメントが存在しない場合は、エラーが発生します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,7 +76,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>アクティブ プリンターの名前を設定または返します。</summary>
+        <summary>使用しているプリンターの名前を返すか設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -112,12 +104,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ProtectedViewWindow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、 <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" /> 、保護されたビューがアクティブなウィンドウ (フォーカスがある保護されたビューのウィンドウ) を表すオブジェクト。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />オブジェクトです。</value>
-        <remarks>
-          <para>読み取り専用です。開いているウィンドウがない場合、このプロパティを使用すると、エラーが発生します。</para>
-          <para />
-        </remarks>
+        <summary>アクティブな<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />保護されたビューウィンドウ (フォーカスがある保護されたビューウィンドウ) を表すオブジェクトを取得します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" /> オブジェクト。</value>
+        <remarks><para>読み取り専用です。 開かれたウィンドウがない場合にこのプロパティを使用すると、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveWindow">
@@ -143,12 +133,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Window</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Window" /> 、アクティブなウィンドウ (フォーカスがあるウィンドウ) を表すオブジェクト。</summary>
+        <summary>作業中<see cref="T:Microsoft.Office.Interop.Word.Window" />のウィンドウ (フォーカスがあるウィンドウ) を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>開かれたウィンドウがない場合、エラーが発生します。</para>
-          <para />
-        </remarks>
+        <remarks><para>開かれたウィンドウがない場合、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddIns">
@@ -174,13 +162,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.AddIns</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.AddIns" />を使用可能なすべてのアドインを表すコレクション。</summary>
+        <summary>現在読み込ま<see cref="T:Microsoft.Office.Interop.Word.AddIns" />れているかどうかに関係なく、使用可能なすべてのアドインを表すコレクションを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>AddIns</b>コレクションには、全文書対象テンプレートと Word アドイン ライブラリ (Wll、[テンプレートとアドイン] ダイアログ ボックス ([ツール] メニュー) に記載されている) が含まれています。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>AddIns</b>コレクションには、[テンプレートとアドイン] ダイアログボックス ([ツール] メニュー) に表示される全文書対象のテンプレートと Microsoft Word アドインライブラリ (wll) が含まれています。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AnswerWizard">
@@ -209,7 +194,7 @@
         <ReturnType>Microsoft.Office.Core.AnswerWizard</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Core.AnswerWizard" /> 、オンライン ヘルプの検索エンジンによって使用されるファイルを格納しているオブジェクト。</summary>
+        <summary>オンラインヘルプ<see cref="T:Microsoft.Office.Core.AnswerWizard" />の検索エンジンで使用されるファイルを含むオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -237,7 +222,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word._Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -268,7 +253,7 @@
         <ReturnType>Microsoft.Office.Core.Assistant</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Core.Assistant" /> 、Microsoft Office アシスタントを表すオブジェクト。</summary>
+        <summary>Microsoft Office <see cref="T:Microsoft.Office.Core.Assistant" />アシスタントを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -296,7 +281,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.AutoCaptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.AutoCaptions" />テーブルなどの項目をする場合は自動的に追加される図表番号を表すと、図が文書に挿入します。</summary>
+        <summary>表や<see cref="T:Microsoft.Office.Interop.Word.AutoCaptions" />図などの項目を文書に挿入するときに自動的に追加される図表番号を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -324,7 +309,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.AutoCorrect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.AutoCorrect" /> 、現在オート コレクトのオプション、エントリ、および例外を格納しているオブジェクト。</summary>
+        <summary>現在の<see cref="T:Microsoft.Office.Interop.Word.AutoCorrect" />オートコレクトのオプション、エントリ、および例外を含むオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -352,7 +337,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.AutoCorrect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.AutoCorrect" />を電子メール メッセージに加え、自動修正を表すオブジェクト。</summary>
+        <summary>電子メール<see cref="T:Microsoft.Office.Interop.Word.AutoCorrect" />メッセージに対して行われた自動修正を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -382,13 +367,10 @@
         <Parameter Name="Arg4" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Arg1">必要な<see cref="T:Microsoft.Office.Interop.Word.WdKey" />。 <b>Wdkey クラス</b> の定数のいずれかを使用してキーを指定します。</param>
-        <param name="Arg2">
-          <b>Wdkey クラス</b>は省略可能です。 <b>Wdkey クラス</b> の定数のいずれかを使用してキーを指定します。</param>
-        <param name="Arg3">
-          <b>Wdkey クラス</b>は省略可能です。 <b>Wdkey クラス</b> の定数のいずれかを使用してキーを指定します。</param>
-        <param name="Arg4">
-          <b>Wdkey クラス</b>は省略可能です。 <b>Wdkey クラス</b> の定数のいずれかを使用してキーを指定します。</param>
+        <param name="Arg1">必須<see cref="T:Microsoft.Office.Interop.Word.WdKey" />。 <b>Wdkey クラス</b> の定数のいずれかを使用してキーを指定します。</param>
+        <param name="Arg2">省略可能な<b>WdKey</b>。 <b>Wdkey クラス</b> の定数のいずれかを使用してキーを指定します。</param>
+        <param name="Arg3">省略可能な<b>WdKey</b>。 <b>Wdkey クラス</b> の定数のいずれかを使用してキーを指定します。</param>
+        <param name="Arg4">省略可能な<b>WdKey</b>。 <b>Wdkey クラス</b> の定数のいずれかを使用してキーを指定します。</param>
         <summary>指定されたキーの組み合わせの固有の番号を返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -417,7 +399,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.CaptionLabels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.CaptionLabels" /> 、すべての使用可能なキャプション ラベルを表すコレクション。</summary>
+        <summary>使用可能<see cref="T:Microsoft.Office.Interop.Word.CaptionLabels" />なすべての図表番号のラベルを表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -445,14 +427,11 @@
         <Parameter Name="Centimeters" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Centimeters">
-          <b>1 つ</b>が必要です。 ポイントに変換するセンチメートル値を指定します。</param>
+        <param name="Centimeters">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 ポイントに変換するセンチメートル値を指定します。</param>
         <summary>単位をセンチメートルからポイント (1 cm = 28.35 ポイント) に変換します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このプロパティは、変換後の単位として、 <b>1 つ</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、変換された測定値を<b>single</b>として返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChangeFileOpenDirectory">
@@ -478,13 +457,11 @@
         <Parameter Name="Path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Path">
-          <b>文字列</b> が必要です。 文書を検索するフォルダーへのパスを指定します。</param>
-        <summary>Microsoft Word 文書を検索するフォルダーを設定します。</summary>
-        <remarks>
-          <para>指定したフォルダーの内容のとおり、次に [開く] ダイアログ ボックス ([ファイル] メニュー) を表示します</para>。
-          <para>ワードは、ユーザーの変更、フォルダーを開く] ダイアログ ボックスで、Word の現在のセッションが終了するまでにドキュメントの指定されたフォルダーを検索します。使用して、<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" />すべての Word セッションでのドキュメントの既定のフォルダーを変更するプロパティ</para>。
-          <para /></remarks>
+        <param name="Path"><b>文字列</b> が必要です。 文書を検索するフォルダーへのパスを指定します。</param>
+        <summary>Microsoft Word が文書を検索するフォルダーを設定します。</summary>
+        <remarks><para>指定したフォルダーの内容は、次に [ファイルを開く] ダイアログ ボックス ([ファイル] メニュー) を開いたときに表示されます。</para>
+          <para>ユーザーの変更、フォルダーを 開く] ダイアログ ボックスで、Word の現在のセッションが終了するまで、ドキュメントの指定したフォルダーが検索されます。 すべての<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" /> Word セッションでドキュメントの既定のフォルダーを変更するには、プロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckSpelling">
@@ -521,10 +498,9 @@
         <Parameter Name="CustomDictionary10" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Word">
-          <b>文字列</b> が必要です。 スペルをチェックする文字列を指定します。</param>
-        <param name="CustomDictionary">省略可能な<b>オブジェクト</b>です。 返す式、<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />オブジェクトまたはユーザー辞書のファイル名です。</param>
-        <param name="IgnoreUppercase">省略可能な<b>オブジェクト</b>です。 <b>True の</b> 場合、大文字と小文字は無視されます。 この引数を省略した場合の現在の値、<see cref="P:Microsoft.Office.Interop.Word.Options.IgnoreUppercase" />プロパティを使用します。</param>
+        <param name="Word"><b>文字列</b> が必要です。 スペルをチェックする文字列を指定します。</param>
+        <param name="CustomDictionary">省略可能な<b>オブジェクト</b>です。 <see cref="T:Microsoft.Office.Interop.Word.Dictionary" />オブジェクトを表すオブジェクト式、またはユーザー辞書のファイル名を指定します。</param>
+        <param name="IgnoreUppercase">省略可能な<b>オブジェクト</b>です。 <b>True の</b> 場合、大文字と小文字は無視されます。 この引数を省略すると、 <see cref="P:Microsoft.Office.Interop.Word.Options.IgnoreUppercase" />プロパティの現在の値が使用されます。</param>
         <param name="MainDictionary">省略可能な<b>オブジェクト</b>です。 式は <b>ディクショナリ</b> オブジェクトまたはメイン辞書のファイル名を返す。</param>
         <param name="CustomDictionary2">省略可能な<b>オブジェクト</b>です。 式は <b>ディクショナリ</b> オブジェクトまたはその他のユーザー辞書のファイル名を返す。 追加の辞書は 9 個まで指定できます。</param>
         <param name="CustomDictionary3">省略可能な<b>オブジェクト</b>です。 式は <b>ディクショナリ</b> オブジェクトまたはその他のユーザー辞書のファイル名を返す。</param>
@@ -535,12 +511,10 @@
         <param name="CustomDictionary8">省略可能な<b>オブジェクト</b>です。 式は <b>ディクショナリ</b> オブジェクトまたはその他のユーザー辞書のファイル名を返す。</param>
         <param name="CustomDictionary9">省略可能な<b>オブジェクト</b>です。 式は <b>ディクショナリ</b> オブジェクトまたはその他のユーザー辞書のファイル名を返す。</param>
         <param name="CustomDictionary10">省略可能な<b>オブジェクト</b>です。 式は <b>ディクショナリ</b> オブジェクトまたはその他のユーザー辞書のファイル名を返す。</param>
-        <summary>文字列のスペル ミスをチェックします。</summary>
+        <summary>文字列のスペルをチェックします。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>文字列を持たないスペル ミス、および<b>False</b>場合は、このプロパティは<b>True</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>文字列にスペルミスがない場合、このプロパティは<b>True</b>を返し、そうであれば<b>False</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CleanString">
@@ -565,23 +539,50 @@
         <Parameter Name="String" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="String">
-          <b>文字列</b> が必要です。 ソース文字列を指定します。</param>
-        <summary>指定した文字列から印刷されない文字 (文字コード 1-29) と Word の特殊文字を削除またはスペース (文字コード 32) に変更します。</summary>
+        <param name="String"><b>文字列</b> が必要です。 ソース文字列を指定します。</param>
+        <summary>指定した文字列から印刷されない文字 (文字コード 1 ~ 29) と特殊文字を削除するか、スペース (文字コード 32) に変更します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このプロパティは、<b>文字列</b>として結果を返します</para>。
-          <para>次の文字は、この表に示すように変換します</para>。
-          <list type="table"><item><description>7 (ビープ音)</description><description>13 (段落記号) の文字の前にしない限り、削除し、9 (タブ) の文字に変換します</description></item>。
-            <item><description>(ライン フィード) を 10</description><description>、13 の文字に続く場合を除いて、13 (段落記号) の文字に変換し、削除します</description></item>。
-            <item><description>13 (段落記号)</description><description>変更なし</description></item>。
-            <item><description>31 (任意指定のハイフン)</description><description>削除します</description></item>。
-            <item><description>160 (改行をしないスペース)</description><description>32 (スペース) の文字に変換します</description></item>。
-            <item><description>172 (任意指定のハイフン)</description><description>削除します</description></item>。
-            <item><description>176 (改行をしないスペース)</description><description>32 (スペース) の文字に変換します</description></item>。
-            <item><description>182 (段落記号)</description><description>削除します</description></item>。
-            <item><description>183 (行頭文字)</description><description>32 (スペース) の文字に変換します</description></item></list>。
-          <para /></remarks>
+        <remarks><para>このプロパティは、結果を<b>文字列</b>として返します。</para>
+          <para>文字コードは次のように変換されます。</para>
+          <list type="table">
+            <item>
+              <description>7 (警告音)</description>
+              <description>文字コード 7 の前に文字コード 13 (段落記号) がない場合は、削除されてから文字コード 9 (タブ文字) に変換されます。</description>
+            </item>
+            <item>
+              <description>10 (改行文字)</description>
+              <description>文字コード 10 の前に文字コード 13 (段落記号) がない場合は、文字コード 13 に変換されてから削除されます。</description>
+            </item>
+            <item>
+              <description>13 (段落記号)</description>
+              <description>変換されません。</description>
+            </item>
+            <item>
+              <description>31 (任意指定のハイフン)</description>
+              <description>削除されます。</description>
+            </item>
+            <item>
+              <description>160 (改行をしないスペース)</description>
+              <description>文字コード 32 (スペース) に変換されます。</description>
+            </item>
+            <item>
+              <description>172 (任意指定のハイフン)</description>
+              <description>削除されます。</description>
+            </item>
+            <item>
+              <description>176 (改行をしないスペース)</description>
+              <description>文字コード 32 (スペース) に変換されます。</description>
+            </item>
+            <item>
+              <description>182 (段落記号)</description>
+              <description>削除されます。</description>
+            </item>
+            <item>
+              <description>183 (行頭文字)</description>
+              <description>文字コード 32 (スペース) に変換されます。</description>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandBars">
@@ -607,12 +608,10 @@
         <ReturnType>Microsoft.Office.Core.CommandBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Core.CommandBars" /> ] メニューの [バー] および [Microsoft Word ですべてのツールバーを表すコレクション。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Core.CommandBars" />のメニューバーおよびすべてのツールバーを表すコレクションを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word._Global.CustomizationContext" /> 、 <b>CommandBars</b>コレクションにアクセスする前にテンプレートまたは文書のコンテキストを設定するプロパティです。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word._Global.CustomizationContext" />プロパティを使用して、 <b>CommandBars</b>コレクションにアクセスする前にテンプレートまたはドキュメントのコンテキストを設定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -638,12 +637,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomDictionaries">
@@ -669,7 +667,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionaries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Dictionaries" />を有効なユーザー辞書のコレクションを表すオブジェクト。 有効なユーザー辞書には、 [ユーザー辞書] ダイアログ ボックスでチェック マークが付いています。</summary>
+        <summary>有効な<see cref="T:Microsoft.Office.Interop.Word.Dictionaries" />ユーザー辞書のコレクションを表すオブジェクトを返します。 有効なユーザー辞書には、 [ユーザー辞書] ダイアログ ボックスでチェック マークが付いています。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -700,12 +698,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.Template" />または<see cref="T:Microsoft.Office.Interop.Word.Document" />のメニュー バー、ツールバー、およびショートカット キーへの変更が保存されているテンプレートまたは文書を表すオブジェクト。</summary>
+        <summary>メニューバー、ツール<see cref="T:Microsoft.Office.Interop.Word.Template" />バー <see cref="T:Microsoft.Office.Interop.Word.Document" /> 、およびショートカットの変更が保存されるテンプレートまたは文書を表すオブジェクト型 (object) の値を取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>保存先] ボックスの [カスタマイズ] ダイアログ ボックス ([ツール] メニュー) の [コマンド] タブでの値に対応します。</para>
-          <para />
-        </remarks>
+        <remarks><para>[ユーザー設定] ダイアログ ボックス ([ツール] メニュー) の [コマンド] タブにある [保存先] ボックスの値と対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DDEExecute">
@@ -732,15 +728,11 @@
         <Parameter Name="Command" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Channel">
-          <b>整数</b>が必要です。 によって返されるチャネル番号、<see cref="M:Microsoft.Office.Interop.Word._Global.DDEInitiate(System.String,System.String)" />メソッドです。</param>
-        <param name="Command">
-          <b>文字列</b> が必要です。 受信側のアプリケーション (DDE サーバー) が認識できるコマンドを指定します。 受信側のアプリケーションが、指定したコマンドを実行できない場合は、エラーが発生します。</param>
+        <param name="Channel">整数型 (<b>Integer</b>) の値を使用します。 <see cref="M:Microsoft.Office.Interop.Word._Global.DDEInitiate(System.String,System.String)" />メソッドによって返されるチャネル番号を指定します。</param>
+        <param name="Command"><b>文字列</b> が必要です。 受信側のアプリケーション (DDE サーバー) が認識できるコマンドを指定します。 受信側のアプリケーションが、指定したコマンドを実行できない場合は、エラーが発生します。</param>
         <summary>指定された DDE (動的データ交換) チャネルを介して、アプリケーションにコマンドを送信します。</summary>
-        <remarks>
-          <para>ダイナミック データ エクス (チェンジ DDE) は、セキュリティ保護されていない古いテクノロジです。、可能であれば、より安全な代わりに DDE を使用します。</para>
-          <para />
-        </remarks>
+        <remarks><para>動的データ交換 (DDE) は比較的古いテクノロジであり、セキュリティで保護されていません。 可能であれば、より安全な方法で DDE を使用してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DDEInitiate">
@@ -767,16 +759,13 @@
         <Parameter Name="Topic" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="App">
-          <b>文字列</b> が必要です。 アプリケーションの名前を指定します。</param>
-        <param name="Topic">
-          <b>文字列</b> が必要です。 DDE トピックの名前: 開いているドキュメントの名前たとえば、-するには、チャネルを開いているアプリケーションによって認識されます。</param>
+        <param name="App"><b>文字列</b> が必要です。 アプリケーションの名前。</param>
+        <param name="Topic"><b>文字列</b> が必要です。 チャネルを開いているアプリケーションによって認識される DDE トピックの名前 (開いているドキュメントの名前など)。</param>
         <summary>他のアプリケーションへの DDE (動的データ交換) チャネルを開き、チャネル番号を返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>動的データ交換 (DDE) は、セキュリティ保護されていない古いテクノロジです。、可能であれば、より安全な代わりに DDE を使用します。</para>
-          <para>が成功した場合、 <b>DDEInitiate</b>メソッドは、開いているチャネルの数を返します。以降のすべての DDE 関数は、チャネルを指定するのにはこの番号を使用します</para>。
-          <para /></remarks>
+        <remarks><para>動的データ交換 (DDE) は比較的古いテクノロジであり、セキュリティで保護されていません。 可能であれば、より安全な方法で DDE を使用してください。</para>
+          <para>成功した場合、 <b>DDEInitiate</b>メソッドは、開いているチャネルの番号を返します。 以降のすべての DDE 関数では、チャネルを指定するのにはこの番号を使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DDEPoke">
@@ -804,18 +793,13 @@
         <Parameter Name="Data" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Channel">
-          <b>整数</b>が必要です。 によって返されるチャネル番号、<see cref="M:Microsoft.Office.Interop.Word._Global.DDEInitiate(System.String,System.String)" />メソッドです。</param>
-        <param name="Item">
-          <b>文字列</b> が必要です。 指定したデータの送信先 DDE トピックに含まれている項目を指定します。</param>
-        <param name="Data">
-          <b>文字列</b> が必要です。 受信側のアプリケーション (DDE サーバー) に送信するデータを指定します。</param>
+        <param name="Channel">整数型 (<b>Integer</b>) の値を使用します。 <see cref="M:Microsoft.Office.Interop.Word._Global.DDEInitiate(System.String,System.String)" />メソッドによって返されるチャネル番号を指定します。</param>
+        <param name="Item"><b>文字列</b> が必要です。 指定したデータの送信先 DDE トピックに含まれている項目を指定します。</param>
+        <param name="Data"><b>文字列</b> が必要です。 受信側のアプリケーション (DDE サーバー) に送信するデータを指定します。</param>
         <summary>開いている DDE (動的データ交換) チャネルを使って、アプリケーションにデータを送信します。</summary>
-        <remarks>
-          <para>動的データ交換 (DDE) は、セキュリティ保護されていない古いテクノロジです。、可能であれば、より安全な代わりに DDE を使用します。</para>
-          <para>
-            <b>DDEPoke</b>メソッドが正しくない場合は、エラーが発生します</para>。
-          <para /></remarks>
+        <remarks><para>動的データ交換 (DDE) は比較的古いテクノロジであり、セキュリティで保護されていません。 可能であれば、より安全な方法で DDE を使用してください。</para>
+          <para><b>DDEPoke</b> メソッドが正常でない場合、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DDERequest">
@@ -842,20 +826,28 @@
         <Parameter Name="Item" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Channel">
-          <b>整数</b>が必要です。 によって返されるチャネル番号、<see cref="M:Microsoft.Office.Interop.Word._Global.DDEInitiate(System.String,System.String)" />メソッドです。</param>
-        <param name="Item">
-          <b>文字列</b> が必要です。 要求される項目を指定します。</param>
+        <param name="Channel">整数型 (<b>Integer</b>) の値を使用します。 <see cref="M:Microsoft.Office.Interop.Word._Global.DDEInitiate(System.String,System.String)" />メソッドによって返されるチャネル番号を指定します。</param>
+        <param name="Item"><b>文字列</b> が必要です。 要求される項目を指定します。</param>
         <summary>開いている DDE (動的データ交換) チャネルを使って受信側のアプリケーション (DDE サーバー) の情報を要求し、その情報を文字列として返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>動的データ交換 (DDE) は、セキュリティ保護されていない古いテクノロジです。、可能であれば、より安全な代わりに DDE を使用します。</para>
-          <para>サーバー アプリケーションのトピックの情報を要求する場合は、そのトピックの内容を要求しているの項目を指定する必要があります。Microsoft excel で、セルは有効な項目は、およびそれらにいずれかの方法を使用して、"R1C1"形式または名前で参照します</para>。
-          <para>Microsoft Excel と DDE をサポートする他のアプリケーションは、"System"という名前のトピックを認識システム」の 3 つの標準的な項目は次の表で説明します。他の項目の一覧、 <b>SysItems</b>を使用して System トピックで入手できますに注意してください</para>。
-          <list type="table"><item><description>SysItems</description><description>System トピック内のすべての項目の一覧を返します</description></item>。
-            <item><description>トピック</description><description>利用可能なすべてのトピックの一覧を返します</description></item>。
-            <item><description>形式</description><description>Microsoft Word でサポートされているすべてのクリップボード形式の一覧を返します</description></item></list>。
-          <para /></remarks>
+        <remarks><para>動的データ交換 (DDE) は比較的古いテクノロジであり、セキュリティで保護されていません。 可能であれば、より安全な方法で DDE を使用してください。</para>
+          <para>サーバーアプリケーションのトピックから情報を要求する場合は、そのトピックの内容を要求する項目を指定する必要があります。 たとえば、Excel ではセルは有効な項目で、これらを "R1C1" 形式または名前で参照します。</para>
+          <para>Excel のような DDE をサポートしているアプリケーションでは、"System" という名前のトピックを認識します。 System トピックには、次に示す 3 つの標準的な項目が含まれています。 <b>Sysitems</b>アイテムを使用すると、System トピックのその他のアイテムの一覧を取得できます。</para>
+          <list type="table">
+            <item>
+              <description>SysItems</description>
+              <description>System トピックに含まれる項目の一覧を返します。</description>
+            </item>
+            <item>
+              <description>Topics</description>
+              <description>使用可能なトピックの一覧を返します。</description>
+            </item>
+            <item>
+              <description>Formats</description>
+              <description>Microsoft Word でサポートされているすべてのクリップボード形式のリストを返します。</description>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DDETerminate">
@@ -881,13 +873,10 @@
         <Parameter Name="Channel" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Channel">
-          <b>整数</b>が必要です。 によって返されるチャネル番号、<see cref="M:Microsoft.Office.Interop.Word._Global.DDEInitiate(System.String,System.String)" />メソッドです。</param>
+        <param name="Channel">整数型 (<b>Integer</b>) の値を使用します。 <see cref="M:Microsoft.Office.Interop.Word._Global.DDEInitiate(System.String,System.String)" />メソッドによって返されるチャネル番号を指定します。</param>
         <summary>指定された、他のアプリケーションへの DDE (動的データ交換) チャネルを閉じます。</summary>
-        <remarks>
-          <para>ダイナミック データ エクス (チェンジ DDE) は、セキュリティ保護されていない古いテクノロジです。、可能であれば、より安全な代わりに DDE を使用します。</para>
-          <para />
-        </remarks>
+        <remarks><para>動的データ交換 (DDE) は比較的古いテクノロジであり、セキュリティで保護されていません。 可能であれば、より安全な方法で DDE を使用してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DDETerminateAll">
@@ -912,11 +901,10 @@
       <Parameters />
       <Docs>
         <summary>Microsoft Word で開いた DDE (動的データ交換) チャネルをすべて閉じます。</summary>
-        <remarks>
-          <para>このメソッドは、クライアント アプリケーションから Word に対して開いたチャネルを閉じられません。このメソッドを使用するのにを使用して、<see cref="M:Microsoft.Office.Interop.Word._Global.DDETerminate(System.Int32)" />開いているチャネルそれぞれの方法です</para>。
-          <para>動的データ交換 (DDE) は、セキュリティ保護されていない古いテクノロジです。、可能であれば、より安全な代わりに DDE を使用します。</para>DDE チャネルを開くコードを中断する場合は、 
-          <para>、可能性があります誤ってチャネルを開いたままにします。オープン チャネルは、マクロまたはプログラムが終了し、それぞれがチャネルはシステム リソースを開くと自動的に閉じされません。このためが 1 つまたは複数の DDE チャネルを開くコードをデバッグするときにこのメソッドを使用することをお勧めします</para>。
-          <para /></remarks>
+        <remarks><para>このメソッドは、クライアントアプリケーションによって Word に開かれたチャネルを閉じません。 このメソッドは、開いているチャネルごと<see cref="M:Microsoft.Office.Interop.Word._Global.DDETerminate(System.Int32)" />にメソッドを使用するのと同じです。</para>
+          <para>動的データ交換 (DDE) は比較的古いテクノロジであり、セキュリティで保護されていません。 可能であれば、より安全な方法で DDE を使用してください。</para>
+          <para>DDE チャネルを開くコードを中断すると、誤ってチャネルを開いたままになることがあります。 開いているチャネルは、マクロまたはプログラムが終了するときに自動的に閉じられることはありません。 このため、1つ以上の DDE チャネルを開くコードをデバッグするときは、このメソッドを使用することをお勧めします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Dialogs">
@@ -942,7 +930,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dialogs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Dialogs" /> Microsoft Word のボックスに、すべての組み込みダイアログ ボックスを表すコレクション。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Dialogs" />のすべての組み込みダイアログボックスを表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -970,7 +958,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Documents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Documents" /> 、すべての開いているドキュメントを表すコレクション。</summary>
+        <summary>開いて<see cref="T:Microsoft.Office.Interop.Word.Documents" />いるすべての文書を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -998,7 +986,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FileConverters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.FileConverters" /> Microsoft Word を使用できるすべてのファイル コンバーターを表すコレクション。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.FileConverters" />で使用可能なすべてのファイルコンバーターを表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1030,15 +1018,12 @@
         <Parameter Name="KeyCode2" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="KeyCode">
-          <b>整数</b>が必要です。 いずれかを使用して、指定したキー、<see cref="T:Microsoft.Office.Interop.Word.WdKey" />定数。</param>
+        <param name="KeyCode">整数型 (<b>Integer</b>) の値を使用します。 <see cref="T:Microsoft.Office.Interop.Word.WdKey" />定数のいずれかを使用してキーを指定します。</param>
         <param name="KeyCode2">省略可能な<b>オブジェクト</b>です。 <b>Wdkey クラス</b> の定数のいずれかを使用して、2 番目のキーを指定します。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />を指定したキーの組み合わせを表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />たキーの組み合わせを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用することができます、<see cref="M:Microsoft.Office.Interop.Word._Global.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" />を作成する方法、<paramref name="KeyCode" />または<paramref name="KeyCode2" />の引数です。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Word._Global.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" />メソッドを使用して、 <paramref name="KeyCode" />または<paramref name="KeyCode2" />引数を作成できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FontNames">
@@ -1064,7 +1049,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FontNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.FontNames" />を使用可能なすべてのフォントの名前を含むオブジェクトです。</summary>
+        <summary>使用可能<see cref="T:Microsoft.Office.Interop.Word.FontNames" />なすべてのフォントの名前を含むオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1104,12 +1089,11 @@
         <Parameter Name="CustomDictionary10" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Word">
-          <b>文字列</b> が必要です。 スペル チェックする単語を指定します。</param>
+        <param name="Word"><b>文字列</b> が必要です。 スペル チェックする単語を指定します。</param>
         <param name="CustomDictionary">省略可能な<b>オブジェクト</b>です。 式は <b>ディクショナリ</b> オブジェクトまたはユーザー辞書のファイル名を返す。</param>
-        <param name="IgnoreUppercase">省略可能な<b>オブジェクト</b>です。 <b>True</b> をすべて大文字の単語を無視します。 この引数を省略した場合の現在の値、<see cref="P:Microsoft.Office.Interop.Word.Options.IgnoreUppercase" />プロパティを使用します。</param>
-        <param name="MainDictionary">省略可能な<b>オブジェクト</b>です。 式は <b>ディクショナリ</b> オブジェクトまたはメイン辞書のファイル名を返す。 Microsoft Word の言語の書式設定に対応するメイン辞書を使用してメイン辞書を指定しない場合は、<paramref name="Word" />または範囲の最初の単語の。</param>
-        <param name="SuggestionMode">省略可能な<b>オブジェクト</b>です。 スペルの修正候補を表示する方法を指定します。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Word.WdSpellingWordType" />定数。 既定値は、 <b>WdSpellword</b> です。</param>
+        <param name="IgnoreUppercase">省略可能な<b>オブジェクト</b>です。 <b>True</b> をすべて大文字の単語を無視します。 この引数を省略すると、 <see cref="P:Microsoft.Office.Interop.Word.Options.IgnoreUppercase" />プロパティの現在の値が使用されます。</param>
+        <param name="MainDictionary">省略可能な<b>オブジェクト</b>です。 式は <b>ディクショナリ</b> オブジェクトまたはメイン辞書のファイル名を返す。 メイン辞書を指定しない場合、Microsoft Word では、範囲内の最初の単語の<paramref name="Word" />言語書式に対応するメイン辞書が使用されます。</param>
+        <param name="SuggestionMode">省略可能な<b>オブジェクト</b>です。 スペルの修正候補を表示する方法を指定します。 次<see cref="T:Microsoft.Office.Interop.Word.WdSpellingWordType" />のいずれかの定数を使用できます。 既定値は、 <b>WdSpellword</b> です。</param>
         <param name="CustomDictionary2">省略可能な<b>オブジェクト</b>です。 式は <b>ディクショナリ</b> オブジェクトまたはその他のユーザー辞書のファイル名を返す。 追加の辞書は 9 個まで指定できます。</param>
         <param name="CustomDictionary3">省略可能な<b>オブジェクト</b>です。 式は <b>ディクショナリ</b> オブジェクトまたはその他のユーザー辞書のファイル名を返す。</param>
         <param name="CustomDictionary4">省略可能な<b>オブジェクト</b>です。 式は <b>ディクショナリ</b> オブジェクトまたはその他のユーザー辞書のファイル名を返す。</param>
@@ -1118,13 +1102,11 @@
         <param name="CustomDictionary7">省略可能な<b>オブジェクト</b>です。 式は <b>ディクショナリ</b> オブジェクトまたはその他のユーザー辞書のファイル名を返す。</param>
         <param name="CustomDictionary8">省略可能な<b>オブジェクト</b>です。 式は <b>ディクショナリ</b> オブジェクトまたはその他のユーザー辞書のファイル名を返す。</param>
         <param name="CustomDictionary9">省略可能な<b>オブジェクト</b>です。 式は <b>ディクショナリ</b> オブジェクトまたはその他のユーザー辞書のファイル名を返す。</param>
-        <param name="CustomDictionary10">省略可能な<b>オブジェクト</b>です。 返す式、<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />オブジェクト、または追加するユーザー辞書のファイル名です。 追加の辞書は 9 個まで指定できます。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.SpellingSuggestions" />指定された単語のスペルの修正候補として提案された単語を表すコレクション。</summary>
+        <param name="CustomDictionary10">省略可能な<b>オブジェクト</b>です。 <see cref="T:Microsoft.Office.Interop.Word.Dictionary" />オブジェクトを表すオブジェクト式、または追加のユーザー辞書のファイル名を指定します。 追加の辞書は 9 個まで指定できます。</param>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.SpellingSuggestions" />た単語の置換候補として提示された単語を表すコレクションを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>単語のスペルが正しい場合、 <see cref="P:Microsoft.Office.Interop.Word.SpellingSuggestions.Count" /> 、 <b>SpellingSuggestions</b>オブジェクトのプロパティが 0 (ゼロ) を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>単語のスペルが正しい場合、 <see cref="P:Microsoft.Office.Interop.Word.SpellingSuggestions.Count" /> <b>SpellingSuggestions</b>オブジェクトのプロパティは 0 (ゼロ) を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HangulHanjaDictionaries">
@@ -1150,12 +1132,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> 、すべての有効なユーザー変換辞書を表すコレクション。</summary>
+        <summary>すべての<see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" />有効なユーザー変換辞書を表すコレクションを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>有効なユーザー変換辞書が付いている、[ユーザー辞書] ダイアログ ボックスでチェック ([ツール] メニューの [オプション] をクリックし、[スペル チェック] をクリックして&amp;文章校正タブをクリックし、[ユーザー辞書] をクリック) します。</para>
-          <para />
-        </remarks>
+        <remarks><para>有効なユーザー変換辞書は、[ユーザー辞書] ダイアログボックスでチェックマークが付いています ([ツール] メニューの [ &amp;オプション] をクリックし、[文章校正のスペルチェック] タブをクリックし、[ユーザー辞書] ボタンをクリックします)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Help">
@@ -1181,14 +1161,10 @@
         <Parameter Name="HelpType" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="HelpType">
-          <b>オブジェクト</b>が必要です。 オンライン ヘルプのトピックまたはウィンドウを指定します。 いずれかを指定することができます<see cref="T:Microsoft.Office.Interop.Word.WdHelpType" />定数。</param>
+        <param name="HelpType">必要な<b>オブジェクト</b>。 オンライン ヘルプのトピックまたはウィンドウを指定します。 任意の<see cref="T:Microsoft.Office.Interop.Word.WdHelpType" />定数を使用できます。</param>
         <summary>オンライン ヘルプを表示します。</summary>
-        <remarks>
-          <para>
-            <b>WdHelpType</b>の定数のいくつかを選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できないがあります。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Wdhelptype クラス</b>の定数の中には、選択またはインストールされている言語の設定 (たとえば、英語 (米国)) によっては使用できないものがあります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InchesToPoints">
@@ -1214,14 +1190,11 @@
         <Parameter Name="Inches" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Inches">
-          <b>1 つ</b>が必要です。 ポイントに変換するインチの値を指定します。</param>
+        <param name="Inches">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 ポイントに変換するインチの値を指定します。</param>
         <summary>測定単位をインチからポイント (1 インチ = 72 ポイント) に変換します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドは、変換後の単位として、 <b>1 つ</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドは、変換された測定値を<b>single</b>として返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsObjectValid">
@@ -1250,14 +1223,11 @@
         <Parameter Name="Object" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Object">
-          <b>オブジェクト</b>が必要です。 オブジェクトを参照する変数を指定します。</param>
-        <summary>オブジェクトを参照する変数が有効なかどうかを決定します。</summary>
+        <param name="Object">必要な<b>オブジェクト</b>。 オブジェクトを参照する変数を指定します。</param>
+        <summary>指定したオブジェクトを参照する変数が有効かどうかを判断します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、変数によって参照されるオブジェクトが削除された場合、 <b>True</b>指定したオブジェクトを参照する変数が有効な場合と<b>False</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、オブジェクトを参照する指定された変数が有効な場合は<b>True</b>を返し、変数が参照するオブジェクトが削除されている場合は<b>False</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSandboxed">
@@ -1283,13 +1253,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>アプリケーション ウィンドウが、保護されたビュー] ウィンドウであるかどうかを取得します。</summary>
-        <value>
-          <b>true</b>アプリケーション ウィンドウがウィンドウの場合、保護されたビューです。それ以外の場合、 <b>false を指定</b>します。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>アプリケーションウィンドウが [保護されたビュー] ウィンドウであるかどうかを取得します。</summary>
+        <value><b>true</b>の場合、アプリケーションウィンドウは、[保護されたビュー] ウィンドウです。それ以外の場合は<b>false</b>。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyBindings">
@@ -1315,7 +1282,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.KeyBindings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />を表すコレクションは、キー コード、キー カテゴリ、コマンドなどのキーの割り当てをカスタマイズします。</summary>
+        <summary>キーコード<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> 、キーカテゴリ、およびコマンドを含む、ユーザー設定のキーの割り当てを表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1348,11 +1315,10 @@
         <Parameter Name="CommandParameter" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="KeyCategory">必要な<see cref="T:Microsoft.Office.Interop.Word.WdKeyCategory" />。 キーの組み合わせの分類を指定します。</param>
-        <param name="Command">
-          <b>文字列</b> が必要です。 コマンドの名前を指定します。</param>
-        <param name="CommandParameter">省略可能な<b>オブジェクト</b>です。 追加テキストは、必要な場合などで指定されたコマンドの<paramref name="Command" />。 詳細についてを参照してください、<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" />のメソッドの<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />オブジェクトです。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.KeysBoundTo" />を指定した項目に割り当てられているすべてのキーの組み合わせを表すオブジェクト。</summary>
+        <param name="KeyCategory">必須<see cref="T:Microsoft.Office.Interop.Word.WdKeyCategory" />。 キーの組み合わせの分類を指定します。</param>
+        <param name="Command"><b>文字列</b> が必要です。 コマンドの名前を指定します。</param>
+        <param name="CommandParameter">省略可能な<b>オブジェクト</b>です。 で<paramref name="Command" />指定されたコマンドに必要な追加テキスト (ある場合)。 詳細については、 <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />オブジェクトのメソッドを参照してください。</param>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.KeysBoundTo" />た項目に割り当てられているすべてのキーの組み合わせを表すオブジェクト型 (object) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1380,15 +1346,12 @@
         <Parameter Name="KeyCode2" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="KeyCode">
-          <b>整数</b>が必要です。 <b>Wdkey クラス</b> の定数のいずれかを使用してキーを指定します。</param>
-        <param name="KeyCode2">省略可能な<b>オブジェクト</b>です。 2 番目のキーのいずれかを使用して指定する、<see cref="T:Microsoft.Office.Interop.Word.WdKey" />定数。</param>
+        <param name="KeyCode">整数型 (<b>Integer</b>) の値を使用します。 <b>Wdkey クラス</b> の定数のいずれかを使用してキーを指定します。</param>
+        <param name="KeyCode2">省略可能な<b>オブジェクト</b>です。 <see cref="T:Microsoft.Office.Interop.Word.WdKey" />定数の1つを使用して、2番目のキーを指定します。</param>
         <summary>(たとえば、ctrl キーと shift キーを押しながら A) の指定されたキーのキーの組み合わせの文字列を返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>使用することができます、<see cref="M:Microsoft.Office.Interop.Word._Global.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" />を作成する方法、<paramref name="KeyCode" />または<paramref name="KeyCode2" />の引数です。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Word._Global.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" />メソッドを使用して、 <paramref name="KeyCode" />または<paramref name="KeyCode2" />引数を作成できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LandscapeFontNames">
@@ -1414,7 +1377,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FontNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.FontNames" /> 、すべての使用可能な横フォントの名前を含むオブジェクトです。</summary>
+        <summary>使用可能<see cref="T:Microsoft.Office.Interop.Word.FontNames" />なすべての風景フォントの名前を含むオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1442,12 +1405,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Languages</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Languages" /> 、[言語] ダイアログ ボックスで言語を表すコレクションが一覧表示します。</summary>
+        <summary>[言語<see cref="T:Microsoft.Office.Interop.Word.Languages" /> ] ダイアログボックスに表示される校正言語を表すコレクションを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>言語] ダイアログ ボックスで、[ツール] メニューにアクセスするには、言語をクリックして、[言語の設定] をクリックします。</para>
-          <para />
-        </remarks>
+        <remarks><para>[言語] ダイアログボックスにアクセスするには、[ツール] メニューの [言語] をクリックし、[言語の設定] をクリックします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageSettings">
@@ -1473,7 +1434,7 @@
         <ReturnType>Microsoft.Office.Core.LanguageSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Core.LanguageSettings" />オブジェクトで、Microsoft Word の言語設定に関する情報が含まれています。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Core.LanguageSettings" />の言語設定に関する情報を含むオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1501,14 +1462,11 @@
         <Parameter Name="Lines" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Lines">
-          <b>1 つ</b>が必要です。 ポイントに変換する行数を指定します。</param>
+        <param name="Lines">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 ポイントに変換する行数を指定します。</param>
         <summary>単位を行からポイントに変換します (1 行 = 12 ポイント)。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドは、変換後の単位として、 <b>1 つ</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドは、変換された測定値を<b>single</b>として返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListGalleries">
@@ -1534,12 +1492,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListGalleries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.ListGalleries" />を表す 3 つのリスト テンプレート ギャラリー:<b>箇条書き</b>、<b>段落番号</b>、および<b>アウトラインの番号が付けられます</b>。</summary>
+        <summary>3つ<see cref="T:Microsoft.Office.Interop.Word.ListGalleries" />の箇条書きテンプレートギャラリー (<b>箇条書き</b>、<b>段落番号</b>、および<b>アウトライン番号付き</b>) を表すコレクションを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>各ギャラリーは、行頭文字のタブに対応してあり、段落番号] ダイアログ ボックスで、[書式] メニューです。</para>
-          <para />
-        </remarks>
+        <remarks><para>各ギャラリーは、[書式] メニューの [箇条書きと段落番号] ダイアログボックスにあるタブに対応しています。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MacroContainer">
@@ -1565,7 +1521,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Template" />または<see cref="T:Microsoft.Office.Interop.Word.Document" />テンプレートまたは実行中のプロシージャを含むモジュールが格納されるドキュメントを表すオブジェクト。</summary>
+        <summary>実行中<see cref="T:Microsoft.Office.Interop.Word.Template" />の<see cref="T:Microsoft.Office.Interop.Word.Document" />プロシージャを含むモジュールが格納されているテンプレートまたは文書を表すオブジェクト型 (object) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1593,14 +1549,11 @@
         <Parameter Name="Millimeters" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Millimeters">
-          <b>1 つ</b>が必要です。 ポイントに変換するミリメートルの値を指定します。</param>
+        <param name="Millimeters">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 ポイントに変換するミリメートルの値を指定します。</param>
         <summary>単位をミリメートルからポイント (1 mm = 2.85 ポイント) に変換します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドは、変換後の単位として、 <b>1 つ</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドは、変換された測定値を<b>single</b>として返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1654,10 +1607,9 @@
       <Docs>
         <summary>指定されたウィンドウと同じドキュメントを新しいウィンドウが開きます。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドが返されます、<see cref="T:Microsoft.Office.Interop.Word.Window" />オブジェクトです</para>。
-          <para>複数のウィンドウがドキュメントを開くときのウィンドウのタイトル バーにコロン (:) と番号が表示されます</para>。
-          <para /></remarks>
+        <remarks><para>このメソッドは、 <see cref="T:Microsoft.Office.Interop.Word.Window" />オブジェクトを返します。</para>
+          <para>同じ文書を複数のウィンドウで開くと、ウィンドウのタイトル バーにコロン (:) と番号が表示されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NormalTemplate">
@@ -1683,7 +1635,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Template</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Template" />標準テンプレートを表すオブジェクト。</summary>
+        <summary>標準テンプレート<see cref="T:Microsoft.Office.Interop.Word.Template" />を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1711,7 +1663,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Options</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Options" />で Microsoft Word のアプリケーション設定を表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Options" />のアプリケーション設定を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1767,14 +1719,11 @@
         <Parameter Name="Picas" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Picas">
-          <b>1 つ</b>が必要です。 ポイントに変換するパイカの値を指定します。</param>
+        <param name="Picas">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 ポイントに変換するパイカの値を指定します。</param>
         <summary>単位をパイカからポイントに変換します (1 パイカ = 12 ポイント)。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドは、変換後の単位として、 <b>1 つ</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドは、変換された測定値を<b>single</b>として返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PixelsToPoints">
@@ -1800,15 +1749,12 @@
         <Parameter Name="fVertical" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Pixels">
-          <b>1 つ</b>が必要です。 ポイント単位に変換するピクセルの値を指定します。</param>
+        <param name="Pixels">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 ポイント単位に変換するピクセルの値を指定します。</param>
         <param name="fVertical">省略可能な<b>オブジェクト</b>です。 <b>True</b> 垂直方向のピクセルに変換するには <b>False</b> を水平方向のピクセルに変換します。</param>
         <summary>単位をピクセルからポイントに変換します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドは、変換後の単位として、 <b>1 つ</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドは、変換された測定値を<b>single</b>として返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PointsToCentimeters">
@@ -1834,14 +1780,11 @@
         <Parameter Name="Points" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Points">
-          <b>1 つ</b>が必要です。 ポイント単位で指定します。</param>
+        <param name="Points">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 ポイント単位で指定します。</param>
         <summary>単位をポイントからセンチメートル (1 センチメートル = 28.35 ポイント) に変換します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドは、変換後の単位として、 <b>1 つ</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドは、変換された測定値を<b>single</b>として返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PointsToInches">
@@ -1867,14 +1810,11 @@
         <Parameter Name="Points" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Points">
-          <b>1 つ</b>が必要です。 ポイント単位で指定します。</param>
+        <param name="Points">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 ポイント単位で指定します。</param>
         <summary>単位をポイントからインチ (1 インチ = 72 ポイント) に変換します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドは、変換後の単位として、 <b>1 つ</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドは、変換された測定値を<b>single</b>として返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PointsToLines">
@@ -1900,14 +1840,11 @@
         <Parameter Name="Points" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Points">
-          <b>1 つ</b>が必要です。 ポイント単位で指定します。</param>
+        <param name="Points">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 ポイント単位で指定します。</param>
         <summary>ポイントから行に単位を変換します (1 行 = 12 ポイント)。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドは、変換後の単位として、 <b>1 つ</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドは、変換された測定値を<b>single</b>として返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PointsToMillimeters">
@@ -1933,14 +1870,11 @@
         <Parameter Name="Points" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Points">
-          <b>1 つ</b>が必要です。 ポイント単位で指定します。</param>
+        <param name="Points">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 ポイント単位で指定します。</param>
         <summary>単位をポイントからミリメートル (1 ミリメートル = 2.835 ポイント) に変換します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このプロパティは、変換後の単位として、 <b>1 つ</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、変換された測定値を<b>single</b>として返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PointsToPicas">
@@ -1966,14 +1900,11 @@
         <Parameter Name="Points" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Points">
-          <b>1 つ</b>が必要です。 ポイント単位で指定します。</param>
+        <param name="Points">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 ポイント単位で指定します。</param>
         <summary>単位をポイントからパイカに変換します (1 パイカ = 12 ポイント)。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドは、変換後の単位として、 <b>1 つ</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドは、変換された測定値を<b>single</b>として返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PointsToPixels">
@@ -1999,15 +1930,12 @@
         <Parameter Name="fVertical" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Points">
-          <b>1 つ</b>が必要です。 ピクセル単位に変換するポイント単位の値を指定します。</param>
+        <param name="Points">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 ピクセル単位に変換するポイント単位の値を指定します。</param>
         <param name="fVertical">省略可能な<b>オブジェクト</b>です。 <b>True</b> に設定すると、垂直方向のピクセルとして結果が返されます。<b>False</b> に設定すると、水平方向のピクセルとして結果が返されます。</param>
         <summary>単位をポイントからピクセルに変換します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドは、変換後の単位として、 <b>1 つ</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドは、変換された測定値を<b>single</b>として返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PortraitFontNames">
@@ -2033,7 +1961,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FontNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.FontNames" /> 、すべての使用可能な縦フォントの名前を含むオブジェクトです。</summary>
+        <summary>使用可能<see cref="T:Microsoft.Office.Interop.Word.FontNames" />なすべてのフォントの名前を含むオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2064,12 +1992,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>印刷プレビューは、現在のビューを決定します。</summary>
+        <summary>印刷プレビューを現在のビューにするかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>印刷プレビューは、現在のビュー、および場合は<b>false を指定</b>しない場合、このプロパティは<b>True</b>を返します。<b>True</b>または<b>False</b>を有効にするまたは機能を無効にするを指定します。</para>
-          <para />
-        </remarks>
+        <remarks><para>印刷プレビューが現在のビューの場合、このプロパティは<b>True</b>を返し、表示されない場合は<b>False</b>を返します。 機能を有効または無効にするには、 <b>True</b>または<b>False</b>を指定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ProtectedViewWindows">
@@ -2095,12 +2021,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ProtectedViewWindows</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、 <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" /> 、保護されたビューが開いているウィンドウを表すオブジェクト。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" />オブジェクトです。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>開いて<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" />いる [保護されたビュー] ウィンドウを表すオブジェクトを取得します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" /> オブジェクト。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RecentFiles">
@@ -2126,7 +2050,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.RecentFiles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.RecentFiles" />アクセスされたファイルの最後を表すコレクション。</summary>
+        <summary>最近アクセス<see cref="T:Microsoft.Office.Interop.Word.RecentFiles" />したファイルを表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2156,10 +2080,9 @@
         <param name="Times">省略可能な<b>オブジェクト</b>です。 最後のコマンドを繰り返す回数を指定します。</param>
         <summary>最新編集操作の 1 つまたは複数回繰り返されます。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>コマンドを正しく繰り返し実行できた場合、このメソッドが<b>True</b>を返します</para>。
-          <para>このメソッドを使用する [編集] メニューの [繰り返し] コマンドを使用してに相当します</para>。
-          <para /></remarks>
+        <remarks><para>コマンドが正常に繰り返された場合、このメソッドは<b>True</b>を返します。</para>
+          <para>Using this method is the equivalent to using the Repeat command on the Edit menu.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Selection">
@@ -2185,7 +2108,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Selection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Selection" /> 、選択範囲またはカーソル位置を表すオブジェクト。</summary>
+        <summary>選択範囲<see cref="T:Microsoft.Office.Interop.Word.Selection" />またはカーソル位置を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2216,12 +2139,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Visual Basic エディターのウィンドウが表示されているかどうかを決定します。</summary>
+        <summary>Visual Basic Editor ウィンドウが表示されるかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、 <b>True の</b>場合は、Visual Basic エディター] ウィンドウが表示され場合は<b>False</b>を返します。<b>True</b>または<b>False</b>を有効にするか、表示と非表示を無効にするを指定します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、Visual Basic Editor のウィンドウが表示されている場合は<b>True</b>を返し、それ以外の場合は<b>False</b>を返します。 表示を有効または無効にするには、 <b>True</b>または<b>False</b>を指定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StatusBar">
@@ -2247,7 +2168,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ステータス バーには、指定したテキストを表示します。</summary>
+        <summary>指定したテキストをステータスバーに表示します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2279,10 +2200,9 @@
         <Parameter Name="LanguageID" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Word">
-          <b>文字列</b> が必要です。 語句を指定します。</param>
-        <param name="LanguageID">省略可能な<b>オブジェクト</b>です。 類義語辞典を使用する言語。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />の定数 (できませんが、いくつかの定数が記載されている可能性がありますが選択またはインストールされている言語サポート (たとえば、日本語) によっては使用)。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.SynonymInfo" />では、類義語、反義語、関連する単語や式を指定した単語または語句の類義語辞典から情報を格納しているオブジェクト。</summary>
+        <param name="Word"><b>文字列</b> が必要です。 語句を指定します。</param>
+        <param name="LanguageID">省略可能な<b>オブジェクト</b>です。 類義語辞典を使用する言語。 <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数のいずれかをすることができます (ただし、選択またはインストールした言語の設定 (たとえば、英語 (米国)) によっては定数の一部を使用できない場合があります。</param>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.SynonymInfo" />た単語または語句の類義語、反義語、関連する単語、および関連表現に関する類義語辞典の情報を含むオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2310,7 +2230,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.System</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.System" /> 、システムに関連する情報を返すし、システムに関連するタスクを実行するために使用するオブジェクトです。</summary>
+        <summary>システム関連<see cref="T:Microsoft.Office.Interop.Word.System" />の情報を取得し、システム関連のタスクを実行するために使用できるオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2338,7 +2258,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Tasks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Tasks" />を実行しているすべてのアプリケーションを表すコレクション。</summary>
+        <summary>実行中<see cref="T:Microsoft.Office.Interop.Word.Tasks" />のすべてのアプリケーションを表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2366,7 +2286,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Templates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します。、<see cref="T:Microsoft.Office.Interop.Word.Templates" />を使用可能なすべてのテンプレートを表す: 全文書対象テンプレートと、その文書を開いたり、接続されています。</summary>
+        <summary>すべての<see cref="T:Microsoft.Office.Interop.Word.Templates" />使用可能なテンプレート (全文書対象のテンプレートと、開いている文書に添付されているテンプレート) を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2394,7 +2314,7 @@
         <ReturnType>Microsoft.Vbe.Interop.VBE</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="P:Microsoft.Office.Interop.Word._Application.VBE" /> 、Visual Basic エディターを表すオブジェクト。</summary>
+        <summary>Visual Basic <see cref="P:Microsoft.Office.Interop.Word._Application.VBE" /> Editor を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2422,7 +2342,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Windows</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Windows" />すべてのドキュメント ウィンドウを表すコレクション。 コレクションは、[ウィンドウ] メニューの下部に表示されるウィンドウ名に対応します。</summary>
+        <summary>すべての<see cref="T:Microsoft.Office.Interop.Word.Windows" />ドキュメントウィンドウを表すコレクションを返します。 コレクションは、[ウィンドウ] メニューの下部に表示されるウィンドウ名に対応します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2450,12 +2370,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word のバージョン 6.0 および Word for Windows 95 ですべての WordBasic のステートメントおよび関数の使用可能なメソッドを含む<b>オートメーション</b>オブジェクト (Word.Basic) を返します。</summary>
+        <summary>Microsoft Word バージョン6.0 および Word for Windows 95 で使用できるすべての WordBasic のステートメントおよび関数のメソッドを含む<b>オートメーション</b>オブジェクト (Word Basic) を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>で Word 2000 以降では、WordBasic のマクロを含むテンプレートを Windows 95 の Word 6.0 または Word を開くとマクロに自動的に変換されます Visual Basic モジュールにします。各 WordBasic のステートメントおよび関数、マクロでは、対応する Word.Basic メソッドに変換されます</para>。
-          <para>WordBasic のステートメントおよび関数の詳細については、Word 6.0 または Word for Windows 95 の WordBasic ヘルプを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>Word 2000 では、WordBasic のマクロを含む Windows 版 Word 6.0 または Word 95 のテンプレートを開くと、マクロは Visual Basic のモジュールに自動的に変換されます。マクロの WordBasic のステートメントおよび関数は、それぞれ対応する WordBasic のメソッドに変換されます。</para>
+          <para>WordBasic のステートメントおよび関数の詳細については、Word 6.0 または Word 95 の WordBasic ヘルプを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="HiLoLines" FullName="Microsoft.Office.Interop.Word.HiLoLines">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="af256d7ae1512ad6a01e146843aaae0af2968b6b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671222" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface HiLoLines" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="86e78de88b6fb0a6e3ca7ee038ce84a4f725e468" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146725" /></Metadata><TypeSignature Language="C#" Value="public interface HiLoLines" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HiLoLines" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HiLoLines" />
   <TypeSignature Language="VB.NET" Value="Public Interface HiLoLines" />
@@ -27,11 +19,10 @@
   </Attributes>
   <Docs>
     <summary>グラフ種類グループの高低線を表します。</summary>
-    <remarks>
-      <para>高低線は、グラフ種類グループ内のすべてのカテゴリで最も低いポイントで最高のポイントを接続します。のみ、2-d 折れ線グラフ グループは、高低線を持つことができます。このオブジェクトはコレクションではありません。1 つの高低線を表すオブジェクトがないです。高低線のグラフ種類グループのすべてのポイントに対して有効にされているいずれかの方法か、無効に</para>
-      <para>場合、<see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasHiLoLines" />プロパティに<b>false を指定</b>のプロパティのほとんどは、<see cref="T:Microsoft.Office.Interop.Word.HiLoLines" />オブジェクトが無効になります</para>。
-      <para>を使用することができます、<see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HiLoLines" />を返すプロパティの<see cref="T:Microsoft.Office.Interop.Word.HiLoLines" />オブジェクトです</para>。
-      <para /></remarks>
+    <remarks><para>高低線は、グラフ種類グループの各項目で、最高の値のデータ要素と最低の値のデータ要素を結ぶ線です。 高低線を設定できるのは 2-D 折れ線グラフまたは株価チャートのグループだけです。 このオブジェクトはコレクションではありません。 1つの高低線を表すオブジェクトはありません。グラフグループ内のすべてのポイントに対して高低線をオンにしているか、またはオフになっています。</para>
+      <para>プロパティが<b>False</b>の場合は、 <see cref="T:Microsoft.Office.Interop.Word.HiLoLines" />オブジェクトのほとんどのプロパティが無効になります。 <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasHiLoLines" /></para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HiLoLines" />プロパティを使用して、 <see cref="T:Microsoft.Office.Interop.Word.HiLoLines" />オブジェクトを取得できます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,10 +48,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用<see cref="T:Microsoft.Office.Interop.Word._Application" />すると、Microsoft Word アプリケーションを表すオブジェクトが返されます。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,10 +76,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの境界を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>オブジェクトの輪郭を返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,14 +104,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトが作成されたアプリケーションを示す 32 ビット<b>の整数</b>を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Word で作成されている場合、 <b>Creator</b>プロパティは文字列"MSWD"を表す 16 進数、値である 4d535744 を返します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
-          <para />
-        </remarks>
+        <summary>指定したオブジェクトが作成されたアプリケーションを示す32ビット<b>整数</b>を返します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトは、Microsoft Word で作成されている場合、 <b>Creator</b> プロパティは文字列"MSWD"を表す 16 進数、値である 4d535744 を返します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -176,10 +159,8 @@
       </ReturnValue>
       <Docs>
         <summary>線、塗りつぶし、およびオブジェクトの書式設定の効果を取得します。
-値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,9 +188,7 @@
       </ReturnValue>
       <Docs>
         <summary>オブジェクトの名前を返します。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,10 +215,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親オブジェクトを返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定したオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,13 +1,5 @@
 <Type Name="MailMergeFields" FullName="Microsoft.Office.Interop.Word.MailMergeFields">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="81695bc0d7c2fa5c37720ad879012f8adc13b827" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670824" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMergeFields : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3120d6713fa67507a7ea299781a6f722aba24386" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147880" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeFields : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMergeFields implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMergeFields" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMergeFields&#xA;Implements IEnumerable" />
@@ -30,13 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />関連の文書内のフィールドを差し込み印刷を表すオブジェクト。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.MailMerge.Fields" /><b>MailMergeFields</b>コレクションを取得するプロパティ</para>。
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" /> 、差し込み印刷フィールドを<b>MailMergeFields</b>コレクションに追加します</para>。
-      <para><b>フィールド</b>の使用 (<paramref name="index" />)、<paramref name="index" />インデックス番号には、単一の<b>MailMergeField</b>オブジェクトを返します</para>。
-      <para><b>MailMergeFields</b>コレクションには追加のメソッドでは、次のように<see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" />と<see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />、差し込み印刷操作に関連するフィールドを追加するためです</para>。
-      <para /></remarks>
+    <summary>文書内の<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />差し込み印刷に関連するフィールドを表すオブジェクトのコレクションです。</summary>
+    <remarks><para>MailMergeFields コレクション<see cref="P:Microsoft.Office.Interop.Word.MailMerge.Fields" />を取得するの<b></b>にには、プロパティを使用します。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" />メソッドを使用して、 <b>MailMergeFields</b>コレクションに差し込みフィールドを追加します。</para>
+      <para>1つの<paramref name="index" /> <b>mailmergefield</b>オブジェクト<paramref name="index" />を取得するのにには、<b>フィールド</b>() (インデックス番号) を使用します。</para>
+      <para><b>MailMergeFields</b>コレクションには、差し込み印刷操作に<see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" />関連<see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />するフィールドを追加する、やなどのメソッドが追加されています。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,10 +53,9 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Range">必要な<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。 フィールドを追加する範囲を指定します。 指定範囲が解除されていない場合は、指定範囲がこのフィールドに置き換わります。</param>
-        <param name="Name">
-          <b>文字列</b> が必要です。 フィールドの名前です。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />の差し込み印刷フィールドを表すオブジェクトがデータ ソースのドキュメントに追加します。</summary>
+        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 フィールドを追加する範囲を指定します。 指定範囲が解除されていない場合は、指定範囲がこのフィールドに置き換わります。</param>
+        <param name="Name"><b>文字列</b> が必要です。 フィールド名を指定します。</param>
+        <summary>データソース<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />ドキュメントに追加する差し込み印刷フィールドを表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -95,18 +85,15 @@
         <Parameter Name="AskOnce" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必要な<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。 ASK フィールドの位置を指定します。</param>
-        <param name="Name">
-          <b>文字列</b> が必要です。 応答または既定のテキストに割り当てられているブックマークの名前です。 文書に結果を表示するのにはブックマーク名で REF フィールドを使用します。</param>
+        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 ASK フィールドの位置を指定します。</param>
+        <param name="Name"><b>文字列</b> が必要です。 応答または既定の文字列に割り当てられるブックマーク名を指定します。 結果を文書に表示する場合は、ブックマーク名で REF フィールドを使用します。</param>
         <param name="Prompt">省略可能な<b>オブジェクト</b>です。 ダイアログ ボックスに表示する文字列を指定します。</param>
         <param name="DefaultAskText">省略可能な<b>オブジェクト</b>です。 ダイアログ ボックスのテキスト ボックスに表示する既定の文字列を指定します。 ASK フィールドの \d スイッチに対応します。</param>
-        <param name="AskOnce">省略可能な<b>オブジェクト</b>です。 <b>True を指定</b>ダイアログ ボックスを表示、新しいデータ レコードが差し込まれるたびに 1 回だけです。 ASK フィールドの \o スイッチに対応します。</param>
-        <summary>差し込み印刷のメイン文書に ASK フィールドを追加します。 返します、<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />オブジェクトです。</summary>
+        <param name="AskOnce">省略可能な<b>オブジェクト</b>です。 <b>True</b>を設定すると、新しいデータレコードが結合されるたびに、ダイアログボックスが一度だけ表示されます。 ASK フィールドの \o スイッチに対応します。</param>
+        <summary>差し込み印刷のメイン文書に ASK フィールドを挿入します。 オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>更新すると、ASK フィールドには、指定されたブックマークに割り当てる文字列の入力を求めるダイアログ ボックスが表示されます。</para>
-          <para />
-        </remarks>
+        <remarks><para>フィールドを更新すると、指定されたブックマークに割り当てる文字列を入力するダイアログ ボックスが表示されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddFillIn">
@@ -133,16 +120,15 @@
         <Parameter Name="AskOnce" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必要な<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。 FILLIN フィールドの位置を指定します。</param>
+        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 FILLIN フィールドの位置を指定します。</param>
         <param name="Prompt">省略可能な<b>オブジェクト</b>です。 ダイアログ ボックスに表示する文字列を指定します。</param>
         <param name="DefaultFillInText">省略可能な<b>オブジェクト</b>です。 ダイアログ ボックスのテキスト ボックスに表示する既定の文字列を指定します。 FILLIN フィールドの \d スイッチに対応します。</param>
-        <param name="AskOnce">省略可能な<b>オブジェクト</b>です。 <b>True を指定</b>新しいデータ レコードが差し込まれるたびに 1 回だけメッセージを表示します。 FILLIN フィールドの \o スイッチに対応します。 既定値は、 <b>false を指定</b> します。</param>
-        <summary>差し込み印刷のメイン文書に FILLIN フィールドを追加します。 返します、<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />オブジェクトです。</summary>
+        <param name="AskOnce">省略可能な<b>オブジェクト</b>です。 <b>True の場合</b>は、新しいデータレコードが結合されるたびにプロンプトを一度だけ表示します。 FILLIN フィールドの \o スイッチに対応します。 既定値は、 <b>false を指定</b> します。</param>
+        <summary>差し込み印刷のメイン文書に FILLIN フィールドを追加します。 オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>FILLIN フィールドが FILL-IN フィールドの位置に文書に挿入するテキストの入力を求めるダイアログ ボックスを表示を更新するとします</para>。
-          <para>使用、<see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />を持つメソッド、<see cref="T:Microsoft.Office.Interop.Word.Fields" />コレクション オブジェクトは、差し込み印刷のメイン文書以外の文書に FILLIN フィールドを追加します</para>。
-          <para /></remarks>
+        <remarks><para>更新されると、FILLIN フィールドは、文書の FILL-IN フィールドの位置に挿入するテキストの入力を求めるダイアログ ボックスを表示します。</para>
+          <para>差し込み印刷<see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />のメイン文書<see cref="T:Microsoft.Office.Interop.Word.Fields" />以外の文書に fill-in フィールドを追加するには、コレクションオブジェクトでメソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddIf">
@@ -173,21 +159,18 @@
         <Parameter Name="FalseText" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必要な<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。 IF フィールドの位置を指定します。</param>
-        <param name="MergeField">
-          <b>文字列</b> が必要です。 差し込みフィールド名を指定します。</param>
-        <param name="Comparison">必要な<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />。 WdMailMergeComparison クラスの定数のいずれかを使用して、比較動作を指定します。</param>
-        <param name="CompareTo">省略可能な<b>オブジェクト</b>です。 テキストの内容と比較するのには<paramref name="MergeField" />です。</param>
-        <param name="TrueAutoText">省略可能な<b>オブジェクト</b>です。 比較結果が True である場合に挿入する定型句を指定します。 場合はこの引数を指定すると、<paramref name="TrueText" />は無視されます。</param>
+        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 IF フィールドの位置を指定します。</param>
+        <param name="MergeField"><b>文字列</b> が必要です。 差し込みフィールド名を指定します。</param>
+        <param name="Comparison">必須<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />。 WdMailMergeComparison クラスの定数のいずれかを使用して、比較動作を指定します。</param>
+        <param name="CompareTo">省略可能な<b>オブジェクト</b>です。 の<paramref name="MergeField" />内容と比較するテキストを入力します。</param>
+        <param name="TrueAutoText">省略可能な<b>オブジェクト</b>です。 比較結果が True である場合に挿入する定型句を指定します。 この引数を指定すると<paramref name="TrueText" /> 、は無視されます。</param>
         <param name="TrueText">省略可能な<b>オブジェクト</b>です。 比較結果が True である場合に挿入する文字列を指定します。</param>
-        <param name="FalseAutoText">省略可能な<b>オブジェクト</b>です。 比較結果が False である場合に挿入する定型句を指定します。 場合はこの引数を指定すると、<paramref name="FalseText" />は無視されます。</param>
+        <param name="FalseAutoText">省略可能な<b>オブジェクト</b>です。 比較結果が False である場合に挿入する定型句を指定します。 この引数を指定すると<paramref name="FalseText" /> 、は無視されます。</param>
         <param name="FalseText">省略可能な<b>オブジェクト</b>です。 比較結果が False である場合に挿入する文字列を指定します。</param>
-        <summary>差し込み印刷のメイン文書に IF フィールドを追加します。 返します、<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />オブジェクトです。</summary>
+        <summary>差し込み印刷のメイン文書に IF フィールドを追加します。 オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>更新されると、IF フィールドは、指定された値を持つデータ レコード内のフィールドを比較し、比較の結果に応じて適切な文字列を挿入します。</para>
-          <para />
-        </remarks>
+        <remarks><para>更新されると、IF フィールドはデータレコード内のフィールドと指定された値を比較し、比較結果に基づいて適切なテキストを挿入します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddMergeRec">
@@ -212,13 +195,11 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">必要な<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。 MERGEREC フィールドの位置を指定します。</param>
-        <summary>差し込み印刷のメイン文書に MERGEREC フィールドを追加します。 返します、<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />オブジェクトです。</summary>
+        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 MERGEREC フィールドの位置を指定します。</param>
+        <summary>差し込み印刷のメイン文書に MERGEREC フィールドを追加します。 オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>MERGEREC フィールドは、差し込み印刷中に、現在のデータ レコード (現在のクエリ結果内のデータ レコードの位置) の数を挿入します。</para>
-          <para />
-        </remarks>
+        <remarks><para>差し込み印刷中に、MERGEREC フィールドは現在のデータレコードの番号 (現在のクエリ結果の中のデータレコードの位置) を挿入します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddMergeSeq">
@@ -243,13 +224,11 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">必要な<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。 MERGESEQ フィールドの位置を指定します。</param>
-        <summary>MERGESEQ フィールドは、差し込み印刷のメイン文書に追加します。 返します、<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />オブジェクトです。</summary>
+        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 MERGESEQ フィールドの位置を指定します。</param>
+        <summary>差し込み印刷のメイン文書に MERGESEQ フィールドを挿入します。 オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>MERGESEQ フィールドのレコードをマージするデータのシーケンス番号を挿入する (たとえば、レコード 50 ~ 100 のレコードが差し込まれると、MERGESEQ 番号 1 を挿入)。</para>
-          <para />
-        </remarks>
+        <remarks><para>MERGESEQ フィールドは、データレコードが結合される順序に基づいて番号を挿入します (たとえば、レコード 50 50 から100に結合されると、MERGESEQ は番号1を挿入します)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddNext">
@@ -274,13 +253,11 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">必要な<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。 NEXT フィールドの位置を指定します。</param>
-        <summary>差し込み印刷のメイン文書に NEXT フィールドを追加します。 返します、<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />オブジェクトです。</summary>
+        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 NEXT フィールドの位置を指定します。</param>
+        <summary>差し込み印刷のメイン文書に NEXT フィールドを追加します。 オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>同じ差し込み文書 (たとえば、宛名ラベルのシートの場合) に複数のレコードからデータをマージすることができますように、次のフィールドは次のデータ レコードへ進めます。</para>
-          <para />
-        </remarks>
+        <remarks><para>次のフィールドは、複数のレコードのデータを同じ差し込み文書 (たとえば、宛名ラベルのシート) に差し込むことができるように、次のデータレコードに進みます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddNextIf">
@@ -307,18 +284,14 @@
         <Parameter Name="CompareTo" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必要な<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。 NEXTIF フィールドの位置を指定します。</param>
-        <param name="MergeField">
-          <b>文字列</b> が必要です。 差し込みフィールド名を指定します。</param>
-        <param name="Comparison">必要な<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />。 WdMailMergeComparison クラスの定数のいずれかを使用して、比較動作を指定します。</param>
-        <param name="CompareTo">
-          <b>文字列</b> が必要です。 テキストの内容と比較するのには<paramref name="MergeField" />です。</param>
-        <summary>差し込み印刷のメイン文書に NEXTIF フィールドを追加します。 返します、<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />オブジェクトです。</summary>
+        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 NEXTIF フィールドの位置を指定します。</param>
+        <param name="MergeField"><b>文字列</b> が必要です。 差し込みフィールド名を指定します。</param>
+        <param name="Comparison">必須<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />。 WdMailMergeComparison クラスの定数のいずれかを使用して、比較動作を指定します。</param>
+        <param name="CompareTo"><b>文字列</b> が必要です。 の<paramref name="MergeField" />内容と比較するテキストを入力します。</param>
+        <summary>差し込み印刷のメイン文書に NEXTIF フィールドを追加します。 オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>NEXTIF フィールドは 2 つの式を比較し、現在の差し込み文書に次のデータ レコードを結合、比較が true の場合です。</para>
-          <para />
-        </remarks>
+        <remarks><para>NEXTIF フィールドは2つの式を比較し、比較が true の場合は、次のデータレコードが現在の差し込み文書に結合されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddSet">
@@ -345,17 +318,14 @@
         <Parameter Name="ValueAutoText" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必要な<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。 SET フィールドの位置を指定します。</param>
-        <param name="Name">
-          <b>文字列</b> が必要です。 ブックマークの名前を<paramref name="ValueText" />に割り当てられます。</param>
-        <param name="ValueText">省略可能な<b>オブジェクト</b>です。 指定されるブックマークに関連付けられているテキスト、<paramref name="Name" />の引数です。</param>
-        <param name="ValueAutoText">省略可能な<b>オブジェクト</b>です。 定型句で指定されるブックマークに関連付けられているテキストを含む、<paramref name="Name" />の引数です。 場合はこの引数を指定すると、<paramref name="ValueText" />は無視されます。</param>
-        <summary>差し込み印刷のメイン文書に SET フィールドを追加します。 返します、<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />オブジェクトです。</summary>
+        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 SET フィールドの位置を指定します。</param>
+        <param name="Name"><b>文字列</b> が必要です。 に割り当てられ<paramref name="ValueText" />ているブックマーク名。</param>
+        <param name="ValueText">省略可能な<b>オブジェクト</b>です。 <paramref name="Name" />引数で指定されたブックマークに関連付けられているテキスト。</param>
+        <param name="ValueAutoText">省略可能な<b>オブジェクト</b>です。 <paramref name="Name" />引数で指定されたブックマークに関連付けられたテキストを含む定型句を指定します。 この引数を指定すると<paramref name="ValueText" /> 、は無視されます。</param>
+        <summary>差し込み印刷のメイン文書に SET フィールドを追加します。 オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>SET フィールドは、指定されたブックマークのテキストを定義します。</para>
-          <para />
-        </remarks>
+        <remarks><para>SET フィールドは指定されたブックマークの文字列を定義します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddSkipIf">
@@ -382,17 +352,14 @@
         <Parameter Name="CompareTo" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必要な<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。 SKIPIF フィールドの位置を指定します。</param>
-        <param name="MergeField">
-          <b>文字列</b> が必要です。 差し込みフィールド名を指定します。</param>
-        <param name="Comparison">必要な<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />。 WdMailMergeComparison クラスの定数のいずれかを使用して、比較動作を指定します。</param>
-        <param name="CompareTo">省略可能な<b>オブジェクト</b>です。 テキストの内容と比較するのには<paramref name="MergeField" />です。</param>
-        <summary>差し込み印刷のメイン文書に SKIPIF フィールドを追加します。 返します、<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />オブジェクトです。</summary>
+        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 SKIPIF フィールドの位置を指定します。</param>
+        <param name="MergeField"><b>文字列</b> が必要です。 差し込みフィールド名を指定します。</param>
+        <param name="Comparison">必須<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />。 WdMailMergeComparison クラスの定数のいずれかを使用して、比較動作を指定します。</param>
+        <param name="CompareTo">省略可能な<b>オブジェクト</b>です。 の<paramref name="MergeField" />内容と比較するテキストを入力します。</param>
+        <summary>差し込み印刷のメイン文書に SKIPIF フィールドを追加します。 オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>SKIPIF フィールドは 2 つの式を比較し、比較が true の場合は、移動し、データ ソース内の次のデータ レコードに新しい差し込み文書が開始します。</para>
-          <para />
-        </remarks>
+        <remarks><para>SKIPIF フィールドは、2つの式を比較し、比較結果が true の場合、SKIPIF はデータソース内の次のデータレコードに移動し、新しい差し込み文書を開始します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -418,7 +385,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -474,12 +441,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -540,7 +506,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">各オブジェクトの序数位置を示す<b>整数</b>です。</param>
+        <param name="Index">個々のオブジェクトの位置を表す<b>整数型 (Integer</b> ) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

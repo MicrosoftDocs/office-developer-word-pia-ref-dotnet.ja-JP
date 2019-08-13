@@ -1,13 +1,5 @@
 <Type Name="Bookmark" FullName="Microsoft.Office.Interop.Word.Bookmark">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2164b8c51939ffb7e00b90163ced95a4db5c49d8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672212" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Bookmark" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4d16f348543910c5ebcb48db2c87d1c11e3f73c5" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146347" /></Metadata><TypeSignature Language="C#" Value="public interface Bookmark" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Bookmark" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Bookmark" />
   <TypeSignature Language="VB.NET" Value="Public Interface Bookmark" />
@@ -26,15 +18,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>1 つのブックマークを表します。</summary>
-    <remarks>
-      <para>
-        <b>Bookmark</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.Bookmarks" />コレクションです。Bookmarks コレクションには、[ブックマーク] ダイアログ ボックス ([挿入] メニュー) に記載されているすべてのブックマークが含まれています</para>。
-      <para>を使用して<b>ブックマーク</b>(<paramref name="index" />)、 <paramref name="index" /> 、ブックマーク名またはインデックス番号を 1 つの<b>ブックマーク</b>オブジェクトを取得するには。スペル (必ずしも、大文字と小文字) のブックマークの名前と正確に一致する必要があります</para>。内のブックマークの位置を表すインデックス番号を
-      <para>、<see cref="T:Microsoft.Office.Interop.Word.Selection" />または<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。用の<see cref="T:Microsoft.Office.Interop.Word.Document" />オブジェクトのインデックス番号は、[ブックマーク] ダイアログ ボックスのブックマークの一覧をアルファベット順でのブックマークの位置を表します (ブックマークの一覧をアルファベット順にソートするのには名前をクリックします).</para><para>使用して、<see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Add(System.String,System.Object@)" />ドキュメントの範囲にブックマークを追加します</para>。
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.Range.BookmarkID" /><b>Bookmarks</b>コレクションに<b>ブックマーク</b>オブジェクトのインデックス番号を取得するのには、指定範囲または選択範囲のオブジェクトのプロパティです</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Exists(System.String)" />の選択範囲、指定範囲、または文書に既にブックマークが存在するかどうかを調べます</para>。
-      <para /></remarks>
+    <summary>単一のブックマークを表します。</summary>
+    <remarks><para><b>Bookmark</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" />コレクションのメンバーです。 Bookmarks コレクションには、[ブックマーク] ダイアログ ボックス ([挿入] メニュー) に表示されるすべてのブックマークが含まれます。</para>
+      <para>ブックマーク<b></b>(<paramref name="index" />) を使用し<paramref name="index" />ます。ここで、はブックマーク名またはインデックス番号を使用して、単一の<b>bookmark</b>オブジェクトを返します。 ブックマーク名は正確に記述する必要がありますが、大文字と小文字は区別されません。</para>
+      <para>インデックス番号は、 <see cref="T:Microsoft.Office.Interop.Word.Selection" />または<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクト内のブックマークの位置を表します。 <see cref="T:Microsoft.Office.Interop.Word.Document" />オブジェクトの場合、インデックス番号は、[ブックマーク] ダイアログボックスで、ブックマークのアルファベット順の一覧でブックマークの位置を表します ([名前] をクリックすると、ブックマークの一覧がアルファベット順に並べ替えられます)。</para>
+      <para>文書範囲<see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Add(System.String,System.Object@)" />にブックマークを追加するには、メソッドを使用します。</para>
+      <para>指定範囲<see cref="P:Microsoft.Office.Interop.Word.Range.BookmarkID" />または選択範囲のオブジェクトのプロパティを使用して、 <b>Bookmarks</b>コレクションの<b>Bookmark</b>オブジェクトのインデックス番号を取得します。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Exists(System.String)" />メソッドを使用して、ブックマークが選択範囲、指定範囲、または文書に既に存在するかどうかを調べます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Application" />を指定したオブジェクトの作成者を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Application" />たオブジェクトの作成元を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,7 +79,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したブックマークが表の列を示す値を返します。</summary>
+        <summary>指定したブックマークが表の列であるかどうかを示す値を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,7 +108,7 @@
       </Parameters>
       <Docs>
         <param name="Name">新しいブックマークの名前を指定します。</param>
-        <summary>識別される新しいブックマークの設定、<paramref name="Name" />によって指定された場所への引数がマークされている<see cref="T:Microsoft.Office.Interop.Word.Bookmark" />オブジェクト。</summary>
+        <summary><paramref name="Name" />引数によって識別される新しいブックマークを、指定したオブジェクト<see cref="T:Microsoft.Office.Interop.Word.Bookmark" />でマークされた位置に設定します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,10 +138,9 @@
       <Docs>
         <summary>指定したオブジェクトが作成されたアプリケーションを示す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -174,7 +164,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>削除、指定した<see cref="T:Microsoft.Office.Interop.Word.Bookmark" />オブジェクトです。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.Bookmark" />オブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -201,12 +191,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したブックマークが空であるかを示す値を返します。</summary>
+        <summary>指定されたブックマークが空であるかどうかを示す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>空のブックマーク (折りたたまれている選択) の位置をマーキングする; 任意のテキストをマークされない</para>。
-          <para>エラーは、指定されたブックマークが存在しない場合に発生します。使用して、 <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Exists(System.String)" /> 、ブックマークが存在するかどうかを調べます</para>。
-          <para /></remarks>
+        <remarks><para>空のブックマークは、場所 (選択が解除されている) にマークを付けます。テキストはマークされません。</para>
+          <para>指定したブックマークが存在しない場合は、エラーが発生します。 <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Exists(System.String)" />メソッドを使用して、ブックマークが存在するかどうかを判断します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="End">
@@ -235,13 +224,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ブックマークの終了位置を設定または返します。</summary>
+        <summary>ブックマークの末尾の文字位置を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.Bookmark" />オブジェクトには、開始位置と終了位置です。終了位置は、ストーリーの先頭から最も離れたポイントです</para>。
-          <para>このプロパティは、ストーリーの先頭を基準に終了位置を返します。メイン文書ストーリー (<b>wdMainTextStory</b>) は、文字位置 0 (ゼロ) から始まります。このプロパティを設定することでブックマークのサイズを変更することができます</para>。
-          <para>かどうかはこのプロパティの値よりも小さい、 <see cref="P:Microsoft.Office.Interop.Word.Bookmark.Start" /> 、<b>プロパティ、</b>プロパティが同じ値 (<b>開始</b>は、および<see cref="P:Microsoft.Office.Interop.Word.Bookmark.End" />プロパティが等しい).</para><para /></remarks>
+        <remarks><para><see cref="T:Microsoft.Office.Interop.Word.Bookmark" />オブジェクトには、開始位置と終了位置があります。 終了位置は、ストーリーの先頭から最も離れたポイントです。</para>
+          <para>このプロパティでは、ストーリーの先頭を基準に終了位置を返します。 メインドキュメントストーリー (<b>wdMainTextStory</b>) は、文字位置 0 (ゼロ) から始まります。 ブックマークのサイズを変更するには、このプロパティを設定します。</para>
+          <para>このプロパティが<see cref="P:Microsoft.Office.Interop.Word.Bookmark.Start" />プロパティより小さい値に設定されている場合、 <b>start</b>プロパティは同じ値に設定されます (つまり、 <b>start</b>と<see cref="P:Microsoft.Office.Interop.Word.Bookmark.End" />プロパティが等しい)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -267,7 +255,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された名前を返します<see cref="T:Microsoft.Office.Interop.Word.Bookmark" />オブジェクトです。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.Bookmark" />オブジェクトの名前を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -295,7 +283,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した親オブジェクトを返します。<see cref="T:Microsoft.Office.Interop.Word.Bookmark" />オブジェクトです。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.Bookmark" />オブジェクトの親オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -323,12 +311,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />に含まれている、指定した文書の部分を表す<see cref="T:Microsoft.Office.Interop.Word.Bookmark" />オブジェクト。</summary>
+        <summary>指定<see cref="T:Microsoft.Office.Interop.Word.Bookmark" />し<see cref="T:Microsoft.Office.Interop.Word.Range" />たオブジェクトに含まれる文書の一部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>範囲をドキュメントから取得する方法の詳細についてを参照してください、<see cref="M:Microsoft.Office.Interop.Word.DocumentClass.Range(System.Object@,System.Object@)" />メソッドです。</para>
-          <para />
-        </remarks>
+        <remarks><para>文書から指定範囲を取得する<see cref="M:Microsoft.Office.Interop.Word.DocumentClass.Range(System.Object@,System.Object@)" />方法については、メソッドを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -352,11 +338,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定された選択<see cref="T:Microsoft.Office.Interop.Word.Bookmark" />オブジェクトです。</summary>
-        <remarks>
-          <para>このメソッドを使用すた後を使用して、<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" />選択した項目を操作するプロパティ。</para>
-          <para />
-        </remarks>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.Bookmark" />オブジェクトを選択します。</summary>
+        <remarks><para>このメソッドを使用した後<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> 、プロパティを使用して選択された項目を操作します。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -387,12 +371,10 @@
       <Docs>
         <summary>ブックマークの開始文字位置を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.Bookmark" />オブジェクトには、開始位置と終了位置です。終了位置は、ストーリーの先頭から最も離れたポイントです</para>。
-          <para>このプロパティは、ストーリーの先頭を基準に終了位置を返します。メイン文書ストーリー (<b>wdMainTextStory</b>) は、文字位置 0 (ゼロ) から始まります。このプロパティを設定することでブックマークのサイズを変更することができます</para>。
-          <para>かどうかはこのプロパティの値よりも大きい、 <see cref="P:Microsoft.Office.Interop.Word.Bookmark.End" /> 、 <b>End</b>プロパティ プロパティの値と同じ<see cref="P:Microsoft.Office.Interop.Word.Bookmark.Start" />プロパティ</para>。
-          <para /></remarks>
+        <remarks><para><see cref="T:Microsoft.Office.Interop.Word.Bookmark" />オブジェクトには、開始位置と終了位置があります。 終了位置は、ストーリーの先頭から最も離れたポイントです。</para>
+          <para>このプロパティでは、ストーリーの先頭を基準に終了位置を返します。 メインドキュメントストーリー (<b>wdMainTextStory</b>) は、文字位置 0 (ゼロ) から始まります。 ブックマークのサイズを変更するには、このプロパティを設定します。</para>
+          <para>このプロパティが<see cref="P:Microsoft.Office.Interop.Word.Bookmark.End" />プロパティよりも大きい値に設定されている場合、 <b>End</b>プロパティはプロパティの<see cref="P:Microsoft.Office.Interop.Word.Bookmark.Start" />値と同じ値に設定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StoryType">
@@ -418,7 +400,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdStoryType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたブックマークのストーリーの種類を返します。</summary>
+        <summary>指定したブックマークのストーリーの種類を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="Gridlines" FullName="Microsoft.Office.Interop.Word.Gridlines">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="46e2954651cbcd79fec45fc109c9f6414cd798d8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670785" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Gridlines" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dfaa6be729fee8db0d7f8dc03acea0656715c6f5" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146766" /></Metadata><TypeSignature Language="C#" Value="public interface Gridlines" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Gridlines" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Gridlines" />
   <TypeSignature Language="VB.NET" Value="Public Interface Gridlines" />
@@ -27,10 +19,9 @@
   </Attributes>
   <Docs>
     <summary>グラフの軸の目盛線または補助目盛線を表します。</summary>
-    <remarks>
-      <para>目盛線目盛を延長データ マーカーに関連付けられている値を確認しやすくにはグラフの軸にします。このオブジェクトでは、コレクションはありません。それぞれの目盛線を表すオブジェクトがないです。軸のすべてのグリッド線があるか、またはオフになっているすべての</para>使用の
-      <para>、<see cref="P:Microsoft.Office.Interop.Word.Axis.MajorGridlines" />を返すプロパティ、 <see cref="T:Microsoft.Office.Interop.Word.Gridlines" /> 、軸の目盛を表すオブジェクト。使用して、<see cref="P:Microsoft.Office.Interop.Word.Axis.MinorGridlines" />を返すプロパティ、 <see cref="T:Microsoft.Office.Interop.Word.Gridlines" /> 、補助目盛線を表すオブジェクト。同時にメジャーとマイナーの両方のグリッド線を取得することができます</para>。
-      <para /></remarks>
+    <remarks><para>目盛線はグラフ軸の目盛を延長して、データ マーカーの値を読み取りやすくします。単体の Gridline オブジェクトというオブジェクトはないので、目盛線を表示するか非表示にするかを、各目盛線で設定することはできません。</para>
+      <para>軸の<see cref="P:Microsoft.Office.Interop.Word.Axis.MajorGridlines" />目盛線を表す<see cref="T:Microsoft.Office.Interop.Word.Gridlines" />オブジェクトを取得するのにには、プロパティを使用します。 補助目盛<see cref="P:Microsoft.Office.Interop.Word.Axis.MinorGridlines" />線を表す<see cref="T:Microsoft.Office.Interop.Word.Gridlines" />オブジェクトを取得するのにには、プロパティを使用します。 目盛線と補助目盛線の両方を同時に取得することができます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,10 +47,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用<see cref="T:Microsoft.Office.Interop.Word._Application" />すると、Microsoft Word アプリケーションを表すオブジェクトが返されます。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,10 +75,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> 、オブジェクトの枠線を表すオブジェクト。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>オブジェクトの<see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />枠線を表すオブジェクトを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,14 +103,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトが Microsoft Word で作成された場合、<see cref="P:Microsoft.Office.Interop.Word.Gridlines.Creator" />を返します文字列を表す 16 進数値である 4d535744 をします。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
-          <para />
-        </remarks>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトが Microsoft Word で作成されている<see cref="P:Microsoft.Office.Interop.Word.Gridlines.Creator" />場合、このプロパティは、文字列 "MSWD" を表す、16進数値の4D535744 を返します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -148,9 +131,7 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトを削除します。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,10 +158,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>線、塗りつぶし、およびオブジェクトの書式設定の効果を取得します。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+        <summary>線、塗りつぶし、およびオブジェクトの書式設定の効果を取得します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,9 +187,7 @@
       </ReturnValue>
       <Docs>
         <summary>オブジェクトの名前を返します。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,10 +214,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定したオブジェクトの親を返します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,9 +241,7 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトを選択します。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

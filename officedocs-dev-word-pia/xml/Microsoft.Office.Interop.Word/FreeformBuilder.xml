@@ -1,13 +1,5 @@
 <Type Name="FreeformBuilder" FullName="Microsoft.Office.Interop.Word.FreeformBuilder">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9f076c5ec7da9dca39ea0d028830ee6df1330893" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672189" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FreeformBuilder" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f7da0a16c045e6dc0d03c5438ac63fb5b3f441a0" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148048" /></Metadata><TypeSignature Language="C#" Value="public interface FreeformBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FreeformBuilder" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FreeformBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Interface FreeformBuilder" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>作成中のフリーフォームのジオメトリを表します。</summary>
-    <remarks>
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> 、 <b>FreeformBuilder</b>オブジェクトを返します。使用して、 <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> 、フリー フォームにノードを追加する方法です。使用して、 <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" /> 、 <b>FreeformBuilder</b>オブジェクトで定義されている図形を作成しに追加する方法、<see cref="T:Microsoft.Office.Interop.Word.Shapes" />コレクションです。</para>
-      <para />
-    </remarks>
+    <remarks><para><see cref="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> <b>Freeformbuilder</b>オブジェクトを取得するのにには、メソッドを使用します。 フリーフォーム<see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />にノードを追加するには、メソッドを使用します。 メソッドを使用して、 <b>Freeformbuilder</b>オブジェクトに定義された図形を作成し<see cref="T:Microsoft.Office.Interop.Word.Shapes" /> 、コレクションに追加します。 <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" /></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNodes">
@@ -62,21 +52,17 @@
         <Parameter Name="Y3" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="SegmentType">必要な<see cref="T:Microsoft.Office.Core.MsoSegmentType" />。 追加するセグメントの種類を指定します。</param>
-        <param name="EditingType">必要な<see cref="T:Microsoft.Office.Core.MsoEditingType" />。 頂点の編集プロパティを指定します。 場合<paramref name="SegmentType" />は、 <b>msoSegmentLine</b>、 <paramref name="EditingType" /><b>msoEditingAuto</b>をする必要があります。</param>
-        <param name="X1">
-          <b>1 つ</b>が必要です。 場合、 <paramref name="EditingType" /><b>msoEditingAuto</b>は、新しいセグメントのこの引数は、新しいセグメントの終点をドキュメントの左上隅から、水平方向の距離 (ポイント単位) を指定します。 場合、 <paramref name="EditingType" /> 、新しいノードの<b>msoEditingCorner</b>は、この引数は、新しいセグメントの最初のコントロール ポイントをドキュメントの左上隅から、水平方向の距離 (ポイント単位) を指定します。</param>
-        <param name="Y1">
-          <b>1 つ</b>が必要です。 場合、 <paramref name="EditingType" /><b>msoEditingAuto</b>は、新しいセグメントのこの引数を使用するまでの垂直距離をポイント単位で、ドキュメントの左上隅から新しいセグメントの終点。 場合、 <paramref name="EditingType" /> 、新しいノードの<b>msoEditingCorner</b>は、この引数を使用するまでの垂直距離をポイント単位で、ドキュメントの左上隅から新しいセグメントの最初の制御点。</param>
-        <param name="X2">省略可能な<b>1 つ</b>です。 場合、 <paramref name="EditingType" /><b>msoEditingCorner</b>で新しいセグメントは、この引数は、新しいセグメントの 2 番目の制御点をドキュメントの左上隅から、水平方向の距離 (ポイント単位) を指定します。 場合、<paramref name="EditingType" />の新しいセグメントが<b>msoEditingAuto</b>で、この引数に値を指定しません。</param>
-        <param name="Y2">省略可能な<b>1 つ</b>です。 場合、 <paramref name="EditingType" /><b>msoEditingCorner</b>で新しいセグメントは、この引数を使用するまでの垂直距離をポイント単位で、ドキュメントの左上隅から新しいセグメントの 2 番目の制御点。 場合、<paramref name="EditingType" />の新しいセグメントが<b>msoEditingAuto</b>で、この引数に値を指定しません。</param>
-        <param name="X3">省略可能な<b>1 つ</b>です。 場合、 <paramref name="EditingType" /><b>msoEditingCorner</b>で新しいセグメントは、この引数は、新しいセグメントの終点をドキュメントの左上隅から、水平方向の距離 (ポイント単位) を指定します。 場合、<paramref name="EditingType" />の新しいセグメントが<b>msoEditingAuto</b>で、この引数に値を指定しません。</param>
-        <param name="Y3">省略可能な<b>1 つ</b>です。 場合、 <paramref name="EditingType" /><b>msoEditingCorner</b>で新しいセグメントは、この引数を使用するまでの垂直距離をポイント単位で、ドキュメントの左上隅から新しいセグメントの終点。 場合、<paramref name="EditingType" />の新しいセグメントが<b>msoEditingAuto</b>で、この引数に値を指定しません。</param>
-        <summary>作成中のフリーフォームの末尾に新しいセグメントを挿入し、セグメントを定義する節点を追加します。</summary>
-        <remarks>
-          <para>フリー フォームを作成するのにノードを追加すると、何度でも、このメソッドを使用できます。ノードの追加が完了したらを使用して、<see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" />メソッドを定義したフリー フォームを作成します。作成された後は、フリー フォームにノードを追加するを使用して、<see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />のメソッド、<see cref="T:Microsoft.Office.Interop.Word.ShapeNodes" />コレクションです。</para>
-          <para />
-        </remarks>
+        <param name="SegmentType">必須<see cref="T:Microsoft.Office.Core.MsoSegmentType" />。 追加するセグメントの種類を指定します。</param>
+        <param name="EditingType">必須<see cref="T:Microsoft.Office.Core.MsoEditingType" />。 頂点の編集対象のプロパティを指定します。 が<paramref name="SegmentType" /> <b>msoSegmentLine</b>の場合<paramref name="EditingType" />は、 <b>msoEditingAuto</b>である必要があります。</param>
+        <param name="X1">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 <paramref name="EditingType" />新しいセグメントが<b>msoEditingAuto</b>の場合、この引数は、ドキュメントの左上隅から新しいセグメントの終点までの水平方向の距離 (ポイント単位) を指定します。 <paramref name="EditingType" />新しい節点が<b>msoEditingCorner</b>の場合、この引数は、文書の左上隅から新しいセグメントの最初のコントロールポイントまでの水平方向の距離をポイント単位で指定します。</param>
+        <param name="Y1">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 <paramref name="EditingType" />新しいセグメントが<b>msoEditingAuto</b>の場合、この引数は、文書の左上隅から新しいセグメントの終点までの垂直方向の距離をポイント単位で指定します。 <paramref name="EditingType" />新しい節点が<b>msoEditingCorner</b>の場合、この引数は、文書の左上隅から新しいセグメントの最初のコントロールポイントまでの垂直方向の距離をポイント単位で指定します。</param>
+        <param name="X2">省略可能な<b>単精度浮動小数点</b>型 <paramref name="EditingType" />新しいセグメントが<b>msoEditingCorner</b>の場合、この引数は、ドキュメントの左上隅から新しいセグメントの2番目のコントロールポイントまでの水平方向の距離 (ポイント単位) を指定します。 <paramref name="EditingType" />新しいセグメントが<b>msoEditingAuto</b>の場合は、この引数の値を指定しないでください。</param>
+        <param name="Y2">省略可能な<b>単精度浮動小数点</b>型 <paramref name="EditingType" />新しいセグメントが<b>msoEditingCorner</b>の場合、この引数は、ドキュメントの左上隅から新しいセグメントの2番目のコントロールポイントまでの垂直方向の距離 (ポイント単位) を指定します。 <paramref name="EditingType" />新しいセグメントが<b>msoEditingAuto</b>の場合は、この引数の値を指定しないでください。</param>
+        <param name="X3">省略可能な<b>単精度浮動小数点</b>型 <paramref name="EditingType" />新しいセグメントが<b>msoEditingCorner</b>の場合、この引数は、ドキュメントの左上隅から新しいセグメントの終点までの水平方向の距離 (ポイント単位) を指定します。 <paramref name="EditingType" />新しいセグメントが<b>msoEditingAuto</b>の場合は、この引数の値を指定しないでください。</param>
+        <param name="Y3">省略可能な<b>単精度浮動小数点</b>型 <paramref name="EditingType" />新しいセグメントが<b>msoEditingCorner</b>の場合、この引数は、文書の左上隅から新しいセグメントの終点までの垂直方向の距離をポイント単位で指定します。 <paramref name="EditingType" />新しいセグメントが<b>msoEditingAuto</b>の場合は、この引数の値を指定しないでください。</param>
+        <summary>作成され、セグメントを定義する節点を追加するフリー フォームの末尾に新しいセグメントを挿入します。</summary>
+        <remarks><para>フリー フォームを作成するのにノードを追加すると、何度でも、このメソッドを使用できます。 ノードの追加が完了したら、 <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" />メソッドを使用して、定義したフリーフォームを作成します。 作成されたフリーフォームにノードを追加するには、 <see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> <see cref="T:Microsoft.Office.Interop.Word.ShapeNodes" />コレクションのメソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -102,7 +88,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,13 +115,11 @@
         <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Anchor">省略可能な<b>オブジェクト</b>です。 A<see cref="T:Microsoft.Office.Interop.Word.Range" />図形がバインドされているテキストを表すオブジェクト。 場合<paramref name="Anchor" />が指定されているアンカーは対応付ける範囲の最初の段落の先頭に配置します。 この引数を省略すると、対応付ける範囲は自動的に選択し、図形をページの左上隅を基準に配置します。</param>
-        <summary>指定されたオブジェクトの幾何学的な特徴を持った図形を作成します。 返します、 <see cref="T:Microsoft.Office.Interop.Word.Shape" /> 、新しい図形を表すオブジェクト。</summary>
+        <param name="Anchor">省略可能な<b>オブジェクト</b>です。 図形<see cref="T:Microsoft.Office.Interop.Word.Range" />がバインドされているテキストを表すオブジェクト。 が<paramref name="Anchor" />指定されている場合、アンカーは、アンカーが配置されている範囲の最初の段落の先頭に配置されます。 この引数を省略すると、対応付ける範囲は自動的に選択し、図形をページの左上隅を基準に配置します。</param>
+        <summary>指定されたオブジェクトの幾何学的な特徴を持った図形を作成します。 新しい図形<see cref="T:Microsoft.Office.Interop.Word.Shape" />を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>適用する必要があります、<see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />メソッドを<see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" />、 <b>ConvertToShape</b>メソッドを使用する前にオブジェクトの少なくとも 1 回。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Converttoshape</b>メソッド<see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />を使用する<see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" />前に、少なくとも1回はオブジェクトにメソッドを適用する必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -161,12 +145,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

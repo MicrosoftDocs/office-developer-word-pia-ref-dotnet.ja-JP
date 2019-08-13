@@ -1,13 +1,5 @@
 <Type Name="MailMessage" FullName="Microsoft.Office.Interop.Word.MailMessage">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f1bc7701ac4bfc8d2bb8fe6029a2d018dfdd0031" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671712" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMessage" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="79cb7fd3ce8a5755942cbbc77c5979e3c87edcf8" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144443" /></Metadata><TypeSignature Language="C#" Value="public interface MailMessage" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMessage" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMessage" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMessage" />
@@ -26,11 +18,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>電子メール エディターとして Microsoft Word を使用している場合は、作業中の電子メール メッセージを表します。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word._Application.MailMessage" /><b>MailMessage</b>オブジェクトを取得するプロパティ</para>。
-      <para><b>MailMessage</b>オブジェクトのメソッドが必要なことを使用している電子メール エディターとして Word を電子メール メッセージがアクティブであります。これらの条件のいずれかの方法がそうでない場合エラーが発生します</para>。
-      <para /></remarks>
+    <summary>Microsoft Word を電子メールエディターとして使用している場合に、作業中の電子メールメッセージを表します。</summary>
+    <remarks><para>MailMessage オブジェクト<see cref="P:Microsoft.Office.Interop.Word._Application.MailMessage" />を取得するの<b></b>にには、プロパティを使用します。</para>
+      <para><b>MailMessage</b> オブジェクトのメソッドは、電子メールとして Word を使用することを必要とするエディターと、電子メール メッセージがアクティブであります。 これらの条件のいずれかが満たされていない場合は、エラーが発生します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -82,11 +73,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>表示される電子メール アドレスを確認: Cc: および Bcc: 作業中の電子メール メッセージ内の行です。 このメソッドは、電子メール エディターとして Microsoft Word を使用する場合にのみ使用します。</summary>
-        <remarks>
-          <para>名前を確認できない場合、[名前の確認] ダイアログ ボックスが表示されます。</para>
-          <para />
-        </remarks>
+        <summary>作業中の電子メールメッセージの [宛先:]、[Cc]、および [Bcc] 行に表示されている電子メールアドレスを確認します。 このメソッドは、Microsoft Word を電子メールエディターとして使用している場合にのみ使用できます。</summary>
+        <remarks><para>名前を確認できない場合、[ 名前の確認] ダイアログ ボックスが表示されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -112,12 +101,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -141,7 +129,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,7 +154,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>[移動] ダイアログ ボックスを表示し、ユーザーが、作業中の電子メール メッセージの使用可能なメッセージ ストアから新しい保存先を指定できるようにします。 このメソッドは、電子メール エディターとして Microsoft Word を使用する場合にのみ使用します。</summary>
+        <summary>[移動] ダイアログ ボックスを表示し、ユーザーが、作業中の電子メール メッセージの使用可能なメッセージ ストアから新しい保存先を指定できるようにします。 このメソッドは、Microsoft Word を電子メールエディターとして使用している場合にのみ使用できます。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,7 +179,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>作業中の電子メール メッセージでプロパティ ダイアログ ボックスを表示します。 このメソッドは、電子メール エディターとして Microsoft Word を使用する場合にのみ使用します。</summary>
+        <summary>作業中の電子メール メッセージでプロパティ ダイアログ ボックスを表示します。 このメソッドは、Microsoft Word を電子メールエディターとして使用している場合にのみ使用できます。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,7 +204,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>[名前の選択] ダイアログ ボックスは、ユーザーが宛先にアドレスを追加できますが表示されます。 Cc: および Bcc: 作業中の未送信の電子メール メッセージ内の行。 このメソッドは、電子メール エディターとして Microsoft Word を使用する場合にのみ使用します。</summary>
+        <summary>[名前の選択] ダイアログボックスを表示します。このダイアログボックスを表示すると、ユーザーは、アクティブな未送信の電子メールメッセージの [宛先:]、[Cc:]、および [Bcc] 行にアドレスを追加できます。 このメソッドは、Microsoft Word を電子メールエディターとして使用している場合にのみ使用できます。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,7 +229,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>空の新しい電子メール メッセージを開きます。 作業中のメッセージを転送するための線です。 このメソッドは、電子メール エディターとして Microsoft Word を使用する場合にのみ使用します。</summary>
+        <summary>作業中のメッセージを転送するための新しい電子メールメッセージを開きます。 このメソッドは、Microsoft Word を電子メールエディターとして使用している場合にのみ使用できます。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,7 +254,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>電子メール エディターとして Microsoft Word を使用している場合は、次のメール メッセージを表示します。</summary>
+        <summary>Microsoft Word を電子メールエディターとして使用している場合は、次のメールメッセージを表示します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,7 +279,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>電子メール エディターとして Microsoft Word を使用している場合は、前のメール メッセージを表示します。</summary>
+        <summary>Microsoft Word を電子メールエディターとして使用している場合、前のメールメッセージを表示します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -344,7 +332,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>新しい電子メール メッセージを開きます: [送信者のアドレスを使用して: 行-作業中のメッセージに返信するためです。</summary>
+        <summary>作業中のメッセージに返信するための新しい電子メールメッセージを、差出人のアドレスを [宛先: 行に表示する差出人のアドレスを使用して開きます。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -369,7 +357,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>新しい電子メール メッセージを開きます-に、差出人とすべての受信者のアドレスを使用して:] と [Cc: 必要に応じて、行-作業中のメッセージに返信するため。</summary>
+        <summary>作業中のメッセージに返信するための新しい電子メールメッセージを、[宛先] 行と [Cc] 行に差出人とすべての受信者のアドレスを表示した状態で開きます。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

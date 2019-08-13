@@ -1,13 +1,5 @@
 <Type Name="Windows" FullName="Microsoft.Office.Interop.Word.Windows">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="aa5d387f914422cf8c79854703cd4dd7eb61e181" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671687" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="485e25bf5a3ae2e6749378af1596be5bee3a3b09" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142662" /></Metadata><TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Windows implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Windows" />
   <TypeSignature Language="VB.NET" Value="Public Interface Windows&#xA;Implements IEnumerable" />
@@ -30,16 +22,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.Window" />利用可能なすべてのウィンドウを表すオブジェクト。</summary>
-    <remarks>
-      <para>
-        <b>Windows</b>プロパティを使用して、<see cref="T:Microsoft.Office.Interop.Word.Application" />または<see cref="T:Microsoft.Office.Interop.Word.Document" /><b>ウィンドウ</b>のコレクションを返すオブジェクト。<b>Application</b>オブジェクトの<b>Windows</b>コレクションには、<b>ドキュメント</b>オブジェクトの<b>Windows</b>コレクションには、指定されたドキュメントを表示するウィンドウだけが含まれていますが、アプリケーションでは、すべての windows が含まれます</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.Windows.Add(System.Object@)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Word.Window.NewWindow" />新しいウィンドウを Windows コレクションに追加する方法です</para>。
-      <para><b>Windows</b>(<paramref name="index" />)、 <paramref name="index" /> 、ウィンドウ名またはインデックス番号で、1 つの<b>ウィンドウ</b>オブジェクトを取得するには</para>。
-      <para>、インデックス番号は、[ウィンドウ] メニューでウィンドウ名の左側に番号です</para>。
-      <para>複数のウィンドウがドキュメントを開くときのウィンドウのタイトル バーにコロン (:) と番号が表示されます</para>。
-      <para>の印刷プレビュー画面に表示を切り替えると、新しいウィンドウが作成されます。印刷プレビューを閉じると、このウィンドウは<b>Windows</b>コレクションから削除します</para>。
-      <para /></remarks>
+    <summary>使用可能な<see cref="T:Microsoft.Office.Interop.Word.Window" />すべてのウィンドウを表すオブジェクトのコレクションです。</summary>
+    <remarks><para><b>Windows</b>コレクションを取得するの<see cref="T:Microsoft.Office.Interop.Word.Application" />に<see cref="T:Microsoft.Office.Interop.Word.Document" />には、またはオブジェクトの<b>windows</b>プロパティを使用します。 <b>Application</b> オブジェクトの <b>Windows</b> コレクションには、 <b>ドキュメント</b> オブジェクトの <b>Windows</b> コレクションには、指定されたドキュメントを表示するウィンドウだけが含まれていますが、アプリケーション内のすべてのウィンドウが含まれています。</para>
+      <para>Windows コレクション<see cref="M:Microsoft.Office.Interop.Word.Windows.Add(System.Object@)" />に新しいウィンドウ<see cref="M:Microsoft.Office.Interop.Word.Window.NewWindow" />を追加するのにには、メソッドまたはメソッドを使用します。</para>
+      <para>ウィンドウ名また<paramref name="index" />はインデックス番号<paramref name="index" />を<b>Windows</b>() を使用して、1つの<b>ウィンドウ</b>オブジェクトを返します。</para>
+      <para>インデックス番号は、 [ウィンドウ] メニューでウィンドウ名の左側に番号です。</para>
+      <para>同じ文書を複数のウィンドウで開くと、ウィンドウのタイトル バーにコロン (:) と番号が表示されます。</para>
+      <para>印刷プレビュー画面に表示を切り替えると、新しいウィンドウが作成されます。印刷プレビューを閉じると、このウィンドウは <b>Windows</b> コレクションから削除します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -64,12 +54,10 @@
       </Parameters>
       <Docs>
         <param name="Window">省略可能な<b>オブジェクト</b>です。 <b>ウィンドウ</b> オブジェクトは、別のウィンドウを開きますか。 この引数を省略した場合は、作業中の文書の新しいウィンドウが開かれます。</param>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Window" /> 、文書の新しいウィンドウを表すオブジェクト。</summary>
+        <summary>文書の<see cref="T:Microsoft.Office.Interop.Word.Window" />新しいウィンドウを表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>コロン (:) と番号は、複数のウィンドウは、ドキュメントを開くときに、ウィンドウのタイトル バーに表示されます。</para>
-          <para />
-        </remarks>
+        <remarks><para>文書用に複数のウィンドウを開くと、ウィンドウのタイトル バーにコロン (:) と番号が表示されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -95,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,7 +110,7 @@
         <Parameter Name="ArrangeStyle" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ArrangeStyle">省略可能な<b>オブジェクト</b>です。 ウィンドウの配置します。 次のいずれかの方法は、<see cref="T:Microsoft.Office.Interop.Word.WdArrangeStyle" />定数: <b>wdIcons</b>または<b>wdTiled</b>です。</param>
+        <param name="ArrangeStyle">省略可能な<b>オブジェクト</b>です。 ウィンドウの配置します。 次<see cref="T:Microsoft.Office.Interop.Word.WdArrangeStyle" />の定数のいずれかを指定できます。 <b>wdicons</b>または<b>wdtiled</b>。</param>
         <summary>開いているすべての文書ウィンドウを整列させます。 Word は、SDI (Single Document Interface) を採用しており、このメソッドは現在無効です。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,7 +136,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>サイド バイ サイド モードでは、2 つのウィンドウの場合は、サイド バイ サイド モードを終了します。 <b>ブール値</b> メソッドが成功したかどうかを表す値を返します。</summary>
+        <summary>2 つのウィンドウが並べて表示モードで表示されている場合は、並べて表示モードの設定を解除します。 <b>ブール値</b> メソッドが成功したかどうかを表す値を返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,15 +164,11 @@
         <Parameter Name="Document" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Document">
-          <b>オブジェクト</b>が必要です。 サイド バイ サイド ウィンドウ内で表示するドキュメント。</param>
-        <summary>サイド バイ サイド モードでは、2 つのウィンドウを開きます。</summary>
+        <param name="Document">必要な<b>オブジェクト</b>。 横に並べて表示するドキュメント。</param>
+        <summary>2 つのウィンドウを開き、並べて表示モードで表示します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>CompareSideBySideWith</b>メソッドを使用することはできません、<see cref="T:Microsoft.Office.Interop.Word.Application" />オブジェクト、または<see cref="P:Microsoft.Office.Interop.Word._Application.ActiveDocument" />プロパティ。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="T:Microsoft.Office.Interop.Word.Application" />オブジェクトまたは<see cref="P:Microsoft.Office.Interop.Word._Application.ActiveDocument" />プロパティを使用して、 <b>comparesidebysidewith</b>メソッドを使用することはできません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -238,12 +222,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -304,7 +287,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">位置を表す序数または各オブジェクトの名前を表す文字列を示す<b>オブジェクト</b>。</param>
+        <param name="Index">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -360,11 +343,9 @@
       <Parameters />
       <Docs>
         <summary>[並べて比較] モードで表示された 2 つの文書ウィンドウをリセットします。</summary>
-        <remarks>
-          <para>
-            <b>ResetPositionsSideBySide</b>メソッドは、[比較] ツールバーのサイド バイ サイド ウィンドウの位置をリセット] ボタンに対応します</para>。2 つのドキュメントの表示をリセットするのには
-          <para>使用<b>ResetPositionsSideBySide</b>メソッドです。たとえば、ユーザーが最小化または比較する 2 つのドキュメント ウィンドウの 1 つを最大化、 <b>ResetPositionsSideBySide</b>メソッドの表示をリセットできるように、2 つのウィンドウが表示されているサイド バイ サイドをもう一度、します</para>。
-          <para /></remarks>
+        <remarks><para><b>Resetpositionssidebyside</b>メソッドは、[並べて比較] ツールバーの [ウィンドウの位置を元に戻す] ボタンに対応します。</para>
+          <para>2 つの文書の表示をリセットするには、<b>ResetPositionsSideBySide</b> メソッドを使用します。 たとえば、比較されている2つのドキュメントウィンドウのいずれかをユーザーが最小化または最大化すると、 <b>Resetpositionssidebyside</b>メソッドによって表示がリセットされ、2つのウィンドウがもう一度並べて表示されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncScrollingSideBySide">
@@ -393,8 +374,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>は同時にウィンドウの内容のスクロールを使用できます。 <b>False の場合、ウィンドウを同時にスクロールします。</b></summary>
+        <summary><b>True</b>は、windows の内容を同時にスクロールできるようにします。 <b>False</b>は、同時にウィンドウのスクロールを無効にします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

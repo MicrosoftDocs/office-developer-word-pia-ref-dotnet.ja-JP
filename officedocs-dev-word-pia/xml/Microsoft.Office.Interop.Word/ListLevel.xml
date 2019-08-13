@@ -1,13 +1,5 @@
 <Type Name="ListLevel" FullName="Microsoft.Office.Interop.Word.ListLevel">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="40804d3d1c4f0bf8f247c8b34546720ff5855ffd" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670810" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListLevel" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bba67b72f79c6b6f79e34d7a683261fcb43b7fc0" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144499" /></Metadata><TypeSignature Language="C#" Value="public interface ListLevel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListLevel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListLevel" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListLevel" />
@@ -26,14 +18,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>箇条書きまたは番号付きリストの唯一のレベルか、アウトライン番号の付いた箇条書きの 9 つのレベルのいずれか 1 つのリスト レベルを表します。</summary>
-    <remarks>
-      <para>
-        <b>ListLevel</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.ListLevels" />コレクションです</para>。
-      <para>使用<b>箇条書き</b>(<paramref name="index" />)、<paramref name="index" />は、単一の<b>ListLevel</b>オブジェクトを取得する 1 から 9 までの番号です</para>。
-      <para><b>ListLevel</b>オブジェクトにアクセスする箇条書きのレベルのすべての書式設定プロパティに次のように、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" />、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />、および<see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />プロパティ</para>。箇条書きのレベルを適用する、まず一覧、または範囲を特定し、使用して
-      <para>、<see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" />メソッドです。それぞれのタブ、段落の先頭には、箇条書きのレベルに変換されます。たとえば、3 つのタブで始まる段落、後になりますレベル 3 の箇条書きの段落、 <b>ApplyListTemplate</b>メソッドを使用します</para>。
-      <para /></remarks>
+    <summary>行頭文字または段落番号の付いた箇条書きの場合は1つのレベル、アウトライン番号の付いた箇条書きの場合は9レベルの1つのリストレベルを表します。</summary>
+    <remarks><para><b>ListLevel</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.ListLevels" />コレクションのメンバーです。</para>
+      <para>単一の<b>ListLevel</b>オブジェクト<paramref name="index" />を取得する<paramref name="index" />には、 <b>listlevels</b>() を使用します。ここで、は 1 ~ 9 の数値です。</para>
+      <para><b>ListLevel</b>オブジェクトを使用すると、、、、、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />、および<see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />プロパティなど、指定したリストレベルのすべての書式設定プロパティにアクセスできます。</para>
+      <para>リストレベルを適用するには、まず範囲またはリストを識別し、 <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" />そのメソッドを使用します。 それぞれのタブ、段落の先頭には、箇条書きのレベルに変換されます。 たとえば、3 つのタブで始まる段落になるレベル 3 の箇条書きの段落、 <b>ApplyListTemplate</b> メソッドを使用した後です。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -62,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdListLevelAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、 <see cref="T:Microsoft.Office.Interop.Word.WdListLevelAlignment" /> 、リスト テンプレートの箇条書きのレベルの配置を表す定数です。</summary>
+        <summary>リストテンプレートのリスト<see cref="T:Microsoft.Office.Interop.Word.WdListLevelAlignment" />レベルの配置を表す定数を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,8 +108,7 @@
         <Parameter Name="FileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>文字列</b> が必要です。 図ファイルのパスとファイル名を指定します。</param>
+        <param name="FileName"><b>文字列</b> が必要です。 図ファイルのパスとファイル名を指定します。</param>
         <summary>1 つの段落または指定範囲の段落に、行頭絵文字を設定します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -148,12 +137,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -182,12 +170,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.Font" />を指定したオブジェクトの文字書式を表すオブジェクト。</summary>
+        <summary>取得または指定<see cref="T:Microsoft.Office.Interop.Word.Font" />したオブジェクトの文字書式を表すオブジェクトを設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティを設定するには、 <b>Font</b>オブジェクトを表すオブジェクト式を指定します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティを設定するには、 <b>Font</b> オブジェクトを返す式を指定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -213,7 +199,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内の項目の位置を表す<b>整数</b>を返します。</summary>
+        <summary>コレクション内の項目の位置を表す<b>整数型 (Integer</b> ) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -244,7 +230,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定が指定したリンクされているスタイルの名前を<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />オブジェクトです。</summary>
+        <summary>指定したオブジェクトにリンクさ<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />れているスタイルの名前を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -277,11 +263,9 @@
       <Docs>
         <summary>指定した箇条書きレベルの番号書式を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>1 から 9 までの任意の数が後にパーセント記号 (%) では、各箇条書きのレベルの番号のスタイルを表します。たとえば、"記事 I、"「資料 II」にする最初のレベルのフォーマットが必要であり、 <b>NumberFormat</b>プロパティの文字列、% 1 と<see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />プロパティ<b>アウトライン</b>を設定するとします。</para>
-          <para>
-            <b>NumberFormat</b>プロパティの文字列が 1 つの文字を含めることができますのみ<b>に対して</b>このプロパティは、 <b>wdListNumberStyleBullet</b>に設定されている場合</para>。
-          <para /></remarks>
+        <remarks><para>パーセント記号 (%) とそれに続く 1 ～ 9 の数字は、アウトラインのレベルに使用する数字を表します。 たとえば、最初のレベルの書式を "Article I"、"Article II" というように指定すると、 <b>NumberFormat</b>プロパティの文字列は "article% 1" になり、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />プロパティは<b>wdListNumberStyleUpperCaseRoman</b>に設定されます。</para>
+          <para><b>WdListNumberStyleBullet</b> に <b>9 の数字</b> のプロパティが設定されている場合、 <b>NumberFormat</b> プロパティの文字列はのみ 1 つの文字を含めることができます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberPosition">
@@ -310,12 +294,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>数または指定した行頭文字の位置をポイント単位での設定を取得または<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />オブジェクトです。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />オブジェクトの番号または行頭文字の位置をポイント単位で取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>箇条書きの各レベルの番号または行頭文字、タブの位置とをラップするテキストの位置の位置を設定できます。</para>
-          <para />
-        </remarks>
+        <remarks><para>箇条書きの各レベルについて、段落番号または行頭文字の位置、タブ位置、および文字列の折り返し位置を設定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberStyle">
@@ -344,13 +326,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdListNumberStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>番号のスタイルの設定を取得または設定します<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />オブジェクトです。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.ListLevel" />オブジェクトの番号のスタイルを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>9 の数字</b>のプロパティには、いずれかを指定できます、<see cref="T:Microsoft.Office.Interop.Word.WdListNumberStyle" />定数。これらの定数のいくつかを選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できないがあります。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>NumberStyle</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdListNumberStyle" />定数のいずれかを指定できます。 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -404,7 +383,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />図を行頭文字を表すオブジェクト。</summary>
+        <summary>行頭絵文字<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -435,12 +414,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した箇条書きのレベルを 1 から振りする前に表示されるリスト レベルを取得または設定します。 <b>False</b>場合は、番号が付けられます順番にするたびにリストのレベルが表示されます。</summary>
+        <summary>指定した箇条書きのレベルを 1 から振りする前に表示されるリスト レベルを取得または設定します。 <b>False</b>場合は、リストレベルが表示されるたびに連番が続きます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>この機能は、数値の順序を維持する、インターリーブされるリストを使用します。レベルよりも大きい値に以上のインデックスにリストの<b>ResetOnHigher</b>プロパティを設定することはできません、<see cref="T:Microsoft.Office.Interop.Word.ListLevels" />コレクションです。</para>
-          <para />
-        </remarks>
+        <remarks><para>この機能は、数値の順序を維持する、インターリーブされるリストを使用します。 リストレベルの<b>Resetonhigher</b>プロパティを、 <see cref="T:Microsoft.Office.Interop.Word.ListLevels" />コレクション内のインデックスと等しいか、それより大きい値に設定することはできません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetOnHigherOld">
@@ -506,7 +483,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した開始番号の設定を取得または<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />オブジェクトです。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />オブジェクトの開始番号を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -537,7 +514,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したタブ位置を設定を取得または<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />オブジェクトです。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />オブジェクトのタブ位置を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -568,7 +545,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定、位置 (ポイント単位で) 指定したテキストの折り返しの 2 行目<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />オブジェクトです。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />オブジェクトの折り返しテキストの2行目の位置をポイント単位で取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -601,11 +578,8 @@
       <Docs>
         <summary>指定した箇条書きレベルの番号の後に挿入する文字を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>関連</b>プロパティには、いずれかを指定できる、<see cref="T:Microsoft.Office.Interop.Word.WdTrailingCharacter" />定数。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>TrailingCharacter</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdTrailingCharacter" />定数のいずれかを指定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

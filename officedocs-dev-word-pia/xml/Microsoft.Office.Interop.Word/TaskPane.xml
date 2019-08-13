@@ -1,13 +1,5 @@
 <Type Name="TaskPane" FullName="Microsoft.Office.Interop.Word.TaskPane">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0e71c31faa657719847924a2da92e519eefc51b4" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672321" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TaskPane" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="63f52613a95d8acbc8f43234b360b149569fe1ec" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145997" /></Metadata><TypeSignature Language="C#" Value="public interface TaskPane" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TaskPane" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TaskPane" />
   <TypeSignature Language="VB.NET" Value="Public Interface TaskPane" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Word でユーザーが実行する一般的なタスクが含まれている使用可能な単一の作業ウィンドウを表します。</summary>
-    <remarks>
-      <para>
-        <b>TaskPane</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.TaskPanes" />コレクションです</para>。使用の
-      <para>、 <see cref="P:Microsoft.Office.Interop.Word._Application.TaskPanes" /><b>TaskPane</b>オブジェクトを返すプロパティです。使用して、 <see cref="P:Microsoft.Office.Interop.Word.TaskPane.Visible" /> 、各作業ウィンドウを表示するプロパティ</para>。
-      <para /></remarks>
+    <remarks><para><b>TaskPane</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.TaskPanes" />コレクションのメンバーです。</para>
+      <para>作業ウィンドウ<see cref="P:Microsoft.Office.Interop.Word._Application.TaskPanes" />オブジェクトを取得する<b></b>のにには、プロパティを使用します。 個別の<see cref="P:Microsoft.Office.Interop.Word.TaskPane.Visible" />作業ウィンドウを表示するには、プロパティを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,12 +47,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Application" />オブジェクトです。</summary>
+        <summary>オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.Application" />返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</para>
-          <para />
-        </remarks>
+        <remarks><para>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -88,12 +76,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -119,7 +106,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親オブジェクトを表すオブジェクトを返します。</summary>
+        <summary>指定したオブジェクトの親オブジェクトを表すオブジェクト型 (object) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,12 +137,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトが表示されているかどうかを決定します。</summary>
+        <summary>指定したオブジェクトが表示されるかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティを返します。 <b>True の</b>場合は、指定したオブジェクトが表示されます。場合は<b>false</b>が表示されません</para>。
-          <para>、任意のオブジェクトの一部のメソッドとプロパティできない場合があります、 <b>Visible</b>プロパティが<b>False</b>の場合です</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが表示されている場合は、このプロパティは<b>True</b>を返します。表示されない場合は<b>False</b> 。</para>
+          <para>任意のオブジェクトでは、一部のメソッドとプロパティできない場合があります、 <b>Visible</b> プロパティが <b>False</b> の場合。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="SmartTagActions" FullName="Microsoft.Office.Interop.Word.SmartTagActions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5b790c3f4806a69d27a3e0525d8d0e295a2bae06" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671705" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTagActions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bbaa128de1f03453c4353506f7d0299467ce701e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146130" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagActions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagActions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTagActions" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagActions&#xA;Implements IEnumerable" />
@@ -30,12 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>スマート タグの種類、または個々のスマート タグの動作のコレクションです。</summary>
-    <remarks>
-      <para>使用の<see cref="T:Microsoft.Office.Interop.Word.SmartTag" />オブジェクトを文書内の単一のスマート タグに関連するすべてのアクションにアクセスするのには使用して、<see cref="T:Microsoft.Office.Interop.Word.SmartTagType" />のすべてのアクションにアクセスするオブジェクトが特定の種類のスマート タグに関連します</para>。
-      <para>スマート タグ アクションはスマート タグにプログラムされる処理を使用すると、スマート タグに関連する特定の機能を実行します。たとえば、スマート タグのアクションを 1 つがあります Web サイトにアクセス中に、別のアクションが挿入中に Microsoft Outlook の連絡先情報はまだ別には、地図と道順が表示されます</para>。
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.SmartTag.SmartTagActions" /> 、 <b>SmartTag</b>オブジェクトまたは<b>SmartTagType</b>オブジェクトに関連付けられているすべてのスマート タグ動作を取得するプロパティ</para>。
-      <para /></remarks>
+    <summary>個別のスマート タグまたはスマート タグ型に関連する動作のコレクションを表します。</summary>
+    <remarks><para>オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.SmartTag" />使用して、文書内の1つのスマートタグに関連するすべてのアクションにアクセスします。特定の<see cref="T:Microsoft.Office.Interop.Word.SmartTagType" />種類のスマートタグに関連するすべてのアクションにアクセスするには、オブジェクトを使用します。</para>
+      <para>スマート タグ動作とは、スマート タグに関連する特定の機能をユーザーが実行できるように、スマート タグの中にプログラムされる処理のことです。 たとえば、1つのアクションが Web サイトにアクセスすることがありますが、別のアクションによって Microsoft Outlook に連絡先情報が挿入されますが、別のアクションによって地図や道順が表示されます。</para>
+      <para><b>SmartTag</b>オブジェクト<see cref="P:Microsoft.Office.Interop.Word.SmartTag.SmartTagActions" />または<b>SmartTagType</b>オブジェクトに関連付けられているすべてのスマートタグアクションを取得するには、プロパティを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -64,7 +55,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -126,12 +117,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -195,7 +185,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">位置を表す序数または各オブジェクトの名前を表す文字列を示す<b>オブジェクト</b>。</param>
+        <param name="Index">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

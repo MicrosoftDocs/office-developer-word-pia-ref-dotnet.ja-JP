@@ -1,13 +1,5 @@
 <Type Name="Line" FullName="Microsoft.Office.Interop.Word.Line">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e9afdfda2906e3594ac08ac1c2a61aa3b30d2dd4" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671510" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Line" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="80960bb8019b1b081227269cce20a4f7158fa50d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147908" /></Metadata><TypeSignature Language="C#" Value="public interface Line" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Line" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Line" />
   <TypeSignature Language="VB.NET" Value="Public Interface Line" />
@@ -26,12 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>個々 の明細行を表す、 <see cref="T:Microsoft.Office.Interop.Word.Rectangle" /><b>wdTextRectangle</b>の型のオブジェクト。</summary>
-    <remarks>
-      <para>プログラムでドキュメントのページ レイアウトを定義する<b>行</b>オブジェクトと関連するメソッドおよびプロパティを使用します</para>。
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.Shapes.Item(System.Object@)" /><b>の行</b>の特定のオブジェクトを返します</para>。
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.Line.LineType" />プロパティに指定された行がテキスト行 (<b>wdTextLine</b>) かテーブル行 (<b>wdtablerow で</b>) かどうかを確認します。使用して、<see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" />の内容と明細行の書式設定にアクセスするプロパティ</para>。
-      <para /></remarks>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.Rectangle" /> <b>WdTextRectangle</b>型のオブジェクト内の個々の行を表します。</summary>
+    <remarks><para>プログラムでドキュメントのページ レイアウトを定義するのには、 <b>行</b> オブジェクトと関連するメソッドおよびプロパティを使用します。</para>
+      <para>特定の<see cref="P:Microsoft.Office.Interop.Word.Shapes.Item(System.Object@)" /> <b>Line</b>オブジェクトを取得するのにには、メソッドを使用します。</para>
+      <para>プロパティを使用して、指定した行がテキスト行 (<b>wdtextline</b>) または表の行 (<b>wdtextline</b>) かどうかを判断します。 <see cref="P:Microsoft.Office.Interop.Word.Line.LineType" /> その後、 <see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" />プロパティを使用して、行の内容と書式設定にアクセスします。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,12 +76,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -116,7 +106,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ポイント単位で指定したオブジェクトの高さを設定または返します。</summary>
+        <summary>指定したオブジェクトの高さをポイント単位で取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -144,7 +134,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した行をポイント単位で、水平方向の位置を表す<b>整数値</b>を設定または返します。</summary>
+        <summary>指定した線の水平方向の位置をポイント単位で表す<b>整数型 (Integer</b> ) の値を設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -172,7 +162,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLineType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.WdLineType" />の行がテキスト行またはテーブルの行かどうかを示す定数です。</summary>
+        <summary>行が<see cref="T:Microsoft.Office.Interop.Word.WdLineType" />テキスト行またはテーブルの行かどうかを示す定数を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -228,12 +218,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />を指定したオブジェクトに含まれる文書の部分を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />たオブジェクトに含まれる文書の一部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>範囲をドキュメントから取得するか、図形のコレクションから図形範囲を取得する方法については、メソッドを参照して、<b>範囲</b>の<see cref="T:Microsoft.Office.Interop.Word.Document" />または<see cref="T:Microsoft.Office.Interop.Word.Shapes" />のオブジェクトです。</para>
-          <para />
-        </remarks>
+        <remarks><para>文書から指定範囲を取得する方法、 <see cref="T:Microsoft.Office.Interop.Word.Document" />または図形のコレクションから図形範囲を取得する方法については、また<see cref="T:Microsoft.Office.Interop.Word.Shapes" />はオブジェクトの<b>range</b>メソッドを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Rectangles">
@@ -259,12 +247,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Rectangles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Rectangles" /> 、ドキュメント内のページでテキストやグラフィックスの一部を表すコレクション。</summary>
+        <summary>文書内<see cref="T:Microsoft.Office.Interop.Word.Rectangles" />のページにあるテキストまたはグラフィックスの一部を表すコレクションを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>文書のページ レイアウトをプログラムで定義するのには、 <b>Rectangles</b>コレクションおよび関連するオブジェクトおよびプロパティを使用します。四角形は、テキストまたは文書内のページ上の画像の部分に対応します。</para>
-          <para />
-        </remarks>
+        <remarks><para>文書のページ レイアウトをプログラムで定義するのには、 <b>Rectangles</b> コレクションおよび関連するオブジェクトおよびプロパティを使用します。四角形は、テキストまたは文書内のページ上の画像の部分に対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -290,7 +276,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定した行の垂直位置をポイント単位で設定します。</summary>
+        <summary>ポイント単位で指定された線の垂直位置を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

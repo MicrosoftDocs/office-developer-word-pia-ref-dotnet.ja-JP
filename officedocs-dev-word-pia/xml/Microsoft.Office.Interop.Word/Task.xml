@@ -1,13 +1,5 @@
 <Type Name="Task" FullName="Microsoft.Office.Interop.Word.Task">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a293fe302e518f71d73a2b60dd8cf985017ecc8a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671847" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Task" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="475c1671362444c8d7ebcb134d01290da862e462" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143876" /></Metadata><TypeSignature Language="C#" Value="public interface Task" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Task" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Task" />
   <TypeSignature Language="VB.NET" Value="Public Interface Task" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>システムで実行されている 1 つのタスクを表します。</summary>
-    <remarks>
-      <para>
-        <b>タスク</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.Tasks" />コレクションです。<b>Tasks</b>コレクションには、システム上で実行されているすべてのアプリケーションが含まれています</para>。
-      <para><b>タスク</b>の使用 (<paramref name="index" />)、どこで<paramref name="index" />は、アプリケーション名またはインデックス番号で、1 つの<b>タスク</b>オブジェクトを取得する</para>。
-      <para /></remarks>
+    <remarks><para><b>Task</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Tasks" />コレクションのメンバーです。 <b>Tasks</b> コレクションには、システム上で実行されているすべてのアプリケーションが含まれています。</para>
+      <para><b>タスク</b>(<paramref name="index" />) を使用し<paramref name="index" />ます。ここで、はアプリケーション名またはインデックス番号を使用して、1つの<b>タスク</b>オブジェクトを返します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -56,8 +46,8 @@
         <Parameter Name="Wait" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Wait">省略可能な<b>オブジェクト</b>です。 <b>True を指定</b>するユーザーまでのライセンス認証が Microsoft Word タスクをアクティブ化する前にします。 <b>False</b> Word がアクティブでない場合でもすぐに、タスクをアクティブにします。</param>
-        <summary>アクティブに、<see cref="T:Microsoft.Office.Interop.Word.Task" />オブジェクトです。</summary>
+        <param name="Wait">省略可能な<b>オブジェクト</b>です。 <b>True の場合</b>は、タスクをアクティブ化する前に、ユーザーが Microsoft Word をアクティブにするまで待機します。 <b>False</b> Word がアクティブでない場合でもすぐに、タスクをアクティブにします。</param>
+        <summary>オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.Task" />アクティブにします。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,7 +74,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,12 +127,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -171,7 +160,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ポイント単位で指定したタスク ウィンドウの高さを設定または返します。</summary>
+        <summary>指定したタスクウィンドウの高さをポイント単位で設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -202,7 +191,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ポイント単位で指定したタスクの水平方向の位置を表す<b>整数値</b>を設定または返します。</summary>
+        <summary>指定したタスクの水平方向の位置をポイント単位で表す<b>整数型 (Integer</b> ) の値を設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -231,10 +220,8 @@
         <Parameter Name="Top" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Left">
-          <b>整数</b>が必要です。 指定したウィンドウの水平方向の位置を指定します。</param>
-        <param name="Top">
-          <b>整数</b>が必要です。 指定したウィンドウの垂直方向の位置を指定します。</param>
+        <param name="Left">整数型 (<b>Integer</b>) の値を使用します。 指定したウィンドウの水平方向の位置を指定します。</param>
+        <param name="Top">整数型 (<b>Integer</b>) の値を使用します。 指定したウィンドウの垂直方向の位置を指定します。</param>
         <summary>作業ウィンドウを配置します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -319,16 +306,12 @@
         <Parameter Name="Height" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Width">
-          <b>整数</b>が必要です。 ウィンドウの幅をポイント数で指定します。</param>
-        <param name="Height">
-          <b>整数</b>が必要です。 ウィンドウの高さをポイント数で指定します。</param>
+        <param name="Width">整数型 (<b>Integer</b>) の値を使用します。 ウィンドウの幅をポイント数で指定します。</param>
+        <param name="Height">整数型 (<b>Integer</b>) の値を使用します。 ウィンドウの高さをポイント数で指定します。</param>
         <summary>指定されたタスクのウィンドウのサイズを設定します。 ウィンドウが最大化または最小化されている、エラーが発生します。</summary>
-        <remarks>
-          <para>
-            <b>メモ</b> 使用して、<see cref="P:Microsoft.Office.Interop.Word.Task.Width" />または<see cref="P:Microsoft.Office.Interop.Word.Task.Height" />のウィンドウの幅と高さを個別に設定するプロパティです。</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>メモ</b> ウィンドウの<see cref="P:Microsoft.Office.Interop.Word.Task.Width" />幅<see cref="P:Microsoft.Office.Interop.Word.Task.Height" />と高さを個別に設定するには、またはプロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SendWindowMessage">
@@ -356,12 +339,9 @@
         <Parameter Name="lParam" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Message">
-          <b>整数</b>が必要です。 送信するメッセージに対応する 16 進数です。 見ることができます Microsoft プラットフォーム ソフトウェア開発キットがあれば、関連付けられている 16 進数を検索するのには (たとえば Winuser.h) のヘッダー ファイルにメッセージの名前を最大 (値を 16 進数の前に&amp;h)。</param>
-        <param name="wParam">
-          <b>整数</b>が必要です。 送信するメッセージの適切なパラメーターです。 についてはどのようなこれらの値は、Microsoft プラットフォーム ソフトウェア開発キットに付属のマニュアルでは、そのメッセージのリファレンス トピックを参照してください。 適切な値を取得するには、(キットに付属) スパイ ユーティリティを使用する必要があります。</param>
-        <param name="lParam">
-          <b>整数</b>が必要です。 送信するメッセージの適切なパラメーターです。 についてはどのようなこれらの値は、Microsoft プラットフォーム ソフトウェア開発キットに付属のマニュアルでは、そのメッセージのリファレンス トピックを参照してください。 適切な値を取得するには、(キットに付属) スパイ ユーティリティを使用する必要があります。</param>
+        <param name="Message">整数型 (<b>Integer</b>) の値を使用します。 送信するメッセージに対応する16進数値を指定します。 Microsoft プラットフォームソフトウェア開発キットを使用している場合は、ヘッダーファイル (Winuser. .h など) でメッセージの名前を参照して、関連付けられている16進数値を検索できます&amp;(16 進値の前に h を指定)。</param>
+        <param name="wParam">整数型 (<b>Integer</b>) の値を使用します。 送信するメッセージに適切なパラメーターを指定します。 これらの値の意味については、Microsoft プラットフォームソフトウェア開発キットに含まれているドキュメントのそのメッセージに関するリファレンストピックを参照してください。 適切な値を取得するには、Spy ユーティリティ (キットに付属) を使用する必要がある場合があります。</param>
+        <param name="lParam">整数型 (<b>Integer</b>) の値を使用します。 送信するメッセージに適切なパラメーターを指定します。 これらの値の意味については、Microsoft プラットフォームソフトウェア開発キットに含まれているドキュメントのそのメッセージに関するリファレンストピックを参照してください。 適切な値を取得するには、Spy ユーティリティ (キットに付属) を使用する必要がある場合があります。</param>
         <summary>Windows のメッセージおよびこれに関連するパラメーターを、指定したタスクに送信します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -392,7 +372,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定したタスクの垂直方向の位置をポイント単位で設定します。</summary>
+        <summary>指定したタスクの垂直位置をポイント単位で取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -423,13 +403,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> と指定したオブジェクトが表示されます。</summary>
+        <summary><b>True</b> と指定したオブジェクトが表示されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>一部のメソッドとプロパティできない場合があります、 <b>Visible</b>プロパティが<b>False</b>の場合。</para>
-          <para />
-        </remarks>
+        <remarks><para>一部のメソッドとプロパティできない場合があります、 <b>Visible</b> プロパティが <b>False</b> の場合。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -489,23 +466,21 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdWindowState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したタスク ウィンドウの状態を設定または返します。</summary>
+        <summary>指定したタスクウィンドウの状態を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdWindowState" />使用できる定数は、次に示す<b>Wdwindowstate</b>クラスの定数のいずれかです。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdWindowState" />これら<b>が可能</b>定数のいずれかができます。</para>
-          <para>
-            <b>wdWindowStateMaximize </b>
+            <b>wdWindowStateMaximize</b>
           </para>
           <para>
-            <b>wdWindowStateNormal </b>
+            <b>Wdwindowstatenormal は</b>
           </para>
           <para>
             <b>wdWindowStateMinimize</b>
           </para>
-          <para>
-            <b>wdWindowStateNormal</b>定数でウィンドウを最大化または最小化されてはいないことを示します。アクティブでないウィンドウの状態を設定することはできません。使用して、 <see cref="M:Microsoft.Office.Interop.Word.Task.Activate(System.Object@)" /> 、ウィンドウの状態を設定する前にウィンドウをアクティブにする方法です</para>。
-          <para /></remarks>
+          <para>定数 <b>wdWindowStateNormal</b> は、ウィンドウを最大化または最小化されてはいないを示します。 アクティブでないウィンドウの状態を設定することはできません。 ウィンドウの<see cref="M:Microsoft.Office.Interop.Word.Task.Activate(System.Object@)" />状態を設定する前にウィンドウをアクティブにするには、メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

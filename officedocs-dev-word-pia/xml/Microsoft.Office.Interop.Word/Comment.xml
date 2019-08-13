@@ -1,13 +1,5 @@
 <Type Name="Comment" FullName="Microsoft.Office.Interop.Word.Comment">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fda4beac7d470cea977cadf0e9685141efef399b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671032" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Comment" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6adea5e853e9646a801465cf9cca29730ebb1600" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146172" /></Metadata><TypeSignature Language="C#" Value="public interface Comment" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Comment" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Comment" />
   <TypeSignature Language="VB.NET" Value="Public Interface Comment" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>コメントを表します。</summary>
-    <remarks>
-      <para>
-        <b>コメント</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.Comments" />コレクションです。<b>Comments</b>コレクションには、選択範囲、指定範囲または文書にコメントが含まれます</para>。
-      <para><b>のコメント</b>を使用 (<paramref name="index" />)、どこで<paramref name="index" />オブジェクトを取得する 1 つ<b>のコメント</b>する、インデックス番号を指定します。インデックス番号が指定された選択範囲、指定範囲、または文書内のコメントの位置を表します</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.Comments.Add(Microsoft.Office.Interop.Word.Range,System.Object@)" />指定した範囲にコメントを追加する方法です</para>。使用の
-      <para>、<see cref="P:Microsoft.Office.Interop.Word.Comment.Reference" />プロパティに指定されたコメントと関連する参照記号を取得します。使用して、<see cref="P:Microsoft.Office.Interop.Word.Comment.Range" />を指定したコメントに関連付けられているテキストを返すプロパティです</para>。
-      <para /></remarks>
+    <remarks><para><b>Comment</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Comments" />コレクションのメンバーです。 <b>Comments</b> コレクションには、選択範囲、指定範囲、または文書内のコメントが含まれます。</para>
+      <para><b>コメント</b>()<paramref name="index" />を使用し<paramref name="index" />て、1つの<b>Comment</b>オブジェクトを取得します (ここで、はインデックス番号を指定します)。 インデックス番号は、選択範囲、指定範囲、または文書内でのコメントの位置を表します。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.Comments.Add(Microsoft.Office.Interop.Word.Range,System.Object@)" />メソッドを使用して、指定した範囲にコメントを追加します。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.Comment.Reference" />プロパティを使用して、指定したコメントに関連付けられている記号を返します。 <see cref="P:Microsoft.Office.Interop.Word.Comment.Range" />プロパティを使用して、指定したコメントに関連付けられているテキストを取得します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Ancestor">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Comment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>既存のコメントへの返信コメントの場合は、オブジェクトを返します、親<b>のコメント</b>です。(最上位) の新しいコメントについての値は<b>何も</b>(null 参照 (Visual Basic では Nothing) .in C#) 読み取り専用です。</summary>
+        <summary>既存のコメントに返信するコメントの場合は、親の<b>Comment</b>オブジェクトを返します。新しい (最上位レベルの) コメントの場合、 <b>nothing</b> (null 参照 (Visual Basic では nothing) を返します。 C# では、読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,7 +142,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> 、指定されたコメントの作成者を表すオブジェクト。 値の取得のみ可能です。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.CoAuthor" />たコメントの作成者を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -180,12 +170,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -211,7 +200,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コメントが入力されたときの日時を返します。</summary>
+        <summary>コメントが入力された日付と時刻を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -265,7 +254,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>それに関連付けられている指定されたコメントとすべての返信を削除します。</summary>
+        <summary>指定したコメントと、それに関連付けられているすべての返信を削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,7 +284,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定する<b>ブール型</b>(C# では<b>bool</b> ) の値が<b>true</b>の場合は、指定されたコメントが終了したマークされています。 読み取り/書き込み。</summary>
+        <summary>指定されたコメントが<b></b> closed とマークされている場合、値が<b>True</b>である<b>ブール型 (Boolean</b> ) の値を設定または返します。 読み取り/書き込み。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -321,7 +310,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>編集するための指定されたコメントが表示されます。</summary>
+        <summary>指定したコメントを編集用に開きます。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -348,7 +337,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内の項目の位置を表す<b>整数</b>を返します。</summary>
+        <summary>コレクション内の項目の位置を表す<b>整数型 (Integer</b> ) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -413,13 +402,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>ブール値</b> コメントが手書きコメントであるかどうかを表す値を返します。</summary>
+        <summary><b>ブール値</b> コメントが手書きコメントであるかどうかを表す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>既存のコメントへの返信コメントの場合は、オブジェクトを返します、親<b>のコメント</b>です。(最上位) の新しいコメントについては、 <b>Nothing</b> (null 参照 (Visual Basic では Nothing) では C#) を返します。読み取り専用です。</para>
-          <para />
-        </remarks>
+        <remarks><para>既存のコメントに返信するコメントの場合は、親の<b>Comment</b>オブジェクトを返します。新しい (最上位レベルの) コメントの場合、 <b>Nothing</b> (C# では Visual Basic では nothing) を返します。 読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -473,12 +459,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />を指定したオブジェクトに含まれる文書の部分を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />たオブジェクトに含まれる文書の一部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>範囲をドキュメントから取得するか、図形のコレクションから図形範囲を取得する方法についてを参照してください、<see cref="P:Microsoft.Office.Interop.Word.Comment.Range" />メソッドです。</para>
-          <para />
-        </remarks>
+        <remarks><para>文書から指定範囲を取得する<see cref="P:Microsoft.Office.Interop.Word.Comment.Range" />方法、または図形のコレクションから図形範囲を取得する方法については、メソッドを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reference">
@@ -504,7 +488,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 、脚注、文末脚注、またはコメント記号を表すオブジェクト。</summary>
+        <summary>脚注、 <see cref="T:Microsoft.Office.Interop.Word.Range" />文末脚注、またはコメントの記号を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -532,8 +516,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Comments</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Comments" /> 、指定されたコメントの子になっている<b>Comment</b>オブジェクトのコレクションです。 値の取得のみ可能です。</summary>
-        <value>呼び出して、<see cref="M:Microsoft.Office.Interop.Word.Comments.Add(Microsoft.Office.Interop.Word.Range,System.Object@)" />からの返信に対する返信をコレクションにアクセスした場合を除き、返信の返されるコレクションのメソッドが、返信を追加します。<see cref="P:Microsoft.Office.Interop.Word.Comments.ShowBy" />プロパティは、<b>応答</b>のプロパティによって返される<b>コメント</b>のコレクションで呼び出されると失敗します。</value>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Comments" />たコメントの子である<b>comment</b>オブジェクトのコレクションを返します。 読み取り専用です。</summary>
+        <value>返信の<see cref="M:Microsoft.Office.Interop.Word.Comments.Add(Microsoft.Office.Interop.Word.Range,System.Object@)" />返信されたコレクションに対してメソッドを呼び出すと、返信に対してコレクションにアクセスしていない場合は、新しい返信が追加されます。返信<see cref="P:Microsoft.Office.Interop.Word.Comments.ShowBy" />プロパティによって返される<b>Comments</b>コレクションで呼び出した<b></b>ときに、プロパティが失敗します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -560,7 +544,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />を指定したコメントで示される文字列範囲を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />たコメントで示される文字列範囲を表すオブジェクト型 (object) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="ListEntry" FullName="Microsoft.Office.Interop.Word.ListEntry">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1d89cf6c617af843338ae18827509a86e36d9a8c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672286" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListEntry" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3ce5e066aaa8a27420cee5f4174fb1ab23f7c2c3" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146564" /></Metadata><TypeSignature Language="C#" Value="public interface ListEntry" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListEntry" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListEntry" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListEntry" />
@@ -26,13 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>ドロップダウン フォーム フィールド内のアイテムを表します。</summary>
-    <remarks>
-      <para>
-        <b>ListEntry</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.ListEntries" />コレクションです。<b>ListEntries</b>コレクションには、ドロップダウン フォーム フィールド内のすべての項目が含まれています</para>。
-      <para>使用して<b>ListEntries</b>(<paramref name="index" />)、どこで<paramref name="index" />は、リストのエントリの名前またはインデックス番号で、単一の<b>ListEntry</b>オブジェクトを取得します。インデックス番号 (最初の項目は、インデックス番号 1)、ドロップダウン フォーム フィールド内のエントリの位置を表します</para>。
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.ListEntries.Add(System.String,System.Object@)" /> 、ドロップダウン フォーム フィールドに項目を追加します</para>。
-      <para /></remarks>
+    <summary>ドロップダウン フォーム フィールドの項目を表します。</summary>
+    <remarks><para><b>ListEntry</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.ListEntries" />コレクションのメンバーです。 <b>ListEntries</b> コレクションには、ドロップダウン フォーム フィールドのすべての項目が含まれます。</para>
+      <para><b>Listentries</b>(<paramref name="index" />) を使用し<paramref name="index" />ます。ここで、はリストのエントリ名またはインデックス番号を使用して、1つの<b>ListEntry</b>オブジェクトを返します。 インデックス番号は、ドロップダウン フォーム フィールドでのエントリ項目の位置を表します (最初の項目はインデックス番号 1 です)。</para>
+      <para>ドロップダウン<see cref="M:Microsoft.Office.Interop.Word.ListEntries.Add(System.String,System.Object@)" />フォームフィールドに項目を追加するには、メソッドを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,12 +76,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -115,7 +104,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,7 +131,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内の項目の位置を表す<b>整数</b>を返します。</summary>
+        <summary>コレクション内の項目の位置を表す<b>整数型 (Integer</b> ) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

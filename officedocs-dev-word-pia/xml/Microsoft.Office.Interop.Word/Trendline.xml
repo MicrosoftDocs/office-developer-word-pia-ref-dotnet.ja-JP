@@ -1,13 +1,5 @@
 <Type Name="Trendline" FullName="Microsoft.Office.Interop.Word.Trendline">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9b82db86a793f5b37594ba6a159598dc18ac5a7e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671928" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Trendline" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="daa5f65be508f63497b12aec2cbb8833c613a49e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143785" /></Metadata><TypeSignature Language="C#" Value="public interface Trendline" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Trendline" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Trendline" />
   <TypeSignature Language="VB.NET" Value="Public Interface Trendline" />
@@ -27,14 +19,11 @@
   </Attributes>
   <Docs>
     <summary>グラフの近似曲線を表します。</summary>
-    <remarks>
-      <para>傾向や方向、系列のデータの近似曲線を示しています。<see cref="T:Microsoft.Office.Interop.Word.Trendline" />オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.Trendlines" />コレクションです。<see cref="T:Microsoft.Office.Interop.Word.Trendlines" />コレクションには、すべてが含まれています、 <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> 1 つの一連のオブジェクトです。</para>
-      <para />
-    </remarks>
-    <example>
-      <para>使用<see cref="T:Microsoft.Office.Interop.Word.Trendlines" />(<paramref name="Index" />)、<paramref name="Index" />は、近似曲線のインデックス番号の 1 つを取得する<see cref="T:Microsoft.Office.Interop.Word.Trendline" />オブジェクトです</para>。
-      <para>インデックス番号は、データ系列に近似曲線が追加された順序を表します。Trendlines(1) シリーズに追加された最初の近似曲線は、Trendlines(Trendlines.Count) 最後の 1 つを追加します</para>。
-      <para>次の例では、作業中の文書の最初のグラフの最初のデータ系列の近似曲線の種類を変更します。データ系列に近似曲線があるない場合は、次の使用例は失敗します</para>。</example>
+    <remarks><para>近似曲線は、データ系列のデータの傾向や方向を示します。 <see cref="T:Microsoft.Office.Interop.Word.Trendline" />オブジェクトは<see cref="T:Microsoft.Office.Interop.Word.Trendlines" />コレクションのメンバーです。 コレクション<see cref="T:Microsoft.Office.Interop.Word.Trendlines" />には、1 <see cref="T:Microsoft.Office.Interop.Word.Trendline" />つのデータ系列のすべてのオブジェクトが含まれています。</para>
+      <para> </para></remarks>
+    <example><para>1 <see cref="T:Microsoft.Office.Interop.Word.Trendlines" />つ<paramref name="Index" /> <see cref="T:Microsoft.Office.Interop.Word.Trendline" />のオブジェクトを<paramref name="Index" />取得するには、() を使用します。ここでは、近似曲線のインデックス番号を指定します。</para>
+      <para>近似曲線のインデックス番号は、データ系列に追加された順序に対応します。 Trendlines(1) はデータ系列に最初に追加された近似曲線で、Trendlines(Trendlines.Count) は最後に追加された近似曲線です。</para>
+      <para>次の使用例は、作業中の文書に含まれる最初のグラフについて最初のデータ系列の近似曲線の種類を変更します。データ系列に近似曲線がない場合は、この使用例は失敗します。</para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,9 +49,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 値の取得のみ可能です。</summary>
-        <value>
-          <b>アプリケーション</b>(上記参照)</value>
+        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用<see cref="T:Microsoft.Office.Interop.Word._Application" />すると、Microsoft Word アプリケーションを表すオブジェクトが返されます。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
+        <value><b>アプリケーション</b>(上記を参照)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,10 +86,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または近似曲線を後方に延長される期間 (または散布図の単位) の数を設定します。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>近似曲線を後方に拡張するときの区間数 (散布図の場合は単位数) を設定または返します。</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,10 +117,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>近似曲線を後方に延長する場合の、後方補外の区間数 (散布図の場合は単位数) を設定します。値の取得および設定が可能です。倍精度浮動小数点型 ( <b>Double</b> ) の値を使用します。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>近似曲線を後方に拡張するときの区間数 (散布図の場合は単位数) を設定または返します。 取得/設定が可能な <b>Double</b> 値です。</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,10 +145,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> 、オブジェクトの枠線を表すオブジェクト。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>オブジェクトの<see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />枠線を表すオブジェクトを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,9 +172,7 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトの書式設定をクリアします。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,14 +199,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Word で作成されている場合、<b>作成者</b>を返します、16 進数の値である 4d535744 を文字列します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
-          <para />
-        </remarks>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトは、Microsoft Word で作成されている場合、 <b>作成者</b> を返します、16 進数の値である 4d535744 を文字列します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLabel">
@@ -252,14 +228,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.DataLabel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> 、近似曲線に関連付けられたデータ ラベルを表すオブジェクト。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.DataLabel" />
-        </value>
-        <remarks>
-          <para>設定する必要があります。 近似曲線のデータ ラベルを有効にするには、<see cref="P:Microsoft.Office.Interop.Word.Trendline.DisplayEquation" />プロパティまたは<see cref="P:Microsoft.Office.Interop.Word.Trendline.DisplayRSquared" />プロパティを<b>True</b>にします。</para>
-          <para />
-        </remarks>
+        <summary>近似曲線<see cref="T:Microsoft.Office.Interop.Word.DataLabel" />に関連付けられているデータラベルを表すオブジェクト型 (object) の値を取得します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.DataLabel" /></value>
+        <remarks><para>近似曲線のデータラベルを有効にするには、 <see cref="P:Microsoft.Office.Interop.Word.Trendline.DisplayEquation" />プロパティまたは<see cref="P:Microsoft.Office.Interop.Word.Trendline.DisplayRSquared" />プロパティを<b>True</b>に設定する必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -284,9 +256,7 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトを削除します。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,11 +286,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合、近似曲線の方程式をグラフ内に表示します。方程式を R-2 乗値と同じデータ ラベルに表示します。このプロパティを <b>True</b> に設定すると、データ ラベルが自動的に表示されます。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary><b>True</b> の場合、近似曲線の方程式をグラフ内に表示します。方程式を R-2 乗値と同じデータ ラベルに表示します。このプロパティを <b>True</b> に設定すると、データ ラベルが自動的に表示されます。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -350,11 +317,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合、近似曲線の R-2 乗値をグラフ内に表示します。R-2 乗値を方程式と同じデータ ラベルに表示します。このプロパティに <b>True</b> を設定すると、データ ラベルを自動的に表示します。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary><b>True</b> の場合、近似曲線の R-2 乗値をグラフ内に表示します。R-2 乗値を方程式と同じデータ ラベルに表示します。このプロパティに <b>True</b> を設定すると、データ ラベルを自動的に表示します。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -382,10 +346,8 @@
       </ReturnValue>
       <Docs>
         <summary>線、塗りつぶし、およびオブジェクトの書式設定の効果を取得します。
-読み取り専用<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+読み取り専用<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -421,10 +383,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または近似曲線を前方に拡張する期間 (または散布図のユニット) の数を設定します。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>近似曲線を前方に延長する期間 (散布図の場合は単位数) を設定または返します。</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -454,10 +414,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>近似曲線を前方に延長するときに、前方補外の区間数 (散布図の場合は単位数) を設定します。値の取得および設定が可能です。倍精度浮動小数点型 ( <b>Double</b> ) の値を使用します。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>近似曲線を前方に延長する期間 (散布図の場合は単位数) を設定または返します。 取得/設定が可能な <b>Double</b> 値です。</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -484,9 +442,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ようなオブジェクトのコレクション内のオブジェクトのインデックス番号を返します。</summary>
-        <value>
-          <b>整数</b>です。</value>
+        <summary>類似するオブジェクトのコレクション内のオブジェクトのインデックス番号を返します。</summary>
+        <value>整数型 ( <b>Integer</b> ) を使用します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -516,14 +473,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>近似曲線と数値軸の交点 (切片) を設定します。値の取得および設定が可能です。倍精度浮動小数点型 ( <b>Double</b> ) の値を使用します。</summary>
-        <value>
-          <b>Double</b>
-        </value>
-        <remarks>
-          <para>このプロパティの設定の設定、<see cref="P:Microsoft.Office.Interop.Word.Trendline.InterceptIsAuto" />プロパティを<b>False</b>にします。</para>
-          <para />
-        </remarks>
+        <summary>近似曲線が数値軸と交差する点を設定または返します。 取得/設定が可能な <b>Double</b> 値です。</summary>
+        <value><b>Double</b></value>
+        <remarks><para>このプロパティを設定する<see cref="P:Microsoft.Office.Interop.Word.Trendline.InterceptIsAuto" />と、プロパティが<b>False</b>に設定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InterceptIsAuto">
@@ -552,15 +505,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合、近似曲線と数値軸の交点 (切片) を回帰計算によって自動的に決定します。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>設定、<see cref="P:Microsoft.Office.Interop.Word.Trendline.Intercept" />プロパティは、このプロパティを<b>False</b>に設定します。</para>
-          <para />
-        </remarks>
+        <summary><b>True</b>の場合、近似曲線が数値軸と交差する点は、回帰計算によって自動的に決まります。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>プロパティを<see cref="P:Microsoft.Office.Interop.Word.Trendline.Intercept" />設定すると、このプロパティは<b>False</b>に設定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -589,10 +537,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、オブジェクトの名前を表す<b>文字列</b>値を設定します。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
+        <summary>オブジェクトの名前を表す文字列型 (<b>String</b>) の値を取得、または設定します。</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -622,15 +568,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、近似曲線の名前が自動的に決定します。読み取り/書き込み <b>ブール値</b> です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary><b>True の</b> 場合は、近似曲線の名前が自動的に決定します。 読み取り/書き込み <b>ブール値</b> です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>この例では、作業中の文書の最初のグラフの近似曲線の名前を自動的に Microsoft Word を設定します。例は、近似曲線を持つ 1 つの系列を含む 2-d 縦棒グラフに対して実行してください。</para>
-        </example>
+        <example><para>次の使用例は、作業中の文書に含まれる最初のグラフの近似曲線1の名前が自動的に決定されるように設定します。 この使用例は、近似曲線を持つデータ系列を 1 つだけ含む 2-D 縦棒グラフに対して実行してください。</para></example>
       </Docs>
     </Member>
     <Member MemberName="Order">
@@ -659,10 +600,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>近似曲線の次数 (1 より大きい整数) を表す<b>整数</b>値を取得または設定すると、近似曲線の<see cref="P:Microsoft.Office.Interop.Word.Trendline.Type" />、 <see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlPolynomial" />。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>近似曲線<see cref="P:Microsoft.Office.Interop.Word.Trendline.Type" />がで<see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlPolynomial" />ある場合に、近似曲線の次数 (1 より大きい整数) を表す<b>整数型 (integer</b> ) の値を取得、または設定します。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -689,10 +628,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親を返します。読み取り専用 <b>オブジェクト</b> 。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定したオブジェクトの親を返します。 読み取り専用 <b>オブジェクト</b> 。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -722,10 +659,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>移動平均近似曲線の期間を設定または返します。 2 ~ 255 の値を指定できます。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>移動平均近似曲線の期間を設定または返します。 2 ~ 255 の値を指定できます。 読み取り/書き込みの <b>整数</b> です。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -751,9 +686,7 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトを選択します。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -783,10 +716,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlTrendlineType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、 <see cref="T:Microsoft.Office.Interop.Word.XlTrendlineType" /> 、近似曲線の種類を表す値。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlTrendlineType" />
-        </value>
+        <summary>近似曲線の種類<see cref="T:Microsoft.Office.Interop.Word.XlTrendlineType" />を表す値を取得または設定します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlTrendlineType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

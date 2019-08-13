@@ -1,13 +1,5 @@
 <Type Name="HeadingStyles" FullName="Microsoft.Office.Interop.Word.HeadingStyles">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ac08de01c0786e7b85ed6512cee7ebcc71040b6f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671489" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface HeadingStyles : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8035dbeadf8f64cd8b07bd451f70eb58cd11b7a1" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147985" /></Metadata><TypeSignature Language="C#" Value="public interface HeadingStyles : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HeadingStyles implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HeadingStyles" />
   <TypeSignature Language="VB.NET" Value="Public Interface HeadingStyles&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.HeadingStyle" />図表目次または目次のコンパイルに使用するスタイルを表すオブジェクト。</summary>
-    <remarks>
-      <para>
-        <b>HeadingStyles</b>プロパティを使用して、<see cref="T:Microsoft.Office.Interop.Word.TablesOfContents" />または<see cref="T:Microsoft.Office.Interop.Word.TablesOfFigures" /><b>HeadingStyles</b>コレクションを取得するオブジェクトです</para>。
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.HeadingStyles.Add(System.Object@,System.Int16)" /> 、 <b>HeadingStyles</b>コレクションにスタイルを追加します</para>。
-      <para>使用して<b>HeadingStyles</b>(<paramref name="index" />)、<paramref name="index" />インデックス番号には、単一の<b>HeadingStyle</b>オブジェクトを返します。インデックス番号は、 <b>HeadingStyles</b>コレクションでのスタイルの位置を表します</para>。
-      <para /></remarks>
+    <summary>図表目次また<see cref="T:Microsoft.Office.Interop.Word.HeadingStyle" />は目次を編集するときに使用するスタイルを表すオブジェクトのコレクションです。</summary>
+    <remarks><para><b>HeadingStyles</b>コレクションを取得するの<see cref="T:Microsoft.Office.Interop.Word.TablesOfContents" />に<see cref="T:Microsoft.Office.Interop.Word.TablesOfFigures" />には、またはオブジェクトの<b>HeadingStyles</b>プロパティを使用します。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.HeadingStyles.Add(System.Object@,System.Int16)" />メソッドを使用して、 <b>HeadingStyles</b>コレクションにスタイルを追加します。</para>
+      <para>1つの<paramref name="index" /> <b>HeadingStyle</b>オブジェクトを<paramref name="index" />取得するのにには、 <b>HeadingStyles</b>() を使用します。ここで、はインデックス番号を指定します。 インデックス番号は、 <b>HeadingStyles</b> コレクションでのスタイルの位置を表します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,11 +53,9 @@
         <Parameter Name="Level" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Style">
-          <b>オブジェクト</b>が必要です。 追加するスタイルです。 スタイルの文字列名を使用してこの引数を指定することができます、または<see cref="T:Microsoft.Office.Interop.Word.Style" />オブジェクトです。</param>
-        <param name="Level">
-          <b>短い</b>必要があります。 見出しレベルを表す数値を指定します。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.HeadingStyle" />新しい見出しスタイルを表すオブジェクトをドキュメントに追加します。 目次または図表目次をコンパイルするたびに新しい見出しスタイルが含まれます。</summary>
+        <param name="Style">必要な<b>オブジェクト</b>。 追加するスタイルです。 この引数を指定するには、スタイルまたは<see cref="T:Microsoft.Office.Interop.Word.Style" />オブジェクトの名前を文字列で指定します。</param>
+        <param name="Level"><b>省略</b>する必要があります。 見出しレベルを表す数値を指定します。</param>
+        <summary>文書に<see cref="T:Microsoft.Office.Interop.Word.HeadingStyle" />追加する新しい見出しスタイルを表すオブジェクトを返します。 目次または図表目次を作成すると、常にこの新しい見出しスタイルが含まれます。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -95,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -151,12 +139,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -217,7 +204,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">各オブジェクトの序数位置を示す<b>整数</b>です。</param>
+        <param name="Index">個々のオブジェクトの位置を表す<b>整数型 (Integer</b> ) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

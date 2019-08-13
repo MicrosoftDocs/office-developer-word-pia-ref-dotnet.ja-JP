@@ -1,13 +1,5 @@
 <Type Name="InlineShapes" FullName="Microsoft.Office.Interop.Word.InlineShapes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c25c65b0fb5c59926539a5d393bfd72559673469" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671943" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface InlineShapes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="37073b7d0cfd73d163e623520cf1f2b791991061" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147943" /></Metadata><TypeSignature Language="C#" Value="public interface InlineShapes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract InlineShapes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.InlineShapes" />
   <TypeSignature Language="VB.NET" Value="Public Interface InlineShapes&#xA;Implements IEnumerable" />
@@ -30,15 +22,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />文書、指定範囲、または選択範囲内のすべてのインライン図形を表すオブジェクト。</summary>
-    <remarks>
+    <summary>文書、指定<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />範囲、または選択範囲内のすべての位置を固定した図形を表すオブジェクトのコレクションです。</summary>
+    <remarks><para><see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />コレクションを取得するのに<see cref="T:Microsoft.Office.Interop.Word._Document" />に<see cref="T:Microsoft.Office.Interop.Word.Range" />は、 <see cref="T:Microsoft.Office.Interop.Word.Selection" /> 、、またはオブジェクトの<b>InlineShapes</b>プロパティを使用します。</para>
+      <para>インライン図形<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.New(Microsoft.Office.Interop.Word.Range)" />として新しい図を作成するには、メソッドを使用します。 メソッド<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@)" />と<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />メソッドを使用して、画像または OLE オブジェクトを追加し、それらをソースファイルにリンクさせることができます。 メソッドを<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEControl(System.Object@,System.Object@)" />使用して、ActiveX コントロールを追加します。</para>
       <para>
-        <b>InlineShapes</b>プロパティを使用して、 <see cref="T:Microsoft.Office.Interop.Word._Document" />、 <see cref="T:Microsoft.Office.Interop.Word.Range" />、または<see cref="T:Microsoft.Office.Interop.Word.Selection" />オブジェクトを返す、<see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />コレクションです</para>。使用の
-      <para>、<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.New(Microsoft.Office.Interop.Word.Range)" />インライン図形に新しい画像を作成します。使用することができます、<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@)" />と<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />の図または OLE オブジェクトを追加し、それらをソース ファイルにリンクするためのメソッドです。使用して、 <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEControl(System.Object@,System.Object@)" /> 、ActiveX コントロールを追加します</para>。
-      <para><see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクトは、文字列範囲にアンカーしますが、フローティングとページ上の任意の場所に配置できます。使用することができます、<see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" />メソッドと<see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" />1 つの型から別の図形に変換するメソッドです。インライン図形に画像、OLE オブジェクト、および ActiveX コントロールのみを変換することができます</para>。
-      <para>、<see cref="P:Microsoft.Office.Interop.Word.InlineShapes.Count" />ドキュメントでこのコレクションのプロパティは、メイン テキスト ストーリーのみの項目の数を返します。カウントするための他のストーリーの項目を使用して、使用して、コレクションの<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです</para>。
-      <para>以前のバージョンの Microsoft Word で作成した文書を開くと、画像はインライン図形に変換します</para>。
-      <para /></remarks>
+        <see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクトはテキストの範囲にアンカーされますが、自由に配置され、ページ上の任意の場所に配置できます。 <see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" />メソッドと<see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" />メソッドを使用すると、図形を1つの種類から別の種類に変換できます。 位置を固定した図形に変換できるのは、図、OLE オブジェクト、および ActiveX コントロールだけです。</para>
+      <para>文書<see cref="P:Microsoft.Office.Interop.Word.InlineShapes.Count" />内のこのコレクションのプロパティは、メインストーリーのみの項目数を返します。 他のストーリー内のアイテムをカウントするには<see cref="T:Microsoft.Office.Interop.Word.Range" /> 、オブジェクトと共にコレクションを使用します。</para>
+      <para>以前のバージョンの Microsoft Word で作成された文書を開くと、図は位置を固定した図形に変換されます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddChart">
@@ -100,10 +91,10 @@
       </Parameters>
       <Docs>
         <param name="Style">グラフのスタイルです。</param>
-        <param name="Type">グラフの種類を指定します。</param>
-        <param name="Range">テキストのグラフが配置される場所の範囲です。 グラフは、指定範囲を解除しない限り、範囲を置き換えます。 この引数を省略すると、グラフは自動的に配置します。</param>
-        <param name="NewLayout">場合<paramref name="NewLayout" />が true の場合、新しい動的な書式設定ルールを使用してグラフが挿入されます (タイトルで、凡例にのみ複数の系列があるかどうか)。</param>
-        <summary>文書にグラフを追加します。 返します、<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />グラフを表し、指定したコレクションに追加するオブジェクト。</summary>
+        <param name="Type">グラフの種類です。</param>
+        <param name="Range">グラフがテキスト内に配置される範囲を指定します。 指定範囲が解除されていない場合、グラフは指定範囲と置き換えられます。 この引数を省略すると、グラフは自動的に配置されます。</param>
+        <param name="NewLayout">が<paramref name="NewLayout" /> true の場合は、新しい動的書式設定ルールを使用してグラフが挿入されます (タイトルはオン、複数の系列がある場合にのみ凡例が表示されます)。</param>
+        <summary>ドキュメントにグラフを追加します。 グラフを<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />表すオブジェクトを返し、指定されたコレクションに追加します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -131,15 +122,12 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>文字列</b> が必要です。 水平線に使用するイメージのファイル名を指定します。</param>
+        <param name="FileName"><b>文字列</b> が必要です。 水平線に使用するイメージのファイル名を指定します。</param>
         <param name="Range">省略可能な<b>オブジェクト</b>です。 範囲を指定することにより、この範囲の上部に水平線が配置されます。 この引数を省略した場合、現在の選択範囲の上部に水平線が配置されます。</param>
         <summary>イメージ ファイルを基にして水平線を現在の文書に追加します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>既存のイメージ ファイルに基づいていない水平線を追加するのにを使用して、<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLineStandard(System.Object@)" />メソッドです。</para>
-          <para />
-        </remarks>
+        <remarks><para>既存のイメージファイルに基づかない水平線を追加するには、 <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLineStandard(System.Object@)" />メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddHorizontalLineStandard">
@@ -167,10 +155,8 @@
         <param name="Range">省略可能な<b>オブジェクト</b>です。 範囲を指定することにより、この範囲の上部に水平線が配置されます。 この引数を省略した場合、現在の選択範囲の上部に水平線が配置されます。</param>
         <summary>現在の文書に水平線を追加します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>既存のイメージ ファイルを基に水平線を追加するのにを使用して、<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLine(System.String,System.Object@)" />メソッドです。</para>
-          <para />
-        </remarks>
+        <remarks><para>既存のイメージファイルに基づいて水平線を追加するには<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLine(System.String,System.Object@)" /> 、メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddOLEControl">
@@ -200,10 +186,9 @@
         <param name="Range">省略可能な<b>オブジェクト</b>です。 ActiveX コントロールを文字列内に配置する範囲です。 範囲を解除しない場合、ActiveX コントロールは指定範囲と置き換えられます。 この引数を省略すると、ActiveX コントロールは自動的に配置されます。</param>
         <summary>ActiveX コントロール (以前の OLE コントロール) を作成します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドが返されます、 <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> 、新しい ActiveX コントロールを表すオブジェクト</para>。
-          <para>ActiveX コントロールのいずれかの方法としては<see cref="T:Microsoft.Office.Interop.Excel.Shape" />オブジェクトまたは<b>InlineShape</b>オブジェクトを Microsoft Word でします。ActiveX コントロールのプロパティを変更するを使用して、<see cref="P:Microsoft.Office.Interop.Excel.OLEFormat.Object" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" />指定した図形または図形のオブジェクトです</para>。
-          <para /></remarks>
+        <remarks><para>このメソッドは、 <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />新しい ActiveX コントロールを表すオブジェクトを返します。</para>
+          <para>ActiveX コントロールは、 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Microsoft Word でオブジェクトまたは<b>InlineShape</b>オブジェクトとして表されます。 ActiveX コントロールのプロパティを変更するには、指定<see cref="P:Microsoft.Office.Interop.Excel.OLEFormat.Object" />した図形<see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" />または図形のオブジェクトのプロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddOLEObject">
@@ -236,19 +221,17 @@
       </Parameters>
       <Docs>
         <param name="ClassType">省略可能な<b>オブジェクト</b>です。 指定された OLE オブジェクトをアクティブにするときに使用するアプリケーションの名前を指定します。</param>
-        <param name="FileName">省略可能な<b>オブジェクト</b>です。 オブジェクトの作成元ファイルを指定します。 この引数を省略すると、現在のフォルダーが使用されます。 どちらかを指定する必要があります、<paramref name="ClassType" />または<paramref name="FileName" />が、オブジェクトの両方の引数です。</param>
-        <param name="LinkToFile">省略可能な<b>オブジェクト</b>です。 の<b>場合は true</b> OLE オブジェクトを作成した元のファイルにリンクするのには<b>False を指定</b>するには、OLE オブジェクトは、ファイルの独立したコピーです。 値を指定した場合は<paramref name="ClassType" />、<paramref name="LinkToFile" />の引数を<b>False</b>にする必要があります。 既定値は <b>False</b> です。</param>
+        <param name="FileName">省略可能な<b>オブジェクト</b>です。 オブジェクトの作成元ファイルを指定します。 この引数を省略すると、現在のフォルダーが使用されます。 オブジェクトに<paramref name="FileName" />引数を指定<paramref name="ClassType" />する必要がありますが、両方を指定することはできません。</param>
+        <param name="LinkToFile">省略可能な<b>オブジェクト</b>です。 OLE オブジェクトを作成元のファイルにリンクするには、 <b>True</b>を指定します。<b>False</b>を設定すると、OLE オブジェクトをファイルの独立したコピーとして使用します。 の<paramref name="ClassType" />値を指定する場合は、 <paramref name="LinkToFile" />引数を<b>False</b>にする必要があります。 既定値は <b>False</b> です。</param>
         <param name="DisplayAsIcon">省略可能な<b>オブジェクト</b>です。 <b>True</b> を設定すると、OLE オブジェクトをアイコンで表示します。 既定値は <b>False</b> です。</param>
-        <param name="IconFileName">省略可能な<b>オブジェクト</b>です。 表示するアイコンを含むファイル名を指定します。</param>
-        <param name="IconIndex">省略可能な<b>オブジェクト</b>です。 内のアイコンのインデックス番号を<paramref name="IconFileName" />。 指定したファイル内のアイコンの順序は、アイコンの変更] ダイアログ ボックス ([挿入] メニューの [オブジェクト] ダイアログ ボックス) に表示されるアイコンの順序に対応して表示] チェック ボックスをオンにした場合。 ファイルの最初のアイコンは、インデックス番号が 0 となります。 指定したインデックス番号のアイコンが存在しないかどうかは<paramref name="IconFileName" />、インデックス番号 1 (ファイルの 2 つ目のアイコン) のアイコンを使用します。 既定値は 0 です。</param>
-        <param name="IconLabel">省略可能な<b>オブジェクト</b>です。 アイコンの下に表示するラベル (標題) を指定します。</param>
+        <param name="IconFileName">省略可能な<b>オブジェクト</b>です。 表示するアイコンを含むファイルを指定します。</param>
+        <param name="IconIndex">省略可能な<b>オブジェクト</b>です。 内<paramref name="IconFileName" />のアイコンのインデックス番号。 指定したファイルでのアイコンの順序は、[アイコンで表示] チェック ボックスが選択されている場合に [アイコンの変更] ダイアログ ボックス ([挿入] - [オブジェクト]) に表示されるアイコンの順序と対応します。 ファイルの最初のアイコンは、インデックス番号は 0 (ゼロ) です。 指定したインデックス番号のアイコンがに<paramref name="IconFileName" />存在しない場合は、インデックス番号 1 (ファイルの2番目のアイコン) のアイコンが使用されます。 既定値は 0 (ゼロ) です。</param>
+        <param name="IconLabel">省略可能な<b>オブジェクト</b>です。 アイコンの下に表示するラベル (図表番号) を指定します。</param>
         <param name="Range">省略可能な<b>オブジェクト</b>です。 OLE オブジェクトを文字列内に配置する範囲を指定します。 範囲を解除しない場合、OLE オブジェクトはその範囲と置き換えられます。 この引数を省略すると、オブジェクトは自動的に配置されます。</param>
         <summary>OLE オブジェクトを作成します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>返します、 <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> 、新しい OLE オブジェクトを表すオブジェクト。</para>
-          <para />
-        </remarks>
+        <remarks><para>新しい OLE <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />オブジェクトを表すオブジェクトを返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddPicture">
@@ -276,17 +259,14 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>文字列</b> が必要です。 図のパスとファイル名を指定します。</param>
-        <param name="LinkToFile">省略可能な<b>オブジェクト</b>です。 <b>True</b> 作成元ファイルに図をリンクします。 <b>False を指定</b> すると、図ファイルの独立したコピーです。 既定値は、 <b>false を指定</b> します。</param>
+        <param name="FileName"><b>文字列</b> が必要です。 図のパスおよびファイル名を指定します。</param>
+        <param name="LinkToFile">省略可能な<b>オブジェクト</b>です。 <b>True</b> 作成元ファイルに図をリンクします。 <b>False を指定</b> すると、図ファイルの独立したコピーです。 既定値は <b>False</b> です。</param>
         <param name="SaveWithDocument">省略可能な<b>オブジェクト</b>です。 の <b>場合は true</b> リンクされた図が文書と共に保存するのには。 既定値は、 <b>false を指定</b> します。</param>
-        <param name="Range">省略可能な<b>オブジェクト</b>です。 テキストに画像を置く場所です。 範囲が画像に置き換えられます範囲が解除されていない場合それ以外の場合、画像が挿入されます。 この引数を省略すると、画像は自動的に配置します。</param>
+        <param name="Range">省略可能な<b>オブジェクト</b>です。 図をテキスト内に配置する位置を指定します。 指定範囲が解除されていない場合は、指定範囲が図に置き換えられます。それ以外の場合は、画像が挿入されます。 この引数を省略すると、ピクチャは自動的に配置されます。</param>
         <summary>文書に図を追加します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドが返されます、<see cref="T:Microsoft.Office.Interop.Word.Shape" />図を表し、それに追加するオブジェクトの<see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />コレクションです。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドは<see cref="T:Microsoft.Office.Interop.Word.Shape" /> 、図を表すオブジェクトを返し、 <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />コレクションに追加します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddPictureBullet">
@@ -312,15 +292,12 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>文字列</b> が必要です。 行頭絵文字に使用するイメージのファイル名を指定します。</param>
+        <param name="FileName"><b>文字列</b> が必要です。 行頭絵文字に使用するイメージのファイル名を指定します。</param>
         <param name="Range">省略可能な<b>オブジェクト</b>です。 行頭絵文字を追加する指定範囲を指定します。 行頭絵文字は指定範囲内の各段落に追加されます。 この引数を省略した場合、行頭絵文字は現在の選択範囲内の各段落に追加されます。</param>
         <summary>イメージ ファイルを基にした行頭絵文字を、現在の文書に追加します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドが返されます、<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />オブジェクトです。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドは、 <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />オブジェクトを返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddSmartArt">
@@ -346,10 +323,10 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Layout">A <see cref="T:Microsoft.Office.Core.SmartArtLayout" /> 、SmartArt グラフィックのレイアウトを指定するオブジェクト。</param>
-        <param name="Range">SmartArt グラフィックのバインド先となるテキストを指定します。 場合<paramref name="Range" />が指定されている SmartArt グラフィックは、範囲の最初の段落の先頭に配置します。 このパラメーターを省略すると、範囲が自動的に選択し、SmartArt グラフィックをページの左上隅を基準に配置します。</param>
+        <param name="Layout">SmartArt <see cref="T:Microsoft.Office.Core.SmartArtLayout" />グラフィックのレイアウトを指定するオブジェクト。</param>
+        <param name="Range">SmartArt グラフィックがバインドされているテキストを指定します。 が<paramref name="Range" />指定されている場合、SmartArt グラフィックは範囲の最初の段落の先頭に配置されます。 このパラメーターを省略すると、範囲が自動的に選択され、ページの左上隅を基準に SmartArt グラフィックが配置されます。</param>
         <summary>作業中の文書に SmartArt グラフィックをインライン図形として挿入します。</summary>
-        <returns>SmartArt グラフィックを挿入します。</returns>
+        <returns>挿入する SmartArt グラフィック。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -381,12 +358,12 @@
       </Parameters>
       <Docs>
         <param name="EmbedCode">ビデオの埋め込みコード。</param>
-        <param name="VideoWidth">Web ビデオのピクセルの幅を表す整数。</param>
-        <param name="VideoHeight">Web ビデオのピクセルの高さを表す整数。</param>
-        <param name="PosterFrameImage">Web ビデオのポスター フレームとして使用するファイルを示す文字列です。</param>
-        <param name="Url">ビデオの URL です。</param>
-        <param name="Range">Web ビデオを挿入する位置の範囲です。 場合<paramref name="Range" />は、省略すると、現在の選択範囲を使用します。</param>
-        <summary>新しい web ビデオをドキュメントに追加します。</summary>
+        <param name="VideoWidth">Web ビデオの幅をピクセル単位で表す整数型 (integer) の値です。</param>
+        <param name="VideoHeight">Web ビデオの高さをピクセル単位で表す整数型 (integer) の値です。</param>
+        <param name="PosterFrameImage">Web ビデオのポスターフレームとして使用するファイルを指す文字列。</param>
+        <param name="Url">ビデオの URL。</param>
+        <param name="Range">Web ビデオを挿入する範囲を指定します。 が<paramref name="Range" />省略されている場合は、現在の選択範囲が使用されます。</param>
+        <summary>ドキュメントに新しい web ビデオを追加します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -414,7 +391,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -470,12 +447,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -536,7 +512,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">各オブジェクトの序数位置を示す<b>整数</b>です。</param>
+        <param name="Index">個々のオブジェクトの位置を表す<b>整数型 (Integer</b> ) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -564,13 +540,11 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">必要な<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。 新しいグラフィックスの位置を指定します。</param>
-        <summary>空で、1 インチ正方形 Microsoft Word 図オブジェクトの枠線で囲まれたを挿入します。</summary>
+        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 新しいグラフィックスの位置を指定します。</param>
+        <summary>空の1インチ四方の Microsoft Word picture オブジェクトを罫線で囲んで挿入します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドの新しいグラフィックの<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />オブジェクトです。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドは、 <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />オブジェクトとして新しいグラフィックを返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

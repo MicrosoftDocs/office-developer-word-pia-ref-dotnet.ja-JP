@@ -1,13 +1,5 @@
 <Type Name="View" FullName="Microsoft.Office.Interop.Word.View">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c735dc24605c2be9a7ca3d58b9f0bc399f7d9a08" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670945" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface View" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5f9e0c4e9f7ec1021964e80672f2867a5ad16420" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143722" /></Metadata><TypeSignature Language="C#" Value="public interface View" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract View" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.View" />
   <TypeSignature Language="VB.NET" Value="Public Interface View" />
@@ -27,12 +19,11 @@
   </Attributes>
   <Docs>
     <summary>ウィンドウまたはウィンドウ枠の表示属性 (すべて表示、フィールドの網かけ、表のグリッド線など) が含まれます。</summary>
-    <remarks>
-      <para>[<b>ビュー</b> ] プロパティを使用して、<see cref="T:Microsoft.Office.Interop.Word.Window" />または<see cref="T:Microsoft.Office.Interop.Word.Pane" /><b>ビュー</b>オブジェクトを返すオブジェクト</para>。
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.View.Type" />ビューを変更するプロパティ</para>。
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.Zoom.Percentage" />画面に表示されるテキストのサイズを変更するプロパティ</para>。
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.View.SeekView" />のコメント、文末脚注、脚注、または文書のヘッダーまたはフッターを表示するプロパティ</para>。
-      <para /></remarks>
+    <remarks><para><b>View</b>オブジェクトを取得するの<see cref="T:Microsoft.Office.Interop.Word.Window" />に<see cref="T:Microsoft.Office.Interop.Word.Pane" />には、またはオブジェクトの<b>view</b>プロパティを使用します。</para>
+      <para>ビューを<see cref="P:Microsoft.Office.Interop.Word.View.Type" />変更するには、プロパティを使用します。</para>
+      <para>画面に<see cref="P:Microsoft.Office.Interop.Word.Zoom.Percentage" />表示されるテキストのサイズを変更するには、プロパティを使用します。</para>
+      <para>コメント、 <see cref="P:Microsoft.Office.Interop.Word.View.SeekView" />文末脚注、脚注、または文書のヘッダーまたはフッターを表示するには、プロパティを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,11 +112,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>ドキュメント内のすべての見出しが折りたたまれます。</summary>
-        <remarks>
-          <para>このメソッドは、見出しを右クリックしたときに表示されるコンテキスト メニューの [<b>展開/折りたたみ</b>] サブメニューの<b>すべての見出しを折りたたむ</b>コマンドに対応します。</para>
-          <para />
-        </remarks>
+        <summary>文書内のすべての見出しを折りたたみます。</summary>
+        <remarks><para>このメソッドは、見出しを右クリックしたときに表示されるショートカットメニューの [<b>展開/折りたたみ</b>] サブメニューの [<b>すべての見出しを折りたたむ</b>] コマンドに対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CollapseOutline">
@@ -150,13 +139,11 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">省略可能な<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。 折りたたむ段落の範囲を指定します。 この引数を省略すると、選択範囲全体が折りたたまれます。</param>
+        <param name="Range">省略<see cref="T:Microsoft.Office.Interop.Word.Range" />可能なオブジェクトです。 折りたたむ段落の範囲を指定します。 この引数を省略すると、選択範囲全体が折りたたまれます。</param>
         <summary>選択範囲または指定範囲の本文と下位の見出しを、1 レベルだけ折りたたんで非表示にします。</summary>
-        <remarks>
-          <para>
-            <b>メモ</b> アウトラインまたはグループ文書モードではない、エラーが発生します。</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>メモ</b> 文書がアウトライン表示またはグループ文書モードではない場合は、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ColumnWidth">
@@ -185,7 +172,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColumnWidth</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>閲覧モードで列の幅を決定する定数を取得または設定します。 読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Word.WdColumnWidth" /></summary>
+        <summary>読み取りモードで列の幅を決定する定数を取得または取得します。 読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Word.WdColumnWidth" /></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -216,12 +203,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはドキュメントが競合モードのビューであるかどうかを設定します。</summary>
-        <value>の<b>true の</b>場合、競合モードのビューで、ドキュメントは、それ以外の場合、 <b>false を指定</b>します。</value>
-        <remarks>
-          <para>読み取り/書き込み。</para>
-          <para />
-        </remarks>
+        <summary>ドキュメントが競合モードのビューであるかどうかを取得または設定します。</summary>
+        <value>ドキュメントが競合モードビューの場合は<b>true</b> 。それ以外の場合は<b>false</b>。</value>
+        <remarks><para>値の取得と設定が可能です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -247,12 +232,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayBackgrounds">
@@ -283,11 +267,8 @@
       <Docs>
         <summary>取得または設定する <b>ブール値</b> を背景色とイメージは印刷レイアウト表示で文書を表示すると表示するかどうかを表します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>DisplayBackgrounds</b>プロパティは、背景の色に対応し、イメージ (印刷レイアウト表示の場合のみ)] オプション、[オプション] ダイアログ ボックスの [表示] タブ上にあります。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Displaybackgrounds</b>プロパティは、[オプション] ダイアログボックスの [表示] タブにある [背景の色とイメージ (印刷レイアウト表示)] オプションに対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayPageBoundaries">
@@ -318,10 +299,8 @@
       <Docs>
         <summary>の <b>場合は true</b> 上余白と下余白 (空白スペース) と灰色を表示する文書内のページ間で領域 (灰色スペース)。 <b>False</b> を非表示に、余白と灰色領域を 1 つの長いページのようになります。 既定値は、 <b>true を指定</b> します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>この機能は印刷レイアウト表示でのみ使用し、いない、左右のページ、ページの上下の灰色領域にのみ影響します。ドキュメントを変更する、指定されたウィンドウです。ドキュメントを保存するときにこの設定の状態が保存されます。</para>
-          <para />
-        </remarks>
+        <remarks><para>この機能は印刷レイアウト表示でのみ利用可能で、ページの上下の灰色領域にのみ適用されます。ページの左右の領域には適用されません。この設定は指定したウィンドウの文書に適用されます。文書を保存すると、この設定も一緒に保存されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplaySmartTags">
@@ -356,13 +335,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True を指定</b>文書内のスマート タグに下線を表示します。</summary>
+        <summary><b>True</b>文書のスマートタグの下に下線を表示します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>破線の下線付きのドキュメントにスマート タグがマークされます。<b>DisplaySmartTags</b>プロパティを<b>False</b>に設定した場合、スマート タグは削除されません。下線の表示がオフになるだけです。</para>
-          <para />
-        </remarks>
+        <remarks><para>文書内のスマート タグには破線の下線が表示されます。 <b>DisplaySmartTags</b> プロパティを <b>False</b> に設定してもスマート タグは削除されず、下線が表示されなくなるだけです。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Draft">
@@ -391,8 +367,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>は true</b> ウィンドウ内のすべてのテキストが表示を高速化するのには最低限の書式と同じ下書きフォントで表示されている場合です。</summary>
+        <summary><b>は true</b> ウィンドウ内のすべてのテキストが表示を高速化するのには最低限の書式と同じ下書きフォントで表示されている場合です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -455,11 +430,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>ドキュメント内のすべての見出しを展開します。</summary>
-        <remarks>
-          <para>このメソッドは、見出しを右クリックしたときに表示されるコンテキスト メニューの [<b>展開/折りたたみ</b>] サブメニューの<b>[すべての見出しを展開して</b>コマンドに対応します。</para>
-          <para />
-        </remarks>
+        <summary>文書内のすべての見出しを展開します。</summary>
+        <remarks><para>このメソッドは、見出しを右クリックしたときに表示されるショートカットメニューの [<b>展開/折りたたみ</b>] サブメニューの [<b>すべての見出しを展開</b>] コマンドに対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpandOutline">
@@ -484,13 +457,11 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">省略可能な<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。 展開する段落の範囲を指定します。 この引数を省略する場合、選択範囲全体が展開されます。</param>
-        <summary>選択範囲または指定範囲の 1 つの見出しレベルの下位の文字列を展開します。</summary>
-        <remarks>
-          <para>
-            <b>メモ</b> アウトラインまたはグループ文書モードではない、エラーが発生します。</para>
-          <para />
-        </remarks>
+        <param name="Range">省略<see cref="T:Microsoft.Office.Interop.Word.Range" />可能なオブジェクトです。 展開する段落の範囲を指定します。 この引数を省略する場合、選択範囲全体が展開されます。</param>
+        <summary>選択範囲または指定範囲の下の文字列を、1つの見出しレベルで展開します。</summary>
+        <remarks><para>
+            <b>メモ</b> 文書がアウトライン表示またはグループ文書モードではない場合は、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FieldShading">
@@ -519,23 +490,20 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFieldShading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>フォーム フィールドの網かけ表示を設定または返します。</summary>
+        <summary>フォームフィールドの網かけ表示を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdFieldShading" />次の<b>WdFieldShading</b>定数のいずれかをすることができます。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdFieldShading" />
-            <b>WdFieldShading</b>定数のいずれか: </para>
-          <para>
-            <b>wdFieldShadingAlways </b>
+            <b>wdFieldShadingAlways</b>
           </para>
           <para>
-            <b>wdFieldShadingNever </b>
+            <b>wdFieldShadingNever</b>
           </para>
           <para>
             <b>wdFieldShadingWhenSelected</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FullScreen">
@@ -564,8 +532,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は、文書ウィンドウが全画面表示。</summary>
+        <summary><b>True</b>の場合は、ウィンドウが全画面表示になっています。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -596,13 +563,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> ポインターが、印刷プレビュー画面で虫眼鏡アイコンとして表示されている場合ユーザーがクリックしてできることを示すページの特定の領域を拡大または縮小して、ページ全体または見開きページの。</summary>
+        <summary><b>True</b> ポインターが、印刷プレビュー画面で虫眼鏡アイコンとして表示されている場合ユーザーがクリックしてできることを示すページの特定の領域を拡大または縮小して、ページ全体または見開きページの。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ビューは印刷プレビューではない場合、このプロパティはエラーを生成します。</para>
-          <para />
-        </remarks>
+        <remarks><para>印刷プレビュー画面以外でこのプロパティを使用すると、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailMergeDataView">
@@ -631,13 +595,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> と指定したウィンドウに差し込み印刷フィールドの代わりに差し込み印刷のデータが表示されます。</summary>
+        <summary><b>True</b> と指定したウィンドウに差し込み印刷フィールドの代わりに差し込み印刷のデータが表示されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>指定されたウィンドウには、メイン文書がない場合は、エラーが発生します。</para>
-          <para />
-        </remarks>
+        <remarks><para>指定したウィンドウがメイン文書でない場合は、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MarkupMode">
@@ -666,10 +627,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionsMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMode" />の変更履歴の表示モードを表す定数です。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMode" />
-        </value>
+        <summary>変更履歴の表示<see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMode" />モードを表す定数を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMode" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -694,12 +653,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>(たとえば、奇数ヘッダーから偶数ヘッダーに) 選択範囲がヘッダー内にある場合は、このメソッドを現在のセクション内の次のヘッダーに移動または次のセクションの最初のヘッダーにします。 選択範囲がフッター内にある場合は、このメソッドは次のフッターに移動します。</summary>
-        <remarks>
-          <para>
-            <b>メモ</b> 最後のヘッダーまたはフッターの文書の最後のセクションで、選択されている場合、またはされていない場合、ヘッダーまたはフッターのすべてのエラーが発生します。</para>
-          <para />
-        </remarks>
+        <summary>選択範囲がヘッダー内にある場合、このメソッドは現在のセクション内の次のヘッダーに移動します (たとえば、奇数ヘッダーから偶数ヘッダー)。または、次のセクションの最初のヘッダーに移動します。 選択範囲がフッター内にある場合、このメソッドは次のフッターに移動します。</summary>
+        <remarks><para>
+            <b>メモ</b> 選択範囲が文書の最後のセクションの最後のヘッダーまたはフッター内にある場合、またはヘッダーまたはフッターに含まれていない場合は、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageColor">
@@ -728,7 +685,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPageColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すし、閲覧モードでページの色を設定します。 読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Word.WdPageColor" />。</summary>
+        <summary>閲覧モードでページの色を取得または設定します。 読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Word.WdPageColor" />。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -759,14 +716,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定する<b>ブール値</b>を Microsoft Office Word がパン モードであるかどうかを表します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>パン モードでは、マウス ポインターが手の形に変更し、ユーザーがキーを押して、ドキュメントをドラッグしてページをスクロールできるようにします。</para>
-          <para />
-        </remarks>
+        <summary>取得または設定する<b>ブール値</b>を Microsoft Office Word がパンモードであるかどうかを表します。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>移動モードでは、マウス ポインターが手の形に変わり、ユーザーは文書をドラッグしてページをスクロールすることができます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -818,12 +771,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>選択範囲がヘッダー内にある場合は、このメソッドは前のセクションのヘッダーを前のヘッダー (たとえば、偶数ヘッダーから奇数ヘッダーに)、現在のセクション内で、または最後に移動します。 選択範囲がフッター内にある場合は、このメソッドは前のフッターに移動します。</summary>
-        <remarks>
-          <para>
-            <b>メモ</b> 選択範囲の最初のヘッダーまたはフッターの文書の最初のセクションの場合、またはされていない場合、ヘッダーまたはフッターのすべてのエラーが発生します。</para>
-          <para />
-        </remarks>
+        <summary>選択範囲がヘッダー内にある場合、このメソッドは現在のセクション内の前のヘッダーに移動します (たとえば、偶数のヘッダーから奇数のヘッダーに移動) か、前のセクションの最後のヘッダーに移動します。 選択範囲がフッター内にある場合、このメソッドは前のフッターに移動します。</summary>
+        <remarks><para>
+            <b>メモ</b> 選択範囲が文書の最初のセクションの最初のヘッダーまたはフッター内にある場合、またはヘッダーまたはフッターに含まれていない場合は、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadingLayout">
@@ -852,13 +803,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>設定または取得する<b>ブール値</b>を閲覧レイアウト表示で文書が表示されているかどうかを表します。</summary>
+        <summary>取得または設定する<b>ブール値</b>は閲覧レイアウト表示で文書が表示されているかどうかを表します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>True</b>は、閲覧レイアウト モードに、文書を切り替えます。<b>False</b>は、閲覧レイアウト ビューを閉じます。</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>True</b> の場合は、閲覧レイアウト表示になります。 <b>False</b> の場合は、閲覧レイアウト表示を閉じます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadingLayoutActualView">
@@ -887,13 +836,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>ブール値</b> を印刷したときと同じレイアウトを使用して閲覧レイアウト表示で表示されるページが表示されるかどうかを表すを取得または設定します。</summary>
+        <summary><b>ブール値</b> を印刷したときと同じレイアウトを使用して閲覧レイアウト表示で表示されるページが表示されるかどうかを表すを取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>閲覧レイアウト表示、ページ表示されません、リテラルに印刷されるページに含まれている完全なコンテンツを標準表示モードまたは印刷レイアウト表示で表示されます。代わりに画面に表示されます。<b>づらく</b>を<b>True</b>に設定すると、印刷時に表示されるドキュメントが表示されます。モニターが小さい場合、ドキュメントを読むには、ハード、ズーム レベルが必要ですが、大型モニターの問題です。</para>
-          <para />
-        </remarks>
+        <remarks><para>閲覧レイアウト表示、ページ表示されません、リテラルに印刷されるページに含まれている完全なコンテンツを標準表示モードまたは印刷レイアウト表示で表示されます。 代わりに画面に表示されます。 <b>づらく</b> を <b>True</b> に設定すると、印刷時に表示されるドキュメントが表示されます。モニターが小さい場合、ドキュメントを読むには、ハード、ズーム レベルが必要ですが、大型モニターの問題です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadingLayoutAllowEditing">
@@ -996,10 +942,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdReadingLayoutMargin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.WdReadingLayoutMargin" />の余白は、表示または非表示かどうかを表す定数を全画面閲覧表示で文書を表示するときです。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdReadingLayoutMargin" />
-        </value>
+        <summary>全画面閲覧表示<see cref="T:Microsoft.Office.Interop.Word.WdReadingLayoutMargin" />で文書を表示するときに、余白を表示または非表示にするかどうかを表す定数を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdReadingLayoutMargin" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1060,8 +1004,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True を指定</b> 変更履歴およびコメントの吹き出しにテキストからの接続線を表示します。</summary>
+        <summary><b>True を指定</b> 変更履歴およびコメントの吹き出しにテキストからの接続線を表示します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1092,20 +1035,17 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionsBalloonMargin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word が文書の左または右余白に変更履歴の吹き出しを表示するかどうかを指定する定数を取得または設定します。</summary>
+        <summary>文書の左余白または右余白に変更履歴の吹き出しを表示するかどうかを指定する定数を設定または取得します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsBalloonMargin" />次の<b>WdRevisionsBalloonMargin</b>定数のいずれかをすることができます。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsBalloonMargin" />
-            <b>WdRevisionsBalloonMargin</b>定数のいずれか: </para>
-          <para>
-            <b>wdLeftMargin </b>
+            <b>wdLeftMargin</b>
           </para>
           <para>
             <b>wdRightMargin</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RevisionsBalloonWidth">
@@ -1134,13 +1074,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>1 つ</b>の Microsoft Word の変更履歴の吹き出しの幅を指定するグローバル設定を表すを取得または設定します。</summary>
+        <summary>変更履歴の吹き出しの幅を指定する、Microsoft Word のグローバル設定を表す単精度浮動小数点型 (<b>Single</b>) の値を設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>変更履歴の吹き出しの幅には、文書の余白と、バルーンと、バルーンの端と用紙の端の間で 1 インチの 8 分の 1 の端との間に 0.5 インチの余白が含まれます。用紙の左端または右端に沿って余白が追加されます。この幅は余白に拡張され、文書または用紙サイズの幅は変更されません。使用して、 <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsBalloonWidthType" /> 、 <b>RevisionsBalloonWidth</b>プロパティの設定を使用する測定単位を指定するプロパティです。</para>
-          <para />
-        </remarks>
+        <remarks><para>変更履歴の吹き出しの幅には、文書の余白と吹き出しの端の間に0.5 インチの余白と、吹き出しの端と用紙の端の間の1インチの余白が含まれています。 Microsoft Word では、用紙の左端または右端に沿ってスペースが追加されます。 この幅は余白の位置まで拡大され、文書または用紙サイズの幅が変更されることはありません。 <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsBalloonWidthType" />プロパティを使用して、 <b>RevisionsBalloonWidth</b>プロパティを設定するときに使用する測定値を指定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RevisionsBalloonWidthType">
@@ -1169,17 +1106,16 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionsBalloonWidthType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word で変更履歴の吹き出しの幅を測定する方法を指定するグローバル設定を表す定数を取得または設定します。</summary>
+        <summary>変更履歴の吹き出しの幅を測定する方法を指定するグローバル設定を表す定数を設定または取得します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsBalloonWidthType" />次の<b>WdRevisionsBalloonWidthType</b>定数のいずれかをすることができます。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsBalloonWidthType" />
-            <b>WdRevisionsBalloonWidthType</b>定数のいずれか: </para>
+            <b>wdBalloonWidthPercent</b> –文書の幅に対する割合として測定します。 </para>
           <para>
-            <b>wdBalloonWidthPercent</b> – は、文書の幅に対する割合として測定されます</para>。
-          <para><b>wdBalloonWidthPoints</b> – は、ポイント単位で指定します</para>。
-          <para><b>RevisionsBalloonWidthType</b>プロパティを設定するときに使用する測定単位を設定する、<see cref="P:Microsoft.Office.Interop.Word.View.RevisionsBalloonWidth" />プロパティ</para>。
-          <para /></remarks>
+            <b>wdBalloonWidthPoints</b> –ポイント単位で測定します。 </para>
+          <para><b>RevisionsBalloonWidthType</b>プロパティは、 <see cref="P:Microsoft.Office.Interop.Word.View.RevisionsBalloonWidth" />プロパティを設定するときに使用する測定単位を設定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RevisionsFilter">
@@ -1205,8 +1141,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.RevisionsFilter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>RevisionsFilter</b>オブジェクトのインスタンスを返します。 値の取得のみ可能です。</summary>
+        <summary><b>RevisionsFilter</b>オブジェクトのインスタンスを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1243,16 +1178,15 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionsMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word が余白または文書のテキストとインラインで吹き出しを表示するかどうかを指定するグローバル オプションを表す定数を取得または設定します。</summary>
+        <summary>指定したグローバルオプションを表す定数を取得または設定します。このオプションを使用すると、Microsoft Word では、文書のテキストの余白に吹き出しを表示するか、行内に表示するかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMode" />次の<b>WdRevisionsMode</b>定数のいずれかをすることができます。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMode" />
-            <b>WdRevisionsMode</b>定数のいずれか: </para>
+            <b>wdBalloonRevisions</b> -左または右の余白に吹き出しの変更履歴を表示します。 </para>
           <para>
-            <b>wdBalloonRevisions</b> -左または右余白に吹き出しの中のリビジョンを表示します</para>。
-          <para><b>wdInLineRevisions</b> : 履歴の削除の取り消し線を使用してテキスト内で変更履歴を表示します。これは、Word の以前のバージョンの既定の設定です</para>。
-          <para /></remarks>
+            <b>wdInLineRevisions</b> -挿入時の削除と下線に、取り消し線を使用してテキスト内に変更を表示します。 これは、以前のバージョンの Word の既定の設定です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RevisionsView">
@@ -1320,45 +1254,43 @@
       <Docs>
         <summary>印刷レイアウト ビューに表示される文書要素を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdSeekView" /><b>Wdseekview</b>クラスの定数のいずれかをすることができます。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdSeekView" />
-            <b>WdSeekView</b>定数のいずれか: </para>
-          <para>
-            <b>wdSeekCurrentPageFooter </b>
+            <b>wdSeekCurrentPageFooter</b>
           </para>
           <para>
-            <b>wdSeekCurrentPageHeader </b>
+            <b>wdSeekCurrentPageHeader</b>
           </para>
           <para>
-            <b>wdSeekEndnotes </b>
+            <b>wdSeekEndnotes 脚注</b>
           </para>
           <para>
-            <b>wdSeekEvenPagesFooter </b>
+            <b>Wd参照 Keベンダーのフッター</b>
           </para>
           <para>
-            <b>wdSeekEvenPagesHeader </b>
+            <b>Wd参照 Keベンダーのヘッダー</b>
           </para>
           <para>
             <b>wdSeekFirstPageFooter</b>
           </para>
           <para>
-            <b>wdSeekFirstPageHeader </b>
+            <b>wdSeekFirstPageHeader</b>
           </para>
           <para>
-            <b>wdSeekFootnotes </b>
+            <b>wdSeekFootnotes</b>
           </para>
           <para>
-            <b>wdSeekMainDocument </b>
+            <b>wdSeekMainDocument</b>
           </para>
           <para>
-            <b>wdSeekPrimaryFooter </b>
+            <b>wdSeekPrimaryFooter</b>
           </para>
           <para>
             <b>wdSeekPrimaryHeader</b>
           </para>
-          <para>ビューは印刷レイアウト表示ではない場合に、このプロパティによってエラーが発生します</para>。
-          <para /></remarks>
+          <para>印刷レイアウト表示モード以外の表示モードでこのプロパティを使用すると、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShadeEditableRanges">
@@ -1387,12 +1319,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>網かけの設定は、ユーザーは、変更する権限があるドキュメント内の範囲に適用するかどうかを表す<b>整数値</b>を設定または返します。 ユーザーが変更できる文書の範囲を網するには、<b>真</b>の掛けを適用します。</summary>
+        <summary>ユーザーが変更権限を持つ文書内の範囲に網かけを適用するかどうかを表す<b>整数型 (Integer</b> ) の値を設定します。 <b>True</b> の場合、編集権限が付与された領域に網掛けが適用されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>範囲の網かけの設定では既定でオンです。範囲の網かけの設定がオンになって、またはプロパティを<b>True</b>に設定した場合、 <b>ShadeEditableRanges</b>プロパティは、65535 の値を返します。<b>ShadeEditableRanges</b>プロパティを<b>False</b>に設定するときは、0 の値を返します。値は、プロパティが<b>True</b>または<b>false を指定</b>するかどうかを示す以外の意味を持ってないです。</para>
-          <para />
-        </remarks>
+        <remarks><para>既定では、網掛けは有効に設定されています。 網掛けが有効な場合、つまり、このプロパティを <b>True</b> に設定した場合、<b>ShadeEditableRanges</b> プロパティは、65535 という値を返します。 <b>ShadeEditableRanges</b> プロパティを <b>False</b> に設定した場合は、0 が返されます。 この値は、プロパティが <b>True</b> であるか <b>False</b> であるかだけを示し、それ以外の意味はありません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowAll">
@@ -1421,8 +1351,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> とすべての印刷されない文字 (隠し文字、タブ、スペース、段落記号など) が表示されます。</summary>
+        <summary><b>True</b> とすべての印刷されない文字 (隠し文字、タブ、スペース、段落記号など) が表示されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1448,12 +1377,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>(見出しおよび本文) のすべてのテキストの表示と見出しのみの表示を切り替えます。</summary>
-        <remarks>
-          <para>
-            <b>メモ</b> アウトライン モードまたはグループ文書モード以外の表示モードの場合、このメソッドはエラーを生成します。</para>
-          <para />
-        </remarks>
+        <summary>すべての文字列 (見出しおよび本文) を表示し、見出しのみを表示するかどうかを切り替えます。</summary>
+        <remarks><para>
+            <b>メモ</b> アウトライン表示またはグループ文書モード以外の表示モードでは、このメソッドはエラーを生成します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowAnimation">
@@ -1519,8 +1446,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は先頭と末尾の各ブックマークの角かっこが表示されます。</summary>
+        <summary><b>True の</b> 場合は先頭と末尾の各ブックマークの角かっこが表示されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1551,13 +1477,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> に Microsoft Word 文書にコメントを表示をします。</summary>
+        <summary><b>True</b> に Microsoft Word 文書にコメントを表示をします。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>右側または左側の余白の吹き出しには、変更履歴のマークが表示されたら、コメントが吹き出しに表示されます。全体 〕; でコメントを適用するテキストが囲まれている変更履歴のマークが表示されているインラインの場合は、角かっこ内のテキストをユーザーがマウス ポインターを置くと、マウス ポインターのすぐ上の正方形の吹き出しに関連するコメントが表示されます。</para>
-          <para />
-        </remarks>
+        <remarks><para>変更履歴のマークが右余白または左余白の吹き出しの中に表示される場合、コメントは吹き出しの中に表示されます。変更履歴のマークが文字列内に表示される場合、コメントが適用される文字列はかっこ (〔 〕) の中に表示されます。ユーザーがかっこ内の文字列の上にマウス ポインターを置くと、マウス ポインターのすぐ上の正方形の吹き出しの中に、関連するコメントが表示されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowCropMarks">
@@ -1587,12 +1510,11 @@
       </ReturnValue>
       <Docs>
         <summary>取得または設定する <b>ブール値</b> は、余白を示すためにページの角に裁ちトンボを表示するかどうかを表す。読み取り/書き込み。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>表示する裁ちトンボ裁ちトンボをドラッグして余白を変更するユーザーを許可されていません。裁ちトンボがページの余白の位置を示すためにのみ表示されます。このプロパティは、[Word のオプション] ダイアログ ボックスの [詳細設定] タブで、裁ちトンボ] チェック ボックスに対応します</para>。
-          <para><b>注</b>: 裁ちトンボを選択し、東アジア言語で既定で表示され、他のすべての言語で既定ではオフです。</para><para /></remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>裁ちトンボを表示しても、ユーザーは裁ちトンボをドラッグして余白を変更することはできません。 裁ちトンボは、ページ内の余白が配置されている場所を示すためだけに表示されます。 このプロパティは、[Word のオプション] ダイアログボックスの [詳細設定] タブの [裁ちトンボ] チェックボックスに対応します。</para>
+          <para>
+            <b>注</b>: 既定では、東アジア言語で裁ちトンボが表示され、他のすべての言語では既定でオフになっています。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowDrawings">
@@ -1621,8 +1543,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>と描画ツールで作成されたオブジェクトが印刷レイアウト表示で表示されます。</summary>
+        <summary><b>True</b>の場合は、描画ツールを使用して作成したオブジェクトは印刷レイアウト表示で表示されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1653,8 +1574,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>と、フィールド コードが表示されます。</summary>
+        <summary><b>True</b>フィールドコードが表示されている場合です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1685,13 +1605,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> のみ本文の最初の行は、アウトライン ビューで表示されます。</summary>
+        <summary><b>True</b> のみ本文の最初の行は、アウトライン ビューで表示されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>アウトラインまたはグループ文書モード以外の表示モードの場合、このプロパティはエラーを生成します。</para>
-          <para />
-        </remarks>
+        <remarks><para>アウトライン表示モードまたはグループ文書モード以外の表示モードでこのプロパティを使用すると、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowFormat">
@@ -1720,13 +1637,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 文字の書式設定は、アウトライン表示で表示されている場合です。</summary>
+        <summary><b>True</b> 文字の書式設定は、アウトライン表示で表示されている場合です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>アウトラインまたはグループ文書モード以外の表示モードの場合、このプロパティはエラーを生成します。</para>
-          <para />
-        </remarks>
+        <remarks><para>アウトライン表示モードまたはグループ文書モード以外の表示モードでこのプロパティを使用すると、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowFormatChanges">
@@ -1755,13 +1669,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 文字の書式設定は、アウトライン表示で表示されている場合です。</summary>
+        <summary><b>True</b> 文字の書式設定は、アウトライン表示で表示されている場合です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>アウトラインまたはグループ文書モード以外の表示モードの場合、このプロパティはエラーを生成します。</para>
-          <para />
-        </remarks>
+        <remarks><para>アウトライン表示モードまたはグループ文書モード以外の表示モードでこのプロパティを使用すると、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowHeading">
@@ -1787,14 +1698,11 @@
         <Parameter Name="Level" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Level">
-          <b>整数</b>が必要です。 アウトラインの 1 ～ 9 のいずれかの見出しレベルを指定します。</param>
+        <param name="Level">整数型 (<b>Integer</b>) の値を使用します。 アウトラインの 1 ～ 9 のいずれかの見出しレベルを指定します。</param>
         <summary>指定したレベルまでのすべての見出しを表示し、このレベル以下の見出しと本文は非表示にします。</summary>
-        <remarks>
-          <para>
-            <b>メモ</b> アウトライン モードまたはグループ文書モード以外の表示モードの場合、このメソッドはエラーを生成します。</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>メモ</b> アウトライン表示またはグループ文書モード以外の表示モードでは、このメソッドはエラーを生成します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowHiddenText">
@@ -1823,8 +1731,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>と隠し文字として書式設定されたテキストが表示されます。</summary>
+        <summary><b>True</b>の場合は、非表示のテキストとして書式設定されたテキストを表示します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1855,8 +1762,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合蛍光ペン書式が表示され、文書と共に印刷します。</summary>
+        <summary><b>True</b>の場合は、蛍光ペン書式が表示され、文書が印刷されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1887,8 +1793,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> と任意指定のハイフンが表示されます。 任意指定のハイフンは、行の末尾にある単語を分割する場所を示します。</summary>
+        <summary><b>True</b> と任意指定のハイフンが表示されます。 任意指定のハイフンは、行の末尾にある単語を分割する場所を示します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1919,13 +1824,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>ブール型</b>の手書きインク注釈の表示と非表示または表示を設定または返します。 <b>True を指定</b> すると、インク注釈が表示されます。 <b>False</b> には、インク注釈が非表示にします。</summary>
+        <summary><b>ブール型</b>の手書きインク注釈を表示または非表示にするを設定または返します。 <b>True を指定</b> すると、インク注釈が表示されます。 <b>False</b> には、インク注釈が非表示にします。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>インク注釈を操作するにはタブレット コンピューターに Microsoft Word を実行しなければなりません。</para>
-          <para />
-        </remarks>
+        <remarks><para>インク注釈を操作するにはタブレット コンピューターに Microsoft Word を実行しなければなりません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowInsertionsAndDeletions">
@@ -1954,8 +1856,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> を挿入および変更の履歴が有効なドキュメントに加えられた削除が表示されます。</summary>
+        <summary><b>True</b> を挿入および変更の履歴が有効なドキュメントに加えられた削除が表示されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1986,14 +1887,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、ヘッダーおよびフッター領域が表示されると、指定した文書内のテキストが表示されます。</summary>
+        <summary><b>True の</b> 場合は、ヘッダーおよびフッター領域が表示されると、指定した文書内のテキストが表示されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>ShowMainTextLayer</b>プロパティは、ヘッダーとフッター] ツールバーの表示/非表示のドキュメントのテキスト] ボタンと同じです。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>ShowMainTextLayer</b>プロパティは、[ヘッダーとフッター] ツールバーの [文書テキストの表示/非表示] ボタンと同じです。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowMarkupAreaHighlight">
@@ -2028,14 +1925,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定する <b>ブール値</b> 変更履歴およびコメントの吹き出しを表示する領域が影付きかどうかを表す。読み取り/書き込み。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>このプロパティは、注釈の表示] メニューの [校閲] タブの領域の背景色のオプションに対応します。</para>
-          <para />
-        </remarks>
+        <summary>取得または設定する <b>ブール値</b> 変更履歴およびコメントの吹き出しを表示する領域が影付きかどうかを表す。 読み取り/書き込み。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>このプロパティは、[校閲] リボンの [変更履歴とコメントの表示] メニューの [マークアップ領域の蛍光ペン] オプションに対応しています。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowObjectAnchors">
@@ -2095,8 +1988,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、Word に表示される省略可能な改行します。</summary>
+        <summary><b>True</b>の場合は、改行が省略可能です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2127,13 +2019,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または他のユーザーのプレゼンスは、文書に表示する必要があるかどうかを設定します。</summary>
-        <value>
-          <b>true の</b>場合他のユーザーのプレゼンスは、文書に表示する必要があります。それ以外の場合、 <b>false を指定</b>します。</value>
-        <remarks>
-          <para>読み取り/書き込みブール値です。共同編集中に他のユーザーのプレゼンスの表示を切り替えるには、このプロパティを使用します。</para>
-          <para />
-        </remarks>
+        <summary>ドキュメントに他の作成者のプレゼンスを表示する必要があるかどうかを取得または設定します。</summary>
+        <value>ドキュメントに他の作成者のプレゼンスを表示する必要がある場合は<b>true</b> 。それ以外の場合は<b>false</b>。</value>
+        <remarks><para>読み取り/書き込みブール値 。 共同編集時に他の作成者のプレゼンスを表示するには、このプロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowParagraphs">
@@ -2162,8 +2051,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> と段落記号が表示されます。</summary>
+        <summary><b>True</b> と段落記号が表示されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2194,8 +2082,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、図のイメージ枠として空白のボックスが表示されます。</summary>
+        <summary><b>True の</b> 場合、図のイメージ枠として空白のボックスが表示されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2226,8 +2113,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 履歴と変更の履歴が有効なドキュメントに加えられたコメントを表示します。</summary>
+        <summary><b>True の</b> 履歴と変更の履歴が有効なドキュメントに加えられたコメントを表示します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2258,8 +2144,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合スペースが表示されます。</summary>
+        <summary><b>True の</b> 場合スペースが表示されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2290,8 +2175,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合タブが表示されます。</summary>
+        <summary><b>True</b>の場合は、タブ文字が表示されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2322,8 +2206,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、ページの余白、列のテキスト、オブジェクト、および印刷レイアウト表示でのフレームの周囲に点線が表示されます。</summary>
+        <summary><b>True の</b> 場合、ページの余白、列のテキスト、オブジェクト、および印刷レイアウト表示でのフレームの周囲に点線が表示されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2354,13 +2237,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ドキュメントで XML タグを表示するかどうかを表す<b>整数</b>を返します。</summary>
+        <summary>XML タグが文書に表示されるかどうかを表す<b>整数型 (Integer</b> ) の値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>True</b>は、タグが表示されることを示します。<b>False の場合、タグが非表示になっています。</b><b>wdToggle</b>を使用すると、および XML マークアップを非表示を切り替えることができます。</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>True</b> は、タグが表示されることを示します。 <b>False の場合、タグが非表示になっています。</b> <b>wdToggle</b> を使用すると、および XML マークアップを非表示を切り替えることができます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SplitSpecial">
@@ -2391,69 +2272,66 @@
       <Docs>
         <summary>アクティブなウィンドウ枠を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdSpecialPane" />使用できる定数は、次<b></b>のいずれかです。</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdSpecialPane" />
-            <b>WdSpecialPane</b>定数は、次のいずれか:</para>
-          <para>
-            <b>wdPaneComments </b>
+            <b>wdPaneComments</b>
           </para>
           <para>
-            <b>wdPaneCurrentPageFooter </b>
+            <b>wdPaneCurrentPageFooter</b>
           </para>
           <para>
-            <b>wdPaneCurrentPageHeader </b>
+            <b>wdPaneCurrentPageHeader</b>
           </para>
           <para>
-            <b>wdPaneEndnoteContinuationNotice </b>
+            <b>wdPaneEndnoteContinuationNotice</b>
           </para>
           <para>
             <b>wdPaneEndnoteContinuationSeparator</b>
           </para>
           <para>
-            <b>wdPaneEndnotes </b>
+            <b>Wd区画文末脚注</b>
           </para>
           <para>
-            <b>wdPaneEndnoteSeparator </b>
+            <b>wdPaneEndnoteSeparator</b>
           </para>
           <para>
-            <b>wdPaneEvenPagesFooter </b>
+            <b>Wd区画 Even"フッター"</b>
           </para>
           <para>
-            <b>wdPaneEvenPagesHeader </b>
+            <b>wdPaneEvenPagesHeader</b>
           </para>
           <para>
-            <b>wdPaneFirstPageFooter </b>
+            <b>wdPaneFirstPageFooter</b>
           </para>
           <para>
-            <b>wdPaneFirstPageHeader</b>
+            <b>Wd区画 Firstヘッダー</b>
           </para>
           <para>
-            <b>wdPaneFootnoteContinuationNotice </b>
+            <b>wdPaneFootnoteContinuationNotice</b>
           </para>
           <para>
-            <b>wdPaneFootnoteContinuationSeparator </b>
+            <b>wdPaneFootnoteContinuationSeparator</b>
           </para>
           <para>
-            <b>wdPaneFootnotes </b>
+            <b>wdPaneFootnotes</b>
           </para>
           <para>
-            <b>wdPaneFootnoteSeparator </b>
+            <b>Wdpanefoot脚注の区切り文字</b>
           </para>
           <para>
-            <b>wdPaneNone </b>
+            <b>wdPaneNone</b>
           </para>
           <para>
-            <b>wdPanePrimaryFooter </b>
+            <b>Wd区画 Primaryfooter</b>
           </para>
           <para>
-            <b>wdPanePrimaryHeader</b>
+            <b>Wd区画 Primaryheader</b>
           </para>
           <para>
             <b>wdPaneRevisions</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TableGridlines">
@@ -2482,8 +2360,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> と、表のグリッド線が表示されます。</summary>
+        <summary><b>True</b> と、表のグリッド線が表示されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2516,35 +2393,32 @@
       <Docs>
         <summary>表示モードの種類を取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdViewType" /><b>Wdviewtype</b>定数は、次のいずれかを指定できます。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdViewType" />
-            <b>WdViewType</b>定数のいずれか: </para>
-          <para>
-            <b>wdMasterView </b>
+            <b>wdMasterView</b>
           </para>
           <para>
-            <b>wdOutlineView </b>
+            <b>wdOutlineView</b>
           </para>
           <para>
-            <b>wdPrintView </b>
+            <b>wdPrintView</b>
           </para>
           <para>
-            <b>wdNormalView </b>
+            <b>wdNormalView</b>
           </para>
           <para>
-            <b>wdPrintPreview </b>
+            <b>wdPrintPreview</b>
           </para>
           <para>
-            <b>wdWebView </b>
+            <b>wdWebView</b>
           </para>
           <para>
             <b>wdReadingView</b>
           </para>
-          <para>
-            <b>タイプ</b>プロパティは、現在のビューがアウトラインまたはグループ文書をすべての文書の<b>wdMasterView</b>を返します。しない限り、現在のビューは<b>wdOutlineView</b>を返すことは明示的にコード内で最初に設定します</para>。現在の文書がアウトラインであるかどうかを確認、 <b>Type</b>プロパティを使用する
-          <para>と<see cref="T:Microsoft.Office.Interop.Word.Subdocuments" />コレクションの<see cref="P:Microsoft.Office.Interop.Word.Subdocuments.Count" />プロパティ。<b>Type</b>プロパティが<b>wdOutlineView</b>または<b>wdMasterView</b>のいずれかを返すし、 <b>Count</b>プロパティは 0 を返します、文書がアウトライン</para>。
-          <para /></remarks>
+          <para><b>Type</b> プロパティは、現在のビューがアウトラインをすべての文書または文書の <b>wdMasterView</b> を返します。しない限り、現在のビューは <b>wdOutlineView</b> を返すことは明示的にコード内で最初に設定します。</para>
+          <para>現在のドキュメントがアウトラインであるかどうかを確認<b></b>するには、 <see cref="T:Microsoft.Office.Interop.Word.Subdocuments" /> Type プロパティ<see cref="P:Microsoft.Office.Interop.Word.Subdocuments.Count" />とコレクションのプロパティを使用します。 <b>Type</b> プロパティが <b>wdOutlineView</b> または <b>wdMasterView</b> のいずれかを返すし、 <b>Count</b> プロパティは 0 を返します、文書がアウトラインです。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WrapToWindow">
@@ -2573,8 +2447,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は右余白または右の列の境界線ではなくドキュメント ウィンドウの右端で行が折り返されます。</summary>
+        <summary><b>True</b>の場合は、右余白または右の列境界ではなく、ドキュメントウィンドウの右端で線が折り返されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2602,7 +2475,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Zoom</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Zoom" />を指定したビューの表示倍率を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Zoom" />たビューの表示倍率を表すオブジェクト型 (object) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

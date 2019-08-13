@@ -1,13 +1,5 @@
 <Type Name="CoAuthors" FullName="Microsoft.Office.Interop.Word.CoAuthors">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1a83a584815b6b737670b82711ed93572e37caa4" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671569" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CoAuthors : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="eae4f5baad7adeb54a2f93c028eaf954a2e6a29e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147187" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthors : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CoAuthors implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CoAuthors" />
   <TypeSignature Language="VB.NET" Value="Public Interface CoAuthors&#xA;Implements IEnumerable" />
@@ -30,11 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>すべてのコレクション、 <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> 、ドキュメント内のオブジェクト。</summary>
-    <remarks>
-      <para>このコレクションには、(積極的に文書を編集する作成者) の文書のすべての共同著者が含まれています。</para>
-      <para />
-    </remarks>
+    <summary>文書内のすべての<see cref="T:Microsoft.Office.Interop.Word.CoAuthor" />オブジェクトのコレクションです。</summary>
+    <remarks><para>このコレクションには、文書内のすべての共同編集者 (文書をアクティブに編集している作成者) が含まれています。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,13 +50,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを取得します。</summary>
+        <value>Microsoft <see cref="T:Microsoft.Office.Interop.Word.Application" /> Word アプリケーションを表すオブジェクト。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -92,12 +79,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>内の項目の数を取得、<see cref="T:Microsoft.Office.Interop.Word.CoAuthors" />コレクションです。</summary>
-        <value>内のアイテムの数、<see cref="T:Microsoft.Office.Interop.Word.CoAuthors" />コレクションです。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.CoAuthors" />コレクション内の項目数を取得します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.CoAuthors" />コレクション内の項目の数。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -123,12 +108,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトが作成されたアプリケーションを示す 32 ビット整数を取得します。</summary>
-        <value>指定したオブジェクトが作成されたアプリケーションを示す 32 ビット整数。</value>
-        <remarks>
-          <para>読み取り専用<b>long</b>です。オブジェクトは、Microsoft Word で作成されている場合、このプロパティは文字列"MSWD"を表す 16 進数、値である 4d535744 を返します。このプロパティは、各アプリケーションが 4 文字のクリエータ コードには、Apple Macintosh で使用するために設計されました。MSWD 元のコードが Word には、たとえば、します</para>。
-          <para><b>注意</b>:</para><para>この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para /></remarks>
+        <summary>指定したオブジェクトが作成されたアプリケーションを示す32ビット整数を取得します。</summary>
+        <value>指定したオブジェクトが作成されたアプリケーションを示す32ビットの整数。</value>
+        <remarks><para>値の取得のみ可能な<b>long</b>値です。 オブジェクトが Microsoft Word で作成されている場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 このプロパティは、各アプリケーションが 4 文字のクリエータ コードには、Apple Macintosh で使用するために設計されました。 たとえば、Word には、作成者コード MSWD です。</para>
+          <para>
+            <b>注意</b>: </para>
+          <para>[!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -159,7 +145,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>返します。 <see cref="T:System.Collections.IEnumerator" />。</returns>
+        <returns>を<see cref="T:System.Collections.IEnumerator" />返します。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,7 +177,7 @@
       <Docs>
         <param name="Index">個々 のオブジェクトが返されます。</param>
         <summary>コレクション内の各 <b>CoAuthors</b> オブジェクトを返します。</summary>
-        <value>返します。 <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" />。</value>
+        <value>を<see cref="T:Microsoft.Office.Interop.Word.CoAuthor" />返します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,9 +204,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、<see cref="T:System.Object" />の指定した親オブジェクトを表す<see cref="T:Microsoft.Office.Interop.Word.CoAuthors" />オブジェクトです。</summary>
-        <value>
-          <see cref="T:System.Object" />の指定した親オブジェクトを表す<see cref="T:Microsoft.Office.Interop.Word.CoAuthors" />オブジェクトです。</value>
+        <summary>は<see cref="T:System.Object" /> 、指定<see cref="T:Microsoft.Office.Interop.Word.CoAuthors" />したオブジェクトの親オブジェクトを表すを取得します。</summary>
+        <value><see cref="T:System.Object" />指定<see cref="T:Microsoft.Office.Interop.Word.CoAuthors" />したオブジェクトの親オブジェクトを表す。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,13 +1,5 @@
 <Type Name="Corners" FullName="Microsoft.Office.Interop.Word.Corners">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="310b73fd83baf41fd2cc891cfb5873d5e6374ef7" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671215" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Corners" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d094f6e9c221ab321f4aace7d8163c51a614f6dc" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147165" /></Metadata><TypeSignature Language="C#" Value="public interface Corners" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Corners" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Corners" />
   <TypeSignature Language="VB.NET" Value="Public Interface Corners" />
@@ -26,12 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>3-D グラフのコーナーを表します。</summary>
-    <remarks>
-      <para>このオブジェクトはコレクションはありません</para>。
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.Chart.Corners" />を返すプロパティの<see cref="T:Microsoft.Office.Interop.Word.Corners" />オブジェクトです</para>。
-      <para>グラフが 3-D グラフでない場合、<see cref="P:Microsoft.Office.Interop.Word.Chart.Corners" />プロパティは失敗します</para>。
-      <para /></remarks>
+    <summary>3-d グラフの隅を表します。</summary>
+    <remarks><para>陽線を作成できるのは、複数のデータ系列を含む 2-D 折れ線グラフ グループだけです。</para>
+      <para>オブジェクトを<see cref="P:Microsoft.Office.Interop.Word.Chart.Corners" />取得するのにには、プロパティを使用します。 <see cref="T:Microsoft.Office.Interop.Word.Corners" /></para>
+      <para>グラフが3-d グラフではない場合、プロパティは<see cref="P:Microsoft.Office.Interop.Word.Chart.Corners" />失敗します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,10 +48,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用<see cref="T:Microsoft.Office.Interop.Word._Application" />すると、Microsoft Word アプリケーションを表すオブジェクトが返されます。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,14 +76,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトが作成されたアプリケーションを示す 32 ビット<b>の整数</b>を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Word で作成されている場合、 <b>Creator</b>プロパティは文字列"MSWD"を表す 16 進数、値である 4d535744 を返します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
-          <para />
-        </remarks>
+        <summary>指定したオブジェクトが作成されたアプリケーションを示す32ビット<b>整数</b>を返します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトは、Microsoft Word で作成されている場合、 <b>Creator</b> プロパティは文字列"MSWD"を表す 16 進数、値である 4d535744 を返します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -124,9 +109,7 @@
       </ReturnValue>
       <Docs>
         <summary>オブジェクトの名前を返します。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,10 +139,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親オブジェクトを返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定したオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,9 +169,7 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトを選択します。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

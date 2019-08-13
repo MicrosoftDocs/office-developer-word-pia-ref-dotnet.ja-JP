@@ -1,13 +1,5 @@
 <Type Name="SmartTagType" FullName="Microsoft.Office.Interop.Word.SmartTagType">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="42dcabef8b7b97589d5327b23896d8ea6d46375a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671831" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTagType" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="be0009d07ada538632f62700e62de5b182eb910c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143988" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagType" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTagType" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagType" />
@@ -26,12 +18,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>スマート タグの種類を表します。</summary>
-    <remarks>
-      <para>スマート タグ型は、スマート タグ リストの 1 項目です。スマート タグ リストは、複数のスマート タグの種類を含めることができます。いくつかの名前を指定するのにはスマート タグの名前の種類、ストリートのスマート タグ型で、および都市のスマート タグ型では、たとえば、既定で英語のシステムでインストールされているアドレスのスマート タグ リストが含まれます</para>。
-      <para><see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />、 <see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" />、および<see cref="T:Microsoft.Office.Interop.Word.SmartTagType" />点で、スマート タグ コンポーネントで認識される各アイテムが<b>SmartTagType</b>オブジェクトをオブジェクトが関連付けられています。アドレスのスマート タグ コンポーネントの"city"は<b>SmartTagType</b>オブジェクトを特定します。都市のスマート タグの種類は、関連する<b>SmartTagRecognizer</b>オブジェクト (ドキュメントで「市区町村」の種類のスマート タグで認識されるスマート タグ コンポーネントの部分) と<b>SmartTagAction</b>オブジェクト (部品を提供するスマート タグ コンポーネントのアクション [MSN の Microsoft MapPoint で認識されている都市を検索することがあります、特定のスマート タグ型に関連する)。簡単に言うと、認識機能は、ラベル付け、操作ハンドラーはエンドユーザー機能を提供および上のスマート タグの種類は、何を結びつけることです</para>。使用の
-      <para>、<see cref="P:Microsoft.Office.Interop.Word.SmartTagTypes.Item(System.Object@)" />のスマート タグ型のコレクションから特定のスマート タグ型を取得するメソッドです。使用して、<see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagRecognizers" />にして、すべてのスマート タグ認識機能は、特定の種類のスマート タグに関連付けられているかを返すプロパティ、<see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagActions" />プロパティに指定されたスマート タグ型に関連付けられているすべてのスマート タグ動作を返します</para>。
-      <para /></remarks>
+    <summary>スマート タグ型を表します。</summary>
+    <remarks><para>スマート タグ型はスマート タグ一覧の 1 項目です。 スマート タグ一覧にはスマート タグ型が複数含まれることもあります。 たとえば、英語版システムにインストールされた Address スマート タグ一覧には、既定で name、street、city などのスマート タグ型が含まれています。</para>
+      <para>
+        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />、 <see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" />、および<see cref="T:Microsoft.Office.Interop.Word.SmartTagType" />オブジェクトは、スマートタグコンポーネントが認識する各項目が<b>SmartTagType</b>オブジェクトであるということに関連しています。 たとえば、Address スマート タグ コンポーネントの "city" は <b>SmartTagType</b> オブジェクトです。 "city" スマート タグ型には、関連する <b>SmartTagRecognizer</b> オブジェクト (スマート タグ コンポーネントのうち、文書内の "city" 型のスマート タグを認識する部分) と <b>SmartTagAction</b> オブジェクト (スマート タグ コンポーネントのうち、特定のスマート タグ型に関連するアクション (MSN の Microsoft MapPoint で市町村を検索するアクションなど) を提供する部分) があります。 簡単に言うと、レコグナイザーはラベル付けを行い、アクションハンドラーはエンドユーザーの機能を提供します。また、それらが一緒に連携するものは、動作するスマートタグの種類です。</para>
+      <para>スマートタグ<see cref="P:Microsoft.Office.Interop.Word.SmartTagTypes.Item(System.Object@)" />の種類のコレクション内の特定のスマートタグの種類を取得するには、メソッドを使用します。 次に、 <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagRecognizers" />プロパティを使用して、指定した種類のスマートタグに関連付けられて<see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagActions" />いるすべてのスマートタグレコグナイザーを取得し、そのプロパティを使用して、指定された種類のスマートタグに関連付けられているすべてのスマートタグアクションを返します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,12 +83,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FriendlyName">
@@ -125,11 +116,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スマート タグ型のフレンドリ名を表す<b>文字列</b>を返します。</summary>
+        <summary>スマートタグの種類のフレンドリ名を表す<b>文字列</b>を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>定義されているタグの種類の名前をスマート、<see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" />プロパティでは、統一リソース名 (Urn) としてフォーマットします。フレンドリ名では、URN が削除され、シャープ記号 (#) 記号の後の名前のままです。アドレスのスマート タグの種類がの次の URN を取得するなど、<see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" />プロパティ</para>。
-          <para>urn: スキーマ-マイクロソフト-com:office:smarttags #address</para><para><b>FriendlyName</b>プロパティは、シャープ記号 (#) を含む、すべてを削除し、次の<b>文字列</b>のまま:</para><para>アドレス</para><para /></remarks>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" />プロパティに定義されているスマートタグの型名は、Uniform resource Names (urn) として書式設定されます。 フレンドリ名は、URN を削除し、シャープ記号 (#) の後の名前のままにします。 たとえば、Address というスマートタグ型は<see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" />プロパティに次の URN を返します。</para>
+          <para>urn: スキーマ-microsoft-com: office: smarttags # address</para>
+          <para><b>FriendlyName</b>プロパティは、シャープ記号 (#) を含むすべての内容を削除し、次の<b>文字列</b>を残します。</para>
+          <para>address</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -220,7 +213,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.SmartTagActions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" />スマート タグで使用可能なアクションのコレクションを表すコレクション。</summary>
+        <summary>スマートタグ<see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" />で使用できるアクションのコレクションを表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -251,7 +244,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.SmartTagRecognizers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizers" />アプリケーションのコレクションです。</summary>
+        <summary>アプリケーションの<see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizers" />コレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="Revisions" FullName="Microsoft.Office.Interop.Word.Revisions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="05758c729b81dbb4be141a7989f2b0e4ff125db8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671623" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Revisions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dcf957961a05e06b776741ff11ebc85cce0581a2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147663" /></Metadata><TypeSignature Language="C#" Value="public interface Revisions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Revisions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Revisions" />
   <TypeSignature Language="VB.NET" Value="Public Interface Revisions&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.Revision" />の変更を表すオブジェクトの指定範囲または文書内の変更履歴のマークが付いています。</summary>
-    <remarks>
-      <para>
-        <b>リビジョン</b>プロパティを使用して、<see cref="T:Microsoft.Office.Interop.Word.Document" />または<see cref="T:Microsoft.Office.Interop.Word.Range" /><b>のリビジョン</b>のコレクションを返すオブジェクト</para>。
-      <para><b>追加</b>のメソッドは、<b>リビジョン</b>コレクションを使用できません。<b>リビジョン</b>のオブジェクトは、変更の追跡が有効になっているときに追加されます。設定、<see cref="P:Microsoft.Office.Interop.Word._Document.TrackRevisions" />プロパティに<b>true を指定</b>のドキュメントのテキストに変更を追跡するためにします</para>。使用<b>のリビジョン</b>の
-      <para>(<paramref name="index" />)、<paramref name="index" />インデックス番号は、1 つ<b>のリビジョン</b>のオブジェクトを取得します。インデックス番号は、指定範囲または文書内のリビジョンの位置を表します</para>。
-      <para>、<see cref="P:Microsoft.Office.Interop.Word.Revisions.Count" />ドキュメントでこのコレクションのプロパティは、メイン テキスト ストーリーのみの項目の数を返します。カウントの他のストーリーの項目では、 <b>Range</b>オブジェクトと共にコレクションを使用します</para>。
-      <para /></remarks>
+    <summary>指定範囲また<see cref="T:Microsoft.Office.Interop.Word.Revision" />は文書内の変更履歴にマークが付けられている変更を表すオブジェクトのコレクションです。</summary>
+    <remarks><para><b>変更履歴</b>のコレクションを取得<see cref="T:Microsoft.Office.Interop.Word.Document" />する<see cref="T:Microsoft.Office.Interop.Word.Range" />のにには、オブジェクトまたはオブジェクトの revision プロパティを使用します。 <b></b></para>
+      <para><b>Add</b> メソッドは <b>Revisions</b> コレクションには使用できません。 変更履歴がオンである場合、<b>Revision</b> オブジェクトが追加されます。 ドキュメントテキスト<see cref="P:Microsoft.Office.Interop.Word._Document.TrackRevisions" />に対して行った変更を追跡するには、プロパティを<b>True</b>に設定します。</para>
+      <para><b>Revision</b>オブジェクトを<paramref name="index" />取得するの<paramref name="index" />にには、<b>リビジョン</b>() を使用します。ここで、はインデックス番号を指定します。 インデックス番号は、指定範囲または文書内のリビジョンの位置を表します。</para>
+      <para>文書<see cref="P:Microsoft.Office.Interop.Word.Revisions.Count" />内のこのコレクションのプロパティは、メインストーリーのみの項目数を返します。 他のストーリーに含まれる項目の数を取得するには、 <b>Range</b> オブジェクトと共にコレクションを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AcceptAll">
@@ -61,11 +51,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>文書または指定範囲内のすべての変更履歴を受け入れます。 変更履歴のマークは削除され、変更は、ドキュメントに組み込まれます。</summary>
-        <remarks>
-          <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word._Document.AcceptAllRevisions" /> 、ドキュメント内のすべてのリビジョンをそのまま使用する方法です。</para>
-          <para />
-        </remarks>
+        <summary>文書または指定範囲内のすべての変更履歴を反映します。 変更履歴マークが削除され、変更が文書に反映されます。</summary>
+        <remarks><para>文書内<see cref="M:Microsoft.Office.Interop.Word._Document.AcceptAllRevisions" />のすべての変更履歴を反映するには、メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -91,12 +79,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Visual Basic の<b>CreateObject</b>および<b>GetObject</b>関数にアクセスするための OLE オートメーション オブジェクトから Visual Basic for Applications プロジェクトです。</para>
-          <para />
-        </remarks>
+        <remarks><para>Visual Basic の <b>CreateObject</b> および <b>GetObject</b> 関数を使用すると、Visual Basic for Applications プロジェクトから OLE オートメーション オブジェクトにアクセスできます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -150,12 +136,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -216,7 +201,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">各オブジェクトの序数位置を示す<b>整数</b>です。</param>
+        <param name="Index">個々のオブジェクトの位置を表す<b>整数型 (Integer</b> ) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -271,11 +256,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>範囲内のすべての変更履歴を拒否します。 元のテキストを維持したまま、変更履歴が削除されます。</summary>
-        <remarks>
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Word._Document.RejectAllRevisions" />をドキュメント内のすべてのリビジョンを拒否します。書式設定の変更を拒否することはできません。</para>
-          <para />
-        </remarks>
+        <summary>指定範囲内のすべての変更履歴を拒否します。 元の文書の内容は変更されません。</summary>
+        <remarks><para>文書内<see cref="M:Microsoft.Office.Interop.Word._Document.RejectAllRevisions" />のすべての変更履歴を元に戻すには、メソッドを使用します。 書式の変更は元に戻されません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

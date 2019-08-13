@@ -1,13 +1,5 @@
 <Type Name="EmailSignatureEntries" FullName="Microsoft.Office.Interop.Word.EmailSignatureEntries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e4b8f95bf26593569b6242f57c107ad971d61db8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672207" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface EmailSignatureEntries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="291d476d90182c2d9643f61032c174a3f2413a3b" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146893" /></Metadata><TypeSignature Language="C#" Value="public interface EmailSignatureEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract EmailSignatureEntries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.EmailSignatureEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface EmailSignatureEntries&#xA;Implements IEnumerable" />
@@ -30,11 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.EmailSignatureEntry" />を Microsoft Word のすべての電子メール署名項目利用可能なを表すオブジェクト。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.EmailSignature.EmailSignatureEntries" /><b>EmailSignatureEntries</b>コレクションを返すプロパティです。使用して、 <see cref="M:Microsoft.Office.Interop.Word.EmailSignatureEntries.Add(System.String,Microsoft.Office.Interop.Word.Range)" /> Word を電子メールの署名を追加するのには、 <b>EmailSignatureEntries</b>オブジェクトのメソッドです。</para>
-      <para />
-    </remarks>
+    <summary>Microsoft Word で<see cref="T:Microsoft.Office.Interop.Word.EmailSignatureEntry" />使用可能なすべての電子メール署名項目を表すオブジェクトのコレクションです。</summary>
+    <remarks><para><see cref="P:Microsoft.Office.Interop.Word.EmailSignature.EmailSignatureEntries" /> <b>Emailsignatureentries</b>コレクションを取得するのにには、プロパティを使用します。 電子メール<see cref="M:Microsoft.Office.Interop.Word.EmailSignatureEntries.Add(System.String,Microsoft.Office.Interop.Word.Range)" />の署名を Word に追加するには、 <b>emailsignatureentries</b>オブジェクトのメソッドを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -60,15 +50,12 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>文字列</b> が必要です。 電子メールの名前を指定します。</param>
-        <param name="Range">必要な<b>Range</b>オブジェクトです。 署名として追加する、文書内での範囲を指定します。</param>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.EmailSignatureEntry" /> 、新しい電子メール署名エントリを表すオブジェクト。</summary>
+        <param name="Name"><b>文字列</b> が必要です。 電子メールの名前を指定します。</param>
+        <param name="Range">必要な<b>Range</b>オブジェクト。 署名として追加する、文書内での範囲を指定します。</param>
+        <summary>新しい電子<see cref="T:Microsoft.Office.Interop.Word.EmailSignatureEntry" />メール署名エントリを表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>電子メール署名とは、名前と電話番号など、電子メール メッセージの最後の標準的なテキストです。使用して、<see cref="P:Microsoft.Office.Interop.Word.EmailSignature.EmailSignatureEntries" />を作成し、Microsoft Word が電子メール メッセージを作成するときに使用する電子メール署名のコレクションを管理するプロパティです。</para>
-          <para />
-        </remarks>
+        <remarks><para>電子メール署名とは、名前と電話番号など、電子メール メッセージの最後の標準的なテキストです。 <see cref="P:Microsoft.Office.Interop.Word.EmailSignature.EmailSignatureEntries" />プロパティを使用して、電子メールメッセージを作成するときに Microsoft Word で使用する電子メール署名のコレクションを作成して管理します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -94,7 +81,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,12 +137,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -216,7 +202,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">位置を表す序数または各オブジェクトの名前を表す文字列を示す<b>オブジェクト</b>。</param>
+        <param name="Index">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

@@ -1,13 +1,5 @@
 <Type Name="Adjustments" FullName="Microsoft.Office.Interop.Word.Adjustments">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="04d00f5197d85b4aee3912704a4c99c46098e504" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671368" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Adjustments" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f71474edc1a4cdff5dca9567b6a826b678d59ad6" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144653" /></Metadata><TypeSignature Language="C#" Value="public interface Adjustments" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Adjustments" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Adjustments" />
   <TypeSignature Language="VB.NET" Value="Public Interface Adjustments" />
@@ -26,18 +18,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>指定されたオートシェイプまたはワードアート オブジェクトの調整値のコレクションを含みます。</summary>
-    <remarks>
-      <para>各調整値は、調整ハンドルを調整する方法の 1 つを表します。2 つの方法でいくつかの調整ハンドルを調整できるため、水平方向および垂直方向にハンドルを調整することができます-図形は調整ハンドルの数よりも多くの調整値を持つことができます。図形は最大 8 つの調整値を持つことができます</para>。使用の
-      <para>、 <see cref="P:Microsoft.Office.Interop.Word.Shape.Adjustments" /><b>Adjustments</b>オブジェクトを返すプロパティです。<b>調整</b>(<paramref name="index" />)、<paramref name="index" />調整値のインデックス番号では、単一の調整値を返すには、</para> 。
-      <para>の異なる図形を調整値の数が異なる、調整の種類は、さまざまな図形の形状を変更してさまざまな種類の調整の有効な値の範囲が異なります</para>。
-      <para>調整可能な各図形は、調整では、手動で図形のインスタンスを作成するのには、特定の図形の調整動作を確認する最善の方法の別のセットを持つため、マクロ レコーダーをオンになって、調整し、記録されました。コード</para>。
-      <para>次の表は、異なる種類の調整の有効な調整値の範囲をまとめたものです。ほとんどの場合、有効値の範囲を超える値を指定する場合、最も近い有効な値割り当てられます調整にします</para>。
-      <list type="table"><item><description>(水平方向または垂直方向) の線形</description><description>一般に、値 0.0 は図形の左端または上端を表し、値 1.0 は図形の右端または下端を表します。有効な値は、手動で図形を調整することに対応します。たとえば、のみをプルする、調整ハンドルの半分の方法、図形の間で手動で場合、対応する調整の最大値は、0.5 をされます。図形の引き出し、吹き出しは、0.0 と 1.0 の値は、開始と引き出し線の終点で定義されている四角形の限界値を表し、負の数値を超えるように 1.0 が有効な値です</description></item>。
-        <item><description>放射状</description><description>調整値 1.0 は、図形の幅に対応します。図形の最大値は、0.5 のとき、または半分の方法です</description></item>。
-        <item><description>の
-          <description>角度</description>の値は度で表されます。範囲外の値を指定する場合-180 180 度、それに正規化されますその範囲内にあります</description></item></list>。
-      <para /></remarks>
+    <summary>指定されたオートシェイプまたはワードアート オブジェクトの調整値のコレクションが含まれます。</summary>
+    <remarks><para>それぞれの調整値は、調整ハンドルの調整方法を表します。 ただし、調整ハンドルによっては水平方向と垂直方向の 2 種類の方法で調整できるものがあるため、調整ハンドルの数よりも調整値の数が多い場合があります。 図形には、最大 8 つの調整を持つことができます。</para>
+      <para>調整オブジェクト<see cref="P:Microsoft.Office.Interop.Word.Shape.Adjustments" />を取得するの<b></b>にには、プロパティを使用します。 調整<b></b>(<paramref name="index" />) を使用し<paramref name="index" />ます。ここで、は調整値のインデックス番号を、1つの調整値を返します。</para>
+      <para>図形によって調整値の数が異なり、調整の種類によって図形の形状の変更方法が異なり、調整の種類によって有効値の範囲が異なります。</para>
+      <para>調整可能な図形ごとに調整は異なります。特定の図形を調整したときの結果を確認するには、手動で 1 つだけ図形を作成し、マクロに記録しながら図形を調整し、記録されたコードを調べることを推奨します。</para>
+      <para>次の表は、異なる種類の調整の、有効な調整値の範囲を示します。有効値の範囲を超える値を指定すると、最も近い有効な値が割り当てられます。</para>
+      <list type="table">
+        <item>
+          <description>線型 (水平または垂直)</description>
+          <description>通常、値 0.0 は、図形の左端または上端を表し、値 1.0 は図形の右端または下端を表します。有効な値は、手動で図形を調整することができる範囲と同じです。たとえば、調整ハンドルを手動で図形の半分までしか動かすことができない場合、対応する調整の最大値は 0.5 です。吹き出しの場合、値 0.0 と 1.0 は、吹き出しの始点と終点で定義される四角形の限界値を表し、負の値および 1.0 を超える値が有効な値となります。</description>
+        </item>
+        <item>
+          <description>放射状</description>
+          <description>調整値 1.0 は、図形の幅に相当します。最大値は 0.5 で、図形の中間を表します。</description>
+        </item>
+        <item>
+          <description>角度</description>
+          <description>値は度で表されます。 範囲外の値 (180 ~ 180) を指定すると、その範囲内に収まるように正規化されます。</description>
+        </item>
+      </list>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -63,7 +64,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Application" />を指定したオブジェクトの作成者を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Application" />たオブジェクトの作成元を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,7 +92,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された項目の数を示す値を返します<see cref="T:Microsoft.Office.Interop.Word.Adjustments" />コレクションです。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.Adjustments" />コレクション内の項目の数を示す値を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,9 +122,9 @@
       <Docs>
         <summary>指定したオブジェクトが作成されたアプリケーションを示す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>などのオブジェクトは、Microsoft Word で作成されている場合このプロパティが返されます、16 進数の値である 4d535744 を文字列します。この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para><para /></remarks>
+        <remarks><para>たとえば、オブジェクトが Microsoft Word で作成されている場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれている言語リファレンスのヘルプを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -155,13 +156,12 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">調整値のインデックス番号を指定します。</param>
-        <summary>指定された調整値を設定または返します。</summary>
+        <param name="Index">調整する項目のインデックス番号を指定します</param>
+        <summary>指定した調整値を返すか設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>線型の調整で、調整値 0.0 の対応、図形の左端または上端と 1.0 の値を通常の図形の右端または下端に対応します。ただし、調整は、一部の図形の図形の境界を越えて渡すことができます。放射状の調整で、調整値 1.0 は図形の幅に対応しています。角度の調整は、調整値は度で指定されました。<b>項目</b>プロパティは、調整値を持つ図形にのみ適用されます</para>。
-          <para>オートシェイプおよびワードアート オブジェクトは最大 8 つの調整値を持ちます</para>。
-          <para /></remarks>
+        <remarks><para>有効な調整値の範囲は、0.0 ～ 1.0 です。線型の調整では、通常、調整値 0.0 は図形の左端または上端に対応し、1.0 は図形の右端または下端に対応します。ただし、図形によっては、図形の境界を超えて調整することができます。放射状の調整では、調整値 1.0 は図形の幅に相当します。角度の調整では、調整値が角度 (°) で指定されます。 <b>Item</b> プロパティは、調整値を持つ図形だけに使用できます。</para>
+          <para>オートシェイプおよびワードアートオブジェクトには、最大8つの調整値があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -187,7 +187,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した親オブジェクトを表すオブジェクトを返します。<see cref="T:Microsoft.Office.Interop.Word.Adjustments" />コレクションです。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.Adjustments" />コレクションの親オブジェクトを表すオブジェクト型 (object) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

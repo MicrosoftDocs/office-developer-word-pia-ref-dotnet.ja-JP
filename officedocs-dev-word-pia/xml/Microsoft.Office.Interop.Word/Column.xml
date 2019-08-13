@@ -1,13 +1,5 @@
 <Type Name="Column" FullName="Microsoft.Office.Interop.Word.Column">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2c3fd80490074f82dd9583409f8f86882d94dd68" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671452" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Column" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e45caf40bd3b70419995c7ac70846ec49a9f5e99" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146165" /></Metadata><TypeSignature Language="C#" Value="public interface Column" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Column" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Column" />
   <TypeSignature Language="VB.NET" Value="Public Interface Column" />
@@ -26,15 +18,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>表の列を表します。 <b>列</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.Columns" />コレクションです。</summary>
-    <remarks>
-      <para>
-        <b>Columns</b>コレクションには、テーブル、選択範囲、または範囲内のすべての列が含まれています</para>。
-      <para><b>列</b>を使用する (<paramref name="index" />)、<paramref name="index" />インデックス番号は、1 つの<b>列</b>オブジェクトを返します。インデックス番号は左から右に数えた<b>列</b>のコレクション内の列の位置を表します</para>。
-      <para>使用、<see cref="P:Microsoft.Office.Interop.Word.Cell.Column" />を持つプロパティ、 <see cref="T:Microsoft.Office.Interop.Word.Cell" /><b>Column</b>オブジェクトを返すオブジェクト</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.Columns.Add(System.Object@)" />テーブルに列を追加します</para>。
-      <para>使用、<see cref="P:Microsoft.Office.Interop.Word.Selection.Information(Microsoft.Office.Interop.Word.WdInformation)" />プロパティと、 <see cref="T:Microsoft.Office.Interop.Word.Selection" /> 、現在の列番号を取得するオブジェクトです</para>。
-      <para /></remarks>
+    <summary>表の列を表します。 <b>Column</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Columns" />コレクションのメンバーです。</summary>
+    <remarks><para><b>Columns</b> コレクションには、表、選択範囲、または指定範囲のすべての列が含まれます。</para>
+      <para>列<b></b>()<paramref name="index" />を使用し<paramref name="index" />て、1つの<b>Column</b>オブジェクトを取得します (ここで、はインデックス番号を指定します)。 インデックス番号は左から右に数えた <b>列</b> のコレクション内の列の位置を表します。</para>
+      <para>Column オブジェクト<see cref="P:Microsoft.Office.Interop.Word.Cell.Column" />を取得する<see cref="T:Microsoft.Office.Interop.Word.Cell" />のにには<b></b> 、オブジェクトにプロパティを使用します。</para>
+      <para>表に<see cref="M:Microsoft.Office.Interop.Word.Columns.Add(System.Object@)" />列を追加するには、メソッドを使用します。 </para>
+      <para>現在の<see cref="P:Microsoft.Office.Interop.Word.Selection.Information(Microsoft.Office.Interop.Word.WdInformation)" />列番号を<see cref="T:Microsoft.Office.Interop.Word.Selection" />取得するのにには、オブジェクトのプロパティを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Application" />を指定したオブジェクトの作成者を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Application" />たオブジェクトの作成元を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,10 +77,8 @@
       <Parameters />
       <Docs>
         <summary>セル内での文字列の配列は変更しないで、表の列幅を文字列の幅に合わせて変更します。</summary>
-        <remarks>
-          <para>テーブルが既に、左右の余白間の距離の幅と同じ場合は、このメソッドは影響を与えません。</para>
-          <para />
-        </remarks>
+        <remarks><para>表の幅が、用紙の左右の余白を除いた幅と等しい場合は、このメソッドは無効です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Borders">
@@ -119,7 +107,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.Borders" />を指定したオブジェクトのすべての罫線を表すコレクション。</summary>
+        <summary>指定したオブジェクト<see cref="T:Microsoft.Office.Interop.Word.Borders" />のすべての罫線を表すコレクションを設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,7 +135,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Cells</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Cells" />の列の表のセルを表すコレクション。</summary>
+        <summary>列内<see cref="T:Microsoft.Office.Interop.Word.Cells" />の表のセルを表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -177,10 +165,9 @@
       <Docs>
         <summary>指定したオブジェクトが作成されたアプリケーションを示す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -204,7 +191,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -259,7 +246,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した列がテーブルの最初の 1 つであるかを示す値を返します。</summary>
+        <summary>指定した列がテーブルの最初の列であるかどうかを示す値を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -287,7 +274,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した列がテーブルの最後の 1 つであるかを示す値を返します。</summary>
+        <summary>指定した列がテーブル内の最後の列かどうかを示す値を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -317,10 +304,8 @@
       <Docs>
         <summary>指定した列のネスト レベルを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>最も外側のテーブルには、1 の入れ子レベルがあります。各連続的にネストした表のネスト レベルは、1 つ前のテーブルよりも大きくします。</para>
-          <para />
-        </remarks>
+        <remarks><para>一番外側の表のネスト レベルは 1 です。 連続的にネストしている表のそれぞれのネスト レベルは、外側の表のネスト レベルよりも 1 つ大きくなります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -346,7 +331,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Column</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクションの次のオブジェクトを返します。</summary>
+        <summary>コレクション内の次のオブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -374,7 +359,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親オブジェクトを返します。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -436,7 +421,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPreferredWidthType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した列の幅の測定単位を設定または返します。</summary>
+        <summary>指定した列の幅に使用する測定単位を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -464,7 +449,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Column</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクションの 1 つ前のオブジェクトを返します。</summary>
+        <summary>コレクション内の 1 つ前のオブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -518,14 +503,11 @@
         <Parameter Name="RulerStyle" Type="Microsoft.Office.Interop.Word.WdRulerStyle" />
       </Parameters>
       <Docs>
-        <param name="ColumnWidth">ポイント単位で指定した列の幅です。</param>
-        <param name="RulerStyle">Microsoft Word は、セルの幅を調整する方法を制御する値。</param>
+        <param name="ColumnWidth">指定した列の幅をポイント単位で指定します。</param>
+        <param name="RulerStyle">Microsoft Word のセルの幅を調整する方法を制御する値です。</param>
         <summary>表の中の列の幅を設定します。</summary>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" />動作は、左揃えの表に適用されます。中央揃えおよび右のテーブルの<b>WdRulerStyle</b>の動作が予期しないあります。これらの場合、<see cref="M:Microsoft.Office.Interop.Word.Cell.SetWidth(System.Single,Microsoft.Office.Interop.Word.WdRulerStyle)" />メソッドは、注意して使用する必要があります。</para>
-          <para />
-        </remarks>
+        <remarks><para>この<see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" />動作は、左揃えテーブルに適用されます。 中央および右揃えのテーブルに対する<b>WdRulerStyle</b>の動作は予測できません。このような場合は<see cref="M:Microsoft.Office.Interop.Word.Cell.SetWidth(System.Single,Microsoft.Office.Interop.Word.WdRulerStyle)" /> 、このメソッドを慎重に使用する必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shading">
@@ -551,7 +533,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Shading" /> 、指定したオブジェクトの網かけ書式を参照するオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Shading" />たオブジェクトの網かけ書式を参照するオブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -587,21 +569,19 @@
         <Parameter Name="LanguageID" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ExcludeHeader">最初の行または段落ヘッダーを並べ替え操作から除外するかどうかを示す値。 既定値は <b>False</b> です。</param>
-        <param name="SortFieldType">列の並べ替えの種類を指定します。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" />定数。</param>
-        <param name="SortOrder">列の並べ替えに使用する並べ替えの順序を指定します。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" />定数。</param>
+        <param name="ExcludeHeader">最初の行または段落のヘッダーを並べ替え操作から除外するかどうかを示す値。 既定値は <b>False</b> です。</param>
+        <param name="SortFieldType">列の並べ替えの種類を指定します。 <see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" />定数のいずれかをすることができます。</param>
+        <param name="SortOrder">列の並べ替えに使用する並べ替えの順序を指定します。 1つ<see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" />の定数にすることができます。</param>
         <param name="CaseSensitive">大文字小文字を区別して並べ替えるかどうかを示す値。 既定値は <b>False</b> です。</param>
-        <param name="BidiSort">ソートするかどうかを示す値は、右から左言語の規則に基づいています。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
-        <param name="IgnoreThe">右から左へ記述する言語のテキストを並べ替えるとき、アラビア語の alef lam を無視するかどうかを示す値。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
-        <param name="IgnoreKashida">右から左へ記述する言語のテキストを並べ替えるときに kashida を無視するかどうかを示す値。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
-        <param name="IgnoreDiacritics">右から左へ記述する言語のテキストを並べ替えるとき、双方向制御文字を無視するかどうかを示す値。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
-        <param name="IgnoreHe">ヘブライ語版を無視するかどうかを示す値の文字が右から左へ記述する言語のテキストを並べ替えるとき。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
-        <param name="LanguageID">並べ替える言語を指定します。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数。</param>
+        <param name="BidiSort">右から左へ記述する言語のルールに基づいて並べ替えるかどうかを示す値。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
+        <param name="IgnoreThe">右から左へ記述する言語のテキストを並べ替えるときに、アラビア文字の alef を無視するかどうかを示す値。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
+        <param name="IgnoreKashida">右から左へ記述する言語のテキストを並べ替えるときに、kashida を無視するかどうかを示す値を指定します。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
+        <param name="IgnoreDiacritics">右から左へ記述する言語のテキストを並べ替えるときに、双方向制御文字を無視するかどうかを示す値。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
+        <param name="IgnoreHe">右から左へ記述する言語のテキストを並べ替えるときにヘブライ文字を無視するかどうかを示す値。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
+        <param name="LanguageID">並べ替える言語を指定します。 <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数のいずれかをすることができます。</param>
         <summary>指定した表の列を並べ替えます。</summary>
-        <remarks>
-          <para>表のセル内の段落を並べ替える場合は、段落のみ、セルの末尾のマークです。した場合、選択範囲または指定範囲のセルの終了記号を含めて段落を並べ替えるしようとするは、並べ替えるレコードが有効でないことを示すメッセージが表示されます。</para>
-          <para />
-        </remarks>
+        <remarks><para>表のセル内の段落を並べ替える場合は、段落のみを指定し、セルの終了記号は含めません。選択範囲または指定範囲にセルの末尾に記号を挿入した後、段落の並べ替えを実行しようとすると、並べ替えのための有効なレコードが見つからないことを示すメッセージが表示されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SortOld">
@@ -668,7 +648,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定したオブジェクトの幅をポイント単位で設定します。</summary>
+        <summary>指定したオブジェクトの幅をポイント単位で取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

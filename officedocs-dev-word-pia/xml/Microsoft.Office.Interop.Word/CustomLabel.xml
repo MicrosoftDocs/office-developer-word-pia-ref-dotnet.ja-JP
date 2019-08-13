@@ -1,13 +1,5 @@
 <Type Name="CustomLabel" FullName="Microsoft.Office.Interop.Word.CustomLabel">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fc491a73c52a2fd4e6f048a49a9302b5b1ff748f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672451" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CustomLabel" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0f214b3428fec4a541bfb576068a5cc01082ae76" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147264" /></Metadata><TypeSignature Language="C#" Value="public interface CustomLabel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CustomLabel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CustomLabel" />
   <TypeSignature Language="VB.NET" Value="Public Interface CustomLabel" />
@@ -27,14 +19,13 @@
   </Attributes>
   <Docs>
     <summary>カスタム宛名ラベルを表します。</summary>
-    <remarks>
+    <remarks><para><b>CustomLabel</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.CustomLabels" />コレクションのメンバーです。 <b>CustomLabels</b> コレクションには、 [ラベル オプション] ダイアログ ボックスに記載されているすべてのカスタム宛名ラベルが含まれています。</para>
+      <para>単一の<b>CustomLabel</b>オブジェクトを取得<paramref name="index" />するには、 <b>CustomLabels</b>(<paramref name="index" />) を使用します。ここで、はカスタムラベルの名前またはインデックス番号です。</para>
+      <para>インデックス番号は、 <b>CustomLabels</b> コレクション内のカスタム宛名ラベルの位置を表します。</para>
       <para>
-        <b>CustomLabel</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.CustomLabels" />コレクションです。<b>CustomLabels</b>コレクションには、[ラベル オプション] ダイアログ ボックスに記載されているすべてのカスタム宛名ラベルが含まれています</para>。
-      <para>使用して<b>CustomLabels</b>(<paramref name="index" />)、<paramref name="index" />は、カスタム ラベルの名前またはインデックス番号を 1 つの<b>CustomLabel</b>オブジェクトを取得する</para>。
-      <para>インデックス番号は、 <b>CustomLabels</b>コレクション内のカスタム宛名ラベルの位置を表します</para>。
-      <para><b>注</b>: <b>CustomLabel</b>オブジェクトは<b>CustomLabels</b>コレクション内でアルファベット順にソートし、そのインデックス番号は、コレクションの内容として動的に再割り当ています。そのため、インデックス番号ではなく名前によって、特定の<b>CustomLabel</b>オブジェクトを参照する方が安全です</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.CustomLabels.Add(System.String,System.Object@)" />カスタム ラベルを作成します</para>。
-      <para /></remarks>
+        <b>注</b>: <b>CustomLabel</b>オブジェクトは、 <b>CustomLabels</b>コレクション内でアルファベット順に並べ替えられ、コレクションの変更の内容としてインデックス番号は動的に再割り当てされます。 そのため、インデックス番号ではなく名前によって、特定の <b>CustomLabel</b> オブジェクトを参照することができます。</para>
+      <para>メソッドを<see cref="M:Microsoft.Office.Interop.Word.CustomLabels.Add(System.String,System.Object@)" />使用して、カスタムラベルを作成します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,12 +79,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -117,7 +107,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,8 +134,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、プリンターの種類を指定したカスタム ラベルには、ドット マトリックスです。 <b>False を指定</b> プリンターの種類がレーザーまたはインク ジェットである場合。</summary>
+        <summary><b>True の</b> 場合は、プリンターの種類を指定したカスタム ラベルには、ドット マトリックスです。 <b>False を指定</b> プリンターの種類がレーザーまたはインク ジェットである場合。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,7 +165,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ポイント単位で指定されたカスタム宛名ラベルの高さを設定または返します。</summary>
+        <summary>指定したカスタム宛名ラベルの高さをポイント単位で設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -209,10 +198,8 @@
       <Docs>
         <summary>1 つのカスタム宛名ラベルの左端と次の宛名ラベルの左端との間の水平方向の距離 (ポイント) を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>指定した宛名ラベルのレイアウトでは無効な値にこのプロパティを変更すると、エラーが発生します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティに設定した値が、指定された宛名ラベルのレイアウトでは無効な場合は、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -238,7 +225,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内の項目の位置を表す<b>整数</b>を返します。</summary>
+        <summary>コレクション内の項目の位置を表す<b>整数型 (Integer</b> ) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -302,10 +289,8 @@
       <Docs>
         <summary>取得またはページ間でのカスタム宛名ラベルの数を設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>指定した宛名ラベルのレイアウトでは無効な値にこのプロパティを変更すると、エラーが発生します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティに設定した値が、指定された宛名ラベルのレイアウトでは無効な場合は、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberDown">
@@ -336,10 +321,8 @@
       <Docs>
         <summary>返すまたは、ページの垂直方向のカスタム宛名ラベルの数を設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>指定した宛名ラベルのレイアウトでは無効な値にこのプロパティを変更すると、エラーが発生します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティに設定した値が、指定された宛名ラベルのレイアウトでは無効な場合は、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageSize">
@@ -370,11 +353,8 @@
       <Docs>
         <summary>指定されたカスタム宛名ラベルのページ サイズを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>PageSize</b>プロパティには、いずれかを指定できる、<see cref="T:Microsoft.Office.Interop.Word.WdCustomLabelPageSize" />定数。これらの定数のいくつかを選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できないがあります。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>PageSize</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdCustomLabelPageSize" />定数のいずれかを指定できます。 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -433,10 +413,8 @@
       <Docs>
         <summary>横余白をポイント単位での指定したカスタム宛名ラベルを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>指定した宛名ラベルのレイアウトでは無効な値にこのプロパティを変更すると、エラーが発生します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティに設定した値が、指定された宛名ラベルのレイアウトでは無効な場合は、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TopMargin">
@@ -493,8 +471,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>場合のさまざまなプロパティ (たとえば、 <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Height" />、<see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Width" />と<see cref="P:Microsoft.Office.Interop.Word.CustomLabel.NumberDown" />) 有効な宛名ラベルを作成するユーザー設定のラベルを指定した作業時間の。</summary>
+        <summary><b>True</b>の場合は、指定された<see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Height" />ユーザー <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Width" />設定の<see cref="P:Microsoft.Office.Interop.Word.CustomLabel.NumberDown" />ラベルのさまざまなプロパティ (、、、など) が連携して、有効な宛名ラベルを作成します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -527,10 +504,8 @@
       <Docs>
         <summary>1 つの宛名ラベルの上端と次の宛名ラベルの上端の垂直方向の間隔を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>指定した宛名ラベルのレイアウトでは無効な値にこのプロパティを変更すると、エラーが発生します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティに設定した値が、指定された宛名ラベルのレイアウトでは無効な場合は、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">

@@ -1,13 +1,5 @@
 <Type Name="MailMergeDataSource" FullName="Microsoft.Office.Interop.Word.MailMergeDataSource">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d2e937147dc7f6dd07ddb11fc242a7e8007f5285" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672118" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMergeDataSource" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="263ac1a3dcb0cca2f828e652dcaa7b7f382a381b" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144471" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeDataSource" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMergeDataSource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMergeDataSource" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMergeDataSource" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>差し込み印刷処理の差し込み印刷データ ソースを表します。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.MailMerge.DataSource" /><b>MailMergeDataSource</b>オブジェクトを取得するプロパティです。</para>
-      <para />
-    </remarks>
+    <remarks><para>MailMergeDataSource オブジェクト<see cref="P:Microsoft.Office.Interop.Word.MailMerge.DataSource" />を取得するの<b></b>にには、プロパティを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ActiveRecord">
@@ -59,13 +49,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdMailMergeActiveRecord</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>アクティブな差し込み印刷のデータ レコードを設定または返します。</summary>
+        <summary>作業中の差し込み印刷のデータレコードを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>ActiveRecord</b>プロパティは、クエリ結果内の有効なデータのレコード番号またはのいずれかのいずれか、<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeActiveRecord" />定数</para>。
-          <para>作業中のデータ レコードの番号は、現在のクエリによって生成されるクエリ結果内のレコードの位置; したがって、この番号は必ずしもデータ ソース内のレコードの位置</para>。
-          <para /></remarks>
+        <remarks><para>" <b></b> /プロパティの設定" プロパティには、クエリ結果の有効なデータレコード番号、また<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeActiveRecord" />は定数のいずれかを指定できます。</para>
+          <para>作業中のデータレコード番号は、現在のクエリのオプションによって作成されたクエリの結果でのレコードの位置を示します。そのため、この数値はデータソース内のレコードの位置とは限りません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -91,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -144,7 +132,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された差し込み印刷データ ソースの接続文字列を返します。</summary>
+        <summary>指定された差し込み印刷データソースの接続文字列を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -172,12 +160,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataFields">
@@ -203,7 +190,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.MailMergeDataFields</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.MailMergeDataFields" />を指定された差し込み印刷データ ソース内のフィールドを表すコレクション。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.MailMergeDataFields" />た差し込み印刷データソース内のフィールドを表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -231,7 +218,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.MailMergeFieldNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.MailMergeFieldNames" />を指定された差し込み印刷データ ソース内のすべてのフィールドの名前を表すコレクション。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.MailMergeFieldNames" />た差し込み印刷データソース内のすべてのフィールドの名前を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -259,17 +246,13 @@
         <Parameter Name="Field" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="FindText">
-          <b>文字列</b> が必要です。 検索する文字列を指定します。</param>
-        <param name="Field">
-          <b>バリアント型</b>が必要です。 検索するフィールドの名前を指定します。</param>
+        <param name="FindText"><b>文字列</b> が必要です。 検索する文字列を指定します。</param>
+        <param name="Field">バリアント型 (<b>Variant</b>) の値を使用します。 検索するフィールドの名前を指定します。</param>
         <summary>特定のフィールドのテキストを指定された差し込み印刷データ ソースの内容を検索します。 検索テキストが見つかった場合は <b>True</b> を返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>FindRecord</b>メソッドは、差し込み印刷ツールバーの [レコードの検索] ボタンに対応します</para>。
-          <para><b>FindRecord</b>メソッドは、前方検索のみです。したがって、作業中のレコードがデータ ソース内の最初のレコードではありませんし、検索対象のレコードは、アクティブなレコードの前に、 <b>FindRecord</b>メソッドは結果を返しません。データ ソース全体が検索されるようにするには、設定、<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.ActiveRecord" />プロパティを<b>wdFirstRecord</b></para> 。
-          <para /></remarks>
+        <remarks><para><b>FindRecord</b>メソッドは、[差し込み印刷] ツールバーの [レコードの検索] ボタンに対応します。</para>
+          <para><b>FindRecord</b> メソッドは、前方検索のみです。 したがって、作業中のレコードがデータ ソース内の最初のレコードではありませんし、検索対象のレコードは、アクティブなレコードの前に、 <b>FindRecord</b> メソッドは結果を返しません。 データソース全体が検索されるようにするには<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.ActiveRecord" /> 、プロパティを<b>wdfirstrecord</b>に設定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FindRecord2000">
@@ -332,7 +315,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、差し込み印刷操作で差し込む最初のデータ レコードの数を設定します。</summary>
+        <summary>差し込み印刷操作で差し込む最初のデータレコードの番号を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -388,13 +371,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdMailMergeDataSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>差し込み印刷のヘッダー ファイルの方法を提供するかを示す値を返します。</summary>
+        <summary>差し込み印刷操作でヘッダーファイルがどのように提供されているかを示す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>HeaderSourceType</b>プロパティには、いずれかを指定できる、<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeDataSource" />定数。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>HeaderSourceType</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeDataSource" />定数のいずれかを指定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Included">
@@ -423,13 +403,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>該当</b> レコードが差し込み印刷に含まれている場合です。</summary>
+        <summary><b>該当</b> レコードが差し込み印刷に含まれている場合です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.MailMergeDataSource.SetAllIncludedFlags(System.Boolean)" />メソッドは、差し込み印刷データ ソース内のすべてのレコードを含めたり除外したりします。</para>
-          <para />
-        </remarks>
+        <remarks><para>差し込み印刷<see cref="M:Microsoft.Office.Interop.Word.MailMergeDataSource.SetAllIncludedFlags(System.Boolean)" />データソースのすべてのレコードを含めるまたは除外するには、メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InvalidAddress">
@@ -458,13 +435,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> アドレス フィールドに無効なデータが含まれている場合は、差し込み印刷データ ソース内のレコードをマークします。</summary>
+        <summary><b>True の</b> アドレス フィールドに無効なデータが含まれている場合は、差し込み印刷データ ソース内のレコードをマークします。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用、<see cref="M:Microsoft.Office.Interop.Word.MailMergeDataSource.SetAllErrorFlags(System.Boolean,System.String)" />両方、 <b>InvalidAddress</b>を設定するメソッドと<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidComments" />データ ソース内のすべてのレコードのプロパティです。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Word.MailMergeDataSource.SetAllErrorFlags(System.Boolean,System.String)" />メソッドを使用して、データソース内のすべてのレコードに<b>invalidaddress</b>と<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidComments" />プロパティの両方を設定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InvalidComments">
@@ -493,12 +467,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>場合、<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidAddress" />プロパティが<b>True</b>を返すか、無効なアドレス エラーを説明する<b>文字列</b>を設定します。</summary>
+        <summary>プロパティが<b>True</b>の場合は、無効なアドレスエラーを表す文字列型 (string) の値を取得または設定します。 <b></b> <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidAddress" /></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用、<see cref="M:Microsoft.Office.Interop.Word.MailMergeDataSource.SetAllErrorFlags(System.Boolean,System.String)" />両方を設定するメソッド、<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidAddress" />と<b>InvalidComments</b>プロパティをデータ ソース内のすべてのレコード。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Word.MailMergeDataSource.SetAllErrorFlags(System.Boolean,System.String)" />メソッドを使用して、データ<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidAddress" />ソース内のすべてのレコードに対して、および<b>invalidcomments</b>プロパティの両方を設定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LastRecord">
@@ -527,7 +499,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、差し込み印刷操作で差し込む最後のデータ レコードの数を設定します。</summary>
+        <summary>差し込み印刷操作で差し込み印刷の最後のデータレコードの番号を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -555,7 +527,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.MappedDataFields</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.MappedDataFields" />を Microsoft Word で使用可能なマップしたデータ フィールドを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.MappedDataFields" />で使用可能なマップデータフィールドを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -670,12 +642,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>データ ソース内のレコードの数を表す<b>整数</b>を返します。</summary>
+        <summary>データソース内のレコードの数を表す<b>整数型 (Integer</b> ) の値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Microsoft Word がデータ ソース内のレコードの数を判断できない場合、 <b>RecordCount</b>プロパティは-1 の値を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>Microsoft Word でデータ ファイル内のレコード数を確認できない場合、<b>RecordCount</b> プロパティは -1 を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetAllErrorFlags">
@@ -702,15 +672,11 @@
         <Parameter Name="InvalidComment" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Invalid">
-          <b>ブール値</b>が必要です。 <b>True</b> として無効な差し込み印刷のデータ ソース内のすべてのレコードをマークします。</param>
-        <param name="InvalidComment">
-          <b>文字列</b> が必要です。 無効な設定であることを説明するテキストを指定します。</param>
-        <summary>差し込み印刷のデータ ファイル内のすべてのレコードに、アドレス フィールドに無効なデータが含まれていることを示すマークを付けます。</summary>
-        <remarks>
-          <para>使用して、アドレス フィールドに無効なデータが含まれているデータ ソースのレコードを個別にマークすること、<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidAddress" />と<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidComments" />のプロパティです。</para>
-          <para />
-        </remarks>
+        <param name="Invalid">必須の<b>ブール値</b>です。 <b>True</b> として無効な差し込み印刷のデータ ソース内のすべてのレコードをマークします。</param>
+        <param name="InvalidComment"><b>文字列</b> が必要です。 無効な設定であることを説明する文字列を指定します。</param>
+        <summary>アドレス フィールドに無効なデータが含まれているとして、差し込み印刷のデータ ファイル内のすべてのレコードにマークを付けます。</summary>
+        <remarks><para>プロパティ<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidAddress" />と<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidComments" />プロパティを使用して、アドレスフィールドに無効なデータが含まれているデータソースレコードを個別にマークできます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetAllIncludedFlags">
@@ -736,14 +702,10 @@
         <Parameter Name="Included" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Included">
-          <b>ブール値</b>が必要です。 <b>True</b> を差し込み印刷でデータ ソースのすべてのレコードが含まれます。 <b>False を指定</b> するデータ ソースのすべてのレコードを差し込み印刷から除外します。</param>
-        <summary>
-          <b>True</b> を差し込み印刷でデータ ソースのすべてのレコードが含まれます。</summary>
-        <remarks>
-          <para>含まれているまたは使用して、差し込み印刷から除外するデータ ソースの個々 のレコードを設定することができます、<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.Included" />プロパティ。</para>
-          <para />
-        </remarks>
+        <param name="Included">必須の<b>ブール値</b>です。 <b>True</b> を差し込み印刷でデータ ソースのすべてのレコードが含まれます。 <b>False を指定</b> するデータ ソースのすべてのレコードを差し込み印刷から除外します。</param>
+        <summary><b>True</b> を差し込み印刷でデータ ソースのすべてのレコードが含まれます。</summary>
+        <remarks><para>データソース内の個々のレコードを、差し込み印刷に含めるか、またはこの<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.Included" />プロパティを使用して除外するように設定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TableName">
@@ -769,7 +731,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>差し込み印刷文書に添付されたデータ ファイルからレコードを取得するために使用される SQL クエリを使用して <b>文字列</b> を返します。 空白のテーブル名が不明であるか、または現在のデータ ソースに適用されない場合があります。</summary>
+        <summary>差し込み印刷文書に添付されたデータ ファイルからレコードを取得するために使用される SQL クエリを使用して <b>文字列</b> を返します。 テーブル名が不明であるか、現在のデータソースに該当しない場合は、空白の場合があります。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -797,13 +759,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdMailMergeDataSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>差し込み印刷データ ソースの種類を返します。</summary>
+        <summary>差し込み印刷のデータソースの種類を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Type</b>プロパティには、いずれかを指定できます、<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeDataSource" />定数。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Type</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeDataSource" />定数のいずれかを指定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

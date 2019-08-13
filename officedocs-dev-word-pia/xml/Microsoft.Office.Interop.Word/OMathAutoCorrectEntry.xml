@@ -1,13 +1,5 @@
 <Type Name="OMathAutoCorrectEntry" FullName="Microsoft.Office.Interop.Word.OMathAutoCorrectEntry">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="084cc6bfd8a093cd17eca19e335931cd0d1c1503" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670942" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OMathAutoCorrectEntry" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="29f20412c331ba06e4b5144c27108c0687ac727f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144387" /></Metadata><TypeSignature Language="C#" Value="public interface OMathAutoCorrectEntry" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMathAutoCorrectEntry" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMathAutoCorrectEntry" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>内の個々 のエントリを表す、<see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries" />コレクションです。</summary>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries" />コレクション内の個々のエントリを表します。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -54,9 +46,7 @@
       </ReturnValue>
       <Docs>
         <summary>Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,14 +73,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>アドインが作成されたアプリケーションを示す 32 ビット整数を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトが Microsoft Word で作成された場合、<see cref="P:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry.Creator" />プロパティは、16 進数の値である 4d535744 を表す文字列"MSWD"を返します。この値は、定数で表すこともできます<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />です</para>。
-          <para>このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para><b>注</b>:</para><para /></remarks>
+        <summary>アドインが作成されたアプリケーションを示す 32 ビット整数を返します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトが Microsoft Word で作成されている<see cref="P:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry.Creator" />場合、このプロパティは、文字列 "MSWD" を表す、16進数値である4D535744 を返します。 この値は定数<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />で表すこともできます。</para>
+          <para>このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para>
+            <b>注</b>: </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -114,7 +103,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>削除、指定した<see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" />。</summary>
+        <summary>指定さ<see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" />れたを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,10 +130,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内の項目の位置を示す<b>整数</b>を取得します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>コレクション内の項目の位置を表す<b>Integer</b>オブジェクトを返します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,10 +161,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定の名前を表す<b>文字列</b><see cref="P:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" />。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
+        <summary>の名前を表す<b>文字列</b>型 (string) の値<see cref="P:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" />を取得または設定します。 値の取得と設定が可能です。</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,10 +189,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した親オブジェクトを返します。<see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" />オブジェクトです。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" />オブジェクトの親オブジェクトを返します。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,10 +220,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>設定の内容を表す<b>文字列</b>を取得または設定、 <see cref="P:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" />。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <summary>の内容を表す<b>文字列</b>型 (string) の値<see cref="P:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" />を取得または設定します。 値の取得と設定が可能です。</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,13 +1,5 @@
 <Type Name="Version" FullName="Microsoft.Office.Interop.Word.Version">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3228b06fa6ed14a8bcc13974239f6775681d7027" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672323" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Version" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1093fbf071b1d02c902b04fc31b1548af334174f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143736" /></Metadata><TypeSignature Language="C#" Value="public interface Version" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Version" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Version" />
   <TypeSignature Language="VB.NET" Value="Public Interface Version" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>文書の 1 つの版を表します。</summary>
-    <remarks>
-      <para>
-        <b>バージョン</b>のオブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.Versions" />コレクションです。<b>Versions</b>コレクションには、指定した文書のすべてのバージョンが含まれています</para>。使用<b>のバージョン</b>の
-      <para>(<paramref name="index" />)、<paramref name="index" />インデックス番号は、1 つ<b>のバージョン</b>のオブジェクトを取得します。インデックス番号は、バージョンの<b>バージョン</b>のコレクション内の位置を表します。<b>Versions</b>コレクションに追加された最初のバージョンは、インデックス番号は 1 です</para>。
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.Versions.Save(System.Object@)" /><b>のバージョン</b>のコレクションに項目を追加します</para>。
-      <para /></remarks>
+    <remarks><para><b>Version</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Versions" />コレクションのメンバーです。 <b>Versions</b> コレクションには、指定された文書のすべての版が含まれます。</para>
+      <para><b>Versions</b>()<paramref name="index" />を使用し<paramref name="index" />て、1つの<b>バージョン</b>のオブジェクトを取得します (ここで、はインデックス番号を指定します)。 インデックス番号は、 <b>Versions</b> コレクションでの版の位置を表します。 <b>Versions</b> コレクションに最初に追加された版のインデックス番号は 1 です。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.Versions.Save(System.Object@)" />メソッドを使用して、 <b>Versions</b>コレクションにアイテムを追加します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -114,12 +104,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -171,7 +160,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,7 +187,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内の項目の位置を表す<b>整数</b>を返します。</summary>
+        <summary>コレクション内の項目の位置を表す<b>整数型 (Integer</b> ) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -224,7 +213,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを開きます。 返します、 <see cref="T:Microsoft.Office.Interop.Word.Document" /> 、開かれているオブジェクトを表すオブジェクト。</summary>
+        <summary>指定したオブジェクトを開きます。 開いて<see cref="T:Microsoft.Office.Interop.Word.Document" />いるオブジェクトを表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

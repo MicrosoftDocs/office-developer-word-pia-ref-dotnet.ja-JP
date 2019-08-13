@@ -1,13 +1,5 @@
 <Type Name="HeadingStyle" FullName="Microsoft.Office.Interop.Word.HeadingStyle">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0091c2e2c39c499f0d564e6c1ab674abca609e03" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671382" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface HeadingStyle" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="24fc1c35254a6255461d0a2e3f7976ca5f95a1db" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146718" /></Metadata><TypeSignature Language="C#" Value="public interface HeadingStyle" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HeadingStyle" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HeadingStyle" />
   <TypeSignature Language="VB.NET" Value="Public Interface HeadingStyle" />
@@ -26,13 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>目次または図表目次を作成するために使用するスタイルを表します。</summary>
-    <remarks>
-      <para>
-        <b>HeadingStyle</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.HeadingStyles" />コレクションです</para>。
-      <para>使用して<b>HeadingStyles</b>(<paramref name="index" />)、<paramref name="index" />インデックス番号には、単一の<b>HeadingStyle</b>オブジェクトを返します。インデックス番号は、 <b>HeadingStyles</b>コレクションでのスタイルの位置を表します</para>。
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.HeadingStyles.Add(System.Object@,System.Int16)" /> 、 <b>HeadingStyles</b>コレクションにスタイルを追加します</para>。
-      <para /></remarks>
+    <summary>目次または図表目次を作成するときに使用するスタイルを表します。</summary>
+    <remarks><para><b>HeadingStyle</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.HeadingStyles" />コレクションのメンバーです。</para>
+      <para>1つの<paramref name="index" /> <b>HeadingStyle</b>オブジェクトを<paramref name="index" />取得するのにには、 <b>HeadingStyles</b>() を使用します。ここで、はインデックス番号を指定します。 インデックス番号は、 <b>HeadingStyles</b> コレクションでのスタイルの位置を表します。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.HeadingStyles.Add(System.Object@,System.Int16)" />メソッドを使用して、 <b>HeadingStyles</b>コレクションにスタイルを追加します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,12 +76,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -115,7 +104,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,11 +195,9 @@
       <Docs>
         <summary>指定したオブジェクトのスタイルを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>スタイル</b>プロパティを設定し、整数値で、スタイルのローカル名を指定して、<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />の定数、またはスタイルを表すオブジェクト</para>。
-          <para>1 つ以上のスタイルを含む範囲のスタイルを取得すると、最初の文字または段落のスタイルのみが返されます</para>。
-          <para /></remarks>
+        <remarks><para>Style プロパティを<b></b>設定するには、スタイルのローカル名、整数、 <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />定数、またはスタイルを表すオブジェクトを指定します。</para>
+          <para>複数のスタイルを含む範囲のスタイルを取得する場合は、最初の文字または段落のスタイルのみ取得できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

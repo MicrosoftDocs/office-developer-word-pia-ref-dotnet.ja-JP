@@ -1,13 +1,5 @@
 <Type Name="ChartGroup" FullName="Microsoft.Office.Interop.Word.ChartGroup">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4444187f8205ad4277847ad3e62bd596ec10edd2" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672085" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartGroup" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c46b7a3f6b3884f675aec38fe394cce284c200df" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142272" /></Metadata><TypeSignature Language="C#" Value="public interface ChartGroup" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartGroup" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartGroup" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartGroup" />
@@ -27,10 +19,9 @@
   </Attributes>
   <Docs>
     <summary>同じ形式のグラフにプロットされた 1 つまたは複数のデータ系列を表します。</summary>
-    <remarks>
-      <para>グラフには、1 つ以上のグラフ グループが含まれている、各グラフ種類グループには、1 つまたは複数が含まれています<see cref="T:Microsoft.Office.Interop.Word.Series" />オブジェクト、および各データ系列が 1 つまたは複数含まれています<see cref="T:Microsoft.Office.Interop.Word.Points" />オブジェクトです。たとえば、1 つのグラフには、グループ、すべてのデータ系列を折れ線グラフ形式でプロットとすべてのデータ系列を横棒グラフ形式でプロット、横棒グラフ グループの両方が含まれます。オブジェクトを<b>返すプロパティ</b>のメンバーである、<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />コレクションです</para>。
-      <para>の使用を<b>指定しないで、ChartGroups</b>(<paramref name="Index" />)、<paramref name="index" />グラフ グループのインデックス番号、1 つの<b>ChartGroup</b>オブジェクトを取得するには</para>。
-      <para /></remarks>
+    <remarks><para>グラフには1つ以上のグラフグループが含まれ、各グラフグループ<see cref="T:Microsoft.Office.Interop.Word.Series" />には<see cref="T:Microsoft.Office.Interop.Word.Points" /> 1 つまたは複数のオブジェクトが含まれています。 たとえば、1 つのグラフに、すべてのデータ系列を折れ線グラフ形式でプロットした折れ線グラフ グループと、すべてのデータ系列を横棒グラフ形式でプロットした横棒グラフ グループの両方を含めることができます。 <b>ChartGroup</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />コレクションのメンバーです。</para>
+      <para>単一の<b>ChartGroup</b>オブジェクトを取得<paramref name="index" />するには、 <b>ChartGroups</b>(<paramref name="Index" />) を使用します。ここで、はグラフグループのインデックス番号です。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,10 +47,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用<see cref="T:Microsoft.Office.Interop.Word._Application" />すると、Microsoft Word アプリケーションを表すオブジェクトが返されます。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,10 +78,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlAxisGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>軸グループの種類を返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />
-        </value>
+        <summary>軸グループの種類を返します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,14 +109,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定されたグラフ種類グループのバブルのスケール係数を設定します。  値の取得および設定が可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>このプロパティは 300、既定のサイズの割合に対応する 0 (ゼロ) から整数値を設定できます。</para>
-          <para />
-        </remarks>
+        <summary>指定されたグラフ グループ内のバブルのスケール ファクターを設定または返します。  値の取得と設定が可能です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>このプロパティは、既定のサイズのパーセンテージに対応する 0 (ゼロ) ~ 300 の整数に設定できます。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CategoryCollection">
@@ -157,8 +140,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">取得するカテゴリのカテゴリが表示されているコレクション内のインデックス番号です。</param>
-        <summary>グラフ種類グループ、または指定した表示カテゴリに表示されているすべてのカテゴリを返します。</summary>
+        <param name="Index">取得するカテゴリの、表示されているカテゴリのインデックス番号を指定します。</param>
+        <summary>グラフグループまたは指定された表示可能なカテゴリのすべての可視カテゴリを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -186,14 +169,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトが作成されたアプリケーションを示す 32 ビット<b>の整数</b>を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトが Microsoft Word で作成された場合、<see cref="P:Microsoft.Office.Interop.Word.ChartGroup.Creator" />プロパティは、16 進数の値である 4d535744 を表す文字列"MSWD"を返します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
-          <para />
-        </remarks>
+        <summary>指定したオブジェクトが作成されたアプリケーションを示す32ビット<b>整数</b>を返します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトが Microsoft Word で作成されている<see cref="P:Microsoft.Office.Interop.Word.ChartGroup.Creator" />場合、このプロパティは、文字列 "MSWD" を表す、16進数値である4D535744 を返します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DoughnutHoleSize">
@@ -222,10 +201,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはドーナツ グラフ グループの穴のサイズを設定します。 穴の大きさは、10 から 90% まで、グラフのサイズに対する割合として表されます。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>取得またはドーナツ グラフ グループの穴のサイズを設定します。 穴の大きさは、グラフのサイズに対する割合 (10 ~ 90 パーセント) で表されます。 値の取得と設定が可能です。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,10 +229,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.DownBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>折れ線グラフの陰線を返します。 線グラフにのみ適用されます。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.DownBars" />
-        </value>
+        <summary>折れ線グラフの陰線を取得します。 折れ線グラフにのみ適用されます。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.DownBars" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -282,10 +257,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.DropLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>折れ線グラフまたは面グラフの系列の降下線を返します。 折れ線グラフまたは面グラフにのみ適用されます。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.DropLines" />
-        </value>
+        <summary>折れ線グラフまたは面グラフのデータ系列の降下線を取得します。 折れ線グラフまたは面グラフにのみ適用されます。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.DropLines" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -315,14 +288,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>時計回りに (垂直) の最初の円グラフまたはドーナツ グラフのスライスの角度を設定または返します。 円グラフ、3-D 円グラフ、およびドーナツ グラフにのみ適用されます。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>0 から 360 までの値を指定できます。</para>
-          <para />
-        </remarks>
+        <summary>円グラフまたはドーナツ グラフの最初のスライスの角度 (縦の中心から時計回りでの度数) を返すか設定します。 円グラフ、3-D 円グラフ、およびドーナツ グラフにのみ適用されます。 値の取得と設定が可能です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>0 から 360 の範囲内で値を指定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FullCategoryCollection">
@@ -350,8 +319,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">取得するカテゴリのすべてのカテゴリのコレクションのインデックス番号です。</param>
-        <summary>表示するかをフィルター処理されたかどうかは、グラフ種類グループ、または指定したカテゴリのすべてのカテゴリを返します。</summary>
+        <param name="Index">取得するカテゴリの完全なカテゴリコレクションのインデックス番号を指定します。</param>
+        <summary>グラフ種類グループのすべての分類項目、または、表示またはフィルターで除外されている指定した項目を返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -382,14 +351,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>バーと縦棒グラフ: の間のスペースの設定を取得または横棒グラフまたは縦棒横棒グラフまたは縦棒の割合として、クラスターの幅。 円グラフおよび円グラフの円グラフ: グラフのプライマリおよびセカンダリのセクション間の間隔の設定を取得または設定します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>このプロパティの値は、0 から 500 の間である必要があります。</para>
-          <para />
-        </remarks>
+        <summary>横棒グラフと縦棒グラフ: バーまたは列のクラスター間のスペースを、バーまたは列の幅に対する割合として設定します。 補助円グラフ付き円グラフと補助縦棒グラフ付き円グラフ: グラフの主なセクションと2番目のセクションの間隔を設定します。 値の取得と設定が可能です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>このプロパティに使用できる範囲は 5 ～ 200 の値です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Has3DShading">
@@ -418,14 +383,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を決定する場合、グラフ種類グループに 3-d の網かけを設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール値</b>を<b>True</b>に設定グラフ種類グループには 3 次元の網かけ、それ以外の場合は<b>false を指定</b>します。</value>
-        <remarks>
-          <para>
-            <b>注</b>: 設定<b>Has3DShading</b> = <b>False</b>が効果を削除するグラフを設定するのには、「フラット」、数量単価型の<b>Has3DShading</b>の設定が、 = 既定値にグラフの内容を<b>True</b>に設定します。</para>
-          <para />
-        </remarks>
+        <summary>グラフグループに3-d の網かけが設定されているかどうかを示す値を取得または設定します。 値の取得と設定が可能です。</summary>
+        <value>グラフ<b></b>グループに3-d の網かけが設定されている場合は<b>True</b>に設定し、それ以外の場合は<b>False</b>を指定します。</value>
+        <remarks><para>
+            <b>注</b>: <b>Has3DShading</b> = <b>False</b>を設定すると、グラフの素材を "Flat" に設定したり、効果を削除したりする効果があります。ただし、 <b>Has3DShading</b> = <b>True</b>を設定すると、グラフの内容は既定値に設定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasDropLines">
@@ -454,9 +416,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グラフに降下線を表示があるかどうかを示す値を設定または返します。 折れ線グラフまたは面グラフにのみ適用されます。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール</b>折れ線グラフまたは面グラフに降下線を表示します。 がある場合は<b>True</b>に設定それ以外の場合は<b>False</b></value>
+        <summary>グラフに降下線があるかどうかを示す値を取得または設定します。 折れ線グラフと面グラフにのみ適用されます。 値の取得と設定が可能です。</summary>
+        <value>折れ線<b></b>グラフまたは面グラフに降下線がある場合は<b>True</b>に設定します。それ以外の場合は<b>False</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -486,9 +447,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グラフが高低線を示す値を設定または返します。 線グラフにのみ適用されます。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール値</b>を<b>True</b>に設定、折れ線グラフに高低線がある場合それ以外の場合は<b>False</b></value>
+        <summary>グラフに高低線があるかどうかを示す値を取得または設定します。 折れ線グラフにのみ適用されます。 値の取得と設定が可能です。</summary>
+        <value>折れ線<b></b>グラフに高低線がある場合は True に設定し、それ以外の場合は<b>false</b>に設定します。それ以外の場合は<b>False</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -518,9 +478,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>レーダー チャートの軸ラベルになっているかどうかを示す値を設定または返します。 レーダー チャートにのみ適用されます。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール値</b>を<b>True</b>に設定、レーダー チャートの軸ラベルが入力されている場合それ以外の場合は<b>False</b></value>
+        <summary>レーダーチャートに軸ラベルがあるかどうかを示す値を取得または設定します。 レーダーチャートにのみ適用されます。 値の取得と設定が可能です。</summary>
+        <value>レーダーチャートに軸ラベルがある場合は<b>True</b>に設定する<b>ブール値</b>。それ以外の場合は<b>False</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -550,9 +509,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を示す積み上げ縦棒グラフや横棒グラフに区分線がある場合、または円グラフの円グラフまたは円グラフのバーの 2 つのセクションの間でコネクタがある場合を設定または返します。 2-d 積み上げ横棒、積み上げ積み上げ縦棒グラフ、補助円グラフ付き円グラフ、または円グラフにのみ適用されます。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール値</b>に記載されている条件に従って、次の表に記載されている値に設定します。DescriptionReturn ValueA 補助円グラフ付き円グラフ、またはバーの円グラフを 2 つのセクションの間でコネクタを持ちます。<b>場合は true。</b>積み上げ縦棒グラフや横棒グラフの系列を持つ線が<b>true の場合</b>それ以外の場合<b>False</b></value>
+        <summary>積み上げ縦棒グラフまたは横棒グラフに、区分線があるかどうかを示す値を取得または設定します。円グラフまたは補助縦棒グラフ付き円グラフが2つのセクションの間にコネクタ線がある場合は、この値を設定します。 2-d 積み上げ横棒グラフ、2次元積み上げ縦棒グラフ、補助円グラフ付き円グラフ、または補助縦棒付き円グラフにのみ適用されます。 値の取得と設定が可能です。</summary>
+        <value>リストされている条件に従って、次の表に示されている値に設定する<b>ブール</b>値。DescriptionReturn 値2つのセクションの間にコネクタ線がある円グラフまたは補助縦棒グラフ付き円グラフ。<b>True</b>系列線を含む積み上げ縦棒グラフまたは横棒<b></b>グラフ。それ以外の場合は<b>False</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -582,9 +540,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グラフが上下にバーを示す値を設定または返します。 線グラフにのみ適用されます。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール値</b>を<b>True</b>に設定、折れ線グラフは、バーを上下にそれ以外の場合は<b>false を指定</b>します。</value>
+        <summary>グラフにローソクがあるかどうかを示す値を取得または設定します。 折れ線グラフにのみ適用されます。 値の取得と設定が可能です。</summary>
+        <value>折れ線グラフに陽線と陰線がある場合は<b>True</b>に設定する<b>ブール値</b>。それ以外の場合は<b>False</b>。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -611,10 +568,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.HiLoLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>折れ線グラフまたは株価チャートのデータ系列の高低線を取得します。 線グラフにのみ適用されます。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.HiLoLines" />
-        </value>
+        <summary>折れ線グラフまたは株価チャートのデータ系列の高低線を取得します。 折れ線グラフにのみ適用されます。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.HiLoLines" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -641,10 +596,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ようなオブジェクトのコレクション内のオブジェクトのインデックス番号を返します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>類似するオブジェクトのコレクション内のオブジェクトのインデックス番号を返します。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -674,14 +627,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>バーと列を配置する方法を指定します。 – 100 と 100 の値を指定できます。 2-d 横棒グラフと 2-d 縦棒グラフにのみ適用されます。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>このプロパティを設定する場合 100、バーように配置され棒の間に 1 つを使用する必要があります。重なりが 0 (ゼロ) の場合は、空き領域がない (1 つのバーの上のバーの直後後から開始) のバーの間です。重なっている部分が 100 の場合は、互いの上にバーが配置されます。</para>
-          <para />
-        </remarks>
+        <summary>横棒と縦棒の配置方法を指定します。 -100 から100までの値を指定できます。 2-D 横棒グラフと 2-D 縦棒グラフにのみ適用されます。 値の取得と設定が可能です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>このプロパティが–100に設定されている場合、バーの位置は、バーの幅が1つになるように配置されます。 0 を指定すると、棒の間の空きがなくなります。 100 を指定すると、各棒が重なり合います。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -707,10 +656,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親オブジェクトを返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定したオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -737,10 +684,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.TickLabels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたグラフ種類グループについて、レーダー チャートの項目軸ラベルを取得します。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.TickLabels" />
-        </value>
+        <summary>指定されたグラフ種類グループについて、レーダー チャートの項目軸ラベルを取得します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.TickLabels" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -770,14 +715,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>主な円グラフのサイズに対する割合で、補助円グラフ付き円グラフまたは円グラフでは、いずれかのセカンダリのセクションのサイズを設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>5 から 200 までの値をすることができます。</para>
-          <para />
-        </remarks>
+        <summary>補助円グラフ付き円グラフまたは補助縦棒グラフ付き円グラフのセカンダリ セクションのサイズを、プライマリ セクションのサイズのパーセンテージとして返すか設定します。 値の取得と設定が可能です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>5 から 200 の範囲内で値を指定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SeriesCollection">
@@ -802,10 +743,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">省略可能な<b>オブジェクト</b>名または返されたするデータ系列の数。 インデックスを使用しない場合は、グラフ種類グループ内のすべての系列が返されます。</param>
-        <summary>グラフ種類グループ内から要求されたデータ系列を取得します。</summary>
-        <returns>
-          <b>オブジェクト</b>で、<see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" />形式では、グラフ種類グループからの要求されたすべてのデータ系列を表す</returns>
+        <param name="Index">Optional <b>Object</b>返されるデータ系列の名前またはインデックス番号を指定します。 Index を使用しない場合、グラフ種類グループのすべてのデータ系列が返されます。</param>
+        <summary>グラフグループ内の要求されたデータ系列を返します。</summary>
+        <returns>グラフ<b></b>グループからすべて<see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" />の要求されたデータ系列を表す、書式のオブジェクト。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -832,10 +772,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.SeriesLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>2-d 積み上げ横棒、2-d 積み上げ縦棒グラフ、補助円グラフ付き円グラフ、または円グラフのバーに区分線を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.SeriesLines" />
-        </value>
+        <summary>2-d 積み上げ横棒グラフ、2次元積み上げ縦棒グラフ、補助円グラフ付き円グラフ、または補助縦棒付き円グラフの区分線を返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.SeriesLines" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -865,9 +803,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、グラフ種類グループで負のバブルを表示するかを決定する値を設定します。 バブル チャートにのみ有効です。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール値</b>、それ以外の場合は<b>False</b>グラフ種類グループの負のバブルが表示される場合に<b>True</b>に設定します。</value>
+        <summary>グラフのグループに負の値のバブルを表示するかどうかを決定する値を設定します。 バブルチャートにのみ有効です。 値の取得と設定が可能です。</summary>
+        <value>グラフ<b></b>グループに負の値のバブルが表示されている場合は<b>True</b>に設定し、それ以外の場合は<b>False</b>を指定します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -897,8 +834,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlSizeRepresents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>バブル チャートでバブルの大きさが何を表すかを設定または返します。 値の取得および設定が可能です。</summary>
-        <value>次のいずれかの方法は、<see cref="T:Microsoft.Office.Interop.Word.XlSizeRepresents" />定数: <b>xlSizeIsArea</b>または<b>xlSizeIsWidth</b></value>
+        <summary>バブル チャートでバブルの大きさが何を表すかを設定または返します。 値の取得と設定が可能です。</summary>
+        <value>次<see cref="T:Microsoft.Office.Interop.Word.XlSizeRepresents" />の定数のいずれかを指定できます。 <b>Xlsizeisarea</b>または<b>xlsizeisarea</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -928,10 +865,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlChartSplitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>補助円グラフ付き円グラフまたは円グラフのバーのいずれかの 2 つのセクションに分割する方法を設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlChartSplitType" />
-        </value>
+        <summary>補助円グラフ付き円グラフまたは補助縦棒グラフ付き円グラフを 2 つの部分に分割する方法を返すか設定します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlChartSplitType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -961,10 +896,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>補助円グラフ付き円グラフや円グラフのバーは、いずれかの方法の 2 つのセクションに分割するしきい値となる値を設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>補助のグラフ (円または縦棒) が付いた円グラフを 2 つの部分に区切るしきい値を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1001,9 +934,7 @@
       </ReturnValue>
       <Docs>
         <summary>内部使用のため予約済みです。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1040,8 +971,7 @@
       </ReturnValue>
       <Docs>
         <summary>内部使用のため予約済みです。</summary>
-        <value>
-          <b>整数</b>です。</value>
+        <value>整数型 ( <b>Integer</b> ) を使用します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1068,10 +998,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.UpBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>折れ線グラフの陽線を取得します。 線グラフにのみ適用されます。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.UpBars" />
-        </value>
+        <summary>折れ線グラフの陽線を取得します。 折れ線グラフにのみ適用されます。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.UpBars" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1101,9 +1029,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word が割り当てられ、別の色またはパターンの各データ マーカーを示す値を設定または返します。 データ系列が 1 つしか含まれないグラフを対象とします。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール値</b>を<b>True</b>に設定場合は、Microsoft Word は、; の各データ マーカーにそれぞれ異なる色またはパターンを割り当てられます。それ以外の場合は<b>False</b></value>
+        <summary>各データマーカーに異なる色またはパターンが割り当てられているかどうかを示す値を設定または返します。 グラフに含まれるデータ系列は 1 つだけでなければなりません。 値の取得と設定が可能です。</summary>
+        <value>各<b></b>データマーカーに異なる色またはパターンが割り当てられている場合は True に設定し、それ以外の場合は<b>false</b>に設定します。それ以外の場合は<b>False</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

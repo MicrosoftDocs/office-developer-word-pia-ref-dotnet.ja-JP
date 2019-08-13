@@ -1,13 +1,5 @@
 <Type Name="CustomProperty" FullName="Microsoft.Office.Interop.Word.CustomProperty">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="569ffa9dbfa7be0cfa503c8689f008c956d3b49a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671441" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CustomProperty" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="97942a6fe67c43a447b99bf82b5780bd362dd6ab" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147142" /></Metadata><TypeSignature Language="C#" Value="public interface CustomProperty" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CustomProperty" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CustomProperty" />
   <TypeSignature Language="VB.NET" Value="Public Interface CustomProperty" />
@@ -27,10 +19,9 @@
   </Attributes>
   <Docs>
     <summary>スマート タグのカスタム プロパティの 1 つのインスタンスを表します。</summary>
-    <remarks>
-      <para>
-        <b>CustomProperty</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.CustomProperties" />コレクションです</para>。
-      <para>使用、<see cref="P:Microsoft.Office.Interop.Word.CustomProperties.Item(System.Object@)" />プロパティ、または<see cref="P:Microsoft.Office.Interop.Word.SmartTag.Properties" />(<paramref name="Index" />)、<paramref name="index" />プロパティの数は、- <b>CustomProperty</b>オブジェクトを取得する<b>ユーザー設定プロパティ</b>のコレクションの。使用して、<see cref="P:Microsoft.Office.Interop.Word.CustomProperty.Name" />と<see cref="P:Microsoft.Office.Interop.Word.CustomProperty.Value" />のスマート タグのカスタム プロパティに関連する情報を返すプロパティです。</para><para /></remarks>
+    <remarks><para><b>Customproperty</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.CustomProperties" />コレクションのメンバーです。</para>
+      <para><b>Customproperty</b>オブジェクトを取得<see cref="P:Microsoft.Office.Interop.Word.SmartTag.Properties" />する<paramref name="Index" />のにに<paramref name="index" />は、 <b>CustomProperties</b>コレクションの<see cref="P:Microsoft.Office.Interop.Word.CustomProperties.Item(System.Object@)" />プロパティ () (プロパティの番号) を使用します。 <see cref="P:Microsoft.Office.Interop.Word.CustomProperty.Name" />および<see cref="P:Microsoft.Office.Interop.Word.CustomProperty.Value" />プロパティを使用して、スマートタグのカスタムプロパティに関連する情報を取得します。 </para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,12 +75,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -113,7 +103,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,7 +189,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>カスタム プロパティの値を設定または返します。</summary>
+        <summary>カスタムプロパティの値を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

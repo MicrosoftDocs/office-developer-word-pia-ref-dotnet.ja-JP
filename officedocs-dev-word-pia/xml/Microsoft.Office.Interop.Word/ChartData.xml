@@ -1,13 +1,5 @@
 <Type Name="ChartData" FullName="Microsoft.Office.Interop.Word.ChartData">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e54b6ef3e865f4d45416239e0540b97861b4eefc" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672481" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartData" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="20de20835218a229a3e2ed120eb0d1a884f4bd73" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147235" /></Metadata><TypeSignature Language="C#" Value="public interface ChartData" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartData" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartData" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartData" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>グラフに関連付けられたリンク データまたは埋め込みデータへのアクセスを表します。</summary>
-    <remarks>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.Chart.ChartData" />を返すプロパティの<see cref="T:Microsoft.Office.Interop.Word.ChartData" />オブジェクトです。</para>
-      <para />
-    </remarks>
+    <remarks><para>オブジェクトを<see cref="P:Microsoft.Office.Interop.Word.Chart.ChartData" />取得するのにには、プロパティを使用します。 <see cref="T:Microsoft.Office.Interop.Word.ChartData" /></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -55,10 +45,10 @@
       <Parameters />
       <Docs>
         <summary>グラフに関連付けられているブックの最初のウィンドウをアクティブにします。</summary>
-        <remarks>
-          <para>グラフは、Excel のブックにリンクされて、このメソッドは実行されません複数または最初のマクロをブックに添付することがあります (を使用して、 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> 、マクロを実行するメソッド) です</para>。
-          <para><b>注</b>: このメソッドは、参照する前に呼び出す必要があります、<see cref="P:Microsoft.Office.Interop.Word.ChartData.Workbook" />プロパティ</para>。
-          <para /></remarks>
+        <remarks><para>グラフが Microsoft Excel ブックにリンクされている場合、このメソッドでは、ブックに添付されている Auto_Activate マクロや Auto_Deactivate マクロは<see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" />実行されません (これらのマクロを実行するメソッドを使用します)。</para>
+          <para>
+            <b>メモ</b>: プロパティを<see cref="P:Microsoft.Office.Interop.Word.ChartData.Workbook" />参照する前に、このメソッドを呼び出す必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActivateChartDataWindow">
@@ -82,11 +72,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定されたグラフの完全なソース データが含まれている Excel のデータ グリッドのウィンドウが開きます。</summary>
-        <remarks>
-          <para>[データ グリッド] ウィンドウが既に開いている場合このメソッド影響を与えません</para>。
-          <para>から<b>ActivateChartDataWindow</b>メソッドが異なる場合は、<see cref="M:Microsoft.Office.Interop.Word.ChartData.Activate" />メソッド以前の word、Excel ウィンドウでグラフを表示することで、Excel のリボンの使用不可、後者に使用可能なリボンをフル バージョンの Excel を開きますが、</para> 。
-          <para /></remarks>
+        <summary>指定されたグラフの完全なソースデータを含む Excel データグリッドウィンドウを開きます。</summary>
+        <remarks><para>データグリッドウィンドウが既に開いている場合、このメソッドは無効です。</para>
+          <para><b>ActivateChartDataWindow</b>メソッドは、前の<see cref="M:Microsoft.Office.Interop.Word.ChartData.Activate" />手順とは異なります。これは、excel のリボンを使用できない excel ウィンドウでグラフが開かれているのに対して、後者はリボンを使用できる状態で excel の完全なバージョンを開きます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BreakLink">
@@ -111,10 +100,8 @@
       <Parameters />
       <Docs>
         <summary>グラフのデータと Microsoft Excel ブックとの間のリンクを削除します。</summary>
-        <remarks>
-          <para>このメソッドを呼び出し、<see cref="P:Microsoft.Office.Interop.Word.ChartData.IsLinked" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Word.ChartData" /><b>false を指定</b>するオブジェクト。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドを呼び出す<see cref="P:Microsoft.Office.Interop.Word.ChartData.IsLinked" />と、 <see cref="T:Microsoft.Office.Interop.Word.ChartData" />オブジェクトのプロパティが<b>False</b>に設定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsLinked">
@@ -140,15 +127,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> グラフのデータは、外部の Microsoft Excel ブックにリンクされている場合です。 値の取得のみ可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.ChartData.BreakLink" />を Microsoft Excel のブックへのリンクを削除するこのプロパティを<b>False</b>に設定します。</para>
-          <para />
-        </remarks>
+        <summary><b>True の</b> グラフのデータは、外部の Microsoft Excel ブックにリンクされている場合です。 読み取り専用です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Word.ChartData.BreakLink" />メソッドを使用して Microsoft Excel ブックへのリンクを解除すると、このプロパティは<b>False</b>に設定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Workbook">
@@ -174,15 +156,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グラフに関連付けられているグラフのデータを含むブックを返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
-        <remarks>
-          <para>
-            <b>注</b>:<see cref="M:Microsoft.Office.Interop.Word.ChartData.Activate" />メソッドは、このプロパティを参照する前に呼び出す必要がありますそれ以外の場合、エラーが発生します。</para>
-          <para />
-        </remarks>
+        <summary>グラフに関連付けられたグラフデータを含むブックを返します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>
+            <b>注</b>: この<see cref="M:Microsoft.Office.Interop.Word.ChartData.Activate" />プロパティを参照する前に、メソッドを呼び出す必要があります。それ以外の場合は、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

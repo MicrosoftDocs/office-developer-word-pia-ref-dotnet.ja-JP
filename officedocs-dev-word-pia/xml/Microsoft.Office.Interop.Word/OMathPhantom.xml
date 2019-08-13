@@ -1,13 +1,5 @@
 <Type Name="OMathPhantom" FullName="Microsoft.Office.Interop.Word.OMathPhantom">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9c5a42b2b3c4bdb8eac148bdcdd0a5518226c14c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671716" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OMathPhantom" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e5db117509f7b1119782765878e493caa816f4ca" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144289" /></Metadata><TypeSignature Language="C#" Value="public interface OMathPhantom" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMathPhantom" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMathPhantom" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMathPhantom" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>ファントム オブジェクトを表します。このオブジェクトは、主に (1) ベースを表示せずにファントム ベースの間隔を追加する、または (2) 間隔を考慮するときにグリフの一部を除外する、という 2 つの使用目的を持ちます。</summary>
-    <remarks>
-      <para>使用の<see cref="T:Microsoft.Office.Interop.Word.OMathPhantom" />オブジェクトまたは間隔の考慮からグリフの一部の間隔を削除するのには、それを表示せずに数式の一部の間隔を表示します。</para>
-      <para />
-    </remarks>
+    <remarks><para><see cref="T:Microsoft.Office.Interop.Word.OMathPhantom" />オブジェクトを使用して、演算式の一部の間隔を表示せずに表示したり、スペースの考慮からグリフの一部の間隔を削除したりできます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,10 +46,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word._Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,12 +74,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>アドインが作成されたアプリケーションを示す 32 ビット<b>の整数</b>を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>オブジェクトが Microsoft Word で作成された場合、 <para>、<see cref="P:Microsoft.Office.Interop.Word.OMathPhantom.Creator" />プロパティは文字列"MSWD"を表す 16 進数、値である 4d535744 を返します。 この値は、定数で表すこともできます<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />。</para><para>このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <summary>アドインが作成されたアプリケーションを示す32ビット<b>整数</b>を返します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトが Microsoft Word で作成されている<see cref="P:Microsoft.Office.Interop.Word.OMathPhantom.Creator" />場合、このプロパティは、文字列 "MSWD" を表す、16進数値である4D535744 を返します。  この値は定数<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />で表すこともできます。 </para>
+          <para>このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="E">
@@ -117,10 +104,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.OMath</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.OMath" />オブジェクトを指定した数式オブジェクトの基本クラスを表します。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OMath" />
-        </value>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.OMath" />た数式オブジェクトの基本を表すオブジェクト型 (object) の値を取得します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OMath" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,10 +132,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した親を返します<see cref="T:Microsoft.Office.Interop.Word.OMathPhantom" />オブジェクトです。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.OMathPhantom" />オブジェクトの親オブジェクトを返します。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,10 +163,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定する <b>ブール型</b> ファントム オブジェクトの内容が表示されているかどうかを表す。読み取り/書き込み。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>取得または設定する <b>ブール型</b> ファントム オブジェクトの内容が表示されているかどうかを表す。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -213,15 +194,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>ブール値</b> を表す、ファントムのコンテンツが表示されているが、その高さは考慮されません、レイアウトの間隔で設定または返します。  読み取り/書き込み。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>このプロパティが<b>True の</b>場合、 <see cref="P:Microsoft.Office.Interop.Word.OMathPhantom.ZeroAsc" />、 <see cref="P:Microsoft.Office.Interop.Word.OMathPhantom.ZeroDesc" />、および<see cref="P:Microsoft.Office.Interop.Word.OMathPhantom.Show" />のプロパティは、すべてが<b>True</b>に設定します。</para>
-          <para />
-        </remarks>
+        <summary><b>ブール値</b> を表す、ファントムのコンテンツが表示されているが、その高さは考慮されません、レイアウトの間隔で設定または返します。  値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>このプロパティに<b>true</b> <see cref="P:Microsoft.Office.Interop.Word.OMathPhantom.ZeroAsc" /> <see cref="P:Microsoft.Office.Interop.Word.OMathPhantom.ZeroDesc" />が設定されている<see cref="P:Microsoft.Office.Interop.Word.OMathPhantom.Show" />場合、、、およびプロパティはすべて<b>true</b>に設定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Transp">
@@ -250,10 +226,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定する <b>ブール型</b> ファントム オブジェクトが透過的であるかどうかを表す。読み取り/書き込み。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>取得または設定する <b>ブール型</b> ファントム オブジェクトが透過的であるかどうかを表す。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,10 +257,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定する <b>ブール型</b> レイアウトの空き領域においてファントム コンテンツのアセントが無視されるかどうかを表す。読み取り/書き込み。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>取得または設定する <b>ブール型</b> レイアウトの空き領域においてファントム コンテンツのアセントが無視されるかどうかを表す。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,10 +288,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定する <b>ブール型</b> レイアウトの空き領域においてファントム コンテンツのディセントが無視されるかどうかを表す。読み取り/書き込み。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>取得または設定する <b>ブール型</b> レイアウトの空き領域においてファントム コンテンツのディセントが無視されるかどうかを表す。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -349,10 +319,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定する <b>ブール型</b> レイアウトの空き領域においてファントム オブジェクトの幅は無視されるかどうかを表す。読み取り/書き込み。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>取得または設定する <b>ブール型</b> レイアウトの空き領域においてファントム オブジェクトの幅は無視されるかどうかを表す。 読み取り/書き込み。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

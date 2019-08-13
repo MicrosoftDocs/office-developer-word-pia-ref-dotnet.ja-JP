@@ -1,13 +1,5 @@
 <Type Name="ContentControl" FullName="Microsoft.Office.Interop.Word.ContentControl">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="cc2bb690be9293f31f98e8e695e89ae1d1508d27" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671779" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ContentControl" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2847f454c15d707ff146dc7c527cbd9a80f88237" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147292" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ContentControl" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ContentControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface ContentControl" />
@@ -26,13 +18,56 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>個々 のコンテンツ コントロールです。 コンテンツ コントロールは、境界があり、ラベルが付いている場合もある文書内の領域で、特定の種類のコンテンツのコンテナーとして機能します。 個々 のコンテンツ コントロールには、日付、リスト、または書式設定されたテキストの段落などの内容が含まれている可能性があります。 <b>ContentControl</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.ContentControls" />コレクションです。</summary>
-    <remarks>
-      <para>使用、<see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" />のメソッド、<see cref="T:Microsoft.Office.Interop.Word.ContentControls" />コレクションにコンテンツ コントロールを作成します。使用して、<paramref name="Type" />を作成するコンテンツ コントロールの種類を指定するのには<b>Add</b>メソッドのパラメーターです。</para>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" />を別の種類のコンテンツ コントロールのコンテンツ コントロールを変更するプロパティです。 たとえば、する必要がある日付のコントロールからテキスト コントロールに変更します。ただし、できる場合がありますしないすべてのコンテンツ コントロールを別の種類に変更するのにはその種類を変更するいくつかができません。 さらに、によってコンテンツ コントロールの内容は、することができないタイプを変更します。たとえば、コンテンツ コントロールに変更したいですが、既存のコンテンツ コントロールに含まれるコンテンツの種類を許可していない場合の種類を変更しようとしていますは許可されていませんし、実行時エラーが生成されます。</para> 。使用の
-      <para>、<see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" />コントロールのより適切な既定の文字列のプレース ホルダー テキストを変更する方法です。使用して、<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" />コントロールのタイトル テキストを指定するプロパティです。 コントロール内にカーソルが配置されている、またはコントロール上にマウス ポインターを置くと、コントロールの上でこれが表示されます</para>。
-      <para>がコンテンツ コントロールの種類に応じてするできないことがあり、 <b>ContentControl</b>オブジェクトのメソッドのすべてのプロパティを使用します</para>。
-      <code /><para>Not all content control properties apply to all the different types of content controls.  The following table lists which properties apply to which types of content controls.</para><list type="table"><item><description><see cref="P:Microsoft.Office.Interop.Word.ContentControl.BuildingBlockCategory" /> property</description><description>BuildingBlock Gallery content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlBuildingBlockGallery" />)</description></item><item><description><see cref="P:Microsoft.Office.Interop.Word.ContentControl.BuildingBlockType" /> property</description><description>BuildingBlock Gallery content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlBuildingBlockGallery" />)</description></item><item><description><see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" /> property</description><description>Date content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDate" />)</description></item><item><description><see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" /> property</description><description>Date content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDate" />)</description></item><item><description><see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" /> property</description><description>Date content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDate" />)</description></item><item><description><see cref="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" /> property</description><description>Combo box and drop-down list content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlComboBox" /> and <see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDropdownList" />)</description></item><item><description><see cref="P:Microsoft.Office.Interop.Word.ContentControl.MultiLine" /> property</description><description>Plain text content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlText" />)</description></item><item><description><see cref="M:Microsoft.Office.Interop.Word.ContentControl.Ungroup" /> method</description><description>Group content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" />)</description></item></list><para /></remarks>
+    <summary>個別のコンテンツ コントロールです。 コンテンツ コントロールは、ラベルを付けることのできる、境界線で区切られた文書内の領域で、特定の種類のコンテンツのコンテナーとして機能します。 個々のコンテンツ コントロールには、日付、一覧、書式付き文字列の段落などのコンテンツを含めることができます。 <b>ContentControl</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.ContentControls" />コレクションのメンバーです。</summary>
+    <remarks><para>コンテンツコントロール<see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" />を作成する<see cref="T:Microsoft.Office.Interop.Word.ContentControls" />には、コレクションのメソッドを使用します。 作成する<paramref name="Type" />コンテンツコントロールの種類を指定するには、 <b>Add</b>メソッドのパラメーターを使用します。 </para>
+      <para>コンテンツコントロール<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" />を別の種類のコンテンツコントロールに変更するには、プロパティを使用します。  たとえば、日付コントロールからテキストコントロールに変更したいとします。 ただし、すべてのコンテンツコントロールを別の種類に変更することはできません。種類を変更できない場合があります。  また、コンテンツコントロールの内容によっては、種類を変更できない場合があります。 たとえば、変更後のコンテンツコントロールで、既存のコンテンツコントロール内のコンテンツの種類が許可されていない場合、型を変更しようとすると、実行時エラーが発生します。</para>
+      <para>この<see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" />メソッドを使用して、プレースホルダーのテキストを既定の文字列からコントロールに適したものに変更します。 <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" />プロパティを使用して、コントロールのタイトルテキストを指定します。  このタイトルは、コントロール内部にカーソルを移動するか、マウス ポインターをコントロール上に置くと、コントロールの上に表示されます。</para>
+      <para>指定するコンテンツ コントロールの種類によっては、<b>ContentControl</b> オブジェクトの一部のプロパティおよびメソッドを使用できない場合があります。</para>
+      <code />
+      <para>Not all content control properties apply to all the different types of content controls.  The following table lists which properties apply to which types of content controls.</para>
+      <list type="table">
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.ContentControl.BuildingBlockCategory" /> property</description>
+          <description>BuildingBlock Gallery content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlBuildingBlockGallery" />)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.ContentControl.BuildingBlockType" /> property</description>
+          <description>BuildingBlock Gallery content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlBuildingBlockGallery" />)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" /> property</description>
+          <description>Date content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDate" />)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" /> property</description>
+          <description>Date content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDate" />)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" /> property</description>
+          <description>Date content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDate" />)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" /> property</description>
+          <description>Combo box and drop-down list content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlComboBox" /> and <see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDropdownList" />)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.ContentControl.MultiLine" /> property</description>
+          <description>Plain text content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlText" />)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="M:Microsoft.Office.Interop.Word.ContentControl.Ungroup" /> method</description>
+          <description>Group content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" />)</description>
+        </item>
+      </list>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AllowInsertDeleteSection">
@@ -61,12 +96,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはユーザーを追加したり、ユーザー インターフェイスを使用して、指定した繰り返しセクションのコンテンツ コントロールからセクションを削除するかどうかを設定します。</summary>
+        <summary>ユーザーインターフェイスを使用して、ユーザーが指定した繰り返しセクションコンテンツコントロールのセクションを追加または削除できるかどうかを取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>繰り返しセクションのコンテンツ コントロールにのみ、このプロパティを使用することができます。コントロールは、エラー メッセージの効果と、その他のコンテンツを使用します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、繰り返しセクションコンテンツコントロールにのみ使用できます。 その他のコンテンツコントロールで使用すると、エラーメッセージが表示されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Appearance">
@@ -95,7 +128,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdContentControlAppearance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コンテンツ コントロールの外観を設定または返します。 読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Word.WdContentControlAppearance" /></summary>
+        <summary>コンテンツコントロールの外観を設定または返します。 読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Word.WdContentControlAppearance" /></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,10 +156,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word._Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,14 +187,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>文書パーツ コンテンツ コントロールのカテゴリを設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
-        <remarks>
-          <para>このプロパティは、文書パーツ コンテンツ コントロールにのみ適用され、コンテンツ コントロールのプロパティ] ダイアログ ボックスの [分類] に対応します。任意の文字列にこのプロパティを設定することができます。ただし、設定した場合の文字列に対応するカテゴリなし、カテゴリのオプションの値は「(すべての分類)」に設定します。</para>
-          <para />
-        </remarks>
+        <summary>文書パーツコンテンツコントロールのカテゴリを設定または返します。 値の取得と設定が可能です。</summary>
+        <value><b>String</b></value>
+        <remarks><para>このプロパティは、文書パーツコンテンツコントロールにのみ適用され、[コンテンツコントロールのプロパティ] ダイアログボックスの [分類] オプションに対応しています。 このプロパティは任意の文字列に設定できます。ただし、対応するカテゴリを持たない文字列に設定した場合、Category オプションの値は "(すべてのカテゴリ)" に設定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildingBlockType">
@@ -192,23 +219,30 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdBuildingBlockTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、文書パーツ コンテンツ コントロールの文書パーツの種類を設定します。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" />
-        </value>
-        <remarks>
-          <para>このプロパティは、文書パーツのコンテンツにのみ適用されますを制御し、コンテンツ コントロールのプロパティ] ダイアログ ボックスの [ギャラリー] に対応します。次の文書パーツの種類に対してのみこのプロパティを設定することができます:</para>
+        <summary>文書パーツコンテンツコントロールの文書パーツの種類を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" /></value>
+        <remarks><para>このプロパティは、文書パーツ コンテンツ コントロールにのみ適用され、[ コンテンツ コントロールのプロパティ] ダイアログ ボックスの [ ギャラリー] に対応しています。 このプロパティは、次の文書パーツの種類にのみ設定できます。</para>
           <list type="bullet">
             <item>
-              <para>カスタム カスタム 1</para>
+              <para>ユーザー設定 1 ～ 5</para>
             </item>
             <item>
               <para>定型句</para>
-            </item>の
-            <item><para>クイック パーツ</para></item><item><para>ユーザー設定の定型句</para></item>の
-            <item><para>カスタム クイック パーツ</para></item><item><para>方程式</para></item></list>
-          <para />
-        </remarks>
+            </item>
+            <item>
+              <para>クイック パーツ</para>
+            </item>
+            <item>
+              <para>ユーザー設定の定型句</para>
+            </item>
+            <item>
+              <para>ユーザー設定のクイック パーツ</para>
+            </item>
+            <item>
+              <para>数式</para>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Checked">
@@ -237,13 +271,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または、現在の状態 (オンまたはオフ)] チェック ボックスを設定します。</summary>
-        <value>
-          <b>true の</b>場合はチェック ボックスをオンにするとします。それ以外の場合です。<b>false を指定</b>します。</value>
-        <remarks>
-          <para>読み取り/書き込み。取得またはチェック ボックス コンテンツ コントロールの現在の状態を設定するには、このプロパティを使用します。コントロールがチェック ボックスでない場合は、アクセスしようと実行時エラーが発生したプロパティのエラー「このプロパティは、チェック ボックス コンテンツ コントロールの使用可能なだけ」です。</para>
-          <para />
-        </remarks>
+        <summary>チェックボックスの現在の状態 (オンまたはオフ) を取得または設定します。</summary>
+        <value>チェックボックスがオンになっている場合は<b>true</b> 。作業<b>false を返し</b>ます。</value>
+        <remarks><para>値の取得と設定が可能です。 このプロパティを使用して、チェックボックスコンテンツコントロールの現在の状態を取得または設定します。 コントロールがチェックボックスではない場合、このプロパティへのアクセスは、実行時エラーが発生すると、"このプロパティは、チェックボックスコンテンツコントロールでのみ使用可能になります" というエラーが表示されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Color">
@@ -272,7 +303,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コンテンツ コントロールの色を設定または返します。 読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Word.WdColor" />。</summary>
+        <summary>コンテンツコントロールの色を設定または返します。 読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Word.WdColor" />。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -299,11 +330,8 @@
       <Parameters />
       <Docs>
         <summary>作業中の文書のコンテンツ コントロールをクリップボードにコピーします。</summary>
-        <remarks>
-          <para>
-            <b>Copy</b>メソッドを使用すると、元のコンテンツ コントロールはすべてのテキストとプロパティの設定を含む、コントロールのコピーが作業中の文書に残っている、クリップボードに移動されます。作業中の文書の他のセクションにコンテンツ コントロールを貼り付けることができます。使用して、<see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" />のメソッド、<see cref="T:Microsoft.Office.Interop.Word.Selection" />オブジェクト、または<see cref="M:Microsoft.Office.Interop.Word.Range.Paste" />のメソッド、 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 、コピーしたコンテンツ コントロールを挿入するオブジェクトまたは Microsoft Office Word 内から貼り付けの関数を使用します。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Copy</b> メソッドを使用すると、元のコンテンツ コントロールはすべてのテキストとプロパティの設定を含む、コントロールのコピーが作業中の文書に残っている、クリップボードに移動されます。 作業中の文書の他のセクションにコンテンツ コントロールを貼り付けることができます。 コピーしたコンテンツコントロール<see cref="T:Microsoft.Office.Interop.Word.Selection" />を挿入する<see cref="M:Microsoft.Office.Interop.Word.Range.Paste" />のには<see cref="T:Microsoft.Office.Interop.Word.Range" /> 、オブジェクトまたはオブジェクトのメソッドを使用します。または、Microsoft Office Word 内で貼り付け関数を使用します。 <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -329,14 +357,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>アドインが作成されたアプリケーションを示す 32 ビット整数を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Word で作成されている場合、<b>作成者</b>を返します、16 進数の値である 4d535744 を文字列します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para><b>注</b>: この値は、定数で表すこともできます<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />です</para>。
-          <para /></remarks>
+        <summary>アドインが作成されたアプリケーションを示す 32 ビット整数を返します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトは、Microsoft Word で作成されている場合、 <b>作成者</b> を返します、16 進数の値である 4d535744 を文字列します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para>
+            <b>注</b>: この値は定数<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />で表すこともできます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -361,11 +387,8 @@
       <Parameters />
       <Docs>
         <summary>作業中の文書からコンテンツ コントロールを削除し、コンテンツ コントロールをクリップボードに移動します。</summary>
-        <remarks>
-          <para>
-            <b>Copy</b>メソッドを使用すると、元のコンテンツ コントロールはすべてのテキストとプロパティの設定を含む、コントロールのコピーが作業中の文書に残っている、クリップボードに移動されます。作業中の文書の他のセクションにコンテンツ コントロールを貼り付けることができます。使用して、<see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" />のメソッド、<see cref="T:Microsoft.Office.Interop.Word.Selection" />オブジェクト、または<see cref="M:Microsoft.Office.Interop.Word.Range.Paste" />のメソッド、 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 、コピーしたコンテンツ コントロールを挿入するオブジェクトまたは Microsoft Office Word 内から貼り付けの関数を使用します。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Copy</b> メソッドを使用すると、元のコンテンツ コントロールはすべてのテキストとプロパティの設定を含む、コントロールのコピーが作業中の文書に残っている、クリップボードに移動されます。 作業中の文書の他のセクションにコンテンツ コントロールを貼り付けることができます。 コピーしたコンテンツコントロール<see cref="T:Microsoft.Office.Interop.Word.Selection" />を挿入する<see cref="M:Microsoft.Office.Interop.Word.Range.Paste" />のには<see cref="T:Microsoft.Office.Interop.Word.Range" /> 、オブジェクトまたはオブジェクトのメソッドを使用します。または、Microsoft Office Word 内で貼り付け関数を使用します。 <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DateCalendarType">
@@ -394,10 +417,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCalendarType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、カレンダー コンテンツ コントロールのカレンダーの種類を設定します。  値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdCalendarType" />
-        </value>
+        <summary>カレンダーコンテンツコントロールのカレンダーの種類を設定または返します。  値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdCalendarType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -427,14 +448,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>日付の表示形式を設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
-        <remarks>
-          <para>既定の形式は、ユーザーのシステムで、通常は Microsoft Windows の [場所の設定に依存している Microsoft Office Word で指定された書式設定です。たとえば、日付を英語 (米国) の既定の形式は、「年/月/日」です。使用して、 <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" /> 、別の日付形式を指定するプロパティです。</para>
-          <para />
-        </remarks>
+        <summary>日付の表示形式を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><b>String</b></value>
+        <remarks><para>既定の形式は、ユーザーのシステム上の Microsoft Office Word で指定されている形式設定です。通常は、Microsoft Windows の場所の設定によって決まります。 たとえば、日付を英語 (米国) の既定の形式は、「年/月/日」です。 プロパティを<see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" />使用して、異なる日付形式を指定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDisplayLocale">
@@ -463,14 +480,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、日付コンテンツ コントロールに表示される日付の言語形式です。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />
-        </value>
-        <remarks>
-          <para>既定で、<see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" />最初にプロパティが Microsoft Office Word で指定されている編集言語として、これは、Microsoft Windows で指定した場所と異なる場合。</para>
-          <para />
-        </remarks>
+        <summary>日付コンテンツコントロールに表示される日付の言語形式を返します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /></value>
+        <remarks><para>既定では、 <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" />このプロパティは、Microsoft Office Word で指定されている編集言語に設定されます。これが microsoft Windows で指定した場所と異なる場合。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DateStorageFormat">
@@ -499,15 +512,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdContentControlDateStorageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>作業中の文書の XML データ ストアに日付コンテンツ コントロールをバインドするときの日付の格納と取得の書式を設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdContentControlDateStorageFormat" />
-        </value>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" />プロパティを使用すると、日付の形式、日付と時刻の形式、またはテキスト形式で日付を格納します。</para>
-          <para />
-        </remarks>
+        <summary>作業中の文書の XML データストアに日付コンテンツコントロールがバインドされる日付の保存および取得の形式を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdContentControlDateStorageFormat" /></value>
+        <remarks><para>この<see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" />プロパティを使用すると、日付を日付形式、日付/時刻形式、またはテキスト形式で保存できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultTextStyle">
@@ -536,10 +544,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>テキスト コンテンツ コントロール内のテキストの書式設定に使用する文字スタイルの名前を設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>テキストコンテンツコントロール内のテキストの書式設定に使用する文字スタイルの名前を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -593,10 +599,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ContentControlListEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>項目を返します」ドロップ ダウン リスト コンテンツ コントロールまたはコンボ ボックス コンテンツ コントロールです。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" />
-        </value>
+        <summary>ドロップダウンリストコンテンツコントロールまたはコンボボックスコンテンツコントロール内の項目を返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -623,15 +627,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コンテンツ コントロールの id を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
-        <remarks>
-          <para>
-            <b>ID</b>プロパティは、コード内でコンテンツ コントロールを識別するを使用することができますが、変更できない内部番号です。この番号は、各コンテンツ コントロールに対して一意とは変更されません。</para>
-          <para />
-        </remarks>
+        <summary>コンテンツコントロールの id を返します。 読み取り専用です。</summary>
+        <value><b>String</b></value>
+        <remarks><para><b>ID</b> プロパティは、コード内でコンテンツ コントロールを識別するを使用することができますが、変更できない内部番号です。この番号は、各コンテンツ コントロールに対して一意とは変更されません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Level">
@@ -657,7 +656,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdContentControlLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コンテンツ コントロールのレベルを返します: テキスト、段落、表のセル、またはテーブルの行は、コンテンツ コントロールが囲まれるかどうかまたはインラインである場合。 読み取り専用<see cref="T:Microsoft.Office.Interop.Word.WdContentControlLevel" />。</summary>
+        <summary>コンテンツコントロールがテキスト、段落、表のセル、またはテーブルの行を囲むかどうかを、コンテンツコントロールのレベルを返します。またはインラインの場合。 読み取り専用<see cref="T:Microsoft.Office.Interop.Word.WdContentControlLevel" />です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -688,14 +687,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定する <b>ブール値</b> をユーザーが作業中の文書からコンテンツ コントロールを削除できるかどうかを表します。読み取り/書き込み。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>このプロパティの既定値は、 <b>false を指定</b>します。 このプロパティは、コンテンツ コントロールは、コンテンツ コントロールのプロパティ] ダイアログの [削除] チェック ボックスをすることはできません</para>。
-          <para><b>注</b>: 場合は、このプロパティを設定することはできません、<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Temporary" />プロパティが<b>True</b>に設定します</para>。
-          <para /></remarks>
+        <summary>取得または設定する <b>ブール値</b> をユーザーが作業中の文書からコンテンツ コントロールを削除できるかどうかを表します。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>このプロパティの既定値は、 <b>false を指定</b> します。  このプロパティは、 コンテンツ コントロールのプロパティ] ダイアログ ボックスで、 コンテンツ コントロールの削除不可] チェック ボックスに対応します。</para>
+          <para>
+            <b>注</b>: プロパティが<b>True</b>に設定され<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Temporary" />ている場合、このプロパティを設定することはできません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LockContents">
@@ -724,14 +721,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定する <b>ブール値</b> をユーザーがコンテンツ コントロールの内容を編集できるかどうかを表します。読み取り/書き込み。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>このプロパティの既定値は、 <b>false を指定</b>します。 このプロパティに対応して内容がコンテンツ コントロールのプロパティ] ダイアログ ボックスで編集されたチェック ボックスをオンにすることはできません。</para>
-          <para />
-        </remarks>
+        <summary>取得または設定する <b>ブール値</b> をユーザーがコンテンツ コントロールの内容を編集できるかどうかを表します。 読み取り/書き込み。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>このプロパティの既定値は、 <b>false を指定</b> します。  このプロパティは、 コンテンツ コントロールのプロパティ] ダイアログ ボックスで コンテンツの編集不可] チェック ボックスに対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MultiLine">
@@ -760,14 +753,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返しますが、 <b>ブール値</b> のテキスト コンテンツ コントロールかどうかを表すには、複数行のテキストが使用できます。読み取り/書き込み。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>このプロパティは、テキスト コンテンツ コントロールおよびリッチ テキスト コンテンツ コントロールにのみ適用されます。</para>
-          <para />
-        </remarks>
+        <summary>返しますが、 <b>ブール値</b> のテキスト コンテンツ コントロールかどうかを表すには、複数行のテキストが使用できます。 読み取り/書き込み。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>このプロパティは、テキスト コンテンツ コントロールおよびリッチ テキスト コンテンツ コントロールにのみ適用されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -793,10 +782,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した親オブジェクトを表すことを返します。<see cref="T:Microsoft.Office.Interop.Word.ContentControl" />オブジェクトです。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定<see cref="T:Microsoft.Office.Interop.Word.ContentControl" />したオブジェクトの親オブジェクトを表すを返します。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -823,14 +810,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ContentControl</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>親コンテンツ コントロールのコンテンツであるコントロールを返しますは、リッチ テキスト コントロールまたはグループ コントロールの内部に入れ子にします。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControl" />
-        </value>
-        <remarks>
-          <para>コンテンツ コントロールがネストされていない場合、このプロパティはエラーを返します。</para>
-          <para />
-        </remarks>
+        <summary>リッチテキストコントロールまたはグループコントロールの内部にネストされたコンテンツコントロールの親コンテンツコントロールを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ContentControl" /></value>
+        <remarks><para>コンテンツ コントロールがネストされていない場合、このプロパティはエラーを返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PlaceholderText">
@@ -856,12 +839,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlock</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> 、コンテンツ コントロールのプレース ホルダー テキストを表すオブジェクト。 値の取得のみ可能です。</summary>
-        <value>返します。 <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />。</value>
-        <remarks>
-          <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> 、コンテンツ コントロールのプレース ホルダー テキストを設定します。</para>
-          <para />
-        </remarks>
+        <summary>コンテンツコントロール<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />のプレースホルダーテキストを表すオブジェクトを返します。 読み取り専用です。</summary>
+        <value>を<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />返します。</value>
+        <remarks><para>コンテンツコントロール<see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" />のプレースホルダーテキストを設定するには、メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Range">
@@ -887,12 +868,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />作業中の文書内のコンテンツ コントロールの内容を表しています。 値の取得のみ可能です。</summary>
-        <value>返します。 <see cref="T:Microsoft.Office.Interop.Word.Range" />。</value>
-        <remarks>
-          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Range" /> 、テキスト、テキスト、およびその他のテキストのプロパティの書式設定にアクセスするプロパティ。 詳細については、 <a href="HV10056876">Range オブジェクト</a>を参照してください。</para>
-          <para />
-        </remarks>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Range" />作業中の文書のコンテンツコントロールの内容を表すを返します。 読み取り専用です。</summary>
+        <value>を<see cref="T:Microsoft.Office.Interop.Word.Range" />返します。</value>
+        <remarks><para>テキスト、 <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Range" />テキストの書式設定、およびその他のテキストプロパティにアクセスするには、プロパティを使用します。  詳細については、「 <a href="HV10056876">Range オブジェクトを使用</a>する」を参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RepeatingSectionItems">
@@ -918,12 +897,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.RepeatingSectionItemColl</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>繰り返しセクション項目を指定した繰り返しセクションのコンテンツ コントロール内のコレクションを返します。 値の取得のみ可能です。</summary>
+        <summary>指定した繰り返しセクションコンテンツコントロールの繰り返しセクションアイテムのコレクションを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>繰り返しセクションのコンテンツ コントロールだけにこのプロパティを使用することができます。他のコンテンツ コントロールを使用すると、エラーがします。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、繰り返しセクションコンテンツコントロールにのみ使用できます。 その他のコンテンツコントロールで使用すると、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RepeatingSectionItemTitle">
@@ -952,12 +929,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した繰り返しセクションのコンテンツ コントロールに関連付けられているコンテキスト メニューで使用されている繰り返しセクションの項目の名前を設定または返します。 値の取得および設定が可能です。</summary>
+        <summary>指定した繰り返しセクションコンテンツコントロールに関連付けられているショートカットメニューで使用される繰り返しセクションアイテムの名前を設定または返します。 値の取得と設定が可能です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>繰り返しセクションのコンテンツ コントロールだけにこのプロパティを使用することができます。他のコンテンツ コントロールを使用すると、エラーがします。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、繰り返しセクションコンテンツコントロールにのみ使用できます。 その他のコンテンツコントロールで使用すると、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetCheckedSymbol">
@@ -983,7 +958,7 @@
         <Parameter Name="Font" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="CharacterNumber">指定した記号のユニコード文字番号を指定します。 この値は左から右に数えた記号のテーブル内のシンボルの位置に対応する数と 31 (フォントの先頭のコントロールのシンボルの数) の合計になります常にします。 たとえば、Symbol フォントの記号の表では、37 の位置にあるデルタ文字を指定するに次のように設定します。 <paramref name="CharacterNumber" /> 68 です。</param>
+        <param name="CharacterNumber">The Unicode character number for the specified symbol. This value will always be the sum of 31 (the number of control symbols at the beginning of the font) and the number that corresponds to the position of the symbol in the table of symbols (counting from left to right). たとえば、Symbol フォントの記号の表で37の位置にデルタ文字を指定するには、68 <paramref name="CharacterNumber" />に設定します。</param>
         <param name="Font">該当する記号を含むフォントの名前を指定します。</param>
         <summary>チェック ボックス コンテンツ コントロールのオン状態を表す記号を設定します。</summary>
         <remarks>To be added.</remarks>
@@ -1012,14 +987,12 @@
         <Parameter Name="Text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="BuildingBlock">指定する<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />のプレース ホルダー テキストの内容を格納しているオブジェクト。</param>
-        <param name="Range">指定する<see cref="T:Microsoft.Office.Interop.Word.Range" />のプレース ホルダー テキストの内容を格納しているオブジェクト。</param>
+        <param name="BuildingBlock">プレースホルダーテキスト<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />の内容を含むオブジェクトを指定します。</param>
+        <param name="Range">プレースホルダーテキスト<see cref="T:Microsoft.Office.Interop.Word.Range" />の内容を含むオブジェクトを指定します。</param>
         <param name="Text">プレースホルダー文字列の内容を指定します。</param>
         <summary>ユーザーが独自の文字列を入力するまでコンテンツ コントロールに表示されるプレースホルダー文字列を設定します。</summary>
-        <remarks>
-          <para>プレース ホルダー テキストを指定する場合は、パラメーターの 1 つだけが使用されます。 複数のパラメーターを使用すると、Microsoft Office Word は、最初のパラメーターで指定したテキストを使用します。すべてのパラメーターを省略すると、プレース ホルダー テキストは空白です。</para>
-          <para />
-        </remarks>
+        <remarks><para>プレースホルダー文字列を指定するときには、パラメーターのいずれか 1 つだけが使用されます。  複数のパラメーターを使用する場合は、最初のパラメーターで指定されたテキストが使用されます。 すべてのパラメーターを省略した場合は、プレースホルダー文字列は空白になります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetUncheckedSymbol">
@@ -1045,7 +1018,7 @@
         <Parameter Name="Font" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="CharacterNumber">指定した記号のユニコード文字番号を指定します。 この値は左から右に数えた記号のテーブル内のシンボルの位置に対応する数と 31 (フォントの先頭のコントロールのシンボルの数) の合計になります常にします。 たとえば、Symbol フォントの記号の表では、37 の位置にあるデルタ文字を指定するに次のように設定します。 <paramref name="CharacterNumber" /> 68 です。</param>
+        <param name="CharacterNumber">The Unicode character number for the specified symbol. This value will always be the sum of 31 (the number of control symbols at the beginning of the font) and the number that corresponds to the position of the symbol in the table of symbols (counting from left to right). たとえば、Symbol フォントの記号の表で37の位置にデルタ文字を指定するには、68 <paramref name="CharacterNumber" />に設定します。</param>
         <param name="Font">該当する記号を含むフォントの名前を指定します。</param>
         <summary>チェック ボックス コンテンツ コントロールのオフ状態を表す記号を設定します。</summary>
         <remarks>To be added.</remarks>
@@ -1074,11 +1047,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>ブール値</b> をコンテンツ コントロールのプレース ホルダー テキストが表示されるかどうかを示す値を返します。読み取り専用です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary><b>ブール値</b> をコンテンツ コントロールのプレース ホルダー テキストが表示されるかどうかを示す値を返します。 読み取り専用です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1108,15 +1078,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コンテンツ コントロールを識別する値を設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Tag" />プロパティとは異なる、<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" />のプロパティがユーザーの中にタグが表示されませんが、ドキュメントを編集します。 開発者ことができます代わりに、そのドキュメントを開いたときに、プログラムで操作の値を格納します。</para>
-          <para />
-        </remarks>
+        <summary>コンテンツコントロールを識別する値を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><b>String</b></value>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.ContentControl.Tag" />このプロパティは、ユーザーが<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" />文書を編集している間、タグが表示されないということのプロパティとは異なります。  開発者ことができます代わりに、そのドキュメントを開いたときに、プログラムで操作の値を格納します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Temporary">
@@ -1145,15 +1110,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>ブール値</b> を表すユーザー コントロールの内容を編集するときに、作業中の文書からコンテンツ コントロールを削除するかどうかを設定または返します。読み取り/書き込み。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>既定値は、 <b>false を指定</b>します。内容は、コンテンツ コントロールのプロパティ] ダイアログ ボックスでチェック ボックスを編集したときに、このプロパティが削除のコンテンツ コントロールに対応します</para>。
-          <para><b>注</b>: 場合は、このプロパティを設定することはできません、<see cref="P:Microsoft.Office.Interop.Word.ContentControl.LockContentControl" />プロパティが<b>True</b>に設定します</para>。
-          <para /></remarks>
+        <summary><b>ブール値</b> を表すユーザー コントロールの内容を編集するときに、作業中の文書からコンテンツ コントロールを削除するかどうかを設定または返します。読み取り/書き込み。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>既定値は <b>False</b> です。 このプロパティは、 コンテンツ コントロールのプロパティ] ダイアログ ボックスで、[ コンテンツの編集時にコンテンツ コントロールを削除する] チェック ボックスに対応します。</para>
+          <para>
+            <b>注</b>: プロパティが<b>True</b>に設定され<see cref="P:Microsoft.Office.Interop.Word.ContentControl.LockContentControl" />ている場合、このプロパティを設定することはできません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -1182,10 +1144,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コンテンツ コントロールのタイトルを設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
+        <summary>コンテンツコントロールのタイトルを設定または返します。 値の取得と設定が可能です。</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1215,14 +1175,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdContentControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、コンテンツ コントロールの種類を設定します。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdContentControlType" />
-        </value>
-        <remarks>
-          <para>使用することができます、 <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> 1 つのタイプから別にコンテンツ コントロールの種類を変更するプロパティです。 ただし、コントロールの種類を変更するのには依存元の型とコンテンツ コントロール内のコンテンツの変更時にします。 これらの型は、任意のコンテンツを許可するため、すべてのコンテンツ コントロールをリッチ テキストまたは文書パーツ ギャラリー コンテンツ コントロールに変更できます。 他の種類、内容は、変更するタイプの有効な型を変更するが許可されます。 それ以外の場合、変更は拒否され、実行時エラーが発生します。</para>
-          <para />
-        </remarks>
+        <summary>コンテンツコントロールの種類を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdContentControlType" /></value>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" />プロパティを使用すると、コンテンツコントロールの種類を別の種類に変更できます。  ただし、コントロールの種類を変更するのには依存元の型とコンテンツ コントロール内のコンテンツの変更時にします。  これらの型は、任意のコンテンツを許可するため、すべてのコンテンツ コントロールをリッチ テキストまたは文書パーツ ギャラリー コンテンツ コントロールに変更できます。  他の種類、内容は、変更するタイプの有効な型を変更するが許可されます。  それ以外の場合、変更は拒否され、実行時エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Ungroup">
@@ -1246,11 +1202,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>その子のコンテンツ コントロールが入れ子になっていないと自由に編集できるように、グループ コンテンツ コントロールを文書から削除します。</summary>
-        <remarks>
-          <para>型のではないコントロールで実行する場合、このメソッドが失敗した<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" />。</para>
-          <para />
-        </remarks>
+        <summary>文書からグループ コンテンツ コントロールを削除し、その子コンテンツ コントロールのネスト状態を解除して自由に編集できるようにします。</summary>
+        <remarks><para>型<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" />ではないコントロールに対して実行した場合、このメソッドは失敗します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="XMLMapping">
@@ -1276,10 +1230,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLMapping</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>文書のデータ ストア内の XML データにコンテンツ コントロールのマッピングを返します。 読み取り専用です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XMLMapping" />
-        </value>
+        <summary>文書のデータストア内の XML データへのコンテンツコントロールのマッピングを返します。 値の取得のみ可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XMLMapping" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

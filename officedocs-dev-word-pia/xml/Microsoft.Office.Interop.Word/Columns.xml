@@ -1,13 +1,5 @@
 <Type Name="Columns" FullName="Microsoft.Office.Interop.Word.Columns">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c007cc7ae474302abe84669e0809beb36b236122" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671157" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Columns : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3ae32a4fd4b94ca8c949579a32bc324ed5723ab8" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147258" /></Metadata><TypeSignature Language="C#" Value="public interface Columns : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Columns implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Columns" />
   <TypeSignature Language="VB.NET" Value="Public Interface Columns&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.Column" />テーブル内の列を表すオブジェクト。</summary>
-    <remarks>
-      <para>
-        <b>Columns</b>コレクションを取得する<b>列</b>のプロパティを使用します</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.Columns.Add(System.Object@)" />テーブルに列を追加します</para>。
-      <para><b>列</b>を使用する (<paramref name="index" />)、<b>インデックス</b>はインデックス番号で、1 つの<b>列</b>オブジェクトを取得します</para>。
-      <para /></remarks>
+    <summary>表の列<see cref="T:Microsoft.Office.Interop.Word.Column" />を表すオブジェクトのコレクションです。</summary>
+    <remarks><para><b>Columns</b> コレクションを取得するには、<b>Columns</b> プロパティを使用します。</para>
+      <para>表に<see cref="M:Microsoft.Office.Interop.Word.Columns.Add(System.Object@)" />列を追加するには、メソッドを使用します。</para>
+      <para>列<b></b>(<paramref name="index" />) を使用して、1つの<b>Column</b>オブジェクトを取得します。<b>引数 index</b>にはインデックス番号を指定します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -61,8 +51,8 @@
         <Parameter Name="BeforeColumn" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="BeforeColumn">A <see cref="T:Microsoft.Office.Interop.Word.Column" /> 、新しい列の右側にすぐに表示される列を表すオブジェクトをします。</param>
-        <summary>テーブルに列を追加します。</summary>
+        <param name="BeforeColumn">新しい<see cref="T:Microsoft.Office.Interop.Word.Column" />列のすぐ右側に表示される列を表すオブジェクト。</param>
+        <summary>表に列を追加します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Application" />を指定したオブジェクトの作成者を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Application" />たオブジェクトの作成元を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,10 +107,8 @@
       <Parameters />
       <Docs>
         <summary>セル内での文字列の配列は変更しないで、表の列幅を文字列の幅に合わせて変更します。</summary>
-        <remarks>
-          <para>テーブルが既に、左右の余白間の距離の幅と同じ場合は、このメソッドは影響を与えません。</para>
-          <para />
-        </remarks>
+        <remarks><para>表の幅が、左余白と右余白の間の距離になっている場合、このメソッドは無効です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Borders">
@@ -149,7 +137,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.Borders" />を指定したオブジェクトのすべての罫線を表すコレクション。</summary>
+        <summary>指定したオブジェクト<see cref="T:Microsoft.Office.Interop.Word.Borders" />のすべての罫線を表すコレクションを設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -207,10 +195,9 @@
       <Docs>
         <summary>指定したオブジェクトが作成されたアプリケーションを示す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -234,7 +221,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -259,7 +246,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>等しくなるように指定された列の幅を調整します。</summary>
+        <summary>指定した列の幅が等しくなるように調整します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,7 +273,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Column</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Column" />の最初の項目を表すオブジェクト、<see cref="T:Microsoft.Office.Interop.Word.Columns" />コレクションです。</summary>
+        <summary>コレクション内<see cref="T:Microsoft.Office.Interop.Word.Column" />の最初の項目を表すオブジェクトを返します。 <see cref="T:Microsoft.Office.Interop.Word.Columns" /></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -349,7 +336,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">個々 のオブジェクトの序数位置を示す値。</param>
+        <param name="Index">個々のオブジェクトの序数位置を示す値。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -378,7 +365,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Column</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Column" />の最後の項目を表すオブジェクト、<see cref="T:Microsoft.Office.Interop.Word.Columns" />コレクションです。</summary>
+        <summary>コレクション内<see cref="T:Microsoft.Office.Interop.Word.Column" />の最後の項目を表すオブジェクトを返します。 <see cref="T:Microsoft.Office.Interop.Word.Columns" /></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -408,10 +395,8 @@
       <Docs>
         <summary>指定した列のネスト レベルを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>最も外側のテーブルには、1 の入れ子レベルがあります。各連続的にネストした表のネスト レベルは、1 つ前のテーブルよりも大きくします。</para>
-          <para />
-        </remarks>
+        <remarks><para>一番外側の表のネスト レベルは 1 です。 連続的にネストしている表のそれぞれのネスト レベルは、外側の表のネスト レベルよりも 1 つ大きくなります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -437,7 +422,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親オブジェクトを返します。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -499,7 +484,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPreferredWidthType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された列の幅の測定単位を設定または返します。</summary>
+        <summary>指定した列の幅に使用する測定単位を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -526,10 +511,8 @@
       <Parameters />
       <Docs>
         <summary>指定されたオブジェクトを選択します。</summary>
-        <remarks>
-          <para>このメソッドを使用すた後を使用して、<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" />選択した項目を操作するプロパティ。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドを使用した後<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> 、プロパティを使用して選択された項目を操作します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetWidth">
@@ -556,14 +539,11 @@
         <Parameter Name="RulerStyle" Type="Microsoft.Office.Interop.Word.WdRulerStyle" />
       </Parameters>
       <Docs>
-        <param name="ColumnWidth">ポイント単位で指定した列の幅。</param>
-        <param name="RulerStyle">Microsoft Word は、セルの幅を調整する方法を制御する値。</param>
+        <param name="ColumnWidth">指定した列の幅をポイント単位で指定します。</param>
+        <param name="RulerStyle">Microsoft Word のセルの幅を調整する方法を制御する値です。</param>
         <summary>表の中の列の幅を設定します。</summary>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" />動作は、左揃えの表に適用されます。中央揃えおよび右のテーブルの<b>WdRulerStyle</b>の動作が予期しないあります。これらの場合、注意が必要、 <b>SetWidth</b>メソッドを使用してください。</para>
-          <para />
-        </remarks>
+        <remarks><para>この<see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" />動作は、左揃えテーブルに適用されます。 中央および右揃えのテーブルに対する<b>WdRulerStyle</b>の動作は予測できません。このような場合は、 <b>Setwidth</b>メソッドを慎重に使用する必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shading">
@@ -589,7 +569,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Shading" /> 、指定したオブジェクトの網かけ書式を参照するオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Shading" />たオブジェクトの網かけ書式を参照するオブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -620,7 +600,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定したオブジェクトの幅をポイント単位で設定します。</summary>
+        <summary>指定したオブジェクトの幅をポイント単位で取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="CustomProperties" FullName="Microsoft.Office.Interop.Word.CustomProperties">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8f6473f0e4c3581ad32f4763037b5c6429e43eb2" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671479" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CustomProperties : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="22226bea0164d096e40f7c20b44e97dd1e5c0a19" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147152" /></Metadata><TypeSignature Language="C#" Value="public interface CustomProperties : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CustomProperties implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CustomProperties" />
   <TypeSignature Language="VB.NET" Value="Public Interface CustomProperties&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.CustomProperty" />にスマート タグに関連するプロパティを表すオブジェクト。</summary>
-    <remarks>
-      <para>
-        <b>ユーザー設定プロパティ</b>のコレクションには、文書内のすべてのスマート タグのカスタム プロパティが含まれています</para>。使用の
-      <para>、<see cref="P:Microsoft.Office.Interop.Word.SmartTag.Properties" />を 1 つの<b>ユーザー</b>オブジェクトを返すプロパティです。使用して、<see cref="M:Microsoft.Office.Interop.Word.CustomProperties.Add(System.String,System.String)" />の<b>ユーザー設定プロパティ</b>のメソッドでカスタム プロパティを作成するオブジェクトです</para>。
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.SmartTag.Properties" />(<paramref name="index" />) に、スマート タグの 1 つのプロパティにプロパティの数を返します</para>。
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.CustomProperties.Count" />をスマート タグのカスタム プロパティの数を返すプロパティです</para>。
-      <para /></remarks>
+    <summary>スマートタグに<see cref="T:Microsoft.Office.Interop.Word.CustomProperty" />関連するプロパティを表すオブジェクトのコレクションです。</summary>
+    <remarks><para><b>CustomProperties</b> コレクションには、文書内のすべてのスマート タグのユーザー設定プロパティが含まれます。</para>
+      <para>1つ<see cref="P:Microsoft.Office.Interop.Word.SmartTag.Properties" />の<b>CustomProperties</b>オブジェクトを取得するのにには、プロパティを使用します。 カスタムプロパティ<see cref="M:Microsoft.Office.Interop.Word.CustomProperties.Add(System.String,System.String)" />を作成するには、 <b>CustomProperties</b>オブジェクトのメソッドを使用します。</para>
+      <para>( <see cref="P:Microsoft.Office.Interop.Word.SmartTag.Properties" /> <paramref name="index" />) を使用して、スマートタグの1つのプロパティを返します。引数 index には、プロパティの番号を指定します。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.CustomProperties.Count" />プロパティを使用して、スマートタグのカスタムプロパティの数を取得します。 </para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -64,11 +54,9 @@
         <Parameter Name="Value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>文字列</b> が必要です。 ユーザー設定のスマート タグ プロパティの名前を指定します。</param>
-        <param name="Value">
-          <b>文字列</b> が必要です。 カスタム スマート タグ プロパティの値です。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.CustomProperty" />のスマート タグに追加されたカスタム プロパティを表すオブジェクト。</summary>
+        <param name="Name"><b>文字列</b> が必要です。 ユーザー設定のスマート タグ プロパティの名前を指定します。</param>
+        <param name="Value"><b>文字列</b> が必要です。 ユーザー設定のスマートタグプロパティの値を指定します。</param>
+        <summary>スマートタグ<see cref="T:Microsoft.Office.Interop.Word.CustomProperty" />に追加されたカスタムプロパティを表すオブジェクト型 (object) の値を取得します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -96,7 +84,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,12 +140,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -218,7 +205,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">位置を表す序数または各オブジェクトの名前を表す文字列を示す<b>オブジェクト</b>。</param>
+        <param name="Index">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

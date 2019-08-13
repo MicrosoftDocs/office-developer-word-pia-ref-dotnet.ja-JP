@@ -1,13 +1,5 @@
 <Type Name="Editor" FullName="Microsoft.Office.Interop.Word.Editor">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c6046e570f2096e2ced3959088626d9cad02b5df" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671539" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Editor" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4c3c24b5cd7783a2941b968d06d78d74af20a9dd" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144555" /></Metadata><TypeSignature Language="C#" Value="public interface Editor" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Editor" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Editor" />
   <TypeSignature Language="VB.NET" Value="Public Interface Editor" />
@@ -27,11 +19,10 @@
   </Attributes>
   <Docs>
     <summary>文書の各部分を編集するための特定の権限が割り当てられた単一のユーザーを表します。</summary>
-    <remarks>
-      <para>ドキュメント ワークスペース サイトに対して定義されている個々 の投稿者およびユーザー グループをユーザーに対してアクセス許可を与えることができますがあります</para>。
-      <para>の範囲や選択範囲に割り当てるアクセス許可に適用される予定、ドキュメントが保護された後にのみです。使用して、<see cref="T:Microsoft.Office.Interop.Word.Editors" />と、ドキュメントのセクションに特定のアクセス許可を割り当てるには<b>エディター</b>オブジェクトのコレクションです。使用して、 <see cref="M:Microsoft.Office.Interop.Word._Document.Protect(Microsoft.Office.Interop.Word.WdProtectionType,System.Object@,System.Object@,System.Object@,System.Object@)" /> 、ドキュメントを保護する方法です</para>。
-      <para>使用、<see cref="M:Microsoft.Office.Interop.Word.Editors.Add(System.Object@)" />のメソッド、<see cref="T:Microsoft.Office.Interop.Word.Editors" />コレクションに指定したユーザーまたは指定範囲または文書内の選択範囲を変更するのにはグループのアクセス許可を付与します</para>。
-      <para /></remarks>
+    <remarks><para>特定の権限を持つユーザーとしては、ドキュメント ワークスペース サイトに対して定義された個々の投稿者およびユーザー グループなどが挙げられます。</para>
+      <para>範囲や選択範囲に割り当てるアクセス許可は、ドキュメントが保護された後にのみ有効に移動します。 <see cref="T:Microsoft.Office.Interop.Word.Editors" />コレクションと<b>Editor</b>オブジェクトを使用して、ドキュメントのセクションに特定のアクセス許可を割り当てます。 その後、 <see cref="M:Microsoft.Office.Interop.Word._Document.Protect(Microsoft.Office.Interop.Word.WdProtectionType,System.Object@,System.Object@,System.Object@,System.Object@)" />メソッドを使用してドキュメントを保護します。</para>
+      <para><see cref="T:Microsoft.Office.Interop.Word.Editors" />コレクションの<see cref="M:Microsoft.Office.Interop.Word.Editors.Add(System.Object@)" />メソッドを使用して、指定されたユーザーまたはグループに、文書内の指定範囲または選択範囲を変更する権限を付与します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,12 +76,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -114,7 +104,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,11 +158,8 @@
       <Docs>
         <summary>現在の文書を Web ページとして保存するときに指定したオブジェクトを識別するラベルを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.Editor" />オブジェクトのラベルを使用するには他の Web ページまたはハイパーリンクの参照として現在のドキュメント。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="T:Microsoft.Office.Interop.Word.Editor" />オブジェクトを除き、ラベルを他の Web ページまたは現在の文書内のハイパーリンクの参照として使用できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -226,13 +213,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />のユーザーがアクセス許可を変更するのには次の範囲を表すオブジェクト。</summary>
+        <summary>ユーザーが<see cref="T:Microsoft.Office.Interop.Word.Range" />変更権限を持っている次の範囲を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>範囲</b>の<b>GoToEditableRange</b>メソッドを使用することも、または<see cref="T:Microsoft.Office.Interop.Word.Selection" />を変更する権限を持っている次の範囲を取得するオブジェクト。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Range</b>または<see cref="T:Microsoft.Office.Interop.Word.Selection" />オブジェクトの<b>GoToEditableRange</b>メソッドを使用して、ユーザーが変更権限を持っている次の範囲を取得することもできます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -286,12 +270,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />を指定したオブジェクトに含まれる文書の部分を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />たオブジェクトに含まれる文書の一部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>範囲をドキュメントから取得するか、図形のコレクションから図形範囲を取得する方法についてを参照してください、<see cref="P:Microsoft.Office.Interop.Word.Editor.Range" />メソッドです。</para>
-          <para />
-        </remarks>
+        <remarks><para>文書から指定範囲を取得する<see cref="P:Microsoft.Office.Interop.Word.Editor.Range" />方法、または図形のコレクションから図形範囲を取得する方法については、メソッドを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectAll">
@@ -315,11 +297,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>本文、キャンバス、または文書のヘッダーおよびフッター内のすべての図形を選択します。</summary>
-        <remarks>
-          <para>このメソッドを選択していない<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />オブジェクトです。</para>
-          <para />
-        </remarks>
+        <summary>メインストーリー、キャンバス、または文書のヘッダーとフッターに含まれるすべての図形を選択します。</summary>
+        <remarks><para>このメソッドは、 <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />オブジェクトを選択しません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

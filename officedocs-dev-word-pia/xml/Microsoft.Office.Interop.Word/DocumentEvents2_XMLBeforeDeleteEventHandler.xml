@@ -1,13 +1,5 @@
 <Type Name="DocumentEvents2_XMLBeforeDeleteEventHandler" FullName="Microsoft.Office.Interop.Word.DocumentEvents2_XMLBeforeDeleteEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="bdccc03eae449e6d6d0cebfd1fb535ccc2027181" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672095" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void DocumentEvents2_XMLBeforeDeleteEventHandler(Range DeletedRange, XMLNode OldXMLNode, bool InUndoRedo);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dd959bd70dac23bc982627c03dc51ca9e3940e13" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146940" /></Metadata><TypeSignature Language="C#" Value="public delegate void DocumentEvents2_XMLBeforeDeleteEventHandler(Range DeletedRange, XMLNode OldXMLNode, bool InUndoRedo);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DocumentEvents2_XMLBeforeDeleteEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DocumentEvents2_XMLBeforeDeleteEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DocumentEvents2_XMLBeforeDeleteEventHandler(DeletedRange As Range, OldXMLNode As XMLNode, InUndoRedo As Boolean)" />
@@ -36,17 +28,12 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="DeletedRange">
-      <see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。 削除する XML 要素の内容。 要素が削除され、テキストが関連付けられていないだけの場合、<paramref name="DeletedRange" />パラメーターが存在しないとは、したがって、 <b>Nothing</b>に設定します。</param>
-    <param name="OldXMLNode">
-      <see cref="T:Microsoft.Office.Interop.Word.XMLNode" />オブジェクトです。 削除するノードを指定します。</param>
-    <param name="InUndoRedo">
-      <b>ブール値</b> です。 <b>True</b> では、Microsoft Word で <b>元に戻す</b>または <b>やり直し</b>機能を使用して、アクションが実行されたことを示します。</param>
-    <summary>
-      <b>デリゲート</b>型のイベント ハンドラーを追加するために使用します<see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLBeforeDelete" />イベントです。 <b>XMLBeforeDelete</b>イベントは、ユーザーが文書から XML 要素を削除するときに発生します。</summary>
-    <remarks>
-      <para>場合、<paramref name="InUndoRedo" />パラメーターが<b>true の場合</b>ドキュメント内の XML を変更することはありません、 <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLAfterInsert" /><b>XMLBeforeDelete</b>イベントを実行しているとします。</para>
-      <para>場合、<paramref name="InUndoRedo" />パラメーターが<b>False</b>を挿入し、ドキュメント内の XML を削除することができます、ように、 <b>XMLAfterInsert</b>イベントと<b>XMLBeforeDelete</b>イベントがください、互いをキャンセルするのには無限ループの原因と注意が必要ですが。グローバルを使用して、無限ループを防ぐことができます<b>ブール型</b>の変数と、エラー ハンドラーの冒頭でチェックします</para>。
-      <para /></remarks>
+    <param name="DeletedRange"><see cref="T:Microsoft.Office.Interop.Word.Range" />対象. 削除する XML 要素の内容。 要素のみが削除され、テキストが関連付けられ<paramref name="DeletedRange" />ていない場合、パラメーターは存在しないので、 <b>Nothing</b>に設定されます。</param>
+    <param name="OldXMLNode"><see cref="T:Microsoft.Office.Interop.Word.XMLNode" />対象. 削除するノードを指定します。</param>
+    <param name="InUndoRedo"><b>ブール値</b> です。 <b>True</b> では、Microsoft Word で <b>元に戻す</b>または <b>やり直し</b>機能を使用して、アクションが実行されたことを示します。</param>
+    <summary>イベントのイベントハンドラーを追加するために使用するデリゲートの種類。 <b></b> <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLBeforeDelete" /> <b>Xmlbeforedelete</b>イベントは、ユーザーが文書から XML 要素を削除したときに発生します。</summary>
+    <remarks><para>パラメーターに<b>True</b> <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLAfterInsert" />が設定されている場合は、および<b>xmlbeforedelete</b>イベントが実行されている間、文書内の XML を変更しないでください。 <paramref name="InUndoRedo" /> </para>
+      <para><paramref name="InUndoRedo" />パラメーターが<b>False</b>の場合は、ドキュメント内の XML を挿入および削除できますが、 <b>XMLAfterInsert</b>および<b>xmlbeforedelete</b>イベントは、互いにキャンセルされないため、無限ループが発生していることに注意してください。 グローバルな<b>ブール型 (Boolean)</b>の変数を使用して無限ループを防止し、エラー処理ルーチンの開始時にそれを確認できます。</para>
+      <para> </para></remarks>
   </Docs>
 </Type>

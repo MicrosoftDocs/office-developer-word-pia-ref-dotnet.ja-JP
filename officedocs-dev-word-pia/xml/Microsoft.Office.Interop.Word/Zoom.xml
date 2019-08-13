@@ -1,13 +1,5 @@
 <Type Name="Zoom" FullName="Microsoft.Office.Interop.Word.Zoom">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2f2dc9d4d63de913f860ff43cbd70f73c583211b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671406" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Zoom" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b34a8e7ae4961d46b3b63e6a6227446fc79b0348" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145262" /></Metadata><TypeSignature Language="C#" Value="public interface Zoom" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Zoom" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Zoom" />
   <TypeSignature Language="VB.NET" Value="Public Interface Zoom" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>ウィンドウまたはウィンドウ枠の倍率オプション (たとえば、ズームの割合) が含まれています。</summary>
-    <remarks>
-      <para>
-        <b>Zoom</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.Zooms" />コレクションです</para>。
-      <para>使用、<see cref="P:Microsoft.Office.Interop.Word.View.Zoom" />のプロパティの<see cref="T:Microsoft.Office.Interop.Word.View" />オブジェクトを返す 1 つの<b>Zoom</b>オブジェクトです</para>。
-      <para>の使用が<b>拡大します。</b>(<paramref name="index" />)、どこで<paramref name="index" />を返す 1 つのビューの種類を識別するオブジェクトの<b>拡大/縮小</b>します。インデックスで指定されたビューの種類には、次のいずれかを指定できます<see cref="T:Microsoft.Office.Interop.Word.WdViewType" />定数: <b>wdMasterView</b>、 <b>wdNormalView</b>、 <b>wdOutlineView</b>、 <b>wdPrintPreview</b>、 <b>wdPrintView</b>、または<b>wdWebView</b>です</para>。
-      <para><b>追加</b>のメソッドは、 <b>Zooms</b>コレクションには使用できません。<b>Zooms</b>コレクションには、1 つが含まれています、さまざまなタイプの表示 (アウトライン、標準、ページ レイアウト、およびなど) の各オブジェクトを<b>拡大</b>します</para>。
-      <para /></remarks>
+    <remarks><para><b>Zoom</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Zooms" />コレクションのメンバーです。</para>
+      <para>1つ<see cref="P:Microsoft.Office.Interop.Word.View.Zoom" />の Zoom オブジェクト<see cref="T:Microsoft.Office.Interop.Word.View" />を取得するのにには、オブジェクトのプロパティを使用します。 <b></b></para>
+      <para>1 <b></b>つの<paramref name="index" />Zoom オブジェクトを<paramref name="index" />取得するのには、ビューの種類を識別する<b>Zoom</b> () を使用します。 Index で指定されるビューの種類には、次<see cref="T:Microsoft.Office.Interop.Word.WdViewType" />の定数のいずれかを指定できます: <b>wdmasterview</b>、 <b>wdmasterview</b>、 <b>wdOutlineView</b>、 <b>WdPrintPreview</b>、 <b>wdmasterview</b>、または<b>wdwebview</b>。</para>
+      <para><b>Zooms</b> コレクションの <b>Add</b> メソッドができません。 Zoom <b></b>コレクションには、さまざまなビューの種類 (アウトライン、標準、ページレイアウトなど) ごとに1つの<b>Zoom</b>オブジェクトが含まれます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,12 +77,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageColumns">
@@ -121,7 +110,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、画面に表示するに並べて同時に印刷レイアウト表示または印刷プレビューでページ数を設定します。</summary>
+        <summary>印刷レイアウト表示または印刷プレビューで、同時に画面上に並べて表示するページ数を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,27 +141,25 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPageFit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ページ全体が表示されているか、ページの幅全体が表示されるようにウィンドウの表示倍率を設定または返します。</summary>
+        <summary>ページ全体が表示されるように、またはページの幅全体が表示されるように、ウィンドウの表示倍率を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdPageFit" /><b>Wdpagefit</b>定数のいずれかをすることができます。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdPageFit" />
-            <b>WdPageFit</b>定数のいずれか: </para>
-          <para>
-            <b>wdPageFitBestFit </b>
+            <b>wdPageFitBestFit</b>
           </para>
           <para>
-            <b>wdPageFitFullPage </b>
+            <b>wdPageFitFullPage</b>
           </para>
           <para>
-            <b>wdPageFitNone </b>
+            <b>wdPageFitNone</b>
           </para>
           <para>
             <b>wdPageFitTextFit</b>
           </para>
-          <para>定数<b>wdPageFitFullPage</b>を持たない効果ではない場合ビューを印刷します</para>。
-          <para><b>PageFit</b>プロパティは、 <b>wdPageFitBestFit</b>ズームの倍率に設定されている場合は、ドキュメント ウィンドウのサイズが変更されるたびに自動的に再計算されます。<b>WdPageFitNone</b>をこのプロパティの設定により、ズームの倍率はこれが発生するたびに再計算されません</para>。
-          <para /></remarks>
+          <para>印刷レイアウト表示以外の表示モードで文書を表示している場合は、定数 <b>wdPageFitFullPage</b> を設定してもページ全体を表示することはできません。</para>
+          <para><b>PageFit</b> プロパティに定数 <b>wdPageFitBestFit</b> を設定した場合は、文書ウィンドウのサイズを変更するたびに、表示倍率が自動的に再計算されます。 このプロパティに定数 <b>wdPageFitNone</b> を設定した場合は、文書ウィンドウのサイズを変更しても、表示倍率は再計算されません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageRows">
@@ -201,7 +188,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または印刷レイアウト表示または印刷プレビューで同時に上下に並べて表示されている 1 つを画面に表示されることにページ数を設定します。</summary>
+        <summary>印刷レイアウト表示または印刷プレビューで、もう1つの画面の上に表示されるページの数を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -260,7 +247,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>パーセント値として、ウィンドウの表示倍率を設定または返します。</summary>
+        <summary>ウィンドウの倍率をパーセンテージで設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

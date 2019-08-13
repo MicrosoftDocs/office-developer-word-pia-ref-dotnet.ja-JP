@@ -1,13 +1,5 @@
 <Type Name="Trendlines" FullName="Microsoft.Office.Interop.Word.Trendlines">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4677ea796f02bb8de0655ac078e65a42f7c9be02" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670944" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Trendlines : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d5d8e0ba867d614dca0f443355bc975b7ca84d93" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143744" /></Metadata><TypeSignature Language="C#" Value="public interface Trendlines : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Trendlines implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Trendlines" />
   <TypeSignature Language="VB.NET" Value="Public Interface Trendlines&#xA;Implements IEnumerable" />
@@ -30,11 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>すべてのコレクション、 <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> 、指定した一連のオブジェクトです。</summary>
-    <remarks>
-      <para>各<see cref="T:Microsoft.Office.Interop.Word.Trendline" />オブジェクトは、グラフの近似曲線を表します。傾向や方向、系列のデータの近似曲線を示しています。</para>
-      <para />
-    </remarks>
+    <summary>指定されたデータ<see cref="T:Microsoft.Office.Interop.Word.Trendline" />系列にあるすべてのオブジェクトのコレクションです。</summary>
+    <remarks><para>各<see cref="T:Microsoft.Office.Interop.Word.Trendline" />オブジェクトは、グラフの近似曲線を表します。 近似曲線は、データ系列のデータの傾向や方向を示します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -64,7 +54,7 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>内部使用のため予約済みです。</summary>
-        <returns>返します。 <see cref="T:Microsoft.Office.Interop.Word.Trendline" />。</returns>
+        <returns>を<see cref="T:Microsoft.Office.Interop.Word.Trendline" />返します。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,19 +88,17 @@
         <Parameter Name="Name" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">省略可能な<see cref="T:Microsoft.Office.Interop.Word.XlTrendlineType" />。 近似曲線の種類を指定します。</param>
-        <param name="Order">省略可能な<b>オブジェクト</b>です。 <see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlPolynomial" />。 近似曲線の次数。 6、包括的に 2 の整数でなければなりません。</param>
-        <param name="Period">省略可能な<b>オブジェクト</b>です。 <see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlMovingAvg" />。 近似曲線の期間です。 1 より大きいとする近似曲線を追加するデータ系列のデータ ポイントの数より小さい整数値をする必要があります。</param>
+        <param name="Type">省略<see cref="T:Microsoft.Office.Interop.Word.XlTrendlineType" />可能です。 近似曲線の種類を指定します。</param>
+        <param name="Order">省略可能な<b>オブジェクト</b>です。 Type がで<see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlPolynomial" />ある場合は必須。 近似曲線の次数を指定します。 使用できる値の範囲は、2 ～ 6 の整数です。</param>
+        <param name="Period">省略可能な<b>オブジェクト</b>です。 Type がで<see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlMovingAvg" />ある場合は必須。 移動平均の計算に使用する区間数を指定します。 1 より大きく、移動平均を追加するデータ系列のデータ要素数未満の整数を指定します。</param>
         <param name="Forward">省略可能な<b>オブジェクト</b>です。 近似曲線を前方へ拡張するときの区間数 (散布図の場合は単位数) を指定します。</param>
         <param name="Backward">省略可能な<b>オブジェクト</b>です。 近似曲線を後方へ拡張するときの区間数 (散布図の場合は単位数) を指定します。</param>
-        <param name="Intercept">省略可能な<b>オブジェクト</b>です。 近似曲線の切片です。 この引数を省略すると、切片は回帰計算によって自動的に設定します。</param>
-        <param name="DisplayEquation">省略可能な<b>オブジェクト</b>です。 <b>True</b> (R 2 乗値と同じデータ ラベル) でグラフに近似曲線の方程式を表示します。 既定値は <b>False</b> です。</param>
-        <param name="DisplayRSquared">省略可能な<b>オブジェクト</b>です。 True (式と同じデータ ラベル) でグラフに近似曲線の R 2 乗値を表示します。 既定値は <b>False</b> です。</param>
-        <param name="Name">省略可能な<b>オブジェクト</b>です。 テキストとして近似曲線の名前です。 この引数を省略すると、Microsoft Excel には、名前が生成されます。</param>
-        <summary>新しい近似曲線を作成します。 返します、<see cref="T:Microsoft.Office.Interop.Word.Trendline" />オブジェクトです。</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.Trendline" />
-        </returns>
+        <param name="Intercept">省略可能な<b>オブジェクト</b>です。 近似曲線の切片を指定します。 この引数を省略すると、切片は回帰計算により自動的に設定されます。</param>
+        <param name="DisplayEquation">省略可能な<b>オブジェクト</b>です。 <b>True</b> を指定すると、近似曲線の式をグラフに表示します (R-2 乗値と同じデータ ラベル内に表示します)。 既定値は <b>False</b> です。</param>
+        <param name="DisplayRSquared">省略可能な<b>オブジェクト</b>です。 True を指定すると、近似曲線の R-2 乗値をグラフに表示します (式と同じデータ ラベル内に表示します)。 既定値は <b>False</b> です。</param>
+        <param name="Name">省略可能な<b>オブジェクト</b>です。 近似曲線の名前を示す文字列を指定します。 この引数を省略すると、名前が自動的に作成されます。</param>
+        <summary>新しい近似曲線を作成します。 オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.Trendline" />返します。</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.Trendline" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,9 +125,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 値の取得のみ可能です。</summary>
-        <value>
-          <b>アプリケーション</b>(上記参照)</value>
+        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用<see cref="T:Microsoft.Office.Interop.Word._Application" />すると、Microsoft Word アプリケーションを表すオブジェクトが返されます。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
+        <value><b>アプリケーション</b>(上記を参照)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,10 +153,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内のオブジェクトの数を表す<b>整数</b>値を返します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>コレクションに含まれるオブジェクトの数を表す<b>整数型 (Integer</b> ) の値を返します。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,14 +181,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトが Microsoft Word で作成された場合、<see cref="P:Microsoft.Office.Interop.Word.Trendlines.Creator" />を返します文字列を表す 16 進数値である 4d535744 をします。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
-          <para />
-        </remarks>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトが Microsoft Word で作成されている<see cref="P:Microsoft.Office.Interop.Word.Trendlines.Creator" />場合、このプロパティは、文字列 "MSWD" を表す、16進数値の4D535744 を返します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -234,7 +215,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>返します。 <see cref="T:System.Collections.IEnumerator" />。</returns>
+        <returns>を<see cref="T:System.Collections.IEnumerator" />返します。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,11 +245,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 オブジェクトの名前またはインデックス番号を指定します。</param>
-        <summary>コレクションから単一のオブジェクトを返します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Trendline" />.</value>
+        <param name="Index">必要な<b>オブジェクト</b>。 オブジェクトの名前またはインデックス番号を指定します。</param>
+        <summary>コレクションから1つのオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Trendline" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,10 +274,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親を返します。読み取り専用 <b>オブジェクト</b> 。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定したオブジェクトの親を返します。 読み取り専用 <b>オブジェクト</b> 。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

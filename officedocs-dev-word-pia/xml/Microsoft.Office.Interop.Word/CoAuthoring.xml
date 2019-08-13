@@ -1,13 +1,5 @@
 <Type Name="CoAuthoring" FullName="Microsoft.Office.Interop.Word.CoAuthoring">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d195f255aaf0a9c9baac4c0c2a349c00374fd387" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671440" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CoAuthoring" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="aa37e28413aff41cf5c8b6361b6d410b11b49671" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147271" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthoring" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CoAuthoring" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CoAuthoring" />
   <TypeSignature Language="VB.NET" Value="Public Interface CoAuthoring" />
@@ -27,11 +19,8 @@
   </Attributes>
   <Docs>
     <summary>共同編集オブジェクト モデルへの主要なエントリ ポイントを提供します。</summary>
-    <remarks>
-      <para>
-        <b>CoAuthoring</b>オブジェクトは、ドキュメント レベルでの共同編集に関する情報を提供します。<b>CoAuthoring</b>オブジェクトは、文書で、ユーザーがある、ドキュメントの現在のロックは、ロックがあるかどうか、またはかどうかに、についての情報を提供できるなど、ドキュメントのコンテンツの更新は、サーバーから使用できます。使用して、 <see cref="T:Microsoft.Office.Interop.Word.Document.CoAuthoring" /> 、 <b>CoAuthoring</b>オブジェクトを返すプロパティです。</para>
-      <para />
-    </remarks>
+    <remarks><para><b>CoAuthoring</b> オブジェクトは、文書レベルの共同編集に関する情報を提供します。 たとえば、<b>CoAuthoring</b> オブジェクトは、文書にロックが含まれるかどうか、文書を現在ロックしているユーザー、文書のコンテンツに対する使用可能な更新情報がサーバーにあるかどうかについての情報を提供します。 <see cref="T:Microsoft.Office.Interop.Word.Document.CoAuthoring" />プロパティを使用して、<b>共同編集</b>オブジェクトを取得します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,13 +46,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを取得します。</summary>
+        <value>Microsoft <see cref="T:Microsoft.Office.Interop.Word.Application" /> Word アプリケーションを表すオブジェクト。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Authors">
@@ -89,12 +75,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、<see cref="T:Microsoft.Office.Interop.Word.CoAuthors" />を現在編集中のドキュメントすべての共同の作成者を表すコレクション。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.CoAuthors" />を現在編集中のドキュメントすべての共同の作成者を表すコレクション。</value>
-        <remarks>
-          <para>読み取り専用です。このプロパティによって返されるコレクションは、静的です。このコレクションは、および保存し、新しいユーザーが、ドキュメントの編集を開始、現在のユーザーは、ドキュメントの編集を終了またはストアドのコレクションは変更されません。</para>
-          <para />
-        </remarks>
+        <summary>現在文書<see cref="T:Microsoft.Office.Interop.Word.CoAuthors" />を編集しているすべての共同作成者を表すコレクションを取得します。</summary>
+        <value>現在<see cref="T:Microsoft.Office.Interop.Word.CoAuthors" />文書を編集しているすべての共同作成者を表すコレクション。</value>
+        <remarks><para>読み取り専用です。 このプロパティによって返されるコレクションは静的なコレクションです。 このコレクションが格納されている場合に、新しいユーザーが文書の編集を開始したり、現在のユーザーが文書の編集を終了したりしても、保存したコレクションは変更されません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CanMerge">
@@ -120,10 +104,27 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ドキュメントの自動マージをすることができるかどうかを取得します。</summary>
-        <value>
-          <b>true の</b>場合は、ドキュメントの自動マージをすることができます。それ以外の場合、 <b>false を指定</b>します。</value>
-        <remarks>Microsoft SharePoint Server 2010 のドキュメント ライブラリにあるドキュメントだけを<para>は、自動マージできます。さらに、次の機能を持つドキュメントが自動マージをすることはできません:</para><list type="bullet"><item><para>デジタル権限管理</para></item><item><para>デジタル署名</para></item><item><para>最終モード</para></item><item><para>暗号化</para></item><item><para>文書のマスター ロール</para></item></list><para /></remarks>
+        <summary>ドキュメントを自動マージできるかどうかを取得します。</summary>
+        <value><b>true</b>の場合は、ドキュメントを自動マージできます。それ以外の場合は<b>false</b>。</value>
+        <remarks><para>Microsoft SharePoint Server 2010 ドキュメントライブラリにあるドキュメントのみを自動マージできます。 また、次の機能を含む文書を自動的に結合することはできません。</para>
+          <list type="bullet">
+            <item>
+              <para>デジタル著作権管理</para>
+            </item>
+            <item>
+              <para>デジタル署名</para>
+            </item>
+            <item>
+              <para>最終版モード</para>
+            </item>
+            <item>
+              <para>暗号化</para>
+            </item>
+            <item>
+              <para>グループ文書ロール</para>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CanShare">
@@ -149,13 +150,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このドキュメントを共同編集することができるかどうかを取得します。</summary>
-        <value>
-          <b>true の</b>場合、このドキュメントを共同で作成することができます。それ以外の場合、 <b>false を指定</b>します。</value>
-        <remarks>
-          <para>読み取り専用です。このプロパティが<b>true</b>の場合にのみ、<see cref="P:Microsoft.Office.Interop.Word.CoAuthoring.CanMerge" />プロパティは<b>true を指定</b>し、文書が .docx ファイルです。</para>
-          <para />
-        </remarks>
+        <summary>このドキュメントを共同編集できるかどうかを取得します。</summary>
+        <value>このドキュメントを共同編集できる場合は<b>true</b> 。それ以外の場合は<b>false</b>。</value>
+        <remarks><para>読み取り専用です。 このプロパティが<b>true</b>になるの<see cref="P:Microsoft.Office.Interop.Word.CoAuthoring.CanMerge" />は、プロパティが<b>true</b>で、ドキュメントが .docx ファイルの場合のみです。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Conflicts">
@@ -181,12 +179,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Conflicts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、 <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> 、ドキュメント内のすべての競合を表すコレクション。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.Conflicts" />ドキュメント内のすべての競合を表すコレクション。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>文書内<see cref="T:Microsoft.Office.Interop.Word.Conflicts" />のすべての競合を表すコレクションを取得します。</summary>
+        <value>文書<see cref="T:Microsoft.Office.Interop.Word.Conflicts" />内のすべての競合を表すコレクション。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -212,12 +208,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトが作成されたアプリケーションを示す 32 ビット整数を取得します。</summary>
-        <value>指定したオブジェクトが作成されたアプリケーションを示す 32 ビット整数。</value>
-        <remarks>
-          <para>読み取り専用<b>long</b>です。します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合このプロパティは、各アプリケーションが 4 文字のクリエータ コードには、Apple Macintosh で使用するために設計されました。MSWD 元のコードが Word には、たとえば、します</para>。
-          <para><b>注意</b>: この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para /></remarks>
+        <summary>指定したオブジェクトが作成されたアプリケーションを示す32ビット整数を取得します。</summary>
+        <value>指定したオブジェクトが作成されたアプリケーションを示す32ビットの整数。</value>
+        <remarks><para>値の取得のみ可能な<b>long</b>値です。 オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 このプロパティは、各アプリケーションが 4 文字のクリエータ コードには、Apple Macintosh で使用するために設計されました。 たとえば、Word には、作成者コード MSWD です。</para>
+          <para>
+            <b>注意</b>: この値は、定数<b>wdCreatorCode</b>で表すこともできます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Locks">
@@ -243,12 +239,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthLocks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、 <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> 、ドキュメントのロックを表すコレクション。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" />の文書のロックを表すコレクション。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>文書内<see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" />のロックを表すコレクションを取得します。</summary>
+        <value>文書<see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" />内のロックを表すコレクションを指定します。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Me">
@@ -274,12 +268,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、<see cref="T:Microsoft.Office.Interop.Word.CoAuthor" />を現在のユーザーを表すオブジェクト。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.CoAuthor" />を現在のユーザーを表すオブジェクト。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>現在の<see cref="T:Microsoft.Office.Interop.Word.CoAuthor" />ユーザーを表すオブジェクトを取得します。</summary>
+        <value>現在<see cref="T:Microsoft.Office.Interop.Word.CoAuthor" />のユーザーを表すオブジェクト。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -305,9 +297,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、<see cref="T:System.Object" />の指定した親オブジェクトを表す<see cref="T:Microsoft.Office.Interop.Word.CoAuthoring" />オブジェクトです。</summary>
-        <value>
-          <see cref="T:System.Object" />の指定した親オブジェクトを表す<see cref="T:Microsoft.Office.Interop.Word.CoAuthoring" />オブジェクトです。</value>
+        <summary>は<see cref="T:System.Object" /> 、指定<see cref="T:Microsoft.Office.Interop.Word.CoAuthoring" />したオブジェクトの親オブジェクトを表すを取得します。</summary>
+        <value><see cref="T:System.Object" />指定<see cref="T:Microsoft.Office.Interop.Word.CoAuthoring" />したオブジェクトの親オブジェクトを表す。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -334,13 +325,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ドキュメントが保留中の更新が反映されていないことがあるかどうかを取得します。</summary>
-        <value>
-          <b>true の</b>場合は、ドキュメントが保留中の更新は反映されていないことがあるそれ以外の場合、 <b>false を指定</b>します。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>承諾されていない保留中の更新がドキュメントにあるかどうかを取得します。</summary>
+        <value>承諾されていない保留中の更新がドキュメントにある場合は<b>true</b> 。それ以外の場合は<b>false</b>。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Updates">
@@ -366,12 +354,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthUpdates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />のドキュメントに利用可能なすべての更新を表すコレクション。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />のドキュメントに利用可能なすべての更新を表すコレクション。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>文書で<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />利用可能なすべての更新プログラムを表すコレクションを取得します。</summary>
+        <value>文書<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />で利用可能なすべての更新プログラムを表すコレクションです。</value>
+        <remarks><para>値の取得のみ可能です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

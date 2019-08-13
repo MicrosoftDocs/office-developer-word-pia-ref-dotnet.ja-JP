@@ -1,13 +1,5 @@
 <Type Name="PageNumbers" FullName="Microsoft.Office.Interop.Word.PageNumbers">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="adb56d4e750693d1d8699cecc33bae23d2bf773c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671384" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PageNumbers : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a31fe618fee1b2b001540181189751da6020270b" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144218" /></Metadata><TypeSignature Language="C#" Value="public interface PageNumbers : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PageNumbers implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.PageNumbers" />
   <TypeSignature Language="VB.NET" Value="Public Interface PageNumbers&#xA;Implements IEnumerable" />
@@ -30,13 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.PageNumber" />、1 つのヘッダーまたはフッターにページ番号を表すオブジェクト。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.PageNumbers" /><b>PageNumbers</b>コレクションを取得するプロパティ</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" />のヘッダーまたはフッターにページ番号を追加します</para>。
-      <para>を追加する、文書に複数のセクションのページ番号を変更するの各セクションでページ番号を変更または設定します<see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.LinkToPrevious" />プロパティを<b>True</b>にします</para>。
-      <para>使用して<b>PageNumbers</b>(<paramref name="index" />)、<paramref name="index" />は、単一の<b>PageNumber</b>オブジェクトを取得する、インデックス番号。ほとんどの場合、ヘッダーまたはフッターが含まれています 1 つのページ番号には、インデックス番号は 1 です</para>。
-      <para /></remarks>
+    <summary>単一のヘッダー <see cref="T:Microsoft.Office.Interop.Word.PageNumber" />またはフッターのページ番号を表すオブジェクトのコレクションです。</summary>
+    <remarks><para>PageNumbers コレクション<see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.PageNumbers" />を取得するの<b></b>にには、プロパティを使用します。</para>
+      <para>ページ番号<see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" />をヘッダーまたはフッターに追加するには、メソッドを使用します。</para>
+      <para>複数のセクションで構成される文書でページ番号を追加または変更するには、各セクションで<see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.LinkToPrevious" />ページ番号を変更するか、またはこのプロパティを<b>True</b>に設定します。</para>
+      <para><b>PageNumbers</b>(<paramref name="index" />) を使用し<paramref name="index" />ます。ここで、はインデックス番号を使用して、単一の<b>PageNumber</b>オブジェクトを取得します。 ほとんどの場合、ヘッダーまたはフッターにはインデックス番号 1 のページ番号が 1 つだけ含まれます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,14 +53,12 @@
         <Parameter Name="FirstPage" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="PageNumberAlignment">省略可能な<b>オブジェクト</b>です。 いずれかを指定することができます<see cref="T:Microsoft.Office.Interop.Word.WdPageNumberAlignment" />定数。</param>
-        <param name="FirstPage">省略可能な<b>オブジェクト</b>です。 <b>False を指定</b>する先頭ページのヘッダーと最初のページ フッター ヘッダーとフッターと異なるドキュメントの以降のすべてのページにします。 場合<paramref name="FirstPage" />設定は、 <b>false を指定</b>するページ番号が最初のページに追加されません。 設定を変更する場合はこの引数を省略すると、<see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" />プロパティ。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.PageNumber" />オブジェクトのページのヘッダーまたはフッター セクション内に追加する番号を表します。</summary>
+        <param name="PageNumberAlignment">省略可能な<b>オブジェクト</b>です。 任意の<see cref="T:Microsoft.Office.Interop.Word.WdPageNumberAlignment" />定数を使用できます。</param>
+        <param name="FirstPage">省略可能な<b>オブジェクト</b>です。 <b>False</b> に設定すると、先頭ページのヘッダーとフッターが、それ以降のページのヘッダーとフッターとは別の指定になります。 が<paramref name="FirstPage" /> <b>False</b>に設定されている場合、ページ番号は最初のページに追加されません。 この引数を省略すると、設定は<see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" />プロパティによって制御されます。</param>
+        <summary>セクション内<see cref="T:Microsoft.Office.Interop.Word.PageNumber" />のヘッダーまたはフッターに追加されたページ番号を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>場合、<see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.LinkToPrevious" />のプロパティの<see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" />オブジェクトは、 <b>True</b>に設定されているページ番号は引き続き順番に 1 つのセクションから、ドキュメント内で次にします。</para>
-          <para />
-        </remarks>
+        <remarks><para>オブジェクトの<see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.LinkToPrevious" />プロパティが True に設定されている場合、ページ番号は、文書全体で、あるセクションから次のセクションに順番に続きます。 <b></b> <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -95,7 +84,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -126,12 +115,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdSeparatorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>章番号とページ番号の間で使用する区切り文字を設定または返します。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdSeparatorType" />定数。</summary>
+        <summary>章番号とページ番号の間で使用される区切り文字を設定または返します。 <see cref="T:Microsoft.Office.Interop.Word.WdSeparatorType" />定数のいずれかをすることができます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>章番号を含むページ番号を作成する前に、文書の見出しに段落番号付きの書式、箇条書きのスタイルを使用し、段落番号] ダイアログ ボックスが必要です。<b>ApplyListTemplate</b>メソッドを使用してこれを行うプログラムを使用して、<see cref="T:Microsoft.Office.Interop.Word.List" />または<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトです。</para>
-          <para />
-        </remarks>
+        <remarks><para>章番号を含むページ番号を作成する前に、文書の見出しに、[ 箇条書きと段落番号] ダイアログ ボックスからスタイルを使用する段落番号の形式が必要です。 プログラムでこの操作を行うに<see cref="T:Microsoft.Office.Interop.Word.List" />は、または<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトの<b>applylisttemplate</b>メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -185,12 +172,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DoubleQuote">
@@ -219,13 +205,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は、指定した Microsoft Word を囲む<see cref="T:Microsoft.Office.Interop.Word.PageNumbers" />は、二重引用符 (') 内のオブジェクト。</summary>
+        <summary><b>True</b>の場合は、指定<see cref="T:Microsoft.Office.Interop.Word.PageNumbers" />したオブジェクトを二重引用符 (") で囲みます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>既定で二重引用符で囲まれたページ番号を囲むための Word を設定するのにを使用して、<see cref="P:Microsoft.Office.Interop.Word.Options.AddHebDoubleQuote" />プロパティ。</para>
-          <para />
-        </remarks>
+        <remarks><para>既定でページ番号を二重引用符で囲むように Word を設定するに<see cref="P:Microsoft.Office.Interop.Word.Options.AddHebDoubleQuote" />は、プロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -286,12 +269,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>文書の章タイトルに適用される見出しレベルのスタイルを設定または返します。 8、0 (ゼロ) から 9 でレベル 1 の見出しに対応する数値を指定できます。</summary>
+        <summary>文書の章タイトルに適用される見出しレベルのスタイルを設定または返します。 0 (ゼロ) から8までの数値を指定できます。見出しレベル 1 ~ 9 に対応します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>章番号を含むページ番号を作成する前に、文書の見出しに段落番号付きの書式、箇条書きのスタイルを使用し、段落番号] ダイアログ ボックスが必要です。<b>ApplyListTemplate</b>メソッドを使用してこれを行うプログラムを使用して、<see cref="T:Microsoft.Office.Interop.Word.List" />または<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトです。</para>
-          <para />
-        </remarks>
+        <remarks><para>章番号を含むページ番号を作成する前に、文書の見出しに、[ 箇条書きと段落番号] ダイアログ ボックスからスタイルを使用する段落番号の形式が必要です。 プログラムでこの操作を行うに<see cref="T:Microsoft.Office.Interop.Word.List" />は、または<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトの<b>applylisttemplate</b>メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncludeChapterNumber">
@@ -320,8 +301,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> に章番号がページ番号または図表番号のラベルが含まれている場合です。</summary>
+        <summary><b>True</b> に章番号がページ番号または図表番号のラベルが含まれている場合です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -352,7 +332,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">各オブジェクトの序数位置を示す<b>整数</b>です。</param>
+        <param name="Index">個々のオブジェクトの位置を表す<b>整数型 (Integer</b> ) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -384,13 +364,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPageNumberStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>番号のスタイルの設定を取得または設定します<see cref="T:Microsoft.Office.Interop.Word.PageNumbers" />オブジェクトです。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.PageNumbers" />オブジェクトの番号のスタイルを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>9 の数字</b>のプロパティには、いずれかを指定できます、<see cref="T:Microsoft.Office.Interop.Word.WdPageNumberStyle" />定数。これらの定数のいくつかを選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できないがあります。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>NumberStyle</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdPageNumberStyle" />定数のいずれかを指定できます。 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -447,14 +424,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、ページ番号が、指定したセクションの先頭で 1 です。</summary>
+        <summary><b>True の</b> 場合、ページ番号が、指定したセクションの先頭で 1 です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>False</b>に設定すると、 <b>RestartNumberingAtSection</b>プロパティは無効、<see cref="P:Microsoft.Office.Interop.Word.PageNumbers.StartingNumber" />プロパティはそのページの番号付けを前のセクションから引き続きできるようにします。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>False</b>に設定されている場合、 <b>RestartNumberingAtSection</b>プロパティ<see cref="P:Microsoft.Office.Interop.Word.PageNumbers.StartingNumber" />は、前のセクションからページ番号付けを続行できるように、プロパティをオーバーライドします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowFirstPageNumber">
@@ -483,14 +456,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 場合は、セクションの最初のページにページ番号が表示されます。</summary>
+        <summary><b>True</b> 場合は、セクションの最初のページにページ番号が表示されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>True</b>にこのプロパティの設定を自動的にページ番号をセクションに追加します。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>True</b> にこのプロパティの設定を自動的にページ番号をセクションに追加します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StartingNumber">
@@ -521,10 +490,9 @@
       <Docs>
         <summary>開始番号、行番号、またはページ番号を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>行番号を表示するのには印刷レイアウト表示にする必要があります</para>。
-          <para>のページ番号に適用すると、このプロパティを取得または指定した開始ページ番号を設定<see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" />オブジェクトです。この数かの設定によって、最初のページ上に表示されていない場合があります、<see cref="P:Microsoft.Office.Interop.Word.PageNumbers.ShowFirstPageNumber" />プロパティ。<see cref="P:Microsoft.Office.Interop.Word.PageNumbers.RestartNumberingAtSection" />プロパティを<b>False</b>に設定すると、ページの番号付けをするように<b>する</b>にはプロパティをオーバーライドできますは引き続き前のセクションから</para>。
-          <para /></remarks>
+        <remarks><para>行番号を画面に表示するには、印刷レイアウト表示に切り替える必要があります。</para>
+          <para>ページ番号に適用する場合、このプロパティは、指定<see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" />したオブジェクトの開始ページ番号を取得または設定します。 この数値は、 <see cref="P:Microsoft.Office.Interop.Word.PageNumbers.ShowFirstPageNumber" />プロパティの設定によっては最初のページに表示されない場合があります。 False <see cref="P:Microsoft.Office.Interop.Word.PageNumbers.RestartNumberingAtSection" />に設定されて<b></b>いる場合、プロパティは<b>StartingNumber</b>プロパティをオーバーライドし、前のセクションからページ番号を続けます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="Language" FullName="Microsoft.Office.Interop.Word.Language">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="040fc6fe1bbe3d61841dfc8c2ab0322e89c441c7" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671503" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Language" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6a420e980d31a95af3eadfbd098d98e9a7886930" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146662" /></Metadata><TypeSignature Language="C#" Value="public interface Language" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Language" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Language" />
   <TypeSignature Language="VB.NET" Value="Public Interface Language" />
@@ -27,18 +19,16 @@
   </Attributes>
   <Docs>
     <summary>Microsoft Word で校正または書式設定するときに使用する言語を表します。</summary>
-    <remarks>
-      <para>
-        <b>言語</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.Languages" />コレクションです</para>。
-      <para>使用<b>言語</b>(<paramref name="index" />) オブジェクトを取得する 1 つ<b>の言語</b>に、<paramref name="index" />の値を指定できます、<see cref="P:Microsoft.Office.Interop.Word.Language.Name" />プロパティ、値の<see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" />のいずれかのプロパティ、<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数、またはそのいずれかの<see cref="T:Microsoft.Office.Core.MsoLanguageID" />定数</para>。
-      <para>、<see cref="P:Microsoft.Office.Interop.Word.Language.Name" />プロパティは、言語の名前を返しますが、<see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" />プロパティは、ユーザーの言語では言語の名前を返します</para>。
-      <para>の校正ツールがインストールされている各言語を使用して、 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />、 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />、 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />、および<see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />対応を返すプロパティを<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />オブジェクトです</para>。
-      <para>文書のスタイルは、文章校正プログラムによって使用されるルールのセットです。<see cref="P:Microsoft.Office.Interop.Word.Language.WritingStyleList" />プロパティは、指定した言語の手書き入力が利用可能なスタイルを表す文字列の配列を返します</para>。
-      <para>を使用して、<see cref="P:Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" />スタイルの作成、word で使用する既定値を設定するプロパティ</para>。
-      <para>でスタイルを作成する既定値をオーバーライドする、<see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" />プロパティ。このプロパティは指定された言語で示されたテキストの特定の文書に適用します</para>。
-      <para>をチェックする各言語用の校正ツールをする必要があります</para>。
-      <para><b>WdNoProofing</b>としてテキストをマークする場合はスキップされるマークされたテキスト、スペル チェックと文章校正のチェックを実行している場合</para>。
-      <para /></remarks>
+    <remarks><para><b>Language</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Languages" />コレクションのメンバーです。</para>
+      <para>言語<b></b>(<paramref name="index" />) を使用して1つの<b>言語</b>オブジェクト<paramref name="index" />を返します。ここで<see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> 、プロパティの値、 <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" />プロパティの値、いずれか<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />の定数、または<see cref="T:Microsoft.Office.Core.MsoLanguageID" />定数のいずれかを指定できます。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.Language.Name" />プロパティは言語の名前を返しますが、プロパティ<see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" />はユーザーの言語で言語の名前を返します。</para>
+      <para>校正ツールがインストールされている言語ごとに、、、 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" /> <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" /> <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />、および<see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />プロパティを使用して、対応<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />するオブジェクトを取得できます。</para>
+      <para>文書のスタイルとは、文章校正で使用する規則のことです。 この<see cref="P:Microsoft.Office.Interop.Word.Language.WritingStyleList" />プロパティは、指定した言語で使用可能な文書のスタイルを表す文字列の配列を返します。</para>
+      <para>この<see cref="P:Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" />プロパティを使用して、Word で使用する既定の文書のスタイルを設定します。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" />プロパティを使用して、既定の文書のスタイルを上書きすることができます。 指定された言語で示されている文字列について、このプロパティは指定された文書に適用されます。</para>
+      <para>[!メモ] 文章を校正する各言語用の校正ツールを組み込んでおく必要があります。</para>
+      <para>定数 <b>wdNoProofing</b> を指定すると、スペル チェックまたは文章校正の実行時にこの文字列はチェックの対象となりません。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ActiveGrammarDictionary">
@@ -64,12 +54,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />を指定した言語の有効な文法辞書を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />た言語の有効な文法辞書を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>指定した言語用にインストールされている文章校正の辞書がない場合、このプロパティは<b>Nothing</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>指定した言語の文法辞書がインストールされていない場合、このプロパティは<b>Nothing</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveHyphenationDictionary">
@@ -95,12 +83,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />を指定した言語の有効なハイフネーション辞書を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />た言語の有効なハイフネーション辞書を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>指定した言語用にインストールされている辞書がない場合、このプロパティは<b>Nothing</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>指定した言語用のハイフネーション辞書がインストールされていない場合、このプロパティは<b>Nothing</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveSpellingDictionary">
@@ -126,12 +112,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />を指定した言語の有効なスペル チェック辞書を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />た言語の有効なスペルチェック辞書を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>指定した言語用にインストールされているスペル チェック辞書がない場合、このプロパティは<b>Nothing</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>指定した言語のスペルチェック辞書がインストールされていない場合、このプロパティは<b>Nothing</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveThesaurusDictionary">
@@ -157,12 +141,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />を指定した言語の有効な類義語辞書を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />た言語の有効なシソーラス辞書を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>類義語辞典を指定した言語のインストールがない場合、このプロパティは<b>Nothing</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>指定した言語用のシソーラス辞書がインストールされていない場合、このプロパティは<b>Nothing</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -188,7 +170,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -216,12 +198,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultWritingStyle">
@@ -250,12 +231,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した言語の文章校正で使用するスタイルを作成する既定値を設定または返します。 文法規則またはスタイルの名前は、指定した言語のローカライズされた名前です。</summary>
+        <summary>指定した言語の文章校正で使用するスタイルを作成する既定値を設定または返します。 The name of the writing style is the localized name for the specified language.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、文書のスタイルのグローバル設定を制御します。このプロパティを設定するには、スペルの書き込みスタイル] ボックスで、正確な名前を使用する必要があります&amp;文章校正] タブで、[オプション] ダイアログ ボックス ([ツール] メニュー).</para>
-          <para>、<see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" />プロパティは、ドキュメントで各言語の文法規則またはスタイルを設定します。<b>ActiveWritingStyle</b>の設定は、 <b>DefaultWritingStyle</b>設定をオーバーライドします</para>。
-          <para /></remarks>
+        <remarks><para>This property controls the global setting for the writing style. このプロパティを設定するときは、[オプション] ダイアログボックス ([ツール] メニュー) の&amp; [文章校正] タブの [文書のスタイル] ボックスに表示される正確な名前を使用する必要があります。</para>
+          <para>この<see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" />プロパティは、文書内の各言語の記述スタイルを設定します。 <b>ActiveWritingStyle</b> の設定は、 <b>DefaultWritingStyle</b> の設定をオーバーライドします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -283,11 +263,8 @@
       <Docs>
         <summary>指定した言語を識別する番号を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>ID</b>プロパティには、いずれかを指定できます、<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>ID</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数のいずれかを指定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -400,12 +377,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdDictionaryType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>校正ツールの種類を設定または返します。 値の取得および設定が可能です。</summary>
+        <summary>校正ツールの種類を設定または返します。 値の取得と設定が可能です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>は、Microsoft Word で使用できる補足用辞書の 1 つに有効なスペル チェック辞書を変更するのにはこのプロパティを使用します。などは法的、医療、および完全なスペル チェック辞書が標準の辞書の代わりに使用することができますがあります</para>。
-          <para><b>SpellingDictionaryType</b>プロパティには、いずれかを指定できます、<see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" />定数。選択またはインストールされている言語サポート (たとえば、日本語) によっては使用ができないこれらの定数のいくつかがあります</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティを使用すると、有効なスペルチェック用辞書を、Microsoft Word で使用できる追加の辞書の1つに変更することができます。 たとえば、標準の辞書の代わりに、法律や医学用の辞書などを使用できます。</para>
+          <para><b>SpellingDictionaryType</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" />定数のいずれかを指定できます。 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WritingStyleList">

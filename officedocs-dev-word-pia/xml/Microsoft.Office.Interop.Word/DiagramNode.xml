@@ -1,13 +1,5 @@
 <Type Name="DiagramNode" FullName="Microsoft.Office.Interop.Word.DiagramNode">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="781ae7dde743bb26d8b688f166e2d47c3047c43d" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670920" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DiagramNode" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9738bbfbf5c67a83fbc7807283833051a5fadce7" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147096" /></Metadata><TypeSignature Language="C#" Value="public interface DiagramNode" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DiagramNode" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DiagramNode" />
   <TypeSignature Language="VB.NET" Value="Public Interface DiagramNode" />
@@ -26,13 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>図表内の単一の図表ノードを表します。</summary>
-    <remarks>
-      <para>
-        <b>DiagramNode</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.DiagramNodes" />コレクションです</para>。
-      <para>使用の<b>DiagramNode</b>プロパティ、<see cref="T:Microsoft.Office.Interop.Word.Shape" />または<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /><b>DiagramNode</b>オブジェクトを取得するオブジェクトです。使用して、 <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" /> 、図表にノードを追加します</para>。
-      <para>使用、 <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.Delete" /> 、図表からノードを削除します</para>。
-      <para /></remarks>
+    <summary>図表内の1つの図表節点を表します。</summary>
+    <remarks><para><b>ダイアグラムの node</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.DiagramNodes" />コレクションのメンバーです。</para>
+      <para><b>ダイアグラムノード</b>オブジェクトを取得するの<see cref="T:Microsoft.Office.Interop.Word.Shape" />に<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />には、またはオブジェクトの<b>ダイアグラムノード</b>プロパティを使用します。 図に<see cref="M:Microsoft.Office.Interop.Word.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" />ノードを追加するには、メソッドを使用します。</para>
+      <para>図から<see cref="M:Microsoft.Office.Interop.Word.DiagramNode.Delete" />ノードを削除するには、メソッドを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNode">
@@ -58,9 +48,9 @@
         <Parameter Name="NodeType" Type="Microsoft.Office.Core.MsoDiagramNodeType" />
       </Parameters>
       <Docs>
-        <param name="Pos">省略可能な<see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />。 呼び出し側のノードを基準にして、ノードが追加される位置を指定します。</param>
-        <param name="NodeType">省略可能な<see cref="T:Microsoft.Office.Core.MsoDiagramNodeType" />。 ノードの種類を指定します。</param>
-        <summary>返す、図表ノードを作成、 <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> 、新しい図表ノードを表すオブジェクト。 概念図は、 <b>DiagramNode</b>オブジェクトは、[図形] ボックスの一覧の末尾に追加されます。</summary>
+        <param name="Pos">省略<see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />可能です。 呼び出し元ノードを基準にして、ノードを追加する場所を指定します。</param>
+        <param name="NodeType">省略<see cref="T:Microsoft.Office.Core.MsoDiagramNodeType" />可能です。 ノードの種類を指定します。</param>
+        <summary>図表節点を作成し、 <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />新しい図ノードを表すオブジェクトを返します。 概念図の場合、<b>図表ノード</b>オブジェクトは図形の一覧の末尾に追加されます。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -116,7 +106,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNodeChildren</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.DiagramNodeChildren" />オブジェクトを指定された図表ノードの子のすべてが含まれています。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.DiagramNodeChildren" />た図表節点のすべての子を含むオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -145,12 +135,10 @@
         <Parameter Name="Pos" Type="Microsoft.Office.Core.MsoRelativeNodePosition" />
       </Parameters>
       <Docs>
-        <param name="copyChildren">
-          <b>ブール値</b>が必要です。 同様にダイアグラムのノードの子のクローンを作成する場合は true です。</param>
-        <param name="TargetNode">
-          <b>DiagramNode</b>オブジェクトの省略可能です。 ノードが新しいノードを配置する場所です。</param>
-        <param name="Pos">省略可能な<see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />。 場合<paramref name="TargetNode" />指定した場合、基準となるノードが追加される位置を示す<paramref name="TargetNode" />。</param>
-        <summary>指定された図表ノードのクローンを作成します。 返します、 <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> 、クローンを表すオブジェクト。</summary>
+        <param name="copyChildren">必須の<b>ブール値</b>です。 図のノードの子も複製する場合は True。</param>
+        <param name="TargetNode">省略可能な<b>ダイアグラムノード</b>オブジェクト。 新しいノードを配置するノードを指定します。</param>
+        <param name="Pos">省略<see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />可能です。 が<paramref name="TargetNode" />指定されている場合は、ノードがどこに<paramref name="TargetNode" />追加されるかを示します。</param>
+        <summary>指定された図表ノードを複製します。 複製を<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -178,12 +166,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>などのオブジェクトは、Microsoft Word で作成されている場合このプロパティが返されます、16 進数の値である 4d535744 を文字列します。この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>たとえば、オブジェクトが Microsoft Word で作成されている場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -207,7 +194,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,7 +221,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Diagram</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Diagram" />の図表ノードが属するオブジェクトです。</summary>
+        <summary>図表ノード<see cref="T:Microsoft.Office.Interop.Word.Diagram" />が属しているオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -265,7 +252,7 @@
         <ReturnType>Microsoft.Office.Core.MsoOrgChartLayoutType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Core.MsoOrgChartLayoutType" />組織図内の子ノードの書式を指定する定数です。</summary>
+        <summary>組織図の子<see cref="T:Microsoft.Office.Core.MsoOrgChartLayoutType" />ノードの書式を示す定数を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -294,9 +281,9 @@
         <Parameter Name="Pos" Type="Microsoft.Office.Core.MsoRelativeNodePosition" />
       </Parameters>
       <Docs>
-        <param name="TargetNode">必要な<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />オブジェクトです。 指定したノードの移動先の図表ノードです。</param>
-        <param name="Pos">必要な<see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />。 基準となるノードが追加される位置を指定する<paramref name="TargetNode" />。</param>
-        <summary>図表ノードと、ダイアグラムの内部では、その子ノードのいずれかに移動します。</summary>
+        <param name="TargetNode">必要<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />なオブジェクト。 指定したノードが移動する図表節点を指定します。</param>
+        <param name="Pos">必須<see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />。 ノードを追加する基準を<paramref name="TargetNode" />指定します。</param>
+        <summary>図の中で図表節点とその子節点を移動します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -321,12 +308,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>次を返します<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />図表節点のコレクション内のオブジェクト。</summary>
+        <summary>図表節点<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />のコレクション内の次のオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.DiagramNode.PrevNode" />図表節点のコレクションの前の<b>DiagramNode</b>オブジェクトを返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>図表節<see cref="M:Microsoft.Office.Interop.Word.DiagramNode.PrevNode" />点のコレクションに含まれる前の図表<b>節点</b>のオブジェクトを取得するには、メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -378,12 +363,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />図表節点のコレクション内の前の図表ノードを表すオブジェクト。</summary>
+        <summary>図表節<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />点のコレクションで、前の図の節点を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.DiagramNode.NextNode" />図表節点のコレクションの次の<b>DiagramNode</b>オブジェクトを返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>この<see cref="M:Microsoft.Office.Interop.Word.DiagramNode.NextNode" />メソッドを使用して、図表ノードのコレクション内の次のダイアグラム<b>ノード</b>オブジェクトを取得します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReplaceNode">
@@ -409,12 +392,10 @@
         <Parameter Name="TargetNode" Type="Microsoft.Office.Interop.Word.DiagramNode&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="TargetNode">必要な<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />オブジェクトです。 図表ノードを交換します。</param>
-        <summary>ターゲット図表ノードをソース図表ノードに置き換えます。</summary>
-        <remarks>
-          <para>ターゲット図表ノードは削除され、ターゲット図表ノードがあった場所に移動、ソース図表ノードが子ノードのいずれかを含みます。</para>
-          <para />
-        </remarks>
+        <param name="TargetNode">必要<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />なオブジェクト。 置換する図表節点を指定します。</param>
+        <summary>ターゲット図表ノードをソースの図表ノードに置き換えます。</summary>
+        <remarks><para>ターゲット図表ノードが削除され、その子ノードのいずれかを含む、ソース図表ノードが移動先の図表ノードの位置に移動されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Root">
@@ -440,7 +421,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> 、ソース図表ノードが属するルートの図表節点を表すオブジェクト。</summary>
+        <summary>ソース図表<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />ノードが属しているルート図表ノードを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -468,7 +449,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Shape" /> 、指定された図表ノードのオブジェクトです。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Shape" />た図表節点のオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -496,13 +477,11 @@
         <Parameter Name="Pos" Type="Microsoft.Office.Core.MsoRelativeNodePosition" />
       </Parameters>
       <Docs>
-        <param name="TargetNode">必要な<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />オブジェクトです。 交換先のノードです。</param>
-        <param name="Pos">省略可能な<see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />。 スワップするノードに対して相対的なノードの位置。</param>
-        <summary>ソース図表ノードとターゲット図表ノードを入れ替えます。</summary>
-        <remarks>
-          <para>対応するルート ノードとすべての子図表節点が移動します。</para>
-          <para />
-        </remarks>
+        <param name="TargetNode">必要<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />なオブジェクト。 スワップするノードを指定します。</param>
+        <param name="Pos">省略<see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />可能です。 ノードの位置を、ノードを基準にした位置からの相対位置で指定します。</param>
+        <summary>ターゲット図表ノードをソースの図表ノードと交換します。</summary>
+        <remarks><para>子の図表ノードは、対応するルートノードと共に移動します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextShape">
@@ -528,7 +507,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Shape" />図表ノードに関連付けられたテキスト ボックスの図形を表すオブジェクト。</summary>
+        <summary>図表ノード<see cref="T:Microsoft.Office.Interop.Word.Shape" />に関連付けられているテキストボックスの図形を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -556,8 +535,8 @@
         <Parameter Name="ReceivingNode" Type="Microsoft.Office.Interop.Word.DiagramNode&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="ReceivingNode">必要な<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />オブジェクトです。 子ノードの移動先となるノード。</param>
-        <summary>ターゲット (受信側) の図表ノードをソース図表ノードの子ノードに移動します。</summary>
+        <param name="ReceivingNode">必要<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />なオブジェクト。 子ノードを転送するノードを指定します。</param>
+        <summary>移動元の図表ノードの子ノードを、ターゲット (入荷) の図ノードに移動します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

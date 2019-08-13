@@ -1,13 +1,5 @@
 <Type Name="Hyperlink" FullName="Microsoft.Office.Interop.Word.Hyperlink">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b20d04082a16f963ccc15d9f6d80fa09a9949c11" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672192" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Hyperlink" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b605957f028ab3eb567ae3d9d066ecf695f2ce45" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146711" /></Metadata><TypeSignature Language="C#" Value="public interface Hyperlink" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Hyperlink" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Hyperlink" />
   <TypeSignature Language="VB.NET" Value="Public Interface Hyperlink" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>ハイパーリンクを表します。</summary>
-    <remarks>
-      <para>
-        <b>Hyperlink</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.Hyperlinks" />コレクションです</para>。
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.Shape.Hyperlink" /> (図形は 1 つのみハイパーリンクを持つことができます) 図形に関連付けられている<b>Hyperlink</b>オブジェクトを返すプロパティです</para>。
-      <para><b>ハイパーリンク</b>を使う (<paramref name="index" />)、<paramref name="index" />文書、指定範囲、または選択範囲から単一の<b>Hyperlink</b>オブジェクトを取得するのには、インデックス番号です</para>。
-      <para /></remarks>
+    <remarks><para><b>Hyperlink</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Hyperlinks" />コレクションのメンバーです。</para>
+      <para>図形に<see cref="P:Microsoft.Office.Interop.Word.Shape.Hyperlink" />関連付けられている<b>hyperlink</b>オブジェクトを取得するのにには、プロパティを使用します (図形には1つのハイパーリンクしか設定できません)。</para>
+      <para><b>ハイパーリンク</b>(<paramref name="index" />) を使用し<paramref name="index" />て、文書、指定範囲、または選択範囲から1つの<b>Hyperlink</b>オブジェクトを取得します。ここで、はインデックス番号を指定します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Address">
@@ -61,7 +51,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したハイパーリンクのアドレス (たとえば、ファイル名または URL) を設定または返します。</summary>
+        <summary>指定したハイパーリンクのアドレス (ファイル名や URL など) を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -145,7 +135,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -175,13 +165,10 @@
         <Parameter Name="Overwrite" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>文字列</b> が必要です。 ドキュメントのファイル名を指定します。</param>
-        <param name="EditNow">
-          <b>ブール値</b>が必要です。 <b>True を指定</b>するドキュメントを関連付けられた編集環境で直ちに開きます。 既定値は <b>True</b> です。</param>
-        <param name="Overwrite">
-          <b>ブール値</b>が必要です。 <b>True の</b>同じフォルダーに同じ名前の既存ファイルを上書きします。 <b>False</b>場合、同じ名前の既存のファイルを保存し、<paramref name="FileName" />引数は、新しいファイル名を指定します。 既定値は <b>False</b> です。</param>
-        <summary>指定されたハイパーリンクにリンクするドキュメントを新しく作成します。</summary>
+        <param name="FileName"><b>文字列</b> が必要です。 ドキュメントのファイル名を指定します。</param>
+        <param name="EditNow">必須の<b>ブール値</b>です。 <b>True の場合</b>は、指定されたドキュメントが関連付けられた編集環境ですぐに開きます。 既定値は <b>True</b> です。</param>
+        <param name="Overwrite">必須の<b>ブール値</b>です。 <b>True</b> の場合は、同じフォルダー内にある同じ名前の既存のファイルを上書きします。 <b>False</b>場合は、同じ名前の既存のファイルが保存さ<paramref name="FileName" />れ、引数に新しいファイル名が指定されます。 既定値は <b>False</b> です。</param>
+        <summary>指定したハイパーリンクにリンクされた新しいドキュメントを作成します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,12 +195,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -237,7 +223,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -267,12 +253,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したハイパーリンクの件名行のテキスト文字列を設定または返します。 件名は、ハイパーリンクのインターネット アドレス、または URL に追加されます。</summary>
+        <summary>指定したハイパーリンクの件名行のテキスト文字列を設定または返します。 件名行は、ハイパーリンクのインターネット アドレスまたは URL の末尾に追加されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは通常、電子メールのハイパーリンクに使用されます。このプロパティの値で指定されたすべての電子メールの件名よりも優先、<see cref="P:Microsoft.Office.Interop.Word.Hyperlink.Address" />の同じプロパティ<see cref="P:Microsoft.Office.Interop.Word.Shape.Hyperlink" />オブジェクトです。</para>
-          <para />
-        </remarks>
+        <remarks><para>通常、このプロパティは電子メール ハイパーリンクで使用されます。 このプロパティの値は、同じ<see cref="P:Microsoft.Office.Interop.Word.Hyperlink.Address" /> <see cref="P:Microsoft.Office.Interop.Word.Shape.Hyperlink" />オブジェクトのプロパティで指定された電子メールの件名よりも優先されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExtraInfoRequired">
@@ -298,13 +282,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 指定したハイパーリンクを解決するのには余分な情報が必要な場合です。</summary>
+        <summary><b>True</b> 指定したハイパーリンクを解決するのには余分な情報が必要な場合です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用して追加情報を指定することができます、<paramref name="ExtraInfo" />を使用して引数の<see cref="M:Microsoft.Office.Interop.Word.Hyperlink.Follow(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />または<see cref="M:Microsoft.Office.Interop.Word._Document.FollowHyperlink(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />メソッドです。使用することができますたとえば、 <paramref name="ExtraInfo" /> 、イメージ マップの座標、フォーム、または FAT ファイル名の内容を指定します。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Word.Hyperlink.Follow(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />または<see cref="M:Microsoft.Office.Interop.Word._Document.FollowHyperlink(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />メソッドで<paramref name="ExtraInfo" />引数を使用して、特別な情報を指定することができます。 たとえば、を使用<paramref name="ExtraInfo" />して、イメージマップの座標、フォームの内容、または FAT ファイル名を指定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Follow">
@@ -333,16 +314,14 @@
         <Parameter Name="HeaderInfo" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NewWindow">省略可能な<b>オブジェクト</b>です。 <b>True</b>新しいウィンドウで目的のドキュメントを表示します。 既定値は <b>False</b> です。</param>
+        <param name="NewWindow">省略可能な<b>オブジェクト</b>です。 <b>True</b> に設定すると、目的の文書が新しいウィンドウに表示されます。 既定値は <b>False</b> です。</param>
         <param name="AddHistory">省略可能な<b>オブジェクト</b>です。 この引数は、今後の使用のために予約されています。</param>
-        <param name="ExtraInfo">省略可能な<b>オブジェクト</b>です。 ハイパーリンクを解決するために使用する HTTP の追加情報を指定する文字列またはバイトの配列です。 使用することができますたとえば、 <paramref name="ExtraInfo" /> 、イメージ マップの座標、フォーム、または FAT ファイル名の内容を指定します。 文字列は、転記またはのいずれかの値に応じて、追加<paramref name="Method" />。 使用、<see cref="P:Microsoft.Office.Interop.Word.Hyperlink.ExtraInfoRequired" />プロパティに追加情報が必要かどうかを確認します。</param>
-        <param name="Method">省略可能な<b>オブジェクト</b>です。 HTTP の追加方法については、処理を指定します。 いずれかを指定することができます<see cref="T:Microsoft.Office.Core.MsoExtraInfoMethod" />定数。</param>
-        <param name="HeaderInfo">省略可能な<b>オブジェクト</b>です。 HTTP リクエストのヘッダー情報を指定する文字列を指定します。 既定値は空の文字列です。 1 つの文字列は、いくつかのヘッダー行を組み合わせることができます。 指定された文字列は、自動的に ANSI 文字に変換されます。 注意して、<paramref name="HeaderInfo" />引数はデフォルトの HTTP ヘッダーのフィールドを上書き可能性があります。</param>
-        <summary>指定されたに関連付けられているキャッシュされたドキュメントが表示されます<see cref="T:Microsoft.Office.Interop.Word.Hyperlink" />オブジェクトを既にダウンロードされている場合。 それ以外の場合、このメソッドはハイパーリンクを解決、対象のドキュメントをダウンロードし、適切なアプリケーションでドキュメントが表示されます。</summary>
-        <remarks>
-          <para>ハイパーリンクは、ファイル プロトコルを使用する場合、このメソッドは、それをダウンロードせずにドキュメントを開きます。</para>
-          <para />
-        </remarks>
+        <param name="ExtraInfo">省略可能な<b>オブジェクト</b>です。 ハイパーリンクの参照に使用する HTTP の追加情報を指定する文字列またはバイト配列を指定します。 たとえば、を使用<paramref name="ExtraInfo" />して、イメージマップの座標、フォームの内容、または FAT ファイル名を指定できます。 文字列は、の<paramref name="Method" />値に応じて、投稿されるか追加されます。 プロパティを<see cref="P:Microsoft.Office.Interop.Word.Hyperlink.ExtraInfoRequired" />使用して、特別な情報が必要かどうかを判断します。</param>
+        <param name="Method">省略可能な<b>オブジェクト</b>です。 HTTP の追加情報の処理方法を指定します。 任意の<see cref="T:Microsoft.Office.Core.MsoExtraInfoMethod" />定数を使用できます。</param>
+        <param name="HeaderInfo">省略可能な<b>オブジェクト</b>です。 HTTP リクエストのヘッダー情報を指定する文字列を指定します。 既定値は空の文字列です。 複数のヘッダー行を結合して1つの文字列にすることができます。 指定された文字列は、自動的に ANSI 文字に変換されます。 引数を指定<paramref name="HeaderInfo" />すると、既定の HTTP ヘッダーフィールドが上書きされる可能性があることに注意してください。</param>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Hyperlink" />たオブジェクトに関連付けられているキャッシュされたドキュメントが既にダウンロードされている場合は、そのドキュメントを表示します。 ダウンロードされていない場合は、ハイパーリンク先の目的の文書をダウンロードして、適切なアプリケーションで文書を表示します。</summary>
+        <remarks><para>ハイパーリンクがファイル プロトコルを使用している場合、このメソッドは文書をダウンロードする代わりにファイル プロトコルを開きます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -424,12 +403,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />を指定したオブジェクトに含まれる文書の部分を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />たオブジェクトに含まれる文書の一部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>範囲をドキュメントから取得するか、図形のコレクションから図形範囲を取得する方法についてを参照してください、<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />メソッドです。</para>
-          <para />
-        </remarks>
+        <remarks><para>文書から指定範囲を取得する<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法、または図形のコレクションから図形範囲を取得する方法については、メソッドを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScreenTip">
@@ -486,12 +463,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Shape" />指定されたハイパーリンクのオブジェクトです。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Shape" />たハイパーリンクのオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ハイパーリンクが図形で表されていない場合は、エラーが発生します。</para>
-          <para />
-        </remarks>
+        <remarks><para>ハイパーリンクが図形で表されていない場合は、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SubAddress">
@@ -522,10 +497,8 @@
       <Docs>
         <summary>指定したハイパーリンクのリンク先の名前付きの場所を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>名前付きの場所には、名前付きのセルまたはセル参照では、Microsoft Excel のワークシート、Microsoft Access データベースの名前付きオブジェクト、または Microsoft PowerPoint プレゼンテーションのスライド番号、Microsoft Word 文書内のブックマークを指定できます。</para>
-          <para />
-        </remarks>
+        <remarks><para>名前付きの場所とは、Word 文書のブックマーク、Excel ワークシートの名前を付けたセルまたはセル参照、Access データベースの名前を付けたオブジェクト、あるいは PowerPoint プレゼンテーションのスライド番号を示します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SubAddressOld">
@@ -646,11 +619,8 @@
       <Docs>
         <summary>ハイパーリンクの種類を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Type</b>プロパティには、いずれかを指定できます、<see cref="T:Microsoft.Office.Core.MsoHyperlinkType" />定数。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Type</b>プロパティには、 <see cref="T:Microsoft.Office.Core.MsoHyperlinkType" />定数のいずれかを指定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

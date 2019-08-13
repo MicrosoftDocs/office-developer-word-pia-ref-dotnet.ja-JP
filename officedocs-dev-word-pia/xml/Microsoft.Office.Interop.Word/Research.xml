@@ -1,13 +1,5 @@
 <Type Name="Research" FullName="Microsoft.Office.Interop.Word.Research">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f3053e80208307ba476ee3813e42cec9f34c18c4" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670781" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Research" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="09c7f2651f0df71c7549952dfe0bc63e7b6d09f1" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147684" /></Metadata><TypeSignature Language="C#" Value="public interface Research" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Research" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Research" />
   <TypeSignature Language="VB.NET" Value="Public Interface Research" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Microsoft Office Word のリサーチ サービスの機能へのアクセスを提供します。</summary>
+    <summary>Microsoft Office Word のリサーチサービス機能へのアクセスを提供します。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,10 +45,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word._Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,13 +74,11 @@
       </ReturnValue>
       <Docs>
         <summary>アドインが作成されたアプリケーションを示す 32 ビット整数を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>オブジェクトが Microsoft Word で作成された場合、<see cref="P:Microsoft.Office.Interop.Word.Research.Creator" />を返します文字列を表す 16 進数値である 4d535744 をします。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para><b>注</b>: この値は、定数で表すこともできます<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />です</para>。
-          <para /></remarks>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>オブジェクトが Microsoft Word で作成されている<see cref="P:Microsoft.Office.Interop.Word.Research.Creator" />場合、このプロパティは、文字列 "MSWD" を表す、16進数値の4D535744 を返します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para>
+            <b>注</b>: この値は定数<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />で表すこともできます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FavoriteService">
@@ -119,12 +107,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはお気に入りのリサーチ サービスを指定する文字列を設定します。</summary>
-        <value>お気に入りのリサーチ サービスを指定します。</value>
-        <remarks>
-          <para>設定またはお気に入りのリサーチ サービスの GUID を指定するこのプロパティに返される、文字列です</para>。
-          <para>Microsoft Word 2010 で、[リサーチのオプション] ダイアログ ボックスからお気に入りのリサーチ サービスを選択すると同じ効果を持つこのプロパティを設定します</para>。
-          <para /></remarks>
+        <summary>お気に入りのリサーチサービスを指定する文字列型 (string) の値を取得または設定します。</summary>
+        <value>お気に入りのリサーチサービスを指定します。</value>
+        <remarks><para>このプロパティに対して設定または取得された文字列 (String) は、お気に入りのリサーチ サービスの GUID を指定します。</para>
+          <para>このプロパティを設定すると、Microsoft Word 2010 の [リサーチのオプション] ダイアログボックスを使用して、お気に入りのリサーチサービスを選択した場合と同じ結果になります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsResearchService">
@@ -151,10 +138,8 @@
       </Parameters>
       <Docs>
         <param name="ServiceID">リサーチ サービスを識別する GUID を指定します。</param>
-        <summary>GUID が指定されているかどうか、<paramref name="ServiceID" />パラメーターは、現在構成されているサービスに対応します。</summary>
-        <returns>
-          <b>ブール型 (Boolean)</b>
-        </returns>
+        <summary><paramref name="ServiceID" />パラメーターで指定された GUID が現在構成されているサービスに対応するかどうかを示します。</summary>
+        <returns><b>Boolean</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,10 +166,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した親オブジェクトを表す<b>オブジェクト</b>を返します。<see cref="T:Microsoft.Office.Interop.Word.Research" />オブジェクトです。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定し<b></b>た<see cref="T:Microsoft.Office.Interop.Word.Research" />オブジェクトの親オブジェクトを表すオブジェクト型 (object) の値を取得します。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,10 +200,8 @@
         <param name="ServiceID">リサーチ サービスを識別する GUID を指定します。</param>
         <param name="QueryString">クエリ文字列を指定します。</param>
         <param name="QueryLanguage">クエリ文字列のクエリ言語を指定します。</param>
-        <param name="UseSelection">
-          <b>True</b>クエリ文字列として現在の選択範囲を使用します。  これを上書き、<paramref name="QueryString" />パラメーター場合に設定します。 既定値は、 <b>false を指定</b> します。</param>
-        <param name="LaunchQuery">
-          <b>True</b> に設定すると、クエリが起動されます。False に設定すると、指定されたリサーチ サービスを検索するための [ リサーチ ] 作業ウィンドウが表示されます。 </param>
+        <param name="UseSelection"><b>True</b> に設定すると、現在の選択内容がクエリ文字列として使用されます。  設定され<paramref name="QueryString" />ている場合、このパラメーターは無効になります。 既定値は、 <b>false を指定</b> します。</param>
+        <param name="LaunchQuery"><b>True</b> に設定すると、クエリが起動されます。 False に設定すると、指定されたリサーチ サービスを検索するための [ リサーチ ] 作業ウィンドウが表示されます。</param>
         <summary>リサーチ クエリを指定します。</summary>
         <returns>オブジェクト</returns>
         <remarks>To be added.</remarks>
@@ -253,9 +234,7 @@
         <param name="LanguageFrom">翻訳対象の言語を指定します。</param>
         <param name="LanguageTo">翻訳結果の言語を指定します。</param>
         <summary>翻訳サービス用の言語を設定します。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
