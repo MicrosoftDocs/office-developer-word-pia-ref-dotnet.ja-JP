@@ -1,13 +1,5 @@
 <Type Name="TwoInitialCapsExceptions" FullName="Microsoft.Office.Interop.Word.TwoInitialCapsExceptions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8798d3c2076c5fc12e6077d4164506de8188b4f9" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671417" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TwoInitialCapsExceptions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a91e8ac3387946739e0fa53381c0ac08f3c077e6" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143751" /></Metadata><TypeSignature Language="C#" Value="public interface TwoInitialCapsExceptions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TwoInitialCapsExceptions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TwoInitialCapsExceptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface TwoInitialCapsExceptions&#xA;Implements IEnumerable" />
@@ -30,13 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.TwoInitialCapsException" />に記載されているすべての項目を表すオブジェクト、[大文字と小文字] タブの [オート コレクトの例外] ダイアログ ボックスのボックスに修正しません。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.TwoInitialCapsExceptions" /><b>TwoInitialCapsExceptions</b>コレクションを取得するプロパティ</para>。
-      <para>場合、<see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.TwoInitialCapsAutoAdd" />プロパティが<b>True</b>の場合単語が自動的に追加の例外一覧にします。使用して、 <see cref="M:Microsoft.Office.Interop.Word.TwoInitialCapsExceptions.Add(System.String)" /><b>TwoInitialCapsExceptions</b>コレクションに項目を追加します</para>。
-      <para>使用して<b>TwoInitialCapsExceptions</b>(<paramref name="index" />)、どこで<paramref name="index" />は、初期のキャップの名前またはインデックス番号で、1 つの<b>TwoInitialCapsException</b>オブジェクトを取得する</para>。
-      <para>インデックス番号は、 <b>TwoInitialCapsExceptions</b>コレクションの最初が大文字の例外の位置を表します</para>。
-      <para /></remarks>
+    <summary>[オートコレクト<see cref="T:Microsoft.Office.Interop.Word.TwoInitialCapsException" />の例外処理] ダイアログボックスの [大文字と小文字] タブの [修正しない] ボックスに表示されているすべての項目を表すオブジェクトのコレクションです。</summary>
+    <remarks><para>TwoInitialCapsExceptions コレクション<see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.TwoInitialCapsExceptions" />を取得するの<b></b>にには、プロパティを使用します。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.TwoInitialCapsAutoAdd" />プロパティに<b>True</b>が設定されている場合、単語は自動的に大文字小文字の例外の一覧に追加されます。 <see cref="M:Microsoft.Office.Interop.Word.TwoInitialCapsExceptions.Add(System.String)" />メソッドを使用して、 <b>TwoInitialCapsExceptions</b>コレクションにアイテムを追加します。</para>
+      <para><b>TwoInitialCapsExceptions</b>(<paramref name="index" />) を使用し<paramref name="index" />ます。ここで、は最初の cap の名前またはインデックス番号を使用して、単一の<b>TwoInitialCapsException</b>オブジェクトを返します。</para>
+      <para>インデックス番号は、 <b>TwoInitialCapsExceptions</b> コレクションでの 2 文字目を小文字にしない例外項目の位置を表します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,14 +53,11 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>文字列</b> が必要です。 しないようにするに Microsoft Word を大文字で、次の省略形。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.TwoInitialCapsExceptions" />のオート コレクトの例外リストに追加する新しい例外を表すオブジェクト。</summary>
+        <param name="Name"><b>文字列</b> が必要です。 大文字にしない場合は、その省略形を使用します。</param>
+        <summary>オートコレクト<see cref="T:Microsoft.Office.Interop.Word.TwoInitialCapsExceptions" />の例外処理の一覧に追加する新しい例外を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>場合、<see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.TwoInitialCapsAutoAdd" />プロパティが<b>True</b>の場合単語が自動的に追加の例外一覧にします。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.TwoInitialCapsAutoAdd" />プロパティに<b>True</b>が設定されている場合、単語は自動的に大文字小文字の例外の一覧に追加されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -95,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -151,12 +139,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -217,7 +204,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">位置を表す序数または各オブジェクトの名前を表す文字列を示す<b>オブジェクト</b>。</param>
+        <param name="Index">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

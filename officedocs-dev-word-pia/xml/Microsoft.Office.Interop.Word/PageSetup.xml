@@ -1,13 +1,5 @@
 <Type Name="PageSetup" FullName="Microsoft.Office.Interop.Word.PageSetup">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="558d1f8af2b21e49d591c611c2670c360008123e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672093" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PageSetup" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="433e93ba8183c9b0045586babe477ca93fb72916" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144205" /></Metadata><TypeSignature Language="C#" Value="public interface PageSetup" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PageSetup" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.PageSetup" />
   <TypeSignature Language="VB.NET" Value="Public Interface PageSetup" />
@@ -27,11 +19,8 @@
   </Attributes>
   <Docs>
     <summary>ページ レイアウトの設定全体を表します。 <b>PageSetup</b> オブジェクトには、すべてのページ設定属性 (左余白、下余白、用紙サイズなど) が、プロパティとして含まれています。</summary>
-    <remarks>
-      <para>
-        <b>PageSetup</b>オブジェクトを取得するのにには、 <b>PageSetup</b>プロパティを使用します。</para>
-      <para />
-    </remarks>
+    <remarks><para>Pagesetup オブジェクトを取得するには<b></b> 、 <b>pagesetup</b>プロパティを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +46,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,8 +77,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 印刷されたページを 2 つ折りし、本として読めるようには一連の小冊子でドキュメントを印刷します。</summary>
+        <summary><b>True</b> 印刷されたページを 2 つ折りし、本として読めるようには一連の小冊子でドキュメントを印刷します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,7 +108,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>各小冊子のページ数を表す<b>整数値</b>を設定または返します。</summary>
+        <summary>各小冊子のページ数を表す<b>整数型 (integer</b> ) の値を設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -151,8 +139,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>真</b> 帳の印刷順序を逆にするには、双方向言語またはアジア言語のドキュメントの印刷が 2 つ折りします。</summary>
+        <summary><b>真</b> 帳の印刷順序を逆にするには、双方向言語またはアジア言語のドキュメントの印刷が 2 つ折りします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -242,12 +229,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DifferentFirstPageHeaderFooter">
@@ -276,8 +262,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、別のヘッダーやフッターが先頭ページに使用されます。 <b>True</b> 、 <b>False</b> 、または <b>wdUndefined</b> をすることができます。</summary>
+        <summary><b>True の</b> 場合、別のヘッダーやフッターが先頭ページに使用されます。 <b>True</b> 、 <b>False</b> 、または <b>wdUndefined</b> をすることができます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -370,12 +355,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>バインディングについては、セクションまたは文書内の各ページに追加される余分な余白の量を (ポイント単位で) を設定または返します。</summary>
+        <summary>文書またはセクション内のバインド用の各ページに追加される余白の量 (ポイント単位) を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>場合、<see cref="P:Microsoft.Office.Interop.Word.PageSetup.MirrorMargins" />プロパティが<b>True</b>に設定、<b>余白</b>プロパティの内側に余分なスペースを追加する余白。それ以外の場合、余分なスペースは、左余白に追加されます。</para>
-          <para />
-        </remarks>
+        <remarks><para>プロパティに<b>True</b>が設定されている場合、とじしろのプロパティは内側の余白にスペースを追加します。 <b></b> <see cref="P:Microsoft.Office.Interop.Word.PageSetup.MirrorMargins" /> その他の場合は、左余白に追加されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GutterOnTop">
@@ -503,7 +486,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ヘッダーとページの一番上の間隔をポイント単位で設定を取得または取得します。</summary>
+        <summary>ページの上端からヘッダーまでの距離をポイント単位で取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -567,10 +550,8 @@
       <Docs>
         <summary>ページの左の端と本文のテキストの左側の境界線との間の距離 (ポイント単位) を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>場合、<see cref="P:Microsoft.Office.Interop.Word.PageSetup.MirrorMargins" />プロパティが<b>True</b>に設定されて、 <b>LeftMargin</b>プロパティの設定値を制御する内側の余白、および<see cref="P:Microsoft.Office.Interop.Word.PageSetup.RightMargin" />プロパティは外側の余白の設定を制御します。</para>
-          <para />
-        </remarks>
+        <remarks><para>プロパティが<b>True</b>に設定されている場合、 <b>LeftMargin</b>プロパティは内側の余白の設定<see cref="P:Microsoft.Office.Interop.Word.PageSetup.RightMargin" />を制御し、プロパティは外側の余白の設定を制御します。 <see cref="P:Microsoft.Office.Interop.Word.PageSetup.MirrorMargins" /></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LineNumbering">
@@ -599,12 +580,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.LineNumbering</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.LineNumbering" />の指定した行番号を表す<see cref="T:Microsoft.Office.Interop.Word.PageSetup" />オブジェクトです。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.PageSetup" />オブジェクト<see cref="T:Microsoft.Office.Interop.Word.LineNumbering" />の行番号を表すオブジェクトを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>行番号を表示するのには印刷レイアウト表示にする必要があります。</para>
-          <para />
-        </remarks>
+        <remarks><para>行番号を画面に表示するには、印刷レイアウト表示に切り替える必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LinesPage">
@@ -633,7 +612,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>文書グリッドの 1 ページあたりの行の数を設定を取得または取得します。</summary>
+        <summary>文書のグリッドの1ページあたりの行数を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -664,14 +643,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 内側と外側の見開きページの余白が同じ幅である場合。 <b>True</b> 、 <b>False</b> 、または <b>wdUndefined</b> をすることができます。</summary>
+        <summary><b>True の</b> 内側と外側の見開きページの余白が同じ幅である場合。 <b>True</b> 、 <b>False</b> 、または <b>wdUndefined</b> をすることができます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>MirrorMargins</b>プロパティに<b>True</b>の場合、<see cref="P:Microsoft.Office.Interop.Word.PageSetup.LeftMargin" />プロパティの設定値を制御する内側の余白とは、<see cref="P:Microsoft.Office.Interop.Word.PageSetup.RightMargin" />プロパティは外側の余白の設定を制御します。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>MirrorMargins</b>プロパティが<b>True</b>に設定されている<see cref="P:Microsoft.Office.Interop.Word.PageSetup.LeftMargin" />場合、プロパティは内側の余白の設定<see cref="P:Microsoft.Office.Interop.Word.PageSetup.RightMargin" />を制御し、プロパティは外側の余白の設定を制御します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OddAndEvenPagesHeaderFooter">
@@ -700,8 +675,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>の場合、指定された<see cref="T:Microsoft.Office.Interop.Word.PageSetup" />オブジェクトには、奇数ページと偶数ページに異なるヘッダーとフッター。 <b>True</b> 、 <b>False</b> 、または <b>wdUndefined</b> をすることができます。</summary>
+        <summary><b>True</b>の場合は<see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> 、指定したオブジェクトの奇数ページと偶数ページに異なるヘッダーとフッターがあります。 <b>True</b> 、 <b>False</b> 、または <b>wdUndefined</b> をすることができます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -734,10 +708,8 @@
       <Docs>
         <summary>ページの向きを取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>いくつかの<see cref="T:Microsoft.Office.Interop.Word.WdOrientation" />の定数は、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。</para>
-          <para />
-        </remarks>
+        <remarks><para>選択または<see cref="T:Microsoft.Office.Interop.Word.WdOrientation" />インストールした言語のサポート (たとえば、英語 (米国)) によっては、一部の定数を使用できない場合があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OtherPagesTray">
@@ -797,13 +769,11 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ポイント単位で、ページの高さを設定または返します。</summary>
+        <summary>ページの高さをポイント単位で取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>PageHeight</b>プロパティの変更を設定します<see cref="P:Microsoft.Office.Interop.Word.PageSetup.PaperSize" /><b>wdPaperCustom</b>にします</para>。
-          <para>ページの高さと幅をレター サイズや A4 などの既定の用紙サイズに設定するのには、 <b>PaperSize</b>プロパティを使用します</para>。
-          <para /></remarks>
+        <remarks><para><b>Pageheight</b>プロパティを設定すると<see cref="P:Microsoft.Office.Interop.Word.PageSetup.PaperSize" /> 、プロパティが<b>wdpapercustom</b>に変更されます。</para>
+          <para>ページの高さと幅をレター サイズや A4 などの既定の用紙サイズに設定するのにには、 <b>PaperSize</b> プロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageWidth">
@@ -834,11 +804,9 @@
       <Docs>
         <summary>取得またはページの幅をポイント単位で設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>[Pagewidth]</b>プロパティの変更を設定します<see cref="P:Microsoft.Office.Interop.Word.PageSetup.PaperSize" /><b>wdPaperCustom</b>にします</para>。
-          <para>ページの高さと幅をレター サイズや A4 などの既定の用紙サイズに設定するのには、 <b>PaperSize</b>プロパティを使用します</para>。
-          <para /></remarks>
+        <remarks><para><b>Pagewidth</b>プロパティを設定すると<see cref="P:Microsoft.Office.Interop.Word.PageSetup.PaperSize" /> 、プロパティが<b>wdpapercustom</b>に変更されます。</para>
+          <para>ページの高さと幅をレター サイズや A4 などの既定の用紙サイズに設定するのにには、 <b>PaperSize</b> プロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PaperSize">
@@ -869,10 +837,8 @@
       <Docs>
         <summary>用紙サイズを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>設定、<see cref="P:Microsoft.Office.Interop.Word.PageSetup.PageHeight" />または<see cref="P:Microsoft.Office.Interop.Word.PageSetup.PageWidth" />プロパティは<b>wdPaperCustom</b>に<b>PaperSize</b>プロパティを変更します。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.PageSetup.PageHeight" />またはプロパティ<see cref="P:Microsoft.Office.Interop.Word.PageSetup.PageWidth" />を設定すると、 <b>PaperSize</b>プロパティが<b>wdpapercustom</b>に変更されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -931,10 +897,8 @@
       <Docs>
         <summary>ページの右端と本文のテキストの右側の境界の間の距離 (ポイント単位) を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>場合、<see cref="P:Microsoft.Office.Interop.Word.PageSetup.MirrorMargins" />プロパティが<b>True</b>に設定されて、 <b>RightMargin</b>プロパティは外側の余白の設定値を制御し、<see cref="P:Microsoft.Office.Interop.Word.PageSetup.LeftMargin" />プロパティの設定値を制御する内側の余白です。</para>
-          <para />
-        </remarks>
+        <remarks><para>プロパティが<b>True</b>に設定されている場合、 <b>RightMargin</b>プロパティは外側の余白の設定<see cref="P:Microsoft.Office.Interop.Word.PageSetup.LeftMargin" />を制御し、プロパティは内側の余白の設定を制御します。 <see cref="P:Microsoft.Office.Interop.Word.PageSetup.MirrorMargins" /></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SectionDirection">
@@ -1081,13 +1045,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 場合、文末脚注、文末脚注を表示しない次のセクションの末尾に印刷します。 そのセクションの文末脚注の前に、抑制された文末脚注が印刷されます。</summary>
+        <summary><b>True</b> 場合、文末脚注、文末脚注を表示しない次のセクションの末尾に印刷します。 印刷されなかった文末脚注は次のセクションの文末脚注の前に印刷されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティには影響がある場合にのみ、<see cref="P:Microsoft.Office.Interop.Word.Endnotes.Location" />プロパティに<b>wdEndOfSection</b>が設定されます。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、プロパティが<see cref="P:Microsoft.Office.Interop.Word.Endnotes.Location" /> <b>Wデ dofsection</b>に設定されている場合にのみ有効です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextColumns">
@@ -1116,12 +1077,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextColumns</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.TextColumns" />を指定したテキストの列のセットを表す<see cref="T:Microsoft.Office.Interop.Word.PageSetup" />オブジェクトです。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.TextColumns" />た<see cref="T:Microsoft.Office.Interop.Word.PageSetup" />オブジェクトのテキストの段組みのセットを表すコレクションを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>常がありますが少なくとも 1 つのテキスト列のコレクション。1 つの列のコレクションに追加する新しい段を作成するとします。</para>
-          <para />
-        </remarks>
+        <remarks><para>コレクションには少なくとも 1 つの段が含まれています。 新しいテキスト列を作成すると、1つの列のコレクションに追加されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TogglePortrait">
@@ -1146,10 +1105,8 @@
       <Parameters />
       <Docs>
         <summary>文書またはセクションのページの縦横の方向を切り替えます。</summary>
-        <remarks>
-          <para>指定されたセクションでは、別のページの向きがある、エラーが発生します。</para>
-          <para />
-        </remarks>
+        <remarks><para>指定されたセクション内のページの方向が異なる場合、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TopMargin">
@@ -1209,8 +1166,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、指定した文書ページが用紙 1 枚印刷します。</summary>
+        <summary><b>True の</b> 場合、指定した文書ページが用紙 1 枚印刷します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

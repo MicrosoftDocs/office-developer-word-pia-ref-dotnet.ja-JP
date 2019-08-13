@@ -1,13 +1,5 @@
 <Type Name="Subdocuments" FullName="Microsoft.Office.Interop.Word.Subdocuments">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a21d5c2632a3938485eff78ac0f2f1d8a922befc" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671052" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Subdocuments : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ddd1247b7607cf6fdec9c86653bd6de16fa1156f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143918" /></Metadata><TypeSignature Language="C#" Value="public interface Subdocuments : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Subdocuments implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Subdocuments" />
   <TypeSignature Language="VB.NET" Value="Public Interface Subdocuments&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.Subdocument" />、指定範囲または文書内のサブ文書を表すオブジェクト。</summary>
-    <remarks>
-      <para>
-        <b>サブ文書</b>のプロパティを使用して、<see cref="T:Microsoft.Office.Interop.Word.Range" />または<see cref="T:Microsoft.Office.Interop.Word.Document" /><b>のサブ文書</b>のコレクションを返すオブジェクト</para>。
-      <para>使用、<see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />または<see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" />文書にサブ文書を追加します</para>。
-      <para>使用<b>のサブ文書</b>(<paramref name="index" />)、どこで<paramref name="index" />インデックス番号は、1 つの<b>サブ文書</b>のオブジェクトを返します</para>。
-      <para /></remarks>
+    <summary>指定範囲また<see cref="T:Microsoft.Office.Interop.Word.Subdocument" />は文書内のサブ文書を表すオブジェクトのコレクションです。</summary>
+    <remarks><para><b>サブ文書</b>のコレクションを取得<see cref="T:Microsoft.Office.Interop.Word.Range" />する<see cref="T:Microsoft.Office.Interop.Word.Document" />のにには、オブジェクトまたはオブジェクトの<b>サブ文書</b>のプロパティを使用します。</para>
+      <para>文書に<see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />サブ<see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" />文書を追加するには、またはメソッドを使用します。</para>
+      <para>サブ<b>文書</b>(<paramref name="index" />) を使用<paramref name="index" />して、1つの<b>サブ文書</b>のオブジェクトを取得します。ここで、はインデックス番号を指定します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddFromFile">
@@ -68,22 +58,19 @@
         <Parameter Name="WritePasswordTemplate" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>オブジェクト</b>が必要です。 グループ文書に挿入するサブ文書のファイル名を指定します。</param>
-        <param name="ConfirmConversions">省略可能な<b>オブジェクト</b>です。 <b>True</b>ファイルが Word 形式でない場合は、[ファイルの変換] ダイアログ ボックスでファイルの変換を確認します。</param>
-        <param name="ReadOnly">省略可能な<b>オブジェクト</b>です。 の <b>場合は true。</b> 読み取り専用文書としてサブ文書を挿入します。 </param>
-        <param name="PasswordDocument">省略可能な<b>オブジェクト</b>です。 パスワードがパスワードで保護されている場合、サブ文書を開くには必要です。</param>
+        <param name="Name">必要な<b>オブジェクト</b>。 グループ文書に挿入するサブ文書のファイル名を指定します。</param>
+        <param name="ConfirmConversions">省略可能な<b>オブジェクト</b>です。 ファイルが Microsoft Word 形式でない場合は、[ファイルの変換] ダイアログボックスでファイルの変換を確認するには<b>True</b>を指定します。</param>
+        <param name="ReadOnly">省略可能な<b>オブジェクト</b>です。 の <b>場合は true。</b> 読み取り専用文書としてサブ文書を挿入します。  </param>
+        <param name="PasswordDocument">省略可能な<b>オブジェクト</b>です。 サブ文書がパスワードで保護されている場合に、サブ文書を開くために必要なパスワードを指定します。</param>
         <param name="PasswordTemplate">省略可能な<b>オブジェクト</b>です。 サブ文書に添付されたテンプレートがパスワードで保護されている場合は、このテンプレートを開くために必要なパスワードを指定します。</param>
-        <param name="Revert">省略可能な<b>オブジェクト</b>です。 場合の動作を制御<paramref name="Name" />は、開いているドキュメントのファイル名です。 <b>True</b> を保存されたサブ文書を挿入します。 <b>False</b> に開いている未保存の変更が含まれている可能性がありますが、サブ文書を挿入します。</param>
-        <param name="WritePasswordDocument">省略可能な<b>オブジェクト</b>です。 保護されている場合、ドキュメント ファイルに変更を保存するために必要なパスワードです。</param>
-        <param name="WritePasswordTemplate">省略可能な<b>オブジェクト</b>です。 テンプレートが書き込み保護されている場合、サブ文書に添付されたテンプレートに変更を保存するために必要なパスワードです。</param>
-        <summary>文書、選択範囲の先頭に指定されたサブ文書を追加し、返します、<see cref="T:Microsoft.Office.Interop.Word.Subdocument" />オブジェクトです。</summary>
+        <param name="Revert">省略可能な<b>オブジェクト</b>です。 開いている<paramref name="Name" />文書のファイル名が何になるかを制御します。 <b>True</b> を保存されたサブ文書を挿入します。 <b>False</b> に開いている未保存の変更が含まれている可能性がありますが、サブ文書を挿入します。</param>
+        <param name="WritePasswordDocument">省略可能な<b>オブジェクト</b>です。 ドキュメントファイルが書き込み保護されている場合に、変更内容を保存するために必要なパスワードを指定します。</param>
+        <param name="WritePasswordTemplate">省略可能な<b>オブジェクト</b>です。 テンプレートが書き込み保護されている場合に、サブ文書に添付されたテンプレートへの変更を保存するために必要なパスワードを指定します。</param>
+        <summary>指定されたサブ文書を、選択範囲の先頭にあるマスター文書に<see cref="T:Microsoft.Office.Interop.Word.Subdocument" />追加し、オブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>メモ</b> 作業中のビューには、アウトライン モードまたはグループ文書モードのいずれかがない場合は、エラーが発生します。</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>メモ</b> 作業中のビューがアウトライン表示またはグループ文書ビューのいずれでもない場合は、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddFromRange">
@@ -108,14 +95,12 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">必要な<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。 <b>Range</b>オブジェクトは、1 つまたは複数のサブ文書を作成するために使用します。</param>
-        <summary>指定した範囲内のテキストから 1 つまたは複数のサブ文書を作成して返します、<see cref="T:Microsoft.Office.Interop.Word.Subdocument" />オブジェクトです。</summary>
+        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 1つまたは複数のサブ文書を作成するために使用する Range オブジェクトを<b>指定</b>します。</param>
+        <summary>指定された範囲のテキストから1つまたは複数のサブ<see cref="T:Microsoft.Office.Interop.Word.Subdocument" />文書を作成し、オブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>メモ</b> 範囲は、組み込みの見出しレベルのスタイル (たとえば、[見出し 1]) のいずれかで始まる必要があります。範囲の先頭で使用されている見出し書式と同じ書式設定された各段落では、サブ文書が作成されます。サブ文書のファイルは、グループ文書を保存するときに保存され、ファイル内の最初の行からテキストを使用しての名前は自動的に。</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>メモ</b> この範囲は、組み込みの見出しレベルのスタイル (たとえば、見出し 1) のいずれかで始まる必要があります。 サブ文書は、指定範囲の先頭で使われている見出し書式と同じ書式が設定された各段落に作成されます。 グループ文書を保存すると、サブ文書ファイルも保存され、ファイルの最初の行の文字列を使用して自動的にファイル名が付けられます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -141,7 +126,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -197,12 +182,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -226,7 +210,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -319,7 +303,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">各オブジェクトの序数位置を示す<b>整数</b>です。</param>
+        <param name="Index">個々のオブジェクトの位置を表す<b>整数型 (Integer</b> ) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -404,11 +388,9 @@
       <Parameters />
       <Docs>
         <summary>指定されたオブジェクトを選択します。</summary>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>メモ</b> このメソッドを使用すると、選択項目を操作するのには、 <b>Selection</b>プロパティを使用します。</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

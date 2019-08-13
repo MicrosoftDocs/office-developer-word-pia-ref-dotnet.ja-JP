@@ -1,13 +1,5 @@
 <Type Name="MailMergeField" FullName="Microsoft.Office.Interop.Word.MailMergeField">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3826a46a79d1953bf36de88c393620df167dba62" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670794" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMergeField" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="740faaaa800da0c930fd0ad3e0101c4ed0cd4585" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144464" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeField" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMergeField" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMergeField" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMergeField" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>文書の 1 つの差し込み印刷フィールドを表します。</summary>
-    <remarks>
-      <para>
-        <b>差し込み</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.MailMergeDataFields" />コレクションです。<b>MailMergeDataFields</b>コレクションに含まれるすべての差し込み印刷文書内のフィールドを関連します</para>。
-      <para><b>フィールド</b>の使用 (<paramref name="index" />)、<paramref name="index" />インデックス番号には、単一の<b>MailMergeField</b>オブジェクトを返します</para>。
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" /> 、差し込み印刷フィールドを<b>MailMergeFields</b>コレクションに追加します</para>。
-      <para><b>MailMergeFields</b>コレクションには追加のメソッドでは、次のように<see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" />と<see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />、差し込み印刷操作に関連するフィールドを追加するためです</para>。
-      <para /></remarks>
+    <remarks><para><b>MailMergeDataField</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.MailMergeDataFields" />コレクションのメンバーです。 <b>MailMergeDataFields</b> コレクションには、文書のすべての差し込み印刷に関連するフィールドが含まれます。</para>
+      <para>1つの<paramref name="index" /> <b>mailmergefield</b>オブジェクト<paramref name="index" />を取得するのにには、<b>フィールド</b>() (インデックス番号) を使用します。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" />メソッドを使用して、 <b>MailMergeFields</b>コレクションに差し込みフィールドを追加します。</para>
+      <para><b>MailMergeFields</b>コレクションには、差し込み印刷操作に<see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" />関連<see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />するフィールドを追加する、やなどのメソッドが追加されています。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,12 +80,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />フィールドのコードを表すオブジェクト。</summary>
+        <summary>フィールドの<see cref="T:Microsoft.Office.Interop.Word.Range" />コードを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>フィールドのコードは、先頭と末尾のスペース文字を含む、フィールド文字 (<b>{}</b>) で囲まれたすべてのものです。フィールドのコードは、フィールドの実行結果から、ビューを変更することがなくアクセスできます。</para>
-          <para />
-        </remarks>
+        <remarks><para>フィールド コードは、フィールド文字 (<b>\{ \}</b>) で囲まれた文字で、先頭と末尾のスペース文字も含まれます。フィールドの結果から表示を変更せずにフィールド コードにアクセスできます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -146,12 +134,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -200,7 +187,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,8 +217,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 指定したフィールドがロックされている場合です。 フィールドがロックされると、結果を更新できません。</summary>
+        <summary><b>True</b> 指定したフィールドがロックされている場合です。 フィールドがロックされると、結果を更新できません。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -259,7 +245,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.MailMergeField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクションの次のオブジェクトを返します。</summary>
+        <summary>コレクション内の次のオブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -315,7 +301,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.MailMergeField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクションの 1 つ前のオブジェクトを返します。</summary>
+        <summary>コレクション内の 1 つ前のオブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -342,10 +328,8 @@
       <Parameters />
       <Docs>
         <summary>指定されたオブジェクトを選択します。</summary>
-        <remarks>
-          <para>このメソッドを使用すた後を使用して、<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" />選択した項目を操作するプロパティ。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドを使用した後<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> 、プロパティを使用して選択された項目を操作します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -371,13 +355,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFieldType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>フィールドの型を返します。</summary>
+        <summary>フィールド型を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Type</b>プロパティには、いずれかを指定できます、<see cref="T:Microsoft.Office.Interop.Word.WdFieldType" />定数。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Type</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdFieldType" />定数のいずれかを指定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

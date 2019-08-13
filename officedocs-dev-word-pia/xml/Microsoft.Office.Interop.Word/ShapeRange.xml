@@ -1,13 +1,5 @@
 <Type Name="ShapeRange" FullName="Microsoft.Office.Interop.Word.ShapeRange">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a7eccde26cae7df7de66e89f8bf37cc6115cc8d8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671767" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ShapeRange : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c0f3e7f22555a874e2197ff4def4b0e9d86e9c77" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146144" /></Metadata><TypeSignature Language="C#" Value="public interface ShapeRange : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShapeRange implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ShapeRange" />
   <TypeSignature Language="VB.NET" Value="Public Interface ShapeRange&#xA;Implements IEnumerable" />
@@ -30,18 +22,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>文書の図形セットである図形範囲を表します。</summary>
-    <remarks>
-      <para>図形範囲には、文書内の 1 つの図形またはすべての図形を含めることができます。特定の図形を含めることができます-文書内のすべての図形または選択範囲内のすべての図形の中から選択、図形範囲を作成します。たとえば、ドキュメント、ドキュメントで選択したすべての図形、または文書内のすべてのフリー フォーム図形の最初の 3 つの図形を含む<b>ShapeRange</b>コレクションを作成します</para>。
-      <para><b>注</b>ほとんどの操作を行うことができますが、<see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクト、1 つだけ図形を含む<b>ShapeRange</b>オブジェクトで行うこともできます。いくつかの操作では、複数の図形を含む<b>ShapeRange</b>オブジェクトに対して実行されるときにエラーが発生します</para>。
-      <para>使用<b>Shapes.Range</b>(<paramref name="index" />)、<paramref name="index" />名またはいずれかの名前を格納する配列または図形のインデックス番号または文書の図形の集合を表す<b>ShapeRange</b>コレクションを取得するのには、図形のインデックス番号。名前またはインデックス番号の配列を作成するのには、配列を使用するプログラムを使用しています</para>。
-      <para>を使用できますが、 <see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" /> 、図形の数を取得するメソッドを使用する方が簡単、<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Item(System.Object@)" />メソッドは、コレクションの 1 つのメンバーだけを取得する場合は、します。Shapes (1) は Shapes.Range(1) よりも簡単です</para>。
-      <para>使用<b>Selection.ShapeRange</b>(<paramref name="index" />)、<paramref name="index" />は、名前またはインデックス番号で、選択範囲内の図形を表す<b>Shape</b>オブジェクトを取得する</para>。
-      <para>使用、 <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Align(Microsoft.Office.Core.MsoAlignCmd,System.Int32)" />、 <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Distribute(Microsoft.Office.Core.MsoDistributeCmd,System.Int32)" />、または<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" />一連の相互に関連して、またはドキュメントに図形を配置します</para>。使用の
-      <para>、 <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Group" />、 <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Regroup" />、または<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Ungroup" />を作成し、1 つの図形を操作するメソッドは、図形範囲から形成されます。<see cref="P:Microsoft.Office.Interop.Word.Shape.GroupItems" /> Shape オブジェクトのプロパティを取得、<see cref="T:Microsoft.Office.Interop.Word.GroupShapes" />を 1 つの図形を形成するためにグループ化されているすべての図形を表すオブジェクト</para>。
-      <para>レコーダーを使用して、常に、<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />の図形を記録する際のプロパティ</para>。
-      <para><b>ShapeRange</b>オブジェクトが含まれていない<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />オブジェクトです</para>。
-      <para /></remarks>
+    <summary>文書の図形の集合である図形範囲を表します。</summary>
+    <remarks><para>図形範囲には、文書内の 1 つの図形を含めたり、文書内のすべての図形を含めることができます。 図面内のすべての図形、または選択範囲内のすべての図形から選択した図形を含めることができます。図形範囲を作成します。 たとえば、ドキュメント、ドキュメントで選択したすべての図形、または文書内のすべてのフリー フォーム図形の最初の 3 つの図形を含む <b>ShapeRange</b> コレクションを作成できます。</para>
+      <para>
+        <b>メモ</b> <see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクトを使用して実行できるほとんどの操作は、1つの図形だけを含む<b>ShapeRange</b>オブジェクトを使用して行うこともできます。 いくつかの操作では、複数の図形を含む <b>ShapeRange</b> オブジェクトに対して実行されるときにエラーが発生します。</para>
+      <para>文書の一連の図形<paramref name="index" />を表す<b>ShapeRange</b>コレクションを取得するには、shapes () を使用し<b>ます。</b>ここ<paramref name="index" />で、は図形の名前またはインデックス番号、または図形の名前またはインデックス番号を含む配列を取得します。 プログラムで配列を使用して、名前またはインデックス番号の配列を作成できます。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" />メソッドを使用して任意の数の図形を返すことができますが、コレクション<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Item(System.Object@)" />のメンバーを1つだけ取得する場合は、このメソッドを使用する方が簡単です。 たとえば、Shapes.Range(1) よりも Shapes(1) の方が記述が簡単になります。</para>
+      <para>選択範囲内の図形<paramref name="index" />を表す<b>shape</b>オブジェクトを取得するには、ShapeRange () を使用<b>します。</b>ここ<paramref name="index" />で、は名前またはインデックス番号を指定します。</para>
+      <para>、 <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Align(Microsoft.Office.Core.MsoAlignCmd,System.Int32)" /> <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Distribute(Microsoft.Office.Core.MsoDistributeCmd,System.Int32)" />、または<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" />の方法を使用して、一連の図形を相互に相対的に配置したり、文書に対して相対的に配置したりします。</para>
+      <para>、 <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Regroup" />、、または<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Ungroup" />のいずれかのメソッドを使用して、図形範囲から形成される<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Group" />1 つの図形を作成して操作します。 Shape <see cref="P:Microsoft.Office.Interop.Word.Shape.GroupItems" />オブジェクトのプロパティは、グループ化<see cref="T:Microsoft.Office.Interop.Word.GroupShapes" />されているすべての図形を表すオブジェクトを返します。このオブジェクトは、1つの図形を形成します。</para>
+      <para>レコーダーは、図形を<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />録音するときに常にプロパティを使用します。</para>
+      <para><b>ShapeRange</b>オブジェクトには、 <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />オブジェクトは含まれません。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -95,7 +87,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Adjustments</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Adjustments" />で指定したすべての調整の調整値を格納しているオブジェクト<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />オートシェイプまたはワードアートを表すオブジェクト。</summary>
+        <summary>オートシェイプ<see cref="T:Microsoft.Office.Interop.Word.Adjustments" />またはワードアートを表す、指定した<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />オブジェクトのすべての調整値を含むオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -124,9 +116,8 @@
         <Parameter Name="RelativeTo" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Align">必要な<see cref="T:Microsoft.Office.Core.MsoAlignCmd" />。 指定した図形範囲の図形の整列する方法を指定します。<b>MsoAlignCmd</b>には、以下の定数のいずれかを指定できます:<b>msoAlignCenters</b><b>msoAlignMiddles</b><b>msoAlignTops</b><b>msoAlignBottoms</b><b>msoAlignLefts</b><b>msoAlignRights</b></param>
-        <param name="RelativeTo">
-          <b>整数</b>が必要です。 <b>True</b> 図形、文書の端に対して整列します。 <b>False</b> 互いを基準にして、図形を整列します。</param>
+        <param name="Align">必須<see cref="T:Microsoft.Office.Core.MsoAlignCmd" />。 指定した図形範囲の図形を配置する方法を指定します。<b>MsoAlignCmd</b>には、次の定数のいずれかを指定できます。<b>msoAlignCenters</b><b>msoAlignMiddles</b><b>msoAlignTops</b><b>msoAlignBottoms</b><b>msoAlignLefts</b><b>msoAlignRights</b></param>
+        <param name="RelativeTo">整数型 (<b>Integer</b>) の値を使用します。 <b>True</b> 図形、文書の端に対して整列します。 <b>False</b> 互いを基準にして、図形を整列します。</param>
         <summary>指定した図形範囲にある図形を整列させます。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -185,7 +176,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />を指定した図形範囲のアンカーが配置された範囲を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />た図形範囲のアンカーが付けられた範囲を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -213,7 +204,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -239,11 +230,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>使用してコピーされている指定した図形の書式設定に適用されます、<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.PickUp" />メソッドです。</summary>
-        <remarks>
-          <para>書式を設定する場合、<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />オブジェクトが既にコピーされていない<b>PickUp</b>メソッドを使用して、<b>適用</b>を使用するメソッドはエラーを生成します。</para>
-          <para />
-        </remarks>
+        <summary><see cref="M:Microsoft.Office.Interop.Word.ShapeRange.PickUp" />メソッドを使用してコピーされた、指定された図形の書式設定に適用されます。</summary>
+        <remarks><para>オブジェクトの書式設定が<b>PickUp</b>メソッドを使用して以前にコピーされていない場合は、Apply メソッドを使用するとエラーが発生します。 <b></b> <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoShapeType">
@@ -272,7 +261,7 @@
         <ReturnType>Microsoft.Office.Core.MsoAutoShapeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された図形の種類を取得または<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />オブジェクトで、線またはフリー フォーム以外のオートシェイプを表す必要があります。</summary>
+        <summary>線またはフリーフォーム以外のオートシェイプ<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />を表す必要がある、指定したオブジェクトの図形の種類を設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -303,12 +292,10 @@
         <ReturnType>Microsoft.Office.Core.MsoBackgroundStyleIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定された図形範囲の図形の背景のスタイルを設定します。</summary>
-        <value>指定した図形範囲の図形の背景のスタイルです。</value>
-        <remarks>
-          <para>読み取り/書き込み<see cref="T:Microsoft.Office.Core.MsoBackgroundStyleIndex" />。</para>
-          <para />
-        </remarks>
+        <summary>指定した図形範囲内の図形の背景のスタイルを取得または設定します。</summary>
+        <value>指定した図形範囲の図形の背景のスタイルを指定します。</value>
+        <remarks><para>読み取り/書き込み<see cref="T:Microsoft.Office.Core.MsoBackgroundStyleIndex" />。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Callout">
@@ -334,7 +321,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.CalloutFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.CalloutFormat" />引き出し線の書式設定の指定したプロパティを格納しているオブジェクト<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />の吹き出しを表すオブジェクト。</summary>
+        <summary>引き出し線<see cref="T:Microsoft.Office.Interop.Word.CalloutFormat" />を表す、指定し<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />たオブジェクトの吹き出し書式のプロパティを含むオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -362,13 +349,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>1 つ</b>が必要です。 トリミング後の描画キャンバスの高さを、パーセンテージ ポイントで指定します。 0.9 を入力すると、キャンバスの高さが下側から 10% トリミングされます。 0.1 を入力すると、キャンバスの高さが下側から 90% トリミングされます。</param>
+        <param name="Increment">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 トリミング後の描画キャンバスの高さを、パーセンテージ ポイントで指定します。 0.9 を入力すると、キャンバスの高さが下側から 10% トリミングされます。 0.1 を入力すると、キャンバスの高さが下側から 90% トリミングされます。</param>
         <summary>描画キャンバスの高さに対するパーセンテージで、キャンバスを下側からトリミングします。</summary>
-        <remarks>
-          <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropTop(System.Single)" /> 、上からトリミングする方法です。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropTop(System.Single)" />メソッドを使用して、上からトリミングします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CanvasCropLeft">
@@ -394,13 +378,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>1 つ</b>が必要です。 トリミング後の描画キャンバスの幅を、パーセンテージ ポイントで指定します。 0.9 を入力すると、キャンバスの幅が左側から 10% トリミングされます。 0.1 を入力すると、キャンバスの幅が左側から 90% トリミングされます。</param>
+        <param name="Increment">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 トリミング後の描画キャンバスの幅を、パーセンテージ ポイントで指定します。 0.9 を入力すると、キャンバスの幅が左側から 10% トリミングされます。 0.1 を入力すると、キャンバスの幅が左側から 90% トリミングされます。</param>
         <summary>.描画キャンバスの幅をパーセンテージで、キャンバスの左側からトリミングします。</summary>
-        <remarks>
-          <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropRight(System.Single)" /> 、描画キャンバスの右側からトリミングします。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropRight(System.Single)" />メソッドを使用して、描画キャンバスの右辺からトリミングします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CanvasCropRight">
@@ -426,13 +407,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>1 つ</b>が必要です。 描画キャンバスのトリミング後の幅を、パーセンテージ ポイントで指定します。 0.9 を入力すると、キャンバスの幅が右側から 10% トリミングされます。 0.1 を入力すると、キャンバスの幅が右側から 90% トリミングされます。</param>
+        <param name="Increment">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 描画キャンバスのトリミング後の幅を、パーセンテージ ポイントで指定します。 0.9 を入力すると、キャンバスの幅が右側から 10% トリミングされます。 0.1 を入力すると、キャンバスの幅が右側から 90% トリミングされます。</param>
         <summary>描画キャンバスの幅をパーセンテージで、キャンバスの右側からトリミングします。</summary>
-        <remarks>
-          <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropLeft(System.Single)" /> 、描画キャンバスの左端からトリミングする方法です。</para>
-          <para />
-        </remarks>
+        <remarks><para>描画キャンバス<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropLeft(System.Single)" />の左側からトリミングするには、メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CanvasCropTop">
@@ -458,13 +436,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>1 つ</b>が必要です。 描画キャンバスのトリミング後の高さを、パーセンテージ ポイントで指定します。 0.9 を入力すると、キャンバスの高さが上側から 10% トリミングされます。 0.1 を入力すると、キャンバスの高さが上側から 90% トリミングされます。</param>
-        <summary>キャンバスの上端からの描画キャンバスの幅のパーセンテージでトリミングします。</summary>
-        <remarks>
-          <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropBottom(System.Single)" /> 、下からトリミングする方法です。</para>
-          <para />
-        </remarks>
+        <param name="Increment">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 描画キャンバスのトリミング後の高さを、パーセンテージ ポイントで指定します。 0.9 を入力すると、キャンバスの高さが上側から 10% トリミングされます。 0.1 を入力すると、キャンバスの高さが上側から 90% トリミングされます。</param>
+        <summary>描画キャンバスの幅をパーセンテージで、キャンバスの上端からトリミングします。</summary>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropBottom(System.Single)" />メソッドを使用して下からトリミングします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CanvasItems">
@@ -490,7 +465,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.CanvasShapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.CanvasShapes" /> 、描画キャンバス内の図形のコレクションを表すオブジェクト。</summary>
+        <summary>描画キャンバス<see cref="T:Microsoft.Office.Interop.Word.CanvasShapes" />内の図形のコレクションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -518,7 +493,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図形範囲内の true の場合、すべての図形は、同じ親の子図形です。</summary>
+        <summary>True の場合は、図形範囲内のすべての図形が同じ親の子図形です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -549,7 +524,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。 </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -580,7 +555,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -611,7 +586,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ConnectorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -640,13 +615,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定された図形をレイアウト枠に変換します。 返します、 <see cref="T:Microsoft.Office.Interop.Word.Frame" /> 、新しいフレームを表すオブジェクト。</summary>
+        <summary>指定された図形をレイアウト枠に変換します。 新しいフレーム<see cref="T:Microsoft.Office.Interop.Word.Frame" />を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>フレームに接続されているテキストをサポートしていない図形を変換できません。画像、OLE オブジェクト、および ActiveX コントロールを使用して、<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ConvertToInlineShape" />メソッドです</para>。
-          <para>複数の図形を含む<b>ShapeRange</b>オブジェクトに対してこのメソッドを使用すると、エラーが発生します</para>。
-          <para>Microsoft Word 97 およびそれ以降では、フレームをテキスト ボックスに置き換えられている</para>。
-          <para /></remarks>
+        <remarks><para>テキストを追加できない図形はレイアウト枠に変換できません。 図、OLE オブジェクト、および ActiveX コントロールの場合は、 <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ConvertToInlineShape" />メソッドを使用します。</para>
+          <para>複数の図形を含む <b>ShapeRange</b> オブジェクトに対してこのメソッドを使用する場合は、エラーが発生します。</para>
+          <para>Microsoft Word 97 以降では、フレームはテキストボックスに置き換えられました。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertToInlineShape">
@@ -670,13 +644,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>文書の描画レイヤーで指定された図形を、文字列レイヤーの位置を固定した図形に変換します。 返します、 <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> 、図または OLE オブジェクトを表すオブジェクト。</summary>
+        <summary>文書の描画レイヤーで指定された図形を、文字列レイヤーの位置を固定した図形に変換します。 図また<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />は OLE オブジェクトを表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>画像、OLE オブジェクトを表す図形のみを変換することができますまたは ActiveX コントロールです</para>。インライン図形に接続されているテキストをサポートする
-          <para>の図形を変換できません。これらの図形を使用して、<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ConvertToFrame" />メソッドです</para>。
-          <para>複数の図形を含む<b>ShapeRange</b>オブジェクトに対してこのメソッドを使用すると、エラーが発生します</para>。
-          <para /></remarks>
+        <remarks><para>図、OLE オブジェクト、または ActiveX コントロールを表す図形のみを変換できます。</para>
+          <para>インライン図形に接続されているテキストをサポートするための図形を変換できません。 これらの図形に対して<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ConvertToFrame" />は、メソッドを使用します。</para>
+          <para>複数の図形を含む <b>ShapeRange</b> オブジェクトに対してこのメソッドを使用する場合は、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -730,12 +703,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -759,7 +731,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -789,7 +761,7 @@
         <ReturnType>Microsoft.Office.Core.IMsoDiagram</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図表ノードが所属するダイアグラム オブジェクトを返します。</summary>
+        <summary>図表ノードが属する図表オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -820,7 +792,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> 、ダイアグラム内のノードを表すオブジェクト。</summary>
+        <summary>ダイアグラム内<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />のノードを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -849,14 +821,11 @@
         <Parameter Name="RelativeTo" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Distribute">必要な<see cref="T:Microsoft.Office.Core.MsoDistributeCmd" />。<b>MsoDistributeCmd</b>には、以下の定数のいずれかを指定できます:<b>msoDistributeHorizontally</b><b>msoDistributeVertically</b></param>
-        <param name="RelativeTo">
-          <b>整数</b>が必要です。 <b>True</b>全体水平方向または垂直方向のスペースをページ上の図形を均等にします。 <b>False</b>最初の図形が占有する水平方向または垂直方向の領域内にそれらを配布します。</param>
+        <param name="Distribute">必須<see cref="T:Microsoft.Office.Core.MsoDistributeCmd" />。<b>MsoDistributeCmd</b>には、次の定数のいずれかを指定できます。<b>msoDistributeHorizontally</b><b>msoDistributeVertically</b></param>
+        <param name="RelativeTo">整数型 (<b>Integer</b>) の値を使用します。 <b>True</b> を設定すると、ページ全体にわたって上下または左右に図形が等間隔に配置されます。 <b>False</b> を設定すると、それらの図形があった元の場所で上下または左右に等間隔に配置されます。</param>
         <summary>指定された図形範囲の図形を等間隔に配置します。</summary>
-        <remarks>
-          <para>図形の間隔、水平方向または垂直方向にするかどうかと、ページ全体またはあった元の場所にそれらを配布するかどうかを指定することができます。</para>
-          <para />
-        </remarks>
+        <remarks><para>図形を左右または上下に整列するか、図形があった元の場所またはページ全体に配置するかを指定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Duplicate">
@@ -880,7 +849,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定の複製を作成<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />オブジェクト、図形の新しい範囲を追加、<see cref="T:Microsoft.Office.Interop.Word.Shapes" />コレクション内の元の図形から標準的なオフセットに戻った、新しい<see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクトです。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />オブジェクトの複製を作成し、元の図形の標準の<see cref="T:Microsoft.Office.Interop.Word.Shapes" />オフセットでコレクションに新しい図形範囲を追加した後、新しい<see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -908,7 +877,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />書式設定プロパティを指定した図形の塗りつぶしを含むオブジェクトです。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />た図形の塗りつぶしの書式プロパティを含むオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -936,7 +905,7 @@
         <Parameter Name="FlipCmd" Type="Microsoft.Office.Core.MsoFlipCmd" />
       </Parameters>
       <Docs>
-        <param name="FlipCmd">必要な<see cref="T:Microsoft.Office.Core.MsoFlipCmd" />。 反転方向です。<b>MsoFlipCmd</b>には、以下の定数のいずれかを指定できます:<b>msoFlipHorizontal</b><b>msoFlipVertical</b></param>
+        <param name="FlipCmd">必須<see cref="T:Microsoft.Office.Core.MsoFlipCmd" />。 反転の向きを示します。<b>MsoFlipCmd</b>には、次の定数のいずれかを指定できます。<b>msoFlipHorizontal</b><b>msoFlipVertical</b></param>
         <summary>図形を水平方向または垂直方向に反転します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -996,10 +965,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.GlowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.GlowFormat" />図形範囲の光彩形式を表すオブジェクト。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.GlowFormat" />
-        </value>
+        <summary>図形範囲<see cref="T:Microsoft.Office.Interop.Word.GlowFormat" />の光彩の書式設定を表すオブジェクトを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.GlowFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1024,12 +991,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定された範囲の図形をグループ化します。 1 つとしてグループ化した図形を返します。<see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクトです。</summary>
+        <summary>指定された範囲の図形をグループ化します。 グループ化された図形を<see cref="T:Microsoft.Office.Interop.Word.Shape" /> 1 つのオブジェクトとして返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>図形のグループは、1 つの図形として扱われる、ためにのグループ化およびグループ解除、図形内のアイテムの数、<see cref="T:Microsoft.Office.Interop.Word.Shapes" />コレクションおよびコレクションに影響を受ける項目の後にある項目のインデックス番号を変更します。</para>
-          <para />
-        </remarks>
+        <remarks><para>図形のグループは1つの図形として扱われるため、図形をグループ化したり、グループ<see cref="T:Microsoft.Office.Interop.Word.Shapes" />を解除したりすると、コレクション内の項目数が変更され、コレクション内の影響を受ける項目の後にある項目のインデックス番号が変わります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GroupItems">
@@ -1055,12 +1020,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.GroupShapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.GroupShapes" />で指定された個々 の図形を表すオブジェクト<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />オブジェクトを表す図形をグループ化します。</summary>
+        <summary>グループ化<see cref="T:Microsoft.Office.Interop.Word.GroupShapes" />された図形を表す、指定し<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />たオブジェクトの個々の図形を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.GroupShapes.Item(System.Object@)" /> 、<b>グループ形状</b>にオブジェクトのメソッド グループから 1 つの図形を取得します。</para>
-          <para />
-        </remarks>
+        <remarks><para>グループから<see cref="P:Microsoft.Office.Interop.Word.GroupShapes.Item(System.Object@)" /> 1 つの図形を取得するのにには、 <b>GroupShapes</b>オブジェクトのメソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasDiagram">
@@ -1089,8 +1052,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>MsoTrue</b>図形が図表である場合。</summary>
+        <summary><b>MsoTrue</b>図形が図表である場合です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1121,8 +1083,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>MsoTrue</b>図形が図表ノードである場合。</summary>
+        <summary><b>MsoTrue</b>図形が図表ノードの場合です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1153,7 +1114,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ポイント単位で指定したオブジェクトの高さを設定または返します。</summary>
+        <summary>指定したオブジェクトの高さをポイント単位で取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1184,14 +1145,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図形の範囲が決められた対象の図形の割合を表す単精度浮動小数点型 (<b>Single</b>) の値を取得または設定します。値の取得および設定が可能です。</summary>
-        <value>
-          <b>Single</b>
-        </value>
-        <remarks>
-          <para>このプロパティを使用して、<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalSize" />プロパティ。<b>WdShapeSizeRelativeNone</b> (-999999) に設定すると (を参照してください、<see cref="T:Microsoft.Office.Interop.Word.WdShapeSizeRelative" />の列挙)、このプロパティは、図形がパーセントのサイズ変更を使用していないために、無視する必要があります。高さは、によってのみ決まります、<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Height" />プロパティ。</para>
-          <para />
-        </remarks>
+        <summary>図形の範囲が決められた対象の図形の割合を表す単精度浮動小数点型 (<b>Single</b>) の値を取得または設定します。 値の取得と設定が可能です。</summary>
+        <value><b>Single</b></value>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalSize" />プロパティにこのプロパティを使用します。 <b>WdShapeSizeRelativeNone</b> (-999999) に設定されている<see cref="T:Microsoft.Office.Interop.Word.WdShapeSizeRelative" />場合 (列挙を参照)、このプロパティは、図形がパーセントのサイズ変更を使用していないため、無視する必要があります。 高さは<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Height" />プロパティによってのみ決定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalFlip">
@@ -1245,12 +1202,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Hyperlink</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.WdShapePosition" />に、指定された関連付けられているハイパーリンクを表す<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />オブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.WdShapePosition" />た<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />オブジェクトに関連付けられているハイパーリンクを表すオブジェクト型 (object) の値を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>指定した図形に関連付けられているハイパーリンクがない場合、エラーが発生します。</para>
-          <para />
-        </remarks>
+        <remarks><para>ハイパーリンクに特定の図形がリンクされていない場合、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -1276,7 +1231,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの型を返します。</summary>
+        <summary>指定したオブジェクトの種類を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1304,9 +1259,8 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>1 つ</b>が必要です。 図形を水平方向にどのくらい移動するかをポイントで指定します。 正の値を指定すると図形は右に移動し、負の値を指定すると左に移動します。</param>
-        <summary>指定された図形を、指定したポイント数だけ水平方向に移動します。</summary>
+        <param name="Increment">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 図形の水平方向の移動量をポイント単位で指定します。 正の値を指定すると図形は右方向に移動し、負の値を指定すると左方向に移動します。</param>
+        <summary>指定した図形を、指定したポイント数だけ水平方向に移動します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1333,13 +1287,11 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>1 つ</b>が必要です。 図形を水平方向に回転させる角度を指定します。 正の値を指定すると図形は時計回りに回転し、負の値を指定すると反時計回りに回転します。</param>
-        <summary>図形の z 軸を中心とした回転角度を、指定した度数だけ変更します。</summary>
-        <remarks>
-          <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Rotation" />の図形の絶対回転角度を設定するプロパティ</para>。
-          <para>3 次元の図形の x 軸または y 軸の周りを回転するにを使用して、<see cref="M:Microsoft.Office.Interop.Word.ThreeDFormat.IncrementRotationX(System.Single)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Word.ThreeDFormat.IncrementRotationY(System.Single)" />メソッドです</para>。
-          <para /></remarks>
+        <param name="Increment">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 図形の水平方向の回転角度をどれくらい変更するかを度単位で指定します。 正の値を指定すると図形は時計回りに回転し、負の値を指定すると反時計回りに回転します。</param>
+        <summary>指定した図形の z 軸回りの回転を、指定した角度だけ変更します。</summary>
+        <remarks><para>図形の<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Rotation" />絶対回転角度を設定するには、プロパティを使用します。</para>
+          <para>3次元図形を x 軸または y 軸を中心に回転させるには、 <see cref="M:Microsoft.Office.Interop.Word.ThreeDFormat.IncrementRotationX(System.Single)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Word.ThreeDFormat.IncrementRotationY(System.Single)" />メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementTop">
@@ -1365,9 +1317,8 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>1 つ</b>が必要です。 図形の垂直方向の移動量をポイント単位で指定します。 正の値を指定すると図形は下方向に移動し、負の値を指定すると上方向に移動します。</param>
-        <summary>指定した図形を、指定したポイント数だけ垂直に移動します。</summary>
+        <param name="Increment">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 図形の垂直方向の移動量をポイント単位で指定します。 正の値を指定すると図形は下方向に移動し、負の値を指定すると上方向に移動します。</param>
+        <summary>指定した図形を、指定したポイント数だけ垂直方向に移動します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1397,7 +1348,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">位置を表す序数または各オブジェクトの名前を表す文字列を示す<b>オブジェクト</b>。</param>
+        <param name="Index">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1429,14 +1380,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>テーブル内、またはテーブルの外部テーブル内の図形かどうかを表す<b>整数</b>が表示されますを返します。 <b>True</b>は、テーブル内で指定された画像が表示されることを示します。 <b>False</b>は、指定された図が表の外側に表示されることを示します。</summary>
+        <summary>表の中の図形を表の中に表示するか、テーブルの外側に表示するかを表す<b>整数型 (Integer</b> ) の値を取得します。 <b>True</b> の場合は、指定された図が表内に表示されます。 <b>False</b>は、指定された図が表の外側に表示されることを示します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>メモ</b>
-            <b>LayoutInCell</b>プロパティを設定する有効になる場合にのみ、<see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" />のプロパティの<see cref="T:Microsoft.Office.Interop.Word.WrapFormat" />オブジェクトは、 <b>wdWrapTypeInline</b>または<b>wdWrapTypeNone</b>以外に設定されています</para>。
-          <para><b>LayoutInCell</b>プロパティは、図の書式設定のレイアウトの詳細設定] ダイアログ ボックスのテーブル セルのオプションでレイアウトに対応します</para>。
-          <para /></remarks>
+        <remarks><para>
+            <b>メモ</b> <b>LayoutInCell</b>プロパティの設定<see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" />は、 <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" />オブジェクトのプロパティが<b>wdWrapTypeInline</b>または<b>wdWrapTypeNone</b>以外のものに設定されている場合にのみ有効になります。</para>
+          <para><b>LayoutInCell</b> プロパティは、図の書式設定は、[ レイアウトの詳細設定] ダイアログ ボックスで 表のセルのレイアウトオプションに対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -1465,13 +1414,11 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>1 つ</b>を表す単位で指定した図形範囲の水平方向の位置を設定または返します。 任意の有効な場合があります<see cref="T:Microsoft.Office.Interop.Word.WdShapePosition" />定数。</summary>
+        <summary>取得または設定、 <b>1 つ</b>の指定した図形範囲の水平方向の位置をポイント単位で指定します。 任意の有効な<see cref="T:Microsoft.Office.Interop.Word.WdShapePosition" />定数を指定することもできます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>図形の位置は、図形のアンカーを図形の境界ボックスの左上隅から測定されます。<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />プロパティは、文字、列、余白、またはページの端にアンカーが配置されているかどうかを制御します</para>。
-          <para>の<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />複数の図形を左のプロパティを格納しているオブジェクトが各図形の水平位置を設定します</para>。
-          <para /></remarks>
+        <remarks><para>図形の位置は、図形のアンカーを図形の境界ボックスの左上隅から測定されます。 プロパティ<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />は、アンカーの位置を、文字、列、余白、またはページの端の横にするかどうかを制御します。</para>
+          <para><see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />オブジェクトに複数の図形が含まれている場合、Left プロパティは各図形の水平方向の位置を設定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LeftRelative">
@@ -1500,14 +1447,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定、 <b>1 つ</b>の図形範囲の相対的な左端位置を表す。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>Single</b>
-        </value>
-        <remarks>
-          <para>このプロパティを使用して、<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeHorizontalPosition" />プロパティ。<b>WdShapePositionRelativeNone</b> (-999999) に設定すると (を参照してください、<see cref="T:Microsoft.Office.Interop.Word.WdShapePositionRelative" />の列挙)、このプロパティは、図形がパーセントの配置を使用していないために、無視する必要があります。によって水平方向の位置を確認してのみ、<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Left" />プロパティ。</para>
-          <para />
-        </remarks>
+        <summary><b>1 つ</b>を表す図形範囲の相対的な左端位置を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><b>Single</b></value>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeHorizontalPosition" />プロパティにこのプロパティを使用します。 <b>Wdshape Positionrel/ベンダー 1</b> (-999999) に設定すると ( <see cref="T:Microsoft.Office.Interop.Word.WdShapePositionRelative" />列挙を参照)、このプロパティは、図形がパーセントの配置を使用していないためには無視されます。 水平方向の位置は、 <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Left" />プロパティによってのみ決定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Line">
@@ -1533,12 +1476,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.LineFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.LineFormat" />オブジェクトを指定した図形のプロパティを書式設定の行が含まれています。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.LineFormat" />た図形の線の書式設定プロパティを含むオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>線は、 <b>LineFormat</b>オブジェクトは線自体を表します。外枠で囲まれた図形の場合、 <b>LineFormat</b>オブジェクトは輪郭を表します。</para>
-          <para />
-        </remarks>
+        <remarks><para>線は、 <b>LineFormat</b> オブジェクトは線自体を表します。外枠で囲まれた図形の場合、 <b>LineFormat</b> オブジェクトは輪郭を表します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LockAnchor">
@@ -1567,13 +1508,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>の場合、指定された<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />オブジェクトのアンカーは、アンカーが配置された範囲にロックされています。</summary>
+        <summary><b>True</b>の場合は<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> 、指定したオブジェクトのアンカーは、アンカーがある範囲にロックされます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>図形のアンカーが固定されている場合、は、(図形を移動すると、アンカーを移動しない) をドラッグして図形のアンカーを移動することはできません</para>。
-          <para>A<see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクトは、テキストの範囲に固定されているが、ページ上にどこにでも配置できます。図形は、アンカーの範囲を含む最初の段落の先頭にアンカーされます。図形は、アンカーと同じページに常に残ります</para>。
-          <para /></remarks>
+        <remarks><para>図形にアンカーが固定されている場合、図形のアンカーをドラッグして移動することはできません (図形を移動してもアンカーは移動しません)。</para>
+          <para><see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクトはテキストの範囲に固定されていますが、ページ上の任意の場所に配置できます。 図形は、アンカーが配置された範囲が含まれる最初の段落に対応付けられます。 図形は、常にアンカーと同じページにあります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LockAspectRatio">
@@ -1602,8 +1541,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>Msotrue を設定する</b> 場合は、指定した図形では、サイズを変更するときの元の縦横比が保持されます。 <b>Msofalse を設定する</b> 場合はサイズを変更するときに個別に図形の幅と高さを変更することができます。</summary>
+        <summary><b>Msotrue を設定する</b> 場合は、指定した図形では、サイズを変更するときの元の縦横比が保持されます。 <b>Msofalse を設定する</b> 場合はサイズを変更するときに個別に図形の幅と高さを変更することができます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1662,7 +1600,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ShapeNodes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.ShapeNodes" /> 、指定した図形の幾何学的な説明を表すコレクション。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.ShapeNodes" />た図形の幾何学的な説明を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1718,7 +1656,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Shape" /> 、共通の親図形の子図形の範囲を表すオブジェクト。</summary>
+        <summary>子図形<see cref="T:Microsoft.Office.Interop.Word.Shape" />の範囲の共通の親図形を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1744,11 +1682,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>図形の書式をコピーします。</summary>
-        <remarks>
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Apply" />を別の図形にコピーした書式を適用する方法です。</para>
-          <para />
-        </remarks>
+        <summary>指定された図形の書式をコピーします。</summary>
+        <remarks><para>コピーし<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Apply" />た書式を別の図形に適用するには、メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureFormat">
@@ -1774,7 +1710,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.PictureFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.PictureFormat" />図の書式設定の指定されたプロパティを格納しているオブジェクト<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />図または OLE オブジェクトを表すオブジェクト。</summary>
+        <summary>図また<see cref="T:Microsoft.Office.Interop.Word.PictureFormat" />は OLE オブジェクトを表す指定さ<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />れたオブジェクトの図の書式設定プロパティを含むオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1802,10 +1738,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ReflectionFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" />の図形範囲の反射形式を表すオブジェクト。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" />
-        </value>
+        <summary>図形範囲<see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" />の反射の書式設定を表すオブジェクトを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1833,12 +1767,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定された図形範囲が以前に属していたグループを再びグループ化します。 再グループ化した図形を 1 つとして返します<see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクトです。</summary>
+        <summary>指定された図形範囲が以前に属していたグループを再びグループ化します。 再グループ化図形を1つ<see cref="T:Microsoft.Office.Interop.Word.Shape" />のオブジェクトとして返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <b>再グループ化</b>する<para>メソッドは、以前にグループ化で、指定した図形を最初にのみグループを復元<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />コレクションです。したがって、指定した図形範囲に別のグループに属していた図形が含まれている場合、グループの 1 つだけが復元されます</para>。
-          <para>図形のグループは、1 つの図形として扱われる、ためのグループ化とグループ化を解除、図形を Shapes コレクション内の項目の数で、コレクション内の影響を受ける項目の後にある項目のインデックス番号を変更します</para>。
-          <para /></remarks>
+        <remarks><para>再<b></b>グループ化メソッドは、指定されたコレクション内で最初にグループ化さ<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />れた図形のグループのみを復元します。 したがって指定した図形範囲で、以前は別のグループに属していた図形が含まれている場合、復元されるグループは 1 つだけです。</para>
+          <para>グループ化された図形は 1 つの図形として扱われるため、図形をグループ化したりグループを解除したりすると、 Shapes コレクションのオブジェクト数が変わり、変更されたオブジェクト以降のインデックス番号が付け直されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RelativeHorizontalPosition">
@@ -1867,7 +1800,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRelativeHorizontalPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図形範囲の水平方向の位置を決めるときの基準を指定します。</summary>
+        <summary>図形範囲の水平方向の位置を基準にして指定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1898,14 +1831,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRelativeHorizontalSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.WdRelativeHorizontalSize" />の図形の範囲に相対的なオブジェクトを表す定数です。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdRelativeHorizontalSize" />
-        </value>
-        <remarks>
-          <para>このプロパティを使用して、<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.WidthRelative" />プロパティ。</para>
-          <para />
-        </remarks>
+        <summary>図形の範囲を<see cref="T:Microsoft.Office.Interop.Word.WdRelativeHorizontalSize" />基準とするオブジェクトを表す定数を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdRelativeHorizontalSize" /></value>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.ShapeRange.WidthRelative" />プロパティにこのプロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RelativeVerticalPosition">
@@ -1934,7 +1863,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRelativeVerticalPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図形範囲の垂直方向の位置を決めるときの基準を指定します。</summary>
+        <summary>図形範囲の垂直方向の相対位置を指定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1965,14 +1894,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRelativeVerticalSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.WdRelativeVerticalSize" />の図形の範囲に相対的なオブジェクトを表す定数です。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdRelativeVerticalSize" />
-        </value>
-        <remarks>
-          <para>このプロパティを使用して、<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.HeightRelative" />プロパティ。</para>
-          <para />
-        </remarks>
+        <summary>図形の範囲を<see cref="T:Microsoft.Office.Interop.Word.WdRelativeVerticalSize" />基準とするオブジェクトを表す定数を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdRelativeVerticalSize" /></value>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.ShapeRange.HeightRelative" />プロパティにこのプロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RerouteConnections">
@@ -2031,10 +1956,8 @@
       <Docs>
         <summary>取得または指定した図形は、z 軸回りの回転数を設定します。 正の値は時計回りの回転を示します負の値は、反時計回りの回転を示します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>3 次元図形の x 軸または y 軸周りの回転角度を設定するのにを使用して、<see cref="P:Microsoft.Office.Interop.Word.ThreeDFormat.RotationX" />プロパティまたは<see cref="P:Microsoft.Office.Interop.Word.ThreeDFormat.RotationY" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />オブジェクトです。</para>
-          <para />
-        </remarks>
+        <remarks><para>3次元図形の x 軸または y 軸回りの回転角度を設定するには、 <see cref="P:Microsoft.Office.Interop.Word.ThreeDFormat.RotationX" /> <see cref="P:Microsoft.Office.Interop.Word.ThreeDFormat.RotationY" /> <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />オブジェクトのプロパティまたはプロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RTF">
@@ -2092,15 +2015,12 @@
         <Parameter Name="Scale" Type="Microsoft.Office.Core.MsoScaleFrom" />
       </Parameters>
       <Docs>
-        <param name="Factor">
-          <b>1 つ</b>が必要です。 変更後の図形の幅と現在の幅の比率、または変更後の図形の幅と元の幅との比率を指定します。 たとえば、四角形を 50% 拡大するには、この引数に 1.5 を指定します。</param>
-        <param name="RelativeToOriginalSize">必要な<see cref="T:Microsoft.Office.Core.MsoTriState" />。 の <b>場合は true</b> 図形は元のサイズに対して拡大または縮小します。 False 現在のサイズに対して拡大または縮小します。 指定できます true の場合この引数に指定した図形が図または OLE オブジェクトである場合にのみです。<b>Msotristate クラス</b>には、以下の定数のいずれかを指定できます:<b>msoCTrue</b><b>msoFalse</b><b>msoTriStateMixed</b><b>msoTriStateToggle</b><b>msotrue を設定します。</b></param>
-        <param name="Scale">省略可能な<see cref="T:Microsoft.Office.Core.MsoScaleFrom" />。 図形の大きさを変更するときにその位置を保持する図形の一部です。<b>MsoScaleFrom</b>には、以下の定数のいずれかを指定できます:<b>msoScaleFromBottomRight</b><b>msoScaleFromTopLeft</b>既定の<b>msoScaleFromMiddle</b></param>
-        <summary>図形の高さを指定した係数で拡大または縮小します。</summary>
-        <remarks>
-          <para>図または OLE オブジェクトでは、元のサイズに対して、または現在のサイズの図形を拡大または縮小するかどうかを指定できます。図形が図または OLE オブジェクトは、常に現在の高さに対して拡大されます。</para>
-          <para />
-        </remarks>
+        <param name="Factor">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 現在の高さと変更後の高さの比率、または元の高さと変更後の高さの比率を指定します。 たとえば、四角形を 50% 拡大する場合は、この引数に 1.5 を指定します。</param>
+        <param name="RelativeToOriginalSize">必須<see cref="T:Microsoft.Office.Core.MsoTriState" />。 の <b>場合は true</b> 図形は元のサイズに対して拡大または縮小します。 False 現在のサイズに対して拡大または縮小します。 指定した図形が図または OLE オブジェクトである場合にのみ、この引数に True を指定できます。<b>MsoTriState</b>には、次の定数のいずれかを指定できます:<b>mmsoTriStateMixed true</b><b>msoFalse</b><b></b><b>msotristatetoggle</b><b>msoTrue</b></param>
+        <param name="Scale">省略<see cref="T:Microsoft.Office.Core.MsoScaleFrom" />可能です。 図形を拡大または縮小するときの位置を保持する図形の部分を指定します。<b>Msoscalefrom</b>は、次の定数のいずれかとすることができます。<b>Msoscaleefromright Right</b><b>MsoScaleFromTopLeft</b> default<b>msomarker efrom中段</b></param>
+        <summary>指定した係数分だけ図形の高さを変更します。</summary>
+        <remarks><para>図または OLE オブジェクトの場合は、図形の元のサイズに対して拡大または縮小するのか、現在のサイズに対して拡大または縮小するのかを指定できます。図または OLE オブジェクト以外の図形の場合は、常に現在の高さに対して拡大または縮小されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScaleWidth">
@@ -2127,15 +2047,12 @@
         <Parameter Name="Scale" Type="Microsoft.Office.Core.MsoScaleFrom" />
       </Parameters>
       <Docs>
-        <param name="Factor">
-          <b>1 つ</b>が必要です。 変更後の図形の幅と現在の幅の比率、または変更後の図形の幅と元の幅との比率を指定します。 たとえば、四角形を 50% 拡大するには、この引数に 1.5 を指定します。</param>
-        <param name="RelativeToOriginalSize">必要な<see cref="T:Microsoft.Office.Core.MsoTriState" />。 の <b>場合は true</b> 図形は元のサイズに対して拡大または縮小します。 False 現在のサイズに対して拡大または縮小します。 指定できます true の場合この引数に指定した図形が図または OLE オブジェクトである場合にのみです。<b>Msotristate クラス</b>には、以下の定数のいずれかを指定できます:<b>msoCTrue</b><b>msoFalse</b><b>msoTriStateMixed</b><b>msoTriStateToggle</b><b>msotrue を設定します。</b></param>
-        <param name="Scale">省略可能な<see cref="T:Microsoft.Office.Core.MsoScaleFrom" />。 図形の大きさを変更するときにその位置を保持する図形の一部です。<b>MsoScaleFrom</b>には、以下の定数のいずれかを指定できます:<b>msoScaleFromBottomRight</b><b>msoScaleFromTopLeft</b>既定の<b>msoScaleFromMiddle</b></param>
-        <summary>図形の幅を、指定した係数で拡大または縮小します。</summary>
-        <remarks>
-          <para>図または OLE オブジェクトでは、元のサイズに対して、または現在のサイズの図形を拡大または縮小するかどうかを指定できます。図形が図または OLE オブジェクトは、常に現在の幅に対して拡大されます。</para>
-          <para />
-        </remarks>
+        <param name="Factor">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 現在の幅と変更後の幅の比率、または元の幅と変更後の幅の比率を指定します。 たとえば、四角形を 50% 拡大するには、この引数に 1.5 を指定します。</param>
+        <param name="RelativeToOriginalSize">必須<see cref="T:Microsoft.Office.Core.MsoTriState" />。 の <b>場合は true</b> 図形は元のサイズに対して拡大または縮小します。 False 現在のサイズに対して拡大または縮小します。 指定した図形が図または OLE オブジェクトである場合にのみ、この引数に True を指定できます。<b>MsoTriState</b>には、次の定数のいずれかを指定できます:<b>mmsoTriStateMixed true</b><b>msoFalse</b><b></b><b>msotristatetoggle</b><b>msoTrue</b></param>
+        <param name="Scale">省略<see cref="T:Microsoft.Office.Core.MsoScaleFrom" />可能です。 図形を拡大または縮小するときの位置を保持する図形の部分を指定します。<b>Msoscalefrom</b>は、次の定数のいずれかとすることができます。<b>Msoscaleefromright Right</b><b>MsoScaleFromTopLeft</b> default<b>msomarker efrom中段</b></param>
+        <summary>指定した係数分だけ図形の幅を変更します。</summary>
+        <remarks><para>図または OLE オブジェクトの場合は、図形の元のサイズに対して拡大または縮小するのか、現在のサイズに対して拡大または縮小するのかを指定できます。図または OLE オブジェクト以外の図形の場合は、常に現在の幅に対して拡大または縮小されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -2186,11 +2103,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>そのドキュメントの既定の図形を指定した図形の書式を適用します。 新しく図形を作成すると、その図形は既定の図形から大部分の属性を継承します。</summary>
-        <remarks>
-          <para>このメソッドを使用して、図形の調整] メニューの [図形描画] ツールバーの [オートシェイプの既定値の設定コマンドを使用するのと同じです。</para>
-          <para />
-        </remarks>
+        <summary>指定した図形の書式設定を、その文書の既定の図形に適用します。 新しく図形を作成すると、その図形は既定の図形から大部分の属性を継承します。</summary>
+        <remarks><para>このメソッドを使用することは、[描画] ツールバーの [図形の調整] メニューの [オートシェイプの既定値を設定する] を使用するのと同じです。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shadow">
@@ -2216,7 +2131,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ShadowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" />を影付きの指定した図形の書式を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" />た図形の影付きの書式設定を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2247,12 +2162,10 @@
         <ReturnType>Microsoft.Office.Core.MsoShapeStyleIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定された図形範囲の図形の図形のスタイルを設定します。</summary>
-        <value>指定した図形範囲の図形の図形のスタイルです。</value>
-        <remarks>
-          <para>読み取り/書き込み<see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" />。</para>
-          <para />
-        </remarks>
+        <summary>指定した図形範囲内の図形の図形のスタイルを取得または設定します。</summary>
+        <value>指定した図形範囲の図形のスタイルを指定します。</value>
+        <remarks><para>読み取り/書き込み<see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" />。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SoftEdge">
@@ -2278,10 +2191,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.SoftEdgeFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.SoftEdgeFormat" />図形の範囲のソフト エッジ形式を表すオブジェクト。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.SoftEdgeFormat" />
-        </value>
+        <summary>図形範囲<see cref="T:Microsoft.Office.Interop.Word.SoftEdgeFormat" />の柔らかい輪郭の書式設定を表すオブジェクトを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.SoftEdgeFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2308,7 +2219,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextEffectFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.TextEffectFormat" />指定されたテキスト効果の書式プロパティを含むオブジェクト<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />ワードアートを表すオブジェクト。</summary>
+        <summary>ワードアート<see cref="T:Microsoft.Office.Interop.Word.TextEffectFormat" />を表す指定<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />したオブジェクトのテキスト効果の書式設定プロパティを含むオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2336,7 +2247,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextFrame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.TextFrame" /> 、指定した図形のテキストを格納しているオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.TextFrame" />た図形のテキストを含むオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2364,10 +2275,8 @@
         <ReturnType>Microsoft.Office.Core.TextFrame2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Core.TextFrame2" /> 、指定した図形範囲のテキストを格納しているオブジェクト。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.TextFrame2" />
-        </value>
+        <summary>指定し<see cref="T:Microsoft.Office.Core.TextFrame2" />た図形範囲のテキストを含むオブジェクトを取得します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Core.TextFrame2" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2394,7 +2303,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ThreeDFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> 3-d スタイル: 書式設定プロパティを指定した図形の効果を含むオブジェクトです。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />た図形の3-d 効果の書式プロパティを含むオブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2425,12 +2334,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定した図形範囲の図形のタイトルを含む文字列を設定します。</summary>
-        <value>指定した図形範囲の図形のタイトルを含む文字列です。</value>
-        <remarks>
-          <para>読み取り/書き込み。図形の代替テキスト、タイトルを提供するのにには、このプロパティを使用します。このプロパティでは、alt キーを押しテキスト ウィンドウで、[Microsoft Word 2010 で図形の書式設定] ダイアログ ボックスのタイトル] テキスト ボックスにタイトル テキストを追加します。</para>
-          <para />
-        </remarks>
+        <summary>指定した図形範囲内の図形のタイトルを含む文字列を取得または設定します。</summary>
+        <value>指定した図形範囲内の図形のタイトルを含む文字列。</value>
+        <remarks><para>値の取得と設定が可能です。 このプロパティを使用して、図形の代替テキストタイトルを指定します。 このプロパティは、Microsoft Word 2010 の [図形の書式設定] ダイアログボックスの [代替テキスト] ウィンドウで、[タイトル] テキストボックスにタイトルテキストを追加します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -2459,12 +2366,11 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定された図形範囲の垂直位置をポイント単位で設定します。</summary>
+        <summary>指定した図形範囲の垂直方向の位置をポイント単位で設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>図形の位置は、図形のアンカーを図形の境界ボックスの左上隅から測定されます。<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalPosition" />プロパティは、行、段落、余白、またはページの端の横に図形のアンカーが配置されているかどうかを制御します</para>。
-          <para>の<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />以上の 1 つの図形では、 <b>Top</b>プロパティを格納しているオブジェクトが各図形の垂直位置を設定します</para>。
-          <para /></remarks>
+        <remarks><para>図形の位置は、図形のアンカーを図形の境界ボックスの左上隅から測定されます。 プロパティ<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalPosition" />は、図形のアンカーを、線、段落、余白、またはページの端の横に配置するかどうかを制御します。</para>
+          <para>オブジェクトに複数の図形が含まれている場合、Top プロパティは各図形の垂直位置を設定します。 <b></b> <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TopRelative">
@@ -2493,15 +2399,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>1 つ</b>を表す図形範囲の相対的な先頭位置を設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>Single</b>
-        </value>
-        <remarks>
-          <para>このプロパティを使用して、<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalPosition" />プロパティ。<b>WdShapePositionRelativeNone</b> (-999999) に設定すると (を参照してください、<see cref="T:Microsoft.Office.Interop.Word.WdShapePositionRelative" />の列挙)、このプロパティは、図形がパーセントの配置を使用していないために、無視する必要があります。によって垂直方向の位置を確認してのみ、<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Top" />プロパティ。</para>
-          <para />
-        </remarks>
+        <summary><b>1 つ</b>を表す図形範囲の相対的な上位置を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><b>Single</b></value>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalPosition" />プロパティにこのプロパティを使用します。 <b>Wdshape Positionrel/ベンダー 1</b> (-999999) に設定すると ( <see cref="T:Microsoft.Office.Interop.Word.WdShapePositionRelative" />列挙を参照)、このプロパティは、図形がパーセントの配置を使用していないためには無視されます。 垂直位置は、 <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Top" />プロパティによってのみ決定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -2553,12 +2454,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定した図形または図形範囲の図形のグループ化を解除します。 図および OLE オブジェクトを指定した図形または図形範囲内で逆アセンブルします。 1 つとしてグループ化されていない図形を返します<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />オブジェクトです。</summary>
+        <summary>指定した図形または図形範囲の図形のグループ化を解除します。 図および OLE オブジェクトを指定した図形または図形範囲内で逆アセンブルします。 グループ化されていない<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />図形を1つのオブジェクトとして返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>図形のグループは、1 つのオブジェクトとして扱われる、ためにのグループ化およびグループ解除、図形内のアイテムの数、<see cref="T:Microsoft.Office.Interop.Word.Shapes" />コレクションおよびコレクションに影響を受ける項目の後にある項目のインデックス番号を変更します。</para>
-          <para />
-        </remarks>
+        <remarks><para>図形のグループは1つのオブジェクトとして扱われるため、図形をグループ化したり、グループ<see cref="T:Microsoft.Office.Interop.Word.Shapes" />を解除したりすると、コレクション内の項目数が変更され、コレクション内の影響を受ける項目の後にある項目のインデックス番号が変わります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalFlip">
@@ -2584,8 +2483,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合指定した図形が垂直軸を中心に反転します。</summary>
+        <summary>指定された図形が縦軸で反転されている場合は <b>True</b> を指定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2613,18 +2511,37 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>一連の座標のペアとして指定されたフリー フォームの頂点 (およびベジェ曲線のコントロール ポイント) の座標を返します。</summary>
+        <summary>指定したフリーフォームの頂点 (およびベジェ曲線のコントロール ポイント) の座標を、一連の 2 次元の座標として取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>引数として、このプロパティによって返される配列を使用することができます、<see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCurve(System.Object@,System.Object@)" />または<see cref="M:Microsoft.Office.Interop.Word.Shapes.AddPolyline(System.Object@,System.Object@)" />メソッドです</para>。
-          <para>次の表は、 <b>Vertices</b>プロパティが配列 vertArray() に値を関連付けると三角形の頂点の座標を使用してを示しています</para>。
-          <list type="table"><item><description>vertArray (1, 1)</description><description>には、文書の左側にある最初の頂点から水平方向の距離</description></item>。
-            <item><description>vertArray (1, 2)</description><description>、垂直方向の距離の最初の頂点から文書の先頭にします</description></item>。
-            <item><description>vertArray (2, 1)</description><description>2 番目の頂点からドキュメントの左端までの水平方向の距離</description></item>。
-            <item><description>vertArray (2, 2)</description><description>、ドキュメントの先頭に 2 番目の頂点から垂直方向の距離</description></item>。
-            <item><description>vertArray (3, 1)</description><description>3 番目の頂点からドキュメントの左端までの水平方向の距離</description></item>。
-            <item><description>vertArray (3, 2)</description><description>3 番目の頂点から文書の先頭への垂直方向の距離</description></item></list>。
-          <para /></remarks>
+        <remarks><para>このプロパティによって返される配列は、 <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCurve(System.Object@,System.Object@)" />または<see cref="M:Microsoft.Office.Interop.Word.Shapes.AddPolyline(System.Object@,System.Object@)" />メソッドの引数として使用できます。</para>
+          <para>次の表は、<b>頂点</b>プロパティが配列 vertarray () 内の値と三角形の頂点の座標を関連付ける方法を示しています。</para>
+          <list type="table">
+            <item>
+              <description>vertArray (1, 1)</description>
+              <description>最初の頂点から文書の左端までの水平方向の距離</description>
+            </item>
+            <item>
+              <description>vertArray (1, 2)</description>
+              <description>最初の頂点から文書の上端までの垂直方向の距離</description>
+            </item>
+            <item>
+              <description>vertArray (2, 1)</description>
+              <description>2 番目の頂点から文書の左端までの水平方向の距離</description>
+            </item>
+            <item>
+              <description>vertArray (2、2)</description>
+              <description>2 番目の頂点から文書の上端までの垂直方向の距離</description>
+            </item>
+            <item>
+              <description>vertArray (3、1)</description>
+              <description>3 番目の頂点から文書の左端までの水平方向の距離</description>
+            </item>
+            <item>
+              <description>vertArray (3、2)</description>
+              <description>3 番目の頂点から文書の上端までの垂直方向の距離</description>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -2655,10 +2572,8 @@
       <Docs>
         <summary>True を指定したオブジェクトまたは書式設定の適用が表示されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>任意のオブジェクトでは、一部のメソッドとプロパティできない場合があります、 <b>Visible</b>プロパティが<b>False</b>の場合。</para>
-          <para />
-        </remarks>
+        <remarks><para>任意のオブジェクトでは、一部のメソッドとプロパティできない場合があります、 <b>Visible</b> プロパティが <b>False</b> の場合。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -2718,15 +2633,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>1 つ</b>を表す図形範囲の相対的な幅を設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>Single</b>
-        </value>
-        <remarks>
-          <para>このプロパティを使用して、<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeHorizontalSize" />プロパティ。<b>WdShapeSizeRelativeNone</b> (-999999) に設定すると (を参照してください、<see cref="T:Microsoft.Office.Interop.Word.WdShapeSizeRelative" />の列挙)、このプロパティは、図形がパーセントのサイズ変更を使用していないために、無視する必要があります。幅がのみによって、<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Width" />プロパティ。</para>
-          <para />
-        </remarks>
+        <summary><b>1 つ</b>を表す図形範囲の相対的な幅を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><b>Single</b></value>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeHorizontalSize" />プロパティにこのプロパティを使用します。 <b>WdShapeSizeRelativeNone</b> (-999999) に設定されている<see cref="T:Microsoft.Office.Interop.Word.WdShapeSizeRelative" />場合 (列挙を参照)、このプロパティは、図形がパーセントのサイズ変更を使用していないため、無視する必要があります。 幅は<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Width" />プロパティによって決定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WrapFormat">
@@ -2752,7 +2662,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WrapFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.WrapFormat" />を指定した図形範囲の周囲で文字列の折り返しに関するプロパティを含むオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.WrapFormat" />た図形範囲の周囲での文字列の折り返しに関するプロパティを含むオブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2780,12 +2690,10 @@
         <Parameter Name="ZOrderCmd" Type="Microsoft.Office.Core.MsoZOrderCmd" />
       </Parameters>
       <Docs>
-        <param name="ZOrderCmd">必要な<see cref="T:Microsoft.Office.Core.MsoZOrderCmd" />。 その他の図形を基準に指定した図形の移動先を指定します。<b>MsoZOrderCmd</b>には、以下の定数のいずれかを指定できます:<b>msoBringForward</b><b>msoBringInFrontOfText</b><b>msoBringToFront</b><b>msoSendBackward</b><b>msoSendBehindText</b><b>msoSendToBack</b></param>
-        <summary>指定された図形をコレクションの他の図形の前面または背面に移動します。つまり、図形の z 方向における順序を変更します。</summary>
-        <remarks>
-          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.ZOrderPosition" /> 、z オーダーでの図形の現在の位置を決定するプロパティです。</para>
-          <para />
-        </remarks>
+        <param name="ZOrderCmd">必須<see cref="T:Microsoft.Office.Core.MsoZOrderCmd" />。 他の図形を基準にして、指定した図形を移動する位置を指定します。<b>Msozordercmd</b>には、次の定数のいずれかを指定できます:<b>Msozordercmd</b><b>msoBringInFrontOfText</b><b>msobringtofront</b><b>msosend後方</b><b>msoSendBehindText</b><b>msozordercmd</b></param>
+        <summary>コレクションの他の図形の前面または背後に指定の図形を移動させます (つまり、図形の位置を z オーダーで変更します)。</summary>
+        <remarks><para>図形の<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.ZOrderPosition" />現在の z 方向の位置を確認するには、プロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ZOrderPosition">
@@ -2813,11 +2721,10 @@
       <Docs>
         <summary>指定した図形の z 方向の位置を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>図形の z オーダーの位置を設定するのにを使用して、<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ZOrder(Microsoft.Office.Core.MsoZOrderCmd" />メソッドです</para>。Z オーダーで図形を
-          <para>の位置は、 <b>Shapes</b>コレクション内の図形のインデックス番号に対応します。たとえば、myDocument に 4 つの図形がある場合は、式 myDocument.Shapes(1) は、z オーダーの背面にある図形を取得し、式 myDocument.Shapes(4) は、z オーダーの前面にある図形を返します</para>。
-          <para>コレクションに新しい図形を追加するたびに既定では、z オーダーの前面に追加されます</para>。
-          <para /></remarks>
+        <remarks><para>図形の z オーダーの位置を設定するには、 <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ZOrder(Microsoft.Office.Core.MsoZOrderCmd" />メソッドを使用します。</para>
+          <para>図形の z オーダーの位置は、 <b>Shapes</b> コレクション内の図形のインデックス番号に対応します。 たとえば、myDocument に 4 つの図形がある場合、myDocument.Shapes(1) は z 方向の最背面の図形を取得し、myDocument.Shapes(4) は z 方向の最前面の図形を返します。</para>
+          <para>コレクションに新しい図形を追加すると、既定では、必ず z 方向の前面に追加されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

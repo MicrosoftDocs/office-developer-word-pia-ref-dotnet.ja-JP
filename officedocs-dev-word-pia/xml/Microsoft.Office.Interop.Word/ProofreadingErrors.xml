@@ -1,13 +1,5 @@
 <Type Name="ProofreadingErrors" FullName="Microsoft.Office.Interop.Word.ProofreadingErrors">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f10bd2f36ccd49a6e2ce9df79a605d805e0e9d07" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671555" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ProofreadingErrors : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0c61f910fa45ca20cb739f36d01474a098c8703d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144142" /></Metadata><TypeSignature Language="C#" Value="public interface ProofreadingErrors : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ProofreadingErrors implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ProofreadingErrors" />
   <TypeSignature Language="VB.NET" Value="Public Interface ProofreadingErrors&#xA;Implements IEnumerable" />
@@ -31,13 +23,12 @@
   </Attributes>
   <Docs>
     <summary>指定された文書または指定範囲のスペル ミスおよび文法上の誤りのコレクションです。</summary>
-    <remarks>
-      <para>ProofreadingError オブジェクトがありません。<b>ProofreadingErrors</b>コレクション内の各項目の代わりは、 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 1 つのスペル チェックまたは文章校正のエラーを表すオブジェクト</para>。
-      <para>の<b>間違い</b>または<b>GrammaticalErrors</b>プロパティを使用して、<see cref="T:Microsoft.Office.Interop.Word.Document" />または<b>ProofreadingErrors</b>コレクションを取得する Range オブジェクトです</para>。
-      <para>使用の<b>間違い</b>(<paramref name="index" />)、 <paramref name="index" /> ( <b>Range</b>オブジェクトによって表されます)、1 つのスペル エラーを返す、インデックスの番号です</para>。
-      <para>使用<b>GrammarErrors</b>(<paramref name="index" />)、 <paramref name="index" /> ( <b>Range</b>オブジェクトによって表される) 1 つの文法的なエラーを返す、インデックスの番号です</para>。
-      <para>、<see cref="P:Microsoft.Office.Interop.Word.ProofreadingErrors.Count" />ドキュメントでこのコレクションのプロパティは、メイン テキスト ストーリーのみの項目の数を返します。カウントするための他のストーリーの項目は、 <b>Range</b>オブジェクトと共にコレクションを使用します。文書または指定範囲内のすべての単語のスペルが正しいと、文法的には、修正、 <b>Count</b>プロパティを<b>ProofreadingErrors</b>オブジェクトを返します。 0 (ゼロ) と、 <b>SpellingChecked</b>および<b>GrammarChecked</b><b>文書</b>または<b>指定範囲</b>のオブジェクトのプロパティを返す<b>場合は True</b></para> 。
-      <para /></remarks>
+    <remarks><para>ProofreadingError オブジェクトはありません。代わりに、 <b>ProofreadingErrors</b>コレクション内の各項目は、 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 1 つのスペルミスまたは文法上の誤りを表すオブジェクトです。</para>
+      <para><b>ProofreadingErrors</b>コレクションを取得するのにに<see cref="T:Microsoft.Office.Interop.Word.Document" />は、または Range オブジェクトの<b>SpellingErrors</b>または<b>GrammaticalErrors</b>プロパティを使用します。</para>
+      <para><b>SpellingErrors</b>(<paramref name="index" />) を使用し<paramref name="index" />ます。ここで、はインデックス番号を使用して、1つのスペルミス ( <b>Range</b>オブジェクトで表される) を返します。</para>
+      <para><b>GrammarErrors</b>(<paramref name="index" />) を使用し<paramref name="index" />ます。ここで、はインデックス番号を使用して、1つの文法エラー ( <b>Range</b>オブジェクトで表されます) を返します。</para>
+      <para>文書<see cref="P:Microsoft.Office.Interop.Word.ProofreadingErrors.Count" />内のこのコレクションのプロパティは、メインストーリーのみの項目数を返します。 他のストーリーに含まれる項目の数を取得するには、 <b>Range</b> オブジェクトと共にコレクションを使用します。 文書または指定範囲内のすべての単語のスペルが正しく、文法上の誤りがある場合、 <b>ProofreadingErrors</b>オブジェクトの<b>Count</b>プロパティは 0 (ゼロ) を返し、 <b>SpellingChecked</b>プロパティおよび<b>GrammarChecked</b>プロパティを返します。<b>ドキュメント</b>または<b>Range</b>オブジェクトが<b>True</b>を返します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -63,7 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,12 +110,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -185,7 +175,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">各オブジェクトの序数位置を示す<b>整数</b>です。</param>
+        <param name="Index">個々のオブジェクトの位置を表す<b>整数型 (Integer</b> ) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

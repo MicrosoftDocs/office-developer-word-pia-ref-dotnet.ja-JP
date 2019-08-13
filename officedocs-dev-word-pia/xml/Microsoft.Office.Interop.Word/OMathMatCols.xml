@@ -1,13 +1,5 @@
 <Type Name="OMathMatCols" FullName="Microsoft.Office.Interop.Word.OMathMatCols">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="17758115d02b9d12c8799571528a35efb1fa65df" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671398" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OMathMatCols : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="abe8476dfc239d91296b3c205afbe2aa035bb6f2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144317" /></Metadata><TypeSignature Language="C#" Value="public interface OMathMatCols : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMathMatCols implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMathMatCols" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMathMatCols&#xA;Implements IEnumerable" />
@@ -30,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>マトリックスの列のコレクションを表します。 使用して、<see cref="T:Microsoft.Office.Interop.Word.OMathMatCol" />コレクションの個々 のメンバーにアクセスするオブジェクト。</summary>
+    <summary>マトリックスの列のコレクションを表します。 コレクションの<see cref="T:Microsoft.Office.Interop.Word.OMathMatCol" />個々のメンバーにアクセスするには、オブジェクトを使用します。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -56,12 +48,9 @@
         <Parameter Name="BeforeCol" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="BeforeCol">
-          <b>オブジェクト</b>のオプションの新しい列を配置する前に、マトリックス内の既存の列。</param>
-        <summary>数式列を作成し、マトリックスに追加し、返します、、<see cref="T:Microsoft.Office.Interop.Word.OMathMatCol" />オブジェクトです。</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.OMathMatCol" />
-        </returns>
+        <param name="BeforeCol">省略可能な<b>オブジェクト</b>新しい列を配置する前に、マトリックスの既存の列を指定します。</param>
+        <summary>数式列を作成し、それを行列に追加して<see cref="T:Microsoft.Office.Interop.Word.OMathMatCol" /> 、オブジェクトを返します。</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.OMathMatCol" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,10 +77,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word._Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,10 +105,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>内の項目数を取得、<see cref="T:Microsoft.Office.Interop.Word.OMathMatCols" />コレクションです。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.OMathMatCols" />コレクション内の項目数を返します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,12 +133,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>アドインが作成されたアプリケーションを示す 32 ビット<b>の整数</b>を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>オブジェクトが Microsoft Word で作成された場合、 <para>、<see cref="P:Microsoft.Office.Interop.Word.OMathMatCols.Creator" />プロパティは文字列"MSWD"を表す 16 進数、値である 4d535744 を返します。この値は、定数で表すこともできます<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />。 </para><para>このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <summary>アドインが作成されたアプリケーションを示す32ビット<b>整数</b>を返します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトが Microsoft Word で作成されている<see cref="P:Microsoft.Office.Interop.Word.OMathMatCols.Creator" />場合、このプロパティは、文字列 "MSWD" を表す、16進数値である4D535744 を返します。 この値は定数<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />で表すこともできます。  </para>
+          <para>このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -214,12 +198,9 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>整数値</b>を指定、コレクション内のオブジェクトの位置を表す序数が必要です。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.OMathMatCol" />コレクション内の指定された項目を表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OMathMatCol" />
-        </value>
+        <param name="Index">必要な<b>整数</b>コレクション内のオブジェクトの序数位置を指定します。</param>
+        <summary>コレクション内<see cref="T:Microsoft.Office.Interop.Word.OMathMatCol" />の指定された項目を表すオブジェクト型 (object) の値を取得します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OMathMatCol" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,10 +227,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した親オブジェクトを返します。<see cref="T:Microsoft.Office.Interop.Word.OMathMatCols" />オブジェクトです。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.OMathMatCols" />オブジェクトの親オブジェクトを返します。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

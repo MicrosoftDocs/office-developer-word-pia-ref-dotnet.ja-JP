@@ -1,13 +1,5 @@
 <Type Name="Section" FullName="Microsoft.Office.Interop.Word.Section">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5c702a4f22186e2c8dd36d4c7af1c0c4030c1d81" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671921" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Section" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="15d5b626e3ad97e6bd9d5b96a9cc32a2356d9fe4" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146137" /></Metadata><TypeSignature Language="C#" Value="public interface Section" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Section" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Section" />
   <TypeSignature Language="VB.NET" Value="Public Interface Section" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>選択範囲、指定範囲、または文書の 1 つのセクションを表します。</summary>
-    <remarks>
-      <para>
-        <b>セクション</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.Sections" />コレクションです。<b>Sections</b>コレクションには、選択範囲、指定範囲、または文書内のすべてのセクションが含まれています</para>。
-      <para>使用<b>セクション</b>(<paramref name="index" />)、<paramref name="index" />オブジェクトを取得する 1 つ<b>のセクション</b>に、インデックス番号します</para>。
-      <para>使用、<see cref="M:Microsoft.Office.Interop.Word.Sections.Add(System.Object@,System.Object@)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Word.Selection.InsertBreak(System.Object@)" />ドキュメントに新しいセクションを追加します</para>。
-      <para>注、<see cref="P:Microsoft.Office.Interop.Word.Section.Headers" />と<see cref="P:Microsoft.Office.Interop.Word.Section.Footers" />、指定した<b>セクション</b>のプロパティ オブジェクトの戻り値の<see cref="T:Microsoft.Office.Interop.Word.HeadersFooters" />オブジェクト</para>。
-      <para /></remarks>
+    <remarks><para><b>Section</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Sections" />コレクションのメンバーです。 <b>Sections</b> コレクションには、選択範囲、指定範囲、または文書のすべてのセクションが含まれます。</para>
+      <para>セクション<b></b>()<paramref name="index" />を使用し<paramref name="index" />て、1つの<b>セクション</b>オブジェクトを取得します (ここで、はインデックス番号を指定します)。</para>
+      <para>文書に<see cref="M:Microsoft.Office.Interop.Word.Sections.Add(System.Object@,System.Object@)" />新しいセクションを<see cref="M:Microsoft.Office.Interop.Word.Selection.InsertBreak(System.Object@)" />追加するには、メソッドまたはメソッドを使用します。</para>
+      <para>メモ指定<see cref="P:Microsoft.Office.Interop.Word.Section.Headers" />し<see cref="P:Microsoft.Office.Interop.Word.Section.Footers" />た<b>Section</b>オブジェクトのプロパティとプロパティは<see cref="T:Microsoft.Office.Interop.Word.HeadersFooters" /> 、オブジェクトを返します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Borders" />を指定したオブジェクトのすべての罫線を表すコレクション。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Borders" />たオブジェクトのすべての罫線を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,12 +108,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Footers">
@@ -149,12 +138,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.HeadersFooters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.HeadersFooters" /> 、指定したセクションのフッターを表すコレクション。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.HeadersFooters" />たセクションのフッターを表すコレクションを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>指定したセクションのヘッダーを表す<b>HeadersFooters</b>コレクションを取得するを使用して、<see cref="P:Microsoft.Office.Interop.Word.Section.Headers" />プロパティ。</para>
-          <para />
-        </remarks>
+        <remarks><para>指定したセクションのヘッダーを表す<b>HeadersFooters</b>コレクションを取得するには、 <see cref="P:Microsoft.Office.Interop.Word.Section.Headers" />プロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Headers">
@@ -180,12 +167,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.HeadersFooters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.HeadersFooters" /> 、指定したセクションのヘッダーを表すコレクション。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.HeadersFooters" />たセクションのヘッダーを表すコレクションを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>指定したセクションのフッターを表す<b>HeadersFooters</b>コレクションを取得するを使用して、<see cref="P:Microsoft.Office.Interop.Word.Section.Footers" />プロパティ。</para>
-          <para />
-        </remarks>
+        <remarks><para>指定したセクションのフッターを表す<b>HeadersFooters</b>コレクションを取得するには、 <see cref="P:Microsoft.Office.Interop.Word.Section.Footers" />プロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -211,7 +196,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内の項目の位置を表す<b>整数</b>を返します。</summary>
+        <summary>コレクション内の項目の位置を表す<b>整数型 (Integer</b> ) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -242,7 +227,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.PageSetup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> 、指定したセクションに関連付けられているオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.PageSetup" />たセクションに関連付けられているオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -301,13 +286,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>指定したセクションがフォームの保護されている場合です。 セクションがフォームの保護されている場合を選択し、フォーム フィールドでのみ文字列を変更できます。</summary>
+        <summary><b>True</b>の場合は、指定したセクションがフォームで保護されています。 フォームのフィールドが保護される場合、フォーム フィールドでのみ文字列の変更と選択が可能です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ドキュメント全体を保護するには、使用、<see cref="M:Microsoft.Office.Interop.Word._Document.Protect(Microsoft.Office.Interop.Word.WdProtectionType,System.Object@,System.Object@,System.Object@,System.Object@)" />のメソッドの<see cref="T:Microsoft.Office.Interop.Word.Document" />オブジェクトです。</para>
-          <para />
-        </remarks>
+        <remarks><para>ドキュメント全体を保護するには、 <see cref="M:Microsoft.Office.Interop.Word._Document.Protect(Microsoft.Office.Interop.Word.WdProtectionType,System.Object@,System.Object@,System.Object@,System.Object@)" /> <see cref="T:Microsoft.Office.Interop.Word.Document" />オブジェクトのメソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Range">
@@ -333,12 +315,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />を指定したオブジェクトに含まれる文書の部分を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />たオブジェクトに含まれる文書の一部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>範囲をドキュメントから取得するか、図形のコレクションから図形範囲を取得する方法についてを参照してください、<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />メソッドです。</para>
-          <para />
-        </remarks>
+        <remarks><para>文書から指定範囲を取得する<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法、または図形のコレクションから図形範囲を取得する方法については、メソッドを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

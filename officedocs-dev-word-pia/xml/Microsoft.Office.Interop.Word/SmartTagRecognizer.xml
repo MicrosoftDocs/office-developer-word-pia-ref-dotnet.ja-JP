@@ -1,13 +1,5 @@
 <Type Name="SmartTagRecognizer" FullName="Microsoft.Office.Interop.Word.SmartTagRecognizer">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a1596270bff23eea1f59ab9bdc76d1e9433b328f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670789" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTagRecognizer" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4f6682dbac9852e24913ff87211561eae8bef090" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143981" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagRecognizer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagRecognizer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagRecognizer" />
@@ -26,12 +18,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>インストールされているコンポーネントの種類の情報をテキストにラベルを付けることを表します。</summary>
-    <remarks>
-      <para>住所 (英語のみ) のスマート タグ コンポーネントには、番地、市区町村、都道府県、および郵便番号、その他関連アイテムのアドレスの認識機能が含まれています。Microsoft Word ドキュメントでこれらの項目に一致するテキストのラベルをユーザーがコードを通して、または自動修正] ダイアログ ボックスで、[スマート タグ] タブを使用して、インストールされているコンポーネントを起動します</para>。
-      <para><see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />、 <see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" />、および<see cref="T:Microsoft.Office.Interop.Word.SmartTagType" />点で、スマート タグ コンポーネントで認識される各アイテムが<b>SmartTagType</b>オブジェクトをオブジェクトが関連付けられています。アドレスのスマート タグ コンポーネントの"city"は<b>SmartTagType</b>オブジェクトを特定します。<b>SmartTagRecognizer</b>オブジェクト (ドキュメントで「市区町村」の種類のスマート タグで認識されるスマート タグ コンポーネントの部分) と<b>SmartTagAction</b>オブジェクト (部品、アクションを提供するスマート タグ コンポーネントの都市のスマート タグ型に関連関連する特定のスマート タグの種類、[MSN の Microsoft MapPoint で認識されている都市を検索することがあります)。簡単に言うと、認識機能は、ラベル付け、操作ハンドラーはエンドユーザー機能を提供および上のスマート タグの種類は、何を結びつけることです</para>。使用の
-      <para>、<see cref="P:Microsoft.Office.Interop.Word.SmartTagRecognizers.Item(System.Object@)" />のメソッド、 <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizers" /> 1 つの<b>SmartTagRecognizer</b>オブジェクトを取得するコレクション。<b>SmartTagRecognizer</b>オブジェクトを取得したら、アプリケーションでスマート タグ認識機能が有効かどうかを判断できます</para>。
-      <para /></remarks>
+    <summary>テキストに各種情報をラベル付けする、インストール済みのコンポーネントを表します。</summary>
+    <remarks><para>Address (英語) スマートタグコンポーネントには、その他のアドレスに関連する住所、市区町村、都道府県、および郵便番号の認識機能が含まれています。 ユーザーが、コードによって、または [自動修正] ダイアログボックスの [スマートタグ] タブを使用して、インストールされているコンポーネントをアクティブにすると、文書内のこれらの項目に一致するテキストにラベルが付けられます。</para>
+      <para>
+        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />、 <see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" />、および<see cref="T:Microsoft.Office.Interop.Word.SmartTagType" />オブジェクトは、スマートタグコンポーネントが認識する各項目が<b>SmartTagType</b>オブジェクトであるということに関連しています。 たとえば、Address スマート タグ コンポーネントの "city" は <b>SmartTagType</b> オブジェクトです。 "city" スマート タグ型には、関連する <b>SmartTagRecognizer</b> オブジェクト (文書内の "city" 型のスマート タグを認識する部分) と <b>SmartTagAction</b> オブジェクト (MSN の Microsoft MapPoint で市町村を検索するアクションなど、特定のスマート タグ型に関連するアクションを提供する部分) があります。 簡単に言うと、レコグナイザーはラベル付けを行い、アクションハンドラーはエンドユーザーの機能を提供します。また、それらが一緒に連携するものは、動作するスマートタグの種類です。</para>
+      <para>1つ<see cref="P:Microsoft.Office.Interop.Word.SmartTagRecognizers.Item(System.Object@)" />の SmartTagRecognizer オブジェクト<see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizers" />を取得するのにには、コレクションのメソッドを使用します。 <b></b> <b>SmartTagRecognizer</b>オブジェクトを取得すると、そのアプリケーションでスマートタグ認識機能が有効になっているかどうかを判断できます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,7 +83,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたスマート タグ認識機能を識別するラベルを返します。</summary>
+        <summary>指定したスマートタグの認識機能を識別するラベルを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,12 +114,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -162,8 +153,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は、スマート タグの認識機能が有効になります。</summary>
+        <summary>スマートタグ認識機能が有効になっている場合は<b>True</b>です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -194,7 +184,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>完全名を指定する<see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />のパスを含むオブジェクトです。</summary>
+        <summary>パスを含む<see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />オブジェクトの完全な名前を指定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -258,10 +248,8 @@
       <Docs>
         <summary>指定したオブジェクトのプログラム id (ProgID) を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ダイナミック データ エクス (チェンジ DDE) は、セキュリティ保護されていない古いテクノロジです。、可能であれば、より安全な代わりに DDE を使用します。</para>
-          <para />
-        </remarks>
+        <remarks><para>動的データ交換 (DDE) は比較的古いテクノロジであり、セキュリティで保護されていません。 可能であれば、より安全な方法で DDE を使用してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

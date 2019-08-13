@@ -1,13 +1,5 @@
 <Type Name="WdInformation" FullName="Microsoft.Office.Interop.Word.WdInformation">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8aa99eaa32efa5e920c569f62a79fd33af3a9cd5" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670819" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public enum WdInformation" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="308d61514d3ac59dc717c798ccd32a583693d43e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146375" /></Metadata><TypeSignature Language="C#" Value="public enum WdInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WdInformation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.WdInformation" />
   <TypeSignature Language="VB.NET" Value="Public Enum WdInformation" />
@@ -45,7 +37,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>指定された選択範囲または指定範囲のアクティブな終点が含まれるページの数を返します。 開始ページ番号を設定した場合、またはその他の手動調整を行う場合は、( <b>wdActiveEndPageNumber</b>) とは異なり、調整されたページ数を返します。</summary>
+        <summary>指定された選択範囲または指定範囲のアクティブな終点が含まれるページの数を返します。 開始ページ番号を設定したり、他の手動調整を行ったりする場合は、調整されたページ番号を返します ( <b>Wdactiveendpagenumber</b>とは異なります)。</summary>
       </Docs>
     </Member>
     <Member MemberName="wdActiveEndPageNumber">
@@ -64,7 +56,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>指定された選択範囲または文書の先頭から数えて、範囲のアクティブな終点が含まれるページの数を返します。 ( <b>WdActiveEndAdjustedPageNumber</b>) とは異なり、ページ番号を手動で調整が無視されます。</summary>
+        <summary>指定された選択範囲または文書の先頭から数えて、範囲のアクティブな終点が含まれるページの数を返します。 ページ番号に手動で調整すると、 <b>wdActiveEndAdjustedPageNumber</b>とは異なります。</summary>
       </Docs>
     </Member>
     <Member MemberName="wdActiveEndSectionNumber">
@@ -121,7 +113,7 @@
       </ReturnValue>
       <MemberValue>21</MemberValue>
       <Docs>
-        <summary>CapsLock キーがオンの場合、値は True です。</summary>
+        <summary>Returns True if Caps Lock is in effect.</summary>
       </Docs>
     </Member>
     <Member MemberName="wdEndOfRangeColumnNumber">
@@ -235,7 +227,7 @@
       </ReturnValue>
       <MemberValue>33</MemberValue>
       <Docs>
-        <summary>次の表に示すようにヘッダーまたはフッター、選択範囲または指定範囲に含まれているの種類を示す値を返します。</summary>
+        <summary>次の表に示すように、指定された選択範囲または指定範囲を含むヘッダーまたはフッターの種類を示す値を返します。</summary>
       </Docs>
     </Member>
     <Member MemberName="wdHorizontalPositionRelativeToPage">
@@ -482,7 +474,7 @@
       </ReturnValue>
       <MemberValue>25</MemberValue>
       <Docs>
-        <summary>場合、選択範囲または指定範囲の脚注または文末脚注のウィンドウで印刷レイアウト表示の脚注または文末脚注領域または標準表示モードでは、 True を返します。詳細については、 <b>wdInFootnote</b> および <b>wdInEndnote</b> を上記の説明を参照してください。 </summary>
+        <summary>場合、選択範囲または指定範囲の脚注または文末脚注のウィンドウで印刷レイアウト表示の脚注または文末脚注領域または標準表示モードでは、 True を返します。 詳細については、 <b>wdInFootnote</b> および <b>wdInEndnote</b> を上記の説明を参照してください。</summary>
       </Docs>
     </Member>
     <Member MemberName="wdInHeaderFooter">
@@ -615,7 +607,7 @@
       </ReturnValue>
       <MemberValue>22</MemberValue>
       <Docs>
-        <summary>Num Lock キーが有効な場合は、True を返します。</summary>
+        <summary>Returns True if Num Lock is in effect.</summary>
       </Docs>
     </Member>
     <Member MemberName="wdOverType">
@@ -634,7 +626,7 @@
       </ReturnValue>
       <MemberValue>23</MemberValue>
       <Docs>
-        <summary>上書きモードの場合、値は True です。 Overtype プロパティを使用して上書きモードの状態を変更できます。 </summary>
+        <summary>上書きモードの場合、値は True です。 Overtype プロパティを使用して上書きモードの状態を変更できます。</summary>
       </Docs>
     </Member>
     <Member MemberName="wdReferenceOfType">
@@ -653,7 +645,7 @@
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>次の表に示すように選択範囲が脚注、文末脚注、またはコメントの参照を基準にしては場所を示す値を返します。</summary>
+        <summary>次の表に示すように、脚注、文末脚注、またはコメントの参照に対して、選択範囲の相対的な位置を示す値を返します。</summary>
       </Docs>
     </Member>
     <Member MemberName="wdRevisionMarking">
@@ -805,8 +797,7 @@
       </ReturnValue>
       <MemberValue>19</MemberValue>
       <Docs>
-        <summary>
-          <b>割合</b> のプロパティが設定されている拡大率の現在の割合を返します。</summary>
+        <summary><b>割合</b> のプロパティが設定されている拡大率の現在の割合を返します。</summary>
       </Docs>
     </Member>
   </Members>

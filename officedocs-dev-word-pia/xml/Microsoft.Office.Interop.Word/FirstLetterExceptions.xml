@@ -1,13 +1,5 @@
 <Type Name="FirstLetterExceptions" FullName="Microsoft.Office.Interop.Word.FirstLetterExceptions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="be4f4c5cc8c394619978e1c92f645b802d0e9e31" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671022" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FirstLetterExceptions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f5a5fc4bea4aa243b52aaff1c5351191136e2e06" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146830" /></Metadata><TypeSignature Language="C#" Value="public interface FirstLetterExceptions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FirstLetterExceptions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FirstLetterExceptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface FirstLetterExceptions&#xA;Implements IEnumerable" />
@@ -30,13 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.FirstLetterException" />を表す略語をオート コレクトから除外します。</summary>
-    <remarks>
-      <para>期間は、自動的に最初の文字以下大文字にする場合、<see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.CorrectSentenceCaps" />プロパティが<b>True</b>に設定します。<b>FirstLetterExceptions</b>コレクションには、この動作 (たとえば、「addr.」や「apt.」などの略語) の例外が含まれます</para>。
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.FirstLetterExceptions" /><b>FirstLetterExceptions</b>コレクションを取得するプロパティ</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.FirstLetterExceptions.Add(System.String)" />最初の大文字の例外項目の一覧に略語を追加します</para>。
-      <para>使用して<b>FirstLetterExceptions</b>(<paramref name="index" />)、 <paramref name="index" /> 、略語またはインデックス番号で、1 つの<b>FirstLetterException</b>オブジェクトを取得するには</para>。
-      <para /></remarks>
+    <summary>自動修正から<see cref="T:Microsoft.Office.Interop.Word.FirstLetterException" />除外された略語を表すオブジェクトのコレクションです。</summary>
+    <remarks><para>この<see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.CorrectSentenceCaps" />プロパティを<b>True</b>に設定すると、ピリオドの後の最初の文字が自動的に大文字になります。 <b>FirstLetterExceptions</b>コレクションには、この動作の例外が含まれています (たとえば、"addr." など)。 "apt.")。</para>
+      <para>FirstLetterExceptions コレクション<see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.FirstLetterExceptions" />を取得するの<b></b>にには、プロパティを使用します。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.FirstLetterExceptions.Add(System.String)" />メソッドを使用して、最初の文字の例外の一覧に略語を追加します。</para>
+      <para>単一の<b>FirstLetterException</b>オブジェクトを取得<paramref name="index" />するには、 <b>FirstLetterExceptions</b>(<paramref name="index" />) を使用します。省略形またはインデックス番号を指定します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,14 +53,11 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>文字列</b> が必要です。 しないようにするに Microsoft Word を大文字で、次の省略形。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.FirstLetterException" />のオート コレクトの例外リストに追加する新しい例外を表すオブジェクト。</summary>
+        <param name="Name"><b>文字列</b> が必要です。 大文字にしない場合は、その省略形を使用します。</param>
+        <summary>オートコレクト<see cref="T:Microsoft.Office.Interop.Word.FirstLetterException" />の例外処理の一覧に追加する新しい例外を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>場合、<see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.FirstLetterAutoAdd" />プロパティが<b>True</b>の場合の省略形は自動的に追加最初の大文字の例外項目の一覧です。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.FirstLetterAutoAdd" />プロパティに<b>True</b>が設定されている場合、省略形は先頭の文字の例外の一覧に自動的に追加されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -95,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -151,12 +139,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -217,7 +204,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">位置を表す序数または各オブジェクトの名前を表す文字列を示す<b>オブジェクト</b>。</param>
+        <param name="Index">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

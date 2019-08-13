@@ -1,13 +1,5 @@
 <Type Name="KeyBindings" FullName="Microsoft.Office.Interop.Word.KeyBindings">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="82a4dc883d5b7257bb70e07ee869a0f2dba9b2f1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671602" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface KeyBindings : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c0bf61c2c56c0399c987bf635fa00d822963862c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146669" /></Metadata><TypeSignature Language="C#" Value="public interface KeyBindings : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract KeyBindings implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.KeyBindings" />
   <TypeSignature Language="VB.NET" Value="Public Interface KeyBindings&#xA;Implements IEnumerable" />
@@ -30,12 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />、カスタム キーの割り当ての現在のコンテキストを表すオブジェクト。 キーボードのユーザー設定] ダイアログ ボックスで、カスタム キーの割り当てが行われます。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word._Application.KeyBindings" /><b>KeyBindings</b>コレクションを取得するプロパティ</para>。
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> 、 <b>KeyBinding</b>オブジェクトを<b>KeyBindings</b>コレクションに追加します</para>。
-      <para>使用して<b>KeyBindings</b>(<paramref name="index" />)、<paramref name="index" />は、単一の<b>KeyBinding</b>オブジェクトを取得する、インデックス番号</para>。
-      <para /></remarks>
+    <summary>現在のコンテキスト<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />でのユーザー設定のキーの割り当てを表すオブジェクトのコレクションです。 キーボードのユーザー設定] ダイアログ ボックスで、カスタム キーの割り当てが行われます。</summary>
+    <remarks><para>KeyBindings コレクション<see cref="P:Microsoft.Office.Interop.Word._Application.KeyBindings" />を取得するの<b></b>にには、プロパティを使用します。</para>
+      <para><b>KeyBinding</b>オブジェクト<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" />を<b>KeyBindings</b>コレクションに追加するには、メソッドを使用します。</para>
+      <para>1つの<paramref name="index" /> <b>KeyBinding</b>オブジェクトを<paramref name="index" />取得するには、 <b>KeyBindings</b>() を使用します。ここで、はインデックス番号を指定します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -64,28 +55,64 @@
         <Parameter Name="CommandParameter" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="KeyCategory">必要な<see cref="T:Microsoft.Office.Interop.Word.WdKeyCategory" />。 キー定義の分類を指定します。</param>
-        <param name="Command">
-          <b>文字列</b> が必要です。 指定されたキーの組み合わせによって実行されるコマンドを指定します。</param>
-        <param name="KeyCode">
-          <b>整数</b>が必要です。 いずれかを使用して、指定したキー、<see cref="T:Microsoft.Office.Interop.Word.WdKey" />定数。</param>
-        <param name="KeyCode2">省略可能な<b>オブジェクト</b>です。 2 番目のキーのいずれかを使用して指定する、<see cref="T:Microsoft.Office.Interop.Word.WdKey" />定数。</param>
-        <param name="CommandParameter">省略可能な<b>オブジェクト</b>です。 追加テキストは、必要な場合などで指定されたコマンドの<paramref name="Command" />。 詳細については、「備考」を参照してください。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />マクロ、組み込みコマンド、フォント、定型句、スタイル、またはシンボルの新しいショートカット キーを表すオブジェクト。</summary>
+        <param name="KeyCategory">必須<see cref="T:Microsoft.Office.Interop.Word.WdKeyCategory" />。 キー定義の分類を指定します。</param>
+        <param name="Command"><b>文字列</b> が必要です。 指定されたキーの組み合わせによって実行されるコマンドを指定します。</param>
+        <param name="KeyCode">整数型 (<b>Integer</b>) の値を使用します。 <see cref="T:Microsoft.Office.Interop.Word.WdKey" />定数のいずれかを使用してキーを指定します。</param>
+        <param name="KeyCode2">省略可能な<b>オブジェクト</b>です。 <see cref="T:Microsoft.Office.Interop.Word.WdKey" />定数の1つを使用して、2番目のキーを指定します。</param>
+        <param name="CommandParameter">省略可能な<b>オブジェクト</b>です。 で<paramref name="Command" />指定されたコマンドに必要な追加テキスト (ある場合)。 詳細については、「備考」を参照してください。</param>
+        <summary>マクロ、 <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />組み込みコマンド、フォント、定型句、スタイル、またはシンボルの新しいショートカットキーを表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>使用することができます、<see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" />を作成する方法、<paramref name="KeyCode" />または<paramref name="KeyCode2" />の引数です</para>。
-          <para>、次の表に、左側の列に、コマンドの値を必要とするコマンドが含まれていて、右側の列の説明を指定するのには行う必要があります<paramref name="CommandParameter" />の各コマンド。(同等の操作をキーボードのユーザー設定] ダイアログ ボックス ([ツール] メニュー) を指定することで<paramref name="CommandParameter" />[コマンド] ボックスで次のコマンドのいずれかを選択するときに表示されるリスト ボックスで項目を選択すること)</para> 。
-              <description><b>罫線</b><b>色</b>、または<b>網かけの設定</b></description><description>いくつかの
-            <item>の
-          <list type="table">-テキストとして指定されている、1、2 番目の項目を 0 (ゼロ) に最初の項目がある値を含むリスト ボックスで設定した値の位置に対応します。いうように
-            <item><description><b>列</b></description><description>1 ~ 45 の数値、文字列として指定されている-を適用する列の数に対応する</description></item><item><description>0.1 ポイントと 12.75 ポイントとの間のテキスト単位の
-              <description><b>縮小</b></description>0.05 ポイント単位 (72 ポイント = 1 インチ) で指定された</description></item><item><description><b>FileOpenFile</b></description><description>の
-            <item><description><b>拡張</b></description>の
-              <description>0.1 ポイントの間でおよび 12.75 ポイントが 0.05 ポイント単位 (72 ポイント = 1 インチ) で指定されたテキスト単位</description></item>開かれるファイルのパスとファイル名です。パスが指定されていない、現在のフォルダーが使用されます</description></item>。
-            <item><description><b>フォント サイズ</b></description>は
-              <description>正の値では 0.5 ポイント単位 (72 ポイント = 1 インチ) で指定</description></item><item><description><b>下げる</b>、<b>上げる</b></description>の
-              <description>1 ポイントの間で、64 ポイント、0.5 ポイント単位 (72 ポイント = 1 インチ) で指定されている A のテキストの測定</description></item><item><description><b>シンボル</b></description><description><b>chr()</b>と記号フォントの名前を連結することによって作成された文字列 (たとえば、Chr(167) &amp; 「シンボル」)</description></item></list></item></description><para /></remarks>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" />メソッドを使用して、 <paramref name="KeyCode" />または<paramref name="KeyCode2" />引数を作成できます。</para>
+          <para>次の表では、左側の列にコマンド値を必要とするコマンドが含まれており、右側の列には、これらの<paramref name="CommandParameter" />各コマンドに対して指定する必要のあることが記述されています。 [キーボードのユーザー設定] ダイアログボックス ([ツール] メニュー) の [ <paramref name="CommandParameter" />コマンド] ボックスで、次のいずれかのコマンドを選択したときに表示されるリストボックスで項目を選択することを指定すると、それと同等の動作になります。</para>
+          <list type="table">
+            <item>
+              <description>
+                <b>Borders</b> 、 <b>Color</b> 、または <b>Shading</b></description>
+              <description>テキストとして指定された数値。値を含むリストボックスで選択された設定の位置に対応します。 0 (ゼロ) は最初の項目、1は2番目の項目になります。</description>
+            </item>
+            <item>
+              <description>
+                <b>列</b>
+              </description>
+              <description>適用する列数に対応する、1 ~ 45 の範囲の数値 (テキスト)</description>
+            </item>
+            <item>
+              <description>
+                <b>要約</b>
+              </description>
+              <description>0.1 ～ 12.75 ポイント (0.05 ポイント刻み) の範囲の数値 (72 ポイント = 1 インチ) を指定します。</description>
+            </item>
+            <item>
+              <description>
+                <b>資料</b>
+              </description>
+              <description>0.1 ～ 12.75 ポイント (0.05 ポイント刻み) の範囲の数値 (72 ポイント = 1 インチ) を指定します。</description>
+            </item>
+            <item>
+              <description>
+                <b>FileOpenFile</b>
+              </description>
+              <description>開くファイルのパスとファイル名を指定します。 パスを指定しない場合、現在のフォルダーから開かれます。</description>
+            </item>
+            <item>
+              <description>
+                <b>フォントサイズ</b>
+              </description>
+              <description>正の値 (0.5 ポイント刻み) を指定します。</description>
+            </item>
+            <item>
+              <description>
+                <b>下げる</b>、<b>浮き出し</b></description>
+              <description>1 ～ 64 ポイント (0.5 ポイント刻み) の範囲の数値を指定します。</description>
+            </item>
+            <item>
+              <description>
+                <b>疑問符</b>
+              </description>
+              <description><b>Chr ()</b>命令と symbol フォントの名前を連結することによって作成された文字列 (たとえば、chr &amp; (167) "symbol")</description>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -111,7 +138,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -138,11 +165,8 @@
       <Parameters />
       <Docs>
         <summary>すべてのユーザー設定のキーの割り当てをクリアし、元のキーの割り当てに戻します。</summary>
-        <remarks>
-          <para>
-            <b>ClearAll</b>メソッドを適用した後、<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />オブジェクトの指定したテンプレートまたは文書内のキー割り当ては、既定の設定にリセットされます。使用して、 <see cref="P:Microsoft.Office.Interop.Word._Application.CustomizationContext" /> 、 <b>ClearAll</b>メソッドを使用する前に、文書またはテンプレートのコンテキストを指定するプロパティです。</para>
-          <para />
-        </remarks>
+        <remarks><para>オブジェクトに ClearAll メソッドを適用すると、指定したテンプレートまたは文書のキーの割り当てが既定の設定にリセットされます。 <b></b> <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> <see cref="P:Microsoft.Office.Interop.Word._Application.CustomizationContext" />プロパティを使用して、 <b>ClearAll</b>メソッドを使用する前にドキュメントまたはテンプレートのコンテキストを指定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -168,12 +192,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したショートカット キーの格納場所を表すオブジェクトを返します。 このプロパティが返すことができます、 <see cref="T:Microsoft.Office.Interop.Word.Document" />、 <see cref="T:Microsoft.Office.Interop.Word.Template" />、または<see cref="T:Microsoft.Office.Interop.Word.Application" />オブジェクトです。</summary>
+        <summary>指定したキーの組み合わせの保存場所を表すオブジェクトを返します。 このプロパティは、、 <see cref="T:Microsoft.Office.Interop.Word.Document" />、 <see cref="T:Microsoft.Office.Interop.Word.Template" />または<see cref="T:Microsoft.Office.Interop.Word.Application" />オブジェクトを返すことができます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>組み込みのキーの割り当て (たとえば、ctrl キーと<b>テキストを斜体</b>にする) は、コンテキストとして、<b>アプリケーション</b>オブジェクトを返します。キー バインディングを追加するオブジェクトを返します<b>文書</b>または<b>テンプレート</b>、カスタマイズ コンテキストによって有効にすると、<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />オブジェクトが追加されました。</para>
-          <para />
-        </remarks>
+        <remarks><para>組み込みのキー割り当て (たとえば、CTRL + I を<b>斜体</b>にする) は、 <b>Application</b>オブジェクトをコンテキストとして返します。 追加したキーバインディングは、 <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />オブジェクトが追加されたときに有効になっているカスタマイズコンテキストに応じて、<b>ドキュメント</b>または<b>テンプレート</b>オブジェクトを返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -227,12 +249,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -293,7 +314,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">各オブジェクトの序数位置を示す<b>整数</b>です。</param>
+        <param name="Index">個々のオブジェクトの位置を表す<b>整数型 (Integer</b> ) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -322,15 +343,12 @@
         <Parameter Name="KeyCode2" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="KeyCode">
-          <b>整数</b>が必要です。 <b>Wdkey クラス</b> の定数のいずれかを使用してキーを指定します。</param>
-        <param name="KeyCode2">省略可能な<b>オブジェクト</b>です。 2 番目のキーのいずれかを使用して指定する、<see cref="T:Microsoft.Office.Interop.Word.WdKey" />定数。</param>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> 、指定したユーザー設定キーの組み合わせを表すオブジェクト。 キーの組み合わせが存在しない場合このメソッドは <b>Nothing</b> を返します。</summary>
+        <param name="KeyCode">整数型 (<b>Integer</b>) の値を使用します。 <b>Wdkey クラス</b> の定数のいずれかを使用してキーを指定します。</param>
+        <param name="KeyCode2">省略可能な<b>オブジェクト</b>です。 <see cref="T:Microsoft.Office.Interop.Word.WdKey" />定数の1つを使用して、2番目のキーを指定します。</param>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />たユーザー設定キーの組み合わせを表すオブジェクトを返します。 キーの組み合わせが存在しない場合このメソッドは <b>Nothing</b> を返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>使用することができます、<see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" />を作成する方法、<paramref name="KeyCode" />または<paramref name="KeyCode2" />の引数です。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" />メソッドを使用して、 <paramref name="KeyCode" />または<paramref name="KeyCode2" />引数を作成できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

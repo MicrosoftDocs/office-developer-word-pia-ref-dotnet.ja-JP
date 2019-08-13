@@ -1,13 +1,5 @@
 <Type Name="SmartTags" FullName="Microsoft.Office.Interop.Word.SmartTags">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="48b9a46976fc40ea2e4c681e6c129534480095b5" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671049" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTags : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bfd50651b1e8f6cb8ea8dd99dcfa5aa199718e35" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143967" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTags : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTags implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTags" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTags&#xA;Implements IEnumerable" />
@@ -30,12 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.SmartTag" />を認識できるタイプ情報が含まれているとマークされているドキュメント内のテキストを表すオブジェクト。</summary>
-    <remarks>
-      <para>
-        <b>SmartTags</b>コレクションには、ドキュメントまたはドキュメント内のテキストの範囲内のすべてのスマート タグが含まれています。Microsoft Word にスマート タグのラベルを付け、認識ファイルを使用して、アクション ファイルを使用して Web サイトへのリンクなどのスマート タグに関連するアクションを実行します</para>。
-      <para><b>Item</b>メソッドを使用して- または<see cref="T:Microsoft.Office.Interop.Word.SmartTags" />(<paramref name="index" />)、<paramref name="index" />スマート タグの数を表します-1 つの<b>SmartTag</b>オブジェクトを返します</para>。
-      <para /></remarks>
+    <summary>文書内の<see cref="T:Microsoft.Office.Interop.Word.SmartTag" /> 、認識される種類の情報が含まれているとしてマークされているテキストを表すオブジェクトのコレクションです。</summary>
+    <remarks><para><b>SmartTags</b> コレクションには、文書内または文書内の文字列の指定範囲内にあるすべてのスマート タグが含まれます。 Microsoft Word では、認識ファイルを使用してスマート タグにラベルを付け、アクション ファイルを使用してスマート タグに関連するアクション (Web サイトへのリンクなど) を実行します。</para>
+      <para>単一の<b>SmartTag</b>オブジェクトを取得<see cref="T:Microsoft.Office.Interop.Word.SmartTags" />する<paramref name="index" />のにに<paramref name="index" />は、 <b>Item</b>メソッド () を使用します。ここで、はスマートタグの番号を表します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -65,11 +55,10 @@
         <Parameter Name="Properties" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>文字列</b> が必要です。 スマート タグの名前。</param>
-        <param name="Range">省略可能な<b>オブジェクト</b>です。 スマート タグを適用する範囲を指定します。</param>
-        <param name="Properties">省略可能な<b>オブジェクト</b>です。 スマート タグに適用されるプロパティです。</param>
-        <summary>取得、<see cref="T:Microsoft.Office.Interop.Word.SmartTag" />をドキュメントに追加する新しいスマート タグを表すオブジェクト。</summary>
+        <param name="Name"><b>文字列</b> が必要です。 スマートタグの名前を指定します。</param>
+        <param name="Range">省略可能な<b>オブジェクト</b>です。 スマートタグを適用する範囲を指定します。</param>
+        <param name="Properties">省略可能な<b>オブジェクト</b>です。 スマートタグに適用されるプロパティ。</param>
+        <summary>文書に<see cref="T:Microsoft.Office.Interop.Word.SmartTag" />追加する新しいスマートタグを表すオブジェクトを取得します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -100,7 +89,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -162,12 +151,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -231,7 +219,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">位置を表す序数または各オブジェクトの名前を表す文字列を示す<b>オブジェクト</b>。</param>
+        <param name="Index">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -294,9 +282,8 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>文字列</b> が必要です。 スマート タグの種類の名前です。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.SmartTags" />を指定した型のユーザーのコンピューターにインストールされているすべてのスマート タグを表すコレクション。</summary>
+        <param name="Name"><b>文字列</b> が必要です。 スマートタグの種類の名前を指定します。</param>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.SmartTags" />た種類のユーザーのコンピューターにインストールされているすべてのスマートタグを表すコレクションを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

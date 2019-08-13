@@ -1,13 +1,5 @@
 <Type Name="Walls" FullName="Microsoft.Office.Interop.Word.Walls">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="be26cb420d5ce19f16e8cf73223d816797bf7492" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671043" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Walls" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="51dba4c84d258a55d188312fa9ea49fc33c66368" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143715" /></Metadata><TypeSignature Language="C#" Value="public interface Walls" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Walls" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Walls" />
   <TypeSignature Language="VB.NET" Value="Public Interface Walls" />
@@ -28,9 +20,7 @@
   <Docs>
     <summary>3-D グラフの壁面を表します。このオブジェクトはコレクションではありません。単一の壁面を表すオブジェクトはありません。壁面全体がオブジェクトとして扱われます。</summary>
     <remarks>To be added.</remarks>
-    <example>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.Chart.Walls" />を返すプロパティの<see cref="T:Microsoft.Office.Interop.Word.Walls" />オブジェクトです。次の例では、作業中の文書の最初のグラフの壁面のパターンを設定します。グラフが 3-D グラフでない、次の使用例は失敗します。</para>
-    </example>
+    <example><para>オブジェクトを<see cref="P:Microsoft.Office.Interop.Word.Chart.Walls" />取得するのにには、プロパティを使用します。 <see cref="T:Microsoft.Office.Interop.Word.Walls" /> 次の使用例は、作業中のドキュメントで最初のグラフの壁面のパターンを設定します。 グラフが 3-D グラフでない場合、この使用例は失敗します。</para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,9 +46,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 値の取得のみ可能です。</summary>
-        <value>
-          <b>アプリケーション</b>(上記参照)</value>
+        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用<see cref="T:Microsoft.Office.Interop.Word._Application" />すると、Microsoft Word アプリケーションを表すオブジェクトが返されます。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
+        <value><b>アプリケーション</b>(上記を参照)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,10 +77,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Border" /> 、オブジェクトの枠線を表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>オブジェクトの<see cref="T:Microsoft.Office.Interop.Word.Border" />枠線を表すオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,9 +104,7 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトの書式設定をクリアします。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,14 +131,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトが Microsoft Word で作成された場合、<see cref="P:Microsoft.Office.Interop.Word.Walls.Creator" />を返します文字列を表す 16 進数値である 4d535744 をします。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
-          <para />
-        </remarks>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトが Microsoft Word で作成されている<see cref="P:Microsoft.Office.Interop.Word.Walls.Creator" />場合、このプロパティは、文字列 "MSWD" を表す、16進数値の4D535744 を返します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -182,10 +163,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />指定されたグラフの塗りつぶしの書式設定、グラフのプロパティを含むオブジェクトです。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />
-        </value>
+        <summary>グラフの<see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />塗りつぶしの書式プロパティを含む指定されたグラフのオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -213,10 +192,8 @@
       </ReturnValue>
       <Docs>
         <summary>線、塗りつぶし、およびオブジェクトの書式設定の効果を取得します。
-読み取り専用<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+読み取り専用<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,10 +223,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Interior" />を指定したオブジェクトの内部を表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Interior" />
-        </value>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Interior" />たオブジェクトの内部を表すオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -277,9 +252,7 @@
       </ReturnValue>
       <Docs>
         <summary>オブジェクトの名前を表す文字列型 ( <b>String</b> ) の値を返します。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -306,10 +279,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親を返します。読み取り専用 <b>オブジェクト</b> 。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定したオブジェクトの親を返します。 読み取り専用 <b>オブジェクト</b> 。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -335,10 +306,8 @@
       <Parameters />
       <Docs>
         <summary>クリップボードからグラフの壁面に図を貼り付けます。</summary>
-        <remarks>
-          <para>このメソッドは、列、バー、行、またはレーダー チャートで使用できます。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドは、縦棒グラフ、横棒グラフ、折れ線グラフ、またはレーダー チャートで使用できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureType">
@@ -367,14 +336,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、壁面および 3-D グラフの面での画像の表示方法を表す<b>オブジェクト</b>の値を設定します。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
-        <remarks>
-          <para>このプロパティは、次のいずれかに設定できます<see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" />定数:<see cref="F:Microsoft.Office.Interop.Excel.XlChartPictureType.xlStack" />または<see cref="F:Microsoft.Office.Interop.Excel.XlChartPictureType.xlStretch" />。</para>
-          <para />
-        </remarks>
+        <summary>3-d グラフの壁面および床面での画像の表示方法を表すオブジェクト型 ( <b>Object</b> ) の値を取得または設定します。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>このプロパティは、次<see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" />の定数のいずれかに設定<see cref="F:Microsoft.Office.Interop.Excel.XlChartPictureType.xlStack" />でき<see cref="F:Microsoft.Office.Interop.Excel.XlChartPictureType.xlStretch" />ます。または。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureUnit">
@@ -403,10 +368,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>場合、グラフの各画像の単位の設定を取得または設定します<see cref="P:Microsoft.Office.Interop.Word.Walls.PictureType" />プロパティに設定されて<see cref="F:Microsoft.Office.Interop.Excel.XlChartPictureType.xlStackScale" />(このこのプロパティは無視されます) 場合、。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary><see cref="P:Microsoft.Office.Interop.Word.Walls.PictureType" />プロパティがに<see cref="F:Microsoft.Office.Interop.Excel.XlChartPictureType.xlStackScale" />設定されている場合、グラフの各画像の単位を設定または返します (このプロパティは無視されます)。 読み取り/書き込みの <b>整数</b> です。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -432,9 +395,7 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトを選択します。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -464,14 +425,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>壁の厚さを指定する<b>整数値</b>を設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>グラフの壁面の太さを設定するのにには、このプロパティを使用します。 既定値は、ゼロ (0) です。</para>
-          <para />
-        </remarks>
+        <summary>壁の厚みを指定する<b>整数型 (Integer</b> ) の値を設定します。 値の取得と設定が可能です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>グラフの壁の厚さを設定するためにこのプロパティを使用します。  既定値は 0 です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

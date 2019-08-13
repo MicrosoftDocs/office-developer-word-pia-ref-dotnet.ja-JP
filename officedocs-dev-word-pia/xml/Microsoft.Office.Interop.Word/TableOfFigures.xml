@@ -1,13 +1,5 @@
 <Type Name="TableOfFigures" FullName="Microsoft.Office.Interop.Word.TableOfFigures">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d57be96f8ec7c6ed0a74dc51b351cce11593a3c0" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671537" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TableOfFigures" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ac4ae4a8b24cb45b90c698437cafe71f03425bcd" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146026" /></Metadata><TypeSignature Language="C#" Value="public interface TableOfFigures" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TableOfFigures" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TableOfFigures" />
   <TypeSignature Language="VB.NET" Value="Public Interface TableOfFigures" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>文書の 1 つの図表目次を表します。</summary>
-    <remarks>
-      <para>
-        <b>TableOfFigures</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.TablesOfFigures" />コレクションです。<b>TablesOfFigures</b>コレクションには、ドキュメントのすべての図表目次が含まれています</para>。
-      <para>使用して<b>TablesOfFigures</b>(<paramref name="index" />)、<paramref name="index" />インデックス番号は、1 つの<b>TableOfFigures</b>オブジェクトを返します。インデックス番号は、文書内の図表目次の位置を表します</para>。使用の
-      <para>、<see cref="M:Microsoft.Office.Interop.Word.TablesOfFigures.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />文書に図表目次を追加する方法です。図表目次のドキュメントに表示される順序で図表番号の一覧が表示されます</para>。
-      <para /></remarks>
+    <remarks><para><b>Tableoffigures</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.TablesOfFigures" />コレクションのメンバーです。 <b>TablesOfFigures</b> コレクションには、文書のすべての図表目次が含まれます。</para>
+      <para>1つの<b>tableoffigures</b>オブジェクトを<paramref name="index" />取得するには、<b>図表目次</b>(<paramref name="index" />) を使用します。ここで、はインデックス番号を指定します。 インデックス番号は、文書での図表目次の位置を表します。</para>
+      <para>文書に<see cref="M:Microsoft.Office.Interop.Word.TablesOfFigures.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />図表目次を追加するには、メソッドを使用します。 図表目次には、図表番号が文書に表示される順序で表示されます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,11 +81,9 @@
       <Docs>
         <summary>図表目次に含める項目を識別するラベルを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Caption</b>プロパティは TOC フィールドの \c スイッチに対応します</para>。
-          <para>既定のテキストをアプリケーション ウィンドウのキャプションを変更するのにはこのプロパティを空の文字列 ("") です</para>。
-          <para /></remarks>
+        <remarks><para><b>Caption</b>プロパティは、TOC フィールドの \c スイッチに対応します。</para>
+          <para>アプリケーション ウィンドウの名前を既定の名前に変更するには、このプロパティに長さ 0 の文字列 ("") を設定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -121,12 +109,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -150,7 +137,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,7 +164,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.HeadingStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.HeadingStyles" /> 、図表目次の (見出し 1] ~ [見出し 9] スタイル以外のスタイル) をコンパイルするために使用する追加のスタイルを表すオブジェクト。</summary>
+        <summary>図表目次<see cref="T:Microsoft.Office.Interop.Word.HeadingStyles" />をコンパイルするために使用する追加のスタイル ([見出し 1] ~ [見出し 9] 以外のスタイル) を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -208,7 +195,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Web に発行するときに図のテーブル内のページ番号を非表示する必要があるかどうかを設定または返します。</summary>
+        <summary>Web に発行するときに、図表目次のページ番号を非表示にするかどうかを設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -270,8 +257,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>該当</b> ページ番号が図表目次に含まれている場合です。</summary>
+        <summary><b>該当</b> ページ番号が図表目次に含まれている場合です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -304,11 +290,9 @@
       <Docs>
         <summary>図表目次の最後の見出しレベルを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>LowerHeadingLevel</b>プロパティは、目次 (TOC) フィールドの \o スイッチと共に使用する終了値に対応します</para>。使用の
-          <para>、<see cref="P:Microsoft.Office.Interop.Word.TableOfFigures.UpperHeadingLevel" />最上位の見出しレベルを設定するプロパティです。たとえば、TOC フィールドの構文 {TOC \o「1-3」} を設定するには、3 し、 <b>UpperHeadingLevel</b>プロパティを 1 に<b>LowerHeadingLevel</b>プロパティを設定します</para>。
-          <para /></remarks>
+        <remarks><para><b>LowerHeadingLevel</b>プロパティは、目次 (TOC) フィールドの \o スイッチと共に使用する終了値に対応しています。</para>
+          <para>先頭の<see cref="P:Microsoft.Office.Interop.Word.TableOfFigures.UpperHeadingLevel" />見出しレベルを設定するには、プロパティを使用します。 TOC フィールドの構文を設定するなど、{TOC \o"1-3"}、 <b>LowerHeadingLevel</b> プロパティを 3 し、 <b>UpperHeadingLevel</b> プロパティを 1 に設定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -362,12 +346,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />を指定したオブジェクトに含まれる文書の部分を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />たオブジェクトに含まれる文書の一部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>範囲をドキュメントから取得するか、図形のコレクションから図形範囲を取得する方法についてを参照してください、<see cref="P:Microsoft.Office.Interop.Word.TableOfFigures.Range" />メソッドです。</para>
-          <para />
-        </remarks>
+        <remarks><para>文書から指定範囲を取得する<see cref="P:Microsoft.Office.Interop.Word.TableOfFigures.Range" />方法、または図形のコレクションから図形範囲を取得する方法については、メソッドを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RightAlignPageNumbers">
@@ -396,8 +378,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合はページ番号が図表目次の右余白に揃えて配置します。</summary>
+        <summary><b>True</b>の場合、ページ番号は、図表目次の右余白に揃えて配置されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -428,32 +409,29 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdTabLeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または図表目次で項目とページ番号を区切る文字を設定します。</summary>
+        <summary>図表目次で項目とページ番号の間の文字を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" />これらの<b>Wdtableader</b>定数のいずれかをすることができます。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" />
-            <b>WdTabLeader</b>定数のいずれかをすることができます。</para>
-          <para>
-            <b>wdTabLeaderDashes </b>
+            <b>wdTabLeaderDashes</b>
           </para>
           <para>
-            <b>wdTabLeaderDots </b>
+            <b>wdTabLeaderDots</b>
           </para>
           <para>
-            <b>wdTabLeaderHeavy </b>
+            <b>wdTabLeaderHeavy</b>
           </para>
           <para>
-            <b>wdTabLeaderLines </b>
+            <b>wdTabLeaderLines</b>
           </para>
           <para>
-            <b>wdTabLeaderMiddleDot </b>
+            <b>wdTabLeaderMiddleDot</b>
           </para>
           <para>
             <b>wdTabLeaderSpaces</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TableID">
@@ -482,13 +460,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>TOC フィールドから図表目次を作成するために使用される 1 文字の識別子を設定または返します。</summary>
+        <summary>TOC フィールドから図表目次を作成するために使用される1文字の識別子を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>TableID</b>プロパティは TOC フィールドの \f スイッチに対応します。たとえば、"T"は表識別子 T を使用して TOC フィールドから目次を作成します。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>TableID</b>プロパティは、TOC (目次) フィールドの \f スイッチに対応します。 たとえば、"T" は表識別子 T を使用して TOC フィールドから目次を作成します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -512,12 +487,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定された図表目次で項目を更新します。</summary>
-        <remarks>
-          <para>
-            <b>メモ</b>  使用して、<see cref="M:Microsoft.Office.Interop.Word.TableOfFigures.UpdatePageNumbers" />の図のテーブル内の項目のページ番号を更新するメソッドです。</para>
-          <para />
-        </remarks>
+        <summary>指定した図表目次に表示されている項目を更新します。</summary>
+        <remarks><para>
+            <b>メモ</b>  図表目次<see cref="M:Microsoft.Office.Interop.Word.TableOfFigures.UpdatePageNumbers" />の項目のページ番号を更新するには、メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdatePageNumbers">
@@ -541,7 +514,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>図の指定したテーブル内の項目のページ番号を更新します。</summary>
+        <summary>指定された図表目次の項目のページ番号を更新します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -573,11 +546,9 @@
       <Docs>
         <summary>図表目次の最上位の見出しレベルを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>UpperHeadingLevel</b>プロパティは、目次 (TOC) フィールドの \o スイッチと共に使用する開始値に対応します</para>。使用の
-          <para>、 <see cref="P:Microsoft.Office.Interop.Word.TableOfFigures.LowerHeadingLevel" /> 、終了の見出しレベルを設定するプロパティ。たとえば、TOC フィールドの構文 {TOC \o「1-3」} を設定するには、3 し、 <b>UpperHeadingLevel</b>プロパティを 1 に<b>LowerHeadingLevel</b>プロパティを設定します</para>。
-          <para /></remarks>
+        <remarks><para><b>UpperHeadingLevel</b>プロパティは、目次 (TOC) フィールドの \o スイッチと共に使用する開始値に対応しています。</para>
+          <para><see cref="P:Microsoft.Office.Interop.Word.TableOfFigures.LowerHeadingLevel" />プロパティを使用して、終了見出しレベルを設定します。 TOC フィールドの構文を設定するなど、{TOC \o"1-3"}、 <b>LowerHeadingLevel</b> プロパティを 3 し、 <b>UpperHeadingLevel</b> プロパティを 1 に設定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseFields">
@@ -606,8 +577,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 目次登録 (TC) フィールドを使用して図表目次を作成する場合です。</summary>
+        <summary><b>True</b> 目次登録 (TC) フィールドを使用して図表目次を作成する場合です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -638,8 +608,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は組み込みの見出しスタイルを使用して図表目次を作成します。</summary>
+        <summary><b>True</b> に設定すると、組み込みの見出しスタイルを使用して図表目次を作成します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -670,7 +639,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Web に発行するときに、図表目次のエントリがハイパーリンクとして書式設定するかどうかを設定または返します。</summary>
+        <summary>Web に発行するときに、図表目次の項目をハイパーリンクとして書式設定するかどうかを設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

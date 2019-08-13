@@ -1,13 +1,5 @@
 <Type Name="DataLabels" FullName="Microsoft.Office.Interop.Word.DataLabels">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a33924104c6a32705d90232fdb8eadce5b62224e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670970" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DataLabels : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="849af9e318dead8239cad6dd722fca3def9aadf0" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147117" /></Metadata><TypeSignature Language="C#" Value="public interface DataLabels : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DataLabels implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DataLabels" />
   <TypeSignature Language="VB.NET" Value="Public Interface DataLabels&#xA;Implements IEnumerable" />
@@ -30,14 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>すべてのコレクション、 <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> 、指定した一連のオブジェクトです。</summary>
-    <remarks>
-      <para>各<see cref="T:Microsoft.Office.Interop.Word.DataLabel" />オブジェクトは、要素または近似曲線のデータ ラベルを表します。系列では、データ系列の面) などの<see cref="T:Microsoft.Office.Interop.Word.DataLabels" />コレクションには、単一のデータ ラベルが含まれています。</para>
-      <para />
-    </remarks>
-    <example>
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.Series.DataLabels(System.Object)" />を返すメソッド、<see cref="T:Microsoft.Office.Interop.Word.DataLabels" />コレクションです。次の例は、作業中の文書の最初のグラフの最初の系列にデータ ラベルの番号書式を設定します</para>。
-      <para>使用<see cref="T:Microsoft.Office.Interop.Word.DataLabels" />(<paramref name="Index" />)、 <paramref name="Index" /> 、データ ラベルのインデックス番号は、1 つを返すには、<see cref="T:Microsoft.Office.Interop.Word.DataLabel" />オブジェクトです</para>。</example>
+    <summary>指定されたデータ<see cref="T:Microsoft.Office.Interop.Word.DataLabel" />系列にあるすべてのオブジェクトのコレクションです。</summary>
+    <remarks><para>各<see cref="T:Microsoft.Office.Interop.Word.DataLabel" />オブジェクトは、ポイントまたは近似曲線のデータラベルを表します。 定義可能なポイント (エリアシリーズなど) のない系列の場合、 <see cref="T:Microsoft.Office.Interop.Word.DataLabels" />コレクションには1つのデータラベルが含まれます。</para>
+      <para> </para></remarks>
+    <example><para>コレクションを<see cref="M:Microsoft.Office.Interop.Word.Series.DataLabels(System.Object)" />取得するのにには、メソッドを使用します。 <see cref="T:Microsoft.Office.Interop.Word.DataLabels" /> 次の使用例は、作業中の文書に含まれる最初のグラフの最初のデータ系列にあるデータ ラベルの数値の表示形式を設定します。</para>
+      <para>1 <see cref="T:Microsoft.Office.Interop.Word.DataLabels" />つ<paramref name="Index" /> <see cref="T:Microsoft.Office.Interop.Word.DataLabel" />のオブジェクトを<paramref name="Index" />取得するには、() を使用します。ここで、はデータラベルのインデックス番号です。</para></example>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -95,10 +84,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用<see cref="T:Microsoft.Office.Interop.Word._Application" />すると、Microsoft Word アプリケーションを表すオブジェクトが返されます。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,11 +121,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>場合は、オブジェクト内のテキストは、オブジェクトのサイズを変更したときにフォント サイズを変更します。 既定値は <b>True</b> です。 読み取り/書き込みの<b>オブジェクト</b>です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary><b>True</b>の場合は、オブジェクトのサイズが変更されたときに、オブジェクト内のテキストのフォントサイズが変更されます。 既定値は <b>True</b> です。 <b>オブジェクト</b>を読み取り/書き込み。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,14 +152,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内のすべてのオブジェクトのコンテキストに基づいて、適切なテキストを自動的に生成する場合は、 <b>True</b>に設定します。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>このプロパティの値を設定を設定、<see cref="P:Microsoft.Office.Interop.Word.DataLabel.AutoText" />すべての<see cref="T:Microsoft.Office.Interop.Word.DataLabel" />オブジェクトがコレクションに含まれています。このプロパティは<b>True</b>を返す場合にのみ、<see cref="P:Microsoft.Office.Interop.Word.DataLabel.AutoText" />のすべてのプロパティ<see cref="T:Microsoft.Office.Interop.Word.DataLabel" />コレクションに含まれるオブジェクトに設定されて<b>は True</b>です。それ以外の場合、このプロパティは<b>False</b>を返します。</para>
-          <para />
-        </remarks>
+        <summary>コレクション内のすべてのオブジェクトが、コンテキストに基づいて適切なテキストを自動的に生成する場合は<b>True</b>に設定します。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>このプロパティの値を設定すると<see cref="P:Microsoft.Office.Interop.Word.DataLabel.AutoText" /> 、コレクションに<see cref="T:Microsoft.Office.Interop.Word.DataLabel" />含まれるすべてのオブジェクトのプロパティが設定されます。 このプロパティは<b></b> 、コレクションに含ま<see cref="P:Microsoft.Office.Interop.Word.DataLabel.AutoText" />れるすべて<see cref="T:Microsoft.Office.Interop.Word.DataLabel" />のオブジェクトのプロパティが<b>true</b>に設定されている場合にのみ true を返します。それ以外の場合、このプロパティは<b>False</b>を返します。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -204,10 +184,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Border" /> 、オブジェクトの枠線を表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>オブジェクトの<see cref="T:Microsoft.Office.Interop.Word.Border" />枠線を表すオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,10 +212,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内のオブジェクトの数を表す<b>整数</b>値を返します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>コレクションに含まれるオブジェクトの数を表す<b>整数型 (Integer</b> ) の値を返します。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,14 +240,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトが Microsoft Word で作成された場合、<see cref="P:Microsoft.Office.Interop.Word.DataLabels.Creator" />を返します文字列を表す 16 進数値である 4d535744 をします。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
-          <para />
-        </remarks>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトが Microsoft Word で作成されている<see cref="P:Microsoft.Office.Interop.Word.DataLabels.Creator" />場合、このプロパティは、文字列 "MSWD" を表す、16進数値の4D535744 を返します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -296,9 +268,7 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトを削除します。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -328,10 +298,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />指定した図形のオブジェクト、または<see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />指定されたグラフの塗りつぶしの書式設定、図形やグラフのプロパティを含むオブジェクト。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />
-        </value>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />た図形または図形または<see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />グラフの塗りつぶしの書式プロパティを含む、指定したグラフのオブジェクトのオブジェクトを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -361,10 +329,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Font" />を指定したオブジェクトのフォントを表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFont" />
-        </value>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Font" />たオブジェクトのフォントを表すオブジェクト型 (object) の値を取得します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFont" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -392,10 +358,8 @@
       </ReturnValue>
       <Docs>
         <summary>線、塗りつぶし、およびオブジェクトの書式設定の効果を取得します。
-読み取り専用<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+読み取り専用<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -457,14 +421,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定したオブジェクトの水平方向の配置を表す<b>オブジェクト</b>の値を設定します。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
-        <remarks>
-          <para>のいずれかにこのプロパティの値を設定することができます、<see cref="T:Microsoft.Office.Interop.Word.XlConstants" />定数</para>。
-          <para>注: 選択またはインストールされている言語サポート (たとえば、日本語) によっては使用ができないこれらの定数のいくつかがあります</para>。
-          <para /></remarks>
+        <summary>指定したオブジェクトの水平方向の配置を表すオブジェクト型 ( <b>object</b> ) の値を取得、または設定します。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>このプロパティの値には、 <see cref="T:Microsoft.Office.Interop.Word.XlConstants" />定数のいずれかを設定できます。</para>
+          <para>注: 選択またはインストールした言語の設定 (たとえば、英語 (米国)) によっては、これらの定数の一部を使用できない場合があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -493,10 +454,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Interior" />を指定したオブジェクトの内部を表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Interior" />
-        </value>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Interior" />たオブジェクトの内部を表すオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -526,12 +485,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 オブジェクトの名前またはインデックス番号を指定します。</param>
-        <summary>コレクションから単一のオブジェクトを返します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.DataLabel" />
-        </value>
+        <param name="Index">必要な<b>オブジェクト</b>。 オブジェクトの名前またはインデックス番号を指定します。</param>
+        <summary>コレクションから1つのオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.DataLabel" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -559,9 +515,7 @@
       </ReturnValue>
       <Docs>
         <summary>オブジェクトの名前を表す文字列型 ( <b>String</b> ) の値を返します。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -591,14 +545,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、オブジェクトの表示形式コードを表す<b>文字列</b>値を設定します。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
-        <remarks>
-          <para>形式は、[表示形式]、[セルの書式設定] ダイアログ ボックスの文字列と同じです。<b>Format</b>関数は、 <b>NumberFormat</b>プロパティと<b>NumberFormatLocal</b>プロパティは、コードの文字列を別の形式を使用します。</para>
-          <para />
-        </remarks>
+        <summary>指定されたオブジェクトの表示形式を表す文字列型 (<b>String</b>) の値を取得または設定します。</summary>
+        <value><b>String</b></value>
+        <remarks><para>表示形式を示す文字列は、[ セルの書式設定] ダイアログ ボックスの [ 表示形式] の文字列と同じです。 この文字列は、 <b>NumberFormat</b> プロパティと <b>NumberFormatLocal</b> プロパティで使用しますが、 <b>Format</b> 関数で使用する書式名とは異なります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLinked">
@@ -627,10 +577,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>(数値の表示形式は、セルが変更されたときのラベルに変更) するように、セルに数値の表示形式がリンクされている場合は、 <b>True</b>に設定します。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>数値の書式がセルにリンクされている場合は<b>True</b>に設定します。これにより、セル内のラベルが変更されたときに、数値の書式が変更されます。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -660,15 +608,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、ユーザーの言語で文字列としてオブジェクトの書式設定コードを表す<b>オブジェクト</b>の値を設定します。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
-        <remarks>
-          <para>
-            <b>Format</b>関数は、コードの文字列を別の形式を使用して、<see cref="P:Microsoft.Office.Interop.Word.DataLabels.NumberFormat" />と<see cref="P:Microsoft.Office.Interop.Word.DataLabels.NumberFormatLocal" />のプロパティです。</para>
-          <para />
-        </remarks>
+        <summary>返すまたは、ユーザーの言語の文字列としてオブジェクトの書式コードを表す<b>オブジェクト</b>の値を設定します。</summary>
+        <value><b>Object</b></value>
+        <remarks><para><b>Format</b>関数は、プロパティ<see cref="P:Microsoft.Office.Interop.Word.DataLabels.NumberFormat" />とプロパティとは異なる書式コード<see cref="P:Microsoft.Office.Interop.Word.DataLabels.NumberFormatLocal" />文字列を使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -697,14 +640,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、テキストの向きを表す<b>整数</b>値を設定します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>– 90 ~ 90 ° またはのいずれかから整数値をこのプロパティの値であることができます、<see cref="T:Microsoft.Office.Interop.Word.XlOrientation" />定数。</para>
-          <para />
-        </remarks>
+        <summary>文字列の向きを表す<b>整数型 (Integer</b> ) の値を取得、または設定します。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>このプロパティの値には、-90 ~ 90 degrees または<see cref="T:Microsoft.Office.Interop.Word.XlOrientation" />定数のいずれかの整数値を指定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -730,10 +669,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親を返します。読み取り専用 <b>オブジェクト</b> 。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定したオブジェクトの親を返します。 読み取り専用 <b>オブジェクト</b> 。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -763,10 +700,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlDataLabelPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、 <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelPosition" /> 、データ ラベルの位置を表す値。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelPosition" />
-        </value>
+        <summary>返すまたは、 <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelPosition" />データラベルの位置を表す値を設定します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlDataLabelPosition" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -793,13 +728,10 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>DataLabels</b>コレクションを伝達するデータ ラベルのインデックス番号です。</param>
-        <summary>内容と、シリーズの他のすべてのデータ ラベルを指定したデータ ラベルの書式を反映します。</summary>
-        <remarks>
-          <para>ソースのデータ ラベルは、フィールドを移動先のデータ ラベルとの互換性をサポートする場合は、それらのフィールドがフォームの [フィールド名] に挿入されます。</para>
-          <para />
-        </remarks>
+        <param name="Index">反映されるデータラベルの<b>DataLabels</b>コレクションのインデックス番号を指定します。</param>
+        <summary>指定されたデータラベルの内容と書式を、データ系列の他のすべてのデータラベルに反映します。</summary>
+        <remarks><para>ソースデータラベルが、貼り付け先のデータラベルと互換性のないフィールドをサポートしている場合、これらのフィールドはフォーム [フィールド名] に挿入されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadingOrder">
@@ -828,10 +760,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.XlReadingOrder" />を指定したオブジェクトの読み取り順序を表す定数です。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>指定したオブジェクト<see cref="T:Microsoft.Office.Interop.Word.XlReadingOrder" />の読み取り順序を表す定数を設定または返します。 読み取り/書き込みの <b>整数</b> です。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -857,9 +787,7 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトを選択します。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -889,14 +817,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グラフのデータ ラベルに使用する区切り記号を表す<b>オブジェクト</b>を取得または設定します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
-        <remarks>
-          <para>文字列を使用する場合、区切り記号として文字列が表示されます。同じに設定する場合、<see cref="F:Microsoft.Office.Interop.Word.XlDataLabelSeparator.xlDataLabelSeparatorDefault" />の定数 (= 1) で、既定データ ラベルの区切り記号は、コンマまたはデータ ラベルによって、改行文字のいずれかが表示されます。</para>
-          <para />
-        </remarks>
+        <summary>グラフのデータラベルに使用される区切り文字を表す<b>オブジェクト</b>を設定または取得します。 値の取得と設定が可能です。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>文字列を使用する場合、区切り記号として文字列が表示されます。 <see cref="F:Microsoft.Office.Interop.Word.XlDataLabelSeparator.xlDataLabelSeparatorDefault" />定数 (= 1) に相当する値に設定すると、データラベルに応じて、コンマまたは改行のいずれかである既定のデータラベルの区切り記号が表示されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shadow">
@@ -925,10 +849,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、オブジェクトに影があるかどうかを決定する<b>ブール</b>値を設定します。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>オブジェクトが影付きかどうかを表すブール型 (<b>Boolean</b>) の値を取得または設定します。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -958,11 +880,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>を設定するグラフのデータ ラベルのバブル サイズを表示します。 <b>False</b>を非表示にします。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>グラフのデータラベルのバブルサイズを表示するには、 <b>True</b>に設定します。 表示しない場合は <b>False</b> を指定します。 値の取得と設定が可能なブール型 (<b>Boolean</b>) の値です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -992,11 +911,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>を設定するグラフのデータ ラベルの分類名を表示します。 <b>False</b>を非表示にします。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary><b>True</b>に設定すると、グラフのデータラベルの分類名が表示されます。 表示しない場合は <b>False</b> を指定します。 値の取得と設定が可能なブール型 (<b>Boolean</b>) の値です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1026,10 +942,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>データ ラベルに凡例マーカーが表示されている場合は、 <b>True</b>に設定します。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>データラベルの凡例マーカーを表示する場合は<b>True</b>に設定します。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1059,11 +973,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>を設定するグラフのデータ ラベルのパーセンテージの値を表示します。 <b>False</b>を非表示にします。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary><b>True</b>に設定すると、グラフのデータラベルのパーセンテージの値が表示されます。 表示しない場合は <b>False</b> を指定します。 値の取得と設定が可能なブール型 (<b>Boolean</b>) の値です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1093,7 +1004,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたグラフのグラフのデータ ラベルをすべての<b>セルから値</b>の範囲] フィールドを表示するのには<b>True</b>に設定します。 そのフィールドを非表示にするのには<b>False</b>に設定します。 読み取り/書き込み<b>ブール型</b>(C# では<b>bool</b> )。</summary>
+        <summary><b>True</b>に設定すると、指定したグラフのすべてのグラフデータラベルのセル範囲フィールドの<b>値</b>が表示されます。 <b>False</b>に設定すると、そのフィールドが非表示になります。 読み取り/書き込み<b>ブール値</b>(C# では<b>bool</b> )。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1124,11 +1035,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>ブール値</b>をグラフのデータ ラベルの系列名表示の動作を示すを設定または返します。 <b>True</b>を系列名を表示します。 <b>False</b>を非表示にします。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>グラフのデータ ラベルの系列名表示の動作を示すブール型 (<b>Boolean</b>) の値を設定します。<b>True</b> の場合、系列名を表示します。<b>False</b> の場合、系列名は表示されません。値の取得および設定が可能です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1158,11 +1066,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>ブール値</b>を指定したグラフのデータ ラベル値の表示動作に対応する設定または返します。 <b>True を指定</b>すると、値が表示されます。 <b>False</b>を非表示にします。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>指定されたグラフのデータ ラベル値の表示動作に対応するブール型 (<b>Boolean</b>) の値を設定します。 <b>True</b> の場合、データ ラベル値を表示します。 <b>False</b> の場合、データ ラベル値を非表示にします。 値の取得および設定が可能です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1198,10 +1103,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ラベルの種類を設定または返します。 読み取り/書き込みの<b>オブジェクト</b>です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>ラベルの種類を返すか設定します。 <b>オブジェクト</b>を読み取り/書き込み。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1231,14 +1134,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定したオブジェクトの垂直方向の配置を表す<b>オブジェクト</b>の値を設定します。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
-        <remarks>
-          <para>いずれかにこのプロパティの値を設定することができます、<see cref="T:Microsoft.Office.Interop.Word.XlConstants" />定数。</para>
-          <para />
-        </remarks>
+        <summary>指定したオブジェクトの垂直方向の配置を表すオブジェクト型 ( <b>object</b> ) の値を取得、または設定します。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>このプロパティの値には、 <see cref="T:Microsoft.Office.Interop.Word.XlConstants" />定数のいずれかを設定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

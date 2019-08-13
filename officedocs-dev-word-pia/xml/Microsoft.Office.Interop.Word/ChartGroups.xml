@@ -1,13 +1,5 @@
 <Type Name="ChartGroups" FullName="Microsoft.Office.Interop.Word.ChartGroups">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c1eae1ad84eba37ae4a3a9946acbcb5c23a1752c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671673" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartGroups : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8bebc47132f81850e7ac6d28b26efb7bbad92e07" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142251" /></Metadata><TypeSignature Language="C#" Value="public interface ChartGroups : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartGroups implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartGroups" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartGroups&#xA;Implements IEnumerable" />
@@ -31,11 +23,10 @@
   </Attributes>
   <Docs>
     <summary>同じ形式のグラフにプロットされた 1 つまたは複数のデータ系列を表します。</summary>
-    <remarks>
-      <para>A<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />コレクションのすべてのコレクションでは、<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />指定されたグラフ内のオブジェクト。 グラフには、1 つ以上のグラフ グループが含まれています、各グラフ種類グループには、1 つまたは複数の系列が含まれている系列ごとに 1 つまたは複数のポイントが含まれています。グループ、すべてのデータ系列を折れ線グラフ形式でプロットとすべてのデータ系列を横棒グラフ形式でプロット、横棒グラフ グループの両方など、1 つのグラフを含む可能性があります</para>。
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.Chart.ChartGroups(System.Object)" />を返すプロパティ、<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />コレクションです</para>。
-      <para>の使用を<b>指定しないで、ChartGroups</b>(<paramref name="index" />)、<paramref name="Index" />グラフ グループのインデックス番号、1 つを返すには、<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />オブジェクトです</para>。
-      <para /></remarks>
+    <remarks><para><see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />コレクションは、指定されたグラフ<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />内のすべてのオブジェクトのコレクションです。  1 つのグラフには、1 つ以上のグラフ グループが含まれ、各グラフ グループには 1 つ以上のデータ系列が、そして各データ系列には、1 つ以上のポイントが含まれています。 たとえば、1 つのグラフに、すべてのデータ系列を折れ線グラフ形式でプロットした折れ線グラフ グループと、すべてのデータ系列を横棒グラフ形式でプロットした横棒グラフ グループの両方を含めることができます。</para>
+      <para>コレクションを<see cref="P:Microsoft.Office.Interop.Word.Chart.ChartGroups(System.Object)" />取得するのにには、プロパティを使用します。 <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> </para>
+      <para>1つ<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />の<paramref name="index" />オブジェクトを取得<paramref name="Index" />するのにには、 <b>ChartGroups</b>() を使用します。ここで、はグラフグループのインデックス番号です。 </para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,10 +52,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用<see cref="T:Microsoft.Office.Interop.Word._Application" />すると、Microsoft Word アプリケーションを表すオブジェクトが返されます。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,10 +80,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内のオブジェクトの数を表す<b>整数</b>を返します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>コレクションに含まれるオブジェクトの数を表す<b>整数型 (Integer</b> ) の値を取得します。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,14 +108,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトが作成されたアプリケーションを示す 32 ビット<b>の整数</b>を返します。 読み取り専用</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Word で作成された場合、 <b>Creator</b>プロパティは、文字列"MSWD"を表す 16 進数、値である 4d535744 を返します。この値は、定数で表すこともできます<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />です</para>。
-          <para>このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <summary>指定したオブジェクトが作成されたアプリケーションを示す32ビット<b>整数</b>を返します。 読み取り専用</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトは、Microsoft Word で作成されている場合、 <b>Creator</b> プロパティは文字列"MSWD"を表す 16 進数、値である 4d535744 を返します。 この値は定数<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />で表すこともできます。</para>
+          <para>このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -189,12 +173,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>コレクション内のオブジェクトの位置を表す序数を指定する必要があります。</param>
-        <summary>コレクションから指定した項目を返します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <param name="Index">Required<b>オブジェクト</b>コレクション内のオブジェクトの序数位置を指定します。</param>
+        <summary>コレクションから指定された項目を返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,10 +202,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定したオブジェクトの親を返します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,13 +1,5 @@
 <Type Name="AutoTextEntries" FullName="Microsoft.Office.Interop.Word.AutoTextEntries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a31d1e907d820a2005c896aa46cf04f2089738e1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672281" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoTextEntries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="616542cb10e6c23af21a1d1d91f287e037699d61" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146277" /></Metadata><TypeSignature Language="C#" Value="public interface AutoTextEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoTextEntries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AutoTextEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoTextEntries&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" />、テンプレートの定型句の項目を表すオブジェクト。</summary>
-    <remarks>
-      <para>
-        <b>AutoTextEntries</b>コレクションには、[オート コレクト] ダイアログ ボックス ([ツール] メニュー) の [定型句] タブに記載されているすべてのエントリが含まれています</para>。
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" /><b>AutoTextEntries</b>コレクションを取得するプロパティ</para>。
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.AutoTextEntries.Add(System.String,Microsoft.Office.Interop.Word.Range)" /><b>AutoTextEntries</b>コレクションに定型句エントリを追加します</para>。
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" />(<paramref name="index" />)、 <paramref name="index" /> 、定型句の名前またはインデックス番号を 1 つを返すには、<see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" />オブジェクトです。必要がありますと正確に一致スペル (必ずしも、大文字と小文字)、名前のように、[オート コレクト] ダイアログ ボックスの [定型句] タブに表示されています</para>。
-      <para /></remarks>
+    <summary>テンプレートの定型<see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" />句の項目を表すオブジェクトのコレクションです。</summary>
+    <remarks><para><b>Autotextentries</b>コレクションには、[オートコレクト] ダイアログボックス ([ツール] メニュー) の [定型句] タブに表示されるすべての項目が含まれています。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" /> <b>Autotextentries</b>コレクションを取得するのにには、プロパティを使用します。</para>
+      <para>この<see cref="M:Microsoft.Office.Interop.Word.AutoTextEntries.Add(System.String,Microsoft.Office.Interop.Word.Range)" />メソッドを使用して、 <b>autotextentries</b>コレクションに定型句エントリを追加します。</para>
+      <para>( <see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" /><paramref name="index" />) を使用し<paramref name="index" />ます。ここで、は定型句の登録名または<see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" />インデックス番号を使用して、1つのオブジェクトを返します。 [オートコレクト] ダイアログボックスの [定型句] タブに表示される名前のスペル (大文字と小文字は区別されません) を正確に一致させる必要があります。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,9 +53,9 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Name">なるテキストの範囲を挿入するたびに<paramref name="Name" />入力します。</param>
+        <param name="Name">入力するたび<paramref name="Name" />に挿入されるテキストの範囲を指定します。</param>
         <param name="Range">この引数に指定した文字列を入力すると、定型句が挿入されます。</param>
-        <summary>使用可能な定型句エントリの一覧には、定型句エントリを追加します。</summary>
+        <summary>使用可能な定型句の登録項目の一覧に定型句を追加します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -95,11 +85,8 @@
         <param name="Range">削除してスパイクに追加する範囲を指定します。</param>
         <summary>指定した範囲を削除し、範囲の内容をスパイク (組み込みの定型句) に追加します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>AppendToSpike</b>メソッドはのみ、<see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" />標準テンプレートのコレクションです。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Appendtospike</b>メソッドは、標準テンプレートの<see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" />コレクションに対してのみ有効です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -125,7 +112,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -183,10 +170,9 @@
       <Docs>
         <summary>指定したオブジェクトが作成されたアプリケーションを示す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -247,7 +233,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">返される各オブジェクトの名前です。</param>
+        <param name="Index">取得する個々のオブジェクトの名前を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -276,7 +262,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親オブジェクトを返します。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="LegendEntry" FullName="Microsoft.Office.Interop.Word.LegendEntry">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a77193ef54e946d0aa957ead0685d6bff35e8048" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672103" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface LegendEntry" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="059f71dc3edd40069b1147fe21cabdefa3e8042d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146627" /></Metadata><TypeSignature Language="C#" Value="public interface LegendEntry" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LegendEntry" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.LegendEntry" />
   <TypeSignature Language="VB.NET" Value="Public Interface LegendEntry" />
@@ -27,17 +19,14 @@
   </Attributes>
   <Docs>
     <summary>グラフの凡例の凡例文字列を表します。</summary>
-    <remarks>
-      <para>
-        <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />コレクションです。<see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />コレクションには、すべてが含まれています、 <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> 、凡例内のオブジェクトです</para>。
-      <para>各凡例文字列には 2 つの部分: 凡例のエントリと、凡例マーカーは、凡例文字列に、関連付けられたデータ系列またはグラフの近似曲線を視覚的にリンクに関連付けられている一連の名前のエントリのテキストです。凡例マーカーとその関連付けられたデータ系列または近似曲線の書式設定プロパティは、<see cref="T:Microsoft.Office.Interop.Word.LegendKey" />オブジェクトです</para>。
-      <para>凡例項目のテキストを変更できません。<see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />オブジェクトは、フォントの書式をサポートし、それらを削除することができます。パターンの書式設定はサポートされていませんの凡例のエントリです。エントリのサイズと位置が固定されています</para>。
-      <para>データ系列または凡例文字列に対応する近似曲線を取得する直接的な方法はありません</para>。
-      <para>を削除し、凡例を設定してそれらを再作成してそれらを復元する唯一の方法は、凡例のエントリが削除された後、<see cref="P:Microsoft.Office.Interop.Word.Chart.HasLegend" />のグラフの<b>場合は False</b>と<b>True</b>に戻ります</para>。
-      <para /></remarks>
-    <example>
-      <para>使用<see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />(<paramref name="index" />)、<paramref name="index" />の凡例エントリのインデックス番号、1 つを返すには、<see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />オブジェクトです。名前で凡例項目を返すことはできません</para>。
-      <para>、インデックス番号は、凡例内の凡例項目の位置を表します。LegendEntries(1)、凡例の一番上には、1 の凡例の一番下にあります。</para></example>
+    <remarks><para><see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />オブジェクトは<see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />コレクションのメンバーです。 <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />コレクションには、凡例<see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />のすべてのオブジェクトが含まれています。</para>
+      <para>凡例文字列はそれぞれ2つの部分で構成されています。凡例文字列に関連付けられた系列の名前である、エントリのテキスト。と入力マーカーは、凡例項目とそれに関連付けられたデータ系列または近似曲線をグラフに視覚的にリンクします。 入力マーカーとそれに関連付けられているデータ系列または近似<see cref="T:Microsoft.Office.Interop.Word.LegendKey" />曲線の書式設定プロパティは、オブジェクトに含まれています。</para>
+      <para>凡例項目の文字列を変更することはできません。 <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />オブジェクトはフォントの書式設定をサポートしており、削除することができます。 凡例項目のパターン書式設定はサポートされていません。 エントリの位置とサイズは固定されています。</para>
+      <para>LegendEntry オブジェクトから、凡例文字列に対応しているデータ系列または近似曲線を直接返す方法はありません。</para>
+      <para>凡例文字列を削除した後、それを復元するには、グラフの<see cref="P:Microsoft.Office.Interop.Word.Chart.HasLegend" />プロパティを<b>False</b>に設定して凡例を削除してから、 <b>True</b>に設定し直す必要があります。</para>
+      <para> </para></remarks>
+    <example><para>1 <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />つ<paramref name="index" /> <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />のオブジェクトを<paramref name="index" />取得するには、() を使用します。ここでは凡例項目のインデックス番号を指定します。 名前で、凡例のエントリを返すことはできません。</para>
+      <para>インデックス番号は、凡例内での凡例項目の位置と対応します。 LegendEntries(1) は凡例の一番上の凡例項目で、LegendEntries(LegendEntries.Count) は一番下の凡例項目です。 </para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -63,10 +52,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用<see cref="T:Microsoft.Office.Interop.Word._Application" />すると、Microsoft Word アプリケーションを表すオブジェクトが返されます。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,11 +89,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>場合は、オブジェクト内のテキストは、オブジェクトのサイズを変更したときにフォント サイズを変更します。 既定値は <b>True</b> です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary><b>True</b>の場合は、オブジェクトのサイズが変更されたときに、オブジェクト内のテキストのフォントサイズが変更されます。 既定値は <b>True</b> です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,14 +117,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Word で作成されている場合、<b>作成者</b>を返します、16 進数の値である 4d535744 を文字列します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
-          <para />
-        </remarks>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトは、Microsoft Word で作成されている場合、 <b>作成者</b> を返します、16 進数の値である 4d535744 を文字列します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -165,9 +145,7 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトを削除します。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,10 +172,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.ChartFont" />を指定したオブジェクトのフォントを表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFont" />
-        </value>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.ChartFont" />たオブジェクトのフォントを表すオブジェクト型 (object) の値を取得します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFont" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,10 +201,8 @@
       </ReturnValue>
       <Docs>
         <summary>線、塗りつぶし、およびオブジェクトの書式設定の効果を取得します。
-読み取り専用<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+読み取り専用<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,10 +229,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトのポイント単位で、高さを表す<b>double 型</b>の値を返します。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>オブジェクトの高さをポイント単位で表す倍精度浮動小数点型 (<b>Double</b>) の値を返します。</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -285,10 +257,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ようなオブジェクトのコレクション内のオブジェクトのインデックス番号を返します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>類似するオブジェクトのコレクション内のオブジェクトのインデックス番号を返します。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -315,10 +285,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グラフ エリアの左端からのオブジェクトの左端からポイント単位で、距離を表す<b>double 型</b>の値を返します。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>オブジェクトの左端から、グラフ エリアの左端までの距離をポイント単位で表す倍精度浮動小数点型 (<b>Double</b>) の値を返します。</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -345,10 +313,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.LegendKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> 、凡例マーカーを表すオブジェクトがエントリに関連付けられています。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.LegendKey" />
-        </value>
+        <summary>エントリに<see cref="T:Microsoft.Office.Interop.Word.LegendKey" />関連付けられた凡例マーカーを表すオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.LegendKey" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -375,10 +341,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親を返します。読み取り専用 <b>オブジェクト</b> 。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定したオブジェクトの親を返します。 読み取り専用 <b>オブジェクト</b> 。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -404,9 +368,7 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトを選択します。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -433,10 +395,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>(ワークシート) の行 1 の上端、または、グラフ エリア (グラフの場合) の一番上のオブジェクトの上端からポイント単位で、距離を表す<b>double 型</b>の値を返します。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>オブジェクトの上端から、ワークシート上の行 1 の上までの距離、または、グラフ シート上のグラフ エリアの上までの距離をポイント単位で表す倍精度浮動小数点型 (<b>Double</b>) の値を返します。</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -464,9 +424,7 @@
       </ReturnValue>
       <Docs>
         <summary>オブジェクトのポイント単位で、幅を表す <b>double 型</b> の値を返します。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

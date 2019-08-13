@@ -1,13 +1,5 @@
 <Type Name="WebOptions" FullName="Microsoft.Office.Interop.Word.WebOptions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0dd920613af1fb3693498c891ecd9ed8d8ff5348" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670822" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface WebOptions" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f88f221df7d67e0a725679f57bd1b9a883ba6147" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142732" /></Metadata><TypeSignature Language="C#" Value="public interface WebOptions" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WebOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.WebOptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface WebOptions" />
@@ -27,10 +19,9 @@
   </Attributes>
   <Docs>
     <summary>文書を Web ページとして保存するとき、または Web ページを開くときに使用される、文書レベルの属性が含まれます。</summary>
-    <remarks>
-      <para>返すか、アプリケーション (グローバル) レベルまたはドキュメント レベルの属性を設定できます。(その属性の値を 1 つのドキュメントごとに異なることができます、ドキュメントの保存時の属性値によってに注意してください)。文書レベルの属性の設定は、アプリケーション レベルの属性設定を上書きします。アプリケーション レベルの属性が含まれている、<see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" />オブジェクトです</para>。
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word._Document.WebOptions" /> 、 <b>WebOptions</b>オブジェクトを取得するプロパティ</para>。
-      <para /></remarks>
+    <remarks><para>属性は、アプリケーション (グローバル) レベルまたは文書レベルで取得または設定できます。 (文書の保存時の属性値によっては、属性値が文書ごとに異なる場合があることに注意してください)。ドキュメントレベルの属性設定は、アプリケーションレベルの属性設定をオーバーライドします。 アプリケーションレベルの属性は、 <see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" />オブジェクトに格納されます。</para>
+      <para>WebOptions オブジェクト<see cref="P:Microsoft.Office.Interop.Word._Document.WebOptions" />を取得するの<b></b>にには、プロパティを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AllowPNG">
@@ -59,13 +50,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> を Web ページとして文書を保存するとき、画像形式として PNG (ポータブル ネットワーク グラフィックス) が許可されている場合です。 <b>False を指定</b> の出力形式として PNG が許可されていない場合。 既定値は、 <b>false を指定</b> します。</summary>
+        <summary><b>True</b> を Web ページとして文書を保存するとき、画像形式として PNG (ポータブル ネットワーク グラフィックス) が許可されている場合です。 <b>False を指定</b> の出力形式として PNG が許可されていない場合。 既定値は、 <b>false を指定</b> します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>PNG 形式で画像を保存する場合、Web ブラウザーを対象となる場合は、PNG 形式をサポートして、イメージ品質を向上させるか、画像ファイルのサイズを小さくしてダウンロードにかかる時間が短く可能性があります。</para>
-          <para />
-        </remarks>
+        <remarks><para>PNG 形式で画像を保存し、表示先の Web ブラウザーで PNG 形式がサポートされていると、画像の品質が向上したり、画像ファイルのサイズが小さくなってダウンロード時間が短くなります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -91,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -124,22 +112,19 @@
       <Docs>
         <summary>指定した Web ページを対象とする Web ブラウザーのレベルを表す定数を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、<see cref="P:Microsoft.Office.Interop.Word.WebOptions.OptimizeForBrowser" />プロパティが<b>False</b>に設定します。</para>
+        <remarks><para>プロパティが False に設定さ<see cref="P:Microsoft.Office.Interop.Word.WebOptions.OptimizeForBrowser" />れている場合<b></b>、このプロパティは無視されます。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdBrowserLevel" />
-            <b>WdBrowserLevel</b>定数のいずれか: </para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdBrowserLevel" /><b>Wdbrowserlevel</b>定数には、次のいずれかを指定できます。 </para>
           <para>
-            <b>wdBrowserLevelMicrosoftInternetExplorer6 </b>
+            <b>wdBrowserLevelMicrosoftInternetExplorer6</b>
           </para>
           <para>
-            <b>wdBrowserLevelMicrosoftInternetExplorer5 </b>
+            <b>wdBrowserLevelMicrosoftInternetExplorer5</b>
           </para>
           <para>
             <b>wdBrowserLevelV4</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -165,12 +150,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Encoding">
@@ -227,16 +211,213 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>文書を Web ページとして保存、長いファイル名を使用して別のフォルダーに関連ファイルを保存するときに使用するフォルダーの接尾辞を返します (場合は、<see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" />と<see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" />プロパティが<b>True</b>に設定)。</summary>
+        <summary>文書を Web ページとして保存し、長いファイル名を使用して、関連ファイルを別のフォルダーに保存する (つまり、 <see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" />および<see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" />プロパティが<b>True</b>に設定されている場合) 場合に Microsoft Word で使用するフォルダーサフィックスを取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>サフィックスによって返されるドキュメントの使用を新しく作成された、<see cref="P:Microsoft.Office.Interop.Word.DefaultWebOptions.FolderSuffix" />のプロパティの<see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" />オブジェクトです。<b>FolderSuffix</b>プロパティの値、 <see cref="T:Microsoft.Office.Interop.Word.WebOptions" /> 、別の言語バージョンの Word では文書が編集した場合、<b>必ず指定</b>のオブジェクトのオブジェクトが異なる場合があります。使用することができます、<see cref="M:Microsoft.Office.Interop.Word.WebOptions.UseDefaultFolderSuffix" />には、Microsoft Office で現在使用している言語のサフィックスを変更する方法です</para>。
-          <para>既定では、サポート フォルダーの名前は、Web ページとアンダー スコア (_)、ピリオド (.)、またはハイフン (-) と、word の [ファイル] ([Web ページとしてファイルを保存する Word のバージョンの言語で表示される) の名前。たとえば、オランダ語の言語バージョンの Word を使用して、"Page1"という名前のファイルを Web ページとして保存することとします。Page1_bestanden では、サポート フォルダーの既定の名前です</para>。
-          <para>は、次の表は Office の各言語バージョンの一覧が表示し、対応する<see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" />プロパティの値とフォルダーの接尾辞です。テーブルに表示されていない言語、サフィックス"として.files"が使用されます</para>。
-          <list type="table"><item><description>アラビア語</description><description>1025</description><description>.files</description></item><item><description>バスク語</description><description>1069</description><description>_fitxategiak</description></item><item><description>(ブラジル)</description><description>1046</description><description>_arquivos</description></item><item><description>ブルガリア語</description><description>1026</description><description>.files</description></item><item><description>カタロニア語</description><description>1027</description><description>_fitxers</description></item><item><description>中国語 - 簡</description><description>2052</description><description>.files</description></item><item><description>中国語 - 繁体字</description>の
-              <description>1028</description><description>.files</description></item><item><description>クロアチア語</description><description>1050</description><description>_datoteke</description></item><item><description>チェコ語</description><description>1029</description><description>_soubory</description></item><item><description>デンマーク</description><description>1030</description><description>・ ファイラー ・</description></item><item><description>オランダ</description><description>1043</description><description>_bestanden</description></item><item><description>英語</description><description>1033</description><description>_files</description></item><item><description>エストニア語</description><description>1061</description><description>_failid</description></item><item><description>フィンランド</description><description>1035</description><description>_tiedostot</description></item><item><description>フランス語</description><description>1036</description><description>_fichiers</description></item><item><description>ドイツ語</description><description>1031</description><description>-Dateien</description></item><item><description>ギリシャ語</description><description>1032</description><description>.files</description></item><item><description>ヘブライ語</description><description>1037</description><description>.files</description></item><item><description>ハンガリー</description><description>1038</description><description>_elemei</description></item><item><description>イタリア</description><description>1040</description><description>_file</description></item><item><description>日本語</description>、
-              <description>1041</description>、
-              <description>.files</description></item><item><description>韓国語</description><description>1042</description><description>.files</description></item></list><para><b>LanguageID</b>プロパティの値</para><list type="table"><item><description>1062</description><description>_fails</description><description>のラトビア語</description></item><item><description>リトアニア語</description><description>1063</description><description>_bylos</description></item><item><description>ノルウェー語</description><description>1044</description><description>・ ファイラー ・</description></item><item><description>ポーランド語</description><description>1045</description><description>_pliki</description></item><item><description>ポルトガル語</description><description>2070</description><description>_ficheiros</description></item><item><description>ルーマニア</description><description>1048</description><description>.files</description></item><item><description>ロシア</description><description>1049</description><description>.files</description></item><item><description>セルビア語 (キリル)</description><description>3098</description><description>.files</description></item><item><description>セルビア語 (ラテン)</description><description>2074</description><description>_fajlovi</description></item><item><description>スロバキア語</description><description>1051</description><description>.files</description></item><item><description>スロベニア語</description><description>1060</description><description>_datoteke</description></item><item><description>スペイン語</description><description>3082</description><description>_archivos</description></item><item><description>スウェーデン語</description><description>1053</description><description>・ ファイラー ・</description></item><item><description>タイ</description><description>1054</description><description>.files</description></item><item><description>トルコ語</description><description>1055</description><description>_dosyalar</description></item><item><description>ウクライナ</description><description>1058</description><description>.files</description></item><item><description>ベトナム</description><description>1066</description><description>.files</description></item></list><para /></remarks>
+        <remarks><para>新しく作成されたドキュメントは、 <see cref="P:Microsoft.Office.Interop.Word.DefaultWebOptions.FolderSuffix" /> <see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" />オブジェクトのプロパティによって返されるサフィックスを使用します。 オブジェクトの FolderSuffix プロパティの値は、別の言語バージョンの Microsoft Word で文書を編集した場合に、 <b>DefaultWebOptions</b>オブジェクトの値と異なる場合があります。 <b></b> <see cref="T:Microsoft.Office.Interop.Word.WebOptions" /> <see cref="M:Microsoft.Office.Interop.Word.WebOptions.UseDefaultFolderSuffix" />メソッドを使用して、現在 Microsoft Office で使用している言語にサフィックスを変更することができます。</para>
+          <para>既定の構成フォルダー名は、Web ページ名にアンダースコア ( _ )、ピリオド (.)、ハイフン (-) のいずれかと、"files" を付けたものになります。"files" という単語は、ファイルを Web ページとして保存するのに使用した Word のバージョンの言語で表示されます。たとえば、オランダ語版の Word を使用して "Page1" というファイルを Web ページとして保存すると、構成フォルダーの既定の名前は "Page1_bestanden" になります。</para>
+          <para>次の表は、Office の各言語バージョンの一覧と<see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> 、それに対応するプロパティの値とフォルダーのサフィックスを示しています。 テーブルに表示されていない言語では、サフィックス"として.files"が使用されます。</para>
+          <list type="table">
+            <item>
+              <description>アラビア語</description>
+              <description>1025</description>
+              <description>. ファイル</description>
+            </item>
+            <item>
+              <description>バスク語</description>
+              <description>1069</description>
+              <description>_ fitxategiak</description>
+            </item>
+            <item>
+              <description>ブラジル語</description>
+              <description>1046</description>
+              <description>_arquivos</description>
+            </item>
+            <item>
+              <description>ブルガリア語</description>
+              <description>1026</description>
+              <description>. ファイル</description>
+            </item>
+            <item>
+              <description>カタルニア語</description>
+              <description>1027</description>
+              <description>_ fitxer</description>
+            </item>
+            <item>
+              <description>簡体字中国語</description>
+              <description>2052</description>
+              <description>. ファイル</description>
+            </item>
+            <item>
+              <description>繁体字中国語</description>
+              <description>1028</description>
+              <description>. ファイル</description>
+            </item>
+            <item>
+              <description>クロアチア語</description>
+              <description>1050</description>
+              <description>_datoteke</description>
+            </item>
+            <item>
+              <description>チェコ語</description>
+              <description>1029</description>
+              <description>_soubory</description>
+            </item>
+            <item>
+              <description>デンマーク語</description>
+              <description>1030</description>
+              <description>-filer</description>
+            </item>
+            <item>
+              <description>オランダ語</description>
+              <description>1043</description>
+              <description>_ beスタンド</description>
+            </item>
+            <item>
+              <description>英語</description>
+              <description>1033</description>
+              <description>_files</description>
+            </item>
+            <item>
+              <description>エストニア語</description>
+              <description>1061</description>
+              <description>_ failid</description>
+            </item>
+            <item>
+              <description>フィンランド語</description>
+              <description>1035</description>
+              <description>_tiedostot</description>
+            </item>
+            <item>
+              <description>フランス語</description>
+              <description>1036</description>
+              <description>_ コントローラー</description>
+            </item>
+            <item>
+              <description>ドイツ語</description>
+              <description>1031</description>
+              <description>-Dateien</description>
+            </item>
+            <item>
+              <description>ギリシャ語</description>
+              <description>1032</description>
+              <description>. ファイル</description>
+            </item>
+            <item>
+              <description>ヘブライ語</description>
+              <description>1037</description>
+              <description>. ファイル</description>
+            </item>
+            <item>
+              <description>ハンガリー語</description>
+              <description>1038</description>
+              <description>_elemei</description>
+            </item>
+            <item>
+              <description>イタリア語</description>
+              <description>1040</description>
+              <description>_f</description>
+            </item>
+            <item>
+              <description>日本語</description>
+              <description>1041</description>
+              <description>. ファイル</description>
+            </item>
+            <item>
+              <description>韓国語</description>
+              <description>1042</description>
+              <description>. ファイル</description>
+            </item>
+          </list>
+          <para>
+            <b>LanguageID</b>プロパティの値</para>
+          <list type="table">
+            <item>
+              <description>ラトビア語</description>
+              <description>1062</description>
+              <description>_ 失敗</description>
+            </item>
+            <item>
+              <description>リトアニア語</description>
+              <description>1063</description>
+              <description>_ bylos</description>
+            </item>
+            <item>
+              <description>ノルウェー語</description>
+              <description>1044</description>
+              <description>-filer</description>
+            </item>
+            <item>
+              <description>ポーランド語</description>
+              <description>1045</description>
+              <description>_pliki</description>
+            </item>
+            <item>
+              <description>ポルトガル語</description>
+              <description>2070</description>
+              <description>_ficheiros</description>
+            </item>
+            <item>
+              <description>ルーマニア語</description>
+              <description>1048</description>
+              <description>. ファイル</description>
+            </item>
+            <item>
+              <description>ロシア語</description>
+              <description>1049</description>
+              <description>. ファイル</description>
+            </item>
+            <item>
+              <description>セルビア語 (キリル)</description>
+              <description>3098</description>
+              <description>. ファイル</description>
+            </item>
+            <item>
+              <description>セルビア語 (ラテン)</description>
+              <description>2074</description>
+              <description>_ fajlovi</description>
+            </item>
+            <item>
+              <description>スロバキア語</description>
+              <description>1051</description>
+              <description>. ファイル</description>
+            </item>
+            <item>
+              <description>スロベニア語</description>
+              <description>1060</description>
+              <description>_datoteke</description>
+            </item>
+            <item>
+              <description>スペイン語</description>
+              <description>3082</description>
+              <description>_archivos</description>
+            </item>
+            <item>
+              <description>スウェーデン語</description>
+              <description>1053</description>
+              <description>-filer</description>
+            </item>
+            <item>
+              <description>タイ語</description>
+              <description>1054</description>
+              <description>. ファイル</description>
+            </item>
+            <item>
+              <description>トルコ語</description>
+              <description>1055</description>
+              <description>_dosyalar</description>
+            </item>
+            <item>
+              <description>ウクライナ語</description>
+              <description>1058</description>
+              <description>. ファイル</description>
+            </item>
+            <item>
+              <description>ベトナム語</description>
+              <description>1066</description>
+              <description>. ファイル</description>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OptimizeForBrowser">
@@ -265,7 +446,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された Web ブラウザーの<b>場合は true。</b> Microsoft Word の新しい Web ページを最適化する場合に Word で作成、<see cref="P:Microsoft.Office.Interop.Word.DefaultWebOptions.BrowserLevel" />プロパティ (の、<see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" />オブジェクト)。 <b>True の</b>場合、Word で指定されている Web ブラウザーで指定した Web ページを最適化する、<see cref="P:Microsoft.Office.Interop.Word.WebOptions.BrowserLevel" />プロパティ (の<see cref="T:Microsoft.Office.Interop.Word.WebOptions" />オブジェクト)。</summary>
+        <summary><b>True</b>の場合は、word で作成された新しい web ページを、 <see cref="P:Microsoft.Office.Interop.Word.DefaultWebOptions.BrowserLevel" />プロパティで指定された<see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" /> web ブラウザー (オブジェクトの場合) に最適化します。 <b>True</b>の場合は、 <see cref="P:Microsoft.Office.Interop.Word.WebOptions.BrowserLevel" />プロパティによって指定された web ブラウザー ( <see cref="T:Microsoft.Office.Interop.Word.WebOptions" />オブジェクトの場合) に対して、指定した web ページが最適化されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -296,14 +477,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は、指定した文書を Web ページとして保存すると、背景のテクスチャや画像など、すべての関連ファイルが別のフォルダーに編成されました。 <b>偽</b>のファイルをサポートしている場合は、Web ページと同じフォルダーに保存されます。 既定値は <b>True</b> です。</summary>
+        <summary><b>True</b> に設定すると、指定した文書を Web ページとして保存するときに、背景のテクスチャおよびグラフィックスをはじめとするすべての関連ファイルが別のフォルダーに保存されます。 <b>False</b> に設定すると、関連ファイルは Web ページと同じフォルダーに保存されます。 既定値は <b>True</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>新しいフォルダーは、Web ページを保存したフォルダーに作成され、ドキュメントの名前します。長いファイル名を使用する場合は、フォルダー名にサフィックスが追加されます。<see cref="P:Microsoft.Office.Interop.Word.WebOptions.FolderSuffix" />を引くかどうかを選択またはインストールした言語サポートのフォルダー サフィックス、または既定のフォルダー サフィックス</para>。
-          <para>、 <b>OrganizeInFolder</b>プロパティを別の値に設定を以前に保存したドキュメントを保存すると、Word が自動的に移動または必要に応じて、フォルダーからファイルをサポートします</para>。長いファイル名を使用しない場合は
-          <para>(場合は、<see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" />プロパティが<b>False</b>に設定)、任意のサポート ファイルが別のフォルダーに自動的に保存します。Web ページと同じフォルダーにファイルを保存することはできません</para>。
-          <para /></remarks>
+        <remarks><para>新しいフォルダーは、Web ページを保存したフォルダーに作成され、ドキュメントの名前します。 長いファイル名を使用する場合は、フォルダー名にサフィックスが追加されます。 この<see cref="P:Microsoft.Office.Interop.Word.WebOptions.FolderSuffix" />プロパティは、選択またはインストールした言語サポートのフォルダーサフィックス、または既定のフォルダーサフィックスを返します。いずれ。</para>
+          <para>または必要に応じて、フォルダーから、 <b>OrganizeInFolder</b> プロパティを別の値に設定を以前に保存した文書を保存する場合 Microsoft Word 関連のファイルに自動的に移動します。</para>
+          <para>長いファイル名を使用しない場合 (つまり、この<see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" />プロパティが<b>False</b>に設定されている場合)、すべての関連ファイルが別のフォルダーに自動的に保存されます。 Web ページと同じフォルダーにファイルを保存できません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -362,11 +541,10 @@
       <Docs>
         <summary>Web ページ上のグラフィック イメージおよび表のセルの密度 (1 インチあたりのピクセル数) を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>の範囲の設定は、通常 19 から 480 台、および一般的な画面サイズの一般的な設定は、72、96、および 120 です。既定の設定では 96 です</para>。
-          <para>このプロパティは、Web ブラウザーで保存されたドキュメントを表示する際に画像やテキストのサイズを基準にして指定の Web ページ上のセルのサイズを決定します。結果のイメージまたはセルの物理的なサイズは、元のサイズ (インチ単位) の結果を 1 インチあたりのピクセル数を掛けた値です</para>。
-          <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.WebOptions.ScreenSize" />対象の Web ブラウザーの最適な画面サイズを設定するプロパティ</para>。
-          <para /></remarks>
+        <remarks><para>通常の設定数値の範囲は 19 ～ 480 で、よく使用される画面のサイズに対する一般的な設定は、72、96、および 120 です。既定値は 96 です。</para>
+          <para>保存した文書を Web ブラウザーで表示するときは、常に、指定した Web ページのイメージおよびセルのサイズが、文字列のサイズに応じてこのプロパティによって決定されます。設定後のイメージまたはセルの物理的な大きさは、元の大きさ (インチ単位) に 1 インチあたりのピクセル数を掛けると得られます。</para>
+          <para><see cref="P:Microsoft.Office.Interop.Word.WebOptions.ScreenSize" />プロパティを使用して、対象の Web ブラウザーに最適な画面サイズを設定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RelyOnCSS">
@@ -395,12 +573,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>の<b>場合は true。</b>保存済みの文書を Web ブラウザーで表示するときのフォント設定にカスケード スタイル シート (CSS) を使用する場合。</summary>
+        <summary><b>True</b> に設定すると、保存した文書を Web ブラウザーで表示するときに、フォントの書式設定にカスケード スタイル シート (CSS) が使用されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Microsoft Word がカスケード スタイル シート ファイルを作成し、指定したフォルダーに、またはの値に基づいて、Web ページと同じフォルダーに保存、<see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" />プロパティ。<b>False</b>場合 HTML&lt;フォント&gt;タグとカスケード スタイル シートを使用します。既定値は<b>true を指定</b>します</para>。
-          <para>場合はカスケード スタイル シートをより正確なレイアウトと書式を設定することがあるため、Web ブラウザーがサポートする Web ページ上にコントロールの外観、ドキュメントと同じようにより (Word で表示されます)、このプロパティを<b>True</b>を設定する必要があります</para>。
-          <para /></remarks>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" />プロパティの値に応じて、カスケードスタイルシートファイルが作成され、指定したフォルダーまたは Web ページと同じフォルダーに保存されます。 <b>FALSE</b> HTML &lt;フォント&gt;タグとカスケードスタイルシートを使用する場合です。 既定値は <b>True</b> です。</para>
+          <para>このプロパティを<b>True</b>に設定すると、web ブラウザーでカスケードスタイルシートがサポートされます。これにより、web ページのレイアウトと書式設定がより正確になり、文書の外観 (Word に表示される) のようになります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RelyOnVML">
@@ -429,13 +606,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>を Web ページとして文書を保存するときに描画オブジェクトから画像ファイルを生成しない場合。 場合は<b>false を指定</b>のイメージが生成されます。 既定値は <b>False</b> です。</summary>
+        <summary><b>True</b> に設定すると、文書を Web ページとして保存するときに描画オブジェクトから画像ファイルが生成されません。 <b>False</b> に設定すると、画像が生成されます。 既定値は <b>False</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>は、Web ブラウザーには、ベクター マークアップ言語 (VML) がサポートされている場合、描画オブジェクトのイメージを生成しないことによりファイルのサイズを減らすことができます。たとえば、Microsoft Internet Explorer 5 はこの機能をサポートし、このブラウザーを対象としている場合は、 <b>RelyOnVML</b>プロパティを<b>True</b>に設定する必要があります。Vml を使って、イメージは表示されない場合をサポートしていないブラウザーでこのプロパティを有効に保存された Web ページを表示する</para>。
-          <para>ページを Web サーバー上の最終的な場所から異なる場合は、ドキュメントを保存する場所と、Web ページは、以前に生成されたイメージ ファイルを使用している場合、イメージを生成しない</para>。
-          <para /></remarks>
+        <remarks><para>使用する Web ブラウザーが VML (Vector Markup Language) をサポートする場合、描画オブジェクトの画像を生成しないように設定するとファイル サイズを小さくできます。たとえば、Microsoft Internet Explorer 5 ではこの機能がサポートされています。このブラウザーが対象の場合、 <b>RelyOnVML</b> プロパティを <b>True</b> に指定します。VML がサポートされていないブラウザーの場合、このプロパティを有効にして保存した Web ページを表示しても、画像は表示されません。</para>
+          <para>前に生成された画像ファイルを Web ページで使用し、文書を保存する場所が Web サーバー上で最後にページを保存した場所と異なる場合は、画像を生成しないようにします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScreenSize">
@@ -466,43 +641,41 @@
       <Docs>
         <summary>保存した文書を Web ブラウザーで表示されるときに使用する理想的な最小画面サイズ (幅と高さをピクセル単位で) を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoScreenSize" />次の<b>MsoScreenSize</b>定数のいずれかをすることができます。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoScreenSize" />これらの<b>取得および設定が</b>定数のいずれか: </para>
-          <para>
-            <b>msoScreenSize1024x768 </b>
+            <b>msoScreenSize1024x768</b>
           </para>
           <para>
-            <b>msoScreenSize1152x882 </b>
+            <b>msoScreenSize1152x882</b>
           </para>
           <para>
-            <b>msoScreenSize1152x900 </b>
+            <b>msoScreenSize1152x900</b>
           </para>
           <para>
-            <b>msoScreenSize1280x1024 </b>
+            <b>msoScreenSize1280x1024</b>
           </para>
           <para>
             <b>msoScreenSize1600x1200</b>
           </para>
           <para>
-            <b>msoScreenSize1800x1440 </b>
+            <b>msoScreenSize1800x1440</b>
           </para>
           <para>
-            <b>msoScreenSize1920x1200 </b>
+            <b>msoScreenSize1920x1200</b>
           </para>
           <para>
-            <b>msoScreenSize544x376 </b>
+            <b>msoScreenSize544x376</b>
           </para>
           <para>
-            <b>msoScreenSize640x480 </b>
+            <b>msoScreenSize640x480</b>
           </para>
           <para>
-            <b>msoScreenSize720x512 </b>
+            <b>msoScreenSize720x512</b>
           </para>
           <para>
-            <b>msoScreenSize800x600</b>既定</para>
-          <para />
-        </remarks>
+            <b>msoScreenSize800x600</b>の既定値</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TargetBrowser">
@@ -531,20 +704,22 @@
         <ReturnType>Microsoft.Office.Core.MsoTargetBrowser</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Web ブラウザーで表示されるドキュメントに対して、対象のブラウザーを表す定数を取得または設定します。</summary>
+        <summary>Web ブラウザーに表示されるドキュメントのターゲットブラウザーを表す定数を設定または取得します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoTargetBrowser" /><b>Msotargetbrowser</b>定数は、次のいずれかにすることができます。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTargetBrowser" />
-            <b>MsoTargetBrowser</b>定数のいずれか: </para>
+            <b>msoTargetBrowserIE4</b>Microsoft Internet Explorer 4.0。 </para>
           <para>
-            <b>msoTargetBrowserIE4</b> Microsoft Internet Explorer 4.0</para> 。
-          <para><b>msoTargetBrowserIE5</b> Internet Explorer 5</para> 。
-          <para><b>msoTargetBrowserIE6</b> Internet Explorer 6</para> 。
-          <para><b>msoTargetBrowserV3</b>の Netscape Navigator 3.x</para> 。
-          <para><b>msoTargetBrowserV4</b>の Netscape Navigator 4.x</para> 。
-          <para>の<b>TargetBrowser</b>プロパティのセット、<see cref="P:Microsoft.Office.Interop.Word.WebOptions.BrowserLevel" />プロパティを<b>BrowserLevel</b>は重要な場合、<see cref="P:Microsoft.Office.Interop.Word._Document.DisableFeatures" />プロパティが<b>True</b>に設定します。それ以外の場合は無視されます。ただし、 <b>TargetBrowser</b>プロパティがないは無視され、すべての Web ドキュメント、または 1 つの Web 文書のブラウザーのレベルを設定します</para>。
-          <para /></remarks>
+            <b>msoTargetBrowserIE5</b>Internet Explorer 5 </para>
+          <para>
+            <b>msoTargetBrowserIE6</b>Internet Explorer 6。 </para>
+          <para>
+            <b>msoTargetBrowserV3</b>Netscape Navigator 3. x。 </para>
+          <para>
+            <b>msoTargetBrowserV4</b>Netscape Navigator 4. x</para>
+          <para><b>Targetbrowser</b>プロパティは<see cref="P:Microsoft.Office.Interop.Word.WebOptions.BrowserLevel" />プロパティを設定しますが、 <see cref="P:Microsoft.Office.Interop.Word._Document.DisableFeatures" />プロパティが<b>True</b>に設定されている場合には、 <b>browserlevel</b>は重要ではありません。 それ以外の場合は無視されます。 ただし、 <b>targetbrowser</b>プロパティは無視されず、すべての web ドキュメントまたは1つの web ドキュメントに対してブラウザーレベルを設定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseDefaultFolderSuffix">
@@ -569,10 +744,9 @@
       <Parameters />
       <Docs>
         <summary>指定されたドキュメントのフォルダーの接尾辞として、選択またはインストールした言語サポートの既定の接尾辞を設定します。</summary>
-        <remarks>
-          <para>Microsoft Word 文書を Web ページとして保存、長いファイル名を使用して別のフォルダーに関連ファイルを保存するときにフォルダー サフィックスを使用して (場合は、<see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" />と<see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" />プロパティが<b>True</b>に設定されます).</para>
-          <para>サフィックスが表示されます、フォルダー名にドキュメント名の後。文書が"Doc1"と呼ばれ、言語が英語、フォルダー名は doc1_files とします。使用可能なフォルダー サフィックスが記載されて、<see cref="P:Microsoft.Office.Interop.Word.WebOptions.FolderSuffix" />プロパティのトピックです</para>。
-          <para /></remarks>
+        <remarks><para>文書を Web ページとして保存し、長いファイル名を使用して、関連ファイルを別のフォルダーに保存する (つまり、 <see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" />および<see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" />プロパティが<b>True</b>に設定されている場合) 場合、Microsoft Word はフォルダーサフィックスを使用します。</para>
+          <para>文書名の後のフォルダー名にサフィックスが追加されます。 たとえば、文書が "Doc1" という名前で、言語が英語である場合、フォルダー名は Doc1_files となります。 使用可能なフォルダーのサフィックスは、 <see cref="P:Microsoft.Office.Interop.Word.WebOptions.FolderSuffix" />プロパティのトピックに記載されています。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseLongFileNames">
@@ -601,13 +775,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>を Web ページとして文書を保存するときに長いファイル名を使用する場合。 <b>False</b>場合は長いファイル名を使用しないと、DOS ファイル名形式 (8.3) が使用されます。 既定値は <b>True</b> です。</summary>
+        <summary><b>True</b> に設定すると、文書を Web ページとして保存するときに長いファイル名が使用されます。 <b>False</b> に設定すると、長いファイル名が使用されずに、DOS ファイル名形式 (8.3) が使用されます。 既定値は <b>True</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>長いファイル名を使用せずに、文書にサポート ファイルがあると、Microsoft Word は自動的に別のフォルダーにそれらのファイルを整理します。それ以外の場合を使用して、<see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" />の関連ファイルが別のフォルダーに配置するかどうかを確認するにします。</para>
-          <para />
-        </remarks>
+        <remarks><para>長いファイル名を使用せずに、文書にサポート ファイルがあると、Microsoft Word は自動的に別のフォルダーにそれらのファイルを整理します。 それ以外の場合<see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" />は、プロパティを使用して、関連ファイルが別のフォルダーに整理されているかどうかを確認します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

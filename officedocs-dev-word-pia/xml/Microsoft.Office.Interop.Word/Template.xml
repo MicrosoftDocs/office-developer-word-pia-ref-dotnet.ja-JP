@@ -1,13 +1,5 @@
 <Type Name="Template" FullName="Microsoft.Office.Interop.Word.Template">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="534019c643dbd50c521e73ede295686eb260edbc" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671172" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Template" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ab6c90166c80860b2142f0d365e15d418af64385" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143855" /></Metadata><TypeSignature Language="C#" Value="public interface Template" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Template" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Template" />
   <TypeSignature Language="VB.NET" Value="Public Interface Template" />
@@ -27,13 +19,26 @@
   </Attributes>
   <Docs>
     <summary>文書テンプレートを表します。</summary>
-    <remarks>
-      <para>
-        <b>テンプレート</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.Templates" />コレクションです。<b>Templates</b>コレクションには、使用可能なすべての<b>テンプレート</b>オブジェクトが含まれています</para>。
-      <para><b>テンプレート</b>を使用 (<paramref name="index" />)、<paramref name="index" />は、テンプレートの名前またはインデックス番号で、1 つの<b>テンプレート</b>オブジェクトを取得します。インデックス番号は、 <b>Templates</b>コレクションでのテンプレートの位置を表します</para>。
-      <para><b>追加</b>のメソッドは、<b>テンプレート</b>のコレクションを使用できません。次のいずれかの操作を行って、 <b>Templates</b>コレクションにテンプレートを追加する代わりに、:</para><list type="bullet"><item><para>を使用する、<see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />を持つメソッド、 <see cref="T:Microsoft.Office.Interop.Word.Documents" /> 、テンプレートまたはテンプレートに基づいて、ドキュメントを開くためのコレクション</para></item><item><para>、<see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" />メソッドを<b>Documents</b>コレクションに新しいドキュメントを開くには、テンプレートに基づく</para></item><item><para>を使用する、<see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" />を持つメソッド、<see cref="T:Microsoft.Office.Interop.Word.AddIns" />グローバル テンプレートを読み込むコレクション</para></item><item><para>を使用する、<see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" />を持つプロパティ、 <see cref="T:Microsoft.Office.Interop.Word.Document" />ドキュメントにテンプレートを適用するオブジェクト</para></item></list><para>使用して、<see cref="P:Microsoft.Office.Interop.Word._Application.NormalTemplate" />標準テンプレートを参照するテンプレート オブジェクトを取得するプロパティです。使用して、<see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" />テンプレートを取得するプロパティは、指定された文書に添付します</para>。
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" /> (つまり、これらのテンプレートを格納するフォルダー) のユーザーまたはワークグループ テンプレートの場所を設定するプロパティ</para>。
-      <para /></remarks>
+    <remarks><para><b>Template</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Templates" />コレクションのメンバーです。 <b>Templates</b> コレクションには、使用可能なすべての <b>Template</b> オブジェクトが含まれます。</para>
+      <para>テンプレート<b></b>(<paramref name="index" />) を使用し<paramref name="index" />ます。ここで、はテンプレート名またはインデックス番号を使用して、1つの<b>テンプレート</b>オブジェクトを返します。 インデックス番号は、 <b>Templates</b> コレクションでのテンプレートの位置を表します。</para>
+      <para><b>Add</b> メソッドは <b>Templates</b> コレクションには使用できません。代わりに、次のいずれかの方法でテンプレートを <b>Templates</b> コレクションに追加できます。</para>
+      <list type="bullet">
+        <item>
+          <para><see cref="T:Microsoft.Office.Interop.Word.Documents" />コレクションに<see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />メソッドを使用して、テンプレートまたはテンプレートに基づく文書を開く</para>
+        </item>
+        <item>
+          <para>Documents コレクション<see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" />でメソッドを<b></b>使用して、テンプレートに基づいて新しい文書を開く</para>
+        </item>
+        <item>
+          <para><see cref="T:Microsoft.Office.Interop.Word.AddIns" />コレクションで<see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" />メソッドを使用してグローバルテンプレートを読み込む</para>
+        </item>
+        <item>
+          <para>ドキュメントに<see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" />テンプレートを添付<see cref="T:Microsoft.Office.Interop.Word.Document" />するためにオブジェクトでプロパティを使用する</para>
+        </item>
+      </list>
+      <para>標準テンプレート<see cref="P:Microsoft.Office.Interop.Word._Application.NormalTemplate" />を参照する template オブジェクトを取得するのにには、プロパティを使用します。 指定し<see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" />た文書に添付されているテンプレートを取得するには、プロパティを使用します。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" />プロパティを使用して、ユーザーまたはワークグループのテンプレート (これらのテンプレートを格納するフォルダー) の場所を取得または設定します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +64,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,7 +95,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.AutoTextEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" />で指定したテンプレートのすべての定型句エントリを表すコレクション。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" />たテンプレートのすべての定型句の項目を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,10 +123,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlockEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />テンプレートで文書パーツ エントリのコレクションを表すコレクション。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />
-        </value>
+        <summary>テンプレート内<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />の文書パーツエントリのコレクションを表すコレクションを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,10 +151,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlockTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> 、テンプレートに含まれる文書パーツの種類のコレクションを表すコレクション。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" />
-        </value>
+        <summary>テンプレートに<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" />含まれている文書パーツの種類のコレクションを表すコレクションを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,13 +179,12 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Core.DocumentProperties" />を指定した文書のすべての組み込みドキュメント プロパティを表すコレクション。</summary>
+        <summary>指定さ<see cref="T:Microsoft.Office.Core.DocumentProperties" />れた文書のすべての組み込みの文書プロパティを表すコレクションを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>1 つを取得する<see cref="T:Microsoft.Office.Core.DocumentProperty" />、特定の組み込み文書プロパティを表すオブジェクトを使用して、 <b>BuiltinDocumentProperties</b>(<paramref name="index" />)、<paramref name="index" />は、<see cref="T:Microsoft.Office.Interop.Word.WdBuiltInProperty" />定数</para>。
-          <para>場合は Microsoft が定義されていない、組み込みのドキュメント プロパティのいずれかの値の読み取り、<see cref="P:Microsoft.Office.Interop.Word.CustomProperty.Value" />そのドキュメント プロパティのプロパティにエラーが生成されます</para>。
-          <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.Template.CustomDocumentProperties" />プロパティをカスタム ドキュメント プロパティのコレクションを取得します</para>。
-          <para /></remarks>
+        <remarks><para>特定の組み込みドキュメント<see cref="T:Microsoft.Office.Core.DocumentProperty" />プロパティを表す単一のオブジェクトを取得するには、 <b>BuiltinDocumentProperties</b>(<paramref name="index" />) を使用<paramref name="index" />します<see cref="T:Microsoft.Office.Interop.Word.WdBuiltInProperty" /> 。ここで、は定数です。</para>
+          <para>Microsoft Word で組み込みのドキュメントプロパティの値が定義されていない場合、その<see cref="P:Microsoft.Office.Interop.Word.CustomProperty.Value" />ドキュメントプロパティのプロパティを読み取ると、エラーが発生します。</para>
+          <para><see cref="P:Microsoft.Office.Interop.Word.Template.CustomDocumentProperties" />プロパティを使用して、カスタムドキュメントプロパティのコレクションを取得します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -210,12 +210,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomDocumentProperties">
@@ -241,12 +240,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Core.DocumentProperties" />を指定した文書のすべてのカスタム ドキュメント プロパティを表すコレクション。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Core.DocumentProperties" />た文書のすべてのユーザー設定の文書プロパティを表すコレクションを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.Template.BuiltInDocumentProperties" />を組み込みのドキュメント プロパティのコレクションを返すプロパティです。</para>
-          <para />
-        </remarks>
+        <remarks><para>組み込みの<see cref="P:Microsoft.Office.Interop.Word.Template.BuiltInDocumentProperties" />ドキュメントプロパティのコレクションを取得するのにには、プロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FarEastLineBreakLanguage">
@@ -277,10 +274,8 @@
       <Docs>
         <summary>指定した文書またはテンプレートで文字列を改行するときに使用する東アジアの言語を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLanguageID" />
-            <b>WdFarEastLineBreakLanguageID</b>定数のいずれか:</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLanguageID" />次の<b>WdFarEastLineBreakLanguageID</b>定数のいずれかをすることができます。</para>
           <para>
             <b>wdLineBreakJapanese</b>
           </para>
@@ -293,8 +288,7 @@
           <para>
             <b>wdLineBreakTraditionalChinese</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FarEastLineBreakLevel">
@@ -325,9 +319,19 @@
       <Docs>
         <summary>指定した文書の改行制御レベルを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、<see cref="P:Microsoft.Office.Interop.Word.Paragraph.FarEastLineBreakControl" />プロパティが<b>False</b>に設定します</para>。
-          <para><see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLevel" /><b>WdFarEastLineBreakLevel</b>定数のいずれか:</para><para><b>wdFarEastLineBreakLevelCustom</b></para><para><b>wdFarEastLineBreakLevelNormal</b></para><para><b>wdFarEastLineBreakLevelStrict</b></para><para /></remarks>
+        <remarks><para>プロパティが False に設定さ<see cref="P:Microsoft.Office.Interop.Word.Paragraph.FarEastLineBreakControl" />れている場合<b></b>、このプロパティは無視されます。</para>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLevel" />次の<b>WdFarEastLineBreakLevel</b>定数のいずれかをすることができます。</para>
+          <para>
+            <b>wdFarEastLineBreakLevelCustom</b>
+          </para>
+          <para>
+            <b>wdFarEastLineBreakLevelNormal</b>
+          </para>
+          <para>
+            <b>wdFarEastLineBreakLevelStrict</b>
+          </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FullName">
@@ -355,10 +359,8 @@
       <Docs>
         <summary>ドライブや Web パスも含めて、テンプレートの名前を指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用するのにはこのプロパティを使用して、 <see cref="P:Microsoft.Office.Interop.Word.Template.Path" />、 <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />、および<see cref="P:Microsoft.Office.Interop.Word.Template.Name" />シーケンス内のプロパティです。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティを使用すると、、 <see cref="P:Microsoft.Office.Interop.Word.Template.Path" />、 <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />およびの<see cref="P:Microsoft.Office.Interop.Word.Template.Name" />各プロパティを順番に使用した場合と同じ結果が得られます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="JustificationMode">
@@ -389,10 +391,8 @@
       <Docs>
         <summary>指定したテンプレートの文字間隔の調整方法を取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdJustificationMode" />
-            <b>WdJustificationMode</b>定数のいずれか:</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdJustificationMode" />次の<b>WdJustificationMode</b>定数のいずれかをすることができます。</para>
           <para>
             <b>wdJustificationModeCompress</b>
           </para>
@@ -402,8 +402,7 @@
           <para>
             <b>wdJustificationModeExpand</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KerningByAlgorithm">
@@ -432,8 +431,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 場合は、半角英字と区切り記号を指定した文書のカーニングします。</summary>
+        <summary><b>True</b> 場合は、半角英字と区切り記号を指定した文書のカーニングします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -464,12 +462,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの言語を設定または返します。</summary>
+        <summary>オブジェクトの言語を示します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数</para>。
-          <para>が選択またはインストールされている言語サポート (たとえば、日本語) によっては使用ができない<b>WdLanguageID</b>定数の中があります</para>。
-          <para /></remarks>
+        <remarks><para><see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数のいずれかをすることができます。</para>
+          <para><b>WdLanguageID</b>定数の中には、選択またはインストールした言語のサポート (たとえば、英語 (米国)) によっては使用できないものがあります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageIDFarEast">
@@ -500,10 +497,9 @@
       <Docs>
         <summary>指定したオブジェクトの東アジア言語を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>のいずれかの<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数</para>。
-          <para>これは、東アジア言語のバージョンの Microsoft Word で作成した文書に東アジア言語のテキストの言語を設定することをお勧めします</para>。
-          <para /></remarks>
+        <remarks><para><see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数のいずれかをすることができます。</para>
+          <para>Word 東アジア版で作成された文書に東アジア言語の文字列を設定する場合、この方法をお勧めします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListTemplates">
@@ -529,7 +525,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> 、すべてのリストを表すコレクションの指定したテンプレートの書式を設定します。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.ListTemplates" />たテンプレートのすべての箇条書き書式を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -650,8 +646,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、スペル チェッカーおよび文法チェッカーはこのテンプレートに基づく文書を無視します。</summary>
+        <summary><b>True の</b> 場合、スペル チェッカーおよび文法チェッカーはこのテンプレートに基づく文書を無視します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -677,12 +672,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>ドキュメントとして指定したテンプレートを開きを返します、<see cref="T:Microsoft.Office.Interop.Word.Document" />オブジェクトです。</summary>
+        <summary>指定したテンプレートを文書として開き<see cref="T:Microsoft.Office.Interop.Word.Document" /> 、オブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>文書としてテンプレートを開くことができます、テンプレートの内容を編集します。これは、必要がある場合は、プロパティまたはメソッド (、<see cref="P:Microsoft.Office.Interop.Word._Document.Styles" />プロパティなど) を使用できない、<see cref="T:Microsoft.Office.Interop.Word.Template" />オブジェクトです。</para>
-          <para />
-        </remarks>
+        <remarks><para>文書としてテンプレートを開くことができます、テンプレートの内容を編集します。 これは、 <see cref="T:Microsoft.Office.Interop.Word.Template" />オブジェクトのプロパティまたはメソッド (たとえば<see cref="P:Microsoft.Office.Interop.Word._Document.Styles" /> 、プロパティ) を使用できない場合に必要になることがあります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -738,11 +731,10 @@
       <Docs>
         <summary>ディスクまたは Web パスを指定したオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>パスに末尾の区切り文字が含まれていない-たとえば、C:\MSOffice または"http://MyServer"です。使用して、<see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />フォルダーとドライブ文字を区切る文字を追加するプロパティです。使用して、<see cref="P:Microsoft.Office.Interop.Word.Template.Name" />パスの使用を含まないファイル名を取得するプロパティ、<see cref="P:Microsoft.Office.Interop.Word.Template.FullName" />プロパティはファイル名とパスを取得するにします</para>。
-          <para><b>PathSeparator</b>プロパティを使用するにはスラッシュ (/) と、 <b>PathSeparator</b>プロパティが含まれている場合でも、Web アドレスを作成する
-            <b>メモ</b>の既定値は円記号 (\)です</para>。
-          <para /></remarks>
+        <remarks><para>パスに末尾の区切り文字が含まれていない-"C:\MSOffice"や"http://MyServer"などです。 <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />プロパティを使用して、フォルダーとドライブ文字を区切る文字を追加します。 パスを<see cref="P:Microsoft.Office.Interop.Word.Template.Name" />含まないファイル名を取得し、その<see cref="P:Microsoft.Office.Interop.Word.Template.FullName" />プロパティを使用してファイル名とパスを取得するには、プロパティを使用します。</para>
+          <para>
+            <b>メモ</b> <b>PathSeparator</b>プロパティを使用すると、スラッシュ (/) が含まれていても、 <b>PathSeparator</b>プロパティの既定値が円記号 (\)) の場合でも、Web アドレスを作成できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -766,11 +758,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定された文書またはテンプレートを保存します。</summary>
-        <remarks>
-          <para>文書またはテンプレートが保存されていない、する場合、[名前を付けて保存] ダイアログ ボックスがファイル名をユーザーに求めます。</para>
-          <para />
-        </remarks>
+        <summary>指定した文書またはテンプレートを保存します。</summary>
+        <remarks><para>文書またはテンプレートが保存されていない場合は、[名前を付けて保存] ダイアログボックスでファイル名の入力を求められます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Saved">
@@ -799,8 +789,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>最後に保存してから、指定した文書またはテンプレートが変更されていない場合。 <b>False</b> 場合、ドキュメントを閉じるときに変更を保存するためのプロンプトが表示されます。</summary>
+        <summary><b>True</b>の場合は、指定した文書またはテンプレートが最後に保存されてから変更されていません。 <b>False</b> 場合、ドキュメントを閉じるときに変更を保存するためのプロンプトが表示されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -830,10 +819,8 @@
       <Docs>
         <summary>テンプレートの種類を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTemplateType" />
-            <b>WdTemplateType</b>定数のいずれか:</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTemplateType" />使用できる定数は、次に示す<b>Wdtemplatetype クラス</b>の定数のいずれかです。</para>
           <para>
             <b>wdAttachedTemplate</b>
           </para>
@@ -843,8 +830,7 @@
           <para>
             <b>wdNormalTemplate</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VBProject">
@@ -872,10 +858,9 @@
       <Docs>
         <summary>指定したテンプレート用の <b>VBProject</b> オブジェクトを取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>コード モジュールおよびユーザー フォームへのアクセスを得るためにこのプロパティを使用します</para>。
-          <para><b>VBProject</b>オブジェクトをオブジェクト ブラウザーで表示するを選択してください機能拡張] チェック ボックス ([ツール] メニュー) の [参照] ダイアログ ボックスで Microsoft Visual Basic for Applications、Visual Basic エディターにします</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティを使用して、標準モジュールとユーザー フォームにアクセスします。</para>
+          <para>オブジェクトブラウザーで<b>VBProject</b>オブジェクトを表示するには、Visual basic Editor の [参照設定] ダイアログボックス ([ツール] メニュー) の [Microsoft Visual Basic for Applications の拡張機能] チェックボックスをオンにする必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

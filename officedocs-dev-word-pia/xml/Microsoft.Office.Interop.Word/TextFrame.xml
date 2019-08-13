@@ -1,13 +1,5 @@
 <Type Name="TextFrame" FullName="Microsoft.Office.Interop.Word.TextFrame">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="43a95d54648a4f84b9738139489698d0d40d0080" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670950" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TextFrame" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9dc205fa2eb96a394cd184a865635344805cf9be" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143820" /></Metadata><TypeSignature Language="C#" Value="public interface TextFrame" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextFrame" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TextFrame" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextFrame" />
@@ -26,14 +18,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>テキスト フレームを表す、<see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクトです。 余白とテキスト枠の向きを制御するプロパティと同様に、テキスト フレーム内のテキストが含まれています。</summary>
-    <remarks>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.Shape.TextFrame" />図形の<b>TextFrame</b>オブジェクトを返すプロパティです。<see cref="P:Microsoft.Office.Interop.Word.TextFrame.TextRange" />を<see cref="T:Microsoft.Office.Interop.Word.Range" />を指定したテキスト フレーム内のテキストの範囲を表すオブジェクト</para>。
-      <para><b>メモ</b>がサポートしていない一部の図形には、テキスト (線、フリー フォーム、ピクチャ、および OLE オブジェクト、たとえば) が接続されています。返す、またはこれらのオブジェクトのテキスト フレーム内のテキストを制御するプロパティを設定しようとすると、エラーが発生します</para>。
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.TextFrame.HasText" /> 、テキスト フレームにテキストが含まれているかどうかを決定するプロパティ</para>。
-      <para>のテキスト枠をリンクすると 1 つの図形のテキスト枠から別の図形のテキスト枠にテキストが配置されるようにします。使用して、<see cref="P:Microsoft.Office.Interop.Word.TextFrame.Next" />と<see cref="P:Microsoft.Office.Interop.Word.TextFrame.Previous" />のテキスト枠をリンクするプロパティ</para>。
-      <para>使用、<see cref="P:Microsoft.Office.Interop.Word.TextFrame.ContainingRange" />を返すプロパティ、<see cref="T:Microsoft.Office.Interop.Word.Range" />間をフローする場合、ストーリー全体を表すオブジェクトは、テキスト枠をリンクします</para>。
-      <para /></remarks>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクト内のレイアウト枠を表します。 レイアウト枠のテキスト、およびレイアウト枠の余白と向きを制御するプロパティを含みます。</summary>
+    <remarks><para>図形の<see cref="P:Microsoft.Office.Interop.Word.Shape.TextFrame" /> <b>TextFrame</b>オブジェクトを取得するのにには、プロパティを使用します。 プロパティ<see cref="P:Microsoft.Office.Interop.Word.TextFrame.TextRange" />は、指定<see cref="T:Microsoft.Office.Interop.Word.Range" />したテキストフレーム内のテキストの範囲を表すオブジェクトを返します。</para>
+      <para>
+        <b>メモ</b> 図形によっては、リンクされたテキスト (線、フリーフォーム、図、OLE オブジェクトなど) をサポートしていない場合があります。 これらのオブジェクトのレイアウト枠の中の文字列を制御するプロパティを取得または設定しようとすると、エラーが発生します。</para>
+      <para>テキストフレーム<see cref="P:Microsoft.Office.Interop.Word.TextFrame.HasText" />にテキストが含まれているかどうかを確認するには、プロパティを使用します。</para>
+      <para>レイアウト枠をリンクすると、特定の図形のレイアウト枠から他の図形のレイアウト枠へ文字列が流し込まれます。 プロパティと<see cref="P:Microsoft.Office.Interop.Word.TextFrame.Next" /> <see cref="P:Microsoft.Office.Interop.Word.TextFrame.Previous" />プロパティを使用して、テキストフレームをリンクします。</para>
+      <para>この<see cref="P:Microsoft.Office.Interop.Word.TextFrame.ContainingRange" />プロパティを使用して<see cref="T:Microsoft.Office.Interop.Word.Range" /> 、リンクされたテキストフレーム間でフローするストーリー全体を表すオブジェクトを返します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,7 +82,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>テキスト フレームが自動的にサイズ調整するかどうかを表す<b>整数値</b>を設定または返します。</summary>
+        <summary>レイアウト枠が自動的にサイズ調整されるかどうかを表す<b>整数型 (Integer</b> ) の値を取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,10 +109,8 @@
       <Parameters />
       <Docs>
         <summary>指定されたテキスト枠に、次のテキスト枠へのリンクが設定されている場合、このリンクを解除します。</summary>
-        <remarks>
-          <para>一連のリンクしたテキスト フレームを使用して図形の中央に図形にこのメソッドを適用すると、チェーンは、リンクされた図形の 2 つのセットをそのままが解除されます。すべてのテキスト、しかしに残りますリンクされた図形の最初の系列です。</para>
-          <para />
-        </remarks>
+        <remarks><para>テキスト枠を含む複数の図形がリンクしている場合に、リンクの中間にある図形に対してこのメソッドを使用すると、リンクが解除され、2 組のリンクに分かれます。文字列はすべて、解除位置の前のリンクした図形に含まれます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -146,13 +136,10 @@
         <ReturnType>Microsoft.Office.Core.TextColumn2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、<see cref="T:Microsoft.Office.Core.TextColumn2" />を指定したテキスト ボックスの列を表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.TextColumn2" />を指定したテキスト ボックスの列を表すオブジェクト。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>指定し<see cref="T:Microsoft.Office.Core.TextColumn2" />たテキストフレームの列を表すオブジェクトを取得します。</summary>
+        <value>指定<see cref="T:Microsoft.Office.Core.TextColumn2" />したテキストフレームの列を表すオブジェクト。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ContainingRange">
@@ -178,7 +165,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />一連の対象は、指定したテキスト枠をリンクしたテキスト フレームを使用して図形の場合、ストーリー全体を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />たテキストフレームが属しているリンクされたテキストフレームを含む一連の図形のストーリー全体を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -206,12 +193,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteText">
@@ -262,8 +248,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>指定した図形に関連付けられているテキストがある場合。</summary>
+        <summary><b>True</b>の場合は、指定した図形に関連付けられているテキストがあります。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -294,12 +279,10 @@
         <ReturnType>Microsoft.Office.Core.MsoHorizontalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはテキスト フレーム内のテキストの水平方向の配置を設定します。</summary>
-        <value>テキスト フレーム内のテキストの水平方向の配置です。</value>
-        <remarks>
-          <para>読み取り/書き込み<see cref="T:Microsoft.Office.Core.MsoHorizontalAnchor" />。</para>
-          <para />
-        </remarks>
+        <summary>テキストフレーム内のテキストの水平方向の配置を取得または設定します。</summary>
+        <value>テキストフレーム内のテキストの水平方向の配置を示します。</value>
+        <remarks><para>読み取り/書き込み<see cref="T:Microsoft.Office.Core.MsoHorizontalAnchor" />。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MarginBottom">
@@ -328,7 +311,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>レイアウト枠の下端から、テキストを含んだ図形を囲む四角形の枠の下端までの距離をポイント単位で取得または設定します。</summary>
+        <summary>テキストフレームの下端から、テキストを含んだ図形を囲む四角形の枠の下端までの距離をポイント単位で取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -359,7 +342,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>レイアウト枠の左端から、テキストを含む図形を囲む四角形の枠の左端までの距離をポイント単位で取得または設定します。</summary>
+        <summary>テキストフレームの左端から、テキストを含む図形を囲む四角形の枠の左端までの距離をポイント単位で取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -390,7 +373,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>レイアウト枠の右端から、テキストを含む図形を囲む四角形の枠の右端までの距離をポイント単位で取得または設定します。</summary>
+        <summary>テキストフレームの右端から、テキストを含む図形を囲む四角形の枠の右端までの距離をポイント単位で取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -421,7 +404,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>レイアウト枠の上から、テキストを含む図形を囲む四角形の枠の上までの距離をポイント単位で取得または設定します。</summary>
+        <summary>テキストフレームの上端から、テキストを含んだ図形を囲む四角形の枠の上端までの距離をポイント単位で取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -452,7 +435,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextFrame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクションの次のオブジェクトを返します。</summary>
+        <summary>コレクション内の次のオブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -483,12 +466,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または図形を回転したとき、テキスト フレーム内のテキストが回転しない必要があるかどうかを設定します。</summary>
-        <value>A<see cref="T:Microsoft.Office.Core.MsoTriState" />オブジェクトです。</value>
-        <remarks>
-          <para>読み取り/書き込み<see cref="T:Microsoft.Office.Core.MsoTriState" />。このプロパティを設定するのには、 <b>msotristate クラス</b>の定数<b>msofalse に設定して</b><b>、msotrue を設定</b>のみを使用できます。</para>
-          <para />
-        </remarks>
+        <summary>図形を回転したときに、テキストボックス内のテキストを回転させないかどうかを取得または設定します。</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoTriState" /> オブジェクト。</value>
+        <remarks><para>読み取り/書き込み<see cref="T:Microsoft.Office.Core.MsoTriState" />。 このプロパティを設定するのには、 <b>msotristate クラス</b> の定数 <b>msofalse に設定して</b> <b>、msotrue を設定</b> のみを使用できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -519,33 +500,32 @@
       <Docs>
         <summary>フレーム内のテキストの向きを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoTextOrientation" /><b>Msotextorientation</b>クラスの定数のいずれかをすることができます。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTextOrientation" />これら<b>が可能</b>定数のいずれかができます。</para>
-          <para>
-            <b>msoTextOrientationDownward </b>
+            <b>msoTextOrientationDownward</b>
           </para>
           <para>
-            <b>msoTextOrientationHorizontal </b>
+            <b>msoTextOrientationHorizontal</b>
           </para>
           <para>
-            <b>msoTextOrientationHorizontalRotatedFarEast </b>
+            <b>msoTextOrientationHorizontalRotatedFarEast</b>
           </para>
           <para>
-            <b>msoTextOrientationMixed </b>
+            <b>msoTextOrientationMixed</b>
           </para>
           <para>
             <b>msoTextOrientationUpward</b>
           </para>
           <para>
-            <b>msoTextOrientationVertical </b>
+            <b>msoTextOrientationVertical</b>
           </para>
           <para>
             <b>msoTextOrientationVerticalFarEast</b>
           </para>
-          <para>が選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない可能性があります上記の定数の一部です</para>。
-          <para>は、テキスト フレーム、またはテキスト フレーム内にある選択範囲の方向を設定できます。テキスト枠とテキスト ボックスの違いについてを参照してください、<see cref="T:Microsoft.Office.Interop.Word.TextFrame" />オブジェクトです</para>。
-          <para /></remarks>
+          <para>一覧に示されている定数の中には、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できないものがあります。</para>
+          <para>テキスト フレーム、またはテキスト フレーム内にある選択範囲の方向を設定できます。 テキスト枠とテキストボックスの違いについては、 <see cref="T:Microsoft.Office.Interop.Word.TextFrame" />オブジェクトを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Overflowing">
@@ -599,7 +579,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Shape" /> 、レイアウト枠の親図形を表すオブジェクト。</summary>
+        <summary>レイアウト枠<see cref="T:Microsoft.Office.Interop.Word.Shape" />の親図形を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -630,10 +610,9 @@
         <ReturnType>Microsoft.Office.Core.MsoPathFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定したテキスト枠のパスの種類を設定します。</summary>
-        <value>指定したレイアウト枠のパスの種類。</value>
-        <remarks>
-          <para>このプロパティの値には、次のいずれかを指定できます<see cref="T:Microsoft.Offic.Core.MsoPathType" />定数:</para>
+        <summary>指定したレイアウト枠のパスの種類を取得または設定します。</summary>
+        <value>指定したレイアウト枠のパスの種類を指定します。</value>
+        <remarks><para>このプロパティの値には、次<see cref="T:Microsoft.Offic.Core.MsoPathType" />の定数のいずれかを指定できます。</para>
           <list type="bullet">
             <item>
               <para>
@@ -666,8 +645,7 @@
               </para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Previous">
@@ -696,7 +674,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextFrame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクションの 1 つ前のオブジェクトを返します。</summary>
+        <summary>コレクション内の 1 つ前のオブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -724,7 +702,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />を指定したテキスト フレーム内のテキストを表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />たテキストフレーム内のテキストを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -752,12 +730,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ThreeDFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、<see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />オブジェクトを指定したテキスト フレームのプロパティを書式設定の 3-D 効果が含まれています。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />オブジェクトを指定したテキスト フレームのプロパティを書式設定の 3-D 効果が含まれています。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />たレイアウト枠の3-d 効果の書式設定プロパティを含むオブジェクトを取得します。</summary>
+        <value>指定<see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />したレイアウト枠の3-d 効果の書式プロパティを含むオブジェクト。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidLinkTarget">
@@ -783,14 +759,11 @@
         <Parameter Name="TargetTextFrame" Type="Microsoft.Office.Interop.Word.TextFrame" />
       </Parameters>
       <Docs>
-        <param name="TargetTextFrame">必要な<see cref="T:Microsoft.Office.Interop.Word.TextFrame" />オブジェクトです。 ターゲット テキスト枠にするには指定したテキスト枠をリンクします。</param>
-        <summary>1 つの図形のテキスト枠を別の図形のテキスト枠にリンクできるかどうかを決定します。</summary>
+        <param name="TargetTextFrame">必要<see cref="T:Microsoft.Office.Interop.Word.TextFrame" />なオブジェクト。 指定したテキストフレームをリンクする対象のテキストフレームを指定します。</param>
+        <summary>Determines whether the text frame of one shape can be linked to the text frame of another shape.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>TextFrame</b>プロパティは<b>True</b>を返す場合<paramref name="TargetTextFrame" />は、有効なターゲットです。<b>False</b>を返します<paramref name="TargetTextFrame" />既にテキストが含まれていますが既にリンクされている、または図形がサポートされていない場合は、テキストを添付します。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>TextFrame</b>プロパティは、が有効<paramref name="TargetTextFrame" />なターゲットの場合は<b>True</b>を返します。 既に<b></b>テキストが<paramref name="TargetTextFrame" />含まれている場合、または既にリンクされている場合、または図形が関連テキストをサポートしていない場合は、False を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalAnchor">
@@ -819,10 +792,8 @@
         <ReturnType>Microsoft.Office.Core.MsoVerticalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図形内のテキストの垂直方向の配置を表すこと <b>が可能</b> の定数を設定または返します。読み取り/書き込み。</summary>
-        <value>
-          <b>可能</b>
-        </value>
+        <summary>図形内のテキストの垂直方向の配置を表すこと <b>が可能</b> の定数を設定または返します。 読み取り/書き込み。</summary>
+        <value><b>MsoVerticalAnchor</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -852,12 +823,10 @@
         <ReturnType>Microsoft.Office.Core.MsoWarpFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定したテキスト枠の変形の形式 (どのテキストがゆがんでいる) を設定します。</summary>
-        <value>指定したテキスト枠の (どのテキストがゆがんでいる) ワープ形式です。</value>
-        <remarks>
-          <para>読み取り/書き込み<see cref="T:Microsoft.Office.Core.MsoWarpFormat" />。</para>
-          <para />
-        </remarks>
+        <summary>指定したテキストフレームの変形の形式 (テキストのワープ方法) を取得または設定します。</summary>
+        <value>指定したテキストフレームのワープ形式 (テキストのワープ方法) を指定します。</value>
+        <remarks><para>読み取り/書き込み<see cref="T:Microsoft.Office.Core.MsoWarpFormat" />。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WordWrap">
@@ -886,13 +855,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、指定した段落またはレイアウト枠内の単語が途中で折り返さ。</summary>
+        <summary><b>True</b> に設定すると、指定した段落またはレイアウト枠内の単語が途中で折り返されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>指定した段落またはテキスト フレームの一部のみの<b>場合は True</b>に設定されている場合、 <b>WordWrap</b>プロパティは<b>wdUndefined</b>を返します</para>。
-          <para>この使用方法を選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります</para>。
-          <para /></remarks>
+        <remarks><para>WdUndefined <b></b>プロパティは、指定した段落またはテキストフレームの一部のみを<b>True</b>に設定すると、 <b></b>を返します。</para>
+          <para>この使用法は、選択またはインストールした言語のサポート (たとえば、英語 (米国)) によっては使用できない場合があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

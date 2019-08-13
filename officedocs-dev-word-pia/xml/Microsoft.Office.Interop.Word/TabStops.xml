@@ -1,13 +1,5 @@
 <Type Name="TabStops" FullName="Microsoft.Office.Interop.Word.TabStops">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3a15278e484f9b51a873b81126ea32a88e51e5ce" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671842" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TabStops : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5dccca7a808f17210ed911b946b4012c04f38708" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143904" /></Metadata><TypeSignature Language="C#" Value="public interface TabStops : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TabStops implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TabStops" />
   <TypeSignature Language="VB.NET" Value="Public Interface TabStops&#xA;Implements IEnumerable" />
@@ -30,15 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.TabStop" />既定のタブ、段落または段落のグループのユーザー設定を表すオブジェクト。</summary>
-    <remarks>
-      <para>
-        <b>TabStops</b>プロパティを使用して<b>TabStops</b>コレクションを取得します</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.TabStops.Add(System.Single,System.Object@,System.Object@)" />タブ位置を追加します</para>。
-      <para><b>TabStops</b>プロパティで場所を指定してタブ位置を追加することもできます</para>。
-      <para>使用して<b>TabStops</b>(<paramref name="index" />)、どこで<paramref name="index" />は、タブ位置をポイント単位で、または 1 つの<b>TabStop</b>オブジェクトを取得する、インデックス番号の位置。タブ位置のインデックスは、ルーラー上を右に左から番号です</para>。
-      <para>を使用する場合、<see cref="T:Microsoft.Office.Interop.Word.Paragraphs" />コレクション (または複数の段落を含む範囲) では、タブのすべての段落に異なる場合、コレクション内の各段落を個別に変更する必要があります</para>。
-      <para /></remarks>
+    <summary>段落または<see cref="T:Microsoft.Office.Interop.Word.TabStop" />段落のグループのユーザー設定のタブ位置と既定のタブ位置を表すオブジェクトのコレクションです。</summary>
+    <remarks><para><b>TabStops</b> コレクションを取得するのにには、 <b>TabStops</b> プロパティを使用します。</para>
+      <para>メソッドを<see cref="M:Microsoft.Office.Interop.Word.TabStops.Add(System.Single,System.Object@,System.Object@)" />使用して、タブ位置を追加します。</para>
+      <para><b>TabStops</b> プロパティで場所を指定して、タブ位置を追加することもできます。</para>
+      <para>1つの<paramref name="index" /> <b>TabStop</b>オブジェクトを<paramref name="index" />取得するには、 <b>TabStops</b>() を使用します。ここで、はタブ位置 (ポイント単位) またはインデックス番号の位置になります。 タブ位置は、インデックス番号左からルーラーに沿って右にします。</para>
+      <para><see cref="T:Microsoft.Office.Interop.Word.Paragraphs" />コレクション (または複数の段落を含む範囲) を使用している場合、すべての段落でタブ位置が同一でない場合は、コレクション内の各段落を個別に変更する必要があります。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -65,11 +55,10 @@
         <Parameter Name="Leader" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Position">
-          <b>1 つ</b>が必要です。 左余白から測ったタブ位置を、ポイント単位で指定します。</param>
-        <param name="Alignment">省略可能な<b>オブジェクト</b>です。 タブ位置の配置です。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Word.WdTabAlignment" />定数: <b>wdAlignTabBar</b>、 <b>wdAlignTabCenter</b>、 <b>wdAlignTabDecimal</b>、 <b>wdAlignTabLeft</b>、 <b>wdAlignTabList</b>、または<b>wdAlignTabRight</b>。 この引数を省略すると、 <b>wdAlignTabLeft</b>が使用されます。</param>
-        <param name="Leader">省略可能な<b>オブジェクト</b>です。 タブ リーダーの種類を指定します。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" />定数: <b>wdTabLeaderDashes</b>、 <b>wdTabLeaderDots</b>、 <b>wdTabLeaderHeavy</b>、 <b>wdTabLeaderLines</b>、 <b>wdTabLeaderMiddleDot</b>、または<b>wdTabLeaderSpaces</b>。 この引数を省略すると、 <b>wdTabLeaderSpaces</b>が使われます。</param>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> 、カスタムのタブ位置を表すオブジェクトをドキュメントに追加します。</summary>
+        <param name="Position">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 左余白から測ったタブ位置を、ポイント単位で指定します。</param>
+        <param name="Alignment">省略可能な<b>オブジェクト</b>です。 タブ位置の配置を指定します。 <b>WdAlignTabBar</b>、 <b>wdAlignTabCenter</b>、 <b>wdAlignTabDecimal</b>、 <see cref="T:Microsoft.Office.Interop.Word.WdTabAlignment" /> <b>wdAlignTabLeft</b>、 <b>wdAlignTabList</b>、または<b>wdAlignTabRight</b>のいずれかの定数を使用できます。 この引数を省略すると、 <b>wdAlignTabLeft</b>が使用されます。</param>
+        <param name="Leader">省略可能な<b>オブジェクト</b>です。 タブ リーダーの種類を指定します。 <b>WdTabLeaderDashes</b>、 <b>wdTabLeaderDots</b>、 <b>wdTabLeaderHeavy</b>、 <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" /> <b>wdTabLeaderLines</b>、 <b>wdTabLeaderMiddleDot</b>、または<b>wdTabLeaderSpaces</b>のいずれかの定数を使用できます。 この引数を省略すると、定数 <b>wdTabLeaderSpaces</b> が使われます。</param>
+        <summary>文書に<see cref="T:Microsoft.Office.Interop.Word.TabStop" />追加するユーザー設定のタブ位置を表すオブジェクト型 (object) の値を取得します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -97,9 +86,8 @@
         <Parameter Name="Position" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Position">
-          <b>1 つ</b>が必要です。 ルーラー上の位置をポイント単位で指定します。</param>
-        <summary>次を返します<see cref="T:Microsoft.Office.Interop.Word.TabStop" />オブジェクトの右側に<paramref name="Position" />。</summary>
+        <param name="Position">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 ルーラー上の位置をポイント単位で指定します。</param>
+        <summary>の<paramref name="Position" />右側に<see cref="T:Microsoft.Office.Interop.Word.TabStop" />ある次のオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -127,7 +115,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,9 +143,8 @@
         <Parameter Name="Position" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Position">
-          <b>1 つ</b>が必要です。 ルーラー上の位置をポイント単位で指定します。</param>
-        <summary>次を返します<see cref="T:Microsoft.Office.Interop.Word.TabStop" />オブジェクトの左側に<paramref name="Position" />。</summary>
+        <param name="Position">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 ルーラー上の位置をポイント単位で指定します。</param>
+        <summary>の<paramref name="Position" />左側に<see cref="T:Microsoft.Office.Interop.Word.TabStop" />ある次のオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -184,10 +171,8 @@
       <Parameters />
       <Docs>
         <summary>指定された段落からユーザー設定のタブ位置をすべてクリアします。</summary>
-        <remarks>
-          <para>クリアするには、個々 のタブ ストップを使用して、<see cref="M:Microsoft.Office.Interop.Word.TabStop.Clear" />のメソッドの<see cref="T:Microsoft.Office.Interop.Word.TabStop" />オブジェクトです。<b>ClearAll</b>メソッドは既定値をオフにタブ位置。既定のタブを操作するために停止するを使用して、 <see cref="P:Microsoft.Office.Interop.Word._Document.DefaultTabStop" /> 、ドキュメントのプロパティです。</para>
-          <para />
-        </remarks>
+        <remarks><para>個々のタブ位置をクリアするには<see cref="M:Microsoft.Office.Interop.Word.TabStop.Clear" /> 、 <see cref="T:Microsoft.Office.Interop.Word.TabStop" />オブジェクトのメソッドを使用します。 <b>ClearAll</b> メソッドは既定値をオフにタブ位置。 既定のタブ位置を操作するには<see cref="P:Microsoft.Office.Interop.Word._Document.DefaultTabStop" /> 、ドキュメントのプロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -241,12 +226,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -307,7 +291,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">位置を表す序数または各オブジェクトの名前を表す文字列を示す<b>オブジェクト</b>。</param>
+        <param name="Index">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

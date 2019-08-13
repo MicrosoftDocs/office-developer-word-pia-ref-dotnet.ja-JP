@@ -1,13 +1,5 @@
 <Type Name="Variable" FullName="Microsoft.Office.Interop.Word.Variable">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5a6d54bdd189749e8d6825c71826127afd6c461d" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671421" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Variable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3e2a8fae352f5d719c8e9311fb04b65b7fefebfe" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143771" /></Metadata><TypeSignature Language="C#" Value="public interface Variable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Variable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Variable" />
   <TypeSignature Language="VB.NET" Value="Public Interface Variable" />
@@ -26,17 +18,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>文書の一部として格納されている変数を表します。 文書変数は、マクロ セッション間のマクロの設定を保持するために使用されます。</summary>
-    <remarks>
-      <para>
-        <b>変数</b>のオブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.Variables" />コレクションです。<b>Variables</b>コレクションには、文書またはテンプレート内のすべての文書変数が含まれています</para>。
-      <para><b>変数</b>を使用 (<paramref name="index" />)、<paramref name="index" />の文書変数の名前またはインデックス番号で、1 つの<b>変数</b>オブジェクトを取得するには</para>。
-      <para>インデックス番号は、 <b>Variables</b>コレクション内の文書変数の位置を表します。<b>Variables</b>コレクションに追加された最後の変数は、インデックス番号 1 です。インデックス番号 2 というようには、最後から 2 番目の変数をコレクションに追加します</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.Variables.Add(System.String,System.Object@)" />の<see cref="T:Microsoft.Office.Interop.Word.Variables" />変数をドキュメントに追加するのにはコレクションのメソッドです</para>。
-      <para><b>Variables</b>コレクションに既に存在する名前の文書変数を追加しようとする場合、エラーが発生します。このエラーを回避するには、新しい変数を追加する前にコレクションを列挙することができます</para>。
-      <para>文書変数は、適切な変数名で DOCVARIABLE フィールドを挿入しない限り、ユーザーに表示されます</para>。
-      <para>文書変数をテンプレートに追加するにテンプレートとして開くドキュメントを使用して、<see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" />メソッドです</para>。
-      <para /></remarks>
+    <summary>文書の一部として格納された変数を表します。 文書変数は、マクロ セッション間でマクロの設定を保存するときに使用します。</summary>
+    <remarks><para><b>変数</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Variables" />コレクションのメンバーです。 <b>Variables</b> コレクションには、文書またはテンプレートのすべての文書変数が含まれます。</para>
+      <para>変数<b></b>(<paramref name="index" />) を使用し<paramref name="index" />ます。ここで、は文書変数名またはインデックス番号を使用して、単一の<b>variable</b>オブジェクトを返します。</para>
+      <para>インデックス番号は、 <b>Variables</b>コレクションでの文書変数の位置を表します。 <b>Variables</b>コレクションに最後に追加された変数のインデックス番号は1です。コレクションに最後に追加された変数のインデックス番号2は、次のようになります。</para>
+      <para>文書に<see cref="M:Microsoft.Office.Interop.Word.Variables.Add(System.String,System.Object@)" />変数を<see cref="T:Microsoft.Office.Interop.Word.Variables" />追加するのにには、collection メソッドのを使用します。</para>
+      <para><b>Variables</b> コレクションに既に存在する名前の文書変数を追加しようとすると、エラーが発生します。 このエラーを回避するのには、新しい変数を追加する前にコレクションを列挙できます。</para>
+      <para>文書変数は、適切な変数名で DOCVARIABLE フィールドを挿入しない限りにはユーザーに表示されません。</para>
+      <para>文書変数をテンプレートに追加するには、 <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" />メソッドを使用して、テンプレートを文書として開きます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,12 +80,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -119,7 +108,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,7 +135,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内の項目の位置を表す<b>整数</b>を返します。</summary>
+        <summary>コレクション内の項目の位置を表す<b>整数型 (Integer</b> ) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

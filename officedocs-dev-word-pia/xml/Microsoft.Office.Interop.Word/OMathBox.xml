@@ -1,13 +1,5 @@
 <Type Name="OMathBox" FullName="Microsoft.Office.Interop.Word.OMathBox">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d25b4a10f3feb7f65ac8a1b6b15f87adec4d996a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671829" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OMathBox" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="86c22414c93b6184ecdf54ad637fd5caa9139bf7" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147824" /></Metadata><TypeSignature Language="C#" Value="public interface OMathBox" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMathBox" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMathBox" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMathBox" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>改行など、演算プロパティまたは形式プロパティに影響を与えるプロパティの適用先にできる、演算式または演算式の一部の周りの非表示のボックスを表します。</summary>
+    <summary>改行など、演算プロパティまたは書式設定プロパティに影響を与えるプロパティの適用先にできる、演算式または演算式の一部の周りの非表示のボックスを表します。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,10 +45,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word._Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,12 +73,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>アドインが作成されたアプリケーションを示す 32 ビット<b>の整数</b>を返します。 値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>オブジェクトが Microsoft Word で作成された場合、 <para>、<see cref="P:Microsoft.Office.Interop.Word.OMathBox.Creator" />プロパティは文字列"MSWD"を表す 16 進数、値である 4d535744 を返します。この値は、定数で表すこともできます<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />。</para><para>このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <summary>アドインが作成されたアプリケーションを示す32ビット<b>整数</b>を返します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトが Microsoft Word で作成されている<see cref="P:Microsoft.Office.Interop.Word.OMathBox.Creator" />場合、このプロパティは、文字列 "MSWD" を表す、16進数値である4D535744 を返します。 この値は定数<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />で表すこともできます。 </para>
+          <para>このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Diff">
@@ -117,11 +106,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>ブール値</b>である場合、ボックスが受け取る差分の適切な水平方向の間隔ボックスでは、数学的な差分として機能、かどうかを示す設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary><b>ブール値</b>をボックスが数学的な差分として機能するかどうかを示すを設定または返します。この場合、ボックスは、差分に対して適切な水平方向の間隔を受け取ります。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,10 +134,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.OMath</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.OMath" />オブジェクトを指定した数式オブジェクトの基本クラスを表します。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OMath" />
-        </value>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.OMath" />た数式オブジェクトの基本を表すオブジェクト型 (object) の値を取得します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OMath" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,10 +165,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定する<b>ブール値</b>ボックス オブジェクト内における区切りが可能かどうかを示す。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>取得または設定する<b>ブール値</b>box オブジェクト内で区切りが許可されているかどうかを示す値を取得または設定します。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,15 +196,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定、<b>ブール型</b>ボックスとその内容 1 つの演算子として機能し、オペレーターのプロパティを継承するかどうかを示す。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Word.OMathBox.OpEmu" />が<b>true を指定</b>文字、行の区切りとして機能することができ、他の演算子を配置することができます。= = などの演算子を形成する 1 つまたは複数のグリフを組み合わせると、演算子エミュレーターが使用されます。</para>
-          <para />
-        </remarks>
+        <summary><b>ブール値</b>をボックスとその内容が1つの演算子として機能し、演算子のプロパティを継承するかどうかを設定または返します。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>が<see cref="P:Microsoft.Office.Interop.Word.OMathBox.OpEmu" /> <b>True</b>の場合、文字は改行のポイントとして使用でき、他の演算子に配置することができます。 == などの演算子を形成するうえで 1 つ以上のグリフを組み合わせる場合は、通常、演算子エミュレーターが使用されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -248,10 +225,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した親オブジェクトを返します。<see cref="T:Microsoft.Office.Interop.Word.OMathBox" />オブジェクトです。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.OMathBox" />オブジェクトの親オブジェクトを返します。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

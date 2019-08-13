@@ -1,13 +1,5 @@
 <Type Name="_LetterContent" FullName="Microsoft.Office.Interop.Word._LetterContent">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="935d8ead36e24d408c303d383bb7e1226d4740d6" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670818" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _LetterContent" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="935d8ead36e24d408c303d383bb7e1226d4740d6" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145248" /></Metadata><TypeSignature Language="C#" Value="public interface _LetterContent" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _LetterContent" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word._LetterContent" />
   <TypeSignature Language="VB.NET" Value="Public Interface _LetterContent" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>これは、対応する COM オブジェクトと相互運用するためのマネージ コードで必要とされる COM コクラス内のプライマリ インターフェイスです。 メソッドを使用する COM オブジェクトのイベントと同じ名前を共有する場合にのみ、この主要なインタ フェースを使用します。メソッドを呼び出すには、このインターフェイスにこの例では、キャストし、イベントに接続するための最新のイベント インターフェイスにキャストします。 それ以外の場合、メソッド、プロパティ、および COM オブジェクトのイベントにアクセスする COM コクラスから派生した .NET インターフェイスを使用します。 COM オブジェクトの詳細についてを参照してください<see cref="T:Microsoft.Office.Interop.Word.LetterContent" />。</summary>
+    <summary>これは、対応する COM コクラスとの相互運用のためにマネージコードが必要とする COM コクラスのプライマリインターフェイスです。 このプライマリインターフェイスは、使用するメソッドが COM オブジェクトのイベントと同じ名前を共有する場合にのみ使用します。この場合、このインターフェイスにキャストしてメソッドを呼び出し、最新の events インターフェイスにキャストしてイベントに接続します。 それ以外の場合は、COM コクラスから派生した .NET インターフェイスを使用して、COM オブジェクトのメソッド、プロパティ、およびイベントにアクセスします。 COM obect の詳細については、 <see cref="T:Microsoft.Office.Interop.Word.LetterContent" />「」を参照してください。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -174,12 +166,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>などのオブジェクトは、Microsoft Word で作成されている場合このプロパティが返されます、16 進数の値である 4d535744 を文字列します。この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>たとえば、オブジェクトが Microsoft Word で作成されている場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DateFormat">
@@ -236,13 +227,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.LetterContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返す、読み取り専用<see cref="T:Microsoft.Office.Interop.Word.LetterContent" />レター ウィザードで作成された、指定した文字の内容を表すオブジェクト。</summary>
+        <summary>レターウィザードで作成さ<see cref="T:Microsoft.Office.Interop.Word.LetterContent" />れた指定の文字の内容を表す読み取り専用のオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>重複する</b>プロパティを使用するには、複製された<b>LetterContent</b>オブジェクトのすべてのプロパティの設定を選択します。これらの設定を一度に適用するのには同じ種類の別のオブジェクトの<b>Duplicate</b>プロパティから返されるオブジェクトを割り当てることができます。別のオブジェクトに重複したオブジェクトを代入する前に元の影響を与えずに、重複するオブジェクトのプロパティのいずれかを変更できます。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>重複する</b> プロパティを使用するには、複製された <b>LetterContent</b> オブジェクトのすべてのプロパティの設定を選択します。 これらの設定を一度に適用するのには同じ種類の別のオブジェクトの <b>Duplicate</b> プロパティから返されるオブジェクトを割り当てることができます。 別のオブジェクトに重複したオブジェクトを代入する前に元の影響を与えずに、重複するオブジェクトのプロパティのいずれかを変更できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnclosureNumber">
@@ -271,7 +259,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、レター ウィザードで作成するレターの囲い文字の数を設定します。</summary>
+        <summary>レターウィザードで作成するレターのエンクロージャの数を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -302,13 +290,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> レター ウィザードで作成するレターのヘッダーとフッターがページのデザイン テンプレートが含まれている場合です。</summary>
+        <summary><b>True の</b> レター ウィザードで作成するレターのヘッダーとフッターがページのデザイン テンプレートが含まれている場合です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word._LetterContent.PageDesign" /> 、テンプレートの名前を設定するプロパティは、レター ウィザードで作成した文書に接続されています。</para>
-          <para />
-        </remarks>
+        <remarks><para>レターウィザード<see cref="P:Microsoft.Office.Interop.Word._LetterContent.PageDesign" />で作成された文書に添付されるテンプレートの名前を設定するには、プロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InfoBlock">
@@ -337,12 +322,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Word のレター ウィザードで使用されます。英語 (U.S.) 版の Word では使用されません。</summary>
+        <summary>Word のレター ウィザードで使用されます。 英語 (U.S.) 版の Word では使用されません。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Letterhead">
@@ -371,14 +354,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> レターヘッドでレター ウィザードで作成するレターの領域が予約されている場合です。</summary>
+        <summary><b>True の</b> レターヘッドでレター ウィザードで作成するレターの領域が予約されている場合です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Word._LetterContent.LetterheadSize" />プロパティは、レターヘッドの予約済み領域のサイズを制御します。</para>
-          <para />
-        </remarks>
+        <remarks><para>この<see cref="P:Microsoft.Office.Interop.Word._LetterContent.LetterheadSize" />プロパティは、予約済みのレターヘッド領域のサイズを制御します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LetterheadLocation">
@@ -409,11 +388,8 @@
       <Docs>
         <summary>返すまたは、レター ウィザードで作成するレターで、レターヘッドの位置を設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>LetterheadLocation</b>プロパティには、いずれかを指定できる、<see cref="T:Microsoft.Office.Interop.Word.WdLetterheadLocation" />定数。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>LetterheadLocation</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdLetterheadLocation" />定数のいずれかを指定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LetterheadSize">
@@ -473,13 +449,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLetterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>レター ウィザードで作成するレターのレイアウトを設定または返します。</summary>
+        <summary>レターウィザードで作成するレターのレイアウトを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>LetterStyle</b>プロパティには、いずれかを指定できる、<see cref="T:Microsoft.Office.Interop.Word.WdLetterStyle" />定数。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>LetterStyle</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdLetterStyle" />定数のいずれかを指定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailingInstructions">
@@ -629,12 +602,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>受取人コードを設定または返します。 英語版の Microsoft Word で使用されていません。</summary>
+        <summary>受取人コードを設定または返します。 英語 (U.S.) 版の Microsoft Word では使用されません。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RecipientGender">
@@ -663,13 +634,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdSalutationGender</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>わかっている場合は、受信者の性別を設定または返します。 英語版の Microsoft Word で使用されていません。</summary>
+        <summary>わかっている場合は、受信者の性別を設定または返します。 英語 (U.S.) 版の Microsoft Word では使用されません。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>RecipientGender</b>プロパティには、いずれかを指定できる、<see cref="T:Microsoft.Office.Interop.Word.WdSalutationGender" />定数。このプロパティは、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。</para>
-          <para />
-        </remarks>
+        <remarks><para>"<b>受信者の性別</b>" プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdSalutationGender" />定数のいずれかを指定できます。 このプロパティは、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RecipientName">
@@ -698,7 +666,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>レター ウィザードで作成されたレターの受け取り人の名前を設定または返します。</summary>
+        <summary>レターウィザードで作成したレターを受信するユーザーの名前を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -729,7 +697,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>参照線の設定を取得または設定 (たとえば、"返信先:") レター ウィザードで作成するレターの。</summary>
+        <summary>レターウィザードによって作成されたレターの参照行 (たとえば、"返信先:") を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -791,12 +759,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>短い形式のアドレスを設定または返します。 英語版の Microsoft Word で使用されていません。</summary>
+        <summary>短い形式のアドレスを設定または返します。 英語 (U.S.) 版の Microsoft Word では使用されません。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Salutation">
@@ -856,13 +822,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdSalutationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、レター ウィザードで作成するレターのあいさつ文の種類を設定します。</summary>
+        <summary>レターウィザードで作成するレターのあいさつ文の種類を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>SalutationType</b>プロパティには、いずれかを指定できる、<see cref="T:Microsoft.Office.Interop.Word.WdSalutationType" />定数。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Salutationtype</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdSalutationType" />定数のいずれかを指定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SenderCity">
@@ -891,12 +854,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>差出人の市区町村を設定または返します。 英語版の Microsoft Word で使用されていません。</summary>
+        <summary>差出人の市区町村を設定または返します。 英語 (U.S.) 版の Microsoft Word では使用されません。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SenderCode">
@@ -925,12 +886,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>差出人コードを設定または返します。 英語版の Microsoft Word で使用されていません。</summary>
+        <summary>送信者のコードを設定または返します。 英語 (U.S.) 版の Microsoft Word では使用されません。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SenderCompany">
@@ -992,11 +951,8 @@
       <Docs>
         <summary>あいさつ文で使用する性別を設定または返します。 英語版の Microsoft Word で使用されていません。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>SenderGender</b>プロパティには、いずれかを指定できる、<see cref="T:Microsoft.Office.Interop.Word.WdSalutationGender" />定数。このプロパティは、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>SenderGender</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdSalutationGender" />定数のいずれかを指定できます。 このプロパティは、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SenderInitials">
@@ -1118,12 +1074,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>英語版の Microsoft Word で使用されていません。</summary>
+        <summary>英語 (U.S.) 版の Microsoft Word では使用されません。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できない場合があります。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Subject">

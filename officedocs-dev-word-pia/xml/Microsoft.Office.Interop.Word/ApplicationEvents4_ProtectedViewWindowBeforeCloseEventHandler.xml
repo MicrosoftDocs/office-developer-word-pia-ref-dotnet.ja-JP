@@ -1,13 +1,5 @@
 <Type Name="ApplicationEvents4_ProtectedViewWindowBeforeCloseEventHandler" FullName="Microsoft.Office.Interop.Word.ApplicationEvents4_ProtectedViewWindowBeforeCloseEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2da20928e13bb46286ad0de367984baa39c54808" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672421" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void ApplicationEvents4_ProtectedViewWindowBeforeCloseEventHandler(ProtectedViewWindow PvWindow, int CloseReason, out bool Cancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d540bdcf50e7d23cbce5ad054d121597300aa736" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144737" /></Metadata><TypeSignature Language="C#" Value="public delegate void ApplicationEvents4_ProtectedViewWindowBeforeCloseEventHandler(ProtectedViewWindow PvWindow, int CloseReason, out bool Cancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ApplicationEvents4_ProtectedViewWindowBeforeCloseEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ApplicationEvents4_ProtectedViewWindowBeforeCloseEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ApplicationEvents4_ProtectedViewWindowBeforeCloseEventHandler(PvWindow As ProtectedViewWindow, CloseReason As Integer, ByRef Cancel As Boolean)" />
@@ -37,11 +29,9 @@
   </ReturnValue>
   <Docs>
     <param name="PvWindow">閉じる保護されたビュー ウィンドウです。</param>
-    <param name="CloseReason">定数、<see cref="T:Microsoft.Office.Interop.Word.WdProtectedViewCloseReason" />理由 [保護されたビュー] ウィンドウを指定する列挙体が終了します。</param>
-    <param name="Cancel">
-      <b>false</b>イベントが発生します。 イベント プロシージャでこの引数に<b>true</b>を設定する場合、プロシージャが終了すると、ウィンドウは閉じられません。メモ、 <b>ProtectedViewWindowsBeforeClose</b>イベントが呼び出されたの一部として、<see cref="M:Microsoft.Office.Interop.Word.ProtectedViewWindow.Edit(System.Object@,System.Object@,System.Object@)" />メソッドを設定する<paramref name="Cancel" /><b>が</b>生成されない操作です。</param>
-    <summary>
-      <b>デリゲート</b>型のイベント ハンドラーを追加するために使用します<see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.ProtectedViewWindowBeforeClose" />イベントです。 保護されたビューのウィンドウの前にすぐに<b>ProtectedViewWindowBeforeClose</b>イベントが発生するか、保護されたビュー] ウィンドウ内のドキュメントを閉じます。</summary>
+    <param name="CloseReason">[保護され<see cref="T:Microsoft.Office.Interop.Word.WdProtectedViewCloseReason" />たビュー] ウィンドウが閉じられた理由を指定する列挙体の定数です。</param>
+    <param name="Cancel"><b>false</b>イベントが発生したとき。 イベントプロシージャでこの引数に<b>true</b>を設定する場合、プロシージャが終了してもウィンドウは閉じません。注<b>ProtectedViewWindowsBeforeClose</b>イベントは<see cref="M:Microsoft.Office.Interop.Word.ProtectedViewWindow.Edit(System.Object@,System.Object@,System.Object@)" />メソッドの一部として呼び出され、 <paramref name="Cancel" /> <b>true</b>に設定するとアクションは生成されません。</param>
+    <summary>イベントのイベントハンドラーを追加するために使用するデリゲートの種類。 <b></b> <see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.ProtectedViewWindowBeforeClose" /> <b>ProtectedViewWindowBeforeClose</b>イベントは、保護されたビューウィンドウまたは保護されたビューウィンドウ内のドキュメントが閉じる直前に発生します。</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

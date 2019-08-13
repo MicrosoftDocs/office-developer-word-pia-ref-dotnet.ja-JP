@@ -1,13 +1,5 @@
 <Type Name="SmartTagAction" FullName="Microsoft.Office.Interop.Word.SmartTagAction">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e5c4bc9e1f8c1df339fe6ea64518ce507e0f8afe" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670925" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTagAction" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ec49e7fe750928cbb025ed46930bedb2516ad95e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143995" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagAction" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagAction" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTagAction" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagAction" />
@@ -26,14 +18,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>スマート タグの 1 つの動作を意味します。</summary>
-    <remarks>
-      <para>スマート タグ アクションは、ユーザーがスマート タグに関連する特定の機能を実行できるスマート タグにプログラムされるプロセスです。1 つのアクションは、スマート タグは、別のアクションを Microsoft Outlook に連絡先情報を挿入するときに、Web サイトにアクセスする可能性がありますの中にさらに別には、地図と道順が表示されます</para>。
-      <para>スマート タグの動作は、スマート ドキュメントに組み込まれる動作や、[ドキュメント アクション] 作業ウィンドウ内のコントロールにも関連します。たとえば、ユーザーがテキスト ボックスの内容を変更したときにアクションを実行するスマート ドキュメントの作業ウィンドウに表示されるテキスト ボックス コントロールがあります</para>。
-      <para><see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />、 <b>SmartTagAction</b>、および<see cref="T:Microsoft.Office.Interop.Word.SmartTagType" />であるスマート タグ コンポーネントで認識される各アイテムが、オブジェクトが関連付けられている、<see cref="T:Microsoft.Office.Interop.Word.SmartTagType" />オブジェクトです。アドレスのスマート タグ コンポーネントの"city"は<b>SmartTagType</b>オブジェクトを特定します。<b>SmartTagRecognizer</b>オブジェクト (ドキュメントで「市区町村」の種類のスマート タグで認識されるスマート タグ コンポーネントの部分) と<b>SmartTagAction</b>オブジェクト (部品、アクションを提供するスマート タグ コンポーネントの都市のスマート タグ型に関連関連する特定のスマート タグの種類、[MSN の Microsoft MapPoint で認識されている都市を検索することがあります)。簡単に言うと、認識機能は、ラベル付け、操作ハンドラーはエンドユーザー機能を提供および上のスマート タグの種類は、何を結びつけることです</para>。
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.SmartTagActions.Item(System.Object@)" />から個別の<b>SmartTagAction</b>オブジェクトを取得するメソッド、<see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" />コレクションです</para>。
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.SmartTagAction.Type" /> 、 <b>SmartTagAction</b>オブジェクトに関連付けられているコントロールの種類を決定するプロパティ</para>。
-      <para /></remarks>
+    <summary>スマート タグの 1 つの動作を表します。</summary>
+    <remarks><para>スマートタグアクションとは、スマートタグに関連する特定の機能をユーザーが実行できるようにするスマートタグにプログラムされたプロセスのことです。 たとえば、スマートタグに対して1つのアクションが Web サイトにアクセスすることがあり、別のアクションでは Microsoft Outlook に連絡先情報が挿入されますが、別のアクションでは地図と道順が表示されます。</para>
+      <para>スマートタグ動作は、スマートドキュメントに組み込まれているアクションや [ドキュメントアクション] 作業ウィンドウ内のコントロールにも関連しています。 たとえば、ユーザーがテキストボックスの内容を変更したときにアクションを実行するスマートドキュメントの作業ウィンドウに、テキストボックスコントロールが表示されている場合があります。</para>
+      <para>
+        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />、 <b>SmartTagAction</b>、および<see cref="T:Microsoft.Office.Interop.Word.SmartTagType" />オブジェクトは、スマートタグコンポーネントが認識する各項目が<see cref="T:Microsoft.Office.Interop.Word.SmartTagType" />オブジェクトであることに関連しています。 たとえば、Address スマート タグ コンポーネントの "city" は <b>SmartTagType</b> オブジェクトです。 "city" スマート タグ型には、関連する <b>SmartTagRecognizer</b> オブジェクト (文書内の "city" 型のスマート タグを認識する部分) と <b>SmartTagAction</b> オブジェクト (MSN の Microsoft MapPoint で市町村を検索するアクションなど、特定のスマート タグ型に関連するアクションを提供する部分) があります。 簡単に言うと、レコグナイザーはラベル付けを行い、アクションハンドラーはエンドユーザーの機能を提供します。また、それらが一緒に連携するものは、動作するスマートタグの種類です。</para>
+      <para>コレクションから<see cref="P:Microsoft.Office.Interop.Word.SmartTagActions.Item(System.Object@)" />個々の SmartTagAction オブジェクトを取得するには、メソッドを使用します。 <b></b> <see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" /></para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.SmartTagAction.Type" />プロパティを使用して、 <b>SmartTagAction</b>オブジェクトに関連付けられているコントロールの種類を特定します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ActiveXControl">
@@ -62,12 +54,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>[ドキュメント アクション] 作業ウィンドウに表示されている ActiveX コントロールを表す<b>オブジェクト</b>を返します。</summary>
+        <summary>[ドキュメントアクション] 作業ウィンドウに表示される ActiveX コントロールを表す<b>オブジェクト</b>を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>スマート ドキュメントの詳細については、Microsoft Developer Network (MSDN) Web サイトのスマート ドキュメント ソフトウェア開発キットを参照してください。</para>
-          <para />
-        </remarks>
+        <remarks><para>スマート ドキュメントの詳細については、Microsoft Developer Network (MSDN) Web サイトの「Smart Document Software Development Kit」を参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -96,7 +86,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -133,13 +123,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>ブール値</b>では、スマート ドキュメントのチェック ボックスがオンになっているかどうかを示す設定または返します。</summary>
+        <summary>スマートドキュメント内のチェックボックスが選択されているかどうかを示す<b>ブール型 (Boolean)</b>の値を取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>場合を返します<b><b>True の</b>場合はチェック ボックスがオンになって、</b>それがオフになっています</para>。
-          <para>スマート ドキュメントの詳細については、Microsoft Developer Network (MSDN) Web サイトのスマート ドキュメント ソフトウェア開発キットを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティは、選択したチェックボックスがマークされている場合は<b>True</b>を返し、オフの場合は<b>False</b>を返します。</para>
+          <para>スマート ドキュメントの詳細については、Microsoft Developer Network (MSDN) Web サイトの「Smart Document Software Development Kit」を参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -168,12 +156,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -200,7 +187,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定されたスマート タグ アクションを実行します。</summary>
+        <summary>指定したスマートタグ動作を実行します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,12 +223,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定する<b>ブール値</b>を指定された文書フラグメントのコントロールが展開するか、[ドキュメント アクション] 作業ウィンドウで折りたたまれているかを表します。</summary>
+        <summary>取得または設定する<b>ブール値</b>[ドキュメントアクション] 作業ウィンドウで、指定したドキュメントフラグメントのコントロールが展開されているか折りたたまれているかを表します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、 <b>true を指定</b>するコントロールが展開されていることを示す、 <b>false を指定</b>するコントロールが折りたたまれていることを示すを返します</para>。
-          <para>スマート ドキュメントの詳細についてを参照してくださいスマート ドキュメント ソフトウェア開発キット、Microsoft Developer Network (MSDN) Web サイトにします</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティは、コントロールが展開されていることを示す True を返し、 <b>False</b>の<b>場合</b>は、コントロールが折りたたまれていることを示します。</para>
+          <para>スマート ドキュメントの詳細については、Microsoft Developer Network (MSDN) Web サイトの「Smart Document Software Development Kit」を参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpandHelp">
@@ -276,12 +262,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定する<b>ブール値</b>を指定されたスマート ドキュメント ヘルプ テキストのコントロールが展開するか、[ドキュメント アクション] 作業ウィンドウで折りたたまれているかを表します。</summary>
+        <summary>取得または設定する<b>ブール値</b>[ドキュメントアクション] 作業ウィンドウで、指定したスマートドキュメントヘルプテキストコントロールが展開されているか折りたたまれているかを表します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>の<b>場合は True</b>コントロールが展開されている場合、 <b>False</b>を示すコントロールが折りたたまれていることを示すためにこのプロパティを返します</para>。
-          <para>スマート ドキュメントの詳細については、Microsoft Developer Network (MSDN) Web サイトで、スマート ドキュメント ソフトウェア開発キットを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティは、コントロールが展開されていることを示す<b>True</b>を返します。 <b>False</b>の場合は、コントロールが折りたたまれていることを示します。</para>
+          <para>スマート ドキュメントの詳細については、Microsoft Developer Network (MSDN) Web サイトの「Smart Document Software Development Kit」を参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListSelection">
@@ -316,12 +301,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スマート ドキュメントのリスト ボックス コントロールで選択した項目のインデックス番号を表す<b>整数値</b>を設定または返します。</summary>
+        <summary>スマートドキュメントのリストボックスコントロールで選択されている項目のインデックス番号を表す<b>整数型 (Integer</b> ) の値を取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>スマート ドキュメントの詳細については、Microsoft Developer Network (MSDN) Web サイトのスマート ドキュメント ソフトウェア開発キットを参照してください。</para>
-          <para />
-        </remarks>
+        <remarks><para>スマート ドキュメントの詳細については、Microsoft Developer Network (MSDN) Web サイトの「Smart Document Software Development Kit」を参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -412,8 +395,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>ブール値</b>ドキュメント アクション作業ウィンドウにスマート ドキュメント コントロールが現在表示されているかどうかを表す値を返します。</summary>
+        <summary><b>ブール値</b>[ドキュメントアクション] 作業ウィンドウにスマートドキュメントコントロールが現在表示されているかどうかを表す値を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -450,12 +432,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スマート ドキュメントにあるラジオ ボタン コントロールのグループで選択した項目のインデックス番号を表す<b>整数値</b>を設定または返します。</summary>
+        <summary>スマートドキュメント内のラジオボタンコントロールのグループの中から選択された項目のインデックス番号を表す<b>整数型 (Integer</b> ) の値を取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>スマート ドキュメントの詳細については、Microsoft Developer Network (MSDN) Web サイトのスマート ドキュメント ソフトウェア開発キットを参照してください。</para>
-          <para />
-        </remarks>
+        <remarks><para>スマート ドキュメントの詳細については、Microsoft Developer Network (MSDN) Web サイトの「Smart Document Software Development Kit」を参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextboxText">
@@ -490,12 +470,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはスマート ドキュメント テキスト ボックス コントロール内のテキストを表す<b>文字列</b>を設定します。</summary>
+        <summary>スマートドキュメントテキストボックスコントロール内のテキストを表す文字列型 ( <b>string</b> ) の値を取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>スマート ドキュメントの詳細については、Microsoft Developer Network (MSDN) Web サイトのスマート ドキュメント ソフトウェア開発キットを参照してください。</para>
-          <para />
-        </remarks>
+        <remarks><para>スマート ドキュメントの詳細については、Microsoft Developer Network (MSDN) Web サイトの「Smart Document Software Development Kit」を参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -524,11 +502,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdSmartTagControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.WdSmartTagControlType" /> 、[ドキュメント アクション] 作業ウィンドウに表示されるスマート ドキュメント コントロールの種類を表します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.WdSmartTagControlType" /> [ドキュメントアクション] 作業ウィンドウに表示されるスマートドキュメントコントロールの種類を表すを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdSmartTagControlType" />定数は、次のいずれか:</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdSmartTagControlType" />次の定数のいずれかをすることができます。 </para>
           <para>
             <b>wdControlActiveX</b>
           </para>
@@ -577,8 +554,7 @@
           <para>
             <b>wdControlTextbox</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

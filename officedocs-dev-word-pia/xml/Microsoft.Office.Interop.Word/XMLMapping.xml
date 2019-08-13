@@ -1,13 +1,5 @@
 <Type Name="XMLMapping" FullName="Microsoft.Office.Interop.Word.XMLMapping">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="789b346ac01d9a48554f8869d1aadad7ba53b43b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672234" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XMLMapping" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9c7faf4f3e3ffccb270c1cc125874ce43681ee78" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142641" /></Metadata><TypeSignature Language="C#" Value="public interface XMLMapping" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLMapping" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLMapping" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLMapping" />
@@ -26,9 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>XML の対応付けを表す、<see cref="T:Microsoft.Office.Interop.Word.ContentControl" />カスタム XML とコンテンツ コントロール間でのオブジェクトです。 XML マッピングは、コンテンツ コントロール内の文字列と、このドキュメントのカスタム XML データ ストア内の XML 要素とのリンクです。</summary>
-    <remarks>
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />メソッドを追加または XPath 文字列を使用してコンテンツ コントロールの XML マッピングを変更します。次の例は、文書の作成者に関する組み込みのドキュメント プロパティを設定し、作業中の文書に新しいコンテンツ コントロールを挿入し、組み込みのドキュメント プロパティにコントロールの XML マッピングを設定します</para>。
+    <summary>カスタム XML とコンテンツコントロールと<see cref="T:Microsoft.Office.Interop.Word.ContentControl" />の間のオブジェクトの XML マッピングを表します。 XML マッピングは、コンテンツ コントロール内の文字列と、このドキュメントのカスタム XML データ ストア内の XML 要素とのリンクです。</summary>
+    <remarks><para>XPath 文字列<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />を使用してコンテンツコントロールの XML マッピングを追加または変更するには、メソッドを使用します。 次の使用例は、文書の作成者に関する組み込みの文書プロパティを設定し、作業中の文書に新しいコンテンツ コントロールを挿入した後、組み込みの文書プロパティへのコントロールの XML マッピングを設定します。</para>
       <code>&lt;span class="label"&gt;Dim objcc As ContentControl
 
 
@@ -1821,7 +1812,8 @@ If blnMap = False Then
 
 
 
-End If&lt;/span&gt;</code><para>使用して、<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />メソッドを追加または<b>CustomXMLNode</b>オブジェクトを使用してコンテンツ コントロールの XML マッピングを変更します。次の例は、前の例と同様ですが、 <b>SetMappingByNode</b>メソッドを使用しています</para>。
+End If&lt;/span&gt;</code>
+      <para><see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />メソッドを使用して、 <b>customxmlnode</b>オブジェクトを使用してコンテンツコントロールの XML マッピングを追加または変更します。 次の使用例は前の使用例と同じ処理を行いますが、<b>SetMappingByNode</b> メソッドを使用します。</para>
       <code>&lt;span class="label"&gt;Dim objcc As ContentControl
 
 
@@ -3742,7 +3734,8 @@ Set objMap = objcc.XMLMapping
 
 
 
-blnMap = objMap.SetMappingByNode(objNode)&lt;/span&gt;</code><para>次の使用例新しい<b>CustomXMLPart</b>オブジェクトを作成、カスタム XML を読み込むことと 2 つの新しいコンテンツ コントロールを作成し、それぞれをカスタム XML 内の異なる XML 要素にマップします</para>。
+blnMap = objMap.SetMappingByNode(objNode)&lt;/span&gt;</code>
+      <para>次の使用例新しい <b>CustomXMLPart</b> オブジェクトを作成、カスタム XML を読み込み、そこに 2 つの新しいコンテンツ コントロールを作成し、それぞれをカスタム XML 内の異なる XML 要素にマップします。</para>
       <code>&lt;span class="label"&gt;Dim objRange As Range
 
 
@@ -7839,7 +7832,8 @@ objCustomControl.XMLMapping.SetMappingByNode objCustomNode
 
 
 
-MsgBox objCustomControl.XMLMapping.IsMapped&lt;/span&gt;</code><para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.Delete" /> 、コンテンツ コントロールの XML マッピングを削除します。 コンテンツ コントロールの XML マッピングを削除すると、コンテンツ コントロールと XML データとの間の接続のみが削除されます。 コンテンツ コントロールと XML データの両方の文書のままになります。 次の例は、現在割り当てられている作業中の文書内のすべてのコンテンツ コントロールの XML マッピングを削除します</para>。
+MsgBox objCustomControl.XMLMapping.IsMapped&lt;/span&gt;</code>
+      <para><see cref="M:Microsoft.Office.Interop.Word.XMLMapping.Delete" />メソッドを使用して、コンテンツコントロールの XML マッピングを削除します。  コンテンツ コントロールの XML マッピングを削除すると、コンテンツ コントロールと XML データとの接続だけが削除されます。  コンテンツ コントロールと XML データはどちらも文書内に残ります。  次の使用例は、作業中の文書で、現在マップされているすべてのコンテンツ コントロールの XML マッピングを削除します。</para>
       <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -8608,7 +8602,8 @@ For Each objCC In ActiveDocument.ContentControls
 
 
 
-Next&lt;/span&gt;</code><para>使用、<see cref="P:Microsoft.Office.Interop.Word.XMLMapping.IsMapped" />プロパティにコンテンツ コントロールが文書のデータ ストア内の XML ノードにマップされているかどうかを決定します。次の使用例は作業中の文書内のコンテンツ コントロールがマップされているすべての XML マッピングを削除します</para>。
+Next&lt;/span&gt;</code>
+      <para>プロパティを<see cref="P:Microsoft.Office.Interop.Word.XMLMapping.IsMapped" />使用して、コンテンツコントロールが文書のデータストア内の XML ノードにマップされているかどうかを判断します。 次の使用例は、作業中の文書でマップされているすべてのコンテンツ コントロールの XML マッピングを削除します。</para>
       <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -9377,8 +9372,9 @@ For Each objCC In ActiveDocument.ContentControls
 
 
 
-Next&lt;/span&gt;</code><para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" /> 、コンテンツ コントロールをマップする XML ノードにアクセスするプロパティ。使用して、<see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" />コンテンツ コントロールをマップするのには、XML にアクセスするプロパティの一部です。<b>CustomXMLNode</b>と<b>CustomXMLPart</b>オブジェクトの操作の詳細については、それぞれのオブジェクトのトピックを参照してください</para>。
-      <para /></remarks>
+Next&lt;/span&gt;</code>
+      <para><see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" />プロパティを使用して、コンテンツコントロールがマップされている XML ノードにアクセスします。 <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" />プロパティを使用して、コンテンツコントロールがマップされる XML パーツにアクセスします。 <b>CustomXMLNode</b> オブジェクトと <b>CustomXMLPart</b> オブジェクトの操作に関する詳細については、それぞれのオブジェクトのトピックを参照してください。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -9404,7 +9400,7 @@ Next&lt;/span&gt;</code><para>使用して、 <see cref="P:Microsoft.Office.Inte
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word._Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9432,12 +9428,12 @@ Next&lt;/span&gt;</code><para>使用して、 <see cref="P:Microsoft.Office.Inte
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>アドインが作成されたアプリケーションを示す 32 ビット整数を返します。読み取り専用 <b>Long</b> です。</summary>
+        <summary>アドインが作成されたアプリケーションを示す 32 ビット整数を返します。 読み取り専用 <b>Long</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Word で作成されている場合、<b>作成者</b>を返します、16 進数の値である 4d535744 を文字列します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para><b>注</b>: この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトは、Microsoft Word で作成されている場合、 <b>作成者</b> を返します、16 進数の値である 4d535744 を文字列します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para>
+            <b>注</b>: この値は、定数<b>wdCreatorCode</b>で表すこともできます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomXMLNode">
@@ -9466,8 +9462,7 @@ Next&lt;/span&gt;</code><para>使用して、 <see cref="P:Microsoft.Office.Inte
         <summary>ドキュメント内のコンテンツ コントロールがマップされるデータ ストア内のカスタム XML ノードを表す <b>CustomXMLNode</b> オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>次の例は、作業中の文書に新しいコンテンツ コントロールとカスタム XML 部分を挿入し、カスタム XML 部分内のノードにコンテンツ コントロールをマップ、マップされた XML ノードの値を設定し、します。</para>
+        <example><para>次の使用例は、作業中の文書に新しいコンテンツ コントロールとカスタム XML 部分を挿入し、コンテンツ コントロールをカスタム XML 部分内のノードにマップし、マップされた XML ノードの値を設定します。</para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -11134,8 +11129,7 @@ objMap.SetMapping "/books/book/author", , objPart
 
 Set objNode = objMap.&lt;/span&gt;
 &lt;span class="label"&gt;CustomXMLNode&lt;/span&gt;
-&lt;span class="label"&gt;objNode.Text = "Matt Hink"objCC.Range.Text = objNode.Text&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;objNode.Text = "Matt Hink"objCC.Range.Text = objNode.Text&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="CustomXMLPart">
@@ -11164,10 +11158,9 @@ Set objNode = objMap.&lt;/span&gt;
         <summary>ドキュメント内のコンテンツ コントロールをマップするカスタム XML 部分を表す <b>CustomXMLPart</b> オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>次の例では、作業中の文書にカスタム XML 部分にマップすると、し、カスタム XML パーツ内に含まれる XML ノードの 1 つのテキスト値を設定し、最初のコンテンツ コントロール</para>
+        <example><para>次の使用例は、作業中の文書の最初のコンテンツ コントロールと、そのコンテンツ コントロールがマップされるカスタム XML 部分にアクセスし、カスタム XML 部分に含まれているいずれかの XML ノードの文字列値を設定します。</para>
           <para>
-            <b>注</b>: この例では、作業中の文書内に少なくとも 1 つのコンテンツ コントロールが、XPath 文字列で指定された XML ノードが含まれているカスタム XML 部分にマップされていると仮定しています。</para>
+            <b>注</b>: この例では、作業中の文書内の少なくとも1つのコンテンツコントロールが、XPath 文字列で指定された xml ノードを含むカスタム xml 部分にマップされていることを前提としています。</para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -11810,8 +11803,7 @@ Set objCC = ActiveDocument.ContentControls(1)
 
 Set objPart = objCC.XMLMapping.&lt;/span&gt;
 &lt;span class="label"&gt;CustomXMLPart&lt;/span&gt;
-&lt;span class="label"&gt;Set objNode = objPart.SelectSingleNode("/books/book/title")objNode.Text = "Mystery of the Empty Chair"&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;Set objNode = objPart.SelectSingleNode("/books/book/title")objNode.Text = "Mystery of the Empty Chair"&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -11836,12 +11828,9 @@ Set objPart = objCC.XMLMapping.&lt;/span&gt;
       <Parameters />
       <Docs>
         <summary>親コンテンツ コントロールから XML マッピングを削除します。</summary>
-        <remarks>
-          <para>この操作では、XML マッピングを削除します。 XML データとコンテンツ コントロールの両方の文書のままになります。</para>
-          <para />
-        </remarks>
-        <example>
-          <para>次の例では、現在割り当てられている作業中の文書内のすべてのコンテンツ コントロールの XML マッピングを削除します。</para>
+        <remarks><para>この操作は XML マッピングを削除します。  XML データとコンテンツ コントロールはどちらも文書内に残ります。</para>
+          <para> </para></remarks>
+        <example><para>次の使用例は、作業中の文書で、現在マップされているすべてのコンテンツ コントロールの XML マッピングを削除します。</para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -12356,8 +12345,7 @@ For Each objCC In ActiveDocument.ContentControls
 
         objCC.XMLMapping.&lt;/span&gt;
 &lt;span class="label"&gt;Delete&lt;/span&gt;
-&lt;span class="label"&gt;End IfNext&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;End IfNext&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="IsMapped">
@@ -12383,11 +12371,10 @@ For Each objCC In ActiveDocument.ContentControls
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>文書内のコンテンツ コントロールが、文書の XML データ ストア内の XML ノードにマップされているかどうかを表すブール型 (<b>Boolean</b>) の値を取得します。値の取得のみ可能です。</summary>
+        <summary>文書内のコンテンツ コントロールが、文書の XML データ ストア内の XML ノードにマップされているかどうかを表すブール型 (<b>Boolean</b>) の値を取得します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>次の例では、現在割り当てられている作業中の文書内のすべてのコンテンツ コントロールの XML マッピングを削除します。</para>
+        <example><para>次の使用例は、作業中の文書で、現在マップされているすべてのコンテンツ コントロールの XML マッピングを削除します。</para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -12774,8 +12761,7 @@ For Each objCC In ActiveDocument.ContentControls
 
     If objCC.XMLMapping.&lt;/span&gt;
 &lt;span class="label"&gt;IsMapped&lt;/span&gt;
-&lt;span class="label"&gt;Then        objCC.XMLMapping.Delete    End IfNext&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;Then        objCC.XMLMapping.Delete    End IfNext&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -12829,12 +12815,10 @@ For Each objCC In ActiveDocument.ContentControls
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在の XML マッピングの XPath を評価するために使用するプレフィックス マッピングを表す <b>文字列</b> を返します。読み取り専用です。</summary>
+        <summary>現在の XML マッピングの XPath を評価するために使用するプレフィックス マッピングを表す <b>文字列</b> を返します。 読み取り専用です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>コンテンツ コントロールのマッピングを設定するを使用して、<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />メソッドです。</para>
-          <para />
-        </remarks>
+        <remarks><para>コンテンツコントロールのマッピングを設定するには、 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetMapping">
@@ -12862,17 +12846,16 @@ For Each objCC In ActiveDocument.ContentControls
       </Parameters>
       <Docs>
         <param name="XPath">コンテンツ コントロールをマップする XML ノードを表す XPath 文字列を指定します。無効な XPath 文字列を指定すると、実行時エラーが発生します。</param>
-        <param name="PrefixMapping">指定した式を照会するときに使用するプレフィックス マッピングを指定します<paramref name="XPath" />パラメーター。 省略した場合、現在の文書の指定したカスタム XML 部分のプレフィックス マッピングが使用されます。</param>
+        <param name="PrefixMapping"><paramref name="XPath" />パラメーターで指定された式を照会するときに使用するプレフィックスマッピングを指定します。 省略した場合、現在の文書の指定したカスタム XML 部分のプレフィックス マッピングが使用されます。</param>
         <param name="Source">コンテンツ コントロールをマップする目的のカスタム XML データを指定します。このパラメーターを省略すると、XPath は現在のドキュメント内のすべてのカスタム XML を評価し、XPath が XML ノードに解決する最初の <b>CustomXMLPart</b> とのマッピングが確立します。 </param>
-        <summary>作成するか、コンテンツ コントロールの XML マッピングを変更することができます。 Microsoft Office Word コンテンツ コントロールをドキュメントのカスタム XML データ ストア内のカスタム XML ノードにマップする場合は<b>True</b>を返します。</summary>
-        <returns>ブール型</returns>
-        <remarks>
-          <para>場合は、XML マッピングは既に存在、既存の XML マッピングが置き換えられ、テキスト コンテンツ コントロールの XML ノードの置換をマップする新しい内容です。指定した XPath が指定したカスタム XML パーツやパーツの XML ノードに評価されない、そのマッピングを指定することができますが作成されます。指定した XPath では、指定したカスタム XML パーツ内の XML ノードに評価するときにリンクこのマッピングは、自動的にします</para>。
-          <para>も参照してください、<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />メソッドです</para>。
-          <para><b>注</b>: マッピングを作成するため、リッチ テキスト コンテンツ コントロールによって実行時エラーが発生します</para>。
-          <para /></remarks>
-        <example>
-          <para>次の使用例カスタム XML 部分を挿入します。 し、カスタム部分の XML を設定し、ドキュメントの先頭に 2 つのコンテンツ コントロールを挿入します。 し、コントロールの内容をカスタム部分の XML 要素の内容にマップします。</para>
+        <summary>作成するか、コンテンツ コントロールの XML マッピングを変更することができます。 文書のカスタム XML データストア内のカスタム XML ノードにコンテンツコントロールをマップする場合は<b>True</b>を返します。</summary>
+        <returns>Boolean</returns>
+        <remarks><para>XML マッピングが既に存在する場合、既存の XML マッピングは置き換えられ、コンテンツ コントロールの文字列は新しくマップされた XML ノードの内容に置き換えられます。指定した XPath が指定したカスタム XML 部分の XML ノードに評価されない場合でも、マッピングを指定することができ、マッピングが作成されます。このマッピングは、指定した XPath が指定したカスタム XML 部分内の XML ノードに評価されたときに、自動的にリンクされます。</para>
+          <para><see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />メソッドも参照してください。</para>
+          <para>
+            <b>注</b>: リッチテキストコンテンツコントロールのマッピングを作成すると、実行時エラーが発生します。</para>
+          <para> </para></remarks>
+        <example><para>次の使用例は、カスタム XML 部分を挿入し、カスタム部分の XML を設定した後、文書の先頭に 2 つのコンテンツ コントロールを挿入し、コントロールの内容をカスタム部分の XML 要素の内容にマップします。</para>
           <code>&lt;span class="label"&gt;Dim objRange As Range
 
 
@@ -15309,8 +15292,7 @@ objCustomControl.XMLMapping.&lt;/span&gt;
 &lt;span class="label"&gt;SetMapping&lt;/span&gt;
 &lt;span class="label"&gt;_    "/books/book/title", , objCustomPartobjRange.InsertParagraphAfterSet objRange = ActiveDocument.Paragraphs(2).RangeSet objCustomControl = ActiveDocument.ContentControls _    .Add(wdContentControlText, objRange)objCustomControl.XMLMapping.&lt;/span&gt;
 &lt;span class="label"&gt;SetMapping&lt;/span&gt;
-&lt;span class="label"&gt;_    "/books/book/abstract", , objCustomPart&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;_    "/books/book/abstract", , objCustomPart&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="SetMappingByNode">
@@ -15337,14 +15319,13 @@ objCustomControl.XMLMapping.&lt;/span&gt;
       </Parameters>
       <Docs>
         <param name="Node">現在のコンテンツ コントロールをマップする XML ノードを指定します。</param>
-        <summary>作成するか、コンテンツ コントロールの XML データ マッピングを変更することができます。 Microsoft Office Word コンテンツ コントロールをドキュメントのカスタム XML データ ストア内のカスタム XML ノードにマップする場合は<b>True</b>を返します。</summary>
-        <returns>ブール型</returns>
-        <remarks>
-          <para>XML マッピングは既に存在しているし、置き換え場合、既存の XML マッピング、および新しいマップされた XML ノードの内容は、コンテンツ コントロールのテキストを置換します。参照してください、<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />メソッドです</para>。
-          <para><b>注</b>: マッピングを作成するため、リッチ テキスト コンテンツ コントロールによって実行時エラーが発生します</para>。
-          <para /></remarks>
-        <example>
-          <para>次の例は、文書の作成者に関する組み込みのドキュメント プロパティを設定し、作業中の文書に新しいコンテンツ コントロールを挿入し、組み込みのドキュメント プロパティにコントロールの XML マッピングを設定します</para>。
+        <summary>作成するか、コンテンツ コントロールの XML データ マッピングを変更することができます。 文書のカスタム XML データストア内のカスタム XML ノードにコンテンツコントロールをマップする場合は<b>True</b>を返します。</summary>
+        <returns>Boolean</returns>
+        <remarks><para>XML マッピングが既に存在する場合、既存の XML マッピングは置き換えられ、コンテンツ コントロールの文字列は新しくマップされた XML ノードの内容に置き換えられます。 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />メソッドも参照してください。</para>
+          <para>
+            <b>注</b>: リッチテキストコンテンツコントロールのマッピングを作成すると、実行時エラーが発生します。</para>
+          <para> </para></remarks>
+        <example><para>次の使用例は、文書の作成者に関する組み込みの文書プロパティを設定し、作業中の文書に新しいコンテンツ コントロールを挿入した後、組み込みの文書プロパティへのコントロールの XML マッピングを設定します。</para>
           <code>&lt;span class="label"&gt;Dim objcc As ContentControl
 
 
@@ -17265,7 +17246,8 @@ Set objMap = objcc.XMLMapping
 
 
 
-blnMap = objMap.SetMappingByNode(objNode)&lt;/span&gt;</code><para>次の使用例、カスタム XML 部分を作成する 2 つのコンテンツ コントロールを作成し、各コンテンツ コントロールをカスタム XML 内の特定のノードにマップします</para>。
+blnMap = objMap.SetMappingByNode(objNode)&lt;/span&gt;</code>
+          <para>次の使用例は、カスタム XML 部分を作成した後、2 つのコンテンツ コントロールを作成し、各コンテンツ コントロールをカスタム XML 内の特定のノードにマップします。</para>
           <code>&lt;span class="label"&gt;Dim objRange As Range
 
 
@@ -19856,14 +19838,11 @@ objCustomControl.XMLMapping.&lt;/span&gt;
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在マップされている XML ノードに評価される、XML マッピングの XPath を表す <b>文字列</b> を返します。読み取り専用です。</summary>
+        <summary>現在マップされている XML ノードに評価される、XML マッピングの XPath を表す <b>文字列</b> を返します。 読み取り専用です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>コンテンツ コントロールのマッピングを設定するを使用して、<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />メソッドです。マッピングがアクティブでない場合はこのプロパティを使用してエラーを返します。</para>
-          <para />
-        </remarks>
-        <example>
-          <para>次の例では、作業中の文書の最初のコンテンツ コントロールが日付コントロールをかどうか、XPath 文字列を特定の組み込みのドキュメント プロパティを設定するかどうかを確認します。これは、マッピングを設定します、コントロールに、XPath が一致せず、コントロールが日付コントロールである場合。</para>
+        <remarks><para>コンテンツコントロールのマッピングを設定するには、 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />メソッドを使用します。 マッピングがアクティブではない場合、このプロパティを使用するとエラーが返されます。</para>
+          <para> </para></remarks>
+        <example><para>次の使用例は、作業中の文書の最初のコンテンツ コントロールが日付コントロールであるかどうか、および XPath 文字列が特定の組み込みの文書プロパティに設定されているかどうかを確認します。次に、XPath が一致せず、コントロールが日付コントロールである場合に、コントロールへのマッピングを設定します。</para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -20762,8 +20741,7 @@ Set objMap = objCC.XMLMapping
 
 If (objCC.Type = wdContentControlDate) And (objMap.&lt;/span&gt;
 &lt;span class="label"&gt;XPath&lt;/span&gt;
-&lt;span class="label"&gt;&amp;lt;&amp;gt; _        "/ns1:coreProperties[1]/ns0:createdate[1]") Then    blnMap = objMap.SetMapping(XPath:="/ns1:coreProperties[1]/ns0:createdate[1]")    If blnMap = False Then        MsgBox "Unable to map the content control."    End IfEnd If&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;&amp;lt;&amp;gt; _        "/ns1:coreProperties[1]/ns0:createdate[1]") Then    blnMap = objMap.SetMapping(XPath:="/ns1:coreProperties[1]/ns0:createdate[1]")    If blnMap = False Then        MsgBox "Unable to map the content control."    End IfEnd If&lt;/span&gt;</code></example>
       </Docs>
     </Member>
   </Members>

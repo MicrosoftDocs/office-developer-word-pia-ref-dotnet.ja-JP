@@ -1,13 +1,5 @@
 <Type Name="UpBars" FullName="Microsoft.Office.Interop.Word.UpBars">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="da7a0dd3ce7608353af8d2e30e9de9182997566b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671038" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface UpBars" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="226af72472e06bb3185db435171039a38e6e808e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143766" /></Metadata><TypeSignature Language="C#" Value="public interface UpBars" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UpBars" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.UpBars" />
   <TypeSignature Language="VB.NET" Value="Public Interface UpBars" />
@@ -27,13 +19,10 @@
   </Attributes>
   <Docs>
     <summary>グラフ種類グループの陽線を表します。</summary>
-    <remarks>
-      <para>上のバーは、グラフ種類グループ (行データ系列 1 の) では、最後の一連の値が大きいほど、データ系列 1 のポイントを接続します。少なくとも 2 つの系列を含む 2-d 折れ線グラフ グループだけは、バーを持つことができます。このオブジェクトでは、コレクションはありません。1 つを表すオブジェクトがないバーです。いずれかのバーをオンにして、グラフ種類グループのすべてのポイントのまたはオフになっていることがある</para>
-      <para>場合、<see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasUpDownBars" />プロパティに<b>false を指定</b>のプロパティのほとんどは、<see cref="T:Microsoft.Office.Interop.Word.UpBars" />オブジェクトが無効になります</para>。
-      <para /></remarks>
-    <example>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.ChartGroup.UpBars" />を返すプロパティの<see cref="T:Microsoft.Office.Interop.Word.UpBars" />オブジェクトです。次の例の陽のいずれかの作業中の文書の最初のグラフのグラフ種類グループです。例は、陽線の色を青とセットの陰線の色を赤に設定します。</para>
-    </example>
+    <remarks><para>陽線は、グラフ種類グループに含まれる 1 番目のデータ系列のデータ要素の値よりも、最後のデータ系列のデータ要素の値が大きいときに、その 2 つのデータ要素を結ぶ縦棒です。縦棒は 1 番目のデータ系列から上へ伸びるように描かれます。陽線を作成できるのは、複数のデータ系列を含む 2-D 折れ線グラフ グループだけです。単体の UpBar オブジェクトというオブジェクトはないので、陽線と陰線を表示するか非表示にするかを、グラフ種類グループのデータ要素に個別に設定することはできません。</para>
+      <para>プロパティが<b>False</b>の場合は、 <see cref="T:Microsoft.Office.Interop.Word.UpBars" />オブジェクトのほとんどのプロパティが無効になります。 <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasUpDownBars" /></para>
+      <para> </para></remarks>
+    <example><para>オブジェクトを<see cref="P:Microsoft.Office.Interop.Word.ChartGroup.UpBars" />取得するのにには、プロパティを使用します。 <see cref="T:Microsoft.Office.Interop.Word.UpBars" /> 次の使用例は、作業中の文書に含まれる最初のグラフのグラフ種類グループ1の陽線と陰線を有効にします。 例は、陽線の色を青とセットの陰線の色を赤に設定します。</para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,9 +48,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 値の取得のみ可能です。</summary>
-        <value>
-          <b>アプリケーション</b>(上記参照)</value>
+        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用<see cref="T:Microsoft.Office.Interop.Word._Application" />すると、Microsoft Word アプリケーションを表すオブジェクトが返されます。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
+        <value><b>アプリケーション</b>(上記を参照)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,10 +76,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> 、オブジェクトの枠線を表すオブジェクト。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>オブジェクトの<see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />枠線を表すオブジェクトを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,14 +104,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトが Microsoft Word で作成された場合、<see cref="P:Microsoft.Office.Interop.Word.UpBars.Creator" />を返します文字列を表す 16 進数値である 4d535744 をします。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
-          <para />
-        </remarks>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトが Microsoft Word で作成されている<see cref="P:Microsoft.Office.Interop.Word.UpBars.Creator" />場合、このプロパティは、文字列 "MSWD" を表す、16進数値の4D535744 を返します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -150,9 +132,7 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトを削除します。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,10 +159,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />グラフ要素のプロパティを含む親グラフ要素のオブジェクトです。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />
-        </value>
+        <summary>グラフ要素<see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />の塗りつぶしの書式プロパティを含む親グラフ要素のオブジェクトを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,10 +189,8 @@
       <Docs>
         <summary>線、塗りつぶし、およびオブジェクトの書式設定の効果を取得します。
 
-読み取り専用<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+読み取り専用<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,10 +217,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Interior" />オブジェクトの内部を表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Interior" />
-        </value>
+        <summary>オブジェクトの<see cref="T:Microsoft.Office.Interop.Word.Interior" />内部を表すオブジェクト型 (object) の値を取得します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -272,9 +246,7 @@
       </ReturnValue>
       <Docs>
         <summary>オブジェクトの名前を表す文字列型 ( <b>String</b> ) の値を返します。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -301,10 +273,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親を返します。読み取り専用 <b>オブジェクト</b> 。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定したオブジェクトの親を返します。 読み取り専用 <b>オブジェクト</b> 。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -330,9 +300,7 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトを選択します。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

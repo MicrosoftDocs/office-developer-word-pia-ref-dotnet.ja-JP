@@ -1,13 +1,5 @@
 <Type Name="AddIn" FullName="Microsoft.Office.Interop.Word.AddIn">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="eca0625fe8de93d38c8fe893e6a66c3f0bf7b440" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670802" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AddIn" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="695249a505a14baf5625853d5db3725ed54c358e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144674" /></Metadata><TypeSignature Language="C#" Value="public interface AddIn" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddIn" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AddIn" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddIn" />
@@ -27,15 +19,13 @@
   </Attributes>
   <Docs>
     <summary>組み込まれているかどうかにかかわらず単一のアドインを表します。</summary>
-    <remarks>
-      <para>
-        <b>AddIn</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.AddIns" />コレクションです。<b>AddIns</b>コレクションには、現在読み込まれているかどうかに関係なく、Microsoft Word を使用可能なすべてのアドインが含まれています。<b>AddIns</b>コレクションには、全文書対象テンプレートまたは Word アドイン ライブラリ (Wll、[テンプレートとアドイン] ダイアログ ボックス ([ツール] メニュー) に表示されます) が含まれています</para>。
-      <para>を使用して<b>アドイン</b>(<paramref name="index" />)、<paramref name="index" />は、アドイン名またはインデックス番号を 1 つの<b>AddIn</b>オブジェクトを取得します。必要がありますと正確に一致、スペル チェック (必ずしも、大文字と小文字) の名前、テンプレートとアドイン] ダイアログ ボックス内に表示される</para>。
-      <para>インデックス番号は、アドインの一覧で、[テンプレートとアドイン] ダイアログ ボックスで、アドインの位置を表します</para>。
-      <para>使用、<see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" />メソッドを使用できるアドインの一覧にアドインを追加し、(必要に応じて) して、<paramref name="Install" />の引数です</para>。
-      <para>使用できるアドインの一覧に表示されているアドインをインストールするを使用して、<see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" />プロパティ</para>。
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" /><b>AddIn</b>オブジェクトは、テンプレートまたは WLL をするかどうかを決定するプロパティ</para>。
-      <para /></remarks>
+    <remarks><para><b>AddIn</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.AddIns" />コレクションのメンバーです。 <b>AddIns</b>コレクションには、現在読み込まれているかどうかに関係なく、Microsoft Word で使用可能なすべてのアドインが含まれています。 <b>AddIns</b>コレクションには、[テンプレートとアドイン] ダイアログボックス ([ツール] メニュー) に表示される全文書対象のテンプレートまたは Word アドインライブラリ (wll) が含まれています。</para>
+      <para><b>AddIns</b>(<paramref name="index" />) を使用し<paramref name="index" />ます。ここで、はアドイン名またはインデックス番号を使用して、1つの<b>AddIn</b>オブジェクトを返します。 [テンプレートとアドイン] ダイアログボックスに表示されている名前のスペル (必ずしも大文字と小文字は区別されません) を正確に一致させる必要があります。</para>
+      <para>インデックス番号は、[ テンプレートとアドイン] ダイアログ ボックスのアドインの一覧でのアドインの位置を表します。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" />メソッドを使用して、使用可能なアドインの一覧にアドインを追加し、必要に応じて、 <paramref name="Install" />引数を使用してアドインをインストールします。</para>
+      <para>使用可能なアドインの一覧に表示されているアドインをインストールするには<see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> 、プロパティを使用します。</para>
+      <para>AddIn オブジェクト<see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" />がテンプレートであるか<b></b> 、WLL であるかを判断するのにには、プロパティを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Application" />を指定したオブジェクトの作成者を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Application" />たオブジェクトの作成元を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,12 +79,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>かどうか、指定したアドインが自動的にロード Microsoft Word を起動したときを示す値を返します。</summary>
+        <summary>指定したアドインが Word の起動時に自動的に読み込まれるかどうかを示す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Word のプログラム フォルダーの [スタートアップ] フォルダーにあるアドインが自動的に読み込まれます。</para>
-          <para />
-        </remarks>
+        <remarks><para>Word のプログラム フォルダーの [スタートアップ] フォルダーにあるアドインが自動的に読み込まれます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Compiled">
@@ -120,12 +108,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>かどうか、指定したアドインが Word アドイン ライブラリ (WLL) を示す値を返します。</summary>
+        <summary>指定したアドインが Microsoft Word アドインライブラリ (WLL) であるかどうかを示す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>指定したアドインは、WLL 場合、は、テンプレートが、します。</para>
-          <para />
-        </remarks>
+        <remarks><para>指定したアドインが WLL でない場合は、テンプレートです。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -153,10 +139,9 @@
       <Docs>
         <summary>指定したオブジェクトが作成されたアプリケーションを示す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -180,7 +165,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>削除、指定した<see cref="T:Microsoft.Office.Interop.Word.AddIn" />オブジェクトです。</summary>
+        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.AddIn" />オブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,7 +192,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>内の項目の位置を表す値を返します、<see cref="T:Microsoft.Office.Interop.Word.AddIns" />コレクションです。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.AddIns" />コレクション内の項目の位置を表す値を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -238,12 +223,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または指定したアドインがインストールされている場合は<b>True</b>を示す値を設定 (ロード)。</summary>
+        <summary>True を指定すると、指定したアドインがインストールされている (ロードされている) 場合に<b>True</b>を示す値を取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>読み込まれているアドインは、[テンプレートとアドイン] ダイアログ ボックス ([ツール] メニュー) で選択します</para>。
-          <para>Uninstalled のアドインに含まれている、<see cref="T:Microsoft.Office.Interop.Word.AddIns" />コレクションです。<b>AddIns</b>コレクションからテンプレートまたは WLL を削除するには、適用、<see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" />メソッドを<see cref="T:Microsoft.Office.Interop.Word.AddIn" />(アドインの名前は、[テンプレートとアドイン] ダイアログ ボックスから削除された) オブジェクト。すべてのテンプレートと Wll をアンロードするには、適用、<see cref="M:Microsoft.Office.Interop.Word.AddIns.Unload(System.Boolean)" />メソッドを<b>AddIns</b>コレクションにします</para>。
-          <para /></remarks>
+        <remarks><para>読み込まれているアドインは、[テンプレートとアドイン] ダイアログボックス ([ツール] メニュー) で選択されています。</para>
+          <para>アンインストールされたアドインは、 <see cref="T:Microsoft.Office.Interop.Word.AddIns" />コレクションに含まれています。 <b>AddIns</b>コレクションからテンプレートまたは WLL を削除するには、 <see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" />その<see cref="T:Microsoft.Office.Interop.Word.AddIn" />オブジェクトにメソッドを適用します (アドイン名は [テンプレートとアドイン] ダイアログボックスから削除されます)。 すべてのテンプレートと Wll をアンロードするに<see cref="M:Microsoft.Office.Interop.Word.AddIns.Unload(System.Boolean)" />は、このメソッドを<b>AddIns</b>コレクションに適用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -269,7 +253,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された名前を示す値を返します<see cref="T:Microsoft.Office.Interop.Word.AddIn" />オブジェクトです。</summary>
+        <summary>指定<see cref="T:Microsoft.Office.Interop.Word.AddIn" />したオブジェクトの名前を示す値を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -297,7 +281,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した親オブジェクトを表す値を返します<see cref="T:Microsoft.Office.Interop.Word.AddIn" />オブジェクトです。</summary>
+        <summary>指定<see cref="T:Microsoft.Office.Interop.Word.AddIn" />したオブジェクトの親オブジェクトを表す値を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -325,12 +309,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した URL を示す値を返します<see cref="T:Microsoft.Office.Interop.Word.AddIn" />オブジェクトです。</summary>
+        <summary>指定<see cref="T:Microsoft.Office.Interop.Word.AddIn" />したオブジェクトの URL を示す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>パスに、末尾にスラッシュ文字が含まれていない-たとえば、"http://MyServer"。使用して、 <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.PathSeparator" /> 、 <b>PathSeparator</b>プロパティの既定値は、円記号 () も、文字の末尾にスラッシュを追加するプロパティ (\)。</para>
-          <para />
-        </remarks>
+        <remarks><para>パスには、末尾のスラッシュ文字 ("http://MyServer" など) は含まれません。 <b>PathSeparator</b>プロパティ<see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.PathSeparator" />の既定値が円記号 (\)) の場合でも、プロパティを使用して末尾のスラッシュ文字を追加します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

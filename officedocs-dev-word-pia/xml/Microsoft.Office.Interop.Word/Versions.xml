@@ -1,13 +1,5 @@
 <Type Name="Versions" FullName="Microsoft.Office.Interop.Word.Versions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b695f096473801bedfdf026b8a3b1f096e8b7122" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671425" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Versions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="77d68bb41e562599683947b60a2a34bd29554998" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143729" /></Metadata><TypeSignature Language="C#" Value="public interface Versions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Versions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Versions" />
   <TypeSignature Language="VB.NET" Value="Public Interface Versions&#xA;Implements IEnumerable" />
@@ -30,12 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.Version" />、ドキュメントのすべてのバージョンを表すオブジェクト。 ([ファイル] メニュー) の [バージョン] ダイアログ ボックスに表示される項目に対応します。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word._Document.Versions" /><b>のバージョン</b>のコレクションを返すプロパティです</para>。
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Word.Versions.Save(System.Object@)" /><b>のバージョン</b>のコレクションに項目を追加します</para>。使用<b>のバージョン</b>の
-      <para>(<paramref name="index" />)、<paramref name="index" />インデックス番号は、1 つ<b>のバージョン</b>のオブジェクトを取得します。インデックス番号は、バージョンの<b>バージョン</b>のコレクション内の位置を表します。<b>Versions</b>コレクションに追加された最初のバージョンは、インデックス番号は 1 です</para>。
-      <para /></remarks>
+    <summary>ドキュメントのすべて<see cref="T:Microsoft.Office.Interop.Word.Version" />のバージョンを表すオブジェクトのコレクションです。 [バージョン] ダイアログボックス ([ファイル] メニュー) に表示される項目に対応しています。</summary>
+    <remarks><para>Versions コレクション<see cref="P:Microsoft.Office.Interop.Word._Document.Versions" />を取得するの<b></b>にには、プロパティを使用します。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.Versions.Save(System.Object@)" />メソッドを使用して、 <b>Versions</b>コレクションにアイテムを追加します。</para>
+      <para><b>Versions</b>()<paramref name="index" />を使用し<paramref name="index" />て、1つの<b>バージョン</b>のオブジェクトを取得します (ここで、はインデックス番号を指定します)。 インデックス番号は、 <b>Versions</b> コレクションでの版の位置を表します。 <b>Versions</b> コレクションに最初に追加された版のインデックス番号は 1 です。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,21 +83,19 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdAutoVersions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ドキュメントのバージョンを自動的に保存するためのオプションの状態を設定または返します。</summary>
+        <summary>文書のバージョンを自動的に保存するオプションの状態を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdAutoVersions" />使用できる定数は、次に示す<b>Wdautoversions</b>クラスの定数のいずれかです。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdAutoVersions" />これら<b>が</b>定数のいずれか: </para>
-          <para>
-            <b>wdAutoVersionOff </b>
+            <b>wdAutoVersionOff</b>
           </para>
           <para>
             <b>wdAutoVersionOnClose</b>
           </para>
           <para>
-            <b>注</b>
-            <b>wdAutoVersionOnClose</b>に<b>AutoVersion</b>プロパティが設定されている場合、ドキュメントのバージョンは、ドキュメントを閉じると自動的に保存します</para>。
-          <para /></remarks>
+            <b>メモ</b> <b>Autoversion</b>プロパティが<b>Wdautoversiononclose</b>に設定されている場合、ドキュメントのバージョンは、ドキュメントを閉じるときに自動的に保存されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -160,12 +149,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -226,7 +214,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">各オブジェクトの序数位置を示す<b>整数</b>です。</param>
+        <param name="Index">個々のオブジェクトの位置を表す<b>整数型 (Integer</b> ) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -283,7 +271,7 @@
       </Parameters>
       <Docs>
         <param name="Comment">省略可能な<b>オブジェクト</b>です。</param>
-        <summary>コメントで指定したドキュメントのバージョンを保存します。</summary>
+        <summary>指定された文書のバージョンをコメント付きで保存します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

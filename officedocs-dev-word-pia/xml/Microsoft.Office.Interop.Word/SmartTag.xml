@@ -1,13 +1,5 @@
 <Type Name="SmartTag" FullName="Microsoft.Office.Interop.Word.SmartTag">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d90397c8f538990a390264fd3d1b286f3e023f2a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671963" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTag" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5fa49cb1dcddf81834677aefdc8cd50240fa9578" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146123" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTag" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTag" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTag" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTag" />
@@ -26,12 +18,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>認識できるタイプ情報を含む範囲または文書内の文字列を表します。</summary>
-    <remarks>
-      <para>
-        <b>SmartTag</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.SmartTags" />コレクションです。<b>SmartTags</b>コレクションには、ドキュメントまたはドキュメント内のテキストの範囲内のすべてのスマート タグが含まれています。Microsoft Word にスマート タグのラベルを付け、認識ファイルを使用して、アクション ファイルを使用して Web サイトへのリンクなどのスマート タグに関連するアクションを実行します</para>。
-      <para>使用、<see cref="M:Microsoft.Office.Interop.Word.Editors.Item(System.Object@)" />メソッド、または<see cref="T:Microsoft.Office.Interop.Word.SmartTags" />(<paramref name="index" />)、<paramref name="index" />スマート タグの数を表します-1 つの<b>SmartTag</b>オブジェクトを取得する</para>。
-      <para /></remarks>
+    <summary>認識可能な種類情報を含む文書内または指定範囲内の文字列を表します。</summary>
+    <remarks><para><b>SmartTag</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.SmartTags" />コレクションのメンバーです。 <b>SmartTags</b> コレクションには、文書内または文書内の文字列の指定範囲内にあるすべてのスマート タグが含まれます。 Microsoft Word では、認識ファイルを使用してスマート タグにラベルを付け、アクション ファイルを使用してスマート タグに関連するアクション (Web サイトへのリンクなど) を実行します。</para>
+      <para>1つ<see cref="M:Microsoft.Office.Interop.Word.Editors.Item(System.Object@)" />の SmartTag オブジェクト<see cref="T:Microsoft.Office.Interop.Word.SmartTags" />を<paramref name="index" />取得するの<paramref name="index" />には、メソッド () を使用します。ここ<b></b>で、はスマートタグの番号を表します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,12 +81,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -123,7 +112,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,12 +142,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スマート タグの URL アドレスを表す<b>文字列</b>を返します。</summary>
+        <summary>スマートタグの URL アドレスを表す<b>文字列</b>を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>URL アドレスは、関連するスマート タグの認識ファイルで指定されます。テキストの一部が認識され、マークされている、その URL はスマート タグに含まれる情報の一部になります。<b>DownloadURL</b>プロパティはドキュメントが必要な自分のコンピューターにインストールされているレコグナイザーとアクション ファイルがない人に送信される場合に便利です。ユーザーは、必要なスマート タグ ファイルをダウンロードする URL をフォローできます。</para>
-          <para />
-        </remarks>
+        <remarks><para>URL アドレスは、関連するスマート タグ認識ファイルに指定されます。 テキストが認識されマークされると、URL はスマート タグに含まれる情報の一部となります。 <b>DownloadURL</b> プロパティは、必要な認識ファイルやアクション ファイルをコンピューターにインストールしていないユーザーに文書を送る場合に便利です。 ユーザーは、URL を使用して、必要なスマート タグ ファイルをダウンロードできます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -249,12 +236,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.CustomProperties</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.CustomProperties" /> 、スマート タグのプロパティを表すオブジェクト。</summary>
+        <summary>スマートタグ<see cref="T:Microsoft.Office.Interop.Word.CustomProperties" />のプロパティを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用することができます、<see cref="M:Microsoft.Office.Interop.Word.SmartTags.Add(System.String,System.Object@,System.Object@)" />のカスタム プロパティを追加します。ただし、カスタム プロパティは通常、スマート タグ認識ファイルおよびアクション ファイルで指定されます。</para>
-          <para />
-        </remarks>
+        <remarks><para>メソッドを使用し<see cref="M:Microsoft.Office.Interop.Word.SmartTags.Add(System.String,System.Object@,System.Object@)" />て、カスタムプロパティを追加できます。 ただし、通常は、スマートタグレコグナイザーおよびアクションファイルでカスタムプロパティが指定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Range">
@@ -283,12 +268,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />を指定したオブジェクトに含まれる文書の部分を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />たオブジェクトに含まれる文書の一部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>範囲をドキュメントから取得するか、図形のコレクションから図形範囲を取得する方法についてを参照してください、<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />メソッドです。</para>
-          <para />
-        </remarks>
+        <remarks><para>文書から指定範囲を取得する<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法、または図形のコレクションから図形範囲を取得する方法については、メソッドを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -316,10 +299,8 @@
       <Parameters />
       <Docs>
         <summary>指定されたオブジェクトを選択します。</summary>
-        <remarks>
-          <para>このメソッドを使用すた後を使用して、<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" />選択した項目を操作するプロパティ。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドを使用した後<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> 、プロパティを使用して選択された項目を操作します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SmartTagActions">
@@ -348,7 +329,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.SmartTagActions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" />スマート タグで使用可能なアクションのコレクションを表すコレクション。</summary>
+        <summary>スマートタグ<see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" />で使用できるアクションのコレクションを表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -379,7 +360,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スマート タグに関連する XML を表す<b>文字列</b>を返します。</summary>
+        <summary>スマートタグの関連する XML を表す<b>文字列</b>を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -410,12 +391,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />のスマート タグの XML 要素を表すオブジェクト。</summary>
+        <summary>スマートタグ<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />の XML 要素を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>すべてのスマート タグには、XML ノードが含まれています。ただし、 <b>XMLNode</b>プロパティにより、開発者は、XML ノードを含むスマート タグの XML ノードにアクセスします。</para>
-          <para />
-        </remarks>
+        <remarks><para>すべてのスマートタグに XML ノードが含まれているわけではありません。ただし、 <b>XMLNode</b>プロパティを使用すると、開発者は xml ノードを含むスマートタグの xml ノードにアクセスできます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

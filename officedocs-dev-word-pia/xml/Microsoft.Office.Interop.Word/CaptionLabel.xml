@@ -1,13 +1,5 @@
 <Type Name="CaptionLabel" FullName="Microsoft.Office.Interop.Word.CaptionLabel">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3910a1d1780d4a134f92e6516dde30d553dd761c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671060" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CaptionLabel" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9c27d8bb814948f3d36bbc6c5dfd5bf35bef5652" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142349" /></Metadata><TypeSignature Language="C#" Value="public interface CaptionLabel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CaptionLabel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CaptionLabel" />
   <TypeSignature Language="VB.NET" Value="Public Interface CaptionLabel" />
@@ -26,14 +18,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>単一の図表番号のラベルを表します。</summary>
-    <remarks>
-      <para>
-        <b>CaptionLabel</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.CaptionLabels" />コレクションです。<b>CaptionLabels</b>コレクション内の項目は、[図表番号] ダイアログ ボックス ([挿入] メニュー) の [ラベル] ボックスに記載されています</para>。
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.CaptionLabels" />(<paramref name="index" />)、<paramref name="index" />は、図表番号のラベルの名前またはインデックス番号を 1 つの<b>CaptionLabel</b>オブジェクトを取得する</para>。
-      <para>インデックス番号は、 <b>CaptionLabels</b>コレクション内の図表番号のラベルの位置を表します</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.CaptionLabels.Add(System.String)" />独自の図表番号ラベルを追加します</para>。
-      <para /></remarks>
+    <summary>図表番号ラベルを表します。</summary>
+    <remarks><para><b>CaptionLabel</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.CaptionLabels" />コレクションのメンバーです。 <b>CaptionLabels</b>コレクション内の項目は、[挿入] メニューの [図表番号] ダイアログボックスの [ラベル] ボックスに表示されます。</para>
+      <para>1 <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.CaptionLabels" />つ<paramref name="index" />の CaptionLabel オブジェクト<paramref name="index" />を取得するには、() を使用します。 <b></b>ここで、はキャプションラベルの名前またはインデックス番号です。</para>
+      <para>インデックス番号は、 <b>CaptionLabels</b> コレクション内の図表番号のラベルの位置を表します。</para>
+      <para>メソッドを<see cref="M:Microsoft.Office.Interop.Word.CaptionLabels.Add(System.String)" />使用して、ユーザー設定の図表番号のラベルを追加します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,12 +77,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトは、組み込みスタイルまたは図表番号のラベルを Microsoft word のいずれかのかどうかを示す値を返します。</summary>
+        <summary>指定したオブジェクトが、Microsoft Word の組み込みのスタイルまたは図表番号のラベルのいずれかであるかどうかを示す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>すべての言語に組み込みのスタイルを指定するにを使用して、<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />定数の言語バージョンの Word のスタイル名を使用して言語です。</para>
-          <para />
-        </remarks>
+        <remarks><para>すべての言語に対して組み込みのスタイルを指定するに<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />は、言語バージョンの Word のスタイル名を使用して、定数を使用するか、言語内で指定します。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChapterStyleLevel">
@@ -123,10 +111,9 @@
       <Docs>
         <summary>章番号は、指定された図表番号のラベルに含まれている場合は、新しい章を示す見出しスタイルを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>返される数 1 見出し 1、2 対応の [見出し 2 というようにします</para>。
-          <para>、<see cref="P:Microsoft.Office.Interop.Word.CaptionLabel.IncludeChapterNumber" />を<b>True</b>に章番号を図表番号のラベルに含まれるプロパティを設定する必要があります</para>。
-          <para /></remarks>
+        <remarks><para>返される番号1は、見出し1、2は見出し2に対応します。</para>
+          <para>図表<see cref="P:Microsoft.Office.Interop.Word.CaptionLabel.IncludeChapterNumber" />番号のラベルに章番号を含めるには、このプロパティを<b>True</b>に設定する必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -154,10 +141,9 @@
       <Docs>
         <summary>指定したオブジェクトが作成されたアプリケーションを示す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -181,7 +167,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したオブジェクトを削除します。</summary>
+        <summary>指定されたオブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,7 +194,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCaptionLabelID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>場合は、指定された図表番号のラベルの種類を表す値を返します、<see cref="P:Microsoft.Office.Interop.Word.CaptionLabel.BuiltIn" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Word.CaptionLabel" />オブジェクトは、 <b>true を指定</b>します。</summary>
+        <summary>オブジェクトの<see cref="P:Microsoft.Office.Interop.Word.CaptionLabel.BuiltIn" />プロパティが True の場合は、指定された図表番号のラベルの種類を表す値を返します。 <b></b> <see cref="T:Microsoft.Office.Interop.Word.CaptionLabel" /></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -239,7 +225,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>章番号がページ番号または図表番号のラベルが含まれているかどうかを示す値を設定を取得または取得します。</summary>
+        <summary>章番号がページ番号または図表番号のラベルに含まれているかどうかを示す値を取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -298,7 +284,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCaptionNumberStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>番号のスタイルの設定を取得または設定します<see cref="T:Microsoft.Office.Interop.Word.CaptionLabel" />オブジェクトです。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.CaptionLabel" />オブジェクトの番号のスタイルを設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -326,7 +312,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親オブジェクトを返します。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -357,7 +343,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCaptionPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、図表番号のラベルの位置を示す値を設定します。</summary>
+        <summary>図表番号のラベルテキストの位置を示す値を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -388,7 +374,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdSeparatorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、章番号と連続番号を区切る文字を示す値を設定します。</summary>
+        <summary>チャプター番号とシーケンス番号の間の文字を示す値を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="ListParagraphs" FullName="Microsoft.Office.Interop.Word.ListParagraphs">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3a54de4fd6f4e79f4cbe2195f2b28cabd9374f2f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671699" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListParagraphs : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f2ed5da4555633a8837f621bb30fd13601729534" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146151" /></Metadata><TypeSignature Language="C#" Value="public interface ListParagraphs : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListParagraphs implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListParagraphs" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListParagraphs&#xA;Implements IEnumerable" />
@@ -30,14 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.Paragraph" />リスト書式を適用する特定のドキュメント、リスト、または指定範囲の段落を表すオブジェクト。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word._Document.ListParagraphs" /><b>ListParagraphs</b>コレクションを取得するプロパティ</para>。
-      <para>使用して<b>ListParagraphs</b>(<paramref name="index" />)、<paramref name="index" />インデックス番号には、リストの書式を持つ 1 つの段落オブジェクトを返します</para>。
-      <para>段落では、2 種類のリストのフォーマットを持つことができます。最初のタイプは、リスト内の番号を自動的に追加されたか、各段落の先頭に行頭文字を含みます。2 番目の種類には、LISTNUM フィールドには、段落内の任意の場所に配置できますが含まれています。1 つの段落に複数の LISTNUM フィールドがあります</para>。段落に箇条書きの書式を追加するのには
-      <para>は、使用することができます、 <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> 、 <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyBulletDefault(System.Object@)" /> 、 <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyNumberDefault(System.Object@)" /> 、または<see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyOutlineNumberDefault(System.Object@)" />メソッドです。これらのメソッドにアクセスするには指定した範囲の<b>ListFormat</b>オブジェクトを使用します</para>。
-      <para>、<see cref="P:Microsoft.Office.Interop.Word.ListParagraphs.Count" />ドキュメントでこのコレクションのプロパティは、メイン テキスト ストーリーのみの項目の数を返します。カウントするための他のストーリーの項目を使用して、使用して、コレクションの<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです</para>。
-      <para /></remarks>
+    <summary>箇条書き書式が<see cref="T:Microsoft.Office.Interop.Word.Paragraph" />設定されている文書、リスト、または指定範囲の段落を表すオブジェクトのコレクションです。</summary>
+    <remarks><para><see cref="P:Microsoft.Office.Interop.Word._Document.ListParagraphs" /> <b>Listparagraphs</b>コレクションを取得するのにには、プロパティを使用します。</para>
+      <para>リストの書式設定<paramref name="index" />を含む単一<paramref name="index" />の Paragraph オブジェクトを取得するには、 <b>listparagraphs</b>() を使用します。ここで、はインデックス番号を使用します。</para>
+      <para>段落の箇条書き書式には 2 つあります。最初の書式では、箇条書きの各段落の先頭に段落番号または行頭文字が自動的に追加されます。2 番目の書式では、段落内の任意の場所に LISTNUM フィールドを設定できます。この場合、同じ段落内に複数の LISTNUM フィールドを設定できます。</para>
+      <para>段落に箇条書き書式を追加するには、、 <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> 、 <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyBulletDefault(System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyNumberDefault(System.Object@)" /> 、または<see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyOutlineNumberDefault(System.Object@)" />メソッドを使用します。 これらのメソッドにアクセスするには指定した範囲の <b>ListFormat</b> オブジェクトを使用します。</para>
+      <para>文書<see cref="P:Microsoft.Office.Interop.Word.ListParagraphs.Count" />内のこのコレクションのプロパティは、メインストーリーのみの項目数を返します。 他のストーリー内のアイテムをカウントするには<see cref="T:Microsoft.Office.Interop.Word.Range" /> 、オブジェクトと共にコレクションを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -63,7 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,12 +110,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -185,7 +175,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">各オブジェクトの序数位置を示す<b>整数</b>です。</param>
+        <param name="Index">個々のオブジェクトの位置を表す<b>整数型 (Integer</b> ) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

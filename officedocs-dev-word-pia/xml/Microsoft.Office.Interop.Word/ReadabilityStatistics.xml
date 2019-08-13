@@ -1,13 +1,5 @@
 <Type Name="ReadabilityStatistics" FullName="Microsoft.Office.Interop.Word.ReadabilityStatistics">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="40f53fa8c130c6c88e714976f3bb01828d04160e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671631" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ReadabilityStatistics : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="24d9ec1716c3410e12645056799c5ec7ea06e8d7" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144107" /></Metadata><TypeSignature Language="C#" Value="public interface ReadabilityStatistics : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ReadabilityStatistics implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ReadabilityStatistics" />
   <TypeSignature Language="VB.NET" Value="Public Interface ReadabilityStatistics&#xA;Implements IEnumerable" />
@@ -30,12 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.ReadabilityStatistic" />の範囲のオブジェクトです。</summary>
-    <remarks>
-      <para>
-        <b>ReadabilityStatistics</b>プロパティを使用して、<see cref="T:Microsoft.Office.Interop.Word.Document" />または<see cref="T:Microsoft.Office.Interop.Word.Range" /><b>ReadabilityStatistic</b>s のコレクションを返すオブジェクト</para>。
-      <para>使用して<b>ReadabilityStatistics</b>(<paramref name="index" />)、<paramref name="index" />インデックス番号には、1 つの<b>ReadabilityStatistic</b>オブジェクトを返します。統計情報は次のように並べられます単語、文字、段落、文、文章の段落、単語を 1 つの文、単語ごとの文字数、受動態、Flesch の読みやすさ、および成績のレベルを評価します。</para> 。
-      <para /></remarks>
+    <summary>文書または<see cref="T:Microsoft.Office.Interop.Word.ReadabilityStatistic" />指定範囲のオブジェクトのコレクションです。</summary>
+    <remarks><para><b>Read信頼性</b>統計のコレクションを取得する<see cref="T:Microsoft.Office.Interop.Word.Document" />の<see cref="T:Microsoft.Office.Interop.Word.Range" />にには、またはオブジェクトの<b>readな statistics</b>プロパティを使用します。</para>
+      <para>1つの readな<paramref name="index" />統計オブジェクトを<paramref name="index" />取得するには、 <b>readな statistics</b>( <b></b> ) を使用します。ここで、はインデックス番号です。 統計情報は次の順序で並べ替えられます。単語、文字、段落、文、段落ごとの単語、文ごとの文字、単語ごとの文字、受動態、Flesch 読み上げイージング、および Flesch-Kincaid 学年レベル。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,12 +107,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -183,7 +172,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">位置を表す序数または各オブジェクトの名前を表す文字列を示す<b>オブジェクト</b>。</param>
+        <param name="Index">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

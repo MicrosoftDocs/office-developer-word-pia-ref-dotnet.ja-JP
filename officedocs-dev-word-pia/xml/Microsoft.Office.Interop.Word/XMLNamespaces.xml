@@ -1,13 +1,5 @@
 <Type Name="XMLNamespaces" FullName="Microsoft.Office.Interop.Word.XMLNamespaces">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a28377e4aa15237bf9fa30770fff97380ef9bf73" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670795" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XMLNamespaces : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d9eb0ff72d7f177eb7bd98e5edbe17f3467652a3" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142634" /></Metadata><TypeSignature Language="C#" Value="public interface XMLNamespaces : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLNamespaces implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLNamespaces" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLNamespaces&#xA;Implements IEnumerable" />
@@ -30,11 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.XMLNamespace" />、スキーマ ライブラリ内のスキーマの全体のコレクションを表すオブジェクト。</summary>
-    <remarks>
-      <para>Microsoft Word では、スキーマ ライブラリは、[テンプレートとアドイン] ダイアログ ボックスで [XML スキーマ] タブからアクセスできます。スキーマ ライブラリは、ユーザーが Word 文書に適用するか、ユーザーが明示的にスキーマ ライブラリ] ダイアログ ボックスを使用してスキーマ ライブラリに追加する、ユーザーのコンピューターにインストールされているスキーマを表します</para>。使用の
-      <para>、<see cref="P:Microsoft.Office.Interop.Word.XMLNamespaces.Item(System.Object@)" />個別の<b>XMLNameSpace</b>オブジェクトを取得するのには、 <b>XMLNamespaces</b>コレクションのプロパティ。<b>アイテム</b>のプロパティのインデックス値は、<b>整数</b>、スキーマ ライブラリ内のスキーマの位置を示す、または<b>文字列</b>を使用して、返されたスキーマの名前を表す、 <see cref="P:Microsoft.Office.Interop.Word.XMLNamespace.URI" /> (のプロパティTargetNamespace 設定は、スキーマで定義されている) です</para>。
-      <para /></remarks>
+    <summary>スキーマライブラリ内<see cref="T:Microsoft.Office.Interop.Word.XMLNamespace" />のスキーマのコレクション全体を表すオブジェクトのコレクションです。</summary>
+    <remarks><para>Microsoft Word では、[テンプレートとアドイン] ダイアログボックスの [XML スキーマ] タブからスキーマライブラリにアクセスできます。 スキーマライブラリは、ユーザーのコンピューターにインストールされているスキーマを表します。ユーザーは Word 文書に適用されているか、[スキーマライブラリ] ダイアログボックスを使用してユーザーが明示的にスキーマライブラリに追加しています。</para>
+      <para>各 XMLNameSpace <see cref="P:Microsoft.Office.Interop.Word.XMLNamespaces.Item(System.Object@)" />オブジェクトを取得するのにには、 <b></b> <b>XMLNamespaces</b>コレクションのプロパティを使用します。 <b>Item</b>プロパティのインデックス値には、スキーマライブラリ内のスキーマの位置を示す<b>整数</b>、または<see cref="P:Microsoft.Office.Interop.Word.XMLNamespace.URI" />プロパティを使用して返されるスキーマの名前を表す<b>文字列</b>を指定できます (TargetNamespace の設定は、スキーマで定義されています)。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,12 +53,11 @@
         <Parameter Name="InstallForAllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Path">
-          <b>文字列</b> が必要です。 スキーマのパスとファイル名です。 ローカル ファイル パス、ネットワーク パス、またはインターネット アドレスがあります。</param>
-        <param name="NamespaceURI">省略可能な<b>文字列</b>です。 名前空間統一リソース インジケーター、スキーマで指定されています。 <paramref name="NamespaceURI" />パラメーターは大文字小文字を区別し、スキーマ内の指定に従って入力する必要があります。</param>
-        <param name="Alias">省略可能な<b>文字列</b>です。 [テンプレートとアドイン] ダイアログ ボックスの [スキーマ] タブに表示されるスキーマの名前を指定します。</param>
-        <param name="InstallForAllUsers">オプションの <b>Boolean</b>。 <b>True の</b>場合、すべてのユーザーがコンピューターにログオンするアクセスでき、新しいスキーマを使用します。 既定では <b>False です</b> 。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.XMLNamespace" />をスキーマ ライブラリに追加され、Microsoft Word でユーザーが使用できるスキーマを表すオブジェクト。</summary>
+        <param name="Path"><b>文字列</b> が必要です。 スキーマ ファイルのパスとファイル名を指定します。 ローカル ファイルのパス、ネットワーク パス、インターネット アドレスのいずれかになります。</param>
+        <param name="NamespaceURI">文字列型 (<b>String</b>) の値を使用します。 スキーマで指定した名前空間の URI を指定します。 この<paramref name="NamespaceURI" />パラメーターは大文字と小文字が区別され、スキーマで指定されたとおりに入力する必要があります。</param>
+        <param name="Alias">文字列型 (<b>String</b>) の値を使用します。 [テンプレートとアドイン] ダイアログ ボックスの [スキーマ] タブに表示されるスキーマの名前を指定します。</param>
+        <param name="InstallForAllUsers">オプションの <b>Boolean</b>。 コンピューターにログインするすべてのユーザーが新しいスキーマにアクセスして、利用できるようにする場合は <b>True</b> を指定します。 既定では <b>False です</b> 。</param>
+        <summary>スキーマライブラリ<see cref="T:Microsoft.Office.Interop.Word.XMLNamespace" />に追加され、Microsoft Word でユーザーが使用できるようになるスキーマを表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -95,7 +85,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -151,12 +141,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -214,14 +203,11 @@
         <Parameter Name="InstallForAllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Path">
-          <b>文字列</b> が必要です。 XML 拡張パックのパスとファイル名を指定します。</param>
-        <param name="InstallForAllUsers">オプションの <b>Boolean</b>。 <b>True</b>では、XML 拡張パックをインストールや、コンピューター上のすべてのユーザーが利用できるようにします。 現在のユーザーのみ使用可能 XML 拡張パックを<b>false</b>になります。 既定では <b>false を指定</b> します。</param>
+        <param name="Path"><b>文字列</b> が必要です。 XML 拡張パックのパスとファイル名を指定します。</param>
+        <param name="InstallForAllUsers">オプションの <b>Boolean</b>。 <b>True</b> の場合は、XML 拡張パックをインストールし、そのマシンを使用するすべてのユーザーが XML 拡張パックを使用できます。 <b>False</b> の場合は、現在のユーザーだけが XML 拡張パックを使用できます。 既定の値は <b>False</b> です。</param>
         <summary>指定された XML 拡張パックをユーザーのコンピューターにインストールし、1 人または複数のユーザーが XML スマート ドキュメント ソリューションを使用できるようにします。</summary>
-        <remarks>
-          <para>セキュリティのために、署名のないマニフェストをインストールできません。マニフェストの詳細については、Microsoft Developer Network (MSDN) Web サイトで、スマート ドキュメント ソフトウェア開発キット (SDK) を参照してください。</para>
-          <para />
-        </remarks>
+        <remarks><para>セキュリティの目的で、署名されていないマニフェストをインストールすることはできません。 マニフェストの詳細については、Microsoft Developer Network (MSDN) Web サイトの「Smart Document Software Development Kit (SDK)」を参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -250,7 +236,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">位置を表す序数または各オブジェクトの名前を表す文字列を示す<b>オブジェクト</b>。</param>
+        <param name="Index">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

@@ -1,13 +1,5 @@
 <Type Name="MailingLabel" FullName="Microsoft.Office.Interop.Word.MailingLabel">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ea639f9554460c830e5274ddb6a737859278d9e9" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671528" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailingLabel" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4afda2d9ebd64dca6130b11e02d6aa6915201036" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144436" /></Metadata><TypeSignature Language="C#" Value="public interface MailingLabel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailingLabel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailingLabel" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailingLabel" />
@@ -27,11 +19,10 @@
   </Attributes>
   <Docs>
     <summary>宛名ラベルを表します。</summary>
-    <remarks>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Word._Application.MailingLabel" />を返すプロパティの<see cref="T:Microsoft.Office.Interop.Word.MailingLabel" />オブジェクトです</para>。
-      <para>使用、 <see cref="M:Microsoft.Office.Interop.Word.MailingLabel.PrintOut(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> 、[ラベル オプション] ダイアログ ボックスの [製品番号] ボックスで宛名ラベルを印刷するにはメソッドが一覧表示されます</para>。
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.MailingLabel.CustomLabels" />プロパティを書式設定またはカスタム宛名ラベルを印刷します</para>。
-      <para /></remarks>
+    <remarks><para>オブジェクトを<see cref="P:Microsoft.Office.Interop.Word._Application.MailingLabel" />取得するのにには、プロパティを使用します。 <see cref="T:Microsoft.Office.Interop.Word.MailingLabel" /></para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.MailingLabel.PrintOut(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />メソッドを使用して、[ラベルオプション] ダイアログボックスの [製品番号] ボックスに表示される宛名ラベルを印刷します。</para>
+      <para>カスタム宛名<see cref="P:Microsoft.Office.Interop.Word.MailingLabel.CustomLabels" />ラベルを書式設定または印刷するには、プロパティを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,11 +84,11 @@
         <param name="Name">省略可能な<b>オブジェクト</b>です。 宛名ラベル名を指定します。</param>
         <param name="Address">省略可能な<b>オブジェクト</b>です。 宛名ラベルの文字列を指定します。</param>
         <param name="AutoText">省略可能な<b>オブジェクト</b>です。 宛名ラベルの文字列を含む定型句の名前を指定します。</param>
-        <param name="ExtractAddress">省略可能な<b>オブジェクト</b>です。 "EnvelopeAddress"を使用する代わりに名前付きのユーザー定義のブックマークで<b>該当</b>アドレスのテキストを使用するマーク、<paramref name="Address" />の引数です。</param>
-        <param name="LaserTray">省略可能な<b>オブジェクト</b>です。 レーザー プリンターの用紙トレイを指定します。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" />定数。</param>
+        <param name="ExtractAddress">省略可能な<b>オブジェクト</b>です。 <b>True</b>を指定すると、 <paramref name="Address" />引数を使用せずに、"EnvelopeAddress" という名前のユーザー定義のブックマークでマークされたアドレステキストを使用します。</param>
+        <param name="LaserTray">省略可能な<b>オブジェクト</b>です。 レーザー プリンターの用紙トレイを指定します。 <see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" />定数のいずれかをすることができます。</param>
         <param name="PrintEPostageLabel">省略可能な<b>オブジェクト</b>です。 <b>True</b> インターネットの電子切手業者を使用して切手を印刷します。</param>
         <param name="Vertical">省略可能な<b>オブジェクト</b>です。 <b>True</b> は、ラベルの垂直方向にテキストを書式設定します。 アジア系言語の宛名ラベルに使用されます。</param>
-        <summary>ラベルの既定のオプションまたはユーザーが指定するのいずれかを使用して新しいラベル文書を作成します。 返します、 <see cref="T:Microsoft.Office.Interop.Word.Document" /> 、新しいドキュメントを表すオブジェクト。</summary>
+        <summary>ラベルの既定のオプションまたはユーザーが指定するのいずれかを使用して新しいラベル文書を作成します。 新しい文書<see cref="T:Microsoft.Office.Interop.Word.Document" />を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -172,16 +163,12 @@
         <param name="LabelID">宛名ラベル ID を指定します。</param>
         <param name="Address">宛名ラベルの文字列を指定します。</param>
         <param name="AutoText">宛名ラベルの文字列を含む定型句の名前を指定します。</param>
-        <param name="ExtractAddress">"EnvelopeAddress"を使用する代わりに名前付きのユーザー定義のブックマークで<b>該当</b>アドレスのテキストを使用するマーク、<paramref name="Address" />の引数です。</param>
-        <param name="LaserTray">レーザー プリンターの用紙トレイを指定します。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" />定数。</param>
-        <param name="PrintEPostageLabel">
-          <b>True</b> インターネットの電子切手業者を使用して切手を印刷します。</param>
-        <param name="Vertical">
-          <b>True</b> は、ラベルの垂直方向にテキストを書式設定します。アジア系言語の宛名ラベルに使用されます。 </param>
-        <summary>ラベルの既定のオプションまたはユーザーが指定するのいずれかを使用して新しいラベル文書を作成します。 返します、 <see cref="T:Microsoft.Office.Interop.Word._Document" /> 、新しいドキュメントを表すオブジェクト。</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word._Document" />
-        </returns>
+        <param name="ExtractAddress"><b>True</b>を指定すると、 <paramref name="Address" />引数を使用せずに、"EnvelopeAddress" という名前のユーザー定義のブックマークでマークされたアドレステキストを使用します。</param>
+        <param name="LaserTray">レーザー プリンターの用紙トレイを指定します。 <see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" />定数のいずれかをすることができます。</param>
+        <param name="PrintEPostageLabel"><b>True</b> インターネットの電子切手業者を使用して切手を印刷します。</param>
+        <param name="Vertical"><b>True</b> は、ラベルの垂直方向にテキストを書式設定します。 アジア系言語の宛名ラベルに使用されます。</param>
+        <summary>ラベルの既定のオプションまたはユーザーが指定するのいずれかを使用して新しいラベル文書を作成します。 新しい文書<see cref="T:Microsoft.Office.Interop.Word._Document" />を表すオブジェクトを返します。</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word._Document" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,12 +195,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomLabels">
@@ -239,7 +225,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.CustomLabels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.CustomLabels" /> 、利用可能なカスタム宛名ラベルを表すコレクション。</summary>
+        <summary>使用可能<see cref="T:Microsoft.Office.Interop.Word.CustomLabels" />なカスタム宛名ラベルを表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -272,10 +258,9 @@
       <Docs>
         <summary>既定の宛名ラベルの名前を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>指定した組み込みラベルの文字列を検索するには、ラベル オプション] ダイアログ ボックス ([ツール] メニューの [宛名ラベル] ダイアログ ボックス、[ラベル] タブ、[オプション] ボタン) でラベルを選択します。[詳細] をクリックし、このプロパティに使用する正しい文字列が含まれているラベル名] ボックスに表示します。既定の宛名ラベルとしてカスタム ラベルを設定するのには [詳細] ダイアログ ボックスに表示されるラベル名を使用してまたはを使用して、<see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Name" />のプロパティの<see cref="T:Microsoft.Office.Interop.Word.CustomLabel" />オブジェクト</para>。
-          <para><b>CustomLabel</b>オブジェクトの名前に<b>DefaultLabelName</b>プロパティを設定する自動的に<b>CustomLabel</b>オブジェクトからの新しいラベル文書を作成します</para>。
-          <para /></remarks>
+        <remarks><para>指定した組み込みのラベルの文字列を検索するには、[ラベルオプション] ダイアログボックスでラベルを選択します ([ツール] メニューの [宛名ラベル作成] ダイアログボックスの [ラベル] タブの [オプション] ボタン)。 [詳細] をクリックし、[ラベル名] ボックスを確認します。このプロパティに使用する正しい文字列が含まれています。 ユーザー設定のラベルを既定の宛名ラベルとして設定するには、[詳細] ダイアログボックスに表示される<see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Name" />ラベル名を<see cref="T:Microsoft.Office.Interop.Word.CustomLabel" />使用するか、またはオブジェクトでプロパティを使用します。</para>
+          <para><b>CustomLabel</b> オブジェクトを使用して新しいラベルの文書を作成すると、<b>DefaultLabelName</b> プロパティが自動的に <b>CustomLabel</b> オブジェクトの名前に設定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultLaserTray">
@@ -306,11 +291,8 @@
       <Docs>
         <summary>宛名ラベルのシートを含む既定の用紙トレイを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>DefaultLaserTray</b>プロパティには、いずれかを指定できる、<see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" />定数。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>DefaultLaserTray</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" />定数のいずれかを指定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultPrintBarCode">
@@ -345,13 +327,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、既定で封筒や宛名ラベルに POSTNET バーコードが追加されます。</summary>
+        <summary><b>True</b>を設定すると、封筒または宛名ラベルに POSTNET バーコードが追加されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>米国郵便でのみ使用します。封筒用に<b>true を指定</b>する前にこのプロパティを設定する必要があります、<see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultPrintFIMA" />プロパティを設定します。</para>
-          <para />
-        </remarks>
+        <remarks><para>米国郵便でのみ使用します。 エンベロープの場合、 <see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultPrintFIMA" />プロパティを設定する前に、このプロパティを<b>True</b>に設定する必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LabelOptions">
@@ -376,11 +355,8 @@
       <Parameters />
       <Docs>
         <summary>[ラベル オプション] ダイアログ ボックスを表示します。</summary>
-        <remarks>
-          <para>
-            <b>LabelOptions</b>メソッドは、文書が宛名ラベルの差し込み印刷のメイン文書である場合にのみ動作します。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>LabelOptions</b> メソッドは、文書が宛名ラベルの差し込み印刷のメイン文書である場合にのみ動作します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -443,11 +419,11 @@
       <Docs>
         <param name="Name">省略可能な<b>オブジェクト</b>です。 宛名ラベル名を指定します。</param>
         <param name="Address">省略可能な<b>オブジェクト</b>です。 宛先の住所を指定します。</param>
-        <param name="ExtractAddress">省略可能な<b>オブジェクト</b>です。 <b>True</b> ラベルのテキストとして"EnvelopeAddress"ブックマーク (ユーザー定義のブックマーク) でマークされているテキストを使用します。 場合はこの引数を指定すると、<paramref name="Address" />と<paramref name="AutoText" />は無視されます。</param>
-        <param name="LaserTray">省略可能な<b>オブジェクト</b>です。 使用するレーザー プリンターのトレイです。 いずれかを指定することができます<see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" />定数。</param>
+        <param name="ExtractAddress">省略可能な<b>オブジェクト</b>です。 <b>True</b> ラベルのテキストとして"EnvelopeAddress"ブックマーク (ユーザー定義のブックマーク) でマークされているテキストを使用します。 この引数が指定され<paramref name="Address" />て<paramref name="AutoText" />いる場合、無視されます。</param>
+        <param name="LaserTray">省略可能な<b>オブジェクト</b>です。 使用するレーザー プリンターのトレイです。 任意の<see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" />定数を使用できます。</param>
         <param name="SingleLabel">省略可能な<b>オブジェクト</b>です。 <b>True</b> は 1 つのラベルを印刷するには <b>False</b> に同じラベルのページ全体を印刷します。</param>
-        <param name="Row">省略可能な<b>オブジェクト</b>です。 1 枚のラベルのラベルの行です。 場合に有効ではありません<paramref name="SingleLabel" />は、 <b>false を指定</b>します。</param>
-        <param name="Column">省略可能な<b>オブジェクト</b>です。 1 枚のラベルのラベルの列。 場合に有効ではありません<paramref name="SingleLabel" />は、 <b>false を指定</b>します。</param>
+        <param name="Row">省略可能な<b>オブジェクト</b>です。 1 枚のラベルのラベルの行です。 False の場合<paramref name="SingleLabel" />は<b></b>無効です。</param>
+        <param name="Column">省略可能な<b>オブジェクト</b>です。 1 枚のラベルのラベルの列。 False の場合<paramref name="SingleLabel" />は<b></b>無効です。</param>
         <param name="PrintEPostageLabel">省略可能な<b>オブジェクト</b>です。 <b>True</b> インターネットの電子切手業者を使用して切手を印刷します。</param>
         <param name="Vertical">省略可能な<b>オブジェクト</b>です。 <b>True を設定</b> すると、ラベルのテキストを垂直方向に印刷します。 アジア系言語の宛名ラベルに使用されます。</param>
         <summary>1 つの住所を 1 枚の宛名ラベルまたは宛名ラベルのシート全体に印刷します。</summary>
@@ -528,17 +504,13 @@
       <Docs>
         <param name="LabelID">宛名ラベル ID を指定します。</param>
         <param name="Address">宛先の住所を指定します。</param>
-        <param name="ExtractAddress">
-          <b>True</b> ラベルのテキストとして"EnvelopeAddress"ブックマーク (ユーザー定義のブックマーク) でマークされているテキストを使用します。 場合はこの引数を指定すると、<paramref name="Address" />と<paramref name="AutoText" />は無視されます。</param>
-        <param name="LaserTray">レーザー プリンターの用紙トレイを指定します。 いずれかの<see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" />定数。</param>
-        <param name="SingleLabel">
-          <b>True</b> は 1 つのラベルを印刷するには <b>False</b> に同じラベルのページ全体を印刷します。</param>
-        <param name="Row">1 枚のラベルのラベルの行です。 場合に有効ではありません<paramref name="SingleLabel" />は、 <b>false を指定</b>します。</param>
-        <param name="Column">1 枚のラベルのラベルの列。 場合に有効ではありません<paramref name="SingleLabel" />は、 <b>false を指定</b>します。</param>
-        <param name="PrintEPostageLabel">
-          <b>True</b> インターネットの電子切手業者を使用して切手を印刷します。</param>
-        <param name="Vertical">
-          <b>True を設定</b> すると、ラベルのテキストを垂直方向に印刷します。アジア系言語の宛名ラベルに使用されます。 </param>
+        <param name="ExtractAddress"><b>True</b> ラベルのテキストとして"EnvelopeAddress"ブックマーク (ユーザー定義のブックマーク) でマークされているテキストを使用します。 この引数が指定され<paramref name="Address" />て<paramref name="AutoText" />いる場合、無視されます。</param>
+        <param name="LaserTray">レーザー プリンターの用紙トレイを指定します。 <see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" />定数のいずれかをすることができます。</param>
+        <param name="SingleLabel"><b>True</b> は 1 つのラベルを印刷するには <b>False</b> に同じラベルのページ全体を印刷します。</param>
+        <param name="Row">1 枚のラベルのラベルの行です。 False の場合<paramref name="SingleLabel" />は<b></b>無効です。</param>
+        <param name="Column">1 枚のラベルのラベルの列。 False の場合<paramref name="SingleLabel" />は<b></b>無効です。</param>
+        <param name="PrintEPostageLabel"><b>True</b> インターネットの電子切手業者を使用して切手を印刷します。</param>
+        <param name="Vertical"><b>True を設定</b> すると、ラベルのテキストを垂直方向に印刷します。 アジア系言語の宛名ラベルに使用されます。</param>
         <summary>1 つの住所を 1 枚の宛名ラベルまたは宛名ラベルのシート全体に印刷します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -569,13 +541,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>が縦書きにアジア言語の封筒と宛名ラベルのテキストです。</summary>
+        <summary><b>True</b>は、アジア系の封筒と宛名ラベルの文字列を縦方向に配置します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティでは、宛名ラベルまたは封筒に差し込み印刷用に設定されているのみで動作し、アジアの言語にのみ適用されます。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティは、差し込み印刷用に設定されている宛名ラベルまたは封筒でのみ機能し、アジア言語にのみ適用されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

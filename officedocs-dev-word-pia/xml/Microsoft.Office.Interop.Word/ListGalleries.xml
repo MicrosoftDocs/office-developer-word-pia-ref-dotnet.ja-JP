@@ -1,13 +1,5 @@
 <Type Name="ListGalleries" FullName="Microsoft.Office.Interop.Word.ListGalleries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7009d72c6dc7295f344db3f160af763e3258dc95" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670803" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListGalleries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dce0fc39c63c03d36e78ba34d181e2db4bf03abd" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144520" /></Metadata><TypeSignature Language="C#" Value="public interface ListGalleries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListGalleries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListGalleries" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListGalleries&#xA;Implements IEnumerable" />
@@ -30,12 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.ListGallery" />、箇条書きの 3 つのタブを表すオブジェクトと段落番号] ダイアログ ボックスです。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word._Application.ListGalleries" /><b>ListGalleries</b>コレクションを取得するプロパティ</para>。
-      <para>使用して<b>ListGalleries</b>(<paramref name="index" />)、 <paramref name="index" /><b>wdBulletGallery</b>、 <b>wdNumberGallery</b>、または<b>wdOutlineNumberGallery</b>は、単一の<b>ListGallery</b>オブジェクトを返すことです</para>。使用して Microsoft Word に組み込まれている書式を指定したリスト テンプレートがあるかどうかを確認するのには
-      <para>、 <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /><b>ListGallery</b>オブジェクトのプロパティです。リセットするには元のリスト形式に書式設定を使用して、 <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /><b>ListGallery</b>オブジェクトのメソッドです</para>。
-      <para /></remarks>
+    <summary>[箇条書きと<see cref="T:Microsoft.Office.Interop.Word.ListGallery" />段落番号] ダイアログボックスの3つのタブを表すオブジェクトのコレクションです。</summary>
+    <remarks><para>ListGalleries コレクション<see cref="P:Microsoft.Office.Interop.Word._Application.ListGalleries" />を取得するの<b></b>にには、プロパティを使用します。</para>
+      <para><b>ListGalleries</b><paramref name="index" />() を使用し<paramref name="index" />ます。ここで、 <b>wdBulletGallery</b>、 <b>wdNumberGallery</b>、または<b>wdOutlineNumberGallery</b>を使用して、1つの<b>ListGallery</b>オブジェクトを返します。</para>
+      <para>指定した箇条書きテンプレートに、Microsoft Word に組み込まれている書式設定が<see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" />含まれているかどうかを確認するには、 <b>ListGallery</b>オブジェクトでプロパティを使用します。 書式設定を元のリスト形式にリセットするに<see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" />は、 <b>ListGallery</b>オブジェクトのメソッドを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,12 +108,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -183,8 +173,8 @@
         <Parameter Name="Index" Type="Microsoft.Office.Interop.Word.WdListGalleryType" />
       </Parameters>
       <Docs>
-        <param name="Index">必要な<see cref="T:Microsoft.Office.Interop.Word.WdListGalleryType" />。 リストの種類を指定する定数です。<b>WdListGalleryType</b>には、以下の定数のいずれかを指定できます:<b>wdBulletGallery</b><b>wdNumberGallery</b><b>wdOutlineNumberGallery</b></param>
-        <summary>リストの種類を返します (箇条書き、段落番号、またはアウトライン)、リスト テンプレート ギャラリーから。</summary>
+        <param name="Index">必須<see cref="T:Microsoft.Office.Interop.Word.WdListGalleryType" />。 リストの種類を指定する定数を指定します。<b>WdListGalleryType</b>には、次の定数のいずれかを指定できます。<b>wdBulletGallery</b><b>wdNumberGallery</b><b>wdOutlineNumberGallery</b></param>
+        <summary>リストテンプレートギャラリーからリストの種類 (箇条書き、段落番号、またはアウトライン) を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

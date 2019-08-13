@@ -1,13 +1,5 @@
 <Type Name="AddIns" FullName="Microsoft.Office.Interop.Word.AddIns">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="48caabb79d286f2b2fdde3c65929f418f4316fe8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672466" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AddIns : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b74f31d64c51548753577cc92d207cb75a062a8d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145213" /></Metadata><TypeSignature Language="C#" Value="public interface AddIns : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddIns implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AddIns" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddIns&#xA;Implements IEnumerable" />
@@ -30,17 +22,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.AddIn" />オブジェクトが現在読み込まれているかどうかに関係なく、Microsoft Word を使用できるすべてのアドインを表します。</summary>
-    <remarks>
-      <para>
-        <b>AddIns</b>コレクションには、全文書対象テンプレートまたは Word アドイン ライブラリ (Wll、[テンプレートとアドイン] ダイアログ ボックス ([ツール] メニュー) に表示されます) が含まれています</para>。
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word._Application.AddIns" /> 、 <b>AddIns</b>コレクションを返すプロパティです</para>。
-      <para>使用、<see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" />メソッドを使用できるアドインの一覧にアドインを追加し、(必要に応じて) して、<paramref name="Install" />の引数です</para>。
-      <para>使用できるアドインの一覧に表示されているアドインをインストールするを使用して、<see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" />プロパティ</para>。
-      <para>を使用して<b>アドイン</b>(<paramref name="index" />)、<paramref name="index" />は、アドイン名またはインデックス番号を 1 つの<b>AddIn</b>オブジェクトを取得します。[テンプレートとアドイン] ダイアログ ボックスに表示されるスペル (必ずしも、大文字と小文字) の名前を正確に一致する必要があります。使用できるアドインの一覧に表示されているアドインをインストールするを使用して、<see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" />プロパティ</para>。
-      <para>アドインを名前でインデックスを作成するとき、完全なパスとファイル名を指定してくださいない場合は、アドイン、ユーザー テンプレート、ワークグループ テンプレート、またはスタートアップ フォルダーに、します</para>。
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" /><b>AddIn</b>オブジェクトは、テンプレートまたは WLL をするかどうかを決定するプロパティ</para>。
-      <para /></remarks>
+    <summary>現在読み込まれ<see cref="T:Microsoft.Office.Interop.Word.AddIn" />ているかどうかに関係なく、Microsoft Word で使用可能なすべてのアドインを表すオブジェクトのコレクションです。</summary>
+    <remarks><para><b>AddIns</b>コレクションには、[テンプレートとアドイン] ダイアログボックス ([ツール] メニュー) に表示される全文書対象のテンプレートまたは Word アドインライブラリ (wll) が含まれています。</para>
+      <para>AddIns コレクション<see cref="P:Microsoft.Office.Interop.Word._Application.AddIns" />を取得するの<b></b>にには、プロパティを使用します。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" />メソッドを使用して、使用可能なアドインの一覧にアドインを追加し、必要に応じて、 <paramref name="Install" />引数を使用してアドインをインストールします。</para>
+      <para>使用可能なアドインの一覧に表示されているアドインをインストールするには<see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> 、プロパティを使用します。</para>
+      <para><b>AddIns</b>(<paramref name="index" />) を使用し<paramref name="index" />ます。ここで、はアドイン名またはインデックス番号を使用して、1つの<b>AddIn</b>オブジェクトを返します。 [テンプレートとアドイン] ダイアログボックスに表示されている名前のスペル (必ずしも大文字と小文字は区別されません) を正確に一致させる必要があります。 使用可能なアドインの一覧に表示されているアドインをインストールするには<see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> 、プロパティを使用します。</para>
+      <para>[!メモ] アドインを名前で示す場合、アドインが [User Templates]、[Workgroup Templates]、または [Startup] フォルダーにないときは、絶対パスで指定する必要があります。</para>
+      <para>AddIn オブジェクト<see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" />がテンプレートであるか<b></b> 、WLL であるかを判断するのにには、プロパティを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -67,15 +57,11 @@
       </Parameters>
       <Docs>
         <param name="FileName">テンプレートまたは Word アドイン ライブラリ (WLL) のパスを指定します。</param>
-        <param name="Install">
-          <b>True</b>
-          <b>False</b> アドインの一覧にアドインを追加するが、インストールするアドインをインストールするのには。既定値は、 <b>true を指定</b> します。 </param>
-        <summary>使用可能なアドインの一覧に指定されたファイルを追加します。</summary>
+        <param name="Install"><b>True</b> <b>False</b> アドインの一覧にアドインを追加するが、インストールするアドインをインストールするのには。既定値は、 <b>true を指定</b> します。 </param>
+        <summary>使用可能なアドインの一覧に、指定したファイルを追加します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" />にインストールされているかどうかを判断するのにはアドインのプロパティです。</para>
-          <para />
-        </remarks>
+        <remarks><para>アドインの<see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" />プロパティを使用して、既にインストールされているかどうかを確認します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -101,7 +87,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Application" />を指定したオブジェクトの作成者を表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Application" />たオブジェクトの作成元を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -159,10 +145,9 @@
       <Docs>
         <summary>指定したオブジェクトが作成されたアプリケーションを示す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返します指定されたオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -223,8 +208,8 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">返される各オブジェクトの名前です。</param>
-        <summary>コレクション内の指定したオブジェクトを示す値を返します。</summary>
+        <param name="Index">取得する個々のオブジェクトの名前を指定します。</param>
+        <summary>コレクション内の指定されたオブジェクトを示す値を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -280,13 +265,10 @@
         <Parameter Name="RemoveFromList" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="RemoveFromList">
-          <b>True</b> (名前は、[テンプレートとアドイン] ダイアログ ボックスから削除されます)、 <b>AddIns</b>コレクションから、アンロードするアドインを削除します。 <b>False</b>コレクションで、アンロードするアドインを終了します。</param>
-        <summary>読み込まれているすべてのアドインをアンロードし、必要に応じて削除してから、<see cref="T:Microsoft.Office.Interop.Word.AddIns" />コレクションです。</summary>
-        <remarks>
-          <para>1 つのテンプレートまたは WLL をアンロードするには、次のように設定します。、<see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Word.AddIn" /><b>false を指定</b>するオブジェクト。1 つのテンプレートまたは WLL を<b>AddIns</b>コレクションから削除するには、適用、<see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" />メソッドを<b>AddIn</b>オブジェクト。</para>
-          <para />
-        </remarks>
+        <param name="RemoveFromList"><b>True</b>を設定すると、アンロードされたアドインが<b>AddIns</b>コレクションから削除されます (名前は [テンプレートとアドイン] ダイアログボックスから削除されます)。 <b>False</b> に設定すると、読み込みを解除したアドインはコレクションに残ります。</param>
+        <summary>読み込まれた<see cref="T:Microsoft.Office.Interop.Word.AddIns" />すべてのアドインをアンロードし、必要に応じてコレクションから削除します。</summary>
+        <remarks><para>1つのテンプレートまたは WLL をアンロードする<see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" />には、 <see cref="T:Microsoft.Office.Interop.Word.AddIn" />オブジェクトのプロパティを<b>False</b>に設定します。 <b>AddIns</b>コレクションから1つのテンプレートまたは WLL を削除するに<see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" />は、 <b>AddIn</b>オブジェクトにメソッドを適用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

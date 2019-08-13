@@ -1,13 +1,5 @@
 <Type Name="Languages" FullName="Microsoft.Office.Interop.Word.Languages">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b8f79b25011149328004e52e86f60247795a30ec" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671373" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Languages : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1baf8eae7e14a2522bca48a798cc4d1874daefdf" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146655" /></Metadata><TypeSignature Language="C#" Value="public interface Languages : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Languages implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Languages" />
   <TypeSignature Language="VB.NET" Value="Public Interface Languages&#xA;Implements IEnumerable" />
@@ -30,13 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.Language" />校正または Microsoft Word で書式設定に使用する言語を表すオブジェクト。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word._Application.Languages" /><b>の言語</b>のコレクションを返すプロパティです</para>。
-      <para>使用<b>言語</b>(<paramref name="index" />) オブジェクトを取得する 1 つ<b>の言語</b>に、<paramref name="index" />の値を指定できます、<see cref="P:Microsoft.Office.Interop.Word.Language.Name" />プロパティ、値の<see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" />のいずれかのプロパティ、<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数、またはそのいずれかの<see cref="T:Microsoft.Office.Core.MsoLanguageID" />定数</para>。
-      <para>、<see cref="P:Microsoft.Office.Interop.Word.Languages.Count" />プロパティは、テキストをマークする対象の言語の数を返します (言語の校正ツールが使用可能である)。校正を確認するには、校正する各言語用の適切なツールをインストールしてください。次の各 .dll ファイルと .lex ファイルの両方を必要: 類義語辞典、スペル チェック、文章校正、およびハイフネーション ツールです</para>。
-      <para><b>WdNoProofing</b>としてテキストをマークする場合、Word は、スペル チェックと文章校正のチェックを実行している場合にマークされたテキストをスキップします。校正なしの指定した言語のテキストをマークするのには、言語の設定コマンド ([ツール] メニューの [言語] のサブメニュー) を使用します</para>。
-      <para /></remarks>
+    <summary>Microsoft Word の<see cref="T:Microsoft.Office.Interop.Word.Language" />校正または書式設定に使用される言語を表すオブジェクトのコレクションです。</summary>
+    <remarks><para>言語コレクション<see cref="P:Microsoft.Office.Interop.Word._Application.Languages" />を取得するの<b></b>にには、プロパティを使用します。</para>
+      <para>言語<b></b>(<paramref name="index" />) を使用して1つの<b>言語</b>オブジェクト<paramref name="index" />を返します。ここで<see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> 、プロパティの値、 <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" />プロパティの値、いずれか<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />の定数、または<see cref="T:Microsoft.Office.Core.MsoLanguageID" />定数のいずれかを指定できます。</para>
+      <para>この<see cref="P:Microsoft.Office.Interop.Word.Languages.Count" />プロパティは、テキストをマークできる言語の数 (校正ツールが使用可能な言語) を返します。 校正するには、チェックする各言語に適したツールを組み込んでおく必要があります。 類義語辞典、スペル チェック、文章校正、およびハイフネーションのそれぞれのツールに対して .dll ファイルと .lex ファイルの両方が必要です。</para>
+      <para>定数 <b>wdNoProofing</b> を指定すると、スペル チェックまたは文章校正の実行時にこの文字列はチェックの対象となりません。 指定した言語の文字列をマークしたり、校正を行わないようにするには、[言語の設定] コマンド ([ツール] メニューの [言語] サブメニュー) を使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,12 +109,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -184,7 +174,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">位置を表す序数または各オブジェクトの名前を表す文字列を示す<b>オブジェクト</b>。</param>
+        <param name="Index">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

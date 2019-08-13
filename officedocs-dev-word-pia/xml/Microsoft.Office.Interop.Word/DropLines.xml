@@ -1,13 +1,5 @@
 <Type Name="DropLines" FullName="Microsoft.Office.Interop.Word.DropLines">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="abaf6263fd0ca93e5a64de2bdeadffed2b987058" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671412" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DropLines" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fe2c1bf2a7003fed3024219636a9c7c6b5fcdbe4" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146914" /></Metadata><TypeSignature Language="C#" Value="public interface DropLines" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DropLines" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DropLines" />
   <TypeSignature Language="VB.NET" Value="Public Interface DropLines" />
@@ -27,10 +19,9 @@
   </Attributes>
   <Docs>
     <summary>グラフ種類グループの降下線を表します。</summary>
-    <remarks>
-      <para>ドロップの線は、x 軸をグラフ内のポイントを接続します。だけの行と面グラフ グループには、降下線を持つことができます。このオブジェクトでは、コレクションはありません。オブジェクトを 1 つのドロップの行ではありません。降下線を表示、グラフ種類グループのすべてのポイントに対して有効にされているいずれかの方法か、無効に</para>
-      <para>場合、<see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasDropLines" />プロパティに<b>false を指定</b>のプロパティのほとんどは、<see cref="T:Microsoft.Office.Interop.Word.DropLines" />オブジェクトが無効になります</para>。
-      <para /></remarks>
+    <remarks><para>降下線はグラフのデータ要素と x 軸を結ぶ線です。降下線を設定できるのは、折れ線グラフ グループと面グラフ グループだけです。単体の DropLine オブジェクトというオブジェクトはないので、降下線を表示するか非表示にするかを、グラフ種類グループの各データ要素ごとに設定することはできません。</para>
+      <para>プロパティが<b>False</b>の場合は、 <see cref="T:Microsoft.Office.Interop.Word.DropLines" />オブジェクトのほとんどのプロパティが無効になります。 <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasDropLines" /></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,10 +47,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用<see cref="T:Microsoft.Office.Interop.Word._Application" />すると、Microsoft Word アプリケーションを表すオブジェクトが返されます。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,10 +75,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> 、オブジェクトの枠線を表すオブジェクト。 値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>オブジェクトの<see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />枠線を表すオブジェクトを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,14 +103,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトが Microsoft Word で作成された場合、<see cref="P:Microsoft.Office.Interop.Word.DropLines.Creator" />を返します文字列を表す 16 進数値である 4d535744 をします。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
-          <para />
-        </remarks>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>オブジェクトが Microsoft Word で作成されている<see cref="P:Microsoft.Office.Interop.Word.DropLines.Creator" />場合、このプロパティは、文字列 "MSWD" を表す、16進数値の4D535744 を返します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -175,10 +158,8 @@
       </ReturnValue>
       <Docs>
         <summary>線、塗りつぶし、およびオブジェクトの書式設定の効果を取得します。
-読み取り専用<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+読み取り専用<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,9 +187,7 @@
       </ReturnValue>
       <Docs>
         <summary>オブジェクトの名前を表す文字列型 ( <b>String</b> ) の値を返します。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,10 +214,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親を返します。読み取り専用 <b>オブジェクト</b> 。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定したオブジェクトの親を返します。 読み取り専用 <b>オブジェクト</b> 。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

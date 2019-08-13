@@ -1,13 +1,5 @@
 <Type Name="UndoRecord" FullName="Microsoft.Office.Interop.Word.UndoRecord">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="cad0a001261dae8c6e1145efa4c99df630fc70b1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671561" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface UndoRecord" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dccd67ac1bae806d140ca00b07a8119ac1166895" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143792" /></Metadata><TypeSignature Language="C#" Value="public interface UndoRecord" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UndoRecord" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.UndoRecord" />
   <TypeSignature Language="VB.NET" Value="Public Interface UndoRecord" />
@@ -53,13 +45,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word 2010 のアプリケーションを表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word 2010 のアプリケーションを表すオブジェクト。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" /> 2010 アプリケーションを表すオブジェクトを取得します。</summary>
+        <value>Microsoft <see cref="T:Microsoft.Office.Interop.Word.Application" /> Word 2010 アプリケーションを表すオブジェクト。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -85,12 +74,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトが作成されたアプリケーションを示す 32 ビット整数を取得します。</summary>
-        <value>指定したオブジェクトが作成されたアプリケーションを示す 32 ビット整数。</value>
-        <remarks>
-          <para>読み取り専用<b>long</b>です。オブジェクトは、Microsoft Word で作成されている場合、このプロパティは文字列"MSWD"を表す 16 進数、値である 4d535744 を返します。このプロパティは、各アプリケーションが 4 文字のクリエータ コードには、Apple Macintosh で使用するために設計されました。MSWD 元のコードが Word には、たとえば、します</para>。
-          <para><b>注意</b>: この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para /></remarks>
+        <summary>指定したオブジェクトが作成されたアプリケーションを示す32ビット整数を取得します。</summary>
+        <value>指定したオブジェクトが作成されたアプリケーションを示す32ビットの整数。</value>
+        <remarks><para>値の取得のみ可能な<b>long</b>値です。 オブジェクトが Microsoft Word で作成されている場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 このプロパティは、各アプリケーションが 4 文字のクリエータ コードには、Apple Macintosh で使用するために設計されました。 たとえば、Word には、作成者コード MSWD です。</para>
+          <para>
+            <b>注意</b>: この値は、定数<b>wdCreatorCode</b>で表すこともできます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomRecordLevel">
@@ -116,12 +105,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在アクティブなユーザー設定の [元に戻すアクションの呼び出しの数を指定する値を取得します。</summary>
-        <value>現在アクティブなユーザー設定の [元に戻すアクションの呼び出しの数を指定します。</value>
-        <remarks>
-          <para>読み取り専用です。アクティブなユーザー設定の元に戻す操作がない場合は、このプロパティは 0 に設定します。</para>
-          <para />
-        </remarks>
+        <summary>現在アクティブになっているユーザー設定の元に戻す操作の呼び出しの数を指定する値を取得します。</summary>
+        <value>現在アクティブになっているユーザー設定の元に戻すアクションの呼び出しの数を指定します。</value>
+        <remarks><para>読み取り専用です。 ユーザー設定の元に戻す操作がアクティブでない場合、このプロパティは0に設定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomRecordName">
@@ -147,12 +134,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>すべてのユーザー設定の [元に戻す操作が完了すると、元に戻すスタックに表示されるエントリを指定する文字列を取得します。</summary>
-        <value>すべてのユーザー設定の [元に戻す操作が完了すると、元に戻すスタックに表示されるエントリを指定します。</value>
-        <remarks>
-          <para>読み取り専用です。このプロパティを指定すると、ユーザー定義の undo レコードが他のユーザー定義の undo レコード内でネストされている場合は、元に戻す操作が完了したすべてのユーザー設定の元に戻すスタックにどのような文字列が表示されます。複数呼び出しを行っている場合、<see cref="M:Microsoft.Office.Interop.Word.UndoRecord.StartCustomRecord" />メソッドは、入れ子になった場合、最初の呼び出しで指定された文字列はプロパティによって返されるこの。アクティブなアクションがない場合、プロパティは空の文字列を返します。</para>
-          <para />
-        </remarks>
+        <summary>すべてのユーザー設定の元に戻す操作が完了したときに、元に戻すスタックに表示されるエントリを指定する文字列を取得します。</summary>
+        <value>すべてのユーザー設定の元に戻す操作が完了したときに、元に戻すスタックに表示されるエントリを指定します。</value>
+        <remarks><para>読み取り専用です。 ユーザー設定の元に戻すレコードが他のユーザー設定の元に戻すレコードの中にネストされている場合、このプロパティは、ユーザー設定の元に戻すアクションをすべて完了した後に元に戻すスタックに表示される文字列を指定します。 メソッドへの<see cref="M:Microsoft.Office.Interop.Word.UndoRecord.StartCustomRecord" />複数の呼び出しがネストされている場合、最初の呼び出しで指定された文字列がこのプロパティによって返されます。 アクティブなアクションがない場合、このプロパティは空の文字列を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndCustomRecord">
@@ -203,13 +188,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>カスタムの元に戻す操作が記録されているかどうかを取得します。</summary>
-        <value>
-          <b>true の</b>場合は、ユーザー設定の [元に戻す操作を記録中です。それ以外の場合、 <b>false を指定</b>します。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>ユーザー設定の元に戻す操作が記録されているかどうかを取得します。</summary>
+        <value>ユーザー設定の元に戻す操作が記録されている場合は<b>true</b> 。それ以外の場合は<b>false</b>。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -235,9 +217,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、<see cref="T:System.Object" />の指定した親オブジェクトを表す<see cref="T:Microsoft.Office.Interop.Word.UndoRecord" />オブジェクトです。</summary>
-        <value>
-          <see cref="T:System.Object" />の指定した親オブジェクトを表す<see cref="T:Microsoft.Office.Interop.Word.UndoRecord" />オブジェクトです。</value>
+        <summary>は<see cref="T:System.Object" /> 、指定<see cref="T:Microsoft.Office.Interop.Word.UndoRecord" />したオブジェクトの親オブジェクトを表すを取得します。</summary>
+        <value><see cref="T:System.Object" />指定<see cref="T:Microsoft.Office.Interop.Word.UndoRecord" />したオブジェクトの親オブジェクトを表す。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,10 +246,9 @@
       <Docs>
         <param name="Name">ユーザー定義の undo レコードの名前を指定します。この文字列は、64 文字に制限されています。長い文字列を指定した場合は、文字列が 64 文字に切り捨てられます。</param>
         <summary>ユーザー設定の元に戻すレコードの作成を開始します。</summary>
-        <remarks>
-          <para>場合、 <paramref name="Name" /> 、パラメーターを省略するか空の文字列では、Word 2010 を使用して、元に戻すレコードの名前と実行する最初のコマンドの名前</para>。
-          <para>このメソッドは、名前で定義されたレコードの下でアクティブになっている間にアプリケーションを実行するすべてのアクションを記録するユーザー定義の undo レコードの作成を開始します</para>。
-          <para /></remarks>
+        <remarks><para><paramref name="Name" />パラメーターを省略するか、または空の文字列を指定すると、Word 2010 は、元に戻すレコードの名前として実行される最初のコマンドの名前を使用します。</para>
+          <para>このメソッドは、ユーザー設定の元に戻すレコードの作成を開始します。これは、アプリケーションに対して実行されたすべてのアクションを、名前で定義されたレコードの下でアクティブにしたときに記録します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

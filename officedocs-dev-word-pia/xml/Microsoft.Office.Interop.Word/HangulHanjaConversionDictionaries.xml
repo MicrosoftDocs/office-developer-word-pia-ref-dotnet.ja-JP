@@ -1,13 +1,5 @@
 <Type Name="HangulHanjaConversionDictionaries" FullName="Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="65aad3e41b0fa2a74ea7ef6c7d92127e0018faa4" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671889" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface HangulHanjaConversionDictionaries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7f106055e619307a9bffe6eb130466a321eefa69" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146739" /></Metadata><TypeSignature Language="C#" Value="public interface HangulHanjaConversionDictionaries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HangulHanjaConversionDictionaries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" />
   <TypeSignature Language="VB.NET" Value="Public Interface HangulHanjaConversionDictionaries&#xA;Implements IEnumerable" />
@@ -30,14 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />、有効なハングル/漢字変換辞書を含むオブジェクトです。</summary>
-    <remarks>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" />を現在アクティブなユーザー変換辞書のコレクションを返すプロパティです</para>。使用の
-      <para>、<see cref="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Add(System.String)" />有効なユーザー変換辞書のコレクションに新しいユーザー変換辞書を追加する方法です。指定された名前のファイルがない場合は<paramref name="FileName" />、それが作成されます</para>使用の
-      <para>、<see cref="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ClearAll" />すべてのユーザー変換辞書をアンロードするメソッドです。ただし、このメソッドは、辞書ファイルを削除されません。このメソッドを使用すると、コレクション内のユーザー変換辞書の数が 0 (ゼロ) です</para>。使用している新しい単語を追加するユーザー辞書を設定する
-      <para>、<see cref="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ActiveCustomDictionary" />プロパティ。ユーザー変換辞書でない辞書にこのプロパティを設定しようとすると、エラーが発生します</para>。
-      <para>、<see cref="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Maximum" />プロパティは、アプリケーションがサポートできる同時ユーザー変換辞書の最大数を返します。Word では、この最大数は 10 です</para>。
-      <para /></remarks>
+    <summary>有効なハングル<see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> /漢字のユーザー変換辞書を含むオブジェクトのコレクションです。</summary>
+    <remarks><para><see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" />プロパティを使用して、現在アクティブなユーザー変換辞書のコレクションを取得します。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Add(System.String)" />メソッドを使用して、有効なユーザー変換辞書のコレクションに新しいユーザー変換辞書を追加します。 指定した名前のファイルがない場合は<paramref name="FileName" />、そのファイルが作成されます。</para>
+      <para>メソッドを<see cref="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ClearAll" />使用して、すべてのユーザー変換辞書の読み込みを解除します。 ただし、このメソッドは、辞書ファイルを削除されません。 このメソッドを使用すると、コレクション内のユーザー変換辞書の数が 0 (ゼロ) です。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ActiveCustomDictionary" />プロパティを使用して、新しい単語を追加するユーザー辞書を設定します。 ユーザー変換辞書でない辞書にこのプロパティを設定しようとすると、エラーが発生します。</para>
+      <para>この<see cref="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Maximum" />プロパティは、アプリケーションがサポートできる同時ユーザー変換辞書の最大数を返します。 Word では、この最大数は 10 です。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ActiveCustomDictionary">
@@ -66,7 +57,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />の単語の追加先となるユーザー辞書を表すオブジェクト。</summary>
+        <summary>返すまたは、 <see cref="T:Microsoft.Office.Interop.Word.Dictionary" />単語を追加するユーザー辞書を表すオブジェクトを設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -94,14 +85,12 @@
         <Parameter Name="FileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>文字列</b> が必要です。 辞書ファイルの文字列名。 文字列のパスを指定しない場合は、校正ツールのパスが使用されます。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />を有効なユーザー変換辞書のコレクションに追加された新しい変換辞書を表すオブジェクト。</summary>
+        <param name="FileName"><b>文字列</b> が必要です。 辞書ファイルの名前を表す文字列を指定します。 文字列にパスが指定されていない場合は、校正ツールのパスが使用されます。</param>
+        <summary>有効な<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />ユーザー変換辞書のコレクションに追加された新しい変換辞書を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>場合によって指定された名前のファイル<paramref name="FileName" />が存在しないいずれかが作成されます</para>。使用の
-          <para>、<see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" />のユーザー変換辞書のコレクションを返すプロパティです。<see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" />コレクションには、有効なユーザー変換辞書だけが含まれます</para>。
-          <para /></remarks>
+        <remarks><para>指定<paramref name="FileName" />した名前のファイルが存在しない場合は、そのファイルが作成されます。</para>
+          <para><see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" />プロパティを使用して、ユーザー変換辞書のコレクションを取得します。 コレクション<see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" />には、有効なユーザー変換辞書のみが含まれています。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -127,7 +116,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -185,11 +174,8 @@
       <Parameters />
       <Docs>
         <summary>すべてのユーザー辞書または変換辞書の読み込みを解除します。</summary>
-        <remarks>
-          <para>
-            <b>ClearAll</b>メソッドを使用すると、<see cref="T:Microsoft.Office.Interop.Word.Dictionaries" />または<see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" />オブジェクトでは、ユーザー設定または変換辞書ファイルは削除されません。このメソッドを使用すると、ユーザー辞書または変換辞書のコレクションの数は、0 (ゼロ) です。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>ClearAll</b>メソッドを<see cref="T:Microsoft.Office.Interop.Word.Dictionaries" />または<see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" />オブジェクトで使用すると、ユーザー辞書または変換辞書のファイルが削除されません。 このメソッドを使用すると、コレクション内のユーザー辞書または変換辞書の数は0になります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -243,12 +229,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -309,7 +294,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">位置を表す序数または各オブジェクトの名前を表す文字列を示す<b>オブジェクト</b>。</param>
+        <param name="Index">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

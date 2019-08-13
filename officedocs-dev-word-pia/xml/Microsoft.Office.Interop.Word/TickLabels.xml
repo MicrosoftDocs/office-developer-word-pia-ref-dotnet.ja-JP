@@ -1,13 +1,5 @@
 <Type Name="TickLabels" FullName="Microsoft.Office.Interop.Word.TickLabels">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7b1c2c7fc3292641641494659a356494a0e138bf" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672334" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TickLabels" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0f6662574427978805ce85168409794e1affd85c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143813" /></Metadata><TypeSignature Language="C#" Value="public interface TickLabels" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TickLabels" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TickLabels" />
   <TypeSignature Language="VB.NET" Value="Public Interface TickLabels" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>グラフの軸の目盛に付けるラベルを表します。</summary>
-    <remarks>
-      <para>このオブジェクトはコレクションはありません。1 つの目盛ラベルを表すオブジェクトがないです。単位としてすべての目盛に付けるラベルを返す必要があります</para>
-      <para>項目軸の目盛ラベルのテキスト、グラフに関連付けられているカテゴリの名前に由来します。項目軸の既定の目盛のラベル テキストは、この軸の左端を基準にしてカテゴリの位置を示す番号です。数を変更するのにはラベルが付いていない目盛り目盛ラベルの間で、変更する必要があります、 <see cref="P:Microsoft.Office.Interop.Word.Axis.TickLabelSpacing" /> 、カテゴリ軸のプロパティ</para>。
-      <para>目盛ラベルのテキスト、数値軸の計算に基づいて、 <see cref="P:Microsoft.Office.Interop.Word.Axis.MajorUnit" />、 <see cref="P:Microsoft.Office.Interop.Word.Axis.MinimumScale" />、および<see cref="P:Microsoft.Office.Interop.Word.Axis.MaximumScale" />の値軸のプロパティです。数値軸の目盛ラベルの文字列を変更するには、これらのプロパティの値を変更する必要があります</para>。
-      <para /></remarks>
-    <example>
-      <para>使用の<see cref="P:Microsoft.Office.Interop.Word.Axis.TickLabels" />オブジェクトを<b>返すプロパティ</b>を返すプロパティです。次の例では、作業中の文書の最初のグラフの数値軸の目盛ラベルの表示形式を設定します。</para>
+    <remarks><para>このオブジェクトはコレクションではありません。1 つの目盛ラベルを表すオブジェクトはありません。目盛ラベル全体がオブジェクトとして扱われます。</para>
+      <para>項目軸の目盛ラベルの文字列は、グラフの対応する項目名です。 項目軸の既定の目盛ラベルの文字列は、関連するグラフの項目軸の各項目に左から順に付けられる番号です。 目盛ラベル間のラベルのない目盛の数を変更するには、項目軸<see cref="P:Microsoft.Office.Interop.Word.Axis.TickLabelSpacing" />のプロパティを変更する必要があります。</para>
+      <para>数値軸の目盛ラベルの文字列は、数値軸の、 <see cref="P:Microsoft.Office.Interop.Word.Axis.MajorUnit" /> <see cref="P:Microsoft.Office.Interop.Word.Axis.MinimumScale" />、、および<see cref="P:Microsoft.Office.Interop.Word.Axis.MaximumScale" />プロパティに基づいて計算されます。 数値軸の目盛ラベルの文字列を変更するには、これらのプロパティの値を変更します。</para>
+      <para> </para></remarks>
+    <example><para>TickLabels オブジェクト<see cref="P:Microsoft.Office.Interop.Word.Axis.TickLabels" />を取得するの<b></b>にには、プロパティを使用します。 次の例では、作業中の文書の最初のグラフの数値軸の目盛ラベルの表示形式を設定します。</para>
       <code>&lt;span class="label"&gt;With ActiveDocument.InlineShapes(1) 
 
 
@@ -1058,8 +1048,7 @@
 
 
 
-End With&lt;/span&gt;</code>
-    </example>
+End With&lt;/span&gt;</code></example>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -1088,7 +1077,7 @@ End With&lt;/span&gt;</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定されたふりがなまたは目盛ラベルの位置を表す<b>Long</b>値を設定します。</summary>
+        <summary>指定されたふりがなまたは目盛ラベルの位置を表す長整数型 (<b>Long</b>) の値を取得、または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1116,11 +1105,10 @@ End With&lt;/span&gt;</code>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 値の取得のみ可能です。</summary>
+        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用<see cref="T:Microsoft.Office.Interop.Word._Application" />すると、Microsoft Word アプリケーションを表すオブジェクトが返されます。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>この例では myObject を作成したアプリケーションに関するメッセージが表示されます。</para>
+        <example><para>次の使用例は、myObject というオブジェクトを作成したアプリケーションに関するメッセージを表示します。</para>
           <code>&lt;span class="label"&gt;Set myObject = ActiveDocument 
 
 
@@ -1379,8 +1367,7 @@ End With&lt;/span&gt;</code>
 
 If myObject.&lt;/span&gt;
 &lt;i&gt;Application&lt;/i&gt;
-&lt;span class="label"&gt;.Value = "Microsoft Word" Then    MsgBox "This is a Word Application object."Else    MsgBox "This is not a Word Application object."End If&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;.Value = "Microsoft Word" Then    MsgBox "This is a Word Application object."Else    MsgBox "This is not a Word Application object."End If&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="AutoScaleFont">
@@ -1416,7 +1403,7 @@ If myObject.&lt;/span&gt;
       </ReturnValue>
       <Docs>
         <summary>内部使用のため予約済みです。</summary>
-        <value>返します。 <see cref="T:System.Object" />。</value>
+        <value>を<see cref="T:System.Object" />返します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1443,12 +1430,10 @@ If myObject.&lt;/span&gt;
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を取得します。値の取得のみ可能です。長整数型 ( <b>Long</b> ) の値を使用します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。 取得のみ可能な <b>Long</b> 値です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Word で作成されている場合、<b>作成者</b>を返します、16 進数の値である 4d535744 を文字列します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
-          <para />
-        </remarks>
+        <remarks><para>オブジェクトは、Microsoft Word で作成されている場合、 <b>作成者</b> を返します、16 進数の値である 4d535744 を文字列します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -1500,7 +1485,7 @@ If myObject.&lt;/span&gt;
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>項目軸ラベルのレベル数を表す<b>long 型</b>の値を返します。</summary>
+        <summary>項目軸ラベルのレベル番号を表す長整数型 (<b>Long</b>) の値を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1528,7 +1513,7 @@ If myObject.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.ChartFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.ChartFont" />を指定したオブジェクトのフォントを表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.ChartFont" />たオブジェクトのフォントを表すオブジェクト型 (object) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1558,7 +1543,7 @@ If myObject.&lt;/span&gt;
       <Docs>
         <summary>線、塗りつぶし、およびオブジェクトの書式設定の効果を取得します。
 
-読み取り専用<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />。</summary>
+読み取り専用<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1589,12 +1574,10 @@ If myObject.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>軸がマルチレベルかどうかを設定します。  ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
+        <summary>軸がマルチレベルかどうかを設定します。  読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティの既定値は、 <b>true を指定</b>します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティの既定値は、 <b>true を指定</b> します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1651,12 +1634,10 @@ If myObject.&lt;/span&gt;
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、オブジェクトの表示形式コードを表す<b>文字列</b>値を設定します。</summary>
+        <summary>指定されたオブジェクトの表示形式を表す文字列型 (<b>String</b>) の値を取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>形式は、[表示形式]、[セルの書式設定] ダイアログ ボックスの文字列と同じです。<b>Format</b>関数は、<b>数字</b>よりもコードの文字列を別の形式を使用して、<see cref="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormatLocal" />のプロパティです。</para>
-          <para />
-        </remarks>
+        <remarks><para>表示形式を示す文字列は、[ セルの書式設定] ダイアログ ボックスの [ 表示形式] の文字列と同じです。 <b>Format</b>関数は、 <b>NumberFormat</b>およびプロパティとは異なる書式コード文字列<see cref="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormatLocal" />を使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLinked">
@@ -1685,12 +1666,10 @@ If myObject.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合、数値書式をセルにリンクします。セルの数値書式が変更されると、ラベルの数値書式も変更されます。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <summary><b>True</b> の場合、数値書式をセルにリンクします。セルの数値書式が変更されると、ラベルの数値書式も変更されます。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>この例では、そのセルを作業中の文書の最初のグラフの数値軸の目盛ラベルの表示形式をリンクします。</para>
+        <example><para>次の使用例は、作業中の文書に含まれる最初のグラフの数値軸の目盛ラベルの数値の表示形式をセルにリンクします。</para>
           <code>&lt;span class="label"&gt;With ActiveDocument.InlineShapes(1) 
 
 
@@ -2205,8 +2184,7 @@ If myObject.&lt;/span&gt;
 
         .Chart.Axes(xlValue).TickLabels.&lt;/span&gt;
 &lt;i&gt;NumberFormatLinked&lt;/i&gt;
-&lt;span class="label"&gt;= True    End IfEnd With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= True    End IfEnd With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLocal">
@@ -2235,13 +2213,10 @@ If myObject.&lt;/span&gt;
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、ユーザーの言語で文字列としてオブジェクトの書式設定コードを表す<b>バリアント型</b>の値を設定します。</summary>
+        <summary>指定されたオブジェクトの表示形式をコード実行時の言語の文字列で表すバリアント型 (<b>Variant</b>) の値を取得、または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Format</b>関数は、コードの文字列を別の形式を使用して、<see cref="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormat" />と<b>NumberFormatLocal</b>プロパティです。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Format</b>関数は、 <see cref="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormat" />および数値<b>formatlocal</b>プロパティとは異なる書式コード文字列を使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Offset">
@@ -2270,14 +2245,11 @@ If myObject.&lt;/span&gt;
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはラベルのレベル、および先頭レベルと軸線間の距離の間の距離を表す<b>Long</b>値を設定します。</summary>
+        <summary>ラベルのレベル間の距離、および先頭レベルと軸線との距離を表す長整数型 (<b>Long</b>) の値を取得、または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>デフォルトの距離は、100% になり、軸ラベルと軸線の既定の間隔を表します。0 ~ 1000 の軸ラベルのフォント サイズを基準にして、整数のパーセントを指定できます。</para>
-          <para />
-        </remarks>
-        <example>
-          <para>次の使用例は、オフセットが 500 未満の場合、2 回、現在の設定、作業中の文書内の最初のグラフの項目軸ラベルの間隔を設定します。</para>
+        <remarks><para>既定の距離は 100% です。これは、軸ラベルと軸線の既定の間隔を表します。使用できる範囲は、0 ～ 1000 のパーセントを示す整数で、軸ラベルのフォント サイズに比例します。</para>
+          <para> </para></remarks>
+        <example><para>次の使用例は、作業中の文書に含まれる最初のグラフの項目軸のラベル間隔を現在の設定値の2倍に設定します。オフセットが500より小さい場合。</para>
           <code>&lt;span class="label"&gt;With ActiveDocument.InlineShapes(1) 
 
 
@@ -3052,8 +3024,7 @@ If myObject.&lt;/span&gt;
 &lt;i&gt;Offset&lt;/i&gt;
 &lt;span class="label"&gt;= .&lt;/span&gt;
 &lt;i&gt;Offset&lt;/i&gt;
-&lt;span class="label"&gt;* 2            End If        End With    End IfEnd With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;* 2            End If        End With    End IfEnd With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -3082,12 +3053,10 @@ If myObject.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.XlTickLabelOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはテキストの向きを表す<b>Long</b>値を設定します。</summary>
+        <summary>文字列の向きを表す長整数型 (<b>Long</b>) の値を取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>– 90 ~ 90 ° またはのいずれかから整数値をこのプロパティの値であることができます、<see cref="T:Microsoft.Office.Interop.Word.XlTickLabelOrientation" />定数。</para>
-          <para />
-        </remarks>
+        <remarks><para>このプロパティの値には、-90 ~ 90 degrees または<see cref="T:Microsoft.Office.Interop.Word.XlTickLabelOrientation" />定数のいずれかの整数値を指定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -3113,7 +3082,7 @@ If myObject.&lt;/span&gt;
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親を返します。読み取り専用 <b>オブジェクト</b> 。</summary>
+        <summary>指定したオブジェクトの親を返します。 読み取り専用 <b>オブジェクト</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3144,7 +3113,7 @@ If myObject.&lt;/span&gt;
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.XlReadingOrder" />を指定したオブジェクトの読み取り順序を表す定数です。 読み取り/書き込み <b>時間</b> です。</summary>
+        <summary>指定したオブジェクト<see cref="T:Microsoft.Office.Interop.Word.XlReadingOrder" />の読み取り順序を表す定数を設定または返します。 値の取得と設定が可能な長整数型 (<b>Long</b>) の値です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

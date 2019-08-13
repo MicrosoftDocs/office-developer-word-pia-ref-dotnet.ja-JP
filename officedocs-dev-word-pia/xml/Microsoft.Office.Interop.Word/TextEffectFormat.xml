@@ -1,13 +1,5 @@
 <Type Name="TextEffectFormat" FullName="Microsoft.Office.Interop.Word.TextEffectFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="535c52f83ff14879047adca8e3275089ad459d85" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670930" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TextEffectFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3bccc6953b9e4d0fcd66b37d7cece52b10c81de8" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143834" /></Metadata><TypeSignature Language="C#" Value="public interface TextEffectFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextEffectFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TextEffectFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextEffectFormat" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>ワードアート オブジェクトに使用されるメソッドとプロパティを含みます。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.Shape.TextEffect" /> 、 <b>TextEffectFormat</b>オブジェクトを取得するプロパティです。</para>
-      <para />
-    </remarks>
+    <remarks><para>TextEffectFormat オブジェクト<see cref="P:Microsoft.Office.Interop.Word.Shape.TextEffect" />を取得するの<b></b>にには、プロパティを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -59,35 +49,32 @@
         <ReturnType>Microsoft.Office.Core.MsoTextEffectAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたテキスト効果の配置を表す定数を設定または返します。</summary>
+        <summary>指定したテキスト効果の配置を表す定数を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoTextEffectAlignment" />次の<b>msotexteffectalignment クラス</b>定数のいずれかをすることができます。</para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTextEffectAlignment" />
-            <b>MsoTextEffectAlignment</b>定数のいずれか:</para>
-          <para>
-            <b>msoTextEffectAlignmentCentered </b>
+            <b>msoTextEffectAlignmentCentered</b>
           </para>
           <para>
-            <b>msoTextEffectAlignmentLeft </b>
+            <b>msoTextEffectAlignmentLeft</b>
           </para>
           <para>
-            <b>msoTextEffectAlignmentLetterJustify </b>
+            <b>msoTextEffectAlignmentLetterJustify</b>
           </para>
           <para>
             <b>msoTextEffectAlignmentMixed</b>
           </para>
           <para>
-            <b>msoTextEffectAlignmentRight </b>
+            <b>msoTextEffectAlignmentRight</b>
           </para>
           <para>
-            <b>msoTextEffectAlignmentStretchJustify </b>
+            <b>msoTextEffectAlignmentStretchJustify</b>
           </para>
           <para>
             <b>msoTextEffectAlignmentWordJustify</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -113,7 +100,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -141,12 +128,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FontBold">
@@ -175,26 +161,25 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定をどのように太字のフォントを表す定数は指定したテキストの効果を処理します。</summary>
+        <summary>指定したテキスト効果に対して太字のフォントを処理する方法を表す定数を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" />使用できる定数は、次に示す<b>MsoTriState</b>クラスの定数のいずれかです。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" />これら<b>msotristate クラス</b>の定数のいずれか: </para>
-          <para>
-            <b>msoCTrue </b>
+            <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse </b>
+            <b>msoFalse</b>
           </para>
           <para>
-            <b>msoTriStateMixed </b>
+            <b>msoTriStateMixed</b>
           </para>
           <para>
-            <b>msoTriStateToggle </b>
+            <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b>指定したワードアートのフォントは太字です</para>。
-          <para /></remarks>
+            <b>msoTrue</b>指定したワードアートのフォントが太字になります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FontItalic">
@@ -225,26 +210,24 @@
       <Docs>
         <summary>ワードアートのテキストを斜体にします。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" />使用できる定数は、次に示す<b>MsoTriState</b>クラスの定数のいずれかです。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" />これら<b>msotristate クラス</b>の定数のいずれか: </para>
-          <para>
-            <b>msoCTrue </b>
+            <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse </b>
+            <b>msoFalse</b>
           </para>
           <para>
-            <b>msoTriStateMixed </b>
+            <b>msoTriStateMixed</b>
           </para>
           <para>
-            <b>msoTriStateToggle </b>
+            <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msotrue を設定します。</b>
+            <b>msoTrue</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FontName">
@@ -273,7 +256,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ドロップ キャップ文字のフォントの名前を設定または返します。</summary>
+        <summary>ドロップキャップ文字のフォントの名前を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -304,7 +287,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ポイント単位で、指定したワードアートのフォント サイズを設定または返します。</summary>
+        <summary>指定したワードアートのフォントサイズをポイント単位で取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -337,26 +320,24 @@
       <Docs>
         <summary>ワードアート オブジェクトで文字がカーニングされたことを示します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" />使用できる定数は、次に示す<b>MsoTriState</b>クラスの定数のいずれかです。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" />これら<b>msotristate クラス</b>の定数のいずれか: </para>
-          <para>
-            <b>msoCTrue </b>
+            <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse </b>
+            <b>msoFalse</b>
           </para>
           <para>
-            <b>msoTriStateMixed </b>
+            <b>msoTriStateMixed</b>
           </para>
           <para>
-            <b>msoTriStateToggle </b>
+            <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msotrue を設定します。</b>
+            <b>msoTrue</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NormalizedHeight">
@@ -385,29 +366,26 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>MsoTrue</b> 指定されたワードアートのすべての文字 (大文字と小文字の両方) が同じ高さである場合。</summary>
+        <summary><b>MsoTrue</b> 指定されたワードアートのすべての文字 (大文字と小文字の両方) が同じ高さである場合。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" />使用できる定数は、次に示す<b>MsoTriState</b>クラスの定数のいずれかです。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" />これら<b>msotristate クラス</b>の定数のいずれか: </para>
-          <para>
-            <b>msoCTrue </b>
+            <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse </b>
+            <b>msoFalse</b>
           </para>
           <para>
-            <b>msoTriStateMixed </b>
+            <b>msoTriStateMixed</b>
           </para>
           <para>
-            <b>msoTriStateToggle </b>
+            <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msotrue を設定します。</b>
+            <b>msoTrue</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -466,10 +444,8 @@
       <Docs>
         <summary>指定したワードアートの形状を設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>設定、<see cref="P:Microsoft.Office.Interop.Word.TextEffectFormat.PresetTextEffect" />プロパティは、自動的に<b>PresetShape</b>プロパティを設定します。</para>
-          <para />
-        </remarks>
+        <remarks><para>プロパティを<see cref="P:Microsoft.Office.Interop.Word.TextEffectFormat.PresetTextEffect" />設定すると、 <b>PresetShape</b>プロパティが自動的に設定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PresetTextEffect">
@@ -500,10 +476,9 @@
       <Docs>
         <summary>指定したワードアートのスタイルを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>の値に対して、このプロパティは、[ワードアート ギャラリー] ダイアログ ボックス ([挿入] メニュー)、左から右への番号の書式に対応して上下から</para>。
-          <para>指定した図形の他の多くの書式設定プロパティを設定する<b>PresetTextEffect</b>プロパティを自動的に設定します</para>。
-          <para /></remarks>
+        <remarks><para>このプロパティの値は、左から右、上から下へ番号が付けられて、[ワードアート ギャラリー ] ダイアログ ボックス (挿入メニュー) の書式に対応しています。</para>
+          <para><b>PresetTextEffect</b> プロパティを設定すると、他のほとんどの書式設定のプロパティも、指定した図形に自動的に設定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RotatedChars">
@@ -532,30 +507,28 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>Msotrue を設定する</b> 場合、指定したワードアートの文字は、ワードアートの境界図形を基準に 90 度回転します。 <b>Msofalse を設定する</b> 場合、指定したワードアートの文字が境界図形を基準に元の向きを保持します。</summary>
+        <summary><b>Msotrue を設定する</b> 場合、指定したワードアートの文字は、ワードアートの境界図形を基準に 90 度回転します。 <b>Msofalse を設定する</b> 場合、指定したワードアートの文字が境界図形を基準に元の向きを保持します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" />使用できる定数は、次に示す<b>MsoTriState</b>クラスの定数のいずれかです。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" />これら<b>msotristate クラス</b>の定数のいずれか: </para>
-          <para>
-            <b>msoCTrue </b>
+            <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse </b>
+            <b>msoFalse</b>
           </para>
           <para>
-            <b>msoTriStateMixed </b>
+            <b>msoTriStateMixed</b>
           </para>
           <para>
-            <b>msoTriStateToggle </b>
+            <b>msoTriStateToggle</b>
           </para>
           <para>
             <b>msoTrue</b>
-          </para>ワードアートは、横書きテキストの場合、 <b>RotatedChars</b>を設定する場合は
-          <para>プロパティを<b>True</b>には、反時計回りに 90 度の文字を回転します。ワードアートに縦書きのテキストがある場合、 <b>RotatedChars</b>プロパティを<b>False</b>に設定する文字を回転時計回りに 90 ° です。使用して、<see cref="M:Microsoft.Office.Interop.Word.TextEffectFormat.ToggleVerticalText" />を水平方向および垂直方向のテキストの方向を切り替える方法です</para>。
-          <para>、<see cref="M:Microsoft.Office.Interop.Word.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" />メソッドと<see cref="P:Microsoft.Office.Interop.Word.Shape.Rotation" />のプロパティの<see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクトと、 <b>RotatedChars</b>プロパティと<b>ToggleVerticalText</b>メソッド<b>TextEffectFormat</b>オブジェクトの文字の方向に影響を及ぼすすべてとワードアートを表す<b>Shape</b>オブジェクトのテキスト フローの方向。これらのプロパティとを必要と結果を取得するメソッドの効果を結合する方法を確認する必要があります</para>。
-          <para /></remarks>
+          </para>
+          <para>ワードアートの文字が横書きの場合、 <b>RotatedChars</b> プロパティを <b>True</b> に設定すると、文字は反時計回りに 90 度回転します。 ワードアートの文字が縦書きの場合、 <b>RotatedChars</b> プロパティを <b>False</b> に設定すると、文字は時計回りに 90 度回転します。 水平方向<see cref="M:Microsoft.Office.Interop.Word.TextEffectFormat.ToggleVerticalText" />と垂直方向のテキストの方向を切り替えるには、メソッドを使用します。</para>
+          <para><see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクト<see cref="M:Microsoft.Office.Interop.Word.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" />のメソッド<see cref="P:Microsoft.Office.Interop.Word.Shape.Rotation" />とプロパティ、および<b>TextEffectFormat</b>オブジェクトの<b>RotatedChars</b>プロパティおよび<b>ToggleVerticalText</b>メソッドはすべて、テキストフローの文字の方向と方向に適用されます。ワードアートを表す<b>Shape</b>オブジェクト。 これらのプロパティとを必要と結果を取得するメソッドの効果を結合する方法を確認する必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -584,7 +557,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定したワードアートのテキストを設定します。</summary>
+        <summary>指定したワードアートのテキストを設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -611,11 +584,9 @@
       <Parameters />
       <Docs>
         <summary>指定したワードアートの横書きと縦書きを切り替えます。</summary>
-        <remarks>
-          <para>
-            <b>ToggleVerticalText</b>メソッドを使用するの値を交換します、<see cref="P:Microsoft.Office.Interop.Word.Shape.Width" />と<see cref="P:Microsoft.Office.Interop.Word.Shape.Height" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Word.Shape" /> 、ワードアートを表すが、オブジェクト、<see cref="P:Microsoft.Office.Interop.Word.Shape.Left" />と<see cref="P:Microsoft.Office.Interop.Word.Shape.Top" />プロパティが変更されません</para>。
-          <para>、<see cref="M:Microsoft.Office.Interop.Word.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" />メソッドと<see cref="P:Microsoft.Office.Interop.Word.Shape.Rotation" />、 <b>Shape</b>オブジェクトのプロパティと、<see cref="P:Microsoft.Office.Interop.Word.TextEffectFormat.RotatedChars" />プロパティと<b>ToggleVerticalText</b>メソッド<b>TextEffectFormat</b>オブジェクトの文字の方向、およびテキストの方向に影響を及ぼすすべてワードアートを表す<b>Shape</b>オブジェクトにフローします。これらのプロパティとを必要と結果を取得するメソッドの効果を結合する方法を確認する必要があります</para>。
-          <para /></remarks>
+        <remarks><para><b>ToggleVerticalText</b>メソッドを使用すると、ワードアート<see cref="P:Microsoft.Office.Interop.Word.Shape.Width" />を<see cref="P:Microsoft.Office.Interop.Word.Shape.Height" />表す<see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクトのプロパティとプロパティの値が交換さ<see cref="P:Microsoft.Office.Interop.Word.Shape.Left" />れ<see cref="P:Microsoft.Office.Interop.Word.Shape.Top" />ます。プロパティは変更されません。</para>
+          <para>Shape <see cref="M:Microsoft.Office.Interop.Word.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" />オブジェクトの<see cref="P:Microsoft.Office.Interop.Word.Shape.Rotation" />メソッドとプロパティ<b></b> 、および<b>TextEffectFormat</b>オブジェクト<see cref="P:Microsoft.Office.Interop.Word.TextEffectFormat.RotatedChars" />のプロパティおよび<b>ToggleVerticalText</b>メソッドはすべて、文字の方向とテキストフロー<b>の方向に影響します。</b>ワードアートを表す Shape オブジェクト。 これらのプロパティとを必要と結果を取得するメソッドの効果を結合する方法を確認する必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Tracking">
@@ -646,13 +617,31 @@
       <Docs>
         <summary>文字の幅を基準にして指定したワードアートの各文字に割り当てられている水平方向の間隔の比率を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Tracking</b>プロパティは、0 (ゼロ) 5 からの値を指定できます。(このプロパティの値が大きい文字の間に十分なスペースを指定します 1 未満の値は、文字の重複を生じることが)</para> 。
-          <para>次の表は、ユーザー インターフェイスで利用可能な設定に対応する<b>Tracking</b>プロパティの値を示します</para>。
-          <list type="table"><item><description>非常に厳しい</description><description>0.8</description></item><item><description>0.9</description>の
-              <description>緊密な</description></item><item><description>標準</description><description>1.0</description></item><item><description>1.2</description>の
-              <description>緩やかな</description></item><item><description>非常に緩やかな</description><description>1.5</description></item></list><para /></remarks>
+        <remarks><para><b>Tracking</b>プロパティには、0 (ゼロ) ~ 5 の値を指定できます。 (このプロパティの値が大きい文字の間に十分なスペースを指定する文字の重複が生じることが 1 より小さい値)。</para>
+          <para>次に、画面上で文字の間隔を設定する場合の設定項目と、それに対応する <b>Tracking</b> プロパティの値を示します。</para>
+          <list type="table">
+            <item>
+              <description>より狭く</description>
+              <description>0.8</description>
+            </item>
+            <item>
+              <description>狭く</description>
+              <description>0.9</description>
+            </item>
+            <item>
+              <description>標準</description>
+              <description>1.0</description>
+            </item>
+            <item>
+              <description>広く</description>
+              <description>1.2</description>
+            </item>
+            <item>
+              <description>より広く</description>
+              <description>1.5</description>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

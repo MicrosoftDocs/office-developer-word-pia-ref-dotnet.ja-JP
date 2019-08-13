@@ -1,13 +1,5 @@
 <Type Name="RevisionsFilter" FullName="Microsoft.Office.Interop.Word.RevisionsFilter">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="397df7212315245a8efa52af3cc6208d5c0956b1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670801" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface RevisionsFilter" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7a0d895b614b60a8d0c5fa9ac1b6302c0b7f7db1" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144023" /></Metadata><TypeSignature Language="C#" Value="public interface RevisionsFilter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RevisionsFilter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.RevisionsFilter" />
   <TypeSignature Language="VB.NET" Value="Public Interface RevisionsFilter" />
@@ -26,11 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>関連する現在の設定を表す校閲者のコメントと、文書の変更履歴のマークを表示します。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word.View.RevisionsFilter" /> 、 <b>RevisionsFilter</b>オブジェクトを返すプロパティです。</para>
-      <para />
-    </remarks>
+    <summary>文書内の校閲者のコメントと変更履歴の表示に関連する現在の設定を表します。</summary>
+    <remarks><para>RevisionsFilter オブジェクト<see cref="P:Microsoft.Office.Interop.Word.View.RevisionsFilter" />を取得するの<b></b>にには、プロパティを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Markup">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionsMarkup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMarkup" />の文書の表示の変更履歴の範囲を指定する定数です。 値の取得および設定が可能です。</summary>
+        <summary>文書に表示さ<see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMarkup" />れる校閲者のマークアップの範囲を指定する定数を設定または返します。 値の取得と設定が可能です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,13 +77,12 @@
         <ReturnType>Microsoft.Office.Interop.Word.Reviewers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Reviewers" />を 1 つまたは複数のドキュメントの校閲者のコレクションを表すオブジェクト。</summary>
+        <summary>1つ<see cref="T:Microsoft.Office.Interop.Word.Reviewers" />または複数のドキュメントの校閲者のコレクションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para><b>校閲者</b>によって返される<b>校閲</b>者のコレクションには、コンピューター上でドキュメントを開いたか編集したすべての校閲者の名前が含まれています。</para>
           <para>
-            <b>校閲者</b>によって返される<b>校閲者</b>のコレクションには、文書を開くか、コンピューター上で編集を校閲したすべての校閲者の名前が含まれています</para>。
-          <para><b>注</b>:<b>レビュー担当者</b>は廃止されるには、Word の以前のバージョンについては、 <b>View.Reviewers</b>プロパティに置き換えられます</para>。
-          <para /></remarks>
+            <b>注</b>: "<b>校閲</b>者" プロパティは、以前のバージョンの Word で使用されていた "<b>校閲者</b>" プロパティを置換します。これは廃止されました。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ToggleShowAllReviewers">
@@ -117,11 +106,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>コメントと変更履歴を含むドキュメント内のすべての変更履歴の表示と非表示を切り替えます。</summary>
-        <remarks>
-          <para>以前のバージョンの Word では、 <b>ToggleShowAllReviewers</b>メソッドは、<b>ウィンドウ</b>オブジェクトでした。Word 2013 年の時点では、そのメソッドが表示されません。</para>
-          <para />
-        </remarks>
+        <summary>コメントと変更履歴を含む文書内のすべての変更履歴を表示または非表示にします。</summary>
+        <remarks><para>以前のバージョンの Word では、 <b>ToggleShowAllReviewers</b>メソッドは<b>Window</b>オブジェクトにありました。 Word 2013 の場合、このメソッドは非表示になります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="View">
@@ -150,13 +137,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionsView</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定、<see cref="T:Microsoft.Office.Interop.Word.WdRevisionsView" />ドキュメントの元のバージョンまたは最後のバージョンは、変更履歴がある場合がありますが表示され、書式設定の変更を適用するかどうかを指定するグローバル オプションを表す定数です。 値の取得および設定が可能です。</summary>
+        <summary>文書の元の<see cref="T:Microsoft.Office.Interop.Word.WdRevisionsView" />バージョンを表示するかどうかを指定するグローバルオプションを表す定数を取得または設定します。これには、変更履歴と書式設定が適用されている場合があります。 値の取得と設定が可能です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>RevisionsFilter.View</b>プロパティには、Word の以前のバージョンで<b>View.RevisionsView</b>プロパティが置き換えられます。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>RevisionsFilter</b>プロパティは、以前のバージョンの Word であった<b>RevisionsView</b>プロパティを置換します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

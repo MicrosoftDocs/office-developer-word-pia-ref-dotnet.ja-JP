@@ -1,13 +1,5 @@
 <Type Name="Window" FullName="Microsoft.Office.Interop.Word.Window">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ef41ba1d1545160b80a5ea0214b97f73c4073af3" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672444" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Window" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4e29decd5d2ab2a5ef57937db92371976360b243" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142697" /></Metadata><TypeSignature Language="C#" Value="public interface Window" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Window" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Window" />
   <TypeSignature Language="VB.NET" Value="Public Interface Window" />
@@ -27,14 +19,13 @@
   </Attributes>
   <Docs>
     <summary>ウィンドウを表します。</summary>
-    <remarks>
-      <para>スクロール バーやルーラーなど、多くの文書特性は、実際には、ウィンドウのプロパティです。<see cref="T:Microsoft.Office.Interop.Word.Window" />オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Word.Windows" />コレクションです。<see cref="T:Microsoft.Office.Interop.Word.Windows" />のコレクションの<see cref="T:Microsoft.Office.Interop.Word.Application" />オブジェクトには、アプリケーション内のすべてのウィンドウが含まれますが、<see cref="T:Microsoft.Office.Interop.Word.Windows" />のコレクションの<see cref="T:Microsoft.Office.Interop.Word.Document" />オブジェクトには、指定されたドキュメントを表示するウィンドウだけが含まれています</para>。
-      <para><b>Windows</b>(<paramref name="index" />)、 <paramref name="index" /> 、ウィンドウ名またはインデックス番号で、1 つを返すには、<see cref="T:Microsoft.Office.Interop.Word.Window" />オブジェクトです</para>。
-      <para>、インデックス番号は、[ウィンドウ] メニューでウィンドウ名の左側に番号です</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Word.Windows.Add(System.Object@)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Word.Window.NewWindow" />メソッドを新しいウィンドウを追加するのには、<see cref="T:Microsoft.Office.Interop.Word.Windows" />コレクションです</para>。
-      <para>複数のウィンドウがドキュメントを開くときのウィンドウのタイトル バーにコロン (:) と番号が表示されます</para>。
-      <para>の印刷プレビュー画面に表示を切り替えると、新しいウィンドウが作成されます。このウィンドウから削除します<see cref="T:Microsoft.Office.Interop.Word.Windows" />コレクションの印刷プレビューを閉じるとします</para>。
-      <para /></remarks>
+    <remarks><para>スクロール バーやルーラーなどの多くの文書特性は、ウィンドウの特性として扱われます。 <see cref="T:Microsoft.Office.Interop.Word.Window" />オブジェクトは<see cref="T:Microsoft.Office.Interop.Word.Windows" />コレクションのメンバーです。 オブジェクトのコレクションには、アプリケーションのすべてのウィンドウが含まれて<see cref="T:Microsoft.Office.Interop.Word.Windows" />います。 <see cref="T:Microsoft.Office.Interop.Word.Document" />オブジェクトのコレクションには、指定された文書を表示するウィンドウのみが含まれます。 <see cref="T:Microsoft.Office.Interop.Word.Windows" /> <see cref="T:Microsoft.Office.Interop.Word.Application" /></para>
+      <para>1つ<see cref="T:Microsoft.Office.Interop.Word.Window" />の<paramref name="index" />オブジェクトを取得<paramref name="index" />するには、 <b>Windows</b>() を使用します。ここで、はウィンドウ名またはインデックス番号です。</para>
+      <para>インデックス番号は、 [ウィンドウ] メニューでウィンドウ名の左側に番号です。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.Windows.Add(System.Object@)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Word.Window.NewWindow" />メソッドを使用して、新しいウィンドウを<see cref="T:Microsoft.Office.Interop.Word.Windows" />コレクションに追加します。</para>
+      <para>同じ文書を複数のウィンドウで開くと、ウィンドウのタイトル バーにコロン (:) と番号が表示されます。</para>
+      <para>印刷プレビュー画面に表示を切り替えると、新しいウィンドウが作成されます。 印刷プレビューを閉じると、 <see cref="T:Microsoft.Office.Interop.Word.Windows" />このウィンドウはコレクションから削除されます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -85,8 +76,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 指定したウィンドウがアクティブな場合です。</summary>
+        <summary><b>True</b> 指定したウィンドウがアクティブな場合です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -114,7 +104,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Pane</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Pane" />を指定したウィンドウのアクティブなウィンドウを表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Pane" />たウィンドウのアクティブなウィンドウ枠を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -142,7 +132,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -173,12 +163,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した文書またはアプリケーション ウィンドウのキャプション テキストを設定または返します。</summary>
+        <summary>指定したドキュメントまたはアプリケーションウィンドウのキャプションテキストを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>既定のテキストをアプリケーション ウィンドウのキャプションを変更するのにはこのプロパティを空の文字列 ("")。</para>
-          <para />
-        </remarks>
+        <remarks><para>アプリケーション ウィンドウの名前を既定の名前に変更するには、このプロパティに長さ 0 の文字列 ("") を設定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -204,7 +192,7 @@
         <Parameter Name="RouteDocument" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="SaveChanges">省略可能な<b>オブジェクト</b>です。 保存先を指定のドキュメントのアクションです。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Word.WdSaveOptions" />定数: <b>wdDoNotSaveChanges</b>、 <b>wdPromptToSaveChanges</b>、または<b>wdSaveChanges</b>。</param>
+        <param name="SaveChanges">省略可能な<b>オブジェクト</b>です。 保存先を指定のドキュメントのアクションです。 次<see cref="T:Microsoft.Office.Interop.Word.WdSaveOptions" />の定数のいずれかを指定できます: <b>wddonotsavechanges</b>、 <b>wdprompttosavechanges</b>、または<b>wdsavechanges</b>。</param>
         <param name="RouteDocument">省略可能な<b>オブジェクト</b>です。 <b>True の</b> 次の受信者に文書を回覧します。 ドキュメントに、回覧先がない場合、この引数は無視されます。</param>
         <summary>指定されたウィンドウを閉じます。</summary>
         <remarks>To be added.</remarks>
@@ -233,12 +221,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayHorizontalScrollBar">
@@ -267,8 +254,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 場合は、指定したウィンドウの水平スクロール バーが表示されます。</summary>
+        <summary><b>True</b> 場合は、指定したウィンドウの水平スクロール バーが表示されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -299,8 +285,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、ドキュメント ウィンドウの左側に垂直スクロール バーが表示されます。</summary>
+        <summary><b>True の</b> 場合は、ドキュメント ウィンドウの左側に垂直スクロール バーが表示されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -331,8 +316,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 印刷レイアウト表示で文書ウィンドウの右側に垂直ルーラーが表示されている場合です。</summary>
+        <summary><b>True</b> 印刷レイアウト表示で文書ウィンドウの右側に垂直ルーラーが表示されている場合です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -363,16 +347,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、指定したウィンドウまたはウィンドウ枠にルーラーが表示されます。</summary>
+        <summary><b>True の</b> 場合、指定したウィンドウまたはウィンドウ枠にルーラーが表示されます。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para><b>DisplayRulers</b> プロパティは、[ 表示] メニューの [ルーラーのコマンドと同じです。 </para>
           <para>
-            <b>DisplayRulers</b>プロパティは、[表示] メニューの [ルーラーのコマンドと同じです。</para>
-          <para>
-            <b>注</b>
-            <b>DisplayRulers</b>が<b>False</b>水平の状態に関係なく、垂直方向のルーラーを表示しない場合、<see cref="P:Microsoft.Office.Interop.Word.Window.DisplayVerticalRuler" />プロパティ</para>。
-          <para /></remarks>
+            <b>メモ</b> <b>Displayrulers</b>が<b>False</b>の場合は、 <see cref="P:Microsoft.Office.Interop.Word.Window.DisplayVerticalRuler" />プロパティの状態に関係なく、水平および垂直のルーラーは表示されません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayScreenTips">
@@ -401,8 +381,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>真</b> のコメント、脚注、文末脚注、およびハイパーリンクがポップ ヒントに表示されている場合です。 テキストには、コメントは強調表示されますがマークされています。</summary>
+        <summary><b>真</b> のコメント、脚注、文末脚注、およびハイパーリンクがポップ ヒントに表示されている場合です。 テキストには、コメントは強調表示されますがマークされています。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -433,14 +412,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、指定したウィンドウまたはウィンドウ枠の垂直方向のルーラーが表示されます。</summary>
+        <summary><b>True の</b> 場合は、指定したウィンドウまたはウィンドウ枠の垂直方向のルーラーが表示されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>メモ</b> 印刷レイアウト表示、および場合にのみだけで垂直方向のルーラーが表示されます、<see cref="P:Microsoft.Office.Interop.Word.Window.DisplayRulers" />プロパティが<b>True</b>に設定します。</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>メモ</b> 垂直方向のルーラーは印刷レイアウト表示でのみ表示され、 <see cref="P:Microsoft.Office.Interop.Word.Window.DisplayRulers" />プロパティが<b>True</b>に設定されている場合にのみ表示されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayVerticalScrollBar">
@@ -469,8 +445,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 場合は、指定したウィンドウの垂直スクロール バーが表示されます。</summary>
+        <summary><b>True</b> 場合は、指定したウィンドウの垂直スクロール バーが表示されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -498,7 +473,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Document" />指定されたウィンドウに関連付けられているオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Document" />たウィンドウに関連付けられているオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -529,8 +504,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>見出しマップが表示されている場合です。</summary>
+        <summary><b>True</b>の場合は、ドキュメントマップが表示されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -567,7 +541,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたウィンドウの幅に対する割合で、見出しマップの幅を設定または返します。</summary>
+        <summary>指定したウィンドウの幅に対する割合として、見出しマップの幅を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -598,13 +572,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、電子メール メッセージのヘッダーが文書ウィンドウに表示されます。 既定値は、 <b>false を指定</b> します。</summary>
+        <summary><b>True の</b> 場合は、電子メール メッセージのヘッダーが文書ウィンドウに表示されます。 既定値は、 <b>false を指定</b> します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、文書が電子メール メッセージでない場合。</para>
-          <para />
-        </remarks>
+        <remarks><para>文書が電子メール メッセージでない場合、このプロパティは無効です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPoint">
@@ -634,21 +605,14 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ScreenPixelsLeft">
-          <b>整数</b>が必要です。 オブジェクトの左端の座標の値が返される変数の名前を指定します。</param>
-        <param name="ScreenPixelsTop">
-          <b>整数</b>が必要です。 オブジェクトの上端の座標の値が返される変数の名前を指定します。</param>
-        <param name="ScreenPixelsWidth">
-          <b>整数</b>が必要です。 オブジェクトの幅の値が返される変数の名前を指定します。</param>
-        <param name="ScreenPixelsHeight">
-          <b>整数</b>が必要です。 オブジェクトの高さの値が返される変数の名前を指定します。</param>
-        <param name="obj">
-          <b>オブジェクト</b>が必要です。 A<see cref="T:Microsoft.Office.Interop.Word.Range" />または<see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクトです。</param>
+        <param name="ScreenPixelsLeft">整数型 (<b>Integer</b>) の値を使用します。 オブジェクトの左端の座標の値が返される変数の名前を指定します。</param>
+        <param name="ScreenPixelsTop">整数型 (<b>Integer</b>) の値を使用します。 オブジェクトの上端の座標の値が返される変数の名前を指定します。</param>
+        <param name="ScreenPixelsWidth">整数型 (<b>Integer</b>) の値を使用します。 オブジェクトの幅の値が返される変数の名前を指定します。</param>
+        <param name="ScreenPixelsHeight">整数型 (<b>Integer</b>) の値を使用します。 オブジェクトの高さの値が返される変数の名前を指定します。</param>
+        <param name="obj">必要な<b>オブジェクト</b>。 <see cref="T:Microsoft.Office.Interop.Word.Range" /> Or <see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクト。</param>
         <summary>指定された指定範囲または図形の画面での座標を返します。</summary>
-        <remarks>
-          <para>全体の範囲または図形が画面に表示されない場合、エラーが発生します。</para>
-          <para />
-        </remarks>
+        <remarks><para>指定範囲または図形の全体が画面に表示されていない場合は、エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -679,10 +643,9 @@
       <Docs>
         <summary>ウィンドウの高さを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ウィンドウが最大化または最小化されている場合、このプロパティを設定することはできません</para>。使用の
-          <para>、<see cref="P:Microsoft.Office.Interop.Word._Application.UsableHeight" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Word.Application" />ウィンドウの最大サイズを決定するオブジェクトです。使用して、 <see cref="P:Microsoft.Office.Interop.Word.Window.WindowState" /> 、ウィンドウの状態を確認するにします</para>。
-          <para /></remarks>
+        <remarks><para>ウィンドウを最大化または最小化されている場合は、このプロパティを設定することはできません。</para>
+          <para>ウィンドウの<see cref="P:Microsoft.Office.Interop.Word._Application.UsableHeight" />最大サイズを<see cref="T:Microsoft.Office.Interop.Word.Application" />調べるには、オブジェクトのプロパティを使用します。 ウィンドウの<see cref="P:Microsoft.Office.Interop.Word.Window.WindowState" />状態を確認するには、プロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalPercentScrolled">
@@ -739,8 +702,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>整数値</b>(C# では<b>int</b> ) を示す指定されたウィンドウのウィンドウ ハンドルを返します。 値の取得のみ可能です。</summary>
+        <summary>指定したウィンドウのウィンドウハンドルを示す<b>整数</b>(C# では<b>int</b> ) を返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -773,22 +735,39 @@
       <Docs>
         <summary>日本語入力システム (IME) の既定のスタートアップ モードを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdIMEMode" />これら<b>が可能</b>のいずれかのことができます: </para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdIMEMode" />次の<b>WdIMEMode</b>定数のいずれかをすることができます。 </para>
           <para>
             <b>wdIMEModeAlpha</b>
-            <b>-</b>は、半角英数モードで IME をアクティブにします</para>。
-          <para><b>wdIMEModeAlphaFull</b><b>-</b>は、全角英数モードで IME をアクティブにします</para>。
-          <para><b>wdIMEModeHangul</b><b>-</b>は、半角ハングル モードで IME をアクティブにします</para>。
-          <para><b>wdIMEModeHangulFull</b><b>-</b>は、全角ハングル モードで IME をアクティブにします</para>。
-          <para><b>wdIMEModeHiragana</b><b>-</b>は、全角ひらがなモードで IME をアクティブにします</para>。
-          <para><b>wdIMEModeKatakana</b><b>-</b>は、全角カタカナ モードで IME をアクティブにします</para>。
-          <para><b>wdIMEModeKatakanaHalf</b><b>-</b>は、半角カタカナ モードで IME をアクティブにします</para>。
-          <para><b>wdIMEModeNoControl</b><b>-</b>は IME モードを変更できません</para>。
-          <para><b>wdIMEModeOff</b><b>-</b>は、IME を無効にし、英数字の入力をアクティブにします</para>。
-          <para><b>wdIMEModeOn</b><b>-</b>は、IME をアクティブにします</para>。
-          <para /></remarks>
+            <b>-</b>全角英数モードで IME を有効にします。 </para>
+          <para>
+            <b>wdIMEModeAlphaFull</b>
+            <b>-</b>全角英数モードで IME を有効にします。 </para>
+          <para>
+            <b>wdIMEModeHangul</b>
+            <b>-</b>半角ハングルモードで IME を有効にします。 </para>
+          <para>
+            <b>wdIMEModeHangulFull</b>
+            <b>-</b>全角ハングルモードで IME を有効にします。 </para>
+          <para>
+            <b>wdIMEModeHiragana</b>
+            <b>-</b>全角ひらがなモードで IME を有効にします。 </para>
+          <para>
+            <b>wdIMEModeKatakana</b>
+            <b>-</b>全角カタカナモードで IME を有効にします。 </para>
+          <para>
+            <b>wdIMEModeKatakanaHalf</b>
+            <b>-</b>全角カタカナモードで IME を有効にします。 </para>
+          <para>
+            <b>wdIMEModeNoControl</b>
+            <b>-</b>IME モードは変更されません。 </para>
+          <para>
+            <b>wdIMEModeOff</b>
+            <b>-</b>IME を無効にし、ラテン語のテキスト入力を有効にします。 </para>
+          <para>
+            <b>wdIMEModeOn</b>
+            <b>-</b>IME を有効にします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -814,7 +793,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内の項目の位置を表す<b>整数</b>を返します。</summary>
+        <summary>コレクション内の項目の位置を表す<b>整数型 (Integer</b> ) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -849,12 +828,10 @@
         <param name="ToRight">省略可能な<b>オブジェクト</b>です。 ウィンドウを右にスクロールする画面数を指定します。</param>
         <param name="ToLeft">省略可能な<b>オブジェクト</b>です。 ウィンドウを左にスクロールする画面数を指定します。</param>
         <summary>指定した画面数だけウィンドウまたはウィンドウ枠をスクロールします。</summary>
-        <remarks>
-          <para>
-            <b>LargeScroll</b>メソッドは単直前または直後後に、水平方向および垂直方向のスクロール バーのスクロール ボックスをクリックします</para>。
-          <para>場合<paramref name="Down" />と<paramref name="Up" />を指定した、ウィンドウは引数の差だけスクロールします。などの場合は<paramref name="Down" />は、2 と<paramref name="Up" />4 では、ウィンドウは 2 画面上にスクロールします。同様に場合は、<paramref name="ToLeft" />と<paramref name="ToRight" />を指定した、ウィンドウは引数の差だけスクロールします</para>。
-          <para>負の数は、これらの引数のいずれかです。引数が指定されていない場合ウィンドウは 1 画面下にスクロールします</para>。
-          <para /></remarks>
+        <remarks><para><b>LargeScroll</b>メソッドは、垂直および水平方向のスクロールバーのスクロールボックスの直前または直後をクリックした場合と同じです。</para>
+          <para>と<paramref name="Down" /> <paramref name="Up" />の両方が指定されている場合、ウィンドウは引数の違いによってスクロールされます。 たとえば、が 2 <paramref name="Down" /> <paramref name="Up" />で4の場合、ウィンドウは2画面上にスクロールされます。 同様に、 <paramref name="ToLeft" />と<paramref name="ToRight" />の両方が指定されている場合、ウィンドウは引数の違いによってスクロールされます。</para>
+          <para>これらの引数には負数を指定できます。 どの引数も指定しない場合、ウィンドウは 1 画面下にスクロールされます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -883,7 +860,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ポイント単位で指定したウィンドウの水平方向の位置を表す<b>整数値</b>を設定または返します。</summary>
+        <summary>指定したウィンドウの水平方向の位置をポイント単位で表す<b>整数型 (Integer</b> ) の値を設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -911,11 +888,10 @@
       <Docs>
         <summary>指定されたウィンドウと同じドキュメントを新しいウィンドウが開きます。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>メモ</b> 複数のウィンドウがドキュメントを開くときのウィンドウのタイトル バーにコロン (:) と番号が表示されます</para>。
-          <para><b>NewWindow</b>メソッドを使用する場合、<see cref="T:Microsoft.Office.Interop.Word.Application" />オブジェクトの場合、作業中のウィンドウの新しいウィンドウが開かれた</para>。
-          <para /></remarks>
+        <remarks><para>
+            <b>メモ</b> コロン (:)文書に対して複数のウィンドウが開いているときに、ウィンドウのタイトルバーに番号が表示されます。</para>
+          <para><b>NewWindow</b>メソッドを<see cref="T:Microsoft.Office.Interop.Word.Application" />オブジェクトと共に使用すると、アクティブウィンドウの新しいウィンドウが開きます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -941,7 +917,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Window</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクションの次のオブジェクトを返します。</summary>
+        <summary>コレクション内の次のオブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -969,14 +945,12 @@
         <Parameter Name="Up" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Down">省略可能な<b>オブジェクト</b>です。 下方向にスクロールするページの数です。 この引数を省略した場合、この値は 1 と見なされます。</param>
+        <param name="Down">省略可能な<b>オブジェクト</b>です。 下方向にスクロールするページ数を指定します。 省略した場合は、1 に設定されます。</param>
         <param name="Up">省略可能な<b>オブジェクト</b>です。 上方向にスクロールするページ数を指定します。</param>
         <summary>指定されたウィンドウ枠またはウィンドウをページ単位でスクロールします。</summary>
-        <remarks>
-          <para>
-            <b>PageScroll</b>メソッドでは、印刷レイアウト モードまたは web レイアウト表示である場合があります。このメソッドは、カーソルの位置に影響しません</para>。
-          <para>場合<paramref name="Down" />と<paramref name="Up" />を指定した、ウィンドウは引数の差だけスクロールします。などの場合<paramref name="Down" />2 と<paramref name="Up" />は、4、2 つのページのウィンドウをスクロールします</para>。
-          <para /></remarks>
+        <remarks><para><b>PageScroll</b>メソッドは、印刷レイアウト表示または web レイアウト表示の場合にのみ使用できます。 このメソッドは、挿入ポイントの位置には影響しません。</para>
+          <para>と<paramref name="Down" /> <paramref name="Up" />の両方が指定されている場合、ウィンドウは引数の違いによってスクロールされます。 たとえば、が 2 <paramref name="Down" /> <paramref name="Up" />で、4の場合、ウィンドウは2ページ上にスクロールされます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Panes">
@@ -1002,7 +976,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Panes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Panes" /> 、指定したウィンドウのすべてのウィンドウ枠を表すコレクション。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Panes" />たウィンドウのすべてのウィンドウ枠を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1058,7 +1032,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Window</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクションの 1 つ前のオブジェクトを返します。</summary>
+        <summary>コレクション内の 1 つ前のオブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1103,21 +1077,21 @@
       </Parameters>
       <Docs>
         <param name="Background">省略可能な<b>オブジェクト</b>です。 マクロを Microsoft Word の文書を印刷するときに、継続するのには <b>True</b> に設定します。</param>
-        <param name="Append">省略可能な<b>オブジェクト</b>です。 指定されたファイル名を指定したドキュメントを追加するのには<b>True</b>に設定、<paramref name="OutputFileName" />の引数です。 <b>偽</b>の内容を上書きするのには<paramref name="OutputFileName" />です。</param>
-        <param name="Range">省略可能な<b>オブジェクト</b>です。 ページの範囲です。 いずれかを指定することができます<see cref="T:Microsoft.Office.Interop.Word.WdPrintOutRange" />定数。 <b>wdPrintAllDocument</b><b>wdPrintCurrentPage</b><b>wdPrintFromTo</b><b>wdPrintRangeOfPages</b><b>wdPrintSelection</b></param>
-        <param name="OutputFileName">省略可能な<b>オブジェクト</b>です。 場合<paramref name="PrintToFile" />が<b>True</b>、この引数は出力ファイルのパスとファイル名を指定します。</param>
-        <param name="From">省略可能な<b>オブジェクト</b>です。 開始ページ番号と<paramref name="Range" /><b>wdPrintFromTo</b>に設定されています。</param>
-        <param name="To">省略可能な<b>オブジェクト</b>です。 終了ページ番号と<paramref name="Range" /><b>wdPrintFromTo</b>に設定されています。</param>
-        <param name="Item">省略可能な<b>オブジェクト</b>です。 印刷する項目。 いずれかを指定することができます<see cref="T:Microsoft.Office.Interop.Word.WdPrintOutItem" />定数。<b>wdPrintAutoTextEntries</b><b>wdPrintComments</b><b>wdPrintDocumentContent</b><b>wdPrintDocumentWithMarkup</b><b>wdPrintEnvelope</b><b>wdPrintKeyAssignments</b><b>wdPrintMarkup</b><b>wdPrintProperties</b><b>wdPrintStyles</b></param>
+        <param name="Append">省略可能な<b>オブジェクト</b>です。 <b>True</b>に設定すると、指定した文書は<paramref name="OutputFileName" />引数に指定したファイル名に追加されます。 <b>False</b>の<paramref name="OutputFileName" />内容を上書きします。</param>
+        <param name="Range">省略可能な<b>オブジェクト</b>です。 ページの範囲です。 任意の<see cref="T:Microsoft.Office.Interop.Word.WdPrintOutRange" />定数を使用できます。 <b>Wdprintalldocument</b><b>wdPrintCurrentPage</b><b>wdPrintFromTo</b><b>Wdprintrangeofpages</b><b>Wdprintselection</b></param>
+        <param name="OutputFileName">省略可能な<b>オブジェクト</b>です。 が<paramref name="PrintToFile" /> <b>True</b>の場合、この引数は出力ファイルのパスとファイル名を指定します。</param>
+        <param name="From">省略可能な<b>オブジェクト</b>です。 開始ページ番号<paramref name="Range" />は、 <b>wdPrintFromTo</b>に設定されます。</param>
+        <param name="To">省略可能な<b>オブジェクト</b>です。 終了ページ番号<paramref name="Range" />は、 <b>wdPrintFromTo</b>に設定されます。</param>
+        <param name="Item">省略可能な<b>オブジェクト</b>です。 印刷する項目。 任意の<see cref="T:Microsoft.Office.Interop.Word.WdPrintOutItem" />定数を使用できます。<b>Wdprintautotextentries</b><b>Wdprintcomments</b><b>Wdprintdocumentcontent</b><b>Wdprintdocumentwithmarkup</b><b>Wdprintenvelope</b><b>Wdprintkeyassignments</b><b>Wdprintmarkup</b><b>Wdprintproperties</b><b>Wdprintstyles</b></param>
         <param name="Copies">省略可能な<b>オブジェクト</b>です。 印刷部数を指定します。</param>
         <param name="Pages">省略可能な<b>オブジェクト</b>です。 ページ番号およびページ範囲を、コンマで区切って指定します。 たとえば、"2, 6-10" は 2 ページと 6 ～ 10 ページを印刷します。</param>
-        <param name="PageType">省略可能な<b>オブジェクト</b>です。 印刷するページの種類。 いずれかを指定することができます<see cref="T:Microsoft.Office.Interop.Word.WdPrintOutPages" />定数。<b>wdPrintAllPages</b><b>wdPrintEvenPagesOnly</b><b>wdPrintOddPagesOnly</b></param>
-        <param name="PrintToFile">省略可能な<b>オブジェクト</b>です。 <b>True</b> 印刷命令をファイルに送信します。 ファイル名を指定することを確認<paramref name="OutputFileName" />。</param>
+        <param name="PageType">省略可能な<b>オブジェクト</b>です。 印刷するページの種類。 任意の<see cref="T:Microsoft.Office.Interop.Word.WdPrintOutPages" />定数を使用できます。<b>Wdprintallpages</b><b>Wdprintevenますのみ</b><b>Wdprintoddintranet のみ</b></param>
+        <param name="PrintToFile">省略可能な<b>オブジェクト</b>です。 <b>True</b> 印刷命令をファイルに送信します。 で<paramref name="OutputFileName" />ファイル名を指定してください。</param>
         <param name="Collate">省略可能な<b>オブジェクト</b>です。 印刷部数が複数の <b>true の場合</b> 次のコピーを印刷する前に、ドキュメントのすべてのページを印刷するドキュメント。</param>
         <param name="ActivePrinterMacGX">省略可能な<b>オブジェクト</b>です。 この引数は、Microsoft Office Macintosh Edition でのみ使用できます。 この引数の詳細については、Microsoft Office Macintosh Edition に含まれているランゲージ リファレンスのヘルプを参照してください。</param>
-        <param name="ManualDuplexPrint">省略可能な<b>オブジェクト</b>です。 <b>True</b> 両面印刷キットのないプリンターで両面の文書を印刷します。 この引数が<b>True の</b>場合、<see cref="P:Microsoft.Office.Interop.Word.Options.PrintBackground" />と<see cref="P:Microsoft.Office.Interop.Word.Options.PrintReverse" />のプロパティは無視されます。 使用して、<see cref="P:Microsoft.Office.Interop.Word.Options.PrintOddPagesInAscendingOrder" />と<see cref="P:Microsoft.Office.Interop.Word.Options.PrintEvenPagesInAscendingOrder" />手動両面印刷時に出力を制御するプロパティです。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
-        <param name="PrintZoomColumn">省略可能な<b>オブジェクト</b>です。 1 ページ上の水平方向に含めるページの数を指定します。 1、2、3、4 などの数字を指定できます。 使用して、 <paramref name="PrintZoomRow" /> 1 枚に複数のページを印刷する引数です。</param>
-        <param name="PrintZoomRow">省略可能な<b>オブジェクト</b>です。 1 ページ上の垂直方向に含めるページの数を指定します。 1、2、3、4 などの数字を指定できます。 使用して、 <paramref name="PrintZoomColumn" /> 1 枚に複数のページを印刷する引数です。</param>
+        <param name="ManualDuplexPrint">省略可能な<b>オブジェクト</b>です。 <b>True</b> 両面印刷キットのないプリンターで両面の文書を印刷します。 この引数に<b>True</b>を指定する<see cref="P:Microsoft.Office.Interop.Word.Options.PrintBackground" />と<see cref="P:Microsoft.Office.Interop.Word.Options.PrintReverse" /> 、プロパティとプロパティは無視されます。 手動両面<see cref="P:Microsoft.Office.Interop.Word.Options.PrintOddPagesInAscendingOrder" />印刷<see cref="P:Microsoft.Office.Interop.Word.Options.PrintEvenPagesInAscendingOrder" />中に出力を制御するには、プロパティとプロパティを使用します。 この引数は、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
+        <param name="PrintZoomColumn">省略可能な<b>オブジェクト</b>です。 1 ページ上の水平方向に含めるページの数を指定します。 1、2、3、4 などの数字を指定できます。 1枚の<paramref name="PrintZoomRow" />シートに複数のページを印刷するには、引数と組み合わせて使用します。</param>
+        <param name="PrintZoomRow">省略可能な<b>オブジェクト</b>です。 1 ページ上の垂直方向に含めるページの数を指定します。 1、2、3、4 などの数字を指定できます。 1枚の<paramref name="PrintZoomColumn" />シートに複数のページを印刷するには、引数と組み合わせて使用します。</param>
         <param name="PrintZoomPaperWidth">省略可能な<b>オブジェクト</b>です。 印刷されるページの幅の拡大または縮小率を twip 単位 (20 twips = 1 ポイント; 72 ポイント = 1 インチ) で指定します。</param>
         <param name="PrintZoomPaperHeight">省略可能な<b>オブジェクト</b>です。 印刷されるページの高さの拡大または縮小率を twip 単位 (20 twips = 1 ポイント; 72 ポイント = 1 インチ) で指定します。</param>
         <summary>指定された文書の全部または一部を印刷します。</summary>
@@ -1184,7 +1158,7 @@
         <param name="PrintZoomRow">To be added.</param>
         <param name="PrintZoomPaperWidth">To be added.</param>
         <param name="PrintZoomPaperHeight">To be added.</param>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。 </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1240,7 +1214,7 @@
         <param name="Collate">To be added.</param>
         <param name="ActivePrinterMacGX">To be added.</param>
         <param name="ManualDuplexPrint">To be added.</param>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1268,16 +1242,12 @@
         <Parameter Name="y" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="x">
-          <b>整数</b>が必要です。 画面の左端からその位置までの水平方向の距離 (ピクセル単位) を指定します。</param>
-        <param name="y">
-          <b>整数</b>が必要です。 画面の上端からその位置までの垂直方向の距離 (ピクセル単位) を指定します。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.Range" />または<see cref="T:Microsoft.Office.Interop.Word.Shape" />画面位置の座標で指定された位置に配置されているオブジェクト。</summary>
+        <param name="x">整数型 (<b>Integer</b>) の値を使用します。 画面の左端からその位置までの水平方向の距離 (ピクセル単位) を指定します。</param>
+        <param name="y">整数型 (<b>Integer</b>) の値を使用します。 画面の上端からその位置までの垂直方向の距離 (ピクセル単位) を指定します。</param>
+        <summary>画面位置<see cref="T:Microsoft.Office.Interop.Word.Range" />の<see cref="T:Microsoft.Office.Interop.Word.Shape" />座標の組で指定された位置にあるオブジェクトまたはオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>指定された座標で位置指定範囲または図形がない場合、メソッドは<b>Nothing</b>を返します。</para>
-          <para />
-        </remarks>
+        <remarks><para>指定された座標で位置指定範囲または図形がない場合、メソッドは <b>Nothing</b> を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollIntoView">
@@ -1303,14 +1273,11 @@
         <Parameter Name="Start" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="obj">
-          <b>オブジェクト</b>が必要です。 A<see cref="T:Microsoft.Office.Interop.Word.Range" />または<see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクトです。</param>
-        <param name="Start">オプションの <b>Boolean</b>。 <b>True の</b>場合は左上の指定範囲または図形の角は、ドキュメント ウィンドウの左上隅に表示されます。 ドキュメント ウィンドウの右下にある場合は<b>false を指定</b>範囲または図形の角を右下に表示されます。 既定値は <b>True</b> です。</param>
+        <param name="obj">必要な<b>オブジェクト</b>。 <see cref="T:Microsoft.Office.Interop.Word.Range" /> Or <see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクト。</param>
+        <param name="Start">オプションの <b>Boolean</b>。 <b>True</b>場合は、指定範囲または図形の左上隅が文書ウィンドウの左上隅に表示されます。 <b>False</b>場合は、指定範囲または図形の右下隅が文書ウィンドウの右下隅に表示されます。 既定値は <b>True</b> です。</param>
         <summary>指定された指定範囲または図形が文書ウィンドウ内に表示されるように、文書ウィンドウをスクロールします。</summary>
-        <remarks>
-          <para>指定範囲または図形がドキュメント ウィンドウよりも大きい場合、<paramref name="Start" />の範囲のどの部分を指定する引数または図形が表示されますか、初期フォーカスを取得します。このメソッドは、アウトライン表示では使用できません。</para>
-          <para />
-        </remarks>
+        <remarks><para>指定範囲または図形が文書ウィンドウよりも大きい場合、 <paramref name="Start" />引数は指定範囲または図形のどの部分が表示されるか、または最初にフォーカスを取得するかを指定します。 ScrollIntoView メソッドは、アウトライン表示では使用できません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Selection">
@@ -1336,7 +1303,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Selection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Selection" /> 、選択範囲またはカーソル位置を表すオブジェクト。</summary>
+        <summary>選択範囲<see cref="T:Microsoft.Office.Interop.Word.Selection" />またはカーソル位置を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1363,10 +1330,8 @@
       <Parameters />
       <Docs>
         <summary>指定された文書ウィンドウのフォーカスを電子メール メッセージの本文に設定します。</summary>
-        <remarks>
-          <para>場合は、ドキュメントには、電子メール メッセージがない場合は、このメソッドは影響を与えません。</para>
-          <para />
-        </remarks>
+        <remarks><para>文書が電子メール メッセージではない場合、このメソッドはフォーカスを設定しません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowSourceDocuments">
@@ -1395,10 +1360,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdShowSourceDocuments</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Word.WdShowSourceDocuments" />比較と反映のプロセスの後、Microsoft Office Word が元のドキュメントを表示する方法を表す定数です。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdShowSourceDocuments" />
-        </value>
+        <summary>取得または比較<see cref="T:Microsoft.Office.Interop.Word.WdShowSourceDocuments" />処理の後に、Microsoft Office Word で元の文書を表示する方法を表す定数を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdShowSourceDocuments" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1432,11 +1395,10 @@
         <param name="ToRight">省略可能な<b>オブジェクト</b>です。 ウィンドウを右にスクロールする行数を指定します。 "行" は、垂直スクロール バーの右向き矢印を一度クリックしたときに移動する量に対応します。</param>
         <param name="ToLeft">省略可能な<b>オブジェクト</b>です。 ウィンドウを左にスクロールする行数を指定します。 "行" は、垂直スクロール バーの左向き矢印を一度クリックしたときに移動する量に対応します。</param>
         <summary>指定した行数だけウィンドウまたはウィンドウ枠をスクロールします。</summary>
-        <remarks>
-          <para>このメソッドは、水平方向および垂直方向のスクロール バーのスクロール バーの矢印をクリックします</para>。
-          <para>場合<paramref name="Down" />と<paramref name="Up" />を指定した、ウィンドウは引数の差だけスクロールします。などの場合は<paramref name="Down" />は、3 と<paramref name="Up" />6 では、ウィンドウは 3 行上にスクロールします。同様に場合は、<paramref name="ToLeft" />と<paramref name="ToRight" />を指定した、ウィンドウは引数の差だけスクロールします</para>。
-          <para>負の数は、これらの引数のいずれかです。引数が指定されていない場合、ウィンドウは 1 行ずつ下にスクロールします</para>。
-          <para /></remarks>
+        <remarks><para>このメソッドは、垂直または水平方向のスクロール バーの矢印ボタンをクリックする操作と同じです。</para>
+          <para>と<paramref name="Down" /> <paramref name="Up" />の両方が指定されている場合、ウィンドウは引数の違いによってスクロールされます。 たとえば、が 3 <paramref name="Down" /> <paramref name="Up" />で6の場合、ウィンドウは3行上にスクロールされます。 同様に、 <paramref name="ToLeft" />と<paramref name="ToRight" />の両方が指定されている場合、ウィンドウは引数の違いによってスクロールされます。</para>
+          <para>これらの引数には負数を指定できます。 どの引数も指定しない場合、ウィンドウは 1 行下にスクロールされます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Split">
@@ -1465,8 +1427,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、ウィンドウが複数のペインに分割します。</summary>
+        <summary><b>True の</b> 場合、ウィンドウが複数のペインに分割します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1497,12 +1458,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>上下に分割する、指定したウィンドウの割合を設定または返します。</summary>
+        <summary>指定したウィンドウの垂直方向の分割率を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>分割を削除するには、このプロパティをゼロ (0) に設定または設定します<see cref="P:Microsoft.Office.Interop.Word.Window.Split" />プロパティを<b>False</b>にします。</para>
-          <para />
-        </remarks>
+        <remarks><para>分割を解除するには、このプロパティをゼロ (0) に設定<see cref="P:Microsoft.Office.Interop.Word.Window.Split" />するか、またはプロパティを<b>False</b>に設定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StyleAreaWidth">
@@ -1533,11 +1492,8 @@
       <Docs>
         <summary>スタイル名表示領域の幅をポイント単位で設定を取得または取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>StyleAreaWidth</b>プロパティは、0 (ゼロ) より大きい値は、スタイル名がテキストの左側に表示されます。スタイル名表示領域は、印刷レイアウトまたは Web レイアウト表示で表示されません。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>StyleAreaWidth</b> プロパティは、0 (ゼロ) より大きい値は、スタイル名がテキストの左側に表示されます。スタイル名表示領域は、印刷レイアウトまたは Web レイアウト表示で表示されません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Thumbnails">
@@ -1566,8 +1522,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>ブール値</b> を Microsoft Word の文書ウィンドウの左側にあるドキュメント内のページのサムネール画像が表示されるかどうかを表すを取得または設定します。</summary>
+        <summary><b>ブール値</b> を Microsoft Word の文書ウィンドウの左側にあるドキュメント内のページのサムネール画像が表示されるかどうかを表すを取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1594,10 +1549,8 @@
       <Parameters />
       <Docs>
         <summary>リボンを表示または非表示にします。</summary>
-        <remarks>
-          <para>リボンが表示されている場合、<see cref="M:Microsoft.Office.Interop.Word.Window.ToggleRibbon" />メソッドを非表示になります。リボンが表示されない場合、<see cref="M:Microsoft.Office.Interop.Word.Window.ToggleRibbon" />メソッドでは、それを表示します。</para>
-          <para />
-        </remarks>
+        <remarks><para>リボンが表示されている<see cref="M:Microsoft.Office.Interop.Word.Window.ToggleRibbon" />場合、メソッドはそれを非表示にします。リボンが非表示の場合は<see cref="M:Microsoft.Office.Interop.Word.Window.ToggleRibbon" /> 、メソッドによって表示されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ToggleShowAllReviewers">
@@ -1654,7 +1607,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定したウィンドウの垂直位置をポイント単位で設定します。</summary>
+        <summary>指定したウィンドウの垂直方向の位置をポイント単位で取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1684,18 +1637,15 @@
       <Docs>
         <summary>ウィンドウの種類を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdWindowType" />次の<b>WdWindowType</b>定数のいずれかをすることができます。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdWindowType" />
-            <b>WdWindowType</b>定数のいずれか: </para>
-          <para>
-            <b>wdWindowTemplate </b>
+            <b>wdWindowTemplate</b>
           </para>
           <para>
             <b>wdWindowDocument</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UsableHeight">
@@ -1721,12 +1671,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した文書ウィンドウで作業中の作業領域の高さ (ポイント単位で) を返します。</summary>
+        <summary>指定した文書ウィンドウのアクティブな作業領域の高さをポイント単位で取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>作業領域の [なし] が表示されているドキュメント ウィンドウの場合、 <b>UsableHeight</b>は 1 を返します。実際の使用可能な高さを確認するのには、 <b>UsableHeight</b>値から 1 を減算します。</para>
-          <para />
-        </remarks>
+        <remarks><para>作業領域の [なし] が表示されているドキュメント ウィンドウの場合、 <b>UsableHeight</b> は 1 を返します。実際の使用可能な高さを確認するのには、 <b>UsableHeight</b> 値から 1 を減算します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UsableWidth">
@@ -1754,10 +1702,8 @@
       <Docs>
         <summary>指定した文書ウィンドウで作業中の作業領域の幅 (ポイント単位で) を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>作業領域の [なし] が表示されているドキュメント ウィンドウの場合、 <b>usablewidth プロパティ</b>は 1 を返します。実際の使用可能な高さを確認するのには、 <b>usablewidth プロパティ</b>の値から 1 を減算します。</para>
-          <para />
-        </remarks>
+        <remarks><para>作業領域の [なし] が表示されているドキュメント ウィンドウの場合、 <b>usablewidth プロパティ</b> は 1 を返します。実際の使用可能な高さを確認するのには、 <b>usablewidth プロパティ</b> の値から 1 を減算します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalPercentScrolled">
@@ -1814,7 +1760,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.View</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.View" /> 、指定したウィンドウのビューを表すオブジェクト。</summary>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.View" />たウィンドウのビューを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1845,13 +1791,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> と指定したオブジェクトが表示されます。</summary>
+        <summary><b>True</b> と指定したオブジェクトが表示されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>任意のオブジェクトでは、一部のメソッドとプロパティできない場合があります、 <b>Visible</b>プロパティが<b>False</b>の場合。</para>
-          <para />
-        </remarks>
+        <remarks><para>任意のオブジェクトでは、一部のメソッドとプロパティできない場合があります、 <b>Visible</b> プロパティが <b>False</b> の場合。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -1910,10 +1853,8 @@
       <Docs>
         <summary>ウィンドウの指定されたウィンドウに表示されるドキュメント数を返します。 たとえば、ウィンドウのキャプションが"Sales.doc:2"である場合は、このプロパティは、数値 2 を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用して、<see cref="P:Microsoft.Office.Interop.Word.Window.Index" />プロパティで指定されたウィンドウの数を取得するのには、<see cref="T:Microsoft.Office.Interop.Word.Windows" />コレクションです。</para>
-          <para />
-        </remarks>
+        <remarks><para>コレクション内<see cref="P:Microsoft.Office.Interop.Word.Window.Index" />の指定したウィンドウの番号を取得するには、プロパティを使用します。 <see cref="T:Microsoft.Office.Interop.Word.Windows" /></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowState">
@@ -1944,21 +1885,19 @@
       <Docs>
         <summary>文書ウィンドウまたはタスク ウィンドウの状態を取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdWindowState" /><b>Wdwindowstate</b>クラスの定数のいずれかをすることができます。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdWindowState" />これら<b>が可能</b>定数のいずれかの: </para>
-          <para>
-            <b>wdWindowStateMaximize </b>
+            <b>wdWindowStateMaximize</b>
           </para>
           <para>
-            <b>wdWindowStateNormal </b>
+            <b>Wdwindowstatenormal は</b>
           </para>
           <para>
-            <b>wdWindowStateMinimize </b>
+            <b>wdWindowStateMinimize</b>
           </para>
-          <para>
-            <b>wdWindowStateNormal</b>定数を示すウィンドウが最大化されていないですか最小化されます。アクティブでないウィンドウの状態を設定することはできません。使用して、 <see cref="M:Microsoft.Office.Interop.Word.Window.Activate" /> 、ウィンドウの状態を設定する前にウィンドウをアクティブにする方法です</para>。
-          <para /></remarks>
+          <para>定数 <b>wdWindowStateNormal</b> は、ウィンドウを最大化または最小化されてはいないを示します。 アクティブでないウィンドウの状態を設定することはできません。 ウィンドウの<see cref="M:Microsoft.Office.Interop.Word.Window.Activate" />状態を設定する前にウィンドウをアクティブにするには、メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

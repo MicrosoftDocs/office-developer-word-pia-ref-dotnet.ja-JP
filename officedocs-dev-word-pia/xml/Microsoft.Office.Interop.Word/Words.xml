@@ -1,13 +1,5 @@
 <Type Name="Words" FullName="Microsoft.Office.Interop.Word.Words">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d48de7da434ab165907e297c39bfe4ff1b969693" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670772" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Words : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d236676b440e6d795d3c1717b83df235a2ae0ef2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142655" /></Metadata><TypeSignature Language="C#" Value="public interface Words : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Words implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Words" />
   <TypeSignature Language="VB.NET" Value="Public Interface Words&#xA;Implements IEnumerable" />
@@ -30,16 +22,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>選択範囲、指定範囲、または文書内の単語のコレクションです。</summary>
-    <remarks>
-      <para>
-        <b>Words</b>コレクション内の各項目は、 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 1 つの単語を表すオブジェクト。Word オブジェクトはありません</para>。
-      <para><b>語</b>プロパティを使用して<b>単語</b>のオブジェクトを取得します</para>。使用<b>単語</b>の
-      <para>(<paramref name="index" />)、<paramref name="index" />インデックス番号は、1 つの単語を表す<b>Range</b>オブジェクトを取得するのには。インデックス番号は<b>Words</b>コレクションでの単語の位置を表します</para>。
-      <para><b>単語</b>内の項目のコレクションには、単語の後の単語とスペースの両方が含まれています。選択範囲は、カーソル位置とその直後にスペース、Selection.Words(1) は、選択範囲を前の単語を参照します。選択範囲は、カーソル位置し、文字の直後には場合、Selection.Words(1) は、選択範囲に続く単語を参照します</para>。
-      <para>、<see cref="P:Microsoft.Office.Interop.Word.Words.Count" />ドキュメントでこのコレクションのプロパティは、メイン テキスト ストーリーのみの項目の数を返します。カウントするための他のストーリーの項目は、 <b>Range</b>オブジェクトと共にコレクションを使用します。<b>Count</b>プロパティには、合計での句読点および段落記号が含まれています。文書内の実際の単語の数が必要な場合は、[文字カウント] ダイアログ ボックスを使用します</para>。
-      <para><b>追加</b>のメソッドは、 <b>Words</b>コレクションのメンバーを使用できません。代わりに、使用、<see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" />メソッドを<b>Range</b>オブジェクトにテキストを追加します</para>。
-      <para /></remarks>
+    <summary>選択範囲、指定範囲、文書にある単語のコレクションです。</summary>
+    <remarks><para><b>Words</b>コレクションの各項目は、 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 1 つの単語を表すオブジェクトです。 Word オブジェクトはありません。</para>
+      <para><b>Words</b> プロパティを使用して <b>Words</b> オブジェクトを返します。</para>
+      <para>1つの<paramref name="index" />単語を表す<paramref name="index" /> Range オブジェクトを取得するには、<b>単語</b>() を使用します。ここで、はインデックス番号を<b>指定</b>します。 インデックス番号は、 <b>Words</b>コレクションでの単語の位置を表します。</para>
+      <para><b>Words</b> コレクションのアイテムには、単語と単語に続くスペースの両方が含まれます。 カーソルの直後にスペースがある場合、Selection.Words(1) は、カーソルの前の単語を表します。 カーソルの直後に文字がある場合、Selection.Words(1) は、カーソルの後ろの単語を表します。</para>
+      <para>文書<see cref="P:Microsoft.Office.Interop.Word.Words.Count" />内のこのコレクションのプロパティは、メインストーリーのみの項目数を返します。 他のストーリーのアイテムを数えるには、このコレクションと共に <b>Range</b> オブジェクトを使用します。 また、<b>Count</b> プロパティには、句読点および段落記号もすべて含まれます。 文書内の実際の単語数が必要な場合は、[文字カウント] ダイアログボックスを使用します。</para>
+      <para><b>Words</b>コレクションでは、 <b>Add</b>メソッドを使用できません。 代わりに、 <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" />メソッドを使用して、 <b>Range</b>オブジェクトにテキストを追加します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -65,7 +55,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,12 +111,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="First">
@@ -152,7 +141,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 、文書、選択範囲または指定範囲の最初の単語を表すオブジェクト。</summary>
+        <summary>文書、 <see cref="T:Microsoft.Office.Interop.Word.Range" />選択範囲、または指定範囲内の最初の単語を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -215,7 +204,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">位置を表す序数または各オブジェクトの名前を表す文字列を示す<b>オブジェクト</b>。</param>
+        <param name="Index">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -244,7 +233,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 、文書、選択範囲、または指定範囲の最後の単語を表すオブジェクト。</summary>
+        <summary>文書、 <see cref="T:Microsoft.Office.Interop.Word.Range" />選択範囲、または指定範囲内の最後の単語を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

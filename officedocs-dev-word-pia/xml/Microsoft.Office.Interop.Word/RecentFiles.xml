@@ -1,13 +1,5 @@
 <Type Name="RecentFiles" FullName="Microsoft.Office.Interop.Word.RecentFiles">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="68c5a0e1fbcd245eba8883440686f818351a23f1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671901" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface RecentFiles : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dbecbe85386c489b7ea85c8fdd7d013d03d7c878" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144114" /></Metadata><TypeSignature Language="C#" Value="public interface RecentFiles : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RecentFiles implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.RecentFiles" />
   <TypeSignature Language="VB.NET" Value="Public Interface RecentFiles&#xA;Implements IEnumerable" />
@@ -30,13 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Word.RecentFile" />を最近使用されたファイルを表すオブジェクト。 <b>RecentFiles</b> コレクションの各項目は、[ ファイル] メニューの一番下に表示されます。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Word._Application.RecentFiles" /> 、 <b>RecentFiles</b>コレクションを返すプロパティです</para>。
-      <para><b>RecentFiles</b>コレクションにファイルを追加するのには Add メソッドを使用します</para>。
-      <para>使用して<b>RecentFiles</b>(<paramref name="index" />)、<paramref name="index" />インデックス番号は、1 つ<b>RecentFile</b>オブジェクトを取得します。インデックス番号は、[ファイル] メニューのファイルの位置を表します</para>。
-      <para>、<see cref="M:Microsoft.Office.Interop.Word._Document.SaveAs(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />と<see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />のメソッドが含まれて、 <paramref name="AddToRecentFiles" /> 、ファイルを開くか保存するときに最近の使用-ファイル リストにでファイルが追加されたかどうかを制御する引数です</para>。
-      <para /></remarks>
+    <summary>最近使用さ<see cref="T:Microsoft.Office.Interop.Word.RecentFile" />れたファイルを表すオブジェクトのコレクションです。 <b>RecentFiles</b> コレクションの各項目は、[ ファイル] メニューの一番下に表示されます。</summary>
+    <remarks><para>RecentFiles コレクション<see cref="P:Microsoft.Office.Interop.Word._Application.RecentFiles" />を取得するの<b></b>にには、プロパティを使用します。</para>
+      <para>Add メソッドを使用して、 <b>RecentFiles</b> コレクションにファイルを追加します。</para>
+      <para>1つの<paramref name="index" /> <b>RecentFile</b>オブジェクトを<paramref name="index" />取得するのにには、 <b>RecentFiles</b>() を使用します。ここで、はインデックス番号を指定します。 インデックス番号は、[ ファイル] メニューで表示されるファイルの位置を表します。</para>
+      <para>および<see cref="M:Microsoft.Office.Interop.Word._Document.SaveAs(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />メソッドには、 <paramref name="AddToRecentFiles" />ファイルを開いたり保存したりするときに最近使用したファイルの一覧にファイルを追加するかどうかを制御する引数が含まれています。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,10 +53,9 @@
         <Parameter Name="ReadOnly" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Document">
-          <b>オブジェクト</b>が必要です。 ドキュメントの一覧に追加する最近使用したファイルです。 この引数を指定するには、文書の文字列名を使用して、または<see cref="T:Microsoft.Office.Interop.Word.Document" />オブジェクトです。</param>
+        <param name="Document">必要な<b>オブジェクト</b>。 ドキュメントの一覧に追加する最近使用したファイルです。 この引数を指定するには、ドキュメントまたは<see cref="T:Microsoft.Office.Interop.Word.Document" />オブジェクトの文字列名を使用します。</param>
         <param name="ReadOnly">省略可能な<b>オブジェクト</b>です。 <b>True</b> ドキュメントを読み取り専用にします。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Word.RecentFile" />最近のリストに追加するファイルを表すオブジェクトは、ファイルを使用します。</summary>
+        <summary>最近使用<see cref="T:Microsoft.Office.Interop.Word.RecentFile" />したファイルの一覧に追加されたファイルを表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,12 +139,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>します。 文字列を表す 16 進数、値である 4d535744 を返しますオブジェクトは、Microsoft Word で作成されている場合この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
-          <para /></remarks>
+        <remarks><para>オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。 [!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</para>
+          <para><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -215,7 +204,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">各オブジェクトの序数位置を示す<b>整数</b>です。</param>
+        <param name="Index">個々のオブジェクトの位置を表す<b>整数型 (Integer</b> ) の値を指定します。</param>
         <summary>コレクション内の各オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

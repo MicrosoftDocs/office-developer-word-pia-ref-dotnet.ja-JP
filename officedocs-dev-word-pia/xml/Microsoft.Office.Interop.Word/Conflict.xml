@@ -1,13 +1,5 @@
 <Type Name="Conflict" FullName="Microsoft.Office.Interop.Word.Conflict">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0b87b76ff93cbb3eea67868bd57964e4eb8e0287" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671764" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Conflict" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="21e74154c2475877e56ac3b4b4b6917cedd06347" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147208" /></Metadata><TypeSignature Language="C#" Value="public interface Conflict" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Conflict" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Conflict" />
   <TypeSignature Language="VB.NET" Value="Public Interface Conflict" />
@@ -26,12 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>共同編集された文書内の競合する編集を表します。 種類、<see cref="T:Microsoft.Office.Interop.Word.Conflict" />で指定されたオブジェクト、<see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" />列挙体です。</summary>
-    <remarks>
-      <para>通常と、ドキュメントを共同編集が有効になっていると同時に編集すると、だけで 1 つの共同作成者が特定の範囲を同時に編集することができます。Microsoft Word 2010 に自動的にロックを設定範囲を対象に共同作成者は、他の共同作成者は、同時に同じ範囲を編集することはできませんので、編集を開始する時点です</para>。
-      <para>A の競合は、すべて 1 つの共同執筆の範囲を排他的にロックを取得する前に、共同編集が有効である文書内の特定の範囲が同時に編集するときに発生します。競合の状況で表示されます各共同作成者に、範囲の排他的ロックを持つことですが、そのロックは、他の共同作成者には伝達されません。共同作成者、サーバーに保存する最初は表示されません、競合ドキュメントのバージョンが確立されているバージョンになりますので。最初の共同作成者が保存後に保存しようとする共同の作成者は、競合が発生します。同じ範囲の異なるバージョン間で競合している</para>。
-      <para>などの 1 つの共同執筆、文、「インターネット」読み取り"、高速な赤い fox"、および他の共同作成者の編集を同時に編集、「迅速なホワイト fox」と両方の編集が発生する前にいずれかの共同作成者に排他ロックを取得する文段落では、競合が発生します。この例では、「高速赤」と「迅速なホワイト」は、Word 2010 で調整できることはできません。最初の共同執筆、ドキュメントのバージョンをサーバーに保存するが、競合が発生しません。次の共同作成者がドキュメントのバージョンをサーバーに保存しようとすると、競合が発生しを受け入れるか、変更を拒否することによって競合を解決するのには、共同作成者を選択する必要があります</para>。
-      <para /></remarks>
+    <summary>共同編集された文書の競合する編集内容を表します。 <see cref="T:Microsoft.Office.Interop.Word.Conflict" />オブジェクトの型は、 <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" />列挙体で指定されます。</summary>
+    <remarks><para>通常、共同編集が有効になっているドキュメントを同時編集する場合、1人の共同編集者のみが一度に特定の範囲を編集できます。 Microsoft Word 2010 では、他の共同編集者が同じ範囲を同時に編集できないように、共同編集者が編集を開始するときに、その範囲が自動的にロックされます。</para>
+      <para>共同編集が有効になっているドキュメント内の特定の範囲が、1つの共同編集者が範囲の排他ロックを取得する前に同時に編集されると、競合が発生することがあります。 競合が発生した場合、各共同編集者には、範囲に対する排他ロックが設定されていますが、そのロックが他の共同編集者に伝達されることはありません。 サーバーに保存した共同編集者は、ドキュメントのバージョンが設定されたバージョンになるため、競合は表示されません。 最初の共同編集者が保存しようとした共同編集者は、競合が発生します。 同じ範囲の異なるバージョン間で競合があります。</para>
+      <para>たとえば、ある共同編集者が "the fast red fox" という文を編集した場合に、もう1人の共同編集者が文章を同時に編集すると、"高速な白い fox" と両方の編集が行われます。その前に、共同編集者が段落の場合は、競合が発生します。 この例では、Word 2010 では "高速赤" と "高速白" を調整することはできません。 ドキュメントの各バージョンをサーバーに保存する最初の共同編集者は、競合が発生しません。 次の共同編集者が自分のバージョンのドキュメントをサーバーに保存しようとすると、競合が発生し、変更を承諾または拒否することによって、共同編集者が競合を解決することを選択する必要があります。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Accept">
@@ -56,10 +47,8 @@
       <Parameters />
       <Docs>
         <summary>ユーザーが指定した競合する変更を受け入れて、競合を解消し、変更を文書のサーバー コピーに反映します。</summary>
-        <remarks>
-          <para>このメソッドは、ユーザーのバージョンの競合の変更を受け入れるし、サーバー バージョンの競合の変更を元に戻します。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドは、ユーザーバージョンの競合変更を受け入れ、サーバーバージョンの競合の変更を拒否します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -85,13 +74,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Application" /> 、Microsoft Word アプリケーションを表すオブジェクト。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを取得します。</summary>
+        <value>Microsoft <see cref="T:Microsoft.Office.Interop.Word.Application" /> Word アプリケーションを表すオブジェクト。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -117,12 +103,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトが作成されたアプリケーションを示す 32 ビット整数を取得します。</summary>
-        <value>指定したオブジェクトが作成されたアプリケーションを示す 32 ビット整数。</value>
-        <remarks>
-          <para>読み取り専用<b>long</b>です。オブジェクトは、Microsoft Word で作成されている場合、このプロパティは文字列"MSWD"を表す 16 進数、値である 4d535744 を返します。このプロパティは、各アプリケーションが 4 文字のクリエータ コードには、Apple Macintosh で使用するために設計されました。MSWD 元のコードが Word には、たとえば、します</para>。
-          <para><b>注意</b>: この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para /></remarks>
+        <summary>指定したオブジェクトが作成されたアプリケーションを示す32ビット整数を取得します。</summary>
+        <value>指定したオブジェクトが作成されたアプリケーションを示す32ビットの整数。</value>
+        <remarks><para>値の取得のみ可能な<b>long</b>値です。 オブジェクトが Microsoft Word で作成されている場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。 このプロパティは、各アプリケーションが 4 文字のクリエータ コードには、Apple Macintosh で使用するために設計されました。 たとえば、Word には、作成者コード MSWD です。</para>
+          <para>
+            <b>注意</b>: この値は、定数<b>wdCreatorCode</b>で表すこともできます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -149,7 +135,7 @@
       </ReturnValue>
       <Docs>
         <summary>コレクション内の項目の位置を表す値を返します。</summary>
-        <value>返します。 <see cref="T:System.Int32" />。</value>
+        <value>を<see cref="T:System.Int32" />返します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,9 +162,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、<see cref="T:System.Object" />の指定した親オブジェクトを表す<see cref="T:Microsoft.Office.Interop.Word.Conflict" />オブジェクトです。</summary>
-        <value>
-          <see cref="T:System.Object" />の指定した親オブジェクトを表す<see cref="T:Microsoft.Office.Interop.Word.Conflict" />オブジェクトです。</value>
+        <summary>は<see cref="T:System.Object" /> 、指定<see cref="T:Microsoft.Office.Interop.Word.Conflict" />したオブジェクトの親オブジェクトを表すを取得します。</summary>
+        <value><see cref="T:System.Object" />指定<see cref="T:Microsoft.Office.Interop.Word.Conflict" />したオブジェクトの親オブジェクトを表す。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,12 +190,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、<see cref="T:Microsoft.Office.Interop.Word.Range" />を指定したオブジェクトに含まれる文書の部分を表すオブジェクト。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.Range" />を指定したオブジェクトに含まれる文書の部分を表すオブジェクト。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />たオブジェクトに含まれる文書の一部を表すオブジェクトを取得します。</summary>
+        <value>指定<see cref="T:Microsoft.Office.Interop.Word.Range" />したオブジェクトに含まれる文書の一部を表すオブジェクト。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reject">
@@ -235,10 +218,8 @@
       <Parameters />
       <Docs>
         <summary>ユーザーによる変更を元に戻して、競合を解消し、競合する変更のサーバー コピーを受け入れます。</summary>
-        <remarks>
-          <para>このメソッドは、ユーザーのバージョンの競合を拒否し、現在サーバー上にあるバージョンを受け取ります。</para>
-          <para />
-        </remarks>
+        <remarks><para>このメソッドは、ユーザーバージョンの競合を拒否し、現在サーバー上にあるバージョンを受け入れます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -264,13 +245,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、<see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" />の<see cref="T:Microsoft.Office.Interop.Word.Conflict" />オブジェクトです。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" />の<see cref="T:Microsoft.Office.Interop.Word.Conflict" />オブジェクトです。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Conflict" />オブジェクト<see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" />のを取得します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Conflict" />オブジェクト<see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" />の。</value>
+        <remarks><para>値の取得のみ可能です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
