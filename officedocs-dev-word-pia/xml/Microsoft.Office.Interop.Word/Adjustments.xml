@@ -1,13 +1,5 @@
 <Type Name="Adjustments" FullName="Microsoft.Office.Interop.Word.Adjustments">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="04d00f5197d85b4aee3912704a4c99c46098e504" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20671368" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Adjustments" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f71474edc1a4cdff5dca9567b6a826b678d59ad6" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144653" /></Metadata><TypeSignature Language="C#" Value="public interface Adjustments" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Adjustments" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Adjustments" />
   <TypeSignature Language="VB.NET" Value="Public Interface Adjustments" />
@@ -26,49 +18,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="55086-101">指定されたオートシェイプまたはワードアート オブジェクトの調整値のコレクションを含みます。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="55086-101">Contains a collection of adjustment values for the specified AutoShape or WordArt object.</span>
-      </span>
-    </summary>
-    <remarks>
-      <span data-ttu-id="55086-102">
-        <para>各調整値は、調整ハンドルを調整する方法の 1 つを表します。2 つの方法でいくつかの調整ハンドルを調整できるため、水平方向および垂直方向にハンドルを調整することができます-図形は調整ハンドルの数よりも多くの調整値を持つことができます。図形は最大 8 つの調整値を持つことができます</para>。使用の
-      <para>、 <see cref="P:Microsoft.Office.Interop.Word.Shape.Adjustments" /><b>Adjustments</b>オブジェクトを返すプロパティです。<b>調整</b>(<paramref name="index" />)、<paramref name="index" />調整値のインデックス番号では、単一の調整値を返すには、</para> 。
-      <para>の異なる図形を調整値の数が異なる、調整の種類は、さまざまな図形の形状を変更してさまざまな種類の調整の有効な値の範囲が異なります</para>。
-      <para>調整可能な各図形は、調整では、手動で図形のインスタンスを作成するのには、特定の図形の調整動作を確認する最善の方法の別のセットを持つため、マクロ レコーダーをオンになって、調整し、記録されました。コード</para>。
-      <para>次の表は、異なる種類の調整の有効な調整値の範囲をまとめたものです。ほとんどの場合、有効値の範囲を超える値を指定する場合、最も近い有効な値割り当てられます調整にします</para>。
-      <list type="table"><item><description>(水平方向または垂直方向) の線形</description><description>一般に、値 0.0 は図形の左端または上端を表し、値 1.0 は図形の右端または下端を表します。有効な値は、手動で図形を調整することに対応します。たとえば、のみをプルする、調整ハンドルの半分の方法、図形の間で手動で場合、対応する調整の最大値は、0.5 をされます。図形の引き出し、吹き出しは、0.0 と 1.0 の値は、開始と引き出し線の終点で定義されている四角形の限界値を表し、負の数値を超えるように 1.0 が有効な値です</description></item>。
-        <item><description>放射状</description><description>調整値 1.0 は、図形の幅に対応します。図形の最大値は、0.5 のとき、または半分の方法です</description></item>。
-        <item><description>の
-          <description>角度</description>の値は度で表されます。範囲外の値を指定する場合-180 180 度、それに正規化されますその範囲内にあります</description></item></list>。
-      <para /></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="55086-102">
-          <para>Each adjustment value represents one way an adjustment handle can be adjusted. Because some adjustment handles can be adjusted in two ways — for instance, some handles can be adjusted both horizontally and vertically — a shape can have more adjustment values than it has adjustment handles. A shape can have up to eight adjustments.</para>
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Word.Shape.Adjustments" /> property to return an <b>Adjustments</b> object. Use <b>Adjustments</b>(<paramref name="index" />), where <paramref name="index" /> is the adjustment value's index number, to return a single adjustment value.</para>
-          <para>Different shapes have different numbers of adjustment values, different kinds of adjustments change the geometry of a shape in different ways, and different kinds of adjustments have different ranges of valid values.</para>
-          <para>Because each adjustable shape has a different set of adjustments, the best way to verify the adjustment behavior for a specific shape is to manually create an instance of the shape, make adjustments with the macro recorder turned on, and then examine the recorded code.</para>
-          <para>The following table summarizes the ranges of valid adjustment values for different types of adjustments. In most cases, if you specify a value that's beyond the range of valid values, the closest valid value will be assigned to the adjustment.</para>
-          <list type="table">
-            <item>
-              <description>Linear (horizontal or vertical)</description>
-              <description>Generally the value 0.0 represents the left or top edge of the shape and the value 1.0 represents the right or bottom edge of the shape. Valid values correspond to valid adjustments you can make to the shape manually. For example, if you can only pull an adjustment handle half way across the shape manually, the maximum value for the corresponding adjustment will be 0.5. For shapes such as callouts, where the values 0.0 and 1.0 represent the limits of the rectangle defined by the starting and ending points of the callout line, negative numbers and numbers greater than 1.0 are valid values.</description>
-            </item>
-            <item>
-              <description>Radial</description>
-              <description>An adjustment value of 1.0 corresponds to the width of the shape. The maximum value is 0.5, or half way across the shape.</description>
-            </item>
-            <item>
-              <description>Angle</description>
-              <description>Values are expressed in degrees. If you specify a value outside the range — 180 to 180, it will be normalized to be within that range.</description>
-            </item>
-          </list>
-          <para />
-        </span>
-      </span>
-    </remarks>
+    <summary><span data-ttu-id="e3acf-101">指定されたオートシェイプまたはワードアート オブジェクトの調整値のコレクションが含まれます。</span><span class="sxs-lookup"><span data-stu-id="e3acf-101">Contains a collection of adjustment values for the specified AutoShape or WordArt object.</span></span></summary>
+    <remarks><para><span data-ttu-id="e3acf-102">それぞれの調整値は、調整ハンドルの調整方法を表します。</span><span class="sxs-lookup"><span data-stu-id="e3acf-102">Each adjustment value represents one way an adjustment handle can be adjusted.</span></span> <span data-ttu-id="e3acf-103">ただし、調整ハンドルによっては水平方向と垂直方向の 2 種類の方法で調整できるものがあるため、調整ハンドルの数よりも調整値の数が多い場合があります。</span><span class="sxs-lookup"><span data-stu-id="e3acf-103">Because some adjustment handles can be adjusted in two ways — for instance, some handles can be adjusted both horizontally and vertically — a shape can have more adjustment values than it has adjustment handles.</span></span> <span data-ttu-id="e3acf-104">図形には、最大 8 つの調整を持つことができます。</span><span class="sxs-lookup"><span data-stu-id="e3acf-104">A shape can have up to eight adjustments.</span></span></para>
+      <para><span data-ttu-id="e3acf-105">調整オブジェクト<see cref="P:Microsoft.Office.Interop.Word.Shape.Adjustments" />を取得するの<b></b>にには、プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="e3acf-105">Use the <see cref="P:Microsoft.Office.Interop.Word.Shape.Adjustments" /> property to return an <b>Adjustments</b> object.</span></span> <span data-ttu-id="e3acf-106">調整<b></b>(<paramref name="index" />) を使用し<paramref name="index" />ます。ここで、は調整値のインデックス番号を、1つの調整値を返します。</span><span class="sxs-lookup"><span data-stu-id="e3acf-106">Use <b>Adjustments</b>(<paramref name="index" />), where <paramref name="index" /> is the adjustment value's index number, to return a single adjustment value.</span></span></para>
+      <para><span data-ttu-id="e3acf-107">図形によって調整値の数が異なり、調整の種類によって図形の形状の変更方法が異なり、調整の種類によって有効値の範囲が異なります。</span><span class="sxs-lookup"><span data-stu-id="e3acf-107">Different shapes have different numbers of adjustment values, different kinds of adjustments change the geometry of a shape in different ways, and different kinds of adjustments have different ranges of valid values.</span></span></para>
+      <para><span data-ttu-id="e3acf-108">調整可能な図形ごとに調整は異なります。特定の図形を調整したときの結果を確認するには、手動で 1 つだけ図形を作成し、マクロに記録しながら図形を調整し、記録されたコードを調べることを推奨します。</span><span class="sxs-lookup"><span data-stu-id="e3acf-108">Because each adjustable shape has a different set of adjustments, the best way to verify the adjustment behavior for a specific shape is to manually create an instance of the shape, make adjustments with the macro recorder turned on, and then examine the recorded code.</span></span></para>
+      <para><span data-ttu-id="e3acf-p103">次の表は、異なる種類の調整の、有効な調整値の範囲を示します。有効値の範囲を超える値を指定すると、最も近い有効な値が割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="e3acf-p103">The following table summarizes the ranges of valid adjustment values for different types of adjustments. In most cases, if you specify a value that's beyond the range of valid values, the closest valid value will be assigned to the adjustment.</span></span></para>
+      <list type="table">
+        <item>
+          <description><span data-ttu-id="e3acf-111">線型 (水平または垂直)</span><span class="sxs-lookup"><span data-stu-id="e3acf-111">Linear (horizontal or vertical)</span></span></description>
+          <description><span data-ttu-id="e3acf-p104">通常、値 0.0 は、図形の左端または上端を表し、値 1.0 は図形の右端または下端を表します。有効な値は、手動で図形を調整することができる範囲と同じです。たとえば、調整ハンドルを手動で図形の半分までしか動かすことができない場合、対応する調整の最大値は 0.5 です。吹き出しの場合、値 0.0 と 1.0 は、吹き出しの始点と終点で定義される四角形の限界値を表し、負の値および 1.0 を超える値が有効な値となります。</span><span class="sxs-lookup"><span data-stu-id="e3acf-p104">Generally the value 0.0 represents the left or top edge of the shape and the value 1.0 represents the right or bottom edge of the shape. Valid values correspond to valid adjustments you can make to the shape manually. For example, if you can only pull an adjustment handle half way across the shape manually, the maximum value for the corresponding adjustment will be 0.5. For shapes such as callouts, where the values 0.0 and 1.0 represent the limits of the rectangle defined by the starting and ending points of the callout line, negative numbers and numbers greater than 1.0 are valid values.</span></span></description>
+        </item>
+        <item>
+          <description><span data-ttu-id="e3acf-116">放射状</span><span class="sxs-lookup"><span data-stu-id="e3acf-116">Radial</span></span></description>
+          <description><span data-ttu-id="e3acf-p105">調整値 1.0 は、図形の幅に相当します。最大値は 0.5 で、図形の中間を表します。</span><span class="sxs-lookup"><span data-stu-id="e3acf-p105">An adjustment value of 1.0 corresponds to the width of the shape. The maximum value is 0.5, or half way across the shape.</span></span></description>
+        </item>
+        <item>
+          <description><span data-ttu-id="e3acf-119">角度</span><span class="sxs-lookup"><span data-stu-id="e3acf-119">Angle</span></span></description>
+          <description><span data-ttu-id="e3acf-120">値は度で表されます。</span><span class="sxs-lookup"><span data-stu-id="e3acf-120">Values are expressed in degrees.</span></span> <span data-ttu-id="e3acf-121">範囲外の値 (180 ~ 180) を指定すると、その範囲内に収まるように正規化されます。</span><span class="sxs-lookup"><span data-stu-id="e3acf-121">If you specify a value outside the range — 180 to 180, it will be normalized to be within that range.</span></span></description>
+        </item>
+      </list>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -94,12 +64,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="55086-103">返します、<see cref="T:Microsoft.Office.Interop.Word.Application" />を指定したオブジェクトの作成者を表すオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="55086-103">Returns an <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the creator of the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="e3acf-122">指定し<see cref="T:Microsoft.Office.Interop.Word.Application" />たオブジェクトの作成元を表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="e3acf-122">Returns an <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the creator of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -127,12 +92,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="55086-104">指定された項目の数を示す値を返します<see cref="T:Microsoft.Office.Interop.Word.Adjustments" />コレクションです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="55086-104">Returns a value indicating the number of items in the specified <see cref="T:Microsoft.Office.Interop.Word.Adjustments" /> collection.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="e3acf-123">指定した<see cref="T:Microsoft.Office.Interop.Word.Adjustments" />コレクション内の項目の数を示す値を返します。</span><span class="sxs-lookup"><span data-stu-id="e3acf-123">Returns a value indicating the number of items in the specified <see cref="T:Microsoft.Office.Interop.Word.Adjustments" /> collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -160,25 +120,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="55086-105">指定したオブジェクトが作成されたアプリケーションを示す値を返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="55086-105">Returns a value that indicates the application in which the specified object was created.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="e3acf-124">指定したオブジェクトが作成されたアプリケーションを示す値を返します。</span><span class="sxs-lookup"><span data-stu-id="e3acf-124">Returns a value that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="55086-106">
-            <para>などのオブジェクトは、Microsoft Word で作成されている場合このプロパティが返されます、16 進数の値である 4d535744 を文字列します。この値は、定数<b>wdCreatorCode</b>で表すこともできます</para>。
-          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para><para /></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="55086-106">
-              <para>For example, if the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD." This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
-              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="e3acf-125">たとえば、オブジェクトが Microsoft Word で作成されている場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。</span><span class="sxs-lookup"><span data-stu-id="e3acf-125">For example, if the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="e3acf-126">[!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</span><span class="sxs-lookup"><span data-stu-id="e3acf-126">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="e3acf-127"><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。</span><span class="sxs-lookup"><span data-stu-id="e3acf-127">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="e3acf-128">たとえば、Word には作成者コード MSWD です。</span><span class="sxs-lookup"><span data-stu-id="e3acf-128">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="e3acf-129">このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれている言語リファレンスのヘルプを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e3acf-129">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -210,32 +156,12 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="55086-107">調整値のインデックス番号を指定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="55086-107">The index number of the adjustment.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="55086-108">指定された調整値を設定または返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="55086-108">Returns or sets the specified adjustment value.</span>
-          </span>
-        </summary>
+        <param name="Index"><span data-ttu-id="e3acf-130">調整する項目のインデックス番号を指定します</span><span class="sxs-lookup"><span data-stu-id="e3acf-130">The index number of the adjustment.</span></span></param>
+        <summary><span data-ttu-id="e3acf-131">指定した調整値を返すか設定します。</span><span class="sxs-lookup"><span data-stu-id="e3acf-131">Returns or sets the specified adjustment value.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="55086-109">
-            <para>線型の調整で、調整値 0.0 の対応、図形の左端または上端と 1.0 の値を通常の図形の右端または下端に対応します。ただし、調整は、一部の図形の図形の境界を越えて渡すことができます。放射状の調整で、調整値 1.0 は図形の幅に対応しています。角度の調整は、調整値は度で指定されました。<b>項目</b>プロパティは、調整値を持つ図形にのみ適用されます</para>。
-          <para>オートシェイプおよびワードアート オブジェクトは最大 8 つの調整値を持ちます</para>。
-          <para /></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="55086-109">
-              <para>For linear adjustments, an adjustment value of 0.0 generally corresponds to the left or top edge of the shape, and a value of 1.0 generally corresponds to the right or bottom edge of the shape. However, adjustments can pass beyond shape boundaries for some shapes. For radial adjustments, an adjustment value of 1.0 corresponds to the width of the shape. For angular adjustments, the adjustment value is specified in degrees. The <b>Item</b> property applies only to shapes that have adjustments.</para>
-              <para>AutoShapes and WordArt objects have up to eight adjustments.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="e3acf-p109">有効な調整値の範囲は、0.0 ～ 1.0 です。線型の調整では、通常、調整値 0.0 は図形の左端または上端に対応し、1.0 は図形の右端または下端に対応します。ただし、図形によっては、図形の境界を超えて調整することができます。放射状の調整では、調整値 1.0 は図形の幅に相当します。角度の調整では、調整値が角度 (°) で指定されます。 <b>Item</b> プロパティは、調整値を持つ図形だけに使用できます。</span><span class="sxs-lookup"><span data-stu-id="e3acf-p109">For linear adjustments, an adjustment value of 0.0 generally corresponds to the left or top edge of the shape, and a value of 1.0 generally corresponds to the right or bottom edge of the shape. However, adjustments can pass beyond shape boundaries for some shapes. For radial adjustments, an adjustment value of 1.0 corresponds to the width of the shape. For angular adjustments, the adjustment value is specified in degrees. The <b>Item</b> property applies only to shapes that have adjustments.</span></span></para>
+          <para><span data-ttu-id="e3acf-137">オートシェイプおよびワードアートオブジェクトには、最大8つの調整値があります。</span><span class="sxs-lookup"><span data-stu-id="e3acf-137">AutoShapes and WordArt objects have up to eight adjustments.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -261,12 +187,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="55086-110">指定した親オブジェクトを表すオブジェクトを返します。<see cref="T:Microsoft.Office.Interop.Word.Adjustments" />コレクションです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="55086-110">Returns an object that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.Adjustments" /> collection.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="e3acf-138">指定した<see cref="T:Microsoft.Office.Interop.Word.Adjustments" />コレクションの親オブジェクトを表すオブジェクト型 (object) の値を取得します。</span><span class="sxs-lookup"><span data-stu-id="e3acf-138">Returns an object that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.Adjustments" /> collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="DocumentEvents2_XMLBeforeDeleteEventHandler" FullName="Microsoft.Office.Interop.Word.DocumentEvents2_XMLBeforeDeleteEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="bdccc03eae449e6d6d0cebfd1fb535ccc2027181" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20672095" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void DocumentEvents2_XMLBeforeDeleteEventHandler(Range DeletedRange, XMLNode OldXMLNode, bool InUndoRedo);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dd959bd70dac23bc982627c03dc51ca9e3940e13" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146940" /></Metadata><TypeSignature Language="C#" Value="public delegate void DocumentEvents2_XMLBeforeDeleteEventHandler(Range DeletedRange, XMLNode OldXMLNode, bool InUndoRedo);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DocumentEvents2_XMLBeforeDeleteEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DocumentEvents2_XMLBeforeDeleteEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DocumentEvents2_XMLBeforeDeleteEventHandler(DeletedRange As Range, OldXMLNode As XMLNode, InUndoRedo As Boolean)" />
@@ -36,72 +28,12 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="DeletedRange">
-      <span data-ttu-id="2e72b-101">
-        <see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトです。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="2e72b-101">
-          <see cref="T:Microsoft.Office.Interop.Word.Range" /> object.</span>
-      </span>
-      <span data-ttu-id="2e72b-102">削除する XML 要素の内容。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="2e72b-102">The contents of the XML element being deleted.</span>
-      </span>
-      <span data-ttu-id="2e72b-103">要素が削除され、テキストが関連付けられていないだけの場合、<paramref name="DeletedRange" />パラメーターが存在しないとは、したがって、 <b>Nothing</b>に設定します。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="2e72b-103">If only an element is deleted and not associated text, the <paramref name="DeletedRange" /> parameter will not exist and will, therefore, be set to <b>Nothing</b>.</span>
-      </span>
-    </param>
-    <param name="OldXMLNode">
-      <span data-ttu-id="2e72b-104">
-        <see cref="T:Microsoft.Office.Interop.Word.XMLNode" />オブジェクトです。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="2e72b-104">
-          <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> object.</span>
-      </span>
-      <span data-ttu-id="2e72b-105">削除するノードを指定します。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="2e72b-105">The node that is being deleted.</span>
-      </span>
-    </param>
-    <param name="InUndoRedo">
-      <span data-ttu-id="2e72b-106">
-        <b>ブール値</b> です。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="2e72b-106">
-          <b>Boolean</b>.</span>
-      </span>
-      <span data-ttu-id="2e72b-107">
-        <b>True</b> では、Microsoft Word で <b>元に戻す</b>または <b>やり直し</b>機能を使用して、アクションが実行されたことを示します。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="2e72b-107">
-          <b>True</b> indicates the action was performed using the <b>Undo</b> or <b>Redo</b> feature in Microsoft Word.</span>
-      </span>
-    </param>
-    <summary>
-      <span data-ttu-id="2e72b-108">
-        <b>デリゲート</b>型のイベント ハンドラーを追加するために使用します<see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLBeforeDelete" />イベントです。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="2e72b-108">A <b>Delegate</b> type used to add an event handler for the <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLBeforeDelete" /> event.</span>
-      </span>
-      <span data-ttu-id="2e72b-109">
-        <b>XMLBeforeDelete</b>イベントは、ユーザーが文書から XML 要素を削除するときに発生します。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="2e72b-109">The <b>XMLBeforeDelete</b> event occurs when a user deletes an XML element from a document.</span>
-      </span>
-    </summary>
-    <remarks>
-      <span data-ttu-id="2e72b-110">
-        <para>場合、<paramref name="InUndoRedo" />パラメーターが<b>true の場合</b>ドキュメント内の XML を変更することはありません、 <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLAfterInsert" /><b>XMLBeforeDelete</b>イベントを実行しているとします。</para>
-        <para>場合、<paramref name="InUndoRedo" />パラメーターが<b>False</b>を挿入し、ドキュメント内の XML を削除することができます、ように、 <b>XMLAfterInsert</b>イベントと<b>XMLBeforeDelete</b>イベントがください、互いをキャンセルするのには無限ループの原因と注意が必要ですが。グローバルを使用して、無限ループを防ぐことができます<b>ブール型</b>の変数と、エラー ハンドラーの冒頭でチェックします</para>。
-      <para /></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="2e72b-110">
-          <para>If the <paramref name="InUndoRedo" /> parameter is <b>True</b>, never change the XML in a document while the <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLAfterInsert" /> and <b>XMLBeforeDelete</b> events are running. </para>
-          <para>If the <paramref name="InUndoRedo" /> parameter is <b>False</b>, you can insert and delete the XML in the document— but be careful that the <b>XMLAfterInsert</b> and <b>XMLBeforeDelete</b> events will not try to cancel each other out, causing an infinite loop. You can prevent infinite loops by using a global <b>Boolean</b> variable and check for that at the beginning of the error handler.</para>
-          <para />
-        </span>
-      </span>
-    </remarks>
+    <param name="DeletedRange"><span data-ttu-id="f2a6b-101"><see cref="T:Microsoft.Office.Interop.Word.Range" />対象.</span><span class="sxs-lookup"><span data-stu-id="f2a6b-101"><see cref="T:Microsoft.Office.Interop.Word.Range" /> object.</span></span> <span data-ttu-id="f2a6b-102">削除する XML 要素の内容。</span><span class="sxs-lookup"><span data-stu-id="f2a6b-102">The contents of the XML element being deleted.</span></span> <span data-ttu-id="f2a6b-103">要素のみが削除され、テキストが関連付けられ<paramref name="DeletedRange" />ていない場合、パラメーターは存在しないので、 <b>Nothing</b>に設定されます。</span><span class="sxs-lookup"><span data-stu-id="f2a6b-103">If only an element is deleted and not associated text, the <paramref name="DeletedRange" /> parameter will not exist and will, therefore, be set to <b>Nothing</b>.</span></span></param>
+    <param name="OldXMLNode"><span data-ttu-id="f2a6b-104"><see cref="T:Microsoft.Office.Interop.Word.XMLNode" />対象.</span><span class="sxs-lookup"><span data-stu-id="f2a6b-104"><see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> object.</span></span> <span data-ttu-id="f2a6b-105">削除するノードを指定します。</span><span class="sxs-lookup"><span data-stu-id="f2a6b-105">The node that is being deleted.</span></span></param>
+    <param name="InUndoRedo"><span data-ttu-id="f2a6b-106"><b>ブール値</b> です。</span><span class="sxs-lookup"><span data-stu-id="f2a6b-106"><b>Boolean</b>.</span></span> <span data-ttu-id="f2a6b-107"><b>True</b> では、Microsoft Word で <b>元に戻す</b>または <b>やり直し</b>機能を使用して、アクションが実行されたことを示します。</span><span class="sxs-lookup"><span data-stu-id="f2a6b-107"><b>True</b> indicates the action was performed using the <b>Undo</b> or <b>Redo</b> feature in Microsoft Word.</span></span></param>
+    <summary><span data-ttu-id="f2a6b-108">イベントのイベントハンドラーを追加するために使用するデリゲートの種類。 <b></b> <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLBeforeDelete" /></span><span class="sxs-lookup"><span data-stu-id="f2a6b-108">A <b>Delegate</b> type used to add an event handler for the <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLBeforeDelete" /> event.</span></span> <span data-ttu-id="f2a6b-109"><b>Xmlbeforedelete</b>イベントは、ユーザーが文書から XML 要素を削除したときに発生します。</span><span class="sxs-lookup"><span data-stu-id="f2a6b-109">The <b>XMLBeforeDelete</b> event occurs when a user deletes an XML element from a document.</span></span></summary>
+    <remarks><para><span data-ttu-id="f2a6b-110">パラメーターに<b>True</b> <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLAfterInsert" />が設定されている場合は、および<b>xmlbeforedelete</b>イベントが実行されている間、文書内の XML を変更しないでください。 <paramref name="InUndoRedo" /></span><span class="sxs-lookup"><span data-stu-id="f2a6b-110">If the <paramref name="InUndoRedo" /> parameter is <b>True</b>, never change the XML in a document while the <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLAfterInsert" /> and <b>XMLBeforeDelete</b> events are running.</span></span> </para>
+      <para><span data-ttu-id="f2a6b-111"><paramref name="InUndoRedo" />パラメーターが<b>False</b>の場合は、ドキュメント内の XML を挿入および削除できますが、 <b>XMLAfterInsert</b>および<b>xmlbeforedelete</b>イベントは、互いにキャンセルされないため、無限ループが発生していることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="f2a6b-111">If the <paramref name="InUndoRedo" /> parameter is <b>False</b>, you can insert and delete the XML in the document— but be careful that the <b>XMLAfterInsert</b> and <b>XMLBeforeDelete</b> events will not try to cancel each other out, causing an infinite loop.</span></span> <span data-ttu-id="f2a6b-112">グローバルな<b>ブール型 (Boolean)</b>の変数を使用して無限ループを防止し、エラー処理ルーチンの開始時にそれを確認できます。</span><span class="sxs-lookup"><span data-stu-id="f2a6b-112">You can prevent infinite loops by using a global <b>Boolean</b> variable and check for that at the beginning of the error handler.</span></span></para>
+      <para> </para></remarks>
   </Docs>
 </Type>
