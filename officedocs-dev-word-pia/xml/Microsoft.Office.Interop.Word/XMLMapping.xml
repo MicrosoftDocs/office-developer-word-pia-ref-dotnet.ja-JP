@@ -1,9 +1,10 @@
 <Type Name="XMLMapping" FullName="Microsoft.Office.Interop.Word.XMLMapping">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9c7faf4f3e3ffccb270c1cc125874ce43681ee78" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142641" /></Metadata><TypeSignature Language="C#" Value="public interface XMLMapping" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a613d872defc3b239ef077ce2ad4da03a037e7ee" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926753" /></Metadata><TypeSignature Language="C#" Value="public interface XMLMapping" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLMapping" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLMapping" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLMapping" />
   <TypeSignature Language="C++ CLI" Value="public interface class XMLMapping" />
+  <TypeSignature Language="F#" Value="type XMLMapping = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,8 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>カスタム XML とコンテンツコントロールと<see cref="T:Microsoft.Office.Interop.Word.ContentControl" />の間のオブジェクトの XML マッピングを表します。 XML マッピングは、コンテンツ コントロール内の文字列と、このドキュメントのカスタム XML データ ストア内の XML 要素とのリンクです。</summary>
-    <remarks><para>XPath 文字列<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />を使用してコンテンツコントロールの XML マッピングを追加または変更するには、メソッドを使用します。 次の使用例は、文書の作成者に関する組み込みの文書プロパティを設定し、作業中の文書に新しいコンテンツ コントロールを挿入した後、組み込みの文書プロパティへのコントロールの XML マッピングを設定します。</para>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.ContentControl" />カスタム xml とコンテンツコントロールとの間のオブジェクトの XML マッピングを表します。 XML マッピングは、コンテンツ コントロール内の文字列と、このドキュメントのカスタム XML データ ストア内の XML 要素とのリンクです。</summary>
+    <remarks><para><see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />XPath 文字列を使用してコンテンツコントロールの XML マッピングを追加または変更するには、メソッドを使用します。 次の使用例は、文書の作成者に関する組み込みの文書プロパティを設定し、作業中の文書に新しいコンテンツ コントロールを挿入した後、組み込みの文書プロパティへのコントロールの XML マッピングを設定します。</para>
       <code>&lt;span class="label"&gt;Dim objcc As ContentControl
 
 
@@ -1813,7 +1814,7 @@ If blnMap = False Then
 
 
 End If&lt;/span&gt;</code>
-      <para><see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />メソッドを使用して、 <b>customxmlnode</b>オブジェクトを使用してコンテンツコントロールの XML マッピングを追加または変更します。 次の使用例は前の使用例と同じ処理を行いますが、<b>SetMappingByNode</b> メソッドを使用します。</para>
+      <para>メソッドを使用し <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> て、 <b>customxmlnode</b>オブジェクトを使用してコンテンツコントロールの XML マッピングを追加または変更します。 次の使用例は前の使用例と同じ処理を行いますが、<b>SetMappingByNode</b> メソッドを使用します。</para>
       <code>&lt;span class="label"&gt;Dim objcc As ContentControl
 
 
@@ -7833,7 +7834,7 @@ objCustomControl.XMLMapping.SetMappingByNode objCustomNode
 
 
 MsgBox objCustomControl.XMLMapping.IsMapped&lt;/span&gt;</code>
-      <para><see cref="M:Microsoft.Office.Interop.Word.XMLMapping.Delete" />メソッドを使用して、コンテンツコントロールの XML マッピングを削除します。  コンテンツ コントロールの XML マッピングを削除すると、コンテンツ コントロールと XML データとの接続だけが削除されます。  コンテンツ コントロールと XML データはどちらも文書内に残ります。  次の使用例は、作業中の文書で、現在マップされているすべてのコンテンツ コントロールの XML マッピングを削除します。</para>
+      <para>メソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.Delete" /> コンテンツコントロールの XML マッピングを削除します。  コンテンツ コントロールの XML マッピングを削除すると、コンテンツ コントロールと XML データとの接続だけが削除されます。  コンテンツ コントロールと XML データはどちらも文書内に残ります。  次の使用例は、作業中の文書で、現在マップされているすべてのコンテンツ コントロールの XML マッピングを削除します。</para>
       <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -8603,7 +8604,7 @@ For Each objCC In ActiveDocument.ContentControls
 
 
 Next&lt;/span&gt;</code>
-      <para>プロパティを<see cref="P:Microsoft.Office.Interop.Word.XMLMapping.IsMapped" />使用して、コンテンツコントロールが文書のデータストア内の XML ノードにマップされているかどうかを判断します。 次の使用例は、作業中の文書でマップされているすべてのコンテンツ コントロールの XML マッピングを削除します。</para>
+      <para>プロパティを使用して、 <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.IsMapped" /> コンテンツコントロールが文書のデータストア内の XML ノードにマップされているかどうかを判断します。 次の使用例は、作業中の文書でマップされているすべてのコンテンツ コントロールの XML マッピングを削除します。</para>
       <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -9373,7 +9374,7 @@ For Each objCC In ActiveDocument.ContentControls
 
 
 Next&lt;/span&gt;</code>
-      <para><see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" />プロパティを使用して、コンテンツコントロールがマップされている XML ノードにアクセスします。 <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" />プロパティを使用して、コンテンツコントロールがマップされる XML パーツにアクセスします。 <b>CustomXMLNode</b> オブジェクトと <b>CustomXMLPart</b> オブジェクトの操作に関する詳細については、それぞれのオブジェクトのトピックを参照してください。</para>
+      <para>プロパティを使用し <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" /> て、コンテンツコントロールがマップされている XML ノードにアクセスします。 プロパティを使用し <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" /> て、コンテンツコントロールがマップされる XML パーツにアクセスします。 <b>CustomXMLNode</b> オブジェクトと <b>CustomXMLPart</b> オブジェクトの操作に関する詳細については、それぞれのオブジェクトのトピックを参照してください。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -9383,6 +9384,7 @@ Next&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.XMLMapping.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -9400,7 +9402,7 @@ Next&lt;/span&gt;</code>
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word._Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word._Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9411,6 +9413,7 @@ Next&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.XMLMapping.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -9442,6 +9445,7 @@ Next&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomXMLNode As CustomXMLNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CustomXMLNode ^ CustomXMLNode { Microsoft::Office::Core::CustomXMLNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomXMLNode : Microsoft.Office.Core.CustomXMLNode" Usage="Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -11138,6 +11142,7 @@ Set objNode = objMap.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomXMLPart As CustomXMLPart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CustomXMLPart ^ CustomXMLPart { Microsoft::Office::Core::CustomXMLPart ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomXMLPart : Microsoft.Office.Core.CustomXMLPart" Usage="Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -11812,6 +11817,7 @@ Set objPart = objCC.XMLMapping.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLMapping.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="xMLMapping.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -12354,6 +12360,7 @@ For Each objCC In ActiveDocument.ContentControls
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.IsMapped" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property IsMapped As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool default { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMapped : bool" Usage="Microsoft.Office.Interop.Word.XMLMapping.IsMapped" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -12770,6 +12777,7 @@ For Each objCC In ActiveDocument.ContentControls
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.XMLMapping.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -12798,6 +12806,7 @@ For Each objCC In ActiveDocument.ContentControls
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.PrefixMappings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrefixMappings As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrefixMappings { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrefixMappings : string" Usage="Microsoft.Office.Interop.Word.XMLMapping.PrefixMappings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -12817,15 +12826,16 @@ For Each objCC In ActiveDocument.ContentControls
       <Docs>
         <summary>現在の XML マッピングの XPath を評価するために使用するプレフィックス マッピングを表す <b>文字列</b> を返します。 読み取り専用です。</summary>
         <value>To be added.</value>
-        <remarks><para>コンテンツコントロールのマッピングを設定するには、 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />メソッドを使用します。</para>
+        <remarks><para>コンテンツコントロールのマッピングを設定するには、 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> メソッドまたはメソッドを使用し <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetMapping">
-      <MemberSignature Language="C#" Value="public bool SetMapping (string XPath, string PrefixMapping = &quot;&quot;, Microsoft.Office.Core.CustomXMLPart Source = null);" />
+      <MemberSignature Language="C#" Value="public bool SetMapping (string XPath, string PrefixMapping = &quot;&quot;, Microsoft.Office.Core.CustomXMLPart Source = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetMapping([in]string XPath, [in]string PrefixMapping, [in]class Microsoft.Office.Core.CustomXMLPart Source) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetMapping (XPath As String, Optional PrefixMapping As String = &quot;&quot;, Optional Source As CustomXMLPart = null) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member SetMapping : string * string * Microsoft.Office.Core.CustomXMLPart -&gt; bool" Usage="xMLMapping.SetMapping (XPath, PrefixMapping, Source)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -12846,12 +12856,12 @@ For Each objCC In ActiveDocument.ContentControls
       </Parameters>
       <Docs>
         <param name="XPath">コンテンツ コントロールをマップする XML ノードを表す XPath 文字列を指定します。無効な XPath 文字列を指定すると、実行時エラーが発生します。</param>
-        <param name="PrefixMapping"><paramref name="XPath" />パラメーターで指定された式を照会するときに使用するプレフィックスマッピングを指定します。 省略した場合、現在の文書の指定したカスタム XML 部分のプレフィックス マッピングが使用されます。</param>
+        <param name="PrefixMapping">パラメーターで指定された式を照会するときに使用するプレフィックスマッピングを指定し <paramref name="XPath" /> ます。 省略した場合、現在の文書の指定したカスタム XML 部分のプレフィックス マッピングが使用されます。</param>
         <param name="Source">コンテンツ コントロールをマップする目的のカスタム XML データを指定します。このパラメーターを省略すると、XPath は現在のドキュメント内のすべてのカスタム XML を評価し、XPath が XML ノードに解決する最初の <b>CustomXMLPart</b> とのマッピングが確立します。 </param>
         <summary>作成するか、コンテンツ コントロールの XML マッピングを変更することができます。 文書のカスタム XML データストア内のカスタム XML ノードにコンテンツコントロールをマップする場合は<b>True</b>を返します。</summary>
-        <returns>Boolean</returns>
+        <returns>ブール型</returns>
         <remarks><para>XML マッピングが既に存在する場合、既存の XML マッピングは置き換えられ、コンテンツ コントロールの文字列は新しくマップされた XML ノードの内容に置き換えられます。指定した XPath が指定したカスタム XML 部分の XML ノードに評価されない場合でも、マッピングを指定することができ、マッピングが作成されます。このマッピングは、指定した XPath が指定したカスタム XML 部分内の XML ノードに評価されたときに、自動的にリンクされます。</para>
-          <para><see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />メソッドも参照してください。</para>
+          <para>メソッドも参照してください <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> 。</para>
           <para>
             <b>注</b>: リッチテキストコンテンツコントロールのマッピングを作成すると、実行時エラーが発生します。</para>
           <para> </para></remarks>
@@ -15301,6 +15311,7 @@ objCustomControl.XMLMapping.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetMappingByNode (Node As CustomXMLNode) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetMappingByNode(Microsoft::Office::Core::CustomXMLNode ^ Node);" />
+      <MemberSignature Language="F#" Value="abstract member SetMappingByNode : Microsoft.Office.Core.CustomXMLNode -&gt; bool" Usage="xMLMapping.SetMappingByNode Node" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -15320,8 +15331,8 @@ objCustomControl.XMLMapping.&lt;/span&gt;
       <Docs>
         <param name="Node">現在のコンテンツ コントロールをマップする XML ノードを指定します。</param>
         <summary>作成するか、コンテンツ コントロールの XML データ マッピングを変更することができます。 文書のカスタム XML データストア内のカスタム XML ノードにコンテンツコントロールをマップする場合は<b>True</b>を返します。</summary>
-        <returns>Boolean</returns>
-        <remarks><para>XML マッピングが既に存在する場合、既存の XML マッピングは置き換えられ、コンテンツ コントロールの文字列は新しくマップされた XML ノードの内容に置き換えられます。 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />メソッドも参照してください。</para>
+        <returns>ブール型</returns>
+        <remarks><para>XML マッピングが既に存在する場合、既存の XML マッピングは置き換えられ、コンテンツ コントロールの文字列は新しくマップされた XML ノードの内容に置き換えられます。 メソッドも参照してください <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> 。</para>
           <para>
             <b>注</b>: リッチテキストコンテンツコントロールのマッピングを作成すると、実行時エラーが発生します。</para>
           <para> </para></remarks>
@@ -19821,6 +19832,7 @@ objCustomControl.XMLMapping.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.XPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XPath : string" Usage="Microsoft.Office.Interop.Word.XMLMapping.XPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -19840,7 +19852,7 @@ objCustomControl.XMLMapping.&lt;/span&gt;
       <Docs>
         <summary>現在マップされている XML ノードに評価される、XML マッピングの XPath を表す <b>文字列</b> を返します。 読み取り専用です。</summary>
         <value>To be added.</value>
-        <remarks><para>コンテンツコントロールのマッピングを設定するには、 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />メソッドを使用します。 マッピングがアクティブではない場合、このプロパティを使用するとエラーが返されます。</para>
+        <remarks><para>コンテンツコントロールのマッピングを設定するには、 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> メソッドまたはメソッドを使用し <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> ます。 マッピングがアクティブではない場合、このプロパティを使用するとエラーが返されます。</para>
           <para> </para></remarks>
         <example><para>次の使用例は、作業中の文書の最初のコンテンツ コントロールが日付コントロールであるかどうか、および XPath 文字列が特定の組み込みの文書プロパティに設定されているかどうかを確認します。次に、XPath が一致せず、コントロールが日付コントロールである場合に、コントロールへのマッピングを設定します。</para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl

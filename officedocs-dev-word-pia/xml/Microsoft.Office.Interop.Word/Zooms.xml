@@ -1,9 +1,10 @@
 <Type Name="Zooms" FullName="Microsoft.Office.Interop.Word.Zooms">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="e190583a23d362ac7b11375f86aca595c1df450a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142036" /></Metadata><TypeSignature Language="C#" Value="public interface Zooms" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="25af40971a7a0078615fabdbf71a15c2b28970a0" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43927342" /></Metadata><TypeSignature Language="C#" Value="public interface Zooms" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Zooms" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Zooms" />
   <TypeSignature Language="VB.NET" Value="Public Interface Zooms" />
   <TypeSignature Language="C++ CLI" Value="public interface class Zooms" />
+  <TypeSignature Language="F#" Value="type Zooms = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,11 +19,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>各ビューの<see cref="T:Microsoft.Office.Interop.Word.Zoom" />倍率オプション (アウトライン、標準、印刷レイアウトなど) を表すオブジェクトのコレクションです。</summary>
-    <remarks><para><see cref="P:Microsoft.Office.Interop.Word.Pane.Zooms" />プロパティを使用して、<b>ズーム</b>のコレクションを取得します。</para>
-      <para><b>Zooms</b> コレクションの <b>Add</b> メソッドができません。 Zoom <b></b>コレクションには、さまざまなビューの種類 (アウトライン、標準、ページレイアウトなど) ごとに1つの<b>Zoom</b>オブジェクトが含まれます。 For Each を使用して、<b>ズーム</b>コレクションを列挙することはできません。 <b>..Next</b>ループ</para>
-      <para>1 <b></b>つの<paramref name="index" />Zoom オブジェクトを<paramref name="index" />取得するのには、ビューの種類を識別する<b>Zoom</b> () を使用します。 Index で指定されるビューの種類には、次<see cref="T:Microsoft.Office.Interop.Word.WdViewType" />の定数のいずれかを指定できます: <b>wdmasterview</b>、 <b>wdmasterview</b>、 <b>wdOutlineView</b>、 <b>WdPrintPreview</b>、 <b>wdmasterview</b>、または<b>wdwebview</b>。</para>
-      <para>また、 <see cref="T:Microsoft.Office.Interop.Word.View" />オブジェクトのプロパティ<see cref="P:Microsoft.Office.Interop.Word.View.Zoom" />を使用して、1つの<b>Zoom</b>オブジェクトを取得することもできます。</para>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.Zoom" />各ビューの倍率オプション (アウトライン、標準、印刷レイアウトなど) を表すオブジェクトのコレクションです。</summary>
+    <remarks><para>プロパティを使用して、 <see cref="P:Microsoft.Office.Interop.Word.Pane.Zooms" /> <b>ズーム</b>のコレクションを取得します。</para>
+      <para><b>Zooms</b> コレクションの <b>Add</b> メソッドができません。 Zoom<b>コレクションには、</b>さまざまなビューの種類 (アウトライン、標準、ページレイアウトなど) ごとに1つの<b>Zoom</b>オブジェクトが含まれます。 For Each を使用して、<b>ズーム</b>コレクションを列挙することはできません。 <b>..Next</b>ループ</para>
+      <para><b>Zooms</b> <paramref name="index" /> <paramref name="index" /> 1 つの<b>Zoom</b>オブジェクトを取得するのには、ビューの種類を識別する Zoom () を使用します。 Index で指定されるビューの種類には、次の定数のいずれかを指定でき <see cref="T:Microsoft.Office.Interop.Word.WdViewType" /> ます: <b>wdmasterview</b>、 <b>wdmasterview</b>、 <b>wdOutlineView</b>、 <b>WdPrintPreview</b>、 <b>wdmasterview</b>、または<b>wdwebview</b>。</para>
+      <para>また、オブジェクトのプロパティを使用して、 <see cref="P:Microsoft.Office.Interop.Word.View.Zoom" /> <see cref="T:Microsoft.Office.Interop.Word.View" /> 1 つの<b>Zoom</b>オブジェクトを取得することもできます。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Zooms.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Zooms.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -49,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Zooms.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Zooms.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Zooms.Item(Microsoft.Office.Interop.Word.WdViewType)" />
       <MemberSignature Language="VB.NET" Value="Public Function Item (Index As WdViewType) As Zoom" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Zoom ^ Item(Microsoft::Office::Interop::Word::WdViewType Index);" />
+      <MemberSignature Language="F#" Value="abstract member Item : Microsoft.Office.Interop.Word.WdViewType -&gt; Microsoft.Office.Interop.Word.Zoom" Usage="zooms.Item Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -107,8 +111,8 @@
         <Parameter Name="Index" Type="Microsoft.Office.Interop.Word.WdViewType" />
       </Parameters>
       <Docs>
-        <param name="Index">必須<see cref="T:Microsoft.Office.Interop.Word.WdViewType" />。 特定のズームの種類を指定します。</param>
-        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.Zoom" />オブジェクトを返します。</summary>
+        <param name="Index">必須 <see cref="T:Microsoft.Office.Interop.Word.WdViewType" /> 。 特定のズームの種類を指定します。</param>
+        <summary>指定した <see cref="T:Microsoft.Office.Interop.Word.Zoom" /> オブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Zooms.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Zooms.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

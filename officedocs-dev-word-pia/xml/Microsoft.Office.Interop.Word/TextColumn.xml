@@ -1,9 +1,10 @@
 <Type Name="TextColumn" FullName="Microsoft.Office.Interop.Word.TextColumn">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="015769d0ee569bc60722ccfff3efdbf14527bd9a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143862" /></Metadata><TypeSignature Language="C#" Value="public interface TextColumn" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="53674dd749fad4f664d6f327314a1761f280a5b8" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926032" /></Metadata><TypeSignature Language="C#" Value="public interface TextColumn" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextColumn" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TextColumn" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextColumn" />
   <TypeSignature Language="C++ CLI" Value="public interface class TextColumn" />
+  <TypeSignature Language="F#" Value="type TextColumn = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,10 +20,10 @@
   </Attributes>
   <Docs>
     <summary>段組みの 1 つの段を表します。</summary>
-    <remarks><para><b>TextColumn</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.TextColumns" />コレクションのメンバーです。 <b>TextColumns</b> コレクションには、文書または文書のセクションのすべての段組みが含まれます。</para>
-      <para>1つの<b>TextColumn</b>オブジェクトを取得<paramref name="index" />するのには、 <b>textcolumns</b>(<paramref name="index" />) を使用します。ここで、はインデックス番号を指定します。 インデックス番号は、 <b>TextColumns</b> コレクションでの段組みの段の (左から右に数えた) 位置を表します。</para>
-      <para>列の<see cref="M:Microsoft.Office.Interop.Word.TextColumns.Add(System.Object@,System.Object@,System.Object@)" />コレクションに列を追加するには、メソッドを使用します。 既定では、 <b>Textcolumns</b>コレクションには1つのテキスト列があります。</para>
-      <para>文字列を<see cref="M:Microsoft.Office.Interop.Word.TextColumns.SetCount(System.Int32)" />列に配置するには、メソッドを使用します。</para>
+    <remarks><para><b>TextColumn</b>オブジェクトは、コレクションのメンバーです <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> 。 <b>TextColumns</b> コレクションには、文書または文書のセクションのすべての段組みが含まれます。</para>
+      <para>1つの TextColumn オブジェクトを取得するのには、 <b>Textcolumns</b>( <paramref name="index" /> ) を使用します。ここで、 <paramref name="index" /> はインデックス番号を指定します。 <b>TextColumn</b> インデックス番号は、 <b>TextColumns</b> コレクションでの段組みの段の (左から右に数えた) 位置を表します。</para>
+      <para>列 <see cref="M:Microsoft.Office.Interop.Word.TextColumns.Add(System.Object@,System.Object@,System.Object@)" /> のコレクションに列を追加するには、メソッドを使用します。 既定では、 <b>Textcolumns</b>コレクションには1つのテキスト列があります。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.TextColumns.SetCount(System.Int32)" />文字列を列に配置するには、メソッドを使用します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextColumn.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.TextColumn.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -49,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextColumn.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.TextColumn.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextColumn.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.TextColumn.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextColumn.SpaceAfter" />
       <MemberSignature Language="VB.NET" Value="Public Property SpaceAfter As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float SpaceAfter { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.SpaceAfter : single with get, set" Usage="Microsoft.Office.Interop.Word.TextColumn.SpaceAfter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextColumn.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Width { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : single with get, set" Usage="Microsoft.Office.Interop.Word.TextColumn.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

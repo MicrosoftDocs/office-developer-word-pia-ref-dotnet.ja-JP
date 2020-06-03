@@ -1,9 +1,10 @@
 <Type Name="Template" FullName="Microsoft.Office.Interop.Word.Template">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ab6c90166c80860b2142f0d365e15d418af64385" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143855" /></Metadata><TypeSignature Language="C#" Value="public interface Template" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7c85aa1c5e8ca8c343d59cf4727bce5c3dd3a49a" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926060" /></Metadata><TypeSignature Language="C#" Value="public interface Template" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Template" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Template" />
   <TypeSignature Language="VB.NET" Value="Public Interface Template" />
   <TypeSignature Language="C++ CLI" Value="public interface class Template" />
+  <TypeSignature Language="F#" Value="type Template = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,25 +20,25 @@
   </Attributes>
   <Docs>
     <summary>文書テンプレートを表します。</summary>
-    <remarks><para><b>Template</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Templates" />コレクションのメンバーです。 <b>Templates</b> コレクションには、使用可能なすべての <b>Template</b> オブジェクトが含まれます。</para>
-      <para>テンプレート<b></b>(<paramref name="index" />) を使用し<paramref name="index" />ます。ここで、はテンプレート名またはインデックス番号を使用して、1つの<b>テンプレート</b>オブジェクトを返します。 インデックス番号は、 <b>Templates</b> コレクションでのテンプレートの位置を表します。</para>
+    <remarks><para><b>Template</b>オブジェクトは、コレクションのメンバーです <see cref="T:Microsoft.Office.Interop.Word.Templates" /> 。 <b>Templates</b> コレクションには、使用可能なすべての <b>Template</b> オブジェクトが含まれます。</para>
+      <para>テンプレート<b>(</b> <paramref name="index" /> ) を使用し <paramref name="index" /> ます。ここで、はテンプレート名またはインデックス番号を使用して、1つの<b>テンプレート</b>オブジェクトを返します。 インデックス番号は、 <b>Templates</b> コレクションでのテンプレートの位置を表します。</para>
       <para><b>Add</b> メソッドは <b>Templates</b> コレクションには使用できません。代わりに、次のいずれかの方法でテンプレートを <b>Templates</b> コレクションに追加できます。</para>
       <list type="bullet">
         <item>
-          <para><see cref="T:Microsoft.Office.Interop.Word.Documents" />コレクションに<see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />メソッドを使用して、テンプレートまたはテンプレートに基づく文書を開く</para>
+          <para>コレクションにメソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> <see cref="T:Microsoft.Office.Interop.Word.Documents" /> テンプレートまたはテンプレートに基づく文書を開く</para>
         </item>
         <item>
-          <para>Documents コレクション<see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" />でメソッドを<b></b>使用して、テンプレートに基づいて新しい文書を開く</para>
+          <para><see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" /> <b>Documents</b>コレクションでメソッドを使用して、テンプレートに基づいて新しい文書を開く</para>
         </item>
         <item>
-          <para><see cref="T:Microsoft.Office.Interop.Word.AddIns" />コレクションで<see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" />メソッドを使用してグローバルテンプレートを読み込む</para>
+          <para>コレクションでメソッドを使用して <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> グローバルテンプレートを読み込む</para>
         </item>
         <item>
-          <para>ドキュメントに<see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" />テンプレートを添付<see cref="T:Microsoft.Office.Interop.Word.Document" />するためにオブジェクトでプロパティを使用する</para>
+          <para><see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> <see cref="T:Microsoft.Office.Interop.Word.Document" /> ドキュメントにテンプレートを添付するためにオブジェクトでプロパティを使用する</para>
         </item>
       </list>
-      <para>標準テンプレート<see cref="P:Microsoft.Office.Interop.Word._Application.NormalTemplate" />を参照する template オブジェクトを取得するのにには、プロパティを使用します。 指定し<see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" />た文書に添付されているテンプレートを取得するには、プロパティを使用します。</para>
-      <para><see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" />プロパティを使用して、ユーザーまたはワークグループのテンプレート (これらのテンプレートを格納するフォルダー) の場所を取得または設定します。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word._Application.NormalTemplate" />標準テンプレートを参照する template オブジェクトを取得するのにには、プロパティを使用します。 指定し <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> た文書に添付されているテンプレートを取得するには、プロパティを使用します。</para>
+      <para>プロパティを使用して、 <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" /> ユーザーまたはワークグループのテンプレート (これらのテンプレートを格納するフォルダー) の場所を取得または設定します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Template.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -64,7 +66,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AutoTextEntries As AutoTextEntries" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::AutoTextEntries ^ AutoTextEntries { Microsoft::Office::Interop::Word::AutoTextEntries ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AutoTextEntries : Microsoft.Office.Interop.Word.AutoTextEntries" Usage="Microsoft.Office.Interop.Word.Template.AutoTextEntries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -95,7 +98,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.AutoTextEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" />たテンプレートのすべての定型句の項目を表すコレクションを返します。</summary>
+        <summary>指定した <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" /> テンプレートのすべての定型句の項目を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.BuildingBlockEntries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuildingBlockEntries As BuildingBlockEntries" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::BuildingBlockEntries ^ BuildingBlockEntries { Microsoft::Office::Interop::Word::BuildingBlockEntries ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuildingBlockEntries : Microsoft.Office.Interop.Word.BuildingBlockEntries" Usage="Microsoft.Office.Interop.Word.Template.BuildingBlockEntries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -123,7 +127,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlockEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>テンプレート内<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />の文書パーツエントリのコレクションを表すコレクションを返します。 読み取り専用です。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />テンプレート内の文書パーツエントリのコレクションを表すコレクションを返します。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.BuildingBlockTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuildingBlockTypes As BuildingBlockTypes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::BuildingBlockTypes ^ BuildingBlockTypes { Microsoft::Office::Interop::Word::BuildingBlockTypes ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuildingBlockTypes : Microsoft.Office.Interop.Word.BuildingBlockTypes" Usage="Microsoft.Office.Interop.Word.Template.BuildingBlockTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -151,7 +156,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlockTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>テンプレートに<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" />含まれている文書パーツの種類のコレクションを表すコレクションを返します。 読み取り専用です。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" />テンプレートに含まれている文書パーツの種類のコレクションを表すコレクションを返します。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -162,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.BuiltInDocumentProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuiltInDocumentProperties As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ BuiltInDocumentProperties { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuiltInDocumentProperties : obj" Usage="Microsoft.Office.Interop.Word.Template.BuiltInDocumentProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -179,11 +185,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定さ<see cref="T:Microsoft.Office.Core.DocumentProperties" />れた文書のすべての組み込みの文書プロパティを表すコレクションを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Core.DocumentProperties" />指定された文書のすべての組み込みの文書プロパティを表すコレクションを返します。</summary>
         <value>To be added.</value>
-        <remarks><para>特定の組み込みドキュメント<see cref="T:Microsoft.Office.Core.DocumentProperty" />プロパティを表す単一のオブジェクトを取得するには、 <b>BuiltinDocumentProperties</b>(<paramref name="index" />) を使用<paramref name="index" />します<see cref="T:Microsoft.Office.Interop.Word.WdBuiltInProperty" /> 。ここで、は定数です。</para>
-          <para>Microsoft Word で組み込みのドキュメントプロパティの値が定義されていない場合、その<see cref="P:Microsoft.Office.Interop.Word.CustomProperty.Value" />ドキュメントプロパティのプロパティを読み取ると、エラーが発生します。</para>
-          <para><see cref="P:Microsoft.Office.Interop.Word.Template.CustomDocumentProperties" />プロパティを使用して、カスタムドキュメントプロパティのコレクションを取得します。</para>
+        <remarks><para>特定の組み込みドキュメントプロパティを表す単一のオブジェクトを取得するに <see cref="T:Microsoft.Office.Core.DocumentProperty" /> は、 <b>BuiltinDocumentProperties</b>( <paramref name="index" /> ) を使用します。ここで、 <paramref name="index" /> は <see cref="T:Microsoft.Office.Interop.Word.WdBuiltInProperty" /> 定数です。</para>
+          <para>Microsoft Word で組み込みのドキュメントプロパティの値が定義されていない場合、 <see cref="P:Microsoft.Office.Interop.Word.CustomProperty.Value" /> そのドキュメントプロパティのプロパティを読み取ると、エラーが発生します。</para>
+          <para>プロパティを使用して <see cref="P:Microsoft.Office.Interop.Word.Template.CustomDocumentProperties" /> 、カスタムドキュメントプロパティのコレクションを取得します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Template.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -223,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.CustomDocumentProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomDocumentProperties As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CustomDocumentProperties { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomDocumentProperties : obj" Usage="Microsoft.Office.Interop.Word.Template.CustomDocumentProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -240,9 +248,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Core.DocumentProperties" />た文書のすべてのユーザー設定の文書プロパティを表すコレクションを返します。</summary>
+        <summary>指定し <see cref="T:Microsoft.Office.Core.DocumentProperties" /> た文書のすべてのユーザー設定の文書プロパティを表すコレクションを返します。</summary>
         <value>To be added.</value>
-        <remarks><para>組み込みの<see cref="P:Microsoft.Office.Interop.Word.Template.BuiltInDocumentProperties" />ドキュメントプロパティのコレクションを取得するのにには、プロパティを使用します。</para>
+        <remarks><para>組み込みの <see cref="P:Microsoft.Office.Interop.Word.Template.BuiltInDocumentProperties" /> ドキュメントプロパティのコレクションを取得するのにには、プロパティを使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -252,6 +260,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.FarEastLineBreakLanguage" />
       <MemberSignature Language="VB.NET" Value="Public Property FarEastLineBreakLanguage As WdFarEastLineBreakLanguageID" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdFarEastLineBreakLanguageID FarEastLineBreakLanguage { Microsoft::Office::Interop::Word::WdFarEastLineBreakLanguageID get(); void set(Microsoft::Office::Interop::Word::WdFarEastLineBreakLanguageID value); };" />
+      <MemberSignature Language="F#" Value="member this.FarEastLineBreakLanguage : Microsoft.Office.Interop.Word.WdFarEastLineBreakLanguageID with get, set" Usage="Microsoft.Office.Interop.Word.Template.FarEastLineBreakLanguage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -297,6 +306,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.FarEastLineBreakLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property FarEastLineBreakLevel As WdFarEastLineBreakLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdFarEastLineBreakLevel FarEastLineBreakLevel { Microsoft::Office::Interop::Word::WdFarEastLineBreakLevel get(); void set(Microsoft::Office::Interop::Word::WdFarEastLineBreakLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.FarEastLineBreakLevel : Microsoft.Office.Interop.Word.WdFarEastLineBreakLevel with get, set" Usage="Microsoft.Office.Interop.Word.Template.FarEastLineBreakLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -319,7 +329,7 @@
       <Docs>
         <summary>指定した文書の改行制御レベルを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para>プロパティが False に設定さ<see cref="P:Microsoft.Office.Interop.Word.Paragraph.FarEastLineBreakControl" />れている場合<b></b>、このプロパティは無視されます。</para>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.Paragraph.FarEastLineBreakControl" />プロパティが<b>False</b>に設定されている場合、このプロパティは無視されます。</para>
           <para>
             <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLevel" />次の<b>WdFarEastLineBreakLevel</b>定数のいずれかをすることができます。</para>
           <para>
@@ -340,6 +350,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.FullName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FullName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FullName : string" Usage="Microsoft.Office.Interop.Word.Template.FullName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -359,7 +370,7 @@
       <Docs>
         <summary>ドライブや Web パスも含めて、テンプレートの名前を指定します。</summary>
         <value>To be added.</value>
-        <remarks><para>このプロパティを使用すると、、 <see cref="P:Microsoft.Office.Interop.Word.Template.Path" />、 <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />およびの<see cref="P:Microsoft.Office.Interop.Word.Template.Name" />各プロパティを順番に使用した場合と同じ結果が得られます。</para>
+        <remarks><para>このプロパティを使用すると、、、およびの各プロパティを順番に使用した場合と同じ結果が得られ <see cref="P:Microsoft.Office.Interop.Word.Template.Path" /> <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> <see cref="P:Microsoft.Office.Interop.Word.Template.Name" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -369,6 +380,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.JustificationMode" />
       <MemberSignature Language="VB.NET" Value="Public Property JustificationMode As WdJustificationMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdJustificationMode JustificationMode { Microsoft::Office::Interop::Word::WdJustificationMode get(); void set(Microsoft::Office::Interop::Word::WdJustificationMode value); };" />
+      <MemberSignature Language="F#" Value="member this.JustificationMode : Microsoft.Office.Interop.Word.WdJustificationMode with get, set" Usage="Microsoft.Office.Interop.Word.Template.JustificationMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -411,6 +423,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.KerningByAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Property KerningByAlgorithm As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KerningByAlgorithm { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.KerningByAlgorithm : bool with get, set" Usage="Microsoft.Office.Interop.Word.Template.KerningByAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -442,6 +455,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.LanguageID" />
       <MemberSignature Language="VB.NET" Value="Public Property LanguageID As WdLanguageID" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLanguageID LanguageID { Microsoft::Office::Interop::Word::WdLanguageID get(); void set(Microsoft::Office::Interop::Word::WdLanguageID value); };" />
+      <MemberSignature Language="F#" Value="member this.LanguageID : Microsoft.Office.Interop.Word.WdLanguageID with get, set" Usage="Microsoft.Office.Interop.Word.Template.LanguageID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -464,7 +478,7 @@
       <Docs>
         <summary>オブジェクトの言語を示します。</summary>
         <value>To be added.</value>
-        <remarks><para><see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数のいずれかをすることができます。</para>
+        <remarks><para>定数のいずれかをすることができ <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> ます。</para>
           <para><b>WdLanguageID</b>定数の中には、選択またはインストールした言語のサポート (たとえば、英語 (米国)) によっては使用できないものがあります。</para>
           <para> </para></remarks>
       </Docs>
@@ -475,6 +489,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.LanguageIDFarEast" />
       <MemberSignature Language="VB.NET" Value="Public Property LanguageIDFarEast As WdLanguageID" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLanguageID LanguageIDFarEast { Microsoft::Office::Interop::Word::WdLanguageID get(); void set(Microsoft::Office::Interop::Word::WdLanguageID value); };" />
+      <MemberSignature Language="F#" Value="member this.LanguageIDFarEast : Microsoft.Office.Interop.Word.WdLanguageID with get, set" Usage="Microsoft.Office.Interop.Word.Template.LanguageIDFarEast" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -497,7 +512,7 @@
       <Docs>
         <summary>指定したオブジェクトの東アジア言語を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para><see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数のいずれかをすることができます。</para>
+        <remarks><para>定数のいずれかをすることができ <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> ます。</para>
           <para>Word 東アジア版で作成された文書に東アジア言語の文字列を設定する場合、この方法をお勧めします。</para>
           <para> </para></remarks>
       </Docs>
@@ -508,6 +523,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.ListTemplates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListTemplates As ListTemplates" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ListTemplates ^ ListTemplates { Microsoft::Office::Interop::Word::ListTemplates ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListTemplates : Microsoft.Office.Interop.Word.ListTemplates" Usage="Microsoft.Office.Interop.Word.Template.ListTemplates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -525,7 +541,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.ListTemplates" />たテンプレートのすべての箇条書き書式を表すコレクションを返します。</summary>
+        <summary>指定し <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> たテンプレートのすべての箇条書き書式を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -536,6 +552,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.Name" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.Template.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -564,6 +581,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.NoLineBreakAfter" />
       <MemberSignature Language="VB.NET" Value="Public Property NoLineBreakAfter As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NoLineBreakAfter { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NoLineBreakAfter : string with get, set" Usage="Microsoft.Office.Interop.Word.Template.NoLineBreakAfter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -595,6 +613,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.NoLineBreakBefore" />
       <MemberSignature Language="VB.NET" Value="Public Property NoLineBreakBefore As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NoLineBreakBefore { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NoLineBreakBefore : string with get, set" Usage="Microsoft.Office.Interop.Word.Template.NoLineBreakBefore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -626,6 +645,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.NoProofing" />
       <MemberSignature Language="VB.NET" Value="Public Property NoProofing As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NoProofing { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.NoProofing : int with get, set" Usage="Microsoft.Office.Interop.Word.Template.NoProofing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -657,6 +677,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenAsDocument () As Document" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Document ^ OpenAsDocument();" />
+      <MemberSignature Language="F#" Value="abstract member OpenAsDocument : unit -&gt; Microsoft.Office.Interop.Word.Document" Usage="template.OpenAsDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -672,9 +693,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したテンプレートを文書として開き<see cref="T:Microsoft.Office.Interop.Word.Document" /> 、オブジェクトを返します。</summary>
+        <summary>指定したテンプレートを文書として開き、オブジェクトを返し <see cref="T:Microsoft.Office.Interop.Word.Document" /> ます。</summary>
         <returns>To be added.</returns>
-        <remarks><para>文書としてテンプレートを開くことができます、テンプレートの内容を編集します。 これは、 <see cref="T:Microsoft.Office.Interop.Word.Template" />オブジェクトのプロパティまたはメソッド (たとえば<see cref="P:Microsoft.Office.Interop.Word._Document.Styles" /> 、プロパティ) を使用できない場合に必要になることがあります。</para>
+        <remarks><para>文書としてテンプレートを開くことができます、テンプレートの内容を編集します。 これは、オブジェクトのプロパティまたはメソッド (たとえば、プロパティ) を使用できない場合に必要になることがあり <see cref="P:Microsoft.Office.Interop.Word._Document.Styles" /> <see cref="T:Microsoft.Office.Interop.Word.Template" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -684,6 +705,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Template.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -712,6 +734,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.Path" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="Microsoft.Office.Interop.Word.Template.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -731,9 +754,9 @@
       <Docs>
         <summary>ディスクまたは Web パスを指定したオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks><para>パスに末尾の区切り文字が含まれていない-"C:\MSOffice"や"http://MyServer"などです。 <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />プロパティを使用して、フォルダーとドライブ文字を区切る文字を追加します。 パスを<see cref="P:Microsoft.Office.Interop.Word.Template.Name" />含まないファイル名を取得し、その<see cref="P:Microsoft.Office.Interop.Word.Template.FullName" />プロパティを使用してファイル名とパスを取得するには、プロパティを使用します。</para>
+        <remarks><para>パスに末尾の区切り文字が含まれていない-"C:\MSOffice"や"http://MyServer"などです。 プロパティを使用して <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> 、フォルダーとドライブ文字を区切る文字を追加します。 パスを <see cref="P:Microsoft.Office.Interop.Word.Template.Name" /> 含まないファイル名を取得し、そのプロパティを使用してファイル名とパスを取得するには、プロパティを使用し <see cref="P:Microsoft.Office.Interop.Word.Template.FullName" /> ます。</para>
           <para>
-            <b>メモ</b> <b>PathSeparator</b>プロパティを使用すると、スラッシュ (/) が含まれていても、 <b>PathSeparator</b>プロパティの既定値が円記号 (\)) の場合でも、Web アドレスを作成できます。</para>
+            <b>メモ</b> <b>PathSeparator</b>プロパティを使用すると、スラッシュ (/) が含まれていても、 <b>PathSeparator</b>プロパティの既定値が円記号 () の場合でも、Web アドレスを作成でき \) ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -743,6 +766,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Template.Save" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save();" />
+      <MemberSignature Language="F#" Value="abstract member Save : unit -&gt; unit" Usage="template.Save " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -769,6 +793,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.Saved" />
       <MemberSignature Language="VB.NET" Value="Public Property Saved As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Saved { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Saved : bool with get, set" Usage="Microsoft.Office.Interop.Word.Template.Saved" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -800,6 +825,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdTemplateType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdTemplateType Type { Microsoft::Office::Interop::Word::WdTemplateType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdTemplateType" Usage="Microsoft.Office.Interop.Word.Template.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -839,6 +865,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.VBProject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VBProject As VBProject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Vbe::Interop::VBProject ^ VBProject { Microsoft::Vbe::Interop::VBProject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VBProject : Microsoft.Vbe.Interop.VBProject" Usage="Microsoft.Office.Interop.Word.Template.VBProject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

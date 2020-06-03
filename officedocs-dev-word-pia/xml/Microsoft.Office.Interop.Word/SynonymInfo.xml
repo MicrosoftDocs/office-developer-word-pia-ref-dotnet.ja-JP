@@ -1,9 +1,10 @@
 <Type Name="SynonymInfo" FullName="Microsoft.Office.Interop.Word.SynonymInfo">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ada3374fbdbeb68d182821597276e5a9f0ea1732" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146067" /></Metadata><TypeSignature Language="C#" Value="public interface SynonymInfo" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1605a824da54b44f8bc562a87a5e09f13a8c665f" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926193" /></Metadata><TypeSignature Language="C#" Value="public interface SynonymInfo" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SynonymInfo" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SynonymInfo" />
   <TypeSignature Language="VB.NET" Value="Public Interface SynonymInfo" />
   <TypeSignature Language="C++ CLI" Value="public interface class SynonymInfo" />
+  <TypeSignature Language="F#" Value="type SynonymInfo = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,9 +20,9 @@
   </Attributes>
   <Docs>
     <summary>指定範囲または特定の文字列の類義語、反義語、関連用語、または関連表現に関する情報を表します。</summary>
-    <remarks><para><b>SynonymInfo</b>オブジェクトを取得するの<see cref="T:Microsoft.Office.Interop.Word.Range" />に<see cref="T:Microsoft.Office.Interop.Word.Application" />には、またはオブジェクトの<b>SynonymInfo</b>プロパティを使用します。 <b>SynonymInfo</b>オブジェクトは、セル範囲または Microsoft Word のいずれかから取得できます。 Word から返された場合は、参照の単語または語句と、文章校正の言語 ID を指定します。 範囲から返された場合、Word は指定された範囲を参照単語として使用します。</para>
+    <remarks><para><b>SynonymInfo</b> <see cref="T:Microsoft.Office.Interop.Word.Range" /> <see cref="T:Microsoft.Office.Interop.Word.Application" /> <b>SynonymInfo</b>オブジェクトを取得するのにには、またはオブジェクトの SynonymInfo プロパティを使用します。 <b>SynonymInfo</b>オブジェクトは、セル範囲または Microsoft Word のいずれかから取得できます。 Word から返された場合は、参照の単語または語句と、文章校正の言語 ID を指定します。 範囲から返された場合、Word は指定された範囲を参照単語として使用します。</para>
       <para><b>SynonymInfo</b>オブジェクトのプロパティの多くは、文字列の配列を含む<b>オブジェクト</b>を返します。 これらのプロパティを使用する場合、返される配列を変数に代入して、配列内の要素を表示する変数のインデックスを作成できます。</para>
-      <para><see cref="P:Microsoft.Office.Interop.Word.SynonymInfo.MeaningCount" />プロパティの値を確認して、コード内で発生する可能性のあるエラーを防ぐことができます。</para>
+      <para>プロパティの値を確認し <see cref="P:Microsoft.Office.Interop.Word.SynonymInfo.MeaningCount" /> て、コード内で発生する可能性のあるエラーを防ぐことができます。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.AntonymList" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AntonymList As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ AntonymList { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AntonymList : obj" Usage="Microsoft.Office.Interop.Word.SynonymInfo.AntonymList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -50,7 +52,7 @@
       <Docs>
         <summary>単語または語句の反義語の一覧を返します。 一覧は文字列の配列として返されます。</summary>
         <value>To be added.</value>
-        <remarks><para><b>AntonymList</b>プロパティは、 <see cref="T:Microsoft.Office.Interop.Word.SynonymInfo" />オブジェクトのプロパティであり、範囲またはアプリケーションから返すことができます。 このオブジェクトがアプリケーションから返された場合は、検索する単語と、使用する言語を指定します。 指定範囲からオブジェクトが取得されると、指定範囲の言語を使用して範囲が検索されます。</para>
+        <remarks><para><b>AntonymList</b>プロパティは、オブジェクトのプロパティであり、 <see cref="T:Microsoft.Office.Interop.Word.SynonymInfo" /> 範囲またはアプリケーションから返すことができます。 このオブジェクトがアプリケーションから返された場合は、検索する単語と、使用する言語を指定します。 指定範囲からオブジェクトが取得されると、指定範囲の言語を使用して範囲が検索されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.SynonymInfo.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -77,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.SynonymInfo.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.Found" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Found As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Found { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Found : bool" Usage="Microsoft.Office.Interop.Word.SynonymInfo.Found" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.MeaningCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MeaningCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MeaningCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MeaningCount : int" Usage="Microsoft.Office.Interop.Word.SynonymInfo.MeaningCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.MeaningList" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MeaningList As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ MeaningList { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MeaningList : obj" Usage="Microsoft.Office.Interop.Word.SynonymInfo.MeaningList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -205,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.SynonymInfo.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -233,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.PartOfSpeechList" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PartOfSpeechList As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ PartOfSpeechList { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PartOfSpeechList : obj" Usage="Microsoft.Office.Interop.Word.SynonymInfo.PartOfSpeechList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -252,7 +261,7 @@
       <Docs>
         <summary>類義語辞典で検索語句の意味に対応する品詞の一覧を返します。 リストは整数の配列として返されます。</summary>
         <value>To be added.</value>
-        <remarks><para>品詞の各部分のリストは、次<see cref="T:Microsoft.Office.Interop.Word.WdPartOfSpeech" />の定数で構成される配列として返されます: <b>wdadjective</b>、 <b>wdAdverb</b>、 <b>wdadjective</b>、 <b>wdIdiom</b>、 <b>wdInterjection</b>、 <b>wdNoun</b>、 <b>wdOther</b>、<b>wdPreposition</b>、 <b>WdPronoun</b>、および<b>wdverb</b>。 配列要素は、 <see cref="P:Microsoft.Office.Interop.Word.SynonymInfo.MeaningList" />プロパティによって返される要素に対応するように並べられます。</para>
+        <remarks><para>品詞の一覧は、次の定数で構成される配列として返され <see cref="T:Microsoft.Office.Interop.Word.WdPartOfSpeech" /> ます: <b>wdadjective</b>、 <b>wdAdverb</b>、 <b>wdadjective</b>、 <b>wdIdiom</b>、 <b>wdInterjection</b>、 <b>wdNoun</b>、 <b>wdOther</b>、 <b>wdPreposition、</b> <b>wdPronoun</b>、および<b>wdadjective</b>。 配列要素は、プロパティによって返される要素に対応するように並べられ <see cref="P:Microsoft.Office.Interop.Word.SynonymInfo.MeaningList" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -262,6 +271,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.RelatedExpressionList" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelatedExpressionList As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ RelatedExpressionList { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RelatedExpressionList : obj" Usage="Microsoft.Office.Interop.Word.SynonymInfo.RelatedExpressionList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -291,6 +301,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.RelatedWordList" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelatedWordList As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ RelatedWordList { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RelatedWordList : obj" Usage="Microsoft.Office.Interop.Word.SynonymInfo.RelatedWordList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -319,6 +330,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.SynonymList(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SynonymList(ByRef Meaning As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SynonymList[System::Object ^ %] { System::Object ^ get(System::Object ^ % Meaning); };" />
+      <MemberSignature Language="F#" Value="member this.SynonymList(obj) : obj" Usage="Microsoft.Office.Interop.Word.SynonymInfo.SynonymList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -336,7 +348,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Meaning" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Meaning" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Meaning">必要な<b>オブジェクト</b>。 文字列または可能な意味の配列のインデックス番号として意味を指定します。</param>
@@ -351,6 +363,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.Word" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Word As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Word { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Word : string" Usage="Microsoft.Office.Interop.Word.SynonymInfo.Word" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -370,7 +383,7 @@
       <Docs>
         <summary>シソーラスで検索された単語または語句を返します。</summary>
         <value>To be added.</value>
-        <remarks><para>シソーラスでは、 <see cref="T:Microsoft.Office.Interop.Word.SynonymInfo" />オブジェクトを返すために使用される文字列または範囲の短縮バージョンが検索される場合があります。 <b>Word</b> プロパティを使用すると、使用した正確な文字列で検索します。</para>
+        <remarks><para>シソーラスでは、オブジェクトを返すために使用される文字列または範囲の短縮バージョンが検索される場合があり <see cref="T:Microsoft.Office.Interop.Word.SynonymInfo" /> ます。 <b>Word</b> プロパティを使用すると、使用した正確な文字列で検索します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

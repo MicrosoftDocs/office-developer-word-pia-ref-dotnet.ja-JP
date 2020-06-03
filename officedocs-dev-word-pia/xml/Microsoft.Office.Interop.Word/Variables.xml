@@ -1,9 +1,10 @@
 <Type Name="Variables" FullName="Microsoft.Office.Interop.Word.Variables">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="644ab7343db817764d5aa3ab3fa23f78b8f047eb" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143778" /></Metadata><TypeSignature Language="C#" Value="public interface Variables : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4aa6f1af4eda98080e8a53b615201e282e3fda76" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926004" /></Metadata><TypeSignature Language="C#" Value="public interface Variables : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Variables implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Variables" />
   <TypeSignature Language="VB.NET" Value="Public Interface Variables&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Variables : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Variables = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,13 +23,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>文書または<see cref="T:Microsoft.Office.Interop.Word.Variable" />テンプレートに追加された変数を表すオブジェクトのコレクションです。 文書変数は、マクロ セッション間のマクロの設定を保持するために使用されます。</summary>
-    <remarks><para><see cref="P:Microsoft.Office.Interop.Word._Document.Variables" />プロパティを使用して、 <b>Variables</b>コレクションを取得します。</para>
-      <para>文書に<see cref="M:Microsoft.Office.Interop.Word.Variables.Add(System.String,System.Object@)" />変数を追加するには、メソッドを使用します。</para>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.Variable" />文書またはテンプレートに追加された変数を表すオブジェクトのコレクションです。 文書変数は、マクロ セッション間のマクロの設定を保持するために使用されます。</summary>
+    <remarks><para>プロパティを使用し <see cref="P:Microsoft.Office.Interop.Word._Document.Variables" /> て、 <b>Variables</b>コレクションを取得します。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.Variables.Add(System.String,System.Object@)" />文書に変数を追加するには、メソッドを使用します。</para>
       <para><b>Variables</b> コレクションに既に存在する名前の文書変数を追加しようとすると、エラーが発生します。 このエラーを回避するのには、新しい変数を追加する前にコレクションを列挙できます。</para>
-      <para>変数<b></b>(<paramref name="index" />) を使用し<paramref name="index" />ます。ここで、は文書変数名またはインデックス番号を使用して、単一の<b>variable</b>オブジェクトを返します。</para>
+      <para>変数<b>(</b> <paramref name="index" /> ) を使用します。ここで、 <paramref name="index" /> は文書変数名またはインデックス番号を使用して、単一の<b>variable</b>オブジェクトを返します。</para>
       <para>インデックス番号は、 <b>Variables</b>コレクションでの文書変数の位置を表します。 <b>Variables</b>コレクションに最初に追加された変数のインデックス番号は1です。コレクションに追加される2番目の変数はインデックス番号2です。</para>
-      <para>テンプレートに変数を追加するには、 <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" />メソッドを使用して、テンプレートを文書として開きます。</para>
+      <para>テンプレートに変数を追加するには、メソッドを使用して、テンプレートを文書として開き <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> ます。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Variable Add([in]string Name, [in]object&amp; Value) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Variables.Add(System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Name As String, Optional ByRef Value As Object) As Variable" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * obj -&gt; Microsoft.Office.Interop.Word.Variable" Usage="variables.Add (Name, Value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -52,12 +54,12 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Name" Type="System.String" />
-        <Parameter Name="Value" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Name"><b>文字列</b> が必要です。 文書変数の名前を指定します。</param>
         <param name="Value">省略可能な<b>オブジェクト</b>です。 文書変数の値を指定します。</param>
-        <summary>文書に<see cref="T:Microsoft.Office.Interop.Word.Variable" />追加された変数を表すオブジェクト型 (object) の値を取得します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Variable" />文書に追加された変数を表すオブジェクト型 (object) の値を取得します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Variables.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Variables.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -85,7 +88,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Variables.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Variables.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Variables.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Variables.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Variables.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="variables.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -186,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Variables.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As Variable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Variable ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::Variable ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.Variable" Usage="Microsoft.Office.Interop.Word.Variables.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -203,7 +210,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Variable</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Index">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</param>
@@ -218,6 +225,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Variables.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Variables.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

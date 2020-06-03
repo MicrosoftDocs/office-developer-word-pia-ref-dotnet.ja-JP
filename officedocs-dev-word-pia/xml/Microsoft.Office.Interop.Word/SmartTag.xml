@@ -1,9 +1,10 @@
 <Type Name="SmartTag" FullName="Microsoft.Office.Interop.Word.SmartTag">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="5fa49cb1dcddf81834677aefdc8cd50240fa9578" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146123" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTag" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d91d9fe394966da11d6c8d360ee2af7c62867ea5" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926333" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTag" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTag" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTag" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTag" />
   <TypeSignature Language="C++ CLI" Value="public interface class SmartTag" />
+  <TypeSignature Language="F#" Value="type SmartTag = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,8 +20,8 @@
   </Attributes>
   <Docs>
     <summary>認識可能な種類情報を含む文書内または指定範囲内の文字列を表します。</summary>
-    <remarks><para><b>SmartTag</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.SmartTags" />コレクションのメンバーです。 <b>SmartTags</b> コレクションには、文書内または文書内の文字列の指定範囲内にあるすべてのスマート タグが含まれます。 Microsoft Word では、認識ファイルを使用してスマート タグにラベルを付け、アクション ファイルを使用してスマート タグに関連するアクション (Web サイトへのリンクなど) を実行します。</para>
-      <para>1つ<see cref="M:Microsoft.Office.Interop.Word.Editors.Item(System.Object@)" />の SmartTag オブジェクト<see cref="T:Microsoft.Office.Interop.Word.SmartTags" />を<paramref name="index" />取得するの<paramref name="index" />には、メソッド () を使用します。ここ<b></b>で、はスマートタグの番号を表します。</para>
+    <remarks><para><b>SmartTag</b>オブジェクトは、コレクションのメンバーです <see cref="T:Microsoft.Office.Interop.Word.SmartTags" /> 。 <b>SmartTags</b> コレクションには、文書内または文書内の文字列の指定範囲内にあるすべてのスマート タグが含まれます。 Microsoft Word では、認識ファイルを使用してスマート タグにラベルを付け、アクション ファイルを使用してスマート タグに関連するアクション (Web サイトへのリンクなど) を実行します。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.Editors.Item(System.Object@)" /> <see cref="T:Microsoft.Office.Interop.Word.SmartTags" /> <paramref name="index" /> 1 つの SmartTag オブジェクトを取得するのには、メソッド () を使用します。ここで、は <paramref name="index" /> スマートタグの番号を表します。 <b>SmartTag</b></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTag.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.SmartTag.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -50,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTag.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.SmartTag.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.SmartTag.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="smartTag.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTag.DownloadURL" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DownloadURL As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DownloadURL { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DownloadURL : string" Usage="Microsoft.Office.Interop.Word.SmartTag.DownloadURL" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTag.Name" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.SmartTag.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTag.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.SmartTag.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -216,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTag.Properties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As CustomProperties" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::CustomProperties ^ Properties { Microsoft::Office::Interop::Word::CustomProperties ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : Microsoft.Office.Interop.Word.CustomProperties" Usage="Microsoft.Office.Interop.Word.SmartTag.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -236,9 +244,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.CustomProperties</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スマートタグ<see cref="T:Microsoft.Office.Interop.Word.CustomProperties" />のプロパティを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.CustomProperties" />スマートタグのプロパティを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks><para>メソッドを使用し<see cref="M:Microsoft.Office.Interop.Word.SmartTags.Add(System.String,System.Object@,System.Object@)" />て、カスタムプロパティを追加できます。 ただし、通常は、スマートタグレコグナイザーおよびアクションファイルでカスタムプロパティが指定されます。</para>
+        <remarks><para>メソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.SmartTags.Add(System.String,System.Object@,System.Object@)" /> カスタムプロパティを追加できます。 ただし、通常は、スマートタグレコグナイザーおよびアクションファイルでカスタムプロパティが指定されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -248,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTag.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.SmartTag.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -268,9 +277,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />たオブジェクトに含まれる文書の一部を表すオブジェクトを返します。</summary>
+        <summary>指定した <see cref="T:Microsoft.Office.Interop.Word.Range" /> オブジェクトに含まれる文書の一部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks><para>文書から指定範囲を取得する<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法、または図形のコレクションから図形範囲を取得する方法については、メソッドを参照してください。</para>
+        <remarks><para>文書から指定範囲を取得する方法、または図形のコレクションから図形範囲を取得する方法については、メソッドを参照してください <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -280,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.SmartTag.Select" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; unit" Usage="smartTag.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -299,7 +309,7 @@
       <Parameters />
       <Docs>
         <summary>指定されたオブジェクトを選択します。</summary>
-        <remarks><para>このメソッドを使用した後<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> 、プロパティを使用して選択された項目を操作します。</para>
+        <remarks><para>このメソッドを使用した後、プロパティを使用して <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> 選択された項目を操作します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -309,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTag.SmartTagActions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SmartTagActions As SmartTagActions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::SmartTagActions ^ SmartTagActions { Microsoft::Office::Interop::Word::SmartTagActions ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmartTagActions : Microsoft.Office.Interop.Word.SmartTagActions" Usage="Microsoft.Office.Interop.Word.SmartTag.SmartTagActions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -329,7 +340,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.SmartTagActions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スマートタグ<see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" />で使用できるアクションのコレクションを表すコレクションを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" />スマートタグで使用できるアクションのコレクションを表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -340,6 +351,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTag.XML" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XML As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XML { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XML : string" Usage="Microsoft.Office.Interop.Word.SmartTag.XML" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -371,6 +383,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTag.XMLNode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XMLNode As XMLNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNode ^ XMLNode { Microsoft::Office::Interop::Word::XMLNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XMLNode : Microsoft.Office.Interop.Word.XMLNode" Usage="Microsoft.Office.Interop.Word.SmartTag.XMLNode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -391,7 +404,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スマートタグ<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />の XML 要素を表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.XMLNode" />スマートタグの XML 要素を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks><para>すべてのスマートタグに XML ノードが含まれているわけではありません。ただし、 <b>XMLNode</b>プロパティを使用すると、開発者は xml ノードを含むスマートタグの xml ノードにアクセスできます。</para>
           <para> </para></remarks>

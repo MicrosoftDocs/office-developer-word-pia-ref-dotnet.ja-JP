@@ -1,9 +1,10 @@
 <Type Name="XSLTransforms" FullName="Microsoft.Office.Interop.Word.XSLTransforms">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="80575a845a8b4cdb5dae2ad29be77f4a4dcf8029" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142620" /></Metadata><TypeSignature Language="C#" Value="public interface XSLTransforms : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="37d70b32583050fe2241b1f31c27cbd054174cbe" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926729" /></Metadata><TypeSignature Language="C#" Value="public interface XSLTransforms : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XSLTransforms implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XSLTransforms" />
   <TypeSignature Language="VB.NET" Value="Public Interface XSLTransforms&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class XSLTransforms : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type XSLTransforms = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,9 +23,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>特定の XML <see cref="T:Microsoft.Office.Interop.Word.XSLTransform" />名前空間のすべての拡張スタイルシート言語変換 (xslt) を表すオブジェクトのコレクションです。</summary>
-    <remarks><para><see cref="M:Microsoft.Office.Interop.Word.XSLTransforms.Add(System.String,System.Object@,System.Boolean)" />メソッドを使用して、スキーマの xslt のコレクションに個々の<b>XSLTransform</b>オブジェクトを追加します。</para>
-      <para>1つ<see cref="P:Microsoft.Office.Interop.Word.XSLTransforms.Item(System.Object@)" />の<b>XSLTransform</b>オブジェクトを取得するのにには、プロパティを使用します。</para>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.XSLTransform" />特定の XML 名前空間のすべての拡張スタイルシート言語変換 (xslt) を表すオブジェクトのコレクションです。</summary>
+    <remarks><para>メソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.XSLTransforms.Add(System.String,System.Object@,System.Boolean)" /> スキーマの xslt のコレクションに個々の<b>XSLTransform</b>オブジェクトを追加します。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.XSLTransforms.Item(System.Object@)" />1 つの<b>XSLTransform</b>オブジェクトを取得するのにには、プロパティを使用します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -33,6 +34,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.XSLTransform Add([in]string Location, [in]object&amp; Alias, [in]bool InstallForAllUsers) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XSLTransforms.Add(System.String,System.Object@,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Location As String, Optional ByRef Alias As Object, Optional InstallForAllUsers As Boolean = false) As XSLTransform" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * obj * bool -&gt; Microsoft.Office.Interop.Word.XSLTransform" Usage="xSLTransforms.Add (Location, Alias, InstallForAllUsers)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,14 +50,14 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Location" Type="System.String" />
-        <Parameter Name="Alias" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Alias" Type="System.Object" RefType="ref" />
         <Parameter Name="InstallForAllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="Location"><b>文字列</b> が必要です。 XSLT ファイルのパスとファイル名を指定します。 ローカル ファイルのパス、ネットワーク パス、インターネット アドレスのいずれかになります。</param>
         <param name="Alias">文字列型 (<b>String</b>) の値を使用します。 スキーマ ライブラリに表示されるスキーマの名前を指定します。</param>
-        <param name="InstallForAllUsers">オプションの <b>Boolean</b>。 コンピューターにログインするすべてのユーザーが新しいスキーマにアクセスして、利用できるようにする場合は <b>True</b> を指定します。 既定では <b>False です</b> 。</param>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.XSLTransform" />たスキーマの xslt のコレクションに追加された、拡張スタイルシート言語変換 (XSLT) を表すオブジェクトを返します。</summary>
+        <param name="InstallForAllUsers">オプションの <b>Boolean</b>。 コンピューターにログインするすべてのユーザーが新しいスキーマにアクセスして、利用できるようにする場合は <b>True</b> を指定します。 既定値は <b>False</b> です。</param>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.XSLTransform" />指定したスキーマの xslt のコレクションに追加された、拡張スタイルシート言語変換 (XSLT) を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XSLTransforms.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.XSLTransforms.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -83,7 +86,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XSLTransforms.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.XSLTransforms.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XSLTransforms.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.XSLTransforms.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XSLTransforms.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="xSLTransforms.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XSLTransforms.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As XSLTransform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XSLTransform ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::XSLTransform ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.XSLTransform" Usage="Microsoft.Office.Interop.Word.XSLTransforms.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -201,7 +208,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XSLTransform</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Index">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</param>
@@ -216,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XSLTransforms.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.XSLTransforms.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

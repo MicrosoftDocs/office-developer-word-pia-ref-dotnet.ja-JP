@@ -1,9 +1,10 @@
 <Type Name="TabStops" FullName="Microsoft.Office.Interop.Word.TabStops">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="5dccca7a808f17210ed911b946b4012c04f38708" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143904" /></Metadata><TypeSignature Language="C#" Value="public interface TabStops : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8cf0fe3956d091a44048f4d9587982038dce4cbe" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926165" /></Metadata><TypeSignature Language="C#" Value="public interface TabStops : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TabStops implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TabStops" />
   <TypeSignature Language="VB.NET" Value="Public Interface TabStops&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class TabStops : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type TabStops = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,11 +23,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>段落または<see cref="T:Microsoft.Office.Interop.Word.TabStop" />段落のグループのユーザー設定のタブ位置と既定のタブ位置を表すオブジェクトのコレクションです。</summary>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.TabStop" />段落または段落のグループのユーザー設定のタブ位置と既定のタブ位置を表すオブジェクトのコレクションです。</summary>
     <remarks><para><b>TabStops</b> コレクションを取得するのにには、 <b>TabStops</b> プロパティを使用します。</para>
-      <para>メソッドを<see cref="M:Microsoft.Office.Interop.Word.TabStops.Add(System.Single,System.Object@,System.Object@)" />使用して、タブ位置を追加します。</para>
+      <para>メソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.TabStops.Add(System.Single,System.Object@,System.Object@)" /> タブ位置を追加します。</para>
       <para><b>TabStops</b> プロパティで場所を指定して、タブ位置を追加することもできます。</para>
-      <para>1つの<paramref name="index" /> <b>TabStop</b>オブジェクトを<paramref name="index" />取得するには、 <b>TabStops</b>() を使用します。ここで、はタブ位置 (ポイント単位) またはインデックス番号の位置になります。 タブ位置は、インデックス番号左からルーラーに沿って右にします。</para>
+      <para>1 <b>TabStops</b>つの <paramref name="index" /> TabStop オブジェクトを取得するには、TabStops () を使用します。ここで、 <paramref name="index" /> はタブ位置 ( <b>TabStop</b>ポイント単位) またはインデックス番号の位置になります。 タブ位置は、インデックス番号左からルーラーに沿って右にします。</para>
       <para><see cref="T:Microsoft.Office.Interop.Word.Paragraphs" />コレクション (または複数の段落を含む範囲) を使用している場合、すべての段落でタブ位置が同一でない場合は、コレクション内の各段落を個別に変更する必要があります。</para>
       <para> </para></remarks>
   </Docs>
@@ -36,6 +37,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.TabStop Add([in]float32 Position, [in]object&amp; Alignment, [in]object&amp; Leader) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TabStops.Add(System.Single,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Position As Single, Optional ByRef Alignment As Object, Optional ByRef Leader As Object) As TabStop" />
+      <MemberSignature Language="F#" Value="abstract member Add : single * obj * obj -&gt; Microsoft.Office.Interop.Word.TabStop" Usage="tabStops.Add (Position, Alignment, Leader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -51,14 +53,14 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Position" Type="System.Single" />
-        <Parameter Name="Alignment" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Leader" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Alignment" Type="System.Object" RefType="ref" />
+        <Parameter Name="Leader" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Position">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 左余白から測ったタブ位置を、ポイント単位で指定します。</param>
-        <param name="Alignment">省略可能な<b>オブジェクト</b>です。 タブ位置の配置を指定します。 <b>WdAlignTabBar</b>、 <b>wdAlignTabCenter</b>、 <b>wdAlignTabDecimal</b>、 <see cref="T:Microsoft.Office.Interop.Word.WdTabAlignment" /> <b>wdAlignTabLeft</b>、 <b>wdAlignTabList</b>、または<b>wdAlignTabRight</b>のいずれかの定数を使用できます。 この引数を省略すると、 <b>wdAlignTabLeft</b>が使用されます。</param>
-        <param name="Leader">省略可能な<b>オブジェクト</b>です。 タブ リーダーの種類を指定します。 <b>WdTabLeaderDashes</b>、 <b>wdTabLeaderDots</b>、 <b>wdTabLeaderHeavy</b>、 <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" /> <b>wdTabLeaderLines</b>、 <b>wdTabLeaderMiddleDot</b>、または<b>wdTabLeaderSpaces</b>のいずれかの定数を使用できます。 この引数を省略すると、定数 <b>wdTabLeaderSpaces</b> が使われます。</param>
-        <summary>文書に<see cref="T:Microsoft.Office.Interop.Word.TabStop" />追加するユーザー設定のタブ位置を表すオブジェクト型 (object) の値を取得します。</summary>
+        <param name="Alignment">省略可能な<b>オブジェクト</b>です。 タブ位置の配置を指定します。 <see cref="T:Microsoft.Office.Interop.Word.WdTabAlignment" /> <b>WdAlignTabBar</b>、 <b>wdAlignTabCenter</b>、 <b>wdAlignTabDecimal</b>、 <b>wdAlignTabLeft</b>、 <b>wdAlignTabList</b>、または<b>wdAlignTabRight</b>のいずれかの定数を使用できます。 この引数を省略すると、 <b>wdAlignTabLeft</b>が使用されます。</param>
+        <param name="Leader">省略可能な<b>オブジェクト</b>です。 タブ リーダーの種類を指定します。 <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" /> <b>WdTabLeaderDashes</b>、 <b>wdTabLeaderDots</b>、 <b>wdTabLeaderHeavy</b>、 <b>wdTabLeaderLines</b>、 <b>wdTabLeaderMiddleDot</b>、または<b>wdTabLeaderSpaces</b>のいずれかの定数を使用できます。 この引数を省略すると、定数 <b>wdTabLeaderSpaces</b> が使われます。</param>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.TabStop" />文書に追加するユーザー設定のタブ位置を表すオブジェクト型 (object) の値を取得します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TabStops.After(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Function After (Position As Single) As TabStop" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::TabStop ^ After(float Position);" />
+      <MemberSignature Language="F#" Value="abstract member After : single -&gt; Microsoft.Office.Interop.Word.TabStop" Usage="tabStops.After Position" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -87,7 +90,7 @@
       </Parameters>
       <Docs>
         <param name="Position">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 ルーラー上の位置をポイント単位で指定します。</param>
-        <summary>の<paramref name="Position" />右側に<see cref="T:Microsoft.Office.Interop.Word.TabStop" />ある次のオブジェクトを返します。</summary>
+        <summary>の右側にある次のオブジェクトを返し <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> <paramref name="Position" /> ます。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TabStops.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.TabStops.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -115,7 +119,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TabStops.Before(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Function Before (Position As Single) As TabStop" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::TabStop ^ Before(float Position);" />
+      <MemberSignature Language="F#" Value="abstract member Before : single -&gt; Microsoft.Office.Interop.Word.TabStop" Usage="tabStops.Before Position" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -144,7 +149,7 @@
       </Parameters>
       <Docs>
         <param name="Position">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 ルーラー上の位置をポイント単位で指定します。</param>
-        <summary>の<paramref name="Position" />左側に<see cref="T:Microsoft.Office.Interop.Word.TabStop" />ある次のオブジェクトを返します。</summary>
+        <summary>の左側にある次のオブジェクトを返し <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> <paramref name="Position" /> ます。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TabStops.ClearAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearAll();" />
+      <MemberSignature Language="F#" Value="abstract member ClearAll : unit -&gt; unit" Usage="tabStops.ClearAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -171,7 +177,7 @@
       <Parameters />
       <Docs>
         <summary>指定された段落からユーザー設定のタブ位置をすべてクリアします。</summary>
-        <remarks><para>個々のタブ位置をクリアするには<see cref="M:Microsoft.Office.Interop.Word.TabStop.Clear" /> 、 <see cref="T:Microsoft.Office.Interop.Word.TabStop" />オブジェクトのメソッドを使用します。 <b>ClearAll</b> メソッドは既定値をオフにタブ位置。 既定のタブ位置を操作するには<see cref="P:Microsoft.Office.Interop.Word._Document.DefaultTabStop" /> 、ドキュメントのプロパティを使用します。</para>
+        <remarks><para>個々のタブ位置をクリアするには、 <see cref="M:Microsoft.Office.Interop.Word.TabStop.Clear" /> オブジェクトのメソッドを使用し <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> ます。 <b>ClearAll</b> メソッドは既定値をオフにタブ位置。 既定のタブ位置を操作するには、 <see cref="P:Microsoft.Office.Interop.Word._Document.DefaultTabStop" /> ドキュメントのプロパティを使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TabStops.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.TabStops.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -209,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TabStops.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.TabStops.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -239,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TabStops.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="tabStops.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -271,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TabStops.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As TabStop" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TabStop ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::TabStop ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.TabStop" Usage="Microsoft.Office.Interop.Word.TabStops.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -288,7 +298,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TabStop</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Index">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</param>
@@ -303,6 +313,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TabStops.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.TabStops.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

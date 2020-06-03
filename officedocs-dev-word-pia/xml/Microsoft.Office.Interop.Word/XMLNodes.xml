@@ -1,9 +1,10 @@
 <Type Name="XMLNodes" FullName="Microsoft.Office.Interop.Word.XMLNodes">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="1bb0a31f85f85e8cdffe7c844d4d494ab8d5858b" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142627" /></Metadata><TypeSignature Language="C#" Value="public interface XMLNodes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2f843e090d441e8d069245cd7dee97c3e3c7f9de" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926711" /></Metadata><TypeSignature Language="C#" Value="public interface XMLNodes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLNodes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLNodes" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLNodes&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class XMLNodes : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type XMLNodes = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,12 +23,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>ユーザーが文書<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />に適用した要素を示す [XML データ構造] 作業ウィンドウのツリービュー内のノードを表すオブジェクトのコレクションです。</summary>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.XMLNode" />ユーザーが文書に適用した要素を示す [XML データ構造] 作業ウィンドウのツリービュー内のノードを表すオブジェクトのコレクションです。</summary>
     <remarks><para>ツリー ビューの各ノードは、<b>XMLNode</b> オブジェクトのインスタンスです。 ツリー ビューの階層は、ノードに子ノードがあるかどうかを示します。</para>
       <para>選択範囲、指定範囲、または文書全体の<b>XMLNodes</b>コレクションを取得することができます。 <b>XMLNodes</b> コレクション内の <b>各 XMLNode</b> オブジェクトの表示順序は、指定された選択範囲、指定範囲、または文書内で、開始タグまたは終了タグが表示される同じ順序です。</para>
-      <para>各 XMLNode <see cref="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" />オブジェクトを取得するのにには、 <b></b> <b>XMLNodes</b>コレクションのプロパティを使用します。 <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" />メソッドを使用して、適用されたスキーマに従って XML 要素が有効であること、および必要な子要素が存在し、必要な順序になっていることを確認します。 <b>Validate</b>メソッドを実行すると、 <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" />プロパティを使用して、要素が有効であるか<see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" />どうかを確認し、ドキュメント内の xml を xml スキーマルールに準拠させるためにユーザーに対してユーザーにメッセージを表示するためのプロパティを使用します。</para>
-      <para>メソッドを<see cref="M:Microsoft.Office.Interop.Word.XMLNodes.Add(System.String,System.String,System.Object@)" />使用して、選択範囲、指定範囲、または文書に XML 要素を追加します。</para>
-      <para>XML では大文字と小文字が区別されるため、 <paramref name="Name" /> <b>Add</b>メソッドのパラメーターに入力した xml 要素は、 <paramref name="Namespace" />パラメーターで参照されているスキーマに表示されるとおりに入力する必要があります。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" />各<b>XMLNode</b>オブジェクトを取得するのにには、 <b>XMLNodes</b>コレクションのプロパティを使用します。 メソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" /> 適用されたスキーマに従って XML 要素が有効であること、および必要な子要素が存在し、必要な順序になっていることを確認します。 <b>Validate</b>メソッドを実行すると、プロパティを使用して、 <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> 要素が有効であるかどうかを確認し、 <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> ドキュメント内の xml を xml スキーマルールに準拠させるためにユーザーに対してユーザーにメッセージを表示するためのプロパティを使用します。</para>
+      <para>メソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.XMLNodes.Add(System.String,System.String,System.Object@)" /> 選択範囲、指定範囲、または文書に XML 要素を追加します。</para>
+      <para>XML では大文字と小文字が区別されるため、Add メソッドのパラメーターに入力した XML 要素は、パラメーターで参照されている <paramref name="Name" /> スキーマに表示されるとおりに入力する必要があり<b>Add</b> <paramref name="Namespace" /> ます。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -36,6 +37,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.XMLNode Add([in]string Name, [in]string Namespace, [in]object&amp; Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNodes.Add(System.String,System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Name As String, Namespace As String, Optional ByRef Range As Object) As XMLNode" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * string * obj -&gt; Microsoft.Office.Interop.Word.XMLNode" Usage="xMLNodes.Add (Name, Namespace, Range)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -55,7 +57,7 @@
       <Parameters>
         <Parameter Name="Name" Type="System.String" />
         <Parameter Name="Namespace" Type="System.String" />
-        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Name">To be added.</param>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNodes.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.XMLNodes.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -89,7 +92,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNodes.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.XMLNodes.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNodes.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.XMLNodes.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNodes.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="xMLNodes.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As XMLNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNode ^ default[int] { Microsoft::Office::Interop::Word::XMLNode ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.XMLNode" Usage="Microsoft.Office.Interop.Word.XMLNodes.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -222,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNodes.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.XMLNodes.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

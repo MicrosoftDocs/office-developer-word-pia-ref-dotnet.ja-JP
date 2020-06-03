@@ -1,9 +1,10 @@
 <Type Name="Style" FullName="Microsoft.Office.Interop.Word.Style">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="74f93bf5a3bfe99659200d0b7c65cb0b82d3670e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146116" /></Metadata><TypeSignature Language="C#" Value="public interface Style" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="faf86e8d27e6707440672052a3c4a4675dc8c0ab" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926235" /></Metadata><TypeSignature Language="C#" Value="public interface Style" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Style" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Style" />
   <TypeSignature Language="VB.NET" Value="Public Interface Style" />
   <TypeSignature Language="C++ CLI" Value="public interface class Style" />
+  <TypeSignature Language="F#" Value="type Style = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,11 +20,11 @@
   </Attributes>
   <Docs>
     <summary>1 つの組み込みスタイルまたはユーザー定義スタイルを表します。</summary>
-    <remarks><para>Style <b></b>オブジェクトには、style オブジェクトのプロパティとしてスタイル属性 (フォント、フォントスタイル、段落間隔など<b></b> ) が含まれています。 <b>Style</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Styles" />コレクションのメンバーです。 <b>Styles</b> コレクションには、指定された文書のすべてのスタイルが含まれます。</para>
-      <para>スタイル<b></b>名 (<paramref name="index" /> <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />定数または<paramref name="index" />インデックス番号) を使用して、1つの<b>style</b>オブジェクトを取得します。 スタイル名は全角、半角やスペースが正確に一致している必要がありますが、大文字と小文字は区別されません。</para>
+    <remarks><para>Style<b>オブジェクトには</b> <b>、style オブジェクトの</b>プロパティとしてスタイル属性 (フォント、フォントスタイル、段落間隔など) が含まれています。 <b>Style</b>オブジェクトは、コレクションのメンバーです <see cref="T:Microsoft.Office.Interop.Word.Styles" /> 。 <b>Styles</b> コレクションには、指定された文書のすべてのスタイルが含まれます。</para>
+      <para>スタイル名 (定数またはインデックス番号)<b>を使用し</b> <paramref name="index" /> <paramref name="index" /> て、 <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> 1 つの<b>style</b>オブジェクトを取得します。 スタイル名は全角、半角やスペースが正確に一致している必要がありますが、大文字と小文字は区別されません。</para>
       <para>スタイルのインデックス番号は、コード順に並べられたスタイル名の一覧でのスタイルの位置を表します。</para>
       <para>指定範囲、段落、または複数の段落にスタイルを適用するには、 <b>Style</b> プロパティをユーザー定義スタイルまたは組み込みスタイルのスタイル名に設定します。</para>
-      <para>文書と<see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" />テンプレート間でスタイルをコピーするには、メソッドを使用します。 <see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" />メソッドを使用して、添付されたテンプレートのスタイル定義と一致するように作業中の文書のスタイルを更新します。 テンプレートを<see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" />文書として開き、テンプレートのスタイルを変更できるようにするには、メソッドを使用します。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" />文書とテンプレート間でスタイルをコピーするには、メソッドを使用します。 メソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" /> 添付されたテンプレートのスタイル定義と一致するように作業中の文書のスタイルを更新します。 <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" />テンプレートを文書として開き、テンプレートのスタイルを変更できるようにするには、メソッドを使用します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Style.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -50,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.AutomaticallyUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Property AutomaticallyUpdate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutomaticallyUpdate { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutomaticallyUpdate : bool with get, set" Usage="Microsoft.Office.Interop.Word.Style.AutomaticallyUpdate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.BaseStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseStyle As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ BaseStyle { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseStyle : obj with get, set" Usage="Microsoft.Office.Interop.Word.Style.BaseStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -115,7 +119,7 @@
       <Docs>
         <summary>既存のスタイルのベースになることができます別のスタイルの書式を設定または返します。 <b>オブジェクト</b>を読み取り/書き込み。</summary>
         <value>To be added.</value>
-        <remarks><para>このプロパティを設定するには、基本スタイルのローカル名、整数または<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />定数、または基本スタイルを表すオブジェクトのいずれかを指定します。</para>
+        <remarks><para>このプロパティを設定するには、基本スタイルのローカル名、整数または <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> 定数、または基本スタイルを表すオブジェクトのいずれかを指定します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Borders" />
       <MemberSignature Language="VB.NET" Value="Public Property Borders As Borders" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Borders ^ Borders { Microsoft::Office::Interop::Word::Borders ^ get(); void set(Microsoft::Office::Interop::Word::Borders ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Borders : Microsoft.Office.Interop.Word.Borders with get, set" Usage="Microsoft.Office.Interop.Word.Style.Borders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -145,7 +150,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Borders" />たオブジェクトのすべての罫線を表すコレクションを返します。</summary>
+        <summary>指定し <see cref="T:Microsoft.Office.Interop.Word.Borders" /> たオブジェクトのすべての罫線を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.BuiltIn" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuiltIn As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BuiltIn { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuiltIn : bool" Usage="Microsoft.Office.Interop.Word.Style.BuiltIn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -175,7 +181,7 @@
       <Docs>
         <summary><b>True</b>の場合は、指定したオブジェクトは、Microsoft Word の組み込みのスタイルまたは図表番号のラベルのいずれかです。 読み取り専用の <b>Boolean</b> です。</summary>
         <value>To be added.</value>
-        <remarks><para>Microsoft Word の言語バージョンのスタイル名を使用して、 <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />すべての言語に対して組み込みスタイルを指定できます。定数または言語内で使用します。</para>
+        <remarks><para>Microsoft Word の言語バージョンのスタイル名を使用して、すべての言語に対して組み込みスタイルを指定でき <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> ます。定数または言語内で使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Style.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -215,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Style.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="style.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -240,6 +248,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Description" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="Microsoft.Office.Interop.Word.Style.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -269,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Font" />
       <MemberSignature Language="VB.NET" Value="Public Property Font As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Font ^ Font { Microsoft::Office::Interop::Word::Font ^ get(); void set(Microsoft::Office::Interop::Word::Font ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Font : Microsoft.Office.Interop.Word.Font with get, set" Usage="Microsoft.Office.Interop.Word.Style.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -289,7 +299,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定<see cref="T:Microsoft.Office.Interop.Word.Font" />したオブジェクトの文字書式を表すオブジェクトを設定します。 読み取り/書き込みの<b>フォント</b>です。</summary>
+        <summary>取得または <see cref="T:Microsoft.Office.Interop.Word.Font" /> 指定したオブジェクトの文字書式を表すオブジェクトを設定します。 読み取り/書き込みの<b>フォント</b>です。</summary>
         <value>To be added.</value>
         <remarks><para>このプロパティを設定するには、 <b>Font</b> オブジェクトを返す式を指定します。</para>
           <para> </para></remarks>
@@ -301,6 +311,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Frame" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Frame As Frame" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Frame ^ Frame { Microsoft::Office::Interop::Word::Frame ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Frame : Microsoft.Office.Interop.Word.Frame" Usage="Microsoft.Office.Interop.Word.Style.Frame" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -318,7 +329,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Frame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Frame" />たスタイルのレイアウト枠の書式設定を表すオブジェクトを返します。 読み取り専用です。</summary>
+        <summary>指定し <see cref="T:Microsoft.Office.Interop.Word.Frame" /> たスタイルのレイアウト枠の書式設定を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -329,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Hidden" />
       <MemberSignature Language="VB.NET" Value="Public Property Hidden As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Hidden { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Hidden : bool with get, set" Usage="Microsoft.Office.Interop.Word.Style.Hidden" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -366,6 +378,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.InUse" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InUse As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InUse { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.InUse : bool" Usage="Microsoft.Office.Interop.Word.Style.InUse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -395,6 +408,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.LanguageID" />
       <MemberSignature Language="VB.NET" Value="Public Property LanguageID As WdLanguageID" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLanguageID LanguageID { Microsoft::Office::Interop::Word::WdLanguageID get(); void set(Microsoft::Office::Interop::Word::WdLanguageID value); };" />
+      <MemberSignature Language="F#" Value="member this.LanguageID : Microsoft.Office.Interop.Word.WdLanguageID with get, set" Usage="Microsoft.Office.Interop.Word.Style.LanguageID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -417,7 +431,7 @@
       <Docs>
         <summary>オブジェクトの言語を示します。 値の取得と設定が可能です。</summary>
         <value>To be added.</value>
-        <remarks><para>任意の<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数を使用できます。</para>
+        <remarks><para>任意の定数を使用でき <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> ます。</para>
           <para><b>WdLanguageID</b>定数の中には、選択またはインストールした言語のサポート (たとえば、英語 (米国)) によっては使用できないものがあります。</para>
           <para> </para></remarks>
       </Docs>
@@ -428,6 +442,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.LanguageIDFarEast" />
       <MemberSignature Language="VB.NET" Value="Public Property LanguageIDFarEast As WdLanguageID" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLanguageID LanguageIDFarEast { Microsoft::Office::Interop::Word::WdLanguageID get(); void set(Microsoft::Office::Interop::Word::WdLanguageID value); };" />
+      <MemberSignature Language="F#" Value="member this.LanguageIDFarEast : Microsoft.Office.Interop.Word.WdLanguageID with get, set" Usage="Microsoft.Office.Interop.Word.Style.LanguageIDFarEast" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -450,7 +465,7 @@
       <Docs>
         <summary>指定したオブジェクトの東アジア言語を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para>任意の<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数を使用できます。</para>
+        <remarks><para>任意の定数を使用でき <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> ます。</para>
           <para>Word 東アジア版で作成された文書に東アジア言語の文字列を設定する場合、この方法をお勧めします。</para>
           <para> </para></remarks>
       </Docs>
@@ -461,6 +476,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Linked" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Linked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Linked { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Linked : bool" Usage="Microsoft.Office.Interop.Word.Style.Linked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -491,6 +507,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.LinkStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property LinkStyle As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ LinkStyle { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LinkStyle : obj with get, set" Usage="Microsoft.Office.Interop.Word.Style.LinkStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -521,6 +538,8 @@
       <MemberSignature Language="C#" Value="public void LinkToListTemplate (Microsoft.Office.Interop.Word.ListTemplate ListTemplate, ref object ListLevelNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LinkToListTemplate([in]class Microsoft.Office.Interop.Word.ListTemplate ListTemplate, [in]object&amp; ListLevelNumber) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Style.LinkToListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LinkToListTemplate (ListTemplate As ListTemplate, Optional ByRef ListLevelNumber As Object)" />
+      <MemberSignature Language="F#" Value="abstract member LinkToListTemplate : Microsoft.Office.Interop.Word.ListTemplate * obj -&gt; unit" Usage="style.LinkToListTemplate (ListTemplate, ListLevelNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -536,10 +555,10 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="ListTemplate" Type="Microsoft.Office.Interop.Word.ListTemplate" />
-        <Parameter Name="ListLevelNumber" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ListLevelNumber" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ListTemplate">必要<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />なオブジェクト。 スタイルをリンクする箇条書きテンプレートを指定します。</param>
+        <param name="ListTemplate">必要な <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> オブジェクト。 スタイルをリンクする箇条書きテンプレートを指定します。</param>
         <param name="ListLevelNumber">省略可能な<b>オブジェクト</b>です。 スタイルをリンクする箇条書きのレベルに対応する整数を指定します。 この引数を省略すると、スタイルのレベルが使用されます。</param>
         <summary>指定されたスタイルを箇条書きテンプレートにリンクし、そのスタイル書式を箇条書きに適用できるようにします。</summary>
         <remarks>To be added.</remarks>
@@ -551,6 +570,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.ListLevelNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListLevelNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ListLevelNumber { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListLevelNumber : int" Usage="Microsoft.Office.Interop.Word.Style.ListLevelNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -579,6 +599,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.ListTemplate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListTemplate As ListTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ListTemplate ^ ListTemplate { Microsoft::Office::Interop::Word::ListTemplate ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListTemplate : Microsoft.Office.Interop.Word.ListTemplate" Usage="Microsoft.Office.Interop.Word.Style.ListTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -596,7 +617,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />た<see cref="T:Microsoft.Office.Interop.Word.Style" />オブジェクトの箇条書きの書式設定を表すオブジェクト型 (object) の値を取得します。</summary>
+        <summary>指定し <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> たオブジェクトの箇条書きの書式設定を表すオブジェクト型 (object) の値を取得し <see cref="T:Microsoft.Office.Interop.Word.Style" /> ます。</summary>
         <value>To be added.</value>
         <remarks><para>箇条書きテンプレートには、特定の箇条書きを定義するすべての書式設定が含まれます。 [箇条書きと段落番号] ダイアログ ボックス ([書式] メニュー) の各タブに表示される 7 種類の書式 ([なし] を除く) は、各箇条書きテンプレートと対応します。 文書とテンプレートに箇条書きテンプレートのコレクションを含めることができます。</para>
           <para><b>ListFormat</b> オブジェクトの範囲内の最初の段落はリストとしてフォーマットされていない場合、 <b>ListTemplate</b> プロパティは <b>Nothing</b> を返します。</para>
@@ -609,6 +630,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Locked" />
       <MemberSignature Language="VB.NET" Value="Public Property Locked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Locked { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Locked : bool with get, set" Usage="Microsoft.Office.Interop.Word.Style.Locked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -640,6 +662,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.NameLocal" />
       <MemberSignature Language="VB.NET" Value="Default Public Property NameLocal As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NameLocal : string with get, set" Usage="Microsoft.Office.Interop.Word.Style.NameLocal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -672,6 +695,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.NextParagraphStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property NextParagraphStyle As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ NextParagraphStyle { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NextParagraphStyle : obj with get, set" Usage="Microsoft.Office.Interop.Word.Style.NextParagraphStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -694,7 +718,7 @@
       <Docs>
         <summary>指定したスタイルが設定されている段落の後に、新しい段落に自動的に適用されるスタイルを設定または返します。 <b>オブジェクト</b>を読み取り/書き込み。</summary>
         <value>To be added.</value>
-        <remarks><para>このプロパティを設定するには、次のスタイルのローカル名、整数または<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />定数、または次のスタイルを表すオブジェクトのいずれかを指定します。</para>
+        <remarks><para>このプロパティを設定するには、次のスタイルのローカル名、整数または <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> 定数、または次のスタイルを表すオブジェクトのいずれかを指定します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -704,6 +728,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.NoProofing" />
       <MemberSignature Language="VB.NET" Value="Public Property NoProofing As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NoProofing { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.NoProofing : int with get, set" Usage="Microsoft.Office.Interop.Word.Style.NoProofing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -735,6 +760,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.NoSpaceBetweenParagraphsOfSameStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property NoSpaceBetweenParagraphsOfSameStyle As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NoSpaceBetweenParagraphsOfSameStyle { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.NoSpaceBetweenParagraphsOfSameStyle : bool with get, set" Usage="Microsoft.Office.Interop.Word.Style.NoSpaceBetweenParagraphsOfSameStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -766,6 +792,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.ParagraphFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property ParagraphFormat As ParagraphFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ParagraphFormat ^ ParagraphFormat { Microsoft::Office::Interop::Word::ParagraphFormat ^ get(); void set(Microsoft::Office::Interop::Word::ParagraphFormat ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ParagraphFormat : Microsoft.Office.Interop.Word.ParagraphFormat with get, set" Usage="Microsoft.Office.Interop.Word.Style.ParagraphFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -786,7 +813,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ParagraphFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したスタイル<see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />の段落設定を表すオブジェクトを設定または返します。 値の取得と設定が可能です。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />指定したスタイルの段落設定を表すオブジェクトを設定または返します。 値の取得と設定が可能です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -797,6 +824,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Style.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -825,6 +853,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Priority" />
       <MemberSignature Language="VB.NET" Value="Public Property Priority As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Priority { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Priority : int with get, set" Usage="Microsoft.Office.Interop.Word.Style.Priority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -856,6 +885,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.QuickStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property QuickStyle As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool QuickStyle { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.QuickStyle : bool with get, set" Usage="Microsoft.Office.Interop.Word.Style.QuickStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -887,6 +917,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Shading" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shading As Shading" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shading ^ Shading { Microsoft::Office::Interop::Word::Shading ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Shading : Microsoft.Office.Interop.Word.Shading" Usage="Microsoft.Office.Interop.Word.Style.Shading" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -904,7 +935,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Shading" />たオブジェクトの網かけ書式を参照するオブジェクトを取得します。</summary>
+        <summary>指定した <see cref="T:Microsoft.Office.Interop.Word.Shading" /> オブジェクトの網かけ書式を参照するオブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -915,6 +946,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Table" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Table As TableStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TableStyle ^ Table { Microsoft::Office::Interop::Word::TableStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Table : Microsoft.Office.Interop.Word.TableStyle" Usage="Microsoft.Office.Interop.Word.Style.Table" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -932,7 +964,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TableStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>表の<see cref="T:Microsoft.Office.Interop.Word.TableStyle" />スタイルを使用して表に適用できるプロパティを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.TableStyle" />表のスタイルを使用して表に適用できるプロパティを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -943,6 +975,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdStyleType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdStyleType Type { Microsoft::Office::Interop::Word::WdStyleType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdStyleType" Usage="Microsoft.Office.Interop.Word.Style.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -960,7 +993,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdStyleType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スタイルの種類を取得します。 読み取り専用<see cref="T:Microsoft.Office.Interop.Word.Style" />です。</summary>
+        <summary>スタイルの種類を取得します。 読み取り専用 <see cref="T:Microsoft.Office.Interop.Word.Style" /> です。</summary>
         <value>To be added.</value>
         <remarks><para>
             <b>Wdスタイルの種類</b>には、次のいずれかの定数を使用できます。</para>
@@ -985,6 +1018,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.UnhideWhenUsed" />
       <MemberSignature Language="VB.NET" Value="Public Property UnhideWhenUsed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UnhideWhenUsed { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UnhideWhenUsed : bool with get, set" Usage="Microsoft.Office.Interop.Word.Style.UnhideWhenUsed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1005,8 +1039,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>この<b></b>スタイルが使用さ<see cref="P:Microsoft.Office.Interop.Word.Style.Hidden" />れている場合は、True を設定してプロパティをクリアします。</summary>
-        <value>Boolean</value>
+        <summary>このスタイルが使用されている場合は、 <b>True</b>を設定してプロパティをクリアし <see cref="P:Microsoft.Office.Interop.Word.Style.Hidden" /> ます。</summary>
+        <value>ブール型</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1016,6 +1050,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Visibility" />
       <MemberSignature Language="VB.NET" Value="Public Property Visibility As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visibility { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visibility : bool with get, set" Usage="Microsoft.Office.Interop.Word.Style.Visibility" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

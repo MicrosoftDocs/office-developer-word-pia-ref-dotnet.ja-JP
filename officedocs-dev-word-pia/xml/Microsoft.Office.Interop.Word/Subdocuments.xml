@@ -1,9 +1,10 @@
 <Type Name="Subdocuments" FullName="Microsoft.Office.Interop.Word.Subdocuments">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ddd1247b7607cf6fdec9c86653bd6de16fa1156f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143918" /></Metadata><TypeSignature Language="C#" Value="public interface Subdocuments : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="76b39d3cbb205306166b67185a253b1d5ab3eb04" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926207" /></Metadata><TypeSignature Language="C#" Value="public interface Subdocuments : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Subdocuments implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Subdocuments" />
   <TypeSignature Language="VB.NET" Value="Public Interface Subdocuments&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Subdocuments : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Subdocuments = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,10 +23,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>指定範囲また<see cref="T:Microsoft.Office.Interop.Word.Subdocument" />は文書内のサブ文書を表すオブジェクトのコレクションです。</summary>
-    <remarks><para><b>サブ文書</b>のコレクションを取得<see cref="T:Microsoft.Office.Interop.Word.Range" />する<see cref="T:Microsoft.Office.Interop.Word.Document" />のにには、オブジェクトまたはオブジェクトの<b>サブ文書</b>のプロパティを使用します。</para>
-      <para>文書に<see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />サブ<see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" />文書を追加するには、またはメソッドを使用します。</para>
-      <para>サブ<b>文書</b>(<paramref name="index" />) を使用<paramref name="index" />して、1つの<b>サブ文書</b>のオブジェクトを取得します。ここで、はインデックス番号を指定します。</para>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.Subdocument" />指定範囲または文書内のサブ文書を表すオブジェクトのコレクションです。</summary>
+    <remarks><para><b>Subdocuments</b> <see cref="T:Microsoft.Office.Interop.Word.Range" /> <see cref="T:Microsoft.Office.Interop.Word.Document" /> <b>サブ文書</b>のコレクションを取得するのにには、オブジェクトまたはオブジェクトのサブ文書のプロパティを使用します。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" /> 文書にサブ文書を追加するには、またはメソッドを使用します。</para>
+      <para>サブ<b>文書</b>( <paramref name="index" /> ) を使用し <paramref name="index" /> て、1つの<b>サブ文書</b>のオブジェクトを取得します。ここで、はインデックス番号を指定します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Subdocument AddFromFile([in]object&amp; Name, [in]object&amp; ConfirmConversions, [in]object&amp; ReadOnly, [in]object&amp; PasswordDocument, [in]object&amp; PasswordTemplate, [in]object&amp; Revert, [in]object&amp; WritePasswordDocument, [in]object&amp; WritePasswordTemplate) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddFromFile (ByRef Name As Object, Optional ByRef ConfirmConversions As Object, Optional ByRef ReadOnly As Object, Optional ByRef PasswordDocument As Object, Optional ByRef PasswordTemplate As Object, Optional ByRef Revert As Object, Optional ByRef WritePasswordDocument As Object, Optional ByRef WritePasswordTemplate As Object) As Subdocument" />
+      <MemberSignature Language="F#" Value="abstract member AddFromFile : obj * obj * obj * obj * obj * obj * obj * obj -&gt; Microsoft.Office.Interop.Word.Subdocument" Usage="subdocuments.AddFromFile (Name, ConfirmConversions, ReadOnly, PasswordDocument, PasswordTemplate, Revert, WritePasswordDocument, WritePasswordTemplate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,14 +50,14 @@
         <ReturnType>Microsoft.Office.Interop.Word.Subdocument</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Name" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ConfirmConversions" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ReadOnly" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="PasswordDocument" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="PasswordTemplate" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Revert" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="WritePasswordDocument" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="WritePasswordTemplate" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Name" Type="System.Object" RefType="ref" />
+        <Parameter Name="ConfirmConversions" Type="System.Object" RefType="ref" />
+        <Parameter Name="ReadOnly" Type="System.Object" RefType="ref" />
+        <Parameter Name="PasswordDocument" Type="System.Object" RefType="ref" />
+        <Parameter Name="PasswordTemplate" Type="System.Object" RefType="ref" />
+        <Parameter Name="Revert" Type="System.Object" RefType="ref" />
+        <Parameter Name="WritePasswordDocument" Type="System.Object" RefType="ref" />
+        <Parameter Name="WritePasswordTemplate" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Name">必要な<b>オブジェクト</b>。 グループ文書に挿入するサブ文書のファイル名を指定します。</param>
@@ -63,10 +65,10 @@
         <param name="ReadOnly">省略可能な<b>オブジェクト</b>です。 の <b>場合は true。</b> 読み取り専用文書としてサブ文書を挿入します。  </param>
         <param name="PasswordDocument">省略可能な<b>オブジェクト</b>です。 サブ文書がパスワードで保護されている場合に、サブ文書を開くために必要なパスワードを指定します。</param>
         <param name="PasswordTemplate">省略可能な<b>オブジェクト</b>です。 サブ文書に添付されたテンプレートがパスワードで保護されている場合は、このテンプレートを開くために必要なパスワードを指定します。</param>
-        <param name="Revert">省略可能な<b>オブジェクト</b>です。 開いている<paramref name="Name" />文書のファイル名が何になるかを制御します。 <b>True</b> を保存されたサブ文書を挿入します。 <b>False</b> に開いている未保存の変更が含まれている可能性がありますが、サブ文書を挿入します。</param>
+        <param name="Revert">省略可能な<b>オブジェクト</b>です。 <paramref name="Name" />開いている文書のファイル名が何になるかを制御します。 <b>True</b> を保存されたサブ文書を挿入します。 <b>False</b> に開いている未保存の変更が含まれている可能性がありますが、サブ文書を挿入します。</param>
         <param name="WritePasswordDocument">省略可能な<b>オブジェクト</b>です。 ドキュメントファイルが書き込み保護されている場合に、変更内容を保存するために必要なパスワードを指定します。</param>
         <param name="WritePasswordTemplate">省略可能な<b>オブジェクト</b>です。 テンプレートが書き込み保護されている場合に、サブ文書に添付されたテンプレートへの変更を保存するために必要なパスワードを指定します。</param>
-        <summary>指定されたサブ文書を、選択範囲の先頭にあるマスター文書に<see cref="T:Microsoft.Office.Interop.Word.Subdocument" />追加し、オブジェクトを返します。</summary>
+        <summary>指定されたサブ文書を、選択範囲の先頭にあるマスター文書に追加し、オブジェクトを返し <see cref="T:Microsoft.Office.Interop.Word.Subdocument" /> ます。</summary>
         <returns>To be added.</returns>
         <remarks><para>
             <b>メモ</b> 作業中のビューがアウトライン表示またはグループ文書ビューのいずれでもない場合は、エラーが発生します。</para>
@@ -77,7 +79,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Subdocument AddFromRange (Microsoft.Office.Interop.Word.Range Range);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Subdocument AddFromRange([in]class Microsoft.Office.Interop.Word.Range Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddFromRange (Range As Range) As Subdocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Subdocument ^ AddFromRange(Microsoft::Office::Interop::Word::Range ^ Range);" />
+      <MemberSignature Language="F#" Value="abstract member AddFromRange : Microsoft.Office.Interop.Word.Range -&gt; Microsoft.Office.Interop.Word.Subdocument" Usage="subdocuments.AddFromRange Range" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -95,8 +99,8 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 1つまたは複数のサブ文書を作成するために使用する Range オブジェクトを<b>指定</b>します。</param>
-        <summary>指定された範囲のテキストから1つまたは複数のサブ<see cref="T:Microsoft.Office.Interop.Word.Subdocument" />文書を作成し、オブジェクトを返します。</summary>
+        <param name="Range">必要な <see cref="T:Microsoft.Office.Interop.Word.Range" /> オブジェクト。 1つまたは複数のサブ文書を作成するために使用する Range オブジェクトを<b>指定</b>します。</param>
+        <summary>指定された範囲のテキストから1つまたは複数のサブ文書を作成し、オブジェクトを返し <see cref="T:Microsoft.Office.Interop.Word.Subdocument" /> ます。</summary>
         <returns>To be added.</returns>
         <remarks><para>
             <b>メモ</b> この範囲は、組み込みの見出しレベルのスタイル (たとえば、見出し 1) のいずれかで始まる必要があります。 サブ文書は、指定範囲の先頭で使われている見出し書式と同じ書式が設定された各段落に作成されます。 グループ文書を保存すると、サブ文書ファイルも保存され、ファイルの最初の行の文字列を使用して自動的にファイル名が付けられます。</para>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocuments.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Subdocuments.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -126,7 +131,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocuments.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Subdocuments.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -165,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocuments.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Subdocuments.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -195,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Subdocuments.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="subdocuments.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -220,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocuments.Expanded" />
       <MemberSignature Language="VB.NET" Value="Public Property Expanded As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Expanded { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Expanded : bool with get, set" Usage="Microsoft.Office.Interop.Word.Subdocuments.Expanded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -251,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Subdocuments.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="subdocuments.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -283,6 +293,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocuments.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Subdocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Subdocument ^ default[int] { Microsoft::Office::Interop::Word::Subdocument ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.Subdocument" Usage="Microsoft.Office.Interop.Word.Subdocuments.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -314,6 +325,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Merge([in]object&amp; FirstSubdocument, [in]object&amp; LastSubdocument) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Subdocuments.Merge(System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Merge (Optional ByRef FirstSubdocument As Object, Optional ByRef LastSubdocument As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Merge : obj * obj -&gt; unit" Usage="subdocuments.Merge (FirstSubdocument, LastSubdocument)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -328,8 +340,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="FirstSubdocument" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="LastSubdocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="FirstSubdocument" Type="System.Object" RefType="ref" />
+        <Parameter Name="LastSubdocument" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="FirstSubdocument">省略可能な<b>オブジェクト</b>です。 組み込む変更履歴が記録されている元の文書のパスおよびファイル名を指定します。</param>
@@ -344,6 +356,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocuments.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Subdocuments.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -372,6 +385,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Subdocuments.Select" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; unit" Usage="subdocuments.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

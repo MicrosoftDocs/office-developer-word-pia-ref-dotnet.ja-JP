@@ -1,9 +1,10 @@
 <Type Name="Words" FullName="Microsoft.Office.Interop.Word.Words">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d236676b440e6d795d3c1717b83df235a2ae0ef2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142655" /></Metadata><TypeSignature Language="C#" Value="public interface Words : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ca17d8491e5e14d82f4780a03b0bb4d03b136081" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926774" /></Metadata><TypeSignature Language="C#" Value="public interface Words : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Words implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Words" />
   <TypeSignature Language="VB.NET" Value="Public Interface Words&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Words : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Words = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -25,10 +26,10 @@
     <summary>選択範囲、指定範囲、文書にある単語のコレクションです。</summary>
     <remarks><para><b>Words</b>コレクションの各項目は、 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 1 つの単語を表すオブジェクトです。 Word オブジェクトはありません。</para>
       <para><b>Words</b> プロパティを使用して <b>Words</b> オブジェクトを返します。</para>
-      <para>1つの<paramref name="index" />単語を表す<paramref name="index" /> Range オブジェクトを取得するには、<b>単語</b>() を使用します。ここで、はインデックス番号を<b>指定</b>します。 インデックス番号は、 <b>Words</b>コレクションでの単語の位置を表します。</para>
+      <para><b>Words</b> <paramref name="index" /> <paramref name="index" /> 1 つの単語を表す Range オブジェクトを取得するには、単語 () を使用します。ここで、はインデックス番号を<b>指定</b>します。 インデックス番号は、 <b>Words</b>コレクションでの単語の位置を表します。</para>
       <para><b>Words</b> コレクションのアイテムには、単語と単語に続くスペースの両方が含まれます。 カーソルの直後にスペースがある場合、Selection.Words(1) は、カーソルの前の単語を表します。 カーソルの直後に文字がある場合、Selection.Words(1) は、カーソルの後ろの単語を表します。</para>
-      <para>文書<see cref="P:Microsoft.Office.Interop.Word.Words.Count" />内のこのコレクションのプロパティは、メインストーリーのみの項目数を返します。 他のストーリーのアイテムを数えるには、このコレクションと共に <b>Range</b> オブジェクトを使用します。 また、<b>Count</b> プロパティには、句読点および段落記号もすべて含まれます。 文書内の実際の単語数が必要な場合は、[文字カウント] ダイアログボックスを使用します。</para>
-      <para><b>Words</b>コレクションでは、 <b>Add</b>メソッドを使用できません。 代わりに、 <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" />メソッドを使用して、 <b>Range</b>オブジェクトにテキストを追加します。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.Words.Count" />文書内のこのコレクションのプロパティは、メインストーリーのみの項目数を返します。 他のストーリーのアイテムを数えるには、このコレクションと共に <b>Range</b> オブジェクトを使用します。 また、<b>Count</b> プロパティには、句読点および段落記号もすべて含まれます。 文書内の実際の単語数が必要な場合は、[文字カウント] ダイアログボックスを使用します。</para>
+      <para><b>Words</b>コレクションでは、 <b>Add</b>メソッドを使用できません。 代わりに、メソッドまたはメソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> <b>Range</b>オブジェクトにテキストを追加します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Words.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Words.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -55,7 +57,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Words.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Words.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Words.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Words.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Words.First" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property First As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ First { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.First : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Words.First" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -141,7 +146,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>文書、 <see cref="T:Microsoft.Office.Interop.Word.Range" />選択範囲、または指定範囲内の最初の単語を表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Range" />文書、選択範囲、または指定範囲内の最初の単語を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Words.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="words.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Words.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ default[int] { Microsoft::Office::Interop::Word::Range ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Words.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -216,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Words.Last" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Last As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Last { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Last : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Words.Last" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -233,7 +241,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>文書、 <see cref="T:Microsoft.Office.Interop.Word.Range" />選択範囲、または指定範囲内の最後の単語を表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Range" />文書、選択範囲、または指定範囲内の最後の単語を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -244,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Words.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Words.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
