@@ -1,9 +1,10 @@
 <Type Name="AddIn" FullName="Microsoft.Office.Interop.Word.AddIn">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="695249a505a14baf5625853d5db3725ed54c358e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144674" /></Metadata><TypeSignature Language="C#" Value="public interface AddIn" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="834391be669fe404d74b4ac56273a8b1154ee8ba" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43921885" /></Metadata><TypeSignature Language="C#" Value="public interface AddIn" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddIn" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AddIn" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddIn" />
   <TypeSignature Language="C++ CLI" Value="public interface class AddIn" />
+  <TypeSignature Language="F#" Value="type AddIn = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,13 +19,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="82133-101">組み込まれているかどうかにかかわらず単一のアドインを表します。</span><span class="sxs-lookup"><span data-stu-id="82133-101">Represents a single add-in, either installed or not installed.</span></span></summary>
-    <remarks><para><span data-ttu-id="82133-102"><b>AddIn</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.AddIns" />コレクションのメンバーです。</span><span class="sxs-lookup"><span data-stu-id="82133-102">The <b>AddIn</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> collection.</span></span> <span data-ttu-id="82133-103"><b>AddIns</b>コレクションには、現在読み込まれているかどうかに関係なく、Microsoft Word で使用可能なすべてのアドインが含まれています。</span><span class="sxs-lookup"><span data-stu-id="82133-103">The <b>AddIns</b> collection contains all the add-ins available to Microsoft Word, regardless of whether or not they're currently loaded.</span></span> <span data-ttu-id="82133-104"><b>AddIns</b>コレクションには、[テンプレートとアドイン] ダイアログボックス ([ツール] メニュー) に表示される全文書対象のテンプレートまたは Word アドインライブラリ (wll) が含まれています。</span><span class="sxs-lookup"><span data-stu-id="82133-104">The <b>AddIns</b> collection includes global templates or Word add-in libraries (WLLs) displayed in the Templates and Add-ins dialog box (Tools menu).</span></span></para>
-      <para><span data-ttu-id="82133-105"><b>AddIns</b>(<paramref name="index" />) を使用し<paramref name="index" />ます。ここで、はアドイン名またはインデックス番号を使用して、1つの<b>AddIn</b>オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="82133-105">Use <b>AddIns</b>(<paramref name="index" />), where <paramref name="index" /> is the add-in name or index number, to return a single <b>AddIn</b> object.</span></span> <span data-ttu-id="82133-106">[テンプレートとアドイン] ダイアログボックスに表示されている名前のスペル (必ずしも大文字と小文字は区別されません) を正確に一致させる必要があります。</span><span class="sxs-lookup"><span data-stu-id="82133-106">You must exactly match the spelling (but not necessarily the capitalization) of the name, as it's shown in the Templates and Add-Ins dialog box.</span></span></para>
-      <para><span data-ttu-id="82133-107">インデックス番号は、[ テンプレートとアドイン] ダイアログ ボックスのアドインの一覧でのアドインの位置を表します。</span><span class="sxs-lookup"><span data-stu-id="82133-107">The index number represents the position of the add-in in the list of add-ins in the Templates and Add-ins dialog box.</span></span></para>
-      <para><span data-ttu-id="82133-108"><see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" />メソッドを使用して、使用可能なアドインの一覧にアドインを追加し、必要に応じて、 <paramref name="Install" />引数を使用してアドインをインストールします。</span><span class="sxs-lookup"><span data-stu-id="82133-108">Use the <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> method to add an add-in to the list of available add-ins and (optionally) install it using the <paramref name="Install" /> argument.</span></span></para>
-      <para><span data-ttu-id="82133-109">使用可能なアドインの一覧に表示されているアドインをインストールするには<see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> 、プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="82133-109">To install an add-in shown in the list of available add-ins, use the <see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> property.</span></span></para>
-      <para><span data-ttu-id="82133-110">AddIn オブジェクト<see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" />がテンプレートであるか<b></b> 、WLL であるかを判断するのにには、プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="82133-110">Use the <see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" /> property to determine whether an <b>AddIn</b> object is a template or a WLL.</span></span></para>
+    <summary><span data-ttu-id="6295f-101">組み込まれているかどうかにかかわらず単一のアドインを表します。</span><span class="sxs-lookup"><span data-stu-id="6295f-101">Represents a single add-in, either installed or not installed.</span></span></summary>
+    <remarks><para><span data-ttu-id="6295f-102"><b>AddIn</b>オブジェクトは、コレクションのメンバーです <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> 。</span><span class="sxs-lookup"><span data-stu-id="6295f-102">The <b>AddIn</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> collection.</span></span> <span data-ttu-id="6295f-103"><b>AddIns</b>コレクションには、現在読み込まれているかどうかに関係なく、Microsoft Word で使用可能なすべてのアドインが含まれています。</span><span class="sxs-lookup"><span data-stu-id="6295f-103">The <b>AddIns</b> collection contains all the add-ins available to Microsoft Word, regardless of whether or not they're currently loaded.</span></span> <span data-ttu-id="6295f-104"><b>AddIns</b>コレクションには、[テンプレートとアドイン] ダイアログボックス ([ツール] メニュー) に表示される全文書対象のテンプレートまたは Word アドインライブラリ (wll) が含まれています。</span><span class="sxs-lookup"><span data-stu-id="6295f-104">The <b>AddIns</b> collection includes global templates or Word add-in libraries (WLLs) displayed in the Templates and Add-ins dialog box (Tools menu).</span></span></para>
+      <para><span data-ttu-id="6295f-105"><b>AddIns</b>( <paramref name="index" /> ) を使用します。ここで、 <paramref name="index" /> はアドイン名またはインデックス番号を使用して、1つの<b>AddIn</b>オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="6295f-105">Use <b>AddIns</b>(<paramref name="index" />), where <paramref name="index" /> is the add-in name or index number, to return a single <b>AddIn</b> object.</span></span> <span data-ttu-id="6295f-106">[テンプレートとアドイン] ダイアログボックスに表示されている名前のスペル (必ずしも大文字と小文字は区別されません) を正確に一致させる必要があります。</span><span class="sxs-lookup"><span data-stu-id="6295f-106">You must exactly match the spelling (but not necessarily the capitalization) of the name, as it's shown in the Templates and Add-Ins dialog box.</span></span></para>
+      <para><span data-ttu-id="6295f-107">インデックス番号は、[ テンプレートとアドイン] ダイアログ ボックスのアドインの一覧でのアドインの位置を表します。</span><span class="sxs-lookup"><span data-stu-id="6295f-107">The index number represents the position of the add-in in the list of add-ins in the Templates and Add-ins dialog box.</span></span></para>
+      <para><span data-ttu-id="6295f-108">メソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> 使用可能なアドインの一覧にアドインを追加し、必要に応じて、引数を使用してアドインをインストールし <paramref name="Install" /> ます。</span><span class="sxs-lookup"><span data-stu-id="6295f-108">Use the <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> method to add an add-in to the list of available add-ins and (optionally) install it using the <paramref name="Install" /> argument.</span></span></para>
+      <para><span data-ttu-id="6295f-109">使用可能なアドインの一覧に表示されているアドインをインストールするには、プロパティを使用し <see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> ます。</span><span class="sxs-lookup"><span data-stu-id="6295f-109">To install an add-in shown in the list of available add-ins, use the <see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> property.</span></span></para>
+      <para><span data-ttu-id="6295f-110"><see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" /> <b>AddIn</b>オブジェクトがテンプレートであるか、WLL であるかを判断するのにには、プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="6295f-110">Use the <see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" /> property to determine whether an <b>AddIn</b> object is a template or a WLL.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.AddIn.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -51,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="82133-111">指定し<see cref="T:Microsoft.Office.Interop.Word.Application" />たオブジェクトの作成元を表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="82133-111">Returns an <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the creator of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="6295f-111">指定し <see cref="T:Microsoft.Office.Interop.Word.Application" /> たオブジェクトの作成元を表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="6295f-111">Returns an <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the creator of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Autoload" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Autoload As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Autoload { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Autoload : bool" Usage="Microsoft.Office.Interop.Word.AddIn.Autoload" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -79,9 +82,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="82133-112">指定したアドインが Word の起動時に自動的に読み込まれるかどうかを示す値を返します。</span><span class="sxs-lookup"><span data-stu-id="82133-112">Returns a value indicating whether the specified add-in is automatically loaded when Microsoft Word is started.</span></span></summary>
+        <summary><span data-ttu-id="6295f-112">指定したアドインが Word の起動時に自動的に読み込まれるかどうかを示す値を返します。</span><span class="sxs-lookup"><span data-stu-id="6295f-112">Returns a value indicating whether the specified add-in is automatically loaded when Microsoft Word is started.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="82133-113">Word のプログラム フォルダーの [スタートアップ] フォルダーにあるアドインが自動的に読み込まれます。</span><span class="sxs-lookup"><span data-stu-id="82133-113">Add-ins located in the Startup folder in the Word program folder are automatically loaded.</span></span></para>
+        <remarks><para><span data-ttu-id="6295f-113">Word のプログラム フォルダーの [スタートアップ] フォルダーにあるアドインが自動的に読み込まれます。</span><span class="sxs-lookup"><span data-stu-id="6295f-113">Add-ins located in the Startup folder in the Word program folder are automatically loaded.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Compiled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Compiled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Compiled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Compiled : bool" Usage="Microsoft.Office.Interop.Word.AddIn.Compiled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -108,9 +112,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="82133-114">指定したアドインが Microsoft Word アドインライブラリ (WLL) であるかどうかを示す値を返します。</span><span class="sxs-lookup"><span data-stu-id="82133-114">Returns a value indicating whether the specified add-in is a Microsoft Word add-in library (WLL).</span></span></summary>
+        <summary><span data-ttu-id="6295f-114">指定したアドインが Microsoft Word アドインライブラリ (WLL) であるかどうかを示す値を返します。</span><span class="sxs-lookup"><span data-stu-id="6295f-114">Returns a value indicating whether the specified add-in is a Microsoft Word add-in library (WLL).</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="82133-115">指定したアドインが WLL でない場合は、テンプレートです。</span><span class="sxs-lookup"><span data-stu-id="82133-115">If the specified add-in is not a WLL, then it is a template.</span></span></para>
+        <remarks><para><span data-ttu-id="6295f-115">指定したアドインが WLL でない場合は、テンプレートです。</span><span class="sxs-lookup"><span data-stu-id="6295f-115">If the specified add-in is not a WLL, then it is a template.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.AddIn.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -137,10 +142,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="82133-116">指定したオブジェクトが作成されたアプリケーションを示す値を返します。</span><span class="sxs-lookup"><span data-stu-id="82133-116">Returns a value that indicates the application in which the specified object was created.</span></span></summary>
+        <summary><span data-ttu-id="6295f-116">指定したオブジェクトが作成されたアプリケーションを示す値を返します。</span><span class="sxs-lookup"><span data-stu-id="6295f-116">Returns a value that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="82133-117">指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。</span><span class="sxs-lookup"><span data-stu-id="82133-117">If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="82133-118">[!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</span><span class="sxs-lookup"><span data-stu-id="82133-118">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="82133-119"><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。</span><span class="sxs-lookup"><span data-stu-id="82133-119">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="82133-120">たとえば、Word には作成者コード MSWD です。</span><span class="sxs-lookup"><span data-stu-id="82133-120">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="82133-121">このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</span><span class="sxs-lookup"><span data-stu-id="82133-121">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="6295f-117">指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。</span><span class="sxs-lookup"><span data-stu-id="6295f-117">If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="6295f-118">[!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</span><span class="sxs-lookup"><span data-stu-id="6295f-118">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="6295f-119"><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。</span><span class="sxs-lookup"><span data-stu-id="6295f-119">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="6295f-120">たとえば、Word には作成者コード MSWD です。</span><span class="sxs-lookup"><span data-stu-id="6295f-120">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="6295f-121">このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</span><span class="sxs-lookup"><span data-stu-id="6295f-121">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.AddIn.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="addIn.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -165,7 +171,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="82133-122">指定した<see cref="T:Microsoft.Office.Interop.Word.AddIn" />オブジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="82133-122">Deletes the specified <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> object.</span></span></summary>
+        <summary><span data-ttu-id="6295f-122">指定したオブジェクトを削除し <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> ます。</span><span class="sxs-lookup"><span data-stu-id="6295f-122">Deletes the specified <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> object.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.AddIn.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -192,7 +199,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="82133-123"><see cref="T:Microsoft.Office.Interop.Word.AddIns" />コレクション内の項目の位置を表す値を返します。</span><span class="sxs-lookup"><span data-stu-id="82133-123">Returns a value that represents the position of an item in a <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> collection.</span></span></summary>
+        <summary><span data-ttu-id="6295f-123">コレクション内の項目の位置を表す値を返し <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> ます。</span><span class="sxs-lookup"><span data-stu-id="6295f-123">Returns a value that represents the position of an item in a <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -203,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Installed" />
       <MemberSignature Language="VB.NET" Value="Public Property Installed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Installed { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Installed : bool with get, set" Usage="Microsoft.Office.Interop.Word.AddIn.Installed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -223,10 +231,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="82133-124">True を指定すると、指定したアドインがインストールされている (ロードされている) 場合に<b>True</b>を示す値を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="82133-124">Returns or sets a value indicating <b>True</b> if the specified add-in is installed (loaded).</span></span></summary>
+        <summary><span data-ttu-id="6295f-124">True を指定すると、指定したアドインがインストールされている (ロードされている) 場合に<b>True</b>を示す値を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="6295f-124">Returns or sets a value indicating <b>True</b> if the specified add-in is installed (loaded).</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="82133-125">読み込まれているアドインは、[テンプレートとアドイン] ダイアログボックス ([ツール] メニュー) で選択されています。</span><span class="sxs-lookup"><span data-stu-id="82133-125">Add-ins that are loaded are selected in the Templates and Add-ins dialog box (Tools menu).</span></span></para>
-          <para><span data-ttu-id="82133-126">アンインストールされたアドインは、 <see cref="T:Microsoft.Office.Interop.Word.AddIns" />コレクションに含まれています。</span><span class="sxs-lookup"><span data-stu-id="82133-126">Uninstalled add-ins are included in the <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> collection.</span></span> <span data-ttu-id="82133-127"><b>AddIns</b>コレクションからテンプレートまたは WLL を削除するには、 <see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" />その<see cref="T:Microsoft.Office.Interop.Word.AddIn" />オブジェクトにメソッドを適用します (アドイン名は [テンプレートとアドイン] ダイアログボックスから削除されます)。</span><span class="sxs-lookup"><span data-stu-id="82133-127">To remove a template or WLL from the <b>AddIns</b> collection, apply the <see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" /> method to the <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> object (the add-in name is removed from the Templates and Add-ins dialog box).</span></span> <span data-ttu-id="82133-128">すべてのテンプレートと Wll をアンロードするに<see cref="M:Microsoft.Office.Interop.Word.AddIns.Unload(System.Boolean)" />は、このメソッドを<b>AddIns</b>コレクションに適用します。</span><span class="sxs-lookup"><span data-stu-id="82133-128">To unload all templates and WLLs, apply the <see cref="M:Microsoft.Office.Interop.Word.AddIns.Unload(System.Boolean)" /> method to the <b>AddIns</b> collection.</span></span></para>
+        <remarks><para><span data-ttu-id="6295f-125">読み込まれているアドインは、[テンプレートとアドイン] ダイアログボックス ([ツール] メニュー) で選択されています。</span><span class="sxs-lookup"><span data-stu-id="6295f-125">Add-ins that are loaded are selected in the Templates and Add-ins dialog box (Tools menu).</span></span></para>
+          <para><span data-ttu-id="6295f-126">アンインストールされたアドインは、コレクションに含まれてい <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> ます。</span><span class="sxs-lookup"><span data-stu-id="6295f-126">Uninstalled add-ins are included in the <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> collection.</span></span> <span data-ttu-id="6295f-127"><b>AddIns</b>コレクションからテンプレートまたは WLL を削除するには、その <see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" /> オブジェクトにメソッドを適用し <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> ます (アドイン名は [テンプレートとアドイン] ダイアログボックスから削除されます)。</span><span class="sxs-lookup"><span data-stu-id="6295f-127">To remove a template or WLL from the <b>AddIns</b> collection, apply the <see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" /> method to the <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> object (the add-in name is removed from the Templates and Add-ins dialog box).</span></span> <span data-ttu-id="6295f-128">すべてのテンプレートと Wll をアンロードするには、この <see cref="M:Microsoft.Office.Interop.Word.AddIns.Unload(System.Boolean)" /> メソッドを<b>AddIns</b>コレクションに適用します。</span><span class="sxs-lookup"><span data-stu-id="6295f-128">To unload all templates and WLLs, apply the <see cref="M:Microsoft.Office.Interop.Word.AddIns.Unload(System.Boolean)" /> method to the <b>AddIns</b> collection.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -236,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Name" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.AddIn.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -253,7 +262,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="82133-129">指定<see cref="T:Microsoft.Office.Interop.Word.AddIn" />したオブジェクトの名前を示す値を返します。</span><span class="sxs-lookup"><span data-stu-id="82133-129">Returns a value that indicates the name of the specified <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> object.</span></span></summary>
+        <summary><span data-ttu-id="6295f-129">指定したオブジェクトの名前を示す値を返し <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> ます。</span><span class="sxs-lookup"><span data-stu-id="6295f-129">Returns a value that indicates the name of the specified <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -264,6 +273,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.AddIn.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -281,7 +291,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="82133-130">指定<see cref="T:Microsoft.Office.Interop.Word.AddIn" />したオブジェクトの親オブジェクトを表す値を返します。</span><span class="sxs-lookup"><span data-stu-id="82133-130">Returns a value that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> object.</span></span></summary>
+        <summary><span data-ttu-id="6295f-130">指定したオブジェクトの親オブジェクトを表す値を返し <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> ます。</span><span class="sxs-lookup"><span data-stu-id="6295f-130">Returns a value that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -292,6 +302,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Path" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="Microsoft.Office.Interop.Word.AddIn.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -309,9 +320,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="82133-131">指定<see cref="T:Microsoft.Office.Interop.Word.AddIn" />したオブジェクトの URL を示す値を返します。</span><span class="sxs-lookup"><span data-stu-id="82133-131">Returns a value that indicates the URL to the specified <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> object.</span></span></summary>
+        <summary><span data-ttu-id="6295f-131">指定したオブジェクトの URL を示す値を返し <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> ます。</span><span class="sxs-lookup"><span data-stu-id="6295f-131">Returns a value that indicates the URL to the specified <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> object.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="82133-132">パスには、末尾のスラッシュ文字 ("http://MyServer" など) は含まれません。</span><span class="sxs-lookup"><span data-stu-id="82133-132">The path doesn't include a trailing forward slash character—for example, "http://MyServer".</span></span> <span data-ttu-id="82133-133"><b>PathSeparator</b>プロパティ<see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.PathSeparator" />の既定値が円記号 (\)) の場合でも、プロパティを使用して末尾のスラッシュ文字を追加します。</span><span class="sxs-lookup"><span data-stu-id="82133-133">Use the <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.PathSeparator" /> property to add a trailing forward slash character even though the <b>PathSeparator</b> property defaults to a backslash (\).</span></span></para>
+        <remarks><para><span data-ttu-id="6295f-132">パスには、末尾のスラッシュ文字 ("" など) は含まれません http://MyServer 。</span><span class="sxs-lookup"><span data-stu-id="6295f-132">The path doesn't include a trailing forward slash character—for example, "http://MyServer".</span></span> <span data-ttu-id="6295f-133"><see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.PathSeparator" /> <b>PathSeparator</b>プロパティの既定値が円記号 () の場合でも、プロパティを使用して末尾のスラッシュ文字を追加し \) ます。</span><span class="sxs-lookup"><span data-stu-id="6295f-133">Use the <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.PathSeparator" /> property to add a trailing forward slash character even though the <b>PathSeparator</b> property defaults to a backslash (\).</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>

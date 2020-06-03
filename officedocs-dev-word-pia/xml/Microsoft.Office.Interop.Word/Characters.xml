@@ -1,9 +1,10 @@
 <Type Name="Characters" FullName="Microsoft.Office.Interop.Word.Characters">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3ed2d642991aec68ae45afbf33e3cbb38e71bb89" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142321" /></Metadata><TypeSignature Language="C#" Value="public interface Characters : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dc09052777c8ce9350ed3537ce5a5b767f7c78b7" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922627" /></Metadata><TypeSignature Language="C#" Value="public interface Characters : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Characters implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Characters" />
   <TypeSignature Language="VB.NET" Value="Public Interface Characters&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Characters : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Characters = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,12 +23,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="06ca8-101">選択範囲、指定範囲、または文書内の文字のコレクションを表します。</span><span class="sxs-lookup"><span data-stu-id="06ca8-101">A collection of characters in a selection, range, or document.</span></span></summary>
-    <remarks><para><span data-ttu-id="06ca8-102"><b>文字</b>オブジェクトはありません。代わりに、 <b>Characters</b>コレクションの各項目は、1 <see cref="T:Microsoft.Office.Interop.Word.Range" />文字を表すオブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="06ca8-102">There is no <b>Character</b> object; instead, each item in the <b>Characters</b> collection is a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents one character.</span></span></para>
-      <para><span data-ttu-id="06ca8-103">Characters コレクションを取得するのに<b></b>には、 <b>characters</b>プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="06ca8-103">Use the <b>Characters</b> property to return the <b>Characters</b> collection.</span></span></para>
-      <para><span data-ttu-id="06ca8-104">1文字を<paramref name="index" />表す Range オブジェクト<paramref name="index" />を取得するには、<b>文字</b>() を使用します。ここで、はインデックス番号を<b>指定</b>します。</span><span class="sxs-lookup"><span data-stu-id="06ca8-104">Use <b>Characters</b>(<paramref name="index" />), where <paramref name="index" /> is the index number, to return a <b>Range</b> object that represents one character.</span></span> <span data-ttu-id="06ca8-105">インデックス番号は <b>Characters</b> コレクションでの文字の位置を表します。</span><span class="sxs-lookup"><span data-stu-id="06ca8-105">The index number represents the position of a character in the <b>Characters</b> collection.</span></span></para>
-      <para><span data-ttu-id="06ca8-106">文書<see cref="P:Microsoft.Office.Interop.Word.Characters.Count" />内のこのコレクションのプロパティは、メインストーリーのみの項目数を返します。</span><span class="sxs-lookup"><span data-stu-id="06ca8-106">The <see cref="P:Microsoft.Office.Interop.Word.Characters.Count" /> property for this collection in a document returns the number of items in the main story only.</span></span> <span data-ttu-id="06ca8-107">他のストーリーに含まれる項目の数を取得するには、 <b>Range</b> オブジェクトと共にコレクションを使用します。</span><span class="sxs-lookup"><span data-stu-id="06ca8-107">To count items in other stories use the collection with the <b>Range</b> object.</span></span></para>
-      <para><span data-ttu-id="06ca8-108">Characters コレクションでは、 <b>Add</b>メソッドを使用できません。</span><span class="sxs-lookup"><span data-stu-id="06ca8-108">An <b>Add</b> method isn't available for the Characters collection.</span></span> <span data-ttu-id="06ca8-109">代わりに、または<see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" />メソッドを使用して、 <b>Range</b>オブジェクトに文字を追加します。</span><span class="sxs-lookup"><span data-stu-id="06ca8-109">Instead, use the <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> or <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> method to add characters to a <b>Range</b> object.</span></span></para>
+    <summary><span data-ttu-id="cc45b-101">選択範囲、指定範囲、または文書内の文字のコレクションを表します。</span><span class="sxs-lookup"><span data-stu-id="cc45b-101">A collection of characters in a selection, range, or document.</span></span></summary>
+    <remarks><para><span data-ttu-id="cc45b-102"><b>文字</b>オブジェクトはありません。代わりに、 <b>Characters</b>コレクションの各項目は、 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 1 文字を表すオブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="cc45b-102">There is no <b>Character</b> object; instead, each item in the <b>Characters</b> collection is a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents one character.</span></span></para>
+      <para><span data-ttu-id="cc45b-103"><b>Characters コレクションを</b>取得するのにには、 <b>characters</b>プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="cc45b-103">Use the <b>Characters</b> property to return the <b>Characters</b> collection.</span></span></para>
+      <para><span data-ttu-id="cc45b-104">1 <b>Characters</b>文字を <paramref name="index" /> 表す Range オブジェクトを取得するには、文字 () を使用します。ここで、 <paramref name="index" /> はインデックス番号を<b>指定</b>します。</span><span class="sxs-lookup"><span data-stu-id="cc45b-104">Use <b>Characters</b>(<paramref name="index" />), where <paramref name="index" /> is the index number, to return a <b>Range</b> object that represents one character.</span></span> <span data-ttu-id="cc45b-105">インデックス番号は <b>Characters</b> コレクションでの文字の位置を表します。</span><span class="sxs-lookup"><span data-stu-id="cc45b-105">The index number represents the position of a character in the <b>Characters</b> collection.</span></span></para>
+      <para><span data-ttu-id="cc45b-106"><see cref="P:Microsoft.Office.Interop.Word.Characters.Count" />文書内のこのコレクションのプロパティは、メインストーリーのみの項目数を返します。</span><span class="sxs-lookup"><span data-stu-id="cc45b-106">The <see cref="P:Microsoft.Office.Interop.Word.Characters.Count" /> property for this collection in a document returns the number of items in the main story only.</span></span> <span data-ttu-id="cc45b-107">他のストーリーに含まれる項目の数を取得するには、 <b>Range</b> オブジェクトと共にコレクションを使用します。</span><span class="sxs-lookup"><span data-stu-id="cc45b-107">To count items in other stories use the collection with the <b>Range</b> object.</span></span></para>
+      <para><span data-ttu-id="cc45b-108">Characters コレクションでは、 <b>Add</b>メソッドを使用できません。</span><span class="sxs-lookup"><span data-stu-id="cc45b-108">An <b>Add</b> method isn't available for the Characters collection.</span></span> <span data-ttu-id="cc45b-109">代わりに、またはメソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> <b>Range</b>オブジェクトに文字を追加します。</span><span class="sxs-lookup"><span data-stu-id="cc45b-109">Instead, use the <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> or <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> method to add characters to a <b>Range</b> object.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Characters.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Characters.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -54,7 +56,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="06ca8-110">指定し<see cref="T:Microsoft.Office.Interop.Word.Application" />たオブジェクトの作成元を表すオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="06ca8-110">Gets a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the creator of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="cc45b-110">指定した <see cref="T:Microsoft.Office.Interop.Word.Application" /> オブジェクトの作成元を表すオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="cc45b-110">Gets a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the creator of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Characters.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Characters.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -82,7 +85,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="06ca8-111">指定したコレクション内の項目数を取得します。</span><span class="sxs-lookup"><span data-stu-id="06ca8-111">Gets the number of items in the specified collection.</span></span></summary>
+        <summary><span data-ttu-id="cc45b-111">指定したコレクション内の項目数を取得します。</span><span class="sxs-lookup"><span data-stu-id="cc45b-111">Gets the number of items in the specified collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Characters.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Characters.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -110,10 +114,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="06ca8-112">指定したオブジェクトが作成されたアプリケーションを示す値を取得します。</span><span class="sxs-lookup"><span data-stu-id="06ca8-112">Gets a value that indicates the application in which the specified object was created.</span></span></summary>
+        <summary><span data-ttu-id="cc45b-112">指定したオブジェクトが作成されたアプリケーションを示す値を取得します。</span><span class="sxs-lookup"><span data-stu-id="cc45b-112">Gets a value that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="06ca8-113">指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。</span><span class="sxs-lookup"><span data-stu-id="06ca8-113">If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="06ca8-114">[!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</span><span class="sxs-lookup"><span data-stu-id="06ca8-114">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="06ca8-115"><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。</span><span class="sxs-lookup"><span data-stu-id="06ca8-115">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="06ca8-116">たとえば、Word には作成者コード MSWD です。</span><span class="sxs-lookup"><span data-stu-id="06ca8-116">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="06ca8-117">このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</span><span class="sxs-lookup"><span data-stu-id="06ca8-117">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="cc45b-113">指定したオブジェクトが Microsoft Word で作成された場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。</span><span class="sxs-lookup"><span data-stu-id="cc45b-113">If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="cc45b-114">[!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</span><span class="sxs-lookup"><span data-stu-id="cc45b-114">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="cc45b-115"><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。</span><span class="sxs-lookup"><span data-stu-id="cc45b-115">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="cc45b-116">たとえば、Word には作成者コード MSWD です。</span><span class="sxs-lookup"><span data-stu-id="cc45b-116">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="cc45b-117">このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</span><span class="sxs-lookup"><span data-stu-id="cc45b-117">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Characters.First" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property First As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ First { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.First : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Characters.First" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -140,7 +145,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="06ca8-118">文書の<see cref="T:Microsoft.Office.Interop.Word.Range" />最初の文字を表すオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="06ca8-118">Gets a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the first character in a document.</span></span></summary>
+        <summary><span data-ttu-id="cc45b-118"><see cref="T:Microsoft.Office.Interop.Word.Range" />文書の最初の文字を表すオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="cc45b-118">Gets a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the first character in a document.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -151,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Characters.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="characters.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Characters.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ default[int] { Microsoft::Office::Interop::Word::Range ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Characters.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -203,8 +210,8 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index"><span data-ttu-id="06ca8-119">個々のオブジェクトの序数位置を示す値。</span><span class="sxs-lookup"><span data-stu-id="06ca8-119">A value that indicates the ordinal position of the individual object.</span></span></param>
-        <summary><span data-ttu-id="06ca8-120">コレクション内の個々のオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="06ca8-120">Gets an individual object in a collection.</span></span></summary>
+        <param name="Index"><span data-ttu-id="cc45b-119">個々のオブジェクトの序数位置を示す値。</span><span class="sxs-lookup"><span data-stu-id="cc45b-119">A value that indicates the ordinal position of the individual object.</span></span></param>
+        <summary><span data-ttu-id="cc45b-120">コレクション内の個々のオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="cc45b-120">Gets an individual object in a collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -215,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Characters.Last" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Last As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Last { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Last : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Characters.Last" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -232,7 +240,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="06ca8-121">文書内<see cref="T:Microsoft.Office.Interop.Word.Range" />の最後の文字、単語、または文を表すオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="06ca8-121">Gets a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the last character, word, or sentence in a document.</span></span></summary>
+        <summary><span data-ttu-id="cc45b-121"><see cref="T:Microsoft.Office.Interop.Word.Range" />文書内の最後の文字、単語、または文を表すオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="cc45b-121">Gets a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the last character, word, or sentence in a document.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -243,6 +251,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Characters.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Characters.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -260,7 +269,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="06ca8-122">指定したオブジェクトの親オブジェクトを表すオブジェクト型 (object) の値を取得します。</span><span class="sxs-lookup"><span data-stu-id="06ca8-122">Gets an object that represents the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="cc45b-122">指定したオブジェクトの親オブジェクトを表すオブジェクト型 (object) の値を取得します。</span><span class="sxs-lookup"><span data-stu-id="cc45b-122">Gets an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

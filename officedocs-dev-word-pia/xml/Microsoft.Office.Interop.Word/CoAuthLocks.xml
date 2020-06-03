@@ -1,9 +1,10 @@
 <Type Name="CoAuthLocks" FullName="Microsoft.Office.Interop.Word.CoAuthLocks">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="779d7277bc33046c57fd58aed8480017877e3a20" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142244" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthLocks : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b1055a3201b8d4d3dc1346cdeae148febaf08cc9" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922424" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthLocks : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CoAuthLocks implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CoAuthLocks" />
   <TypeSignature Language="VB.NET" Value="Public Interface CoAuthLocks&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class CoAuthLocks : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type CoAuthLocks = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="bd088-101">オブジェクトの<see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" />コレクション。</span><span class="sxs-lookup"><span data-stu-id="bd088-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" /> objects.</span></span></summary>
+    <summary><span data-ttu-id="9c11e-101">オブジェクトのコレクション <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" /> 。</span><span class="sxs-lookup"><span data-stu-id="9c11e-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" /> objects.</span></span></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.CoAuthLock Add([in]object Range, [in]valuetype Microsoft.Office.Interop.Word.WdLockType Type) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CoAuthLocks.Add(System.Object,Microsoft.Office.Interop.Word.WdLockType)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Optional Range As Object, Optional Type As WdLockType = Microsoft.Office.Interop.Word.WdLockType.wdLockReservation) As CoAuthLock" />
+      <MemberSignature Language="F#" Value="abstract member Add : obj * Microsoft.Office.Interop.Word.WdLockType -&gt; Microsoft.Office.Interop.Word.CoAuthLock" Usage="coAuthLocks.Add (Range, Type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -49,10 +51,10 @@
         <Parameter Name="Type" Type="Microsoft.Office.Interop.Word.WdLockType" />
       </Parameters>
       <Docs>
-        <param name="Range"><span data-ttu-id="bd088-102"><see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" />オブジェクトによってロックされているドキュメント範囲を指定します。</span><span class="sxs-lookup"><span data-stu-id="bd088-102">Specifies the document range locked by the <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" /> object.</span></span> <span data-ttu-id="bd088-103">このパラメーターには、 <see cref="T:Microsoft.Office.Interop.Word.Paragraph" />、 <see cref="T:Microsoft.Office.Interop.Word.Column" />、 <see cref="T:Microsoft.Office.Interop.Word.Cell" />、、 <b>T:Microsoft.Office.Interop.Word.Table</b>、 <see cref="T:Microsoft.Office.Interop.Word.Range" />、また<see cref="T:Microsoft.Office.Interop.Word.Selection" />はオブジェクトを<see cref="T:Microsoft.Office.Interop.Word.Row" />指定できます。</span><span class="sxs-lookup"><span data-stu-id="bd088-103">This parameter may be a <see cref="T:Microsoft.Office.Interop.Word.Paragraph" />, <see cref="T:Microsoft.Office.Interop.Word.Column" />, <see cref="T:Microsoft.Office.Interop.Word.Cell" />, <see cref="T:Microsoft.Office.Interop.Word.Row" />, <b>T:Microsoft.Office.Interop.Word.Table</b>, <see cref="T:Microsoft.Office.Interop.Word.Range" />, or <see cref="T:Microsoft.Office.Interop.Word.Selection" /> object.</span></span></param>
-        <param name="Type"><span data-ttu-id="bd088-104">ロックの種類を指定します。</span><span class="sxs-lookup"><span data-stu-id="bd088-104">Specifies the type of lock.</span></span> <span data-ttu-id="bd088-105"><see cref="F:Microsoft.Office.Interop.Word.WdLockType.wdLockEphemeral" />はまたは<see cref="F:Microsoft.Office.Interop.Word.WdLockType.wdLockReservation" />のみを<see cref="T:Microsoft.Office.Interop.Word.WdLockType" />指定できます。</span><span class="sxs-lookup"><span data-stu-id="bd088-105">The <see cref="T:Microsoft.Office.Interop.Word.WdLockType" /> specified can only be <see cref="F:Microsoft.Office.Interop.Word.WdLockType.wdLockEphemeral" /> or <see cref="F:Microsoft.Office.Interop.Word.WdLockType.wdLockReservation" />.</span></span></param>
-        <summary><span data-ttu-id="bd088-106">指定し<see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" />た範囲に追加されたロックを表すオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="bd088-106">Gets a <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" /> object that represents a lock added to a specified range.</span></span></summary>
-        <returns><span data-ttu-id="bd088-107">指定<see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" />した範囲に追加されたロックを表すオブジェクト型 (object) の値を取得します。</span><span class="sxs-lookup"><span data-stu-id="bd088-107">A <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" /> object that represents a lock added to a specified range.</span></span></returns>
+        <param name="Range"><span data-ttu-id="9c11e-102">オブジェクトによってロックされているドキュメント範囲を指定し <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" /> ます。</span><span class="sxs-lookup"><span data-stu-id="9c11e-102">Specifies the document range locked by the <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" /> object.</span></span> <span data-ttu-id="9c11e-103">このパラメーターには、、、、、 <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> <see cref="T:Microsoft.Office.Interop.Word.Column" /> <see cref="T:Microsoft.Office.Interop.Word.Cell" /> <see cref="T:Microsoft.Office.Interop.Word.Row" /> <b>T:Microsoft.Office.Interop.Word.Table</b>、 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 、またはオブジェクトを指定でき <see cref="T:Microsoft.Office.Interop.Word.Selection" /> ます。</span><span class="sxs-lookup"><span data-stu-id="9c11e-103">This parameter may be a <see cref="T:Microsoft.Office.Interop.Word.Paragraph" />, <see cref="T:Microsoft.Office.Interop.Word.Column" />, <see cref="T:Microsoft.Office.Interop.Word.Cell" />, <see cref="T:Microsoft.Office.Interop.Word.Row" />, <b>T:Microsoft.Office.Interop.Word.Table</b>, <see cref="T:Microsoft.Office.Interop.Word.Range" />, or <see cref="T:Microsoft.Office.Interop.Word.Selection" /> object.</span></span></param>
+        <param name="Type"><span data-ttu-id="9c11e-104">ロックの種類を指定します。</span><span class="sxs-lookup"><span data-stu-id="9c11e-104">Specifies the type of lock.</span></span> <span data-ttu-id="9c11e-105"><see cref="T:Microsoft.Office.Interop.Word.WdLockType" />はまたはのみを指定でき <see cref="F:Microsoft.Office.Interop.Word.WdLockType.wdLockEphemeral" /> <see cref="F:Microsoft.Office.Interop.Word.WdLockType.wdLockReservation" /> ます。</span><span class="sxs-lookup"><span data-stu-id="9c11e-105">The <see cref="T:Microsoft.Office.Interop.Word.WdLockType" /> specified can only be <see cref="F:Microsoft.Office.Interop.Word.WdLockType.wdLockEphemeral" /> or <see cref="F:Microsoft.Office.Interop.Word.WdLockType.wdLockReservation" />.</span></span></param>
+        <summary><span data-ttu-id="9c11e-106">指定し <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" /> た範囲に追加されたロックを表すオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="9c11e-106">Gets a <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" /> object that represents a lock added to a specified range.</span></span></summary>
+        <returns><span data-ttu-id="9c11e-107"><see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" />指定した範囲に追加されたロックを表すオブジェクト型 (object) の値を取得します。</span><span class="sxs-lookup"><span data-stu-id="9c11e-107">A <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" /> object that represents a lock added to a specified range.</span></span></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthLocks.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.CoAuthLocks.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -79,9 +82,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bd088-108">Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="bd088-108">Gets an <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
-        <value><span data-ttu-id="bd088-109">Microsoft <see cref="T:Microsoft.Office.Interop.Word.Application" /> Word アプリケーションを表すオブジェクト。</span><span class="sxs-lookup"><span data-stu-id="bd088-109">An <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></value>
-        <remarks><para><span data-ttu-id="bd088-110">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="bd088-110">Read-only.</span></span></para>
+        <summary><span data-ttu-id="9c11e-108"><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="9c11e-108">Gets an <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <value><span data-ttu-id="9c11e-109"><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクト。</span><span class="sxs-lookup"><span data-stu-id="9c11e-109">An <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></value>
+        <remarks><para><span data-ttu-id="9c11e-110">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="9c11e-110">Read-only.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthLocks.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.CoAuthLocks.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -108,9 +112,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bd088-111"><see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" />コレクション内のロックの数を取得します。</span><span class="sxs-lookup"><span data-stu-id="bd088-111">Gets the number of locks in the <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> collection.</span></span></summary>
-        <value><span data-ttu-id="bd088-112"><see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" />コレクション内のロックの数。</span><span class="sxs-lookup"><span data-stu-id="bd088-112">The number of locks in the <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> collection.</span></span></value>
-        <remarks><para><span data-ttu-id="bd088-113">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="bd088-113">Read-only.</span></span></para>
+        <summary><span data-ttu-id="9c11e-111">コレクション内のロックの数を取得し <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> ます。</span><span class="sxs-lookup"><span data-stu-id="9c11e-111">Gets the number of locks in the <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> collection.</span></span></summary>
+        <value><span data-ttu-id="9c11e-112">コレクション内のロックの数 <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> 。</span><span class="sxs-lookup"><span data-stu-id="9c11e-112">The number of locks in the <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> collection.</span></span></value>
+        <remarks><para><span data-ttu-id="9c11e-113">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="9c11e-113">Read-only.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthLocks.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.CoAuthLocks.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -137,11 +142,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bd088-114">指定したオブジェクトが作成されたアプリケーションを示す32ビット整数を取得します。</span><span class="sxs-lookup"><span data-stu-id="bd088-114">Gets a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
-        <value><span data-ttu-id="bd088-115">指定したオブジェクトが作成されたアプリケーションを示す32ビットの整数。</span><span class="sxs-lookup"><span data-stu-id="bd088-115">A 32-bit integer that indicates the application in which the specified object was created.</span></span></value>
-        <remarks><para><span data-ttu-id="bd088-116">値の取得のみ可能な<b>long</b>値です。</span><span class="sxs-lookup"><span data-stu-id="bd088-116">Read-only <b>long</b>.</span></span> <span data-ttu-id="bd088-117">オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。</span><span class="sxs-lookup"><span data-stu-id="bd088-117">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="bd088-118">このプロパティは、各アプリケーションが 4 文字のクリエータ コードには、Apple Macintosh で使用するために設計されました。</span><span class="sxs-lookup"><span data-stu-id="bd088-118">This property was primarily designed to be used on the Apple Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="bd088-119">たとえば、Word には、作成者コード MSWD です。</span><span class="sxs-lookup"><span data-stu-id="bd088-119">For example, Word has the creator code MSWD.</span></span></para>
-          <para><span data-ttu-id="bd088-120">
-            <b>注意</b>: この値は、定数<b>wdCreatorCode</b>で表すこともできます。</span><span class="sxs-lookup"><span data-stu-id="bd088-120">
+        <summary><span data-ttu-id="9c11e-114">指定したオブジェクトが作成されたアプリケーションを示す32ビット整数を取得します。</span><span class="sxs-lookup"><span data-stu-id="9c11e-114">Gets a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
+        <value><span data-ttu-id="9c11e-115">指定したオブジェクトが作成されたアプリケーションを示す32ビットの整数。</span><span class="sxs-lookup"><span data-stu-id="9c11e-115">A 32-bit integer that indicates the application in which the specified object was created.</span></span></value>
+        <remarks><para><span data-ttu-id="9c11e-116">値の取得のみ可能な<b>long</b>値です。</span><span class="sxs-lookup"><span data-stu-id="9c11e-116">Read-only <b>long</b>.</span></span> <span data-ttu-id="9c11e-117">オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。</span><span class="sxs-lookup"><span data-stu-id="9c11e-117">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="9c11e-118">このプロパティは、各アプリケーションが 4 文字のクリエータ コードには、Apple Macintosh で使用するために設計されました。</span><span class="sxs-lookup"><span data-stu-id="9c11e-118">This property was primarily designed to be used on the Apple Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="9c11e-119">たとえば、Word には、作成者コード MSWD です。</span><span class="sxs-lookup"><span data-stu-id="9c11e-119">For example, Word has the creator code MSWD.</span></span></para>
+          <para><span data-ttu-id="9c11e-120">
+            <b>注意</b>: この値は、定数<b>wdCreatorCode</b>で表すこともできます。</span><span class="sxs-lookup"><span data-stu-id="9c11e-120">
             <b>Caution</b>: This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
           <para> </para></remarks>
       </Docs>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CoAuthLocks.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="coAuthLocks.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -174,7 +180,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns><span data-ttu-id="bd088-121">を<see cref="T:System.Collections.IEnumerator" />返します。</span><span class="sxs-lookup"><span data-stu-id="bd088-121">Returns <see cref="T:System.Collections.IEnumerator" />.</span></span></returns>
+        <returns><span data-ttu-id="9c11e-121"><see cref="T:System.Collections.IEnumerator" /> を返します。</span><span class="sxs-lookup"><span data-stu-id="9c11e-121">Returns <see cref="T:System.Collections.IEnumerator" />.</span></span></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthLocks.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As CoAuthLock" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::CoAuthLock ^ default[int] { Microsoft::Office::Interop::Word::CoAuthLock ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.CoAuthLock" Usage="Microsoft.Office.Interop.Word.CoAuthLocks.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -204,9 +211,9 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index"><span data-ttu-id="bd088-122">個々 のオブジェクトが返されます。</span><span class="sxs-lookup"><span data-stu-id="bd088-122">The individual object to be returned.</span></span></param>
-        <summary><span data-ttu-id="bd088-123">コレクション内の各 <b>CoAuthLocks</b> オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="bd088-123">Returns an individual <b>CoAuthLocks</b> object in a collection.</span></span></summary>
-        <value><span data-ttu-id="bd088-124">を<see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" />返します。</span><span class="sxs-lookup"><span data-stu-id="bd088-124">Returns <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" />.</span></span></value>
+        <param name="Index"><span data-ttu-id="9c11e-122">個々 のオブジェクトが返されます。</span><span class="sxs-lookup"><span data-stu-id="9c11e-122">The individual object to be returned.</span></span></param>
+        <summary><span data-ttu-id="9c11e-123">コレクション内の各 <b>CoAuthLocks</b> オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="9c11e-123">Returns an individual <b>CoAuthLocks</b> object in a collection.</span></span></summary>
+        <value><span data-ttu-id="9c11e-124"><see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" /> を返します。</span><span class="sxs-lookup"><span data-stu-id="9c11e-124">Returns <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" />.</span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthLocks.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.CoAuthLocks.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -233,8 +241,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bd088-125">は<see cref="T:System.Object" /> 、指定<see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" />したオブジェクトの親オブジェクトを表すを取得します。</span><span class="sxs-lookup"><span data-stu-id="bd088-125">Gets an <see cref="T:System.Object" /> that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> object.</span></span></summary>
-        <value><span data-ttu-id="bd088-126"><see cref="T:System.Object" />指定<see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" />したオブジェクトの親オブジェクトを表す。</span><span class="sxs-lookup"><span data-stu-id="bd088-126">An <see cref="T:System.Object" /> that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> object.</span></span></value>
+        <summary><span data-ttu-id="9c11e-125">は、 <see cref="T:System.Object" /> 指定したオブジェクトの親オブジェクトを表すを取得し <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> ます。</span><span class="sxs-lookup"><span data-stu-id="9c11e-125">Gets an <see cref="T:System.Object" /> that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> object.</span></span></summary>
+        <value><span data-ttu-id="9c11e-126">指定した <see cref="T:System.Object" /> オブジェクトの親オブジェクトを表す <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> 。</span><span class="sxs-lookup"><span data-stu-id="9c11e-126">An <see cref="T:System.Object" /> that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> object.</span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CoAuthLocks.RemoveEphemeralLocks" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveEphemeralLocks ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveEphemeralLocks();" />
+      <MemberSignature Language="F#" Value="abstract member RemoveEphemeralLocks : unit -&gt; unit" Usage="coAuthLocks.RemoveEphemeralLocks " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -259,8 +268,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="bd088-127">文書の一時ロックを解除します。</span><span class="sxs-lookup"><span data-stu-id="bd088-127">Removes ephemeral locks from the document.</span></span></summary>
-        <remarks><para><span data-ttu-id="bd088-128">一時ロックは、共同編集が有効になっている文書の編集を共同編集者が開始したときに、特定の範囲に自動的に適用されます。</span><span class="sxs-lookup"><span data-stu-id="bd088-128">Ephemeral locks are automatically applied to a range when a co-author begins to edit a document that has co-authoring enabled.</span></span></para>
+        <summary><span data-ttu-id="9c11e-127">文書の一時ロックを解除します。</span><span class="sxs-lookup"><span data-stu-id="9c11e-127">Removes ephemeral locks from the document.</span></span></summary>
+        <remarks><para><span data-ttu-id="9c11e-128">一時ロックは、共同編集が有効になっている文書の編集を共同編集者が開始したときに、特定の範囲に自動的に適用されます。</span><span class="sxs-lookup"><span data-stu-id="9c11e-128">Ephemeral locks are automatically applied to a range when a co-author begins to edit a document that has co-authoring enabled.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>

@@ -1,9 +1,10 @@
 <Type Name="LegendEntry" FullName="Microsoft.Office.Interop.Word.LegendEntry">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="059f71dc3edd40069b1147fe21cabdefa3e8042d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146627" /></Metadata><TypeSignature Language="C#" Value="public interface LegendEntry" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6f167d0bed7c79ad8313d4cfc13e01297da8efd3" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43923886" /></Metadata><TypeSignature Language="C#" Value="public interface LegendEntry" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LegendEntry" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.LegendEntry" />
   <TypeSignature Language="VB.NET" Value="Public Interface LegendEntry" />
   <TypeSignature Language="C++ CLI" Value="public interface class LegendEntry" />
+  <TypeSignature Language="F#" Value="type LegendEntry = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,15 +19,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="3428e-101">グラフの凡例の凡例文字列を表します。</span><span class="sxs-lookup"><span data-stu-id="3428e-101">Represents a legend entry in a chart legend.</span></span></summary>
-    <remarks><para><span data-ttu-id="3428e-102"><see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />オブジェクトは<see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />コレクションのメンバーです。</span><span class="sxs-lookup"><span data-stu-id="3428e-102">The <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> collection.</span></span> <span data-ttu-id="3428e-103"><see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />コレクションには、凡例<see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />のすべてのオブジェクトが含まれています。</span><span class="sxs-lookup"><span data-stu-id="3428e-103">The <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> collection contains all the <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> objects in the legend.</span></span></para>
-      <para><span data-ttu-id="3428e-104">凡例文字列はそれぞれ2つの部分で構成されています。凡例文字列に関連付けられた系列の名前である、エントリのテキスト。と入力マーカーは、凡例項目とそれに関連付けられたデータ系列または近似曲線をグラフに視覚的にリンクします。</span><span class="sxs-lookup"><span data-stu-id="3428e-104">Each legend entry has two parts: the text of the entry, which is the name of the series associated with the legend entry; and an entry marker, which visually links the legend entry with its associated series or trendline in the chart.</span></span> <span data-ttu-id="3428e-105">入力マーカーとそれに関連付けられているデータ系列または近似<see cref="T:Microsoft.Office.Interop.Word.LegendKey" />曲線の書式設定プロパティは、オブジェクトに含まれています。</span><span class="sxs-lookup"><span data-stu-id="3428e-105">Formatting properties for the entry marker and its associated series or trendline are contained in the <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> object.</span></span></para>
-      <para><span data-ttu-id="3428e-106">凡例項目の文字列を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="3428e-106">The text of a legend entry cannot be changed.</span></span> <span data-ttu-id="3428e-107"><see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />オブジェクトはフォントの書式設定をサポートしており、削除することができます。</span><span class="sxs-lookup"><span data-stu-id="3428e-107"><see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> objects support font formatting, and they can be deleted.</span></span> <span data-ttu-id="3428e-108">凡例項目のパターン書式設定はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3428e-108">No pattern formatting is supported for legend entries.</span></span> <span data-ttu-id="3428e-109">エントリの位置とサイズは固定されています。</span><span class="sxs-lookup"><span data-stu-id="3428e-109">The position and size of entries is fixed.</span></span></para>
-      <para><span data-ttu-id="3428e-110">LegendEntry オブジェクトから、凡例文字列に対応しているデータ系列または近似曲線を直接返す方法はありません。</span><span class="sxs-lookup"><span data-stu-id="3428e-110">There’s no direct way to return the series or trendline corresponding to the legend entry.</span></span></para>
-      <para><span data-ttu-id="3428e-111">凡例文字列を削除した後、それを復元するには、グラフの<see cref="P:Microsoft.Office.Interop.Word.Chart.HasLegend" />プロパティを<b>False</b>に設定して凡例を削除してから、 <b>True</b>に設定し直す必要があります。</span><span class="sxs-lookup"><span data-stu-id="3428e-111">After legend entries have been deleted, the only way to restore them is to remove and recreate the legend that contained them by setting the <see cref="P:Microsoft.Office.Interop.Word.Chart.HasLegend" /> property for the chart to <b>False</b> and then back to <b>True</b>.</span></span></para>
+    <summary><span data-ttu-id="c2915-101">グラフの凡例の凡例文字列を表します。</span><span class="sxs-lookup"><span data-stu-id="c2915-101">Represents a legend entry in a chart legend.</span></span></summary>
+    <remarks><para><span data-ttu-id="c2915-102"><see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />オブジェクトはコレクションのメンバーです <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> 。</span><span class="sxs-lookup"><span data-stu-id="c2915-102">The <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> collection.</span></span> <span data-ttu-id="c2915-103">コレクションには、 <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> 凡例のすべてのオブジェクトが含まれてい <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> ます。</span><span class="sxs-lookup"><span data-stu-id="c2915-103">The <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> collection contains all the <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> objects in the legend.</span></span></para>
+      <para><span data-ttu-id="c2915-104">凡例文字列はそれぞれ2つの部分で構成されています。凡例文字列に関連付けられた系列の名前である、エントリのテキスト。と入力マーカーは、凡例項目とそれに関連付けられたデータ系列または近似曲線をグラフに視覚的にリンクします。</span><span class="sxs-lookup"><span data-stu-id="c2915-104">Each legend entry has two parts: the text of the entry, which is the name of the series associated with the legend entry; and an entry marker, which visually links the legend entry with its associated series or trendline in the chart.</span></span> <span data-ttu-id="c2915-105">入力マーカーとそれに関連付けられているデータ系列または近似曲線の書式設定プロパティは、オブジェクトに含まれてい <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> ます。</span><span class="sxs-lookup"><span data-stu-id="c2915-105">Formatting properties for the entry marker and its associated series or trendline are contained in the <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> object.</span></span></para>
+      <para><span data-ttu-id="c2915-106">凡例項目の文字列を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="c2915-106">The text of a legend entry cannot be changed.</span></span> <span data-ttu-id="c2915-107"><see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />オブジェクトはフォントの書式設定をサポートしており、削除することができます。</span><span class="sxs-lookup"><span data-stu-id="c2915-107"><see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> objects support font formatting, and they can be deleted.</span></span> <span data-ttu-id="c2915-108">凡例項目のパターン書式設定はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c2915-108">No pattern formatting is supported for legend entries.</span></span> <span data-ttu-id="c2915-109">エントリの位置とサイズは固定されています。</span><span class="sxs-lookup"><span data-stu-id="c2915-109">The position and size of entries is fixed.</span></span></para>
+      <para><span data-ttu-id="c2915-110">LegendEntry オブジェクトから、凡例文字列に対応しているデータ系列または近似曲線を直接返す方法はありません。</span><span class="sxs-lookup"><span data-stu-id="c2915-110">There’s no direct way to return the series or trendline corresponding to the legend entry.</span></span></para>
+      <para><span data-ttu-id="c2915-111">凡例文字列を削除した後、それを復元するには、 <see cref="P:Microsoft.Office.Interop.Word.Chart.HasLegend" /> グラフのプロパティを<b>False</b>に設定して凡例を削除してから、 <b>True</b>に設定し直す必要があります。</span><span class="sxs-lookup"><span data-stu-id="c2915-111">After legend entries have been deleted, the only way to restore them is to remove and recreate the legend that contained them by setting the <see cref="P:Microsoft.Office.Interop.Word.Chart.HasLegend" /> property for the chart to <b>False</b> and then back to <b>True</b>.</span></span></para>
       <para> </para></remarks>
-    <example><para><span data-ttu-id="3428e-112">1 <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />つ<paramref name="index" /> <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />のオブジェクトを<paramref name="index" />取得するには、() を使用します。ここでは凡例項目のインデックス番号を指定します。</span><span class="sxs-lookup"><span data-stu-id="3428e-112">Use <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />(<paramref name="index" />), where <paramref name="index" /> is the legend entry index number, to return a single <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> object.</span></span> <span data-ttu-id="3428e-113">名前で、凡例のエントリを返すことはできません。</span><span class="sxs-lookup"><span data-stu-id="3428e-113">You cannot return legend entries by name.</span></span></para>
-      <para><span data-ttu-id="3428e-114">インデックス番号は、凡例内での凡例項目の位置と対応します。</span><span class="sxs-lookup"><span data-stu-id="3428e-114">The index number represents the position of the legend entry in the legend.</span></span> <span data-ttu-id="3428e-115">LegendEntries(1) は凡例の一番上の凡例項目で、LegendEntries(LegendEntries.Count) は一番下の凡例項目です。</span><span class="sxs-lookup"><span data-stu-id="3428e-115">LegendEntries(1) is at the top of the legend, and LegendEntries(LegendEntries.Count) is at the bottom.</span></span> </para></example>
+    <example><para><span data-ttu-id="c2915-112"><see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> <paramref name="index" /> <paramref name="index" /> 1 つのオブジェクトを取得するには、() を使用します。ここでは凡例項目のインデックス番号を指定し <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> ます。</span><span class="sxs-lookup"><span data-stu-id="c2915-112">Use <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />(<paramref name="index" />), where <paramref name="index" /> is the legend entry index number, to return a single <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> object.</span></span> <span data-ttu-id="c2915-113">名前で、凡例のエントリを返すことはできません。</span><span class="sxs-lookup"><span data-stu-id="c2915-113">You cannot return legend entries by name.</span></span></para>
+      <para><span data-ttu-id="c2915-114">インデックス番号は、凡例内での凡例項目の位置と対応します。</span><span class="sxs-lookup"><span data-stu-id="c2915-114">The index number represents the position of the legend entry in the legend.</span></span> <span data-ttu-id="c2915-115">LegendEntries(1) は凡例の一番上の凡例項目で、LegendEntries(LegendEntries.Count) は一番下の凡例項目です。</span><span class="sxs-lookup"><span data-stu-id="c2915-115">LegendEntries(1) is at the top of the legend, and LegendEntries(LegendEntries.Count) is at the bottom.</span></span> </para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : obj" Usage="Microsoft.Office.Interop.Word.LegendEntry.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -52,8 +54,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="3428e-116">オブジェクト修飾子を指定せずにこのプロパティを使用<see cref="T:Microsoft.Office.Interop.Word._Application" />すると、Microsoft Word アプリケーションを表すオブジェクトが返されます。</span><span class="sxs-lookup"><span data-stu-id="3428e-116">When used without an object qualifier, this property returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span></span> <span data-ttu-id="3428e-117">対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。</span><span class="sxs-lookup"><span data-stu-id="3428e-117">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object (you can use this property with an OLE Automation object to return the application of that object).</span></span> <span data-ttu-id="3428e-118">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3428e-118">Read-only.</span></span></summary>
-        <value><span data-ttu-id="3428e-119"><b>Object</b></span><span class="sxs-lookup"><span data-stu-id="3428e-119"><b>Object</b></span></span></value>
+        <summary><span data-ttu-id="c2915-116">オブジェクト修飾子を指定せずにこのプロパティを使用すると、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> Microsoft Word アプリケーションを表すオブジェクトが返されます。</span><span class="sxs-lookup"><span data-stu-id="c2915-116">When used without an object qualifier, this property returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span></span> <span data-ttu-id="c2915-117">対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。</span><span class="sxs-lookup"><span data-stu-id="c2915-117">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object (you can use this property with an OLE Automation object to return the application of that object).</span></span> <span data-ttu-id="c2915-118">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="c2915-118">Read-only.</span></span></summary>
+        <value><span data-ttu-id="c2915-119"><b>Object</b></span><span class="sxs-lookup"><span data-stu-id="c2915-119"><b>Object</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.AutoScaleFont" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoScaleFont As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ AutoScaleFont { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoScaleFont : obj with get, set" Usage="Microsoft.Office.Interop.Word.LegendEntry.AutoScaleFont" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -89,8 +92,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="3428e-120"><b>True</b>の場合は、オブジェクトのサイズが変更されたときに、オブジェクト内のテキストのフォントサイズが変更されます。</span><span class="sxs-lookup"><span data-stu-id="3428e-120"><b>True</b> if the text in the object changes font size when the object size changes.</span></span> <span data-ttu-id="3428e-121">既定値は <b>True</b> です。</span><span class="sxs-lookup"><span data-stu-id="3428e-121">The default value is <b>True</b>.</span></span></summary>
-        <value><span data-ttu-id="3428e-122"><b>Object</b></span><span class="sxs-lookup"><span data-stu-id="3428e-122"><b>Object</b></span></span></value>
+        <summary><span data-ttu-id="c2915-120"><b>True</b>の場合は、オブジェクトのサイズが変更されたときに、オブジェクト内のテキストのフォントサイズが変更されます。</span><span class="sxs-lookup"><span data-stu-id="c2915-120"><b>True</b> if the text in the object changes font size when the object size changes.</span></span> <span data-ttu-id="c2915-121">既定値は <b>True</b> です。</span><span class="sxs-lookup"><span data-stu-id="c2915-121">The default value is <b>True</b>.</span></span></summary>
+        <value><span data-ttu-id="c2915-122"><b>Object</b></span><span class="sxs-lookup"><span data-stu-id="c2915-122"><b>Object</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.LegendEntry.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -117,9 +121,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="3428e-123">指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</span><span class="sxs-lookup"><span data-stu-id="3428e-123">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span> <span data-ttu-id="3428e-124">整数型 ( <b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="3428e-124">Read-only <b>Integer</b>.</span></span></summary>
-        <value><span data-ttu-id="3428e-125"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="3428e-125"><b>Integer</b></span></span></value>
-        <remarks><para><span data-ttu-id="3428e-126">オブジェクトは、Microsoft Word で作成されている場合、 <b>作成者</b> を返します、16 進数の値である 4d535744 を文字列します。</span><span class="sxs-lookup"><span data-stu-id="3428e-126">If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span>  <span data-ttu-id="3428e-127">このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。</span><span class="sxs-lookup"><span data-stu-id="3428e-127">This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="3428e-128">たとえば、Word には作成者コード MSWD です。</span><span class="sxs-lookup"><span data-stu-id="3428e-128">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="3428e-129">このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</span><span class="sxs-lookup"><span data-stu-id="3428e-129">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <summary><span data-ttu-id="c2915-123">指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</span><span class="sxs-lookup"><span data-stu-id="c2915-123">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span> <span data-ttu-id="c2915-124">整数型 ( <b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="c2915-124">Read-only <b>Integer</b>.</span></span></summary>
+        <value><span data-ttu-id="c2915-125"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="c2915-125"><b>Integer</b></span></span></value>
+        <remarks><para><span data-ttu-id="c2915-126">オブジェクトは、Microsoft Word で作成されている場合、 <b>作成者</b> を返します、16 進数の値である 4d535744 を文字列します。</span><span class="sxs-lookup"><span data-stu-id="c2915-126">If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span>  <span data-ttu-id="c2915-127">このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。</span><span class="sxs-lookup"><span data-stu-id="c2915-127">This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="c2915-128">たとえば、Word には作成者コード MSWD です。</span><span class="sxs-lookup"><span data-stu-id="c2915-128">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="c2915-129">このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</span><span class="sxs-lookup"><span data-stu-id="c2915-129">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.LegendEntry.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Function Delete () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; obj" Usage="legendEntry.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -144,8 +149,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="3428e-130">オブジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="3428e-130">Deletes the object.</span></span></summary>
-        <returns><span data-ttu-id="3428e-131"><b>Object</b></span><span class="sxs-lookup"><span data-stu-id="3428e-131"><b>Object</b></span></span></returns>
+        <summary><span data-ttu-id="c2915-130">オブジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="c2915-130">Deletes the object.</span></span></summary>
+        <returns><span data-ttu-id="c2915-131"><b>Object</b></span><span class="sxs-lookup"><span data-stu-id="c2915-131"><b>Object</b></span></span></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Font" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Font As ChartFont" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFont ^ Font { Microsoft::Office::Interop::Word::ChartFont ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Font : Microsoft.Office.Interop.Word.ChartFont" Usage="Microsoft.Office.Interop.Word.LegendEntry.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -172,7 +178,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="3428e-132">指定し<see cref="T:Microsoft.Office.Interop.Word.ChartFont" />たオブジェクトのフォントを表すオブジェクト型 (object) の値を取得します。</span><span class="sxs-lookup"><span data-stu-id="3428e-132">Returns a <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> object that represents the font of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="c2915-132">指定し <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> たオブジェクトのフォントを表すオブジェクト型 (object) の値を取得します。</span><span class="sxs-lookup"><span data-stu-id="c2915-132">Returns a <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> object that represents the font of the specified object.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ChartFont" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Format" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As ChartFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFormat ^ Format { Microsoft::Office::Interop::Word::ChartFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Format : Microsoft.Office.Interop.Word.ChartFormat" Usage="Microsoft.Office.Interop.Word.LegendEntry.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -200,8 +207,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="3428e-133">線、塗りつぶし、およびオブジェクトの書式設定の効果を取得します。</span><span class="sxs-lookup"><span data-stu-id="3428e-133">Returns the line, fill, and effect formatting for the object.</span></span>
-<span data-ttu-id="3428e-134">読み取り専用<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />です。</span><span class="sxs-lookup"><span data-stu-id="3428e-134">Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</span></span></summary>
+        <summary><span data-ttu-id="c2915-133">線、塗りつぶし、およびオブジェクトの書式設定の効果を取得します。</span><span class="sxs-lookup"><span data-stu-id="c2915-133">Returns the line, fill, and effect formatting for the object.</span></span>
+<span data-ttu-id="c2915-134">読み取り専用 <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /> です。</span><span class="sxs-lookup"><span data-stu-id="c2915-134">Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -212,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Height" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Height As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Height : double" Usage="Microsoft.Office.Interop.Word.LegendEntry.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -229,8 +237,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="3428e-135">オブジェクトの高さをポイント単位で表す倍精度浮動小数点型 (<b>Double</b>) の値を返します。</span><span class="sxs-lookup"><span data-stu-id="3428e-135">Returns a <b>Double</b> value that represents the height, in points, of the object.</span></span></summary>
-        <value><span data-ttu-id="3428e-136"><b>Double</b></span><span class="sxs-lookup"><span data-stu-id="3428e-136"><b>Double</b></span></span></value>
+        <summary><span data-ttu-id="c2915-135">オブジェクトの高さをポイント単位で表す倍精度浮動小数点型 (<b>Double</b>) の値を返します。</span><span class="sxs-lookup"><span data-stu-id="c2915-135">Returns a <b>Double</b> value that represents the height, in points, of the object.</span></span></summary>
+        <value><span data-ttu-id="c2915-136"><b>Double</b></span><span class="sxs-lookup"><span data-stu-id="c2915-136"><b>Double</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,6 +248,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.LegendEntry.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -257,8 +266,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="3428e-137">類似するオブジェクトのコレクション内のオブジェクトのインデックス番号を返します。</span><span class="sxs-lookup"><span data-stu-id="3428e-137">Returns the index number of the object within the collection of similar objects.</span></span></summary>
-        <value><span data-ttu-id="3428e-138"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="3428e-138"><b>Integer</b></span></span></value>
+        <summary><span data-ttu-id="c2915-137">類似するオブジェクトのコレクション内のオブジェクトのインデックス番号を返します。</span><span class="sxs-lookup"><span data-stu-id="c2915-137">Returns the index number of the object within the collection of similar objects.</span></span></summary>
+        <value><span data-ttu-id="c2915-138"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="c2915-138"><b>Integer</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Left" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Left As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Left { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Left : double" Usage="Microsoft.Office.Interop.Word.LegendEntry.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -285,8 +295,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="3428e-139">オブジェクトの左端から、グラフ エリアの左端までの距離をポイント単位で表す倍精度浮動小数点型 (<b>Double</b>) の値を返します。</span><span class="sxs-lookup"><span data-stu-id="3428e-139">Returns a <b>Double</b> value that represents the distance, in points, from the left edge of the object to the left edge of the chart area.</span></span></summary>
-        <value><span data-ttu-id="3428e-140"><b>Double</b></span><span class="sxs-lookup"><span data-stu-id="3428e-140"><b>Double</b></span></span></value>
+        <summary><span data-ttu-id="c2915-139">オブジェクトの左端から、グラフ エリアの左端までの距離をポイント単位で表す倍精度浮動小数点型 (<b>Double</b>) の値を返します。</span><span class="sxs-lookup"><span data-stu-id="c2915-139">Returns a <b>Double</b> value that represents the distance, in points, from the left edge of the object to the left edge of the chart area.</span></span></summary>
+        <value><span data-ttu-id="c2915-140"><b>Double</b></span><span class="sxs-lookup"><span data-stu-id="c2915-140"><b>Double</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -296,6 +306,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.LegendKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LegendKey As LegendKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::LegendKey ^ LegendKey { Microsoft::Office::Interop::Word::LegendKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LegendKey : Microsoft.Office.Interop.Word.LegendKey" Usage="Microsoft.Office.Interop.Word.LegendEntry.LegendKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -313,7 +324,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.LegendKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="3428e-141">エントリに<see cref="T:Microsoft.Office.Interop.Word.LegendKey" />関連付けられた凡例マーカーを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3428e-141">Returns a <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> object that represents the legend key associated with the entry.</span></span></summary>
+        <summary><span data-ttu-id="c2915-141"><see cref="T:Microsoft.Office.Interop.Word.LegendKey" />エントリに関連付けられた凡例マーカーを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="c2915-141">Returns a <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> object that represents the legend key associated with the entry.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.LegendKey" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -324,6 +335,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.LegendEntry.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -341,8 +353,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="3428e-142">指定したオブジェクトの親を返します。</span><span class="sxs-lookup"><span data-stu-id="3428e-142">Returns the parent for the specified object.</span></span> <span data-ttu-id="3428e-143">読み取り専用 <b>オブジェクト</b> 。</span><span class="sxs-lookup"><span data-stu-id="3428e-143">Read-only <b>Object</b>.</span></span></summary>
-        <value><span data-ttu-id="3428e-144"><b>Object</b></span><span class="sxs-lookup"><span data-stu-id="3428e-144"><b>Object</b></span></span></value>
+        <summary><span data-ttu-id="c2915-142">指定したオブジェクトの親を返します。</span><span class="sxs-lookup"><span data-stu-id="c2915-142">Returns the parent for the specified object.</span></span> <span data-ttu-id="c2915-143">読み取り専用 <b>オブジェクト</b> 。</span><span class="sxs-lookup"><span data-stu-id="c2915-143">Read-only <b>Object</b>.</span></span></summary>
+        <value><span data-ttu-id="c2915-144"><b>Object</b></span><span class="sxs-lookup"><span data-stu-id="c2915-144"><b>Object</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -352,6 +364,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.LegendEntry.Select" />
       <MemberSignature Language="VB.NET" Value="Public Function Select () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; obj" Usage="legendEntry.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -367,8 +380,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="3428e-145">オブジェクトを選択します。</span><span class="sxs-lookup"><span data-stu-id="3428e-145">Selects the object.</span></span></summary>
-        <returns><span data-ttu-id="3428e-146"><b>Object</b></span><span class="sxs-lookup"><span data-stu-id="3428e-146"><b>Object</b></span></span></returns>
+        <summary><span data-ttu-id="c2915-145">オブジェクトを選択します。</span><span class="sxs-lookup"><span data-stu-id="c2915-145">Selects the object.</span></span></summary>
+        <returns><span data-ttu-id="c2915-146"><b>Object</b></span><span class="sxs-lookup"><span data-stu-id="c2915-146"><b>Object</b></span></span></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -378,6 +391,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Top" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Top As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Top { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Top : double" Usage="Microsoft.Office.Interop.Word.LegendEntry.Top" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -395,8 +409,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="3428e-147">オブジェクトの上端から、ワークシート上の行 1 の上までの距離、または、グラフ シート上のグラフ エリアの上までの距離をポイント単位で表す倍精度浮動小数点型 (<b>Double</b>) の値を返します。</span><span class="sxs-lookup"><span data-stu-id="3428e-147">Returns a <b>Double</b> value that represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).</span></span></summary>
-        <value><span data-ttu-id="3428e-148"><b>Double</b></span><span class="sxs-lookup"><span data-stu-id="3428e-148"><b>Double</b></span></span></value>
+        <summary><span data-ttu-id="c2915-147">オブジェクトの上端から、ワークシート上の行 1 の上までの距離、または、グラフ シート上のグラフ エリアの上までの距離をポイント単位で表す倍精度浮動小数点型 (<b>Double</b>) の値を返します。</span><span class="sxs-lookup"><span data-stu-id="c2915-147">Returns a <b>Double</b> value that represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).</span></span></summary>
+        <value><span data-ttu-id="c2915-148"><b>Double</b></span><span class="sxs-lookup"><span data-stu-id="c2915-148"><b>Double</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -406,6 +420,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Width" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Width As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Width : double" Usage="Microsoft.Office.Interop.Word.LegendEntry.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -423,8 +438,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="3428e-149">オブジェクトのポイント単位で、幅を表す <b>double 型</b> の値を返します。</span><span class="sxs-lookup"><span data-stu-id="3428e-149">Returns a <b>Double</b> value that represents the width, in points, of the object.</span></span></summary>
-        <value><span data-ttu-id="3428e-150"><b>Double</b></span><span class="sxs-lookup"><span data-stu-id="3428e-150"><b>Double</b></span></span></value>
+        <summary><span data-ttu-id="c2915-149">オブジェクトのポイント単位で、幅を表す <b>double 型</b> の値を返します。</span><span class="sxs-lookup"><span data-stu-id="c2915-149">Returns a <b>Double</b> value that represents the width, in points, of the object.</span></span></summary>
+        <value><span data-ttu-id="c2915-150"><b>Double</b></span><span class="sxs-lookup"><span data-stu-id="c2915-150"><b>Double</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

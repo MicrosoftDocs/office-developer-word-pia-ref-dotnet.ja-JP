@@ -1,9 +1,10 @@
 <Type Name="DiagramNodeChildren" FullName="Microsoft.Office.Interop.Word.DiagramNodeChildren">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="e509f1a815f12770b760243945da953cde10fa51" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147089" /></Metadata><TypeSignature Language="C#" Value="public interface DiagramNodeChildren : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ad366bf6d698a09fc9bcec09f42d5a0788822f24" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922165" /></Metadata><TypeSignature Language="C#" Value="public interface DiagramNodeChildren : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DiagramNodeChildren implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DiagramNodeChildren" />
   <TypeSignature Language="VB.NET" Value="Public Interface DiagramNodeChildren&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class DiagramNodeChildren : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type DiagramNodeChildren = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,8 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="82f82-101">図表内の子ノードを表す、図表の<b>ノード</b>オブジェクトのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="82f82-101">A collection of <b>DiagramNode</b> objects that represents the child nodes in a diagram.</span></span></summary>
-    <remarks><para><span data-ttu-id="82f82-102"><see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Children" />プロパティを使用して、 <b>DiagramNodeChildren</b>コレクション内のノードを取得します。</span><span class="sxs-lookup"><span data-stu-id="82f82-102">Use the <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Children" /> property to return the nodes in a <b>DiagramNodeChildren</b> collection.</span></span> <span data-ttu-id="82f82-103">図の<see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.FirstChild" />最初の子ノードにアクセスするには、プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="82f82-103">Use the <see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.FirstChild" /> property to access the first child node in a diagram.</span></span></para>
+    <summary><span data-ttu-id="84fad-101">図表内の子ノードを表す、図表の<b>ノード</b>オブジェクトのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="84fad-101">A collection of <b>DiagramNode</b> objects that represents the child nodes in a diagram.</span></span></summary>
+    <remarks><para><span data-ttu-id="84fad-102">プロパティを使用し <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Children" /> て、 <b>DiagramNodeChildren</b>コレクション内のノードを取得します。</span><span class="sxs-lookup"><span data-stu-id="84fad-102">Use the <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Children" /> property to return the nodes in a <b>DiagramNodeChildren</b> collection.</span></span> <span data-ttu-id="84fad-103"><see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.FirstChild" />図の最初の子ノードにアクセスするには、プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="84fad-103">Use the <see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.FirstChild" /> property to access the first child node in a diagram.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.DiagramNode AddNode([in]object&amp; Index, [in]valuetype Microsoft.Office.Core.MsoDiagramNodeType NodeType) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.DiagramNodeChildren.AddNode(System.Object@,Microsoft.Office.Core.MsoDiagramNodeType)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddNode (Optional ByRef Index As Object = -1, Optional NodeType As MsoDiagramNodeType = Microsoft.Office.Core.MsoDiagramNodeType.msoDiagramNode) As DiagramNode" />
+      <MemberSignature Language="F#" Value="abstract member AddNode : obj * Microsoft.Office.Core.MsoDiagramNodeType -&gt; Microsoft.Office.Interop.Word.DiagramNode" Usage="diagramNodeChildren.AddNode (Index, NodeType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -46,13 +48,13 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNode</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
         <Parameter Name="NodeType" Type="Microsoft.Office.Core.MsoDiagramNodeType" />
       </Parameters>
       <Docs>
-        <param name="Index"><span data-ttu-id="82f82-104">省略可能な<b>オブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="82f82-104">Optional <b>Object</b>.</span></span> <span data-ttu-id="82f82-105">新しい図表ノードを追加する場所のインデックスの場所: 0 はすべてのノードの前にを追加し、-1 はすべて<paramref name="Index" />のノードの後に追加し、そのノードの後にそのノードの後に任意の数を追加します。</span><span class="sxs-lookup"><span data-stu-id="82f82-105">The index location of where to add the new diagram node: 0 adds before all nodes, -1 adds after all nodes, and any other <paramref name="Index" /> number will add after that node in the collection.</span></span></param>
-        <param name="NodeType"><span data-ttu-id="82f82-106">省略<see cref="T:Microsoft.Office.Core.MsoDiagramNodeType" />可能です。</span><span class="sxs-lookup"><span data-stu-id="82f82-106">Optional <see cref="T:Microsoft.Office.Core.MsoDiagramNodeType" />.</span></span> <span data-ttu-id="82f82-107">ノードの種類を指定します。</span><span class="sxs-lookup"><span data-stu-id="82f82-107">Specifies the node type.</span></span></param>
-        <summary><span data-ttu-id="82f82-108">子の<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />図表ノードのコレクションにオブジェクトを追加します。</span><span class="sxs-lookup"><span data-stu-id="82f82-108">Adds a <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> object to a collection of child diagram nodes.</span></span></summary>
+        <param name="Index"><span data-ttu-id="84fad-104">省略可能な<b>オブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="84fad-104">Optional <b>Object</b>.</span></span> <span data-ttu-id="84fad-105">新しい図表ノードを追加する場所のインデックスの場所: 0 はすべてのノードの前にを追加し、-1 はすべてのノードの後に追加し、そのノードの後にそのノードの後に任意の <paramref name="Index" /> 数を追加します。</span><span class="sxs-lookup"><span data-stu-id="84fad-105">The index location of where to add the new diagram node: 0 adds before all nodes, -1 adds after all nodes, and any other <paramref name="Index" /> number will add after that node in the collection.</span></span></param>
+        <param name="NodeType"><span data-ttu-id="84fad-106">省略可能 <see cref="T:Microsoft.Office.Core.MsoDiagramNodeType" /> です。</span><span class="sxs-lookup"><span data-stu-id="84fad-106">Optional <see cref="T:Microsoft.Office.Core.MsoDiagramNodeType" />.</span></span> <span data-ttu-id="84fad-107">ノードの種類を指定します。</span><span class="sxs-lookup"><span data-stu-id="84fad-107">Specifies the node type.</span></span></param>
+        <summary><span data-ttu-id="84fad-108"><see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />子の図表ノードのコレクションにオブジェクトを追加します。</span><span class="sxs-lookup"><span data-stu-id="84fad-108">Adds a <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> object to a collection of child diagram nodes.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.DiagramNodeChildren.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -80,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="82f82-109">Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="82f82-109">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="84fad-109"><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="84fad-109">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.DiagramNodeChildren.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -108,7 +112,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="82f82-110">指定したコレクション内の項目数を返します。</span><span class="sxs-lookup"><span data-stu-id="82f82-110">Returns the number of items in the specified collection.</span></span></summary>
+        <summary><span data-ttu-id="84fad-110">指定したコレクション内の項目数を返します。</span><span class="sxs-lookup"><span data-stu-id="84fad-110">Returns the number of items in the specified collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.DiagramNodeChildren.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -136,10 +141,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="82f82-111">指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</span><span class="sxs-lookup"><span data-stu-id="82f82-111">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
+        <summary><span data-ttu-id="84fad-111">指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</span><span class="sxs-lookup"><span data-stu-id="84fad-111">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="82f82-112">たとえば、オブジェクトが Microsoft Word で作成されている場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。</span><span class="sxs-lookup"><span data-stu-id="82f82-112">For example, if the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="82f82-113">[!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</span><span class="sxs-lookup"><span data-stu-id="82f82-113">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="82f82-114"><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。</span><span class="sxs-lookup"><span data-stu-id="82f82-114">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="82f82-115">たとえば、Word には作成者コード MSWD です。</span><span class="sxs-lookup"><span data-stu-id="82f82-115">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="82f82-116">このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</span><span class="sxs-lookup"><span data-stu-id="82f82-116">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="84fad-112">たとえば、オブジェクトが Microsoft Word で作成されている場合、このプロパティは、文字列 "MSWD" を表す、16進数の4D535744 を返します。</span><span class="sxs-lookup"><span data-stu-id="84fad-112">For example, if the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="84fad-113">[!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</span><span class="sxs-lookup"><span data-stu-id="84fad-113">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="84fad-114"><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。</span><span class="sxs-lookup"><span data-stu-id="84fad-114">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="84fad-115">たとえば、Word には作成者コード MSWD です。</span><span class="sxs-lookup"><span data-stu-id="84fad-115">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="84fad-116">このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</span><span class="sxs-lookup"><span data-stu-id="84fad-116">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.FirstChild" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstChild As DiagramNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::DiagramNode ^ FirstChild { Microsoft::Office::Interop::Word::DiagramNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FirstChild : Microsoft.Office.Interop.Word.DiagramNode" Usage="Microsoft.Office.Interop.Word.DiagramNodeChildren.FirstChild" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -166,9 +172,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="82f82-117">親ノード<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />の最初の子ノードを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="82f82-117">Returns a <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> object that represents the first child node of a parent node.</span></span></summary>
+        <summary><span data-ttu-id="84fad-117"><see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />親ノードの最初の子ノードを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="84fad-117">Returns a <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> object that represents the first child node of a parent node.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="82f82-118">最後の<see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.LastChild" />子ノードにアクセスするには、プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="82f82-118">Use the <see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.LastChild" /> property to access the last child node.</span></span> <span data-ttu-id="82f82-119">ダイアグラムの<see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" />親ノードにアクセスするには、プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="82f82-119">Use the <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> property to access the parent node in a diagram.</span></span></para>
+        <remarks><para><span data-ttu-id="84fad-118"><see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.LastChild" />最後の子ノードにアクセスするには、プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="84fad-118">Use the <see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.LastChild" /> property to access the last child node.</span></span> <span data-ttu-id="84fad-119">ダイアグラムの <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> 親ノードにアクセスするには、プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="84fad-119">Use the <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> property to access the parent node in a diagram.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.DiagramNodeChildren.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="diagramNodeChildren.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -210,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As DiagramNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::DiagramNode ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::DiagramNode ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.DiagramNode" Usage="Microsoft.Office.Interop.Word.DiagramNodeChildren.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -227,11 +235,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNode</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index"><span data-ttu-id="82f82-120">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="82f82-120">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span></span></param>
-        <summary><span data-ttu-id="82f82-121">コレクション内の各オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="82f82-121">Returns an individual object in a collection.</span></span></summary>
+        <param name="Index"><span data-ttu-id="84fad-120">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="84fad-120">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span></span></param>
+        <summary><span data-ttu-id="84fad-121">コレクション内の各オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="84fad-121">Returns an individual object in a collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -242,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.LastChild" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastChild As DiagramNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::DiagramNode ^ LastChild { Microsoft::Office::Interop::Word::DiagramNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastChild : Microsoft.Office.Interop.Word.DiagramNode" Usage="Microsoft.Office.Interop.Word.DiagramNodeChildren.LastChild" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -259,9 +268,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="82f82-122">親ノード<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />の最後の子ノードを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="82f82-122">Returns a <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> object that represents the last child node of a parent node.</span></span></summary>
+        <summary><span data-ttu-id="84fad-122"><see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />親ノードの最後の子ノードを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="84fad-122">Returns a <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> object that represents the last child node of a parent node.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="82f82-123">図の<see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.FirstChild" />最初の子ノードにアクセスするには、プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="82f82-123">Use the <see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.FirstChild" /> property to access the first child node in a diagram.</span></span> <span data-ttu-id="82f82-124">ダイアグラムの<see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" />親ノードにアクセスするには、プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="82f82-124">Use the <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> property to access the parent node in a diagram.</span></span></para>
+        <remarks><para><span data-ttu-id="84fad-123"><see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.FirstChild" />図の最初の子ノードにアクセスするには、プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="84fad-123">Use the <see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.FirstChild" /> property to access the first child node in a diagram.</span></span> <span data-ttu-id="84fad-124">ダイアグラムの <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> 親ノードにアクセスするには、プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="84fad-124">Use the <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> property to access the parent node in a diagram.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -271,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.DiagramNodeChildren.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -288,7 +298,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="82f82-125">指定されたオブジェクトの親オブジェクトを表すオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="82f82-125">Returns an object that represents the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="84fad-125">指定されたオブジェクトの親オブジェクトを表すオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="84fad-125">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -299,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.DiagramNodeChildren.SelectAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub SelectAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SelectAll();" />
+      <MemberSignature Language="F#" Value="abstract member SelectAll : unit -&gt; unit" Usage="diagramNodeChildren.SelectAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -314,8 +325,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="82f82-126">メインストーリー、キャンバス、または文書のヘッダーとフッターに含まれるすべての図形を選択します。</span><span class="sxs-lookup"><span data-stu-id="82f82-126">Selects all the shapes in the main story, in a canvas, or in headers and footers of a document.</span></span></summary>
-        <remarks><para><span data-ttu-id="82f82-127">このメソッドは、 <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />オブジェクトを選択しません。</span><span class="sxs-lookup"><span data-stu-id="82f82-127">This method doesn't select <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objects.</span></span></para>
+        <summary><span data-ttu-id="84fad-126">メインストーリー、キャンバス、または文書のヘッダーとフッターに含まれるすべての図形を選択します。</span><span class="sxs-lookup"><span data-stu-id="84fad-126">Selects all the shapes in the main story, in a canvas, or in headers and footers of a document.</span></span></summary>
+        <remarks><para><span data-ttu-id="84fad-127">このメソッドは、オブジェクトを選択しません <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> 。</span><span class="sxs-lookup"><span data-stu-id="84fad-127">This method doesn't select <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objects.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>

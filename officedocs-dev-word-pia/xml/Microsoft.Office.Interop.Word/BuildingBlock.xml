@@ -1,9 +1,10 @@
 <Type Name="BuildingBlock" FullName="Microsoft.Office.Interop.Word.BuildingBlock">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ca9bed40f87117ccf911469b9c1d874a575c9129" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146228" /></Metadata><TypeSignature Language="C#" Value="public interface BuildingBlock" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2c9b2e5436ba2864a5dad62aa444a46e005baf56" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922613" /></Metadata><TypeSignature Language="C#" Value="public interface BuildingBlock" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract BuildingBlock" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.BuildingBlock" />
   <TypeSignature Language="VB.NET" Value="Public Interface BuildingBlock" />
   <TypeSignature Language="C++ CLI" Value="public interface class BuildingBlock" />
+  <TypeSignature Language="F#" Value="type BuildingBlock = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,16 +19,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="30c7a-p101">テンプレートに含まれる文書パーツを表します。文書パーツはあらかじめ作成された、定型句に似たコンテンツであり、文字列、画像、書式設定を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="30c7a-p101">Represents a building block in a template.  A building block is pre-built content, similar to autotext, that may contain text, images, and formatting.</span></span></summary>
-    <remarks><para><span data-ttu-id="30c7a-103">各<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" />および<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />コレクションのメンバーです。</span><span class="sxs-lookup"><span data-stu-id="30c7a-103">Each <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> and <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> collections.</span></span> <span data-ttu-id="30c7a-104">文書パーツは、Microsoft Office Word テンプレートに保存されます。</span><span class="sxs-lookup"><span data-stu-id="30c7a-104">Building blocks are stored in Microsoft Office Word templates.</span></span>  <span data-ttu-id="30c7a-105">したがって、ドキュメントの利用可能なビルディング ・ ブロックにアクセスするに添付されたテンプレートにアクセスする必要があります。</span><span class="sxs-lookup"><span data-stu-id="30c7a-105">Therefore, to access the building blocks available for a document, you need to access an attached template.</span></span>  <span data-ttu-id="30c7a-106">組み込みの文書パーツは、"ビルド パーツ.dotx"という名前のテンプレートに格納されます。</span><span class="sxs-lookup"><span data-stu-id="30c7a-106">Built-in building blocks are stored in the template named "Building Blocks.dotx".</span></span></para>
-      <para><span data-ttu-id="30c7a-107">
-        <b>注</b>: コレクションまた<see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Item(System.Object@)" />は<see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" />コレクションのメソッドを使用して、個々の文書パーツを取得します。</span><span class="sxs-lookup"><span data-stu-id="30c7a-107">
-        <b>Note</b>: Use the <see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Item(System.Object@)" /> method of the  collection or the <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> collection to return an individual building block.</span></span> <span data-ttu-id="30c7a-108">[!メモ] コレクションにアクセスする方法によって返されるコレクションを変更する場合があります。</span><span class="sxs-lookup"><span data-stu-id="30c7a-108">Depending on how you access the collection, the collection returned may change.</span></span>  <span data-ttu-id="30c7a-109">たとえば、カテゴリが "General" である文書<see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" />パーツのコレクションにアクセスした場合、返されるコレクションは、カテゴリの種類<see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" />の文書パーツのコレクションにアクセスした場合に返されるコレクションとは異なる場合があります。"Custom" の</span><span class="sxs-lookup"><span data-stu-id="30c7a-109">For example, if you access a collection of building blocks with a type of <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> with a category of "General", the returned collection may be different from the collection returned if you access a collection of building blocks with a type of <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> with a category of "Custom".</span></span> <span data-ttu-id="30c7a-110">また、カテゴリが "General" の種類の<see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustomAutoText" />文書パーツのコレクションにアクセスした場合に返されるコレクションとは異なります。</span><span class="sxs-lookup"><span data-stu-id="30c7a-110">It is also  different from the collection returned if you access the collection of building blocks with a type of <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustomAutoText" /> with a category of "General".</span></span> <span data-ttu-id="30c7a-111">したがって、 <b>BuildingBlockEntries</b> コレクションからアクセスするコレクションの最初の項目は、 <b>BuildingBlocks</b> コレクションからアクセスするコレクションの最初の項目とは異なる場合があります。</span><span class="sxs-lookup"><span data-stu-id="30c7a-111">Therefore, the first item in a collection accessed from the <b>BuildingBlockEntries</b> collection may be different from the first item in the collection accessed from the <b>BuildingBlocks</b> collection.</span></span></para>
-      <para><span data-ttu-id="30c7a-112">新しい文書パーツを作成するには、<b>BuildingBlockEntries</b> コレクションまたは <b>BuildingBlocks</b> コレクションの <b>Add</b> メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="30c7a-112">To create a new building block, you can use the <b>Add</b> method for either the <b>BuildingBlockEntries</b> collection or the <b>BuildingBlocks</b> collection.</span></span>  <span data-ttu-id="30c7a-113">ただし、新しい文書パーツを作成する方法としては、 <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> <b>BuildingBlockEntries</b>コレクションのメソッドを使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="30c7a-113">However, the recommended way to create a new building block is by using the <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> method for the <b>BuildingBlockEntries</b> collection.</span></span> </para>
-      <para><span data-ttu-id="30c7a-114">文書に<see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Insert(Microsoft.Office.Interop.Word.Range,System.Object@)" />新しい文書パーツを挿入するには、メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="30c7a-114">Use the <see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Insert(Microsoft.Office.Interop.Word.Range,System.Object@)" /> method to insert a new building block into a document.</span></span> <span data-ttu-id="30c7a-115">テンプレートから<see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Delete" />文書パーツを削除するには、メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="30c7a-115">Use the <see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Delete" /> method to remove a building block from a template.</span></span></para>
-      <para><span data-ttu-id="30c7a-116">ビルディング ・ ブロックは、カテゴリと種類で編成されます。</span><span class="sxs-lookup"><span data-stu-id="30c7a-116">Building blocks are organized by category and type.</span></span>  <span data-ttu-id="30c7a-117">コレクションを<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" />使用して個々<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" />のオブジェクトにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="30c7a-117">Use the <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> collection to access individual <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /> objects.</span></span> <span data-ttu-id="30c7a-118">コレクションを<see cref="T:Microsoft.Office.Interop.Word.Categories" />使用して個々<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" />のオブジェクトにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="30c7a-118">Use the <see cref="T:Microsoft.Office.Interop.Word.Categories" /> collection to access individual <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" /> objects.</span></span> <span data-ttu-id="30c7a-119"><b>BuildingBlocks</b> プロパティを使用して <b>Category</b> オブジェクトの <b>BuildingBlocks</b> コレクションにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="30c7a-119">Then use the <b>BuildingBlocks</b> propery to access the <b>BuildingBlocks</b> collection for a <b>Category</b> object.</span></span> </para>
-      <para><span data-ttu-id="30c7a-120">各文書パーツには、、、 <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" />、などの<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" /> <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" />固有の情報が含まれているプロパティ<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" />があります。</span><span class="sxs-lookup"><span data-stu-id="30c7a-120">Each building block has properties that contain information that applies uniquely to it, such as <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" />, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" />, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" />, and <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" />.</span></span></para>
-      <para><span data-ttu-id="30c7a-121">文書パーツの詳細については、「<a href="HV10120827">文書パーツを</a>使用する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="30c7a-121">For more information about building blocks, see <a href="HV10120827">Working with Building Blocks</a></span></span></para>
+    <summary><span data-ttu-id="2cdab-p101">テンプレートに含まれる文書パーツを表します。文書パーツはあらかじめ作成された、定型句に似たコンテンツであり、文字列、画像、書式設定を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="2cdab-p101">Represents a building block in a template.  A building block is pre-built content, similar to autotext, that may contain text, images, and formatting.</span></span></summary>
+    <remarks><para><span data-ttu-id="2cdab-103">各 <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> オブジェクトは、およびコレクションのメンバーです <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> 。</span><span class="sxs-lookup"><span data-stu-id="2cdab-103">Each <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> and <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> collections.</span></span> <span data-ttu-id="2cdab-104">文書パーツは、Microsoft Office Word テンプレートに保存されます。</span><span class="sxs-lookup"><span data-stu-id="2cdab-104">Building blocks are stored in Microsoft Office Word templates.</span></span>  <span data-ttu-id="2cdab-105">したがって、ドキュメントの利用可能なビルディング ・ ブロックにアクセスするに添付されたテンプレートにアクセスする必要があります。</span><span class="sxs-lookup"><span data-stu-id="2cdab-105">Therefore, to access the building blocks available for a document, you need to access an attached template.</span></span>  <span data-ttu-id="2cdab-106">組み込みの文書パーツは、"ビルド パーツ.dotx"という名前のテンプレートに格納されます。</span><span class="sxs-lookup"><span data-stu-id="2cdab-106">Built-in building blocks are stored in the template named "Building Blocks.dotx".</span></span></para>
+      <para><span data-ttu-id="2cdab-107">
+        <b>注</b>: コレクションまたはコレクションのメソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Item(System.Object@)" /> 個々の <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> 文書パーツを取得します。</span><span class="sxs-lookup"><span data-stu-id="2cdab-107">
+        <b>Note</b>: Use the <see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Item(System.Object@)" /> method of the  collection or the <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> collection to return an individual building block.</span></span> <span data-ttu-id="2cdab-108">[!メモ] コレクションにアクセスする方法によって返されるコレクションを変更する場合があります。</span><span class="sxs-lookup"><span data-stu-id="2cdab-108">Depending on how you access the collection, the collection returned may change.</span></span>  <span data-ttu-id="2cdab-109">たとえば、カテゴリが "General" である文書パーツのコレクションにアクセスすると、 <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> カテゴリが "Custom" の種類の文書パーツのコレクションにアクセスした場合に返されるコレクションが返されるコレクションとは異なる場合があり <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> ます。</span><span class="sxs-lookup"><span data-stu-id="2cdab-109">For example, if you access a collection of building blocks with a type of <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> with a category of "General", the returned collection may be different from the collection returned if you access a collection of building blocks with a type of <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> with a category of "Custom".</span></span> <span data-ttu-id="2cdab-110">また、 <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustomAutoText" /> カテゴリが "General" の種類の文書パーツのコレクションにアクセスした場合に返されるコレクションとは異なります。</span><span class="sxs-lookup"><span data-stu-id="2cdab-110">It is also  different from the collection returned if you access the collection of building blocks with a type of <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustomAutoText" /> with a category of "General".</span></span> <span data-ttu-id="2cdab-111">したがって、 <b>BuildingBlockEntries</b> コレクションからアクセスするコレクションの最初の項目は、 <b>BuildingBlocks</b> コレクションからアクセスするコレクションの最初の項目とは異なる場合があります。</span><span class="sxs-lookup"><span data-stu-id="2cdab-111">Therefore, the first item in a collection accessed from the <b>BuildingBlockEntries</b> collection may be different from the first item in the collection accessed from the <b>BuildingBlocks</b> collection.</span></span></para>
+      <para><span data-ttu-id="2cdab-112">新しい文書パーツを作成するには、<b>BuildingBlockEntries</b> コレクションまたは <b>BuildingBlocks</b> コレクションの <b>Add</b> メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="2cdab-112">To create a new building block, you can use the <b>Add</b> method for either the <b>BuildingBlockEntries</b> collection or the <b>BuildingBlocks</b> collection.</span></span>  <span data-ttu-id="2cdab-113">ただし、新しい文書パーツを作成する方法としては、 <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> <b>BuildingBlockEntries</b>コレクションのメソッドを使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="2cdab-113">However, the recommended way to create a new building block is by using the <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> method for the <b>BuildingBlockEntries</b> collection.</span></span> </para>
+      <para><span data-ttu-id="2cdab-114"><see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Insert(Microsoft.Office.Interop.Word.Range,System.Object@)" />文書に新しい文書パーツを挿入するには、メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="2cdab-114">Use the <see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Insert(Microsoft.Office.Interop.Word.Range,System.Object@)" /> method to insert a new building block into a document.</span></span> <span data-ttu-id="2cdab-115"><see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Delete" />テンプレートから文書パーツを削除するには、メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="2cdab-115">Use the <see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Delete" /> method to remove a building block from a template.</span></span></para>
+      <para><span data-ttu-id="2cdab-116">ビルディング ・ ブロックは、カテゴリと種類で編成されます。</span><span class="sxs-lookup"><span data-stu-id="2cdab-116">Building blocks are organized by category and type.</span></span>  <span data-ttu-id="2cdab-117">コレクションを使用して <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> 個々 <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /> のオブジェクトにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="2cdab-117">Use the <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> collection to access individual <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /> objects.</span></span> <span data-ttu-id="2cdab-118">コレクションを使用して <see cref="T:Microsoft.Office.Interop.Word.Categories" /> 個々 <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" /> のオブジェクトにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="2cdab-118">Use the <see cref="T:Microsoft.Office.Interop.Word.Categories" /> collection to access individual <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" /> objects.</span></span> <span data-ttu-id="2cdab-119"><b>BuildingBlocks</b> プロパティを使用して <b>Category</b> オブジェクトの <b>BuildingBlocks</b> コレクションにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="2cdab-119">Then use the <b>BuildingBlocks</b> propery to access the <b>BuildingBlocks</b> collection for a <b>Category</b> object.</span></span> </para>
+      <para><span data-ttu-id="2cdab-120">各文書パーツには、、、、などの固有の情報が含まれているプロパティがあり <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" /> <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" /> <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" /> <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" /> ます。</span><span class="sxs-lookup"><span data-stu-id="2cdab-120">Each building block has properties that contain information that applies uniquely to it, such as <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" />, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" />, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" />, and <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" />.</span></span></para>
+      <para><span data-ttu-id="2cdab-121">文書パーツの詳細については、「<a href="HV10120827">文書パーツを</a>使用する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2cdab-121">For more information about building blocks, see <a href="HV10120827">Working with Building Blocks</a></span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -54,7 +56,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="30c7a-122">Microsoft Word <see cref="T:Microsoft.Office.Interop.Word._Application" />アプリケーションを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="30c7a-122">Returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="2cdab-122"><see cref="T:Microsoft.Office.Interop.Word._Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="2cdab-122">Returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Category As Category" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Category ^ Category { Microsoft::Office::Interop::Word::Category ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Category : Microsoft.Office.Interop.Word.Category" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Category" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -82,7 +85,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Category</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="30c7a-123">文書パーツのカテゴリを返します。</span><span class="sxs-lookup"><span data-stu-id="30c7a-123">Returns the category for a building block.</span></span> <span data-ttu-id="30c7a-124">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="30c7a-124">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="2cdab-123">文書パーツのカテゴリを返します。</span><span class="sxs-lookup"><span data-stu-id="2cdab-123">Returns the category for a building block.</span></span> <span data-ttu-id="2cdab-124">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="2cdab-124">Read-only.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.Category" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -110,11 +114,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="30c7a-125">アドインが作成されたアプリケーションを示す 32 ビット整数を返します。</span><span class="sxs-lookup"><span data-stu-id="30c7a-125">Returns a 32-bit integer that indicates the application in which the add-in was created.</span></span> <span data-ttu-id="30c7a-126">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="30c7a-126">Read-only.</span></span></summary>
-        <value><span data-ttu-id="30c7a-127"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="30c7a-127"><b>Integer</b></span></span></value>
-        <remarks><para><span data-ttu-id="30c7a-128">オブジェクトは、Microsoft Word で作成されている場合、 <b>作成者</b> を返します、16 進数の値である 4d535744 を文字列します。</span><span class="sxs-lookup"><span data-stu-id="30c7a-128">If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span>  <span data-ttu-id="30c7a-129">このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。</span><span class="sxs-lookup"><span data-stu-id="30c7a-129">This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="30c7a-130">たとえば、Word には作成者コード MSWD です。</span><span class="sxs-lookup"><span data-stu-id="30c7a-130">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="30c7a-131">このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</span><span class="sxs-lookup"><span data-stu-id="30c7a-131">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
-          <para><span data-ttu-id="30c7a-132">
-            <b>注</b>: この値は定数<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />で表すこともできます。</span><span class="sxs-lookup"><span data-stu-id="30c7a-132">
+        <summary><span data-ttu-id="2cdab-125">アドインが作成されたアプリケーションを示す 32 ビット整数を返します。</span><span class="sxs-lookup"><span data-stu-id="2cdab-125">Returns a 32-bit integer that indicates the application in which the add-in was created.</span></span> <span data-ttu-id="2cdab-126">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="2cdab-126">Read-only.</span></span></summary>
+        <value><span data-ttu-id="2cdab-127"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="2cdab-127"><b>Integer</b></span></span></value>
+        <remarks><para><span data-ttu-id="2cdab-128">オブジェクトは、Microsoft Word で作成されている場合、 <b>作成者</b> を返します、16 進数の値である 4d535744 を文字列します。</span><span class="sxs-lookup"><span data-stu-id="2cdab-128">If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span>  <span data-ttu-id="2cdab-129">このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。</span><span class="sxs-lookup"><span data-stu-id="2cdab-129">This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="2cdab-130">たとえば、Word には作成者コード MSWD です。</span><span class="sxs-lookup"><span data-stu-id="2cdab-130">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="2cdab-131">このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</span><span class="sxs-lookup"><span data-stu-id="2cdab-131">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+          <para><span data-ttu-id="2cdab-132">
+            <b>注</b>: この値は定数で表すこともでき <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" /> ます。</span><span class="sxs-lookup"><span data-stu-id="2cdab-132">
             <b>Note</b>: This value can also be represented by the constant <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</span></span></para>
           <para> </para></remarks>
       </Docs>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.BuildingBlock.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="buildingBlock.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -140,7 +145,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="30c7a-133">指定された文書パーツを削除します。</span><span class="sxs-lookup"><span data-stu-id="30c7a-133">Deletes the specified building block.</span></span></summary>
+        <summary><span data-ttu-id="2cdab-133">指定された文書パーツを削除します。</span><span class="sxs-lookup"><span data-stu-id="2cdab-133">Deletes the specified building block.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -170,8 +176,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="30c7a-134">文書パーツの説明を設定または返します。</span><span class="sxs-lookup"><span data-stu-id="30c7a-134">Returns or sets the description for a building block.</span></span> <span data-ttu-id="30c7a-135">値の取得と設定が可能です。</span><span class="sxs-lookup"><span data-stu-id="30c7a-135">Read/write.</span></span></summary>
-        <value><span data-ttu-id="30c7a-136"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="30c7a-136"><b>String</b></span></span></value>
+        <summary><span data-ttu-id="2cdab-134">文書パーツの説明を設定または返します。</span><span class="sxs-lookup"><span data-stu-id="2cdab-134">Returns or sets the description for a building block.</span></span> <span data-ttu-id="2cdab-135">値の取得と設定が可能です。</span><span class="sxs-lookup"><span data-stu-id="2cdab-135">Read/write.</span></span></summary>
+        <value><span data-ttu-id="2cdab-136"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="2cdab-136"><b>String</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.ID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ID { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ID : string" Usage="Microsoft.Office.Interop.Word.BuildingBlock.ID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -198,9 +205,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="30c7a-137">文書パーツの内部 id 番号を取得します。</span><span class="sxs-lookup"><span data-stu-id="30c7a-137">Returns the internal identification number for a building block.</span></span> <span data-ttu-id="30c7a-138">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="30c7a-138">Read-only.</span></span></summary>
-        <value><span data-ttu-id="30c7a-139"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="30c7a-139"><b>String</b></span></span></value>
-        <remarks><para><span data-ttu-id="30c7a-140">この<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.ID" />プロパティは、GUID の形式の id 文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="30c7a-140">The <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.ID" /> property returns an identification string that is in the form of a GUID.</span></span></para>
+        <summary><span data-ttu-id="2cdab-137">文書パーツの内部 id 番号を取得します。</span><span class="sxs-lookup"><span data-stu-id="2cdab-137">Returns the internal identification number for a building block.</span></span> <span data-ttu-id="2cdab-138">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="2cdab-138">Read-only.</span></span></summary>
+        <value><span data-ttu-id="2cdab-139"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="2cdab-139"><b>String</b></span></span></value>
+        <remarks><para><span data-ttu-id="2cdab-140">この <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.ID" /> プロパティは、GUID の形式の id 文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="2cdab-140">The <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.ID" /> property returns an identification string that is in the form of a GUID.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -210,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -227,8 +235,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="30c7a-141">コレクション内の項目の位置を返します。</span><span class="sxs-lookup"><span data-stu-id="30c7a-141">Returns the position of an item in a collection.</span></span> <span data-ttu-id="30c7a-142">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="30c7a-142">Read-only.</span></span></summary>
-        <value><span data-ttu-id="30c7a-143"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="30c7a-143"><b>Integer</b></span></span></value>
+        <summary><span data-ttu-id="2cdab-141">コレクション内の項目の位置を返します。</span><span class="sxs-lookup"><span data-stu-id="2cdab-141">Returns the position of an item in a collection.</span></span> <span data-ttu-id="2cdab-142">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="2cdab-142">Read-only.</span></span></summary>
+        <value><span data-ttu-id="2cdab-143"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="2cdab-143"><b>Integer</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,6 +245,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Range Insert([in]class Microsoft.Office.Interop.Word.Range Where, [in]object&amp; RichText) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.BuildingBlock.Insert(Microsoft.Office.Interop.Word.Range,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (Where As Range, Optional ByRef RichText As Object) As Range" />
+      <MemberSignature Language="F#" Value="abstract member Insert : Microsoft.Office.Interop.Word.Range * obj -&gt; Microsoft.Office.Interop.Word.Range" Usage="buildingBlock.Insert (Where, RichText)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -252,12 +261,12 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Where" Type="Microsoft.Office.Interop.Word.Range" />
-        <Parameter Name="RichText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RichText" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Where"><span data-ttu-id="30c7a-144">文書パーツのコンテンツを配置する場所を指定します。</span><span class="sxs-lookup"><span data-stu-id="30c7a-144">The location of where to place the contents of the building block.</span></span></param>
-        <param name="RichText"><span data-ttu-id="30c7a-145"><b>True</b>は、文書パーツを書式設定されたリッチテキストとして挿入します。</span><span class="sxs-lookup"><span data-stu-id="30c7a-145"><b>True</b> inserts the building block as rich, formatted text.</span></span>  <span data-ttu-id="30c7a-146"><b>False</b>は、文書パーツをテキスト形式で挿入します。</span><span class="sxs-lookup"><span data-stu-id="30c7a-146"><b>False</b> inserts the building block as plain text.</span></span></param>
-        <summary><span data-ttu-id="30c7a-147">文書パーツの値を文書に挿入し、文書内の<see cref="T:Microsoft.Office.Interop.Word.Range" />文書パーツの内容を表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="30c7a-147">Inserts the value of a building block into a document and returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the contents of the building block within the document.</span></span></summary>
+        <param name="Where"><span data-ttu-id="2cdab-144">文書パーツのコンテンツを配置する場所を指定します。</span><span class="sxs-lookup"><span data-stu-id="2cdab-144">The location of where to place the contents of the building block.</span></span></param>
+        <param name="RichText"><span data-ttu-id="2cdab-145"><b>True</b>は、文書パーツを書式設定されたリッチテキストとして挿入します。</span><span class="sxs-lookup"><span data-stu-id="2cdab-145"><b>True</b> inserts the building block as rich, formatted text.</span></span>  <span data-ttu-id="2cdab-146"><b>False</b>は、文書パーツをテキスト形式で挿入します。</span><span class="sxs-lookup"><span data-stu-id="2cdab-146"><b>False</b> inserts the building block as plain text.</span></span></param>
+        <summary><span data-ttu-id="2cdab-147">文書パーツの値を文書に挿入し、 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 文書内の文書パーツの内容を表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="2cdab-147">Inserts the value of a building block into a document and returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the contents of the building block within the document.</span></span></summary>
         <returns><see cref="T:Microsoft.Office.Interop.Word.Range" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -268,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" />
       <MemberSignature Language="VB.NET" Value="Public Property InsertOptions As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InsertOptions { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.InsertOptions : int with get, set" Usage="Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -288,9 +298,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="30c7a-148">文書に文書パーツの内容を挿入する方法を表す<b>整数型 (Integer</b> ) の値を設定します。</span><span class="sxs-lookup"><span data-stu-id="30c7a-148">Returns or sets an <b>Integer</b> that represents how to insert the contents of a building block into a document.</span></span> <span data-ttu-id="30c7a-149">値の取得と設定が可能です。</span><span class="sxs-lookup"><span data-stu-id="30c7a-149">Read/write.</span></span></summary>
-        <value><span data-ttu-id="30c7a-150"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="30c7a-150"><b>Integer</b></span></span></value>
-        <remarks><para><span data-ttu-id="30c7a-151"><see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" />プロパティの値には、任意の<see cref="T:Microsoft.Office.Interop.Word.WdDocPartInsertOptions" />列挙値を指定できます。</span><span class="sxs-lookup"><span data-stu-id="30c7a-151">The value of the <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" /> property can be any of the <see cref="T:Microsoft.Office.Interop.Word.WdDocPartInsertOptions" /> enumeration values.</span></span></para>
+        <summary><span data-ttu-id="2cdab-148">文書に文書パーツの内容を挿入する方法を表す<b>整数型 (Integer</b> ) の値を設定します。</span><span class="sxs-lookup"><span data-stu-id="2cdab-148">Returns or sets an <b>Integer</b> that represents how to insert the contents of a building block into a document.</span></span> <span data-ttu-id="2cdab-149">値の取得と設定が可能です。</span><span class="sxs-lookup"><span data-stu-id="2cdab-149">Read/write.</span></span></summary>
+        <value><span data-ttu-id="2cdab-150"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="2cdab-150"><b>Integer</b></span></span></value>
+        <remarks><para><span data-ttu-id="2cdab-151">プロパティの値には、 <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" /> 任意の列挙値を指定でき <see cref="T:Microsoft.Office.Interop.Word.WdDocPartInsertOptions" /> ます。</span><span class="sxs-lookup"><span data-stu-id="2cdab-151">The value of the <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" /> property can be any of the <see cref="T:Microsoft.Office.Interop.Word.WdDocPartInsertOptions" /> enumeration values.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -300,6 +310,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -320,8 +331,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="30c7a-152">文書パーツの名前を設定または返します。</span><span class="sxs-lookup"><span data-stu-id="30c7a-152">Returns or sets the name of a building block.</span></span> <span data-ttu-id="30c7a-153">値の取得と設定が可能です。</span><span class="sxs-lookup"><span data-stu-id="30c7a-153">Read/write.</span></span></summary>
-        <value><span data-ttu-id="30c7a-154"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="30c7a-154"><b>String</b></span></span></value>
+        <summary><span data-ttu-id="2cdab-152">文書パーツの名前を設定または返します。</span><span class="sxs-lookup"><span data-stu-id="2cdab-152">Returns or sets the name of a building block.</span></span> <span data-ttu-id="2cdab-153">値の取得と設定が可能です。</span><span class="sxs-lookup"><span data-stu-id="2cdab-153">Read/write.</span></span></summary>
+        <value><span data-ttu-id="2cdab-154"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="2cdab-154"><b>String</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -331,6 +342,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -348,8 +360,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="30c7a-155">指定した<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />オブジェクトの親オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="30c7a-155">Returns the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> object.</span></span></summary>
-        <value><span data-ttu-id="30c7a-156"><b>Object</b></span><span class="sxs-lookup"><span data-stu-id="30c7a-156"><b>Object</b></span></span></value>
+        <summary><span data-ttu-id="2cdab-155">指定したオブジェクトの親オブジェクトを返し <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> ます。</span><span class="sxs-lookup"><span data-stu-id="2cdab-155">Returns the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> object.</span></span></summary>
+        <value><span data-ttu-id="2cdab-156"><b>Object</b></span><span class="sxs-lookup"><span data-stu-id="2cdab-156"><b>Object</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -359,6 +371,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As BuildingBlockType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::BuildingBlockType ^ Type { Microsoft::Office::Interop::Word::BuildingBlockType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.BuildingBlockType" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -376,7 +389,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlockType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="30c7a-157">文書パーツの種類を取得します。</span><span class="sxs-lookup"><span data-stu-id="30c7a-157">Returns the type for a building block.</span></span> <span data-ttu-id="30c7a-158">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="30c7a-158">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="2cdab-157">文書パーツの種類を取得します。</span><span class="sxs-lookup"><span data-stu-id="2cdab-157">Returns the type for a building block.</span></span> <span data-ttu-id="2cdab-158">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="2cdab-158">Read-only.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -387,6 +400,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -407,8 +421,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="30c7a-159">文書パーツの内容を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="30c7a-159">Returns or sets the contents of a building block.</span></span> <span data-ttu-id="30c7a-160">値の取得と設定が可能です。</span><span class="sxs-lookup"><span data-stu-id="30c7a-160">Read/write.</span></span></summary>
-        <value><span data-ttu-id="30c7a-161"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="30c7a-161"><b>String</b></span></span></value>
+        <summary><span data-ttu-id="2cdab-159">文書パーツの内容を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="2cdab-159">Returns or sets the contents of a building block.</span></span> <span data-ttu-id="2cdab-160">値の取得と設定が可能です。</span><span class="sxs-lookup"><span data-stu-id="2cdab-160">Read/write.</span></span></summary>
+        <value><span data-ttu-id="2cdab-161"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="2cdab-161"><b>String</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
