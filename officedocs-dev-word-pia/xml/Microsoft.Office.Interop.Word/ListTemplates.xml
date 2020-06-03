@@ -1,9 +1,10 @@
 <Type Name="ListTemplates" FullName="Microsoft.Office.Interop.Word.ListTemplates">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="8a116bd1e716c5b1c23d5751a9411b77f6343408" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146158" /></Metadata><TypeSignature Language="C#" Value="public interface ListTemplates : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="68b42d43db83bb78e91f6e1edc2ea1946f59a4cc" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925262" /></Metadata><TypeSignature Language="C#" Value="public interface ListTemplates : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListTemplates implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListTemplates" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListTemplates&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class ListTemplates : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type ListTemplates = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,16 +23,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="0382a-101">[箇条書きと<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />段落番号] ダイアログボックスの各タブに表示される7つの定義済みの箇条書き書式を表すオブジェクトのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="0382a-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> objects that represent the seven predefined list formats on each tab in the Bullets and Numbering dialog box.</span></span></summary>
-    <remarks><para><span data-ttu-id="0382a-102">ListTemplates コレクション<see cref="P:Microsoft.Office.Interop.Word._Document.ListTemplates" />を取得するの<b></b>にには、プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="0382a-102">Use the <see cref="P:Microsoft.Office.Interop.Word._Document.ListTemplates" /> property to return the <b>ListTemplates</b> collection.</span></span></para>
-      <para><span data-ttu-id="0382a-103"><see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />メソッドを使用して、指定した文書またはテンプレートのコレクションに箇条書きテンプレートを追加します。</span><span class="sxs-lookup"><span data-stu-id="0382a-103">Use the <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" /> method to add a list template to the collection in the specified document or template.</span></span></para>
-      <para><span data-ttu-id="0382a-104">リストギャラリーから<paramref name="index" />1 つの<paramref name="index" />箇条書きテンプレートを取得するには、 <b>ListTemplates</b>() を使用します。ここで、は 1 ~ 7 の番号を使用します。</span><span class="sxs-lookup"><span data-stu-id="0382a-104">Use <b>ListTemplates</b>(<paramref name="index" />), where <paramref name="index" /> is a number 1 through 7, to return a single list template from a list gallery.</span></span></para>
-      <para><span data-ttu-id="0382a-105">
-        <b>注</b>: 一部のプロパティとメソッド<see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> ( <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />たとえば、) は、リストギャラリーからアクセスされるリストテンプレートでは機能しません。</span><span class="sxs-lookup"><span data-stu-id="0382a-105">
-        <b>Note</b>: Some properties and methods— <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> and <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />, for example— won't work with list templates that are accessed from a list gallery.</span></span> <span data-ttu-id="0382a-106">これらの箇条書きテンプレートは、変更を加えることはできますが、テンプレート集の種類 (<b>wdBulletGallery</b>、<b>wdNumberGallery</b>、または <b>wdOutlineNumberGallery</b>) を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="0382a-106">You can modify these list templates, but you cannot change their list gallery type (<b>wdBulletGallery</b>, <b>wdNumberGallery</b>, or <b>wdOutlineNumberGallery</b>).</span></span></para>
-      <para><span data-ttu-id="0382a-107">指定した箇条書きテンプレートに、Microsoft Word に組み込まれている書式設定が<see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" />含まれて<see cref="T:Microsoft.Office.Interop.Word.ListGallery" />いるかどうかを確認するには、そのプロパティをオブジェクトと組み合わせて使用します。</span><span class="sxs-lookup"><span data-stu-id="0382a-107">To see whether the specified list template contains the formatting built into Microsoft Word, use the <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> property with the <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> object.</span></span> <span data-ttu-id="0382a-108">書式設定を元のリスト形式にリセットするに<see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" />は、 <b>ListGallery</b>オブジェクトのメソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="0382a-108">To reset formatting to the original list format, use the <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> method for the <b>ListGallery</b> object.</span></span></para>
-      <para><span data-ttu-id="0382a-109"><b>ListTemplate</b>オブジェクトを取得したら、1つ<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />のオブジェクトを<paramref name="index" />取得するの<paramref name="index" />には、 <b>listlevels</b>() を使用します。ここで、は 1 ~ 9 の数値です。</span><span class="sxs-lookup"><span data-stu-id="0382a-109">After you have returned a <b>ListTemplate</b> object, use <b>ListLevels</b>(<paramref name="index" />), where <paramref name="index" /> is a number from 1 through 9, to return a single <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> object.</span></span> <span data-ttu-id="0382a-110"><b>ListLevel</b>オブジェクトを使用すると、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />、、、、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />、など、指定されたリストレベルのすべての書式設定プロパティに<see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />アクセスできます。</span><span class="sxs-lookup"><span data-stu-id="0382a-110">With a <b>ListLevel</b> object, you have access to all the formatting properties for the specified list level, such as <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />, and <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />.</span></span></para>
-      <para><span data-ttu-id="0382a-111">メソッドを<see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" />使用して、複数レベルの箇条書きテンプレートを単一レベルのテンプレートに変換します。</span><span class="sxs-lookup"><span data-stu-id="0382a-111">Use the <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> method to convert a multiple-level list template to a single-level template.</span></span></para>
+    <summary><span data-ttu-id="7983b-101">[ <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> 箇条書きと段落番号] ダイアログボックスの各タブに表示される7つの定義済みの箇条書き書式を表すオブジェクトのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="7983b-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> objects that represent the seven predefined list formats on each tab in the Bullets and Numbering dialog box.</span></span></summary>
+    <remarks><para><span data-ttu-id="7983b-102"><see cref="P:Microsoft.Office.Interop.Word._Document.ListTemplates" /> <b>ListTemplates</b>コレクションを取得するのにには、プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="7983b-102">Use the <see cref="P:Microsoft.Office.Interop.Word._Document.ListTemplates" /> property to return the <b>ListTemplates</b> collection.</span></span></para>
+      <para><span data-ttu-id="7983b-103">メソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" /> 指定した文書またはテンプレートのコレクションに箇条書きテンプレートを追加します。</span><span class="sxs-lookup"><span data-stu-id="7983b-103">Use the <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" /> method to add a list template to the collection in the specified document or template.</span></span></para>
+      <para><span data-ttu-id="7983b-104"><b>ListTemplates</b> <paramref name="index" /> <paramref name="index" /> リストギャラリーから1つの箇条書きテンプレートを取得するには、ListTemplates () を使用します。ここで、は 1 ~ 7 の番号を使用します。</span><span class="sxs-lookup"><span data-stu-id="7983b-104">Use <b>ListTemplates</b>(<paramref name="index" />), where <paramref name="index" /> is a number 1 through 7, to return a single list template from a list gallery.</span></span></para>
+      <para><span data-ttu-id="7983b-105">
+        <b>注</b>: 一部のプロパティとメソッド (たとえば、) は、 <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" /> リストギャラリーからアクセスされるリストテンプレートでは機能しません。</span><span class="sxs-lookup"><span data-stu-id="7983b-105">
+        <b>Note</b>: Some properties and methods— <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> and <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />, for example— won't work with list templates that are accessed from a list gallery.</span></span> <span data-ttu-id="7983b-106">これらの箇条書きテンプレートは、変更を加えることはできますが、テンプレート集の種類 (<b>wdBulletGallery</b>、<b>wdNumberGallery</b>、または <b>wdOutlineNumberGallery</b>) を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="7983b-106">You can modify these list templates, but you cannot change their list gallery type (<b>wdBulletGallery</b>, <b>wdNumberGallery</b>, or <b>wdOutlineNumberGallery</b>).</span></span></para>
+      <para><span data-ttu-id="7983b-107">指定した箇条書きテンプレートに、Microsoft Word に組み込まれている書式設定が含まれているかどうかを確認するには、その <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> プロパティをオブジェクトと組み合わせて使用し <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> ます。</span><span class="sxs-lookup"><span data-stu-id="7983b-107">To see whether the specified list template contains the formatting built into Microsoft Word, use the <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> property with the <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> object.</span></span> <span data-ttu-id="7983b-108">書式設定を元のリスト形式にリセットするには、 <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> <b>ListGallery</b>オブジェクトのメソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="7983b-108">To reset formatting to the original list format, use the <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> method for the <b>ListGallery</b> object.</span></span></para>
+      <para><span data-ttu-id="7983b-109"><b>ListTemplate</b>オブジェクトを取得したら、1つのオブジェクトを取得するのには、 <b>listlevels</b>( <paramref name="index" /> ) を使用します。ここで、 <paramref name="index" /> は 1 ~ 9 の数値です <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> 。</span><span class="sxs-lookup"><span data-stu-id="7983b-109">After you have returned a <b>ListTemplate</b> object, use <b>ListLevels</b>(<paramref name="index" />), where <paramref name="index" /> is a number from 1 through 9, to return a single <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> object.</span></span> <span data-ttu-id="7983b-110"><b>ListLevel</b>オブジェクトを使用すると、、、、、、など、指定されたリストレベルのすべての書式設定プロパティにアクセスでき <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" /> ます。</span><span class="sxs-lookup"><span data-stu-id="7983b-110">With a <b>ListLevel</b> object, you have access to all the formatting properties for the specified list level, such as <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />, and <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />.</span></span></para>
+      <para><span data-ttu-id="7983b-111">メソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> 複数レベルの箇条書きテンプレートを単一レベルのテンプレートに変換します。</span><span class="sxs-lookup"><span data-stu-id="7983b-111">Use the <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> method to convert a multiple-level list template to a single-level template.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -40,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.ListTemplate Add([in]object&amp; OutlineNumbered, [in]object&amp; Name) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Optional ByRef OutlineNumbered As Object, Optional ByRef Name As Object) As ListTemplate" />
+      <MemberSignature Language="F#" Value="abstract member Add : obj * obj -&gt; Microsoft.Office.Interop.Word.ListTemplate" Usage="listTemplates.Add (OutlineNumbered, Name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -54,15 +56,15 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplate</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="OutlineNumbered" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Name" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="OutlineNumbered" Type="System.Object" RefType="ref" />
+        <Parameter Name="Name" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="OutlineNumbered"><span data-ttu-id="0382a-112">省略可能な<b>オブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="0382a-112">Optional <b>Object</b>.</span></span> <span data-ttu-id="0382a-113"><b>条件を満たす</b> アウトライン番号の新しいリスト テンプレートを適用します。</span><span class="sxs-lookup"><span data-stu-id="0382a-113"><b>True</b> to apply outline numbering to the new list template.</span></span></param>
-        <param name="Name"><span data-ttu-id="0382a-114">省略可能な<b>オブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="0382a-114">Optional <b>Object</b>.</span></span> <span data-ttu-id="0382a-115">箇条書きテンプレートを LISTNUM フィールドにリンクするために使用する名前です。</span><span class="sxs-lookup"><span data-stu-id="0382a-115">An optional name used for linking the list template to a LISTNUM field.</span></span> <span data-ttu-id="0382a-116">この名前を、コレクション内の箇条書きテンプレートのインデックスとして使用することはできません。</span><span class="sxs-lookup"><span data-stu-id="0382a-116">You cannot use this name to index the list template in the collection.</span></span></param>
-        <summary><span data-ttu-id="0382a-117">新しい箇条書き<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />テンプレートを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="0382a-117">Returns a <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object that represents a new list template.</span></span></summary>
+        <param name="OutlineNumbered"><span data-ttu-id="7983b-112">省略可能な<b>オブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="7983b-112">Optional <b>Object</b>.</span></span> <span data-ttu-id="7983b-113"><b>条件を満たす</b> アウトライン番号の新しいリスト テンプレートを適用します。</span><span class="sxs-lookup"><span data-stu-id="7983b-113"><b>True</b> to apply outline numbering to the new list template.</span></span></param>
+        <param name="Name"><span data-ttu-id="7983b-114">省略可能な<b>オブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="7983b-114">Optional <b>Object</b>.</span></span> <span data-ttu-id="7983b-115">箇条書きテンプレートを LISTNUM フィールドにリンクするために使用する名前です。</span><span class="sxs-lookup"><span data-stu-id="7983b-115">An optional name used for linking the list template to a LISTNUM field.</span></span> <span data-ttu-id="7983b-116">この名前を、コレクション内の箇条書きテンプレートのインデックスとして使用することはできません。</span><span class="sxs-lookup"><span data-stu-id="7983b-116">You cannot use this name to index the list template in the collection.</span></span></param>
+        <summary><span data-ttu-id="7983b-117"><see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />新しい箇条書きテンプレートを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="7983b-117">Returns a <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object that represents a new list template.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks><para><span data-ttu-id="0382a-118">オブジェクトから返されるオブジェクトに対し<see cref="T:Microsoft.Office.Interop.Word.ListTemplates" />て Add メソッドを使用することはできません。 <b></b> <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /></span><span class="sxs-lookup"><span data-stu-id="0382a-118">You cannot use the <b>Add</b> method on <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> objects returned from a <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> object.</span></span> <span data-ttu-id="0382a-119">ただし、ギャラリー内の既存のリスト テンプレートを変更することができます。</span><span class="sxs-lookup"><span data-stu-id="0382a-119">You can, however, modify the existing list templates in the galleries.</span></span></para>
+        <remarks><para><span data-ttu-id="7983b-118"><b>Add</b> <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> オブジェクトから返されるオブジェクトに対して Add メソッドを使用することはできません <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> 。</span><span class="sxs-lookup"><span data-stu-id="7983b-118">You cannot use the <b>Add</b> method on <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> objects returned from a <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> object.</span></span> <span data-ttu-id="7983b-119">ただし、ギャラリー内の既存のリスト テンプレートを変更することができます。</span><span class="sxs-lookup"><span data-stu-id="7983b-119">You can, however, modify the existing list templates in the galleries.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplates.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ListTemplates.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -89,7 +92,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="0382a-120">Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="0382a-120">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="7983b-120"><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="7983b-120">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplates.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.ListTemplates.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -117,7 +121,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="0382a-121">指定したコレクション内の項目数を返します。</span><span class="sxs-lookup"><span data-stu-id="0382a-121">Returns the number of items in the specified collection.</span></span></summary>
+        <summary><span data-ttu-id="7983b-121">指定したコレクション内の項目数を返します。</span><span class="sxs-lookup"><span data-stu-id="7983b-121">Returns the number of items in the specified collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplates.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ListTemplates.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -145,10 +150,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="0382a-122">指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</span><span class="sxs-lookup"><span data-stu-id="0382a-122">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
+        <summary><span data-ttu-id="7983b-122">指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</span><span class="sxs-lookup"><span data-stu-id="7983b-122">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="0382a-123">オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。</span><span class="sxs-lookup"><span data-stu-id="0382a-123">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="0382a-124">[!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</span><span class="sxs-lookup"><span data-stu-id="0382a-124">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="0382a-125"><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。</span><span class="sxs-lookup"><span data-stu-id="0382a-125">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="0382a-126">たとえば、Word には作成者コード MSWD です。</span><span class="sxs-lookup"><span data-stu-id="0382a-126">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="0382a-127">このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</span><span class="sxs-lookup"><span data-stu-id="0382a-127">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="7983b-123">オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。</span><span class="sxs-lookup"><span data-stu-id="7983b-123">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="7983b-124">[!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</span><span class="sxs-lookup"><span data-stu-id="7983b-124">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="7983b-125"><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。</span><span class="sxs-lookup"><span data-stu-id="7983b-125">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="7983b-126">たとえば、Word には作成者コード MSWD です。</span><span class="sxs-lookup"><span data-stu-id="7983b-126">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="7983b-127">このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</span><span class="sxs-lookup"><span data-stu-id="7983b-127">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListTemplates.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="listTemplates.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplates.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As ListTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ListTemplate ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::ListTemplate ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.ListTemplate" Usage="Microsoft.Office.Interop.Word.ListTemplates.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -207,11 +214,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplate</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index"><span data-ttu-id="0382a-128">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="0382a-128">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span></span></param>
-        <summary><span data-ttu-id="0382a-129">コレクション内の各オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="0382a-129">Returns an individual object in a collection.</span></span></summary>
+        <param name="Index"><span data-ttu-id="7983b-128">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="7983b-128">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span></span></param>
+        <summary><span data-ttu-id="7983b-129">コレクション内の各オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="7983b-129">Returns an individual object in a collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -222,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplates.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ListTemplates.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -239,7 +247,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="0382a-130">指定されたオブジェクトの親オブジェクトを表すオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="0382a-130">Returns an object that represents the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="7983b-130">指定されたオブジェクトの親オブジェクトを表すオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="7983b-130">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

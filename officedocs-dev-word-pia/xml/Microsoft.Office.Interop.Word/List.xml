@@ -1,9 +1,10 @@
 <Type Name="List" FullName="Microsoft.Office.Interop.Word.List">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ef2af10f7fd664cca9ca3f39aea6cd66c9851d3a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147901" /></Metadata><TypeSignature Language="C#" Value="public interface List" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6082fc6429315024310244ff429fb70e8f66a012" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924404" /></Metadata><TypeSignature Language="C#" Value="public interface List" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract List" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.List" />
   <TypeSignature Language="VB.NET" Value="Public Interface List" />
   <TypeSignature Language="C++ CLI" Value="public interface class List" />
+  <TypeSignature Language="F#" Value="type List = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,16 +19,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="7dae9-101">文書の指定された段落に設定されている箇条書き書式を表します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-101">Represents a single list format that's been applied to specified paragraphs in a document.</span></span></summary>
-    <remarks><para><span data-ttu-id="7dae9-102"><see cref="T:Microsoft.Office.Interop.Word.List" />オブジェクトは<see cref="T:Microsoft.Office.Interop.Word.Lists" />コレクションのメンバーです。</span><span class="sxs-lookup"><span data-stu-id="7dae9-102">The <see cref="T:Microsoft.Office.Interop.Word.List" /> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.Lists" /> collection.</span></span></para>
-      <para><span data-ttu-id="7dae9-103">1つ<see cref="T:Microsoft.Office.Interop.Word.List" />の<paramref name="index" />オブジェクトを取得<paramref name="index" />するのにには、<b>リスト</b>() を使用します。ここで、はインデックス番号を指定します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-103">Use <b>Lists</b>(<paramref name="index" />), where <paramref name="index" /> is the index number, to return a single <see cref="T:Microsoft.Office.Interop.Word.List" /> object.</span></span></para>
-      <para><span data-ttu-id="7dae9-104">箇条書きの書式が設定されているすべての段落<see cref="P:Microsoft.Office.Interop.Word.List.ListParagraphs" />を取得するには、プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-104">To return all the paragraphs that have list formatting, use the <see cref="P:Microsoft.Office.Interop.Word.List.ListParagraphs" /> property.</span></span> <span data-ttu-id="7dae9-105">範囲としてそれらを取得するに<see cref="P:Microsoft.Office.Interop.Word.List.Range" />は、プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-105">To return them as a range, use the <see cref="P:Microsoft.Office.Interop.Word.List.Range" /> property.</span></span></para>
-      <para><span data-ttu-id="7dae9-106">既存のリストに別のリスト書式を適用するには<see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> 、 <see cref="T:Microsoft.Office.Interop.Word.List" />オブジェクトでメソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-106">To apply a different list format to an existing list, use the <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> method with the <see cref="T:Microsoft.Office.Interop.Word.List" /> object.</span></span> <span data-ttu-id="7dae9-107">ドキュメントに新しいリストを追加するには、指定<see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" />した範囲<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />のオブジェクトにメソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-107">To add a new list to a document, use the <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> method with the <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> object for a specified range.</span></span></para>
-      <para><span data-ttu-id="7dae9-108"><see cref="M:Microsoft.Office.Interop.Word.List.CanContinuePreviousList(Microsoft.Office.Interop.Word.ListTemplate)" />メソッドを使用して、以前にドキュメントに適用されたリストの書式設定を続行できるかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-108">Use the <see cref="M:Microsoft.Office.Interop.Word.List.CanContinuePreviousList(Microsoft.Office.Interop.Word.ListTemplate)" /> method to determine whether you can continue the list formatting from a list that was previously applied to the document.</span></span></para>
-      <para><span data-ttu-id="7dae9-109">LISTNUM フィールド<see cref="M:Microsoft.Office.Interop.Word.List.CountNumberedItems(System.Object@,System.Object@)" />を含む、段落番号または行頭文字の付いた箇条書きの項目数を取得するには、メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-109">Use the <see cref="M:Microsoft.Office.Interop.Word.List.CountNumberedItems(System.Object@,System.Object@)" /> method to return the number of items in a numbered or bulleted list, including LISTNUM fields.</span></span></para>
-      <para><span data-ttu-id="7dae9-110">リストに複数のリストテンプレートが含まれているかどうか<see cref="P:Microsoft.Office.Interop.Word.List.SingleListTemplate" />を確認するには、プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-110">To determine whether a list contains more than one list template, use the <see cref="P:Microsoft.Office.Interop.Word.List.SingleListTemplate" /> property.</span></span></para>
-      <para><span data-ttu-id="7dae9-111">文書内の個々<see cref="T:Microsoft.Office.Interop.Word.List" />のオブジェクトを操作することはできますが、より正確に制御する<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />には、オブジェクトを操作する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7dae9-111">You can manipulate the individual <see cref="T:Microsoft.Office.Interop.Word.List" /> objects within a document, but for more precise control you should work with the <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> object.</span></span></para>
-      <para><span data-ttu-id="7dae9-112">行頭絵文字は<see cref="T:Microsoft.Office.Interop.Word.Lists" />コレクションに含まれていないため、 <see cref="T:Microsoft.Office.Interop.Word.List" />オブジェクトを使用して操作することはできません。</span><span class="sxs-lookup"><span data-stu-id="7dae9-112">Picture-bulleted lists are not included in the <see cref="T:Microsoft.Office.Interop.Word.Lists" /> collection and cannot be manipulated using the <see cref="T:Microsoft.Office.Interop.Word.List" /> object.</span></span></para>
+    <summary><span data-ttu-id="297f6-101">文書の指定された段落に設定されている箇条書き書式を表します。</span><span class="sxs-lookup"><span data-stu-id="297f6-101">Represents a single list format that's been applied to specified paragraphs in a document.</span></span></summary>
+    <remarks><para><span data-ttu-id="297f6-102"><see cref="T:Microsoft.Office.Interop.Word.List" />オブジェクトはコレクションのメンバーです <see cref="T:Microsoft.Office.Interop.Word.Lists" /> 。</span><span class="sxs-lookup"><span data-stu-id="297f6-102">The <see cref="T:Microsoft.Office.Interop.Word.List" /> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.Lists" /> collection.</span></span></para>
+      <para><span data-ttu-id="297f6-103">1 <b>Lists</b>つの <paramref name="index" /> オブジェクトを取得するのにには、リスト () を使用します。ここで、 <paramref name="index" /> はインデックス番号を指定し <see cref="T:Microsoft.Office.Interop.Word.List" /> ます。</span><span class="sxs-lookup"><span data-stu-id="297f6-103">Use <b>Lists</b>(<paramref name="index" />), where <paramref name="index" /> is the index number, to return a single <see cref="T:Microsoft.Office.Interop.Word.List" /> object.</span></span></para>
+      <para><span data-ttu-id="297f6-104">箇条書きの書式が設定されているすべての段落を取得するには、プロパティを使用し <see cref="P:Microsoft.Office.Interop.Word.List.ListParagraphs" /> ます。</span><span class="sxs-lookup"><span data-stu-id="297f6-104">To return all the paragraphs that have list formatting, use the <see cref="P:Microsoft.Office.Interop.Word.List.ListParagraphs" /> property.</span></span> <span data-ttu-id="297f6-105">範囲としてそれらを取得するには、プロパティを使用し <see cref="P:Microsoft.Office.Interop.Word.List.Range" /> ます。</span><span class="sxs-lookup"><span data-stu-id="297f6-105">To return them as a range, use the <see cref="P:Microsoft.Office.Interop.Word.List.Range" /> property.</span></span></para>
+      <para><span data-ttu-id="297f6-106">既存のリストに別のリスト書式を適用するには、 <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> オブジェクトでメソッドを使用し <see cref="T:Microsoft.Office.Interop.Word.List" /> ます。</span><span class="sxs-lookup"><span data-stu-id="297f6-106">To apply a different list format to an existing list, use the <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> method with the <see cref="T:Microsoft.Office.Interop.Word.List" /> object.</span></span> <span data-ttu-id="297f6-107">ドキュメントに新しいリストを追加するには、 <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> 指定した範囲のオブジェクトにメソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="297f6-107">To add a new list to a document, use the <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> method with the <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> object for a specified range.</span></span></para>
+      <para><span data-ttu-id="297f6-108">メソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.List.CanContinuePreviousList(Microsoft.Office.Interop.Word.ListTemplate)" /> 以前にドキュメントに適用されたリストの書式設定を続行できるかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="297f6-108">Use the <see cref="M:Microsoft.Office.Interop.Word.List.CanContinuePreviousList(Microsoft.Office.Interop.Word.ListTemplate)" /> method to determine whether you can continue the list formatting from a list that was previously applied to the document.</span></span></para>
+      <para><span data-ttu-id="297f6-109"><see cref="M:Microsoft.Office.Interop.Word.List.CountNumberedItems(System.Object@,System.Object@)" />LISTNUM フィールドを含む、段落番号または行頭文字の付いた箇条書きの項目数を取得するには、メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="297f6-109">Use the <see cref="M:Microsoft.Office.Interop.Word.List.CountNumberedItems(System.Object@,System.Object@)" /> method to return the number of items in a numbered or bulleted list, including LISTNUM fields.</span></span></para>
+      <para><span data-ttu-id="297f6-110">リストに複数のリストテンプレートが含まれているかどうかを確認するには、プロパティを使用し <see cref="P:Microsoft.Office.Interop.Word.List.SingleListTemplate" /> ます。</span><span class="sxs-lookup"><span data-stu-id="297f6-110">To determine whether a list contains more than one list template, use the <see cref="P:Microsoft.Office.Interop.Word.List.SingleListTemplate" /> property.</span></span></para>
+      <para><span data-ttu-id="297f6-111">文書内の個々のオブジェクトを操作することはでき <see cref="T:Microsoft.Office.Interop.Word.List" /> ますが、より正確に制御するには、オブジェクトを操作する必要があり <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> ます。</span><span class="sxs-lookup"><span data-stu-id="297f6-111">You can manipulate the individual <see cref="T:Microsoft.Office.Interop.Word.List" /> objects within a document, but for more precise control you should work with the <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> object.</span></span></para>
+      <para><span data-ttu-id="297f6-112">行頭絵文字はコレクションに含まれていないため、 <see cref="T:Microsoft.Office.Interop.Word.Lists" /> オブジェクトを使用して操作することはできません <see cref="T:Microsoft.Office.Interop.Word.List" /> 。</span><span class="sxs-lookup"><span data-stu-id="297f6-112">Picture-bulleted lists are not included in the <see cref="T:Microsoft.Office.Interop.Word.Lists" /> collection and cannot be manipulated using the <see cref="T:Microsoft.Office.Interop.Word.List" /> object.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.List.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.List.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -54,7 +56,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7dae9-113">Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-113">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="297f6-113"><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="297f6-113">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -63,6 +65,8 @@
       <MemberSignature Language="C#" Value="public void ApplyListTemplate (Microsoft.Office.Interop.Word.ListTemplate ListTemplate, ref object ContinuePreviousList, ref object DefaultListBehavior);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyListTemplate([in]class Microsoft.Office.Interop.Word.ListTemplate ListTemplate, [in]object&amp; ContinuePreviousList, [in]object&amp; DefaultListBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ApplyListTemplate (ListTemplate As ListTemplate, Optional ByRef ContinuePreviousList As Object, Optional ByRef DefaultListBehavior As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyListTemplate : Microsoft.Office.Interop.Word.ListTemplate * obj * obj -&gt; unit" Usage="list.ApplyListTemplate (ListTemplate, ContinuePreviousList, DefaultListBehavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -78,14 +82,14 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="ListTemplate" Type="Microsoft.Office.Interop.Word.ListTemplate" />
-        <Parameter Name="ContinuePreviousList" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="DefaultListBehavior" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ContinuePreviousList" Type="System.Object" RefType="ref" />
+        <Parameter Name="DefaultListBehavior" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ListTemplate"><span data-ttu-id="7dae9-114">必要<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />なオブジェクト。</span><span class="sxs-lookup"><span data-stu-id="7dae9-114">Required <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object.</span></span> <span data-ttu-id="7dae9-115">使用する箇条書きテンプレートを指定します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-115">The list template to be applied.</span></span></param>
-        <param name="ContinuePreviousList"><span data-ttu-id="7dae9-116">省略可能な<b>オブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="7dae9-116">Optional <b>Object</b>.</span></span> <span data-ttu-id="7dae9-117">の <b>場合は true</b> 以前のリストから番号を継続 <b>False</b> を新しいリストを開始します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-117"><b>True</b> to continue the numbering from the previous list; <b>False</b> to start a new list.</span></span></param>
-        <param name="DefaultListBehavior"><span data-ttu-id="7dae9-118">省略可能な<b>オブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="7dae9-118">Optional <b>Object</b>.</span></span> <span data-ttu-id="7dae9-119">Microsoft Word を使用して新しい Web 指向の形式のリストを適切に表示するかを指定する値を設定します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-119">Sets a value that specifies whether Microsoft Word uses new Web-oriented formatting for better list display.</span></span> <span data-ttu-id="7dae9-120">以下の定数のいずれかをすることができます: <b>wdWord8ListBehavior</b> (Microsoft Word 97/98年と互換性のある書式を使用します) または <b>wdWord9ListBehavior</b> (Web 指向形式を採用)。</span><span class="sxs-lookup"><span data-stu-id="7dae9-120">Can be either of the following constants: <b>wdWord8ListBehavior</b> (use formatting compatible with Microsoft Word 97) or <b>wdWord9ListBehavior</b> (use Web-oriented formatting).</span></span> <span data-ttu-id="7dae9-121">互換性の理由から、既定の定数 <b>wdWord8ListBehavior</b> 、ですが、リストで新しいプロシージャが強化された Web 指向の書式設定のインデントを基準と複数レベルを活用する <b>wdWord9ListBehavior</b> を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7dae9-121">For compatibility reasons, the default constant is <b>wdWord8ListBehavior</b>, but in new procedures you should use <b>wdWord9ListBehavior</b> to take advantage of improved Web-oriented formatting with respect to indenting and multilevel lists.</span></span></param>
-        <summary><span data-ttu-id="7dae9-122">指定したリストに、リストの書式設定の一連の特性を適用します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-122">Applies a set of list-formatting characteristics to the specified list.</span></span></summary>
+        <param name="ListTemplate"><span data-ttu-id="297f6-114">必要な <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="297f6-114">Required <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object.</span></span> <span data-ttu-id="297f6-115">使用する箇条書きテンプレートを指定します。</span><span class="sxs-lookup"><span data-stu-id="297f6-115">The list template to be applied.</span></span></param>
+        <param name="ContinuePreviousList"><span data-ttu-id="297f6-116">省略可能な<b>オブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="297f6-116">Optional <b>Object</b>.</span></span> <span data-ttu-id="297f6-117">の <b>場合は true</b> 以前のリストから番号を継続 <b>False</b> を新しいリストを開始します。</span><span class="sxs-lookup"><span data-stu-id="297f6-117"><b>True</b> to continue the numbering from the previous list; <b>False</b> to start a new list.</span></span></param>
+        <param name="DefaultListBehavior"><span data-ttu-id="297f6-118">省略可能な<b>オブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="297f6-118">Optional <b>Object</b>.</span></span> <span data-ttu-id="297f6-119">Microsoft Word を使用して新しい Web 指向の形式のリストを適切に表示するかを指定する値を設定します。</span><span class="sxs-lookup"><span data-stu-id="297f6-119">Sets a value that specifies whether Microsoft Word uses new Web-oriented formatting for better list display.</span></span> <span data-ttu-id="297f6-120">以下の定数のいずれかをすることができます: <b>wdWord8ListBehavior</b> (Microsoft Word 97/98年と互換性のある書式を使用します) または <b>wdWord9ListBehavior</b> (Web 指向形式を採用)。</span><span class="sxs-lookup"><span data-stu-id="297f6-120">Can be either of the following constants: <b>wdWord8ListBehavior</b> (use formatting compatible with Microsoft Word 97) or <b>wdWord9ListBehavior</b> (use Web-oriented formatting).</span></span> <span data-ttu-id="297f6-121">互換性の理由から、既定の定数 <b>wdWord8ListBehavior</b> 、ですが、リストで新しいプロシージャが強化された Web 指向の書式設定のインデントを基準と複数レベルを活用する <b>wdWord9ListBehavior</b> を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="297f6-121">For compatibility reasons, the default constant is <b>wdWord8ListBehavior</b>, but in new procedures you should use <b>wdWord9ListBehavior</b> to take advantage of improved Web-oriented formatting with respect to indenting and multilevel lists.</span></span></param>
+        <summary><span data-ttu-id="297f6-122">指定したリストに、リストの書式設定の一連の特性を適用します。</span><span class="sxs-lookup"><span data-stu-id="297f6-122">Applies a set of list-formatting characteristics to the specified list.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,6 +97,8 @@
       <MemberSignature Language="C#" Value="public void ApplyListTemplateOld (Microsoft.Office.Interop.Word.ListTemplate ListTemplate, ref object ContinuePreviousList);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyListTemplateOld([in]class Microsoft.Office.Interop.Word.ListTemplate ListTemplate, [in]object&amp; ContinuePreviousList) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.List.ApplyListTemplateOld(Microsoft.Office.Interop.Word.ListTemplate,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ApplyListTemplateOld (ListTemplate As ListTemplate, Optional ByRef ContinuePreviousList As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyListTemplateOld : Microsoft.Office.Interop.Word.ListTemplate * obj -&gt; unit" Usage="list.ApplyListTemplateOld (ListTemplate, ContinuePreviousList)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -111,12 +117,12 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="ListTemplate" Type="Microsoft.Office.Interop.Word.ListTemplate" />
-        <Parameter Name="ContinuePreviousList" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ContinuePreviousList" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="ListTemplate">To be added.</param>
         <param name="ContinuePreviousList">To be added.</param>
-        <summary><span data-ttu-id="7dae9-123">内部使用のため予約済みです。</span><span class="sxs-lookup"><span data-stu-id="7dae9-123">Reserved for internal use.</span></span></summary>
+        <summary><span data-ttu-id="297f6-123">内部使用のため予約済みです。</span><span class="sxs-lookup"><span data-stu-id="297f6-123">Reserved for internal use.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,6 +130,8 @@
       <MemberSignature Language="C#" Value="public void ApplyListTemplateWithLevel (Microsoft.Office.Interop.Word.ListTemplate ListTemplate, ref object ContinuePreviousList, ref object DefaultListBehavior, ref object ApplyLevel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyListTemplateWithLevel([in]class Microsoft.Office.Interop.Word.ListTemplate ListTemplate, [in]object&amp; ContinuePreviousList, [in]object&amp; DefaultListBehavior, [in]object&amp; ApplyLevel) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.List.ApplyListTemplateWithLevel(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ApplyListTemplateWithLevel (ListTemplate As ListTemplate, Optional ByRef ContinuePreviousList As Object, Optional ByRef DefaultListBehavior As Object, Optional ByRef ApplyLevel As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyListTemplateWithLevel : Microsoft.Office.Interop.Word.ListTemplate * obj * obj * obj -&gt; unit" Usage="list.ApplyListTemplateWithLevel (ListTemplate, ContinuePreviousList, DefaultListBehavior, ApplyLevel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -139,16 +147,16 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="ListTemplate" Type="Microsoft.Office.Interop.Word.ListTemplate" />
-        <Parameter Name="ContinuePreviousList" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="DefaultListBehavior" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ApplyLevel" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ContinuePreviousList" Type="System.Object" RefType="ref" />
+        <Parameter Name="DefaultListBehavior" Type="System.Object" RefType="ref" />
+        <Parameter Name="ApplyLevel" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ListTemplate"><span data-ttu-id="7dae9-124">使用する箇条書きテンプレートを指定します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-124">The list template to be applied.</span></span></param>
-        <param name="ContinuePreviousList"><span data-ttu-id="7dae9-125">の <b>場合は true</b> 以前のリストから番号を継続 <b>False</b> を新しいリストを開始します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-125"><b>True</b> to continue the numbering from the previous list; <b>False</b> to start a new list.</span></span></param>
-        <param name="DefaultListBehavior"><span data-ttu-id="7dae9-126">Microsoft Word を使用して新しい Web 指向の形式のリストを適切に表示するかを指定する値を設定します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-126">Sets a value that specifies whether Microsoft Word uses new Web-oriented formatting for better list display.</span></span> <span data-ttu-id="7dae9-127">次<see cref="T:Microsoft.Office.Interop.Word.WdDefaultListBehavior" />の値のいずれかを指定<see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" />できます (Microsoft Word 97 と互換性のある<see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" />書式を使用します)。または (Web 指向の書式設定を使用)。</span><span class="sxs-lookup"><span data-stu-id="7dae9-127">Can be either of the following <see cref="T:Microsoft.Office.Interop.Word.WdDefaultListBehavior" /> values: <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" /> (use formatting compatible with Microsoft Word 97) or <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> (use Web-oriented formatting).</span></span> <span data-ttu-id="7dae9-128">互換性の理由から、既定の定数<see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" />はですが、インデントと複数レベル<see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" />のリストに関して、強化された Web 指向の書式設定を活用するために使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7dae9-128">For compatibility reasons, the default constant is <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" />, but in new procedures you should use <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> to take advantage of improved Web-oriented formatting with respect to indenting and multilevel lists.</span></span></param>
-        <param name="ApplyLevel"><span data-ttu-id="7dae9-129">箇条書きテンプレートを適用するレベル。</span><span class="sxs-lookup"><span data-stu-id="7dae9-129">The level to which the list template is to be applied.</span></span></param>
-        <summary><span data-ttu-id="7dae9-130">箇条書きの書式を設定します。オプションでレベルを指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="7dae9-130">Applies a set of list-formatting characteristics, optionally for a specified level.</span></span></summary>
+        <param name="ListTemplate"><span data-ttu-id="297f6-124">使用する箇条書きテンプレートを指定します。</span><span class="sxs-lookup"><span data-stu-id="297f6-124">The list template to be applied.</span></span></param>
+        <param name="ContinuePreviousList"><span data-ttu-id="297f6-125">の <b>場合は true</b> 以前のリストから番号を継続 <b>False</b> を新しいリストを開始します。</span><span class="sxs-lookup"><span data-stu-id="297f6-125"><b>True</b> to continue the numbering from the previous list; <b>False</b> to start a new list.</span></span></param>
+        <param name="DefaultListBehavior"><span data-ttu-id="297f6-126">Microsoft Word を使用して新しい Web 指向の形式のリストを適切に表示するかを指定する値を設定します。</span><span class="sxs-lookup"><span data-stu-id="297f6-126">Sets a value that specifies whether Microsoft Word uses new Web-oriented formatting for better list display.</span></span> <span data-ttu-id="297f6-127">次の値のいずれかを指定でき <see cref="T:Microsoft.Office.Interop.Word.WdDefaultListBehavior" /> ます <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" /> (Microsoft Word 97 と互換性のある書式を使用します)。または <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> (Web 指向の書式設定を使用)。</span><span class="sxs-lookup"><span data-stu-id="297f6-127">Can be either of the following <see cref="T:Microsoft.Office.Interop.Word.WdDefaultListBehavior" /> values: <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" /> (use formatting compatible with Microsoft Word 97) or <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> (use Web-oriented formatting).</span></span> <span data-ttu-id="297f6-128">互換性の理由から、既定の定数はです <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" /> が、 <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> インデントと複数レベルのリストに関して、強化された Web 指向の書式設定を活用するために使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="297f6-128">For compatibility reasons, the default constant is <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" />, but in new procedures you should use <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> to take advantage of improved Web-oriented formatting with respect to indenting and multilevel lists.</span></span></param>
+        <param name="ApplyLevel"><span data-ttu-id="297f6-129">箇条書きテンプレートを適用するレベル。</span><span class="sxs-lookup"><span data-stu-id="297f6-129">The level to which the list template is to be applied.</span></span></param>
+        <summary><span data-ttu-id="297f6-130">箇条書きの書式を設定します。オプションでレベルを指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="297f6-130">Applies a set of list-formatting characteristics, optionally for a specified level.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,7 +164,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdContinue CanContinuePreviousList (Microsoft.Office.Interop.Word.ListTemplate ListTemplate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Office.Interop.Word.WdContinue CanContinuePreviousList([in]class Microsoft.Office.Interop.Word.ListTemplate ListTemplate) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.List.CanContinuePreviousList(Microsoft.Office.Interop.Word.ListTemplate)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanContinuePreviousList (ListTemplate As ListTemplate) As WdContinue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::WdContinue CanContinuePreviousList(Microsoft::Office::Interop::Word::ListTemplate ^ ListTemplate);" />
+      <MemberSignature Language="F#" Value="abstract member CanContinuePreviousList : Microsoft.Office.Interop.Word.ListTemplate -&gt; Microsoft.Office.Interop.Word.WdContinue" Usage="list.CanContinuePreviousList ListTemplate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -174,10 +184,10 @@
         <Parameter Name="ListTemplate" Type="Microsoft.Office.Interop.Word.ListTemplate" />
       </Parameters>
       <Docs>
-        <param name="ListTemplate"><span data-ttu-id="7dae9-131">必要<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />なオブジェクト。</span><span class="sxs-lookup"><span data-stu-id="7dae9-131">Required <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object.</span></span> <span data-ttu-id="7dae9-132">文書の前の段落に設定されている箇条書きテンプレートを指定します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-132">A list template that's been applied to previous paragraphs in the document.</span></span></param>
-        <summary><span data-ttu-id="7dae9-133">前の<see cref="T:Microsoft.Office.Interop.Word.WdContinue" />リストからの書式設定を継続できるかどうかを示す定数 (<b>wdContinueDisabled</b>、 <b>wdResetList</b>、または<b>wdContinueList</b>) を返します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-133">Returns a <see cref="T:Microsoft.Office.Interop.Word.WdContinue" /> constant (<b>wdContinueDisabled</b>, <b>wdResetList</b>, or <b>wdContinueList</b>) that indicates whether the formatting from the previous list can be continued.</span></span></summary>
+        <param name="ListTemplate"><span data-ttu-id="297f6-131">必要な <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="297f6-131">Required <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object.</span></span> <span data-ttu-id="297f6-132">文書の前の段落に設定されている箇条書きテンプレートを指定します。</span><span class="sxs-lookup"><span data-stu-id="297f6-132">A list template that's been applied to previous paragraphs in the document.</span></span></param>
+        <summary><span data-ttu-id="297f6-133"><see cref="T:Microsoft.Office.Interop.Word.WdContinue" />前のリストからの書式設定を継続できるかどうかを示す定数 (<b>wdContinueDisabled</b>、 <b>WdResetList</b>、または<b>wdContinueList</b>) を返します。</span><span class="sxs-lookup"><span data-stu-id="297f6-133">Returns a <see cref="T:Microsoft.Office.Interop.Word.WdContinue" /> constant (<b>wdContinueDisabled</b>, <b>wdResetList</b>, or <b>wdContinueList</b>) that indicates whether the formatting from the previous list can be continued.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks><para><span data-ttu-id="7dae9-134">このメソッドは、指定された箇条書き書式について [ 箇条書きと段落番号] ダイアログ ボックスで 続行前のリストと 番号を振り直す] の状態を返します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-134">This method returns the state of the Continue previous list and Restart numbering options in the Bullets and Numbering dialog box for a specified list format.</span></span> <span data-ttu-id="7dae9-135">これらのオプションの設定を変更するには<paramref name="ContinuePreviousList" /> 、 <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" />メソッドの引数を設定します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-135">To change the settings of these options, set the <paramref name="ContinuePreviousList" /> argument of the <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> method.</span></span></para>
+        <remarks><para><span data-ttu-id="297f6-134">このメソッドは、指定された箇条書き書式について [ 箇条書きと段落番号] ダイアログ ボックスで 続行前のリストと 番号を振り直す] の状態を返します。</span><span class="sxs-lookup"><span data-stu-id="297f6-134">This method returns the state of the Continue previous list and Restart numbering options in the Bullets and Numbering dialog box for a specified list format.</span></span> <span data-ttu-id="297f6-135">これらのオプションの設定を変更するには、 <paramref name="ContinuePreviousList" /> メソッドの引数を設定し <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> ます。</span><span class="sxs-lookup"><span data-stu-id="297f6-135">To change the settings of these options, set the <paramref name="ContinuePreviousList" /> argument of the <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> method.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -186,6 +196,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ConvertNumbersToText([in]object&amp; NumberType) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.List.ConvertNumbersToText(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ConvertNumbersToText (Optional ByRef NumberType As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ConvertNumbersToText : obj -&gt; unit" Usage="list.ConvertNumbersToText NumberType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -200,14 +211,14 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="NumberType" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NumberType" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NumberType"><span data-ttu-id="7dae9-136">省略可能な<b>オブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="7dae9-136">Optional <b>Object</b>.</span></span> <span data-ttu-id="7dae9-137">変換する数値の種類を指定します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-137">The type of number to be converted.</span></span> <span data-ttu-id="7dae9-138">任意の<see cref="T:Microsoft.Office.Interop.Word.WdNumberType" />定数を使用できます。</span><span class="sxs-lookup"><span data-stu-id="7dae9-138">Can be any of the <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> constants.</span></span></param>
-        <summary><span data-ttu-id="7dae9-139">指定したリストの段落番号と LISTNUM フィールドをテキストに変更します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-139">Changes the list numbers and LISTNUM fields in the specified list to text.</span></span></summary>
-        <remarks><para><span data-ttu-id="7dae9-140">[箇条書きと段落番号] ダイアログボックスでテンプレートを選択することにより、段落に追加できる番号には、2つの種類があります。事前設定された番号 (<b>wdNumberParagraph</b>)。および LISTNUM フィールド (<b>wdNumberListNum</b>) を使用すると、1つの段落に複数の数を追加することができます。</span><span class="sxs-lookup"><span data-stu-id="7dae9-140">There are two types of numbers: preset numbers (<b>wdNumberParagraph</b>), which you can add to paragraphs by selecting a template in the Bullets and Numbering dialog box; and LISTNUM fields (<b>wdNumberListNum</b>), which allow you to add more than one number per paragraph.</span></span></para>
-          <para><span data-ttu-id="7dae9-141"><b>Convertnumber Stotext</b>メソッドは、別のアプリケーションで文書を操作するときに、アプリケーションがリストの書式設定や LISTNUM フィールドを認識しない場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="7dae9-141">The <b>ConvertNumbersToText</b> method is useful if you want to work with a document in another application and that application doesn't recognize list formatting or LISTNUM fields.</span></span></para>
-          <para><span data-ttu-id="7dae9-142">リスト番号をテキストに変換した後は、リスト内でそれらを操作することができなくなります。</span><span class="sxs-lookup"><span data-stu-id="7dae9-142">After you've converted list numbers to text, you can no longer manipulate them in a list.</span></span></para>
+        <param name="NumberType"><span data-ttu-id="297f6-136">省略可能な<b>オブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="297f6-136">Optional <b>Object</b>.</span></span> <span data-ttu-id="297f6-137">変換する数値の種類を指定します。</span><span class="sxs-lookup"><span data-stu-id="297f6-137">The type of number to be converted.</span></span> <span data-ttu-id="297f6-138">任意の定数を使用でき <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> ます。</span><span class="sxs-lookup"><span data-stu-id="297f6-138">Can be any of the <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> constants.</span></span></param>
+        <summary><span data-ttu-id="297f6-139">指定したリストの段落番号と LISTNUM フィールドをテキストに変更します。</span><span class="sxs-lookup"><span data-stu-id="297f6-139">Changes the list numbers and LISTNUM fields in the specified list to text.</span></span></summary>
+        <remarks><para><span data-ttu-id="297f6-140">[箇条書きと段落番号] ダイアログボックスでテンプレートを選択することにより、段落に追加できる番号には、2つの種類があります。事前設定された番号 (<b>wdNumberParagraph</b>)。および LISTNUM フィールド (<b>wdNumberListNum</b>) を使用すると、1つの段落に複数の数を追加することができます。</span><span class="sxs-lookup"><span data-stu-id="297f6-140">There are two types of numbers: preset numbers (<b>wdNumberParagraph</b>), which you can add to paragraphs by selecting a template in the Bullets and Numbering dialog box; and LISTNUM fields (<b>wdNumberListNum</b>), which allow you to add more than one number per paragraph.</span></span></para>
+          <para><span data-ttu-id="297f6-141"><b>Convertnumber Stotext</b>メソッドは、別のアプリケーションで文書を操作するときに、アプリケーションがリストの書式設定や LISTNUM フィールドを認識しない場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="297f6-141">The <b>ConvertNumbersToText</b> method is useful if you want to work with a document in another application and that application doesn't recognize list formatting or LISTNUM fields.</span></span></para>
+          <para><span data-ttu-id="297f6-142">リスト番号をテキストに変換した後は、リスト内でそれらを操作することができなくなります。</span><span class="sxs-lookup"><span data-stu-id="297f6-142">After you've converted list numbers to text, you can no longer manipulate them in a list.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -216,6 +227,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CountNumberedItems([in]object&amp; NumberType, [in]object&amp; Level) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.List.CountNumberedItems(System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function CountNumberedItems (Optional ByRef NumberType As Object, Optional ByRef Level As Object) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member CountNumberedItems : obj * obj -&gt; int" Usage="list.CountNumberedItems (NumberType, Level)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -230,16 +242,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="NumberType" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Level" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NumberType" Type="System.Object" RefType="ref" />
+        <Parameter Name="Level" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NumberType"><span data-ttu-id="7dae9-143">省略可能な<b>オブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="7dae9-143">Optional <b>Object</b>.</span></span> <span data-ttu-id="7dae9-144">カウントする番号の種類。</span><span class="sxs-lookup"><span data-stu-id="7dae9-144">The type of numbers to be counted.</span></span> <span data-ttu-id="7dae9-145"><b>WdNumberParagraph</b>、 <b>wdNumberListNum</b>、または<see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> <b>wdNumberAllNumbers</b>のいずれかの定数を使用できます。</span><span class="sxs-lookup"><span data-stu-id="7dae9-145">Can be one of the following <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> constants: <b>wdNumberParagraph</b>, <b>wdNumberListNum</b>, or <b>wdNumberAllNumbers</b>.</span></span> <span data-ttu-id="7dae9-146">既定値は <b>wdNumberAllNumbers</b> です。</span><span class="sxs-lookup"><span data-stu-id="7dae9-146">The default value is <b>wdNumberAllNumbers</b>.</span></span></param>
-        <param name="Level"><span data-ttu-id="7dae9-147">省略可能な<b>オブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="7dae9-147">Optional <b>Object</b>.</span></span> <span data-ttu-id="7dae9-148">カウントする番号のレベルに対応する数値を指定します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-148">A number that corresponds to the numbering level you want to count.</span></span> <span data-ttu-id="7dae9-149">この引数を省略すると、すべてのレベルの番号がカウントされます。</span><span class="sxs-lookup"><span data-stu-id="7dae9-149">If this argument is omitted, all levels are counted.</span></span></param>
-        <summary><span data-ttu-id="7dae9-150">指定されたリスト内の行頭文字または番号付きの項目と LISTNUM フィールドの数を返します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-150">Returns the number of bulleted or numbered items and LISTNUM fields in the specified list.</span></span></summary>
+        <param name="NumberType"><span data-ttu-id="297f6-143">省略可能な<b>オブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="297f6-143">Optional <b>Object</b>.</span></span> <span data-ttu-id="297f6-144">カウントする番号の種類。</span><span class="sxs-lookup"><span data-stu-id="297f6-144">The type of numbers to be counted.</span></span> <span data-ttu-id="297f6-145"><see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> <b>WdNumberParagraph</b>、 <b>WdNumberListNum</b>、または<b>wdNumberAllNumbers</b>のいずれかの定数を使用できます。</span><span class="sxs-lookup"><span data-stu-id="297f6-145">Can be one of the following <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> constants: <b>wdNumberParagraph</b>, <b>wdNumberListNum</b>, or <b>wdNumberAllNumbers</b>.</span></span> <span data-ttu-id="297f6-146">既定値は <b>wdNumberAllNumbers</b> です。</span><span class="sxs-lookup"><span data-stu-id="297f6-146">The default value is <b>wdNumberAllNumbers</b>.</span></span></param>
+        <param name="Level"><span data-ttu-id="297f6-147">省略可能な<b>オブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="297f6-147">Optional <b>Object</b>.</span></span> <span data-ttu-id="297f6-148">カウントする番号のレベルに対応する数値を指定します。</span><span class="sxs-lookup"><span data-stu-id="297f6-148">A number that corresponds to the numbering level you want to count.</span></span> <span data-ttu-id="297f6-149">この引数を省略すると、すべてのレベルの番号がカウントされます。</span><span class="sxs-lookup"><span data-stu-id="297f6-149">If this argument is omitted, all levels are counted.</span></span></param>
+        <summary><span data-ttu-id="297f6-150">指定されたリスト内の行頭文字または番号付きの項目と LISTNUM フィールドの数を返します。</span><span class="sxs-lookup"><span data-stu-id="297f6-150">Returns the number of bulleted or numbered items and LISTNUM fields in the specified list.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks><para><span data-ttu-id="7dae9-151">箇条書きの項目は、 <b>wdNumberParagraph</b>または<b>wdNumberAllNumbers</b> (既定値) がに指定<paramref name="NumberType" />されている場合にカウントされます。</span><span class="sxs-lookup"><span data-stu-id="7dae9-151">Bulleted items are counted when either <b>wdNumberParagraph</b> or <b>wdNumberAllNumbers</b> (the default) is specified for <paramref name="NumberType" />.</span></span></para>
-          <para><span data-ttu-id="7dae9-152">[箇条書きと段落番号] ダイアログボックスでテンプレートを選択することにより、段落に追加できる番号には、2つの種類があります。事前設定された番号 (<b>wdNumberParagraph</b>)。および LISTNUM フィールド (<b>wdNumberListNum</b>) を使用すると、1つの段落に複数の数を追加することができます。</span><span class="sxs-lookup"><span data-stu-id="7dae9-152">There are two types of numbers: preset numbers (<b>wdNumberParagraph</b>), which you can add to paragraphs by selecting a template in the Bullets and Numbering dialog box; and LISTNUM fields (<b>wdNumberListNum</b>), which allow you to add more than one number per paragraph.</span></span></para>
+        <remarks><para><span data-ttu-id="297f6-151">箇条書きの項目は、 <b>wdNumberParagraph</b>または<b>wdNumberAllNumbers</b> (既定値) がに指定されている場合にカウントされ <paramref name="NumberType" /> ます。</span><span class="sxs-lookup"><span data-stu-id="297f6-151">Bulleted items are counted when either <b>wdNumberParagraph</b> or <b>wdNumberAllNumbers</b> (the default) is specified for <paramref name="NumberType" />.</span></span></para>
+          <para><span data-ttu-id="297f6-152">[箇条書きと段落番号] ダイアログボックスでテンプレートを選択することにより、段落に追加できる番号には、2つの種類があります。事前設定された番号 (<b>wdNumberParagraph</b>)。および LISTNUM フィールド (<b>wdNumberListNum</b>) を使用すると、1つの段落に複数の数を追加することができます。</span><span class="sxs-lookup"><span data-stu-id="297f6-152">There are two types of numbers: preset numbers (<b>wdNumberParagraph</b>), which you can add to paragraphs by selecting a template in the Bullets and Numbering dialog box; and LISTNUM fields (<b>wdNumberListNum</b>), which allow you to add more than one number per paragraph.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -249,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.List.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.List.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -266,10 +279,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7dae9-153">指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-153">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
+        <summary><span data-ttu-id="297f6-153">指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</span><span class="sxs-lookup"><span data-stu-id="297f6-153">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="7dae9-154">オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-154">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="7dae9-155">[!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</span><span class="sxs-lookup"><span data-stu-id="7dae9-155">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="7dae9-156"><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。</span><span class="sxs-lookup"><span data-stu-id="7dae9-156">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="7dae9-157">たとえば、Word には作成者コード MSWD です。</span><span class="sxs-lookup"><span data-stu-id="7dae9-157">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="7dae9-158">このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</span><span class="sxs-lookup"><span data-stu-id="7dae9-158">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="297f6-154">オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。</span><span class="sxs-lookup"><span data-stu-id="297f6-154">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="297f6-155">[!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</span><span class="sxs-lookup"><span data-stu-id="297f6-155">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="297f6-156"><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。</span><span class="sxs-lookup"><span data-stu-id="297f6-156">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="297f6-157">たとえば、Word には作成者コード MSWD です。</span><span class="sxs-lookup"><span data-stu-id="297f6-157">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="297f6-158">このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</span><span class="sxs-lookup"><span data-stu-id="297f6-158">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -279,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.List.ListParagraphs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListParagraphs As ListParagraphs" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ListParagraphs ^ ListParagraphs { Microsoft::Office::Interop::Word::ListParagraphs ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListParagraphs : Microsoft.Office.Interop.Word.ListParagraphs" Usage="Microsoft.Office.Interop.Word.List.ListParagraphs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -296,7 +310,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListParagraphs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7dae9-159">リスト内<see cref="T:Microsoft.Office.Interop.Word.ListParagraphs" />のすべての番号付き段落を表すコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-159">Returns a <see cref="T:Microsoft.Office.Interop.Word.ListParagraphs" /> collection that represents all the numbered paragraphs in the list.</span></span></summary>
+        <summary><span data-ttu-id="297f6-159"><see cref="T:Microsoft.Office.Interop.Word.ListParagraphs" />リスト内のすべての番号付き段落を表すコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="297f6-159">Returns a <see cref="T:Microsoft.Office.Interop.Word.ListParagraphs" /> collection that represents all the numbered paragraphs in the list.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -307,6 +321,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.List.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.List.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -324,7 +339,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7dae9-160">指定されたオブジェクトの親オブジェクトを表すオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-160">Returns an object that represents the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="297f6-160">指定されたオブジェクトの親オブジェクトを表すオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="297f6-160">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -335,6 +350,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.List.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.List.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -352,9 +368,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7dae9-161">指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />たオブジェクトに含まれる文書の一部を表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-161">Returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the portion of a document that's contained in the specified object.</span></span></summary>
+        <summary><span data-ttu-id="297f6-161">指定した <see cref="T:Microsoft.Office.Interop.Word.Range" /> オブジェクトに含まれる文書の一部を表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="297f6-161">Returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the portion of a document that's contained in the specified object.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="7dae9-162">文書から指定範囲を取得する<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法、または図形のコレクションから図形範囲を取得する方法については、メソッドを参照してください。</span><span class="sxs-lookup"><span data-stu-id="7dae9-162">For information about returning a range from a document or returning a shape range from a collection of shapes, see the <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> method.</span></span></para>
+        <remarks><para><span data-ttu-id="297f6-162">文書から指定範囲を取得する方法、または図形のコレクションから図形範囲を取得する方法については、メソッドを参照してください <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> 。</span><span class="sxs-lookup"><span data-stu-id="297f6-162">For information about returning a range from a document or returning a shape range from a collection of shapes, see the <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> method.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -363,6 +379,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveNumbers([in]object&amp; NumberType) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.List.RemoveNumbers(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveNumbers (Optional ByRef NumberType As Object)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveNumbers : obj -&gt; unit" Usage="list.RemoveNumbers NumberType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -377,12 +394,12 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="NumberType" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NumberType" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NumberType"><span data-ttu-id="7dae9-163">省略<see cref="T:Microsoft.Office.Interop.Word.WdNumberType" />可能です。</span><span class="sxs-lookup"><span data-stu-id="7dae9-163">Optional <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" />.</span></span> <span data-ttu-id="7dae9-164">削除する番号の種類を指定します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-164">The type of number to be removed.</span></span></param>
-        <summary><span data-ttu-id="7dae9-165">指定したリストから段落番号または行頭文字を削除します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-165">Removes numbers or bullets from the specified list.</span></span></summary>
-        <remarks><para><span data-ttu-id="7dae9-166"><see cref="T:Microsoft.Office.Interop.Word.List" />オブジェクトに対してこのメソッドを適用すると、指定された箇条書きの段落から番号のみが削除され、他のリストのインターリーブされた番号は無視されます。</span><span class="sxs-lookup"><span data-stu-id="7dae9-166">When this method is applied to a <see cref="T:Microsoft.Office.Interop.Word.List" /> object, it removes numbers only from paragraphs in the specified list, skipping over any interleaved numbers from other lists.</span></span> <span data-ttu-id="7dae9-167">このメソッドをテキスト範囲の<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトに適用すると、範囲内のすべてのリストからのすべての数値が削除されます。</span><span class="sxs-lookup"><span data-stu-id="7dae9-167">If this method is applied to the <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> object for a range of text, all numbers from all lists in the range are removed.</span></span></para>
+        <param name="NumberType"><span data-ttu-id="297f6-163">省略可能 <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> です。</span><span class="sxs-lookup"><span data-stu-id="297f6-163">Optional <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" />.</span></span> <span data-ttu-id="297f6-164">削除する番号の種類を指定します。</span><span class="sxs-lookup"><span data-stu-id="297f6-164">The type of number to be removed.</span></span></param>
+        <summary><span data-ttu-id="297f6-165">指定したリストから段落番号または行頭文字を削除します。</span><span class="sxs-lookup"><span data-stu-id="297f6-165">Removes numbers or bullets from the specified list.</span></span></summary>
+        <remarks><para><span data-ttu-id="297f6-166">オブジェクトに対してこのメソッドを適用すると、 <see cref="T:Microsoft.Office.Interop.Word.List" /> 指定された箇条書きの段落から番号のみが削除され、他のリストのインターリーブされた番号は無視されます。</span><span class="sxs-lookup"><span data-stu-id="297f6-166">When this method is applied to a <see cref="T:Microsoft.Office.Interop.Word.List" /> object, it removes numbers only from paragraphs in the specified list, skipping over any interleaved numbers from other lists.</span></span> <span data-ttu-id="297f6-167">このメソッドを <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> テキスト範囲のオブジェクトに適用すると、範囲内のすべてのリストからのすべての数値が削除されます。</span><span class="sxs-lookup"><span data-stu-id="297f6-167">If this method is applied to the <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> object for a range of text, all numbers from all lists in the range are removed.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -392,6 +409,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.List.SingleListTemplate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SingleListTemplate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SingleListTemplate { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SingleListTemplate : bool" Usage="Microsoft.Office.Interop.Word.List.SingleListTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -409,7 +427,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7dae9-168"><b>True</b>の場合は、リストオブジェクト全体で同じリストテンプレートが使用されます。</span><span class="sxs-lookup"><span data-stu-id="7dae9-168"><b>True</b> if the entire list object uses the same list template.</span></span></summary>
+        <summary><span data-ttu-id="297f6-168"><b>True</b>の場合は、リストオブジェクト全体で同じリストテンプレートが使用されます。</span><span class="sxs-lookup"><span data-stu-id="297f6-168"><b>True</b> if the entire list object uses the same list template.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -420,6 +438,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.List.StyleName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StyleName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StyleName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StyleName : string" Usage="Microsoft.Office.Interop.Word.List.StyleName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -437,7 +456,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7dae9-169">指定した定型句エントリに適用するスタイルの名前を返します。</span><span class="sxs-lookup"><span data-stu-id="7dae9-169">Returns the name of the style applied to the specified AutoText entry.</span></span></summary>
+        <summary><span data-ttu-id="297f6-169">指定した定型句エントリに適用するスタイルの名前を返します。</span><span class="sxs-lookup"><span data-stu-id="297f6-169">Returns the name of the style applied to the specified AutoText entry.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,9 +1,10 @@
 <Type Name="Variable" FullName="Microsoft.Office.Interop.Word.Variable">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3e2a8fae352f5d719c8e9311fb04b65b7fefebfe" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143771" /></Metadata><TypeSignature Language="C#" Value="public interface Variable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dac135c617d95f26e7bf7f3cc0690c7d5eb106a7" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925913" /></Metadata><TypeSignature Language="C#" Value="public interface Variable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Variable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Variable" />
   <TypeSignature Language="VB.NET" Value="Public Interface Variable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Variable" />
+  <TypeSignature Language="F#" Value="type Variable = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,14 +19,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="e063b-101">文書の一部として格納された変数を表します。</span><span class="sxs-lookup"><span data-stu-id="e063b-101">Represents a variable stored as part of a document.</span></span> <span data-ttu-id="e063b-102">文書変数は、マクロ セッション間でマクロの設定を保存するときに使用します。</span><span class="sxs-lookup"><span data-stu-id="e063b-102">Document variables are used to preserve macro settings in between macro sessions.</span></span></summary>
-    <remarks><para><span data-ttu-id="e063b-103"><b>変数</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Variables" />コレクションのメンバーです。</span><span class="sxs-lookup"><span data-stu-id="e063b-103">The <b>Variable</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.Variables" /> collection.</span></span> <span data-ttu-id="e063b-104"><b>Variables</b> コレクションには、文書またはテンプレートのすべての文書変数が含まれます。</span><span class="sxs-lookup"><span data-stu-id="e063b-104">The <b>Variables</b> collection includes all the document variables in a document or template.</span></span></para>
-      <para><span data-ttu-id="e063b-105">変数<b></b>(<paramref name="index" />) を使用し<paramref name="index" />ます。ここで、は文書変数名またはインデックス番号を使用して、単一の<b>variable</b>オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="e063b-105">Use <b>Variables</b>(<paramref name="index" />), where <paramref name="index" /> is the document variable name or the index number, to return a single <b>Variable</b> object.</span></span></para>
-      <para><span data-ttu-id="e063b-106">インデックス番号は、 <b>Variables</b>コレクションでの文書変数の位置を表します。</span><span class="sxs-lookup"><span data-stu-id="e063b-106">The index number represents the position of the document variable in the <b>Variables</b> collection.</span></span> <span data-ttu-id="e063b-107"><b>Variables</b>コレクションに最後に追加された変数のインデックス番号は1です。コレクションに最後に追加された変数のインデックス番号2は、次のようになります。</span><span class="sxs-lookup"><span data-stu-id="e063b-107">The last variable added to the <b>Variables</b> collection is index number 1; the second-to-last variable added to the collection is index number 2, and so on.</span></span></para>
-      <para><span data-ttu-id="e063b-108">文書に<see cref="M:Microsoft.Office.Interop.Word.Variables.Add(System.String,System.Object@)" />変数を<see cref="T:Microsoft.Office.Interop.Word.Variables" />追加するのにには、collection メソッドのを使用します。</span><span class="sxs-lookup"><span data-stu-id="e063b-108">Use the <see cref="M:Microsoft.Office.Interop.Word.Variables.Add(System.String,System.Object@)" /> of the <see cref="T:Microsoft.Office.Interop.Word.Variables" /> collection method to add a variable to a document.</span></span></para>
-      <para><span data-ttu-id="e063b-109"><b>Variables</b> コレクションに既に存在する名前の文書変数を追加しようとすると、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="e063b-109">If you try to add a document variable with a name that already exists in the <b>Variables</b> collection, an error occurs.</span></span> <span data-ttu-id="e063b-110">このエラーを回避するのには、新しい変数を追加する前にコレクションを列挙できます。</span><span class="sxs-lookup"><span data-stu-id="e063b-110">To avoid this error, you can enumerate the collection before adding any new variables.</span></span></para>
-      <para><span data-ttu-id="e063b-111">文書変数は、適切な変数名で DOCVARIABLE フィールドを挿入しない限りにはユーザーに表示されません。</span><span class="sxs-lookup"><span data-stu-id="e063b-111">Document variables are invisible to the user unless a DOCVARIABLE field is inserted with the appropriate variable name.</span></span></para>
-      <para><span data-ttu-id="e063b-112">文書変数をテンプレートに追加するには、 <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" />メソッドを使用して、テンプレートを文書として開きます。</span><span class="sxs-lookup"><span data-stu-id="e063b-112">To add a document variable to a template, open the template as a document by using the <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> method.</span></span></para>
+    <summary><span data-ttu-id="33447-101">文書の一部として格納された変数を表します。</span><span class="sxs-lookup"><span data-stu-id="33447-101">Represents a variable stored as part of a document.</span></span> <span data-ttu-id="33447-102">文書変数は、マクロ セッション間でマクロの設定を保存するときに使用します。</span><span class="sxs-lookup"><span data-stu-id="33447-102">Document variables are used to preserve macro settings in between macro sessions.</span></span></summary>
+    <remarks><para><span data-ttu-id="33447-103"><b>変数</b>オブジェクトは、コレクションのメンバーです <see cref="T:Microsoft.Office.Interop.Word.Variables" /> 。</span><span class="sxs-lookup"><span data-stu-id="33447-103">The <b>Variable</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.Variables" /> collection.</span></span> <span data-ttu-id="33447-104"><b>Variables</b> コレクションには、文書またはテンプレートのすべての文書変数が含まれます。</span><span class="sxs-lookup"><span data-stu-id="33447-104">The <b>Variables</b> collection includes all the document variables in a document or template.</span></span></para>
+      <para><span data-ttu-id="33447-105">変数<b>(</b> <paramref name="index" /> ) を使用します。ここで、 <paramref name="index" /> は文書変数名またはインデックス番号を使用して、単一の<b>variable</b>オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="33447-105">Use <b>Variables</b>(<paramref name="index" />), where <paramref name="index" /> is the document variable name or the index number, to return a single <b>Variable</b> object.</span></span></para>
+      <para><span data-ttu-id="33447-106">インデックス番号は、 <b>Variables</b>コレクションでの文書変数の位置を表します。</span><span class="sxs-lookup"><span data-stu-id="33447-106">The index number represents the position of the document variable in the <b>Variables</b> collection.</span></span> <span data-ttu-id="33447-107"><b>Variables</b>コレクションに最後に追加された変数のインデックス番号は1です。コレクションに最後に追加された変数のインデックス番号2は、次のようになります。</span><span class="sxs-lookup"><span data-stu-id="33447-107">The last variable added to the <b>Variables</b> collection is index number 1; the second-to-last variable added to the collection is index number 2, and so on.</span></span></para>
+      <para><span data-ttu-id="33447-108"><see cref="M:Microsoft.Office.Interop.Word.Variables.Add(System.String,System.Object@)" /> <see cref="T:Microsoft.Office.Interop.Word.Variables" /> 文書に変数を追加するのにには、collection メソッドのを使用します。</span><span class="sxs-lookup"><span data-stu-id="33447-108">Use the <see cref="M:Microsoft.Office.Interop.Word.Variables.Add(System.String,System.Object@)" /> of the <see cref="T:Microsoft.Office.Interop.Word.Variables" /> collection method to add a variable to a document.</span></span></para>
+      <para><span data-ttu-id="33447-109"><b>Variables</b> コレクションに既に存在する名前の文書変数を追加しようとすると、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="33447-109">If you try to add a document variable with a name that already exists in the <b>Variables</b> collection, an error occurs.</span></span> <span data-ttu-id="33447-110">このエラーを回避するのには、新しい変数を追加する前にコレクションを列挙できます。</span><span class="sxs-lookup"><span data-stu-id="33447-110">To avoid this error, you can enumerate the collection before adding any new variables.</span></span></para>
+      <para><span data-ttu-id="33447-111">文書変数は、適切な変数名で DOCVARIABLE フィールドを挿入しない限りにはユーザーに表示されません。</span><span class="sxs-lookup"><span data-stu-id="33447-111">Document variables are invisible to the user unless a DOCVARIABLE field is inserted with the appropriate variable name.</span></span></para>
+      <para><span data-ttu-id="33447-112">文書変数をテンプレートに追加するには、メソッドを使用して、テンプレートを文書として開き <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> ます。</span><span class="sxs-lookup"><span data-stu-id="33447-112">To add a document variable to a template, open the template as a document by using the <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> method.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Variable.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Variable.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -52,7 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e063b-113">Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="e063b-113">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="33447-113"><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="33447-113">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Variable.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Variable.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -80,10 +83,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e063b-114">指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</span><span class="sxs-lookup"><span data-stu-id="e063b-114">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
+        <summary><span data-ttu-id="33447-114">指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</span><span class="sxs-lookup"><span data-stu-id="33447-114">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="e063b-115">オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。</span><span class="sxs-lookup"><span data-stu-id="e063b-115">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="e063b-116">[!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</span><span class="sxs-lookup"><span data-stu-id="e063b-116">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="e063b-117"><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。</span><span class="sxs-lookup"><span data-stu-id="e063b-117">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="e063b-118">たとえば、Word には作成者コード MSWD です。</span><span class="sxs-lookup"><span data-stu-id="e063b-118">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="e063b-119">このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e063b-119">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="33447-115">オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。</span><span class="sxs-lookup"><span data-stu-id="33447-115">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="33447-116">[!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</span><span class="sxs-lookup"><span data-stu-id="33447-116">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="33447-117"><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。</span><span class="sxs-lookup"><span data-stu-id="33447-117">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="33447-118">たとえば、Word には作成者コード MSWD です。</span><span class="sxs-lookup"><span data-stu-id="33447-118">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="33447-119">このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</span><span class="sxs-lookup"><span data-stu-id="33447-119">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Variable.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="variable.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -108,7 +112,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="e063b-120">指定されたオブジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="e063b-120">Deletes the specified object.</span></span></summary>
+        <summary><span data-ttu-id="33447-120">指定されたオブジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="33447-120">Deletes the specified object.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Variable.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.Variable.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -135,7 +140,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e063b-121">コレクション内の項目の位置を表す<b>整数型 (Integer</b> ) の値を取得します。</span><span class="sxs-lookup"><span data-stu-id="e063b-121">Returns an <b>Integer</b> that represents the position of an item in a collection.</span></span></summary>
+        <summary><span data-ttu-id="33447-121">コレクション内の項目の位置を表す<b>整数型 (Integer</b> ) の値を取得します。</span><span class="sxs-lookup"><span data-stu-id="33447-121">Returns an <b>Integer</b> that represents the position of an item in a collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Variable.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.Variable.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -163,7 +169,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e063b-122">指定したオブジェクトの名前を設定または返します。</span><span class="sxs-lookup"><span data-stu-id="e063b-122">Returns or sets the name of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="33447-122">指定したオブジェクトの名前を設定または返します。</span><span class="sxs-lookup"><span data-stu-id="33447-122">Returns or sets the name of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -174,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Variable.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Variable.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -191,7 +198,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e063b-123">指定されたオブジェクトの親オブジェクトを表すオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="e063b-123">Returns an object that represents the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="33447-123">指定されたオブジェクトの親オブジェクトを表すオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="33447-123">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -202,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Variable.Value" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Office.Interop.Word.Variable.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -222,7 +230,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e063b-124">文書変数の値を設定または返します。</span><span class="sxs-lookup"><span data-stu-id="e063b-124">Returns or sets the value of the document variable.</span></span></summary>
+        <summary><span data-ttu-id="33447-124">文書変数の値を設定または返します。</span><span class="sxs-lookup"><span data-stu-id="33447-124">Returns or sets the value of the document variable.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,9 +1,10 @@
 <Type Name="Pane" FullName="Microsoft.Office.Interop.Word.Pane">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2c6d2b532972458c15ddcaf3f76f72a0ddd27d36" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147740" /></Metadata><TypeSignature Language="C#" Value="public interface Pane" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4f308afaf8401d346ac4ffdb21a90f617e1a530a" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924754" /></Metadata><TypeSignature Language="C#" Value="public interface Pane" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Pane" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Pane" />
   <TypeSignature Language="VB.NET" Value="Public Interface Pane" />
   <TypeSignature Language="C++ CLI" Value="public interface class Pane" />
+  <TypeSignature Language="F#" Value="type Pane = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,8 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="5dd96-101">ウィンドウ枠を表します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-101">Represents a window pane.</span></span> <span data-ttu-id="5dd96-102"><b>ウィンドウ</b> オブジェクトは、 <b>Panes</b> コレクションのメンバーです。</span><span class="sxs-lookup"><span data-stu-id="5dd96-102">The <b>Pane</b> object is a member of the <b>Panes</b> collection.</span></span> <span data-ttu-id="5dd96-103">コレクション<see cref="Panes#SameCHM" />には、1つのウィンドウのすべてのウィンドウ枠が含まれています。</span><span class="sxs-lookup"><span data-stu-id="5dd96-103">The <see cref="Panes#SameCHM" /> collection includes all the window panes for a single window.</span></span></summary>
-    <remarks><para><span data-ttu-id="5dd96-104">単一の<b>Pane</b>オブジェクトを取得<paramref name="Index" />するのにには、 <b>Panes</b>(<paramref name="Index" />) を使用します。ここで、はインデックス番号を指定します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-104">Use <b>Panes</b>(<paramref name="Index" />), where <paramref name="Index" /> is the index number, to return a single <b>Pane</b> object.</span></span> <span data-ttu-id="5dd96-105">次の例では、作業中のウィンドウを閉じます。</span><span class="sxs-lookup"><span data-stu-id="5dd96-105">The following example closes the active pane.</span></span></para>
+    <summary><span data-ttu-id="a8e0b-101">ウィンドウ枠を表します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-101">Represents a window pane.</span></span> <span data-ttu-id="a8e0b-102"><b>ウィンドウ</b> オブジェクトは、 <b>Panes</b> コレクションのメンバーです。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-102">The <b>Pane</b> object is a member of the <b>Panes</b> collection.</span></span> <span data-ttu-id="a8e0b-103">コレクションには、 <see cref="Panes#SameCHM" /> 1 つのウィンドウのすべてのウィンドウ枠が含まれています。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-103">The <see cref="Panes#SameCHM" /> collection includes all the window panes for a single window.</span></span></summary>
+    <remarks><para><span data-ttu-id="a8e0b-104">単一<b>Panes</b>の <paramref name="Index" /> Pane オブジェクトを取得するのにには、Panes () を使用します。ここで、 <paramref name="Index" /> はインデックス番号を指定します。 <b>Pane</b></span><span class="sxs-lookup"><span data-stu-id="a8e0b-104">Use <b>Panes</b>(<paramref name="Index" />), where <paramref name="Index" /> is the index number, to return a single <b>Pane</b> object.</span></span> <span data-ttu-id="a8e0b-105">次の例では、作業中のウィンドウを閉じます。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-105">The following example closes the active pane.</span></span></para>
       <code>&lt;span class="label"&gt;If ActiveDocument.ActiveWindow.Panes.Count &amp;gt;= 2 Then _ 
 
 
@@ -277,12 +278,12 @@
 
 
     ActiveDocument.ActiveWindow.ActivePane.Close&lt;/span&gt;</code>
-      <para><span data-ttu-id="5dd96-p103">ウィンドウ枠を追加するのには、 <b>Add</b> メソッドまたは <b>Split</b> プロパティを使用します。次の例では、現在のウィンドウ サイズの 20% では、作業中のウィンドウを分割します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-p103">Use the <b>Add</b> method or the <b>Split</b> property to add a window pane. The following example splits the active window at 20 percent of the current window size.</span></span></para>
+      <para><span data-ttu-id="a8e0b-p103">ウィンドウ枠を追加するのには、 <b>Add</b> メソッドまたは <b>Split</b> プロパティを使用します。次の例では、現在のウィンドウ サイズの 20% では、作業中のウィンドウを分割します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-p103">Use the <b>Add</b> method or the <b>Split</b> property to add a window pane. The following example splits the active window at 20 percent of the current window size.</span></span></para>
       <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Panes.Add SplitVertical:=20&lt;/span&gt;</code>
-      <para><span data-ttu-id="5dd96-108">次の使用例は、作業中のウィンドウを半分に分割します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-108">The following example splits the active window in half.</span></span></para>
+      <para><span data-ttu-id="a8e0b-108">次の使用例は、作業中のウィンドウを半分に分割します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-108">The following example splits the active window in half.</span></span></para>
       <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Split = True&lt;/span&gt;</code>
-      <para><span data-ttu-id="5dd96-109"><b>SplitSpecial</b> プロパティを使用すると、コメント、脚注、または文末脚注を別のウィンドウで表示します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-109">You can use the <b>SplitSpecial</b> property to show comments, footnotes, or endnotes in a separate pane.</span></span></para>
-      <para><span data-ttu-id="5dd96-p104">ウィンドウが分割されている場合、または印刷レイアウト モード以外の表示モードで脚注やコメントなどの情報が表示されている場合、ウィンドウは複数のウィンドウ枠に分割されています。次の使用例は、標準モードでコメント ウィンドウ枠を表示し、メッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-p104">A window has more than one pane if the window is split or the view is not print layout view and information such as footnotes or comments are displayed. The following example displays the comments pane in normal view and then prompts to close the pane.</span></span></para>
+      <para><span data-ttu-id="a8e0b-109"><b>SplitSpecial</b> プロパティを使用すると、コメント、脚注、または文末脚注を別のウィンドウで表示します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-109">You can use the <b>SplitSpecial</b> property to show comments, footnotes, or endnotes in a separate pane.</span></span></para>
+      <para><span data-ttu-id="a8e0b-p104">ウィンドウが分割されている場合、または印刷レイアウト モード以外の表示モードで脚注やコメントなどの情報が表示されている場合、ウィンドウは複数のウィンドウ枠に分割されています。次の使用例は、標準モードでコメント ウィンドウ枠を表示し、メッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-p104">A window has more than one pane if the window is split or the view is not print layout view and information such as footnotes or comments are displayed. The following example displays the comments pane in normal view and then prompts to close the pane.</span></span></para>
       <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.View.Type = wdNormalView 
 
 
@@ -2085,6 +2086,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Pane.Activate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Activate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Activate();" />
+      <MemberSignature Language="F#" Value="abstract member Activate : unit -&gt; unit" Usage="pane.Activate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2100,9 +2102,9 @@ End If&lt;/span&gt;</code>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="5dd96-112">指定されたウィンドウ枠をアクティブにします。</span><span class="sxs-lookup"><span data-stu-id="5dd96-112">Activates the specified pane.</span></span></summary>
+        <summary><span data-ttu-id="a8e0b-112">指定されたウィンドウ枠をアクティブにします。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-112">Activates the specified pane.</span></span></summary>
         <remarks>To be added.</remarks>
-        <example><para><span data-ttu-id="5dd96-113">次の使用例は、作業中のウィンドウを分割し、最初のウィンドウ枠をアクティブにします。</span><span class="sxs-lookup"><span data-stu-id="5dd96-113">This example splits the active window and then activates the first pane.</span></span></para>
+        <example><para><span data-ttu-id="a8e0b-113">次の使用例は、作業中のウィンドウを分割し、最初のウィンドウ枠をアクティブにします。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-113">This example splits the active window and then activates the first pane.</span></span></para>
           <code>&lt;span class="label"&gt;Sub SplitWindow() 
 
 
@@ -2882,6 +2884,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Pane.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2899,9 +2902,9 @@ End If&lt;/span&gt;</code>
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="5dd96-114">Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-114">Returns an <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="a8e0b-114"><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-114">Returns an <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="5dd96-115">Visual Basic の CreateObject および GetObject 関数を使用すると、Visual Basic for Applications プロジェクトから OLE オートメーション オブジェクトにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="5dd96-115">Visual Basic's CreateObject and GetObject functions give you access to an OLE Automation object from a Visual Basic for Applications project.</span></span></para>
+        <remarks><para><span data-ttu-id="a8e0b-115">Visual Basic の CreateObject および GetObject 関数を使用すると、Visual Basic for Applications プロジェクトから OLE オートメーション オブジェクトにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-115">Visual Basic's CreateObject and GetObject functions give you access to an OLE Automation object from a Visual Basic for Applications project.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2911,6 +2914,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Pane.AutoScroll(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AutoScroll (Velocity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AutoScroll(int Velocity);" />
+      <MemberSignature Language="F#" Value="abstract member AutoScroll : int -&gt; unit" Usage="pane.AutoScroll Velocity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2928,8 +2932,8 @@ End If&lt;/span&gt;</code>
         <Parameter Name="Velocity" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Velocity"><span data-ttu-id="5dd96-116">スクロールの速度です。</span><span class="sxs-lookup"><span data-stu-id="5dd96-116">The speed for scrolling.</span></span></param>
-        <summary><span data-ttu-id="5dd96-117">指定されたウィンドウ枠を自動的にスクロールします。</span><span class="sxs-lookup"><span data-stu-id="5dd96-117">Scrolls automatically through the specified pane.</span></span></summary>
+        <param name="Velocity"><span data-ttu-id="a8e0b-116">スクロールの速度です。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-116">The speed for scrolling.</span></span></param>
+        <summary><span data-ttu-id="a8e0b-117">指定されたウィンドウ枠を自動的にスクロールします。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-117">Scrolls automatically through the specified pane.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2939,6 +2943,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.BrowseToWindow" />
       <MemberSignature Language="VB.NET" Value="Public Property BrowseToWindow As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BrowseToWindow { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.BrowseToWindow : bool with get, set" Usage="Microsoft.Office.Interop.Word.Pane.BrowseToWindow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2965,7 +2970,7 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="5dd96-118">内部使用のため予約済みです。</span><span class="sxs-lookup"><span data-stu-id="5dd96-118">Reserved for internal use.</span></span></summary>
+        <summary><span data-ttu-id="a8e0b-118">内部使用のため予約済みです。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-118">Reserved for internal use.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2976,6 +2981,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.BrowseWidth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BrowseWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BrowseWidth { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.BrowseWidth : int" Usage="Microsoft.Office.Interop.Word.Pane.BrowseWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2993,9 +2999,9 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="5dd96-119">指定されたペインに文字列を折り返す領域の幅 (ポイント単位で) を返します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-119">Returns the width (in points) of the area in which text wraps in the specified pane.</span></span> <span data-ttu-id="5dd96-120">読み取り専用 <b>Long</b> です。</span><span class="sxs-lookup"><span data-stu-id="5dd96-120">Read-only <b>Long</b>.</span></span></summary>
+        <summary><span data-ttu-id="a8e0b-119">指定されたペインに文字列を折り返す領域の幅 (ポイント単位で) を返します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-119">Returns the width (in points) of the area in which text wraps in the specified pane.</span></span> <span data-ttu-id="a8e0b-120">読み取り専用 <b>Long</b> です。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-120">Read-only <b>Long</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="5dd96-121">このプロパティは Web レイアウト表示でのみ有効です。</span><span class="sxs-lookup"><span data-stu-id="5dd96-121">This property works only when you are in Web layout view.</span></span></para>
+        <remarks><para><span data-ttu-id="a8e0b-121">このプロパティは Web レイアウト表示でのみ有効です。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-121">This property works only when you are in Web layout view.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3005,6 +3011,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Pane.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit" Usage="pane.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3020,9 +3027,9 @@ End If&lt;/span&gt;</code>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="5dd96-122">指定された差し込み印刷用のデータ ファイル、ウィンドウ枠、またはタスクを閉じます。</span><span class="sxs-lookup"><span data-stu-id="5dd96-122">Closes the specified Mail Merge data source, pane, or task.</span></span></summary>
+        <summary><span data-ttu-id="a8e0b-122">指定された差し込み印刷用のデータ ファイル、ウィンドウ枠、またはタスクを閉じます。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-122">Closes the specified Mail Merge data source, pane, or task.</span></span></summary>
         <remarks>To be added.</remarks>
-        <example><para><span data-ttu-id="5dd96-123">次の使用例は、作業中の文書ウィンドウが分割されている場合、作業中のウィンドウ枠を閉じます。</span><span class="sxs-lookup"><span data-stu-id="5dd96-123">This example closes the active pane if the active window is split.</span></span></para>
+        <example><para><span data-ttu-id="a8e0b-123">次の使用例は、作業中の文書ウィンドウが分割されている場合、作業中のウィンドウ枠を閉じます。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-123">This example closes the active pane if the active window is split.</span></span></para>
           <code>&lt;span class="label"&gt;If ActiveDocument.ActiveWindow.Panes.Count &amp;gt;= 2 Then _ 
 
 
@@ -3289,6 +3296,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Pane.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3306,9 +3314,9 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="5dd96-124">指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-124">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span> <span data-ttu-id="5dd96-125">取得のみ可能な <b>Long</b> 値です。</span><span class="sxs-lookup"><span data-stu-id="5dd96-125">Read-only <b>Long</b>.</span></span></summary>
+        <summary><span data-ttu-id="a8e0b-124">指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-124">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span> <span data-ttu-id="a8e0b-125">取得のみ可能な <b>Long</b> 値です。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-125">Read-only <b>Long</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="5dd96-126">オブジェクトは、Microsoft Word で作成されている場合、 <b>作成者</b> を返します、16 進数の値である 4d535744 を文字列します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-126">If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span>  <span data-ttu-id="5dd96-127">このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。</span><span class="sxs-lookup"><span data-stu-id="5dd96-127">This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="5dd96-128">たとえば、Word には作成者コード MSWD です。</span><span class="sxs-lookup"><span data-stu-id="5dd96-128">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="5dd96-129">このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</span><span class="sxs-lookup"><span data-stu-id="5dd96-129">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="a8e0b-126">オブジェクトは、Microsoft Word で作成されている場合、 <b>作成者</b> を返します、16 進数の値である 4d535744 を文字列します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-126">If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span>  <span data-ttu-id="a8e0b-127">このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-127">This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="a8e0b-128">たとえば、Word には作成者コード MSWD です。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-128">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="a8e0b-129">このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-129">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3318,6 +3326,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.DisplayRulers" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayRulers As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayRulers { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayRulers : bool with get, set" Usage="Microsoft.Office.Interop.Word.Pane.DisplayRulers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3338,11 +3347,11 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="5dd96-130"><b>True の</b> 場合は、指定したウィンドウのルーラーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="5dd96-130"><b>True</b> if rulers are displayed for the specified pane.</span></span> <span data-ttu-id="5dd96-131">読み取り/書き込みが可能な <b>Boolean</b> です。</span><span class="sxs-lookup"><span data-stu-id="5dd96-131">Read/write <b>Boolean</b>.</span></span></summary>
+        <summary><span data-ttu-id="a8e0b-130"><b>True の</b> 場合は、指定したウィンドウのルーラーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-130"><b>True</b> if rulers are displayed for the specified pane.</span></span> <span data-ttu-id="a8e0b-131">読み取り/書き込みが可能な <b>Boolean</b> です。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-131">Read/write <b>Boolean</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="5dd96-132"><b>DisplayRulers</b> プロパティは、[ 表示] メニューの [ルーラーのコマンドと同じです。</span><span class="sxs-lookup"><span data-stu-id="5dd96-132">The <b>DisplayRulers</b> property is equivalent to the Ruler command on the View menu.</span></span> <span data-ttu-id="5dd96-133"><b>DisplayRulers</b> が <b>False</b> の場合は、水平方向および垂直方向のルーラーは表示されません、 <b>DisplayVerticalRuler</b> プロパティの状態を無視します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-133">If <b>DisplayRulers</b> is <b>False</b>, the horizontal and vertical rulers won't be displayed, regardless of the state of the <b>DisplayVerticalRuler</b> property.</span></span></para>
+        <remarks><para><span data-ttu-id="a8e0b-132"><b>DisplayRulers</b> プロパティは、[ 表示] メニューの [ルーラーのコマンドと同じです。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-132">The <b>DisplayRulers</b> property is equivalent to the Ruler command on the View menu.</span></span> <span data-ttu-id="a8e0b-133"><b>DisplayRulers</b> が <b>False</b> の場合は、水平方向および垂直方向のルーラーは表示されません、 <b>DisplayVerticalRuler</b> プロパティの状態を無視します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-133">If <b>DisplayRulers</b> is <b>False</b>, the horizontal and vertical rulers won't be displayed, regardless of the state of the <b>DisplayVerticalRuler</b> property.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="5dd96-134">次の使用例は、作業中のウィンドウ枠を印刷レイアウト表示に切り替え、垂直および水平方向のルーラーを表示します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-134">This example switches the active pane to print layout view and displays the horizontal and vertical rulers.</span></span></para>
+        <example><para><span data-ttu-id="a8e0b-134">次の使用例は、作業中のウィンドウ枠を印刷レイアウト表示に切り替え、垂直および水平方向のルーラーを表示します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-134">This example switches the active pane to print layout view and displays the horizontal and vertical rulers.</span></span></para>
           <code>&lt;span class="label"&gt;With ActiveDocument.ActiveWindow.ActivePane 
 
 
@@ -3866,6 +3875,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.DisplayVerticalRuler" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayVerticalRuler As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayVerticalRuler { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayVerticalRuler : bool with get, set" Usage="Microsoft.Office.Interop.Word.Pane.DisplayVerticalRuler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3886,11 +3896,11 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="5dd96-135"><b>True</b> 場合は、指定したウィンドウの垂直方向のルーラーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="5dd96-135"><b>True</b> if a vertical ruler is displayed for the specified pane.</span></span> <span data-ttu-id="5dd96-136">読み取り/書き込み <b>ブール値</b> です。</span><span class="sxs-lookup"><span data-stu-id="5dd96-136">Read/write <b>Boolean</b>.</span></span></summary>
+        <summary><span data-ttu-id="a8e0b-135"><b>True</b> 場合は、指定したウィンドウの垂直方向のルーラーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-135"><b>True</b> if a vertical ruler is displayed for the specified pane.</span></span> <span data-ttu-id="a8e0b-136">読み取り/書き込み <b>ブール値</b> です。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-136">Read/write <b>Boolean</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="5dd96-137">垂直方向のルーラーは印刷レイアウト表示でのみ表示されます <b>DisplayRulers</b> プロパティが <b>True</b> に設定されている場合のみとします。</span><span class="sxs-lookup"><span data-stu-id="5dd96-137">A vertical ruler appears only in print layout view, and only if the <b>DisplayRulers</b> property is set to <b>True</b>.</span></span></para>
+        <remarks><para><span data-ttu-id="a8e0b-137">垂直方向のルーラーは印刷レイアウト表示でのみ表示されます <b>DisplayRulers</b> プロパティが <b>True</b> に設定されている場合のみとします。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-137">A vertical ruler appears only in print layout view, and only if the <b>DisplayRulers</b> property is set to <b>True</b>.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="5dd96-138">次の使用例は、作業中のウィンドウ枠を印刷レイアウト表示に切り替え、垂直および水平方向のルーラーを表示します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-138">This example switches the active pane to print layout view and displays the horizontal and vertical rulers.</span></span></para>
+        <example><para><span data-ttu-id="a8e0b-138">次の使用例は、作業中のウィンドウ枠を印刷レイアウト表示に切り替え、垂直および水平方向のルーラーを表示します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-138">This example switches the active pane to print layout view and displays the horizontal and vertical rulers.</span></span></para>
           <code>&lt;span class="label"&gt;With ActiveDocument.ActiveWindow.ActivePane 
 
 
@@ -4670,6 +4680,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Document" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Document As Document" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Document ^ Document { Microsoft::Office::Interop::Word::Document ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Document : Microsoft.Office.Interop.Word.Document" Usage="Microsoft.Office.Interop.Word.Pane.Document" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -4687,7 +4698,7 @@ End If&lt;/span&gt;</code>
         <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="5dd96-139">指定し<see cref="T:Microsoft.Office.Interop.Word.Document" />たウィンドウ枠に関連付けられているオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-139">Returns a <see cref="T:Microsoft.Office.Interop.Word.Document" /> object associated with the specified pane.</span></span> <span data-ttu-id="5dd96-140">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="5dd96-140">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="a8e0b-139">指定した <see cref="T:Microsoft.Office.Interop.Word.Document" /> ウィンドウ枠に関連付けられているオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-139">Returns a <see cref="T:Microsoft.Office.Interop.Word.Document" /> object associated with the specified pane.</span></span> <span data-ttu-id="a8e0b-140">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-140">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4698,6 +4709,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Frameset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Frameset As Frameset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Frameset ^ Frameset { Microsoft::Office::Interop::Word::Frameset ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Frameset : Microsoft.Office.Interop.Word.Frameset" Usage="Microsoft.Office.Interop.Word.Pane.Frameset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -4715,12 +4727,12 @@ End If&lt;/span&gt;</code>
         <ReturnType>Microsoft.Office.Interop.Word.Frameset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="5dd96-141">フレームページ<see cref="T:Microsoft.Office.Interop.Word.Frameset" />全体またはフレームページ上の単一のフレームを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-141">Returns a <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> object that represents an entire frames page or a single frame on a frames page.</span></span> <span data-ttu-id="5dd96-142">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="5dd96-142">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="a8e0b-141">フレームページ <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> 全体またはフレームページ上の単一のフレームを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-141">Returns a <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> object that represents an entire frames page or a single frame on a frames page.</span></span> <span data-ttu-id="a8e0b-142">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-142">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="5dd96-143">フレームページの作成の詳細について<see cref="Creatingframespages#SameCHM" />は、「」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5dd96-143">For more information on creating frames pages, see <see cref="Creatingframespages#SameCHM" />.</span></span></para>
+        <remarks><para><span data-ttu-id="a8e0b-143">フレームページの作成の詳細については、「」を参照してください <see cref="Creatingframespages#SameCHM" /> 。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-143">For more information on creating frames pages, see <see cref="Creatingframespages#SameCHM" />.</span></span></para>
           <para> </para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="5dd96-144">次の使用例は、指定したフレームの右側に新しいフレームを追加します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-144">This example adds a new frame to the immediate right of the specified frame.</span></span></para>
+        <example><para><span data-ttu-id="a8e0b-144">次の使用例は、指定したフレームの右側に新しいフレームを追加します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-144">This example adds a new frame to the immediate right of the specified frame.</span></span></para>
           <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;Frameset&lt;/span&gt;
 &lt;span class="label"&gt;_    .AddNewFrame wdFramesetNewRight&lt;/span&gt;</code></example>
@@ -4732,6 +4744,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.HorizontalPercentScrolled" />
       <MemberSignature Language="VB.NET" Value="Public Property HorizontalPercentScrolled As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HorizontalPercentScrolled { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalPercentScrolled : int with get, set" Usage="Microsoft.Office.Interop.Word.Pane.HorizontalPercentScrolled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -4752,10 +4765,10 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="5dd96-145">文書の幅に対する割合として水平方向のスクロール位置を設定または返します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-145">Returns or sets the horizontal scroll position as a percentage of the document width.</span></span> <span data-ttu-id="5dd96-146">読み取り/書き込み <b>時間</b> です。</span><span class="sxs-lookup"><span data-stu-id="5dd96-146">Read/write <b>Long</b>.</span></span></summary>
+        <summary><span data-ttu-id="a8e0b-145">文書の幅に対する割合として水平方向のスクロール位置を設定または返します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-145">Returns or sets the horizontal scroll position as a percentage of the document width.</span></span> <span data-ttu-id="a8e0b-146">読み取り/書き込み <b>時間</b> です。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-146">Read/write <b>Long</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example><para><span data-ttu-id="5dd96-147">次の使用例は、Document1 の作業中のウィンドウ枠を左端までスクロールします。</span><span class="sxs-lookup"><span data-stu-id="5dd96-147">This example horizontally scrolls the active pane of the window for Document1 all the way to the left.</span></span></para>
+        <example><para><span data-ttu-id="a8e0b-147">次の使用例は、Document1 の作業中のウィンドウ枠を左端までスクロールします。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-147">This example horizontally scrolls the active pane of the window for Document1 all the way to the left.</span></span></para>
           <code>&lt;span class="label"&gt;With Windows("Document1") 
 
 
@@ -5279,6 +5292,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.Pane.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -5296,7 +5310,7 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="5dd96-148"><b>長い</b> コレクション内の項目の位置を表す値を返します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-148">Returns a <b>Long</b> that represents the position of an item in a collection.</span></span> <span data-ttu-id="5dd96-149">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="5dd96-149">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="a8e0b-148"><b>長い</b> コレクション内の項目の位置を表す値を返します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-148">Returns a <b>Long</b> that represents the position of an item in a collection.</span></span> <span data-ttu-id="a8e0b-149">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-149">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5306,6 +5320,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LargeScroll([in]object&amp; Down, [in]object&amp; Up, [in]object&amp; ToRight, [in]object&amp; ToLeft) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Pane.LargeScroll(System.Object@,System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LargeScroll (Optional ByRef Down As Object, Optional ByRef Up As Object, Optional ByRef ToRight As Object, Optional ByRef ToLeft As Object)" />
+      <MemberSignature Language="F#" Value="abstract member LargeScroll : obj * obj * obj * obj -&gt; unit" Usage="pane.LargeScroll (Down, Up, ToRight, ToLeft)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -5320,18 +5335,18 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Down" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Up" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ToRight" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ToLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Down" Type="System.Object" RefType="ref" />
+        <Parameter Name="Up" Type="System.Object" RefType="ref" />
+        <Parameter Name="ToRight" Type="System.Object" RefType="ref" />
+        <Parameter Name="ToLeft" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Down"><span data-ttu-id="5dd96-150">ウィンドウを下にスクロールする画面数を指定します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-150">The number of screens to scroll the window down.</span></span></param>
-        <param name="Up"><span data-ttu-id="5dd96-151">ウィンドウを上にスクロールする画面数を指定します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-151">The number of screens to scroll the window up.</span></span></param>
-        <param name="ToRight"><span data-ttu-id="5dd96-152">ウィンドウを右にスクロールする画面数を指定します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-152">The number of screens to scroll the window to the right.</span></span></param>
-        <param name="ToLeft"><span data-ttu-id="5dd96-153">ウィンドウを左にスクロールする画面数を指定します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-153">The number of screens to scroll the window to the left.</span></span></param>
-        <summary><span data-ttu-id="5dd96-154">指定した画面数だけウィンドウまたはウィンドウ枠をスクロールします。</span><span class="sxs-lookup"><span data-stu-id="5dd96-154">Scrolls a window or pane by the specified number of screens.</span></span></summary>
-        <remarks><para><span data-ttu-id="5dd96-155">このメソッドは、垂直および水平方向のスクロール バーのスクロール ボックスの前後でクリックする操作と同じです。</span><span class="sxs-lookup"><span data-stu-id="5dd96-155">This method is equivalent to clicking just before or just after the scroll boxes on the horizontal and vertical scroll bars.</span></span></para>
+        <param name="Down"><span data-ttu-id="a8e0b-150">ウィンドウを下にスクロールする画面数を指定します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-150">The number of screens to scroll the window down.</span></span></param>
+        <param name="Up"><span data-ttu-id="a8e0b-151">ウィンドウを上にスクロールする画面数を指定します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-151">The number of screens to scroll the window up.</span></span></param>
+        <param name="ToRight"><span data-ttu-id="a8e0b-152">ウィンドウを右にスクロールする画面数を指定します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-152">The number of screens to scroll the window to the right.</span></span></param>
+        <param name="ToLeft"><span data-ttu-id="a8e0b-153">ウィンドウを左にスクロールする画面数を指定します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-153">The number of screens to scroll the window to the left.</span></span></param>
+        <summary><span data-ttu-id="a8e0b-154">指定した画面数だけウィンドウまたはウィンドウ枠をスクロールします。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-154">Scrolls a window or pane by the specified number of screens.</span></span></summary>
+        <remarks><para><span data-ttu-id="a8e0b-155">このメソッドは、垂直および水平方向のスクロール バーのスクロール ボックスの前後でクリックする操作と同じです。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-155">This method is equivalent to clicking just before or just after the scroll boxes on the horizontal and vertical scroll bars.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5341,6 +5356,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.MinimumFontSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MinimumFontSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinimumFontSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumFontSize : int with get, set" Usage="Microsoft.Office.Interop.Word.Pane.MinimumFontSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -5361,11 +5377,11 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="5dd96-156">ポイント単位で指定されたペインに表示される最小のフォント サイズを設定または返します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-156">Returns or sets the minimum font size (in points) displayed for the specified pane.</span></span> <span data-ttu-id="5dd96-157">値の取得と設定が可能な長整数型 (<b>Long</b>) の値です。</span><span class="sxs-lookup"><span data-stu-id="5dd96-157">Read/write <b>Long</b>.</span></span></summary>
+        <summary><span data-ttu-id="a8e0b-156">ポイント単位で指定されたペインに表示される最小のフォント サイズを設定または返します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-156">Returns or sets the minimum font size (in points) displayed for the specified pane.</span></span> <span data-ttu-id="a8e0b-157">値の取得と設定が可能な長整数型 (<b>Long</b>) の値です。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-157">Read/write <b>Long</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="5dd96-158">This property only affects the text as shown in Web layout view.</span><span class="sxs-lookup"><span data-stu-id="5dd96-158">This property only affects the text as shown in Web layout view.</span></span> <span data-ttu-id="5dd96-159">The point sizes that are displayed on the Formatting toolbar and used for printing aren't changed.</span><span class="sxs-lookup"><span data-stu-id="5dd96-159">The point sizes that are displayed on the Formatting toolbar and used for printing aren't changed.</span></span></para>
+        <remarks><para><span data-ttu-id="a8e0b-158">This property only affects the text as shown in Web layout view.</span><span class="sxs-lookup"><span data-stu-id="a8e0b-158">This property only affects the text as shown in Web layout view.</span></span> <span data-ttu-id="a8e0b-159">The point sizes that are displayed on the Formatting toolbar and used for printing aren't changed.</span><span class="sxs-lookup"><span data-stu-id="a8e0b-159">The point sizes that are displayed on the Formatting toolbar and used for printing aren't changed.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="5dd96-160">次の使用例は、作業中のウィンドウをオンライン レイアウト モードに設定し、作業中のウィンドウ枠のフォント サイズの最小値を 12 ポイントに設定します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-160">This example sets the active window to online view and then sets the minimum font size for the active pane to 12 points.</span></span></para>
+        <example><para><span data-ttu-id="a8e0b-160">次の使用例は、作業中のウィンドウをオンライン レイアウト モードに設定し、作業中のウィンドウ枠のフォント サイズの最小値を 12 ポイントに設定します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-160">This example sets the active window to online view and then sets the minimum font size for the active pane to 12 points.</span></span></para>
           <code>&lt;span class="label"&gt;With ActiveDocument.ActiveWindow 
 
 
@@ -5881,7 +5897,7 @@ End If&lt;/span&gt;</code>
     .ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;MinimumFontSize&lt;/span&gt;
 &lt;span class="label"&gt;= 12End With&lt;/span&gt;</code>
-          <para><span data-ttu-id="5dd96-161">次の使用例は、作業中のウィンドウ枠のフォント サイズの最小値を取得します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-161">This example returns the minimum font size for the active pane.</span></span></para>
+          <para><span data-ttu-id="a8e0b-161">次の使用例は、作業中のウィンドウ枠のフォント サイズの最小値を取得します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-161">This example returns the minimum font size for the active pane.</span></span></para>
           <code>&lt;span class="label"&gt;Msgbox _ 
 
 
@@ -6148,6 +6164,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Pane.NewFrameset" />
       <MemberSignature Language="VB.NET" Value="Public Sub NewFrameset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void NewFrameset();" />
+      <MemberSignature Language="F#" Value="abstract member NewFrameset : unit -&gt; unit" Usage="pane.NewFrameset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6163,10 +6180,10 @@ End If&lt;/span&gt;</code>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="5dd96-162">指定されたウィンドウ枠に基づいて新しいフレーム ページを作成します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-162">Creates a new frames page based on the specified pane.</span></span></summary>
-        <remarks><para><span data-ttu-id="5dd96-163">フレームページの作成の詳細について<see cref="Creatingframespages#SameCHM" />は、「」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5dd96-163">For more information on creating frames pages, see <see cref="Creatingframespages#SameCHM" />.</span></span></para>
+        <summary><span data-ttu-id="a8e0b-162">指定されたウィンドウ枠に基づいて新しいフレーム ページを作成します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-162">Creates a new frames page based on the specified pane.</span></span></summary>
+        <remarks><para><span data-ttu-id="a8e0b-163">フレームページの作成の詳細については、「」を参照してください <see cref="Creatingframespages#SameCHM" /> 。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-163">For more information on creating frames pages, see <see cref="Creatingframespages#SameCHM" />.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="5dd96-164">次の使用例は、"Temp.doc" という名前の文書を開き、唯一のフレームに "Temp.doc" を含む状態のフレーム ページを作成します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-164">This example opens a document named "Temp.doc" and then creates a new frames page whose only frame contains "Temp.doc".</span></span></para>
+        <example><para><span data-ttu-id="a8e0b-164">次の使用例は、"Temp.doc" という名前の文書を開き、唯一のフレームに "Temp.doc" を含む状態のフレーム ページを作成します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-164">This example opens a document named "Temp.doc" and then creates a new frames page whose only frame contains "Temp.doc".</span></span></para>
           <code>&lt;span class="label"&gt;Documents.Open "C:\Documents\Temp.doc" 
 
 
@@ -6433,6 +6450,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Next" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Next As Pane" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Pane ^ Next { Microsoft::Office::Interop::Word::Pane ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Next : Microsoft.Office.Interop.Word.Pane" Usage="Microsoft.Office.Interop.Word.Pane.Next" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6450,7 +6468,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Pane</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="5dd96-165">コレクション内の次の文書ウィンドウ枠を表す <b>Pane</b> オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-165">Returns a <b>Pane</b> object that represents the next document pane in the collection.</span></span> <span data-ttu-id="5dd96-166">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="5dd96-166">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="a8e0b-165">コレクション内の次の文書ウィンドウ枠を表す <b>Pane</b> オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-165">Returns a <b>Pane</b> object that represents the next document pane in the collection.</span></span> <span data-ttu-id="a8e0b-166">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-166">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6461,6 +6479,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Pages" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Pages As Pages" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Pages ^ Pages { Microsoft::Office::Interop::Word::Pages ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Pages : Microsoft.Office.Interop.Word.Pages" Usage="Microsoft.Office.Interop.Word.Pane.Pages" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6478,7 +6497,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Pages</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="5dd96-167">文書内<see cref="T:Microsoft.Office.Interop.Word.Pages" />のページを表すコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-167">Returns a <see cref="T:Microsoft.Office.Interop.Word.Pages" /> collection that represents the pages in a document.</span></span></summary>
+        <summary><span data-ttu-id="a8e0b-167"><see cref="T:Microsoft.Office.Interop.Word.Pages" />文書内のページを表すコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-167">Returns a <see cref="T:Microsoft.Office.Interop.Word.Pages" /> collection that represents the pages in a document.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6488,6 +6507,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PageScroll([in]object&amp; Down, [in]object&amp; Up) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Pane.PageScroll(System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PageScroll (Optional ByRef Down As Object, Optional ByRef Up As Object)" />
+      <MemberSignature Language="F#" Value="abstract member PageScroll : obj * obj -&gt; unit" Usage="pane.PageScroll (Down, Up)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6502,13 +6522,13 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Down" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Up" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Down" Type="System.Object" RefType="ref" />
+        <Parameter Name="Up" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Down"><span data-ttu-id="5dd96-168">下方向にスクロールするページ数を指定します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-168">The number of pages to be scrolled down.</span></span></param>
-        <param name="Up"><span data-ttu-id="5dd96-169">上方向にスクロールするページ数を指定します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-169">The number of pages to be scrolled up.</span></span></param>
-        <summary><span data-ttu-id="5dd96-170">指定されたウィンドウ枠またはウィンドウをページ単位でスクロールします。</span><span class="sxs-lookup"><span data-stu-id="5dd96-170">Scrolls through the specified pane or window page by page.</span></span></summary>
+        <param name="Down"><span data-ttu-id="a8e0b-168">下方向にスクロールするページ数を指定します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-168">The number of pages to be scrolled down.</span></span></param>
+        <param name="Up"><span data-ttu-id="a8e0b-169">上方向にスクロールするページ数を指定します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-169">The number of pages to be scrolled up.</span></span></param>
+        <summary><span data-ttu-id="a8e0b-170">指定されたウィンドウ枠またはウィンドウをページ単位でスクロールします。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-170">Scrolls through the specified pane or window page by page.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -6518,6 +6538,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Pane.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6535,7 +6556,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="5dd96-171">指定した <b>ウィンドウ</b> オブジェクトの親オブジェクトを表す <b>オブジェクト</b> を返します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-171">Returns an <b>Object</b> that represents the parent object of the specified <b>Pane</b> object.</span></span></summary>
+        <summary><span data-ttu-id="a8e0b-171">指定した <b>ウィンドウ</b> オブジェクトの親オブジェクトを表す <b>オブジェクト</b> を返します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-171">Returns an <b>Object</b> that represents the parent object of the specified <b>Pane</b> object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6546,6 +6567,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Previous" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Previous As Pane" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Pane ^ Previous { Microsoft::Office::Interop::Word::Pane ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Previous : Microsoft.Office.Interop.Word.Pane" Usage="Microsoft.Office.Interop.Word.Pane.Previous" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6563,7 +6585,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Pane</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="5dd96-172">コレクション内の前の文書ウィンドウ枠を表す <b>Pane</b> オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-172">Returns a <b>Pane</b> object that represents the previous document pane in the collection.</span></span> <span data-ttu-id="5dd96-173">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="5dd96-173">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="a8e0b-172">コレクション内の前の文書ウィンドウ枠を表す <b>Pane</b> オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-172">Returns a <b>Pane</b> object that represents the previous document pane in the collection.</span></span> <span data-ttu-id="a8e0b-173">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-173">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6574,6 +6596,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Selection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Selection As Selection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Selection ^ Selection { Microsoft::Office::Interop::Word::Selection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Selection : Microsoft.Office.Interop.Word.Selection" Usage="Microsoft.Office.Interop.Word.Pane.Selection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6591,7 +6614,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Selection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="5dd96-174">選択範囲または文書ウィンドウ内に挿入ポイントを表す <b>Selection</b> オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-174">Returns the <b>Selection</b> object that represents a selection or the insertion point within a document pane.</span></span> <span data-ttu-id="5dd96-175">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="5dd96-175">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="a8e0b-174">選択範囲または文書ウィンドウ内に挿入ポイントを表す <b>Selection</b> オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-174">Returns the <b>Selection</b> object that represents a selection or the insertion point within a document pane.</span></span> <span data-ttu-id="a8e0b-175">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-175">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6601,6 +6624,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SmallScroll([in]object&amp; Down, [in]object&amp; Up, [in]object&amp; ToRight, [in]object&amp; ToLeft) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Pane.SmallScroll(System.Object@,System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SmallScroll (Optional ByRef Down As Object, Optional ByRef Up As Object, Optional ByRef ToRight As Object, Optional ByRef ToLeft As Object)" />
+      <MemberSignature Language="F#" Value="abstract member SmallScroll : obj * obj * obj * obj -&gt; unit" Usage="pane.SmallScroll (Down, Up, ToRight, ToLeft)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6615,17 +6639,17 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Down" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Up" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ToRight" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ToLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Down" Type="System.Object" RefType="ref" />
+        <Parameter Name="Up" Type="System.Object" RefType="ref" />
+        <Parameter Name="ToRight" Type="System.Object" RefType="ref" />
+        <Parameter Name="ToLeft" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Down"><span data-ttu-id="5dd96-176">ウィンドウを下にスクロールする行数を指定します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-176">The number of lines to scroll the window down.</span></span></param>
-        <param name="Up"><span data-ttu-id="5dd96-177">ウィンドウを上にスクロールする行数を指定します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-177">The number of lines to scroll the window up.</span></span></param>
-        <param name="ToRight"><span data-ttu-id="5dd96-178">ウィンドウを右にスクロールする行数を指定します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-178">The number of lines to scroll the window to the right.</span></span></param>
-        <param name="ToLeft"><span data-ttu-id="5dd96-179">ウィンドウを左にスクロールする行数を指定します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-179">The number of lines to scroll the window to the left.</span></span></param>
-        <summary><span data-ttu-id="5dd96-180">指定した行数だけウィンドウまたはウィンドウ枠をスクロールします。</span><span class="sxs-lookup"><span data-stu-id="5dd96-180">Scrolls a window or pane by the specified number of lines.</span></span></summary>
+        <param name="Down"><span data-ttu-id="a8e0b-176">ウィンドウを下にスクロールする行数を指定します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-176">The number of lines to scroll the window down.</span></span></param>
+        <param name="Up"><span data-ttu-id="a8e0b-177">ウィンドウを上にスクロールする行数を指定します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-177">The number of lines to scroll the window up.</span></span></param>
+        <param name="ToRight"><span data-ttu-id="a8e0b-178">ウィンドウを右にスクロールする行数を指定します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-178">The number of lines to scroll the window to the right.</span></span></param>
+        <param name="ToLeft"><span data-ttu-id="a8e0b-179">ウィンドウを左にスクロールする行数を指定します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-179">The number of lines to scroll the window to the left.</span></span></param>
+        <summary><span data-ttu-id="a8e0b-180">指定した行数だけウィンドウまたはウィンドウ枠をスクロールします。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-180">Scrolls a window or pane by the specified number of lines.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -6635,6 +6659,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Pane.TOCInFrameset" />
       <MemberSignature Language="VB.NET" Value="Public Sub TOCInFrameset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TOCInFrameset();" />
+      <MemberSignature Language="F#" Value="abstract member TOCInFrameset : unit -&gt; unit" Usage="pane.TOCInFrameset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6650,10 +6675,10 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="5dd96-181">指定された文書に基づいて目次を作成し、フレーム ページの左側に作成した新しいフレームに挿入します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-181">Creates a table of contents based on the specified document and puts it in a new frame on the left side of the frames page.</span></span></summary>
-        <remarks><para><span data-ttu-id="5dd96-182">フレームページの作成の詳細について<see cref="Creatingframespages#SameCHM" />は、「」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5dd96-182">For more information on creating frames pages, see <see cref="Creatingframespages#SameCHM" />.</span></span></para>
+        <summary><span data-ttu-id="a8e0b-181">指定された文書に基づいて目次を作成し、フレーム ページの左側に作成した新しいフレームに挿入します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-181">Creates a table of contents based on the specified document and puts it in a new frame on the left side of the frames page.</span></span></summary>
+        <remarks><para><span data-ttu-id="a8e0b-182">フレームページの作成の詳細については、「」を参照してください <see cref="Creatingframespages#SameCHM" /> 。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-182">For more information on creating frames pages, see <see cref="Creatingframespages#SameCHM" />.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="5dd96-183">次の使用例は、"Proposal.doc" という名前のファイルを開き、そのファイルに基づいてフレーム ページを作成し、そのファイルの目次を含むフレームをページの左側に追加します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-183">This example opens a file named "Proposal.doc", creates a frames page based on the file, and adds a frame (on the left side of the page) containing a table of contents for the file.</span></span></para>
+        <example><para><span data-ttu-id="a8e0b-183">次の使用例は、"Proposal.doc" という名前のファイルを開き、そのファイルに基づいてフレーム ページを作成し、そのファイルの目次を含むフレームをページの左側に追加します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-183">This example opens a file named "Proposal.doc", creates a frames page based on the file, and adds a frame (on the left side of the page) containing a table of contents for the file.</span></span></para>
           <code>&lt;span class="label"&gt;Documents.Open "C:\Documents\Proposal.doc" 
 
 
@@ -7176,6 +7201,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.VerticalPercentScrolled" />
       <MemberSignature Language="VB.NET" Value="Public Property VerticalPercentScrolled As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int VerticalPercentScrolled { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalPercentScrolled : int with get, set" Usage="Microsoft.Office.Interop.Word.Pane.VerticalPercentScrolled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -7196,10 +7222,10 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="5dd96-184">文書全体の長さの割合として垂直方向のスクロール位置を設定または返します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-184">Returns or sets the vertical scroll position as a percentage of the document length.</span></span> <span data-ttu-id="5dd96-185">値の取得と設定が可能な長整数型 (<b>Long</b>) の値です。</span><span class="sxs-lookup"><span data-stu-id="5dd96-185">Read/write <b>Long</b>.</span></span></summary>
+        <summary><span data-ttu-id="a8e0b-184">文書全体の長さの割合として垂直方向のスクロール位置を設定または返します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-184">Returns or sets the vertical scroll position as a percentage of the document length.</span></span> <span data-ttu-id="a8e0b-185">値の取得と設定が可能な長整数型 (<b>Long</b>) の値です。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-185">Read/write <b>Long</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example><para><span data-ttu-id="5dd96-186">次の使用例は、Document1 の作業中のウィンドウ枠を下端までスクロールします。</span><span class="sxs-lookup"><span data-stu-id="5dd96-186">This example vertically scrolls the active pane of the window for Document1 to the end.</span></span></para>
+        <example><para><span data-ttu-id="a8e0b-186">次の使用例は、Document1 の作業中のウィンドウ枠を下端までスクロールします。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-186">This example vertically scrolls the active pane of the window for Document1 to the end.</span></span></para>
           <code>&lt;span class="label"&gt;With Windows("Document1") 
 
 
@@ -7723,6 +7749,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.View" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property View As View" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::View ^ View { Microsoft::Office::Interop::Word::View ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.View : Microsoft.Office.Interop.Word.View" Usage="Microsoft.Office.Interop.Word.Pane.View" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -7740,10 +7767,10 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.View</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="5dd96-187">指定されたペインのビューを表す <b>View</b> オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-187">Returns a <b>View</b> object that represents the view for the specified pane.</span></span></summary>
+        <summary><span data-ttu-id="a8e0b-187">指定されたペインのビューを表す <b>View</b> オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-187">Returns a <b>View</b> object that represents the view for the specified pane.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example><para><span data-ttu-id="5dd96-188">この例では、 <b>Windows</b> コレクションの最初のウィンドウに関連付けられているウィンドウのすべての印刷されない文字を使用します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-188">This example shows all nonprinting characters for panes associated with the first window in the <b>Windows</b> collection.</span></span></para>
+        <example><para><span data-ttu-id="a8e0b-188">この例では、 <b>Windows</b> コレクションの最初のウィンドウに関連付けられているウィンドウのすべての印刷されない文字を使用します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-188">This example shows all nonprinting characters for panes associated with the first window in the <b>Windows</b> collection.</span></span></para>
           <code>&lt;span class="label"&gt;For Each myPane In Windows(1).Panes 
 
 
@@ -8011,6 +8038,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Zooms" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Zooms As Zooms" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Zooms ^ Zooms { Microsoft::Office::Interop::Word::Zooms ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Zooms : Microsoft.Office.Interop.Word.Zooms" Usage="Microsoft.Office.Interop.Word.Pane.Zooms" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -8028,11 +8056,11 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Zooms</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="5dd96-189">標準表示<see cref="Zooms#SameCHM" /> 、アウトライン表示、印刷レイアウト表示などの各ビューの倍率設定オプションを表すコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-189">Returns a <see cref="Zooms#SameCHM" /> collection that represents the magnification options for each view (such as normal view, outline view or print layout view).</span></span></summary>
+        <summary><span data-ttu-id="a8e0b-189"><see cref="Zooms#SameCHM" />標準表示、アウトライン表示、印刷レイアウト表示などの各ビューの倍率設定オプションを表すコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-189">Returns a <see cref="Zooms#SameCHM" /> collection that represents the magnification options for each view (such as normal view, outline view or print layout view).</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="5dd96-190">コレクションの単一のメンバーを取得する方法について<see cref="ReturninganObjectfromaCollection#SameCHM" />は、「」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5dd96-190">For information about returning a single member of a collection, see <see cref="ReturninganObjectfromaCollection#SameCHM" />.</span></span></para>
+        <remarks><para><span data-ttu-id="a8e0b-190">コレクションの単一のメンバーを取得する方法については、「」を参照してください <see cref="ReturninganObjectfromaCollection#SameCHM" /> 。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-190">For information about returning a single member of a collection, see <see cref="ReturninganObjectfromaCollection#SameCHM" />.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="5dd96-191">次の使用例は、開いている各文書ウィンドウの下書き表示モードでの表示倍率を 100% に設定します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-191">This example sets the magnification in normal view to 100 percent for each open window.</span></span></para>
+        <example><para><span data-ttu-id="a8e0b-191">次の使用例は、開いている各文書ウィンドウの下書き表示モードでの表示倍率を 100% に設定します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-191">This example sets the magnification in normal view to 100 percent for each open window.</span></span></para>
           <code>&lt;span class="label"&gt;Dim wndLoop as Window 
 
 
@@ -8804,7 +8832,7 @@ For Each wndLoop In Windows
     wndLoop.ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;Zooms&lt;/span&gt;
 &lt;span class="label"&gt;(wdNormalView).Percentage = 100Next wndLoop&lt;/span&gt;</code>
-          <para><span data-ttu-id="5dd96-192">次の使用例は、印刷レイアウト表示でページ全体を表示できるように表示倍率を設定します。</span><span class="sxs-lookup"><span data-stu-id="5dd96-192">This example sets the magnification in print layout view so that an entire page is visible.</span></span></para>
+          <para><span data-ttu-id="a8e0b-192">次の使用例は、印刷レイアウト表示でページ全体を表示できるように表示倍率を設定します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-192">This example sets the magnification in print layout view so that an entire page is visible.</span></span></para>
           <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Panes(1).&lt;/span&gt;
 &lt;span class="label"&gt;Zooms&lt;/span&gt;
 &lt;span class="label"&gt;(wdPrintView).PageFit = _    wdPageFitFullPage&lt;/span&gt;</code></example>
