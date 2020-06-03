@@ -1,9 +1,10 @@
 <Type Name="ShapeNodes" FullName="Microsoft.Office.Interop.Word.ShapeNodes">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="35df8d05c8a08728b7df796ac68fa68a69de02c2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144002" /></Metadata><TypeSignature Language="C#" Value="public interface ShapeNodes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c2fc3b2804f5f177fa94175681c724162f840aa2" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924537" /></Metadata><TypeSignature Language="C#" Value="public interface ShapeNodes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShapeNodes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ShapeNodes" />
   <TypeSignature Language="VB.NET" Value="Public Interface ShapeNodes&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class ShapeNodes : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type ShapeNodes = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,11 +23,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>指定されたフリー <see cref="T:Microsoft.Office.Interop.Word.ShapeNode" />フォームのすべてのオブジェクトのコレクションです。</summary>
-    <remarks><para>各 <b>ShapeNode</b> オブジェクトは、フリーフォームのセグメント間の節点、またはフリーフォームの曲線の部分のコントロール ポイントを表します。 フリーフォームを手動で作成することも、 <see cref="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" />メソッド<see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" />とメソッドを使用することもできます。</para>
-      <para>プロパティを使用して、コレクションを取得します。 <b></b> <see cref="P:Microsoft.Office.Interop.Word.Shape.Nodes" /></para>
-      <para>メソッドを使用して、新しいノードを作成し、それをコレクションに追加します。 <b></b> <see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /></para>
-      <para>1つの<paramref name="index" /> <b>ShapeNode</b>オブジェクトを<paramref name="index" />取得するには、 <b>Nodes</b>() を使用します。ここで、はノードのインデックス番号です。</para>
+    <summary>指定されたフリーフォームのすべてのオブジェクトのコレクション <see cref="T:Microsoft.Office.Interop.Word.ShapeNode" /> です。</summary>
+    <remarks><para>各 <b>ShapeNode</b> オブジェクトは、フリーフォームのセグメント間の節点、またはフリーフォームの曲線の部分のコントロール ポイントを表します。 フリーフォームを手動で作成することも、メソッドとメソッドを使用することもでき <see cref="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> <see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" /> ます。</para>
+      <para>プロパティを使用し <see cref="P:Microsoft.Office.Interop.Word.Shape.Nodes" /> て、 <b>ShapeNodes</b>コレクションを取得します。</para>
+      <para>メソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> 新しいノードを作成し、それ<b>ShapeNodes</b>をコレクションに追加します。</para>
+      <para>1 <b>Nodes</b>つの <paramref name="index" /> ShapeNode オブジェクトを取得するには、Nodes () を使用します。ここで、 <paramref name="index" /> はノードのインデックス番号です。 <b>ShapeNode</b></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeNodes.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ShapeNodes.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -53,7 +55,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeNodes.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.ShapeNodes.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeNodes.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ShapeNodes.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeNodes.Delete(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete (Index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete(int Index);" />
+      <MemberSignature Language="F#" Value="abstract member Delete : int -&gt; unit" Usage="shapeNodes.Delete Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeNodes.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="shapeNodes.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -181,6 +187,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert([in]int32 Index, [in]valuetype Microsoft.Office.Core.MsoSegmentType SegmentType, [in]valuetype Microsoft.Office.Core.MsoEditingType EditingType, [in]float32 X1, [in]float32 Y1, [in]float32 X2, [in]float32 Y2, [in]float32 X3, [in]float32 Y3) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (Index As Integer, SegmentType As MsoSegmentType, EditingType As MsoEditingType, X1 As Single, Y1 As Single, Optional X2 As Single = 0, Optional Y2 As Single = 0, Optional X3 As Single = 0, Optional Y3 As Single = 0)" />
+      <MemberSignature Language="F#" Value="abstract member Insert : int * Microsoft.Office.Core.MsoSegmentType * Microsoft.Office.Core.MsoEditingType * single * single * single * single * single * single -&gt; unit" Usage="shapeNodes.Insert (Index, SegmentType, EditingType, X1, Y1, X2, Y2, X3, Y3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -207,8 +214,8 @@
       </Parameters>
       <Docs>
         <param name="Index">整数型 (<b>Integer</b>) の値を使用します。 新しいノードを挿入する位置の後にある図形ノードの個数を指定します。</param>
-        <param name="SegmentType">必須<see cref="T:Microsoft.Office.Core.MsoSegmentType" />。 挿入するノードと隣接ノードを接続する線の種類を指定します。</param>
-        <param name="EditingType">必須<see cref="T:Microsoft.Office.Core.MsoEditingType" />。 挿入するノードの編集用プロパティを指定します。</param>
+        <param name="SegmentType">必須 <see cref="T:Microsoft.Office.Core.MsoSegmentType" /> 。 挿入するノードと隣接ノードを接続する線の種類を指定します。</param>
+        <param name="EditingType">必須 <see cref="T:Microsoft.Office.Core.MsoEditingType" /> 。 挿入するノードの編集用プロパティを指定します。</param>
         <param name="X1">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 <paramref name="EditingType" />新しいセグメントが<b>msoEditingAuto</b>の場合、この引数は、ドキュメントの左上隅から新しいセグメントの端点までの水平方向の距離をポイント単位で指定します。 <paramref name="EditingType" />新しい節点が<b>msoEditingCorner</b>の場合、この引数は、文書の左上隅から新しいセグメントの最初のコントロールポイントまでの水平方向の距離をポイント単位で指定します。</param>
         <param name="Y1">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 <paramref name="EditingType" />新しいセグメントが<b>msoEditingAuto</b>の場合、この引数は、ドキュメントの左上隅から新しいセグメントの端点までの垂直距離をポイント単位で指定します。 <paramref name="EditingType" />新しい節点が<b>msoEditingCorner</b>の場合、この引数は、文書の左上隅から新しいセグメントの最初のコントロールポイントまでの垂直方向の距離をポイント単位で指定します。</param>
         <param name="X2">省略可能な<b>単精度浮動小数点</b>型 <paramref name="EditingType" />新しいセグメントが<b>msoEditingCorner</b>の場合、この引数は、ドキュメントの左上隅から新しいセグメントの2番目のコントロールポイントまでの水平方向の距離をポイント単位で指定します。 <paramref name="EditingType" />新しいセグメントが<b>msoEditingAuto</b>の場合は、この引数の値を指定しないでください。</param>
@@ -225,6 +232,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeNodes.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As ShapeNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ShapeNode ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::ShapeNode ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.ShapeNode" Usage="Microsoft.Office.Interop.Word.ShapeNodes.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -242,7 +250,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ShapeNode</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Index">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</param>
@@ -257,6 +265,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeNodes.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ShapeNodes.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -285,6 +294,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeNodes.SetEditingType(System.Int32,Microsoft.Office.Core.MsoEditingType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetEditingType (Index As Integer, EditingType As MsoEditingType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetEditingType(int Index, Microsoft::Office::Core::MsoEditingType EditingType);" />
+      <MemberSignature Language="F#" Value="abstract member SetEditingType : int * Microsoft.Office.Core.MsoEditingType -&gt; unit" Usage="shapeNodes.SetEditingType (Index, EditingType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -304,7 +314,7 @@
       </Parameters>
       <Docs>
         <param name="Index">整数型 (<b>Integer</b>) の値を使用します。 編集タイプを設定する節点を指定します。</param>
-        <param name="EditingType">必須<see cref="T:Microsoft.Office.Core.MsoEditingType" />。 頂点の編集対象のプロパティを指定します。</param>
+        <param name="EditingType">必須 <see cref="T:Microsoft.Office.Core.MsoEditingType" /> 。 頂点の編集対象のプロパティを指定します。</param>
         <summary>指定された節点の編集タイプを設定します。</summary>
         <remarks><para>節点が曲線セグメントのコントロール ポイントの場合、このメソッドは、2 つのセグメントを結合する節点に隣接する節点の編集タイプを設定します。 編集の種類によっては、このメソッドが隣接する節点の位置に影響する場合があることに注意してください。</para>
           <para> </para></remarks>
@@ -316,6 +326,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetPosition (Index As Integer, X1 As Single, Y1 As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPosition(int Index, float X1, float Y1);" />
+      <MemberSignature Language="F#" Value="abstract member SetPosition : int * single * single -&gt; unit" Usage="shapeNodes.SetPosition (Index, X1, Y1)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -349,6 +360,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeNodes.SetSegmentType(System.Int32,Microsoft.Office.Core.MsoSegmentType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSegmentType (Index As Integer, SegmentType As MsoSegmentType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSegmentType(int Index, Microsoft::Office::Core::MsoSegmentType SegmentType);" />
+      <MemberSignature Language="F#" Value="abstract member SetSegmentType : int * Microsoft.Office.Core.MsoSegmentType -&gt; unit" Usage="shapeNodes.SetSegmentType (Index, SegmentType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -368,7 +380,7 @@
       </Parameters>
       <Docs>
         <param name="Index">整数型 (<b>Integer</b>) の値を使用します。 セグメントの種類を設定する節点を指定します。</param>
-        <param name="SegmentType">必須<see cref="T:Microsoft.Office.Core.MsoSegmentType" />。 セグメントが直線か曲線かを指定します。</param>
+        <param name="SegmentType">必須 <see cref="T:Microsoft.Office.Core.MsoSegmentType" /> 。 セグメントが直線か曲線かを指定します。</param>
         <summary>指定された節点に続くセグメントの種類を設定します。</summary>
         <remarks><para>節点が曲線セグメントのコントロール ポイントである場合、その曲線セグメントの種類を設定します。これによって、隣接する節点が挿入または削除され、節点の総数が変わる場合があります。</para>
           <para> </para></remarks>

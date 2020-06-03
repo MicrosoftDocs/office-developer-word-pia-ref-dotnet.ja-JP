@@ -1,9 +1,10 @@
 <Type Name="Frameset" FullName="Microsoft.Office.Interop.Word.Frameset">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="a60060da0b1c4ff85a021ce286850c649ffa86e1" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146809" /></Metadata><TypeSignature Language="C#" Value="public interface Frameset : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="58859f54c67d92642a807d7539834de1ec7ae9c0" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924138" /></Metadata><TypeSignature Language="C#" Value="public interface Frameset : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Frameset implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Frameset" />
   <TypeSignature Language="VB.NET" Value="Public Interface Frameset&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Frameset : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Frameset = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -23,7 +24,7 @@
   </Attributes>
   <Docs>
     <summary>フレーム ページ全体またはフレーム ページ上の単一のフレームを表します。</summary>
-    <remarks><para><b>フレームセット</b>コレクションはありません。各<see cref="T:Microsoft.Office.Interop.Word.Document" />オブジェクトまた<see cref="T:Microsoft.Office.Interop.Word.Pane" />はオブジェクトには、 <b>Frameset</b>オブジェクトが1つだけ含まれています。</para>
+    <remarks><para><b>フレームセット</b>コレクションはありません。各 <see cref="T:Microsoft.Office.Interop.Word.Document" /> オブジェクトまたはオブジェクトには、 <see cref="T:Microsoft.Office.Interop.Word.Pane" /> <b>Frameset</b>オブジェクトが1つだけ含まれています。</para>
       <para><b>Frameset</b>オブジェクトを取得するのにには、<b>ドキュメント</b>または<b>Pane</b>オブジェクトの<b>frameset</b>プロパティを使用します。 フレームページ上のすべてのフレームに影響を与えるプロパティまたはメソッドの場合は、 <b>Document</b>オブジェクトの<b>Frameset</b>オブジェクトを使用します。 フレームページ上の個々のフレームに影響を与えるプロパティまたはメソッドの場合は、 <b>Pane</b>オブジェクトの<b>Frameset</b>オブジェクトを使用します。</para>
       <para> </para></remarks>
   </Docs>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Frameset.AddNewFrame(Microsoft.Office.Interop.Word.WdFramesetNewFrameLocation)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddNewFrame (Where As WdFramesetNewFrameLocation) As Frameset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Frameset ^ AddNewFrame(Microsoft::Office::Interop::Word::WdFramesetNewFrameLocation Where);" />
+      <MemberSignature Language="F#" Value="abstract member AddNewFrame : Microsoft.Office.Interop.Word.WdFramesetNewFrameLocation -&gt; Microsoft.Office.Interop.Word.Frameset" Usage="frameset.AddNewFrame Where" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -51,7 +53,7 @@
         <Parameter Name="Where" Type="Microsoft.Office.Interop.Word.WdFramesetNewFrameLocation" />
       </Parameters>
       <Docs>
-        <param name="Where">必須<see cref="T:Microsoft.Office.Interop.Word.WdFramesetNewFrameLocation" />。 WdFramesetNewFrameLocation クラスの定数のいずれかを使用して、指定されたフレームに対して、新しいフレームの相対的な位置を指定します。</param>
+        <param name="Where">必須 <see cref="T:Microsoft.Office.Interop.Word.WdFramesetNewFrameLocation" /> 。 WdFramesetNewFrameLocation クラスの定数のいずれかを使用して、指定されたフレームに対して、新しいフレームの相対的な位置を指定します。</param>
         <summary>フレーム ページに新しいフレームを追加します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Frameset.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -80,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.ChildFramesetCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildFramesetCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ChildFramesetCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChildFramesetCount : int" Usage="Microsoft.Office.Interop.Word.Frameset.ChildFramesetCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -108,7 +112,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した<b>Frameset</b>オブジェクト<see cref="T:Microsoft.Office.Interop.Word.Frameset" />に関連付けられている子オブジェクトの数を返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Frameset" />指定した<b>Frameset</b>オブジェクトに関連付けられている子オブジェクトの数を返します。</summary>
         <value>To be added.</value>
         <remarks><para>このプロパティは、 <b>wdFramesetTypeFrameset</b> の種類の <b>フレーム セット</b> のオブジェクトにのみ適用されます。</para>
           <para> </para></remarks>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.ChildFramesetItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildFramesetItem(Index As Integer) As Frameset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Frameset ^ ChildFramesetItem[int] { Microsoft::Office::Interop::Word::Frameset ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.ChildFramesetItem(int) : Microsoft.Office.Interop.Word.Frameset" Usage="Microsoft.Office.Interop.Word.Frameset.ChildFramesetItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -141,7 +146,7 @@
       </Parameters>
       <Docs>
         <param name="Index">整数型 (<b>Integer</b>) の値を使用します。 指定したフレームのインデックス番号です。</param>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Frameset" />た子<b>Frameset</b>オブジェクトを表すオブジェクトを返します。</summary>
+        <summary>指定した <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> 子<b>Frameset</b>オブジェクトを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks><para>このプロパティは、 <b>wdFramesetTypeFrameset</b> の種類の <b>フレーム セット</b> のオブジェクトにのみ適用されます。</para>
           <para> </para></remarks>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Frameset.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Frameset.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="frameset.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -208,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.FrameDefaultURL" />
       <MemberSignature Language="VB.NET" Value="Public Property FrameDefaultURL As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FrameDefaultURL { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FrameDefaultURL : string with get, set" Usage="Microsoft.Office.Interop.Word.Frameset.FrameDefaultURL" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -239,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.FrameDisplayBorders" />
       <MemberSignature Language="VB.NET" Value="Public Property FrameDisplayBorders As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FrameDisplayBorders { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FrameDisplayBorders : bool with get, set" Usage="Microsoft.Office.Interop.Word.Frameset.FrameDisplayBorders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -270,6 +279,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.FrameLinkToFile" />
       <MemberSignature Language="VB.NET" Value="Public Property FrameLinkToFile As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FrameLinkToFile { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FrameLinkToFile : bool with get, set" Usage="Microsoft.Office.Interop.Word.Frameset.FrameLinkToFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -290,7 +300,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b>の場合は、Web ページまたは<see cref="P:Microsoft.Office.Interop.Word.Frameset.FrameDefaultURL" />プロパティによって指定された他のドキュメントは、Microsoft Word が指定したフレームからのリンクのみを保持する外部ファイルです。</summary>
+        <summary><b>True</b>の場合は、Web ページまたはプロパティによって指定された他のドキュメント <see cref="P:Microsoft.Office.Interop.Word.Frameset.FrameDefaultURL" /> は、Microsoft Word が指定したフレームからのリンクのみを保持する外部ファイルです。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -301,6 +311,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.FrameName" />
       <MemberSignature Language="VB.NET" Value="Public Property FrameName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FrameName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FrameName : string with get, set" Usage="Microsoft.Office.Interop.Word.Frameset.FrameName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -332,6 +343,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.FrameResizable" />
       <MemberSignature Language="VB.NET" Value="Public Property FrameResizable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FrameResizable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FrameResizable : bool with get, set" Usage="Microsoft.Office.Interop.Word.Frameset.FrameResizable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -363,6 +375,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.FrameScrollbarType" />
       <MemberSignature Language="VB.NET" Value="Public Property FrameScrollbarType As WdScrollbarType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdScrollbarType FrameScrollbarType { Microsoft::Office::Interop::Word::WdScrollbarType get(); void set(Microsoft::Office::Interop::Word::WdScrollbarType value); };" />
+      <MemberSignature Language="F#" Value="member this.FrameScrollbarType : Microsoft.Office.Interop.Word.WdScrollbarType with get, set" Usage="Microsoft.Office.Interop.Word.Frameset.FrameScrollbarType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -394,6 +407,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.FramesetBorderColor" />
       <MemberSignature Language="VB.NET" Value="Public Property FramesetBorderColor As WdColor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdColor FramesetBorderColor { Microsoft::Office::Interop::Word::WdColor get(); void set(Microsoft::Office::Interop::Word::WdColor value); };" />
+      <MemberSignature Language="F#" Value="member this.FramesetBorderColor : Microsoft.Office.Interop.Word.WdColor with get, set" Usage="Microsoft.Office.Interop.Word.Frameset.FramesetBorderColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -414,7 +428,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したフレーム ページの枠線の色を設定します。 任意の<see cref="T:Microsoft.Office.Interop.Word.WdColor" />定数を使用できます。</summary>
+        <summary>指定したフレーム ページの枠線の色を設定します。 任意の定数を使用でき <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> ます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -425,6 +439,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.FramesetBorderWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property FramesetBorderWidth As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float FramesetBorderWidth { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.FramesetBorderWidth : single with get, set" Usage="Microsoft.Office.Interop.Word.Frameset.FramesetBorderWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -456,6 +471,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Frameset.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="frameset.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -488,6 +504,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : int with get, set" Usage="Microsoft.Office.Interop.Word.Frameset.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -508,9 +525,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.Frameset" />オブジェクトの高さを設定または返します。</summary>
+        <summary>指定したオブジェクトの高さを設定または返し <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> ます。</summary>
         <value>To be added.</value>
-        <remarks><para>この<see cref="P:Microsoft.Office.Interop.Word.Frameset.HeightType" />プロパティは、この値を表す単位の種類を決定します。</para>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.Frameset.HeightType" />このプロパティは、この値を表す単位の種類を決定します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -520,6 +537,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.HeightType" />
       <MemberSignature Language="VB.NET" Value="Public Property HeightType As WdFramesetSizeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdFramesetSizeType HeightType { Microsoft::Office::Interop::Word::WdFramesetSizeType get(); void set(Microsoft::Office::Interop::Word::WdFramesetSizeType value); };" />
+      <MemberSignature Language="F#" Value="member this.HeightType : Microsoft.Office.Interop.Word.WdFramesetSizeType with get, set" Usage="Microsoft.Office.Interop.Word.Frameset.HeightType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -551,6 +569,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Frameset.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -579,6 +598,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.ParentFrameset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentFrameset As Frameset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Frameset ^ ParentFrameset { Microsoft::Office::Interop::Word::Frameset ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentFrameset : Microsoft.Office.Interop.Word.Frameset" Usage="Microsoft.Office.Interop.Word.Frameset.ParentFrameset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -596,7 +616,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Frameset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>フレームページ<see cref="T:Microsoft.Office.Interop.Word.Frameset" />上の指定した<b>Frameset</b>オブジェクトの親オブジェクトを表すオブジェクト型 (object) の値を取得します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Frameset" />フレームページ上の指定した<b>Frameset</b>オブジェクトの親オブジェクトを表すオブジェクト型 (object) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -607,6 +627,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.Type" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Type As WdFramesetType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdFramesetType default { Microsoft::Office::Interop::Word::WdFramesetType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdFramesetType" Usage="Microsoft.Office.Interop.Word.Frameset.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -624,7 +645,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFramesetType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの<see cref="T:Microsoft.Office.Interop.Word.Frameset" />種類を返します。</summary>
+        <summary>オブジェクトの <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> 種類を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -635,6 +656,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : int with get, set" Usage="Microsoft.Office.Interop.Word.Frameset.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -655,9 +677,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.Frameset" />オブジェクトの幅を設定または返します。</summary>
+        <summary>指定したオブジェクトの幅を設定または返し <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> ます。</summary>
         <value>To be added.</value>
-        <remarks><para>この<see cref="P:Microsoft.Office.Interop.Word.Frameset.WidthType" />プロパティは、この値を表す単位の種類を決定します。</para>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.Frameset.WidthType" />このプロパティは、この値を表す単位の種類を決定します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -667,6 +689,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.WidthType" />
       <MemberSignature Language="VB.NET" Value="Public Property WidthType As WdFramesetSizeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdFramesetSizeType WidthType { Microsoft::Office::Interop::Word::WdFramesetSizeType get(); void set(Microsoft::Office::Interop::Word::WdFramesetSizeType value); };" />
+      <MemberSignature Language="F#" Value="member this.WidthType : Microsoft.Office.Interop.Word.WdFramesetSizeType with get, set" Usage="Microsoft.Office.Interop.Word.Frameset.WidthType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -687,7 +710,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFramesetSizeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.Frameset" />オブジェクトの幅の種類を設定または返します。</summary>
+        <summary>指定したオブジェクトの幅の種類を設定または返し <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> ます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

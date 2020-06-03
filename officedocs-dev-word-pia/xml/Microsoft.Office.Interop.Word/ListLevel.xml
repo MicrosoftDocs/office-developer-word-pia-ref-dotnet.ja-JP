@@ -1,9 +1,10 @@
 <Type Name="ListLevel" FullName="Microsoft.Office.Interop.Word.ListLevel">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="bba67b72f79c6b6f79e34d7a683261fcb43b7fc0" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144499" /></Metadata><TypeSignature Language="C#" Value="public interface ListLevel" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a021a7ac9d8cfb2d358eeb6e12a55cb551cbf07b" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925290" /></Metadata><TypeSignature Language="C#" Value="public interface ListLevel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListLevel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListLevel" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListLevel" />
   <TypeSignature Language="C++ CLI" Value="public interface class ListLevel" />
+  <TypeSignature Language="F#" Value="type ListLevel = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,10 +20,10 @@
   </Attributes>
   <Docs>
     <summary>行頭文字または段落番号の付いた箇条書きの場合は1つのレベル、アウトライン番号の付いた箇条書きの場合は9レベルの1つのリストレベルを表します。</summary>
-    <remarks><para><b>ListLevel</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.ListLevels" />コレクションのメンバーです。</para>
-      <para>単一の<b>ListLevel</b>オブジェクト<paramref name="index" />を取得する<paramref name="index" />には、 <b>listlevels</b>() を使用します。ここで、は 1 ~ 9 の数値です。</para>
-      <para><b>ListLevel</b>オブジェクトを使用すると、、、、、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />、および<see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />プロパティなど、指定したリストレベルのすべての書式設定プロパティにアクセスできます。</para>
-      <para>リストレベルを適用するには、まず範囲またはリストを識別し、 <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" />そのメソッドを使用します。 それぞれのタブ、段落の先頭には、箇条書きのレベルに変換されます。 たとえば、3 つのタブで始まる段落になるレベル 3 の箇条書きの段落、 <b>ApplyListTemplate</b> メソッドを使用した後です。</para>
+    <remarks><para><b>ListLevel</b>オブジェクトは、コレクションのメンバーです <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> 。</para>
+      <para>単一<b>ListLevels</b>の <paramref name="index" /> ListLevel オブジェクトを取得するには、listlevels () を使用します。ここで、 <paramref name="index" /> は 1 ~ 9 の数値です。 <b>ListLevel</b></para>
+      <para><b>ListLevel</b>オブジェクトを使用すると、、、、、、およびプロパティなど、指定したリストレベルのすべての書式設定プロパティにアクセスでき <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" /> ます。</para>
+      <para>リストレベルを適用するには、まず範囲またはリストを識別し、そのメソッドを使用し <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> ます。 それぞれのタブ、段落の先頭には、箇条書きのレベルに変換されます。 たとえば、3 つのタブで始まる段落になるレベル 3 の箇条書きの段落、 <b>ApplyListTemplate</b> メソッドを使用した後です。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />
       <MemberSignature Language="VB.NET" Value="Public Property Alignment As WdListLevelAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdListLevelAlignment Alignment { Microsoft::Office::Interop::Word::WdListLevelAlignment get(); void set(Microsoft::Office::Interop::Word::WdListLevelAlignment value); };" />
+      <MemberSignature Language="F#" Value="member this.Alignment : Microsoft.Office.Interop.Word.WdListLevelAlignment with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.Alignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -52,7 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdListLevelAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>リストテンプレートのリスト<see cref="T:Microsoft.Office.Interop.Word.WdListLevelAlignment" />レベルの配置を表す定数を設定または返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.WdListLevelAlignment" />リストテンプレートのリストレベルの配置を表す定数を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ListLevel.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -80,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListLevel.ApplyPictureBullet(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ApplyPictureBullet (FileName As String) As InlineShape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::InlineShape ^ ApplyPictureBullet(System::String ^ FileName);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyPictureBullet : string -&gt; Microsoft.Office.Interop.Word.InlineShape" Usage="listLevel.ApplyPictureBullet FileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ListLevel.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.Font" />
       <MemberSignature Language="VB.NET" Value="Public Property Font As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Font ^ Font { Microsoft::Office::Interop::Word::Font ^ get(); void set(Microsoft::Office::Interop::Word::Font ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Font : Microsoft.Office.Interop.Word.Font with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -170,7 +176,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定<see cref="T:Microsoft.Office.Interop.Word.Font" />したオブジェクトの文字書式を表すオブジェクトを設定します。</summary>
+        <summary>取得または <see cref="T:Microsoft.Office.Interop.Word.Font" /> 指定したオブジェクトの文字書式を表すオブジェクトを設定します。</summary>
         <value>To be added.</value>
         <remarks><para>このプロパティを設定するには、 <b>Font</b> オブジェクトを返す式を指定します。</para>
           <para> </para></remarks>
@@ -182,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.ListLevel.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -210,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.LinkedStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property LinkedStyle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LinkedStyle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LinkedStyle : string with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.LinkedStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -230,7 +238,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトにリンクさ<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />れているスタイルの名前を設定または返します。</summary>
+        <summary>指定したオブジェクトにリンクされているスタイルの名前を設定または返し <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> ます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -241,6 +249,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberFormat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NumberFormat { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberFormat : string with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -263,7 +272,7 @@
       <Docs>
         <summary>指定した箇条書きレベルの番号書式を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para>パーセント記号 (%) とそれに続く 1 ～ 9 の数字は、アウトラインのレベルに使用する数字を表します。 たとえば、最初のレベルの書式を "Article I"、"Article II" というように指定すると、 <b>NumberFormat</b>プロパティの文字列は "article% 1" になり、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />プロパティは<b>wdListNumberStyleUpperCaseRoman</b>に設定されます。</para>
+        <remarks><para>パーセント記号 (%) とそれに続く 1 ～ 9 の数字は、アウトラインのレベルに使用する数字を表します。 たとえば、最初のレベルの書式を "Article I"、"Article II" というように指定すると、 <b>NumberFormat</b>プロパティの文字列は "article %1" になり、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" /> プロパティは<b>wdListNumberStyleUpperCaseRoman</b>に設定されます。</para>
           <para><b>WdListNumberStyleBullet</b> に <b>9 の数字</b> のプロパティが設定されている場合、 <b>NumberFormat</b> プロパティの文字列はのみ 1 つの文字を含めることができます。</para>
           <para> </para></remarks>
       </Docs>
@@ -274,6 +283,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberPosition As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float NumberPosition { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberPosition : single with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -294,7 +304,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />オブジェクトの番号または行頭文字の位置をポイント単位で取得または設定します。</summary>
+        <summary>指定したオブジェクトの番号または行頭文字の位置をポイント単位で取得または設定し <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> ます。</summary>
         <value>To be added.</value>
         <remarks><para>箇条書きの各レベルについて、段落番号または行頭文字の位置、タブ位置、および文字列の折り返し位置を設定できます。</para>
           <para> </para></remarks>
@@ -306,6 +316,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberStyle As WdListNumberStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdListNumberStyle NumberStyle { Microsoft::Office::Interop::Word::WdListNumberStyle get(); void set(Microsoft::Office::Interop::Word::WdListNumberStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberStyle : Microsoft.Office.Interop.Word.WdListNumberStyle with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -326,9 +337,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdListNumberStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><see cref="T:Microsoft.Office.Interop.Word.ListLevel" />オブジェクトの番号のスタイルを設定または返します。</summary>
+        <summary>オブジェクトの番号のスタイルを設定または返し <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> ます。</summary>
         <value>To be added.</value>
-        <remarks><para><b>NumberStyle</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdListNumberStyle" />定数のいずれかを指定できます。 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
+        <remarks><para><b>NumberStyle</b>プロパティには、定数のいずれかを指定でき <see cref="T:Microsoft.Office.Interop.Word.WdListNumberStyle" /> ます。 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -338,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ListLevel.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -366,6 +378,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.PictureBullet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PictureBullet As InlineShape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::InlineShape ^ PictureBullet { Microsoft::Office::Interop::Word::InlineShape ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PictureBullet : Microsoft.Office.Interop.Word.InlineShape" Usage="Microsoft.Office.Interop.Word.ListLevel.PictureBullet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -383,7 +396,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>行頭絵文字<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />を表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.InlineShape" />行頭絵文字を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -394,6 +407,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.ResetOnHigher" />
       <MemberSignature Language="VB.NET" Value="Public Property ResetOnHigher As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ResetOnHigher { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ResetOnHigher : int with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.ResetOnHigher" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -416,7 +430,7 @@
       <Docs>
         <summary>指定した箇条書きのレベルを 1 から振りする前に表示されるリスト レベルを取得または設定します。 <b>False</b>場合は、リストレベルが表示されるたびに連番が続きます。</summary>
         <value>To be added.</value>
-        <remarks><para>この機能は、数値の順序を維持する、インターリーブされるリストを使用します。 リストレベルの<b>Resetonhigher</b>プロパティを、 <see cref="T:Microsoft.Office.Interop.Word.ListLevels" />コレクション内のインデックスと等しいか、それより大きい値に設定することはできません。</para>
+        <remarks><para>この機能は、数値の順序を維持する、インターリーブされるリストを使用します。 リストレベルの<b>Resetonhigher</b>プロパティを、コレクション内のインデックスと等しいか、それより大きい値に設定することはできません <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -426,6 +440,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.ResetOnHigherOld" />
       <MemberSignature Language="VB.NET" Value="Public Property ResetOnHigherOld As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ResetOnHigherOld { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ResetOnHigherOld : bool with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.ResetOnHigherOld" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -463,6 +478,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.StartAt" />
       <MemberSignature Language="VB.NET" Value="Public Property StartAt As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartAt { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.StartAt : int with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.StartAt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -483,7 +499,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />オブジェクトの開始番号を設定または返します。</summary>
+        <summary>指定したオブジェクトの開始番号を設定または返し <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> ます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -494,6 +510,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.TabPosition" />
       <MemberSignature Language="VB.NET" Value="Public Property TabPosition As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float TabPosition { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.TabPosition : single with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.TabPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -514,7 +531,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />オブジェクトのタブ位置を設定または返します。</summary>
+        <summary>指定したオブジェクトのタブ位置を設定または返し <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> ます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -525,6 +542,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.TextPosition" />
       <MemberSignature Language="VB.NET" Value="Public Property TextPosition As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float TextPosition { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.TextPosition : single with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.TextPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -545,7 +563,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />オブジェクトの折り返しテキストの2行目の位置をポイント単位で取得または設定します。</summary>
+        <summary>指定したオブジェクトの折り返しテキストの2行目の位置をポイント単位で取得または設定し <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> ます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -556,6 +574,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />
       <MemberSignature Language="VB.NET" Value="Public Property TrailingCharacter As WdTrailingCharacter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdTrailingCharacter TrailingCharacter { Microsoft::Office::Interop::Word::WdTrailingCharacter get(); void set(Microsoft::Office::Interop::Word::WdTrailingCharacter value); };" />
+      <MemberSignature Language="F#" Value="member this.TrailingCharacter : Microsoft.Office.Interop.Word.WdTrailingCharacter with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -578,7 +597,7 @@
       <Docs>
         <summary>指定した箇条書きレベルの番号の後に挿入する文字を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para><b>TrailingCharacter</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdTrailingCharacter" />定数のいずれかを指定できます。</para>
+        <remarks><para><b>TrailingCharacter</b>プロパティには、定数のいずれかを指定でき <see cref="T:Microsoft.Office.Interop.Word.WdTrailingCharacter" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

@@ -1,9 +1,10 @@
 <Type Name="Trendline" FullName="Microsoft.Office.Interop.Word.Trendline">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="daa5f65be508f63497b12aec2cbb8833c613a49e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143785" /></Metadata><TypeSignature Language="C#" Value="public interface Trendline" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="814ed03b3af4891e9412032948a393eb82d8a5f7" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925955" /></Metadata><TypeSignature Language="C#" Value="public interface Trendline" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Trendline" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Trendline" />
   <TypeSignature Language="VB.NET" Value="Public Interface Trendline" />
   <TypeSignature Language="C++ CLI" Value="public interface class Trendline" />
+  <TypeSignature Language="F#" Value="type Trendline = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,9 +20,9 @@
   </Attributes>
   <Docs>
     <summary>グラフの近似曲線を表します。</summary>
-    <remarks><para>近似曲線は、データ系列のデータの傾向や方向を示します。 <see cref="T:Microsoft.Office.Interop.Word.Trendline" />オブジェクトは<see cref="T:Microsoft.Office.Interop.Word.Trendlines" />コレクションのメンバーです。 コレクション<see cref="T:Microsoft.Office.Interop.Word.Trendlines" />には、1 <see cref="T:Microsoft.Office.Interop.Word.Trendline" />つのデータ系列のすべてのオブジェクトが含まれています。</para>
+    <remarks><para>近似曲線は、データ系列のデータの傾向や方向を示します。 <see cref="T:Microsoft.Office.Interop.Word.Trendline" />オブジェクトはコレクションのメンバーです <see cref="T:Microsoft.Office.Interop.Word.Trendlines" /> 。 コレクションには、 <see cref="T:Microsoft.Office.Interop.Word.Trendlines" /> <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> 1 つのデータ系列のすべてのオブジェクトが含まれています。</para>
       <para> </para></remarks>
-    <example><para>1 <see cref="T:Microsoft.Office.Interop.Word.Trendlines" />つ<paramref name="Index" /> <see cref="T:Microsoft.Office.Interop.Word.Trendline" />のオブジェクトを<paramref name="Index" />取得するには、() を使用します。ここでは、近似曲線のインデックス番号を指定します。</para>
+    <example><para><see cref="T:Microsoft.Office.Interop.Word.Trendlines" /> <paramref name="Index" /> <paramref name="Index" /> 1 つのオブジェクトを取得するには、() を使用します。ここでは、近似曲線のインデックス番号を指定し <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> ます。</para>
       <para>近似曲線のインデックス番号は、データ系列に追加された順序に対応します。 Trendlines(1) はデータ系列に最初に追加された近似曲線で、Trendlines(Trendlines.Count) は最後に追加された近似曲線です。</para>
       <para>次の使用例は、作業中の文書に含まれる最初のグラフについて最初のデータ系列の近似曲線の種類を変更します。データ系列に近似曲線がない場合は、この使用例は失敗します。</para></example>
   </Docs>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendline.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : obj" Usage="Microsoft.Office.Interop.Word.Trendline.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -49,7 +51,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用<see cref="T:Microsoft.Office.Interop.Word._Application" />すると、Microsoft Word アプリケーションを表すオブジェクトが返されます。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
+        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用すると、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> Microsoft Word アプリケーションを表すオブジェクトが返されます。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
         <value><b>アプリケーション</b>(上記を参照)</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendline.Backward" />
       <MemberSignature Language="VB.NET" Value="Public Property Backward As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Backward { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Backward : double with get, set" Usage="Microsoft.Office.Interop.Word.Trendline.Backward" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendline.Backward2" />
       <MemberSignature Language="VB.NET" Value="Public Property Backward2 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Backward2 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Backward2 : double with get, set" Usage="Microsoft.Office.Interop.Word.Trendline.Backward2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendline.Border" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Border As ChartBorder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartBorder ^ Border { Microsoft::Office::Interop::Word::ChartBorder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Border : Microsoft.Office.Interop.Word.ChartBorder" Usage="Microsoft.Office.Interop.Word.Trendline.Border" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -145,7 +150,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの<see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />枠線を表すオブジェクトを返します。 読み取り専用です。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />オブジェクトの枠線を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Trendline.ClearFormats" />
       <MemberSignature Language="VB.NET" Value="Public Function ClearFormats () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ClearFormats();" />
+      <MemberSignature Language="F#" Value="abstract member ClearFormats : unit -&gt; obj" Usage="trendline.ClearFormats " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -182,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendline.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Trendline.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendline.DataLabel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataLabel As DataLabel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::DataLabel ^ DataLabel { Microsoft::Office::Interop::Word::DataLabel ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataLabel : Microsoft.Office.Interop.Word.DataLabel" Usage="Microsoft.Office.Interop.Word.Trendline.DataLabel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -228,9 +236,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.DataLabel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>近似曲線<see cref="T:Microsoft.Office.Interop.Word.DataLabel" />に関連付けられているデータラベルを表すオブジェクト型 (object) の値を取得します。 読み取り専用です。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.DataLabel" />近似曲線に関連付けられているデータラベルを表すオブジェクト型 (object) の値を取得します。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.DataLabel" /></value>
-        <remarks><para>近似曲線のデータラベルを有効にするには、 <see cref="P:Microsoft.Office.Interop.Word.Trendline.DisplayEquation" />プロパティまたは<see cref="P:Microsoft.Office.Interop.Word.Trendline.DisplayRSquared" />プロパティを<b>True</b>に設定する必要があります。</para>
+        <remarks><para>近似曲線のデータラベルを有効にするに <see cref="P:Microsoft.Office.Interop.Word.Trendline.DisplayEquation" /> は、プロパティまたは <see cref="P:Microsoft.Office.Interop.Word.Trendline.DisplayRSquared" /> プロパティを<b>True</b>に設定する必要があります。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -240,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Trendline.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Function Delete () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; obj" Usage="trendline.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -266,6 +275,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendline.DisplayEquation" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayEquation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayEquation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayEquation : bool with get, set" Usage="Microsoft.Office.Interop.Word.Trendline.DisplayEquation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -297,6 +307,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendline.DisplayRSquared" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayRSquared As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayRSquared { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayRSquared : bool with get, set" Usage="Microsoft.Office.Interop.Word.Trendline.DisplayRSquared" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -328,6 +339,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendline.Format" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As ChartFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFormat ^ Format { Microsoft::Office::Interop::Word::ChartFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Format : Microsoft.Office.Interop.Word.ChartFormat" Usage="Microsoft.Office.Interop.Word.Trendline.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -346,7 +358,7 @@
       </ReturnValue>
       <Docs>
         <summary>線、塗りつぶし、およびオブジェクトの書式設定の効果を取得します。
-読み取り専用<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />です。</summary>
+読み取り専用 <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /> です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -357,6 +369,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendline.Forward" />
       <MemberSignature Language="VB.NET" Value="Public Property Forward As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Forward { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Forward : double with get, set" Usage="Microsoft.Office.Interop.Word.Trendline.Forward" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -394,6 +407,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendline.Forward2" />
       <MemberSignature Language="VB.NET" Value="Public Property Forward2 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Forward2 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Forward2 : double with get, set" Usage="Microsoft.Office.Interop.Word.Trendline.Forward2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -425,6 +439,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendline.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.Trendline.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -453,6 +468,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendline.Intercept" />
       <MemberSignature Language="VB.NET" Value="Public Property Intercept As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Intercept { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Intercept : double with get, set" Usage="Microsoft.Office.Interop.Word.Trendline.Intercept" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -475,7 +491,7 @@
       <Docs>
         <summary>近似曲線が数値軸と交差する点を設定または返します。 取得/設定が可能な <b>Double</b> 値です。</summary>
         <value><b>Double</b></value>
-        <remarks><para>このプロパティを設定する<see cref="P:Microsoft.Office.Interop.Word.Trendline.InterceptIsAuto" />と、プロパティが<b>False</b>に設定されます。</para>
+        <remarks><para>このプロパティを設定すると、 <see cref="P:Microsoft.Office.Interop.Word.Trendline.InterceptIsAuto" /> プロパティが<b>False</b>に設定されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -485,6 +501,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendline.InterceptIsAuto" />
       <MemberSignature Language="VB.NET" Value="Public Property InterceptIsAuto As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InterceptIsAuto { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.InterceptIsAuto : bool with get, set" Usage="Microsoft.Office.Interop.Word.Trendline.InterceptIsAuto" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -507,7 +524,7 @@
       <Docs>
         <summary><b>True</b>の場合、近似曲線が数値軸と交差する点は、回帰計算によって自動的に決まります。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
         <value><b>Boolean</b></value>
-        <remarks><para>プロパティを<see cref="P:Microsoft.Office.Interop.Word.Trendline.Intercept" />設定すると、このプロパティは<b>False</b>に設定されます。</para>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.Trendline.Intercept" />プロパティを設定すると、このプロパティは<b>False</b>に設定されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -517,6 +534,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendline.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Office.Interop.Word.Trendline.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -548,6 +566,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendline.NameIsAuto" />
       <MemberSignature Language="VB.NET" Value="Public Property NameIsAuto As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NameIsAuto { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.NameIsAuto : bool with get, set" Usage="Microsoft.Office.Interop.Word.Trendline.NameIsAuto" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -580,6 +599,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendline.Order" />
       <MemberSignature Language="VB.NET" Value="Public Property Order As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Order { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Order : int with get, set" Usage="Microsoft.Office.Interop.Word.Trendline.Order" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -600,7 +620,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>近似曲線<see cref="P:Microsoft.Office.Interop.Word.Trendline.Type" />がで<see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlPolynomial" />ある場合に、近似曲線の次数 (1 より大きい整数) を表す<b>整数型 (integer</b> ) の値を取得、または設定します。</summary>
+        <summary>近似曲線がである場合に、近似曲線の次数 (1 より大きい整数) を表す<b>整数型 (integer</b> ) の値を取得、または設定し <see cref="P:Microsoft.Office.Interop.Word.Trendline.Type" /> <see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlPolynomial" /> ます。</summary>
         <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -611,6 +631,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendline.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Trendline.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -639,6 +660,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendline.Period" />
       <MemberSignature Language="VB.NET" Value="Public Property Period As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Period { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Period : int with get, set" Usage="Microsoft.Office.Interop.Word.Trendline.Period" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -670,6 +692,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Trendline.Select" />
       <MemberSignature Language="VB.NET" Value="Public Function Select () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; obj" Usage="trendline.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -696,6 +719,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendline.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As XlTrendlineType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlTrendlineType Type { Microsoft::Office::Interop::Word::XlTrendlineType get(); void set(Microsoft::Office::Interop::Word::XlTrendlineType value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.XlTrendlineType with get, set" Usage="Microsoft.Office.Interop.Word.Trendline.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -716,7 +740,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlTrendlineType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>近似曲線の種類<see cref="T:Microsoft.Office.Interop.Word.XlTrendlineType" />を表す値を取得または設定します。</summary>
+        <summary>近似曲線の種類を表す値を取得または設定し <see cref="T:Microsoft.Office.Interop.Word.XlTrendlineType" /> ます。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.XlTrendlineType" /></value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,9 +1,10 @@
 <Type Name="SeriesCollection" FullName="Microsoft.Office.Interop.Word.SeriesCollection">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="f6dd45f5fe33b8e5a1ece1fafb9e3ad6bbeab62c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144009" /></Metadata><TypeSignature Language="C#" Value="public interface SeriesCollection : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="31af8dc769c3ee3844f4d8736c89a0106a12c1ac" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924446" /></Metadata><TypeSignature Language="C#" Value="public interface SeriesCollection : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SeriesCollection implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SeriesCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface SeriesCollection&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class SeriesCollection : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type SeriesCollection = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,9 +23,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>指定されたグラフ<see cref="T:Microsoft.Office.Interop.Word.Series" />またはグラフ種類グループにあるすべてのオブジェクトのコレクションです。</summary>
-    <remarks><para>コレクションを<see cref="M:Microsoft.Office.Interop.Word.Chart.SeriesCollection(System.Object)" />取得するのにには、メソッドを使用します。 <see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" /></para>
-      <para>既存の<see cref="M:Microsoft.Office.Interop.Word.SeriesCollection.Extend(System.Object,System.Object,System.Object)" />データ系列を拡張するには、メソッドを使用します。</para>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.Series" />指定されたグラフまたはグラフ種類グループにあるすべてのオブジェクトのコレクションです。</summary>
+    <remarks><para><see cref="M:Microsoft.Office.Interop.Word.Chart.SeriesCollection(System.Object)" />コレクションを取得するのにには、メソッドを使用し <see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" /> ます。</para>
+      <para>既存の <see cref="M:Microsoft.Office.Interop.Word.SeriesCollection.Extend(System.Object,System.Object,System.Object)" /> データ系列を拡張するには、メソッドを使用します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.SeriesCollection._Default(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function _Default (Index As Object) As Series" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Series ^ _Default(System::Object ^ Index);" />
+      <MemberSignature Language="F#" Value="abstract member _Default : obj -&gt; Microsoft.Office.Interop.Word.Series" Usage="seriesCollection._Default Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -56,7 +58,7 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>内部使用のため予約済みです。</summary>
-        <returns>を<see cref="T:Microsoft.Office.Interop.Word.Series" />返します。</returns>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.Series" /> を返します。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,6 +67,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Series Add([in]object Source, [in]valuetype Microsoft.Office.Interop.Word.XlRowCol Rowcol, [in]object SeriesLabels, [in]object CategoryLabels, [in]object Replace) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.SeriesCollection.Add(System.Object,Microsoft.Office.Interop.Word.XlRowCol,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Source As Object, Optional Rowcol As XlRowCol = Microsoft.Office.Interop.Word.XlRowCol.xlColumns, Optional SeriesLabels As Object, Optional CategoryLabels As Object, Optional Replace As Object) As Series" />
+      <MemberSignature Language="F#" Value="abstract member Add : obj * Microsoft.Office.Interop.Word.XlRowCol * obj * obj * obj -&gt; Microsoft.Office.Interop.Word.Series" Usage="seriesCollection.Add (Source, Rowcol, SeriesLabels, CategoryLabels, Replace)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -90,10 +93,10 @@
         <param name="Rowcol">新しい値が指定された範囲の行と列のどちらにあるかを指定します。</param>
         <param name="SeriesLabels"><b>True</b> 場合は、最初の行または列にデータ系列の名前が含まれています。 <b>False</b> 場合は、最初の行または列にデータ系列の最初のデータ ポイントが含まれています。この引数を省略すると、Microsoft Word は、最初の行または列の内容をデータ系列の名前の場所を特定しようとします。 </param>
         <param name="CategoryLabels"><b>True</b> 場合は、最初の行または列に項目ラベルの名前が含まれています。 <b>False</b> 場合は、最初の行または列にデータ系列の最初のデータ ポイントが含まれています。 この引数を省略すると、最初の行または列の内容によって項目ラベルの位置が自動的に決定されます。</param>
-        <param name="Replace">が<paramref name="CategoryLabels" /> <b>true</b>で、 <paramref name="Replace" />かつ<b>true</b>の場合は、指定されたカテゴリが、データ系列に現在存在しているカテゴリと置き換えられます。 が<paramref name="Replace" /> <b>False</b>の場合、既存のカテゴリは置き換えられません。 既定値は <b>False</b> です。</param>
+        <param name="Replace">が True で、かつ True の場合は、指定されたカテゴリが、 <paramref name="CategoryLabels" /> <b>True</b> <paramref name="Replace" /> データ系列に現在存在しているカテゴリと置き換えられます。 <b>True</b> <paramref name="Replace" />が<b>False</b>の場合、既存のカテゴリは置き換えられません。 既定値は <b>False</b> です。</param>
         <summary>コレクションに 1 つまたは複数の新しいデータ系列を追加します。</summary>
-        <returns>新しい<see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" />データ系列を表すオブジェクト。</returns>
-        <remarks><para>このメソッドは、オブジェクトブラウザーで<see cref="T:Microsoft.Office.Interop.Word.Series" />示されているように、実際にはオブジェクトを返しません。</para>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" />新しいデータ系列を表すオブジェクト。</returns>
+        <remarks><para>このメソッドは、 <see cref="T:Microsoft.Office.Interop.Word.Series" /> オブジェクトブラウザーで示されているように、実際にはオブジェクトを返しません。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SeriesCollection.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : obj" Usage="Microsoft.Office.Interop.Word.SeriesCollection.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -120,7 +124,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用<see cref="T:Microsoft.Office.Interop.Word._Application" />すると、Microsoft Word アプリケーションを表すオブジェクトが返されます。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
+        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用すると、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> Microsoft Word アプリケーションを表すオブジェクトが返されます。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
         <value><b>アプリケーション</b>(上記を参照)</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SeriesCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.SeriesCollection.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SeriesCollection.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.SeriesCollection.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -187,6 +193,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Extend([in]object Source, [in]object Rowcol, [in]object CategoryLabels) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.SeriesCollection.Extend(System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Extend (Source As Object, Optional Rowcol As Object, Optional CategoryLabels As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member Extend : obj * obj * obj -&gt; obj" Usage="seriesCollection.Extend (Source, Rowcol, CategoryLabels)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -206,8 +213,8 @@
         <Parameter Name="CategoryLabels" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source"><see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" />オブジェクトに追加される新しいデータ。 A1 スタイルの範囲参照として表されます。</param>
-        <param name="Rowcol">新しい値が、対象範囲の行にあるか、列にあるかを指定します。 次<see cref="T:Microsoft.Office.Interop.Word.XlRowCol" />の定数のいずれかをする<see cref="F:Microsoft.Office.Interop.Word.XlRowCol.xlRows" />こと<see cref="F:Microsoft.Office.Interop.Word.XlRowCol.xlColumns" />ができます。または。 この引数を省略すると、選択範囲のサイズと方向、または配列の次元により、新しい値が行と列のいずれにあるかが決まります。</param>
+        <param name="Source">オブジェクトに追加される新しいデータ <see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" /> 。 A1 スタイルの範囲参照として表されます。</param>
+        <param name="Rowcol">新しい値が、対象範囲の行にあるか、列にあるかを指定します。 次の定数のいずれかをすることができます。 <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> <see cref="F:Microsoft.Office.Interop.Word.XlRowCol.xlRows" /> または <see cref="F:Microsoft.Office.Interop.Word.XlRowCol.xlColumns" /> 。 この引数を省略すると、選択範囲のサイズと方向、または配列の次元により、新しい値が行と列のいずれにあるかが決まります。</param>
         <param name="CategoryLabels"><b>True を指定</b> して、最初の行または列には、項目軸ラベルの名前が含まれています。 <b>False を指定</b> して、最初の行または列には、シリーズの最初のデータ ポイントが含まれています。 この引数を省略すると、最初の行または列の内容によって項目ラベルの位置が自動的に決定されます。</param>
         <summary>既存のデータ系列のコレクションに新しいデータ要素を追加します。</summary>
         <returns>To be added.</returns>
@@ -221,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.SeriesCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="seriesCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -243,7 +251,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>を<see cref="T:System.Collections.IEnumerator" />返します。</returns>
+        <returns><see cref="T:System.Collections.IEnumerator" /> を返します。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SeriesCollection.Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Object) As Series" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Series ^ default[System::Object ^] { Microsoft::Office::Interop::Word::Series ^ get(System::Object ^ Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.Series" Usage="Microsoft.Office.Interop.Word.SeriesCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -275,7 +284,7 @@
       <Docs>
         <param name="Index">オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
-        <value>を<see cref="T:Microsoft.Office.Interop.Word.Series" />返します。</value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Series" /> を返します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -285,6 +294,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.SeriesCollection.NewSeries" />
       <MemberSignature Language="VB.NET" Value="Public Function NewSeries () As Series" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Series ^ NewSeries();" />
+      <MemberSignature Language="F#" Value="abstract member NewSeries : unit -&gt; Microsoft.Office.Interop.Word.Series" Usage="seriesCollection.NewSeries " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -301,7 +311,7 @@
       <Parameters />
       <Docs>
         <summary>新しいデータ系列を作成します。</summary>
-        <returns>新しい<see cref="T:Microsoft.Office.Interop.Word.Series" />データ系列を表すオブジェクト。</returns>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.Series" />新しいデータ系列を表すオブジェクト。</returns>
         <remarks><para>このメソッドは、ピボットグラフには利用できません。</para>
           <para> </para></remarks>
       </Docs>
@@ -312,6 +322,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SeriesCollection.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.SeriesCollection.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

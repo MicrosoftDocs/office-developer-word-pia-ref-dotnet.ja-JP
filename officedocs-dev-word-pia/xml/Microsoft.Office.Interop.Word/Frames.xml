@@ -1,9 +1,10 @@
 <Type Name="Frames" FullName="Microsoft.Office.Interop.Word.Frames">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3bb02e91ce21432108f0e38d622554ad3fd66826" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148034" /></Metadata><TypeSignature Language="C#" Value="public interface Frames : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2755b67c903128225734bf1bab368a1ce530e7e3" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924152" /></Metadata><TypeSignature Language="C#" Value="public interface Frames : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Frames implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Frames" />
   <TypeSignature Language="VB.NET" Value="Public Interface Frames&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Frames : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Frames = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,11 +23,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>選択範囲、 <see cref="T:Microsoft.Office.Interop.Word.Frame" />指定範囲、または文書内のオブジェクトのコレクションです。</summary>
-    <remarks><para><b>Frame</b>コレクションを取得するの<see cref="T:Microsoft.Office.Interop.Word.Selection" />に<see cref="T:Microsoft.Office.Interop.Word.Range" />には<see cref="T:Microsoft.Office.Interop.Word.Document" /> 、、、またはオブジェクトの<b>frame</b>プロパティを使用します。</para>
-      <para>メソッドを<see cref="M:Microsoft.Office.Interop.Word.Frames.Add(Microsoft.Office.Interop.Word.Range)" />使用して、範囲を囲むフレームを追加します。</para>
-      <para>Frame <b></b>(<paramref name="index" />) を使用し<paramref name="index" />ます。ここで、はインデックス番号を使用して、1つの<b>Frame</b>オブジェクトを返します。 インデックス番号は、選択範囲、指定範囲、または文書内でのレイアウト枠の位置を表します。</para>
-      <para>文書<see cref="P:Microsoft.Office.Interop.Word.Frames.Count" />内のこのコレクションのプロパティは、メインストーリーのみの項目数を返します。 他のストーリーに含まれる項目の数を取得するには、 <b>Range</b> オブジェクトと共にコレクションを使用します。</para>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.Frame" />選択範囲、指定範囲、または文書内のオブジェクトのコレクションです。</summary>
+    <remarks><para><b>Frames</b> <see cref="T:Microsoft.Office.Interop.Word.Selection" /> <see cref="T:Microsoft.Office.Interop.Word.Range" /> <see cref="T:Microsoft.Office.Interop.Word.Document" /> <b>Frame</b>コレクションを取得するのにには、、、またはオブジェクトの frame プロパティを使用します。</para>
+      <para>メソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.Frames.Add(Microsoft.Office.Interop.Word.Range)" /> 範囲を囲むフレームを追加します。</para>
+      <para>Frame <b>(</b> <paramref name="index" /> ) を使用し <paramref name="index" /> ます。ここで、はインデックス番号を使用して、1つの<b>Frame</b>オブジェクトを返します。 インデックス番号は、選択範囲、指定範囲、または文書内でのレイアウト枠の位置を表します。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.Frames.Count" />文書内のこのコレクションのプロパティは、メインストーリーのみの項目数を返します。 他のストーリーに含まれる項目の数を取得するには、 <b>Range</b> オブジェクトと共にコレクションを使用します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,7 +35,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Frame Add (Microsoft.Office.Interop.Word.Range Range);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Frame Add([in]class Microsoft.Office.Interop.Word.Range Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Frames.Add(Microsoft.Office.Interop.Word.Range)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Range As Range) As Frame" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Frame ^ Add(Microsoft::Office::Interop::Word::Range ^ Range);" />
+      <MemberSignature Language="F#" Value="abstract member Add : Microsoft.Office.Interop.Word.Range -&gt; Microsoft.Office.Interop.Word.Frame" Usage="frames.Add Range" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -52,8 +55,8 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 レイアウト枠で囲む範囲を指定します。</param>
-        <summary>指定範囲<see cref="T:Microsoft.Office.Interop.Word.Frame" /> 、選択範囲、または文書に追加する新しいレイアウト枠を表すオブジェクトを返します。</summary>
+        <param name="Range">必要な <see cref="T:Microsoft.Office.Interop.Word.Range" /> オブジェクト。 レイアウト枠で囲む範囲を指定します。</param>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Frame" />指定範囲、選択範囲、または文書に追加する新しいレイアウト枠を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frames.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Frames.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -81,7 +85,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frames.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Frames.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frames.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Frames.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -150,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Frames.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="frames.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -175,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Frames.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="frames.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -207,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frames.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Frame" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Frame ^ default[int] { Microsoft::Office::Interop::Word::Frame ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.Frame" Usage="Microsoft.Office.Interop.Word.Frames.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -239,6 +248,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frames.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Frames.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

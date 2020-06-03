@@ -1,9 +1,10 @@
 <Type Name="DocumentEvents2_XMLBeforeDeleteEventHandler" FullName="Microsoft.Office.Interop.Word.DocumentEvents2_XMLBeforeDeleteEventHandler">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="dd959bd70dac23bc982627c03dc51ca9e3940e13" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146940" /></Metadata><TypeSignature Language="C#" Value="public delegate void DocumentEvents2_XMLBeforeDeleteEventHandler(Range DeletedRange, XMLNode OldXMLNode, bool InUndoRedo);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="34a3dc0bcfc5983f1e1c937f45ca0f0715e24caf" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924376" /></Metadata><TypeSignature Language="C#" Value="public delegate void DocumentEvents2_XMLBeforeDeleteEventHandler(Range DeletedRange, XMLNode OldXMLNode, bool InUndoRedo);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DocumentEvents2_XMLBeforeDeleteEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DocumentEvents2_XMLBeforeDeleteEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DocumentEvents2_XMLBeforeDeleteEventHandler(DeletedRange As Range, OldXMLNode As XMLNode, InUndoRedo As Boolean)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DocumentEvents2_XMLBeforeDeleteEventHandler(Range ^ DeletedRange, XMLNode ^ OldXMLNode, bool InUndoRedo);" />
+  <TypeSignature Language="F#" Value="type DocumentEvents2_XMLBeforeDeleteEventHandler = delegate of Range * XMLNode * bool -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -28,11 +29,11 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="DeletedRange"><see cref="T:Microsoft.Office.Interop.Word.Range" />対象. 削除する XML 要素の内容。 要素のみが削除され、テキストが関連付けられ<paramref name="DeletedRange" />ていない場合、パラメーターは存在しないので、 <b>Nothing</b>に設定されます。</param>
+    <param name="DeletedRange"><see cref="T:Microsoft.Office.Interop.Word.Range" />対象. 削除する XML 要素の内容。 要素のみが削除され、テキストが関連付けられていない場合、パラメーターは存在しないので、 <paramref name="DeletedRange" /> <b>Nothing</b>に設定されます。</param>
     <param name="OldXMLNode"><see cref="T:Microsoft.Office.Interop.Word.XMLNode" />対象. 削除するノードを指定します。</param>
     <param name="InUndoRedo"><b>ブール値</b> です。 <b>True</b> では、Microsoft Word で <b>元に戻す</b>または <b>やり直し</b>機能を使用して、アクションが実行されたことを示します。</param>
-    <summary>イベントのイベントハンドラーを追加するために使用するデリゲートの種類。 <b></b> <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLBeforeDelete" /> <b>Xmlbeforedelete</b>イベントは、ユーザーが文書から XML 要素を削除したときに発生します。</summary>
-    <remarks><para>パラメーターに<b>True</b> <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLAfterInsert" />が設定されている場合は、および<b>xmlbeforedelete</b>イベントが実行されている間、文書内の XML を変更しないでください。 <paramref name="InUndoRedo" /> </para>
+    <summary>イベントのイベントハンドラーを追加するために使用する<b>デリゲート</b>の種類 <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLBeforeDelete" /> 。 <b>Xmlbeforedelete</b>イベントは、ユーザーが文書から XML 要素を削除したときに発生します。</summary>
+    <remarks><para>パラメーターに True が設定されている場合は、 <paramref name="InUndoRedo" /> <b>True</b> <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLAfterInsert" /> および<b>xmlbeforedelete</b>イベントが実行されている間、文書内の XML を変更しないでください。 </para>
       <para><paramref name="InUndoRedo" />パラメーターが<b>False</b>の場合は、ドキュメント内の XML を挿入および削除できますが、 <b>XMLAfterInsert</b>および<b>xmlbeforedelete</b>イベントは、互いにキャンセルされないため、無限ループが発生していることに注意してください。 グローバルな<b>ブール型 (Boolean)</b>の変数を使用して無限ループを防止し、エラー処理ルーチンの開始時にそれを確認できます。</para>
       <para> </para></remarks>
   </Docs>

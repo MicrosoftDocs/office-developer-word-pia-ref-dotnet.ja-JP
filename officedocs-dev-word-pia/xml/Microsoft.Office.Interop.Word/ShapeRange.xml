@@ -1,9 +1,10 @@
 <Type Name="ShapeRange" FullName="Microsoft.Office.Interop.Word.ShapeRange">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="c0f3e7f22555a874e2197ff4def4b0e9d86e9c77" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146144" /></Metadata><TypeSignature Language="C#" Value="public interface ShapeRange : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2cef216ca2a3067be6943c9a3ab63806642f66da" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924530" /></Metadata><TypeSignature Language="C#" Value="public interface ShapeRange : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShapeRange implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ShapeRange" />
   <TypeSignature Language="VB.NET" Value="Public Interface ShapeRange&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class ShapeRange : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type ShapeRange = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -25,14 +26,14 @@
     <summary>文書の図形の集合である図形範囲を表します。</summary>
     <remarks><para>図形範囲には、文書内の 1 つの図形を含めたり、文書内のすべての図形を含めることができます。 図面内のすべての図形、または選択範囲内のすべての図形から選択した図形を含めることができます。図形範囲を作成します。 たとえば、ドキュメント、ドキュメントで選択したすべての図形、または文書内のすべてのフリー フォーム図形の最初の 3 つの図形を含む <b>ShapeRange</b> コレクションを作成できます。</para>
       <para>
-        <b>メモ</b> <see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクトを使用して実行できるほとんどの操作は、1つの図形だけを含む<b>ShapeRange</b>オブジェクトを使用して行うこともできます。 いくつかの操作では、複数の図形を含む <b>ShapeRange</b> オブジェクトに対して実行されるときにエラーが発生します。</para>
-      <para>文書の一連の図形<paramref name="index" />を表す<b>ShapeRange</b>コレクションを取得するには、shapes () を使用し<b>ます。</b>ここ<paramref name="index" />で、は図形の名前またはインデックス番号、または図形の名前またはインデックス番号を含む配列を取得します。 プログラムで配列を使用して、名前またはインデックス番号の配列を作成できます。</para>
-      <para><see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" />メソッドを使用して任意の数の図形を返すことができますが、コレクション<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Item(System.Object@)" />のメンバーを1つだけ取得する場合は、このメソッドを使用する方が簡単です。 たとえば、Shapes.Range(1) よりも Shapes(1) の方が記述が簡単になります。</para>
-      <para>選択範囲内の図形<paramref name="index" />を表す<b>shape</b>オブジェクトを取得するには、ShapeRange () を使用<b>します。</b>ここ<paramref name="index" />で、は名前またはインデックス番号を指定します。</para>
-      <para>、 <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Align(Microsoft.Office.Core.MsoAlignCmd,System.Int32)" /> <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Distribute(Microsoft.Office.Core.MsoDistributeCmd,System.Int32)" />、または<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" />の方法を使用して、一連の図形を相互に相対的に配置したり、文書に対して相対的に配置したりします。</para>
-      <para>、 <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Regroup" />、、または<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Ungroup" />のいずれかのメソッドを使用して、図形範囲から形成される<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Group" />1 つの図形を作成して操作します。 Shape <see cref="P:Microsoft.Office.Interop.Word.Shape.GroupItems" />オブジェクトのプロパティは、グループ化<see cref="T:Microsoft.Office.Interop.Word.GroupShapes" />されているすべての図形を表すオブジェクトを返します。このオブジェクトは、1つの図形を形成します。</para>
-      <para>レコーダーは、図形を<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />録音するときに常にプロパティを使用します。</para>
-      <para><b>ShapeRange</b>オブジェクトには、 <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />オブジェクトは含まれません。</para>
+        <b>メモ</b> オブジェクトを使用して実行できるほとんどの操作は <see cref="T:Microsoft.Office.Interop.Word.Shape" /> 、1つの図形だけを含む<b>ShapeRange</b>オブジェクトを使用して行うこともできます。 いくつかの操作では、複数の図形を含む <b>ShapeRange</b> オブジェクトに対して実行されるときにエラーが発生します。</para>
+      <para>文書<b>Shapes.Range</b>の <paramref name="index" /> 一連の図形を表す ShapeRange コレクションを取得するには、shapes () を使用します。ここで、 <paramref name="index" /> は図形の名前またはインデックス<b>ShapeRange</b>番号、または図形の名前またはインデックス番号を含む配列を取得します。 プログラムで配列を使用して、名前またはインデックス番号の配列を作成できます。</para>
+      <para>メソッドを使用して <see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" /> 任意の数の図形を返すことができますが、 <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Item(System.Object@)" /> コレクションのメンバーを1つだけ取得する場合は、このメソッドを使用する方が簡単です。 たとえば、Shapes.Range(1) よりも Shapes(1) の方が記述が簡単になります。</para>
+      <para>選択<b>Selection.ShapeRange</b>範囲 <paramref name="index" /> 内の <paramref name="index" /> 図形を表す<b>shape</b>オブジェクトを取得するには、ShapeRange () を使用します。ここで、は名前またはインデックス番号を指定します。</para>
+      <para>、、またはの方法を使用して、一連の図形を相互 <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Align(Microsoft.Office.Core.MsoAlignCmd,System.Int32)" /> <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Distribute(Microsoft.Office.Core.MsoDistributeCmd,System.Int32)" /> <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" /> に相対的に配置したり、文書に対して相対的に配置したりします。</para>
+      <para>、、 <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Group" /> 、 <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Regroup" /> またはのいずれかのメソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Ungroup" /> 図形範囲から形成される1つの図形を作成して操作します。 <see cref="P:Microsoft.Office.Interop.Word.Shape.GroupItems" />Shape オブジェクトのプロパティは、 <see cref="T:Microsoft.Office.Interop.Word.GroupShapes" /> グループ化されているすべての図形を表すオブジェクトを返します。このオブジェクトは、1つの図形を形成します。</para>
+      <para>レコーダーは、 <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> 図形を録音するときに常にプロパティを使用します。</para>
+      <para><b>ShapeRange</b>オブジェクトには、オブジェクトは含まれません <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> 。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.Activate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Activate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Activate();" />
+      <MemberSignature Language="F#" Value="abstract member Activate : unit -&gt; unit" Usage="shapeRange.Activate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Adjustments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Adjustments As Adjustments" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Adjustments ^ Adjustments { Microsoft::Office::Interop::Word::Adjustments ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Adjustments : Microsoft.Office.Interop.Word.Adjustments" Usage="Microsoft.Office.Interop.Word.ShapeRange.Adjustments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -87,7 +90,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Adjustments</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オートシェイプ<see cref="T:Microsoft.Office.Interop.Word.Adjustments" />またはワードアートを表す、指定した<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />オブジェクトのすべての調整値を含むオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Adjustments" /> <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> オートシェイプまたはワードアートを表す、指定したオブジェクトのすべての調整値を含むオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.Align(Microsoft.Office.Core.MsoAlignCmd,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Align (Align As MsoAlignCmd, RelativeTo As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Align(Microsoft::Office::Core::MsoAlignCmd Align, int RelativeTo);" />
+      <MemberSignature Language="F#" Value="abstract member Align : Microsoft.Office.Core.MsoAlignCmd * int -&gt; unit" Usage="shapeRange.Align (Align, RelativeTo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -116,7 +120,7 @@
         <Parameter Name="RelativeTo" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Align">必須<see cref="T:Microsoft.Office.Core.MsoAlignCmd" />。 指定した図形範囲の図形を配置する方法を指定します。<b>MsoAlignCmd</b>には、次の定数のいずれかを指定できます。<b>msoAlignCenters</b><b>msoAlignMiddles</b><b>msoAlignTops</b><b>msoAlignBottoms</b><b>msoAlignLefts</b><b>msoAlignRights</b></param>
+        <param name="Align">必須 <see cref="T:Microsoft.Office.Core.MsoAlignCmd" /> 。 指定した図形範囲の図形を配置する方法を指定します。<b>MsoAlignCmd</b>には、次の定数のいずれかを指定できます。<b>msoAlignCenters</b><b>msoAlignMiddles</b><b>msoAlignTops</b><b>msoAlignBottoms</b><b>msoAlignLefts</b><b>msoAlignRights</b></param>
         <param name="RelativeTo">整数型 (<b>Integer</b>) の値を使用します。 <b>True</b> 図形、文書の端に対して整列します。 <b>False</b> 互いを基準にして、図形を整列します。</param>
         <summary>指定した図形範囲にある図形を整列させます。</summary>
         <remarks>To be added.</remarks>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.AlternativeText" />
       <MemberSignature Language="VB.NET" Value="Public Property AlternativeText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AlternativeText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AlternativeText : string with get, set" Usage="Microsoft.Office.Interop.Word.ShapeRange.AlternativeText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Anchor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Anchor As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Anchor { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Anchor : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.ShapeRange.Anchor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -176,7 +182,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />た図形範囲のアンカーが付けられた範囲を表すオブジェクトを返します。</summary>
+        <summary>指定し <see cref="T:Microsoft.Office.Interop.Word.Range" /> た図形範囲のアンカーが付けられた範囲を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ShapeRange.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -204,7 +211,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -215,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.Apply" />
       <MemberSignature Language="VB.NET" Value="Public Sub Apply ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Apply();" />
+      <MemberSignature Language="F#" Value="abstract member Apply : unit -&gt; unit" Usage="shapeRange.Apply " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -230,8 +238,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><see cref="M:Microsoft.Office.Interop.Word.ShapeRange.PickUp" />メソッドを使用してコピーされた、指定された図形の書式設定に適用されます。</summary>
-        <remarks><para>オブジェクトの書式設定が<b>PickUp</b>メソッドを使用して以前にコピーされていない場合は、Apply メソッドを使用するとエラーが発生します。 <b></b> <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /></para>
+        <summary>メソッドを使用してコピーされた、指定された図形の書式設定に適用され <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.PickUp" /> ます。</summary>
+        <remarks><para>オブジェクトの書式設定 <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> が<b>PickUp</b>メソッドを使用して以前にコピーされていない場合は、 <b>Apply</b>メソッドを使用するとエラーが発生します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -241,6 +249,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.AutoShapeType" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoShapeType As MsoAutoShapeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoAutoShapeType AutoShapeType { Microsoft::Office::Core::MsoAutoShapeType get(); void set(Microsoft::Office::Core::MsoAutoShapeType value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoShapeType : Microsoft.Office.Core.MsoAutoShapeType with get, set" Usage="Microsoft.Office.Interop.Word.ShapeRange.AutoShapeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -261,7 +270,7 @@
         <ReturnType>Microsoft.Office.Core.MsoAutoShapeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>線またはフリーフォーム以外のオートシェイプ<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />を表す必要がある、指定したオブジェクトの図形の種類を設定します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />線またはフリーフォーム以外のオートシェイプを表す必要がある、指定したオブジェクトの図形の種類を設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -272,6 +281,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.BackgroundStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property BackgroundStyle As MsoBackgroundStyleIndex" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoBackgroundStyleIndex BackgroundStyle { Microsoft::Office::Core::MsoBackgroundStyleIndex get(); void set(Microsoft::Office::Core::MsoBackgroundStyleIndex value); };" />
+      <MemberSignature Language="F#" Value="member this.BackgroundStyle : Microsoft.Office.Core.MsoBackgroundStyleIndex with get, set" Usage="Microsoft.Office.Interop.Word.ShapeRange.BackgroundStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -294,7 +304,7 @@
       <Docs>
         <summary>指定した図形範囲内の図形の背景のスタイルを取得または設定します。</summary>
         <value>指定した図形範囲の図形の背景のスタイルを指定します。</value>
-        <remarks><para>読み取り/書き込み<see cref="T:Microsoft.Office.Core.MsoBackgroundStyleIndex" />。</para>
+        <remarks><para>読み取り/書き込み <see cref="T:Microsoft.Office.Core.MsoBackgroundStyleIndex" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -304,6 +314,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Callout" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Callout As CalloutFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::CalloutFormat ^ Callout { Microsoft::Office::Interop::Word::CalloutFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Callout : Microsoft.Office.Interop.Word.CalloutFormat" Usage="Microsoft.Office.Interop.Word.ShapeRange.Callout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -321,7 +332,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.CalloutFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>引き出し線<see cref="T:Microsoft.Office.Interop.Word.CalloutFormat" />を表す、指定し<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />たオブジェクトの吹き出し書式のプロパティを含むオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.CalloutFormat" />引き出し線を表す、指定したオブジェクトの吹き出し書式のプロパティを含むオブジェクトを返し <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> ます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -332,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropBottom(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CanvasCropBottom (Increment As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CanvasCropBottom(float Increment);" />
+      <MemberSignature Language="F#" Value="abstract member CanvasCropBottom : single -&gt; unit" Usage="shapeRange.CanvasCropBottom Increment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -351,7 +363,7 @@
       <Docs>
         <param name="Increment">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 トリミング後の描画キャンバスの高さを、パーセンテージ ポイントで指定します。 0.9 を入力すると、キャンバスの高さが下側から 10% トリミングされます。 0.1 を入力すると、キャンバスの高さが下側から 90% トリミングされます。</param>
         <summary>描画キャンバスの高さに対するパーセンテージで、キャンバスを下側からトリミングします。</summary>
-        <remarks><para><see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropTop(System.Single)" />メソッドを使用して、上からトリミングします。</para>
+        <remarks><para>メソッドを使用して <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropTop(System.Single)" /> 、上からトリミングします。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -361,6 +373,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropLeft(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CanvasCropLeft (Increment As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CanvasCropLeft(float Increment);" />
+      <MemberSignature Language="F#" Value="abstract member CanvasCropLeft : single -&gt; unit" Usage="shapeRange.CanvasCropLeft Increment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -380,7 +393,7 @@
       <Docs>
         <param name="Increment">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 トリミング後の描画キャンバスの幅を、パーセンテージ ポイントで指定します。 0.9 を入力すると、キャンバスの幅が左側から 10% トリミングされます。 0.1 を入力すると、キャンバスの幅が左側から 90% トリミングされます。</param>
         <summary>.描画キャンバスの幅をパーセンテージで、キャンバスの左側からトリミングします。</summary>
-        <remarks><para><see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropRight(System.Single)" />メソッドを使用して、描画キャンバスの右辺からトリミングします。</para>
+        <remarks><para>メソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropRight(System.Single)" /> 描画キャンバスの右辺からトリミングします。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -390,6 +403,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropRight(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CanvasCropRight (Increment As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CanvasCropRight(float Increment);" />
+      <MemberSignature Language="F#" Value="abstract member CanvasCropRight : single -&gt; unit" Usage="shapeRange.CanvasCropRight Increment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -409,7 +423,7 @@
       <Docs>
         <param name="Increment">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 描画キャンバスのトリミング後の幅を、パーセンテージ ポイントで指定します。 0.9 を入力すると、キャンバスの幅が右側から 10% トリミングされます。 0.1 を入力すると、キャンバスの幅が右側から 90% トリミングされます。</param>
         <summary>描画キャンバスの幅をパーセンテージで、キャンバスの右側からトリミングします。</summary>
-        <remarks><para>描画キャンバス<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropLeft(System.Single)" />の左側からトリミングするには、メソッドを使用します。</para>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropLeft(System.Single)" />描画キャンバスの左側からトリミングするには、メソッドを使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -419,6 +433,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropTop(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CanvasCropTop (Increment As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CanvasCropTop(float Increment);" />
+      <MemberSignature Language="F#" Value="abstract member CanvasCropTop : single -&gt; unit" Usage="shapeRange.CanvasCropTop Increment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -438,7 +453,7 @@
       <Docs>
         <param name="Increment">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 描画キャンバスのトリミング後の高さを、パーセンテージ ポイントで指定します。 0.9 を入力すると、キャンバスの高さが上側から 10% トリミングされます。 0.1 を入力すると、キャンバスの高さが上側から 90% トリミングされます。</param>
         <summary>描画キャンバスの幅をパーセンテージで、キャンバスの上端からトリミングします。</summary>
-        <remarks><para><see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropBottom(System.Single)" />メソッドを使用して下からトリミングします。</para>
+        <remarks><para>メソッドを使用し <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropBottom(System.Single)" /> て下からトリミングします。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -448,6 +463,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.CanvasItems" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanvasItems As CanvasShapes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::CanvasShapes ^ CanvasItems { Microsoft::Office::Interop::Word::CanvasShapes ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanvasItems : Microsoft.Office.Interop.Word.CanvasShapes" Usage="Microsoft.Office.Interop.Word.ShapeRange.CanvasItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -465,7 +481,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.CanvasShapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>描画キャンバス<see cref="T:Microsoft.Office.Interop.Word.CanvasShapes" />内の図形のコレクションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.CanvasShapes" />描画キャンバス内の図形のコレクションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -476,6 +492,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Child" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Child As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Child { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberSignature Language="F#" Value="member this.Child : Microsoft.Office.Core.MsoTriState" Usage="Microsoft.Office.Interop.Word.ShapeRange.Child" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -504,6 +521,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.ConnectionSiteCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectionSiteCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ConnectionSiteCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionSiteCount : int" Usage="Microsoft.Office.Interop.Word.ShapeRange.ConnectionSiteCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -535,6 +553,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Connector" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connector As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Connector { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberSignature Language="F#" Value="member this.Connector : Microsoft.Office.Core.MsoTriState" Usage="Microsoft.Office.Interop.Word.ShapeRange.Connector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -566,6 +585,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.ConnectorFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectorFormat As ConnectorFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ConnectorFormat ^ ConnectorFormat { Microsoft::Office::Interop::Word::ConnectorFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectorFormat : Microsoft.Office.Interop.Word.ConnectorFormat" Usage="Microsoft.Office.Interop.Word.ShapeRange.ConnectorFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -597,6 +617,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.ConvertToFrame" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertToFrame () As Frame" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Frame ^ ConvertToFrame();" />
+      <MemberSignature Language="F#" Value="abstract member ConvertToFrame : unit -&gt; Microsoft.Office.Interop.Word.Frame" Usage="shapeRange.ConvertToFrame " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -615,9 +636,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定された図形をレイアウト枠に変換します。 新しいフレーム<see cref="T:Microsoft.Office.Interop.Word.Frame" />を表すオブジェクトを返します。</summary>
+        <summary>指定された図形をレイアウト枠に変換します。 <see cref="T:Microsoft.Office.Interop.Word.Frame" />新しいフレームを表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks><para>テキストを追加できない図形はレイアウト枠に変換できません。 図、OLE オブジェクト、および ActiveX コントロールの場合は、 <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ConvertToInlineShape" />メソッドを使用します。</para>
+        <remarks><para>テキストを追加できない図形はレイアウト枠に変換できません。 図、OLE オブジェクト、および ActiveX コントロールの場合は、メソッドを使用し <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ConvertToInlineShape" /> ます。</para>
           <para>複数の図形を含む <b>ShapeRange</b> オブジェクトに対してこのメソッドを使用する場合は、エラーが発生します。</para>
           <para>Microsoft Word 97 以降では、フレームはテキストボックスに置き換えられました。</para>
           <para> </para></remarks>
@@ -629,6 +650,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.ConvertToInlineShape" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertToInlineShape () As InlineShape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::InlineShape ^ ConvertToInlineShape();" />
+      <MemberSignature Language="F#" Value="abstract member ConvertToInlineShape : unit -&gt; Microsoft.Office.Interop.Word.InlineShape" Usage="shapeRange.ConvertToInlineShape " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -644,10 +666,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>文書の描画レイヤーで指定された図形を、文字列レイヤーの位置を固定した図形に変換します。 図また<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />は OLE オブジェクトを表すオブジェクトを返します。</summary>
+        <summary>文書の描画レイヤーで指定された図形を、文字列レイヤーの位置を固定した図形に変換します。 <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />図または OLE オブジェクトを表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks><para>図、OLE オブジェクト、または ActiveX コントロールを表す図形のみを変換できます。</para>
-          <para>インライン図形に接続されているテキストをサポートするための図形を変換できません。 これらの図形に対して<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ConvertToFrame" />は、メソッドを使用します。</para>
+          <para>インライン図形に接続されているテキストをサポートするための図形を変換できません。 これらの図形に対しては、メソッドを使用 <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ConvertToFrame" /> します。</para>
           <para>複数の図形を含む <b>ShapeRange</b> オブジェクトに対してこのメソッドを使用する場合は、エラーが発生します。</para>
           <para> </para></remarks>
       </Docs>
@@ -658,6 +680,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.ShapeRange.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -686,6 +709,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ShapeRange.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -716,6 +740,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="shapeRange.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -741,6 +766,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Diagram" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Diagram As IMsoDiagram" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::IMsoDiagram ^ Diagram { Microsoft::Office::Core::IMsoDiagram ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Diagram : Microsoft.Office.Core.IMsoDiagram" Usage="Microsoft.Office.Interop.Word.ShapeRange.Diagram" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -772,6 +798,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.DiagramNode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DiagramNode As DiagramNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::DiagramNode ^ DiagramNode { Microsoft::Office::Interop::Word::DiagramNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DiagramNode : Microsoft.Office.Interop.Word.DiagramNode" Usage="Microsoft.Office.Interop.Word.ShapeRange.DiagramNode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -792,7 +819,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ダイアグラム内<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />のノードを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />ダイアグラム内のノードを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -803,6 +830,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.Distribute(Microsoft.Office.Core.MsoDistributeCmd,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Distribute (Distribute As MsoDistributeCmd, RelativeTo As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Distribute(Microsoft::Office::Core::MsoDistributeCmd Distribute, int RelativeTo);" />
+      <MemberSignature Language="F#" Value="abstract member Distribute : Microsoft.Office.Core.MsoDistributeCmd * int -&gt; unit" Usage="shapeRange.Distribute (Distribute, RelativeTo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -821,7 +849,7 @@
         <Parameter Name="RelativeTo" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Distribute">必須<see cref="T:Microsoft.Office.Core.MsoDistributeCmd" />。<b>MsoDistributeCmd</b>には、次の定数のいずれかを指定できます。<b>msoDistributeHorizontally</b><b>msoDistributeVertically</b></param>
+        <param name="Distribute">必須 <see cref="T:Microsoft.Office.Core.MsoDistributeCmd" /> 。<b>MsoDistributeCmd</b>には、次の定数のいずれかを指定できます。<b>msoDistributeHorizontally</b><b>msoDistributeVertically</b></param>
         <param name="RelativeTo">整数型 (<b>Integer</b>) の値を使用します。 <b>True</b> を設定すると、ページ全体にわたって上下または左右に図形が等間隔に配置されます。 <b>False</b> を設定すると、それらの図形があった元の場所で上下または左右に等間隔に配置されます。</param>
         <summary>指定された図形範囲の図形を等間隔に配置します。</summary>
         <remarks><para>図形を左右または上下に整列するか、図形があった元の場所またはページ全体に配置するかを指定できます。</para>
@@ -834,6 +862,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.Duplicate" />
       <MemberSignature Language="VB.NET" Value="Public Function Duplicate () As ShapeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::ShapeRange ^ Duplicate();" />
+      <MemberSignature Language="F#" Value="abstract member Duplicate : unit -&gt; Microsoft.Office.Interop.Word.ShapeRange" Usage="shapeRange.Duplicate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -849,7 +878,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />オブジェクトの複製を作成し、元の図形の標準の<see cref="T:Microsoft.Office.Interop.Word.Shapes" />オフセットでコレクションに新しい図形範囲を追加した後、新しい<see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクトを返します。</summary>
+        <summary>指定したオブジェクトの複製を作成し <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> 、元の図形の標準のオフセットでコレクションに新しい図形範囲を追加 <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> した後、新しいオブジェクトを返し <see cref="T:Microsoft.Office.Interop.Word.Shape" /> ます。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -860,6 +889,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Fill" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Fill As FillFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::FillFormat ^ Fill { Microsoft::Office::Interop::Word::FillFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Fill : Microsoft.Office.Interop.Word.FillFormat" Usage="Microsoft.Office.Interop.Word.ShapeRange.Fill" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -877,7 +907,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />た図形の塗りつぶしの書式プロパティを含むオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.FillFormat" />指定した図形の塗りつぶしの書式プロパティを含むオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -888,6 +918,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.Flip(Microsoft.Office.Core.MsoFlipCmd)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Flip (FlipCmd As MsoFlipCmd)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Flip(Microsoft::Office::Core::MsoFlipCmd FlipCmd);" />
+      <MemberSignature Language="F#" Value="abstract member Flip : Microsoft.Office.Core.MsoFlipCmd -&gt; unit" Usage="shapeRange.Flip FlipCmd" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -905,7 +936,7 @@
         <Parameter Name="FlipCmd" Type="Microsoft.Office.Core.MsoFlipCmd" />
       </Parameters>
       <Docs>
-        <param name="FlipCmd">必須<see cref="T:Microsoft.Office.Core.MsoFlipCmd" />。 反転の向きを示します。<b>MsoFlipCmd</b>には、次の定数のいずれかを指定できます。<b>msoFlipHorizontal</b><b>msoFlipVertical</b></param>
+        <param name="FlipCmd">必須 <see cref="T:Microsoft.Office.Core.MsoFlipCmd" /> 。 反転の向きを示します。<b>MsoFlipCmd</b>には、次の定数のいずれかを指定できます。<b>msoFlipHorizontal</b><b>msoFlipVertical</b></param>
         <summary>図形を水平方向または垂直方向に反転します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -916,6 +947,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="shapeRange.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -948,6 +980,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Glow" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Glow As GlowFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::GlowFormat ^ Glow { Microsoft::Office::Interop::Word::GlowFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Glow : Microsoft.Office.Interop.Word.GlowFormat" Usage="Microsoft.Office.Interop.Word.ShapeRange.Glow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -965,7 +998,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.GlowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図形範囲<see cref="T:Microsoft.Office.Interop.Word.GlowFormat" />の光彩の書式設定を表すオブジェクトを返します。 読み取り専用です。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.GlowFormat" />図形範囲の光彩の書式設定を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.GlowFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -976,6 +1009,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.Group" />
       <MemberSignature Language="VB.NET" Value="Public Function Group () As Shape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Shape ^ Group();" />
+      <MemberSignature Language="F#" Value="abstract member Group : unit -&gt; Microsoft.Office.Interop.Word.Shape" Usage="shapeRange.Group " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -991,9 +1025,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定された範囲の図形をグループ化します。 グループ化された図形を<see cref="T:Microsoft.Office.Interop.Word.Shape" /> 1 つのオブジェクトとして返します。</summary>
+        <summary>指定された範囲の図形をグループ化します。 グループ化された図形を1つのオブジェクトとして返し <see cref="T:Microsoft.Office.Interop.Word.Shape" /> ます。</summary>
         <returns>To be added.</returns>
-        <remarks><para>図形のグループは1つの図形として扱われるため、図形をグループ化したり、グループ<see cref="T:Microsoft.Office.Interop.Word.Shapes" />を解除したりすると、コレクション内の項目数が変更され、コレクション内の影響を受ける項目の後にある項目のインデックス番号が変わります。</para>
+        <remarks><para>図形のグループは1つの図形として扱われるため、図形をグループ化したり、グループを解除したりすると、コレクション内の項目数が変更され、 <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> コレクション内の影響を受ける項目の後にある項目のインデックス番号が変わります。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1003,6 +1037,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.GroupItems" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GroupItems As GroupShapes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::GroupShapes ^ GroupItems { Microsoft::Office::Interop::Word::GroupShapes ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GroupItems : Microsoft.Office.Interop.Word.GroupShapes" Usage="Microsoft.Office.Interop.Word.ShapeRange.GroupItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1020,9 +1055,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.GroupShapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グループ化<see cref="T:Microsoft.Office.Interop.Word.GroupShapes" />された図形を表す、指定し<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />たオブジェクトの個々の図形を表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.GroupShapes" />グループ化された図形を表す、指定したオブジェクトの個々の図形を表すオブジェクトを返し <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> ます。</summary>
         <value>To be added.</value>
-        <remarks><para>グループから<see cref="P:Microsoft.Office.Interop.Word.GroupShapes.Item(System.Object@)" /> 1 つの図形を取得するのにには、 <b>GroupShapes</b>オブジェクトのメソッドを使用します。</para>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.GroupShapes.Item(System.Object@)" />グループから1つの図形を取得するのにには、 <b>GroupShapes</b>オブジェクトのメソッドを使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1032,6 +1067,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.HasDiagram" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasDiagram As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState HasDiagram { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasDiagram : Microsoft.Office.Core.MsoTriState" Usage="Microsoft.Office.Interop.Word.ShapeRange.HasDiagram" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1063,6 +1099,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.HasDiagramNode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasDiagramNode As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState HasDiagramNode { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasDiagramNode : Microsoft.Office.Core.MsoTriState" Usage="Microsoft.Office.Interop.Word.ShapeRange.HasDiagramNode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1094,6 +1131,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Height { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : single with get, set" Usage="Microsoft.Office.Interop.Word.ShapeRange.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1125,6 +1163,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.HeightRelative" />
       <MemberSignature Language="VB.NET" Value="Public Property HeightRelative As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float HeightRelative { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.HeightRelative : single with get, set" Usage="Microsoft.Office.Interop.Word.ShapeRange.HeightRelative" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1147,7 +1186,7 @@
       <Docs>
         <summary>図形の範囲が決められた対象の図形の割合を表す単精度浮動小数点型 (<b>Single</b>) の値を取得または設定します。 値の取得と設定が可能です。</summary>
         <value><b>Single</b></value>
-        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalSize" />プロパティにこのプロパティを使用します。 <b>WdShapeSizeRelativeNone</b> (-999999) に設定されている<see cref="T:Microsoft.Office.Interop.Word.WdShapeSizeRelative" />場合 (列挙を参照)、このプロパティは、図形がパーセントのサイズ変更を使用していないため、無視する必要があります。 高さは<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Height" />プロパティによってのみ決定されます。</para>
+        <remarks><para>プロパティにこのプロパティを使用し <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalSize" /> ます。 <b>WdShapeSizeRelativeNone</b> (-999999) に設定されている場合 (列挙を参照 <see cref="T:Microsoft.Office.Interop.Word.WdShapeSizeRelative" /> )、このプロパティは、図形がパーセントのサイズ変更を使用していないため、無視する必要があります。 高さはプロパティによってのみ決定され <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Height" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1157,6 +1196,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.HorizontalFlip" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HorizontalFlip As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState HorizontalFlip { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalFlip : Microsoft.Office.Core.MsoTriState" Usage="Microsoft.Office.Interop.Word.ShapeRange.HorizontalFlip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1185,6 +1225,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Hyperlink" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Hyperlink As Hyperlink" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Hyperlink ^ Hyperlink { Microsoft::Office::Interop::Word::Hyperlink ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Hyperlink : Microsoft.Office.Interop.Word.Hyperlink" Usage="Microsoft.Office.Interop.Word.ShapeRange.Hyperlink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1202,7 +1243,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Hyperlink</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.WdShapePosition" />た<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />オブジェクトに関連付けられているハイパーリンクを表すオブジェクト型 (object) の値を取得します。</summary>
+        <summary>指定し <see cref="T:Microsoft.Office.Interop.Word.WdShapePosition" /> たオブジェクトに関連付けられているハイパーリンクを表すオブジェクト型 (object) の値を取得し <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> ます。</summary>
         <value>To be added.</value>
         <remarks><para>ハイパーリンクに特定の図形がリンクされていない場合、エラーが発生します。</para>
           <para> </para></remarks>
@@ -1214,6 +1255,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.ID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ID As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ID { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ID : int" Usage="Microsoft.Office.Interop.Word.ShapeRange.ID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1242,6 +1284,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.IncrementLeft(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub IncrementLeft (Increment As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void IncrementLeft(float Increment);" />
+      <MemberSignature Language="F#" Value="abstract member IncrementLeft : single -&gt; unit" Usage="shapeRange.IncrementLeft Increment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1270,6 +1313,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.IncrementRotation(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub IncrementRotation (Increment As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void IncrementRotation(float Increment);" />
+      <MemberSignature Language="F#" Value="abstract member IncrementRotation : single -&gt; unit" Usage="shapeRange.IncrementRotation Increment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1289,8 +1333,8 @@
       <Docs>
         <param name="Increment">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 図形の水平方向の回転角度をどれくらい変更するかを度単位で指定します。 正の値を指定すると図形は時計回りに回転し、負の値を指定すると反時計回りに回転します。</param>
         <summary>指定した図形の z 軸回りの回転を、指定した角度だけ変更します。</summary>
-        <remarks><para>図形の<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Rotation" />絶対回転角度を設定するには、プロパティを使用します。</para>
-          <para>3次元図形を x 軸または y 軸を中心に回転させるには、 <see cref="M:Microsoft.Office.Interop.Word.ThreeDFormat.IncrementRotationX(System.Single)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Word.ThreeDFormat.IncrementRotationY(System.Single)" />メソッドを使用します。</para>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Rotation" />図形の絶対回転角度を設定するには、プロパティを使用します。</para>
+          <para>3次元図形を x 軸または y 軸を中心に回転させるには、メソッドまたはメソッドを使用し <see cref="M:Microsoft.Office.Interop.Word.ThreeDFormat.IncrementRotationX(System.Single)" /> <see cref="M:Microsoft.Office.Interop.Word.ThreeDFormat.IncrementRotationY(System.Single)" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1300,6 +1344,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.IncrementTop(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub IncrementTop (Increment As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void IncrementTop(float Increment);" />
+      <MemberSignature Language="F#" Value="abstract member IncrementTop : single -&gt; unit" Usage="shapeRange.IncrementTop Increment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1328,6 +1373,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As Shape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shape ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::Shape ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.Shape" Usage="Microsoft.Office.Interop.Word.ShapeRange.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1345,7 +1391,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Index">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</param>
@@ -1360,6 +1406,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.LayoutInCell" />
       <MemberSignature Language="VB.NET" Value="Public Property LayoutInCell As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LayoutInCell { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.LayoutInCell : int with get, set" Usage="Microsoft.Office.Interop.Word.ShapeRange.LayoutInCell" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1383,7 +1430,7 @@
         <summary>表の中の図形を表の中に表示するか、テーブルの外側に表示するかを表す<b>整数型 (Integer</b> ) の値を取得します。 <b>True</b> の場合は、指定された図が表内に表示されます。 <b>False</b>は、指定された図が表の外側に表示されることを示します。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>メモ</b> <b>LayoutInCell</b>プロパティの設定<see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" />は、 <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" />オブジェクトのプロパティが<b>wdWrapTypeInline</b>または<b>wdWrapTypeNone</b>以外のものに設定されている場合にのみ有効になります。</para>
+            <b>メモ</b> <b>LayoutInCell</b>プロパティの設定は、 <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" /> オブジェクトのプロパティ <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" /> が<b>wdWrapTypeInline</b>または<b>wdWrapTypeNone</b>以外のものに設定されている場合にのみ有効になります。</para>
           <para><b>LayoutInCell</b> プロパティは、図の書式設定は、[ レイアウトの詳細設定] ダイアログ ボックスで 表のセルのレイアウトオプションに対応します。</para>
           <para> </para></remarks>
       </Docs>
@@ -1394,6 +1441,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Left" />
       <MemberSignature Language="VB.NET" Value="Public Property Left As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Left { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Left : single with get, set" Usage="Microsoft.Office.Interop.Word.ShapeRange.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1414,10 +1462,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定、 <b>1 つ</b>の指定した図形範囲の水平方向の位置をポイント単位で指定します。 任意の有効な<see cref="T:Microsoft.Office.Interop.Word.WdShapePosition" />定数を指定することもできます。</summary>
+        <summary>取得または設定、 <b>1 つ</b>の指定した図形範囲の水平方向の位置をポイント単位で指定します。 任意の有効な定数を指定することもでき <see cref="T:Microsoft.Office.Interop.Word.WdShapePosition" /> ます。</summary>
         <value>To be added.</value>
-        <remarks><para>図形の位置は、図形のアンカーを図形の境界ボックスの左上隅から測定されます。 プロパティ<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />は、アンカーの位置を、文字、列、余白、またはページの端の横にするかどうかを制御します。</para>
-          <para><see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />オブジェクトに複数の図形が含まれている場合、Left プロパティは各図形の水平方向の位置を設定します。</para>
+        <remarks><para>図形の位置は、図形のアンカーを図形の境界ボックスの左上隅から測定されます。 プロパティは、 <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> アンカーの位置を、文字、列、余白、またはページの端の横にするかどうかを制御します。</para>
+          <para>オブジェクトに複数の <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> 図形が含まれている場合、Left プロパティは各図形の水平方向の位置を設定します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1427,6 +1475,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.LeftRelative" />
       <MemberSignature Language="VB.NET" Value="Public Property LeftRelative As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float LeftRelative { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.LeftRelative : single with get, set" Usage="Microsoft.Office.Interop.Word.ShapeRange.LeftRelative" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1449,7 +1498,7 @@
       <Docs>
         <summary><b>1 つ</b>を表す図形範囲の相対的な左端位置を設定または返します。 値の取得と設定が可能です。</summary>
         <value><b>Single</b></value>
-        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeHorizontalPosition" />プロパティにこのプロパティを使用します。 <b>Wdshape Positionrel/ベンダー 1</b> (-999999) に設定すると ( <see cref="T:Microsoft.Office.Interop.Word.WdShapePositionRelative" />列挙を参照)、このプロパティは、図形がパーセントの配置を使用していないためには無視されます。 水平方向の位置は、 <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Left" />プロパティによってのみ決定されます。</para>
+        <remarks><para>プロパティにこのプロパティを使用し <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeHorizontalPosition" /> ます。 <b>Wdshape Positionrel/ベンダー 1</b> (-999999) に設定すると (列挙を参照 <see cref="T:Microsoft.Office.Interop.Word.WdShapePositionRelative" /> )、このプロパティは、図形がパーセントの配置を使用していないためには無視されます。 水平方向の位置は、プロパティによってのみ決定され <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Left" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1459,6 +1508,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Line" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Line As LineFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::LineFormat ^ Line { Microsoft::Office::Interop::Word::LineFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Line : Microsoft.Office.Interop.Word.LineFormat" Usage="Microsoft.Office.Interop.Word.ShapeRange.Line" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1476,7 +1526,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.LineFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.LineFormat" />た図形の線の書式設定プロパティを含むオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.LineFormat" />指定した図形の線の書式設定プロパティを含むオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks><para>線は、 <b>LineFormat</b> オブジェクトは線自体を表します。外枠で囲まれた図形の場合、 <b>LineFormat</b> オブジェクトは輪郭を表します。</para>
           <para> </para></remarks>
@@ -1488,6 +1538,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.LockAnchor" />
       <MemberSignature Language="VB.NET" Value="Public Property LockAnchor As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LockAnchor { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.LockAnchor : int with get, set" Usage="Microsoft.Office.Interop.Word.ShapeRange.LockAnchor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1508,7 +1559,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b>の場合は<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> 、指定したオブジェクトのアンカーは、アンカーがある範囲にロックされます。</summary>
+        <summary><b>True</b>の場合は、指定した <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> オブジェクトのアンカーは、アンカーがある範囲にロックされます。</summary>
         <value>To be added.</value>
         <remarks><para>図形にアンカーが固定されている場合、図形のアンカーをドラッグして移動することはできません (図形を移動してもアンカーは移動しません)。</para>
           <para><see cref="T:Microsoft.Office.Interop.Word.Shape" />オブジェクトはテキストの範囲に固定されていますが、ページ上の任意の場所に配置できます。 図形は、アンカーが配置された範囲が含まれる最初の段落に対応付けられます。 図形は、常にアンカーと同じページにあります。</para>
@@ -1521,6 +1572,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.LockAspectRatio" />
       <MemberSignature Language="VB.NET" Value="Public Property LockAspectRatio As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState LockAspectRatio { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberSignature Language="F#" Value="member this.LockAspectRatio : Microsoft.Office.Core.MsoTriState with get, set" Usage="Microsoft.Office.Interop.Word.ShapeRange.LockAspectRatio" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1552,6 +1604,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Office.Interop.Word.ShapeRange.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1583,6 +1636,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Nodes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Nodes As ShapeNodes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ShapeNodes ^ Nodes { Microsoft::Office::Interop::Word::ShapeNodes ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Nodes : Microsoft.Office.Interop.Word.ShapeNodes" Usage="Microsoft.Office.Interop.Word.ShapeRange.Nodes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1600,7 +1654,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ShapeNodes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.ShapeNodes" />た図形の幾何学的な説明を表すコレクションを返します。</summary>
+        <summary>指定し <see cref="T:Microsoft.Office.Interop.Word.ShapeNodes" /> た図形の幾何学的な説明を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1611,6 +1665,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ShapeRange.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1639,6 +1694,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.ParentGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentGroup As Shape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shape ^ ParentGroup { Microsoft::Office::Interop::Word::Shape ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentGroup : Microsoft.Office.Interop.Word.Shape" Usage="Microsoft.Office.Interop.Word.ShapeRange.ParentGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1656,7 +1712,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>子図形<see cref="T:Microsoft.Office.Interop.Word.Shape" />の範囲の共通の親図形を表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Shape" />子図形の範囲の共通の親図形を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1667,6 +1723,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.PickUp" />
       <MemberSignature Language="VB.NET" Value="Public Sub PickUp ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PickUp();" />
+      <MemberSignature Language="F#" Value="abstract member PickUp : unit -&gt; unit" Usage="shapeRange.PickUp " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1683,7 +1740,7 @@
       <Parameters />
       <Docs>
         <summary>指定された図形の書式をコピーします。</summary>
-        <remarks><para>コピーし<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Apply" />た書式を別の図形に適用するには、メソッドを使用します。</para>
+        <remarks><para>コピーし <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Apply" /> た書式を別の図形に適用するには、メソッドを使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1693,6 +1750,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.PictureFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PictureFormat As PictureFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::PictureFormat ^ PictureFormat { Microsoft::Office::Interop::Word::PictureFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PictureFormat : Microsoft.Office.Interop.Word.PictureFormat" Usage="Microsoft.Office.Interop.Word.ShapeRange.PictureFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1710,7 +1768,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.PictureFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図また<see cref="T:Microsoft.Office.Interop.Word.PictureFormat" />は OLE オブジェクトを表す指定さ<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />れたオブジェクトの図の書式設定プロパティを含むオブジェクトを返します。</summary>
+        <summary>図 <see cref="T:Microsoft.Office.Interop.Word.PictureFormat" /> または OLE オブジェクトを表す指定されたオブジェクトの図の書式設定プロパティを含むオブジェクトを返し <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> ます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1721,6 +1779,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Reflection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reflection As ReflectionFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ReflectionFormat ^ Reflection { Microsoft::Office::Interop::Word::ReflectionFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Reflection : Microsoft.Office.Interop.Word.ReflectionFormat" Usage="Microsoft.Office.Interop.Word.ShapeRange.Reflection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1738,7 +1797,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ReflectionFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図形範囲<see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" />の反射の書式設定を表すオブジェクトを返します。 読み取り専用です。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" />図形範囲の反射の書式設定を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1749,6 +1808,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.Regroup" />
       <MemberSignature Language="VB.NET" Value="Public Function Regroup () As Shape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Shape ^ Regroup();" />
+      <MemberSignature Language="F#" Value="abstract member Regroup : unit -&gt; Microsoft.Office.Interop.Word.Shape" Usage="shapeRange.Regroup " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1767,9 +1827,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定された図形範囲が以前に属していたグループを再びグループ化します。 再グループ化図形を1つ<see cref="T:Microsoft.Office.Interop.Word.Shape" />のオブジェクトとして返します。</summary>
+        <summary>指定された図形範囲が以前に属していたグループを再びグループ化します。 再グループ化図形を1つのオブジェクトとして返し <see cref="T:Microsoft.Office.Interop.Word.Shape" /> ます。</summary>
         <returns>To be added.</returns>
-        <remarks><para>再<b></b>グループ化メソッドは、指定されたコレクション内で最初にグループ化さ<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />れた図形のグループのみを復元します。 したがって指定した図形範囲で、以前は別のグループに属していた図形が含まれている場合、復元されるグループは 1 つだけです。</para>
+        <remarks><para>再グループ<b>化メソッドは、指定</b>されたコレクション内で最初にグループ化された図形のグループのみを復元し <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> ます。 したがって指定した図形範囲で、以前は別のグループに属していた図形が含まれている場合、復元されるグループは 1 つだけです。</para>
           <para>グループ化された図形は 1 つの図形として扱われるため、図形をグループ化したりグループを解除したりすると、 Shapes コレクションのオブジェクト数が変わり、変更されたオブジェクト以降のインデックス番号が付け直されます。</para>
           <para> </para></remarks>
       </Docs>
@@ -1780,6 +1840,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeHorizontalPosition" />
       <MemberSignature Language="VB.NET" Value="Public Property RelativeHorizontalPosition As WdRelativeHorizontalPosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRelativeHorizontalPosition RelativeHorizontalPosition { Microsoft::Office::Interop::Word::WdRelativeHorizontalPosition get(); void set(Microsoft::Office::Interop::Word::WdRelativeHorizontalPosition value); };" />
+      <MemberSignature Language="F#" Value="member this.RelativeHorizontalPosition : Microsoft.Office.Interop.Word.WdRelativeHorizontalPosition with get, set" Usage="Microsoft.Office.Interop.Word.ShapeRange.RelativeHorizontalPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1811,6 +1872,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeHorizontalSize" />
       <MemberSignature Language="VB.NET" Value="Public Property RelativeHorizontalSize As WdRelativeHorizontalSize" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRelativeHorizontalSize RelativeHorizontalSize { Microsoft::Office::Interop::Word::WdRelativeHorizontalSize get(); void set(Microsoft::Office::Interop::Word::WdRelativeHorizontalSize value); };" />
+      <MemberSignature Language="F#" Value="member this.RelativeHorizontalSize : Microsoft.Office.Interop.Word.WdRelativeHorizontalSize with get, set" Usage="Microsoft.Office.Interop.Word.ShapeRange.RelativeHorizontalSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1831,9 +1893,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRelativeHorizontalSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図形の範囲を<see cref="T:Microsoft.Office.Interop.Word.WdRelativeHorizontalSize" />基準とするオブジェクトを表す定数を設定または返します。 値の取得と設定が可能です。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.WdRelativeHorizontalSize" />図形の範囲を基準とするオブジェクトを表す定数を設定または返します。 値の取得と設定が可能です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.WdRelativeHorizontalSize" /></value>
-        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.ShapeRange.WidthRelative" />プロパティにこのプロパティを使用します。</para>
+        <remarks><para>プロパティにこのプロパティを使用し <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.WidthRelative" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1843,6 +1905,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalPosition" />
       <MemberSignature Language="VB.NET" Value="Public Property RelativeVerticalPosition As WdRelativeVerticalPosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRelativeVerticalPosition RelativeVerticalPosition { Microsoft::Office::Interop::Word::WdRelativeVerticalPosition get(); void set(Microsoft::Office::Interop::Word::WdRelativeVerticalPosition value); };" />
+      <MemberSignature Language="F#" Value="member this.RelativeVerticalPosition : Microsoft.Office.Interop.Word.WdRelativeVerticalPosition with get, set" Usage="Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1874,6 +1937,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalSize" />
       <MemberSignature Language="VB.NET" Value="Public Property RelativeVerticalSize As WdRelativeVerticalSize" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRelativeVerticalSize RelativeVerticalSize { Microsoft::Office::Interop::Word::WdRelativeVerticalSize get(); void set(Microsoft::Office::Interop::Word::WdRelativeVerticalSize value); };" />
+      <MemberSignature Language="F#" Value="member this.RelativeVerticalSize : Microsoft.Office.Interop.Word.WdRelativeVerticalSize with get, set" Usage="Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1894,9 +1958,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRelativeVerticalSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図形の範囲を<see cref="T:Microsoft.Office.Interop.Word.WdRelativeVerticalSize" />基準とするオブジェクトを表す定数を設定または返します。 値の取得と設定が可能です。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.WdRelativeVerticalSize" />図形の範囲を基準とするオブジェクトを表す定数を設定または返します。 値の取得と設定が可能です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.WdRelativeVerticalSize" /></value>
-        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.ShapeRange.HeightRelative" />プロパティにこのプロパティを使用します。</para>
+        <remarks><para>プロパティにこのプロパティを使用し <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.HeightRelative" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1906,6 +1970,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.RerouteConnections" />
       <MemberSignature Language="VB.NET" Value="Public Sub RerouteConnections ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RerouteConnections();" />
+      <MemberSignature Language="F#" Value="abstract member RerouteConnections : unit -&gt; unit" Usage="shapeRange.RerouteConnections " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1934,6 +1999,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Rotation" />
       <MemberSignature Language="VB.NET" Value="Public Property Rotation As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Rotation { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Rotation : single with get, set" Usage="Microsoft.Office.Interop.Word.ShapeRange.Rotation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1956,7 +2022,7 @@
       <Docs>
         <summary>取得または指定した図形は、z 軸回りの回転数を設定します。 正の値は時計回りの回転を示します負の値は、反時計回りの回転を示します。</summary>
         <value>To be added.</value>
-        <remarks><para>3次元図形の x 軸または y 軸回りの回転角度を設定するには、 <see cref="P:Microsoft.Office.Interop.Word.ThreeDFormat.RotationX" /> <see cref="P:Microsoft.Office.Interop.Word.ThreeDFormat.RotationY" /> <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />オブジェクトのプロパティまたはプロパティを使用します。</para>
+        <remarks><para>3次元図形の x 軸または y 軸回りの回転角度を設定するには、 <see cref="P:Microsoft.Office.Interop.Word.ThreeDFormat.RotationX" /> オブジェクトのプロパティまたはプロパティを使用し <see cref="P:Microsoft.Office.Interop.Word.ThreeDFormat.RotationY" /> <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1966,6 +2032,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.RTF" />
       <MemberSignature Language="VB.NET" Value="Public Property RTF As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RTF {  void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RTF : string" Usage="Microsoft.Office.Interop.Word.ShapeRange.RTF" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1996,6 +2063,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ScaleHeight([in]float32 Factor, [in]valuetype Microsoft.Office.Core.MsoTriState RelativeToOriginalSize, [in]valuetype Microsoft.Office.Core.MsoScaleFrom Scale) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.ScaleHeight(System.Single,Microsoft.Office.Core.MsoTriState,Microsoft.Office.Core.MsoScaleFrom)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScaleHeight (Factor As Single, RelativeToOriginalSize As MsoTriState, Optional Scale As MsoScaleFrom = Microsoft.Office.Core.MsoScaleFrom.msoScaleFromTopLeft)" />
+      <MemberSignature Language="F#" Value="abstract member ScaleHeight : single * Microsoft.Office.Core.MsoTriState * Microsoft.Office.Core.MsoScaleFrom -&gt; unit" Usage="shapeRange.ScaleHeight (Factor, RelativeToOriginalSize, Scale)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2016,8 +2084,8 @@
       </Parameters>
       <Docs>
         <param name="Factor">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 現在の高さと変更後の高さの比率、または元の高さと変更後の高さの比率を指定します。 たとえば、四角形を 50% 拡大する場合は、この引数に 1.5 を指定します。</param>
-        <param name="RelativeToOriginalSize">必須<see cref="T:Microsoft.Office.Core.MsoTriState" />。 の <b>場合は true</b> 図形は元のサイズに対して拡大または縮小します。 False 現在のサイズに対して拡大または縮小します。 指定した図形が図または OLE オブジェクトである場合にのみ、この引数に True を指定できます。<b>MsoTriState</b>には、次の定数のいずれかを指定できます:<b>mmsoTriStateMixed true</b><b>msoFalse</b><b></b><b>msotristatetoggle</b><b>msoTrue</b></param>
-        <param name="Scale">省略<see cref="T:Microsoft.Office.Core.MsoScaleFrom" />可能です。 図形を拡大または縮小するときの位置を保持する図形の部分を指定します。<b>Msoscalefrom</b>は、次の定数のいずれかとすることができます。<b>Msoscaleefromright Right</b><b>MsoScaleFromTopLeft</b> default<b>msomarker efrom中段</b></param>
+        <param name="RelativeToOriginalSize">必須 <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。 の <b>場合は true</b> 図形は元のサイズに対して拡大または縮小します。 False 現在のサイズに対して拡大または縮小します。 指定した図形が図または OLE オブジェクトである場合にのみ、この引数に True を指定できます。<b>MsoTriState</b>には、次の定数のいずれかを指定できます:<b>mmsoTriStateMixed true</b><b>msoFalse</b><b>msoTriStateMixed</b><b>msotristatetoggle</b><b>msoTrue</b></param>
+        <param name="Scale">省略可能 <see cref="T:Microsoft.Office.Core.MsoScaleFrom" /> です。 図形を拡大または縮小するときの位置を保持する図形の部分を指定します。<b>Msoscalefrom</b>は、次の定数のいずれかとすることができます。<b>Msoscaleefromright Right</b><b>MsoScaleFromTopLeft</b> default<b>msomarker efrom中段</b></param>
         <summary>指定した係数分だけ図形の高さを変更します。</summary>
         <remarks><para>図または OLE オブジェクトの場合は、図形の元のサイズに対して拡大または縮小するのか、現在のサイズに対して拡大または縮小するのかを指定できます。図または OLE オブジェクト以外の図形の場合は、常に現在の高さに対して拡大または縮小されます。</para>
           <para> </para></remarks>
@@ -2028,6 +2096,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ScaleWidth([in]float32 Factor, [in]valuetype Microsoft.Office.Core.MsoTriState RelativeToOriginalSize, [in]valuetype Microsoft.Office.Core.MsoScaleFrom Scale) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.ScaleWidth(System.Single,Microsoft.Office.Core.MsoTriState,Microsoft.Office.Core.MsoScaleFrom)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScaleWidth (Factor As Single, RelativeToOriginalSize As MsoTriState, Optional Scale As MsoScaleFrom = Microsoft.Office.Core.MsoScaleFrom.msoScaleFromTopLeft)" />
+      <MemberSignature Language="F#" Value="abstract member ScaleWidth : single * Microsoft.Office.Core.MsoTriState * Microsoft.Office.Core.MsoScaleFrom -&gt; unit" Usage="shapeRange.ScaleWidth (Factor, RelativeToOriginalSize, Scale)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2048,8 +2117,8 @@
       </Parameters>
       <Docs>
         <param name="Factor">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 現在の幅と変更後の幅の比率、または元の幅と変更後の幅の比率を指定します。 たとえば、四角形を 50% 拡大するには、この引数に 1.5 を指定します。</param>
-        <param name="RelativeToOriginalSize">必須<see cref="T:Microsoft.Office.Core.MsoTriState" />。 の <b>場合は true</b> 図形は元のサイズに対して拡大または縮小します。 False 現在のサイズに対して拡大または縮小します。 指定した図形が図または OLE オブジェクトである場合にのみ、この引数に True を指定できます。<b>MsoTriState</b>には、次の定数のいずれかを指定できます:<b>mmsoTriStateMixed true</b><b>msoFalse</b><b></b><b>msotristatetoggle</b><b>msoTrue</b></param>
-        <param name="Scale">省略<see cref="T:Microsoft.Office.Core.MsoScaleFrom" />可能です。 図形を拡大または縮小するときの位置を保持する図形の部分を指定します。<b>Msoscalefrom</b>は、次の定数のいずれかとすることができます。<b>Msoscaleefromright Right</b><b>MsoScaleFromTopLeft</b> default<b>msomarker efrom中段</b></param>
+        <param name="RelativeToOriginalSize">必須 <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。 の <b>場合は true</b> 図形は元のサイズに対して拡大または縮小します。 False 現在のサイズに対して拡大または縮小します。 指定した図形が図または OLE オブジェクトである場合にのみ、この引数に True を指定できます。<b>MsoTriState</b>には、次の定数のいずれかを指定できます:<b>mmsoTriStateMixed true</b><b>msoFalse</b><b>msoTriStateMixed</b><b>msotristatetoggle</b><b>msoTrue</b></param>
+        <param name="Scale">省略可能 <see cref="T:Microsoft.Office.Core.MsoScaleFrom" /> です。 図形を拡大または縮小するときの位置を保持する図形の部分を指定します。<b>Msoscalefrom</b>は、次の定数のいずれかとすることができます。<b>Msoscaleefromright Right</b><b>MsoScaleFromTopLeft</b> default<b>msomarker efrom中段</b></param>
         <summary>指定した係数分だけ図形の幅を変更します。</summary>
         <remarks><para>図または OLE オブジェクトの場合は、図形の元のサイズに対して拡大または縮小するのか、現在のサイズに対して拡大または縮小するのかを指定できます。図または OLE オブジェクト以外の図形の場合は、常に現在の幅に対して拡大または縮小されます。</para>
           <para> </para></remarks>
@@ -2060,6 +2129,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Select([in]object&amp; Replace) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.Select(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select (Optional ByRef Replace As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Select : obj -&gt; unit" Usage="shapeRange.Select Replace" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2074,7 +2144,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Replace" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Replace" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Replace">省略可能な<b>オブジェクト</b>です。 図形を追加する場合 <b>は True</b> 選択範囲を置き換えます。 <b>False</b> は、選択範囲に新しい図形を追加します。</param>
@@ -2088,6 +2158,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.SetShapesDefaultProperties" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetShapesDefaultProperties ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetShapesDefaultProperties();" />
+      <MemberSignature Language="F#" Value="abstract member SetShapesDefaultProperties : unit -&gt; unit" Usage="shapeRange.SetShapesDefaultProperties " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2114,6 +2185,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Shadow" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shadow As ShadowFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ShadowFormat ^ Shadow { Microsoft::Office::Interop::Word::ShadowFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Shadow : Microsoft.Office.Interop.Word.ShadowFormat" Usage="Microsoft.Office.Interop.Word.ShapeRange.Shadow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2131,7 +2203,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ShadowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" />た図形の影付きの書式設定を表すオブジェクトを返します。</summary>
+        <summary>指定し <see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" /> た図形の影付きの書式設定を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2142,6 +2214,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.ShapeStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property ShapeStyle As MsoShapeStyleIndex" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoShapeStyleIndex ShapeStyle { Microsoft::Office::Core::MsoShapeStyleIndex get(); void set(Microsoft::Office::Core::MsoShapeStyleIndex value); };" />
+      <MemberSignature Language="F#" Value="member this.ShapeStyle : Microsoft.Office.Core.MsoShapeStyleIndex with get, set" Usage="Microsoft.Office.Interop.Word.ShapeRange.ShapeStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2164,7 +2237,7 @@
       <Docs>
         <summary>指定した図形範囲内の図形の図形のスタイルを取得または設定します。</summary>
         <value>指定した図形範囲の図形のスタイルを指定します。</value>
-        <remarks><para>読み取り/書き込み<see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" />。</para>
+        <remarks><para>読み取り/書き込み <see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2174,6 +2247,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.SoftEdge" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SoftEdge As SoftEdgeFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::SoftEdgeFormat ^ SoftEdge { Microsoft::Office::Interop::Word::SoftEdgeFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SoftEdge : Microsoft.Office.Interop.Word.SoftEdgeFormat" Usage="Microsoft.Office.Interop.Word.ShapeRange.SoftEdge" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2191,7 +2265,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.SoftEdgeFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図形範囲<see cref="T:Microsoft.Office.Interop.Word.SoftEdgeFormat" />の柔らかい輪郭の書式設定を表すオブジェクトを返します。 読み取り専用です。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.SoftEdgeFormat" />図形範囲の柔らかい輪郭の書式設定を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.SoftEdgeFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2202,6 +2276,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.TextEffect" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextEffect As TextEffectFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TextEffectFormat ^ TextEffect { Microsoft::Office::Interop::Word::TextEffectFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextEffect : Microsoft.Office.Interop.Word.TextEffectFormat" Usage="Microsoft.Office.Interop.Word.ShapeRange.TextEffect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2219,7 +2294,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextEffectFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ワードアート<see cref="T:Microsoft.Office.Interop.Word.TextEffectFormat" />を表す指定<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />したオブジェクトのテキスト効果の書式設定プロパティを含むオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.TextEffectFormat" />ワードアートを表す指定したオブジェクトのテキスト効果の書式設定プロパティを含むオブジェクトを返し <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> ます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2230,6 +2305,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.TextFrame" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextFrame As TextFrame" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TextFrame ^ TextFrame { Microsoft::Office::Interop::Word::TextFrame ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextFrame : Microsoft.Office.Interop.Word.TextFrame" Usage="Microsoft.Office.Interop.Word.ShapeRange.TextFrame" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2247,7 +2323,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextFrame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.TextFrame" />た図形のテキストを含むオブジェクトを返します。</summary>
+        <summary>指定し <see cref="T:Microsoft.Office.Interop.Word.TextFrame" /> た図形のテキストを含むオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2258,6 +2334,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.TextFrame2" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextFrame2 As TextFrame2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::TextFrame2 ^ TextFrame2 { Microsoft::Office::Core::TextFrame2 ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextFrame2 : Microsoft.Office.Core.TextFrame2" Usage="Microsoft.Office.Interop.Word.ShapeRange.TextFrame2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2275,7 +2352,7 @@
         <ReturnType>Microsoft.Office.Core.TextFrame2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Core.TextFrame2" />た図形範囲のテキストを含むオブジェクトを取得します。 読み取り専用です。</summary>
+        <summary><see cref="T:Microsoft.Office.Core.TextFrame2" />指定した図形範囲のテキストを含むオブジェクトを取得します。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Core.TextFrame2" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2286,6 +2363,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.ThreeD" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThreeD As ThreeDFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ThreeDFormat ^ ThreeD { Microsoft::Office::Interop::Word::ThreeDFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThreeD : Microsoft.Office.Interop.Word.ThreeDFormat" Usage="Microsoft.Office.Interop.Word.ShapeRange.ThreeD" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2303,7 +2381,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ThreeDFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />た図形の3-d 効果の書式プロパティを含むオブジェクトを取得します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />指定した図形の3-d 効果の書式プロパティを含むオブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2314,6 +2392,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Title" />
       <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="Microsoft.Office.Interop.Word.ShapeRange.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2346,6 +2425,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Top" />
       <MemberSignature Language="VB.NET" Value="Public Property Top As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Top { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Top : single with get, set" Usage="Microsoft.Office.Interop.Word.ShapeRange.Top" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2368,8 +2448,8 @@
       <Docs>
         <summary>指定した図形範囲の垂直方向の位置をポイント単位で設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para>図形の位置は、図形のアンカーを図形の境界ボックスの左上隅から測定されます。 プロパティ<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalPosition" />は、図形のアンカーを、線、段落、余白、またはページの端の横に配置するかどうかを制御します。</para>
-          <para>オブジェクトに複数の図形が含まれている場合、Top プロパティは各図形の垂直位置を設定します。 <b></b> <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /></para>
+        <remarks><para>図形の位置は、図形のアンカーを図形の境界ボックスの左上隅から測定されます。 プロパティは、 <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalPosition" /> 図形のアンカーを、線、段落、余白、またはページの端の横に配置するかどうかを制御します。</para>
+          <para>オブジェクトに複数の <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> 図形が含まれている場合、 <b>Top</b>プロパティは各図形の垂直位置を設定します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2379,6 +2459,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.TopRelative" />
       <MemberSignature Language="VB.NET" Value="Public Property TopRelative As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float TopRelative { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.TopRelative : single with get, set" Usage="Microsoft.Office.Interop.Word.ShapeRange.TopRelative" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2401,7 +2482,7 @@
       <Docs>
         <summary><b>1 つ</b>を表す図形範囲の相対的な上位置を設定または返します。 値の取得と設定が可能です。</summary>
         <value><b>Single</b></value>
-        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalPosition" />プロパティにこのプロパティを使用します。 <b>Wdshape Positionrel/ベンダー 1</b> (-999999) に設定すると ( <see cref="T:Microsoft.Office.Interop.Word.WdShapePositionRelative" />列挙を参照)、このプロパティは、図形がパーセントの配置を使用していないためには無視されます。 垂直位置は、 <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Top" />プロパティによってのみ決定されます。</para>
+        <remarks><para>プロパティにこのプロパティを使用し <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalPosition" /> ます。 <b>Wdshape Positionrel/ベンダー 1</b> (-999999) に設定すると (列挙を参照 <see cref="T:Microsoft.Office.Interop.Word.WdShapePositionRelative" /> )、このプロパティは、図形がパーセントの配置を使用していないためには無視されます。 垂直位置は、プロパティによってのみ決定され <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Top" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2411,6 +2492,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As MsoShapeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoShapeType Type { Microsoft::Office::Core::MsoShapeType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Core.MsoShapeType" Usage="Microsoft.Office.Interop.Word.ShapeRange.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2439,6 +2521,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.Ungroup" />
       <MemberSignature Language="VB.NET" Value="Public Function Ungroup () As ShapeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::ShapeRange ^ Ungroup();" />
+      <MemberSignature Language="F#" Value="abstract member Ungroup : unit -&gt; Microsoft.Office.Interop.Word.ShapeRange" Usage="shapeRange.Ungroup " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2454,9 +2537,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定した図形または図形範囲の図形のグループ化を解除します。 図および OLE オブジェクトを指定した図形または図形範囲内で逆アセンブルします。 グループ化されていない<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />図形を1つのオブジェクトとして返します。</summary>
+        <summary>指定した図形または図形範囲の図形のグループ化を解除します。 図および OLE オブジェクトを指定した図形または図形範囲内で逆アセンブルします。 グループ化されていない図形を1つのオブジェクトとして返し <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> ます。</summary>
         <returns>To be added.</returns>
-        <remarks><para>図形のグループは1つのオブジェクトとして扱われるため、図形をグループ化したり、グループ<see cref="T:Microsoft.Office.Interop.Word.Shapes" />を解除したりすると、コレクション内の項目数が変更され、コレクション内の影響を受ける項目の後にある項目のインデックス番号が変わります。</para>
+        <remarks><para>図形のグループは1つのオブジェクトとして扱われるため、図形をグループ化したり、グループを解除したりすると、コレクション内の項目数が変更され、 <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> コレクション内の影響を受ける項目の後にある項目のインデックス番号が変わります。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2466,6 +2549,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.VerticalFlip" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerticalFlip As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState VerticalFlip { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalFlip : Microsoft.Office.Core.MsoTriState" Usage="Microsoft.Office.Interop.Word.ShapeRange.VerticalFlip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2494,6 +2578,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Vertices" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Vertices As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Vertices { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Vertices : obj" Usage="Microsoft.Office.Interop.Word.ShapeRange.Vertices" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2513,7 +2598,7 @@
       <Docs>
         <summary>指定したフリーフォームの頂点 (およびベジェ曲線のコントロール ポイント) の座標を、一連の 2 次元の座標として取得します。</summary>
         <value>To be added.</value>
-        <remarks><para>このプロパティによって返される配列は、 <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCurve(System.Object@,System.Object@)" />または<see cref="M:Microsoft.Office.Interop.Word.Shapes.AddPolyline(System.Object@,System.Object@)" />メソッドの引数として使用できます。</para>
+        <remarks><para>このプロパティによって返される配列は、またはメソッドの引数として使用でき <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCurve(System.Object@,System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddPolyline(System.Object@,System.Object@)" /> ます。</para>
           <para>次の表は、<b>頂点</b>プロパティが配列 vertarray () 内の値と三角形の頂点の座標を関連付ける方法を示しています。</para>
           <list type="table">
             <item>
@@ -2550,6 +2635,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Property Visible As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Visible { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : Microsoft.Office.Core.MsoTriState with get, set" Usage="Microsoft.Office.Interop.Word.ShapeRange.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2582,6 +2668,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Width { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : single with get, set" Usage="Microsoft.Office.Interop.Word.ShapeRange.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2613,6 +2700,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.WidthRelative" />
       <MemberSignature Language="VB.NET" Value="Public Property WidthRelative As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float WidthRelative { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.WidthRelative : single with get, set" Usage="Microsoft.Office.Interop.Word.ShapeRange.WidthRelative" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2635,7 +2723,7 @@
       <Docs>
         <summary><b>1 つ</b>を表す図形範囲の相対的な幅を設定または返します。 値の取得と設定が可能です。</summary>
         <value><b>Single</b></value>
-        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeHorizontalSize" />プロパティにこのプロパティを使用します。 <b>WdShapeSizeRelativeNone</b> (-999999) に設定されている<see cref="T:Microsoft.Office.Interop.Word.WdShapeSizeRelative" />場合 (列挙を参照)、このプロパティは、図形がパーセントのサイズ変更を使用していないため、無視する必要があります。 幅は<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Width" />プロパティによって決定されます。</para>
+        <remarks><para>プロパティにこのプロパティを使用し <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeHorizontalSize" /> ます。 <b>WdShapeSizeRelativeNone</b> (-999999) に設定されている場合 (列挙を参照 <see cref="T:Microsoft.Office.Interop.Word.WdShapeSizeRelative" /> )、このプロパティは、図形がパーセントのサイズ変更を使用していないため、無視する必要があります。 幅はプロパティによって決定され <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Width" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2645,6 +2733,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.WrapFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WrapFormat As WrapFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WrapFormat ^ WrapFormat { Microsoft::Office::Interop::Word::WrapFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WrapFormat : Microsoft.Office.Interop.Word.WrapFormat" Usage="Microsoft.Office.Interop.Word.ShapeRange.WrapFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2662,7 +2751,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WrapFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.WrapFormat" />た図形範囲の周囲での文字列の折り返しに関するプロパティを含むオブジェクトを取得します。</summary>
+        <summary>指定し <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" /> た図形範囲の周囲での文字列の折り返しに関するプロパティを含むオブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2673,6 +2762,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ZOrder (ZOrderCmd As MsoZOrderCmd)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ZOrder(Microsoft::Office::Core::MsoZOrderCmd ZOrderCmd);" />
+      <MemberSignature Language="F#" Value="abstract member ZOrder : Microsoft.Office.Core.MsoZOrderCmd -&gt; unit" Usage="shapeRange.ZOrder ZOrderCmd" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2690,9 +2780,9 @@
         <Parameter Name="ZOrderCmd" Type="Microsoft.Office.Core.MsoZOrderCmd" />
       </Parameters>
       <Docs>
-        <param name="ZOrderCmd">必須<see cref="T:Microsoft.Office.Core.MsoZOrderCmd" />。 他の図形を基準にして、指定した図形を移動する位置を指定します。<b>Msozordercmd</b>には、次の定数のいずれかを指定できます:<b>Msozordercmd</b><b>msoBringInFrontOfText</b><b>msobringtofront</b><b>msosend後方</b><b>msoSendBehindText</b><b>msozordercmd</b></param>
+        <param name="ZOrderCmd">必須 <see cref="T:Microsoft.Office.Core.MsoZOrderCmd" /> 。 他の図形を基準にして、指定した図形を移動する位置を指定します。<b>Msozordercmd</b>には、次の定数のいずれかを指定できます:<b>Msozordercmd</b><b>msoBringInFrontOfText</b><b>msobringtofront</b><b>msosend後方</b><b>msoSendBehindText</b><b>msozordercmd</b></param>
         <summary>コレクションの他の図形の前面または背後に指定の図形を移動させます (つまり、図形の位置を z オーダーで変更します)。</summary>
-        <remarks><para>図形の<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.ZOrderPosition" />現在の z 方向の位置を確認するには、プロパティを使用します。</para>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.ShapeRange.ZOrderPosition" />図形の現在の z 方向の位置を確認するには、プロパティを使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2702,6 +2792,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.ZOrderPosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ZOrderPosition As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ZOrderPosition { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ZOrderPosition : int" Usage="Microsoft.Office.Interop.Word.ShapeRange.ZOrderPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2721,7 +2812,7 @@
       <Docs>
         <summary>指定した図形の z 方向の位置を取得します。</summary>
         <value>To be added.</value>
-        <remarks><para>図形の z オーダーの位置を設定するには、 <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ZOrder(Microsoft.Office.Core.MsoZOrderCmd" />メソッドを使用します。</para>
+        <remarks><para>図形の z オーダーの位置を設定するには、メソッドを使用し <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ZOrder(Microsoft.Office.Core.MsoZOrderCmd" /> ます。</para>
           <para>図形の z オーダーの位置は、 <b>Shapes</b> コレクション内の図形のインデックス番号に対応します。 たとえば、myDocument に 4 つの図形がある場合、myDocument.Shapes(1) は z 方向の最背面の図形を取得し、myDocument.Shapes(4) は z 方向の最前面の図形を返します。</para>
           <para>コレクションに新しい図形を追加すると、既定では、必ず z 方向の前面に追加されます。</para>
           <para> </para></remarks>

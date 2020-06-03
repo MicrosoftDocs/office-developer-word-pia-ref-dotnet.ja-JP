@@ -1,9 +1,10 @@
 <Type Name="ShapeNode" FullName="Microsoft.Office.Interop.Word.ShapeNode">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="86c2673d3a1bd61e13b1505a88e585abcef62547" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147642" /></Metadata><TypeSignature Language="C#" Value="public interface ShapeNode" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2fb59e84569ac0c9ad06812959d096dc3a78b78f" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924411" /></Metadata><TypeSignature Language="C#" Value="public interface ShapeNode" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShapeNode" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ShapeNode" />
   <TypeSignature Language="VB.NET" Value="Public Interface ShapeNode" />
   <TypeSignature Language="C++ CLI" Value="public interface class ShapeNode" />
+  <TypeSignature Language="F#" Value="type ShapeNode = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,8 +20,8 @@
   </Attributes>
   <Docs>
     <summary>ユーザーが定義したフリーフォームの節点の形と節点部分の編集プロパティを表します。</summary>
-    <remarks><para>節点には、フリーフォームのセグメント間の頂点および曲線の部分のコントロール ポイントが含まれます。 <b>ShapeNode</b>オブジェクトは<see cref="T:Microsoft.Office.Interop.Word.ShapeNodes" />コレクションのメンバーです。 <b>ShapeNodes</b> コレクションには、フリー フォームのすべてのノードが含まれています。</para>
-      <para>1つの<paramref name="index" /> <b>ShapeNode</b>オブジェクトを<paramref name="index" />取得するには、 <b>Nodes</b>() を使用します。ここで、はノードのインデックス番号です。</para>
+    <remarks><para>節点には、フリーフォームのセグメント間の頂点および曲線の部分のコントロール ポイントが含まれます。 <b>ShapeNode</b>オブジェクトはコレクションのメンバーです <see cref="T:Microsoft.Office.Interop.Word.ShapeNodes" /> 。 <b>ShapeNodes</b> コレクションには、フリー フォームのすべてのノードが含まれています。</para>
+      <para>1 <b>Nodes</b>つの <paramref name="index" /> ShapeNode オブジェクトを取得するには、Nodes () を使用します。ここで、 <paramref name="index" /> はノードのインデックス番号です。 <b>ShapeNode</b></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeNode.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ShapeNode.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -47,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeNode.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ShapeNode.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeNode.EditingType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EditingType As MsoEditingType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoEditingType EditingType { Microsoft::Office::Core::MsoEditingType get(); };" />
+      <MemberSignature Language="F#" Value="member this.EditingType : Microsoft.Office.Core.MsoEditingType" Usage="Microsoft.Office.Interop.Word.ShapeNode.EditingType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -107,7 +111,7 @@
       <Docs>
         <summary>指定された節点が頂点の場合は、節点に対する変更が節点に接続された 2 つのセグメントに与える影響を示す値を取得します。 節点が曲線セグメントのコントロール ポイントである場合は、隣接する頂点の編集タイプを取得します。</summary>
         <value>To be added.</value>
-        <remarks><para>このプロパティ<see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.SetEditingType(System.Int32,Microsoft.Office.Core.MsoEditingType)" />の値を設定するには、メソッドを使用します。</para>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.SetEditingType(System.Int32,Microsoft.Office.Core.MsoEditingType)" />このプロパティの値を設定するには、メソッドを使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeNode.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ShapeNode.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeNode.Points" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Points As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Points { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Points : obj" Usage="Microsoft.Office.Interop.Word.ShapeNode.Points" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -164,7 +170,7 @@
       <Docs>
         <summary>指定された節点の位置を座標値として返します。 値の取得のみ可能です。</summary>
         <value>To be added.</value>
-        <remarks><para><see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" />メソッドを使用して、ノードの場所を設定します。</para>
+        <remarks><para>メソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" /> ノードの場所を設定します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -174,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeNode.SegmentType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SegmentType As MsoSegmentType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoSegmentType SegmentType { Microsoft::Office::Core::MsoSegmentType get(); };" />
+      <MemberSignature Language="F#" Value="member this.SegmentType : Microsoft.Office.Core.MsoSegmentType" Usage="Microsoft.Office.Interop.Word.ShapeNode.SegmentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -194,7 +201,7 @@
         <summary>指定した節点に関連するセグメントが直線または曲線であるかを示す値を取得します。</summary>
         <value>To be added.</value>
         <remarks><para>If the specified node is a control point for a curved segment, this property returns <b>msoSegmentCurve</b>.</para>
-          <para>このプロパティ<see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.SetSegmentType(System.Int32,Microsoft.Office.Core.MsoSegmentType)" />の値を設定するには、メソッドを使用します。</para>
+          <para><see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.SetSegmentType(System.Int32,Microsoft.Office.Core.MsoSegmentType)" />このプロパティの値を設定するには、メソッドを使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

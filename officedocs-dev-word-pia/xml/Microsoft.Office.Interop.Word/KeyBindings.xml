@@ -1,9 +1,10 @@
 <Type Name="KeyBindings" FullName="Microsoft.Office.Interop.Word.KeyBindings">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="c0bf61c2c56c0399c987bf635fa00d822963862c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146669" /></Metadata><TypeSignature Language="C#" Value="public interface KeyBindings : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8f970739804de4a10106f3507ba6c89a0ecc5bf5" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43923928" /></Metadata><TypeSignature Language="C#" Value="public interface KeyBindings : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract KeyBindings implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.KeyBindings" />
   <TypeSignature Language="VB.NET" Value="Public Interface KeyBindings&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class KeyBindings : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type KeyBindings = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,10 +23,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>現在のコンテキスト<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />でのユーザー設定のキーの割り当てを表すオブジェクトのコレクションです。 キーボードのユーザー設定] ダイアログ ボックスで、カスタム キーの割り当てが行われます。</summary>
-    <remarks><para>KeyBindings コレクション<see cref="P:Microsoft.Office.Interop.Word._Application.KeyBindings" />を取得するの<b></b>にには、プロパティを使用します。</para>
-      <para><b>KeyBinding</b>オブジェクト<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" />を<b>KeyBindings</b>コレクションに追加するには、メソッドを使用します。</para>
-      <para>1つの<paramref name="index" /> <b>KeyBinding</b>オブジェクトを<paramref name="index" />取得するには、 <b>KeyBindings</b>() を使用します。ここで、はインデックス番号を指定します。</para>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />現在のコンテキストでのユーザー設定のキーの割り当てを表すオブジェクトのコレクションです。 キーボードのユーザー設定] ダイアログ ボックスで、カスタム キーの割り当てが行われます。</summary>
+    <remarks><para><see cref="P:Microsoft.Office.Interop.Word._Application.KeyBindings" /> <b>KeyBindings</b>コレクションを取得するのにには、プロパティを使用します。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> <b>KeyBinding</b>オブジェクトを<b>KeyBindings</b>コレクションに追加するには、メソッドを使用します。</para>
+      <para>1 <b>KeyBindings</b>つの <paramref name="index" /> KeyBinding オブジェクトを取得するには、KeyBindings () を使用します。ここで、 <paramref name="index" /> はインデックス番号を指定します。 <b>KeyBinding</b></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.KeyBinding Add([in]valuetype Microsoft.Office.Interop.Word.WdKeyCategory KeyCategory, [in]string Command, [in]int32 KeyCode, [in]object&amp; KeyCode2, [in]object&amp; CommandParameter) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (KeyCategory As WdKeyCategory, Command As String, KeyCode As Integer, Optional ByRef KeyCode2 As Object, Optional ByRef CommandParameter As Object) As KeyBinding" />
+      <MemberSignature Language="F#" Value="abstract member Add : Microsoft.Office.Interop.Word.WdKeyCategory * string * int * obj * obj -&gt; Microsoft.Office.Interop.Word.KeyBinding" Usage="keyBindings.Add (KeyCategory, Command, KeyCode, KeyCode2, CommandParameter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -51,19 +53,19 @@
         <Parameter Name="KeyCategory" Type="Microsoft.Office.Interop.Word.WdKeyCategory" />
         <Parameter Name="Command" Type="System.String" />
         <Parameter Name="KeyCode" Type="System.Int32" />
-        <Parameter Name="KeyCode2" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="CommandParameter" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="KeyCode2" Type="System.Object" RefType="ref" />
+        <Parameter Name="CommandParameter" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="KeyCategory">必須<see cref="T:Microsoft.Office.Interop.Word.WdKeyCategory" />。 キー定義の分類を指定します。</param>
+        <param name="KeyCategory">必須 <see cref="T:Microsoft.Office.Interop.Word.WdKeyCategory" /> 。 キー定義の分類を指定します。</param>
         <param name="Command"><b>文字列</b> が必要です。 指定されたキーの組み合わせによって実行されるコマンドを指定します。</param>
-        <param name="KeyCode">整数型 (<b>Integer</b>) の値を使用します。 <see cref="T:Microsoft.Office.Interop.Word.WdKey" />定数のいずれかを使用してキーを指定します。</param>
-        <param name="KeyCode2">省略可能な<b>オブジェクト</b>です。 <see cref="T:Microsoft.Office.Interop.Word.WdKey" />定数の1つを使用して、2番目のキーを指定します。</param>
-        <param name="CommandParameter">省略可能な<b>オブジェクト</b>です。 で<paramref name="Command" />指定されたコマンドに必要な追加テキスト (ある場合)。 詳細については、「備考」を参照してください。</param>
-        <summary>マクロ、 <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />組み込みコマンド、フォント、定型句、スタイル、またはシンボルの新しいショートカットキーを表すオブジェクトを返します。</summary>
+        <param name="KeyCode">整数型 (<b>Integer</b>) の値を使用します。 定数のいずれかを使用してキーを指定し <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> ます。</param>
+        <param name="KeyCode2">省略可能な<b>オブジェクト</b>です。 定数の1つを使用して、2番目のキーを指定し <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> ます。</param>
+        <param name="CommandParameter">省略可能な<b>オブジェクト</b>です。 で指定されたコマンドに必要な追加テキスト (ある場合) <paramref name="Command" /> 。 詳細については、「備考」を参照してください。</param>
+        <summary>マクロ、 <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> 組み込みコマンド、フォント、定型句、スタイル、またはシンボルの新しいショートカットキーを表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks><para><see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" />メソッドを使用して、 <paramref name="KeyCode" />または<paramref name="KeyCode2" />引数を作成できます。</para>
-          <para>次の表では、左側の列にコマンド値を必要とするコマンドが含まれており、右側の列には、これらの<paramref name="CommandParameter" />各コマンドに対して指定する必要のあることが記述されています。 [キーボードのユーザー設定] ダイアログボックス ([ツール] メニュー) の [ <paramref name="CommandParameter" />コマンド] ボックスで、次のいずれかのコマンドを選択したときに表示されるリストボックスで項目を選択することを指定すると、それと同等の動作になります。</para>
+        <remarks><para>メソッドを使用し <see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> て、 <paramref name="KeyCode" /> または引数を作成でき <paramref name="KeyCode2" /> ます。</para>
+          <para>次の表では、左側の列にコマンド値を必要とするコマンドが含まれており、右側の列には、 <paramref name="CommandParameter" /> これらの各コマンドに対して指定する必要のあることが記述されています。 [キーボードのユーザー設定] ダイアログボックス ([ツール] メニュー) の [ <paramref name="CommandParameter" /> コマンド] ボックスで、次のいずれかのコマンドを選択したときに表示されるリストボックスで項目を選択することを指定すると、それと同等の動作になります。</para>
           <list type="table">
             <item>
               <description>
@@ -109,7 +111,7 @@
               <description>
                 <b>疑問符</b>
               </description>
-              <description><b>Chr ()</b>命令と symbol フォントの名前を連結することによって作成された文字列 (たとえば、chr &amp; (167) "symbol")</description>
+              <description><b>Chr ()</b>命令と symbol フォントの名前を連結することによって作成された文字列 (たとえば、chr (167) &amp; "symbol")</description>
             </item>
           </list>
           <para> </para></remarks>
@@ -121,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.KeyBindings.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.KeyBindings.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -138,7 +141,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.KeyBindings.ClearAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearAll();" />
+      <MemberSignature Language="F#" Value="abstract member ClearAll : unit -&gt; unit" Usage="keyBindings.ClearAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -165,7 +169,7 @@
       <Parameters />
       <Docs>
         <summary>すべてのユーザー設定のキーの割り当てをクリアし、元のキーの割り当てに戻します。</summary>
-        <remarks><para>オブジェクトに ClearAll メソッドを適用すると、指定したテンプレートまたは文書のキーの割り当てが既定の設定にリセットされます。 <b></b> <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> <see cref="P:Microsoft.Office.Interop.Word._Application.CustomizationContext" />プロパティを使用して、 <b>ClearAll</b>メソッドを使用する前にドキュメントまたはテンプレートのコンテキストを指定します。</para>
+        <remarks><para>オブジェクトに<b>ClearAll</b>メソッドを適用すると <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> 、指定したテンプレートまたは文書のキーの割り当てが既定の設定にリセットされます。 プロパティを使用し <see cref="P:Microsoft.Office.Interop.Word._Application.CustomizationContext" /> て、 <b>ClearAll</b>メソッドを使用する前にドキュメントまたはテンプレートのコンテキストを指定します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.KeyBindings.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Context { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : obj" Usage="Microsoft.Office.Interop.Word.KeyBindings.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -192,9 +197,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したキーの組み合わせの保存場所を表すオブジェクトを返します。 このプロパティは、、 <see cref="T:Microsoft.Office.Interop.Word.Document" />、 <see cref="T:Microsoft.Office.Interop.Word.Template" />または<see cref="T:Microsoft.Office.Interop.Word.Application" />オブジェクトを返すことができます。</summary>
+        <summary>指定したキーの組み合わせの保存場所を表すオブジェクトを返します。 このプロパティは、、、またはオブジェクトを返すことができ <see cref="T:Microsoft.Office.Interop.Word.Document" /> <see cref="T:Microsoft.Office.Interop.Word.Template" /> <see cref="T:Microsoft.Office.Interop.Word.Application" /> ます。</summary>
         <value>To be added.</value>
-        <remarks><para>組み込みのキー割り当て (たとえば、CTRL + I を<b>斜体</b>にする) は、 <b>Application</b>オブジェクトをコンテキストとして返します。 追加したキーバインディングは、 <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />オブジェクトが追加されたときに有効になっているカスタマイズコンテキストに応じて、<b>ドキュメント</b>または<b>テンプレート</b>オブジェクトを返します。</para>
+        <remarks><para>組み込みのキー割り当て (たとえば、CTRL + I を<b>斜体</b>にする) は、 <b>Application</b>オブジェクトをコンテキストとして返します。 追加したキーバインディングは、オブジェクトが追加されたときに有効になっているカスタマイズコンテキストに応じて、<b>ドキュメント</b>または<b>テンプレート</b>オブジェクトを返し <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -204,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.KeyBindings.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.KeyBindings.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -232,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.KeyBindings.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.KeyBindings.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -262,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.KeyBindings.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="keyBindings.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -294,6 +302,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.KeyBindings.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As KeyBinding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::KeyBinding ^ default[int] { Microsoft::Office::Interop::Word::KeyBinding ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.KeyBinding" Usage="Microsoft.Office.Interop.Word.KeyBindings.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -325,6 +334,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.KeyBinding Key([in]int32 KeyCode, [in]object&amp; KeyCode2) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.KeyBindings.Key(System.Int32,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Key (KeyCode As Integer, Optional ByRef KeyCode2 As Object) As KeyBinding" />
+      <MemberSignature Language="F#" Value="abstract member Key : int * obj -&gt; Microsoft.Office.Interop.Word.KeyBinding" Usage="keyBindings.Key (KeyCode, KeyCode2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -340,14 +350,14 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="KeyCode" Type="System.Int32" />
-        <Parameter Name="KeyCode2" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="KeyCode2" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="KeyCode">整数型 (<b>Integer</b>) の値を使用します。 <b>Wdkey クラス</b> の定数のいずれかを使用してキーを指定します。</param>
-        <param name="KeyCode2">省略可能な<b>オブジェクト</b>です。 <see cref="T:Microsoft.Office.Interop.Word.WdKey" />定数の1つを使用して、2番目のキーを指定します。</param>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />たユーザー設定キーの組み合わせを表すオブジェクトを返します。 キーの組み合わせが存在しない場合このメソッドは <b>Nothing</b> を返します。</summary>
+        <param name="KeyCode2">省略可能な<b>オブジェクト</b>です。 定数の1つを使用して、2番目のキーを指定し <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> ます。</param>
+        <summary>指定した <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> ユーザー設定キーの組み合わせを表すオブジェクトを返します。 キーの組み合わせが存在しない場合このメソッドは <b>Nothing</b> を返します。</summary>
         <returns>To be added.</returns>
-        <remarks><para><see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" />メソッドを使用して、 <paramref name="KeyCode" />または<paramref name="KeyCode2" />引数を作成できます。</para>
+        <remarks><para>メソッドを使用し <see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> て、 <paramref name="KeyCode" /> または引数を作成でき <paramref name="KeyCode2" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -357,6 +367,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.KeyBindings.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.KeyBindings.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

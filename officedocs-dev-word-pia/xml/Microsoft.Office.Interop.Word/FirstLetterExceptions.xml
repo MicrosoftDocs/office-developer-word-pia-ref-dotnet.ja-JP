@@ -1,9 +1,10 @@
 <Type Name="FirstLetterExceptions" FullName="Microsoft.Office.Interop.Word.FirstLetterExceptions">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="f5a5fc4bea4aa243b52aaff1c5351191136e2e06" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146830" /></Metadata><TypeSignature Language="C#" Value="public interface FirstLetterExceptions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8183dbab06fb54f70bef7a748d88b9b80b605b7c" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924222" /></Metadata><TypeSignature Language="C#" Value="public interface FirstLetterExceptions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FirstLetterExceptions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FirstLetterExceptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface FirstLetterExceptions&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class FirstLetterExceptions : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type FirstLetterExceptions = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,11 +23,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>自動修正から<see cref="T:Microsoft.Office.Interop.Word.FirstLetterException" />除外された略語を表すオブジェクトのコレクションです。</summary>
-    <remarks><para>この<see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.CorrectSentenceCaps" />プロパティを<b>True</b>に設定すると、ピリオドの後の最初の文字が自動的に大文字になります。 <b>FirstLetterExceptions</b>コレクションには、この動作の例外が含まれています (たとえば、"addr." など)。 "apt.")。</para>
-      <para>FirstLetterExceptions コレクション<see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.FirstLetterExceptions" />を取得するの<b></b>にには、プロパティを使用します。</para>
-      <para><see cref="M:Microsoft.Office.Interop.Word.FirstLetterExceptions.Add(System.String)" />メソッドを使用して、最初の文字の例外の一覧に略語を追加します。</para>
-      <para>単一の<b>FirstLetterException</b>オブジェクトを取得<paramref name="index" />するには、 <b>FirstLetterExceptions</b>(<paramref name="index" />) を使用します。省略形またはインデックス番号を指定します。</para>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.FirstLetterException" />自動修正から除外された略語を表すオブジェクトのコレクションです。</summary>
+    <remarks><para>このプロパティを True に設定すると、ピリオドの後の最初の文字が自動的に大文字 <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.CorrectSentenceCaps" /> になります。 <b>True</b> <b>FirstLetterExceptions</b>コレクションには、この動作の例外が含まれています (たとえば、"addr." など)。 "apt.")。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.FirstLetterExceptions" /> <b>FirstLetterExceptions</b>コレクションを取得するのにには、プロパティを使用します。</para>
+      <para>メソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.FirstLetterExceptions.Add(System.String)" /> 最初の文字の例外の一覧に略語を追加します。</para>
+      <para>単一<b>FirstLetterExceptions</b>の <paramref name="index" /> FirstLetterException オブジェクトを取得するには、FirstLetterExceptions () を使用し <paramref name="index" /> ます。 <b>FirstLetterException</b>省略形またはインデックス番号を指定します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FirstLetterExceptions.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Name As String) As FirstLetterException" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::FirstLetterException ^ Add(System::String ^ Name);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string -&gt; Microsoft.Office.Interop.Word.FirstLetterException" Usage="firstLetterExceptions.Add Name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -54,9 +56,9 @@
       </Parameters>
       <Docs>
         <param name="Name"><b>文字列</b> が必要です。 大文字にしない場合は、その省略形を使用します。</param>
-        <summary>オートコレクト<see cref="T:Microsoft.Office.Interop.Word.FirstLetterException" />の例外処理の一覧に追加する新しい例外を表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.FirstLetterException" />オートコレクトの例外処理の一覧に追加する新しい例外を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.FirstLetterAutoAdd" />プロパティに<b>True</b>が設定されている場合、省略形は先頭の文字の例外の一覧に自動的に追加されます。</para>
+        <remarks><para>プロパティに True が設定されている場合 <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.FirstLetterAutoAdd" /> 、省略形は先頭の文字の例外の一覧に自動的に追加されます。 <b>True</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FirstLetterExceptions.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.FirstLetterExceptions.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -83,7 +86,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FirstLetterExceptions.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.FirstLetterExceptions.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FirstLetterExceptions.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.FirstLetterExceptions.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FirstLetterExceptions.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="firstLetterExceptions.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FirstLetterExceptions.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As FirstLetterException" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::FirstLetterException ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::FirstLetterException ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.FirstLetterException" Usage="Microsoft.Office.Interop.Word.FirstLetterExceptions.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -201,7 +208,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FirstLetterException</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Index">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</param>
@@ -216,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FirstLetterExceptions.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.FirstLetterExceptions.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

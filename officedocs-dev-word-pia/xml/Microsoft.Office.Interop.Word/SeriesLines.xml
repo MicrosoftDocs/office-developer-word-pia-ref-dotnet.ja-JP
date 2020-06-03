@@ -1,9 +1,10 @@
 <Type Name="SeriesLines" FullName="Microsoft.Office.Interop.Word.SeriesLines">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="55cf8420da87920af7d7dc437b2d926031899488" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147656" /></Metadata><TypeSignature Language="C#" Value="public interface SeriesLines" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="64564c92bd3bb07f5898bbe27ebac94d1cbf7203" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924439" /></Metadata><TypeSignature Language="C#" Value="public interface SeriesLines" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SeriesLines" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SeriesLines" />
   <TypeSignature Language="VB.NET" Value="Public Interface SeriesLines" />
   <TypeSignature Language="C++ CLI" Value="public interface class SeriesLines" />
+  <TypeSignature Language="F#" Value="type SeriesLines = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,7 +21,7 @@
   <Docs>
     <summary>グラフ種類グループの区分線を表します。</summary>
     <remarks><para>区分線は、データ値を各系列から接続します。  区分線を含めることができるのは、2-d の積み上げ横棒グラフ、2-d 積み上げ縦棒グラフ、補助円グラフ付き円グラフ、または補助縦棒グラフ付き円グラフのみです。 陽線を作成できるのは、複数のデータ系列を含む 2-D 折れ線グラフ グループだけです。 1つの区分線を表すオブジェクトはありません。グラフグループ内のすべてのポイントに対して、区分線をオンにしているか、またはオフになっています。</para>
-      <para>プロパティが<b>False</b>の場合、SeriesLines オブジェクトのほとんどのプロパティは無効になります。 <b></b> <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasSeriesLines" /></para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasSeriesLines" />プロパティが<b>False</b>の場合、 <b>SeriesLines</b>オブジェクトのほとんどのプロパティは無効になります。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SeriesLines.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : obj" Usage="Microsoft.Office.Interop.Word.SeriesLines.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -47,7 +49,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用<see cref="T:Microsoft.Office.Interop.Word._Application" />すると、Microsoft Word アプリケーションを表すオブジェクトが返されます。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
+        <summary>オブジェクト修飾子を指定せずにこのプロパティを使用すると、 <see cref="T:Microsoft.Office.Interop.Word._Application" /> Microsoft Word アプリケーションを表すオブジェクトが返されます。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
         <value><b>アプリケーション</b>(上記を参照)</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SeriesLines.Border" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Border As ChartBorder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartBorder ^ Border { Microsoft::Office::Interop::Word::ChartBorder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Border : Microsoft.Office.Interop.Word.ChartBorder" Usage="Microsoft.Office.Interop.Word.SeriesLines.Border" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -75,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの<see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />枠線を表すオブジェクトを返します。 読み取り専用です。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />オブジェクトの枠線を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SeriesLines.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.SeriesLines.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -105,7 +109,7 @@
       <Docs>
         <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
         <value><b>Integer</b></value>
-        <remarks><para>オブジェクトが Microsoft Word で作成されている<see cref="P:Microsoft.Office.Interop.Word.SeriesLines.Creator" />場合、このプロパティは、文字列 "MSWD" を表す、16進数値の4D535744 を返します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+        <remarks><para>オブジェクトが Microsoft Word で作成されている場合、このプロパティは、 <see cref="P:Microsoft.Office.Interop.Word.SeriesLines.Creator" /> 文字列 "MSWD" を表す、16進数値の4D535744 を返します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.SeriesLines.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Function Delete () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; obj" Usage="seriesLines.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -141,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SeriesLines.Format" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As ChartFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFormat ^ Format { Microsoft::Office::Interop::Word::ChartFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Format : Microsoft.Office.Interop.Word.ChartFormat" Usage="Microsoft.Office.Interop.Word.SeriesLines.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -160,7 +166,7 @@
       <Docs>
         <summary>線、塗りつぶし、およびオブジェクトの書式設定の効果を取得します。
 
-読み取り専用<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />です。</summary>
+読み取り専用 <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /> です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -171,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SeriesLines.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.SeriesLines.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -199,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SeriesLines.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.SeriesLines.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -227,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.SeriesLines.Select" />
       <MemberSignature Language="VB.NET" Value="Public Function Select () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; obj" Usage="seriesLines.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

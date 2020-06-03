@@ -1,9 +1,10 @@
 <Type Name="FillFormat" FullName="Microsoft.Office.Interop.Word.FillFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="4807b5d76d632efebdfc8390e89b52ff7e61eae6" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146872" /></Metadata><TypeSignature Language="C#" Value="public interface FillFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="03dfe370fad574d243804658521716e65c4a4d4f" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924236" /></Metadata><TypeSignature Language="C#" Value="public interface FillFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FillFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FillFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface FillFormat" />
   <TypeSignature Language="C++ CLI" Value="public interface class FillFormat" />
+  <TypeSignature Language="F#" Value="type FillFormat = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,7 +20,7 @@
   </Attributes>
   <Docs>
     <summary>図形の塗りつぶしの書式を表します。図形には、均一な色、グラデーション、テクスチャ、パターン、図、半透明の塗りつぶしのいずれかを設定できます。</summary>
-    <remarks><para><b>FillFormat</b>オブジェクトを取得するの<see cref="T:Microsoft.Office.Interop.Word.Shape" />に<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />には<see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> 、、、またはオブジェクトの<b>Fill</b>プロパティを使用します。</para>
+    <remarks><para><b>Fill</b> <see cref="T:Microsoft.Office.Interop.Word.Shape" /> <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> FillFormat オブジェクトを取得するのにには、、、またはオブジェクトの Fill プロパティを使用し <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> ます。 <b>FillFormat</b></para>
       <para><b>FillFormat</b> オブジェクトのほとんどのプロパティは、値の取得のみ可能です。 これらのプロパティを設定するには、対応するメソッドを適用する必要があります。</para>
       <para> </para></remarks>
   </Docs>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.FillFormat.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -47,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.BackColor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BackColor As ColorFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ColorFormat ^ BackColor { Microsoft::Office::Interop::Word::ColorFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BackColor : Microsoft.Office.Interop.Word.ColorFormat" Usage="Microsoft.Office.Interop.Word.FillFormat.BackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -75,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、 <see cref="T:Microsoft.Office.Interop.Word.ColorFormat" />指定した塗りつぶしまたは線のパターンの背景色を表すオブジェクトを設定します。</summary>
+        <summary>返すまたは、 <see cref="T:Microsoft.Office.Interop.Word.ColorFormat" /> 指定した塗りつぶしまたは線のパターンの背景色を表すオブジェクトを設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FillFormat.Background" />
       <MemberSignature Language="VB.NET" Value="Public Sub Background ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Background();" />
+      <MemberSignature Language="F#" Value="abstract member Background : unit -&gt; unit" Usage="fillFormat.Background " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.FillFormat.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.ForeColor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ForeColor As ColorFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ColorFormat ^ ForeColor { Microsoft::Office::Interop::Word::ColorFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : Microsoft.Office.Interop.Word.ColorFormat" Usage="Microsoft.Office.Interop.Word.FillFormat.ForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -161,7 +167,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>塗りつぶしの前<see cref="T:Microsoft.Office.Interop.Word.ColorFormat" />景色を表すオブジェクトを設定または返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.ColorFormat" />塗りつぶしの前景色を表すオブジェクトを設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -172,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.GradientAngle" />
       <MemberSignature Language="VB.NET" Value="Public Property GradientAngle As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float GradientAngle { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.GradientAngle : single with get, set" Usage="Microsoft.Office.Interop.Word.FillFormat.GradientAngle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -204,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.GradientColorType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GradientColorType As MsoGradientColorType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoGradientColorType GradientColorType { Microsoft::Office::Core::MsoGradientColorType get(); };" />
+      <MemberSignature Language="F#" Value="member this.GradientColorType : Microsoft.Office.Core.MsoGradientColorType" Usage="Microsoft.Office.Interop.Word.FillFormat.GradientColorType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -223,7 +231,7 @@
       <Docs>
         <summary>指定した塗りつぶしのグラデーションの色の種類を取得します。</summary>
         <value>To be added.</value>
-        <remarks><para>塗りつぶしのグラデーションの<see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" />種類を設定するには、、、またはメソッドを使用します。 <see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> <see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" /></para>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> <see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" /> <see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> 塗りつぶしのグラデーションの種類を設定するには、、、またはメソッドを使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -233,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.GradientDegree" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GradientDegree As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float GradientDegree { float get(); };" />
+      <MemberSignature Language="F#" Value="member this.GradientDegree : single" Usage="Microsoft.Office.Interop.Word.FillFormat.GradientDegree" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -253,7 +262,7 @@
         <summary>1 色のグラデーションの塗りつぶしの明度を示す値を返します。</summary>
         <value>To be added.</value>
         <remarks><para>図形のグラデーションの前景色に黒が混合される場合、値は 0 です。白が混合される場合、値は 1 です。その間の明るさの前景色が混合される場合、値は 0 と 1 の間の数値になります。</para>
-          <para>塗りつぶし<see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />のグラデーションの度数を設定するには、メソッドを使用します。</para>
+          <para><see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />塗りつぶしのグラデーションの度数を設定するには、メソッドを使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -263,6 +272,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.GradientStops" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GradientStops As GradientStops" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::GradientStops ^ GradientStops { Microsoft::Office::Core::GradientStops ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GradientStops : Microsoft.Office.Core.GradientStops" Usage="Microsoft.Office.Interop.Word.FillFormat.GradientStops" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -280,8 +290,8 @@
         <ReturnType>Microsoft.Office.Core.GradientStops</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定さ<see cref="T:Microsoft.Office.Core.GradientStops" />れた塗りつぶし形式に関連付けられているコレクションを取得します。</summary>
-        <value>指定<see cref="T:Microsoft.Office.Core.GradientStops" />された塗りつぶし書式に関連付けられているコレクションです。</value>
+        <summary><see cref="T:Microsoft.Office.Core.GradientStops" />指定された塗りつぶし形式に関連付けられているコレクションを取得します。</summary>
+        <value><see cref="T:Microsoft.Office.Core.GradientStops" />指定された塗りつぶし書式に関連付けられているコレクションです。</value>
         <remarks><para>値の取得と設定が可能です。 グラデーションとは別に 1 つの色の状態からスムーズに移行します。 このセクションのエンドポイントを分岐点と呼びます。 <b>ハイパーリンク "ms-ヘルプ://AstroNS2/WINWORD. を使用することができます。DEV/content/ms-help/HV10343554.htm "GradientStops</b>メソッドを使用して、指定したオブジェクトの<b>GradientStops</b>コレクションにグラデーションの分岐点を追加します。</para>
           <para> </para></remarks>
       </Docs>
@@ -292,6 +302,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.GradientStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GradientStyle As MsoGradientStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoGradientStyle GradientStyle { Microsoft::Office::Core::MsoGradientStyle get(); };" />
+      <MemberSignature Language="F#" Value="member this.GradientStyle : Microsoft.Office.Core.MsoGradientStyle" Usage="Microsoft.Office.Interop.Word.FillFormat.GradientStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -311,8 +322,8 @@
       <Docs>
         <summary>指定された塗りつぶしのグラデーションのスタイルを取得します。</summary>
         <value>To be added.</value>
-        <remarks><para>塗りつぶし<see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />の<see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" />グラデーションのスタイルを設定するには、またはメソッドを使用します。</para>
-          <para>グラデーションが設定されていない塗りつぶしに対してこのプロパティを取得しようとすると、エラーが発生します。 塗りつぶし<see cref="P:Microsoft.Office.Interop.Word.FillFormat.Type" />にグラデーションが設定されているかどうかを確認するには、プロパティを使用します。</para>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> <see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> 塗りつぶしのグラデーションのスタイルを設定するには、またはメソッドを使用します。</para>
+          <para>グラデーションが設定されていない塗りつぶしに対してこのプロパティを取得しようとすると、エラーが発生します。 <see cref="P:Microsoft.Office.Interop.Word.FillFormat.Type" />塗りつぶしにグラデーションが設定されているかどうかを確認するには、プロパティを使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -322,6 +333,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.GradientVariant" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GradientVariant As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int GradientVariant { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.GradientVariant : int" Usage="Microsoft.Office.Interop.Word.FillFormat.GradientVariant" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -342,7 +354,7 @@
         <summary>指定した塗りつぶしのグラデーションのバリエーションを、1 から 4 までの整数値で取得します。</summary>
         <value>To be added.</value>
         <remarks><para>グラデーションの種類が <b>msoGradientFromCenter</b> の場合、取得する値は 1 または 2 です。 このプロパティの値は、[塗りつぶし効果] ダイアログ ボックスの [グラデーション] タブのバリエーション (左右からおよび上から下に番号が付けられます) に対応しています。</para>
-          <para>このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 塗りつぶし<see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />の<see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" />グラデーションのバリエーションを設定するには、またはメソッドを使用します。</para>
+          <para>このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 <see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> <see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> 塗りつぶしのグラデーションのバリエーションを設定するには、またはメソッドを使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -352,6 +364,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OneColorGradient (Style As MsoGradientStyle, Variant As Integer, Degree As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OneColorGradient(Microsoft::Office::Core::MsoGradientStyle Style, int Variant, float Degree);" />
+      <MemberSignature Language="F#" Value="abstract member OneColorGradient : Microsoft.Office.Core.MsoGradientStyle * int * single -&gt; unit" Usage="fillFormat.OneColorGradient (Style, Variant, Degree)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -371,8 +384,8 @@
         <Parameter Name="Degree" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Style">必須<see cref="T:Microsoft.Office.Core.MsoGradientStyle" />。 グラデーション スタイルです。</param>
-        <param name="Variant">整数型 (<b>Integer</b>) の値を使用します。 グラデーションのバリエーションです。 4 に、[ 塗りつぶし効果] ダイアログ ボックスの [ グラデーション] タブの 4 つのバリエーションに対応する 1 から値を指定できます。 が<paramref name="Style" /> <b>msoGradientFromCenter</b>の場合、この引数は1または2のいずれかになります。</param>
+        <param name="Style">必須 <see cref="T:Microsoft.Office.Core.MsoGradientStyle" /> 。 グラデーション スタイルです。</param>
+        <param name="Variant">整数型 (<b>Integer</b>) の値を使用します。 グラデーションのバリエーションです。 4 に、[ 塗りつぶし効果] ダイアログ ボックスの [ グラデーション] タブの 4 つのバリエーションに対応する 1 から値を指定できます。 <paramref name="Style" />が<b>msoGradientFromCenter</b>の場合、この引数は1または2のいずれかになります。</param>
         <param name="Degree">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 グラデーションの明るさを指定します。 使用できる値は、0.0 (最も暗い) ～ 1.0 (最も明るい) です。</param>
         <summary>指定した塗りつぶしに、1 色のグラデーションを設定します。</summary>
         <remarks>To be added.</remarks>
@@ -384,6 +397,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.FillFormat.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -412,6 +426,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.Pattern" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Pattern As MsoPatternType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoPatternType Pattern { Microsoft::Office::Core::MsoPatternType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Pattern : Microsoft.Office.Core.MsoPatternType" Usage="Microsoft.Office.Interop.Word.FillFormat.Pattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -431,8 +446,8 @@
       <Docs>
         <summary>指定した塗りつぶしに適用するパターンを表す値を返します。</summary>
         <value>To be added.</value>
-        <remarks><para>また、 <see cref="M:Microsoft.Office.Interop.Word.FillFormat.Patterned(Microsoft.Office.Core.MsoPatternType)" />メソッドを使用して塗りつぶしのパターンを設定することもできます。</para>
-          <para>パターンで<see cref="P:Microsoft.Office.Interop.Word.FillFormat.BackColor" />使用<see cref="P:Microsoft.Office.Interop.Word.FillFormat.ForeColor" />する色を設定するには、プロパティとプロパティを使用します。</para>
+        <remarks><para>また、メソッドを使用して <see cref="M:Microsoft.Office.Interop.Word.FillFormat.Patterned(Microsoft.Office.Core.MsoPatternType)" /> 塗りつぶしのパターンを設定することもできます。</para>
+          <para><see cref="P:Microsoft.Office.Interop.Word.FillFormat.BackColor" /> <see cref="P:Microsoft.Office.Interop.Word.FillFormat.ForeColor" /> パターンで使用する色を設定するには、プロパティとプロパティを使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -442,6 +457,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FillFormat.Patterned(Microsoft.Office.Core.MsoPatternType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Patterned (Pattern As MsoPatternType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Patterned(Microsoft::Office::Core::MsoPatternType Pattern);" />
+      <MemberSignature Language="F#" Value="abstract member Patterned : Microsoft.Office.Core.MsoPatternType -&gt; unit" Usage="fillFormat.Patterned Pattern" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -459,9 +475,9 @@
         <Parameter Name="Pattern" Type="Microsoft.Office.Core.MsoPatternType" />
       </Parameters>
       <Docs>
-        <param name="Pattern">必須<see cref="T:Microsoft.Office.Core.MsoPatternType" />。 指定した塗りつぶしに使用するパターンを指定します。</param>
+        <param name="Pattern">必須 <see cref="T:Microsoft.Office.Core.MsoPatternType" /> 。 指定した塗りつぶしに使用するパターンを指定します。</param>
         <summary>指定した塗りつぶしのパターンを設定します。</summary>
-        <remarks><para>パターンで<see cref="P:Microsoft.Office.Interop.Word.FillFormat.BackColor" />使用<see cref="P:Microsoft.Office.Interop.Word.FillFormat.ForeColor" />する色を設定するには、プロパティとプロパティを使用します。</para>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.FillFormat.BackColor" /> <see cref="P:Microsoft.Office.Interop.Word.FillFormat.ForeColor" /> パターンで使用する色を設定するには、プロパティとプロパティを使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -471,6 +487,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.PictureEffects" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PictureEffects As PictureEffects" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::PictureEffects ^ PictureEffects { Microsoft::Office::Core::PictureEffects ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PictureEffects : Microsoft.Office.Core.PictureEffects" Usage="Microsoft.Office.Interop.Word.FillFormat.PictureEffects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -488,9 +505,9 @@
         <ReturnType>Microsoft.Office.Core.PictureEffects</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定さ<see cref="T:Microsoft.Office.Core.PictureEffects" />れた塗りつぶしの書式に図の効果を適用するために使用できるオブジェクトを取得します。</summary>
-        <value>指定<see cref="T:Microsoft.Office.Core.PictureEffects" />された塗りつぶしの書式に図の効果を適用するために使用できるオブジェクトを指定します。</value>
-        <remarks><para>読み取り専用です。 図の<see cref="M:Microsoft.Office.Core.PictureEffects.Insert" />効果を適用<see cref="T:Microsoft.Office.Core.PictureEffects" />するのにには、オブジェクトのメソッドを使用します。 <b>Insert</b>は、 <see cref="T:Microsoft.Office.Core.MsoPictureEffectType" />引数として列挙定数を受け取り、適用する画像効果の種類を指定します。</para>
+        <summary><see cref="T:Microsoft.Office.Core.PictureEffects" />指定された塗りつぶしの書式に図の効果を適用するために使用できるオブジェクトを取得します。</summary>
+        <value><see cref="T:Microsoft.Office.Core.PictureEffects" />指定された塗りつぶしの書式に図の効果を適用するために使用できるオブジェクトを指定します。</value>
+        <remarks><para>読み取り専用です。 <see cref="M:Microsoft.Office.Core.PictureEffects.Insert" /> <see cref="T:Microsoft.Office.Core.PictureEffects" /> 図の効果を適用するのにには、オブジェクトのメソッドを使用します。 <b>Insert</b>は、 <see cref="T:Microsoft.Office.Core.MsoPictureEffectType" /> 引数として列挙定数を受け取り、適用する画像効果の種類を指定します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -500,6 +517,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PresetGradient (Style As MsoGradientStyle, Variant As Integer, PresetGradientType As MsoPresetGradientType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PresetGradient(Microsoft::Office::Core::MsoGradientStyle Style, int Variant, Microsoft::Office::Core::MsoPresetGradientType PresetGradientType);" />
+      <MemberSignature Language="F#" Value="abstract member PresetGradient : Microsoft.Office.Core.MsoGradientStyle * int * Microsoft.Office.Core.MsoPresetGradientType -&gt; unit" Usage="fillFormat.PresetGradient (Style, Variant, PresetGradientType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -519,9 +537,9 @@
         <Parameter Name="PresetGradientType" Type="Microsoft.Office.Core.MsoPresetGradientType" />
       </Parameters>
       <Docs>
-        <param name="Style">必須<see cref="T:Microsoft.Office.Core.MsoGradientStyle" />。 グラデーション スタイルです。</param>
-        <param name="Variant">整数型 (<b>Integer</b>) の値を使用します。 グラデーションのバリエーションです。 4 に、[ 塗りつぶし効果] ダイアログ ボックスの [ グラデーション] タブの 4 つのバリエーションに対応する 1 から値を指定できます。 が<paramref name="Style" /> <b>msoGradientFromCenter</b>の場合、この引数は1または2のいずれかになります。</param>
-        <param name="PresetGradientType">必須<see cref="T:Microsoft.Office.Core.MsoPresetGradientType" />。 グラデーションの種類を指定します。</param>
+        <param name="Style">必須 <see cref="T:Microsoft.Office.Core.MsoGradientStyle" /> 。 グラデーション スタイルです。</param>
+        <param name="Variant">整数型 (<b>Integer</b>) の値を使用します。 グラデーションのバリエーションです。 4 に、[ 塗りつぶし効果] ダイアログ ボックスの [ グラデーション] タブの 4 つのバリエーションに対応する 1 から値を指定できます。 <paramref name="Style" />が<b>msoGradientFromCenter</b>の場合、この引数は1または2のいずれかになります。</param>
+        <param name="PresetGradientType">必須 <see cref="T:Microsoft.Office.Core.MsoPresetGradientType" /> 。 グラデーションの種類を指定します。</param>
         <summary>指定した塗りつぶしに、既定のグラデーションを設定します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -532,6 +550,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.PresetGradientType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PresetGradientType As MsoPresetGradientType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoPresetGradientType PresetGradientType { Microsoft::Office::Core::MsoPresetGradientType get(); };" />
+      <MemberSignature Language="F#" Value="member this.PresetGradientType : Microsoft.Office.Core.MsoPresetGradientType" Usage="Microsoft.Office.Interop.Word.FillFormat.PresetGradientType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -551,7 +570,7 @@
       <Docs>
         <summary>指定した塗りつぶしの既定のグラデーションの種類を取得します。</summary>
         <value>To be added.</value>
-        <remarks><para>塗りつぶし<see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" />の既定のグラデーションの種類を設定するには、メソッドを使用します。</para>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" />塗りつぶしの既定のグラデーションの種類を設定するには、メソッドを使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -561,6 +580,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.PresetTexture" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PresetTexture As MsoPresetTexture" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoPresetTexture PresetTexture { Microsoft::Office::Core::MsoPresetTexture get(); };" />
+      <MemberSignature Language="F#" Value="member this.PresetTexture : Microsoft.Office.Core.MsoPresetTexture" Usage="Microsoft.Office.Interop.Word.FillFormat.PresetTexture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -580,7 +600,7 @@
       <Docs>
         <summary>指定した塗りつぶしの既定のテクスチャを取得します。</summary>
         <value>To be added.</value>
-        <remarks><para>塗りつぶし<see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" />の既定のテクスチャを指定するには、メソッドを使用します。</para>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" />塗りつぶしの既定のテクスチャを指定するには、メソッドを使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -590,6 +610,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PresetTextured (PresetTexture As MsoPresetTexture)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PresetTextured(Microsoft::Office::Core::MsoPresetTexture PresetTexture);" />
+      <MemberSignature Language="F#" Value="abstract member PresetTextured : Microsoft.Office.Core.MsoPresetTexture -&gt; unit" Usage="fillFormat.PresetTextured PresetTexture" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -607,7 +628,7 @@
         <Parameter Name="PresetTexture" Type="Microsoft.Office.Core.MsoPresetTexture" />
       </Parameters>
       <Docs>
-        <param name="PresetTexture">必須<see cref="T:Microsoft.Office.Core.MsoPresetTexture" />。 既定のテクスチャを指定します。</param>
+        <param name="PresetTexture">必須 <see cref="T:Microsoft.Office.Core.MsoPresetTexture" /> 。 既定のテクスチャを指定します。</param>
         <summary>指定した塗りつぶしに、既定のテクスチャを設定します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -618,6 +639,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.RotateWithObject" />
       <MemberSignature Language="VB.NET" Value="Public Property RotateWithObject As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState RotateWithObject { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberSignature Language="F#" Value="member this.RotateWithObject : Microsoft.Office.Core.MsoTriState with get, set" Usage="Microsoft.Office.Interop.Word.FillFormat.RotateWithObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -640,7 +662,7 @@
       <Docs>
         <summary>塗りつぶしが指定した図形に合わせて回転するかどうかを取得または設定します。</summary>
         <value><see cref="T:Microsoft.Office.Core.MsoTriState" /> オブジェクト。</value>
-        <remarks><para>値の取得と設定が可能です。 このプロパティによって返される値には、 <see cref="T:Microsoft.Office.Core.MsoTriState" />次の表に示す定数のいずれかを指定できます。</para>
+        <remarks><para>値の取得と設定が可能です。 このプロパティによって返される値には、 <see cref="T:Microsoft.Office.Core.MsoTriState" /> 次の表に示す定数のいずれかを指定できます。</para>
           <list type="table">
             <item>
               <description>
@@ -665,6 +687,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FillFormat.Solid" />
       <MemberSignature Language="VB.NET" Value="Public Sub Solid ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Solid();" />
+      <MemberSignature Language="F#" Value="abstract member Solid : unit -&gt; unit" Usage="fillFormat.Solid " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -690,6 +713,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.TextureAlignment" />
       <MemberSignature Language="VB.NET" Value="Public Property TextureAlignment As MsoTextureAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTextureAlignment TextureAlignment { Microsoft::Office::Core::MsoTextureAlignment get(); void set(Microsoft::Office::Core::MsoTextureAlignment value); };" />
+      <MemberSignature Language="F#" Value="member this.TextureAlignment : Microsoft.Office.Core.MsoTextureAlignment with get, set" Usage="Microsoft.Office.Interop.Word.FillFormat.TextureAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -712,7 +736,7 @@
       <Docs>
         <summary>テクスチャの塗りつぶしのタイリングの配置 (座標グリッドの原点) を取得または設定します。</summary>
         <value>テクスチャの塗りつぶしのタイリングの配置 (座標グリッドの原点)。</value>
-        <remarks><para>値の取得と設定が可能です。 このプロパティによって返される値には、次<see cref="T:Microsoft.Office.Core.MsoTextureAlignment" />の定数のいずれかを指定できます。</para>
+        <remarks><para>値の取得と設定が可能です。 このプロパティによって返される値には、次の定数のいずれかを指定でき <see cref="T:Microsoft.Office.Core.MsoTextureAlignment" /> ます。</para>
           <list type="bullet">
             <item>
               <para>
@@ -770,6 +794,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.TextureHorizontalScale" />
       <MemberSignature Language="VB.NET" Value="Public Property TextureHorizontalScale As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float TextureHorizontalScale { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.TextureHorizontalScale : single with get, set" Usage="Microsoft.Office.Interop.Word.FillFormat.TextureHorizontalScale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -802,6 +827,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.TextureName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextureName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TextureName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextureName : string" Usage="Microsoft.Office.Interop.Word.FillFormat.TextureName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -821,7 +847,7 @@
       <Docs>
         <summary>指定された塗りつぶしのユーザー設定のテクスチャ ファイルの名前を取得します。</summary>
         <value>To be added.</value>
-        <remarks><para>塗りつぶし<see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" />のテクスチャファイルを設定するには、メソッドを使用します。</para>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" />塗りつぶしのテクスチャファイルを設定するには、メソッドを使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -831,6 +857,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.TextureOffsetX" />
       <MemberSignature Language="VB.NET" Value="Public Property TextureOffsetX As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float TextureOffsetX { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.TextureOffsetX : single with get, set" Usage="Microsoft.Office.Interop.Word.FillFormat.TextureOffsetX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -853,7 +880,7 @@
       <Docs>
         <summary>原点からのテクスチャの水平方向のオフセットをポイント単位で指定する値を取得または設定します。</summary>
         <value>原点からのテクスチャの水平方向のオフセットをポイント単位で指定します。</value>
-        <remarks><para>値の取得と設定が可能です。 原点の位置は、 <see cref="P:Microsoft.Office.interop.Word.FillFormat.TextureAlignment" />プロパティの設定によって決まります。</para>
+        <remarks><para>値の取得と設定が可能です。 原点の位置は、プロパティの設定によって決まり <see cref="P:Microsoft.Office.interop.Word.FillFormat.TextureAlignment" /> ます。</para>
           <para>このプロパティの設定は、Microsoft Word ユーザーインターフェイスの [図の書式設定] ダイアログボックス ([描画ツール] の [書式] タブで、[図形のスタイル] を展開) の [塗りつぶし] ウィンドウの [並べ表示のオプション] の下にある [位置 X] ボックスの設定に対応しています。</para>
           <para> </para></remarks>
       </Docs>
@@ -864,6 +891,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.TextureOffsetY" />
       <MemberSignature Language="VB.NET" Value="Public Property TextureOffsetY As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float TextureOffsetY { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.TextureOffsetY : single with get, set" Usage="Microsoft.Office.Interop.Word.FillFormat.TextureOffsetY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -886,7 +914,7 @@
       <Docs>
         <summary>原点からのテクスチャの垂直オフセットをポイント単位で指定する値を取得または設定します。</summary>
         <value>原点からのテクスチャの垂直オフセットをポイント単位で指定します。</value>
-        <remarks><para>値の取得と設定が可能です。 原点の位置は、 <see cref="P:Microsoft.Office.Interop.Word.FillFormat.TextureAlignment" />プロパティの設定によって決まります。</para>
+        <remarks><para>値の取得と設定が可能です。 原点の位置は、プロパティの設定によって決まり <see cref="P:Microsoft.Office.Interop.Word.FillFormat.TextureAlignment" /> ます。</para>
           <para>このプロパティの設定は、Microsoft Word ユーザーインターフェイスの [図の書式設定] ダイアログボックス ([描画ツール] の [書式] タブの [図形のスタイル] を展開) の [塗りつぶし] ウィンドウにある [並べ表示のオプション] の [オフセット Y] ボックスの設定に対応しています。</para>
           <para> </para></remarks>
       </Docs>
@@ -897,6 +925,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.TextureTile" />
       <MemberSignature Language="VB.NET" Value="Public Property TextureTile As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState TextureTile { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberSignature Language="F#" Value="member this.TextureTile : Microsoft.Office.Core.MsoTriState with get, set" Usage="Microsoft.Office.Interop.Word.FillFormat.TextureTile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -919,7 +948,7 @@
       <Docs>
         <summary>テクスチャの塗りつぶしを並べて表示するか中央に表示するかを取得または設定します。</summary>
         <value><see cref="T:Microsoft.Office.Core.MsoTriState" /> オブジェクト。</value>
-        <remarks><para>値の取得と設定が可能です。 このプロパティによって返される値には、 <see cref="T:Microsoft.Office.Core.MsoTriState" />次の表に示す定数のいずれかを指定できます。</para>
+        <remarks><para>値の取得と設定が可能です。 このプロパティによって返される値には、 <see cref="T:Microsoft.Office.Core.MsoTriState" /> 次の表に示す定数のいずれかを指定できます。</para>
           <list type="table">
             <item>
               <description>
@@ -944,6 +973,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.TextureType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextureType As MsoTextureType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTextureType TextureType { Microsoft::Office::Core::MsoTextureType get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextureType : Microsoft.Office.Core.MsoTextureType" Usage="Microsoft.Office.Interop.Word.FillFormat.TextureType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -963,7 +993,7 @@
       <Docs>
         <summary>指定された塗りつぶしのテクスチャの種類を取得します。</summary>
         <value>To be added.</value>
-        <remarks><para>塗りつぶしのテクスチャの<see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" />種類を設定するには、、、またはメソッドを使用します。 <see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" /> <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserPicture(System.String)" /></para>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" /> <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserPicture(System.String)" /> <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" /> 塗りつぶしのテクスチャの種類を設定するには、、、またはメソッドを使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -973,6 +1003,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.TextureVerticalScale" />
       <MemberSignature Language="VB.NET" Value="Public Property TextureVerticalScale As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float TextureVerticalScale { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.TextureVerticalScale : single with get, set" Usage="Microsoft.Office.Interop.Word.FillFormat.TextureVerticalScale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1005,6 +1036,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.Transparency" />
       <MemberSignature Language="VB.NET" Value="Public Property Transparency As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Transparency { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Transparency : single with get, set" Usage="Microsoft.Office.Interop.Word.FillFormat.Transparency" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1037,6 +1069,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TwoColorGradient (Style As MsoGradientStyle, Variant As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TwoColorGradient(Microsoft::Office::Core::MsoGradientStyle Style, int Variant);" />
+      <MemberSignature Language="F#" Value="abstract member TwoColorGradient : Microsoft.Office.Core.MsoGradientStyle * int -&gt; unit" Usage="fillFormat.TwoColorGradient (Style, Variant)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1055,8 +1088,8 @@
         <Parameter Name="Variant" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Style">必須<see cref="T:Microsoft.Office.Core.MsoGradientStyle" />。 グラデーション スタイルです。</param>
-        <param name="Variant">整数型 (<b>Integer</b>) の値を使用します。 グラデーションのバリエーションです。 4 に、[ 塗りつぶし効果] ダイアログ ボックスの [ グラデーション] タブの 4 つのバリエーションに対応する 1 から値を指定できます。 が<paramref name="Style" /> <b>msoGradientFromCenter</b>の場合、この引数は1または2のいずれかになります。</param>
+        <param name="Style">必須 <see cref="T:Microsoft.Office.Core.MsoGradientStyle" /> 。 グラデーション スタイルです。</param>
+        <param name="Variant">整数型 (<b>Integer</b>) の値を使用します。 グラデーションのバリエーションです。 4 に、[ 塗りつぶし効果] ダイアログ ボックスの [ グラデーション] タブの 4 つのバリエーションに対応する 1 から値を指定できます。 <paramref name="Style" />が<b>msoGradientFromCenter</b>の場合、この引数は1または2のいずれかになります。</param>
         <summary>指定された塗りつぶしを 2 色のグラデーションに設定します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1067,6 +1100,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As MsoFillType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoFillType Type { Microsoft::Office::Core::MsoFillType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Core.MsoFillType" Usage="Microsoft.Office.Interop.Word.FillFormat.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1095,6 +1129,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FillFormat.UserPicture(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UserPicture (PictureFile As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UserPicture(System::String ^ PictureFile);" />
+      <MemberSignature Language="F#" Value="abstract member UserPicture : string -&gt; unit" Usage="fillFormat.UserPicture PictureFile" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1114,7 +1149,7 @@
       <Docs>
         <param name="PictureFile"><b>文字列</b> が必要です。 図のファイル名を指定します。</param>
         <summary>指定した図形を 1 つの大きな画像で塗りつぶします。</summary>
-        <remarks><para>図形を小さなタイル状の画像で塗りつぶすには、 <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" />メソッドを使用します。</para>
+        <remarks><para>図形を小さなタイル状の画像で塗りつぶすには、メソッドを使用し <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1124,6 +1159,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UserTextured (TextureFile As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UserTextured(System::String ^ TextureFile);" />
+      <MemberSignature Language="F#" Value="abstract member UserTextured : string -&gt; unit" Usage="fillFormat.UserTextured TextureFile" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1143,7 +1179,7 @@
       <Docs>
         <param name="TextureFile"><b>文字列</b> が必要です。 図のファイル名を指定します。</param>
         <summary>指定した図形を小さなタイル状の画像で塗りつぶします。</summary>
-        <remarks><para>1つの大きな画像で図形を塗りつぶすには、 <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserPicture(System.String)" />メソッドを使用します。</para>
+        <remarks><para>1つの大きな画像で図形を塗りつぶすには、メソッドを使用し <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserPicture(System.String)" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1153,6 +1189,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Property Visible As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Visible { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : Microsoft.Office.Core.MsoTriState with get, set" Usage="Microsoft.Office.Interop.Word.FillFormat.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

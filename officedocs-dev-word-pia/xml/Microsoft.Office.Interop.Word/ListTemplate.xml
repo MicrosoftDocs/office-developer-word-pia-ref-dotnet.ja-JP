@@ -1,9 +1,10 @@
 <Type Name="ListTemplate" FullName="Microsoft.Office.Interop.Word.ListTemplate">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="1139c365cea882b428ac0f0075b3c20e4756cad2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144506" /></Metadata><TypeSignature Language="C#" Value="public interface ListTemplate" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="16047960fe1fb0381a7a0dd0beb15ba49ebb8c81" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925269" /></Metadata><TypeSignature Language="C#" Value="public interface ListTemplate" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListTemplate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListTemplate" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListTemplate" />
   <TypeSignature Language="C++ CLI" Value="public interface class ListTemplate" />
+  <TypeSignature Language="F#" Value="type ListTemplate = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,14 +20,14 @@
   </Attributes>
   <Docs>
     <summary>箇条書きを定義するすべての書式を含む箇条書きテンプレートを表します。</summary>
-    <remarks><para><b>ListTemplate</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" />コレクションのメンバーです。 [箇条書きと段落番号] ダイアログ ボックスの 3 つの各タブに表示される 7 つの書式 ([なし] を除く) は、ListTemplate オブジェクトと対応します。 これらの定義済みリストテンプレートには、 <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" />コレクション内の3つのオブジェクトからアクセスできます。 文書とテンプレートに箇条書きテンプレートのコレクションを含めることができます。</para>
-      <para>リストギャラリーから<paramref name="index" />1 つの<paramref name="index" />箇条書きテンプレートを取得するには、 <b>ListTemplates</b>() を使用します。ここで、は 1 ~ 7 の数値です。</para>
+    <remarks><para><b>ListTemplate</b>オブジェクトは、コレクションのメンバーです <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> 。 [箇条書きと段落番号] ダイアログ ボックスの 3 つの各タブに表示される 7 つの書式 ([なし] を除く) は、ListTemplate オブジェクトと対応します。 これらの定義済みリストテンプレートには、コレクション内の3つのオブジェクトからアクセスでき <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> ます。 文書とテンプレートに箇条書きテンプレートのコレクションを含めることができます。</para>
+      <para><b>ListTemplates</b> <paramref name="index" /> <paramref name="index" /> リストギャラリーから1つの箇条書きテンプレートを取得するには、ListTemplates () を使用します。ここで、は 1 ~ 7 の数値です。</para>
       <para>
-        <b>注</b>: 一部のプロパティとメソッド<see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> ( <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />たとえば、) は、リストギャラリーからアクセスされるリストテンプレートでは機能しません。 これらの箇条書きテンプレートは、変更を加えることはできますが、テンプレート集の種類 (<b>wdBulletGallery</b>、<b>wdNumberGallery</b>、または <b>wdOutlineNumberGallery</b>) を変更することはできません。</para>
-      <para>文書また<see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />はテンプレートの箇条書きテンプレートのコレクションに箇条書きテンプレートを追加するには、メソッドを使用します。</para>
-      <para>指定した箇条書きテンプレートに、Microsoft Word に組み込まれている書式設定が<see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" />含まれているかどうかを確認するには、 <b>ListGallery</b>オブジェクトでプロパティを使用します。 書式設定を元のリスト形式にリセットするに<see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" />は、 <b>ListGallery</b>オブジェクトのメソッドを使用します。</para>
-      <para><b>ListTemplate</b>オブジェクトを取得したら、1つ<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />のオブジェクトを<paramref name="index" />取得するの<paramref name="index" />には、 <b>listlevels</b>() を使用します。ここで、は 1 ~ 9 の数値です。 <b>ListLevel</b>オブジェクトを使用すると、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />、、、、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />、など、指定されたリストレベルのすべての書式設定プロパティに<see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />アクセスできます。</para>
-      <para>メソッドを<see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" />使用して、複数レベルの箇条書きテンプレートを単一レベルのテンプレートに変換します。</para>
+        <b>注</b>: 一部のプロパティとメソッド (たとえば、) は、 <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" /> リストギャラリーからアクセスされるリストテンプレートでは機能しません。 これらの箇条書きテンプレートは、変更を加えることはできますが、テンプレート集の種類 (<b>wdBulletGallery</b>、<b>wdNumberGallery</b>、または <b>wdOutlineNumberGallery</b>) を変更することはできません。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />文書またはテンプレートの箇条書きテンプレートのコレクションに箇条書きテンプレートを追加するには、メソッドを使用します。</para>
+      <para>指定した箇条書きテンプレートに、Microsoft Word に組み込まれている書式設定が含まれているかどうかを確認するには、 <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> <b>ListGallery</b>オブジェクトでプロパティを使用します。 書式設定を元のリスト形式にリセットするには、 <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> <b>ListGallery</b>オブジェクトのメソッドを使用します。</para>
+      <para><b>ListTemplate</b>オブジェクトを取得したら、1つのオブジェクトを取得するのには、 <b>listlevels</b>( <paramref name="index" /> ) を使用します。ここで、 <paramref name="index" /> は 1 ~ 9 の数値です <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> 。 <b>ListLevel</b>オブジェクトを使用すると、、、、、、など、指定されたリストレベルのすべての書式設定プロパティにアクセスでき <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" /> ます。</para>
+      <para>メソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> 複数レベルの箇条書きテンプレートを単一レベルのテンプレートに変換します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplate.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ListTemplate.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -53,7 +55,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -63,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.ListTemplate Convert([in]object&amp; Level) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Convert (Optional ByRef Level As Object) As ListTemplate" />
+      <MemberSignature Language="F#" Value="abstract member Convert : obj -&gt; Microsoft.Office.Interop.Word.ListTemplate" Usage="listTemplate.Convert Level" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -77,13 +80,13 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplate</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Level" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Level" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Level">省略可能な<b>オブジェクト</b>です。 新しい箇条書きの書式設定に使用するレベル。 箇条書きのレベルを複数レベルから単一レベルに変換する場合は、この引数に 1 ～ 9 の範囲の数値を指定します。 単一レベルから複数レベルに変換する場合は、1 を指定します。 この引数を省略すると、1 が既定値として使用されます。</param>
         <summary>複数レベルの箇条書きを単一レベルの箇条書きに、または単一レベルの箇条書きを複数レベルの箇条書きに変換します。</summary>
         <returns>To be added.</returns>
-        <remarks><para>コレクションから派生したリストテンプレートに対して Convert メソッドを使用することはできません。 <b></b> <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /></para>
+        <remarks><para>コレクションから派生したリストテンプレートに対して<b>Convert</b>メソッドを使用することはできません <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplate.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ListTemplate.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplate.ListLevels" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListLevels As ListLevels" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ListLevels ^ ListLevels { Microsoft::Office::Interop::Word::ListLevels ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListLevels : Microsoft.Office.Interop.Word.ListLevels" Usage="Microsoft.Office.Interop.Word.ListTemplate.ListLevels" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -140,7 +145,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListLevels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定さ<see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />れたのすべてのレベルを表すコレクションを返します。</summary>
+        <summary>指定されたの <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> すべてのレベルを表すコレクションを返し <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> ます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -151,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplate.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Office.Interop.Word.ListTemplate.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -182,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplate.OutlineNumbered" />
       <MemberSignature Language="VB.NET" Value="Public Property OutlineNumbered As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OutlineNumbered { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.OutlineNumbered : bool with get, set" Usage="Microsoft.Office.Interop.Word.ListTemplate.OutlineNumbered" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -202,10 +209,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b>の場合は<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> 、指定したオブジェクトのアウトライン番号が付けられます。</summary>
+        <summary><b>True</b>の場合は、指定した <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> オブジェクトのアウトライン番号が付けられます。</summary>
         <value>To be added.</value>
         <remarks><para>最初のレベルの書式設定を使用する単一レベルの箇条書きテンプレートを変換するこのプロパティを <b>False</b> に設定します。</para>
-          <para>オブジェクトから返される ListTemplate オブジェクトには、このプロパティを設定できません。 <b></b> <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /></para>
+          <para>オブジェクトから返される<b>ListTemplate</b>オブジェクトには、このプロパティを設定できません <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -215,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplate.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ListTemplate.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

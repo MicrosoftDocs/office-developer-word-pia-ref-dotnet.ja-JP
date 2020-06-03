@@ -1,9 +1,10 @@
 <Type Name="Footnotes" FullName="Microsoft.Office.Interop.Word.Footnotes">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ddceb8450faffca19e7338fa2807f77d0c4b3148" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148041" /></Metadata><TypeSignature Language="C#" Value="public interface Footnotes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3d5e666df95abcca0f7620777e06cfb70021142d" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924173" /></Metadata><TypeSignature Language="C#" Value="public interface Footnotes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Footnotes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Footnotes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Footnotes&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Footnotes : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Footnotes = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,11 +23,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>選択範囲、 <see cref="T:Microsoft.Office.Interop.Word.Footnote" />指定範囲、または文書内のすべての脚注を表すオブジェクトのコレクションです。</summary>
-    <remarks><para><see cref="T:Microsoft.Office.Interop.Word.Selection" />、 <see cref="T:Microsoft.Office.Interop.Word.Range" />、または<see cref="T:Microsoft.Office.Interop.Word.Document" />オブジェクトの<b>脚注</b>プロパティを使用して、<b>脚注</b>のコレクションを取得します。</para>
-      <para>脚注を<see cref="M:Microsoft.Office.Interop.Word.Footnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" /> <b>脚注</b>のコレクションに追加するには、メソッドを使用します。</para>
-      <para>1つの<paramref name="index" /> <b>Footnot</b>e オブジェクト<paramref name="index" />を取得するのにには、<b>脚注</b>() を使用します。ここで、はインデックス番号を指定します。 インデックス番号は、選択範囲、指定範囲、または文書内の脚注の位置を表します。</para>
-      <para>文書またはセクションの最後に配置された脚注は文末脚注と見なされ<see cref="T:Microsoft.Office.Interop.Word.Endnotes" /> 、コレクションに含まれます。</para>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.Footnote" />選択範囲、指定範囲、または文書内のすべての脚注を表すオブジェクトのコレクションです。</summary>
+    <remarks><para>、、またはオブジェクトの<b>脚注</b>プロパティを使用して、 <see cref="T:Microsoft.Office.Interop.Word.Selection" /> 脚注のコレクションを取得し <see cref="T:Microsoft.Office.Interop.Word.Range" /> <see cref="T:Microsoft.Office.Interop.Word.Document" /> ます。 <b>Footnotes</b></para>
+      <para>脚注を <see cref="M:Microsoft.Office.Interop.Word.Footnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" /> <b>脚注</b>のコレクションに追加するには、メソッドを使用します。</para>
+      <para><b>Footnotes</b> <paramref name="index" /> <paramref name="index" /> 1 つの<b>Footnot</b>e オブジェクトを取得するのにには、脚注 () を使用します。ここで、はインデックス番号を指定します。 インデックス番号は、選択範囲、指定範囲、または文書内の脚注の位置を表します。</para>
+      <para>文書またはセクションの最後に配置された脚注は文末脚注と見なされ、コレクションに含まれ <see cref="T:Microsoft.Office.Interop.Word.Endnotes" /> ます。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,6 +35,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Footnote Add (Microsoft.Office.Interop.Word.Range Range, ref object Reference, ref object Text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Footnote Add([in]class Microsoft.Office.Interop.Word.Range Range, [in]object&amp; Reference, [in]object&amp; Text) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Footnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Range As Range, Optional ByRef Reference As Object, Optional ByRef Text As Object) As Footnote" />
+      <MemberSignature Language="F#" Value="abstract member Add : Microsoft.Office.Interop.Word.Range * obj * obj -&gt; Microsoft.Office.Interop.Word.Footnote" Usage="footnotes.Add (Range, Reference, Text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -49,16 +52,16 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
-        <Parameter Name="Reference" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Text" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Reference" Type="System.Object" RefType="ref" />
+        <Parameter Name="Text" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Range">必要な<b>Range</b>オブジェクト。 文末脚注記号または脚注記号を付ける範囲を指定します。 範囲を解除した位置を指定することもできます。</param>
         <param name="Reference">省略可能な<b>オブジェクト</b>です。 脚注記号にする任意の文字を指定します。 この引数を省略すると、自動的に番号が付けられた記号が挿入されます。</param>
         <param name="Text">省略可能な<b>オブジェクト</b>です。 文末脚注または脚注の文字列を指定します。</param>
-        <summary>範囲に<see cref="T:Microsoft.Office.Interop.Word.Footnote" />追加する脚注を表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Footnote" />範囲に追加する脚注を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks><para><paramref name="Reference" />引数の記号を指定するには、{<paramref name="FontName CharNum" />} という構文を使用します。 <paramref name="FontName" />は、記号を含むフォントの名前です。 装飾付きフォントの名前は、[記号と特殊文字] ダイアログ ボックス ([挿入] メニュー) の [フォント] ボックスに表示されます。 <paramref name="CharNum" />は、挿入する記号の位置に対応する数値を31の合計とし、記号の表の左から右に数えます。 たとえば、Symbol フォントの記号の表で56位置にオメガ記号 (ω) を指定する場合、引数は "{Symbol 87}" になります。</para>
+        <remarks><para>引数の記号を指定するには <paramref name="Reference" /> 、{} という構文を使用し <paramref name="FontName CharNum" /> ます。 <paramref name="FontName" />は、記号を含むフォントの名前です。 装飾付きフォントの名前は、[記号と特殊文字] ダイアログ ボックス ([挿入] メニュー) の [フォント] ボックスに表示されます。 <paramref name="CharNum" />は、挿入する記号の位置に対応する数値を31の合計とし、記号の表の左から右に数えます。 たとえば、Symbol フォントの記号の表で56位置にオメガ記号 (ω) を指定する場合、引数は "{Symbol 87}" になります。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Footnotes.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Footnotes.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -85,7 +89,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Footnotes.ContinuationNotice" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContinuationNotice As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ ContinuationNotice { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContinuationNotice : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Footnotes.ContinuationNotice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -113,7 +118,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>脚注の<see cref="T:Microsoft.Office.Interop.Word.Range" />継続時の注を表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Range" />脚注の継続時の注を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -124,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Footnotes.ContinuationSeparator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContinuationSeparator As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ ContinuationSeparator { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContinuationSeparator : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Footnotes.ContinuationSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -141,7 +147,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>脚注の<see cref="T:Microsoft.Office.Interop.Word.Range" />継続時の境界線を表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Range" />脚注の継続時の境界線を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Footnotes.Convert" />
       <MemberSignature Language="VB.NET" Value="Public Sub Convert ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Convert();" />
+      <MemberSignature Language="F#" Value="abstract member Convert : unit -&gt; unit" Usage="footnotes.Convert " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -177,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Footnotes.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Footnotes.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -205,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Footnotes.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Footnotes.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -235,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Footnotes.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="footnotes.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -267,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Footnotes.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Footnote" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Footnote ^ default[int] { Microsoft::Office::Interop::Word::Footnote ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.Footnote" Usage="Microsoft.Office.Interop.Word.Footnotes.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -299,6 +310,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Footnotes.Location" />
       <MemberSignature Language="VB.NET" Value="Public Property Location As WdFootnoteLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdFootnoteLocation Location { Microsoft::Office::Interop::Word::WdFootnoteLocation get(); void set(Microsoft::Office::Interop::Word::WdFootnoteLocation value); };" />
+      <MemberSignature Language="F#" Value="member this.Location : Microsoft.Office.Interop.Word.WdFootnoteLocation with get, set" Usage="Microsoft.Office.Interop.Word.Footnotes.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -321,7 +333,7 @@
       <Docs>
         <summary>すべての脚注の位置を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para><b>Location</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdFootnoteLocation" />定数のいずれかを指定できます。</para>
+        <remarks><para><b>Location</b>プロパティには、定数のいずれかを指定でき <see cref="T:Microsoft.Office.Interop.Word.WdFootnoteLocation" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -331,6 +343,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Footnotes.NumberingRule" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberingRule As WdNumberingRule" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdNumberingRule NumberingRule { Microsoft::Office::Interop::Word::WdNumberingRule get(); void set(Microsoft::Office::Interop::Word::WdNumberingRule value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberingRule : Microsoft.Office.Interop.Word.WdNumberingRule with get, set" Usage="Microsoft.Office.Interop.Word.Footnotes.NumberingRule" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -353,7 +366,7 @@
       <Docs>
         <summary>改ページまたはセクション区切りの後の脚注番号の付け方を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para><b>NumberingRule</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdNumberingRule" />定数のいずれかを指定できます。</para>
+        <remarks><para><b>NumberingRule</b>プロパティには、定数のいずれかを指定でき <see cref="T:Microsoft.Office.Interop.Word.WdNumberingRule" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -363,6 +376,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Footnotes.NumberStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberStyle As WdNoteNumberStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdNoteNumberStyle NumberStyle { Microsoft::Office::Interop::Word::WdNoteNumberStyle get(); void set(Microsoft::Office::Interop::Word::WdNoteNumberStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberStyle : Microsoft.Office.Interop.Word.WdNoteNumberStyle with get, set" Usage="Microsoft.Office.Interop.Word.Footnotes.NumberStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -385,7 +399,7 @@
       <Docs>
         <summary>選択範囲、指定範囲、または文書内の脚注の番号のスタイルを設定または返します。 値の取得と設定が可能です。</summary>
         <value>To be added.</value>
-        <remarks><para><b>NumberStyle</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdNoteNumberStyle" />定数のいずれかを指定できます。 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
+        <remarks><para><b>NumberStyle</b>プロパティには、定数のいずれかを指定でき <see cref="T:Microsoft.Office.Interop.Word.WdNoteNumberStyle" /> ます。 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -395,6 +409,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Footnotes.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Footnotes.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -423,6 +438,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Footnotes.ResetContinuationNotice" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetContinuationNotice ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetContinuationNotice();" />
+      <MemberSignature Language="F#" Value="abstract member ResetContinuationNotice : unit -&gt; unit" Usage="footnotes.ResetContinuationNotice " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -448,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Footnotes.ResetContinuationSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetContinuationSeparator ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetContinuationSeparator();" />
+      <MemberSignature Language="F#" Value="abstract member ResetContinuationSeparator : unit -&gt; unit" Usage="footnotes.ResetContinuationSeparator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -473,6 +490,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Footnotes.ResetSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetSeparator ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetSeparator();" />
+      <MemberSignature Language="F#" Value="abstract member ResetSeparator : unit -&gt; unit" Usage="footnotes.ResetSeparator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -498,6 +516,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Footnotes.Separator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Separator As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Separator { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Separator : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Footnotes.Separator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -515,7 +534,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>脚注の<see cref="T:Microsoft.Office.Interop.Word.Range" />境界線を表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Range" />脚注の境界線を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -526,6 +545,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Footnotes.StartingNumber" />
       <MemberSignature Language="VB.NET" Value="Public Property StartingNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartingNumber { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.StartingNumber : int with get, set" Usage="Microsoft.Office.Interop.Word.Footnotes.StartingNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -557,6 +577,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Footnotes.SwapWithEndnotes" />
       <MemberSignature Language="VB.NET" Value="Public Sub SwapWithEndnotes ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SwapWithEndnotes();" />
+      <MemberSignature Language="F#" Value="abstract member SwapWithEndnotes : unit -&gt; unit" Usage="footnotes.SwapWithEndnotes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -573,7 +594,7 @@
       <Parameters />
       <Docs>
         <summary>文書内のすべての脚注を文末脚注に変換します。</summary>
-        <remarks><para>指定範囲の脚注を文末脚注に変換するに<see cref="M:Microsoft.Office.Interop.Word.Footnotes.Convert" />は、メソッドを使用します。</para>
+        <remarks><para>指定範囲の脚注を文末脚注に変換するには、メソッドを使用し <see cref="M:Microsoft.Office.Interop.Word.Footnotes.Convert" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

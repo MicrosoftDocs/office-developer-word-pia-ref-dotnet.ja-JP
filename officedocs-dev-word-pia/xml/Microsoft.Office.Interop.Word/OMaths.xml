@@ -1,9 +1,10 @@
 <Type Name="OMaths" FullName="Microsoft.Office.Interop.Word.OMaths">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="e14145376576379dc979fb6bbad86cad132778d8" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144226" /></Metadata><TypeSignature Language="C#" Value="public interface OMaths : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4fbb3bfd3e4616947ef19491e1eddb86228cc560" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924740" /></Metadata><TypeSignature Language="C#" Value="public interface OMaths : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMaths implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMaths" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMaths&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class OMaths : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type OMaths = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,8 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>数式のコレクションです。 コレクションの<see cref="T:Microsoft.Office.Interop.Word.OMaths" />個々のメンバーにアクセスするには、オブジェクトを使用します。</summary>
-    <remarks><para><see cref="M:Microsoft.Office.Interop.Word.OMaths.Add(Microsoft.Office.Interop.Word.Range)" />メソッドを使用して、数式を作成し、文書、選択範囲、または指定範囲に追加します。  次の使用例は、数式を作成<see cref="M:Microsoft.Office.Interop.Word.OMaths.BuildUp" />し、 <see cref="T:Microsoft.Office.Interop.Word.OMaths" />コレクションのメソッドを使用して数式を2次元形式に変換します。</para>
+    <summary>数式のコレクションです。 <see cref="T:Microsoft.Office.Interop.Word.OMaths" />コレクションの個々のメンバーにアクセスするには、オブジェクトを使用します。</summary>
+    <remarks><para>メソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.OMaths.Add(Microsoft.Office.Interop.Word.Range)" /> 数式を作成し、文書、選択範囲、または指定範囲に追加します。  次の使用例は、数式を作成し、コレクションのメソッドを使用して数式を 2 <see cref="M:Microsoft.Office.Interop.Word.OMaths.BuildUp" /> <see cref="T:Microsoft.Office.Interop.Word.OMaths" /> 次元形式に変換します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -31,7 +32,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Range Add (Microsoft.Office.Interop.Word.Range Range);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Range Add([in]class Microsoft.Office.Interop.Word.Range Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.OMaths.Add(Microsoft.Office.Interop.Word.Range)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Range As Range) As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Range ^ Add(Microsoft::Office::Interop::Word::Range ^ Range);" />
+      <MemberSignature Language="F#" Value="abstract member Add : Microsoft.Office.Interop.Word.Range -&gt; Microsoft.Office.Interop.Word.Range" Usage="oMaths.Add Range" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -62,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OMaths.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.OMaths.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -79,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word._Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word._Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.OMaths.BuildUp" />
       <MemberSignature Language="VB.NET" Value="Public Sub BuildUp ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BuildUp();" />
+      <MemberSignature Language="F#" Value="abstract member BuildUp : unit -&gt; unit" Usage="oMaths.BuildUp " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -106,7 +111,7 @@
       <Parameters />
       <Docs>
         <summary>コレクション内のすべての数式を 2 次元形式に変換します。</summary>
-        <remarks><para>数式を行形式に変更するには<see cref="M:Microsoft.Office.Interop.Word.OMaths.Linearize" /> 、メソッドを使用します。</para>
+        <remarks><para>数式を行形式に変更するには、メソッドを使用し <see cref="M:Microsoft.Office.Interop.Word.OMaths.Linearize" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -116,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OMaths.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.OMaths.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -133,7 +139,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><see cref="T:Microsoft.Office.Interop.Word.OMaths" />コレクション内の項目数を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
+        <summary>コレクション内の項目数を返し <see cref="T:Microsoft.Office.Interop.Word.OMaths" /> ます。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
         <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -144,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OMaths.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.OMaths.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -163,9 +170,9 @@
       <Docs>
         <summary>アドインが作成されたアプリケーションを示す 32 ビット整数を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
         <value><b>Integer</b></value>
-        <remarks><para>オブジェクトが Microsoft Word で作成されている<see cref="P:Microsoft.Office.Interop.Word.OMaths.Creator" />場合、このプロパティは、文字列 "MSWD" を表す、16進数値の4D535744 を返します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
+        <remarks><para>オブジェクトが Microsoft Word で作成されている場合、このプロパティは、 <see cref="P:Microsoft.Office.Interop.Word.OMaths.Creator" /> 文字列 "MSWD" を表す、16進数値の4D535744 を返します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
           <para>
-            <b>注</b>: この値は定数<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />で表すこともできます。</para>
+            <b>注</b>: この値は定数で表すこともでき <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -175,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.OMaths.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="oMaths.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -207,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OMaths.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As OMath" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::OMath ^ default[int] { Microsoft::Office::Interop::Word::OMath ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.OMath" Usage="Microsoft.Office.Interop.Word.OMaths.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -228,7 +237,7 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>コレクション内<see cref="T:Microsoft.Office.Interop.Word.OMath" />の指定された項目を表すオブジェクト型 (object) の値を取得します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.OMath" />コレクション内の指定された項目を表すオブジェクト型 (object) の値を取得します。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.OMath" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -239,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.OMaths.Linearize" />
       <MemberSignature Language="VB.NET" Value="Public Sub Linearize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Linearize();" />
+      <MemberSignature Language="F#" Value="abstract member Linearize : unit -&gt; unit" Usage="oMaths.Linearize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -256,7 +266,7 @@
       <Docs>
         <summary>コレクション内のすべての数式を行形式に変換します。
 .</summary>
-        <remarks><para>数式を2次元形式に変更するに<see cref="M:Microsoft.Office.Interop.Word.OMaths.BuildUp" />は、メソッドを使用します。</para>
+        <remarks><para>数式を2次元形式に変更するには、メソッドを使用し <see cref="M:Microsoft.Office.Interop.Word.OMaths.BuildUp" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -266,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OMaths.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.OMaths.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -283,7 +294,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<b></b>た<see cref="T:Microsoft.Office.Interop.Word.OMaths" />オブジェクトの親オブジェクトを表すオブジェクト型 (object) の値を取得します。</summary>
+        <summary>指定したオブジェクトの親オブジェクトを表すオブジェクト型 ( <b>object</b> ) の値を取得し <see cref="T:Microsoft.Office.Interop.Word.OMaths" /> ます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

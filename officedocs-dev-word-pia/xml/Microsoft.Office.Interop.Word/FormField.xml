@@ -1,9 +1,10 @@
 <Type Name="FormField" FullName="Microsoft.Office.Interop.Word.FormField">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="4de4cb33d6d8353de0dcfc472045a254de650268" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146816" /></Metadata><TypeSignature Language="C#" Value="public interface FormField" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="96367197392db59c038ddcb1f20106158759f072" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924160" /></Metadata><TypeSignature Language="C#" Value="public interface FormField" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FormField" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FormField" />
   <TypeSignature Language="VB.NET" Value="Public Interface FormField" />
   <TypeSignature Language="C++ CLI" Value="public interface class FormField" />
+  <TypeSignature Language="F#" Value="type FormField = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,11 +20,11 @@
   </Attributes>
   <Docs>
     <summary>単一のフォーム フィールドを表します。</summary>
-    <remarks><para><b>FormField</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.FormFields" />コレクションのメンバーです。</para>
-      <para><b>FormFields</b>(<paramref name="index" />) を使用し<paramref name="index" />ます。ここで、はブックマーク名またはインデックス番号を使用して、単一の<b>FormField</b>オブジェクトを返します。</para>
+    <remarks><para><b>FormField</b>オブジェクトは、コレクションのメンバーです <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> 。</para>
+      <para><b>FormFields</b>( <paramref name="index" /> ) を使用します。ここで、 <paramref name="index" /> はブックマーク名またはインデックス番号を使用して、単一の<b>FormField</b>オブジェクトを返します。</para>
       <para>インデックス番号は、選択、範囲、またはドキュメントでのフォーム フィールドの位置を表します。</para>
-      <para>フォームフィールド<see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" />を追加するには、 <b>FormFields</b>オブジェクトでメソッドを使用します。</para>
-      <para><see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" /> <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> <see cref="T:Microsoft.Office.Interop.Word.CheckBox" /> <see cref="T:Microsoft.Office.Interop.Word.DropDown" /> <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> <b></b> 、、およびの各プロパティを FormField オブジェクトと共に使用して、、、およびオブジェクトを返します。 <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" /></para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" />フォームフィールドを追加するには、 <b>FormFields</b>オブジェクトでメソッドを使用します。</para>
+      <para>、、 <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" /> およびの各 <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" /> プロパティを <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> <b>FormField</b>オブジェクトと共に使用して、、、 <see cref="T:Microsoft.Office.Interop.Word.CheckBox" /> およびオブジェクトを返し <see cref="T:Microsoft.Office.Interop.Word.DropDown" /> <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> ます。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.FormField.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -50,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.CalculateOnExit" />
       <MemberSignature Language="VB.NET" Value="Public Property CalculateOnExit As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CalculateOnExit { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CalculateOnExit : bool with get, set" Usage="Microsoft.Office.Interop.Word.FormField.CalculateOnExit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.CheckBox" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CheckBox As CheckBox" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::CheckBox ^ CheckBox { Microsoft::Office::Interop::Word::CheckBox ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CheckBox : Microsoft.Office.Interop.Word.CheckBox" Usage="Microsoft.Office.Interop.Word.FormField.CheckBox" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -111,9 +115,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.CheckBox</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>チェックボックス<see cref="T:Microsoft.Office.Interop.Word.CheckBox" />フォームフィールドを表すオブジェクト型 (object) の値を取得します。</summary>
+        <summary>チェックボックスフォームフィールドを表すオブジェクト型 (object) の値を取得 <see cref="T:Microsoft.Office.Interop.Word.CheckBox" /> します。</summary>
         <value>To be added.</value>
-        <remarks><para>チェックボックス<b></b>フォームフィールド以外の<see cref="T:Microsoft.Office.Interop.Word.FormField" />オブジェクトに CheckBox プロパティを適用すると、プロパティは失敗しませんが、返さ<see cref="P:Microsoft.Office.Interop.Word.CheckBox.Valid" />れるオブジェクトのプロパティは<b>False</b>になります。</para>
+        <remarks><para>チェックボックスフォームフィールド以外のオブジェクトに<b>CheckBox</b>プロパティを適用すると、 <see cref="T:Microsoft.Office.Interop.Word.FormField" /> プロパティは失敗しませんが、返される <see cref="P:Microsoft.Office.Interop.Word.CheckBox.Valid" /> オブジェクトのプロパティは<b>False</b>になります。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FormField.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Sub Copy ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy();" />
+      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; unit" Usage="formField.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.FormField.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FormField.Cut" />
       <MemberSignature Language="VB.NET" Value="Public Sub Cut ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cut();" />
+      <MemberSignature Language="F#" Value="abstract member Cut : unit -&gt; unit" Usage="formField.Cut " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -203,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FormField.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="formField.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -228,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.DropDown" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DropDown As DropDown" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::DropDown ^ DropDown { Microsoft::Office::Interop::Word::DropDown ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DropDown : Microsoft.Office.Interop.Word.DropDown" Usage="Microsoft.Office.Interop.Word.FormField.DropDown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -245,9 +254,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.DropDown</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ドロップダウン<see cref="T:Microsoft.Office.Interop.Word.DropDown" />フォームフィールドを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.DropDown" />ドロップダウンフォームフィールドを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks><para>ドロップダウン<b></b>フォームフィールドではない<see cref="T:Microsoft.Office.Interop.Word.FormField" />オブジェクトにドロップダウンプロパティを適用すると、プロパティは失敗しませんが、 <see cref="P:Microsoft.Office.Interop.Word.DropDown.Valid" />返されるオブジェクトのプロパティは<b>False</b>になります。</para>
+        <remarks><para>ドロップダウンフォームフィールドではないオブジェクト<b>にドロップダウンプロパティを</b>適用すると、プロパティは失敗しませんが、 <see cref="T:Microsoft.Office.Interop.Word.FormField" /> 返される <see cref="P:Microsoft.Office.Interop.Word.DropDown.Valid" /> オブジェクトのプロパティは<b>False</b>になります。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -257,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="Microsoft.Office.Interop.Word.FormField.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -290,6 +300,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.EntryMacro" />
       <MemberSignature Language="VB.NET" Value="Public Property EntryMacro As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EntryMacro { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EntryMacro : string with get, set" Usage="Microsoft.Office.Interop.Word.FormField.EntryMacro" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -310,7 +321,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したフォームフィールド (<see cref="T:Microsoft.Office.Interop.Word.CheckBox" />、 <see cref="T:Microsoft.Office.Interop.Word.DropDown" />、または<see cref="T:Microsoft.Office.Interop.Word.TextInput" />) の入力マクロ名を設定または返します。</summary>
+        <summary>指定したフォームフィールド (、、または) の入力マクロ名を設定または返し <see cref="T:Microsoft.Office.Interop.Word.CheckBox" /> <see cref="T:Microsoft.Office.Interop.Word.DropDown" /> <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> ます。</summary>
         <value>To be added.</value>
         <remarks><para>フォーム フィールドにフォーカスを移すと、開始マクロが実行されます。</para>
           <para> </para></remarks>
@@ -322,6 +333,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.ExitMacro" />
       <MemberSignature Language="VB.NET" Value="Public Property ExitMacro As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExitMacro { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ExitMacro : string with get, set" Usage="Microsoft.Office.Interop.Word.FormField.ExitMacro" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -342,7 +354,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したフォームフィールド (<see cref="T:Microsoft.Office.Interop.Word.CheckBox" />、 <see cref="T:Microsoft.Office.Interop.Word.DropDown" />、または<see cref="T:Microsoft.Office.Interop.Word.TextInput" />) の終了マクロ名を設定または返します。</summary>
+        <summary>指定したフォームフィールド (、、または) の終了マクロ名を設定または返し <see cref="T:Microsoft.Office.Interop.Word.CheckBox" /> <see cref="T:Microsoft.Office.Interop.Word.DropDown" /> <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> ます。</summary>
         <value>To be added.</value>
         <remarks><para>フォーム フィールドからフォーカスを移すときに、終了マクロが実行されます。</para>
           <para> </para></remarks>
@@ -354,6 +366,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.HelpText" />
       <MemberSignature Language="VB.NET" Value="Public Property HelpText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelpText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HelpText : string with get, set" Usage="Microsoft.Office.Interop.Word.FormField.HelpText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -376,7 +389,7 @@
       <Docs>
         <summary>フォーム フィールドにフォーカスがあるし、ユーザーが f1 キーを押したときにメッセージ ボックスに表示されているテキストを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para>プロパティが<b>True</b>に設定されている場合、HelpText はテキスト文字列の値を指定します。 <b></b> <see cref="P:Microsoft.Office.Interop.Word.FormField.OwnHelp" /> <b>OwnHelp</b> を <b>False</b> に設定すると、 <b>HelpText</b> はフォーム フィールドのヘルプ テキストを含む定型句エントリの名前を指定します。</para>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.FormField.OwnHelp" />プロパティが<b>True</b>に設定されている場合、 <b>HelpText</b>はテキスト文字列の値を指定します。 <b>OwnHelp</b> を <b>False</b> に設定すると、 <b>HelpText</b> はフォーム フィールドのヘルプ テキストを含む定型句エントリの名前を指定します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -386,6 +399,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Office.Interop.Word.FormField.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -417,6 +431,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Next" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Next As FormField" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::FormField ^ Next { Microsoft::Office::Interop::Word::FormField ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Next : Microsoft.Office.Interop.Word.FormField" Usage="Microsoft.Office.Interop.Word.FormField.Next" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -445,6 +460,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.OwnHelp" />
       <MemberSignature Language="VB.NET" Value="Public Property OwnHelp As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OwnHelp { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.OwnHelp : bool with get, set" Usage="Microsoft.Office.Interop.Word.FormField.OwnHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -467,7 +483,7 @@
       <Docs>
         <summary>フォーム フィールドにフォーカスがあるし、ユーザーが f1 キーを押したときにメッセージ ボックスに表示されているテキストのソースを指定します。</summary>
         <value>To be added.</value>
-        <remarks><para><b>True</b>の場合は、 <see cref="P:Microsoft.Office.Interop.Word.FormField.HelpText" />プロパティによって指定されたテキストが表示されます。 場合は <b>False</b> 、 <b>HelpText</b> プロパティで指定された定型句エントリ内のテキストが表示されます。</para>
+        <remarks><para><b>True</b>の場合は、プロパティによって指定されたテキスト <see cref="P:Microsoft.Office.Interop.Word.FormField.HelpText" /> が表示されます。 場合は <b>False</b> 、 <b>HelpText</b> プロパティで指定された定型句エントリ内のテキストが表示されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -477,6 +493,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.OwnStatus" />
       <MemberSignature Language="VB.NET" Value="Public Property OwnStatus As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OwnStatus { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.OwnStatus : bool with get, set" Usage="Microsoft.Office.Interop.Word.FormField.OwnStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -499,7 +516,7 @@
       <Docs>
         <summary>フォーム フィールドにフォーカスがあるときにステータスバーに表示されるテキストのソースを指定します。</summary>
         <value>To be added.</value>
-        <remarks><para>プロパティが<b>True</b>を返す場合は、 <see cref="P:Microsoft.Office.Interop.Word.FormField.StatusText" />プロパティによって指定されたテキストが表示され、 <b>False</b>の場合、 <b>StatusText</b>プロパティで指定された定型句の文字列が表示されます。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
+        <remarks><para>プロパティが<b>True</b>を返す場合は、プロパティによって指定されたテキストが表示され、 <see cref="P:Microsoft.Office.Interop.Word.FormField.StatusText" /> <b>False</b>の場合、 <b>StatusText</b>プロパティで指定された定型句の文字列が表示されます。 プロパティの値を<b>True</b>または<b>False</b>に設定して、機能を有効または無効にします。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -509,6 +526,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.FormField.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -537,6 +555,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Previous" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Previous As FormField" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::FormField ^ Previous { Microsoft::Office::Interop::Word::FormField ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Previous : Microsoft.Office.Interop.Word.FormField" Usage="Microsoft.Office.Interop.Word.FormField.Previous" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -565,6 +584,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.FormField.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -582,9 +602,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />たオブジェクトに含まれる文書の一部を表すオブジェクトを返します。</summary>
+        <summary>指定した <see cref="T:Microsoft.Office.Interop.Word.Range" /> オブジェクトに含まれる文書の一部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks><para>文書から指定範囲を取得する<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法、または図形のコレクションから図形範囲を取得する方法については、メソッドを参照してください。</para>
+        <remarks><para>文書から指定範囲を取得する方法、または図形のコレクションから図形範囲を取得する方法については、メソッドを参照してください <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -594,6 +614,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Result" />
       <MemberSignature Language="VB.NET" Value="Public Property Result As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Result { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Result : string with get, set" Usage="Microsoft.Office.Interop.Word.FormField.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -614,9 +635,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />たオブジェクトに含まれる文書の一部を表すオブジェクトを返します。</summary>
+        <summary>指定した <see cref="T:Microsoft.Office.Interop.Word.Range" /> オブジェクトに含まれる文書の一部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks><para>文書から指定範囲を取得する<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法、または図形のコレクションから図形範囲を取得する方法については、メソッドを参照してください。</para>
+        <remarks><para>文書から指定範囲を取得する方法、または図形のコレクションから図形範囲を取得する方法については、メソッドを参照してください <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -626,6 +647,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FormField.Select" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; unit" Usage="formField.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -642,7 +664,7 @@
       <Parameters />
       <Docs>
         <summary>指定されたオブジェクトを選択します。</summary>
-        <remarks><para>このメソッドを使用した後<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> 、プロパティを使用して選択された項目を操作します。</para>
+        <remarks><para>このメソッドを使用した後、プロパティを使用して <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> 選択された項目を操作します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -652,6 +674,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.StatusText" />
       <MemberSignature Language="VB.NET" Value="Public Property StatusText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StatusText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StatusText : string with get, set" Usage="Microsoft.Office.Interop.Word.FormField.StatusText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -674,7 +697,7 @@
       <Docs>
         <summary>フォームフィールドにフォーカスがあるときにステータスバーに表示されるテキストを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para>プロパティが<b>True</b>に設定されている場合、StatusText プロパティはステータスバーのテキストを指定します。 <b></b> <see cref="P:Microsoft.Office.Interop.Word.FormField.OwnStatus" /> <b>OwnStatus</b> プロパティが <b>False</b> の場合は、<b>StatusText</b> プロパティにはステータス バーに表示される文字列を含む定型句を指定します。</para>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.FormField.OwnStatus" />プロパティが<b>True</b>に設定されている場合、 <b>StatusText</b>プロパティはステータスバーのテキストを指定します。 <b>OwnStatus</b> プロパティが <b>False</b> の場合は、<b>StatusText</b> プロパティにはステータス バーに表示される文字列を含む定型句を指定します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -684,6 +707,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.TextInput" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextInput As TextInput" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TextInput ^ TextInput { Microsoft::Office::Interop::Word::TextInput ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextInput : Microsoft.Office.Interop.Word.TextInput" Usage="Microsoft.Office.Interop.Word.FormField.TextInput" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -701,10 +725,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextInput</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>テキストボックス<see cref="T:Microsoft.Office.Interop.Word.TextInput" />フォームフィールドを表すオブジェクト型 (object) の値を取得します。</summary>
+        <summary>テキストボックスフォームフィールドを表すオブジェクト型 (object) の値を取得 <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> します。</summary>
         <value>To be added.</value>
-        <remarks><para><b>TextInput</b>プロパティがドロップダウンフォームフィールド以外の<b>FormField</b>オブジェクトに適用される場合、プロパティは失敗しませんが、返さ<see cref="P:Microsoft.Office.Interop.Word.TextInput.Valid" />れるオブジェクトのプロパティは<b>False</b>になります。</para>
-          <para>オブジェクトの<see cref="P:Microsoft.Office.Interop.Word.FormField.Result" />内容を取得または設定するには、FormField オブジェクトのプロパティを使用します。 <b></b> <see cref="T:Microsoft.Office.Interop.Word.TextInput" /></para>
+        <remarks><para><b>TextInput</b>プロパティがドロップダウンフォームフィールド以外の<b>FormField</b>オブジェクトに適用される場合、プロパティは失敗しませんが、 <see cref="P:Microsoft.Office.Interop.Word.TextInput.Valid" /> 返されるオブジェクトのプロパティは<b>False</b>になります。</para>
+          <para><see cref="P:Microsoft.Office.Interop.Word.FormField.Result" />オブジェクトの内容を取得または設定するには、 <b>FormField</b>オブジェクトのプロパティを使用し <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -714,6 +738,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Type" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Type As WdFieldType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdFieldType default { Microsoft::Office::Interop::Word::WdFieldType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdFieldType" Usage="Microsoft.Office.Interop.Word.FormField.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

@@ -1,9 +1,10 @@
 <Type Name="PageNumbers" FullName="Microsoft.Office.Interop.Word.PageNumbers">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="a31fe618fee1b2b001540181189751da6020270b" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144218" /></Metadata><TypeSignature Language="C#" Value="public interface PageNumbers : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="15315d8e40c05d31df91c20d7d32593ed74343b8" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924762" /></Metadata><TypeSignature Language="C#" Value="public interface PageNumbers : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PageNumbers implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.PageNumbers" />
   <TypeSignature Language="VB.NET" Value="Public Interface PageNumbers&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class PageNumbers : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type PageNumbers = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,11 +23,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>単一のヘッダー <see cref="T:Microsoft.Office.Interop.Word.PageNumber" />またはフッターのページ番号を表すオブジェクトのコレクションです。</summary>
-    <remarks><para>PageNumbers コレクション<see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.PageNumbers" />を取得するの<b></b>にには、プロパティを使用します。</para>
-      <para>ページ番号<see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" />をヘッダーまたはフッターに追加するには、メソッドを使用します。</para>
-      <para>複数のセクションで構成される文書でページ番号を追加または変更するには、各セクションで<see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.LinkToPrevious" />ページ番号を変更するか、またはこのプロパティを<b>True</b>に設定します。</para>
-      <para><b>PageNumbers</b>(<paramref name="index" />) を使用し<paramref name="index" />ます。ここで、はインデックス番号を使用して、単一の<b>PageNumber</b>オブジェクトを取得します。 ほとんどの場合、ヘッダーまたはフッターにはインデックス番号 1 のページ番号が 1 つだけ含まれます。</para>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.PageNumber" />単一のヘッダーまたはフッターのページ番号を表すオブジェクトのコレクションです。</summary>
+    <remarks><para><see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.PageNumbers" /> <b>PageNumbers</b>コレクションを取得するのにには、プロパティを使用します。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" />ページ番号をヘッダーまたはフッターに追加するには、メソッドを使用します。</para>
+      <para>複数のセクションで構成される文書でページ番号を追加または変更するには、各セクションでページ番号を変更するか、またはこの <see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.LinkToPrevious" /> プロパティを<b>True</b>に設定します。</para>
+      <para><b>PageNumbers</b>( <paramref name="index" /> ) を使用します。ここで、 <paramref name="index" /> はインデックス番号を使用して、単一の<b>PageNumber</b>オブジェクトを取得します。 ほとんどの場合、ヘッダーまたはフッターにはインデックス番号 1 のページ番号が 1 つだけ含まれます。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.PageNumber Add([in]object&amp; PageNumberAlignment, [in]object&amp; FirstPage) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Optional ByRef PageNumberAlignment As Object, Optional ByRef FirstPage As Object) As PageNumber" />
+      <MemberSignature Language="F#" Value="abstract member Add : obj * obj -&gt; Microsoft.Office.Interop.Word.PageNumber" Usage="pageNumbers.Add (PageNumberAlignment, FirstPage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -49,15 +51,15 @@
         <ReturnType>Microsoft.Office.Interop.Word.PageNumber</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="PageNumberAlignment" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="FirstPage" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PageNumberAlignment" Type="System.Object" RefType="ref" />
+        <Parameter Name="FirstPage" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="PageNumberAlignment">省略可能な<b>オブジェクト</b>です。 任意の<see cref="T:Microsoft.Office.Interop.Word.WdPageNumberAlignment" />定数を使用できます。</param>
-        <param name="FirstPage">省略可能な<b>オブジェクト</b>です。 <b>False</b> に設定すると、先頭ページのヘッダーとフッターが、それ以降のページのヘッダーとフッターとは別の指定になります。 が<paramref name="FirstPage" /> <b>False</b>に設定されている場合、ページ番号は最初のページに追加されません。 この引数を省略すると、設定は<see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" />プロパティによって制御されます。</param>
-        <summary>セクション内<see cref="T:Microsoft.Office.Interop.Word.PageNumber" />のヘッダーまたはフッターに追加されたページ番号を表すオブジェクトを返します。</summary>
+        <param name="PageNumberAlignment">省略可能な<b>オブジェクト</b>です。 任意の定数を使用でき <see cref="T:Microsoft.Office.Interop.Word.WdPageNumberAlignment" /> ます。</param>
+        <param name="FirstPage">省略可能な<b>オブジェクト</b>です。 <b>False</b> に設定すると、先頭ページのヘッダーとフッターが、それ以降のページのヘッダーとフッターとは別の指定になります。 <paramref name="FirstPage" />が<b>False</b>に設定されている場合、ページ番号は最初のページに追加されません。 この引数を省略すると、設定はプロパティによって制御され <see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" /> ます。</param>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.PageNumber" />セクション内のヘッダーまたはフッターに追加されたページ番号を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks><para>オブジェクトの<see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.LinkToPrevious" />プロパティが True に設定されている場合、ページ番号は、文書全体で、あるセクションから次のセクションに順番に続きます。 <b></b> <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /></para>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.LinkToPrevious" />オブジェクトのプロパティ <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> が<b>True</b>に設定されている場合、ページ番号は、文書全体で、あるセクションから次のセクションに順番に続きます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.PageNumbers.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -84,7 +87,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.ChapterPageSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Property ChapterPageSeparator As WdSeparatorType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdSeparatorType ChapterPageSeparator { Microsoft::Office::Interop::Word::WdSeparatorType get(); void set(Microsoft::Office::Interop::Word::WdSeparatorType value); };" />
+      <MemberSignature Language="F#" Value="member this.ChapterPageSeparator : Microsoft.Office.Interop.Word.WdSeparatorType with get, set" Usage="Microsoft.Office.Interop.Word.PageNumbers.ChapterPageSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -115,9 +119,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdSeparatorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>章番号とページ番号の間で使用される区切り文字を設定または返します。 <see cref="T:Microsoft.Office.Interop.Word.WdSeparatorType" />定数のいずれかをすることができます。</summary>
+        <summary>章番号とページ番号の間で使用される区切り文字を設定または返します。 定数のいずれかをすることができ <see cref="T:Microsoft.Office.Interop.Word.WdSeparatorType" /> ます。</summary>
         <value>To be added.</value>
-        <remarks><para>章番号を含むページ番号を作成する前に、文書の見出しに、[ 箇条書きと段落番号] ダイアログ ボックスからスタイルを使用する段落番号の形式が必要です。 プログラムでこの操作を行うに<see cref="T:Microsoft.Office.Interop.Word.List" />は、または<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトの<b>applylisttemplate</b>メソッドを使用します。</para>
+        <remarks><para>章番号を含むページ番号を作成する前に、文書の見出しに、[ 箇条書きと段落番号] ダイアログ ボックスからスタイルを使用する段落番号の形式が必要です。 プログラムでこの操作を行うには、またはオブジェクトの<b>Applylisttemplate</b>メソッドを使用し <see cref="T:Microsoft.Office.Interop.Word.List" /> <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.PageNumbers.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.PageNumbers.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.DoubleQuote" />
       <MemberSignature Language="VB.NET" Value="Public Property DoubleQuote As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DoubleQuote { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DoubleQuote : bool with get, set" Usage="Microsoft.Office.Interop.Word.PageNumbers.DoubleQuote" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -205,9 +212,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b>の場合は、指定<see cref="T:Microsoft.Office.Interop.Word.PageNumbers" />したオブジェクトを二重引用符 (") で囲みます。</summary>
+        <summary><b>True</b>の場合は、指定した <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> オブジェクトを二重引用符 (") で囲みます。</summary>
         <value>To be added.</value>
-        <remarks><para>既定でページ番号を二重引用符で囲むように Word を設定するに<see cref="P:Microsoft.Office.Interop.Word.Options.AddHebDoubleQuote" />は、プロパティを使用します。</para>
+        <remarks><para>既定でページ番号を二重引用符で囲むように Word を設定するには、プロパティを使用し <see cref="P:Microsoft.Office.Interop.Word.Options.AddHebDoubleQuote" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -217,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.PageNumbers.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="pageNumbers.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -249,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.HeadingLevelForChapter" />
       <MemberSignature Language="VB.NET" Value="Public Property HeadingLevelForChapter As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HeadingLevelForChapter { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.HeadingLevelForChapter : int with get, set" Usage="Microsoft.Office.Interop.Word.PageNumbers.HeadingLevelForChapter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -271,7 +280,7 @@
       <Docs>
         <summary>文書の章タイトルに適用される見出しレベルのスタイルを設定または返します。 0 (ゼロ) から8までの数値を指定できます。見出しレベル 1 ~ 9 に対応します。</summary>
         <value>To be added.</value>
-        <remarks><para>章番号を含むページ番号を作成する前に、文書の見出しに、[ 箇条書きと段落番号] ダイアログ ボックスからスタイルを使用する段落番号の形式が必要です。 プログラムでこの操作を行うに<see cref="T:Microsoft.Office.Interop.Word.List" />は、または<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />オブジェクトの<b>applylisttemplate</b>メソッドを使用します。</para>
+        <remarks><para>章番号を含むページ番号を作成する前に、文書の見出しに、[ 箇条書きと段落番号] ダイアログ ボックスからスタイルを使用する段落番号の形式が必要です。 プログラムでこの操作を行うには、またはオブジェクトの<b>Applylisttemplate</b>メソッドを使用し <see cref="T:Microsoft.Office.Interop.Word.List" /> <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -281,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.IncludeChapterNumber" />
       <MemberSignature Language="VB.NET" Value="Public Property IncludeChapterNumber As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeChapterNumber { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IncludeChapterNumber : bool with get, set" Usage="Microsoft.Office.Interop.Word.PageNumbers.IncludeChapterNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -312,6 +322,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As PageNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::PageNumber ^ default[int] { Microsoft::Office::Interop::Word::PageNumber ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.PageNumber" Usage="Microsoft.Office.Interop.Word.PageNumbers.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -344,6 +355,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.NumberStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberStyle As WdPageNumberStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdPageNumberStyle NumberStyle { Microsoft::Office::Interop::Word::WdPageNumberStyle get(); void set(Microsoft::Office::Interop::Word::WdPageNumberStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberStyle : Microsoft.Office.Interop.Word.WdPageNumberStyle with get, set" Usage="Microsoft.Office.Interop.Word.PageNumbers.NumberStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -364,9 +376,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPageNumberStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><see cref="T:Microsoft.Office.Interop.Word.PageNumbers" />オブジェクトの番号のスタイルを設定または返します。</summary>
+        <summary>オブジェクトの番号のスタイルを設定または返し <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> ます。</summary>
         <value>To be added.</value>
-        <remarks><para><b>NumberStyle</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdPageNumberStyle" />定数のいずれかを指定できます。 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
+        <remarks><para><b>NumberStyle</b>プロパティには、定数のいずれかを指定でき <see cref="T:Microsoft.Office.Interop.Word.WdPageNumberStyle" /> ます。 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -376,6 +388,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.PageNumbers.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -404,6 +417,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.RestartNumberingAtSection" />
       <MemberSignature Language="VB.NET" Value="Public Property RestartNumberingAtSection As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RestartNumberingAtSection { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RestartNumberingAtSection : bool with get, set" Usage="Microsoft.Office.Interop.Word.PageNumbers.RestartNumberingAtSection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -426,7 +440,7 @@
       <Docs>
         <summary><b>True の</b> 場合、ページ番号が、指定したセクションの先頭で 1 です。</summary>
         <value>To be added.</value>
-        <remarks><para><b>False</b>に設定されている場合、 <b>RestartNumberingAtSection</b>プロパティ<see cref="P:Microsoft.Office.Interop.Word.PageNumbers.StartingNumber" />は、前のセクションからページ番号付けを続行できるように、プロパティをオーバーライドします。</para>
+        <remarks><para><b>False</b>に設定されている場合、 <b>RestartNumberingAtSection</b>プロパティは、 <see cref="P:Microsoft.Office.Interop.Word.PageNumbers.StartingNumber" /> 前のセクションからページ番号付けを続行できるように、プロパティをオーバーライドします。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -436,6 +450,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.ShowFirstPageNumber" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowFirstPageNumber As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowFirstPageNumber { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowFirstPageNumber : bool with get, set" Usage="Microsoft.Office.Interop.Word.PageNumbers.ShowFirstPageNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -468,6 +483,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.StartingNumber" />
       <MemberSignature Language="VB.NET" Value="Public Property StartingNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartingNumber { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.StartingNumber : int with get, set" Usage="Microsoft.Office.Interop.Word.PageNumbers.StartingNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -491,7 +507,7 @@
         <summary>開始番号、行番号、またはページ番号を設定または返します。</summary>
         <value>To be added.</value>
         <remarks><para>行番号を画面に表示するには、印刷レイアウト表示に切り替える必要があります。</para>
-          <para>ページ番号に適用する場合、このプロパティは、指定<see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" />したオブジェクトの開始ページ番号を取得または設定します。 この数値は、 <see cref="P:Microsoft.Office.Interop.Word.PageNumbers.ShowFirstPageNumber" />プロパティの設定によっては最初のページに表示されない場合があります。 False <see cref="P:Microsoft.Office.Interop.Word.PageNumbers.RestartNumberingAtSection" />に設定されて<b></b>いる場合、プロパティは<b>StartingNumber</b>プロパティをオーバーライドし、前のセクションからページ番号を続けます。</para>
+          <para>ページ番号に適用する場合、このプロパティは、指定したオブジェクトの開始ページ番号を取得または設定し <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> ます。 この数値は、プロパティの設定によっては最初のページに表示されない場合があり <see cref="P:Microsoft.Office.Interop.Word.PageNumbers.ShowFirstPageNumber" /> ます。 <see cref="P:Microsoft.Office.Interop.Word.PageNumbers.RestartNumberingAtSection" /> <b>False</b>に設定されている場合、プロパティは<b>StartingNumber</b>プロパティをオーバーライドし、前のセクションからページ番号を続けます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

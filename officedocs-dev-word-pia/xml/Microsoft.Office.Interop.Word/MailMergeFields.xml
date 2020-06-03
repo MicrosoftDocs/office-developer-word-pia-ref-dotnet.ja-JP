@@ -1,9 +1,10 @@
 <Type Name="MailMergeFields" FullName="Microsoft.Office.Interop.Word.MailMergeFields">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3120d6713fa67507a7ea299781a6f722aba24386" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147880" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeFields : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d459ac5406313147b9099dd10768883226fc0848" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925206" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeFields : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMergeFields implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMergeFields" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMergeFields&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class MailMergeFields : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type MailMergeFields = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,11 +23,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>文書内の<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />差し込み印刷に関連するフィールドを表すオブジェクトのコレクションです。</summary>
-    <remarks><para>MailMergeFields コレクション<see cref="P:Microsoft.Office.Interop.Word.MailMerge.Fields" />を取得するの<b></b>にには、プロパティを使用します。</para>
-      <para><see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" />メソッドを使用して、 <b>MailMergeFields</b>コレクションに差し込みフィールドを追加します。</para>
-      <para>1つの<paramref name="index" /> <b>mailmergefield</b>オブジェクト<paramref name="index" />を取得するのにには、<b>フィールド</b>() (インデックス番号) を使用します。</para>
-      <para><b>MailMergeFields</b>コレクションには、差し込み印刷操作に<see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" />関連<see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />するフィールドを追加する、やなどのメソッドが追加されています。</para>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />文書内の差し込み印刷に関連するフィールドを表すオブジェクトのコレクションです。</summary>
+    <remarks><para><see cref="P:Microsoft.Office.Interop.Word.MailMerge.Fields" /> <b>MailMergeFields</b>コレクションを取得するのにには、プロパティを使用します。</para>
+      <para>メソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" /> <b>MailMergeFields</b>コレクションに差し込みフィールドを追加します。</para>
+      <para><b>Fields</b> <paramref name="index" /> <paramref name="index" /> 1 つの<b>mailmergefield</b>オブジェクトを取得するのにには、フィールド () (インデックス番号) を使用します。</para>
+      <para><b>MailMergeFields</b>コレクションには、 <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> 差し込み印刷操作に関連するフィールドを追加する、やなどのメソッドが追加されています。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,7 +35,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField Add (Microsoft.Office.Interop.Word.Range Range, string Name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField Add([in]class Microsoft.Office.Interop.Word.Range Range, [in]string Name) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Range As Range, Name As String) As MailMergeField" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::MailMergeField ^ Add(Microsoft::Office::Interop::Word::Range ^ Range, System::String ^ Name);" />
+      <MemberSignature Language="F#" Value="abstract member Add : Microsoft.Office.Interop.Word.Range * string -&gt; Microsoft.Office.Interop.Word.MailMergeField" Usage="mailMergeFields.Add (Range, Name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -53,9 +56,9 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 フィールドを追加する範囲を指定します。 指定範囲が解除されていない場合は、指定範囲がこのフィールドに置き換わります。</param>
+        <param name="Range">必要な <see cref="T:Microsoft.Office.Interop.Word.Range" /> オブジェクト。 フィールドを追加する範囲を指定します。 指定範囲が解除されていない場合は、指定範囲がこのフィールドに置き換わります。</param>
         <param name="Name"><b>文字列</b> が必要です。 フィールド名を指定します。</param>
-        <summary>データソース<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />ドキュメントに追加する差し込み印刷フィールドを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />データソースドキュメントに追加する差し込み印刷フィールドを表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -64,6 +67,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddAsk (Microsoft.Office.Interop.Word.Range Range, string Name, ref object Prompt, ref object DefaultAskText, ref object AskOnce);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddAsk([in]class Microsoft.Office.Interop.Word.Range Range, [in]string Name, [in]object&amp; Prompt, [in]object&amp; DefaultAskText, [in]object&amp; AskOnce) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddAsk (Range As Range, Name As String, Optional ByRef Prompt As Object, Optional ByRef DefaultAskText As Object, Optional ByRef AskOnce As Object) As MailMergeField" />
+      <MemberSignature Language="F#" Value="abstract member AddAsk : Microsoft.Office.Interop.Word.Range * string * obj * obj * obj -&gt; Microsoft.Office.Interop.Word.MailMergeField" Usage="mailMergeFields.AddAsk (Range, Name, Prompt, DefaultAskText, AskOnce)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -80,17 +85,17 @@
       <Parameters>
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
         <Parameter Name="Name" Type="System.String" />
-        <Parameter Name="Prompt" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="DefaultAskText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="AskOnce" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Prompt" Type="System.Object" RefType="ref" />
+        <Parameter Name="DefaultAskText" Type="System.Object" RefType="ref" />
+        <Parameter Name="AskOnce" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 ASK フィールドの位置を指定します。</param>
+        <param name="Range">必要な <see cref="T:Microsoft.Office.Interop.Word.Range" /> オブジェクト。 ASK フィールドの位置を指定します。</param>
         <param name="Name"><b>文字列</b> が必要です。 応答または既定の文字列に割り当てられるブックマーク名を指定します。 結果を文書に表示する場合は、ブックマーク名で REF フィールドを使用します。</param>
         <param name="Prompt">省略可能な<b>オブジェクト</b>です。 ダイアログ ボックスに表示する文字列を指定します。</param>
         <param name="DefaultAskText">省略可能な<b>オブジェクト</b>です。 ダイアログ ボックスのテキスト ボックスに表示する既定の文字列を指定します。 ASK フィールドの \d スイッチに対応します。</param>
         <param name="AskOnce">省略可能な<b>オブジェクト</b>です。 <b>True</b>を設定すると、新しいデータレコードが結合されるたびに、ダイアログボックスが一度だけ表示されます。 ASK フィールドの \o スイッチに対応します。</param>
-        <summary>差し込み印刷のメイン文書に ASK フィールドを挿入します。 オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />返します。</summary>
+        <summary>差し込み印刷のメイン文書に ASK フィールドを挿入します。 オブジェクトを返し <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> ます。</summary>
         <returns>To be added.</returns>
         <remarks><para>フィールドを更新すると、指定されたブックマークに割り当てる文字列を入力するダイアログ ボックスが表示されます。</para>
           <para> </para></remarks>
@@ -100,6 +105,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddFillIn (Microsoft.Office.Interop.Word.Range Range, ref object Prompt, ref object DefaultFillInText, ref object AskOnce);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddFillIn([in]class Microsoft.Office.Interop.Word.Range Range, [in]object&amp; Prompt, [in]object&amp; DefaultFillInText, [in]object&amp; AskOnce) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddFillIn (Range As Range, Optional ByRef Prompt As Object, Optional ByRef DefaultFillInText As Object, Optional ByRef AskOnce As Object) As MailMergeField" />
+      <MemberSignature Language="F#" Value="abstract member AddFillIn : Microsoft.Office.Interop.Word.Range * obj * obj * obj -&gt; Microsoft.Office.Interop.Word.MailMergeField" Usage="mailMergeFields.AddFillIn (Range, Prompt, DefaultFillInText, AskOnce)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -115,19 +122,19 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
-        <Parameter Name="Prompt" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="DefaultFillInText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="AskOnce" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Prompt" Type="System.Object" RefType="ref" />
+        <Parameter Name="DefaultFillInText" Type="System.Object" RefType="ref" />
+        <Parameter Name="AskOnce" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 FILLIN フィールドの位置を指定します。</param>
+        <param name="Range">必要な <see cref="T:Microsoft.Office.Interop.Word.Range" /> オブジェクト。 FILLIN フィールドの位置を指定します。</param>
         <param name="Prompt">省略可能な<b>オブジェクト</b>です。 ダイアログ ボックスに表示する文字列を指定します。</param>
         <param name="DefaultFillInText">省略可能な<b>オブジェクト</b>です。 ダイアログ ボックスのテキスト ボックスに表示する既定の文字列を指定します。 FILLIN フィールドの \d スイッチに対応します。</param>
         <param name="AskOnce">省略可能な<b>オブジェクト</b>です。 <b>True の場合</b>は、新しいデータレコードが結合されるたびにプロンプトを一度だけ表示します。 FILLIN フィールドの \o スイッチに対応します。 既定値は、 <b>false を指定</b> します。</param>
-        <summary>差し込み印刷のメイン文書に FILLIN フィールドを追加します。 オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />返します。</summary>
+        <summary>差し込み印刷のメイン文書に FILLIN フィールドを追加します。 オブジェクトを返し <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> ます。</summary>
         <returns>To be added.</returns>
         <remarks><para>更新されると、FILLIN フィールドは、文書の FILL-IN フィールドの位置に挿入するテキストの入力を求めるダイアログ ボックスを表示します。</para>
-          <para>差し込み印刷<see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />のメイン文書<see cref="T:Microsoft.Office.Interop.Word.Fields" />以外の文書に fill-in フィールドを追加するには、コレクションオブジェクトでメソッドを使用します。</para>
+          <para><see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> <see cref="T:Microsoft.Office.Interop.Word.Fields" /> 差し込み印刷のメイン文書以外の文書に fill-in フィールドを追加するには、コレクションオブジェクトでメソッドを使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -135,6 +142,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddIf (Microsoft.Office.Interop.Word.Range Range, string MergeField, Microsoft.Office.Interop.Word.WdMailMergeComparison Comparison, ref object CompareTo, ref object TrueAutoText, ref object TrueText, ref object FalseAutoText, ref object FalseText);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddIf([in]class Microsoft.Office.Interop.Word.Range Range, [in]string MergeField, [in]valuetype Microsoft.Office.Interop.Word.WdMailMergeComparison Comparison, [in]object&amp; CompareTo, [in]object&amp; TrueAutoText, [in]object&amp; TrueText, [in]object&amp; FalseAutoText, [in]object&amp; FalseText) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddIf(Microsoft.Office.Interop.Word.Range,System.String,Microsoft.Office.Interop.Word.WdMailMergeComparison,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddIf (Range As Range, MergeField As String, Comparison As WdMailMergeComparison, Optional ByRef CompareTo As Object, Optional ByRef TrueAutoText As Object, Optional ByRef TrueText As Object, Optional ByRef FalseAutoText As Object, Optional ByRef FalseText As Object) As MailMergeField" />
+      <MemberSignature Language="F#" Value="abstract member AddIf : Microsoft.Office.Interop.Word.Range * string * Microsoft.Office.Interop.Word.WdMailMergeComparison * obj * obj * obj * obj * obj -&gt; Microsoft.Office.Interop.Word.MailMergeField" Usage="mailMergeFields.AddIf (Range, MergeField, Comparison, CompareTo, TrueAutoText, TrueText, FalseAutoText, FalseText)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -152,22 +161,22 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
         <Parameter Name="MergeField" Type="System.String" />
         <Parameter Name="Comparison" Type="Microsoft.Office.Interop.Word.WdMailMergeComparison" />
-        <Parameter Name="CompareTo" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="TrueAutoText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="TrueText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="FalseAutoText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="FalseText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="CompareTo" Type="System.Object" RefType="ref" />
+        <Parameter Name="TrueAutoText" Type="System.Object" RefType="ref" />
+        <Parameter Name="TrueText" Type="System.Object" RefType="ref" />
+        <Parameter Name="FalseAutoText" Type="System.Object" RefType="ref" />
+        <Parameter Name="FalseText" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 IF フィールドの位置を指定します。</param>
+        <param name="Range">必要な <see cref="T:Microsoft.Office.Interop.Word.Range" /> オブジェクト。 IF フィールドの位置を指定します。</param>
         <param name="MergeField"><b>文字列</b> が必要です。 差し込みフィールド名を指定します。</param>
-        <param name="Comparison">必須<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />。 WdMailMergeComparison クラスの定数のいずれかを使用して、比較動作を指定します。</param>
-        <param name="CompareTo">省略可能な<b>オブジェクト</b>です。 の<paramref name="MergeField" />内容と比較するテキストを入力します。</param>
-        <param name="TrueAutoText">省略可能な<b>オブジェクト</b>です。 比較結果が True である場合に挿入する定型句を指定します。 この引数を指定すると<paramref name="TrueText" /> 、は無視されます。</param>
+        <param name="Comparison">必須 <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" /> 。 WdMailMergeComparison クラスの定数のいずれかを使用して、比較動作を指定します。</param>
+        <param name="CompareTo">省略可能な<b>オブジェクト</b>です。 の内容と比較するテキストを入力し <paramref name="MergeField" /> ます。</param>
+        <param name="TrueAutoText">省略可能な<b>オブジェクト</b>です。 比較結果が True である場合に挿入する定型句を指定します。 この引数を指定すると、 <paramref name="TrueText" /> は無視されます。</param>
         <param name="TrueText">省略可能な<b>オブジェクト</b>です。 比較結果が True である場合に挿入する文字列を指定します。</param>
-        <param name="FalseAutoText">省略可能な<b>オブジェクト</b>です。 比較結果が False である場合に挿入する定型句を指定します。 この引数を指定すると<paramref name="FalseText" /> 、は無視されます。</param>
+        <param name="FalseAutoText">省略可能な<b>オブジェクト</b>です。 比較結果が False である場合に挿入する定型句を指定します。 この引数を指定すると、 <paramref name="FalseText" /> は無視されます。</param>
         <param name="FalseText">省略可能な<b>オブジェクト</b>です。 比較結果が False である場合に挿入する文字列を指定します。</param>
-        <summary>差し込み印刷のメイン文書に IF フィールドを追加します。 オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />返します。</summary>
+        <summary>差し込み印刷のメイン文書に IF フィールドを追加します。 オブジェクトを返し <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> ます。</summary>
         <returns>To be added.</returns>
         <remarks><para>更新されると、IF フィールドはデータレコード内のフィールドと指定された値を比較し、比較結果に基づいて適切なテキストを挿入します。</para>
           <para> </para></remarks>
@@ -177,7 +186,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddMergeRec (Microsoft.Office.Interop.Word.Range Range);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddMergeRec([in]class Microsoft.Office.Interop.Word.Range Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddMergeRec(Microsoft.Office.Interop.Word.Range)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddMergeRec (Range As Range) As MailMergeField" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::MailMergeField ^ AddMergeRec(Microsoft::Office::Interop::Word::Range ^ Range);" />
+      <MemberSignature Language="F#" Value="abstract member AddMergeRec : Microsoft.Office.Interop.Word.Range -&gt; Microsoft.Office.Interop.Word.MailMergeField" Usage="mailMergeFields.AddMergeRec Range" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -195,8 +206,8 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 MERGEREC フィールドの位置を指定します。</param>
-        <summary>差し込み印刷のメイン文書に MERGEREC フィールドを追加します。 オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />返します。</summary>
+        <param name="Range">必要な <see cref="T:Microsoft.Office.Interop.Word.Range" /> オブジェクト。 MERGEREC フィールドの位置を指定します。</param>
+        <summary>差し込み印刷のメイン文書に MERGEREC フィールドを追加します。 オブジェクトを返し <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> ます。</summary>
         <returns>To be added.</returns>
         <remarks><para>差し込み印刷中に、MERGEREC フィールドは現在のデータレコードの番号 (現在のクエリ結果の中のデータレコードの位置) を挿入します。</para>
           <para> </para></remarks>
@@ -206,7 +217,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddMergeSeq (Microsoft.Office.Interop.Word.Range Range);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddMergeSeq([in]class Microsoft.Office.Interop.Word.Range Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddMergeSeq(Microsoft.Office.Interop.Word.Range)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddMergeSeq (Range As Range) As MailMergeField" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::MailMergeField ^ AddMergeSeq(Microsoft::Office::Interop::Word::Range ^ Range);" />
+      <MemberSignature Language="F#" Value="abstract member AddMergeSeq : Microsoft.Office.Interop.Word.Range -&gt; Microsoft.Office.Interop.Word.MailMergeField" Usage="mailMergeFields.AddMergeSeq Range" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -224,8 +237,8 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 MERGESEQ フィールドの位置を指定します。</param>
-        <summary>差し込み印刷のメイン文書に MERGESEQ フィールドを挿入します。 オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />返します。</summary>
+        <param name="Range">必要な <see cref="T:Microsoft.Office.Interop.Word.Range" /> オブジェクト。 MERGESEQ フィールドの位置を指定します。</param>
+        <summary>差し込み印刷のメイン文書に MERGESEQ フィールドを挿入します。 オブジェクトを返し <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> ます。</summary>
         <returns>To be added.</returns>
         <remarks><para>MERGESEQ フィールドは、データレコードが結合される順序に基づいて番号を挿入します (たとえば、レコード 50 50 から100に結合されると、MERGESEQ は番号1を挿入します)。</para>
           <para> </para></remarks>
@@ -235,7 +248,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddNext (Microsoft.Office.Interop.Word.Range Range);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddNext([in]class Microsoft.Office.Interop.Word.Range Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddNext(Microsoft.Office.Interop.Word.Range)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddNext (Range As Range) As MailMergeField" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::MailMergeField ^ AddNext(Microsoft::Office::Interop::Word::Range ^ Range);" />
+      <MemberSignature Language="F#" Value="abstract member AddNext : Microsoft.Office.Interop.Word.Range -&gt; Microsoft.Office.Interop.Word.MailMergeField" Usage="mailMergeFields.AddNext Range" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -253,8 +268,8 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 NEXT フィールドの位置を指定します。</param>
-        <summary>差し込み印刷のメイン文書に NEXT フィールドを追加します。 オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />返します。</summary>
+        <param name="Range">必要な <see cref="T:Microsoft.Office.Interop.Word.Range" /> オブジェクト。 NEXT フィールドの位置を指定します。</param>
+        <summary>差し込み印刷のメイン文書に NEXT フィールドを追加します。 オブジェクトを返し <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> ます。</summary>
         <returns>To be added.</returns>
         <remarks><para>次のフィールドは、複数のレコードのデータを同じ差し込み文書 (たとえば、宛名ラベルのシート) に差し込むことができるように、次のデータレコードに進みます。</para>
           <para> </para></remarks>
@@ -264,6 +279,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddNextIf (Microsoft.Office.Interop.Word.Range Range, string MergeField, Microsoft.Office.Interop.Word.WdMailMergeComparison Comparison, ref object CompareTo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddNextIf([in]class Microsoft.Office.Interop.Word.Range Range, [in]string MergeField, [in]valuetype Microsoft.Office.Interop.Word.WdMailMergeComparison Comparison, [in]object&amp; CompareTo) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddNextIf(Microsoft.Office.Interop.Word.Range,System.String,Microsoft.Office.Interop.Word.WdMailMergeComparison,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddNextIf (Range As Range, MergeField As String, Comparison As WdMailMergeComparison, Optional ByRef CompareTo As Object) As MailMergeField" />
+      <MemberSignature Language="F#" Value="abstract member AddNextIf : Microsoft.Office.Interop.Word.Range * string * Microsoft.Office.Interop.Word.WdMailMergeComparison * obj -&gt; Microsoft.Office.Interop.Word.MailMergeField" Usage="mailMergeFields.AddNextIf (Range, MergeField, Comparison, CompareTo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -281,14 +298,14 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
         <Parameter Name="MergeField" Type="System.String" />
         <Parameter Name="Comparison" Type="Microsoft.Office.Interop.Word.WdMailMergeComparison" />
-        <Parameter Name="CompareTo" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="CompareTo" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 NEXTIF フィールドの位置を指定します。</param>
+        <param name="Range">必要な <see cref="T:Microsoft.Office.Interop.Word.Range" /> オブジェクト。 NEXTIF フィールドの位置を指定します。</param>
         <param name="MergeField"><b>文字列</b> が必要です。 差し込みフィールド名を指定します。</param>
-        <param name="Comparison">必須<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />。 WdMailMergeComparison クラスの定数のいずれかを使用して、比較動作を指定します。</param>
-        <param name="CompareTo"><b>文字列</b> が必要です。 の<paramref name="MergeField" />内容と比較するテキストを入力します。</param>
-        <summary>差し込み印刷のメイン文書に NEXTIF フィールドを追加します。 オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />返します。</summary>
+        <param name="Comparison">必須 <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" /> 。 WdMailMergeComparison クラスの定数のいずれかを使用して、比較動作を指定します。</param>
+        <param name="CompareTo"><b>文字列</b> が必要です。 の内容と比較するテキストを入力し <paramref name="MergeField" /> ます。</param>
+        <summary>差し込み印刷のメイン文書に NEXTIF フィールドを追加します。 オブジェクトを返し <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> ます。</summary>
         <returns>To be added.</returns>
         <remarks><para>NEXTIF フィールドは2つの式を比較し、比較が true の場合は、次のデータレコードが現在の差し込み文書に結合されます。</para>
           <para> </para></remarks>
@@ -298,6 +315,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddSet (Microsoft.Office.Interop.Word.Range Range, string Name, ref object ValueText, ref object ValueAutoText);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddSet([in]class Microsoft.Office.Interop.Word.Range Range, [in]string Name, [in]object&amp; ValueText, [in]object&amp; ValueAutoText) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddSet(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddSet (Range As Range, Name As String, Optional ByRef ValueText As Object, Optional ByRef ValueAutoText As Object) As MailMergeField" />
+      <MemberSignature Language="F#" Value="abstract member AddSet : Microsoft.Office.Interop.Word.Range * string * obj * obj -&gt; Microsoft.Office.Interop.Word.MailMergeField" Usage="mailMergeFields.AddSet (Range, Name, ValueText, ValueAutoText)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -314,15 +333,15 @@
       <Parameters>
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
         <Parameter Name="Name" Type="System.String" />
-        <Parameter Name="ValueText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ValueAutoText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ValueText" Type="System.Object" RefType="ref" />
+        <Parameter Name="ValueAutoText" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 SET フィールドの位置を指定します。</param>
-        <param name="Name"><b>文字列</b> が必要です。 に割り当てられ<paramref name="ValueText" />ているブックマーク名。</param>
-        <param name="ValueText">省略可能な<b>オブジェクト</b>です。 <paramref name="Name" />引数で指定されたブックマークに関連付けられているテキスト。</param>
-        <param name="ValueAutoText">省略可能な<b>オブジェクト</b>です。 <paramref name="Name" />引数で指定されたブックマークに関連付けられたテキストを含む定型句を指定します。 この引数を指定すると<paramref name="ValueText" /> 、は無視されます。</param>
-        <summary>差し込み印刷のメイン文書に SET フィールドを追加します。 オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />返します。</summary>
+        <param name="Range">必要な <see cref="T:Microsoft.Office.Interop.Word.Range" /> オブジェクト。 SET フィールドの位置を指定します。</param>
+        <param name="Name"><b>文字列</b> が必要です。 に割り当てられているブックマーク名 <paramref name="ValueText" /> 。</param>
+        <param name="ValueText">省略可能な<b>オブジェクト</b>です。 引数で指定されたブックマークに関連付けられているテキスト <paramref name="Name" /> 。</param>
+        <param name="ValueAutoText">省略可能な<b>オブジェクト</b>です。 引数で指定されたブックマークに関連付けられたテキストを含む定型句を指定し <paramref name="Name" /> ます。 この引数を指定すると、 <paramref name="ValueText" /> は無視されます。</param>
+        <summary>差し込み印刷のメイン文書に SET フィールドを追加します。 オブジェクトを返し <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> ます。</summary>
         <returns>To be added.</returns>
         <remarks><para>SET フィールドは指定されたブックマークの文字列を定義します。</para>
           <para> </para></remarks>
@@ -332,6 +351,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddSkipIf (Microsoft.Office.Interop.Word.Range Range, string MergeField, Microsoft.Office.Interop.Word.WdMailMergeComparison Comparison, ref object CompareTo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddSkipIf([in]class Microsoft.Office.Interop.Word.Range Range, [in]string MergeField, [in]valuetype Microsoft.Office.Interop.Word.WdMailMergeComparison Comparison, [in]object&amp; CompareTo) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddSkipIf(Microsoft.Office.Interop.Word.Range,System.String,Microsoft.Office.Interop.Word.WdMailMergeComparison,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddSkipIf (Range As Range, MergeField As String, Comparison As WdMailMergeComparison, Optional ByRef CompareTo As Object) As MailMergeField" />
+      <MemberSignature Language="F#" Value="abstract member AddSkipIf : Microsoft.Office.Interop.Word.Range * string * Microsoft.Office.Interop.Word.WdMailMergeComparison * obj -&gt; Microsoft.Office.Interop.Word.MailMergeField" Usage="mailMergeFields.AddSkipIf (Range, MergeField, Comparison, CompareTo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -349,14 +370,14 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
         <Parameter Name="MergeField" Type="System.String" />
         <Parameter Name="Comparison" Type="Microsoft.Office.Interop.Word.WdMailMergeComparison" />
-        <Parameter Name="CompareTo" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="CompareTo" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必要<see cref="T:Microsoft.Office.Interop.Word.Range" />なオブジェクト。 SKIPIF フィールドの位置を指定します。</param>
+        <param name="Range">必要な <see cref="T:Microsoft.Office.Interop.Word.Range" /> オブジェクト。 SKIPIF フィールドの位置を指定します。</param>
         <param name="MergeField"><b>文字列</b> が必要です。 差し込みフィールド名を指定します。</param>
-        <param name="Comparison">必須<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />。 WdMailMergeComparison クラスの定数のいずれかを使用して、比較動作を指定します。</param>
-        <param name="CompareTo">省略可能な<b>オブジェクト</b>です。 の<paramref name="MergeField" />内容と比較するテキストを入力します。</param>
-        <summary>差し込み印刷のメイン文書に SKIPIF フィールドを追加します。 オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />返します。</summary>
+        <param name="Comparison">必須 <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" /> 。 WdMailMergeComparison クラスの定数のいずれかを使用して、比較動作を指定します。</param>
+        <param name="CompareTo">省略可能な<b>オブジェクト</b>です。 の内容と比較するテキストを入力し <paramref name="MergeField" /> ます。</param>
+        <summary>差し込み印刷のメイン文書に SKIPIF フィールドを追加します。 オブジェクトを返し <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> ます。</summary>
         <returns>To be added.</returns>
         <remarks><para>SKIPIF フィールドは、2つの式を比較し、比較結果が true の場合、SKIPIF はデータソース内の次のデータレコードに移動し、新しい差し込み文書を開始します。</para>
           <para> </para></remarks>
@@ -368,6 +389,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeFields.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.MailMergeFields.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -385,7 +407,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -396,6 +418,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeFields.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.MailMergeFields.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -424,6 +447,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeFields.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.MailMergeFields.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -454,6 +478,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="mailMergeFields.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -486,6 +511,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeFields.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As MailMergeField" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::MailMergeField ^ default[int] { Microsoft::Office::Interop::Word::MailMergeField ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.MailMergeField" Usage="Microsoft.Office.Interop.Word.MailMergeFields.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -518,6 +544,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeFields.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.MailMergeFields.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
