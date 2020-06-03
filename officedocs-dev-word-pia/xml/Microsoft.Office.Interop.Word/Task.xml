@@ -1,9 +1,10 @@
 <Type Name="Task" FullName="Microsoft.Office.Interop.Word.Task">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="475c1671362444c8d7ebcb134d01290da862e462" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143876" /></Metadata><TypeSignature Language="C#" Value="public interface Task" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1d8590e38fe131c92557becd7529f20b86a0ff14" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926088" /></Metadata><TypeSignature Language="C#" Value="public interface Task" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Task" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Task" />
   <TypeSignature Language="VB.NET" Value="Public Interface Task" />
   <TypeSignature Language="C++ CLI" Value="public interface class Task" />
+  <TypeSignature Language="F#" Value="type Task = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,9 +19,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="ac68f-101">システムで実行されている 1 つのタスクを表します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-101">Represents a single task running on the system.</span></span></summary>
-    <remarks><para><span data-ttu-id="ac68f-102"><b>Task</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Tasks" />コレクションのメンバーです。</span><span class="sxs-lookup"><span data-stu-id="ac68f-102">The <b>Task</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.Tasks" /> collection.</span></span> <span data-ttu-id="ac68f-103"><b>Tasks</b> コレクションには、システム上で実行されているすべてのアプリケーションが含まれています。</span><span class="sxs-lookup"><span data-stu-id="ac68f-103">The <b>Tasks</b> collection includes all the applications that are currently running on the system.</span></span></para>
-      <para><span data-ttu-id="ac68f-104"><b>タスク</b>(<paramref name="index" />) を使用し<paramref name="index" />ます。ここで、はアプリケーション名またはインデックス番号を使用して、1つの<b>タスク</b>オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-104">Use <b>Tasks</b>(<paramref name="index" />), where <paramref name="index" /> is the application name or the index number, to return a single <b>Task</b> object.</span></span></para>
+    <summary><span data-ttu-id="672cc-101">システムで実行されている 1 つのタスクを表します。</span><span class="sxs-lookup"><span data-stu-id="672cc-101">Represents a single task running on the system.</span></span></summary>
+    <remarks><para><span data-ttu-id="672cc-102"><b>Task</b>オブジェクトは、コレクションのメンバーです <see cref="T:Microsoft.Office.Interop.Word.Tasks" /> 。</span><span class="sxs-lookup"><span data-stu-id="672cc-102">The <b>Task</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.Tasks" /> collection.</span></span> <span data-ttu-id="672cc-103"><b>Tasks</b> コレクションには、システム上で実行されているすべてのアプリケーションが含まれています。</span><span class="sxs-lookup"><span data-stu-id="672cc-103">The <b>Tasks</b> collection includes all the applications that are currently running on the system.</span></span></para>
+      <para><span data-ttu-id="672cc-104"><b>タスク</b>( <paramref name="index" /> ) を使用します。ここで、 <paramref name="index" /> はアプリケーション名またはインデックス番号を使用して、1つの<b>タスク</b>オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="672cc-104">Use <b>Tasks</b>(<paramref name="index" />), where <paramref name="index" /> is the application name or the index number, to return a single <b>Task</b> object.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Activate([in]object&amp; Wait) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Task.Activate(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Activate (Optional ByRef Wait As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Activate : obj -&gt; unit" Usage="task.Activate Wait" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -43,11 +45,11 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Wait" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Wait" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Wait"><span data-ttu-id="ac68f-105">省略可能な<b>オブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="ac68f-105">Optional <b>Object</b>.</span></span> <span data-ttu-id="ac68f-106"><b>True の場合</b>は、タスクをアクティブ化する前に、ユーザーが Microsoft Word をアクティブにするまで待機します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-106"><b>True</b> to wait until the user has activated Microsoft Word before activating the task.</span></span> <span data-ttu-id="ac68f-107"><b>False</b> Word がアクティブでない場合でもすぐに、タスクをアクティブにします。</span><span class="sxs-lookup"><span data-stu-id="ac68f-107"><b>False</b> to immediately activate the task, even if Word isn't active.</span></span></param>
-        <summary><span data-ttu-id="ac68f-108">オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.Task" />アクティブにします。</span><span class="sxs-lookup"><span data-stu-id="ac68f-108">Activates the <see cref="T:Microsoft.Office.Interop.Word.Task" /> object.</span></span></summary>
+        <param name="Wait"><span data-ttu-id="672cc-105">省略可能な<b>オブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="672cc-105">Optional <b>Object</b>.</span></span> <span data-ttu-id="672cc-106"><b>True の場合</b>は、タスクをアクティブ化する前に、ユーザーが Microsoft Word をアクティブにするまで待機します。</span><span class="sxs-lookup"><span data-stu-id="672cc-106"><b>True</b> to wait until the user has activated Microsoft Word before activating the task.</span></span> <span data-ttu-id="672cc-107"><b>False</b> Word がアクティブでない場合でもすぐに、タスクをアクティブにします。</span><span class="sxs-lookup"><span data-stu-id="672cc-107"><b>False</b> to immediately activate the task, even if Word isn't active.</span></span></param>
+        <summary><span data-ttu-id="672cc-108">オブジェクトをアクティブに <see cref="T:Microsoft.Office.Interop.Word.Task" /> します。</span><span class="sxs-lookup"><span data-stu-id="672cc-108">Activates the <see cref="T:Microsoft.Office.Interop.Word.Task" /> object.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Task.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -74,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ac68f-109">Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-109">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="672cc-109"><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="672cc-109">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Task.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit" Usage="task.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -100,7 +104,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="ac68f-110">指定されたタスクを閉じます。</span><span class="sxs-lookup"><span data-stu-id="ac68f-110">Closes the specified task.</span></span></summary>
+        <summary><span data-ttu-id="672cc-110">指定されたタスクを閉じます。</span><span class="sxs-lookup"><span data-stu-id="672cc-110">Closes the specified task.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Task.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -127,10 +132,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ac68f-111">指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-111">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
+        <summary><span data-ttu-id="672cc-111">指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</span><span class="sxs-lookup"><span data-stu-id="672cc-111">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="ac68f-112">オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-112">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="ac68f-113">[!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</span><span class="sxs-lookup"><span data-stu-id="ac68f-113">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="ac68f-114"><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。</span><span class="sxs-lookup"><span data-stu-id="ac68f-114">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="ac68f-115">たとえば、Word には作成者コード MSWD です。</span><span class="sxs-lookup"><span data-stu-id="ac68f-115">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="ac68f-116">このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</span><span class="sxs-lookup"><span data-stu-id="ac68f-116">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="672cc-112">オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。</span><span class="sxs-lookup"><span data-stu-id="672cc-112">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="672cc-113">[!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</span><span class="sxs-lookup"><span data-stu-id="672cc-113">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="672cc-114"><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。</span><span class="sxs-lookup"><span data-stu-id="672cc-114">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="672cc-115">たとえば、Word には作成者コード MSWD です。</span><span class="sxs-lookup"><span data-stu-id="672cc-115">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="672cc-116">このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</span><span class="sxs-lookup"><span data-stu-id="672cc-116">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : int with get, set" Usage="Microsoft.Office.Interop.Word.Task.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -160,7 +166,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ac68f-117">指定したタスクウィンドウの高さをポイント単位で設定または返します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-117">Returns or sets the height of the specified task window, in points.</span></span></summary>
+        <summary><span data-ttu-id="672cc-117">指定したタスクウィンドウの高さをポイント単位で設定または返します。</span><span class="sxs-lookup"><span data-stu-id="672cc-117">Returns or sets the height of the specified task window, in points.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -171,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Left" />
       <MemberSignature Language="VB.NET" Value="Public Property Left As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Left { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Left : int with get, set" Usage="Microsoft.Office.Interop.Word.Task.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -191,7 +198,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ac68f-118">指定したタスクの水平方向の位置をポイント単位で表す<b>整数型 (Integer</b> ) の値を設定します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-118">Returns or sets an <b>Integer</b> that represents the horizontal position of the specified task, measured in points.</span></span></summary>
+        <summary><span data-ttu-id="672cc-118">指定したタスクの水平方向の位置をポイント単位で表す<b>整数型 (Integer</b> ) の値を設定します。</span><span class="sxs-lookup"><span data-stu-id="672cc-118">Returns or sets an <b>Integer</b> that represents the horizontal position of the specified task, measured in points.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -202,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Task.Move(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Move (Left As Integer, Top As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Move(int Left, int Top);" />
+      <MemberSignature Language="F#" Value="abstract member Move : int * int -&gt; unit" Usage="task.Move (Left, Top)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -220,9 +228,9 @@
         <Parameter Name="Top" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Left"><span data-ttu-id="ac68f-119">整数型 (<b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-119">Required <b>Integer</b>.</span></span> <span data-ttu-id="ac68f-120">指定したウィンドウの水平方向の位置を指定します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-120">The horizontal screen position of the specified window.</span></span></param>
-        <param name="Top"><span data-ttu-id="ac68f-121">整数型 (<b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-121">Required <b>Integer</b>.</span></span> <span data-ttu-id="ac68f-122">指定したウィンドウの垂直方向の位置を指定します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-122">The vertical screen position of the specified window.</span></span></param>
-        <summary><span data-ttu-id="ac68f-123">作業ウィンドウを配置します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-123">Positions a task window.</span></span></summary>
+        <param name="Left"><span data-ttu-id="672cc-119">整数型 (<b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="672cc-119">Required <b>Integer</b>.</span></span> <span data-ttu-id="672cc-120">指定したウィンドウの水平方向の位置を指定します。</span><span class="sxs-lookup"><span data-stu-id="672cc-120">The horizontal screen position of the specified window.</span></span></param>
+        <param name="Top"><span data-ttu-id="672cc-121">整数型 (<b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="672cc-121">Required <b>Integer</b>.</span></span> <span data-ttu-id="672cc-122">指定したウィンドウの垂直方向の位置を指定します。</span><span class="sxs-lookup"><span data-stu-id="672cc-122">The vertical screen position of the specified window.</span></span></param>
+        <summary><span data-ttu-id="672cc-123">作業ウィンドウを配置します。</span><span class="sxs-lookup"><span data-stu-id="672cc-123">Positions a task window.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Name" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.Task.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -249,7 +258,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ac68f-124">指定したオブジェクトの名前を設定または返します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-124">Returns or sets the name of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="672cc-124">指定したオブジェクトの名前を設定または返します。</span><span class="sxs-lookup"><span data-stu-id="672cc-124">Returns or sets the name of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -260,6 +269,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Task.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -277,7 +287,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ac68f-125">指定されたオブジェクトの親オブジェクトを表すオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-125">Returns an object that represents the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="672cc-125">指定されたオブジェクトの親オブジェクトを表すオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="672cc-125">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -288,6 +298,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Task.Resize(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Resize (Width As Integer, Height As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resize(int Width, int Height);" />
+      <MemberSignature Language="F#" Value="abstract member Resize : int * int -&gt; unit" Usage="task.Resize (Width, Height)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -306,11 +317,11 @@
         <Parameter Name="Height" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Width"><span data-ttu-id="ac68f-126">整数型 (<b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-126">Required <b>Integer</b>.</span></span> <span data-ttu-id="ac68f-127">ウィンドウの幅をポイント数で指定します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-127">The width of the window, in points.</span></span></param>
-        <param name="Height"><span data-ttu-id="ac68f-128">整数型 (<b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-128">Required <b>Integer</b>.</span></span> <span data-ttu-id="ac68f-129">ウィンドウの高さをポイント数で指定します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-129">The height of the window, in points.</span></span></param>
-        <summary><span data-ttu-id="ac68f-130">指定されたタスクのウィンドウのサイズを設定します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-130">Sizes the specified task window.</span></span> <span data-ttu-id="ac68f-131">ウィンドウが最大化または最小化されている、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-131">If the window is maximized or minimized, an error occurs.</span></span></summary>
-        <remarks><para><span data-ttu-id="ac68f-132">
-            <b>メモ</b> ウィンドウの<see cref="P:Microsoft.Office.Interop.Word.Task.Width" />幅<see cref="P:Microsoft.Office.Interop.Word.Task.Height" />と高さを個別に設定するには、またはプロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-132">
+        <param name="Width"><span data-ttu-id="672cc-126">整数型 (<b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="672cc-126">Required <b>Integer</b>.</span></span> <span data-ttu-id="672cc-127">ウィンドウの幅をポイント数で指定します。</span><span class="sxs-lookup"><span data-stu-id="672cc-127">The width of the window, in points.</span></span></param>
+        <param name="Height"><span data-ttu-id="672cc-128">整数型 (<b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="672cc-128">Required <b>Integer</b>.</span></span> <span data-ttu-id="672cc-129">ウィンドウの高さをポイント数で指定します。</span><span class="sxs-lookup"><span data-stu-id="672cc-129">The height of the window, in points.</span></span></param>
+        <summary><span data-ttu-id="672cc-130">指定されたタスクのウィンドウのサイズを設定します。</span><span class="sxs-lookup"><span data-stu-id="672cc-130">Sizes the specified task window.</span></span> <span data-ttu-id="672cc-131">ウィンドウが最大化または最小化されている、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="672cc-131">If the window is maximized or minimized, an error occurs.</span></span></summary>
+        <remarks><para><span data-ttu-id="672cc-132">
+            <b>メモ</b> ウィンドウの <see cref="P:Microsoft.Office.Interop.Word.Task.Width" /> <see cref="P:Microsoft.Office.Interop.Word.Task.Height" /> 幅と高さを個別に設定するには、またはプロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="672cc-132">
             <b>Note</b>  Use the <see cref="P:Microsoft.Office.Interop.Word.Task.Width" /> or <see cref="P:Microsoft.Office.Interop.Word.Task.Height" /> property to set the window width and height independently.</span></span></para>
           <para> </para></remarks>
       </Docs>
@@ -321,6 +332,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Task.SendWindowMessage(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SendWindowMessage (Message As Integer, wParam As Integer, lParam As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendWindowMessage(int Message, int wParam, int lParam);" />
+      <MemberSignature Language="F#" Value="abstract member SendWindowMessage : int * int * int -&gt; unit" Usage="task.SendWindowMessage (Message, wParam, lParam)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -340,10 +352,10 @@
         <Parameter Name="lParam" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Message"><span data-ttu-id="ac68f-133">整数型 (<b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-133">Required <b>Integer</b>.</span></span> <span data-ttu-id="ac68f-134">送信するメッセージに対応する16進数値を指定します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-134">A hexadecimal number that corresponds to the message you want to send.</span></span> <span data-ttu-id="ac68f-135">Microsoft プラットフォームソフトウェア開発キットを使用している場合は、ヘッダーファイル (Winuser. .h など) でメッセージの名前を参照して、関連付けられている16進数値を検索できます&amp;(16 進値の前に h を指定)。</span><span class="sxs-lookup"><span data-stu-id="ac68f-135">If you have the Microsoft Platform Software Development Kit, you can look up the name of the message in the header files (Winuser.h, for example) to find the associated hexadecimal number (precede the hexadecimal value with &amp;h).</span></span></param>
-        <param name="wParam"><span data-ttu-id="ac68f-136">整数型 (<b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-136">Required <b>Integer</b>.</span></span> <span data-ttu-id="ac68f-137">送信するメッセージに適切なパラメーターを指定します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-137">Parameters appropriate for the message you’re sending.</span></span> <span data-ttu-id="ac68f-138">これらの値の意味については、Microsoft プラットフォームソフトウェア開発キットに含まれているドキュメントのそのメッセージに関するリファレンストピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="ac68f-138">For information about what these values represent, see the reference topic for that message in the documentation included with the Microsoft Platform Software Development Kit.</span></span> <span data-ttu-id="ac68f-139">適切な値を取得するには、Spy ユーティリティ (キットに付属) を使用する必要がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="ac68f-139">To retrieve the appropriate values, you may need to use the Spy utility (which comes with the kit).</span></span></param>
-        <param name="lParam"><span data-ttu-id="ac68f-140">整数型 (<b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-140">Required <b>Integer</b>.</span></span> <span data-ttu-id="ac68f-141">送信するメッセージに適切なパラメーターを指定します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-141">Parameters appropriate for the message you’re sending.</span></span> <span data-ttu-id="ac68f-142">これらの値の意味については、Microsoft プラットフォームソフトウェア開発キットに含まれているドキュメントのそのメッセージに関するリファレンストピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="ac68f-142">For information about what these values represent, see the reference topic for that message in the documentation included with the Microsoft Platform Software Development Kit.</span></span> <span data-ttu-id="ac68f-143">適切な値を取得するには、Spy ユーティリティ (キットに付属) を使用する必要がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="ac68f-143">To retrieve the appropriate values, you may need to use the Spy utility (which comes with the kit).</span></span></param>
-        <summary><span data-ttu-id="ac68f-144">Windows のメッセージおよびこれに関連するパラメーターを、指定したタスクに送信します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-144">Sends a Windows message and its associated parameters to the specified task.</span></span></summary>
+        <param name="Message"><span data-ttu-id="672cc-133">整数型 (<b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="672cc-133">Required <b>Integer</b>.</span></span> <span data-ttu-id="672cc-134">送信するメッセージに対応する16進数値を指定します。</span><span class="sxs-lookup"><span data-stu-id="672cc-134">A hexadecimal number that corresponds to the message you want to send.</span></span> <span data-ttu-id="672cc-135">Microsoft プラットフォームソフトウェア開発キットを使用している場合は、ヘッダーファイル (Winuser. .h など) でメッセージの名前を参照して、関連付けられている16進数値を検索できます (16 進値の前に h を指定) &amp; 。</span><span class="sxs-lookup"><span data-stu-id="672cc-135">If you have the Microsoft Platform Software Development Kit, you can look up the name of the message in the header files (Winuser.h, for example) to find the associated hexadecimal number (precede the hexadecimal value with &amp;h).</span></span></param>
+        <param name="wParam"><span data-ttu-id="672cc-136">整数型 (<b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="672cc-136">Required <b>Integer</b>.</span></span> <span data-ttu-id="672cc-137">送信するメッセージに適切なパラメーターを指定します。</span><span class="sxs-lookup"><span data-stu-id="672cc-137">Parameters appropriate for the message you’re sending.</span></span> <span data-ttu-id="672cc-138">これらの値の意味については、Microsoft プラットフォームソフトウェア開発キットに含まれているドキュメントのそのメッセージに関するリファレンストピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="672cc-138">For information about what these values represent, see the reference topic for that message in the documentation included with the Microsoft Platform Software Development Kit.</span></span> <span data-ttu-id="672cc-139">適切な値を取得するには、Spy ユーティリティ (キットに付属) を使用する必要がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="672cc-139">To retrieve the appropriate values, you may need to use the Spy utility (which comes with the kit).</span></span></param>
+        <param name="lParam"><span data-ttu-id="672cc-140">整数型 (<b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="672cc-140">Required <b>Integer</b>.</span></span> <span data-ttu-id="672cc-141">送信するメッセージに適切なパラメーターを指定します。</span><span class="sxs-lookup"><span data-stu-id="672cc-141">Parameters appropriate for the message you’re sending.</span></span> <span data-ttu-id="672cc-142">これらの値の意味については、Microsoft プラットフォームソフトウェア開発キットに含まれているドキュメントのそのメッセージに関するリファレンストピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="672cc-142">For information about what these values represent, see the reference topic for that message in the documentation included with the Microsoft Platform Software Development Kit.</span></span> <span data-ttu-id="672cc-143">適切な値を取得するには、Spy ユーティリティ (キットに付属) を使用する必要がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="672cc-143">To retrieve the appropriate values, you may need to use the Spy utility (which comes with the kit).</span></span></param>
+        <summary><span data-ttu-id="672cc-144">Windows のメッセージおよびこれに関連するパラメーターを、指定したタスクに送信します。</span><span class="sxs-lookup"><span data-stu-id="672cc-144">Sends a Windows message and its associated parameters to the specified task.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -353,6 +365,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Top" />
       <MemberSignature Language="VB.NET" Value="Public Property Top As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Top { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Top : int with get, set" Usage="Microsoft.Office.Interop.Word.Task.Top" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -373,7 +386,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ac68f-145">指定したタスクの垂直位置をポイント単位で取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-145">Returns or sets the vertical position of the specified task, in points.</span></span></summary>
+        <summary><span data-ttu-id="672cc-145">指定したタスクの垂直位置をポイント単位で取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="672cc-145">Returns or sets the vertical position of the specified task, in points.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -384,6 +397,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="Microsoft.Office.Interop.Word.Task.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -404,9 +418,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ac68f-146"><b>True</b> と指定したオブジェクトが表示されます。</span><span class="sxs-lookup"><span data-stu-id="ac68f-146"><b>True</b> if the specified object is visible.</span></span></summary>
+        <summary><span data-ttu-id="672cc-146"><b>True</b> と指定したオブジェクトが表示されます。</span><span class="sxs-lookup"><span data-stu-id="672cc-146"><b>True</b> if the specified object is visible.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="ac68f-147">一部のメソッドとプロパティできない場合があります、 <b>Visible</b> プロパティが <b>False</b> の場合。</span><span class="sxs-lookup"><span data-stu-id="ac68f-147">Some methods and properties may be unavailable if the <b>Visible</b> property is <b>False</b>.</span></span></para>
+        <remarks><para><span data-ttu-id="672cc-147">一部のメソッドとプロパティできない場合があります、 <b>Visible</b> プロパティが <b>False</b> の場合。</span><span class="sxs-lookup"><span data-stu-id="672cc-147">Some methods and properties may be unavailable if the <b>Visible</b> property is <b>False</b>.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -416,6 +430,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : int with get, set" Usage="Microsoft.Office.Interop.Word.Task.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -436,7 +451,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ac68f-148">指定したオブジェクトの幅をポイント単位で設定します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-148">Returns or sets the width of the specified object, in points.</span></span></summary>
+        <summary><span data-ttu-id="672cc-148">指定したオブジェクトの幅をポイント単位で設定します。</span><span class="sxs-lookup"><span data-stu-id="672cc-148">Returns or sets the width of the specified object, in points.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -447,6 +462,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.WindowState" />
       <MemberSignature Language="VB.NET" Value="Public Property WindowState As WdWindowState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdWindowState WindowState { Microsoft::Office::Interop::Word::WdWindowState get(); void set(Microsoft::Office::Interop::Word::WdWindowState value); };" />
+      <MemberSignature Language="F#" Value="member this.WindowState : Microsoft.Office.Interop.Word.WdWindowState with get, set" Usage="Microsoft.Office.Interop.Word.Task.WindowState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -467,27 +483,27 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdWindowState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ac68f-149">指定したタスクウィンドウの状態を設定または返します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-149">Returns or sets the state of the specified task window.</span></span></summary>
+        <summary><span data-ttu-id="672cc-149">指定したタスクウィンドウの状態を設定または返します。</span><span class="sxs-lookup"><span data-stu-id="672cc-149">Returns or sets the state of the specified task window.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="ac68f-150">
-            <see cref="T:Microsoft.Office.Interop.Word.WdWindowState" />使用できる定数は、次に示す<b>Wdwindowstate</b>クラスの定数のいずれかです。</span><span class="sxs-lookup"><span data-stu-id="ac68f-150">
+        <remarks><para><span data-ttu-id="672cc-150">
+            <see cref="T:Microsoft.Office.Interop.Word.WdWindowState" />使用できる定数は、次に示す<b>Wdwindowstate</b>クラスの定数のいずれかです。</span><span class="sxs-lookup"><span data-stu-id="672cc-150">
             <see cref="T:Microsoft.Office.Interop.Word.WdWindowState" /> can be one of these <b>WdWindowState</b> constants.</span></span> </para>
-          <para><span data-ttu-id="ac68f-151">
+          <para><span data-ttu-id="672cc-151">
             <b>wdWindowStateMaximize</b>
-          </span><span class="sxs-lookup"><span data-stu-id="ac68f-151">
+          </span><span class="sxs-lookup"><span data-stu-id="672cc-151">
             <b>wdWindowStateMaximize </b>
           </span></span></para>
-          <para><span data-ttu-id="ac68f-152">
+          <para><span data-ttu-id="672cc-152">
             <b>Wdwindowstatenormal は</b>
-          </span><span class="sxs-lookup"><span data-stu-id="ac68f-152">
+          </span><span class="sxs-lookup"><span data-stu-id="672cc-152">
             <b>wdWindowStateNormal </b>
           </span></span></para>
-          <para><span data-ttu-id="ac68f-153">
+          <para><span data-ttu-id="672cc-153">
             <b>wdWindowStateMinimize</b>
-          </span><span class="sxs-lookup"><span data-stu-id="ac68f-153">
+          </span><span class="sxs-lookup"><span data-stu-id="672cc-153">
             <b>wdWindowStateMinimize</b>
           </span></span></para>
-          <para><span data-ttu-id="ac68f-154">定数 <b>wdWindowStateNormal</b> は、ウィンドウを最大化または最小化されてはいないを示します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-154">The <b>wdWindowStateNormal</b> constant indicates a window that's not maximized or minimized.</span></span> <span data-ttu-id="ac68f-155">アクティブでないウィンドウの状態を設定することはできません。</span><span class="sxs-lookup"><span data-stu-id="ac68f-155">The state of an inactive window cannot be set.</span></span> <span data-ttu-id="ac68f-156">ウィンドウの<see cref="M:Microsoft.Office.Interop.Word.Task.Activate(System.Object@)" />状態を設定する前にウィンドウをアクティブにするには、メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="ac68f-156">Use the <see cref="M:Microsoft.Office.Interop.Word.Task.Activate(System.Object@)" /> method to activate a window prior to setting the window state.</span></span></para>
+          <para><span data-ttu-id="672cc-154">定数 <b>wdWindowStateNormal</b> は、ウィンドウを最大化または最小化されてはいないを示します。</span><span class="sxs-lookup"><span data-stu-id="672cc-154">The <b>wdWindowStateNormal</b> constant indicates a window that's not maximized or minimized.</span></span> <span data-ttu-id="672cc-155">アクティブでないウィンドウの状態を設定することはできません。</span><span class="sxs-lookup"><span data-stu-id="672cc-155">The state of an inactive window cannot be set.</span></span> <span data-ttu-id="672cc-156">ウィンドウの <see cref="M:Microsoft.Office.Interop.Word.Task.Activate(System.Object@)" /> 状態を設定する前にウィンドウをアクティブにするには、メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="672cc-156">Use the <see cref="M:Microsoft.Office.Interop.Word.Task.Activate(System.Object@)" /> method to activate a window prior to setting the window state.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>

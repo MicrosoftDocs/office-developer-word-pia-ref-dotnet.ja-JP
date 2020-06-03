@@ -1,9 +1,10 @@
 <Type Name="Words" FullName="Microsoft.Office.Interop.Word.Words">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d236676b440e6d795d3c1717b83df235a2ae0ef2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142655" /></Metadata><TypeSignature Language="C#" Value="public interface Words : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ca17d8491e5e14d82f4780a03b0bb4d03b136081" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926774" /></Metadata><TypeSignature Language="C#" Value="public interface Words : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Words implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Words" />
   <TypeSignature Language="VB.NET" Value="Public Interface Words&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Words : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Words = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,13 +23,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="f6bdc-101">選択範囲、指定範囲、文書にある単語のコレクションです。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-101">A collection of words in a selection, range, or document.</span></span></summary>
-    <remarks><para><span data-ttu-id="f6bdc-102"><b>Words</b>コレクションの各項目は、 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 1 つの単語を表すオブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-102">Each item in the <b>Words</b> collection is a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents one word.</span></span> <span data-ttu-id="f6bdc-103">Word オブジェクトはありません。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-103">There is no Word object.</span></span></para>
-      <para><span data-ttu-id="f6bdc-104"><b>Words</b> プロパティを使用して <b>Words</b> オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-104">Use the <b>Words</b> property to return the <b>Words</b> object.</span></span></para>
-      <para><span data-ttu-id="f6bdc-105">1つの<paramref name="index" />単語を表す<paramref name="index" /> Range オブジェクトを取得するには、<b>単語</b>() を使用します。ここで、はインデックス番号を<b>指定</b>します。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-105">Use <b>Words</b>(<paramref name="index" />), where <paramref name="index" /> is the index number, to return a <b>Range</b> object that represents one word.</span></span> <span data-ttu-id="f6bdc-106">インデックス番号は、 <b>Words</b>コレクションでの単語の位置を表します。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-106">The index number represents the position of the word in the <b>Words</b> collection.</span></span></para>
-      <para><span data-ttu-id="f6bdc-107"><b>Words</b> コレクションのアイテムには、単語と単語に続くスペースの両方が含まれます。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-107">The item in the <b>Words</b> collection includes both the word and the spaces after the word.</span></span> <span data-ttu-id="f6bdc-108">カーソルの直後にスペースがある場合、Selection.Words(1) は、カーソルの前の単語を表します。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-108">If the selection is the insertion point and it is immediately followed by a space, Selection.Words(1) refers to the word preceding the selection.</span></span> <span data-ttu-id="f6bdc-109">カーソルの直後に文字がある場合、Selection.Words(1) は、カーソルの後ろの単語を表します。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-109">If the selection is the insertion point and is immediately followed by a character, Selection.Words(1) refers to the word following the selection.</span></span></para>
-      <para><span data-ttu-id="f6bdc-110">文書<see cref="P:Microsoft.Office.Interop.Word.Words.Count" />内のこのコレクションのプロパティは、メインストーリーのみの項目数を返します。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-110">The <see cref="P:Microsoft.Office.Interop.Word.Words.Count" /> property for this collection in a document returns the number of items in the main story only.</span></span> <span data-ttu-id="f6bdc-111">他のストーリーのアイテムを数えるには、このコレクションと共に <b>Range</b> オブジェクトを使用します。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-111">To count items in other stories use the collection with the <b>Range</b> object.</span></span> <span data-ttu-id="f6bdc-112">また、<b>Count</b> プロパティには、句読点および段落記号もすべて含まれます。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-112">Also, the <b>Count</b> property includes punctuation and paragraph marks in the total.</span></span> <span data-ttu-id="f6bdc-113">文書内の実際の単語数が必要な場合は、[文字カウント] ダイアログボックスを使用します。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-113">If you need a count of the actual words in a document, use the Word Count dialog box.</span></span></para>
-      <para><span data-ttu-id="f6bdc-114"><b>Words</b>コレクションでは、 <b>Add</b>メソッドを使用できません。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-114">The <b>Add</b> method isn't available for the <b>Words</b> collection.</span></span> <span data-ttu-id="f6bdc-115">代わりに、 <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" />メソッドを使用して、 <b>Range</b>オブジェクトにテキストを追加します。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-115">Instead, use the <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> method or the <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> method to add text to a <b>Range</b> object.</span></span></para>
+    <summary><span data-ttu-id="1d731-101">選択範囲、指定範囲、文書にある単語のコレクションです。</span><span class="sxs-lookup"><span data-stu-id="1d731-101">A collection of words in a selection, range, or document.</span></span></summary>
+    <remarks><para><span data-ttu-id="1d731-102"><b>Words</b>コレクションの各項目は、 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 1 つの単語を表すオブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="1d731-102">Each item in the <b>Words</b> collection is a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents one word.</span></span> <span data-ttu-id="1d731-103">Word オブジェクトはありません。</span><span class="sxs-lookup"><span data-stu-id="1d731-103">There is no Word object.</span></span></para>
+      <para><span data-ttu-id="1d731-104"><b>Words</b> プロパティを使用して <b>Words</b> オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="1d731-104">Use the <b>Words</b> property to return the <b>Words</b> object.</span></span></para>
+      <para><span data-ttu-id="1d731-105"><b>Words</b> <paramref name="index" /> <paramref name="index" /> 1 つの単語を表す Range オブジェクトを取得するには、単語 () を使用します。ここで、はインデックス番号を<b>指定</b>します。</span><span class="sxs-lookup"><span data-stu-id="1d731-105">Use <b>Words</b>(<paramref name="index" />), where <paramref name="index" /> is the index number, to return a <b>Range</b> object that represents one word.</span></span> <span data-ttu-id="1d731-106">インデックス番号は、 <b>Words</b>コレクションでの単語の位置を表します。</span><span class="sxs-lookup"><span data-stu-id="1d731-106">The index number represents the position of the word in the <b>Words</b> collection.</span></span></para>
+      <para><span data-ttu-id="1d731-107"><b>Words</b> コレクションのアイテムには、単語と単語に続くスペースの両方が含まれます。</span><span class="sxs-lookup"><span data-stu-id="1d731-107">The item in the <b>Words</b> collection includes both the word and the spaces after the word.</span></span> <span data-ttu-id="1d731-108">カーソルの直後にスペースがある場合、Selection.Words(1) は、カーソルの前の単語を表します。</span><span class="sxs-lookup"><span data-stu-id="1d731-108">If the selection is the insertion point and it is immediately followed by a space, Selection.Words(1) refers to the word preceding the selection.</span></span> <span data-ttu-id="1d731-109">カーソルの直後に文字がある場合、Selection.Words(1) は、カーソルの後ろの単語を表します。</span><span class="sxs-lookup"><span data-stu-id="1d731-109">If the selection is the insertion point and is immediately followed by a character, Selection.Words(1) refers to the word following the selection.</span></span></para>
+      <para><span data-ttu-id="1d731-110"><see cref="P:Microsoft.Office.Interop.Word.Words.Count" />文書内のこのコレクションのプロパティは、メインストーリーのみの項目数を返します。</span><span class="sxs-lookup"><span data-stu-id="1d731-110">The <see cref="P:Microsoft.Office.Interop.Word.Words.Count" /> property for this collection in a document returns the number of items in the main story only.</span></span> <span data-ttu-id="1d731-111">他のストーリーのアイテムを数えるには、このコレクションと共に <b>Range</b> オブジェクトを使用します。</span><span class="sxs-lookup"><span data-stu-id="1d731-111">To count items in other stories use the collection with the <b>Range</b> object.</span></span> <span data-ttu-id="1d731-112">また、<b>Count</b> プロパティには、句読点および段落記号もすべて含まれます。</span><span class="sxs-lookup"><span data-stu-id="1d731-112">Also, the <b>Count</b> property includes punctuation and paragraph marks in the total.</span></span> <span data-ttu-id="1d731-113">文書内の実際の単語数が必要な場合は、[文字カウント] ダイアログボックスを使用します。</span><span class="sxs-lookup"><span data-stu-id="1d731-113">If you need a count of the actual words in a document, use the Word Count dialog box.</span></span></para>
+      <para><span data-ttu-id="1d731-114"><b>Words</b>コレクションでは、 <b>Add</b>メソッドを使用できません。</span><span class="sxs-lookup"><span data-stu-id="1d731-114">The <b>Add</b> method isn't available for the <b>Words</b> collection.</span></span> <span data-ttu-id="1d731-115">代わりに、メソッドまたはメソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> <b>Range</b>オブジェクトにテキストを追加します。</span><span class="sxs-lookup"><span data-stu-id="1d731-115">Instead, use the <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> method or the <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> method to add text to a <b>Range</b> object.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Words.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Words.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -55,7 +57,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="f6bdc-116">Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-116">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="1d731-116"><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="1d731-116">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Words.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Words.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -83,7 +86,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="f6bdc-117">指定したコレクション内の項目数を返します。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-117">Returns the number of items in the specified collection.</span></span></summary>
+        <summary><span data-ttu-id="1d731-117">指定したコレクション内の項目数を返します。</span><span class="sxs-lookup"><span data-stu-id="1d731-117">Returns the number of items in the specified collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Words.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Words.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -111,10 +115,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="f6bdc-118">指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-118">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
+        <summary><span data-ttu-id="1d731-118">指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。</span><span class="sxs-lookup"><span data-stu-id="1d731-118">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="f6bdc-119">オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-119">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="f6bdc-120">[!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-120">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="f6bdc-121"><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-121">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="f6bdc-122">たとえば、Word には作成者コード MSWD です。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-122">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="f6bdc-123">このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-123">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="1d731-119">オブジェクトが Microsoft Word で作成された場合、このプロパティは16進数の4D535744 を返します。この値は文字列 "MSWD" を表します。</span><span class="sxs-lookup"><span data-stu-id="1d731-119">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="1d731-120">[!メモ] この値は、定数 <b>wdCreatorCode</b> によっても表すことができます。</span><span class="sxs-lookup"><span data-stu-id="1d731-120">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="1d731-121"><b>Creator</b>プロパティは、主に、各アプリケーションが4文字のクリエーターコードを持つ Macintosh で使用するために設計されました。</span><span class="sxs-lookup"><span data-stu-id="1d731-121">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="1d731-122">たとえば、Word には作成者コード MSWD です。</span><span class="sxs-lookup"><span data-stu-id="1d731-122">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="1d731-123">このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</span><span class="sxs-lookup"><span data-stu-id="1d731-123">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Words.First" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property First As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ First { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.First : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Words.First" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -141,7 +146,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="f6bdc-124">文書、 <see cref="T:Microsoft.Office.Interop.Word.Range" />選択範囲、または指定範囲内の最初の単語を表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-124">Returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the first word in a document, selection or range.</span></span></summary>
+        <summary><span data-ttu-id="1d731-124"><see cref="T:Microsoft.Office.Interop.Word.Range" />文書、選択範囲、または指定範囲内の最初の単語を表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="1d731-124">Returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the first word in a document, selection or range.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Words.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="words.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Words.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ default[int] { Microsoft::Office::Interop::Word::Range ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Words.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -204,8 +211,8 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index"><span data-ttu-id="f6bdc-125">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-125">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span></span></param>
-        <summary><span data-ttu-id="f6bdc-126">コレクション内の各オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-126">Returns an individual object in a collection.</span></span></summary>
+        <param name="Index"><span data-ttu-id="1d731-125">序数位置を示す<b>オブジェクト</b>、または個々のオブジェクトの名前を表す文字列型 (string) の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="1d731-125">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span></span></param>
+        <summary><span data-ttu-id="1d731-126">コレクション内の各オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="1d731-126">Returns an individual object in a collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -216,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Words.Last" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Last As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Last { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Last : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Words.Last" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -233,7 +241,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="f6bdc-127">文書、 <see cref="T:Microsoft.Office.Interop.Word.Range" />選択範囲、または指定範囲内の最後の単語を表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-127">Returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the last word in a document, selection, or range.</span></span></summary>
+        <summary><span data-ttu-id="1d731-127"><see cref="T:Microsoft.Office.Interop.Word.Range" />文書、選択範囲、または指定範囲内の最後の単語を表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="1d731-127">Returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the last word in a document, selection, or range.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -244,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Words.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Words.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -261,7 +270,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="f6bdc-128">指定されたオブジェクトの親オブジェクトを表すオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="f6bdc-128">Returns an object that represents the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="1d731-128">指定されたオブジェクトの親オブジェクトを表すオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="1d731-128">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
