@@ -1,9 +1,10 @@
 <Type Name="Dialog" FullName="Microsoft.Office.Interop.Word.Dialog">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="380f2c7cc87b01108dff60968ffecadad651a7bd" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147082" /></Metadata><TypeSignature Language="C#" Value="public interface Dialog" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="73e18c0b32064ff51bf4698c78d44a3bcc8a8eca" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922158" /></Metadata><TypeSignature Language="C#" Value="public interface Dialog" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Dialog" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Dialog" />
   <TypeSignature Language="VB.NET" Value="Public Interface Dialog" />
   <TypeSignature Language="C++ CLI" Value="public interface class Dialog" />
+  <TypeSignature Language="F#" Value="type Dialog = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,8 +20,8 @@
   </Attributes>
   <Docs>
     <summary>組み込みのダイアログ ボックスを表します。</summary>
-    <remarks><para><b>Dialog</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Dialogs" />コレクションのメンバーです。 <b>Dialogs</b>コレクションには、Microsoft Word のすべての組み込みダイアログボックスが含まれています。 新しい組み込みのダイアログ ボックスを作成したり、 <b>Dialogs</b> コレクションに追加できません。</para>
-      <para>Dialog <b></b>(<paramref name="index" />) を使用し<paramref name="index" />ます。 <see cref="T:Microsoft.Office.Interop.Word.WdWordDialog" />ここで、はダイアログボックスを識別する定数で、1つの<b>dialog</b>オブジェクトを返します。</para>
+    <remarks><para><b>Dialog</b>オブジェクトは、コレクションのメンバーです <see cref="T:Microsoft.Office.Interop.Word.Dialogs" /> 。 <b>Dialogs</b>コレクションには、Microsoft Word のすべての組み込みダイアログボックスが含まれています。 新しい組み込みのダイアログ ボックスを作成したり、 <b>Dialogs</b> コレクションに追加できません。</para>
+      <para>Dialog <b>Dialogs</b>( <paramref name="index" /> ) を使用します。ここで、 <paramref name="index" /> は <see cref="T:Microsoft.Office.Interop.Word.WdWordDialog" /> ダイアログボックスを識別する定数で、1つの<b>dialog</b>オブジェクトを返します。</para>
       <para><b>Wdworddialog</b>定数は、"wddialog" というプレフィックスから、メニューとダイアログボックスの名前の後に形成されます。 たとえば、[ページ設定] ダイアログボックスの定数は<b>Wd/Filepagesetup</b>で、[新規作成] ダイアログボックスの定数は<b>wdDialogFileNew</b>です。</para>
       <para> </para></remarks>
   </Docs>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dialog.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Dialog.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dialog.CommandBarId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommandBarId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CommandBarId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.CommandBarId : int" Usage="Microsoft.Office.Interop.Word.Dialog.CommandBarId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dialog.CommandName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommandName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CommandName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CommandName : string" Usage="Microsoft.Office.Interop.Word.Dialog.CommandName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dialog.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Dialog.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dialog.DefaultTab" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultTab As WdWordDialogTab" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdWordDialogTab DefaultTab { Microsoft::Office::Interop::Word::WdWordDialogTab get(); void set(Microsoft::Office::Interop::Word::WdWordDialogTab value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultTab : Microsoft.Office.Interop.Word.WdWordDialogTab with get, set" Usage="Microsoft.Office.Interop.Word.Dialog.DefaultTab" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -175,6 +181,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Display([in]object&amp; TimeOut) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Dialog.Display(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Display (Optional ByRef TimeOut As Object) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member Display : obj -&gt; int" Usage="dialog.Display TimeOut" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -189,7 +196,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="TimeOut" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="TimeOut" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="TimeOut">省略可能な<b>オブジェクト</b>です。 ダイアログ ボックスが自動的に閉じるまでの時間を指定します。 基本の単位は約 0.001 秒です。 システム アクティビティを同時に実行すると、有効時間の値が増えます。 この引数を省略した場合、ユーザーが閉じたときにダイアログ ボックスは閉じます。</param>
@@ -213,8 +220,8 @@
               <description>コマンド ボタン。1 は 1 番目のボタン、2 は 2 番目のボタンに対応します。</description>
             </item>
           </list>
-          <para>指定し<see cref="M:Microsoft.Office.Interop.Word.Dialog.Show(System.Object@)" />た Word の組み込みのダイアログボックスを表示するには、メソッドを使用します。ユーザーが [OK] をクリックすると、ダイアログボックスで指定された操作を実行できます。 一方、 <b>Display</b>メソッドは、指定された Word の組み込みのダイアログボックスを表示しますが、ユーザーがダイアログボックスを閉じた後は何も実行しません。 そのため、次の方法で使用する方法を選択する必要があります。</para>
-          <para>ユーザーがダイアログボックスを閉じる前に、ユーザーがダイアログボックスを閉じる前に、ユーザーが [ユーザー設定] ダイアログボックスを使用してメニューまたはツールバーをカスタマイズしたとき (Wdて、[<b>カスタマイズ</b>] を選択したときなど) に、 <b>Display</b>メソッドを使用します。 ユーザーによって要求されたアクションを無視する場合は、ユーザーがダイアログボックスを閉じた後にこれらのアクションが正常に完了した場合に、 <b>Display</b>メソッドを使用することもできます。</para>
+          <para>指定した Word の組み込みのダイアログボックスを表示するには、メソッドを使用します。ユーザーが [OK] をクリックすると、 <see cref="M:Microsoft.Office.Interop.Word.Dialog.Show(System.Object@)" /> ダイアログボックスで指定された操作を実行できます。 一方、 <b>Display</b>メソッドは、指定された Word の組み込みのダイアログボックスを表示しますが、ユーザーがダイアログボックスを閉じた後は何も実行しません。 そのため、次の方法で使用する方法を選択する必要があります。</para>
+          <para>ユーザーがダイアログボックスを閉じる前に、ユーザーがダイアログボックスを閉じる前に、ユーザーが [ユーザー設定] ダイアログボックスを使用してメニューまたはツールバーをカスタマイズしたとき (<b>wdて</b>、[カスタマイズ] を選択したときなど) に、 <b>Display</b>メソッドを使用します。 ユーザーによって要求されたアクションを無視する場合は、ユーザーがダイアログボックスを閉じた後にこれらのアクションが正常に完了した場合に、 <b>Display</b>メソッドを使用することもできます。</para>
           <para><b>Show</b>メソッドは、ユーザーがダイアログボックスを閉じた後 (たとえば、[開く] ダイアログボックスでユーザーがファイルを選択したとき) に完了した後 (<b>wddialogfileopen</b>) に実行します。</para>
           <para> </para></remarks>
       </Docs>
@@ -225,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Dialog.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Sub Execute ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Execute();" />
+      <MemberSignature Language="F#" Value="abstract member Execute : unit -&gt; unit" Usage="dialog.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -250,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dialog.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Dialog.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -277,6 +286,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Show([in]object&amp; TimeOut) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Dialog.Show(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Show (Optional ByRef TimeOut As Object) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member Show : obj -&gt; int" Usage="dialog.Show TimeOut" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -291,7 +301,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="TimeOut" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="TimeOut" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="TimeOut">省略可能な<b>オブジェクト</b>です。 ダイアログ ボックスが自動的に閉じるまでの時間を指定します。 基本の単位は約 0.001 秒です。 システム アクティビティを同時に実行すると、有効時間の値が増えます。 この引数を省略した場合、ユーザーがダイアログ ボックスを閉じたときにダイアログ ボックスは閉じます。</param>
@@ -315,10 +325,10 @@
               <description>コマンド ボタン。1 は 1 番目のボタン、2 は 2 番目のボタンに対応します。</description>
             </item>
           </list>
-          <para><b>Show</b>メソッドを使用して、指定した Word の組み込みのダイアログボックスを表示し (ユーザーが<b>[OK</b> ] ボタンをクリックすると)、ダイアログボックスでユーザーが指定した処理を実行します。 一方<see cref="M:Microsoft.Office.Interop.Word.Dialog.Display(System.Object@)" /> 、このメソッドは、指定された Word の組み込みのダイアログボックスを表示しますが、ユーザーがダイアログボックスを閉じた後は何も実行しません。 そのため、次の方法で使用する方法を選択する必要があります。</para>
+          <para><b>Show</b>メソッドを使用して、指定した Word の組み込みのダイアログボックスを表示し (ユーザーが<b>[OK</b> ] ボタンをクリックすると)、ダイアログボックスでユーザーが指定した処理を実行します。 一方、このメソッドは、 <see cref="M:Microsoft.Office.Interop.Word.Dialog.Display(System.Object@)" /> 指定された Word の組み込みのダイアログボックスを表示しますが、ユーザーがダイアログボックスを閉じた後は何も実行しません。 そのため、次の方法で使用する方法を選択する必要があります。</para>
           <list type="bullet">
             <item>
-              <para>ユーザーがダイアログボックスを閉じる前に、ユーザーがダイアログボックスを閉じる前に、ユーザーが [ユーザー設定] ダイアログボックスを使用してメニューまたはツールバーをカスタマイズしたとき (Wdて、[<b>カスタマイズ</b>] を選択したときなど) に、 <b>Display</b>メソッドを使用します。 ユーザーによって要求されたアクションを無視する場合は、ユーザーがダイアログボックスを閉じた後にこれらのアクションが正常に完了した場合に、 <b>Display</b>メソッドを使用することもできます。</para>
+              <para>ユーザーがダイアログボックスを閉じる前に、ユーザーがダイアログボックスを閉じる前に、ユーザーが [ユーザー設定] ダイアログボックスを使用してメニューまたはツールバーをカスタマイズしたとき (<b>wdて</b>、[カスタマイズ] を選択したときなど) に、 <b>Display</b>メソッドを使用します。 ユーザーによって要求されたアクションを無視する場合は、ユーザーがダイアログボックスを閉じた後にこれらのアクションが正常に完了した場合に、 <b>Display</b>メソッドを使用することもできます。</para>
             </item>
             <item>
               <para><b>Show</b>メソッドは、ユーザーがダイアログボックスを閉じた後 (たとえば、[開く] ダイアログボックスでユーザーがファイルを選択したとき) に完了した後 (<b>wddialogfileopen</b>) に実行します。</para>
@@ -333,6 +343,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dialog.Type" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Type As WdWordDialog" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdWordDialog default { Microsoft::Office::Interop::Word::WdWordDialog get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdWordDialog" Usage="Microsoft.Office.Interop.Word.Dialog.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -361,6 +372,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Dialog.Update" />
       <MemberSignature Language="VB.NET" Value="Public Sub Update ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Update();" />
+      <MemberSignature Language="F#" Value="abstract member Update : unit -&gt; unit" Usage="dialog.Update " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

@@ -1,9 +1,10 @@
 <Type Name="Dictionary" FullName="Microsoft.Office.Interop.Word.Dictionary">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="7eb1c3a125004711f709d1a46bde81b4b66d431c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147054" /></Metadata><TypeSignature Language="C#" Value="public interface Dictionary" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7cd7215c062770ab4726b7b42ab7149362963eb9" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922214" /></Metadata><TypeSignature Language="C#" Value="public interface Dictionary" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Dictionary" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Dictionary" />
   <TypeSignature Language="VB.NET" Value="Public Interface Dictionary" />
   <TypeSignature Language="C++ CLI" Value="public interface class Dictionary" />
+  <TypeSignature Language="F#" Value="type Dictionary = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,13 +21,13 @@
   <Docs>
     <summary>辞書を表します。</summary>
     <remarks><para>ユーザー辞書を表す
-        <b>Dictionary</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" />コレクションのメンバーです。 その他の dictionary オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Language" />コレクションのプロパティによって返されます。これらには<see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />、 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />、 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />、、 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />およびプロパティがあります。 これらのプロパティは、校正ツールがインストールされている言語ごとに使用できます。</para>
-      <para>ユーザー辞書を表す<paramref name="index" />dictionary オブジェクトを<paramref name="index" />取得するには、 <b>customdictionaries</b>() を使用します。ここで<b></b> 、は、インデックス番号または辞書の文字列名です。</para>
-      <para><see cref="P:Microsoft.Office.Interop.Word.Dictionaries.ActiveCustomDictionary" />プロパティを使用して、新しい単語が追加されるコレクションでユーザー設定のスペルチェック用の辞書を設定します。 ユーザー辞書以外の辞書にこのプロパティを設定しようとすると、エラーが発生します。</para>
-      <para><see cref="M:Microsoft.Office.Interop.Word.Dictionaries.Add(System.String)" />メソッドを使用して、有効なユーザー辞書のコレクションに新しい辞書を追加します。 指定した名前のファイルがない場合は、そのファイルが作成されます。</para>
-      <para><see cref="P:Microsoft.Office.Interop.Word.Dictionary.Name" /> And <see cref="P:Microsoft.Office.Interop.Word.Dictionary.Path" />プロパティを使用して、任意の辞書を検索します。</para>
-      <para><see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" />プロパティを使用して、指定したユーザー辞書に、 <see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageID" />プロパティを使用して特定の言語を割り当てることができるかどうかを判断します。 この辞書が特定の言語用である場合、指定された言語用に書式設定された文字列のみチェックの対象となります。</para>
-      <para>この<see cref="P:Microsoft.Office.Interop.Word.Dictionary.ReadOnly" />プロパティは、lex ファイル (組み込みの校正辞書) に対して<b>True</b>を返し、.dic ファイル (ユーザー辞書) の場合は<b>False</b>を返します。</para>
+        <b>Dictionary</b>オブジェクトは、コレクションのメンバーです <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> 。 他の dictionary オブジェクトは、コレクションのプロパティによって返されます。これらには、、、 <see cref="T:Microsoft.Office.Interop.Word.Language" /> <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" /> <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" /> <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" /> 、およびプロパティが含まれ <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" /> ます。 これらのプロパティは、校正ツールがインストールされている言語ごとに使用できます。</para>
+      <para>ユーザー <b>CustomDictionaries</b>辞書を <paramref name="index" /> 表す dictionary オブジェクトを <paramref name="index" /> 取得するには、customdictionaries () を使用します。ここで<b>Dictionary</b> 、は、インデックス番号または辞書の文字列名です。</para>
+      <para>プロパティを使用して、 <see cref="P:Microsoft.Office.Interop.Word.Dictionaries.ActiveCustomDictionary" /> 新しい単語が追加されるコレクションでユーザー設定のスペルチェック用の辞書を設定します。 ユーザー辞書以外の辞書にこのプロパティを設定しようとすると、エラーが発生します。</para>
+      <para>メソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.Dictionaries.Add(System.String)" /> 有効なユーザー辞書のコレクションに新しい辞書を追加します。 指定した名前のファイルがない場合は、そのファイルが作成されます。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.Dictionary.Name" />And プロパティを使用して <see cref="P:Microsoft.Office.Interop.Word.Dictionary.Path" /> 、任意の辞書を検索します。</para>
+      <para>プロパティを使用して、 <see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" /> 指定したユーザー辞書に、プロパティを使用して特定の言語を割り当てることができるかどうかを判断し <see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageID" /> ます。 この辞書が特定の言語用である場合、指定された言語用に書式設定された文字列のみチェックの対象となります。</para>
+      <para>この <see cref="P:Microsoft.Office.Interop.Word.Dictionary.ReadOnly" /> プロパティは、lex ファイル (組み込みの校正辞書) に対して<b>True</b>を返し、.dic ファイル (ユーザー辞書) の場合は<b>False</b>を返します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Dictionary.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -53,7 +55,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Dictionary.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Dictionary.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="dictionary.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.LanguageID" />
       <MemberSignature Language="VB.NET" Value="Public Property LanguageID As WdLanguageID" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLanguageID LanguageID { Microsoft::Office::Interop::Word::WdLanguageID get(); void set(Microsoft::Office::Interop::Word::WdLanguageID value); };" />
+      <MemberSignature Language="F#" Value="member this.LanguageID : Microsoft.Office.Interop.Word.WdLanguageID with get, set" Usage="Microsoft.Office.Interop.Word.Dictionary.LanguageID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -141,8 +146,8 @@
       <Docs>
         <summary>オブジェクトの言語を示します。</summary>
         <value>To be added.</value>
-        <remarks><para>ユーザー辞書の場合は、最初に<see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" />プロパティを<b>True</b>に設定してから、 <b>LanguageID</b>プロパティを指定する必要があります。 言語固有のユーザー辞書は、その言語で書式設定されたテキストのみを参照します。</para>
-          <para>LanguageID プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />定数のいずれかを指定できます。 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
+        <remarks><para>ユーザー辞書の場合は、最初に <see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" /> プロパティを<b>True</b>に設定してから、 <b>LanguageID</b>プロパティを指定する必要があります。 言語固有のユーザー辞書は、その言語で書式設定されたテキストのみを参照します。</para>
+          <para>LanguageID プロパティには、定数のいずれかを指定でき <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> ます。 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" />
       <MemberSignature Language="VB.NET" Value="Public Property LanguageSpecific As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LanguageSpecific { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LanguageSpecific : bool with get, set" Usage="Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.Name" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.Dictionary.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Dictionary.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -239,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.Path" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="Microsoft.Office.Interop.Word.Dictionary.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -258,8 +267,8 @@
       <Docs>
         <summary>ディスクまたは Web パスを指定したオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks><para>パスに末尾の区切り文字が含まれていない-"C:\MSOffice"や"http://MyServer"などです。 <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />プロパティを使用して、フォルダーとドライブ文字を区切る文字を追加します。 パスを<see cref="P:Microsoft.Office.Interop.Word.Dictionary.Name" />含まないファイル名を取得するには、プロパティを使用します。</para>
-          <para>メモ<b>PathSeparator</b>プロパティを使用すると、スラッシュ (/) が含まれていても、 <b>PathSeparator</b>プロパティの既定値が円記号 (\)) の場合でも、Web アドレスを作成できます。</para>
+        <remarks><para>パスに末尾の区切り文字が含まれていない-"C:\MSOffice"や"http://MyServer"などです。 プロパティを使用して <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> 、フォルダーとドライブ文字を区切る文字を追加します。 パスを <see cref="P:Microsoft.Office.Interop.Word.Dictionary.Name" /> 含まないファイル名を取得するには、プロパティを使用します。</para>
+          <para>メモ<b>PathSeparator</b>プロパティを使用すると、スラッシュ (/) が含まれていても、 <b>PathSeparator</b>プロパティの既定値が円記号 () の場合でも、Web アドレスを作成でき \) ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -269,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.ReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReadOnly : bool" Usage="Microsoft.Office.Interop.Word.Dictionary.ReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -298,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdDictionaryType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdDictionaryType Type { Microsoft::Office::Interop::Word::WdDictionaryType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdDictionaryType" Usage="Microsoft.Office.Interop.Word.Dictionary.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -317,7 +328,7 @@
       <Docs>
         <summary>辞書の種類を返します。</summary>
         <value>To be added.</value>
-        <remarks><para><b>Type</b>プロパティには、 <see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" />定数のいずれかを指定できます。</para>
+        <remarks><para><b>Type</b>プロパティには、定数のいずれかを指定でき <see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

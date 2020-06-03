@@ -1,9 +1,10 @@
 <Type Name="Bookmarks" FullName="Microsoft.Office.Interop.Word.Bookmarks">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="164f4a022f0e0f2ed1514f8a343f3dcbfd3f7cef" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146333" /></Metadata><TypeSignature Language="C#" Value="public interface Bookmarks : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="abf5376fd0348801365b52480b65a716a9fa8e11" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922717" /></Metadata><TypeSignature Language="C#" Value="public interface Bookmarks : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Bookmarks implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Bookmarks" />
   <TypeSignature Language="VB.NET" Value="Public Interface Bookmarks&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Bookmarks : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Bookmarks = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,12 +23,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>指定され<see cref="T:Microsoft.Office.Interop.Word.Bookmark" />た選択範囲、指定範囲、または文書内のブックマークを表すオブジェクトのコレクションです。</summary>
-    <remarks><para><see cref="P:Microsoft.Office.Interop.Word._Document.Bookmarks" />プロパティを使用して、 <b>Bookmarks</b>コレクションを取得します。</para>
-      <para>文書内<see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Add(System.String,System.Object@)" />の範囲にブックマークを設定するには、メソッドを使用します。</para>
-      <para>ブックマーク<b></b>(<paramref name="index" />) を使用し<paramref name="index" />ます。ここで、はブックマーク名またはインデックス番号を使用して、単一の<b>bookmark</b>オブジェクトを返します。 ブックマーク名は正確に記述する必要がありますが、大文字と小文字は区別されません。</para>
-      <para>インデックス番号は、 <see cref="T:Microsoft.Office.Interop.Word.Selection" />または<see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクト内のブックマークの位置を表します。 <see cref="T:Microsoft.Office.Interop.Word.Document" />オブジェクトの場合、インデックス番号は、[ブックマーク] ダイアログボックスで、ブックマークのアルファベット順の一覧でブックマークの位置を表します ([名前] をクリックすると、ブックマークの一覧がアルファベット順に並べ替えられます)。 </para>
-      <para>この<see cref="P:Microsoft.Office.Interop.Word.Bookmarks.ShowHidden" />プロパティは、 <b>Bookmarks</b>コレクションの要素数に影響します。 <b>ShowHidden</b> の値が <b>True</b> である場合、隠しブックマークが <b>Bookmarks</b> コレクションに含まれます。</para>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.Bookmark" />指定された選択範囲、指定範囲、または文書内のブックマークを表すオブジェクトのコレクションです。</summary>
+    <remarks><para>プロパティを使用して <see cref="P:Microsoft.Office.Interop.Word._Document.Bookmarks" /> 、 <b>Bookmarks</b>コレクションを取得します。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Add(System.String,System.Object@)" />文書内の範囲にブックマークを設定するには、メソッドを使用します。</para>
+      <para>ブックマーク<b>(</b>) を使用し <paramref name="index" /> ます。ここで、 <paramref name="index" /> はブックマーク名またはインデックス番号を使用して、単一の<b>bookmark</b>オブジェクトを返します。 ブックマーク名は正確に記述する必要がありますが、大文字と小文字は区別されません。</para>
+      <para>インデックス番号は、またはオブジェクト内のブックマークの位置を表し <see cref="T:Microsoft.Office.Interop.Word.Selection" /> <see cref="T:Microsoft.Office.Interop.Word.Range" /> ます。 オブジェクトの <see cref="T:Microsoft.Office.Interop.Word.Document" /> 場合、インデックス番号は、[ブックマーク] ダイアログボックスで、ブックマークのアルファベット順の一覧でブックマークの位置を表します ([名前] をクリックすると、ブックマークの一覧がアルファベット順に並べ替えられます)。 </para>
+      <para>この <see cref="P:Microsoft.Office.Interop.Word.Bookmarks.ShowHidden" /> プロパティは、 <b>Bookmarks</b>コレクションの要素数に影響します。 <b>ShowHidden</b> の値が <b>True</b> である場合、隠しブックマークが <b>Bookmarks</b> コレクションに含まれます。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -36,6 +37,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Bookmark Add([in]string Name, [in]object&amp; Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Bookmarks.Add(System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Name As String, Optional ByRef Range As Object) As Bookmark" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * obj -&gt; Microsoft.Office.Interop.Word.Bookmark" Usage="bookmarks.Add (Name, Range)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -51,13 +53,13 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Name" Type="System.String" />
-        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Name">ブックマークの名前を指定します。 1 語で指定する必要があります。</param>
         <param name="Range">ブックマークで定義する文字列の範囲を指定します。 ブックマークは、指定範囲を解除した位置 (カーソル位置) に設定することもできます。</param>
         <summary>範囲にブックマークを追加します。</summary>
-        <returns>範囲<see cref="T:Microsoft.Office.Interop.Word.Bookmark" />に追加するブックマークを表すオブジェクト。</returns>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.Bookmark" />範囲に追加するブックマークを表すオブジェクト。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bookmarks.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Bookmarks.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -84,7 +87,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Application" />たオブジェクトの作成元を表すオブジェクトを返します。</summary>
+        <summary>指定し <see cref="T:Microsoft.Office.Interop.Word.Application" /> たオブジェクトの作成元を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bookmarks.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Bookmarks.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bookmarks.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Bookmarks.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bookmarks.DefaultSorting" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultSorting As WdBookmarkSortBy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdBookmarkSortBy DefaultSorting { Microsoft::Office::Interop::Word::WdBookmarkSortBy get(); void set(Microsoft::Office::Interop::Word::WdBookmarkSortBy value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultSorting : Microsoft.Office.Interop.Word.WdBookmarkSortBy with get, set" Usage="Microsoft.Office.Interop.Word.Bookmarks.DefaultSorting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -175,7 +181,7 @@
       <Docs>
         <summary>([挿入] メニューの [ブックマーク] ダイアログ ボックスに表示されるブックマーク名の並べ替えオプションを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para>このプロパティは、 <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" />コレクション内の Bookmark オブジェクトの順序には影響しません。</para>
+        <remarks><para>このプロパティは、コレクション内の Bookmark オブジェクトの順序には影響しません <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Bookmarks.Exists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Exists (Name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Exists(System::String ^ Name);" />
+      <MemberSignature Language="F#" Value="abstract member Exists : string -&gt; bool" Usage="bookmarks.Exists Name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -214,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Bookmarks.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="bookmarks.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -246,6 +254,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bookmarks.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As Bookmark" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Bookmark ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::Bookmark ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.Bookmark" Usage="Microsoft.Office.Interop.Word.Bookmarks.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -263,7 +272,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Bookmark</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Index">取得する個々のオブジェクトの名前を指定します。</param>
@@ -278,6 +287,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bookmarks.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Bookmarks.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -306,6 +316,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bookmarks.ShowHidden" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowHidden As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowHidden { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowHidden : bool with get, set" Usage="Microsoft.Office.Interop.Word.Bookmarks.ShowHidden" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -326,7 +337,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>非表示のブックマークが<see cref="T:Microsoft.Office.Interop.Word.Bookmarks" />コレクションに含まれるかどうかを示す値を設定または返します。</summary>
+        <summary>非表示のブックマークがコレクションに含まれるかどうかを示す値を設定または返し <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> ます。</summary>
         <value>To be added.</value>
         <remarks><para>このプロパティは、[ブックマーク] ダイアログボックス ([挿入] メニュー) に非表示のブックマークを表示するかどうかも制御します。</para>
           <para>相互参照は、ドキュメントに挿入するとき、非表示のブックマークが自動的に挿入されます。</para>

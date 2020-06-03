@@ -1,9 +1,10 @@
 <Type Name="DiagramNode" FullName="Microsoft.Office.Interop.Word.DiagramNode">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9738bbfbf5c67a83fbc7807283833051a5fadce7" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147096" /></Metadata><TypeSignature Language="C#" Value="public interface DiagramNode" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a071f77a7dcf69fe03a0a45cfda65ea447ad4b54" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922172" /></Metadata><TypeSignature Language="C#" Value="public interface DiagramNode" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DiagramNode" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DiagramNode" />
   <TypeSignature Language="VB.NET" Value="Public Interface DiagramNode" />
   <TypeSignature Language="C++ CLI" Value="public interface class DiagramNode" />
+  <TypeSignature Language="F#" Value="type DiagramNode = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,9 +20,9 @@
   </Attributes>
   <Docs>
     <summary>図表内の1つの図表節点を表します。</summary>
-    <remarks><para><b>ダイアグラムの node</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.DiagramNodes" />コレクションのメンバーです。</para>
-      <para><b>ダイアグラムノード</b>オブジェクトを取得するの<see cref="T:Microsoft.Office.Interop.Word.Shape" />に<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />には、またはオブジェクトの<b>ダイアグラムノード</b>プロパティを使用します。 図に<see cref="M:Microsoft.Office.Interop.Word.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" />ノードを追加するには、メソッドを使用します。</para>
-      <para>図から<see cref="M:Microsoft.Office.Interop.Word.DiagramNode.Delete" />ノードを削除するには、メソッドを使用します。</para>
+    <remarks><para><b>ダイアグラムの node</b>オブジェクトは、コレクションのメンバーです <see cref="T:Microsoft.Office.Interop.Word.DiagramNodes" /> 。</para>
+      <para><b>DiagramNode</b> <see cref="T:Microsoft.Office.Interop.Word.Shape" /> <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> <b>ダイアグラムノード</b>オブジェクトを取得するのにには、またはオブジェクトのダイアグラムノードプロパティを使用します。 <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" />図にノードを追加するには、メソッドを使用します。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.DiagramNode.Delete" />図からノードを削除するには、メソッドを使用します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.DiagramNode AddNode([in]valuetype Microsoft.Office.Core.MsoRelativeNodePosition Pos, [in]valuetype Microsoft.Office.Core.MsoDiagramNodeType NodeType) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddNode (Optional Pos As MsoRelativeNodePosition = Microsoft.Office.Core.MsoRelativeNodePosition.msoAfterNode, Optional NodeType As MsoDiagramNodeType = Microsoft.Office.Core.MsoDiagramNodeType.msoDiagramNode) As DiagramNode" />
+      <MemberSignature Language="F#" Value="abstract member AddNode : Microsoft.Office.Core.MsoRelativeNodePosition * Microsoft.Office.Core.MsoDiagramNodeType -&gt; Microsoft.Office.Interop.Word.DiagramNode" Usage="diagramNode.AddNode (Pos, NodeType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,9 +50,9 @@
         <Parameter Name="NodeType" Type="Microsoft.Office.Core.MsoDiagramNodeType" />
       </Parameters>
       <Docs>
-        <param name="Pos">省略<see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />可能です。 呼び出し元ノードを基準にして、ノードを追加する場所を指定します。</param>
-        <param name="NodeType">省略<see cref="T:Microsoft.Office.Core.MsoDiagramNodeType" />可能です。 ノードの種類を指定します。</param>
-        <summary>図表節点を作成し、 <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />新しい図ノードを表すオブジェクトを返します。 概念図の場合、<b>図表ノード</b>オブジェクトは図形の一覧の末尾に追加されます。</summary>
+        <param name="Pos">省略可能 <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" /> です。 呼び出し元ノードを基準にして、ノードを追加する場所を指定します。</param>
+        <param name="NodeType">省略可能 <see cref="T:Microsoft.Office.Core.MsoDiagramNodeType" /> です。 ノードの種類を指定します。</param>
+        <summary>図表節点を作成し、 <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> 新しい図ノードを表すオブジェクトを返します。 概念図の場合、<b>図表ノード</b>オブジェクトは図形の一覧の末尾に追加されます。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DiagramNode.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.DiagramNode.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -78,7 +81,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DiagramNode.Children" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Children As DiagramNodeChildren" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::DiagramNodeChildren ^ Children { Microsoft::Office::Interop::Word::DiagramNodeChildren ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Children : Microsoft.Office.Interop.Word.DiagramNodeChildren" Usage="Microsoft.Office.Interop.Word.DiagramNode.Children" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -106,16 +110,17 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNodeChildren</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.DiagramNodeChildren" />た図表節点のすべての子を含むオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.DiagramNodeChildren" />指定した図表節点のすべての子を含むオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneNode">
-      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.DiagramNode CloneNode (bool copyChildren, out Microsoft.Office.Interop.Word.DiagramNode TargetNode = null, Microsoft.Office.Core.MsoRelativeNodePosition Pos = Microsoft.Office.Core.MsoRelativeNodePosition.msoAfterNode);" />
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.DiagramNode CloneNode (bool copyChildren, out Microsoft.Office.Interop.Word.DiagramNode TargetNode = default, Microsoft.Office.Core.MsoRelativeNodePosition Pos = Microsoft.Office.Core.MsoRelativeNodePosition.msoAfterNode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.DiagramNode CloneNode([in]bool copyChildren, [out] class Microsoft.Office.Interop.Word.DiagramNode&amp; TargetNode, [in]valuetype Microsoft.Office.Core.MsoRelativeNodePosition Pos) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.DiagramNode.CloneNode(System.Boolean,Microsoft.Office.Interop.Word.DiagramNode@,Microsoft.Office.Core.MsoRelativeNodePosition)" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneNode (copyChildren As Boolean, Optional ByRef TargetNode As DiagramNode = null, Optional Pos As MsoRelativeNodePosition = Microsoft.Office.Core.MsoRelativeNodePosition.msoAfterNode) As DiagramNode" />
+      <MemberSignature Language="F#" Value="abstract member CloneNode : bool * DiagramNode * Microsoft.Office.Core.MsoRelativeNodePosition -&gt; Microsoft.Office.Interop.Word.DiagramNode" Usage="diagramNode.CloneNode (copyChildren, TargetNode, Pos)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -131,14 +136,14 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="copyChildren" Type="System.Boolean" />
-        <Parameter Name="TargetNode" Type="Microsoft.Office.Interop.Word.DiagramNode&amp;" RefType="out" />
+        <Parameter Name="TargetNode" Type="Microsoft.Office.Interop.Word.DiagramNode" RefType="out" />
         <Parameter Name="Pos" Type="Microsoft.Office.Core.MsoRelativeNodePosition" />
       </Parameters>
       <Docs>
         <param name="copyChildren">必須の<b>ブール値</b>です。 図のノードの子も複製する場合は True。</param>
         <param name="TargetNode">省略可能な<b>ダイアグラムノード</b>オブジェクト。 新しいノードを配置するノードを指定します。</param>
-        <param name="Pos">省略<see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />可能です。 が<paramref name="TargetNode" />指定されている場合は、ノードがどこに<paramref name="TargetNode" />追加されるかを示します。</param>
-        <summary>指定された図表ノードを複製します。 複製を<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />表すオブジェクトを返します。</summary>
+        <param name="Pos">省略可能 <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" /> です。 <paramref name="TargetNode" />が指定されている場合は、ノードがどこに追加されるかを示し <paramref name="TargetNode" /> ます。</param>
+        <summary>指定された図表ノードを複製します。 複製を <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> 表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DiagramNode.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.DiagramNode.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -179,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.DiagramNode.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="diagramNode.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -204,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DiagramNode.Diagram" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Diagram As Diagram" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Diagram ^ Diagram { Microsoft::Office::Interop::Word::Diagram ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Diagram : Microsoft.Office.Interop.Word.Diagram" Usage="Microsoft.Office.Interop.Word.DiagramNode.Diagram" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -221,7 +229,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Diagram</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図表ノード<see cref="T:Microsoft.Office.Interop.Word.Diagram" />が属しているオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Diagram" />図表ノードが属しているオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -232,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DiagramNode.Layout" />
       <MemberSignature Language="VB.NET" Value="Public Property Layout As MsoOrgChartLayoutType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoOrgChartLayoutType Layout { Microsoft::Office::Core::MsoOrgChartLayoutType get(); void set(Microsoft::Office::Core::MsoOrgChartLayoutType value); };" />
+      <MemberSignature Language="F#" Value="member this.Layout : Microsoft.Office.Core.MsoOrgChartLayoutType with get, set" Usage="Microsoft.Office.Interop.Word.DiagramNode.Layout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -252,7 +261,7 @@
         <ReturnType>Microsoft.Office.Core.MsoOrgChartLayoutType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>組織図の子<see cref="T:Microsoft.Office.Core.MsoOrgChartLayoutType" />ノードの書式を示す定数を設定または返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Core.MsoOrgChartLayoutType" />組織図の子ノードの書式を示す定数を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -263,6 +272,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.DiagramNode.MoveNode(Microsoft.Office.Interop.Word.DiagramNode@,Microsoft.Office.Core.MsoRelativeNodePosition)" />
       <MemberSignature Language="VB.NET" Value="Public Sub MoveNode (ByRef TargetNode As DiagramNode, Pos As MsoRelativeNodePosition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveNode([Runtime::InteropServices::Out] Microsoft::Office::Interop::Word::DiagramNode ^ % TargetNode, Microsoft::Office::Core::MsoRelativeNodePosition Pos);" />
+      <MemberSignature Language="F#" Value="abstract member MoveNode : DiagramNode * Microsoft.Office.Core.MsoRelativeNodePosition -&gt; unit" Usage="diagramNode.MoveNode (TargetNode, Pos)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -277,12 +287,12 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="TargetNode" Type="Microsoft.Office.Interop.Word.DiagramNode&amp;" RefType="out" />
+        <Parameter Name="TargetNode" Type="Microsoft.Office.Interop.Word.DiagramNode" RefType="out" />
         <Parameter Name="Pos" Type="Microsoft.Office.Core.MsoRelativeNodePosition" />
       </Parameters>
       <Docs>
-        <param name="TargetNode">必要<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />なオブジェクト。 指定したノードが移動する図表節点を指定します。</param>
-        <param name="Pos">必須<see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />。 ノードを追加する基準を<paramref name="TargetNode" />指定します。</param>
+        <param name="TargetNode">必要な <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> オブジェクト。 指定したノードが移動する図表節点を指定します。</param>
+        <param name="Pos">必須 <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" /> 。 ノードを追加する基準を指定し <paramref name="TargetNode" /> ます。</param>
         <summary>図の中で図表節点とその子節点を移動します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -293,6 +303,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.DiagramNode.NextNode" />
       <MemberSignature Language="VB.NET" Value="Public Function NextNode () As DiagramNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::DiagramNode ^ NextNode();" />
+      <MemberSignature Language="F#" Value="abstract member NextNode : unit -&gt; Microsoft.Office.Interop.Word.DiagramNode" Usage="diagramNode.NextNode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -308,9 +319,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>図表節点<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />のコレクション内の次のオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />図表節点のコレクション内の次のオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks><para>図表節<see cref="M:Microsoft.Office.Interop.Word.DiagramNode.PrevNode" />点のコレクションに含まれる前の図表<b>節点</b>のオブジェクトを取得するには、メソッドを使用します。</para>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Word.DiagramNode.PrevNode" />図表節点のコレクションに含まれる前の図表<b>節点</b>のオブジェクトを取得するには、メソッドを使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -320,6 +331,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DiagramNode.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.DiagramNode.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -348,6 +360,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.DiagramNode.PrevNode" />
       <MemberSignature Language="VB.NET" Value="Public Function PrevNode () As DiagramNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::DiagramNode ^ PrevNode();" />
+      <MemberSignature Language="F#" Value="abstract member PrevNode : unit -&gt; Microsoft.Office.Interop.Word.DiagramNode" Usage="diagramNode.PrevNode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -363,9 +376,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>図表節<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />点のコレクションで、前の図の節点を表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />図表節点のコレクションで、前の図の節点を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks><para>この<see cref="M:Microsoft.Office.Interop.Word.DiagramNode.NextNode" />メソッドを使用して、図表ノードのコレクション内の次のダイアグラム<b>ノード</b>オブジェクトを取得します。</para>
+        <remarks><para>このメソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.NextNode" /> 図表ノードのコレクション内の次のダイアグラム<b>ノード</b>オブジェクトを取得します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -375,6 +388,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.DiagramNode.ReplaceNode(Microsoft.Office.Interop.Word.DiagramNode@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReplaceNode (ByRef TargetNode As DiagramNode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReplaceNode([Runtime::InteropServices::Out] Microsoft::Office::Interop::Word::DiagramNode ^ % TargetNode);" />
+      <MemberSignature Language="F#" Value="abstract member ReplaceNode : DiagramNode -&gt; unit" Usage="diagramNode.ReplaceNode TargetNode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -389,10 +403,10 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="TargetNode" Type="Microsoft.Office.Interop.Word.DiagramNode&amp;" RefType="out" />
+        <Parameter Name="TargetNode" Type="Microsoft.Office.Interop.Word.DiagramNode" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="TargetNode">必要<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />なオブジェクト。 置換する図表節点を指定します。</param>
+        <param name="TargetNode">必要な <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> オブジェクト。 置換する図表節点を指定します。</param>
         <summary>ターゲット図表ノードをソースの図表ノードに置き換えます。</summary>
         <remarks><para>ターゲット図表ノードが削除され、その子ノードのいずれかを含む、ソース図表ノードが移動先の図表ノードの位置に移動されます。</para>
           <para> </para></remarks>
@@ -404,6 +418,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DiagramNode.Root" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Root As DiagramNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::DiagramNode ^ Root { Microsoft::Office::Interop::Word::DiagramNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Root : Microsoft.Office.Interop.Word.DiagramNode" Usage="Microsoft.Office.Interop.Word.DiagramNode.Root" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -421,7 +436,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ソース図表<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />ノードが属しているルート図表ノードを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />ソース図表ノードが属しているルート図表ノードを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -432,6 +447,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DiagramNode.Shape" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shape As Shape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shape ^ Shape { Microsoft::Office::Interop::Word::Shape ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Shape : Microsoft.Office.Interop.Word.Shape" Usage="Microsoft.Office.Interop.Word.DiagramNode.Shape" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -449,7 +465,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Shape" />た図表節点のオブジェクトを返します。</summary>
+        <summary>指定し <see cref="T:Microsoft.Office.Interop.Word.Shape" /> た図表節点のオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -459,6 +475,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SwapNode([out] class Microsoft.Office.Interop.Word.DiagramNode&amp; TargetNode, [in]valuetype Microsoft.Office.Core.MsoRelativeNodePosition Pos) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.DiagramNode.SwapNode(Microsoft.Office.Interop.Word.DiagramNode@,Microsoft.Office.Core.MsoRelativeNodePosition)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SwapNode (ByRef TargetNode As DiagramNode, Optional Pos As MsoRelativeNodePosition = (Microsoft.Office.Core.MsoRelativeNodePosition) -1)" />
+      <MemberSignature Language="F#" Value="abstract member SwapNode : DiagramNode * Microsoft.Office.Core.MsoRelativeNodePosition -&gt; unit" Usage="diagramNode.SwapNode (TargetNode, Pos)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -473,12 +490,12 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="TargetNode" Type="Microsoft.Office.Interop.Word.DiagramNode&amp;" RefType="out" />
+        <Parameter Name="TargetNode" Type="Microsoft.Office.Interop.Word.DiagramNode" RefType="out" />
         <Parameter Name="Pos" Type="Microsoft.Office.Core.MsoRelativeNodePosition" />
       </Parameters>
       <Docs>
-        <param name="TargetNode">必要<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />なオブジェクト。 スワップするノードを指定します。</param>
-        <param name="Pos">省略<see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />可能です。 ノードの位置を、ノードを基準にした位置からの相対位置で指定します。</param>
+        <param name="TargetNode">必要な <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> オブジェクト。 スワップするノードを指定します。</param>
+        <param name="Pos">省略可能 <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" /> です。 ノードの位置を、ノードを基準にした位置からの相対位置で指定します。</param>
         <summary>ターゲット図表ノードをソースの図表ノードと交換します。</summary>
         <remarks><para>子の図表ノードは、対応するルートノードと共に移動します。</para>
           <para> </para></remarks>
@@ -490,6 +507,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DiagramNode.TextShape" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextShape As Shape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shape ^ TextShape { Microsoft::Office::Interop::Word::Shape ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextShape : Microsoft.Office.Interop.Word.Shape" Usage="Microsoft.Office.Interop.Word.DiagramNode.TextShape" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -507,7 +525,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図表ノード<see cref="T:Microsoft.Office.Interop.Word.Shape" />に関連付けられているテキストボックスの図形を表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Shape" />図表ノードに関連付けられているテキストボックスの図形を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -518,6 +536,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.DiagramNode.TransferChildren(Microsoft.Office.Interop.Word.DiagramNode@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TransferChildren (ByRef ReceivingNode As DiagramNode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TransferChildren([Runtime::InteropServices::Out] Microsoft::Office::Interop::Word::DiagramNode ^ % ReceivingNode);" />
+      <MemberSignature Language="F#" Value="abstract member TransferChildren : DiagramNode -&gt; unit" Usage="diagramNode.TransferChildren ReceivingNode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -532,10 +551,10 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ReceivingNode" Type="Microsoft.Office.Interop.Word.DiagramNode&amp;" RefType="out" />
+        <Parameter Name="ReceivingNode" Type="Microsoft.Office.Interop.Word.DiagramNode" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="ReceivingNode">必要<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />なオブジェクト。 子ノードを転送するノードを指定します。</param>
+        <param name="ReceivingNode">必要な <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> オブジェクト。 子ノードを転送するノードを指定します。</param>
         <summary>移動元の図表ノードの子ノードを、ターゲット (入荷) の図ノードに移動します。</summary>
         <remarks>To be added.</remarks>
       </Docs>

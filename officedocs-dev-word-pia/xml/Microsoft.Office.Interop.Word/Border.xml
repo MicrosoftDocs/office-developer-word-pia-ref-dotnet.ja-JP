@@ -1,9 +1,10 @@
 <Type Name="Border" FullName="Microsoft.Office.Interop.Word.Border">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="bdd51dcf5bee087b8afe2a4b3e9384bb47359ecc" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146326" /></Metadata><TypeSignature Language="C#" Value="public interface Border" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e642626927b975c9b75b34c5cff82a58ff8324fb" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922710" /></Metadata><TypeSignature Language="C#" Value="public interface Border" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Border" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Border" />
   <TypeSignature Language="VB.NET" Value="Public Interface Border" />
   <TypeSignature Language="C++ CLI" Value="public interface class Border" />
+  <TypeSignature Language="F#" Value="type Border = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,8 +20,8 @@
   </Attributes>
   <Docs>
     <summary>オブジェクトの罫線を表します。</summary>
-    <remarks><para><b>Border</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Borders" />コレクションのメンバーです。</para>
-      <para>罫線<paramref name="index" />を識別<paramref name="index" />する<b>罫線</b>() を使用して、1つの<b>border</b>オブジェクトを取得します。 <paramref name="Index" /><b>wdBorderBottom</b>、 <b>wdBorderDiagonalDown</b>、 <b>wdBorderDiagonalUp</b>、 <see cref="T:Microsoft.Office.Interop.Word.WdBorderType" /> <b>wdBorderHorizontal</b>、 <b>wdBorderLeft</b>、 <b>wdBorderRight</b>、 <b>wdBorderTop</b>、または<b>次のいずれかの定数を使用できます。wdBorderVertical</b>。 Border オブジェクト<see cref="P:Microsoft.Office.Interop.Word.Border.LineStyle" />に境界線を適用するには<b></b> 、プロパティを使用します。</para>
+    <remarks><para><b>Border</b>オブジェクトは、コレクションのメンバーです <see cref="T:Microsoft.Office.Interop.Word.Borders" /> 。</para>
+      <para>罫線を識別する<b>罫線</b>() を使用し <paramref name="index" /> て、 <paramref name="index" /> 1 つの<b>border</b>オブジェクトを取得します。 <paramref name="Index" /><see cref="T:Microsoft.Office.Interop.Word.WdBorderType" /> <b>wdBorderBottom</b>、 <b>wdBorderDiagonalDown</b>、 <b>wdBorderDiagonalUp</b>、 <b>wdBorderHorizontal</b>、 <b>wdBorderLeft</b>、 <b>wdBorderRight</b>、 <b>wdBorderTop</b>、または<b>wdBorderVertical</b>のいずれかの定数を使用できます。 Border <see cref="P:Microsoft.Office.Interop.Word.Border.LineStyle" /> オブジェクトに境界線を適用するには<b>Border</b> 、プロパティを使用します。</para>
       <para>
         <b>Border</b> オブジェクトを <b>Borders</b> コレクションに追加することはできません。 <b>Borders</b> コレクションのメンバー数には制限があり、オブジェクトの種類に応じて異なります。 たとえば、表の場合、 <b>Borders</b> コレクションのメンバー数は 6 ですが、段落の場合は 4 です。</para>
       <para> </para></remarks>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Border.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Border.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -49,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Border.ArtStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property ArtStyle As WdPageBorderArt" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdPageBorderArt ArtStyle { Microsoft::Office::Interop::Word::WdPageBorderArt get(); void set(Microsoft::Office::Interop::Word::WdPageBorderArt value); };" />
+      <MemberSignature Language="F#" Value="member this.ArtStyle : Microsoft.Office.Interop.Word.WdPageBorderArt with get, set" Usage="Microsoft.Office.Interop.Word.Border.ArtStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Border.ArtWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property ArtWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ArtWidth { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ArtWidth : int with get, set" Usage="Microsoft.Office.Interop.Word.Border.ArtWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Border.Color" />
       <MemberSignature Language="VB.NET" Value="Public Property Color As WdColor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdColor Color { Microsoft::Office::Interop::Word::WdColor get(); void set(Microsoft::Office::Interop::Word::WdColor value); };" />
+      <MemberSignature Language="F#" Value="member this.Color : Microsoft.Office.Interop.Word.WdColor with get, set" Usage="Microsoft.Office.Interop.Word.Border.Color" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -142,9 +147,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.Border" />オブジェクトの24ビットの色を設定または返します。</summary>
+        <summary>指定したオブジェクトの24ビットの色を設定または返し <see cref="T:Microsoft.Office.Interop.Word.Border" /> ます。</summary>
         <value>To be added.</value>
-        <remarks><para>任意の有効な<see cref="T:Microsoft.Office.Interop.Word.WdColor" />定数または Visual BASIC の RGB 関数によって返される値を指定できます。</para>
+        <remarks><para>任意の有効な <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> 定数または Visual Basic の RGB 関数によって返される値を指定できます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Border.ColorIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property ColorIndex As WdColorIndex" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdColorIndex ColorIndex { Microsoft::Office::Interop::Word::WdColorIndex get(); void set(Microsoft::Office::Interop::Word::WdColorIndex value); };" />
+      <MemberSignature Language="F#" Value="member this.ColorIndex : Microsoft.Office.Interop.Word.WdColorIndex with get, set" Usage="Microsoft.Office.Interop.Word.Border.ColorIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Border.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Border.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -215,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Border.Inside" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Inside As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Inside { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Inside : bool" Usage="Microsoft.Office.Interop.Word.Border.Inside" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -243,6 +251,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Border.LineStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property LineStyle As WdLineStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLineStyle LineStyle { Microsoft::Office::Interop::Word::WdLineStyle get(); void set(Microsoft::Office::Interop::Word::WdLineStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.LineStyle : Microsoft.Office.Interop.Word.WdLineStyle with get, set" Usage="Microsoft.Office.Interop.Word.Border.LineStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -266,7 +275,7 @@
         <summary>指定したオブジェクトの枠線のスタイルを設定または返します。</summary>
         <value>To be added.</value>
         <remarks><para>個々 の文字を参照する範囲の <b>LineStyle</b> プロパティを設定するか、単語は、文字に罫線を適用します。</para>
-          <para>段落または段落範囲の <b>LineStyle</b> プロパティを設定するには、段落の罫線が適用されます。 プロパティを<see cref="P:Microsoft.Office.Interop.Word.Borders.InsideLineStyle" />使用して、連続した段落の間に罫線を適用します。</para>
+          <para>段落または段落範囲の <b>LineStyle</b> プロパティを設定するには、段落の罫線が適用されます。 プロパティを使用して、 <see cref="P:Microsoft.Office.Interop.Word.Borders.InsideLineStyle" /> 連続した段落の間に罫線を適用します。</para>
           <para>セクションの <b>LineStyle</b> プロパティを設定すると、ページ、セクションのページ罫線が適用されます。</para>
           <para> </para></remarks>
       </Docs>
@@ -277,6 +286,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Border.LineWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property LineWidth As WdLineWidth" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLineWidth LineWidth { Microsoft::Office::Interop::Word::WdLineWidth get(); void set(Microsoft::Office::Interop::Word::WdLineWidth value); };" />
+      <MemberSignature Language="F#" Value="member this.LineWidth : Microsoft.Office.Interop.Word.WdLineWidth with get, set" Usage="Microsoft.Office.Interop.Word.Border.LineWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -299,7 +309,7 @@
       <Docs>
         <summary>オブジェクトの罫線の幅を設定します。</summary>
         <value>To be added.</value>
-        <remarks><para>オブジェクトに<see cref="T:Microsoft.Office.Interop.Word.WdLineWidth" />境界線がない場合、または複数の線幅を持つ罫線がある場合は、定数または<b>wdUndefined</b>を返します。</para>
+        <remarks><para><see cref="T:Microsoft.Office.Interop.Word.WdLineWidth" />オブジェクトに境界線がない場合、または複数の線幅を持つ罫線がある場合は、定数または<b>wdUndefined</b>を返します。</para>
           <para>指定された線の幅を罫線の線のスタイルを使用できない場合、このプロパティはエラーを生成します。 特定の線種で使用可能な幅を確認するには、[線種とページ罫線と網かけの設定] ダイアログ ボックス ([罫線] メニュー) を参照してください。</para>
           <para> </para></remarks>
       </Docs>
@@ -310,6 +320,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Border.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Border.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -338,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Border.Visible" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool default { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="Microsoft.Office.Interop.Word.Border.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -358,7 +370,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定<see cref="T:Microsoft.Office.Interop.Word.Border" />したオブジェクトが表示されるかどうかを示す値を設定または返します。</summary>
+        <summary>指定したオブジェクトが表示されるかどうかを示す値を設定または返し <see cref="T:Microsoft.Office.Interop.Word.Border" /> ます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

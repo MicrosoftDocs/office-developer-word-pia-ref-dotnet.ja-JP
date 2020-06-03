@@ -1,9 +1,10 @@
 <Type Name="Conflicts" FullName="Microsoft.Office.Interop.Word.Conflicts">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="51c75eb68c226ad55f02f5d6aaf9e02311ccbc95" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147244" /></Metadata><TypeSignature Language="C#" Value="public interface Conflicts : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dcdf487af04fb4b6224641a44ab4822ad6092990" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922333" /></Metadata><TypeSignature Language="C#" Value="public interface Conflicts : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Conflicts implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Conflicts" />
   <TypeSignature Language="VB.NET" Value="Public Interface Conflicts&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Conflicts : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Conflicts = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,8 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>文書内の<see cref="T:Microsoft.Office.Interop.Word.Conflict" />競合を表すオブジェクトのコレクションです。 <see cref="T:Microsoft.Office.Interop.Word.Conflict" />オブジェクトの型は、 <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" />列挙体で指定されます。</summary>
-    <remarks><para><see cref="P:Microsoft.Office.Interop.Word.CoAuthoring.Conflicts" />プロパティを使用して、文書の<b>競合</b>のコレクションを取得します。 競合<b></b>()<paramref name="Index" />を使用し<paramref name="Index" />て、1つの<b>競合</b>オブジェクトを取得します (ここで、は競合インデックス番号を指定します)。</para>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.Conflict" />文書内の競合を表すオブジェクトのコレクションです。 オブジェクトの型 <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> は、列挙体で指定され <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> ます。</summary>
+    <remarks><para>プロパティを使用して、 <see cref="P:Microsoft.Office.Interop.Word.CoAuthoring.Conflicts" /> 文書の<b>競合</b>のコレクションを取得します。 競合<b>(</b> <paramref name="Index" /> ) を使用し <paramref name="Index" /> て、1つの<b>競合</b>オブジェクトを取得します (ここで、は競合インデックス番号を指定します)。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Conflicts.AcceptAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub AcceptAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AcceptAll();" />
+      <MemberSignature Language="F#" Value="abstract member AcceptAll : unit -&gt; unit" Usage="conflicts.AcceptAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflicts.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Conflicts.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -75,8 +78,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを取得します。</summary>
-        <value>Microsoft <see cref="T:Microsoft.Office.Interop.Word.Application" /> Word アプリケーションを表すオブジェクト。</value>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを取得します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクト。</value>
         <remarks><para>読み取り専用です。</para>
           <para> </para></remarks>
       </Docs>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflicts.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Conflicts.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -104,8 +108,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><see cref="T:Microsoft.Office.Interop.Word.Conflicts" />コレクション内の項目数を返します。</summary>
-        <value><see cref="T:Microsoft.Office.Interop.Word.Conflicts" />コレクション内の項目の数。</value>
+        <summary>コレクション内の項目数を返し <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> ます。</summary>
+        <value>コレクション内の項目の数 <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> 。</value>
         <remarks><para>読み取り専用です。</para>
           <para> </para></remarks>
       </Docs>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflicts.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Conflicts.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Conflicts.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="conflicts.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -169,7 +175,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>を<see cref="T:System.Collections.IEnumerator" />返します。</returns>
+        <returns><see cref="T:System.Collections.IEnumerator" /> を返します。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflicts.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Conflict" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Conflict ^ default[int] { Microsoft::Office::Interop::Word::Conflict ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.Conflict" Usage="Microsoft.Office.Interop.Word.Conflicts.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -201,7 +208,7 @@
       <Docs>
         <param name="Index">個々 のオブジェクトが返されます。</param>
         <summary>コレクション内の各 <b>Conflicts</b> オブジェクトを返します。</summary>
-        <value>を<see cref="T:Microsoft.Office.Interop.Word.Conflict" />返します。</value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Conflict" /> を返します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflicts.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Conflicts.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -228,8 +236,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>は<see cref="T:System.Object" /> 、指定<see cref="T:Microsoft.Office.Interop.Word.Conflicts" />したオブジェクトの親オブジェクトを表すを取得します。</summary>
-        <value><see cref="T:System.Object" />指定<see cref="T:Microsoft.Office.Interop.Word.Conflicts" />したオブジェクトの親オブジェクトを表す。</value>
+        <summary>は、 <see cref="T:System.Object" /> 指定したオブジェクトの親オブジェクトを表すを取得し <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> ます。</summary>
+        <value>指定した <see cref="T:System.Object" /> オブジェクトの親オブジェクトを表す <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> 。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Conflicts.RejectAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub RejectAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RejectAll();" />
+      <MemberSignature Language="F#" Value="abstract member RejectAll : unit -&gt; unit" Usage="conflicts.RejectAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

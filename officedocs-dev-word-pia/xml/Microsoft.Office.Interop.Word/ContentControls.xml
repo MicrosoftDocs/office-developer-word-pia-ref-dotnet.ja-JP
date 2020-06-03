@@ -1,9 +1,10 @@
 <Type Name="ContentControls" FullName="Microsoft.Office.Interop.Word.ContentControls">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3cda051fb250a0a8e28df389d60e93ae84593df0" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147162" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControls : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2d4805a911be876fd70e5011dd13dab605c80b84" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922291" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControls : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ContentControls implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ContentControls" />
   <TypeSignature Language="VB.NET" Value="Public Interface ContentControls&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class ContentControls : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type ContentControls = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,9 +23,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>オブジェクトの<see cref="T:Microsoft.Office.Interop.Word.ContentControl" />コレクション。  コンテンツ コントロールは、境界があり、ラベルが付いている場合もある文書内の領域で、特定の種類のコンテンツのコンテナーとして機能します。 個々のコンテンツ コントロールには、日付、リスト、または書式設定された文字列の段落などのコンテンツを格納できます。</summary>
-    <remarks><para><see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" />メソッドを使用して、新しいコンテンツコントロールを作成し、文書に挿入します。</para>
-      <para><see cref="P:Microsoft.Office.Interop.Word.ContentControls.Item(System.Object@)" />メソッドを使用して、コレクション内の特定のコンテンツコントロールにアクセスします。 オブジェクトを<see cref="T:Microsoft.Office.Interop.Word.ContentControl" />使用して、個々のコンテンツコントロールを操作します。 詳細については、「<a href="HV10107832">コンテンツコントロールを操作</a>する」を参照してください。</para>
+    <summary>オブジェクトのコレクション <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> 。  コンテンツ コントロールは、境界があり、ラベルが付いている場合もある文書内の領域で、特定の種類のコンテンツのコンテナーとして機能します。 個々のコンテンツ コントロールには、日付、リスト、または書式設定された文字列の段落などのコンテンツを格納できます。</summary>
+    <remarks><para>メソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" /> 新しいコンテンツコントロールを作成し、文書に挿入します。</para>
+      <para>メソッドを使用し <see cref="P:Microsoft.Office.Interop.Word.ContentControls.Item(System.Object@)" /> て、コレクション内の特定のコンテンツコントロールにアクセスします。 オブジェクトを使用し <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> て、個々のコンテンツコントロールを操作します。 詳細については、「<a href="HV10107832">コンテンツコントロールを操作</a>する」を参照してください。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -33,6 +34,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.ContentControl Add([in]valuetype Microsoft.Office.Interop.Word.WdContentControlType Type, [in]object&amp; Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Optional Type As WdContentControlType = Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlRichText, Optional ByRef Range As Object) As ContentControl" />
+      <MemberSignature Language="F#" Value="abstract member Add : Microsoft.Office.Interop.Word.WdContentControlType * obj -&gt; Microsoft.Office.Interop.Word.ContentControl" Usage="contentControls.Add (Type, Range)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,14 +50,14 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Type" Type="Microsoft.Office.Interop.Word.WdContentControlType" />
-        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Type">作業中の文書に挿入するコンテンツ コントロールの種類を指定します。 省略すると、リッチテキストコンテンツコントロールが挿入されます。</param>
         <param name="Range">作業中の文書内でコンテンツ コントロールを配置する場所を指定します。省略した場合は、カーソル位置にコンテンツ コントロールが配置されるか、または現在の選択範囲が置き換えられます。</param>
-        <summary>指定された種類の新しいコンテンツコントロールを作業中の文書に追加し、 <see cref="T:Microsoft.Office.Interop.Word.ContentControl" />新しいコンテンツコントロールを表すオブジェクトを返します。</summary>
+        <summary>指定された種類の新しいコンテンツコントロールを作業中の文書に追加し、 <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> 新しいコンテンツコントロールを表すオブジェクトを返します。</summary>
         <returns><see cref="T:Microsoft.Office.Interop.Word.ContentControl" /></returns>
-        <remarks><para>コンテンツ コントロールをネストできるのは、リッチ テキスト コンテンツ コントロール、文書パーツ ギャラリー コンテンツ コントロール、およびグループ コンテンツ コントロールのみです。  カーソルまたは現在の選択範囲が異なる種類のコンテンツ コントロール内にある場合、このメソッドはエラーを発生させます。  この場合は、挿入ポイントを移動するか、 <paramref name="Range" />パラメーターを使用してドキュメント内の位置を指定できます。</para>
+        <remarks><para>コンテンツ コントロールをネストできるのは、リッチ テキスト コンテンツ コントロール、文書パーツ ギャラリー コンテンツ コントロール、およびグループ コンテンツ コントロールのみです。  カーソルまたは現在の選択範囲が異なる種類のコンテンツ コントロール内にある場合、このメソッドはエラーを発生させます。  この場合は、挿入ポイントを移動するか、パラメーターを使用して <paramref name="Range" /> ドキュメント内の位置を指定できます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControls.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ContentControls.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -82,7 +85,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word._Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word._Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControls.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.ContentControls.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -110,7 +114,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><see cref="T:Microsoft.Office.Interop.Word.ContentControls" />コレクション内の項目数を返します。 読み取り専用です。</summary>
+        <summary>コレクション内の項目数を返し <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> ます。 読み取り専用です。</summary>
         <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControls.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ContentControls.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -142,7 +147,7 @@
         <value><b>Integer</b></value>
         <remarks><para>オブジェクトは、Microsoft Word で作成されている場合、 <b>作成者</b> を返します、16 進数の値である 4d535744 を文字列します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
           <para>
-            <b>注</b>: この値は定数<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />で表すこともできます。</para>
+            <b>注</b>: この値は定数で表すこともでき <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControls.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="contentControls.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControls.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As ContentControl" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ContentControl ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::ContentControl ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.ContentControl" Usage="Microsoft.Office.Interop.Word.ContentControls.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -201,7 +208,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ContentControl</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Index">取得するコンテンツ コントロールの順序を指定します。</param>
@@ -216,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControls.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ContentControls.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -233,7 +241,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><see cref="T:Microsoft.Office.Interop.Word.ContentControls" />オブジェクトの親オブジェクトを返します。</summary>
+        <summary>オブジェクトの親オブジェクトを返し <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> ます。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>

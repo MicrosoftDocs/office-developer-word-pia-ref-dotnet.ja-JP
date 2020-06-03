@@ -1,9 +1,10 @@
 <Type Name="ContentControlListEntry" FullName="Microsoft.Office.Interop.Word.ContentControlListEntry">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="58121ff87a2cbde78e578387d442ae7b9c00c1d5" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147200" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControlListEntry" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1c2b44faa6b2eca1188adcfb77a1b2cd2776166e" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922298" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControlListEntry" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ContentControlListEntry" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ContentControlListEntry" />
   <TypeSignature Language="VB.NET" Value="Public Interface ContentControlListEntry" />
   <TypeSignature Language="C++ CLI" Value="public interface class ContentControlListEntry" />
+  <TypeSignature Language="F#" Value="type ContentControlListEntry = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,13 +19,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>オブジェクト<see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" />は、ドロップダウンリストまたはコンボボックスコンテンツコントロール内のリスト項目を表します。 <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" />オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> <see cref="T:Microsoft.Office.Interop.Word.ContentControl" />オブジェクトのコレクションのメンバーです。</summary>
-    <remarks><para>新しい<see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" />オブジェクト<see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Add(System.String,System.String,System.Int32)" />を作成する<see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" />のにには、コレクションのメソッドを使用します。 <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" />コレクション内<see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntries.Item(System.Int32)" />の個々のリスト項目にアクセスするには、メソッドまたは<see cref="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" />(<paramref name="Index" />) を使用します。ここ<paramref name="Index" />で、は、コンテンツコントロールのリスト項目の序数位置を指定します。</para>
+    <summary>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> ドロップダウンリストまたはコンボボックスコンテンツコントロール内のリスト項目を表します。 オブジェクト <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> は、 <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> オブジェクトのコレクションのメンバーです <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> 。</summary>
+    <remarks><para><see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Add(System.String,System.String,System.Int32)" /> <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> 新しいオブジェクトを作成するのにには、コレクションのメソッドを使用し <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> ます。 <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntries.Item(System.Int32)" /> <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" /> コレクション内の個々のリスト項目にアクセスするには、メソッドまたは ( <paramref name="Index" /> ) を使用します。ここで、は、 <paramref name="Index" /> コンテンツコントロールのリスト項目の序数位置を指定し <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> ます。</para>
       <para>
         <b>注</b>: リストのエントリには、一意の表示名が必要です。  既に存在しているリスト項目を追加しようとすると、実行時エラーが発生します。</para>
-      <para>ドロップダウン<see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntry.MoveUp" />リスト<see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntry.MoveDown" />内の項目の位置を変更するには、メソッドとメソッドを使用します。 プログラムに<see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntry.Select" />よってコンテンツコントロールのリスト項目を選択するには、メソッドを使用します。</para>
-      <para><see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" />プロパティを使用してコンテンツコントロールのリスト項目の表示テキストを設定し、 <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" />プロパティを使用して、後でフォームの処理に使用できるプログラム値を設定します。 たとえば、製品のリストに対してコンテンツコントロールのドロップダウンリストを使用することができます。 この<see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" />プロパティには、ユーザーが簡単に認識して理解できる、製品の名前 (表示名) を含めることができます。 <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" />プロパティには、データベース内の製品番号に対応する製品番号を含めることができます。  その後、 <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" />プロパティの製品番号を使用して、データベース内の製品情報を検索できます。 また、コンテンツコントロールがデータ<see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" />ストア内の xml データにマップされている場合、プロパティの値はカスタム XML データに送信されます。</para>
-      <para>コンテンツコントロール<see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntry.Delete" />のドロップダウンリストまたはコンボボックスからアイテムを削除するには、メソッドを使用します。 </para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntry.MoveUp" /> <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntry.MoveDown" /> ドロップダウンリスト内の項目の位置を変更するには、メソッドとメソッドを使用します。 <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntry.Select" />プログラムによってコンテンツコントロールのリスト項目を選択するには、メソッドを使用します。</para>
+      <para>プロパティを使用して <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> コンテンツコントロールのリスト項目の表示テキストを設定し、プロパティを使用して、 <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> 後でフォームの処理に使用できるプログラム値を設定します。 たとえば、製品のリストに対してコンテンツコントロールのドロップダウンリストを使用することができます。 このプロパティには、 <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> ユーザーが簡単に認識して理解できる、製品の名前 (表示名) を含めることができます。 プロパティには、 <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> データベース内の製品番号に対応する製品番号を含めることができます。  その後、プロパティの製品番号を使用して、 <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> データベース内の製品情報を検索できます。 また、 <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> コンテンツコントロールがデータストア内の xml データにマップされている場合、プロパティの値はカスタム XML データに送信されます。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntry.Delete" />コンテンツコントロールのドロップダウンリストまたはコンボボックスからアイテムを削除するには、メソッドを使用します。 </para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ContentControlListEntry.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -51,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word._Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word._Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ContentControlListEntry.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -83,7 +86,7 @@
         <value><b>Integer</b></value>
         <remarks><para>オブジェクトは、Microsoft Word で作成されている場合、 <b>作成者</b> を返します、16 進数の値である 4d535744 を文字列します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
           <para>
-            <b>注</b>: この値は定数<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />で表すこともできます。</para>
+            <b>注</b>: この値は定数で表すこともでき <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControlListEntry.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="contentControlListEntry.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Index" />
       <MemberSignature Language="VB.NET" Value="Public Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int with get, set" Usage="Microsoft.Office.Interop.Word.ContentControlListEntry.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControlListEntry.MoveDown" />
       <MemberSignature Language="VB.NET" Value="Public Sub MoveDown ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveDown();" />
+      <MemberSignature Language="F#" Value="abstract member MoveDown : unit -&gt; unit" Usage="contentControlListEntry.MoveDown " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -174,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControlListEntry.MoveUp" />
       <MemberSignature Language="VB.NET" Value="Public Sub MoveUp ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveUp();" />
+      <MemberSignature Language="F#" Value="abstract member MoveUp : unit -&gt; unit" Usage="contentControlListEntry.MoveUp " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -199,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ContentControlListEntry.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -216,7 +224,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" />オブジェクトの親オブジェクトを返します。</summary>
+        <summary>指定したオブジェクトの親オブジェクトを返し <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> ます。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -227,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControlListEntry.Select" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; unit" Usage="contentControlListEntry.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -252,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="Microsoft.Office.Interop.Word.ContentControlListEntry.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -274,7 +284,7 @@
       <Docs>
         <summary>ドロップダウンリストまたはコンボボックスコンテンツコントロールのリスト項目の表示テキストを設定または返します。 値の取得と設定が可能です。</summary>
         <value><b>String</b></value>
-        <remarks><para>リストのエントリには、一意の表示名が必要です。  <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" />プロパティを、エントリの一覧に既に存在する文字列に変更しようとすると、実行時エラーが発生します。</para>
+        <remarks><para>リストのエントリには、一意の表示名が必要です。  プロパティを、 <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> エントリの一覧に既に存在する文字列に変更しようとすると、実行時エラーが発生します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -284,6 +294,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Office.Interop.Word.ContentControlListEntry.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -306,7 +317,7 @@
       <Docs>
         <summary>ドロップダウンリストまたはコンボボックスコンテンツコントロール内の項目のプログラムによる値を設定または返します。 値の取得と設定が可能です。</summary>
         <value><b>String</b></value>
-        <remarks><para>処理時に使用する必要があるデータを保存するのにには、 <b>Value</b> プロパティを使用します。 たとえば、 <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" />プロパティには、表示する文字列を含めることができます。また、 <b>Value</b>プロパティには、データベース内の情報を検索するために使用できる、アイテム番号などの番号を含めることができます。  また、 <b>Value</b> プロパティの値は、カスタム XML データに送信されるコンテンツ コントロールは、データ ストア内の XML データにマップされている場合</para>
+        <remarks><para>処理時に使用する必要があるデータを保存するのにには、 <b>Value</b> プロパティを使用します。 たとえば、プロパティには、 <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> 表示する文字列を含めることができます。また、 <b>Value</b>プロパティには、データベース内の情報を検索するために使用できる、アイテム番号などの番号を含めることができます。  また、 <b>Value</b> プロパティの値は、カスタム XML データに送信されるコンテンツ コントロールは、データ ストア内の XML データにマップされている場合</para>
           <para>
             <b>注</b>: このコントロールにマップされているカスタム xml に添付された xml スキーマから自動的に入力されたリストエントリに対して、 <b>Value</b>プロパティを設定することはできません。 </para>
           <para> </para></remarks>

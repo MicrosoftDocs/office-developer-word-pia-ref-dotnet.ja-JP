@@ -1,9 +1,10 @@
 <Type Name="Cell" FullName="Microsoft.Office.Interop.Word.Cell">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="5c545e74b89b7677ca1439554a6927ae25fd8a91" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142370" /></Metadata><TypeSignature Language="C#" Value="public interface Cell" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="674469fa2c2dd93d90ad9aa53a2801be5da8b2e7" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922620" /></Metadata><TypeSignature Language="C#" Value="public interface Cell" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Cell" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Cell" />
   <TypeSignature Language="VB.NET" Value="Public Interface Cell" />
   <TypeSignature Language="C++ CLI" Value="public interface class Cell" />
+  <TypeSignature Language="F#" Value="type Cell = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,11 +20,11 @@
   </Attributes>
   <Docs>
     <summary>表のセルを表します。</summary>
-    <remarks><para><b>Cell</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.Cells" />コレクションのメンバーです。 <b>Cells</b> コレクションは指定されたオブジェクトのすべてのセルを表します。</para>
-      <para>Cell <b></b><paramref name="row" />( <paramref name="column" />,) を使用し<paramref name="row" />ます。ここで、 <paramref name="column" />は行番号、は列番号、<paramref name="index" /><b>セル</b>() <paramref name="index" />はインデックス番号で、は<b>cell</b>オブジェクトを返します。</para>
-      <para><b>Cell</b>オブジェクト<see cref="M:Microsoft.Office.Interop.Word.Cells.Add(System.Object@)" />を<b>Cells</b>コレクションに追加するには、メソッドを使用します。 <see cref="T:Microsoft.Office.Interop.Word.Selection" />オブジェクトの<see cref="M:Microsoft.Office.Interop.Word.Selection.InsertCells(System.Object@)" />メソッドを使用して新しいセルを挿入することもできます。</para>
-      <para><b>Add</b>メソッドを<see cref="T:Microsoft.Office.Interop.Word.Rows" /> or <see cref="T:Microsoft.Office.Interop.Word.Columns" />コレクションで使用して、セルの行または列を追加します。</para>
-      <para>現在の<see cref="P:Microsoft.Office.Interop.Word.Selection.Information(Microsoft.Office.Interop.Word.WdInformation)" />行と列<see cref="T:Microsoft.Office.Interop.Word.Selection" />番号を取得するのにには、オブジェクトにプロパティを使用します。</para>
+    <remarks><para><b>Cell</b>オブジェクトは、コレクションのメンバーです <see cref="T:Microsoft.Office.Interop.Word.Cells" /> 。 <b>Cells</b> コレクションは指定されたオブジェクトのすべてのセルを表します。</para>
+      <para>Cell (,)<b>を使用し</b> <paramref name="row" /> <paramref name="column" /> ます。ここで、 <paramref name="row" /> は行番号、は <paramref name="column" /> 列番号、<b>セル</b>() はインデックス番号で、は <paramref name="index" /> <paramref name="index" /> <b>cell</b>オブジェクトを返します。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.Cells.Add(System.Object@)" /> <b>Cell</b>オブジェクトを<b>Cells</b>コレクションに追加するには、メソッドを使用します。 オブジェクトのメソッドを使用して <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertCells(System.Object@)" /> <see cref="T:Microsoft.Office.Interop.Word.Selection" /> 新しいセルを挿入することもできます。</para>
+      <para><b>Add</b>メソッドを or コレクションで使用して、 <see cref="T:Microsoft.Office.Interop.Word.Rows" /> <see cref="T:Microsoft.Office.Interop.Word.Columns" /> セルの行または列を追加します。</para>
+      <para>現在の <see cref="P:Microsoft.Office.Interop.Word.Selection.Information(Microsoft.Office.Interop.Word.WdInformation)" /> <see cref="T:Microsoft.Office.Interop.Word.Selection" /> 行と列番号を取得するのにには、オブジェクトにプロパティを使用します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Cell.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -50,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Application" />たオブジェクトの作成元を表すオブジェクトを返します。</summary>
+        <summary>指定し <see cref="T:Microsoft.Office.Interop.Word.Application" /> たオブジェクトの作成元を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Cell.AutoSum" />
       <MemberSignature Language="VB.NET" Value="Public Sub AutoSum ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AutoSum();" />
+      <MemberSignature Language="F#" Value="abstract member AutoSum : unit -&gt; unit" Usage="cell.AutoSum " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -77,7 +80,7 @@
       <Parameters />
       <Docs>
         <summary>= (式) フィールドを挿入し、expression に指定されたセルの上方向または左方向のセルの値の合計を計算し、表示します。</summary>
-        <remarks><para>Microsoft Word で追加する値がどのように決定されるか<see cref="M:Microsoft.Office.Interop.Word.Cell.Formula(System.Object@,System.Object@)" />については、メソッドを参照してください。</para>
+        <remarks><para>Microsoft Word で追加する値がどのように決定されるかについては、メソッドを参照してください <see cref="M:Microsoft.Office.Interop.Word.Cell.Formula(System.Object@,System.Object@)" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.Borders" />
       <MemberSignature Language="VB.NET" Value="Public Property Borders As Borders" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Borders ^ Borders { Microsoft::Office::Interop::Word::Borders ^ get(); void set(Microsoft::Office::Interop::Word::Borders ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Borders : Microsoft.Office.Interop.Word.Borders with get, set" Usage="Microsoft.Office.Interop.Word.Cell.Borders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -107,7 +111,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクト<see cref="T:Microsoft.Office.Interop.Word.Borders" />のすべての罫線を表すコレクションを設定または返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Borders" />指定したオブジェクトのすべての罫線を表すコレクションを設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.BottomPadding" />
       <MemberSignature Language="VB.NET" Value="Public Property BottomPadding As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float BottomPadding { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.BottomPadding : single with get, set" Usage="Microsoft.Office.Interop.Word.Cell.BottomPadding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -140,7 +145,7 @@
       <Docs>
         <summary>セルの内容の下に追加する間隔 (ポイント単位) を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para>単一のセルの<b>BottomPadding</b>プロパティの設定は、テーブル全体の<see cref="P:Microsoft.Office.Interop.Word.Table.BottomPadding" />プロパティの設定より優先されます。</para>
+        <remarks><para>単一のセルの<b>BottomPadding</b>プロパティの設定は、テーブル全体のプロパティの設定より優先され <see cref="P:Microsoft.Office.Interop.Word.Table.BottomPadding" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.Column" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As Column" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Column ^ Column { Microsoft::Office::Interop::Word::Column ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Column : Microsoft.Office.Interop.Word.Column" Usage="Microsoft.Office.Interop.Word.Cell.Column" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -167,7 +173,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Column</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Column" />たセルを含む表の列を表すオブジェクト型 (object) の値を取得します。</summary>
+        <summary>指定し <see cref="T:Microsoft.Office.Interop.Word.Column" /> たセルを含む表の列を表すオブジェクト型 (object) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.ColumnIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnIndex : int" Usage="Microsoft.Office.Interop.Word.Cell.ColumnIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -206,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Cell.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -235,6 +243,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete([in]object&amp; ShiftCells) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Cell.Delete(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete (Optional ByRef ShiftCells As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Delete : obj -&gt; unit" Usage="cell.Delete ShiftCells" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -249,10 +258,10 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ShiftCells" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ShiftCells" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ShiftCells">残りのセルを詰める方向を指定します。 任意の<see cref="T:Microsoft.Office.Interop.Word.WdDeleteCells" />定数を使用できます。 この引数を省略した場合は、最後に削除したセルの右側のセルが左に詰められます。</param>
+        <param name="ShiftCells">残りのセルを詰める方向を指定します。 任意の定数を使用でき <see cref="T:Microsoft.Office.Interop.Word.WdDeleteCells" /> ます。 この引数を省略した場合は、最後に削除したセルの右側のセルが左に詰められます。</param>
         <summary>表のセルを削除し、必要に応じて、残りのセルのシフト方法を制御します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -263,6 +272,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.FitText" />
       <MemberSignature Language="VB.NET" Value="Public Property FitText As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FitText { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FitText : bool with get, set" Usage="Microsoft.Office.Interop.Word.Cell.FitText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -294,6 +304,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Formula([in]object&amp; Formula, [in]object&amp; NumFormat) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Cell.Formula(System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Formula (Optional ByRef Formula As Object, Optional ByRef NumFormat As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Formula : obj * obj -&gt; unit" Usage="cell.Formula (Formula, NumFormat)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -308,8 +319,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Formula" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="NumFormat" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Formula" Type="System.Object" RefType="ref" />
+        <Parameter Name="NumFormat" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Formula">= (式) フィールドに指定する数式を指定します。 表のセルをワークシートのような形式で参照することもできます。 たとえば、"=SUM(A4:C4)" では、4 行目の最初の 3 つの値が参照されます。</param>
@@ -330,6 +341,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Height { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : single with get, set" Usage="Microsoft.Office.Interop.Word.Cell.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -352,7 +364,7 @@
       <Docs>
         <summary>指定したオブジェクトの高さを設定または返します (特に断りがない限り、ポイント単位)。</summary>
         <value>To be added.</value>
-        <remarks><para>指定し<see cref="P:Microsoft.Office.Interop.Word.Row.HeightRule" />た行のプロパティが<b>wdRowHeightAuto</b>の場合、 <b>Height</b>は<b>wdUndefined</b>を返します。<b>Height</b>プロパティを設定すると、 <b>HeightRule</b>が<b>れ</b>に設定されます。</para>
+        <remarks><para>指定し <see cref="P:Microsoft.Office.Interop.Word.Row.HeightRule" /> た行のプロパティが<b>wdRowHeightAuto</b>の場合、 <b>height</b>は<b>wdUndefined</b>を返します。 <b>height</b>プロパティを設定すると、 <b>HeightRule</b>が<b>れ</b>に設定されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -362,6 +374,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.HeightRule" />
       <MemberSignature Language="VB.NET" Value="Public Property HeightRule As WdRowHeightRule" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRowHeightRule HeightRule { Microsoft::Office::Interop::Word::WdRowHeightRule get(); void set(Microsoft::Office::Interop::Word::WdRowHeightRule value); };" />
+      <MemberSignature Language="F#" Value="member this.HeightRule : Microsoft.Office.Interop.Word.WdRowHeightRule with get, set" Usage="Microsoft.Office.Interop.Word.Cell.HeightRule" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -384,7 +397,7 @@
       <Docs>
         <summary>指定したセルの高さを決定するための規則を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para><see cref="T:Microsoft.Office.Interop.Word.Cell" />オブジェクトの<b>HeightRule</b>プロパティを設定すると、行全体のプロパティが自動的に設定されます。</para>
+        <remarks><para>オブジェクトの<b>HeightRule</b>プロパティを設定すると、 <see cref="T:Microsoft.Office.Interop.Word.Cell" /> 行全体のプロパティが自動的に設定されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -394,6 +407,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.ID" />
       <MemberSignature Language="VB.NET" Value="Public Property ID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ID : string with get, set" Usage="Microsoft.Office.Interop.Word.Cell.ID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -425,6 +439,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.LeftPadding" />
       <MemberSignature Language="VB.NET" Value="Public Property LeftPadding As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float LeftPadding { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.LeftPadding : single with get, set" Usage="Microsoft.Office.Interop.Word.Cell.LeftPadding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -447,7 +462,7 @@
       <Docs>
         <summary>1つのセルの内容の左に追加する間隔 (ポイント単位) を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para>単一のセルの<see cref="P:Microsoft.Office.Interop.Word.Cell.LeftPadding" />プロパティの設定は、テーブル全体の<see cref="P:Microsoft.Office.Interop.Word.Table.LeftPadding" />プロパティの設定より優先されます。</para>
+        <remarks><para>単一のセルのプロパティの設定は、 <see cref="P:Microsoft.Office.Interop.Word.Cell.LeftPadding" /> テーブル全体のプロパティの設定より優先され <see cref="P:Microsoft.Office.Interop.Word.Table.LeftPadding" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -457,6 +472,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Cell.Merge(Microsoft.Office.Interop.Word.Cell)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Merge (MergeTo As Cell)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Merge(Microsoft::Office::Interop::Word::Cell ^ MergeTo);" />
+      <MemberSignature Language="F#" Value="abstract member Merge : Microsoft.Office.Interop.Word.Cell -&gt; unit" Usage="cell.Merge MergeTo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -486,6 +502,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.NestingLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NestingLevel As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NestingLevel { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NestingLevel : int" Usage="Microsoft.Office.Interop.Word.Cell.NestingLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -515,6 +532,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.Next" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Next As Cell" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Cell ^ Next { Microsoft::Office::Interop::Word::Cell ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Next : Microsoft.Office.Interop.Word.Cell" Usage="Microsoft.Office.Interop.Word.Cell.Next" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -543,6 +561,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Cell.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -571,6 +590,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.PreferredWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property PreferredWidth As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float PreferredWidth { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.PreferredWidth : single with get, set" Usage="Microsoft.Office.Interop.Word.Cell.PreferredWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -602,6 +622,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.PreferredWidthType" />
       <MemberSignature Language="VB.NET" Value="Public Property PreferredWidthType As WdPreferredWidthType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdPreferredWidthType PreferredWidthType { Microsoft::Office::Interop::Word::WdPreferredWidthType get(); void set(Microsoft::Office::Interop::Word::WdPreferredWidthType value); };" />
+      <MemberSignature Language="F#" Value="member this.PreferredWidthType : Microsoft.Office.Interop.Word.WdPreferredWidthType with get, set" Usage="Microsoft.Office.Interop.Word.Cell.PreferredWidthType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -633,6 +654,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.Previous" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Previous As Cell" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Cell ^ Previous { Microsoft::Office::Interop::Word::Cell ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Previous : Microsoft.Office.Interop.Word.Cell" Usage="Microsoft.Office.Interop.Word.Cell.Previous" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -661,6 +683,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.Range" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ default { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Cell.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -678,7 +701,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Range" />たオブジェクトに含まれる文書の一部を表すオブジェクトを返します。</summary>
+        <summary>指定した <see cref="T:Microsoft.Office.Interop.Word.Range" /> オブジェクトに含まれる文書の一部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -689,6 +712,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.RightPadding" />
       <MemberSignature Language="VB.NET" Value="Public Property RightPadding As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float RightPadding { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.RightPadding : single with get, set" Usage="Microsoft.Office.Interop.Word.Cell.RightPadding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -711,7 +735,7 @@
       <Docs>
         <summary>セルの内容の右側に追加する間隔 (ポイント単位) を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para>単一セルの<see cref="P:Microsoft.Office.Interop.Word.Table.RightPadding" /> "<b>右</b>" プロパティの設定は、テーブル全体のプロパティの設定より優先されます。</para>
+        <remarks><para>単一セルの "<b>右</b>" プロパティの設定は、テーブル全体のプロパティの設定より優先され <see cref="P:Microsoft.Office.Interop.Word.Table.RightPadding" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -721,6 +745,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.Row" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Row As Row" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Row ^ Row { Microsoft::Office::Interop::Word::Row ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Row : Microsoft.Office.Interop.Word.Row" Usage="Microsoft.Office.Interop.Word.Cell.Row" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -738,7 +763,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Row</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Row" />たセルを含む行を表すオブジェクト型 (object) の値を取得します。</summary>
+        <summary>指定し <see cref="T:Microsoft.Office.Interop.Word.Row" /> たセルを含む行を表すオブジェクト型 (object) の値を取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -749,6 +774,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.RowIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowIndex : int" Usage="Microsoft.Office.Interop.Word.Cell.RowIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -777,6 +803,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Cell.Select" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; unit" Usage="cell.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -793,7 +820,7 @@
       <Parameters />
       <Docs>
         <summary>指定されたオブジェクトを選択します。</summary>
-        <remarks><para>このメソッドを使用した後<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> 、プロパティを使用して選択された項目を操作します。</para>
+        <remarks><para>このメソッドを使用した後、プロパティを使用して <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> 選択された項目を操作します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -803,6 +830,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Cell.SetHeight(System.Object@,Microsoft.Office.Interop.Word.WdRowHeightRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetHeight (ByRef RowHeight As Object, HeightRule As WdRowHeightRule)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetHeight(System::Object ^ % RowHeight, Microsoft::Office::Interop::Word::WdRowHeightRule HeightRule);" />
+      <MemberSignature Language="F#" Value="abstract member SetHeight : obj * Microsoft.Office.Interop.Word.WdRowHeightRule -&gt; unit" Usage="cell.SetHeight (RowHeight, HeightRule)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -817,14 +845,14 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="RowHeight" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RowHeight" Type="System.Object" RefType="ref" />
         <Parameter Name="HeightRule" Type="Microsoft.Office.Interop.Word.WdRowHeightRule" />
       </Parameters>
       <Docs>
         <param name="RowHeight">行の高さをポイント単位で指定します。</param>
         <param name="HeightRule">指定したセルの高さを決めるときの規則を指定します。</param>
         <summary>表のセルの高さを設定します。</summary>
-        <remarks><para><see cref="T:Microsoft.Office.Interop.Word.Cell" />オブジェクトの<b>SetHeight</b>プロパティを設定すると、行全体のプロパティが自動的に設定されます。</para>
+        <remarks><para>オブジェクトの<b>SetHeight</b>プロパティを設定すると、 <see cref="T:Microsoft.Office.Interop.Word.Cell" /> 行全体のプロパティが自動的に設定されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -834,6 +862,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Cell.SetWidth(System.Single,Microsoft.Office.Interop.Word.WdRulerStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetWidth (ColumnWidth As Single, RulerStyle As WdRulerStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetWidth(float ColumnWidth, Microsoft::Office::Interop::Word::WdRulerStyle RulerStyle);" />
+      <MemberSignature Language="F#" Value="abstract member SetWidth : single * Microsoft.Office.Interop.Word.WdRulerStyle -&gt; unit" Usage="cell.SetWidth (ColumnWidth, RulerStyle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -855,7 +884,7 @@
         <param name="ColumnWidth">指定した列の幅をポイント単位で指定します。</param>
         <param name="RulerStyle">Microsoft Word でのセル幅の調整方法を制御します。</param>
         <summary>表の中のセルの幅を設定します。</summary>
-        <remarks><para>前述<see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" />の動作は、左揃えのテーブルに適用されます。 中央および右揃えのテーブルに対する<b>WdRulerStyle</b>の動作は予測できません。このような場合は<see cref="M:Microsoft.Office.Interop.Word.Cell.SetWidth(System.Single,Microsoft.Office.Interop.Word.WdRulerStyle)" /> 、このメソッドを慎重に使用する必要があります。</para>
+        <remarks><para>前述の動作は、 <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" /> 左揃えのテーブルに適用されます。 中央および右揃えのテーブルに対する<b>WdRulerStyle</b>の動作は予測できません。このような場合は、この <see cref="M:Microsoft.Office.Interop.Word.Cell.SetWidth(System.Single,Microsoft.Office.Interop.Word.WdRulerStyle)" /> メソッドを慎重に使用する必要があります。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -865,6 +894,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.Shading" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shading As Shading" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shading ^ Shading { Microsoft::Office::Interop::Word::Shading ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Shading : Microsoft.Office.Interop.Word.Shading" Usage="Microsoft.Office.Interop.Word.Cell.Shading" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -882,7 +912,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Shading" />たオブジェクトの網かけ書式を参照するオブジェクトを取得します。</summary>
+        <summary>指定した <see cref="T:Microsoft.Office.Interop.Word.Shading" /> オブジェクトの網かけ書式を参照するオブジェクトを取得します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -892,6 +922,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Split([in]object&amp; NumRows, [in]object&amp; NumColumns) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Cell.Split(System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Split (Optional ByRef NumRows As Object, Optional ByRef NumColumns As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Split : obj * obj -&gt; unit" Usage="cell.Split (NumRows, NumColumns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -906,8 +937,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="NumRows" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="NumColumns" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NumRows" Type="System.Object" RefType="ref" />
+        <Parameter Name="NumColumns" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="NumRows">セルを分割する行の数を指定します。</param>
@@ -922,6 +953,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.Tables" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tables As Tables" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Tables ^ Tables { Microsoft::Office::Interop::Word::Tables ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Tables : Microsoft.Office.Interop.Word.Tables" Usage="Microsoft.Office.Interop.Word.Cell.Tables" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -939,7 +971,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Tables</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Tables" />たセルのすべてのテーブルを表すコレクションを返します。</summary>
+        <summary>指定し <see cref="T:Microsoft.Office.Interop.Word.Tables" /> たセルのすべてのテーブルを表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -950,6 +982,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.TopPadding" />
       <MemberSignature Language="VB.NET" Value="Public Property TopPadding As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float TopPadding { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.TopPadding : single with get, set" Usage="Microsoft.Office.Interop.Word.Cell.TopPadding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -972,7 +1005,7 @@
       <Docs>
         <summary>単一のセルまたはテーブルのすべてのセルの内容の上に追加の間隔 (ポイント単位) を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para>1つのセルの<b>Toppadding</b>プロパティの設定は、テーブル全体の<see cref="P:Microsoft.Office.Interop.Word.Table.TopPadding" />プロパティの設定より優先されます。</para>
+        <remarks><para>1つのセルの<b>Toppadding</b>プロパティの設定は、 <see cref="P:Microsoft.Office.Interop.Word.Table.TopPadding" /> テーブル全体のプロパティの設定より優先されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -982,6 +1015,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.VerticalAlignment" />
       <MemberSignature Language="VB.NET" Value="Public Property VerticalAlignment As WdCellVerticalAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdCellVerticalAlignment VerticalAlignment { Microsoft::Office::Interop::Word::WdCellVerticalAlignment get(); void set(Microsoft::Office::Interop::Word::WdCellVerticalAlignment value); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalAlignment : Microsoft.Office.Interop.Word.WdCellVerticalAlignment with get, set" Usage="Microsoft.Office.Interop.Word.Cell.VerticalAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1013,6 +1047,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Width { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : single with get, set" Usage="Microsoft.Office.Interop.Word.Cell.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1044,6 +1079,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cell.WordWrap" />
       <MemberSignature Language="VB.NET" Value="Public Property WordWrap As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WordWrap { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.WordWrap : bool with get, set" Usage="Microsoft.Office.Interop.Word.Cell.WordWrap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

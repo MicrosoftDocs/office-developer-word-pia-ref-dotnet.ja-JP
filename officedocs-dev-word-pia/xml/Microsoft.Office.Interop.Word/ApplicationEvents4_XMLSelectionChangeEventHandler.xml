@@ -1,9 +1,10 @@
 <Type Name="ApplicationEvents4_XMLSelectionChangeEventHandler" FullName="Microsoft.Office.Interop.Word.ApplicationEvents4_XMLSelectionChangeEventHandler">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9dc43218c0dd8d4053fae21403a080041bba06b3" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144625" /></Metadata><TypeSignature Language="C#" Value="public delegate void ApplicationEvents4_XMLSelectionChangeEventHandler(Selection Sel, XMLNode OldXMLNode, XMLNode NewXMLNode, ref int Reason);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="80456389755f6774141eda3ef3b74acbaadb0b1c" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922822" /></Metadata><TypeSignature Language="C#" Value="public delegate void ApplicationEvents4_XMLSelectionChangeEventHandler(Selection Sel, XMLNode OldXMLNode, XMLNode NewXMLNode, ref int Reason);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ApplicationEvents4_XMLSelectionChangeEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ApplicationEvents4_XMLSelectionChangeEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ApplicationEvents4_XMLSelectionChangeEventHandler(Sel As Selection, OldXMLNode As XMLNode, NewXMLNode As XMLNode, ByRef Reason As Integer)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ApplicationEvents4_XMLSelectionChangeEventHandler(Selection ^ Sel, XMLNode ^ OldXMLNode, XMLNode ^ NewXMLNode, int % Reason);" />
+  <TypeSignature Language="F#" Value="type ApplicationEvents4_XMLSelectionChangeEventHandler = delegate of Selection * XMLNode * XMLNode * int -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -23,17 +24,17 @@
     <Parameter Name="Sel" Type="Microsoft.Office.Interop.Word.Selection" />
     <Parameter Name="OldXMLNode" Type="Microsoft.Office.Interop.Word.XMLNode" />
     <Parameter Name="NewXMLNode" Type="Microsoft.Office.Interop.Word.XMLNode" />
-    <Parameter Name="Reason" Type="System.Int32&amp;" RefType="ref" />
+    <Parameter Name="Reason" Type="System.Int32" RefType="ref" />
   </Parameters>
   <ReturnValue>
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="Sel"><see cref="T:Microsoft.Office.Interop.Word.Selection" />. XML 要素を含め、選択されている文字列を指定します。 テキストが選択されてい<paramref name="Sel" />ない場合、パラメーターは、nothing またはカーソルの右側の最初の文字のいずれかを返します。</param>
+    <param name="Sel"><see cref="T:Microsoft.Office.Interop.Word.Selection" />. XML 要素を含め、選択されている文字列を指定します。 テキストが選択されていない場合、パラメーターは、 <paramref name="Sel" /> nothing またはカーソルの右側の最初の文字のいずれかを返します。</param>
     <param name="OldXMLNode"><see cref="T:Microsoft.Office.Interop.Word.XMLNode" />. カーソル位置の移動を開始する XML ノードを指定します。</param>
     <param name="NewXMLNode"><b>XMLNode</b>。 カーソル位置の移動先の XML ノードを指定します。</param>
-    <param name="Reason">整数型 (<b>Integer</b>) の値を使用します。 選択範囲が変更された理由。 任意の<see cref="T:Microsoft.Office.Interop.Word.WdXMLSelectionChangeReason" />定数を使用できます。</param>
-    <summary>イベントのイベントハンドラーを追加するために使用するデリゲートの種類。 <b></b> <see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.XMLSelectionChange" /> <b>XMLSelectionChange</b>イベントは、現在の選択範囲の親 XML ノードが変更されたときに発生します。</summary>
+    <param name="Reason">整数型 (<b>Integer</b>) の値を使用します。 選択範囲が変更された理由。 任意の定数を使用でき <see cref="T:Microsoft.Office.Interop.Word.WdXMLSelectionChangeReason" /> ます。</param>
+    <summary>イベントのイベントハンドラーを追加するために使用する<b>デリゲート</b>の種類 <see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.XMLSelectionChange" /> 。 <b>XMLSelectionChange</b>イベントは、現在の選択範囲の親 XML ノードが変更されたときに発生します。</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

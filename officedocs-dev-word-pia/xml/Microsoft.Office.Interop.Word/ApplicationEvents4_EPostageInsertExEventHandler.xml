@@ -1,9 +1,10 @@
 <Type Name="ApplicationEvents4_EPostageInsertExEventHandler" FullName="Microsoft.Office.Interop.Word.ApplicationEvents4_EPostageInsertExEventHandler">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="94af4b0a8aa74cc409913103a77c2efdb8781bff" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144827" /></Metadata><TypeSignature Language="C#" Value="public delegate void ApplicationEvents4_EPostageInsertExEventHandler(Document Doc, int cpDeliveryAddrStart, int cpDeliveryAddrEnd, int cpReturnAddrStart, int cpReturnAddrEnd, int xaWidth, int yaHeight, string bstrPrinterName, string bstrPaperFeed, bool fPrint, out bool fCancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="331d53c164e959ad23e12bf8cc9384160647bf50" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43923039" /></Metadata><TypeSignature Language="C#" Value="public delegate void ApplicationEvents4_EPostageInsertExEventHandler(Document Doc, int cpDeliveryAddrStart, int cpDeliveryAddrEnd, int cpReturnAddrStart, int cpReturnAddrEnd, int xaWidth, int yaHeight, string bstrPrinterName, string bstrPaperFeed, bool fPrint, out bool fCancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ApplicationEvents4_EPostageInsertExEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ApplicationEvents4_EPostageInsertExEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ApplicationEvents4_EPostageInsertExEventHandler(Doc As Document, cpDeliveryAddrStart As Integer, cpDeliveryAddrEnd As Integer, cpReturnAddrStart As Integer, cpReturnAddrEnd As Integer, xaWidth As Integer, yaHeight As Integer, bstrPrinterName As String, bstrPaperFeed As String, fPrint As Boolean, ByRef fCancel As Boolean)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ApplicationEvents4_EPostageInsertExEventHandler(Document ^ Doc, int cpDeliveryAddrStart, int cpDeliveryAddrEnd, int cpReturnAddrStart, int cpReturnAddrEnd, int xaWidth, int yaHeight, System::String ^ bstrPrinterName, System::String ^ bstrPaperFeed, bool fPrint, [Runtime::InteropServices::Out] bool % fCancel);" />
+  <TypeSignature Language="F#" Value="type ApplicationEvents4_EPostageInsertExEventHandler = delegate of Document * int * int * int * int * int * int * string * string * bool * bool -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -30,15 +31,15 @@
     <Parameter Name="bstrPrinterName" Type="System.String" />
     <Parameter Name="bstrPaperFeed" Type="System.String" />
     <Parameter Name="fPrint" Type="System.Boolean" />
-    <Parameter Name="fCancel" Type="System.Boolean&amp;" RefType="out" />
+    <Parameter Name="fCancel" Type="System.Boolean" RefType="out" />
   </Parameters>
   <ReturnValue>
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="Doc">必須<see cref="T:Microsoft.Office.Interop.Word.Document" />。 電子切手を追加する文書の名前を指定します。</param>
-    <param name="cpDeliveryAddrStart">整数型 ( <b>Integer</b> ) を使用します。 配送先住所にドキュメント内の開始位置。 配置は、 <see cref="P:Microsoft.Office.Interop.Word.Range.Start" /> <see cref="T:Microsoft.Office.Interop.Word.Range" />オブジェクトのプロパティの値に対応しています。</param>
-    <param name="cpDeliveryAddrEnd">整数型 ( <b>Integer</b> ) を使用します。 配送先住所の文書の終了位置です。 配置は、 <see cref="P:Microsoft.Office.Interop.Word.Range.End" /> <b>Range</b>オブジェクトのプロパティの値に対応しています。</param>
+    <param name="Doc">必須 <see cref="T:Microsoft.Office.Interop.Word.Document" /> 。 電子切手を追加する文書の名前を指定します。</param>
+    <param name="cpDeliveryAddrStart">整数型 ( <b>Integer</b> ) を使用します。 配送先住所にドキュメント内の開始位置。 配置は、オブジェクトのプロパティの値に対応して <see cref="P:Microsoft.Office.Interop.Word.Range.Start" /> <see cref="T:Microsoft.Office.Interop.Word.Range" /> います。</param>
+    <param name="cpDeliveryAddrEnd">整数型 ( <b>Integer</b> ) を使用します。 配送先住所の文書の終了位置です。 配置は、Range オブジェクトのプロパティの値に対応して <see cref="P:Microsoft.Office.Interop.Word.Range.End" /> います。 <b>Range</b></param>
     <param name="cpReturnAddrStart">整数型 ( <b>Integer</b> ) を使用します。 差出人住所用の文書の開始位置。 位置は、 <b>Range</b> オブジェクトの <b>Start</b> プロパティの値に対応します。</param>
     <param name="cpReturnAddrEnd">整数型 ( <b>Integer</b> ) を使用します。 差出人住所用の文書の終了位置です。 位置は、 <b>Range</b> オブジェクトの <b>End</b> プロパティの値に対応します。</param>
     <param name="xaWidth">整数型 ( <b>Integer</b> ) を使用します。 封筒の幅 (1/1440 インチ (1/3658 cm) 単位) になります。</param>
@@ -46,8 +47,8 @@
     <param name="bstrPrinterName"><b>文字列</b> です。 [ 封筒オプション] ダイアログ ボックスの [ 印刷オプション] タブで指定されるプリンターの名前です。</param>
     <param name="bstrPaperFeed"><b>文字列</b> です。 [ 封筒オプション] ダイアログ ボックスの [ 印刷オプション] タブで指定される給紙方法です。</param>
     <param name="fPrint"><b>ブール値</b> です。 <b>True の</b> 場合は、封筒を印刷するのには、ユーザーが指定しました。 <b>False</b> 場合は、ユーザーが指定した文書に封筒を挿入します。</param>
-    <param name="fCancel"><b>ブール値</b> です。 <b>True</b>は、 <paramref name="fPrint" />パラメーターで指定されたユーザーが指定した操作を取り消します。</param>
-    <summary>イベントのイベントハンドラーを追加するために使用するデリゲートの種類。 <b></b> <see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.EPostageInsertEx" /> <b>Epostageoleobject tex</b>イベントは、ユーザーが電子切手を文書に挿入したときに発生します。</summary>
+    <param name="fCancel"><b>ブール値</b> です。 <b>True</b>は、パラメーターで指定されたユーザーが指定した操作を取り消し <paramref name="fPrint" /> ます。</param>
+    <summary>イベントのイベントハンドラーを追加するために使用する<b>デリゲート</b>の種類 <see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.EPostageInsertEx" /> 。 <b>Epostageoleobject tex</b>イベントは、ユーザーが電子切手を文書に挿入したときに発生します。</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

@@ -1,9 +1,10 @@
 <Type Name="ContentControl" FullName="Microsoft.Office.Interop.Word.ContentControl">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2847f454c15d707ff146dc7c527cbd9a80f88237" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147292" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControl" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bbb566690cab48722a67b50e3f5c88f37f2d83d7" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922319" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ContentControl" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ContentControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface ContentControl" />
   <TypeSignature Language="C++ CLI" Value="public interface class ContentControl" />
+  <TypeSignature Language="F#" Value="type ContentControl = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,10 +19,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>個別のコンテンツ コントロールです。 コンテンツ コントロールは、ラベルを付けることのできる、境界線で区切られた文書内の領域で、特定の種類のコンテンツのコンテナーとして機能します。 個々のコンテンツ コントロールには、日付、一覧、書式付き文字列の段落などのコンテンツを含めることができます。 <b>ContentControl</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.ContentControls" />コレクションのメンバーです。</summary>
-    <remarks><para>コンテンツコントロール<see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" />を作成する<see cref="T:Microsoft.Office.Interop.Word.ContentControls" />には、コレクションのメソッドを使用します。 作成する<paramref name="Type" />コンテンツコントロールの種類を指定するには、 <b>Add</b>メソッドのパラメーターを使用します。 </para>
-      <para>コンテンツコントロール<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" />を別の種類のコンテンツコントロールに変更するには、プロパティを使用します。  たとえば、日付コントロールからテキストコントロールに変更したいとします。 ただし、すべてのコンテンツコントロールを別の種類に変更することはできません。種類を変更できない場合があります。  また、コンテンツコントロールの内容によっては、種類を変更できない場合があります。 たとえば、変更後のコンテンツコントロールで、既存のコンテンツコントロール内のコンテンツの種類が許可されていない場合、型を変更しようとすると、実行時エラーが発生します。</para>
-      <para>この<see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" />メソッドを使用して、プレースホルダーのテキストを既定の文字列からコントロールに適したものに変更します。 <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" />プロパティを使用して、コントロールのタイトルテキストを指定します。  このタイトルは、コントロール内部にカーソルを移動するか、マウス ポインターをコントロール上に置くと、コントロールの上に表示されます。</para>
+    <summary>個別のコンテンツ コントロールです。 コンテンツ コントロールは、ラベルを付けることのできる、境界線で区切られた文書内の領域で、特定の種類のコンテンツのコンテナーとして機能します。 個々のコンテンツ コントロールには、日付、一覧、書式付き文字列の段落などのコンテンツを含めることができます。 <b>ContentControl</b>オブジェクトは、コレクションのメンバーです <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> 。</summary>
+    <remarks><para><see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" />コンテンツコントロールを作成するには、コレクションのメソッドを使用し <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> ます。 <paramref name="Type" />作成するコンテンツコントロールの種類を指定するには、 <b>Add</b>メソッドのパラメーターを使用します。 </para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" />コンテンツコントロールを別の種類のコンテンツコントロールに変更するには、プロパティを使用します。  たとえば、日付コントロールからテキストコントロールに変更したいとします。 ただし、すべてのコンテンツコントロールを別の種類に変更することはできません。種類を変更できない場合があります。  また、コンテンツコントロールの内容によっては、種類を変更できない場合があります。 たとえば、変更後のコンテンツコントロールで、既存のコンテンツコントロール内のコンテンツの種類が許可されていない場合、型を変更しようとすると、実行時エラーが発生します。</para>
+      <para>このメソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> プレースホルダーのテキストを既定の文字列からコントロールに適したものに変更します。 プロパティを使用して、 <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> コントロールのタイトルテキストを指定します。  このタイトルは、コントロール内部にカーソルを移動するか、マウス ポインターをコントロール上に置くと、コントロールの上に表示されます。</para>
       <para>指定するコンテンツ コントロールの種類によっては、<b>ContentControl</b> オブジェクトの一部のプロパティおよびメソッドを使用できない場合があります。</para>
       <code />
       <para>Not all content control properties apply to all the different types of content controls.  The following table lists which properties apply to which types of content controls.</para>
@@ -76,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.AllowInsertDeleteSection" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowInsertDeleteSection As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowInsertDeleteSection { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowInsertDeleteSection : bool with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.AllowInsertDeleteSection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -108,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Appearance" />
       <MemberSignature Language="VB.NET" Value="Public Property Appearance As WdContentControlAppearance" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdContentControlAppearance Appearance { Microsoft::Office::Interop::Word::WdContentControlAppearance get(); void set(Microsoft::Office::Interop::Word::WdContentControlAppearance value); };" />
+      <MemberSignature Language="F#" Value="member this.Appearance : Microsoft.Office.Interop.Word.WdContentControlAppearance with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Appearance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ContentControl.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -156,7 +160,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word._Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word._Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -167,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.BuildingBlockCategory" />
       <MemberSignature Language="VB.NET" Value="Public Property BuildingBlockCategory As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BuildingBlockCategory { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BuildingBlockCategory : string with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.BuildingBlockCategory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -199,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.BuildingBlockType" />
       <MemberSignature Language="VB.NET" Value="Public Property BuildingBlockType As WdBuildingBlockTypes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdBuildingBlockTypes BuildingBlockType { Microsoft::Office::Interop::Word::WdBuildingBlockTypes get(); void set(Microsoft::Office::Interop::Word::WdBuildingBlockTypes value); };" />
+      <MemberSignature Language="F#" Value="member this.BuildingBlockType : Microsoft.Office.Interop.Word.WdBuildingBlockTypes with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.BuildingBlockType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -251,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Checked" />
       <MemberSignature Language="VB.NET" Value="Public Property Checked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Checked { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Checked : bool with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Checked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -283,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Color" />
       <MemberSignature Language="VB.NET" Value="Public Property Color As WdColor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdColor Color { Microsoft::Office::Interop::Word::WdColor get(); void set(Microsoft::Office::Interop::Word::WdColor value); };" />
+      <MemberSignature Language="F#" Value="member this.Color : Microsoft.Office.Interop.Word.WdColor with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Color" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -303,7 +311,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コンテンツコントロールの色を設定または返します。 読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Word.WdColor" />。</summary>
+        <summary>コンテンツコントロールの色を設定または返します。 読み取り/書き込み <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -314,6 +322,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Sub Copy ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy();" />
+      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; unit" Usage="contentControl.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -330,7 +339,7 @@
       <Parameters />
       <Docs>
         <summary>作業中の文書のコンテンツ コントロールをクリップボードにコピーします。</summary>
-        <remarks><para><b>Copy</b> メソッドを使用すると、元のコンテンツ コントロールはすべてのテキストとプロパティの設定を含む、コントロールのコピーが作業中の文書に残っている、クリップボードに移動されます。 作業中の文書の他のセクションにコンテンツ コントロールを貼り付けることができます。 コピーしたコンテンツコントロール<see cref="T:Microsoft.Office.Interop.Word.Selection" />を挿入する<see cref="M:Microsoft.Office.Interop.Word.Range.Paste" />のには<see cref="T:Microsoft.Office.Interop.Word.Range" /> 、オブジェクトまたはオブジェクトのメソッドを使用します。または、Microsoft Office Word 内で貼り付け関数を使用します。 <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /></para>
+        <remarks><para><b>Copy</b> メソッドを使用すると、元のコンテンツ コントロールはすべてのテキストとプロパティの設定を含む、コントロールのコピーが作業中の文書に残っている、クリップボードに移動されます。 作業中の文書の他のセクションにコンテンツ コントロールを貼り付けることができます。 <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> <see cref="T:Microsoft.Office.Interop.Word.Selection" /> <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> コピーしたコンテンツコントロールを挿入するのには、オブジェクトまたはオブジェクトのメソッドを使用し <see cref="T:Microsoft.Office.Interop.Word.Range" /> ます。または、Microsoft Office Word 内で貼り付け関数を使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -340,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ContentControl.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -361,7 +371,7 @@
         <value><b>Integer</b></value>
         <remarks><para>オブジェクトは、Microsoft Word で作成されている場合、 <b>作成者</b> を返します、16 進数の値である 4d535744 を文字列します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
           <para>
-            <b>注</b>: この値は定数<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />で表すこともできます。</para>
+            <b>注</b>: この値は定数で表すこともでき <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -371,6 +381,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.Cut" />
       <MemberSignature Language="VB.NET" Value="Public Sub Cut ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cut();" />
+      <MemberSignature Language="F#" Value="abstract member Cut : unit -&gt; unit" Usage="contentControl.Cut " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -387,7 +398,7 @@
       <Parameters />
       <Docs>
         <summary>作業中の文書からコンテンツ コントロールを削除し、コンテンツ コントロールをクリップボードに移動します。</summary>
-        <remarks><para><b>Copy</b> メソッドを使用すると、元のコンテンツ コントロールはすべてのテキストとプロパティの設定を含む、コントロールのコピーが作業中の文書に残っている、クリップボードに移動されます。 作業中の文書の他のセクションにコンテンツ コントロールを貼り付けることができます。 コピーしたコンテンツコントロール<see cref="T:Microsoft.Office.Interop.Word.Selection" />を挿入する<see cref="M:Microsoft.Office.Interop.Word.Range.Paste" />のには<see cref="T:Microsoft.Office.Interop.Word.Range" /> 、オブジェクトまたはオブジェクトのメソッドを使用します。または、Microsoft Office Word 内で貼り付け関数を使用します。 <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /></para>
+        <remarks><para><b>Copy</b> メソッドを使用すると、元のコンテンツ コントロールはすべてのテキストとプロパティの設定を含む、コントロールのコピーが作業中の文書に残っている、クリップボードに移動されます。 作業中の文書の他のセクションにコンテンツ コントロールを貼り付けることができます。 <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> <see cref="T:Microsoft.Office.Interop.Word.Selection" /> <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> コピーしたコンテンツコントロールを挿入するのには、オブジェクトまたはオブジェクトのメソッドを使用し <see cref="T:Microsoft.Office.Interop.Word.Range" /> ます。または、Microsoft Office Word 内で貼り付け関数を使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -397,6 +408,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.DateCalendarType" />
       <MemberSignature Language="VB.NET" Value="Public Property DateCalendarType As WdCalendarType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdCalendarType DateCalendarType { Microsoft::Office::Interop::Word::WdCalendarType get(); void set(Microsoft::Office::Interop::Word::WdCalendarType value); };" />
+      <MemberSignature Language="F#" Value="member this.DateCalendarType : Microsoft.Office.Interop.Word.WdCalendarType with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.DateCalendarType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -428,6 +440,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property DateDisplayFormat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DateDisplayFormat { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DateDisplayFormat : string with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -450,7 +463,7 @@
       <Docs>
         <summary>日付の表示形式を設定または返します。 値の取得と設定が可能です。</summary>
         <value><b>String</b></value>
-        <remarks><para>既定の形式は、ユーザーのシステム上の Microsoft Office Word で指定されている形式設定です。通常は、Microsoft Windows の場所の設定によって決まります。 たとえば、日付を英語 (米国) の既定の形式は、「年/月/日」です。 プロパティを<see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" />使用して、異なる日付形式を指定します。</para>
+        <remarks><para>既定の形式は、ユーザーのシステム上の Microsoft Office Word で指定されている形式設定です。通常は、Microsoft Windows の場所の設定によって決まります。 たとえば、日付を英語 (米国) の既定の形式は、「年/月/日」です。 プロパティを使用して <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" /> 、異なる日付形式を指定します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -460,6 +473,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" />
       <MemberSignature Language="VB.NET" Value="Public Property DateDisplayLocale As WdLanguageID" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLanguageID DateDisplayLocale { Microsoft::Office::Interop::Word::WdLanguageID get(); void set(Microsoft::Office::Interop::Word::WdLanguageID value); };" />
+      <MemberSignature Language="F#" Value="member this.DateDisplayLocale : Microsoft.Office.Interop.Word.WdLanguageID with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -482,7 +496,7 @@
       <Docs>
         <summary>日付コンテンツコントロールに表示される日付の言語形式を返します。 値の取得と設定が可能です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /></value>
-        <remarks><para>既定では、 <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" />このプロパティは、Microsoft Office Word で指定されている編集言語に設定されます。これが microsoft Windows で指定した場所と異なる場合。</para>
+        <remarks><para>既定では、 <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" /> このプロパティは、Microsoft Office Word で指定されている編集言語に設定されます。これが Microsoft Windows で指定した場所と異なる場合。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -492,6 +506,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property DateStorageFormat As WdContentControlDateStorageFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdContentControlDateStorageFormat DateStorageFormat { Microsoft::Office::Interop::Word::WdContentControlDateStorageFormat get(); void set(Microsoft::Office::Interop::Word::WdContentControlDateStorageFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.DateStorageFormat : Microsoft.Office.Interop.Word.WdContentControlDateStorageFormat with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -514,7 +529,7 @@
       <Docs>
         <summary>作業中の文書の XML データストアに日付コンテンツコントロールがバインドされる日付の保存および取得の形式を設定または返します。 値の取得と設定が可能です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.WdContentControlDateStorageFormat" /></value>
-        <remarks><para>この<see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" />プロパティを使用すると、日付を日付形式、日付/時刻形式、またはテキスト形式で保存できます。</para>
+        <remarks><para>このプロパティを使用すると、日付を <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" /> 日付形式、日付/時刻形式、またはテキスト形式で保存できます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -524,6 +539,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.DefaultTextStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultTextStyle As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DefaultTextStyle { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultTextStyle : obj with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.DefaultTextStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -554,6 +570,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete([in]bool DeleteContents) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.Delete(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete (Optional DeleteContents As Boolean = false)" />
+      <MemberSignature Language="F#" Value="abstract member Delete : bool -&gt; unit" Usage="contentControl.Delete DeleteContents" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -582,6 +599,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DropdownListEntries As ContentControlListEntries" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ContentControlListEntries ^ DropdownListEntries { Microsoft::Office::Interop::Word::ContentControlListEntries ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DropdownListEntries : Microsoft.Office.Interop.Word.ContentControlListEntries" Usage="Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -610,6 +628,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.ID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ID { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ID : string" Usage="Microsoft.Office.Interop.Word.ContentControl.ID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -639,6 +658,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Level" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Level As WdContentControlLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdContentControlLevel Level { Microsoft::Office::Interop::Word::WdContentControlLevel get(); };" />
+      <MemberSignature Language="F#" Value="member this.Level : Microsoft.Office.Interop.Word.WdContentControlLevel" Usage="Microsoft.Office.Interop.Word.ContentControl.Level" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -656,7 +676,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdContentControlLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コンテンツコントロールがテキスト、段落、表のセル、またはテーブルの行を囲むかどうかを、コンテンツコントロールのレベルを返します。またはインラインの場合。 読み取り専用<see cref="T:Microsoft.Office.Interop.Word.WdContentControlLevel" />です。</summary>
+        <summary>コンテンツコントロールがテキスト、段落、表のセル、またはテーブルの行を囲むかどうかを、コンテンツコントロールのレベルを返します。またはインラインの場合。 読み取り専用 <see cref="T:Microsoft.Office.Interop.Word.WdContentControlLevel" /> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -667,6 +687,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.LockContentControl" />
       <MemberSignature Language="VB.NET" Value="Public Property LockContentControl As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LockContentControl { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LockContentControl : bool with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.LockContentControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -691,7 +712,7 @@
         <value><b>Boolean</b></value>
         <remarks><para>このプロパティの既定値は、 <b>false を指定</b> します。  このプロパティは、 コンテンツ コントロールのプロパティ] ダイアログ ボックスで、 コンテンツ コントロールの削除不可] チェック ボックスに対応します。</para>
           <para>
-            <b>注</b>: プロパティが<b>True</b>に設定され<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Temporary" />ている場合、このプロパティを設定することはできません。</para>
+            <b>注</b>: <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Temporary" /> プロパティが<b>True</b>に設定されている場合、このプロパティを設定することはできません。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -701,6 +722,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.LockContents" />
       <MemberSignature Language="VB.NET" Value="Public Property LockContents As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LockContents { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LockContents : bool with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.LockContents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -733,6 +755,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.MultiLine" />
       <MemberSignature Language="VB.NET" Value="Public Property MultiLine As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MultiLine { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MultiLine : bool with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.MultiLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -765,6 +788,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ContentControl.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -782,7 +806,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定<see cref="T:Microsoft.Office.Interop.Word.ContentControl" />したオブジェクトの親オブジェクトを表すを返します。</summary>
+        <summary>指定したオブジェクトの親オブジェクトを表すを返し <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> ます。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -793,6 +817,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.ParentContentControl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentContentControl As ContentControl" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ContentControl ^ ParentContentControl { Microsoft::Office::Interop::Word::ContentControl ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentContentControl : Microsoft.Office.Interop.Word.ContentControl" Usage="Microsoft.Office.Interop.Word.ContentControl.ParentContentControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -822,6 +847,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.PlaceholderText" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PlaceholderText As BuildingBlock" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::BuildingBlock ^ PlaceholderText { Microsoft::Office::Interop::Word::BuildingBlock ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PlaceholderText : Microsoft.Office.Interop.Word.BuildingBlock" Usage="Microsoft.Office.Interop.Word.ContentControl.PlaceholderText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -839,9 +865,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlock</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コンテンツコントロール<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />のプレースホルダーテキストを表すオブジェクトを返します。 読み取り専用です。</summary>
-        <value>を<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />返します。</value>
-        <remarks><para>コンテンツコントロール<see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" />のプレースホルダーテキストを設定するには、メソッドを使用します。</para>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />コンテンツコントロールのプレースホルダーテキストを表すオブジェクトを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> を返します。</value>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" />コンテンツコントロールのプレースホルダーテキストを設定するには、メソッドを使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -851,6 +877,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.ContentControl.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -869,8 +896,8 @@
       </ReturnValue>
       <Docs>
         <summary><see cref="T:Microsoft.Office.Interop.Word.Range" />作業中の文書のコンテンツコントロールの内容を表すを返します。 読み取り専用です。</summary>
-        <value>を<see cref="T:Microsoft.Office.Interop.Word.Range" />返します。</value>
-        <remarks><para>テキスト、 <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Range" />テキストの書式設定、およびその他のテキストプロパティにアクセスするには、プロパティを使用します。  詳細については、「 <a href="HV10056876">Range オブジェクトを使用</a>する」を参照してください。</para>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Range" /> を返します。</value>
+        <remarks><para>テキスト、テキストの <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Range" /> 書式設定、およびその他のテキストプロパティにアクセスするには、プロパティを使用します。  詳細については、「 <a href="HV10056876">Range オブジェクトを使用</a>する」を参照してください。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -880,6 +907,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.RepeatingSectionItems" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RepeatingSectionItems As RepeatingSectionItemColl" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::RepeatingSectionItemColl ^ RepeatingSectionItems { Microsoft::Office::Interop::Word::RepeatingSectionItemColl ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RepeatingSectionItems : Microsoft.Office.Interop.Word.RepeatingSectionItemColl" Usage="Microsoft.Office.Interop.Word.ContentControl.RepeatingSectionItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -909,6 +937,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.RepeatingSectionItemTitle" />
       <MemberSignature Language="VB.NET" Value="Public Property RepeatingSectionItemTitle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RepeatingSectionItemTitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RepeatingSectionItemTitle : string with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.RepeatingSectionItemTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -940,6 +969,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCheckedSymbol([in]int32 CharacterNumber, [in]string Font) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.SetCheckedSymbol(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCheckedSymbol (CharacterNumber As Integer, Optional Font As String = &quot;&quot;)" />
+      <MemberSignature Language="F#" Value="abstract member SetCheckedSymbol : int * string -&gt; unit" Usage="contentControl.SetCheckedSymbol (CharacterNumber, Font)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -958,16 +988,18 @@
         <Parameter Name="Font" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="CharacterNumber">The Unicode character number for the specified symbol. This value will always be the sum of 31 (the number of control symbols at the beginning of the font) and the number that corresponds to the position of the symbol in the table of symbols (counting from left to right). たとえば、Symbol フォントの記号の表で37の位置にデルタ文字を指定するには、68 <paramref name="CharacterNumber" />に設定します。</param>
+        <param name="CharacterNumber">The Unicode character number for the specified symbol. This value will always be the sum of 31 (the number of control symbols at the beginning of the font) and the number that corresponds to the position of the symbol in the table of symbols (counting from left to right). たとえば、Symbol フォントの記号の表で37の位置にデルタ文字を指定するには、 <paramref name="CharacterNumber" /> 68 に設定します。</param>
         <param name="Font">該当する記号を含むフォントの名前を指定します。</param>
         <summary>チェック ボックス コンテンツ コントロールのオン状態を表す記号を設定します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetPlaceholderText">
-      <MemberSignature Language="C#" Value="public void SetPlaceholderText (Microsoft.Office.Interop.Word.BuildingBlock BuildingBlock = null, Microsoft.Office.Interop.Word.Range Range = null, string Text = &quot;&quot;);" />
+      <MemberSignature Language="C#" Value="public void SetPlaceholderText (Microsoft.Office.Interop.Word.BuildingBlock BuildingBlock = default, Microsoft.Office.Interop.Word.Range Range = default, string Text = &quot;&quot;);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetPlaceholderText([in]class Microsoft.Office.Interop.Word.BuildingBlock BuildingBlock, [in]class Microsoft.Office.Interop.Word.Range Range, [in]string Text) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetPlaceholderText (Optional BuildingBlock As BuildingBlock = null, Optional Range As Range = null, Optional Text As String = &quot;&quot;)" />
+      <MemberSignature Language="F#" Value="abstract member SetPlaceholderText : Microsoft.Office.Interop.Word.BuildingBlock * Microsoft.Office.Interop.Word.Range * string -&gt; unit" Usage="contentControl.SetPlaceholderText (BuildingBlock, Range, Text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -987,8 +1019,8 @@
         <Parameter Name="Text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="BuildingBlock">プレースホルダーテキスト<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />の内容を含むオブジェクトを指定します。</param>
-        <param name="Range">プレースホルダーテキスト<see cref="T:Microsoft.Office.Interop.Word.Range" />の内容を含むオブジェクトを指定します。</param>
+        <param name="BuildingBlock"><see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />プレースホルダーテキストの内容を含むオブジェクトを指定します。</param>
+        <param name="Range"><see cref="T:Microsoft.Office.Interop.Word.Range" />プレースホルダーテキストの内容を含むオブジェクトを指定します。</param>
         <param name="Text">プレースホルダー文字列の内容を指定します。</param>
         <summary>ユーザーが独自の文字列を入力するまでコンテンツ コントロールに表示されるプレースホルダー文字列を設定します。</summary>
         <remarks><para>プレースホルダー文字列を指定するときには、パラメーターのいずれか 1 つだけが使用されます。  複数のパラメーターを使用する場合は、最初のパラメーターで指定されたテキストが使用されます。 すべてのパラメーターを省略した場合は、プレースホルダー文字列は空白になります。</para>
@@ -1000,6 +1032,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetUncheckedSymbol([in]int32 CharacterNumber, [in]string Font) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.SetUncheckedSymbol(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetUncheckedSymbol (CharacterNumber As Integer, Optional Font As String = &quot;&quot;)" />
+      <MemberSignature Language="F#" Value="abstract member SetUncheckedSymbol : int * string -&gt; unit" Usage="contentControl.SetUncheckedSymbol (CharacterNumber, Font)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1018,7 +1051,7 @@
         <Parameter Name="Font" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="CharacterNumber">The Unicode character number for the specified symbol. This value will always be the sum of 31 (the number of control symbols at the beginning of the font) and the number that corresponds to the position of the symbol in the table of symbols (counting from left to right). たとえば、Symbol フォントの記号の表で37の位置にデルタ文字を指定するには、68 <paramref name="CharacterNumber" />に設定します。</param>
+        <param name="CharacterNumber">The Unicode character number for the specified symbol. This value will always be the sum of 31 (the number of control symbols at the beginning of the font) and the number that corresponds to the position of the symbol in the table of symbols (counting from left to right). たとえば、Symbol フォントの記号の表で37の位置にデルタ文字を指定するには、 <paramref name="CharacterNumber" /> 68 に設定します。</param>
         <param name="Font">該当する記号を含むフォントの名前を指定します。</param>
         <summary>チェック ボックス コンテンツ コントロールのオフ状態を表す記号を設定します。</summary>
         <remarks>To be added.</remarks>
@@ -1030,6 +1063,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.ShowingPlaceholderText" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ShowingPlaceholderText As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowingPlaceholderText { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ShowingPlaceholderText : bool" Usage="Microsoft.Office.Interop.Word.ContentControl.ShowingPlaceholderText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1058,6 +1092,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Tag" />
       <MemberSignature Language="VB.NET" Value="Public Property Tag As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Tag { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Tag : string with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Tag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1080,7 +1115,7 @@
       <Docs>
         <summary>コンテンツコントロールを識別する値を設定または返します。 値の取得と設定が可能です。</summary>
         <value><b>String</b></value>
-        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.ContentControl.Tag" />このプロパティは、ユーザーが<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" />文書を編集している間、タグが表示されないということのプロパティとは異なります。  開発者ことができます代わりに、そのドキュメントを開いたときに、プログラムで操作の値を格納します。</para>
+        <remarks><para>このプロパティは、 <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Tag" /> ユーザーが <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> 文書を編集している間、タグが表示されないということのプロパティとは異なります。  開発者ことができます代わりに、そのドキュメントを開いたときに、プログラムで操作の値を格納します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1090,6 +1125,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Temporary" />
       <MemberSignature Language="VB.NET" Value="Public Property Temporary As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Temporary { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Temporary : bool with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Temporary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1114,7 +1150,7 @@
         <value><b>Boolean</b></value>
         <remarks><para>既定値は <b>False</b> です。 このプロパティは、 コンテンツ コントロールのプロパティ] ダイアログ ボックスで、[ コンテンツの編集時にコンテンツ コントロールを削除する] チェック ボックスに対応します。</para>
           <para>
-            <b>注</b>: プロパティが<b>True</b>に設定され<see cref="P:Microsoft.Office.Interop.Word.ContentControl.LockContentControl" />ている場合、このプロパティを設定することはできません。</para>
+            <b>注</b>: <see cref="P:Microsoft.Office.Interop.Word.ContentControl.LockContentControl" /> プロパティが<b>True</b>に設定されている場合、このプロパティを設定することはできません。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1124,6 +1160,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Title" />
       <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1155,6 +1192,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As WdContentControlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdContentControlType Type { Microsoft::Office::Interop::Word::WdContentControlType get(); void set(Microsoft::Office::Interop::Word::WdContentControlType value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdContentControlType with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1177,7 +1215,7 @@
       <Docs>
         <summary>コンテンツコントロールの種類を設定または返します。 値の取得と設定が可能です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.WdContentControlType" /></value>
-        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" />プロパティを使用すると、コンテンツコントロールの種類を別の種類に変更できます。  ただし、コントロールの種類を変更するのには依存元の型とコンテンツ コントロール内のコンテンツの変更時にします。  これらの型は、任意のコンテンツを許可するため、すべてのコンテンツ コントロールをリッチ テキストまたは文書パーツ ギャラリー コンテンツ コントロールに変更できます。  他の種類、内容は、変更するタイプの有効な型を変更するが許可されます。  それ以外の場合、変更は拒否され、実行時エラーが発生します。</para>
+        <remarks><para>プロパティを使用すると、 <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> コンテンツコントロールの種類を別の種類に変更できます。  ただし、コントロールの種類を変更するのには依存元の型とコンテンツ コントロール内のコンテンツの変更時にします。  これらの型は、任意のコンテンツを許可するため、すべてのコンテンツ コントロールをリッチ テキストまたは文書パーツ ギャラリー コンテンツ コントロールに変更できます。  他の種類、内容は、変更するタイプの有効な型を変更するが許可されます。  それ以外の場合、変更は拒否され、実行時エラーが発生します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1187,6 +1225,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.Ungroup" />
       <MemberSignature Language="VB.NET" Value="Public Sub Ungroup ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Ungroup();" />
+      <MemberSignature Language="F#" Value="abstract member Ungroup : unit -&gt; unit" Usage="contentControl.Ungroup " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1203,7 +1242,7 @@
       <Parameters />
       <Docs>
         <summary>文書からグループ コンテンツ コントロールを削除し、その子コンテンツ コントロールのネスト状態を解除して自由に編集できるようにします。</summary>
-        <remarks><para>型<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" />ではないコントロールに対して実行した場合、このメソッドは失敗します。</para>
+        <remarks><para>型ではないコントロールに対して実行した場合、このメソッドは失敗し <see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1213,6 +1252,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.XMLMapping" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XMLMapping As XMLMapping" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLMapping ^ XMLMapping { Microsoft::Office::Interop::Word::XMLMapping ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XMLMapping : Microsoft.Office.Interop.Word.XMLMapping" Usage="Microsoft.Office.Interop.Word.ContentControl.XMLMapping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

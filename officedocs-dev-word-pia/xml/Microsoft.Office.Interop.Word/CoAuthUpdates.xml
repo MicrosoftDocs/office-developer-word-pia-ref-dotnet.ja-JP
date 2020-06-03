@@ -1,9 +1,10 @@
 <Type Name="CoAuthUpdates" FullName="Microsoft.Office.Interop.Word.CoAuthUpdates">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="221cb78f9c2c699018cfe37e064f54c683778e79" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147215" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthUpdates : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="53eccd8af883eeec3d52a34196d623552db7287a" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922410" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthUpdates : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CoAuthUpdates implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />
   <TypeSignature Language="VB.NET" Value="Public Interface CoAuthUpdates&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class CoAuthUpdates : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type CoAuthUpdates = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>ドキュメントで利用<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" />可能な更新を表すオブジェクトのコレクションです。</summary>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" />ドキュメントで利用可能な更新を表すオブジェクトのコレクションです。</summary>
     <remarks><para>共同編集が有効になっているドキュメントを同時に編集した場合、1人の共同編集者による変更は、更新プログラムとして他の共同編集者に対して利用可能になります。 各変更は、1つの<b>Coauthupdate</b>オブジェクトで表されます。 共同編集者が自分のバージョンのドキュメントを保存すると、他の共同編集者によって加えられた変更は、その共同編集者のバージョンのドキュメントにマージされます。 共同編集者が自分のバージョンのドキュメントを保存する前に、他の共同編集者が行った変更は更新プログラムとして利用できます。</para>
       <para>たとえば、2人のユーザーが最初に1つの段落を含むドキュメントを編集しています。 最初の共同編集者が文章の読み取りを編集する場合は、「クイック brown がログの上にジャンプする」という単語が2回目の共同編集者に対して、ドキュメントの2つの更新として保存されます。 これらの2つの更新プログラムは、Microsoft Word 2010 オブジェクトモデルでは2つの<b>Coauthupdate</b>オブジェクトとして表されます。 2番目の共同編集者が文書を保存すると、最初の共同編集者からの更新が文書に反映されます。</para>
       <para> </para></remarks>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthUpdates.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.CoAuthUpdates.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -51,8 +53,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Application" />アプリケーションを表すオブジェクトを取得します。</summary>
-        <value>Microsoft <see cref="T:Microsoft.Office.Interop.Word.Application" /> Word アプリケーションを表すオブジェクト。</value>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクトを取得します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Application" />Microsoft Word アプリケーションを表すオブジェクト。</value>
         <remarks><para>読み取り専用です。</para>
           <para> </para></remarks>
       </Docs>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthUpdates.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.CoAuthUpdates.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -80,8 +83,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />コレクション内の項目数を取得します。</summary>
-        <value><see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />コレクション内の項目の数。</value>
+        <summary>コレクション内の項目数を取得し <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> ます。</summary>
+        <value>コレクション内の項目の数 <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> 。</value>
         <remarks><para>読み取り専用です。</para>
           <para> </para></remarks>
       </Docs>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthUpdates.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.CoAuthUpdates.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CoAuthUpdates.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="coAuthUpdates.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -145,7 +150,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>を<see cref="T:System.Collections.IEnumerator" />返します。</returns>
+        <returns><see cref="T:System.Collections.IEnumerator" /> を返します。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthUpdates.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As CoAuthUpdate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::CoAuthUpdate ^ default[int] { Microsoft::Office::Interop::Word::CoAuthUpdate ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.CoAuthUpdate" Usage="Microsoft.Office.Interop.Word.CoAuthUpdates.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -177,7 +183,7 @@
       <Docs>
         <param name="Index">個々 のオブジェクトが返されます。</param>
         <summary>コレクション内の個々 の <b>CoAuthUpdates</b> オブジェクトを返します。</summary>
-        <value>を<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" />返します。</value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" /> を返します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthUpdates.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.CoAuthUpdates.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -204,8 +211,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>は<see cref="T:System.Object" /> 、指定<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />したオブジェクトの親オブジェクトを表すを取得します。</summary>
-        <value><see cref="T:System.Object" />指定<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />したオブジェクトの親オブジェクトを表す。</value>
+        <summary>は、 <see cref="T:System.Object" /> 指定したオブジェクトの親オブジェクトを表すを取得し <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> ます。</summary>
+        <value>指定した <see cref="T:System.Object" /> オブジェクトの親オブジェクトを表す <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> 。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

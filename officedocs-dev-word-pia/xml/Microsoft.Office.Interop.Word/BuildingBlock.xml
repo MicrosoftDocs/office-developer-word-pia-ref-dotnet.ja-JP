@@ -1,9 +1,10 @@
 <Type Name="BuildingBlock" FullName="Microsoft.Office.Interop.Word.BuildingBlock">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ca9bed40f87117ccf911469b9c1d874a575c9129" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146228" /></Metadata><TypeSignature Language="C#" Value="public interface BuildingBlock" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2c9b2e5436ba2864a5dad62aa444a46e005baf56" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922613" /></Metadata><TypeSignature Language="C#" Value="public interface BuildingBlock" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract BuildingBlock" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.BuildingBlock" />
   <TypeSignature Language="VB.NET" Value="Public Interface BuildingBlock" />
   <TypeSignature Language="C++ CLI" Value="public interface class BuildingBlock" />
+  <TypeSignature Language="F#" Value="type BuildingBlock = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,13 +20,13 @@
   </Attributes>
   <Docs>
     <summary>テンプレートに含まれる文書パーツを表します。文書パーツはあらかじめ作成された、定型句に似たコンテンツであり、文字列、画像、書式設定を含めることができます。</summary>
-    <remarks><para>各<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" />および<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />コレクションのメンバーです。 文書パーツは、Microsoft Office Word テンプレートに保存されます。  したがって、ドキュメントの利用可能なビルディング ・ ブロックにアクセスするに添付されたテンプレートにアクセスする必要があります。  組み込みの文書パーツは、"ビルド パーツ.dotx"という名前のテンプレートに格納されます。</para>
+    <remarks><para>各 <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> オブジェクトは、およびコレクションのメンバーです <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> 。 文書パーツは、Microsoft Office Word テンプレートに保存されます。  したがって、ドキュメントの利用可能なビルディング ・ ブロックにアクセスするに添付されたテンプレートにアクセスする必要があります。  組み込みの文書パーツは、"ビルド パーツ.dotx"という名前のテンプレートに格納されます。</para>
       <para>
-        <b>注</b>: コレクションまた<see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Item(System.Object@)" />は<see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" />コレクションのメソッドを使用して、個々の文書パーツを取得します。 [!メモ] コレクションにアクセスする方法によって返されるコレクションを変更する場合があります。  たとえば、カテゴリが "General" である文書<see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" />パーツのコレクションにアクセスした場合、返されるコレクションは、カテゴリの種類<see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" />の文書パーツのコレクションにアクセスした場合に返されるコレクションとは異なる場合があります。"Custom" の また、カテゴリが "General" の種類の<see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustomAutoText" />文書パーツのコレクションにアクセスした場合に返されるコレクションとは異なります。 したがって、 <b>BuildingBlockEntries</b> コレクションからアクセスするコレクションの最初の項目は、 <b>BuildingBlocks</b> コレクションからアクセスするコレクションの最初の項目とは異なる場合があります。</para>
+        <b>注</b>: コレクションまたはコレクションのメソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Item(System.Object@)" /> 個々の <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> 文書パーツを取得します。 [!メモ] コレクションにアクセスする方法によって返されるコレクションを変更する場合があります。  たとえば、カテゴリが "General" である文書パーツのコレクションにアクセスすると、 <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> カテゴリが "Custom" の種類の文書パーツのコレクションにアクセスした場合に返されるコレクションが返されるコレクションとは異なる場合があり <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> ます。 また、 <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustomAutoText" /> カテゴリが "General" の種類の文書パーツのコレクションにアクセスした場合に返されるコレクションとは異なります。 したがって、 <b>BuildingBlockEntries</b> コレクションからアクセスするコレクションの最初の項目は、 <b>BuildingBlocks</b> コレクションからアクセスするコレクションの最初の項目とは異なる場合があります。</para>
       <para>新しい文書パーツを作成するには、<b>BuildingBlockEntries</b> コレクションまたは <b>BuildingBlocks</b> コレクションの <b>Add</b> メソッドを使用します。  ただし、新しい文書パーツを作成する方法としては、 <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> <b>BuildingBlockEntries</b>コレクションのメソッドを使用することをお勧めします。 </para>
-      <para>文書に<see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Insert(Microsoft.Office.Interop.Word.Range,System.Object@)" />新しい文書パーツを挿入するには、メソッドを使用します。 テンプレートから<see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Delete" />文書パーツを削除するには、メソッドを使用します。</para>
-      <para>ビルディング ・ ブロックは、カテゴリと種類で編成されます。  コレクションを<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" />使用して個々<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" />のオブジェクトにアクセスします。 コレクションを<see cref="T:Microsoft.Office.Interop.Word.Categories" />使用して個々<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" />のオブジェクトにアクセスします。 <b>BuildingBlocks</b> プロパティを使用して <b>Category</b> オブジェクトの <b>BuildingBlocks</b> コレクションにアクセスします。 </para>
-      <para>各文書パーツには、、、 <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" />、などの<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" /> <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" />固有の情報が含まれているプロパティ<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" />があります。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Insert(Microsoft.Office.Interop.Word.Range,System.Object@)" />文書に新しい文書パーツを挿入するには、メソッドを使用します。 <see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Delete" />テンプレートから文書パーツを削除するには、メソッドを使用します。</para>
+      <para>ビルディング ・ ブロックは、カテゴリと種類で編成されます。  コレクションを使用して <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> 個々 <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /> のオブジェクトにアクセスします。 コレクションを使用して <see cref="T:Microsoft.Office.Interop.Word.Categories" /> 個々 <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" /> のオブジェクトにアクセスします。 <b>BuildingBlocks</b> プロパティを使用して <b>Category</b> オブジェクトの <b>BuildingBlocks</b> コレクションにアクセスします。 </para>
+      <para>各文書パーツには、、、、などの固有の情報が含まれているプロパティがあり <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" /> <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" /> <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" /> <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" /> ます。</para>
       <para>文書パーツの詳細については、「<a href="HV10120827">文書パーツを</a>使用する」を参照してください。</para>
       <para> </para></remarks>
   </Docs>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -53,7 +55,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word <see cref="T:Microsoft.Office.Interop.Word._Application" />アプリケーションを表すオブジェクトを返します。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Word._Application" />Microsoft Word アプリケーションを表すオブジェクトを返します。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Category As Category" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Category ^ Category { Microsoft::Office::Interop::Word::Category ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Category : Microsoft.Office.Interop.Word.Category" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Category" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -113,7 +117,7 @@
         <value><b>Integer</b></value>
         <remarks><para>オブジェクトは、Microsoft Word で作成されている場合、 <b>作成者</b> を返します、16 進数の値である 4d535744 を文字列します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。 たとえば、Word には作成者コード MSWD です。 このプロパティの詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください。</para>
           <para>
-            <b>注</b>: この値は定数<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />で表すこともできます。</para>
+            <b>注</b>: この値は定数で表すこともでき <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.BuildingBlock.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="buildingBlock.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -179,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.ID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ID { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ID : string" Usage="Microsoft.Office.Interop.Word.BuildingBlock.ID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -198,7 +205,7 @@
       <Docs>
         <summary>文書パーツの内部 id 番号を取得します。 読み取り専用です。</summary>
         <value><b>String</b></value>
-        <remarks><para>この<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.ID" />プロパティは、GUID の形式の id 文字列を返します。</para>
+        <remarks><para>この <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.ID" /> プロパティは、GUID の形式の id 文字列を返します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -208,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -235,6 +243,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Range Insert([in]class Microsoft.Office.Interop.Word.Range Where, [in]object&amp; RichText) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.BuildingBlock.Insert(Microsoft.Office.Interop.Word.Range,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (Where As Range, Optional ByRef RichText As Object) As Range" />
+      <MemberSignature Language="F#" Value="abstract member Insert : Microsoft.Office.Interop.Word.Range * obj -&gt; Microsoft.Office.Interop.Word.Range" Usage="buildingBlock.Insert (Where, RichText)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -250,12 +259,12 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Where" Type="Microsoft.Office.Interop.Word.Range" />
-        <Parameter Name="RichText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RichText" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Where">文書パーツのコンテンツを配置する場所を指定します。</param>
         <param name="RichText"><b>True</b>は、文書パーツを書式設定されたリッチテキストとして挿入します。  <b>False</b>は、文書パーツをテキスト形式で挿入します。</param>
-        <summary>文書パーツの値を文書に挿入し、文書内の<see cref="T:Microsoft.Office.Interop.Word.Range" />文書パーツの内容を表すオブジェクトを返します。</summary>
+        <summary>文書パーツの値を文書に挿入し、 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 文書内の文書パーツの内容を表すオブジェクトを返します。</summary>
         <returns><see cref="T:Microsoft.Office.Interop.Word.Range" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -266,6 +275,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" />
       <MemberSignature Language="VB.NET" Value="Public Property InsertOptions As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InsertOptions { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.InsertOptions : int with get, set" Usage="Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -288,7 +298,7 @@
       <Docs>
         <summary>文書に文書パーツの内容を挿入する方法を表す<b>整数型 (Integer</b> ) の値を設定します。 値の取得と設定が可能です。</summary>
         <value><b>Integer</b></value>
-        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" />プロパティの値には、任意の<see cref="T:Microsoft.Office.Interop.Word.WdDocPartInsertOptions" />列挙値を指定できます。</para>
+        <remarks><para>プロパティの値には、 <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" /> 任意の列挙値を指定でき <see cref="T:Microsoft.Office.Interop.Word.WdDocPartInsertOptions" /> ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -298,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -329,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -346,7 +358,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />オブジェクトの親オブジェクトを返します。</summary>
+        <summary>指定したオブジェクトの親オブジェクトを返し <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> ます。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -357,6 +369,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As BuildingBlockType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::BuildingBlockType ^ Type { Microsoft::Office::Interop::Word::BuildingBlockType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.BuildingBlockType" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -385,6 +398,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

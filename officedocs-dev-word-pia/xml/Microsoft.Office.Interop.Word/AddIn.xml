@@ -1,9 +1,10 @@
 <Type Name="AddIn" FullName="Microsoft.Office.Interop.Word.AddIn">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="695249a505a14baf5625853d5db3725ed54c358e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144674" /></Metadata><TypeSignature Language="C#" Value="public interface AddIn" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="834391be669fe404d74b4ac56273a8b1154ee8ba" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43921885" /></Metadata><TypeSignature Language="C#" Value="public interface AddIn" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddIn" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AddIn" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddIn" />
   <TypeSignature Language="C++ CLI" Value="public interface class AddIn" />
+  <TypeSignature Language="F#" Value="type AddIn = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,12 +20,12 @@
   </Attributes>
   <Docs>
     <summary>組み込まれているかどうかにかかわらず単一のアドインを表します。</summary>
-    <remarks><para><b>AddIn</b>オブジェクトは、 <see cref="T:Microsoft.Office.Interop.Word.AddIns" />コレクションのメンバーです。 <b>AddIns</b>コレクションには、現在読み込まれているかどうかに関係なく、Microsoft Word で使用可能なすべてのアドインが含まれています。 <b>AddIns</b>コレクションには、[テンプレートとアドイン] ダイアログボックス ([ツール] メニュー) に表示される全文書対象のテンプレートまたは Word アドインライブラリ (wll) が含まれています。</para>
-      <para><b>AddIns</b>(<paramref name="index" />) を使用し<paramref name="index" />ます。ここで、はアドイン名またはインデックス番号を使用して、1つの<b>AddIn</b>オブジェクトを返します。 [テンプレートとアドイン] ダイアログボックスに表示されている名前のスペル (必ずしも大文字と小文字は区別されません) を正確に一致させる必要があります。</para>
+    <remarks><para><b>AddIn</b>オブジェクトは、コレクションのメンバーです <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> 。 <b>AddIns</b>コレクションには、現在読み込まれているかどうかに関係なく、Microsoft Word で使用可能なすべてのアドインが含まれています。 <b>AddIns</b>コレクションには、[テンプレートとアドイン] ダイアログボックス ([ツール] メニュー) に表示される全文書対象のテンプレートまたは Word アドインライブラリ (wll) が含まれています。</para>
+      <para><b>AddIns</b>( <paramref name="index" /> ) を使用します。ここで、 <paramref name="index" /> はアドイン名またはインデックス番号を使用して、1つの<b>AddIn</b>オブジェクトを返します。 [テンプレートとアドイン] ダイアログボックスに表示されている名前のスペル (必ずしも大文字と小文字は区別されません) を正確に一致させる必要があります。</para>
       <para>インデックス番号は、[ テンプレートとアドイン] ダイアログ ボックスのアドインの一覧でのアドインの位置を表します。</para>
-      <para><see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" />メソッドを使用して、使用可能なアドインの一覧にアドインを追加し、必要に応じて、 <paramref name="Install" />引数を使用してアドインをインストールします。</para>
-      <para>使用可能なアドインの一覧に表示されているアドインをインストールするには<see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> 、プロパティを使用します。</para>
-      <para>AddIn オブジェクト<see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" />がテンプレートであるか<b></b> 、WLL であるかを判断するのにには、プロパティを使用します。</para>
+      <para>メソッドを使用して、 <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> 使用可能なアドインの一覧にアドインを追加し、必要に応じて、引数を使用してアドインをインストールし <paramref name="Install" /> ます。</para>
+      <para>使用可能なアドインの一覧に表示されているアドインをインストールするには、プロパティを使用し <see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> ます。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" /> <b>AddIn</b>オブジェクトがテンプレートであるか、WLL であるかを判断するのにには、プロパティを使用します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.AddIn.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -51,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定し<see cref="T:Microsoft.Office.Interop.Word.Application" />たオブジェクトの作成元を表すオブジェクトを返します。</summary>
+        <summary>指定し <see cref="T:Microsoft.Office.Interop.Word.Application" /> たオブジェクトの作成元を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Autoload" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Autoload As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Autoload { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Autoload : bool" Usage="Microsoft.Office.Interop.Word.AddIn.Autoload" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Compiled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Compiled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Compiled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Compiled : bool" Usage="Microsoft.Office.Interop.Word.AddIn.Compiled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.AddIn.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.AddIn.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="addIn.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -165,7 +171,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定した<see cref="T:Microsoft.Office.Interop.Word.AddIn" />オブジェクトを削除します。</summary>
+        <summary>指定したオブジェクトを削除し <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> ます。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.AddIn.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -192,7 +199,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><see cref="T:Microsoft.Office.Interop.Word.AddIns" />コレクション内の項目の位置を表す値を返します。</summary>
+        <summary>コレクション内の項目の位置を表す値を返し <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> ます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -203,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Installed" />
       <MemberSignature Language="VB.NET" Value="Public Property Installed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Installed { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Installed : bool with get, set" Usage="Microsoft.Office.Interop.Word.AddIn.Installed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -226,7 +234,7 @@
         <summary>True を指定すると、指定したアドインがインストールされている (ロードされている) 場合に<b>True</b>を示す値を取得または設定します。</summary>
         <value>To be added.</value>
         <remarks><para>読み込まれているアドインは、[テンプレートとアドイン] ダイアログボックス ([ツール] メニュー) で選択されています。</para>
-          <para>アンインストールされたアドインは、 <see cref="T:Microsoft.Office.Interop.Word.AddIns" />コレクションに含まれています。 <b>AddIns</b>コレクションからテンプレートまたは WLL を削除するには、 <see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" />その<see cref="T:Microsoft.Office.Interop.Word.AddIn" />オブジェクトにメソッドを適用します (アドイン名は [テンプレートとアドイン] ダイアログボックスから削除されます)。 すべてのテンプレートと Wll をアンロードするに<see cref="M:Microsoft.Office.Interop.Word.AddIns.Unload(System.Boolean)" />は、このメソッドを<b>AddIns</b>コレクションに適用します。</para>
+          <para>アンインストールされたアドインは、コレクションに含まれてい <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> ます。 <b>AddIns</b>コレクションからテンプレートまたは WLL を削除するには、その <see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" /> オブジェクトにメソッドを適用し <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> ます (アドイン名は [テンプレートとアドイン] ダイアログボックスから削除されます)。 すべてのテンプレートと Wll をアンロードするには、この <see cref="M:Microsoft.Office.Interop.Word.AddIns.Unload(System.Boolean)" /> メソッドを<b>AddIns</b>コレクションに適用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -236,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Name" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.AddIn.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -253,7 +262,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定<see cref="T:Microsoft.Office.Interop.Word.AddIn" />したオブジェクトの名前を示す値を返します。</summary>
+        <summary>指定したオブジェクトの名前を示す値を返し <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> ます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -264,6 +273,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.AddIn.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -281,7 +291,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定<see cref="T:Microsoft.Office.Interop.Word.AddIn" />したオブジェクトの親オブジェクトを表す値を返します。</summary>
+        <summary>指定したオブジェクトの親オブジェクトを表す値を返し <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> ます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -292,6 +302,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Path" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="Microsoft.Office.Interop.Word.AddIn.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -309,9 +320,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定<see cref="T:Microsoft.Office.Interop.Word.AddIn" />したオブジェクトの URL を示す値を返します。</summary>
+        <summary>指定したオブジェクトの URL を示す値を返し <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> ます。</summary>
         <value>To be added.</value>
-        <remarks><para>パスには、末尾のスラッシュ文字 ("http://MyServer" など) は含まれません。 <b>PathSeparator</b>プロパティ<see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.PathSeparator" />の既定値が円記号 (\)) の場合でも、プロパティを使用して末尾のスラッシュ文字を追加します。</para>
+        <remarks><para>パスには、末尾のスラッシュ文字 ("" など) は含まれません http://MyServer 。 <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.PathSeparator" /> <b>PathSeparator</b>プロパティの既定値が円記号 () の場合でも、プロパティを使用して末尾のスラッシュ文字を追加し \) ます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
